@@ -215,10 +215,10 @@ export const domainB_questions: Question[] = [
     id: 12,
     domain: "B",
     taskItem: "B.4",
-    phase: "assessment",
-    lifecycleOrder: 20,
+    phase: "fba",
+    lifecycleOrder: 41,
     bloomsLevel: "application",
-    scenario: "Leo's tantrums result in him being removed from the classroom (escape from demands). His teacher also sometimes gives him a piece of candy to calm him down during a tantrum.",
+    scenario: "During your ABC direct observation in Leo's classroom, you record two distinct contingencies: (1) when Leo tantrums during a demand, his teacher removes him from the classroom and the academic task ends; (2) on other occasions, the teacher gives him a piece of candy to calm him down during a tantrum. You are analyzing these observed contingencies to build your functional hypothesis.",
     question: "How would you **apply** the concepts of positive and negative reinforcement to analyze what is maintaining Leo's tantrums?",
     choices: [
       { letter: "a", text: "The removal from the classroom is positive reinforcement because the teacher is adding access to a preferred environment (the hallway). The candy is also positive reinforcement because a preferred stimulus is being added contingent on the behavior." },
