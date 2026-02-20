@@ -86,8 +86,8 @@ export const domainA_questions: Question[] = [{
     phase: "assessment",
     lifecycleOrder: 5,
     bloomsLevel: "application",
-    scenario: "You are writing a justification for Leo's ABA services for his insurance company. You need to explain why ABA is the appropriate service for him.",
-    question: "Which of the following best **applies the dimensions of ABA** (as defined by Baer, Wolf, & Risley, 1968) to justify the services?",
+    scenario: "During the initial intake meeting, Mr. and Mrs. Rodriguez ask: 'We've heard ABA mentioned before, but our previous therapist said it was just about rewards and punishments. Can you explain what makes ABA different and why it is the right approach for Leo?'",
+    question: "Which response best **applies the seven dimensions of applied behavior analysis** (Baer, Wolf, & Risley, 1968) to explain ABA's distinguishing characteristics to the Rodriguez family?",
     choices: [
       { letter: "a", text: "\"ABA services are appropriate because they are applied (addressing socially significant behaviors), behavioral (focusing on observable and measurable behaviors), analytic (using data to demonstrate that the intervention is causing the change), technological (procedures are described precisely enough to be replicated), conceptually systematic (based on behavioral principles), effective (producing meaningful change), and designed for generality.\"" },
       { letter: "b", text: "\"ABA services are appropriate because they are behavioral (targeting observable behaviors like tantrums and communication), analytic (using single-subject designs to demonstrate functional relations), and effective (producing clinically significant reductions in problem behavior and increases in adaptive skills).\"" },
@@ -129,10 +129,9 @@ export const domainA_questions: Question[] = [{
       { letter: "b", text: "\"From a selectionist perspective, what we call 'intrinsic motivation' is behavior that has been shaped by its natural consequences over time. ABA does not create artificial motivation; it identifies and leverages the existing reinforcement history to teach new skills, with the goal of eventually fading to naturally occurring reinforcers.\"" },
       { letter: "c", text: "\"Behavior analysis uses empiricism as its epistemological foundation, which means we rely on observable data rather than theoretical constructs like 'intrinsic motivation.' Our data shows that Leo's behavior changes in predictable ways when we manipulate environmental variables, which is more informative than hypothetical internal states.\"" },
       { letter: "d", text: "\"The philosophical assumption of determinism in behavior analysis actually supports the idea of intrinsic motivation — if all behavior has causes, then the cause of intrinsically motivated behavior is the natural reinforcement history the child has experienced. ABA simply makes this process more systematic and efficient.\"" },
-    
     ],
     correctAnswer: "a",
-    rationale: "Option D is the most complete answer because it correctly identifies automatic reinforcement as the behavioral account of 'intrinsic motivation,' addresses the parent's concern about dependence on external rewards, and explains the goal of transitioning to natural reinforcers. Options A, B, and C each make accurate philosophical points but do not as directly address the specific concern about 'intrinsic motivation' and the mechanism by which ABA handles it.",
+    rationale: "Option A is the most complete answer because it correctly identifies automatic reinforcement as the behavioral account of 'intrinsic motivation,' directly addresses the parent's concern about dependence on external rewards, and explains the goal of transitioning to natural reinforcers. Option B makes a similar point from a selectionist framing but is less complete. Option C dismisses the construct of intrinsic motivation without addressing the parent's concern. Option D addresses determinism but does not explain the mechanism (automatic reinforcement) or the goal of fading to natural reinforcers.",
   },
   {
     id: 8,
@@ -148,10 +147,9 @@ export const domainA_questions: Question[] = [{
       { letter: "b", text: "\"While both fields target communication, ABA approaches communication as verbal behavior — a set of operants (mands, tacts, intraverbals, echoics) each controlled by different antecedent variables and maintained by different reinforcers. We use functional analysis to identify the controlling variables and design teaching procedures based on operant principles.\"" },
       { letter: "c", text: "\"The distinction is primarily methodological. ABA uses single-subject experimental designs with continuous data collection to demonstrate functional relations between teaching procedures and communication gains, while speech-language pathology typically uses norm-referenced assessments and group-comparison research designs.\"" },
       { letter: "d", text: "\"ABA is distinguished from speech-language pathology by its use of the verbal behavior framework derived from Skinner's analysis of verbal behavior. We classify communication by its function (mand, tact, intraverbal) rather than by its form (nouns, verbs, sentences), which allows us to design more functionally relevant teaching programs.\"" },
-    
     ],
     correctAnswer: "a",
-    rationale: "Option D is the best answer for a multidisciplinary team context because it accurately describes the distinction (EAB foundation, functional analysis vs. structural/developmental focus), acknowledges the legitimate overlap, and frames the relationship as collaborative. Options A and C focus narrowly on verbal behavior theory. Option B focuses only on methodology and misses the philosophical and conceptual distinctions.",
+    rationale: "Option A is the best answer for a multidisciplinary team context because it accurately describes the distinction (ABA is grounded in EAB and functional analysis vs. SLP's structural/developmental focus), acknowledges the legitimate overlap, and frames the relationship as collaborative. Option B focuses narrowly on verbal behavior theory without acknowledging the overlap. Option C focuses only on methodology. Option D accurately describes verbal behavior theory but does not address the broader distinction or the collaborative relationship.",
   },
 ];
 
