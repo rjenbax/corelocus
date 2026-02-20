@@ -14,10 +14,10 @@ import {
   BookOpen, BarChart3, Menu, X, Eye, Flag
 } from 'lucide-react';
 
-const phaseOrder = ['intake', 'fba', 'treatment-planning', 'intervention', 'evaluation'];
+const phaseOrder = ['assessment', 'fba', 'treatment-planning', 'implementation', 'evaluation'];
 
 function getPhaseForIndex(index: number): string {
-  return allQuestions[index]?.phase || 'intake';
+  return allQuestions[index]?.phase || 'assessment';
 }
 
 function ProgressBar({ value, max, color = '#4A7C59' }: { value: number; max: number; color?: string }) {

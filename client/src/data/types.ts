@@ -8,6 +8,7 @@ export interface Question {
   domain: string;
   taskItem: string;
   phase: string;
+  lifecycleOrder: number;
   bloomsLevel: string;
   scenario: string;
   question: string;

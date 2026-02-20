@@ -36,7 +36,7 @@ const initialState: ExamState = {
   score: 0,
   examStarted: false,
   examComplete: false,
-  currentPhase: 'intake',
+  currentPhase: 'assessment',
 };
 
 function examReducer(state: ExamState, action: ExamAction): ExamState {
@@ -147,7 +147,7 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
   }, [state.answers]);
 
   const getPhaseProgress = useCallback(() => {
-    const phases = ['intake', 'fba', 'treatment-planning', 'intervention', 'evaluation'];
+    const phases = ['assessment', 'fba', 'treatment-planning', 'implementation', 'evaluation'];
     const result: Record<string, { total: number; answered: number; correct: number }> = {};
     phases.forEach(phase => {
       const phaseQs = allQuestions.filter(q => q.phase === phase);
