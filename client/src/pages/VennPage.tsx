@@ -60,6 +60,9 @@ const CATEGORY_COLORS: Record<string, { bg: string; text: string; border: string
   'Research & Design': { bg: 'bg-blue-50', text: 'text-blue-700', border: 'border-blue-200', pill: 'bg-blue-100 text-blue-700' },
   'Verbal Behavior + Stimulus Control': { bg: 'bg-purple-50', text: 'text-purple-700', border: 'border-purple-200', pill: 'bg-purple-100 text-purple-700' },
   'Tier 3 – Subtle Distinction': { bg: 'bg-teal-50', text: 'text-teal-700', border: 'border-teal-200', pill: 'bg-teal-100 text-teal-700' },
+  'Measurement': { bg: 'bg-cyan-50', text: 'text-cyan-700', border: 'border-cyan-200', pill: 'bg-cyan-100 text-cyan-700' },
+  'Skill Acquisition': { bg: 'bg-emerald-50', text: 'text-emerald-700', border: 'border-emerald-200', pill: 'bg-emerald-100 text-emerald-700' },
+  'Ethics & Supervision': { bg: 'bg-violet-50', text: 'text-violet-700', border: 'border-violet-200', pill: 'bg-violet-100 text-violet-700' },
 };
 const DEFAULT_COLORS = { bg: 'bg-muted/30', text: 'text-foreground', border: 'border-border', pill: 'bg-muted text-foreground' };
 function getCatColors(category: string) { return CATEGORY_COLORS[category] ?? DEFAULT_COLORS; }
