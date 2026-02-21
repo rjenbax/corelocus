@@ -8,6 +8,7 @@ export interface RapidRecallItem {
   distractors: string[];
   misconceptions: string[]; // statements that are WRONG — tracked as "weak boundaries"
   domain: string;
+  taskItem: string;
   category: string;
 }
 
@@ -28,6 +29,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Only applies to food deprivation."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.16',
   },
   {
     id: 'rr-sd', term: 'SD (Discriminative Stimulus)',
@@ -43,6 +45,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Elicits behavior rather than evoking it."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.12',
   },
   {
     id: 'rr-reinforcement', term: 'Reinforcement',
@@ -58,6 +61,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as reward."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.4',
   },
   {
     id: 'rr-extinction', term: 'Extinction',
@@ -73,6 +77,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Immediately decreases behavior when implemented."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.11',
   },
   {
     id: 'rr-pos-reinf', term: 'Positive Reinforcement',
@@ -88,6 +93,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Always involves tangible items."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.4',
   },
   {
     id: 'rr-neg-reinf', term: 'Negative Reinforcement',
@@ -103,6 +109,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Involves delivering something negative to the individual."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.4',
   },
   {
     id: 'rr-pos-pun', term: 'Positive Punishment',
@@ -118,6 +125,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as negative reinforcement."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.5',
   },
   {
     id: 'rr-neg-pun', term: 'Negative Punishment',
@@ -133,6 +141,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is a form of positive reinforcement."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.5',
   },
   {
     id: 'rr-auto-reinf', term: 'Automatic Reinforcement',
@@ -148,6 +157,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Cannot be identified through functional analysis."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.6',
   },
 
   // ── Differential Reinforcement ─────────────────────────────────────────────
@@ -165,6 +175,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Does not require extinction of the problem behavior."',
     ],
     domain: 'G', category: 'Differential Reinforcement',
+    taskItem: 'G.2',
   },
   {
     id: 'rr-dri', term: 'DRI (Differential Reinforcement of Incompatible Behavior)',
@@ -180,6 +191,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Does not require the behaviors to be mutually exclusive."',
     ],
     domain: 'G', category: 'Differential Reinforcement',
+    taskItem: 'G.2',
   },
   {
     id: 'rr-dro', term: 'DRO (Differential Reinforcement of Other Behavior)',
@@ -195,6 +207,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires identifying an incompatible behavior."',
     ],
     domain: 'G', category: 'Differential Reinforcement',
+    taskItem: 'G.2',
   },
   {
     id: 'rr-drl', term: 'DRL (Differential Reinforcement of Low Rates)',
@@ -210,6 +223,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Reinforces the absence of behavior."',
     ],
     domain: 'G', category: 'Differential Reinforcement',
+    taskItem: 'G.2',
   },
   {
     id: 'rr-drh', term: 'DRH (Differential Reinforcement of High Rates)',
@@ -225,6 +239,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Delivers reinforcement on a fixed-ratio schedule."',
     ],
     domain: 'G', category: 'Differential Reinforcement',
+    taskItem: 'G.2',
   },
   {
     id: 'rr-drd', term: 'DRD (Differential Reinforcement of Diminishing Rates)',
@@ -240,6 +255,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is designed to increase a behavior.',
     ],
     domain: 'G', category: 'Differential Reinforcement',
+    taskItem: 'G.2',
   },
 
   // ── Verbal Behavior ────────────────────────────────────────────────────────
@@ -257,6 +273,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires the speaker to have language skills."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.19',
   },
   {
     id: 'rr-tact', term: 'Tact',
@@ -272,6 +289,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires the listener to respond for reinforcement to occur."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.19',
   },
   {
     id: 'rr-intraverbal', term: 'Intraverbal',
@@ -287,6 +305,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is controlled by a nonverbal stimulus."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.19',
   },
   {
     id: 'rr-convergent', term: 'Convergent Control',
@@ -302,6 +321,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Weakens the strength of the verbal response."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.20',
   },
   {
     id: 'rr-divergent', term: 'Divergent Control',
@@ -317,6 +337,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Always results in impure verbal operants."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.20',
   },
 
   // ── Stimulus Control & Measurement ────────────────────────────────────────
@@ -334,6 +355,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is always a tangible item."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.7',
   },
   {
     id: 'rr-uncond-reinf', term: 'Unconditioned Reinforcement',
@@ -349,6 +371,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as conditioned reinforcement."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.7',
   },
   {
     id: 'rr-eo', term: 'Establishing Operation (EO)',
@@ -364,6 +387,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Only applies to unconditioned reinforcers."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.16',
   },
   {
     id: 'rr-ao', term: 'Abolishing Operation (AO)',
@@ -379,6 +403,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as an establishing operation."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.16',
   },
   {
     id: 'rr-sdelta', term: 'S-Delta (SΔ)',
@@ -394,6 +419,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is a stimulus that has never been present during training."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.12',
   },
   {
     id: 'rr-stim-control', term: 'Stimulus Control',
@@ -409,6 +435,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as stimulus generalization."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.12',
   },
   {
     id: 'rr-stim-gen', term: 'Stimulus Generalization',
@@ -424,6 +451,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires the new stimulus to be identical to the training stimulus."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.14',
   },
   {
     id: 'rr-resp-gen', term: 'Response Generalization',
@@ -439,6 +467,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Only occurs across different settings."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.14',
   },
   {
     id: 'rr-stim-disc', term: 'Stimulus Discrimination',
@@ -454,6 +483,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is a cognitive process rather than a behavioral one."',
     ],
     domain: 'B', category: 'Stimulus Control',
+    taskItem: 'B.13',
   },
 
   // ── Measurement ────────────────────────────────────────────────────────────
@@ -471,6 +501,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Frequency is the preferred measure for all behaviors."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.3',
   },
   {
     id: 'rr-duration', term: 'Duration',
@@ -486,6 +517,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the best measure for all behaviors."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.4',
   },
   {
     id: 'rr-latency', term: 'Latency',
@@ -501,6 +533,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is measured from the end of the SD to the end of the response."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.4',
   },
   {
     id: 'rr-irt', term: 'Interresponse Time (IRT)',
@@ -516,6 +549,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as duration."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.4',
   },
   {
     id: 'rr-partial-interval', term: 'Partial Interval Recording',
@@ -531,6 +565,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the most accurate form of interval recording."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.6',
   },
   {
     id: 'rr-whole-interval', term: 'Whole Interval Recording',
@@ -546,6 +581,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is best for behaviors with short durations."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.6',
   },
   {
     id: 'rr-mts', term: 'Momentary Time Sampling',
@@ -561,6 +597,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as partial interval recording."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.6',
   },
   {
     id: 'rr-ioa', term: 'Interobserver Agreement (IOA)',
@@ -576,6 +613,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is only required for research studies."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.8',
   },
 
   // ── Research Designs ───────────────────────────────────────────────────────
@@ -593,6 +631,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Can only be used with two conditions."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.7',
   },
   {
     id: 'rr-multiple-baseline', term: 'Multiple Baseline',
@@ -608,6 +647,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires all tiers to change simultaneously."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.7',
   },
   {
     id: 'rr-changing-criterion', term: 'Changing Criterion Design',
@@ -623,6 +663,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is used to compare two different treatments."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.7',
   },
   {
     id: 'rr-atd', term: 'Alternating Treatments Design',
@@ -638,6 +679,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Cannot be used to compare more than two conditions."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.7',
   },
   {
     id: 'rr-prediction', term: 'Prediction (Baseline Logic)',
@@ -653,6 +695,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires a stable trend in the treatment phase."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.4',
   },
   {
     id: 'rr-verification', term: 'Verification (Baseline Logic)',
@@ -668,6 +711,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as prediction."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.4',
   },
   {
     id: 'rr-replication', term: 'Replication (Baseline Logic)',
@@ -683,6 +727,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Only refers to direct replication across studies."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.4',
   },
   {
     id: 'rr-component', term: 'Component Analysis',
@@ -698,6 +743,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is used to identify the function of a behavior."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.8',
   },
   {
     id: 'rr-parametric', term: 'Parametric Analysis',
@@ -713,6 +759,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Uses statistical tests to analyze data."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.8',
   },
   {
     id: 'rr-comparative', term: 'Comparative Analysis',
@@ -728,6 +775,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Identifies which components of a treatment are necessary."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.8',
   },
   {
     id: 'rr-treatment-package', term: 'Treatment Package Analysis',
@@ -743,6 +791,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is used to compare two different treatments."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.8',
   },
 
   // ── Assessment ─────────────────────────────────────────────────────────────
@@ -760,6 +809,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is sufficient as the sole basis for a function-based intervention."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'F.1',
   },
   {
     id: 'rr-descriptive', term: 'Descriptive Assessment',
@@ -775,6 +825,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is sufficient to confirm a functional relationship."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'F.5',
   },
   {
     id: 'rr-fa', term: 'Functional Analysis',
@@ -790,6 +841,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is less rigorous than descriptive assessment."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'F.6',
   },
   {
     id: 'rr-preference', term: 'Preference Assessment',
@@ -805,6 +857,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Only uses caregiver report."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'F.4',
   },
   {
     id: 'rr-topo-def', term: 'Topography-Based Definition',
@@ -820,6 +873,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is always preferred over function-based definitions."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'C.1',
   },
   {
     id: 'rr-func-def', term: 'Function-Based Definition',
@@ -835,6 +889,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Can only be written after a functional analysis is complete."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'C.1',
   },
   {
     id: 'rr-abc-narrative', term: 'ABC Narrative Recording',
@@ -850,6 +905,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Only records the behavior, not antecedents and consequences."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'C.2',
   },
   {
     id: 'rr-abc-continuous', term: 'ABC Continuous Recording',
@@ -865,6 +921,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is a form of interval recording."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'C.2',
   },
   {
     id: 'rr-scatter', term: 'Scatter Plot Assessment',
@@ -880,6 +937,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as ABC recording."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'F.5',
   },
   {
     id: 'rr-habituation', term: 'Habituation',
@@ -895,6 +953,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires prior conditioning to occur."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'B.3',
   },
   {
     id: 'rr-respondent-extinction', term: 'Respondent Extinction',
@@ -910,6 +969,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Involves the discontinuation of reinforcement."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'B.11',
   },
   {
     id: 'rr-stim-class', term: 'Stimulus Class',
@@ -925,6 +985,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is defined by the topography of the stimuli."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'B.2',
   },
   {
     id: 'rr-resp-class', term: 'Response Class',
@@ -940,6 +1001,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is defined by the setting in which responses occur."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'B.1',
   },
 
   // ── Behavior-Change Procedures ─────────────────────────────────────────────
@@ -957,6 +1019,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires the terminal behavior to already be in the repertoire."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.11',
   },
   {
     id: 'rr-chaining', term: 'Chaining (Forward/Backward)',
@@ -972,6 +1035,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Backward chaining is less effective than forward chaining."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.12',
   },
   {
     id: 'rr-prompting', term: 'Prompting',
@@ -987,6 +1051,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Should be maintained indefinitely to ensure correct responding."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.7',
   },
   {
     id: 'rr-fading', term: 'Fading',
@@ -1002,6 +1067,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is used to reduce the frequency of a behavior."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.8',
   },
   {
     id: 'rr-task-analysis', term: 'Task Analysis',
@@ -1017,6 +1083,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is only used for academic tasks."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.12',
   },
 
   // ── Dimensions of ABA ──────────────────────────────────────────────────────
@@ -1034,6 +1101,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as the \'effective\' dimension."',
     ],
     domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
   },
   {
     id: 'rr-behavioral', term: 'Behavioral (Dimension of ABA)',
@@ -1049,6 +1117,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as the \'analytic\' dimension."',
     ],
     domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
   },
   {
     id: 'rr-analytic', term: 'Analytic (Dimension of ABA)',
@@ -1064,6 +1133,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as the \'technological\' dimension."',
     ],
     domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
   },
   {
     id: 'rr-technological', term: 'Technological (Dimension of ABA)',
@@ -1079,6 +1149,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Means the procedures are evidence-based."',
     ],
     domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
   },
   {
     id: 'rr-conceptually-systematic', term: 'Conceptually Systematic (Dimension of ABA)',
@@ -1094,6 +1165,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires the use of a specific theoretical framework."',
     ],
     domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
   },
   {
     id: 'rr-effective', term: 'Effective (Dimension of ABA)',
@@ -1109,6 +1181,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Requires a control group to demonstrate effectiveness."',
     ],
     domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
   },
   {
     id: 'rr-generality', term: 'Generality (Dimension of ABA)',
@@ -1124,6 +1197,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as the \'effective\' dimension."',
     ],
     domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
   },
 
   // ── Domain A: Behaviorism & Philosophical Foundations ─────────────────────
@@ -1141,6 +1215,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Selectionism is the same as determinism."',
     ],
     domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.2',
   },
   {
     id: 'rr-determinism', term: 'Determinism',
@@ -1156,6 +1231,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Determinism is the same as fatalism."',
     ],
     domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.2',
   },
   {
     id: 'rr-empiricism', term: 'Empiricism',
@@ -1171,6 +1247,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Empiricism is the same as positivism."',
     ],
     domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.2',
   },
   {
     id: 'rr-parsimony', term: 'Parsimony',
@@ -1186,6 +1263,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Parsimony is the same as reductionism."',
     ],
     domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.2',
   },
   {
     id: 'rr-pragmatism', term: 'Pragmatism',
@@ -1201,6 +1279,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Pragmatism is the same as eclecticism."',
     ],
     domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.2',
   },
   {
     id: 'rr-radical-behaviorism', term: 'Radical Behaviorism',
@@ -1216,6 +1295,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Radical behaviorism denies that private events influence behavior."',
     ],
     domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.3',
   },
   {
     id: 'rr-methodological-behaviorism', term: 'Methodological Behaviorism',
@@ -1231,6 +1311,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Methodological behaviorism is the dominant philosophy in ABA."',
     ],
     domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.3',
   },
 
   // ── Domain B: Additional Concepts & Principles ────────────────────────────
@@ -1248,6 +1329,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Respondent conditioning is controlled by consequences."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.3',
   },
   {
     id: 'rr-automatic-reinforcement', term: 'Automatic Reinforcement',
@@ -1263,6 +1345,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Automatic reinforcement is the same as intrinsic motivation."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.6',
   },
   {
     id: 'rr-fixed-ratio', term: 'Fixed Ratio (FR) Schedule',
@@ -1278,6 +1361,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"FR-1 is the same as continuous reinforcement."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.9',
   },
   {
     id: 'rr-variable-ratio', term: 'Variable Ratio (VR) Schedule',
@@ -1293,6 +1377,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"VR schedules are the same as intermittent reinforcement."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.9',
   },
   {
     id: 'rr-fixed-interval', term: 'Fixed Interval (FI) Schedule',
@@ -1308,6 +1393,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"FI schedules are the same as DRL schedules."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.9',
   },
   {
     id: 'rr-variable-interval', term: 'Variable Interval (VI) Schedule',
@@ -1323,6 +1409,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"VI schedules are the same as FI schedules."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.9',
   },
   {
     id: 'rr-concurrent-schedules', term: 'Concurrent Schedules',
@@ -1338,6 +1425,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Concurrent schedules require a changeover delay to function."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.10',
   },
   {
     id: 'rr-multiple-schedule', term: 'Multiple Schedule',
@@ -1353,6 +1441,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Multiple schedules always produce behavioral contrast."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.10',
   },
   {
     id: 'rr-mixed-schedule', term: 'Mixed Schedule',
@@ -1368,6 +1457,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Mixed schedules require a changeover response."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.10',
   },
   {
     id: 'rr-chained-schedule', term: 'Chained Schedule',
@@ -1383,6 +1473,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Chained schedules do not involve conditioned reinforcement."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.10',
   },
   {
     id: 'rr-behavioral-contrast', term: 'Behavioral Contrast',
@@ -1398,6 +1489,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Behavioral contrast requires concurrent schedules."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.9',
   },
   {
     id: 'rr-matching-law', term: 'Matching Law',
@@ -1413,6 +1505,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"The matching law is the same as the law of effect."',
     ],
     domain: 'B', category: 'Schedules of Reinforcement',
+    taskItem: 'B.23',
   },
   {
     id: 'rr-rule-governed', term: 'Rule-Governed Behavior',
@@ -1428,6 +1521,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Rule-governed behavior is the same as instructional control."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.18',
   },
   {
     id: 'rr-contingency-shaped', term: 'Contingency-Shaped Behavior',
@@ -1443,6 +1537,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Contingency-shaped behavior is the same as automatic reinforcement."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.18',
   },
   {
     id: 'rr-echoic', term: 'Echoic',
@@ -1458,6 +1553,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Echoic behavior requires formal similarity between stimulus and response modality."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.19',
   },
   {
     id: 'rr-textual', term: 'Textual',
@@ -1473,6 +1569,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Textual behavior is a type of echoic."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.19',
   },
   {
     id: 'rr-transcription', term: 'Transcription',
@@ -1488,6 +1585,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Transcription is a type of intraverbal."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.19',
   },
   {
     id: 'rr-autoclitic', term: 'Autoclitic',
@@ -1503,6 +1601,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Autoclitic behavior is independent of other verbal operants."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.19',
   },
   {
     id: 'rr-listener-responding', term: 'Listener Responding',
@@ -1518,6 +1617,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Listener responding is a type of tact."',
     ],
     domain: 'B', category: 'Verbal Behavior',
+    taskItem: 'B.19',
   },
   {
     id: 'rr-behavioral-momentum', term: 'Behavioral Momentum',
@@ -1533,6 +1633,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Behavioral momentum is increased by intermittent reinforcement schedules."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.22',
   },
   {
     id: 'rr-imitation', term: 'Imitation',
@@ -1548,6 +1649,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Imitation is the same as observational learning."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.24',
   },
   {
     id: 'rr-observational-learning', term: 'Observational Learning',
@@ -1563,6 +1665,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Observational learning cannot be explained by behavioral principles."',
     ],
     domain: 'B', category: 'Core Concepts',
+    taskItem: 'B.24',
   },
 
   // ── Domain C: Additional Measurement Terms ────────────────────────────────
@@ -1580,6 +1683,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"An operational definition can include mentalistic language if the behavior is well-known."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.1',
   },
   {
     id: 'rr-direct-measure', term: 'Direct Measure',
@@ -1595,6 +1699,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Direct measures require continuous observation."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.2',
   },
   {
     id: 'rr-indirect-measure', term: 'Indirect Measure',
@@ -1610,6 +1715,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Indirect measures cannot be used in functional behavior assessments."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.2',
   },
   {
     id: 'rr-permanent-product', term: 'Permanent Product Recording',
@@ -1625,6 +1731,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Permanent product recording cannot be used for academic behaviors."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.2',
   },
   {
     id: 'rr-continuous-measurement', term: 'Continuous Measurement',
@@ -1640,6 +1747,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Continuous measurement is only feasible for low-rate behaviors."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.5',
   },
   {
     id: 'rr-count', term: 'Count (Occurrence)',
@@ -1655,6 +1763,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Count cannot be used for behaviors with variable duration."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.3',
   },
   {
     id: 'rr-ioa-types', term: 'IOA: Exact Count vs. Interval',
@@ -1670,6 +1779,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Exact count IOA is the most conservative measure of agreement."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.8',
   },
   {
     id: 'rr-celeration', term: 'Celeration',
@@ -1685,6 +1795,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Celeration can only be calculated on Standard Celeration Charts."',
     ],
     domain: 'C', category: 'Measurement',
+    taskItem: 'C.10',
   },
 
   // ── Domain D: Additional Research Design Terms ────────────────────────────
@@ -1702,6 +1813,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"The dependent variable is what the experimenter controls."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.1',
   },
   {
     id: 'rr-independent-variable', term: 'Independent Variable',
@@ -1717,6 +1829,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"The independent variable is the same as the antecedent stimulus."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.1',
   },
   {
     id: 'rr-internal-validity', term: 'Internal Validity',
@@ -1732,6 +1845,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Internal validity is the same as treatment integrity."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.2',
   },
   {
     id: 'rr-external-validity', term: 'External Validity',
@@ -1747,6 +1861,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"External validity is more important than internal validity in single-case research."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.2',
   },
   {
     id: 'rr-history-threat', term: 'History (Threat to Internal Validity)',
@@ -1762,6 +1877,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"History threats are controlled by using multiple baselines."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.3',
   },
   {
     id: 'rr-maturation-threat', term: 'Maturation (Threat to Internal Validity)',
@@ -1777,6 +1893,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Maturation threats are eliminated by using reversal designs."',
     ],
     domain: 'D', category: 'Research Designs',
+    taskItem: 'D.3',
   },
 
   // ── Domain E: Ethics & Professional Issues ────────────────────────────────
@@ -1794,6 +1911,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Beneficence means doing whatever the client requests."',
     ],
     domain: 'E', category: 'Ethics',
+    taskItem: 'E.1',
   },
   {
     id: 'rr-nonmaleficence', term: 'Nonmaleficence (Ethics)',
@@ -1809,6 +1927,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Nonmaleficence only applies to physical harm, not psychological harm."',
     ],
     domain: 'E', category: 'Ethics',
+    taskItem: 'E.1',
   },
   {
     id: 'rr-informed-consent', term: 'Informed Consent',
@@ -1824,6 +1943,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Informed consent is the same as assent."',
     ],
     domain: 'E', category: 'Ethics',
+    taskItem: 'E.4',
   },
   {
     id: 'rr-confidentiality', term: 'Confidentiality',
@@ -1839,6 +1959,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Confidentiality can always be waived if the client verbally agrees."',
     ],
     domain: 'E', category: 'Ethics',
+    taskItem: 'E.4',
   },
   {
     id: 'rr-multiple-relationships', term: 'Multiple Relationships',
@@ -1854,6 +1975,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Multiple relationships are acceptable if both parties agree in writing."',
     ],
     domain: 'E', category: 'Ethics',
+    taskItem: 'E.7',
   },
   {
     id: 'rr-cultural-humility', term: 'Cultural Humility',
@@ -1869,6 +1991,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Cultural humility only applies to clients from non-Western backgrounds."',
     ],
     domain: 'E', category: 'Ethics',
+    taskItem: 'E.9',
   },
   {
     id: 'rr-professional-competence', term: 'Professional Competence',
@@ -1884,6 +2007,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Professional competence does not require ongoing professional development."',
     ],
     domain: 'E', category: 'Ethics',
+    taskItem: 'E.3',
   },
   {
     id: 'rr-service-discontinuation', term: 'Service Discontinuation',
@@ -1899,6 +2023,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Service discontinuation can occur immediately without a transition plan."',
     ],
     domain: 'E', category: 'Ethics',
+    taskItem: 'E.6',
   },
 
   // ── Domain F: Additional Assessment Terms ─────────────────────────────────
@@ -1916,6 +2041,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Skill assessments do not require direct observation of the client."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'F.3',
   },
   {
     id: 'rr-cultural-variables', term: 'Cultural Variables in Assessment',
@@ -1931,6 +2057,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Cultural variables are addressed by translating assessment tools into the client\'s language."',
     ],
     domain: 'F', category: 'Assessment',
+    taskItem: 'F.2',
   },
 
   // ── Domain G: Additional Behavior-Change Procedure Terms ──────────────────
@@ -1948,6 +2075,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Token economies are only effective for children with autism."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.4',
   },
   {
     id: 'rr-errorless-learning', term: 'Errorless Learning',
@@ -1963,6 +2091,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Errorless learning is less effective than trial-and-error learning for all learners."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.7',
   },
   {
     id: 'rr-prompt-delay', term: 'Prompt Delay',
@@ -1978,6 +2107,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Prompt delay is only used with verbal prompts."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.8',
   },
   {
     id: 'rr-schedule-thinning', term: 'Schedule Thinning',
@@ -1993,6 +2123,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Schedule thinning is only used during the maintenance phase."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.16',
   },
   {
     id: 'rr-group-contingency', term: 'Group Contingency',
@@ -2008,6 +2139,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Group contingencies are only appropriate for classroom settings."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.14',
   },
   {
     id: 'rr-response-cost', term: 'Response Cost',
@@ -2023,6 +2155,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Response cost can only be used within a token economy."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.17',
   },
   {
     id: 'rr-overcorrection', term: 'Overcorrection',
@@ -2038,6 +2171,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Overcorrection is always unethical and should never be used."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.17',
   },
   {
     id: 'rr-time-out', term: 'Time-Out from Positive Reinforcement',
@@ -2053,6 +2187,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Time-out is effective regardless of whether the environment contains reinforcement."',
     ],
     domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.17',
   },
 
   // ── Domain H: Selecting & Implementing Interventions ─────────────────────
@@ -2070,6 +2205,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Observable goals do not need to specify the conditions under which behavior will occur."',
     ],
     domain: 'H', category: 'Intervention',
+    taskItem: 'H.1',
   },
   {
     id: 'rr-socially-valid-goal', term: 'Socially Valid Goal',
@@ -2085,6 +2221,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Social validity is the same as treatment acceptability."',
     ],
     domain: 'H', category: 'Intervention',
+    taskItem: 'H.3',
   },
   {
     id: 'rr-treatment-integrity', term: 'Treatment Integrity',
@@ -2100,6 +2237,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Treatment integrity is the same as social validity."',
     ],
     domain: 'H', category: 'Intervention',
+    taskItem: 'H.6',
   },
   {
     id: 'rr-data-based-decision', term: 'Data-Based Decision Making',
@@ -2115,6 +2253,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Data-based decisions are only made at scheduled review meetings."',
     ],
     domain: 'H', category: 'Intervention',
+    taskItem: 'H.7',
   },
   {
     id: 'rr-relapse-prevention', term: 'Relapse Prevention (H.5)',
@@ -2130,6 +2269,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Relapse prevention is only addressed after the behavior has recurred."',
     ],
     domain: 'H', category: 'Intervention',
+    taskItem: 'H.5',
   },
   {
     id: 'rr-unwanted-effects', term: 'Unwanted Effects of Behavior-Change Procedures',
@@ -2145,6 +2285,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Unwanted effects are always temporary and self-correcting."',
     ],
     domain: 'H', category: 'Intervention',
+    taskItem: 'H.4',
   },
 
   // ── Domain I: Personnel Supervision & Management ──────────────────────────
@@ -2162,6 +2303,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"A supervisory contract does not need to specify evaluation criteria."',
     ],
     domain: 'I', category: 'Supervision',
+    taskItem: 'I.2',
   },
   {
     id: 'rr-performance-management', term: 'Performance Management',
@@ -2177,6 +2319,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Performance management is only applicable in organizational settings."',
     ],
     domain: 'I', category: 'Supervision',
+    taskItem: 'I.5',
   },
   {
     id: 'rr-behavioral-skills-training', term: 'Behavioral Skills Training (BST)',
@@ -2192,6 +2335,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"BST is the same as competency-based training."',
     ],
     domain: 'I', category: 'Supervision',
+    taskItem: 'I.5',
   },
   {
     id: 'rr-equity-supervision', term: 'Equity in Supervision',
@@ -2207,6 +2351,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Equity in supervision is the same as equality in supervision."',
     ],
     domain: 'I', category: 'Supervision',
+    taskItem: 'I.3',
   },
   {
     id: 'rr-supervision-goals', term: 'Supervision Goals',
@@ -2222,6 +2367,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Supervision goals do not need to be reassessed once established."',
     ],
     domain: 'I', category: 'Supervision',
+    taskItem: 'I.4',
   },
   {
     id: 'rr-function-based-supervision', term: 'Function-Based Approach to Supervision',
@@ -2237,6 +2383,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"A function-based approach is only used when a supervisee is performing poorly."',
     ],
     domain: 'I', category: 'Supervision',
+    taskItem: 'I.6',
   },
 
 ];

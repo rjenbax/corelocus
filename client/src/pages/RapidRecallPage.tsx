@@ -169,8 +169,9 @@ export default function RapidRecallPage() {
         </header>
 
         <div className="container py-8 max-w-2xl mx-auto">
-          <div className="mb-2 text-xs font-medium text-amber-600 uppercase tracking-wider">
-            {currentItem.category} · Domain {currentItem.domain}
+          <div className="mb-2 flex items-center gap-2">
+            <span className="text-xs font-medium text-amber-600 uppercase tracking-wider">{currentItem.category} · Domain {currentItem.domain}</span>
+            <span className="text-[11px] font-bold text-white bg-amber-500 px-2 py-0.5 rounded-full">{currentItem.taskItem}</span>
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-8">
             What is the correct definition of <span className="text-amber-600">{currentItem.term}</span>?
@@ -408,7 +409,10 @@ export default function RapidRecallPage() {
                 key={item.id}
                 className="p-3 rounded-lg border border-border bg-card hover:border-amber-300 transition-colors"
               >
-                <div className="text-xs text-muted-foreground mb-1">{item.category}</div>
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-xs text-muted-foreground">{item.category}</span>
+                  <span className="text-[10px] font-bold text-amber-600 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">{item.taskItem}</span>
+                </div>
                 <div className="text-sm font-semibold text-foreground leading-tight">{item.term}</div>
                 {acc !== null && (
                   <div className={cn("text-xs mt-1 font-medium", acc >= 70 ? "text-green-600" : "text-red-500")}>
