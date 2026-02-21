@@ -3,7 +3,9 @@
  * Design: Academic Warmth — editorial results report with domain breakdown
  */
 import { useLocation } from 'wouter';
+import { useEffect } from 'react';
 import { useExam } from '@/contexts/ExamContext';
+import { useProgress } from '@/contexts/ProgressContext';
 import { allQuestions, domainInfo, phaseInfo } from '@/data/allQuestions';
 import { Brain, RotateCcw, Home, CheckCircle2, XCircle, BookOpen, TrendingUp, Award } from 'lucide-react';
 
@@ -84,9 +86,18 @@ export default function ResultsPage() {
   const totalQuestions = allQuestions.length;
   const overallPct = totalAnswered > 0 ? Math.round((state.score / totalAnswered) * 100) : 0;
 
+  const { recordExamCompletion } = useProgress();
+  // Record completion once when results page mounts
+  useEffect(() => {
+    if (totalAnswered > 0) {
+      recordExamCompletion(overallPct, totalQuestions);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const handleRestart = () => {
     restartExam();
-    navigate('/');
+    navigate('/exam-hub');
   };
 
   const handleReview = () => {
@@ -286,7 +297,7 @@ export default function ResultsPage() {
             className="flex items-center gap-2 bg-card border border-border text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-muted transition-colors"
           >
             <Home className="w-4 h-4" />
-            Back to Home
+            Back to Dashboard
           </button>
         </div>
       </div>
