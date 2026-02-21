@@ -32,10 +32,10 @@ const TIERS: TierConfig[] = [
     icon: Layers,
     route: '/flashcards',
     bloomsLevel: 'Recall terms',
-    color: 'text-blue-700',
-    bgColor: 'bg-blue-50',
-    borderColor: 'border-blue-200',
-    pillColor: 'bg-blue-100 text-blue-700',
+    color: 'text-violet-700',
+    bgColor: 'bg-violet-50',
+    borderColor: 'border-violet-200',
+    pillColor: 'bg-violet-100 text-violet-700',
   },
   {
     tier: 2,
@@ -45,10 +45,10 @@ const TIERS: TierConfig[] = [
     icon: Zap,
     route: '/rapid-recall',
     bloomsLevel: 'Recall under pressure',
-    color: 'text-amber-700',
-    bgColor: 'bg-amber-50',
-    borderColor: 'border-amber-200',
-    pillColor: 'bg-amber-100 text-amber-700',
+    color: 'text-teal-700',
+    bgColor: 'bg-teal-50',
+    borderColor: 'border-teal-200',
+    pillColor: 'bg-teal-100 text-teal-700',
   },
   {
     tier: 3,
@@ -71,10 +71,10 @@ const TIERS: TierConfig[] = [
     icon: GitMerge,
     route: '/venn',
     bloomsLevel: 'Compare & contrast',
-    color: 'text-purple-700',
-    bgColor: 'bg-purple-50',
-    borderColor: 'border-purple-200',
-    pillColor: 'bg-purple-100 text-purple-700',
+    color: 'text-violet-800',
+    bgColor: 'bg-violet-50',
+    borderColor: 'border-violet-200',
+    pillColor: 'bg-violet-100 text-violet-800',
   },
   {
     tier: 5,
@@ -84,10 +84,10 @@ const TIERS: TierConfig[] = [
     icon: Brain,
     route: '/scenario-justification',
     bloomsLevel: 'Justify your answer',
-    color: 'text-rose-700',
-    bgColor: 'bg-rose-50',
-    borderColor: 'border-rose-200',
-    pillColor: 'bg-rose-100 text-rose-700',
+    color: 'text-teal-800',
+    bgColor: 'bg-teal-50',
+    borderColor: 'border-teal-200',
+    pillColor: 'bg-teal-100 text-teal-800',
   },
   {
     tier: 6,
@@ -235,7 +235,7 @@ export default function Dashboard() {
                       "hover:shadow-md hover:-translate-y-0.5",
                       tier.borderColor,
                       tier.bgColor,
-                      isComplete && "ring-2 ring-offset-1 ring-green-400/50"
+                      isComplete && "ring-2 ring-offset-1 ring-violet-400/50"
                     )}
                   >
                     <div className="flex items-start gap-4">
@@ -258,7 +258,7 @@ export default function Dashboard() {
                             <div className="flex items-center gap-2 mb-0.5">
                               <Icon className={cn("w-4 h-4", tier.color)} />
                               <h3 className="font-bold text-foreground text-base">{tier.title}</h3>
-                              {isComplete && <CheckCircle2 className="w-4 h-4 text-green-500" />}
+                              {isComplete && <CheckCircle2 className="w-4 h-4 text-violet-600" />}
                             </div>
                             <p className="text-xs text-muted-foreground">{tier.subtitle}</p>
                           </div>
@@ -279,11 +279,11 @@ export default function Dashboard() {
                           <div className="flex-1 h-1.5 bg-white/60 rounded-full overflow-hidden border border-white/80">
                             <div
                               className={cn("h-full rounded-full transition-all duration-500", {
-                                'bg-blue-500': tier.tier === 1,
-                                'bg-amber-500': tier.tier === 2,
+                                'bg-violet-600': tier.tier === 1,
+                                'bg-teal-600': tier.tier === 2,
                                 'bg-teal-500': tier.tier === 3,
-                                'bg-purple-500': tier.tier === 4,
-                                'bg-rose-500': tier.tier === 5,
+                                'bg-violet-700': tier.tier === 4,
+                                'bg-teal-700': tier.tier === 5,
                                 'bg-primary': tier.tier === 6,
                               })}
                               style={{ width: `${pct}%` }}
@@ -335,7 +335,7 @@ export default function Dashboard() {
           {/* Footer note */}
           <div className="mt-10 p-4 bg-muted/40 rounded-lg border border-border">
             <div className="flex items-start gap-2.5">
-              <Trophy className="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" />
+              <Trophy className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="text-sm font-medium text-foreground mb-0.5">Complete all 6 tiers for full BCBA preparation</p>
                 <p className="text-xs text-muted-foreground">

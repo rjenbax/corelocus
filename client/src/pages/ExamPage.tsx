@@ -177,7 +177,7 @@ export default function ExamPage() {
                                 ? 'ring-2 ring-primary bg-primary text-primary-foreground'
                                 : answered
                                 ? correct
-                                  ? 'bg-green-100 text-green-800 border border-green-300'
+                                  ? 'bg-violet-100 text-violet-800 border border-violet-300'
                                   : 'bg-red-100 text-red-800 border border-red-300'
                                 : 'bg-muted text-muted-foreground hover:bg-accent'
                             }`}
@@ -270,8 +270,8 @@ export default function ExamPage() {
             </div>
 
             {/* Scenario box */}
-            <div className="bg-amber-50/60 border border-amber-200/70 rounded-xl p-5 mb-5">
-              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-2">Clinical Scenario</p>
+            <div className="bg-teal-50/60 border border-teal-200/70 rounded-xl p-5 mb-5">
+              <p className="text-xs font-semibold text-teal-800 uppercase tracking-wide mb-2">Clinical Scenario</p>
               <p className="case-text text-sm">{currentQuestion.scenario}</p>
             </div>
 
@@ -303,7 +303,7 @@ export default function ExamPage() {
                   >
                     <span className={`w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold mt-0.5 ${
                       isRevealed && choice.letter === currentQuestion.correctAnswer
-                        ? 'bg-green-600 text-white'
+                        ? 'bg-violet-700 text-white'
                         : isRevealed && choice.letter === selectedAnswer && choice.letter !== currentQuestion.correctAnswer
                         ? 'bg-red-500 text-white'
                         : choice.letter === selectedAnswer
@@ -314,7 +314,7 @@ export default function ExamPage() {
                     </span>
                     <span className="text-sm leading-relaxed text-foreground">{choice.text}</span>
                     {isRevealed && choice.letter === currentQuestion.correctAnswer && (
-                      <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 ml-auto mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-violet-700 flex-shrink-0 ml-auto mt-0.5" />
                     )}
                     {isRevealed && choice.letter === selectedAnswer && choice.letter !== currentQuestion.correctAnswer && (
                       <XCircle className="w-4 h-4 text-red-500 flex-shrink-0 ml-auto mt-0.5" />
@@ -336,13 +336,13 @@ export default function ExamPage() {
             )}
 
             {isRevealed && (
-              <div className={`rounded-xl p-5 mb-5 border ${isCorrect ? 'bg-green-50/70 border-green-200' : 'bg-red-50/60 border-red-200'}`}>
+              <div className={`rounded-xl p-5 mb-5 border ${isCorrect ? 'bg-violet-50/70 border-violet-200' : 'bg-red-50/60 border-red-200'}`}>
                 <div className="flex items-center gap-2 mb-2">
                   {isCorrect
-                    ? <CheckCircle2 className="w-4 h-4 text-green-600" />
+                    ? <CheckCircle2 className="w-4 h-4 text-violet-700" />
                     : <XCircle className="w-4 h-4 text-red-500" />
                   }
-                  <span className={`text-sm font-semibold ${isCorrect ? 'text-green-700' : 'text-red-600'}`}>
+                  <span className={`text-sm font-semibold ${isCorrect ? 'text-violet-800' : 'text-red-600'}`}>
                     {isCorrect ? 'Correct!' : `Incorrect — Correct answer: ${currentQuestion.correctAnswer.toUpperCase()}`}
                   </span>
                 </div>
@@ -364,7 +364,7 @@ export default function ExamPage() {
               <div className="flex items-center gap-2">
                 {isAnswered && (
                   <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                    isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'
+                    isCorrect ? 'bg-violet-100 text-violet-800' : 'bg-red-100 text-red-600'
                   }`}>
                     {isCorrect ? '✓ Correct' : '✗ Incorrect'}
                   </span>

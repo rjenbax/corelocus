@@ -147,8 +147,8 @@ export default function ResultsPage() {
             <div className="md:col-span-2">
               <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-semibold mb-4 ${
                 passingScore
-                  ? 'bg-green-100 text-green-700 border border-green-200'
-                  : 'bg-amber-100 text-amber-700 border border-amber-200'
+                  ? 'bg-violet-100 text-violet-800 border border-violet-200'
+                  : 'bg-teal-100 text-teal-800 border border-teal-200'
               }`}>
                 {passingScore ? <Award className="w-4 h-4" /> : <TrendingUp className="w-4 h-4" />}
                 {passingScore ? 'Strong Performance' : 'Keep Studying'}
@@ -162,7 +162,7 @@ export default function ResultsPage() {
               </p>
               <div className="flex flex-wrap gap-4 text-sm">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-green-600" />
+                  <CheckCircle2 className="w-4 h-4 text-violet-700" />
                   <span className="font-semibold text-foreground">{state.score}</span>
                   <span className="text-muted-foreground">correct</span>
                 </div>
@@ -236,9 +236,9 @@ export default function ResultsPage() {
 
         {/* Study recommendations */}
         {weakDomains.length > 0 && (
-          <div className="bg-amber-50/60 border border-amber-200 rounded-xl p-5 mb-6">
+          <div className="bg-teal-50/60 border border-teal-200 rounded-xl p-5 mb-6">
             <h2 className="font-bold text-foreground mb-3 flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-amber-600" />
+              <TrendingUp className="w-4 h-4 text-teal-700" />
               Priority Study Areas
             </h2>
             <p className="text-sm text-muted-foreground case-text mb-3">
@@ -263,20 +263,20 @@ export default function ResultsPage() {
 
         {/* Strong domains */}
         {strongDomains.length > 0 && (
-          <div className="bg-green-50/60 border border-green-200 rounded-xl p-5 mb-6">
+          <div className="bg-violet-50/60 border border-violet-200 rounded-xl p-5 mb-6">
             <h2 className="font-bold text-foreground mb-3 flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-green-600" />
+              <CheckCircle2 className="w-4 h-4 text-violet-700" />
               Strengths
             </h2>
             <div className="flex flex-wrap gap-2">
               {strongDomains.map(d => (
                 <div
                   key={d.domain}
-                  className="flex items-center gap-1.5 bg-white border border-green-200 rounded-full px-3 py-1 text-xs font-medium text-green-800"
+                  className="flex items-center gap-1.5 bg-white border border-violet-200 rounded-full px-3 py-1 text-xs font-medium text-violet-800"
                 >
                   <span className="font-bold">{d.domain}</span>
                   <span>{d.domainName.split(' ').slice(0, 2).join(' ')}</span>
-                  <span className="text-green-600">· {d.percentage}%</span>
+                  <span className="text-violet-700">· {d.percentage}%</span>
                 </div>
               ))}
             </div>

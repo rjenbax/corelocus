@@ -144,13 +144,13 @@ const STATUS_STYLES: Record<StatusLevel, { cell: string; dot: string; label: str
     label: 'Seen',
   },
   learning: {
-    cell: 'bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100',
-    dot: 'bg-amber-400',
+    cell: 'bg-teal-50 border-teal-200 text-teal-800 hover:bg-teal-100',
+    dot: 'bg-teal-500',
     label: 'Learning',
   },
   strong: {
-    cell: 'bg-green-50 border-green-200 text-green-700 hover:bg-green-100',
-    dot: 'bg-green-500',
+    cell: 'bg-violet-50 border-violet-200 text-violet-800 hover:bg-violet-100',
+    dot: 'bg-violet-600',
     label: 'Strong',
   },
 };
@@ -192,11 +192,11 @@ export default function TaskItemProgress() {
             <span className="text-muted-foreground">Seen ({counts.seen})</span>
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-amber-400 inline-block" />
+            <span className="w-2 h-2 rounded-full bg-teal-500 inline-block" />
             <span className="text-muted-foreground">Learning ({counts.learning})</span>
           </span>
           <span className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
+            <span className="w-2 h-2 rounded-full bg-violet-600 inline-block" />
             <span className="text-muted-foreground">Strong ({counts.strong})</span>
           </span>
         </div>
@@ -206,7 +206,7 @@ export default function TaskItemProgress() {
       <div className="px-5 py-3 bg-muted/20 border-b border-border flex items-center gap-3">
         <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
           <div
-            className="h-full bg-green-500 rounded-full transition-all duration-500"
+            className="h-full bg-violet-600 rounded-full transition-all duration-500"
             style={{ width: `${masteredPct}%` }}
           />
         </div>
@@ -242,7 +242,7 @@ export default function TaskItemProgress() {
                 <div className="hidden sm:flex items-center gap-2">
                   <div className="w-20 h-1.5 bg-muted rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-green-500 rounded-full transition-all duration-500"
+                      className="h-full bg-violet-600 rounded-full transition-all duration-500"
                       style={{ width: `${domainPct}%` }}
                     />
                   </div>

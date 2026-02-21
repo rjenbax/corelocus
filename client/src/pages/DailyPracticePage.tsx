@@ -212,7 +212,7 @@ function FlashcardQuestion({ item, onNext }: { item: FlashcardItem; onNext: (kne
           </button>
           <button
             onClick={() => onNext(true)}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-green-200 bg-green-50 text-green-700 font-medium text-sm hover:bg-green-100 transition-colors"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-violet-200 bg-violet-50 text-violet-800 font-medium text-sm hover:bg-violet-100 transition-colors"
           >
             <CheckCircle2 className="w-4 h-4" /> Got It
           </button>
@@ -233,8 +233,8 @@ function RapidRecallQuestion({ item, onNext }: { item: RapidRecallItem; onNext: 
   return (
     <div className="flex flex-col gap-5 w-full max-w-lg">
       <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide text-center">Rapid Recall · {item.taskCode}</div>
-      <div className="rounded-2xl border-2 border-amber-200 bg-amber-50 p-6 text-center">
-        <p className="text-xs text-amber-600 font-medium mb-2 uppercase tracking-wide">What is the definition of…</p>
+      <div className="rounded-2xl border-2 border-teal-200 bg-teal-50 p-6 text-center">
+        <p className="text-xs text-teal-700 font-medium mb-2 uppercase tracking-wide">What is the definition of…</p>
         <h2 className="text-xl font-bold text-foreground">{item.term}</h2>
       </div>
       <div className="space-y-2.5">
@@ -252,7 +252,7 @@ function RapidRecallQuestion({ item, onNext }: { item: RapidRecallItem; onNext: 
               className={cn(
                 "w-full text-left px-4 py-3.5 rounded-xl border-2 text-sm leading-relaxed transition-all duration-200",
                 !submitted && "border-border bg-card hover:border-primary/40 hover:bg-primary/5",
-                submitted && isCorrect && "border-green-400 bg-green-50 text-green-800",
+                submitted && isCorrect && "border-violet-400 bg-violet-50 text-violet-800",
                 submitted && isSelected && !isCorrect && "border-red-400 bg-red-50 text-red-800",
                 submitted && !isSelected && !isCorrect && "border-border bg-card opacity-50",
               )}
@@ -299,7 +299,7 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
               className={cn(
                 "w-full text-left px-4 py-3.5 rounded-xl border-2 text-sm leading-relaxed transition-all duration-200",
                 !submitted && "border-border bg-card hover:border-teal-400/60 hover:bg-teal-50/60",
-                submitted && isCorrect && "border-green-400 bg-green-50 text-green-800",
+                submitted && isCorrect && "border-violet-400 bg-violet-50 text-violet-800",
                 submitted && isSelected && !isCorrect && "border-red-400 bg-red-50 text-red-800",
                 submitted && !isSelected && !isCorrect && "border-border bg-card opacity-50",
               )}
@@ -314,7 +314,7 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
                 <p className="mt-2 text-xs text-red-600 italic pl-7">{s.explanation}</p>
               )}
               {submitted && isCorrect && (isSelected || true) && isSelected && (
-                <p className="mt-2 text-xs text-green-600 italic pl-7">{s.explanation}</p>
+                <p className="mt-2 text-xs text-violet-700 italic pl-7">{s.explanation}</p>
               )}
             </button>
           );
@@ -390,7 +390,7 @@ export default function DailyPracticePage() {
           <div className="max-w-md w-full text-center">
             <div className={cn(
               "w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black",
-              pct >= 80 ? "bg-green-100 text-green-700" : pct >= 50 ? "bg-amber-100 text-amber-700" : "bg-red-100 text-red-700"
+              pct >= 80 ? "bg-violet-100 text-violet-800" : pct >= 50 ? "bg-teal-100 text-teal-800" : "bg-red-100 text-red-700"
             )}>
               {pct}%
             </div>
@@ -410,9 +410,9 @@ export default function DailyPracticePage() {
                 return (
                   <div key={i} className={cn(
                     "flex items-center gap-3 px-4 py-3 rounded-xl border-2 text-sm",
-                    r.correct ? "border-green-200 bg-green-50" : "border-red-200 bg-red-50"
+                    r.correct ? "border-violet-200 bg-violet-50" : "border-red-200 bg-red-50"
                   )}>
-                    <Icon className={cn("w-4 h-4 flex-shrink-0", r.correct ? "text-green-600" : "text-red-500")} />
+                    <Icon className={cn("w-4 h-4 flex-shrink-0", r.correct ? "text-violet-700" : "text-red-500")} />
                     <span className="flex-1 font-medium text-foreground">
                       {item.type === 'flashcard' ? (item as FlashcardItem).term
                         : item.type === 'rapid-recall' ? (item as RapidRecallItem).term
@@ -420,7 +420,7 @@ export default function DailyPracticePage() {
                     </span>
                     <span className="text-xs text-muted-foreground">{TOOL_LABELS[r.type]}</span>
                     {r.correct
-                      ? <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                      ? <CheckCircle2 className="w-4 h-4 text-violet-600 flex-shrink-0" />
                       : <XCircle className="w-4 h-4 text-red-400 flex-shrink-0" />
                     }
                   </div>
@@ -474,12 +474,12 @@ export default function DailyPracticePage() {
       </header>
 
       {/* Weak task items banner */}
-      <div className="border-b border-border bg-amber-50/60">
+      <div className="border-b border-border bg-teal-50/60">
         <div className="container py-2.5 flex items-center gap-2 flex-wrap">
-          <Target className="w-3.5 h-3.5 text-amber-600 flex-shrink-0" />
-          <span className="text-xs text-amber-700 font-medium">Targeting your weakest task items:</span>
+          <Target className="w-3.5 h-3.5 text-teal-700 flex-shrink-0" />
+          <span className="text-xs text-teal-800 font-medium">Targeting your weakest task items:</span>
           {weakCodes.map(code => (
-            <span key={code} className="text-xs font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-700 border border-amber-200">
+            <span key={code} className="text-xs font-bold px-2 py-0.5 rounded bg-teal-100 text-teal-800 border border-teal-200">
               {code}
             </span>
           ))}

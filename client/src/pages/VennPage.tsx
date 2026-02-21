@@ -32,7 +32,7 @@ const ZONE_CONFIG: Record<Exclude<Zone, 'unplaced'>, { label: string; color: str
   },
   shared: {
     label: 'Both / Shared',
-    color: 'text-emerald-700',
+    color: 'text-violet-800',
     bg: 'bg-emerald-50',
     border: 'border-emerald-200',
     headerBg: 'bg-emerald-100',
@@ -56,12 +56,12 @@ const ZONE_CONFIG: Record<Exclude<Zone, 'unplaced'>, { label: string; color: str
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; border: string; pill: string }> = {
   'Tier 1 – High Confusion': { bg: 'bg-red-50', text: 'text-red-700', border: 'border-red-200', pill: 'bg-red-100 text-red-700' },
   'Behavior Reduction': { bg: 'bg-orange-50', text: 'text-orange-700', border: 'border-orange-200', pill: 'bg-orange-100 text-orange-700' },
-  'Tier 2 – Moderate Confusion': { bg: 'bg-amber-50', text: 'text-amber-700', border: 'border-amber-200', pill: 'bg-amber-100 text-amber-700' },
+  'Tier 2 – Moderate Confusion': { bg: 'bg-teal-50', text: 'text-teal-800', border: 'border-teal-200', pill: 'bg-teal-100 text-teal-800' },
   'Research & Design': { bg: 'bg-blue-50', text: 'text-blue-700', border: 'border-blue-200', pill: 'bg-blue-100 text-blue-700' },
   'Verbal Behavior + Stimulus Control': { bg: 'bg-purple-50', text: 'text-purple-700', border: 'border-purple-200', pill: 'bg-purple-100 text-purple-700' },
   'Tier 3 – Subtle Distinction': { bg: 'bg-teal-50', text: 'text-teal-700', border: 'border-teal-200', pill: 'bg-teal-100 text-teal-700' },
   'Measurement': { bg: 'bg-cyan-50', text: 'text-cyan-700', border: 'border-cyan-200', pill: 'bg-cyan-100 text-cyan-700' },
-  'Skill Acquisition': { bg: 'bg-emerald-50', text: 'text-emerald-700', border: 'border-emerald-200', pill: 'bg-emerald-100 text-emerald-700' },
+  'Skill Acquisition': { bg: 'bg-emerald-50', text: 'text-violet-800', border: 'border-emerald-200', pill: 'bg-emerald-100 text-violet-800' },
   'Ethics & Supervision': { bg: 'bg-violet-50', text: 'text-violet-700', border: 'border-violet-200', pill: 'bg-violet-100 text-violet-700' },
 };
 const DEFAULT_COLORS = { bg: 'bg-muted/30', text: 'text-foreground', border: 'border-border', pill: 'bg-muted text-foreground' };
@@ -191,7 +191,7 @@ export default function VennPage() {
   // ── GRID VIEW ──────────────────────────────────────────────────────────────
   if (view === 'grid') {
     return (
-      <div className="min-h-screen bg-[#FAF8F4]">
+      <div className="min-h-screen bg-[#F8FAFC]">
         <header className="border-b border-slate-200 bg-white sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 flex items-center justify-between h-14">
             <div className="flex items-center gap-3">
@@ -201,7 +201,7 @@ export default function VennPage() {
               </button>
               <span className="text-slate-200">|</span>
               <div className="flex items-center gap-2">
-                <GitMerge className="w-4 h-4 text-purple-600" />
+                <GitMerge className="w-4 h-4 text-violet-700" />
                 <span className="font-semibold text-sm text-slate-800">Venn Diagram</span>
                 <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">Tier 4</span>
               </div>
@@ -225,7 +225,7 @@ export default function VennPage() {
                 className={cn(
                   'flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
                   selectedCategory === 'ALL'
-                    ? 'bg-purple-600 text-white border-purple-600 shadow-sm'
+                    ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
                     : 'bg-white text-slate-500 border-slate-200 hover:border-purple-300 hover:text-purple-700 hover:bg-purple-50'
                 )}
               >
@@ -245,7 +245,7 @@ export default function VennPage() {
                     className={cn(
                       'flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
                       isActive
-                        ? 'bg-purple-600 text-white border-purple-600 shadow-sm'
+                        ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
                         : 'bg-white text-slate-500 border-slate-200 hover:border-purple-300 hover:text-purple-700 hover:bg-purple-50'
                     )}
                   >
@@ -278,7 +278,7 @@ export default function VennPage() {
                   <div className={cn('text-xs mb-2', cc.text)}>{pair.category}</div>
                   <div className="font-bold text-slate-800 text-sm leading-tight mb-1">{pair.conceptA}</div>
                   <div className="text-xs text-slate-500">vs {pair.conceptB}</div>
-                  {isCompleted && <div className="text-xs text-emerald-600 mt-2 font-medium">✓ Completed</div>}
+                  {isCompleted && <div className="text-xs text-violet-700 mt-2 font-medium">✓ Completed</div>}
                 </button>
               );
             })}
@@ -291,14 +291,14 @@ export default function VennPage() {
   // ── EXERCISE VIEW ──────────────────────────────────────────────────────────
   if (!currentItem) {
     return (
-      <div className="min-h-screen bg-[#FAF8F4] flex items-center justify-center">
+      <div className="min-h-screen bg-[#F8FAFC] flex items-center justify-center">
         <p className="text-slate-500">No item found.</p>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-[#FAF8F4]">
+    <div className="min-h-screen bg-[#F8FAFC]">
       {/* Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-20">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -347,9 +347,9 @@ export default function VennPage() {
 
           {/* Key Distinction — always visible in study mode, revealed after submit in sort mode */}
           {(mode === 'study' || showKeyDistinction) && (
-            <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
-              <p className="text-xs font-semibold text-amber-700 mb-1">Key Distinction</p>
-              <p className="text-sm text-amber-800">{currentItem.keyDistinction}</p>
+            <div className="mt-4 p-3 bg-teal-50 border border-teal-200 rounded-lg">
+              <p className="text-xs font-semibold text-teal-800 mb-1">Key Distinction</p>
+              <p className="text-sm text-teal-800">{currentItem.keyDistinction}</p>
             </div>
           )}
         </div>
@@ -373,7 +373,7 @@ export default function VennPage() {
             className={cn(
               'flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all',
               mode === 'sort'
-                ? 'bg-[#2D6A4F] text-white shadow-sm'
+                ? 'bg-violet-700 text-white shadow-sm'
                 : 'text-slate-500 hover:text-slate-800'
             )}
           >
@@ -402,7 +402,7 @@ export default function VennPage() {
             {/* Shared */}
             <div className="rounded-xl border-2 border-emerald-200 bg-emerald-50">
               <div className="px-4 py-2.5 bg-emerald-100 rounded-t-xl border-b border-emerald-200">
-                <p className="text-xs font-bold text-emerald-700 uppercase tracking-wide">Shared / Both</p>
+                <p className="text-xs font-bold text-violet-800 uppercase tracking-wide">Shared / Both</p>
               </div>
               <div className="p-3 space-y-2">
                 {currentItem.shared.map((f, i) => (
@@ -443,8 +443,8 @@ export default function VennPage() {
         {mode === 'sort' && !started ? (
           /* Sort Start Screen */
           <div className="bg-white rounded-xl border border-slate-200 p-8 text-center shadow-sm">
-            <div className="w-16 h-16 bg-[#2D6A4F]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Swords className="w-7 h-7 text-[#2D6A4F]" />
+            <div className="w-16 h-16 bg-violet-700/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Swords className="w-7 h-7 text-violet-700" />
             </div>
             <h2 className="text-lg font-bold text-slate-800 mb-2">Ready to Sort?</h2>
             <p className="text-slate-500 text-sm mb-4 max-w-md mx-auto">
@@ -459,7 +459,7 @@ export default function VennPage() {
                 </div>
               ))}
             </div>
-            <Button onClick={startItem} className="bg-[#2D6A4F] hover:bg-[#245A42] text-white px-8">
+            <Button onClick={startItem} className="bg-violet-700 hover:bg-violet-800 text-white px-8">
               Start Sorting
             </Button>
           </div>
@@ -469,15 +469,15 @@ export default function VennPage() {
             {submitted && score && (
               <div className={cn(
                 'rounded-xl border p-4 flex items-center justify-between',
-                score.correct === score.total ? 'bg-emerald-50 border-emerald-200' : 'bg-amber-50 border-amber-200'
+                score.correct === score.total ? 'bg-emerald-50 border-emerald-200' : 'bg-teal-50 border-teal-200'
               )}>
                 <div className="flex items-center gap-3">
                   {score.correct === score.total
-                    ? <Trophy className="w-6 h-6 text-emerald-600" />
-                    : <XCircle className="w-6 h-6 text-amber-600" />
+                    ? <Trophy className="w-6 h-6 text-violet-700" />
+                    : <XCircle className="w-6 h-6 text-teal-700" />
                   }
                   <div>
-                    <p className={cn('font-bold text-base', score.correct === score.total ? 'text-emerald-800' : 'text-amber-800')}>
+                    <p className={cn('font-bold text-base', score.correct === score.total ? 'text-emerald-800' : 'text-teal-800')}>
                       {score.correct === score.total ? 'Perfect Sort!' : `${score.correct} / ${score.total} correct`}
                     </p>
                     <p className="text-xs text-slate-500">
@@ -491,7 +491,7 @@ export default function VennPage() {
                   <Button variant="outline" size="sm" onClick={startItem} className="gap-1.5">
                     <RotateCcw className="w-3.5 h-3.5" /> Retry
                   </Button>
-                  <Button size="sm" onClick={handleNext} className="bg-[#2D6A4F] hover:bg-[#245A42] text-white">
+                  <Button size="sm" onClick={handleNext} className="bg-violet-700 hover:bg-violet-800 text-white">
                     Next →
                   </Button>
                 </div>
@@ -512,8 +512,8 @@ export default function VennPage() {
                       className={cn(
                         'px-3 py-2 rounded-lg border text-sm text-left transition-all',
                         selectedCard === card.id
-                          ? 'bg-[#2D6A4F] text-white border-[#2D6A4F] shadow-md scale-[1.02]'
-                          : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-[#2D6A4F] hover:bg-[#2D6A4F]/5'
+                          ? 'bg-violet-700 text-white border-violet-700 shadow-md scale-[1.02]'
+                          : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-violet-700 hover:bg-violet-700/5'
                       )}
                     >
                       {card.text}
@@ -576,7 +576,7 @@ export default function VennPage() {
                           >
                             {submitted && (
                               isCorrect
-                                ? <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                                ? <CheckCircle2 className="w-3.5 h-3.5 text-violet-700 shrink-0 mt-0.5" />
                                 : <XCircle className="w-3.5 h-3.5 text-rose-500 shrink-0 mt-0.5" />
                             )}
                             <span className="flex-1">{card.text}</span>
@@ -605,7 +605,7 @@ export default function VennPage() {
                     size="sm"
                     onClick={handleSubmit}
                     disabled={!allPlaced}
-                    className="bg-[#2D6A4F] hover:bg-[#245A42] text-white disabled:opacity-40"
+                    className="bg-violet-700 hover:bg-violet-800 text-white disabled:opacity-40"
                   >
                     Check Answers
                   </Button>

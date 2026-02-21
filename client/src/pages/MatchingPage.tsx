@@ -132,7 +132,7 @@ export default function MatchingPage() {
                   className={cn(
                     "w-full text-left p-4 rounded-xl border-2 text-sm leading-relaxed transition-all",
                     !showFeedback && "hover:border-teal-300 hover:bg-teal-50/50 cursor-pointer border-border bg-card",
-                    showFeedback && isThisCorrect && "border-green-400 bg-green-50",
+                    showFeedback && isThisCorrect && "border-violet-400 bg-violet-50",
                     showFeedback && isSelected && !isThisCorrect && "border-red-400 bg-red-50",
                     showFeedback && !isSelected && !isThisCorrect && "border-border bg-card opacity-50",
                   )}
@@ -142,10 +142,10 @@ export default function MatchingPage() {
                       {String.fromCharCode(65 + i)}
                     </span>
                     <span className={cn(
-                      showFeedback && isThisCorrect && "text-green-800",
+                      showFeedback && isThisCorrect && "text-violet-800",
                       showFeedback && isSelected && !isThisCorrect && "text-red-800",
                     )}>{scenario.text}</span>
-                    {showFeedback && isThisCorrect && <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 ml-auto mt-0.5" />}
+                    {showFeedback && isThisCorrect && <CheckCircle2 className="w-4 h-4 text-violet-700 flex-shrink-0 ml-auto mt-0.5" />}
                     {showFeedback && isSelected && !isThisCorrect && <XCircle className="w-4 h-4 text-red-600 flex-shrink-0 ml-auto mt-0.5" />}
                   </div>
                 </button>
@@ -157,16 +157,16 @@ export default function MatchingPage() {
             <div className="space-y-3">
               <div className={cn(
                 "p-4 rounded-xl border",
-                isCorrect ? "bg-green-50 border-green-200" : "bg-red-50 border-red-200"
+                isCorrect ? "bg-violet-50 border-violet-200" : "bg-red-50 border-red-200"
               )}>
-                <div className={cn("font-semibold text-sm mb-1", isCorrect ? "text-green-700" : "text-red-700")}>
+                <div className={cn("font-semibold text-sm mb-1", isCorrect ? "text-violet-800" : "text-red-700")}>
                   {isCorrect ? '✓ Correct!' : '✗ Not quite.'}
                 </div>
                 <p className="text-xs leading-relaxed text-muted-foreground">
                   {selectedScenario?.explanation ?? correctScenario.explanation}
                 </p>
                 {!isCorrect && (
-                  <p className="text-xs text-green-700 mt-2 font-medium">
+                  <p className="text-xs text-violet-800 mt-2 font-medium">
                     Correct: {correctScenario.text.substring(0, 80)}...
                   </p>
                 )}

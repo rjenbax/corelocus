@@ -145,7 +145,7 @@ export default function FlashcardsPage() {
             onClick={() => setShowMasteredOnly(s => !s)}
             className={cn(
               "text-xs px-2.5 py-1 rounded-full border transition-colors",
-              showMasteredOnly ? "bg-green-100 text-green-700 border-green-300" : "border-border text-muted-foreground"
+              showMasteredOnly ? "bg-violet-100 text-violet-800 border-violet-300" : "border-border text-muted-foreground"
             )}
           >
             {showMasteredOnly ? '✓ Mastered' : 'Show mastered'}
@@ -180,14 +180,14 @@ export default function FlashcardsPage() {
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">{currentCard.domainFull}</span>
                     {currentCard.taskCode && (
-                      <span className="text-[11px] font-bold text-amber-700 bg-amber-100 border border-amber-300 px-2 py-0.5 rounded-full">{currentCard.taskCode}</span>
+                      <span className="text-[11px] font-bold text-teal-800 bg-teal-100 border border-teal-300 px-2 py-0.5 rounded-full">{currentCard.taskCode}</span>
                     )}
                   </div>
                   <h2 className="text-2xl font-bold text-foreground text-center leading-tight mb-3">
                     {currentCard.term}
                   </h2>
                   {masteredIds.has(currentCard.id) && (
-                    <div className="flex items-center gap-1 text-green-600 text-xs mt-2">
+                    <div className="flex items-center gap-1 text-violet-700 text-xs mt-2">
                       <CheckCircle2 className="w-3.5 h-3.5" />
                       <span>Mastered</span>
                     </div>
@@ -205,7 +205,7 @@ export default function FlashcardsPage() {
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">Definition</span>
                     {currentCard.taskCode && (
-                      <span className="text-[11px] font-bold text-amber-700 bg-amber-100 border border-amber-300 px-2 py-0.5 rounded-full">{currentCard.taskCode}</span>
+                      <span className="text-[11px] font-bold text-teal-800 bg-teal-100 border border-teal-300 px-2 py-0.5 rounded-full">{currentCard.taskCode}</span>
                     )}
                   </div>
                   <p className="text-base text-foreground text-center leading-relaxed mb-4">
@@ -237,8 +237,8 @@ export default function FlashcardsPage() {
                 className={cn(
                   "flex items-center gap-1.5 text-sm font-medium rounded-lg px-5 py-2 transition-colors",
                   masteredIds.has(currentCard.id)
-                    ? "bg-green-100 text-green-700 border border-green-200 cursor-default"
-                    : "bg-green-600 text-white hover:bg-green-700"
+                    ? "bg-violet-100 text-violet-800 border border-violet-200 cursor-default"
+                    : "bg-violet-700 text-white hover:bg-violet-800"
                 )}
               >
                 <CheckCircle2 className="w-4 h-4" />

@@ -10,8 +10,8 @@ import { cn } from '@/lib/utils';
 
 const LIFECYCLE_PHASES = [
   { name: 'Assessment', questions: '1–40', color: 'bg-blue-100 text-blue-700 border-blue-200' },
-  { name: 'Functional Behavior Assessment', questions: '41–80', color: 'bg-amber-100 text-amber-700 border-amber-200' },
-  { name: 'Treatment Planning', questions: '81–110', color: 'bg-green-100 text-green-700 border-green-200' },
+  { name: 'Functional Behavior Assessment', questions: '41–80', color: 'bg-teal-100 text-teal-800 border-teal-200' },
+  { name: 'Treatment Planning', questions: '81–110', color: 'bg-violet-100 text-violet-800 border-violet-200' },
   { name: 'Implementation', questions: '111–150', color: 'bg-red-100 text-red-700 border-red-200' },
   { name: 'Evaluation & Supervision', questions: '151–175', color: 'bg-purple-100 text-purple-700 border-purple-200' },
 ];
@@ -46,7 +46,7 @@ export default function ExamHubPage() {
             </div>
           </div>
           {examCompleted && (
-            <div className="flex items-center gap-1.5 text-xs text-green-600">
+            <div className="flex items-center gap-1.5 text-xs text-violet-700">
               <CheckCircle2 className="w-3.5 h-3.5" />
               <span>Completed · {Math.round(examScore)}%</span>
             </div>
@@ -98,8 +98,8 @@ export default function ExamHubPage() {
 
         {/* Previous score */}
         {examCompleted && (
-          <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-6 flex items-center gap-3">
-            <Trophy className="w-5 h-5 text-amber-500 flex-shrink-0" />
+          <div className="bg-violet-50 border border-violet-200 rounded-xl p-4 mb-6 flex items-center gap-3">
+            <Trophy className="w-5 h-5 text-teal-600 flex-shrink-0" />
             <div>
               <div className="text-sm font-semibold text-foreground">Previous score: {Math.round(examScore)}%</div>
               <div className="text-xs text-muted-foreground">
