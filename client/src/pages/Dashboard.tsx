@@ -7,6 +7,7 @@ import { useLocation } from 'wouter';
 import { useProgress } from '@/contexts/ProgressContext';
 import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, Lock, CheckCircle2, CircleDashed, Trophy, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import TaskItemProgress from '@/components/TaskItemProgress';
 
 interface TierConfig {
   tier: 1 | 2 | 3 | 4 | 5 | 6;
@@ -276,6 +277,9 @@ export default function Dashboard() {
               );
             })}
           </div>
+
+          {/* Task Item Progress Grid */}
+          <TaskItemProgress />
 
           {/* Footer note */}
           <div className="mt-10 p-4 bg-muted/40 rounded-lg border border-border">
