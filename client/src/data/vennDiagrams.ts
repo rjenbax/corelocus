@@ -5,7 +5,7 @@ export interface VennItem {
   conceptA: string;
   conceptB: string;
   category: string;
-  tier: 'tier1' | 'tier2' | 'tier3' | 'behavior-reduction' | 'research' | 'verbal';
+  tier: 'tier1' | 'tier2' | 'tier3' | 'behavior-reduction' | 'research' | 'verbal' | 'measurement' | 'skill-acquisition' | 'ethics';
   onlyA: string[];      // features unique to Term A
   onlyB: string[];      // features unique to Term B
   shared: string[];     // features true of BOTH
@@ -2013,5 +2013,594 @@ export const vennDiagrams: VennItem[] = [
       'Describes the topography of a response',
     ],
     keyDistinction: 'MO is a DESCRIPTIVE concept (explains why behavior occurs). Antecedent intervention is a PRESCRIPTIVE strategy (what to do to prevent behavior).',
+  },
+
+  // ── Measurement ────────────────────────────────────────────────────────────
+  {
+    id: 'v-frequency-rate', conceptA: 'Frequency', conceptB: 'Rate',
+    category: 'Measurement', tier: 'measurement',
+    onlyA: [
+      'A count — the total number of times a behavior occurs',
+      'Does not account for the length of the observation period',
+      'Useful when observation periods are always the same length',
+      'Example: behavior occurred 12 times',
+    ],
+    onlyB: [
+      'Frequency divided by time — a ratio measure',
+      'Accounts for varying observation lengths',
+      'Allows comparison across sessions of different durations',
+      'Example: 12 responses per hour',
+    ],
+    shared: [
+      'Both are measures of how often a behavior occurs',
+      'Both are continuous measurement dimensions',
+      'Both require counting discrete responses',
+    ],
+    distractors: [
+      'Measures the time from stimulus onset to response onset',
+      'Captures the proportion of intervals in which behavior occurs',
+      'Describes the physical form of a response',
+      'Requires a stopwatch to measure each individual response',
+    ],
+    keyDistinction: 'Frequency is a raw count; Rate is frequency divided by time. Use Rate when observation sessions vary in length.',
+  },
+  {
+    id: 'v-partial-whole-interval', conceptA: 'Partial Interval Recording', conceptB: 'Whole Interval Recording',
+    category: 'Measurement', tier: 'measurement',
+    onlyA: [
+      'Scored if the behavior occurs at ANY point during the interval',
+      'Tends to OVERESTIMATE the true proportion of time behavior occurs',
+      'Better for low-rate behaviors you want to detect',
+      'Captures brief occurrences that would be missed by whole interval',
+    ],
+    onlyB: [
+      'Scored only if the behavior occurs for the ENTIRE interval',
+      'Tends to UNDERESTIMATE the true proportion of time behavior occurs',
+      'Better for behaviors you want to increase (gives conservative estimate)',
+      'Misses behaviors that start or end mid-interval',
+    ],
+    shared: [
+      'Both are discontinuous (time-sampling) measurement methods',
+      'Both divide the observation period into equal intervals',
+      'Both yield a percentage of intervals as the summary measure',
+      'Both are used for behaviors without a clear start and end point',
+    ],
+    distractors: [
+      'Records the exact duration of each behavioral episode',
+      'Requires counting the total number of responses',
+      'Measures the time between the end of one response and the start of the next',
+      'Is used only for discrete, countable behaviors',
+    ],
+    keyDistinction: 'Partial interval OVERESTIMATES (scored if behavior occurs at all); Whole interval UNDERESTIMATES (scored only if behavior lasts the full interval).',
+  },
+  {
+    id: 'v-mts-partial', conceptA: 'Momentary Time Sampling (MTS)', conceptB: 'Partial Interval Recording',
+    category: 'Measurement', tier: 'measurement',
+    onlyA: [
+      'Behavior is observed only at the MOMENT the interval ends (a single instant)',
+      'Yields an estimate close to the true proportion when intervals are short',
+      'Less disruptive to ongoing activities — observer only looks at one moment',
+      'Neither consistently over- nor underestimates',
+    ],
+    onlyB: [
+      'Behavior is observed throughout the entire interval',
+      'Scored if behavior occurs at ANY point during the interval',
+      'Consistently OVERESTIMATES the true proportion of time',
+      'Requires sustained attention across the full interval',
+    ],
+    shared: [
+      'Both are discontinuous (time-sampling) measurement methods',
+      'Both divide the session into equal intervals',
+      'Both report results as a percentage of intervals',
+      'Both are used for ongoing, non-discrete behaviors',
+    ],
+    distractors: [
+      'Records the exact start and stop time of each behavioral episode',
+      'Requires counting every individual response occurrence',
+      'Measures the time between consecutive responses',
+      'Is a continuous measurement method',
+    ],
+    keyDistinction: 'MTS records behavior at one instant per interval (snapshot). Partial interval records whether behavior occurred at any point during the interval.',
+  },
+  {
+    id: 'v-latency-irt', conceptA: 'Latency', conceptB: 'Inter-Response Time (IRT)',
+    category: 'Measurement', tier: 'measurement',
+    onlyA: [
+      'Time from the onset of a stimulus (SD or instruction) to the start of the response',
+      'Measures how quickly a person responds to a cue',
+      'Useful for compliance training (e.g., reducing latency to follow instructions)',
+      'Starts with an external event, not a prior response',
+    ],
+    onlyB: [
+      'Time between the end of one response and the start of the next response',
+      'Measures the spacing between consecutive responses',
+      'Used in DRL to reinforce longer pauses between responses',
+      'Starts with the completion of a prior response, not a stimulus',
+    ],
+    shared: [
+      'Both are temporal (time-based) measures',
+      'Both are continuous measurement dimensions',
+      'Both require a stopwatch or timer',
+      'Both can be targeted for increase or decrease depending on the goal',
+    ],
+    distractors: [
+      'Counts the total number of responses in a session',
+      'Measures the proportion of intervals containing behavior',
+      'Describes the physical form or topography of a response',
+      'Requires dividing the session into equal time intervals',
+    ],
+    keyDistinction: 'Latency starts with a STIMULUS (SD → response). IRT starts with the END of a prior RESPONSE (response → response).',
+  },
+  {
+    id: 'v-permanent-product-direct', conceptA: 'Permanent Product Recording', conceptB: 'Direct (Event) Recording',
+    category: 'Measurement', tier: 'measurement',
+    onlyA: [
+      'Measures the tangible outcome or artifact of behavior after it occurs',
+      'Observer does not need to be present when behavior occurs',
+      'Examples: completed worksheets, broken objects, written work',
+      'Cannot capture the process or topography of the behavior itself',
+    ],
+    onlyB: [
+      'Observer records each instance of behavior as it occurs in real time',
+      'Captures the behavior itself, not just its product',
+      'Requires the observer to be present during the behavior',
+      'Can record frequency, duration, latency, and topography',
+    ],
+    shared: [
+      'Both are methods for measuring behavior',
+      'Both can yield frequency counts',
+      'Both require operational definitions of the target behavior',
+      'Both are used to track behavior change over time',
+    ],
+    distractors: [
+      'Divides the session into equal intervals for scoring',
+      'Measures the time between consecutive responses',
+      'Requires pairing a neutral stimulus with a reinforcer',
+      'Is a type of functional assessment',
+    ],
+    keyDistinction: 'Permanent product measures the RESULT of behavior (the artifact). Direct recording measures the behavior ITSELF as it happens.',
+  },
+
+  // ── Skill Acquisition / Behavior Change Procedures ─────────────────────────
+  {
+    id: 'v-dtt-net', conceptA: 'Discrete Trial Training (DTT)', conceptB: 'Natural Environment Teaching (NET)',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    onlyA: [
+      'Highly structured, therapist-directed format',
+      'Uses massed or distributed practice of a single target skill',
+      'Stimuli are presented in a controlled, standardized way',
+      'Typically conducted at a table or in a designated teaching area',
+    ],
+    onlyB: [
+      'Embedded in naturally occurring activities and routines',
+      'Follows the learner\'s motivation and interest (child-led)',
+      'Uses natural reinforcers that are directly related to the response',
+      'Promotes generalization because teaching occurs in natural contexts',
+    ],
+    shared: [
+      'Both use antecedent-behavior-consequence (ABC) teaching trials',
+      'Both involve systematic reinforcement of correct responses',
+      'Both require an operational definition of the target skill',
+      'Both are used in ABA-based skill acquisition programs',
+    ],
+    distractors: [
+      'Involves delivering punishment following incorrect responses',
+      'Is used exclusively for behavior reduction goals',
+      'Requires the use of time-sampling measurement',
+      'Is only appropriate for verbal behavior goals',
+    ],
+    keyDistinction: 'DTT is structured and therapist-directed with controlled stimuli. NET is naturalistic, child-led, and uses natural reinforcers in everyday contexts.',
+  },
+  {
+    id: 'v-errorless-error-correction', conceptA: 'Errorless Learning', conceptB: 'Error Correction',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    onlyA: [
+      'Provides a prompt immediately (before an error can occur)',
+      'Prevents the learner from practicing incorrect responses',
+      'Prompt is faded systematically over time',
+      'Best for learners who become distressed by errors or have a history of failure',
+    ],
+    onlyB: [
+      'Allows the learner to respond first; corrects after an error occurs',
+      'Uses a 4-step correction procedure (model, lead, test, delayed test)',
+      'Provides the learner with practice discriminating correct from incorrect',
+      'May be more efficient for learners who can tolerate errors',
+    ],
+    shared: [
+      'Both are procedures for teaching new skills',
+      'Both use prompting as a teaching tool',
+      'Both require systematic data collection on correct responses',
+      'Both aim to establish accurate, fluent responding',
+    ],
+    distractors: [
+      'Involves removing an aversive stimulus following a correct response',
+      'Requires the use of a token economy',
+      'Is a type of functional assessment procedure',
+      'Measures the proportion of intervals containing behavior',
+    ],
+    keyDistinction: 'Errorless learning prevents errors by prompting BEFORE the response. Error correction allows errors to occur and corrects AFTER the incorrect response.',
+  },
+  {
+    id: 'v-forward-backward-chaining', conceptA: 'Forward Chaining', conceptB: 'Backward Chaining',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    onlyA: [
+      'Teaching begins with the FIRST step in the chain',
+      'Learner masters step 1 before step 2 is introduced',
+      'Subsequent steps are completed by the trainer until learned',
+      'The learner experiences the natural reinforcer only after trainer completes remaining steps',
+    ],
+    onlyB: [
+      'Teaching begins with the LAST step in the chain',
+      'Learner masters the last step first, then the second-to-last, etc.',
+      'Learner always experiences the natural reinforcer at the end of each trial',
+      'Every trial ends with the learner completing the final step independently',
+    ],
+    shared: [
+      'Both are procedures for teaching behavioral chains',
+      'Both break a complex skill into a task analysis',
+      'Both use prompting and reinforcement to teach each step',
+      'Both result in the learner performing the entire chain independently',
+    ],
+    distractors: [
+      'Involves reinforcing successive approximations toward a terminal behavior',
+      'Is used to reduce problem behavior through extinction',
+      'Requires measuring the duration of each step',
+      'Is a type of antecedent intervention',
+    ],
+    keyDistinction: 'Forward chaining starts at STEP 1. Backward chaining starts at the LAST step — ensuring the learner always contacts the natural reinforcer.',
+  },
+  {
+    id: 'v-shaping-fading', conceptA: 'Shaping', conceptB: 'Fading',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    onlyA: [
+      'Differentially reinforces successive approximations toward a terminal behavior',
+      'Changes the FORM (topography) or dimension of the response over time',
+      'Used when the terminal behavior does not yet exist in the learner\'s repertoire',
+      'Reinforcement criteria become progressively stricter',
+    ],
+    onlyB: [
+      'Gradually removes or changes a prompt or stimulus over time',
+      'Changes the ANTECEDENT stimulus, not the response requirement',
+      'Used to transfer stimulus control from a prompt to a natural cue',
+      'The target behavior already exists; the goal is to bring it under new stimulus control',
+    ],
+    shared: [
+      'Both involve gradual, systematic changes over time',
+      'Both are used to teach new skills or expand existing ones',
+      'Both require careful data collection to determine when to advance',
+      'Both are antecedent-based in that they set up conditions for success',
+    ],
+    distractors: [
+      'Involves delivering punishment following an incorrect response',
+      'Requires dividing the skill into a task analysis',
+      'Is used to measure the proportion of intervals containing behavior',
+      'Involves pairing a neutral stimulus with an unconditioned stimulus',
+    ],
+    keyDistinction: 'Shaping changes the RESPONSE (successive approximations toward a new topography). Fading changes the ANTECEDENT (removes prompts to transfer stimulus control).',
+  },
+  {
+    id: 'v-prompting-cueing', conceptA: 'Prompt', conceptB: 'Cue (Natural SD)',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    onlyA: [
+      'A supplemental antecedent stimulus added to increase the probability of a correct response',
+      'Not part of the natural environment — it is an artificial teaching aid',
+      'Must be systematically faded to avoid prompt dependency',
+      'Examples: physical guidance, model, verbal hint, gestural',
+    ],
+    onlyB: [
+      'A naturally occurring antecedent stimulus that signals reinforcement availability',
+      'Part of the natural environment — no fading required',
+      'The goal of teaching is to bring behavior under control of the natural cue',
+      'Examples: a ringing phone, a red light, a teacher\'s instruction in a classroom',
+    ],
+    shared: [
+      'Both are antecedent stimuli that influence behavior',
+      'Both increase the likelihood of a correct response',
+      'Both are part of the three-term contingency',
+      'Both can be used in skill acquisition programs',
+    ],
+    distractors: [
+      'Follows behavior and increases its future frequency',
+      'Measures the time between consecutive responses',
+      'Is a type of consequence-based intervention',
+      'Involves removing an aversive stimulus after a correct response',
+    ],
+    keyDistinction: 'A prompt is an ARTIFICIAL teaching aid that must be faded. A natural cue is part of the environment and is the TARGET stimulus control we want to establish.',
+  },
+
+  // ── Behavior Reduction (additional) ────────────────────────────────────────
+  {
+    id: 'v-extinction-punishment', conceptA: 'Extinction', conceptB: 'Punishment',
+    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    onlyA: [
+      'Withholding the reinforcer that previously maintained the behavior',
+      'Does not involve delivering a new stimulus or removing a stimulus contingently',
+      'May produce an extinction burst before behavior decreases',
+      'Effective only when the maintaining reinforcer is identified and withheld',
+    ],
+    onlyB: [
+      'A consequence that DECREASES the future frequency of behavior',
+      'Can involve adding an aversive stimulus (positive punishment) or removing a reinforcer (negative punishment)',
+      'Does not require knowledge of the maintaining reinforcer',
+      'Can suppress behavior without eliminating the motivation for it',
+    ],
+    shared: [
+      'Both are procedures that decrease the future frequency of behavior',
+      'Both involve a change in the consequence following behavior',
+      'Both are defined by their effect on behavior, not by their form',
+      'Both require data collection to verify effectiveness',
+    ],
+    distractors: [
+      'Involves reinforcing an alternative behavior to reduce problem behavior',
+      'Is a type of antecedent intervention',
+      'Requires dividing the session into equal time intervals',
+      'Involves pairing a neutral stimulus with an unconditioned reinforcer',
+    ],
+    keyDistinction: 'Extinction withholds the MAINTAINING REINFORCER. Punishment delivers a new consequence (or removes a reinforcer) that decreases behavior regardless of its function.',
+  },
+  {
+    id: 'v-ncr-dro', conceptA: 'Non-Contingent Reinforcement (NCR)', conceptB: 'Differential Reinforcement of Other Behavior (DRO)',
+    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    onlyA: [
+      'Reinforcement is delivered on a fixed- or variable-time schedule, independent of behavior',
+      'Does not require the absence of problem behavior to deliver reinforcement',
+      'Works primarily by reducing the value of the reinforcer maintaining problem behavior (AO effect)',
+      'Simpler to implement — no monitoring of behavior is required for delivery',
+    ],
+    onlyB: [
+      'Reinforcement is delivered only if the problem behavior has NOT occurred during the interval',
+      'Requires continuous monitoring of behavior throughout the interval',
+      'Reinforcement is contingent on the absence of the target behavior',
+      'Interval is reset if problem behavior occurs before the timer ends',
+    ],
+    shared: [
+      'Both are reinforcement-based behavior reduction procedures',
+      'Both use the maintaining reinforcer to reduce problem behavior',
+      'Both are considered less restrictive than punishment procedures',
+      'Both require identifying the function of problem behavior for maximum effectiveness',
+    ],
+    distractors: [
+      'Involves delivering an aversive stimulus following problem behavior',
+      'Requires the learner to perform an alternative response to earn reinforcement',
+      'Is a type of antecedent intervention that modifies the physical environment',
+      'Measures the proportion of intervals in which behavior occurs',
+    ],
+    keyDistinction: 'NCR delivers reinforcement on a TIME schedule (independent of behavior). DRO delivers reinforcement only when the problem behavior is ABSENT for a full interval.',
+  },
+  {
+    id: 'v-fba-fa', conceptA: 'Functional Behavior Assessment (FBA)', conceptB: 'Functional Analysis (FA)',
+    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    onlyA: [
+      'An umbrella term for all methods used to identify the function of behavior',
+      'Includes indirect methods (interviews, rating scales) and descriptive methods (ABC recording)',
+      'Does not involve systematic manipulation of variables',
+      'Lower risk — does not intentionally evoke problem behavior',
+    ],
+    onlyB: [
+      'An experimental method that systematically manipulates antecedents and consequences',
+      'Involves controlled test and control conditions to isolate the maintaining variable',
+      'Considered the gold standard for identifying behavioral function',
+      'Highest-risk assessment — intentionally evokes problem behavior in test conditions',
+    ],
+    shared: [
+      'Both are used to identify the function (maintaining reinforcer) of problem behavior',
+      'Both inform the development of function-based intervention plans',
+      'Both require ethical consideration and informed consent',
+      'Both result in a hypothesis about why the behavior occurs',
+    ],
+    distractors: [
+      'Involves delivering a reinforcer after every correct response',
+      'Requires dividing the session into equal intervals for scoring',
+      'Is a type of skill acquisition procedure',
+      'Measures the topography or form of a behavior',
+    ],
+    keyDistinction: 'FBA is a broad term for any method to identify function (including indirect and descriptive). FA is a specific EXPERIMENTAL method within FBA — the most rigorous and highest-risk.',
+  },
+  {
+    id: 'v-response-blocking-physical-guidance', conceptA: 'Response Blocking', conceptB: 'Physical Guidance',
+    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    onlyA: [
+      'A consequence-based procedure — the response is physically interrupted AFTER it begins',
+      'Used to prevent completion of a harmful or undesirable response',
+      'Does not teach an alternative behavior on its own',
+      'Example: blocking a self-injurious hand-to-head movement',
+    ],
+    onlyB: [
+      'An antecedent-based prompt — physical contact is used BEFORE or during a response to guide correct behavior',
+      'Used to teach a new skill by physically moving the learner through the correct response',
+      'A type of prompt that must be systematically faded',
+      'Example: hand-over-hand guidance to teach a learner to write their name',
+    ],
+    shared: [
+      'Both involve physical contact between the practitioner and the learner',
+      'Both require careful consideration of learner dignity and assent',
+      'Both must be used with appropriate safeguards and documentation',
+      'Both are part of a comprehensive behavior support plan',
+    ],
+    distractors: [
+      'Involves delivering a token following a correct response',
+      'Requires measuring the proportion of intervals containing behavior',
+      'Is a type of schedule-based reinforcement procedure',
+      'Involves pairing a neutral stimulus with an unconditioned stimulus',
+    ],
+    keyDistinction: 'Response blocking is a CONSEQUENCE procedure (interrupts behavior after it starts). Physical guidance is an ANTECEDENT prompt (guides correct behavior before or during the response).',
+  },
+
+  // ── Ethics & Supervision ────────────────────────────────────────────────────
+  {
+    id: 'v-assent-informed-consent', conceptA: 'Assent', conceptB: 'Informed Consent',
+    category: 'Ethics & Supervision', tier: 'ethics',
+    onlyA: [
+      'A voluntary agreement to participate expressed by the CLIENT (learner) themselves',
+      'Not legally required but ethically important, especially for clients who cannot legally consent',
+      'Can be withdrawn at any time — the client can indicate unwillingness to continue',
+      'May be non-verbal (turning away, crying, pushing materials away)',
+    ],
+    onlyB: [
+      'A legally recognized agreement provided by the GUARDIAN or authorized decision-maker',
+      'Required before beginning any assessment or intervention',
+      'Must include disclosure of procedures, risks, benefits, and alternatives',
+      'Must be documented in writing',
+    ],
+    shared: [
+      'Both are ethical requirements before beginning services',
+      'Both reflect respect for the autonomy of the client and their family',
+      'Both can be withdrawn at any time',
+      'Both are addressed in the BACB Ethics Code',
+    ],
+    distractors: [
+      'Involves delivering a reinforcer following a correct response',
+      'Is a type of measurement procedure',
+      'Requires the use of a task analysis',
+      'Is a functional assessment method',
+    ],
+    keyDistinction: 'Informed consent is a LEGAL agreement from the GUARDIAN. Assent is an ETHICAL agreement from the CLIENT — it is not legally binding but is ethically required.',
+  },
+  {
+    id: 'v-competence-scope', conceptA: 'Competence', conceptB: 'Scope of Practice',
+    category: 'Ethics & Supervision', tier: 'ethics',
+    onlyA: [
+      'Refers to the practitioner\'s actual knowledge, skills, and experience in a given area',
+      'Is individual and specific — varies from one BCBA to another',
+      'Can be expanded through training, supervision, and continuing education',
+      'Requires honest self-assessment of one\'s own abilities',
+    ],
+    onlyB: [
+      'Refers to the boundaries of practice defined by one\'s credential and training',
+      'Is defined by the BACB and the practitioner\'s professional training',
+      'Sets the outer boundary of what a BCBA is authorized to do',
+      'Is broader than any individual\'s competence — it defines the profession\'s domain',
+    ],
+    shared: [
+      'Both guide ethical decision-making about what services to provide',
+      'Both are addressed in the BACB Ethics Code',
+      'Both protect clients from harm by unqualified practitioners',
+      'Both require ongoing professional development to maintain',
+    ],
+    distractors: [
+      'Involves measuring the frequency of a target behavior',
+      'Is a type of reinforcement schedule',
+      'Requires the use of a task analysis to teach a new skill',
+      'Is a functional assessment procedure',
+    ],
+    keyDistinction: 'Scope of practice is the OUTER BOUNDARY of the profession. Competence is the INDIVIDUAL boundary — a BCBA must only practice within both their scope AND their competence.',
+  },
+  {
+    id: 'v-supervision-therapeutic', conceptA: 'Supervisory Relationship', conceptB: 'Therapeutic Relationship',
+    category: 'Ethics & Supervision', tier: 'ethics',
+    onlyA: [
+      'A professional relationship between a BCBA supervisor and a supervisee',
+      'Focused on developing the supervisee\'s professional skills and ethical conduct',
+      'Involves evaluation, feedback, and accountability for the supervisee\'s work',
+      'Governed by BACB supervision requirements and the Ethics Code',
+    ],
+    onlyB: [
+      'A professional relationship between a BCBA and a client or caregiver',
+      'Focused on achieving the client\'s behavior-change goals',
+      'Involves rapport-building, collaboration, and client-centered decision-making',
+      'Governed by the Ethics Code\'s requirements for client dignity and welfare',
+    ],
+    shared: [
+      'Both are professional relationships governed by the BACB Ethics Code',
+      'Both require clear communication, trust, and defined boundaries',
+      'Both prohibit multiple relationships that could impair professional judgment',
+      'Both require documentation and ongoing evaluation',
+    ],
+    distractors: [
+      'Involves delivering reinforcement on a fixed-interval schedule',
+      'Is a type of measurement procedure',
+      'Requires the use of a task analysis',
+      'Is a functional assessment method',
+    ],
+    keyDistinction: 'Supervisory relationship is between BCBA and SUPERVISEE (professional development focus). Therapeutic relationship is between BCBA and CLIENT (behavior-change focus).',
+  },
+
+  // ── Tier 3 – Subtle Distinctions (additional) ──────────────────────────────
+  {
+    id: 'v-resurgence-renewal', conceptA: 'Resurgence', conceptB: 'Renewal',
+    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    onlyA: [
+      'Return of a previously extinguished behavior when a CURRENTLY reinforced behavior is placed on extinction',
+      'Occurs within the same context — no context change is required',
+      'Triggered by a worsening of current reinforcement conditions',
+      'Relevant to relapse in behavior reduction programs when DRA is used',
+    ],
+    onlyB: [
+      'Return of an extinguished behavior when the organism is returned to the ORIGINAL training context',
+      'Requires a change in context (e.g., returning to the original setting)',
+      'Occurs even if no extinction of the alternative behavior is in place',
+      'Relevant to generalization — behavior that was extinguished in one setting may return in another',
+    ],
+    shared: [
+      'Both involve the return of a previously extinguished behavior',
+      'Both are challenges to the long-term effectiveness of extinction',
+      'Both have implications for relapse prevention in clinical practice',
+      'Both are studied in the context of behavioral persistence',
+    ],
+    distractors: [
+      'Involves the gradual elimination of a prompt over time',
+      'Requires measuring the proportion of intervals containing behavior',
+      'Is a type of reinforcement schedule',
+      'Involves pairing a neutral stimulus with an unconditioned reinforcer',
+    ],
+    keyDistinction: 'Resurgence is triggered by a WORSENING OF CURRENT REINFORCEMENT (no context change needed). Renewal is triggered by a RETURN TO THE ORIGINAL CONTEXT.',
+  },
+  {
+    id: 'v-behavioral-momentum-matching', conceptA: 'Behavioral Momentum', conceptB: 'Matching Law',
+    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    onlyA: [
+      'Describes the persistence of behavior in the face of disruption (like an object in motion)',
+      'Resistance to change is proportional to the history of reinforcement in that context',
+      'High-p (high-probability) sequences use momentum to increase compliance with low-p requests',
+      'Focuses on the PERSISTENCE of behavior, not its allocation',
+    ],
+    onlyB: [
+      'Describes how organisms ALLOCATE behavior across concurrent schedules',
+      'The proportion of responses on an alternative matches the proportion of reinforcement obtained',
+      'Predicts choice behavior in concurrent schedules of reinforcement',
+      'Focuses on the DISTRIBUTION of behavior, not its persistence',
+    ],
+    shared: [
+      'Both are quantitative principles describing operant behavior',
+      'Both relate to the rate and history of reinforcement',
+      'Both have practical applications in behavior change programs',
+      'Both describe how reinforcement history influences current behavior',
+    ],
+    distractors: [
+      'Involves delivering a reinforcer after every correct response',
+      'Is a type of time-sampling measurement procedure',
+      'Requires the use of a task analysis',
+      'Involves pairing a neutral stimulus with an unconditioned stimulus',
+    ],
+    keyDistinction: 'Behavioral momentum describes PERSISTENCE of behavior under disruption. Matching Law describes ALLOCATION of behavior across concurrent reinforcement alternatives.',
+  },
+  {
+    id: 'v-covert-private', conceptA: 'Covert Behavior', conceptB: 'Private Events',
+    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    onlyA: [
+      'Behavior that occurs at a low intensity, making it difficult for others to observe',
+      'Could theoretically be observed with the right instruments (e.g., subvocal speech)',
+      'Is defined by its OBSERVABILITY, not by its location',
+      'Example: thinking (subvocal speech) or slight muscle tension',
+    ],
+    onlyB: [
+      'Events that occur inside the skin and are accessible only to the individual',
+      'Includes both covert behavior AND private stimulation (e.g., pain, emotions)',
+      'Broader category — includes stimuli, not just responses',
+      'Defined by their LOCATION (inside the organism), not just their observability',
+    ],
+    shared: [
+      'Both are recognized within radical behaviorism as legitimate subject matter',
+      'Both are not directly observable by others',
+      'Both are governed by the same principles as overt behavior',
+      'Both are addressed in Skinner\'s analysis of verbal behavior',
+    ],
+    distractors: [
+      'Involves delivering a reinforcer after every correct response',
+      'Is a type of measurement procedure requiring an observer',
+      'Requires a task analysis to teach',
+      'Is a type of antecedent intervention',
+    ],
+    keyDistinction: 'Covert behavior is defined by LOW OBSERVABILITY (could be detected with instruments). Private events are defined by LOCATION inside the skin — a broader category including private stimulation.',
   },
 ];
