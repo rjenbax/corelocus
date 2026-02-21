@@ -6,7 +6,7 @@
 
 import { useState, useCallback, useMemo } from 'react';
 import { useLocation } from 'wouter';
-import { ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, XCircle, RotateCcw, Trophy, Filter, GitMerge } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, XCircle, RotateCcw, Trophy, Filter, GitMerge, BookOpen, Swords } from 'lucide-react';
 import { vennDiagrams, VennItem } from '@/data/vennDiagrams';
 import { useProgress } from '@/contexts/ProgressContext';
 import { Button } from '@/components/ui/button';
@@ -95,6 +95,7 @@ export default function VennPage() {
   const [started, setStarted] = useState(false);
   const [showKeyDistinction, setShowKeyDistinction] = useState(false);
   const [view, setView] = useState<'grid' | 'exercise'>('grid');
+  const [mode, setMode] = useState<'study' | 'sort'>('study');
 
   const categories = useMemo(() => Array.from(new Set(vennDiagrams.map(v => v.category))), []);
 
@@ -110,7 +111,7 @@ export default function VennPage() {
 
   const currentItem = filteredItems[currentIndex] ?? null;
 
-  const openExercise = useCallback((item: VennItem) => {
+  const openExercise = useCallback((item: VennItem, startMode: 'study' | 'sort' = 'study') => {
     const idx = filteredItems.findIndex(v => v.id === item.id);
     setCurrentIndex(idx >= 0 ? idx : 0);
     setCards([]);
@@ -119,6 +120,7 @@ export default function VennPage() {
     setScore(null);
     setShowKeyDistinction(false);
     setStarted(false);
+    setMode(startMode);
     setView('exercise');
   }, [filteredItems]);
 
@@ -166,6 +168,7 @@ export default function VennPage() {
     setScore(null);
     setShowKeyDistinction(false);
     setCards([]);
+    setMode('study');
   };
 
   const handlePrev = () => {
@@ -176,6 +179,7 @@ export default function VennPage() {
     setScore(null);
     setShowKeyDistinction(false);
     setCards([]);
+    setMode('study');
   };
 
   const unplacedCards = cards.filter(c => c.placedZone === 'unplaced');
@@ -283,8 +287,8 @@ export default function VennPage() {
             All Pairs
           </button>
           <div className="text-center">
-            <h1 className="font-bold text-slate-800 text-base">Venn Diagram — Concept Sorting</h1>
-            <p className="text-xs text-slate-500">Tier 4 · Sort each feature into the correct zone</p>
+            <h1 className="font-bold text-slate-800 text-base">Venn Diagram</h1>
+            <p className="text-xs text-slate-500">Tier 4 · {mode === 'study' ? 'Study the layout, then switch to Sort Mode' : 'Sort each feature into the correct zone'}</p>
           </div>
           <div className="text-sm text-slate-500 font-medium">
             {currentIndex + 1} / {filteredItems.length}
@@ -321,7 +325,8 @@ export default function VennPage() {
             </div>
           </div>
 
-          {showKeyDistinction && (
+          {/* Key Distinction — always visible in study mode, revealed after submit in sort mode */}
+          {(mode === 'study' || showKeyDistinction) && (
             <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded-lg">
               <p className="text-xs font-semibold text-amber-700 mb-1">Key Distinction</p>
               <p className="text-sm text-amber-800">{currentItem.keyDistinction}</p>
@@ -329,15 +334,101 @@ export default function VennPage() {
           )}
         </div>
 
-        {!started ? (
-          /* Start Screen */
+        {/* Mode Toggle */}
+        <div className="flex items-center gap-1 bg-white rounded-xl border border-slate-200 p-1 shadow-sm w-fit">
+          <button
+            onClick={() => { setMode('study'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
+            className={cn(
+              'flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all',
+              mode === 'study'
+                ? 'bg-blue-600 text-white shadow-sm'
+                : 'text-slate-500 hover:text-slate-800'
+            )}
+          >
+            <BookOpen className="w-4 h-4" />
+            Study Mode
+          </button>
+          <button
+            onClick={() => { setMode('sort'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
+            className={cn(
+              'flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all',
+              mode === 'sort'
+                ? 'bg-[#2D6A4F] text-white shadow-sm'
+                : 'text-slate-500 hover:text-slate-800'
+            )}
+          >
+            <Swords className="w-4 h-4" />
+            Sort Mode
+          </button>
+        </div>
+
+        {/* ── STUDY MODE: completed layout ── */}
+        {mode === 'study' && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Only A */}
+            <div className="rounded-xl border-2 border-blue-200 bg-blue-50">
+              <div className="px-4 py-2.5 bg-blue-100 rounded-t-xl border-b border-blue-200">
+                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide">Only: {currentItem.conceptA}</p>
+              </div>
+              <div className="p-3 space-y-2">
+                {currentItem.onlyA.map((f, i) => (
+                  <div key={i} className="flex items-start gap-2 text-sm text-blue-800">
+                    <span className="text-blue-400 mt-0.5 shrink-0">•</span>
+                    <span>{f}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Shared */}
+            <div className="rounded-xl border-2 border-emerald-200 bg-emerald-50">
+              <div className="px-4 py-2.5 bg-emerald-100 rounded-t-xl border-b border-emerald-200">
+                <p className="text-xs font-bold text-emerald-700 uppercase tracking-wide">Shared / Both</p>
+              </div>
+              <div className="p-3 space-y-2">
+                {currentItem.shared.map((f, i) => (
+                  <div key={i} className="flex items-start gap-2 text-sm text-emerald-800">
+                    <span className="text-emerald-500 mt-0.5 shrink-0">◆</span>
+                    <span>{f}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Only B */}
+            <div className="rounded-xl border-2 border-violet-200 bg-violet-50">
+              <div className="px-4 py-2.5 bg-violet-100 rounded-t-xl border-b border-violet-200">
+                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide">Only: {currentItem.conceptB}</p>
+              </div>
+              <div className="p-3 space-y-2">
+                {currentItem.onlyB.map((f, i) => (
+                  <div key={i} className="flex items-start gap-2 text-sm text-violet-800">
+                    <span className="text-violet-400 mt-0.5 shrink-0">•</span>
+                    <span>{f}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Does Not Belong note */}
+            <div className="md:col-span-3 rounded-xl border border-rose-200 bg-rose-50 p-3">
+              <p className="text-xs font-bold text-rose-600 uppercase tracking-wide mb-2">Does Not Belong to Either</p>
+              <div className="flex flex-wrap gap-2">
+                {currentItem.distractors.map((d, i) => (
+                  <span key={i} className="px-2.5 py-1 bg-rose-100 border border-rose-200 rounded-lg text-xs text-rose-700 line-through">{d}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── SORT MODE ── */}
+        {mode === 'sort' && !started ? (
+          /* Sort Start Screen */
           <div className="bg-white rounded-xl border border-slate-200 p-8 text-center shadow-sm">
             <div className="w-16 h-16 bg-[#2D6A4F]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl">⟷</span>
+              <Swords className="w-7 h-7 text-[#2D6A4F]" />
             </div>
-            <h2 className="text-lg font-bold text-slate-800 mb-2">Sort the Features</h2>
+            <h2 className="text-lg font-bold text-slate-800 mb-2">Ready to Sort?</h2>
             <p className="text-slate-500 text-sm mb-4 max-w-md mx-auto">
-              You'll receive a shuffled pool of features. <strong>Click a feature to select it</strong>, then <strong>click a zone to place it</strong>.
+              You'll receive a shuffled pool of features. <strong>Click a feature to select it</strong>, then <strong>click a zone to place it</strong>. Features may belong to Term A, Term B, both, or neither.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 max-w-lg mx-auto mb-6 text-xs">
               {(Object.keys(ZONE_CONFIG) as Exclude<Zone, 'unplaced'>[]).map(z => (
@@ -352,7 +443,7 @@ export default function VennPage() {
               Start Sorting
             </Button>
           </div>
-        ) : (
+        ) : mode === 'sort' ? (
           <>
             {/* Score Banner */}
             {submitted && score && (
@@ -502,7 +593,7 @@ export default function VennPage() {
               </div>
             )}
           </>
-        )}
+        ) : null}
       </div>
     </div>
   );
