@@ -3,6 +3,10 @@
  * Persisted to localStorage so progress survives page refreshes
  */
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { flashcards } from '@/data/flashcards';
+import { rapidRecallItems } from '@/data/rapidRecall';
+import { vennDiagrams } from '@/data/vennDiagrams';
+import { scenarioItems as scenarioJustificationItems } from '@/data/scenarioJustification';
 
 export interface FlashcardProgress {
   cardId: string;
@@ -195,11 +199,13 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     switch (tier) {
       case 1: {
         const mastered = progress.flashcards.filter(f => f.mastered).length;
-        return mastered === 0 ? 0 : Math.min(100, Math.round((mastered / 120) * 100));
+        const total = flashcards.length;
+        return mastered === 0 ? 0 : Math.min(100, Math.round((mastered / total) * 100));
       }
       case 2: {
         const attempted = progress.rapidRecall.length;
-        return attempted === 0 ? 0 : Math.min(100, Math.round((attempted / 70) * 100));
+        const total = rapidRecallItems.length;
+        return attempted === 0 ? 0 : Math.min(100, Math.round((attempted / total) * 100));
       }
       case 3: {
         const sessions = progress.matching.filter(m => m.sessionCompleted).length;
@@ -207,11 +213,15 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       }
       case 4: {
         const completed = progress.venn.filter(v => v.completed).length;
-        return completed === 0 ? 0 : Math.min(100, Math.round((completed / 73) * 100));
+        const total = vennDiagrams.length;
+        return completed === 0 ? 0 : Math.min(100, Math.round((completed / total) * 100));
       }
       case 5: {
         const completed = progress.scenarioJustification.filter(s => s.completed).length;
-        return completed === 0 ? 0 : Math.min(100, Math.round((completed / 60) * 100));
+        // scenarioJustificationItems is the flat list of ScenarioItem objects;
+        // each item has multiple questions, so count total questions across all items
+        const total = scenarioJustificationItems.reduce((sum, item) => sum + item.questions.length, 0);
+        return completed === 0 ? 0 : Math.min(100, Math.round((completed / total) * 100));
       }
       case 6: {
         return progress.exam.completed ? Math.round(progress.exam.score) : 0;
