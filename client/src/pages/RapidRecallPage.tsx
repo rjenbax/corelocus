@@ -1,16 +1,28 @@
 /**
  * RapidRecall — Tier 2: Remember / Understand (L1–2)
- * Timed quick-fire Q&A with Weak Boundaries tracking
+ * Timed quick-fire Q&A with Weak Boundaries tracking and Domain Filter
  */
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'wouter';
 import { rapidRecallItems } from '@/data/rapidRecall';
 import { useProgress } from '@/contexts/ProgressContext';
-import { ArrowLeft, Zap, AlertTriangle, CheckCircle2, XCircle, RotateCcw, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Zap, AlertTriangle, CheckCircle2, XCircle, RotateCcw, ChevronRight, Filter } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { toast } from 'sonner';
 
 type Mode = 'browse' | 'quiz' | 'results';
+
+const DOMAIN_LABELS: Record<string, string> = {
+  All: 'All Domains',
+  A: 'A · Behaviorism',
+  B: 'B · Concepts',
+  C: 'C · Measurement',
+  D: 'D · Research',
+  E: 'E · Ethics',
+  F: 'F · Assessment',
+  G: 'G · Behavior-Change',
+  H: 'H · Intervention',
+  I: 'I · Supervision',
+};
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -25,6 +37,7 @@ export default function RapidRecallPage() {
   const [, navigate] = useLocation();
   const { progress, recordRapidRecallAnswer } = useProgress();
   const [mode, setMode] = useState<Mode>('browse');
+  const [selectedDomain, setSelectedDomain] = useState<string>('All');
   const [quizItems, setQuizItems] = useState(rapidRecallItems);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -34,6 +47,23 @@ export default function RapidRecallPage() {
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const currentItem = quizItems[currentIdx];
+
+  // Filtered items based on selected domain
+  const filteredItems = useMemo(() => {
+    if (selectedDomain === 'All') return rapidRecallItems;
+    return rapidRecallItems.filter(item => item.domain === selectedDomain);
+  }, [selectedDomain]);
+
+  // Domain item counts
+  const domainCounts = useMemo(() => {
+    const counts: Record<string, number> = { All: rapidRecallItems.length };
+    Object.keys(DOMAIN_LABELS).forEach(key => {
+      if (key !== 'All') {
+        counts[key] = rapidRecallItems.filter(i => i.domain === key).length;
+      }
+    });
+    return counts;
+  }, []);
 
   // Build shuffled choices for current item
   const choices = useMemo(() => {
@@ -49,7 +79,7 @@ export default function RapidRecallPage() {
       setTimeLeft(t => {
         if (t <= 1) {
           clearInterval(timerRef.current!);
-          handleAnswer(null); // time out = wrong
+          handleAnswer(null);
           return 0;
         }
         return t - 1;
@@ -78,7 +108,7 @@ export default function RapidRecallPage() {
     }
   }, [currentIdx, quizItems.length]);
 
-  const startQuiz = (items = rapidRecallItems) => {
+  const startQuiz = (items = filteredItems) => {
     setQuizItems(shuffle(items));
     setCurrentIdx(0);
     setSelectedAnswer(null);
@@ -93,13 +123,15 @@ export default function RapidRecallPage() {
     progress.rapidRecall.forEach(r => {
       const item = rapidRecallItems.find(i => i.id === r.termId);
       if (!item) return;
+      // Filter by selected domain if not All
+      if (selectedDomain !== 'All' && item.domain !== selectedDomain) return;
       r.weakBoundaries.forEach(wb => {
         const misconception = item.misconceptions.find(m => m === wb.misconceptionId) ?? wb.misconceptionId;
         all.push({ termId: r.termId, term: item.term, misconception, count: wb.count });
       });
     });
     return all.sort((a, b) => b.count - a.count).slice(0, 10);
-  }, [progress.rapidRecall]);
+  }, [progress.rapidRecall, selectedDomain]);
 
   const totalAttempted = progress.rapidRecall.length;
   const totalCorrect = progress.rapidRecall.reduce((s, r) => s + r.correct, 0);
@@ -117,6 +149,11 @@ export default function RapidRecallPage() {
               Exit Quiz
             </button>
             <div className="flex items-center gap-3">
+              {selectedDomain !== 'All' && (
+                <span className="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">
+                  Domain {selectedDomain}
+                </span>
+              )}
               <span className="text-xs text-muted-foreground">{currentIdx + 1} / {quizItems.length}</span>
               <div className={cn(
                 "w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold border-2 transition-colors",
@@ -217,13 +254,18 @@ export default function RapidRecallPage() {
           </div>
         </header>
         <div className="container py-10 max-w-lg mx-auto text-center">
+          {selectedDomain !== 'All' && (
+            <div className="text-xs font-medium text-amber-600 uppercase tracking-wider mb-2">
+              Domain {selectedDomain} · {DOMAIN_LABELS[selectedDomain]}
+            </div>
+          )}
           <div className="text-6xl font-black text-amber-600 mb-2">{pct}%</div>
           <div className="text-lg font-semibold text-foreground mb-1">{correct} of {sessionResults.length} correct</div>
           <p className="text-sm text-muted-foreground mb-8">
             {pct >= 80 ? 'Great work! Move on to Scenario Matching.' : 'Keep practicing — review the terms you missed.'}
           </p>
           <div className="flex gap-3 justify-center">
-            <button onClick={() => startQuiz()} className="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
+            <button onClick={() => startQuiz(filteredItems)} className="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
               <RotateCcw className="w-4 h-4" />
               Try Again
             </button>
@@ -260,35 +302,69 @@ export default function RapidRecallPage() {
       </header>
 
       <div className="container py-6 max-w-3xl mx-auto">
+
+        {/* Domain Filter */}
+        <div className="mb-6">
+          <div className="flex items-center gap-2 mb-3">
+            <Filter className="w-3.5 h-3.5 text-muted-foreground" />
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Filter by Domain</span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {Object.entries(DOMAIN_LABELS).map(([key, label]) => (
+              <button
+                key={key}
+                onClick={() => setSelectedDomain(key)}
+                className={cn(
+                  'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
+                  selectedDomain === key
+                    ? 'bg-amber-500 text-white border-amber-500 shadow-sm'
+                    : 'bg-card text-muted-foreground border-border hover:border-amber-300 hover:text-amber-700'
+                )}
+              >
+                {label}
+                <span className={cn('ml-1.5 text-[10px]', selectedDomain === key ? 'text-amber-100' : 'text-muted-foreground/60')}>
+                  ({domainCounts[key] ?? 0})
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Start quiz CTA */}
         <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border-2 border-amber-200 rounded-2xl p-6 mb-8">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <h2 className="text-xl font-bold text-foreground mb-1">Quick-Fire Quiz</h2>
+              <h2 className="text-xl font-bold text-foreground mb-1">
+                {selectedDomain === 'All' ? 'Quick-Fire Quiz' : `Domain ${selectedDomain} Quiz`}
+              </h2>
               <p className="text-sm text-muted-foreground mb-4">
-                15 seconds per question. Select the correct definition from 4 options. 
-                Track your weak boundaries over time.
+                15 seconds per question. Select the correct definition from 4 options.
+                {selectedDomain !== 'All' && ` Drilling ${DOMAIN_LABELS[selectedDomain]}.`}
               </p>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 <button
-                  onClick={() => startQuiz()}
+                  onClick={() => startQuiz(filteredItems)}
                   className="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
                 >
                   <Zap className="w-4 h-4" />
-                  Start Full Quiz ({rapidRecallItems.length} terms)
+                  {selectedDomain === 'All'
+                    ? `Start Full Quiz (${filteredItems.length} terms)`
+                    : `Start Domain ${selectedDomain} (${filteredItems.length} terms)`}
                 </button>
-                <button
-                  onClick={() => startQuiz(shuffle(rapidRecallItems).slice(0, 20))}
-                  className="flex items-center gap-2 border border-amber-300 text-amber-700 bg-white px-4 py-2.5 rounded-lg hover:bg-amber-50 transition-colors text-sm"
-                >
-                  Quick 20
-                </button>
+                {filteredItems.length > 10 && (
+                  <button
+                    onClick={() => startQuiz(shuffle(filteredItems).slice(0, Math.min(20, filteredItems.length)))}
+                    className="flex items-center gap-2 border border-amber-300 text-amber-700 bg-white px-4 py-2.5 rounded-lg hover:bg-amber-50 transition-colors text-sm"
+                  >
+                    Quick {Math.min(20, filteredItems.length)}
+                  </button>
+                )}
               </div>
             </div>
             {totalAttempted > 0 && (
               <div className="text-right flex-shrink-0">
                 <div className="text-3xl font-black text-amber-600">{accuracy}%</div>
-                <div className="text-xs text-muted-foreground">accuracy</div>
+                <div className="text-xs text-muted-foreground">overall accuracy</div>
               </div>
             )}
           </div>
@@ -317,9 +393,13 @@ export default function RapidRecallPage() {
         )}
 
         {/* Term grid */}
-        <h3 className="font-semibold text-sm text-foreground mb-3">All Terms ({rapidRecallItems.length})</h3>
+        <h3 className="font-semibold text-sm text-foreground mb-3">
+          {selectedDomain === 'All'
+            ? `All Terms (${rapidRecallItems.length})`
+            : `Domain ${selectedDomain} Terms (${filteredItems.length})`}
+        </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          {rapidRecallItems.map(item => {
+          {filteredItems.map(item => {
             const rec = progress.rapidRecall.find(r => r.termId === item.id);
             const attempted = rec ? rec.correct + rec.incorrect : 0;
             const acc = attempted > 0 ? Math.round((rec!.correct / attempted) * 100) : null;
