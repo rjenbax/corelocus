@@ -15,6 +15,7 @@ import ScenarioJustificationPage from "./pages/ScenarioJustificationPage";
 import ExamHubPage from "./pages/ExamHubPage";
 import ExamPage from "./pages/ExamPage";
 import ResultsPage from "./pages/ResultsPage";
+import DailyPracticePage from "./pages/DailyPracticePage";
 
 function Router() {
   return (
@@ -28,6 +29,7 @@ function Router() {
       <Route path={"/exam-hub"} component={ExamHubPage} />
       <Route path={"/exam"} component={ExamPage} />
       <Route path={"/results"} component={ResultsPage} />
+      <Route path={"/daily-practice"} component={DailyPracticePage} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>

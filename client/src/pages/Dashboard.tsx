@@ -5,7 +5,7 @@
  */
 import { useLocation } from 'wouter';
 import { useProgress } from '@/contexts/ProgressContext';
-import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, Lock, CheckCircle2, CircleDashed, Trophy, Zap } from 'lucide-react';
+import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import TaskItemProgress from '@/components/TaskItemProgress';
 
@@ -80,7 +80,7 @@ const TIERS: TierConfig[] = [
     tier: 5,
     title: 'Scenario Justification',
     subtitle: 'Answer + Reasoning',
-    description: '30 clinical scenarios, 4 questions each. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
+    description: '34 clinical scenarios, 79 questions. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
     icon: Brain,
     route: '/scenario-justification',
     bloomsLevel: 'Apply / Analyze (L3–4)',
@@ -127,6 +127,14 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            {/* Daily Practice shortcut in header */}
+            <button
+              onClick={() => navigate('/daily-practice')}
+              className="hidden sm:flex items-center gap-1.5 text-xs font-medium text-primary bg-primary/10 hover:bg-primary/15 rounded-full px-3 py-1.5 transition-colors"
+            >
+              <Flame className="w-3 h-3" />
+              Daily Practice
+            </button>
             <div className="hidden sm:flex items-center gap-2 text-xs text-muted-foreground">
               <span>Overall Progress</span>
               <div className="w-24 h-1.5 bg-muted rounded-full overflow-hidden">
@@ -196,8 +204,6 @@ export default function Dashboard() {
             {TIERS.map((tier, idx) => {
               const pct = getTierCompletion(tier.tier);
               const Icon = tier.icon;
-              const prevPct = idx > 0 ? getTierCompletion(TIERS[idx - 1].tier) : 100;
-              const isLocked = false; // All tiers accessible; lock logic could be added
               const isComplete = pct >= 80;
 
               return (
@@ -278,6 +284,36 @@ export default function Dashboard() {
             })}
           </div>
 
+          {/* ── Daily Practice CTA ─────────────────────────────────────────── */}
+          <div className="mt-10">
+            <button
+              onClick={() => navigate('/daily-practice')}
+              className="w-full text-left rounded-2xl border-2 border-primary/30 bg-gradient-to-r from-primary/8 to-primary/4 p-5 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+            >
+              <div className="flex items-center gap-4">
+                {/* Icon block */}
+                <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-primary/10 border-2 border-primary/20 flex items-center justify-center">
+                  <Flame className="w-7 h-7 text-primary" />
+                </div>
+
+                {/* Text */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <Target className="w-4 h-4 text-primary" />
+                    <h3 className="font-bold text-foreground text-base">Daily Practice</h3>
+                    <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-primary/10 text-primary">Adaptive</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mb-2">Targeted mixed-tool session</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed hidden sm:block">
+                    Automatically detects your 5 weakest task items and chains a 10–12 question session mixing Flashcards, Rapid Recall, and Scenario Matching — all targeting your gaps.
+                  </p>
+                </div>
+
+                <ChevronRight className="w-5 h-5 text-primary flex-shrink-0 transition-transform group-hover:translate-x-0.5" />
+              </div>
+            </button>
+          </div>
+
           {/* Task Item Progress Grid */}
           <TaskItemProgress />
 
@@ -288,7 +324,7 @@ export default function Dashboard() {
               <div>
                 <p className="text-sm font-medium text-foreground mb-0.5">Complete all 6 tiers for full BCBA preparation</p>
                 <p className="text-xs text-muted-foreground">
-                  Each tier builds on the previous — from recalling definitions (Tier 1) to applying clinical reasoning in complex case scenarios (Tier 6). 
+                  Each tier builds on the previous — from recalling definitions (Tier 1) to applying clinical reasoning in complex case scenarios (Tier 6).
                   Progress is saved automatically to your browser.
                 </p>
               </div>
