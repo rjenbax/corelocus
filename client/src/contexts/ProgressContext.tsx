@@ -156,7 +156,11 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const recordMatchingSession = useCallback((score: number) => {
     setProgress(prev => ({
       ...prev,
-      matching: [{ sessionCompleted: true, score, totalAttempts: (prev.matching[0]?.totalAttempts ?? 0) + 1 }],
+      matching: [{
+        sessionCompleted: true,
+        score: Math.max(prev.matching[0]?.score ?? 0, score), // preserve best score across retakes
+        totalAttempts: (prev.matching[0]?.totalAttempts ?? 0) + 1,
+      }],
     }));
   }, []);
 
