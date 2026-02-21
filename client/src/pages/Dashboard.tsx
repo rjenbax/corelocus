@@ -160,9 +160,24 @@ export default function Dashboard() {
             <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               Your BCBA Learning Path
             </h1>
-            <p className="text-muted-foreground text-base max-w-2xl leading-relaxed">
-              Six progressive tiers take you from pure recall to clinical application — following Bloom's Taxonomy from remembering definitions all the way to analyzing complex case scenarios.
+            <p className="text-muted-foreground text-base max-w-2xl leading-relaxed mb-5">
+              Passing the BCBA exam isn't just about memorizing terms — it's about being able to <strong className="text-foreground font-semibold">use</strong> them. This platform walks you through six levels of practice, each one building on the last.
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 max-w-2xl">
+              {([
+                { num: '1', label: 'Flashcards', blurb: 'Learn what each term means.' },
+                { num: '2', label: 'Rapid Recall', blurb: 'Pick the right definition under time pressure.' },
+                { num: '3', label: 'Scenario Matching', blurb: 'Spot the concept playing out in a real case.' },
+                { num: '4', label: 'Venn Diagram', blurb: 'Tell apart concepts that look similar.' },
+                { num: '5', label: 'Scenario Justification', blurb: 'Choose the right answer and explain why.' },
+                { num: '6', label: 'Case Study Exam', blurb: 'Handle a full client case from start to finish.' },
+              ] as const).map(({ num, label, blurb }) => (
+                <div key={num} className="flex items-start gap-2.5 text-sm">
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-[11px] font-bold flex items-center justify-center mt-0.5">{num}</span>
+                  <span className="text-muted-foreground"><span className="font-semibold text-foreground">{label}:</span> {blurb}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
