@@ -211,33 +211,50 @@ export default function VennPage() {
 
         <div className="max-w-5xl mx-auto px-4 py-6">
           {/* Category filter */}
-          <div className="flex items-center gap-2 mb-6 overflow-x-auto pb-2">
-            <Filter className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
-            <button
-              onClick={() => setSelectedCategory('ALL')}
-              className={cn(
-                'text-xs px-3 py-1.5 rounded-full border whitespace-nowrap transition-colors',
-                selectedCategory === 'ALL' ? 'bg-[#2D6A4F] text-white border-[#2D6A4F]' : 'border-slate-200 text-slate-500 hover:border-[#2D6A4F]'
-              )}
-            >
-              All ({vennDiagrams.length})
-            </button>
-            {categories.map(cat => {
-              const cc = getCatColors(cat);
-              const count = vennDiagrams.filter(v => v.category === cat).length;
-              return (
-                <button
-                  key={cat}
-                  onClick={() => setSelectedCategory(cat)}
-                  className={cn(
-                    'text-xs px-3 py-1.5 rounded-full border whitespace-nowrap transition-colors',
-                    selectedCategory === cat ? `${cc.bg} ${cc.text} ${cc.border}` : 'border-slate-200 text-slate-500'
-                  )}
-                >
-                  {cat} ({count})
-                </button>
-              );
-            })}
+          <div className="mb-6">
+            <div className="flex items-center gap-2 mb-3">
+              <Filter className="w-3.5 h-3.5 text-slate-400" />
+              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Filter by category</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setSelectedCategory('ALL')}
+                className={cn(
+                  'flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
+                  selectedCategory === 'ALL'
+                    ? 'bg-purple-600 text-white border-purple-600 shadow-sm'
+                    : 'bg-white text-slate-500 border-slate-200 hover:border-purple-300 hover:text-purple-700 hover:bg-purple-50'
+                )}
+              >
+                All
+                <span className={cn(
+                  'text-[10px] font-bold px-1 py-0.5 rounded-full min-w-[18px] text-center',
+                  selectedCategory === 'ALL' ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-500'
+                )}>{vennDiagrams.length}</span>
+              </button>
+              {categories.map(cat => {
+                const count = vennDiagrams.filter(v => v.category === cat).length;
+                const isActive = selectedCategory === cat;
+                return (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    className={cn(
+                      'flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
+                      isActive
+                        ? 'bg-purple-600 text-white border-purple-600 shadow-sm'
+                        : 'bg-white text-slate-500 border-slate-200 hover:border-purple-300 hover:text-purple-700 hover:bg-purple-50'
+                    )}
+                  >
+                    {cat}
+                    <span className={cn(
+                      'text-[10px] font-bold px-1 py-0.5 rounded-full min-w-[18px] text-center',
+                      isActive ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-500'
+                    )}>{count}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* Pair grid */}
