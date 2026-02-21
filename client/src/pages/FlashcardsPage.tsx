@@ -177,9 +177,11 @@ export default function FlashcardsPage() {
                   className="absolute inset-0 rounded-2xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white p-8 flex flex-col items-center justify-center"
                   style={{ backfaceVisibility: 'hidden' }}
                 >
-                  <div className="text-xs font-medium text-blue-600 mb-4 uppercase tracking-wider">
-                    {currentCard.domainFull}
-                    {currentCard.taskCode && <span className="ml-2 text-blue-400">· {currentCard.taskCode}</span>}
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">{currentCard.domainFull}</span>
+                    {currentCard.taskCode && (
+                      <span className="text-[11px] font-bold text-amber-700 bg-amber-100 border border-amber-300 px-2 py-0.5 rounded-full">{currentCard.taskCode}</span>
+                    )}
                   </div>
                   <h2 className="text-2xl font-bold text-foreground text-center leading-tight mb-3">
                     {currentCard.term}
@@ -200,7 +202,12 @@ export default function FlashcardsPage() {
                   className="absolute inset-0 rounded-2xl border-2 border-blue-300 bg-gradient-to-br from-white to-blue-50 p-8 flex flex-col items-center justify-center"
                   style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
                 >
-                  <div className="text-xs font-medium text-blue-600 mb-4 uppercase tracking-wider">Definition</div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">Definition</span>
+                    {currentCard.taskCode && (
+                      <span className="text-[11px] font-bold text-amber-700 bg-amber-100 border border-amber-300 px-2 py-0.5 rounded-full">{currentCard.taskCode}</span>
+                    )}
+                  </div>
                   <p className="text-base text-foreground text-center leading-relaxed mb-4">
                     {currentCard.definition}
                   </p>
