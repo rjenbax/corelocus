@@ -1,15 +1,26 @@
 /**
  * RapidRecall — Tier 2: Remember / Understand (L1–2)
- * Timed quick-fire Q&A with Weak Boundaries tracking and Domain Filter
+ * Timed quick-fire Q&A with Weak Boundaries tracking, Domain Filter, and Missed Items tab
+ *
+ * Design: Academic Warmth — warm cream, amber accent, editorial layout
+ *
+ * Browse view tabs:
+ *   - "All Terms"    — domain-filtered grid of all 146 terms with accuracy badges
+ *   - "Missed Items" — every term with more incorrect than correct attempts,
+ *                      showing full definition + misconceptions + "Practice this term" button
  */
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { useLocation } from 'wouter';
 import { rapidRecallItems } from '@/data/rapidRecall';
 import { useProgress } from '@/contexts/ProgressContext';
-import { ArrowLeft, Zap, AlertTriangle, CheckCircle2, XCircle, RotateCcw, ChevronRight, Filter } from 'lucide-react';
+import {
+  ArrowLeft, Zap, AlertTriangle, CheckCircle2, XCircle, RotateCcw,
+  ChevronRight, Filter, ClipboardX, BookOpen, ChevronDown, ChevronUp
+} from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 type Mode = 'browse' | 'quiz' | 'results';
+type BrowseTab = 'all' | 'missed';
 
 const DOMAIN_LABELS: Record<string, string> = {
   All: 'All Domains',
@@ -33,10 +44,255 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+// ─── Missed Items Panel ───────────────────────────────────────────────────────
+
+interface MissedTermEntry {
+  id: string;
+  term: string;
+  correctDefinition: string;
+  distractors: string[];
+  misconceptions: string[];
+  domain: string;
+  taskItem: string;
+  category: string;
+  correct: number;
+  incorrect: number;
+  accuracy: number;
+}
+
+function MissedItemsPanel({
+  missed,
+  onPractice,
+}: {
+  missed: MissedTermEntry[];
+  onPractice: (items: typeof rapidRecallItems) => void;
+}) {
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
+  const [sortBy, setSortBy] = useState<'accuracy' | 'attempts'>('accuracy');
+
+  const toggleExpand = (id: string) => {
+    setExpandedIds(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  };
+
+  const expandAll = () => setExpandedIds(new Set(missed.map(m => m.id)));
+  const collapseAll = () => setExpandedIds(new Set());
+
+  const sorted = useMemo(() => {
+    return [...missed].sort((a, b) => {
+      if (sortBy === 'accuracy') return a.accuracy - b.accuracy;
+      return (b.correct + b.incorrect) - (a.correct + a.incorrect);
+    });
+  }, [missed, sortBy]);
+
+  if (missed.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center py-20 text-center">
+        <CheckCircle2 className="w-12 h-12 text-green-400 mb-4" />
+        <h3 className="font-bold text-foreground text-lg mb-2">No missed items yet</h3>
+        <p className="text-sm text-muted-foreground max-w-xs">
+          Complete some quiz sessions and any terms you miss more than you get right will appear here for review.
+        </p>
+      </div>
+    );
+  }
+
+  // Build the subset of rapidRecallItems for "Practice all missed"
+  const missedRRItems = missed
+    .map(m => rapidRecallItems.find(r => r.id === m.id))
+    .filter(Boolean) as typeof rapidRecallItems;
+
+  return (
+    <div>
+      {/* Summary row */}
+      <div className="flex items-center gap-3 mb-5 flex-wrap">
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-red-50 border border-red-200">
+          <XCircle className="w-3.5 h-3.5 text-red-500" />
+          <span className="text-xs font-medium text-red-700">
+            {missed.length} term{missed.length !== 1 ? 's' : ''} need review
+          </span>
+        </div>
+        <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-50 border border-amber-200">
+          <AlertTriangle className="w-3.5 h-3.5 text-amber-500" />
+          <span className="text-xs font-medium text-amber-700">
+            avg {missed.length > 0 ? Math.round(missed.reduce((s, m) => s + m.accuracy, 0) / missed.length) : 0}% accuracy
+          </span>
+        </div>
+        <div className="ml-auto flex items-center gap-2">
+          <button onClick={expandAll} className="text-xs text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">
+            Expand all
+          </button>
+          <span className="text-muted-foreground">·</span>
+          <button onClick={collapseAll} className="text-xs text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">
+            Collapse all
+          </button>
+        </div>
+      </div>
+
+      {/* Sort + Practice all */}
+      <div className="flex items-center justify-between gap-3 mb-5 flex-wrap">
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-muted-foreground font-medium">Sort by:</span>
+          {(['accuracy', 'attempts'] as const).map(s => (
+            <button
+              key={s}
+              onClick={() => setSortBy(s)}
+              className={cn(
+                "text-xs font-medium px-3 py-1 rounded-full border transition-colors",
+                sortBy === s
+                  ? "bg-amber-500 text-white border-amber-500"
+                  : "border-border bg-card text-muted-foreground hover:border-amber-300"
+              )}
+            >
+              {s === 'accuracy' ? 'Lowest Accuracy' : 'Most Attempted'}
+            </button>
+          ))}
+        </div>
+        <button
+          onClick={() => onPractice(missedRRItems)}
+          className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg bg-amber-500 text-white hover:bg-amber-600 transition-colors"
+        >
+          <Zap className="w-3 h-3" />
+          Practice All Missed ({missed.length})
+        </button>
+      </div>
+
+      {/* Term cards */}
+      <div className="space-y-3">
+        {sorted.map((entry) => {
+          const isExpanded = expandedIds.has(entry.id);
+          return (
+            <div
+              key={entry.id}
+              className="rounded-xl border-2 border-red-200 overflow-hidden"
+            >
+              {/* Header — always visible */}
+              <button
+                onClick={() => toggleExpand(entry.id)}
+                className="w-full text-left px-4 py-3.5 flex items-start gap-3 bg-red-50 hover:bg-red-100/60 transition-colors"
+              >
+                {/* Accuracy badge */}
+                <div className="flex-shrink-0 mt-0.5">
+                  <div className={cn(
+                    "w-10 h-10 rounded-full flex items-center justify-center text-xs font-black border-2",
+                    entry.accuracy === 0
+                      ? "border-red-400 bg-red-100 text-red-700"
+                      : "border-orange-400 bg-orange-100 text-orange-700"
+                  )}>
+                    {entry.accuracy}%
+                  </div>
+                </div>
+
+                {/* Text */}
+                <div className="flex-1 min-w-0 text-left">
+                  <div className="flex items-center gap-2 mb-0.5 flex-wrap">
+                    <span className="text-xs font-bold text-amber-600 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">
+                      {entry.taskItem}
+                    </span>
+                    <span className="text-xs text-muted-foreground">{entry.category} · Domain {entry.domain}</span>
+                  </div>
+                  <p className="text-sm font-bold text-foreground">{entry.term}</p>
+                  <p className="text-xs text-red-600 mt-0.5">
+                    {entry.correct} correct · {entry.incorrect} incorrect ({entry.correct + entry.incorrect} attempts)
+                  </p>
+                </div>
+
+                {/* Expand + practice */}
+                <div className="flex items-center gap-2 flex-shrink-0">
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const rrItem = rapidRecallItems.find(r => r.id === entry.id);
+                      if (rrItem) onPractice([rrItem]);
+                    }}
+                    className="text-xs font-medium px-2.5 py-1 rounded-lg bg-amber-500 text-white hover:bg-amber-600 transition-colors"
+                  >
+                    Practice
+                  </button>
+                  {isExpanded
+                    ? <ChevronUp className="w-4 h-4 text-muted-foreground" />
+                    : <ChevronDown className="w-4 h-4 text-muted-foreground" />
+                  }
+                </div>
+              </button>
+
+              {/* Expanded definition + misconceptions */}
+              {isExpanded && (
+                <div className="px-4 pb-5 pt-4 bg-card border-t border-border space-y-4">
+                  {/* Correct definition */}
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">
+                      Correct Definition
+                    </p>
+                    <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                      <p className="text-sm text-green-800 leading-relaxed">{entry.correctDefinition}</p>
+                    </div>
+                  </div>
+
+                  {/* Distractors — what NOT to confuse it with */}
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">
+                      Common Distractors (Wrong Definitions)
+                    </p>
+                    <div className="space-y-1.5">
+                      {entry.distractors.slice(0, 3).map((d, i) => (
+                        <div key={i} className="flex items-start gap-2 px-3 py-2 rounded-lg border border-red-100 bg-red-50/50">
+                          <XCircle className="w-3.5 h-3.5 text-red-400 flex-shrink-0 mt-0.5" />
+                          <p className="text-xs text-red-700/80 leading-relaxed">{d}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Misconceptions / weak boundaries */}
+                  {entry.misconceptions.length > 0 && (
+                    <div>
+                      <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">
+                        Watch Out For These Misconceptions
+                      </p>
+                      <div className="space-y-1.5">
+                        {entry.misconceptions.map((m, i) => (
+                          <div key={i} className="flex items-start gap-2 px-3 py-2 rounded-lg border border-amber-200 bg-amber-50">
+                            <AlertTriangle className="w-3.5 h-3.5 text-amber-500 flex-shrink-0 mt-0.5" />
+                            <p className="text-xs text-amber-800 leading-relaxed">{m}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Practice button */}
+                  <button
+                    onClick={() => {
+                      const rrItem = rapidRecallItems.find(r => r.id === entry.id);
+                      if (rrItem) onPractice([rrItem]);
+                    }}
+                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border-2 border-amber-200 bg-amber-50 text-amber-700 text-sm font-medium hover:bg-amber-100 transition-colors"
+                  >
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    Practice this term
+                  </button>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ─── Main Page ────────────────────────────────────────────────────────────────
+
 export default function RapidRecallPage() {
   const [, navigate] = useLocation();
   const { progress, recordRapidRecallAnswer } = useProgress();
   const [mode, setMode] = useState<Mode>('browse');
+  const [browseTab, setBrowseTab] = useState<BrowseTab>('all');
   const [selectedDomain, setSelectedDomain] = useState<string>('All');
   const [quizItems, setQuizItems] = useState(rapidRecallItems);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -70,6 +326,36 @@ export default function RapidRecallPage() {
     if (!currentItem) return [];
     return shuffle([currentItem.correctDefinition, ...currentItem.distractors.slice(0, 3)]);
   }, [currentItem]);
+
+  // Missed items: terms with more incorrect than correct (or 0 correct and ≥1 incorrect)
+  const missedItems = useMemo((): MissedTermEntry[] => {
+    return progress.rapidRecall
+      .filter(r => {
+        // Filter by domain if not All
+        const item = rapidRecallItems.find(i => i.id === r.termId);
+        if (!item) return false;
+        if (selectedDomain !== 'All' && item.domain !== selectedDomain) return false;
+        // "Missed" = incorrect > correct OR accuracy < 50% with at least 1 attempt
+        return r.incorrect > r.correct;
+      })
+      .map(r => {
+        const item = rapidRecallItems.find(i => i.id === r.termId)!;
+        const total = r.correct + r.incorrect;
+        return {
+          id: item.id,
+          term: item.term,
+          correctDefinition: item.correctDefinition,
+          distractors: item.distractors,
+          misconceptions: item.misconceptions,
+          domain: item.domain,
+          taskItem: item.taskItem,
+          category: item.category,
+          correct: r.correct,
+          incorrect: r.incorrect,
+          accuracy: total > 0 ? Math.round((r.correct / total) * 100) : 0,
+        };
+      });
+  }, [progress.rapidRecall, selectedDomain]);
 
   // Timer
   useEffect(() => {
@@ -123,7 +409,6 @@ export default function RapidRecallPage() {
     progress.rapidRecall.forEach(r => {
       const item = rapidRecallItems.find(i => i.id === r.termId);
       if (!item) return;
-      // Filter by selected domain if not All
       if (selectedDomain !== 'All' && item.domain !== selectedDomain) return;
       r.weakBoundaries.forEach(wb => {
         const misconception = item.misconceptions.find(m => m === wb.misconceptionId) ?? wb.misconceptionId;
@@ -138,6 +423,7 @@ export default function RapidRecallPage() {
   const totalIncorrect = progress.rapidRecall.reduce((s, r) => s + r.incorrect, 0);
   const accuracy = totalAttempted > 0 ? Math.round((totalCorrect / (totalCorrect + totalIncorrect)) * 100) : 0;
 
+  // ── Quiz view ─────────────────────────────────────────────────────────────
   if (mode === 'quiz' && currentItem) {
     const pct = ((currentIdx) / quizItems.length) * 100;
     return (
@@ -241,6 +527,7 @@ export default function RapidRecallPage() {
     );
   }
 
+  // ── Results view ──────────────────────────────────────────────────────────
   if (mode === 'results') {
     const correct = sessionResults.filter(r => r.correct).length;
     const pct = Math.round((correct / sessionResults.length) * 100);
@@ -265,10 +552,17 @@ export default function RapidRecallPage() {
           <p className="text-sm text-muted-foreground mb-8">
             {pct >= 80 ? 'Great work! Move on to Scenario Matching.' : 'Keep practicing — review the terms you missed.'}
           </p>
-          <div className="flex gap-3 justify-center">
+          <div className="flex gap-3 justify-center flex-wrap">
             <button onClick={() => startQuiz(filteredItems)} className="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
               <RotateCcw className="w-4 h-4" />
               Try Again
+            </button>
+            <button
+              onClick={() => { setMode('browse'); setBrowseTab('missed'); }}
+              className="flex items-center gap-2 border border-red-200 text-red-700 bg-red-50 px-5 py-2.5 rounded-lg hover:bg-red-100 transition-colors"
+            >
+              <ClipboardX className="w-4 h-4" />
+              Review Missed Items
             </button>
             <button onClick={() => setMode('browse')} className="flex items-center gap-2 border border-border text-foreground px-5 py-2.5 rounded-lg hover:bg-muted/50 transition-colors">
               Browse Terms
@@ -279,7 +573,7 @@ export default function RapidRecallPage() {
     );
   }
 
-  // Browse mode
+  // ── Browse view ───────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
@@ -300,11 +594,48 @@ export default function RapidRecallPage() {
             {totalAttempted} terms attempted · {accuracy}% accuracy
           </div>
         </div>
+
+        {/* Tab bar */}
+        <div className="container border-t border-border">
+          <div className="flex gap-0">
+            <button
+              onClick={() => setBrowseTab('all')}
+              className={cn(
+                "flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium border-b-2 transition-colors",
+                browseTab === 'all'
+                  ? "border-amber-500 text-amber-600"
+                  : "border-transparent text-muted-foreground hover:text-foreground"
+              )}
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              All Terms
+            </button>
+            <button
+              onClick={() => setBrowseTab('missed')}
+              className={cn(
+                "flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium border-b-2 transition-colors",
+                browseTab === 'missed'
+                  ? "border-amber-500 text-amber-600"
+                  : "border-transparent text-muted-foreground hover:text-foreground"
+              )}
+            >
+              <ClipboardX className="w-3.5 h-3.5" />
+              Missed Items
+              {missedItems.length > 0 && (
+                <span className={cn(
+                  "ml-1 text-xs font-bold px-1.5 py-0.5 rounded-full",
+                  browseTab === 'missed' ? "bg-amber-100 text-amber-700" : "bg-red-100 text-red-600"
+                )}>
+                  {missedItems.length}
+                </span>
+              )}
+            </button>
+          </div>
+        </div>
       </header>
 
       <div className="container py-6 max-w-3xl mx-auto">
-
-        {/* Domain Filter */}
+        {/* Domain Filter — shown in both tabs */}
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-3">
             <Filter className="w-3.5 h-3.5 text-muted-foreground" />
@@ -331,101 +662,114 @@ export default function RapidRecallPage() {
           </div>
         </div>
 
-        {/* Start quiz CTA */}
-        <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border-2 border-amber-200 rounded-2xl p-6 mb-8">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <h2 className="text-xl font-bold text-foreground mb-1">
-                {selectedDomain === 'All' ? 'Quick-Fire Quiz' : `Domain ${selectedDomain} Quiz`}
-              </h2>
-              <p className="text-sm text-muted-foreground mb-4">
-                15 seconds per question. Select the correct definition from 4 options.
-                {selectedDomain !== 'All' && ` Drilling ${DOMAIN_LABELS[selectedDomain]}.`}
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <button
-                  onClick={() => startQuiz(filteredItems)}
-                  className="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
-                >
-                  <Zap className="w-4 h-4" />
-                  {selectedDomain === 'All'
-                    ? `Start Full Quiz (${filteredItems.length} terms)`
-                    : `Start Domain ${selectedDomain} (${filteredItems.length} terms)`}
-                </button>
-                {filteredItems.length > 10 && (
-                  <button
-                    onClick={() => startQuiz(shuffle(filteredItems).slice(0, Math.min(20, filteredItems.length)))}
-                    className="flex items-center gap-2 border border-amber-300 text-amber-700 bg-white px-4 py-2.5 rounded-lg hover:bg-amber-50 transition-colors text-sm"
-                  >
-                    Quick {Math.min(20, filteredItems.length)}
-                  </button>
-                )}
-              </div>
-            </div>
-            {totalAttempted > 0 && (
-              <div className="text-right flex-shrink-0">
-                <div className="text-3xl font-black text-amber-600">{accuracy}%</div>
-                <div className="text-xs text-muted-foreground">overall accuracy</div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Weak Boundaries */}
-        {weakBoundaries.length > 0 && (
-          <div className="mb-8">
-            <div className="flex items-center gap-2 mb-3">
-              <AlertTriangle className="w-4 h-4 text-red-500" />
-              <h3 className="font-semibold text-sm text-foreground">Weak Boundaries</h3>
-              <span className="text-xs text-muted-foreground">— misconceptions you keep choosing</span>
-            </div>
-            <div className="space-y-2">
-              {weakBoundaries.map((wb, i) => (
-                <div key={i} className="flex items-center gap-3 p-3 bg-red-50 border border-red-100 rounded-lg">
-                  <span className="text-xs font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded-full flex-shrink-0">
-                    {wb.term}
-                  </span>
-                  <span className="text-xs text-red-700 flex-1">{wb.misconception}</span>
-                  <span className="text-xs font-bold text-red-500 flex-shrink-0">{wb.count}×</span>
+        {/* ── All Terms tab ── */}
+        {browseTab === 'all' && (
+          <>
+            {/* Start quiz CTA */}
+            <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border-2 border-amber-200 rounded-2xl p-6 mb-8">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h2 className="text-xl font-bold text-foreground mb-1">
+                    {selectedDomain === 'All' ? 'Quick-Fire Quiz' : `Domain ${selectedDomain} Quiz`}
+                  </h2>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    15 seconds per question. Select the correct definition from 4 options.
+                    {selectedDomain !== 'All' && ` Drilling ${DOMAIN_LABELS[selectedDomain]}.`}
+                  </p>
+                  <div className="flex gap-2 flex-wrap">
+                    <button
+                      onClick={() => startQuiz(filteredItems)}
+                      className="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
+                    >
+                      <Zap className="w-4 h-4" />
+                      {selectedDomain === 'All'
+                        ? `Start Full Quiz (${filteredItems.length} terms)`
+                        : `Start Domain ${selectedDomain} (${filteredItems.length} terms)`}
+                    </button>
+                    {filteredItems.length > 10 && (
+                      <button
+                        onClick={() => startQuiz(shuffle(filteredItems).slice(0, Math.min(20, filteredItems.length)))}
+                        className="flex items-center gap-2 border border-amber-300 text-amber-700 bg-white px-4 py-2.5 rounded-lg hover:bg-amber-50 transition-colors text-sm"
+                      >
+                        Quick {Math.min(20, filteredItems.length)}
+                      </button>
+                    )}
+                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Term grid */}
-        <h3 className="font-semibold text-sm text-foreground mb-3">
-          {selectedDomain === 'All'
-            ? `All Terms (${rapidRecallItems.length})`
-            : `Domain ${selectedDomain} Terms (${filteredItems.length})`}
-        </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          {filteredItems.map(item => {
-            const rec = progress.rapidRecall.find(r => r.termId === item.id);
-            const attempted = rec ? rec.correct + rec.incorrect : 0;
-            const acc = attempted > 0 ? Math.round((rec!.correct / attempted) * 100) : null;
-            return (
-              <div
-                key={item.id}
-                className="p-3 rounded-lg border border-border bg-card hover:border-amber-300 transition-colors"
-              >
-                <div className="flex items-center justify-between mb-1">
-                  <span className="text-xs text-muted-foreground">{item.category}</span>
-                  <span className="text-[10px] font-bold text-amber-600 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">{item.taskItem}</span>
-                </div>
-                <div className="text-sm font-semibold text-foreground leading-tight">{item.term}</div>
-                {acc !== null && (
-                  <div className={cn("text-xs mt-1 font-medium", acc >= 70 ? "text-green-600" : "text-red-500")}>
-                    {acc}% accuracy
+                {totalAttempted > 0 && (
+                  <div className="text-right flex-shrink-0">
+                    <div className="text-3xl font-black text-amber-600">{accuracy}%</div>
+                    <div className="text-xs text-muted-foreground">overall accuracy</div>
                   </div>
                 )}
-                {acc === null && (
-                  <div className="text-xs mt-1 text-muted-foreground/60">Not started</div>
-                )}
               </div>
-            );
-          })}
-        </div>
+            </div>
+
+            {/* Weak Boundaries */}
+            {weakBoundaries.length > 0 && (
+              <div className="mb-8">
+                <div className="flex items-center gap-2 mb-3">
+                  <AlertTriangle className="w-4 h-4 text-red-500" />
+                  <h3 className="font-semibold text-sm text-foreground">Weak Boundaries</h3>
+                  <span className="text-xs text-muted-foreground">— misconceptions you keep choosing</span>
+                </div>
+                <div className="space-y-2">
+                  {weakBoundaries.map((wb, i) => (
+                    <div key={i} className="flex items-center gap-3 p-3 bg-red-50 border border-red-100 rounded-lg">
+                      <span className="text-xs font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded-full flex-shrink-0">
+                        {wb.term}
+                      </span>
+                      <span className="text-xs text-red-700 flex-1">{wb.misconception}</span>
+                      <span className="text-xs font-bold text-red-500 flex-shrink-0">{wb.count}×</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Term grid */}
+            <h3 className="font-semibold text-sm text-foreground mb-3">
+              {selectedDomain === 'All'
+                ? `All Terms (${rapidRecallItems.length})`
+                : `Domain ${selectedDomain} Terms (${filteredItems.length})`}
+            </h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {filteredItems.map(item => {
+                const rec = progress.rapidRecall.find(r => r.termId === item.id);
+                const attempted = rec ? rec.correct + rec.incorrect : 0;
+                const acc = attempted > 0 ? Math.round((rec!.correct / attempted) * 100) : null;
+                return (
+                  <div
+                    key={item.id}
+                    className="p-3 rounded-lg border border-border bg-card hover:border-amber-300 transition-colors"
+                  >
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-xs text-muted-foreground">{item.category}</span>
+                      <span className="text-[10px] font-bold text-amber-600 bg-amber-50 border border-amber-200 px-1.5 py-0.5 rounded">{item.taskItem}</span>
+                    </div>
+                    <div className="text-sm font-semibold text-foreground leading-tight">{item.term}</div>
+                    {acc !== null && (
+                      <div className={cn("text-xs mt-1 font-medium", acc >= 70 ? "text-green-600" : "text-red-500")}>
+                        {acc}% accuracy
+                      </div>
+                    )}
+                    {acc === null && (
+                      <div className="text-xs mt-1 text-muted-foreground/60">Not started</div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
+
+        {/* ── Missed Items tab ── */}
+        {browseTab === 'missed' && (
+          <MissedItemsPanel
+            missed={missedItems}
+            onPractice={(items) => startQuiz(items)}
+          />
+        )}
       </div>
     </div>
   );
