@@ -8,7 +8,7 @@ import { useState } from 'react';
 import { Star, X, Send, MessageSquare } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const FEEDBACK_EMAIL = 'hello@behaviorprep.com'; // ← update to your email
+const FEEDBACK_EMAIL = 'info@behaviorprep.com';
 
 interface FeedbackPopupProps {
   currentTool?: string; // e.g. "Flashcards", "Rapid Recall"
