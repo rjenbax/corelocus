@@ -504,7 +504,7 @@ export const matchingItems: MatchingItem[] = [
   {
     id: 'm-16',
     domain: 'Behavior Principles',
-    concept: 'Negative Punishment (Response Cost)',
+    concept: 'Negative Punishment',
     definition: 'A procedure in which a stimulus is removed following a behavior, resulting in a decrease in the future frequency of that behavior.',
     scenarios: [
       {
@@ -536,8 +536,8 @@ export const matchingItems: MatchingItem[] = [
   {
     id: 'm-17',
     domain: 'Behavior Principles',
-    concept: 'Conditioned Reinforcer',
-    definition: 'A stimulus that has acquired reinforcing properties through repeated pairing with other reinforcers (unconditioned or conditioned); also called a secondary reinforcer.',
+    concept: 'Generalized Conditioned Reinforcer',
+    definition: 'A conditioned reinforcer that has been paired with many different reinforcers and therefore maintains its effectiveness across a wide range of motivating operations; examples include money, tokens, praise, and attention.',
     scenarios: [
       {
         id: 'm-17-a',
@@ -992,8 +992,8 @@ export const matchingItems: MatchingItem[] = [
   {
     id: 'm-31',
     domain: 'Skill Acquisition',
-    concept: 'Prompt Hierarchy (Most-to-Least)',
-    definition: 'A prompting procedure in which the most intrusive prompt is provided first to ensure correct responding, and prompts are systematically faded to less intrusive levels as the learner demonstrates accuracy.',
+    concept: 'Prompt Hierarchy -- Levels of Intrusiveness',
+    definition: 'The conceptual framework that ranks prompts from most to least intrusive (e.g., full physical > partial physical > modeling > gestural > verbal > independent), used to guide prompt selection and fading decisions across all prompting systems.',
     scenarios: [
       {
         id: 'm-31-a',
@@ -1871,8 +1871,8 @@ export const matchingItems: MatchingItem[] = [
   {
     id: 'm-58',
     domain: 'Skill Acquisition',
-    concept: 'Most-to-Least Prompting',
-    definition: 'A prompting strategy in which the most intrusive prompt necessary to produce the correct response is provided initially, and prompt intensity is systematically faded as the learner demonstrates competence.',
+    concept: 'Most-to-Least Prompting -- Error Prevention Strategy',
+    definition: 'A prompting procedure that begins with the most intrusive prompt to prevent errors from the outset; particularly indicated for learners with a history of practicing errors or when errorless learning is the instructional goal.',
     scenarios: [
       {
         id: 'm-58-a',
@@ -2427,34 +2427,34 @@ export const matchingItems: MatchingItem[] = [
   // -- NEW ITEMS: Measurement (C) ---------------------------------------------
   {
     id: 'm-75',
-    concept: 'Partial Interval Recording',
+    concept: 'Event Recording (Frequency)',
     domain: 'Measurement',
-    taskCode: 'C-03',
-    definition: 'A time-sampling method in which an interval is scored as positive if the target behavior occurs at any point during the interval, regardless of duration.',
+    taskCode: 'C-01',
+    definition: 'A measurement procedure in which each discrete occurrence of a target behavior is counted; produces a frequency or rate measure and is most appropriate for behaviors with a clear beginning and end.',
     scenarios: [
       {
         id: 'm-75-a',
-        text: 'A therapist divides a 10-minute observation into 10-second intervals. She marks "yes" for any interval in which the child engages in stereotypy at any point, even if only for 1 second of the interval.',
+        text: 'A therapist uses a tally counter to record each time a child emits a vocal stereotypy during a 10-minute session. At the end she reports that the behavior occurred 47 times, giving a rate of 4.7 responses per minute.',
         isCorrect: true,
-        explanation: 'Scoring an interval positive if the behavior occurs at any point during it  --  regardless of duration  --  is partial interval recording.',
+        explanation: 'Counting each discrete occurrence of a behavior and converting to a rate (responses per unit time) is event recording -- appropriate for behaviors with a clear beginning and end.',
       },
       {
-        id: 'm-75-b',
-        text: 'A therapist marks "yes" for an interval only if the child engages in stereotypy for the entire 10-second interval.',
+                id: 'm-75-b',
+        text: 'A therapist divides a 30-minute session into 10-second intervals and marks each interval in which the child is on-task at the moment the interval ends.',
         isCorrect: false,
-        explanation: 'Requiring the behavior to occur throughout the entire interval is whole interval recording, not partial interval recording.',
+        explanation: 'Scoring behavior only at the moment the interval ends is momentary time sampling, not event recording.',
       },
       {
         id: 'm-75-c',
-        text: 'At the end of each 30-second interval, the therapist looks up and records whether the child is engaged in stereotypy at that exact moment.',
+        text: 'A therapist records the total amount of time a child spends engaged in self-injurious behavior during a session.',
         isCorrect: false,
-        explanation: 'Recording behavior only at the moment the interval ends is momentary time sampling, not partial interval recording.',
+        explanation: 'Recording total time engaged in a behavior is duration recording, not event recording.',
       },
       {
         id: 'm-75-d',
-        text: 'A therapist records the exact number of times a child engages in stereotypy during a 10-minute session.',
+        text: 'A therapist scores each 10-second interval as positive only if the target behavior was occurring throughout the entire interval.',
         isCorrect: false,
-        explanation: 'Counting each occurrence of behavior is frequency recording, not a time-sampling method.',
+        explanation: 'Requiring the behavior to occur for the entire interval is whole interval recording, not event recording.',
       },
     ],
   },
@@ -2626,10 +2626,10 @@ export const matchingItems: MatchingItem[] = [
   // -- NEW ITEMS: Assessment (F) ----------------------------------------------
   {
     id: 'm-81',
-    concept: 'Experimental Functional Analysis (FA)',
+    concept: 'Structural Analysis',
     domain: 'Assessment',
-    taskCode: 'E-03',
-    definition: 'A systematic assessment method in which antecedent and consequence variables are manipulated across controlled conditions to identify the function(s) of problem behavior.',
+    taskCode: 'E-02',
+    definition: 'An assessment procedure in which antecedent variables (e.g., task difficulty, activity type, instructional format) are manipulated to identify the conditions under which problem behavior is most and least likely to occur, without manipulating consequences.',
     scenarios: [
       {
         id: 'm-81-a',
@@ -2660,8 +2660,9 @@ export const matchingItems: MatchingItem[] = [
   {
     id: 'm-82',
     domain: 'Assessment',
-    concept: 'Descriptive Assessment (ABC Recording)',
-    definition: 'A direct observational method in which the antecedents, behaviors, and consequences surrounding each instance of a target behavior are recorded in the natural environment without manipulating any variables.',
+    concept: 'Scatterplot Assessment',
+    taskCode: 'E-02',
+    definition: 'A direct observational tool that maps the temporal distribution of problem behavior across time periods and days, used to identify patterns in when behavior is most and least likely to occur and to generate hypotheses about setting events or time-based antecedents.',
     scenarios: [
       {
         id: 'm-82-a',
@@ -2723,7 +2724,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-84',
-    domain: 'Assessment',
+    domain: 'Skill Acquisition',
     concept: 'Stimulus Control Transfer',
     definition: 'A procedure in which control over a behavior is shifted from one stimulus (e.g., a prompt) to another stimulus (e.g., the natural SD) through systematic prompt fading.',
     scenarios: [
@@ -2788,10 +2789,10 @@ export const matchingItems: MatchingItem[] = [
   // -- NEW ITEMS: Verbal Behavior (VB) ----------------------------------------
   {
     id: 'm-86',
-    concept: 'Mand',
+    concept: 'Verbal Operant -- Mand vs. Tact Distinction',
     domain: 'Verbal Behavior',
     taskCode: 'D-01',
-    definition: 'A verbal operant in which the speaker requests a specific item, action, or information, and the response is reinforced by the specific reinforcer named or implied by the mand.',
+    definition: 'Mands are controlled by motivating operations and reinforced by the specific item or action requested; tacts are controlled by a nonverbal discriminative stimulus (the item itself) and reinforced by generalized conditioned reinforcement. The same topography (e.g., "cookie") can function as either depending on the controlling variable.',
     scenarios: [
       {
         id: 'm-86-a',
@@ -3115,8 +3116,9 @@ export const matchingItems: MatchingItem[] = [
   {
     id: 'm-96',
     domain: 'Measurement',
-    concept: 'Latency Recording',
-    definition: 'A measurement procedure that captures the elapsed time between the onset of a stimulus (e.g., an instruction) and the initiation of the target behavior.',
+    concept: 'Latency Recording -- Clinical Application',
+    taskCode: 'C-01',
+    definition: 'A measurement procedure used when the speed of response initiation is the therapeutic target (e.g., reducing the time a student takes to begin a task after an instruction); distinct from duration recording, which measures how long a behavior lasts once initiated.',
     scenarios: [
       {
         id: 'm-96-a',
