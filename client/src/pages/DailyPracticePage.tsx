@@ -373,7 +373,41 @@ export default function DailyPracticePage() {
     'matching': 'Scenario Match',
   };
 
-  // ── Summary screen ──────────────────────────────────────────────────────────
+    // ── Empty state for brand-new users with zero progress ──────────────────────
+  if (session.length === 0) {
+    return (
+      <div className="min-h-screen bg-background flex flex-col">
+        <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
+          <div className="container flex items-center h-14 gap-3">
+            <button onClick={() => navigate('/')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <ArrowLeft className="w-4 h-4" /> Dashboard
+            </button>
+            <span className="text-muted-foreground">/</span>
+            <span className="text-sm font-medium text-foreground">Daily Practice</span>
+          </div>
+        </header>
+        <div className="flex-1 flex items-center justify-center p-8">
+          <div className="max-w-sm text-center">
+            <div className="w-16 h-16 rounded-2xl bg-violet-100 flex items-center justify-center mx-auto mb-5">
+              <Target className="w-8 h-8 text-violet-600" />
+            </div>
+            <h2 className="text-xl font-bold text-foreground mb-3">No practice items yet</h2>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+              Daily Practice targets your weakest task items. Complete some Flashcard or Rapid Recall sessions first so the platform knows where to focus your practice.
+            </p>
+            <button
+              onClick={() => navigate('/')}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors"
+            >
+              <Home className="w-4 h-4" /> Start with Tier 1 Flashcards
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ── Summary screen ──────────────────────────────────────────────────────
   if (done) {
     return (
       <div className="min-h-screen bg-background flex flex-col">

@@ -3,7 +3,7 @@
  * Design: Academic Warmth — editorial results report with domain breakdown
  */
 import { useLocation } from 'wouter';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useExam } from '@/contexts/ExamContext';
 import { useProgress } from '@/contexts/ProgressContext';
 import { allQuestions, domainInfo, phaseInfo } from '@/data/allQuestions';
@@ -87,13 +87,14 @@ export default function ResultsPage() {
   const overallPct = totalAnswered > 0 ? Math.round((state.score / totalAnswered) * 100) : 0;
 
   const { recordExamCompletion } = useProgress();
-  // Record completion once when results page mounts
+  // Record completion once on mount — ref guard prevents double-recording on re-render
+  const recordedRef = useRef(false);
   useEffect(() => {
-    if (totalAnswered > 0) {
+    if (!recordedRef.current && totalAnswered > 0) {
+      recordedRef.current = true;
       recordExamCompletion(overallPct, totalQuestions);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [totalAnswered, overallPct, totalQuestions, recordExamCompletion]);
 
   const handleRestart = () => {
     restartExam();

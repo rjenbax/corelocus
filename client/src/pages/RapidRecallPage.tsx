@@ -357,7 +357,17 @@ export default function RapidRecallPage() {
       });
   }, [progress.rapidRecall, selectedDomain]);
 
-  // Timer
+  const handleAnswer = useCallback((answer: string | null) => {
+    if (!currentItem || showFeedback) return;
+    clearInterval(timerRef.current!);
+    const correct = answer === currentItem.correctDefinition;
+    setSelectedAnswer(answer);
+    setShowFeedback(true);
+    setSessionResults(prev => [...prev, { termId: currentItem.id, correct }]);
+    recordRapidRecallAnswer(currentItem.id, correct);
+  }, [currentItem, showFeedback, recordRapidRecallAnswer]);
+
+  // Timer — handleAnswer declared above so the effect captures the stable reference
   useEffect(() => {
     if (mode !== 'quiz' || showFeedback) return;
     setTimeLeft(15);
@@ -372,17 +382,7 @@ export default function RapidRecallPage() {
       });
     }, 1000);
     return () => clearInterval(timerRef.current!);
-  }, [mode, currentIdx, showFeedback]);
-
-  const handleAnswer = useCallback((answer: string | null) => {
-    if (!currentItem || showFeedback) return;
-    clearInterval(timerRef.current!);
-    const correct = answer === currentItem.correctDefinition;
-    setSelectedAnswer(answer);
-    setShowFeedback(true);
-    setSessionResults(prev => [...prev, { termId: currentItem.id, correct }]);
-    recordRapidRecallAnswer(currentItem.id, correct);
-  }, [currentItem, showFeedback, recordRapidRecallAnswer]);
+  }, [mode, currentIdx, showFeedback, handleAnswer]);
 
   const handleNext = useCallback(() => {
     setShowFeedback(false);

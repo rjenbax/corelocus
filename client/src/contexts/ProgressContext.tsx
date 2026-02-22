@@ -93,7 +93,18 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const [progress, setProgress] = useState<PlatformProgress>(() => {
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
-      return stored ? { ...defaultProgress, ...JSON.parse(stored) } : defaultProgress;
+      if (!stored) return defaultProgress;
+      // Deep merge: spread each top-level key so new fields added to defaultProgress
+      // are not silently dropped when loading an older stored schema.
+      const parsed = JSON.parse(stored) as Partial<PlatformProgress>;
+      return {
+        flashcards: parsed.flashcards ?? defaultProgress.flashcards,
+        rapidRecall: parsed.rapidRecall ?? defaultProgress.rapidRecall,
+        matching: parsed.matching ?? defaultProgress.matching,
+        venn: parsed.venn ?? defaultProgress.venn,
+        scenarioJustification: parsed.scenarioJustification ?? defaultProgress.scenarioJustification,
+        exam: { ...defaultProgress.exam, ...(parsed.exam ?? {}) },
+      };
     } catch {
       return defaultProgress;
     }
@@ -235,6 +246,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   }, [progress]);
 
   const resetProgress = useCallback(() => {
+    if (!window.confirm('Reset all progress? This cannot be undone.')) return;
     setProgress(defaultProgress);
     localStorage.removeItem(STORAGE_KEY);
   }, []);

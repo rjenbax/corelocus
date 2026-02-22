@@ -1,5 +1,5 @@
 /**
- * ExamHubPage — Tier 6: Apply / Analyze (L3–4)
+ * ExamHubPage — Tier 6: Apply to Cases
  * Gateway to the existing 175-question Case Study Simulation Exam
  */
 import { useLocation } from 'wouter';
@@ -63,7 +63,7 @@ export default function ExamHubPage() {
             </div>
             <div>
               <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
-                Capstone · Bloom's L3–4
+                Capstone · Apply to cases
               </div>
               <h1 className="text-2xl font-bold text-foreground mb-2">
                 BCBA Case Study Simulation Exam
