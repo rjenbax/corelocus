@@ -179,9 +179,6 @@ export default function FlashcardsPage() {
                 >
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">{currentCard.domainFull}</span>
-                    {currentCard.taskCode && (
-                      <span className="text-[11px] font-bold text-teal-800 bg-teal-100 border border-teal-300 px-2 py-0.5 rounded-full">{currentCard.taskCode}</span>
-                    )}
                   </div>
                   <h2 className="text-2xl font-bold text-foreground text-center leading-tight mb-3">
                     {currentCard.term}
@@ -204,9 +201,6 @@ export default function FlashcardsPage() {
                 >
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">Definition</span>
-                    {currentCard.taskCode && (
-                      <span className="text-[11px] font-bold text-teal-800 bg-teal-100 border border-teal-300 px-2 py-0.5 rounded-full">{currentCard.taskCode}</span>
-                    )}
                   </div>
                   <p className="text-base text-foreground text-center leading-relaxed mb-4">
                     {currentCard.definition}

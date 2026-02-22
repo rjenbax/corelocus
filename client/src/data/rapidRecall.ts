@@ -3279,7 +3279,6 @@ export const rapidRecallCategories = [
     id: 'rr-goals-of-science',
     term: 'Goals of Science (Description, Prediction, Control)',
     category: 'Philosophical Foundations',
-    taskCode: 'A.1',
     definition: 'The three goals of a natural science of behavior: (1) Description — accurately characterizing the relationship between behavior and environment; (2) Prediction — identifying variables that reliably precede behavior; (3) Control — demonstrating that manipulating a variable produces a systematic change in behavior.',
     distractors: [
       'The goals of science are to explain, interpret, and generalize behavior across populations.',
@@ -3291,7 +3290,6 @@ export const rapidRecallCategories = [
     id: 'rr-aba-distinctions',
     term: 'Behaviorism, EAB, ABA, Professional Practice — Distinctions',
     category: 'Philosophical Foundations',
-    taskCode: 'A.4',
     definition: 'Four related but distinct levels: (1) Behaviorism — the philosophy of science defining subject matter and assumptions; (2) EAB — the basic science identifying behavioral principles through controlled laboratory research; (3) ABA — the applied science using principles to produce socially significant behavior change; (4) Professional Practice — service delivery in which BCBAs apply ABA to individual clients under ethical and regulatory constraints.',
     distractors: [
       'Behaviorism and EAB are identical fields; ABA and professional practice refer to the same applied context.',
@@ -3303,7 +3301,6 @@ export const rapidRecallCategories = [
     id: 'rr-dimensions-aba',
     term: 'Dimensions of ABA (REACCS)',
     category: 'Philosophical Foundations',
-    taskCode: 'A.5',
     definition: 'The seven defining characteristics identified by Baer, Wolf, and Risley (1968): Applied (socially significant behavior), Behavioral (directly measurable), Analytic (demonstrated experimental control), Technological (completely described procedures), Conceptually Systematic (linked to established principles), Effective (produces meaningful change), Generality (durable and generalizable outcomes).',
     distractors: [
       'The dimensions of ABA are: Reliable, Empirical, Accountable, Collaborative, Client-Centered, and Systematic.',
@@ -3315,7 +3312,6 @@ export const rapidRecallCategories = [
     id: 'rr-unconditioned-punisher',
     term: 'Unconditioned Punisher',
     category: 'Reinforcement & Punishment',
-    taskCode: 'B.8',
     definition: 'A stimulus that decreases the future frequency of behavior it follows without prior learning; its punishing function is determined by the organism\'s biology and evolutionary history.',
     distractors: [
       'A stimulus that decreases behavior only after being paired with a conditioned reinforcer.',
@@ -3327,7 +3323,6 @@ export const rapidRecallCategories = [
     id: 'rr-conditioned-punisher',
     term: 'Conditioned Punisher',
     category: 'Reinforcement & Punishment',
-    taskCode: 'B.8',
     definition: 'A previously neutral stimulus that acquires punishing properties through pairing with an unconditioned or established punisher; its effectiveness depends on learning history.',
     distractors: [
       'A stimulus that decreases behavior across all motivating conditions without prior conditioning.',
@@ -3339,7 +3334,6 @@ export const rapidRecallCategories = [
     id: 'rr-generalized-conditioned-punisher',
     term: 'Generalized Conditioned Punisher',
     category: 'Reinforcement & Punishment',
-    taskCode: 'B.8',
     definition: 'A conditioned punisher that has been paired with multiple other punishers and therefore suppresses behavior across a wide range of motivating conditions; its effectiveness does not depend on a specific establishing operation.',
     distractors: [
       'A punisher that is effective only when a specific deprivation state is present.',
@@ -3351,7 +3345,6 @@ export const rapidRecallCategories = [
     id: 'rr-multiple-schedule',
     term: 'Multiple Schedule',
     category: 'Schedules of Reinforcement',
-    taskCode: 'B.10',
     definition: 'A compound schedule of reinforcement in which two or more component schedules alternate, each signaled by a distinct discriminative stimulus; the organism must respond according to whichever schedule is currently in effect.',
     distractors: [
       'A compound schedule in which two or more component schedules alternate without any discriminative stimulus signaling which component is in effect.',
@@ -3363,7 +3356,6 @@ export const rapidRecallCategories = [
     id: 'rr-mixed-schedule',
     term: 'Mixed Schedule',
     category: 'Schedules of Reinforcement',
-    taskCode: 'B.10',
     definition: 'A compound schedule of reinforcement in which two or more component schedules alternate without any discriminative stimulus signaling which component is in effect; unlike a multiple schedule, no external cue differentiates the components.',
     distractors: [
       'A compound schedule in which each component is signaled by a distinct discriminative stimulus.',
@@ -3375,7 +3367,6 @@ export const rapidRecallCategories = [
     id: 'rr-chained-schedule',
     term: 'Chained Schedule',
     category: 'Schedules of Reinforcement',
-    taskCode: 'B.10',
     definition: 'A compound schedule in which completion of each component produces a conditioned reinforcer (the SD for the next component) and access to the next component; the terminal reinforcer is delivered only upon completion of the final link.',
     distractors: [
       'A compound schedule in which two or more component schedules alternate, each signaled by a distinct discriminative stimulus, with reinforcement available in each component.',
@@ -3387,7 +3378,6 @@ export const rapidRecallCategories = [
     id: 'rr-response-maintenance-conceptual',
     term: 'Response Maintenance (Conceptual)',
     category: 'Generalization & Maintenance',
-    taskCode: 'B.15',
     definition: 'The extent to which a learned behavior continues to occur after the training contingencies have been thinned, faded, or removed; a dimension of generality at the conceptual level, distinct from the programming procedures used to promote it.',
     distractors: [
       'The process of systematically fading prompts to transfer stimulus control to natural cues.',
@@ -3399,7 +3389,6 @@ export const rapidRecallCategories = [
     id: 'rr-mo-vs-sd',
     term: 'MO vs. Stimulus Control — Distinction',
     category: 'Motivating Operations',
-    taskCode: 'B.17',
     definition: 'Motivating operations (MOs) alter the value of a reinforcer and the frequency of behavior that has produced that reinforcer in the past — they affect what the organism works for. Discriminative stimuli (SDs) signal the availability of reinforcement based on a history of differential reinforcement — they affect when the organism works. MOs change reinforcer value; SDs signal reinforcement availability.',
     distractors: [
       'MOs signal the availability of reinforcement; SDs alter the value of a reinforcer and the frequency of related behavior.',
@@ -3411,7 +3400,6 @@ export const rapidRecallCategories = [
     id: 'rr-imitation-vs-observational',
     term: 'Imitation vs. Observational Learning',
     category: 'Verbal Behavior & Learning',
-    taskCode: 'B.24',
     definition: 'Imitation is the immediate reproduction of a model\'s behavior that produces reinforcement; it requires a topographically similar response. Observational learning is a broader process in which an observer\'s behavior is influenced by watching a model receive consequences — the observer need not immediately reproduce the behavior and effects may include changes in rules, expectations, or emotional responses.',
     distractors: [
       'Imitation and observational learning are synonymous terms for the same behavioral process.',
@@ -3423,7 +3411,6 @@ export const rapidRecallCategories = [
     id: 'rr-efficiency-measures',
     term: 'Efficiency Measures (Trials to Criterion, Cost-Benefit)',
     category: 'Measurement',
-    taskCode: 'C.7',
     definition: 'Measures of the resources required to produce a specified level of behavior change: (1) Trials to criterion — the number of learning opportunities required before a performance standard is met; (2) Cost-benefit analysis — a comparison of resources expended against the magnitude and social significance of the behavior change produced.',
     distractors: [
       'Efficiency measures assess the topographic accuracy of a behavior relative to a defined standard.',
@@ -3435,7 +3422,6 @@ export const rapidRecallCategories = [
     id: 'rr-select-measurement-procedure',
     term: 'Selecting a Measurement Procedure Based on Environmental Constraints',
     category: 'Measurement',
-    taskCode: 'C.9',
     definition: 'The decision process for choosing a data collection method that is both technically appropriate for the behavior and feasible given real-world constraints such as staff availability, setting demands, behavior rate, and client safety. The selected procedure must produce data that are accurate, reliable, and actionable.',
     distractors: [
       'Measurement procedure selection is based solely on the topography of the target behavior, not on environmental factors.',
@@ -3447,7 +3433,6 @@ export const rapidRecallCategories = [
     id: 'rr-procedural-integrity-selection',
     term: 'Selecting a Procedural Integrity Measurement Procedure',
     category: 'Measurement',
-    taskCode: 'C.12',
     definition: 'The decision process for choosing how to measure whether an intervention is being implemented as designed. Options include direct observation with a fidelity checklist, permanent product review, self-monitoring, and video review. Selection depends on the complexity of the procedure, the setting, and the resources available.',
     distractors: [
       'Procedural integrity is always measured using interval recording regardless of the intervention type.',

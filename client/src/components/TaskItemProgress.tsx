@@ -37,14 +37,17 @@ function useTaskItemStats(): TaskItemStats[] {
 
   return useMemo(() => {
     // Build lookup maps
-    // Flashcards: cardId → taskCode
+    // Flashcards: cardId → domain (flashcards no longer carry specific task codes)
+    // Credit the first task item in the card's domain as a proxy
     const fcByTask: Record<string, { seen: number; mastered: number }> = {};
     flashcards.forEach(fc => {
-      if (!fcByTask[fc.taskCode]) fcByTask[fc.taskCode] = { seen: 0, mastered: 0 };
+      const domainItems = ALL_TASK_ITEMS.filter(t => t.domain === fc.domain);
+      const key = domainItems.length > 0 ? domainItems[0].code : fc.domain;
+      if (!fcByTask[key]) fcByTask[key] = { seen: 0, mastered: 0 };
       const p = progress.flashcards.find(f => f.cardId === fc.id);
       if (p) {
-        fcByTask[fc.taskCode].seen += 1;
-        if (p.mastered) fcByTask[fc.taskCode].mastered += 1;
+        fcByTask[key].seen += 1;
+        if (p.mastered) fcByTask[key].mastered += 1;
       }
     });
 

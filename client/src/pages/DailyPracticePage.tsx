@@ -26,7 +26,6 @@ type ItemType = 'flashcard' | 'rapid-recall' | 'matching';
 
 interface FlashcardItem {
   type: 'flashcard';
-  taskCode: string;
   id: string;
   term: string;
   definition: string;
@@ -36,7 +35,7 @@ interface FlashcardItem {
 }
 interface RapidRecallItem {
   type: 'rapid-recall';
-  taskCode: string;
+  taskCode: string; // task item code from rapidRecall.taskItem
   id: string;
   term: string;
   correctDefinition: string;
@@ -45,7 +44,7 @@ interface RapidRecallItem {
 }
 interface MatchingItem {
   type: 'matching';
-  taskCode: string;
+  taskCode: string; // domain letter used for display
   id: string;
   concept: string;
   definition: string;
@@ -67,13 +66,19 @@ function useWeakTaskItems(count = 5): string[] {
       scores[item.code] = { correct: 0, total: 0, seen: false };
     });
 
-    // Flashcards
+    // Flashcards — map by domain letter to the first task item in that domain
+    // (flashcards no longer carry specific task codes; domain is the best proxy)
     flashcards.forEach(fc => {
       const p = progress.flashcards.find(f => f.cardId === fc.id);
       if (p) {
-        scores[fc.taskCode].seen = true;
-        scores[fc.taskCode].total += 1;
-        if (p.mastered) scores[fc.taskCode].correct += 1;
+        // Find task items in this domain and credit the first one
+        const domainItems = ALL_TASK_ITEMS.filter(t => t.domain === fc.domain);
+        if (domainItems.length > 0) {
+          const key = domainItems[0].code;
+          scores[key].seen = true;
+          scores[key].total += 1;
+          if (p.mastered) scores[key].correct += 1;
+        }
       }
     });
 
@@ -120,12 +125,12 @@ function buildSession(weakCodes: string[]): PracticeItem[] {
 
   // For each weak task code, try to find one flashcard, one rapid recall, one matching
   weakCodes.forEach(code => {
-    // Flashcard
-    const fc = flashcards.filter(f => f.taskCode === code);
+    // Flashcard — filter by domain letter (first char of task code)
+    const domainLetter = code.charAt(0);
+    const fc = flashcards.filter(f => f.domain === domainLetter);
     if (fc.length > 0) {
       const pick = fc[Math.floor(Math.random() * fc.length)];
-      const { taskCode: _fc, ...fcRest } = pick as any;
-      items.push({ type: 'flashcard', taskCode: code, ...fcRest });
+      items.push({ type: 'flashcard', ...pick });
     }
 
     // Rapid Recall
@@ -173,7 +178,7 @@ function FlashcardQuestion({ item, onNext }: { item: FlashcardItem; onNext: (kne
   const [flipped, setFlipped] = useState(false);
   return (
     <div className="flex flex-col items-center gap-6">
-      <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Flashcard · {item.taskCode}</div>
+      <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Flashcard · {item.domainFull}</div>
       {/* Card */}
       <div
         className="w-full max-w-lg cursor-pointer"
@@ -433,7 +438,7 @@ export default function DailyPracticePage() {
               {correctCount} of {results.length} correct across {session.length} mixed items
             </p>
             <p className="text-sm text-muted-foreground mb-8">
-              Targeting task items: <span className="font-medium text-foreground">{weakCodes.join(', ')}</span>
+              Targeting TCO areas: <span className="font-medium text-foreground">{weakCodes.join(', ')}</span>
             </p>
 
             {/* Per-item results */}
@@ -511,7 +516,7 @@ export default function DailyPracticePage() {
       <div className="border-b border-border bg-teal-50/60">
         <div className="container py-2.5 flex items-center gap-2 flex-wrap">
           <Target className="w-3.5 h-3.5 text-teal-700 flex-shrink-0" />
-          <span className="text-xs text-teal-800 font-medium">Targeting your weakest task items:</span>
+          <span className="text-xs text-teal-800 font-medium">Targeting your weakest TCO areas:</span>
           {weakCodes.map(code => (
             <span key={code} className="text-xs font-bold px-2 py-0.5 rounded bg-teal-100 text-teal-800 border border-teal-200">
               {code}
