@@ -5,12 +5,13 @@
  */
 import { useLocation } from 'wouter';
 import { useProgress } from '@/contexts/ProgressContext';
-import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame } from 'lucide-react';
+import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame, ExternalLink, Award } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import TaskItemProgress from '@/components/TaskItemProgress';
 
 interface TierConfig {
-  tier: 1 | 2 | 3 | 4 | 5 | 6;
+  tier: 1 | 2 | 3 | 4 | 5 | 6 | 7;
+  isExternal?: boolean;
   title: string;
   subtitle: string;
   description: string;
@@ -102,14 +103,29 @@ const TIERS: TierConfig[] = [
     borderColor: 'border-primary/20',
     pillColor: 'bg-primary/10 text-primary',
   },
+  {
+    tier: 7,
+    title: 'Full Mock Exam',
+    subtitle: 'Timed Exam Simulation',
+    description: '175 questions across all 9 TCO domains with adaptive question selection, 5 CSA archetypes, full score breakdown, and detailed analytics. Powered by BehaviorPREP Complete.',
+    icon: Award,
+    route: 'https://snapshot-perfectionist.lovable.app',
+    bloomsLevel: 'Exam ready',
+    color: 'text-amber-700',
+    bgColor: 'bg-amber-50',
+    borderColor: 'border-amber-200',
+    pillColor: 'bg-amber-100 text-amber-700',
+    isExternal: true,
+  },
 ];
 
 export default function Dashboard() {
   const [, navigate] = useLocation();
   const { getTierCompletion } = useProgress();
 
+  const internalTiers = TIERS.filter(t => !t.isExternal);
   const totalCompletion = Math.round(
-    TIERS.reduce((sum, t) => sum + getTierCompletion(t.tier), 0) / TIERS.length
+    internalTiers.reduce((sum, t) => sum + getTierCompletion(t.tier as 1|2|3|4|5|6), 0) / internalTiers.length
   );
 
   return (
@@ -161,7 +177,7 @@ export default function Dashboard() {
               Your BCBA Learning Path
             </h1>
             <p className="text-muted-foreground text-base max-w-2xl leading-relaxed mb-5">
-              Passing the BCBA exam isn't just about memorizing terms — it's about being able to <strong className="text-foreground font-semibold">use</strong> them. This platform walks you through six levels of practice, each one building on the last.
+              Passing the BCBA exam isn't just about memorizing terms — it's about being able to <strong className="text-foreground font-semibold">use</strong> them. This platform walks you through seven levels of practice, each one building on the last.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 max-w-2xl">
               {([
@@ -171,6 +187,7 @@ export default function Dashboard() {
                 { num: '4', label: 'Venn Diagram', blurb: 'Tell apart concepts that look similar.' },
                 { num: '5', label: 'Scenario Justification', blurb: 'Choose the right answer and explain why.' },
                 { num: '6', label: 'Case Study Exam', blurb: 'Handle a full client case from start to finish.' },
+                { num: '7', label: 'Full Mock Exam', blurb: 'Sit a timed 175-question exam and see your score breakdown.' },
               ] as const).map(({ num, label, blurb }) => (
                 <div key={num} className="flex items-start gap-2.5 text-sm">
                   <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-[11px] font-bold flex items-center justify-center mt-0.5">{num}</span>
@@ -186,9 +203,9 @@ export default function Dashboard() {
       <section className="container py-10 md:py-14">
         <div className="max-w-4xl mx-auto">
           {/* Progress overview */}
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mb-10">
+          <div className="grid grid-cols-4 md:grid-cols-7 gap-3 mb-10">
             {TIERS.map(tier => {
-              const pct = getTierCompletion(tier.tier);
+              const pct = tier.isExternal ? 0 : getTierCompletion(tier.tier as 1|2|3|4|5|6);
               return (
                 <div key={tier.tier} className="text-center">
                   <div className="text-xs text-muted-foreground mb-1">Tier {tier.tier}</div>
@@ -217,7 +234,7 @@ export default function Dashboard() {
           {/* Tier cards */}
           <div className="space-y-4">
             {TIERS.map((tier, idx) => {
-              const pct = getTierCompletion(tier.tier);
+              const pct = tier.isExternal ? 0 : getTierCompletion(tier.tier as 1|2|3|4|5|6);
               const Icon = tier.icon;
               const isComplete = pct >= 80;
 
@@ -229,7 +246,7 @@ export default function Dashboard() {
                   )}
 
                   <button
-                    onClick={() => navigate(tier.route)}
+                    onClick={() => tier.isExternal ? window.open(tier.route, '_blank') : navigate(tier.route)}
                     className={cn(
                       "w-full text-left rounded-xl border-2 p-5 transition-all duration-200 group",
                       "hover:shadow-md hover:-translate-y-0.5",
@@ -266,7 +283,9 @@ export default function Dashboard() {
                             <span className={cn("text-xs font-medium px-2 py-0.5 rounded-full", tier.pillColor)}>
                               {tier.bloomsLevel}
                             </span>
-                            <ChevronRight className={cn("w-4 h-4 transition-transform group-hover:translate-x-0.5", tier.color)} />
+                              {tier.isExternal
+                                ? <ExternalLink className={cn("w-4 h-4", tier.color)} />
+                                : <ChevronRight className={cn("w-4 h-4 transition-transform group-hover:translate-x-0.5", tier.color)} />}
                           </div>
                         </div>
 
@@ -274,23 +293,30 @@ export default function Dashboard() {
                           {tier.description}
                         </p>
 
-                        {/* Progress bar */}
-                        <div className="flex items-center gap-2">
-                          <div className="flex-1 h-1.5 bg-white/60 rounded-full overflow-hidden border border-white/80">
-                            <div
-                              className={cn("h-full rounded-full transition-all duration-500", {
-                                'bg-violet-600': tier.tier === 1,
-                                'bg-teal-600': tier.tier === 2,
-                                'bg-teal-500': tier.tier === 3,
-                                'bg-violet-700': tier.tier === 4,
-                                'bg-teal-700': tier.tier === 5,
-                                'bg-primary': tier.tier === 6,
-                              })}
-                              style={{ width: `${pct}%` }}
-                            />
+                        {/* Progress bar / external badge */}
+                        {tier.isExternal ? (
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 border border-amber-200">Opens in new tab</span>
+                            <span className="text-xs text-muted-foreground">BehaviorPREP Complete</span>
                           </div>
-                          <span className={cn("text-xs font-semibold", tier.color)}>{pct}%</span>
-                        </div>
+                        ) : (
+                          <div className="flex items-center gap-2">
+                            <div className="flex-1 h-1.5 bg-white/60 rounded-full overflow-hidden border border-white/80">
+                              <div
+                                className={cn("h-full rounded-full transition-all duration-500", {
+                                  'bg-violet-600': tier.tier === 1,
+                                  'bg-teal-600': tier.tier === 2,
+                                  'bg-teal-500': tier.tier === 3,
+                                  'bg-violet-700': tier.tier === 4,
+                                  'bg-teal-700': tier.tier === 5,
+                                  'bg-primary': tier.tier === 6,
+                                })}
+                                style={{ width: `${pct}%` }}
+                              />
+                            </div>
+                            <span className={cn("text-xs font-semibold", tier.color)}>{pct}%</span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </button>
