@@ -145,16 +145,16 @@ export const rapidRecallItems: RapidRecallItem[] = [
   },
   {
     id: 'rr-auto-reinf', term: 'Automatic Reinforcement',
-    correctDefinition: 'Reinforcement that is produced directly by the behavior itself, independent of the social mediation of another person.',
+    correctDefinition: 'Reinforcement that occurs independent of the social mediation of another person; the behavior produces its own reinforcing consequence directly (e.g., a child spinning objects because the visual stimulation is reinforcing regardless of adult attention).',
     distractors: [
-      'Reinforcement delivered automatically by a device or computer program.',
-      'Reinforcement that occurs on a fixed-time schedule regardless of behavior.',
-      'Reinforcement provided by others without their awareness.',
+      'Reinforcement delivered by another person contingent on a specific behavior.',
+      'Reinforcement that occurs on a fixed-ratio schedule without programmer involvement.',
+      'Reinforcement that is delivered automatically by a device or token system.',
     ],
     misconceptions: [
-      '"Requires another person to deliver the reinforcer."',
-      '"Is always sensory stimulation."',
-      '"Cannot be identified through functional analysis."',
+      '"Automatic reinforcement is always sensory stimulation."',
+      '"Automatic reinforcement cannot be identified through functional analysis."',
+      '"Automatic reinforcement is the same as intrinsic motivation."',
     ],
     domain: 'B', category: 'Core Concepts',
     taskItem: 'B.6',
@@ -1332,17 +1332,17 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.3',
   },
   {
-    id: 'rr-automatic-reinforcement', term: 'Automatic Reinforcement',
-    correctDefinition: 'Reinforcement that occurs independent of the social mediation of another person; the behavior produces its own reinforcing consequence directly.',
+    id: 'rr-automatic-reinforcement', term: 'Automatic Reinforcement — Functional Analysis',
+    correctDefinition: 'In a functional analysis, automatic reinforcement is indicated when behavior persists at elevated rates in the alone condition and/or the ignore condition, suggesting the reinforcer is intrinsic to the behavior rather than socially mediated.',
     distractors: [
-      'Reinforcement delivered by another person contingent on a specific behavior.',
-      'Reinforcement that occurs on a fixed-ratio schedule without programmer involvement.',
-      'Reinforcement that is delivered automatically by a device or token system.',
+      'Automatic reinforcement is indicated when behavior is highest in the attention condition of a functional analysis.',
+      'Automatic reinforcement is indicated when behavior occurs only in the presence of demands.',
+      'Automatic reinforcement is indicated when behavior is highest in the tangible condition.',
     ],
     misconceptions: [
-      '"Automatic reinforcement is always sensory stimulation."',
       '"Automatic reinforcement cannot be identified through functional analysis."',
-      '"Automatic reinforcement is the same as intrinsic motivation."',
+      '"Behavior maintained by automatic reinforcement always decreases during extinction."',
+      '"Automatic reinforcement is confirmed only when the alone condition shows zero behavior."',
     ],
     domain: 'B', category: 'Core Concepts',
     taskItem: 'B.6',
@@ -1620,8 +1620,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.19',
   },
   {
-    id: 'rr-behavioral-momentum', term: 'Behavioral Momentum',
-    correctDefinition: 'The tendency for behavior to persist following a change in reinforcement conditions; higher rates of reinforcement in a stimulus context produce greater resistance to disruption.',
+    id: 'rr-behavioral-momentum', term: 'Behavioral Momentum — Principle',
+    correctDefinition: 'The tendency for behavior to persist following a change in reinforcement conditions; higher rates of reinforcement in a stimulus context produce greater resistance to disruption (B.22). Analogous to physical momentum: a richer reinforcement history = greater resistance to change.',
     distractors: [
       'The increase in response rate that follows a period of extinction.',
       'The tendency for behavior to generalize across stimulus conditions.',
@@ -1946,8 +1946,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'E.4',
   },
   {
-    id: 'rr-confidentiality', term: 'Confidentiality',
-    correctDefinition: 'The ethical and legal obligation to protect client information from unauthorized disclosure; information may only be shared with appropriate consent or as required by law.',
+    id: 'rr-confidentiality', term: 'Confidentiality — Obligation',
+    correctDefinition: 'The ethical and legal obligation to protect client information from unauthorized disclosure; information may only be shared with appropriate consent or as required by law (E.4). Applies to all formats: verbal, written, and electronic.',
     distractors: [
       'The obligation to share all client information with the treatment team to ensure coordinated care.',
       'The obligation to store client records in a locked location at all times.',
@@ -2224,8 +2224,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'H.3',
   },
   {
-    id: 'rr-treatment-integrity', term: 'Treatment Integrity',
-    correctDefinition: 'The degree to which an intervention is implemented as designed and specified in the behavior intervention plan; also called procedural fidelity.',
+    id: 'rr-treatment-integrity', term: 'Treatment Integrity — Definition',
+    correctDefinition: 'The degree to which an intervention is implemented as designed and specified in the behavior intervention plan; also called procedural fidelity (H.6). Measured by comparing actual implementation steps to the written protocol step by step.',
     distractors: [
       'The degree to which an intervention produces socially significant behavior change.',
       'The degree to which the client\'s behavior change generalizes to natural settings.',
@@ -2290,8 +2290,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
 
   // ── Domain I: Personnel Supervision & Management ──────────────────────────
   {
-    id: 'rr-supervision-contract', term: 'Supervisory Contract',
-    correctDefinition: 'A written agreement between a BCBA supervisor and supervisee that specifies the responsibilities, expectations, schedule, and evaluation criteria for the supervisory relationship.',
+    id: 'rr-supervision-contract', term: 'Supervisory Contract — Components (I.2)',
+    correctDefinition: 'A written agreement between a BCBA supervisor and supervisee that specifies the responsibilities, expectations, meeting schedule, and evaluation criteria for the supervisory relationship (I.2). Distinct from an employment contract.',
     distractors: [
       'A written agreement between a BCBA and a client\'s family specifying service delivery terms.',
       'A written agreement between a BCBA and a funding source specifying billing procedures.',
@@ -2434,10 +2434,10 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Accounts for the distribution of responses across an observation period."',
     ],
     domain: 'C', category: 'Measurement',
-    taskItem: 'C.6',
+    taskItem: 'C.8',
   },
   {
-    id: 'rr-ioa-interval', term: 'Interval-by-Interval IOA',
+    id: 'rr-interval-by-interval-ioa', term: 'Interval-by-Interval IOA',
     correctDefinition: 'An IOA calculation in which each interval is scored as agreement or disagreement and the proportion of agreeing intervals is calculated; includes both occurrence and non-occurrence agreements.',
     distractors: [
       'An IOA calculation in which only the total number of responses recorded by each observer is compared.',
@@ -2482,7 +2482,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is detected by calculating total count IOA."',
     ],
     domain: 'C', category: 'Measurement',
-    taskItem: 'C.6',
+    taskItem: 'C.8',
   },
   {
     id: 'rr-reactivity', term: 'Reactivity',
@@ -2775,8 +2775,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'E.5',
   },
   {
-    id: 'rr-confidentiality', term: 'Confidentiality',
-    correctDefinition: 'The professional and legal obligation to protect client information from unauthorized disclosure, sharing it only with those who have a legitimate need to know or when legally required.',
+    id: 'rr-confidentiality-limits', term: 'Confidentiality — Limits and Exceptions',
+    correctDefinition: 'Confidentiality is not absolute: it may be broken when required by law (e.g., mandated reporting of abuse), when there is imminent risk of harm to the client or others, or when the client provides written authorization to share information (E.5).',
     distractors: [
       'The right of a client to access their own treatment records at any time.',
       'The obligation to obtain written consent before discussing a client\'s case in a supervision meeting.',
@@ -3065,8 +3065,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'I.5',
   },
   {
-    id: 'rr-treatment-integrity', term: 'Treatment Integrity',
-    correctDefinition: 'The degree to which an intervention is implemented as designed, including adherence to all specified procedures, materials, and schedules.',
+    id: 'rr-treatment-integrity-supervision', term: 'Treatment Integrity — Supervision Monitoring',
+    correctDefinition: 'The supervisor\'s responsibility to systematically measure and monitor whether supervisees are implementing behavior-change procedures with fidelity, using direct observation, permanent product review, or IOA data (I.3). Low treatment integrity is a common reason interventions fail to produce expected outcomes.',
     distractors: [
       'The degree to which a behavior-change procedure produces socially significant outcomes.',
       'The degree to which two independent observers agree on the occurrence of a target behavior.',
@@ -3113,8 +3113,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'I.1',
   },
   {
-    id: 'rr-supervision-contract', term: 'Supervision Contract',
-    correctDefinition: 'A written agreement between a supervisor and supervisee that specifies the responsibilities, expectations, meeting schedule, evaluation criteria, and ethical obligations of both parties.',
+    id: 'rr-supervision-contract-i4', term: 'Supervisory Contract — Ethical Obligations (I.4)',
+    correctDefinition: 'Beyond logistics, the supervisory contract must explicitly address the ethical obligations of both parties, including confidentiality of supervisee disclosures, conflict of interest procedures, and the process for addressing ethical violations (I.4).',
     distractors: [
       'A legal document signed by a client authorizing a BCBA to supervise their direct care staff.',
       'An agency policy that defines the minimum hours of supervision required for each staff role.',
@@ -3243,8 +3243,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'G.17',
   },
   {
-    id: 'rr-behavioral-momentum', term: 'Behavioral Momentum',
-    correctDefinition: 'The tendency for behavior to persist following a change in reinforcement conditions; increased by a history of high-rate reinforcement. Used clinically by delivering high-probability requests before a low-probability request.',
+    id: 'rr-behavioral-momentum-clinical', term: 'Behavioral Momentum — High-p Request Sequence',
+    correctDefinition: 'The clinical application of behavioral momentum: a series of high-probability (high-p) requests are delivered and reinforced before a low-probability (low-p) request, increasing the likelihood of compliance with the low-p request (G.1). The principle (B.22) and the clinical procedure (G.1) are related but distinct concepts.',
     distractors: [
       'The matching law principle that describes how organisms allocate behavior across concurrent schedules of reinforcement.',
       'The tendency for behavior to increase in rate following a period of extinction.',
