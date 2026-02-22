@@ -20,6 +20,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-01',
     domain: 'Behavior Principles',
     concept: 'Negative Reinforcement',
+    taskCode: 'B-02',
     definition: 'A procedure in which the removal, reduction, or postponement of a stimulus following a behavior results in an increase in the future frequency of that behavior.',
     scenarios: [
       {
@@ -52,6 +53,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-02',
     domain: 'Behavior Principles',
     concept: 'Positive Punishment',
+    taskCode: 'B-03',
     definition: 'A procedure in which a stimulus is added following a behavior, resulting in a decrease in the future frequency of that behavior.',
     scenarios: [
       {
@@ -84,6 +86,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-03',
     domain: 'Behavior Principles',
     concept: 'Motivating Operation (Establishing Operation)',
+    taskCode: 'B-06',
     definition: 'An antecedent variable that (1) temporarily increases the reinforcing effectiveness of a stimulus and (2) increases the current frequency of all behavior that has been reinforced by that stimulus.',
     scenarios: [
       {
@@ -116,6 +119,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-04',
     domain: 'Measurement',
     concept: 'Partial Interval Recording',
+    taskCode: 'C-03',
     definition: 'A discontinuous measurement procedure in which the observation period is divided into equal intervals; the behavior is recorded if it occurs at any point during the interval, regardless of how long it lasts.',
     scenarios: [
       {
@@ -148,6 +152,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-05',
     domain: 'Behavior Reduction',
     concept: 'Extinction Burst',
+    taskCode: 'G-04',
     definition: 'A temporary increase in the frequency, duration, or intensity of a behavior (and sometimes novel behaviors) that occurs immediately after extinction is first implemented.',
     scenarios: [
       {
@@ -180,6 +185,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-06',
     domain: 'Behavior Reduction',
     concept: 'Differential Reinforcement of Alternative Behavior (DRA)',
+    taskCode: 'G-06',
     definition: 'A procedure in which reinforcement is delivered for a specific alternative behavior while reinforcement is withheld for the problem behavior (extinction component).',
     scenarios: [
       {
@@ -212,6 +218,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-07',
     domain: 'Verbal Behavior',
     concept: 'Mand',
+    taskCode: 'D-01',
     definition: 'A verbal operant controlled by a motivating operation (MO) and reinforced by a specific, characteristic consequence that matches the content of the verbal behavior.',
     scenarios: [
       {
@@ -244,6 +251,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-08',
     domain: 'Research & Design',
     concept: 'Multiple Baseline Design',
+    taskCode: 'D-05',
     definition: 'A single-case experimental design in which the independent variable is introduced sequentially across two or more tiers (behaviors, settings, or subjects) after stable baselines are established, demonstrating experimental control without requiring a reversal.',
     scenarios: [
       {
@@ -276,6 +284,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-09',
     domain: 'Assessment',
     concept: 'Functional Analysis (FA)',
+    taskCode: 'E-03',
     definition: 'An experimental assessment procedure in which antecedent and consequence conditions are systematically manipulated to identify the function(s) of problem behavior by demonstrating a functional relationship between environmental variables and the behavior.',
     scenarios: [
       {
@@ -308,6 +317,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-10',
     domain: 'Skill Acquisition',
     concept: 'Stimulus Fading',
+    taskCode: 'F-07',
     definition: 'A procedure in which a controlling prompt is gradually changed along a physical dimension (e.g., size, color, intensity) so that the target stimulus gradually gains control over the response, while the prompt is systematically reduced.',
     scenarios: [
       {
@@ -340,6 +350,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-11',
     domain: 'Behavior Principles',
     concept: 'Behavioral Contrast',
+    taskCode: 'B-10',
     definition: 'A phenomenon in which a change in the rate of reinforcement in one component of a multiple schedule produces an opposite change in the rate of responding in another component, even though the schedule in that component has not changed.',
     scenarios: [
       {
@@ -372,6 +383,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-12',
     domain: 'Ethics & Professional Practice',
     concept: 'Treatment Integrity',
+    taskCode: 'H-06',
     definition: 'The degree to which the independent variable (intervention) is implemented as designed and described in the behavior intervention plan.',
     scenarios: [
       {
@@ -404,6 +416,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-13',
     domain: 'Skill Acquisition',
     concept: 'Chaining (Backward Chaining)',
+    taskCode: 'F-04',
     definition: 'A procedure for teaching a behavior chain in which the last step in the chain is taught first, and the learner is prompted through all preceding steps until the last step is mastered; steps are then added in reverse order.',
     scenarios: [
       {
@@ -436,6 +449,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-14',
     domain: 'Behavior Principles',
     concept: 'Stimulus Generalization',
+    taskCode: 'B-12',
     definition: 'The occurrence of a trained behavior in the presence of stimuli that are similar to but not identical to the training stimulus, without additional training.',
     scenarios: [
       {
@@ -505,6 +519,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-16',
     domain: 'Behavior Principles',
     concept: 'Negative Punishment',
+    taskCode: 'B-03',
     definition: 'A procedure in which a stimulus is removed following a behavior, resulting in a decrease in the future frequency of that behavior.',
     scenarios: [
       {
@@ -537,6 +552,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-17',
     domain: 'Behavior Principles',
     concept: 'Generalized Conditioned Reinforcer',
+    taskCode: 'B-04',
     definition: 'A conditioned reinforcer that has been paired with many different reinforcers and therefore maintains its effectiveness across a wide range of motivating operations; examples include money, tokens, praise, and attention.',
     scenarios: [
       {
@@ -569,6 +585,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-18',
     domain: 'Behavior Principles',
     concept: 'Discriminative Stimulus (SD)',
+    taskCode: 'B-07',
     definition: 'A stimulus in the presence of which a specific behavior has been reinforced; the SD signals that reinforcement is available for a particular response.',
     scenarios: [
       {
@@ -601,6 +618,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-19',
     domain: 'Behavior Principles',
     concept: 'Resurgence',
+    taskCode: 'B-13',
     definition: 'The reappearance of a previously extinguished behavior when a more recently reinforced behavior is placed on extinction.',
     scenarios: [
       {
@@ -635,6 +653,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-20',
     domain: 'Measurement',
     concept: 'Whole Interval Recording',
+    taskCode: 'C-03',
     definition: 'A discontinuous measurement procedure in which the behavior is recorded only if it occurs throughout the ENTIRE interval; tends to underestimate the occurrence of behavior.',
     scenarios: [
       {
@@ -667,6 +686,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-21',
     domain: 'Measurement',
     concept: 'Interobserver Agreement (IOA)',
+    taskCode: 'C-08',
     definition: 'The degree to which two independent observers simultaneously record the same behavior using the same measurement system; used to evaluate the reliability of behavioral measurement.',
     scenarios: [
       {
@@ -699,6 +719,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-22',
     domain: 'Measurement',
     concept: 'Latency',
+    taskCode: 'C-01',
     definition: 'The elapsed time from the onset of a stimulus or event (e.g., an instruction) to the initiation of a response.',
     scenarios: [
       {
@@ -731,6 +752,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-23',
     domain: 'Measurement',
     concept: 'Rate (Frequency per Unit Time)',
+    taskCode: 'C-01',
     definition: 'A measure of behavior that expresses the number of responses that occur per unit of time; allows comparison across sessions of different lengths.',
     scenarios: [
       {
@@ -765,6 +787,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-24',
     domain: 'Research & Design',
     concept: 'Reversal (ABAB) Design',
+    taskCode: 'D-04',
     definition: 'A single-case experimental design in which the independent variable is introduced (B phase), withdrawn to return to baseline (A phase), and then reintroduced (B phase) to demonstrate experimental control through replication.',
     scenarios: [
       {
@@ -797,6 +820,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-25',
     domain: 'Research & Design',
     concept: 'Alternating Treatments Design (ATD)',
+    taskCode: 'D-06',
     definition: 'A single-case experimental design in which two or more conditions are rapidly alternated within or across sessions to compare their effects on the same behavior; allows comparison of multiple independent variables without a withdrawal phase.',
     scenarios: [
       {
@@ -829,6 +853,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-26',
     domain: 'Research & Design',
     concept: 'Visual Analysis',
+    taskCode: 'D-02',
     definition: 'The primary method of data analysis in applied behavior analysis, in which graphed data are examined for level, trend, and variability within and across phases to determine whether a functional relationship exists between the independent and dependent variables.',
     scenarios: [
       {
@@ -863,6 +888,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-27',
     domain: 'Assessment',
     concept: 'ABC (Descriptive) Assessment',
+    taskCode: 'E-02',
     definition: 'A direct observational assessment procedure in which the observer records antecedents, behaviors, and consequences as they occur naturally in the environment, without experimental manipulation; used to generate hypotheses about the function of behavior.',
     scenarios: [
       {
@@ -895,6 +921,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-28',
     domain: 'Assessment',
     concept: 'Skill-Based Assessment (VB-MAPP / ABLLS-R)',
+    taskCode: 'E-01',
     definition: 'A criterion-referenced assessment tool used to evaluate a learner\'s current verbal behavior repertoire and other skill areas across developmental milestones, used to guide programming decisions.',
     scenarios: [
       {
@@ -929,6 +956,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-29',
     domain: 'Skill Acquisition',
     concept: 'Discrete Trial Training (DTT)',
+    taskCode: 'F-02',
     definition: 'A structured teaching method in which each trial consists of a discriminative stimulus (SD), a response opportunity, a consequence, and an inter-trial interval; used to teach skills in a controlled, massed-trial format.',
     scenarios: [
       {
@@ -961,6 +989,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-30',
     domain: 'Skill Acquisition',
     concept: 'Natural Environment Teaching (NET)',
+    taskCode: 'F-03',
     definition: 'A teaching approach in which instruction is embedded in naturally occurring activities and routines, capitalizing on the learner\'s motivating operations to teach functional skills in the context where they will be used.',
     scenarios: [
       {
@@ -993,6 +1022,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-31',
     domain: 'Skill Acquisition',
     concept: 'Prompt Hierarchy -- Levels of Intrusiveness',
+    taskCode: 'F-06',
     definition: 'The conceptual framework that ranks prompts from most to least intrusive (e.g., full physical > partial physical > modeling > gestural > verbal > independent), used to guide prompt selection and fading decisions across all prompting systems.',
     scenarios: [
       {
@@ -1027,6 +1057,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-32',
     domain: 'Behavior Reduction',
     concept: 'Noncontingent Reinforcement (NCR)',
+    taskCode: 'G-05',
     definition: 'A procedure in which a reinforcer is delivered on a fixed- or variable-time schedule, independent of the occurrence of any specific behavior; functions as an abolishing operation to reduce problem behavior.',
     scenarios: [
       {
@@ -1059,6 +1090,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-33',
     domain: 'Behavior Reduction',
     concept: 'Differential Reinforcement of Other Behavior (DRO)',
+    taskCode: 'G-06',
     definition: 'A procedure in which reinforcement is delivered at the end of an interval if the target problem behavior did NOT occur during that interval; reinforces the absence of the problem behavior.',
     scenarios: [
       {
@@ -1093,6 +1125,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-34',
     domain: 'Verbal Behavior',
     concept: 'Tact',
+    taskCode: 'D-01',
     definition: 'A verbal operant controlled by a nonverbal discriminative stimulus (an object, event, or property of the environment) and reinforced by generalized conditioned reinforcement.',
     scenarios: [
       {
@@ -1125,6 +1158,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-35',
     domain: 'Verbal Behavior',
     concept: 'Intraverbal',
+    taskCode: 'D-01',
     definition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and there is no point-to-point correspondence between the SD and the response; reinforced by generalized conditioned reinforcement.',
     scenarios: [
       {
@@ -1157,6 +1191,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-36',
     domain: 'Verbal Behavior',
     concept: 'Functional Communication Training (FCT)',
+    taskCode: 'D-01',
     definition: 'A DRA procedure in which a functionally equivalent communicative response is taught as an alternative to problem behavior; the communicative response produces the same reinforcer that previously maintained the problem behavior.',
     scenarios: [
       {
@@ -1191,6 +1226,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-37',
     domain: 'Personnel Supervision',
     concept: 'Performance Monitoring',
+    taskCode: 'I-05',
     definition: 'The ongoing process of directly observing and measuring a supervisee\'s implementation of behavior analytic procedures to evaluate accuracy and identify areas for improvement.',
     scenarios: [
       {
@@ -1223,6 +1259,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-38',
     domain: 'Personnel Supervision',
     concept: 'Behavioral Skills Training (BST)',
+    taskCode: 'I-06',
     definition: 'A training package consisting of four components  --  instruction, modeling, rehearsal, and feedback  --  used to teach new skills to supervisees and caregivers.',
     scenarios: [
       {
@@ -1257,6 +1294,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-39',
     domain: 'Ethics & Professional Practice',
     concept: 'Scope of Competence',
+    taskCode: 'E-06',
     definition: 'The principle that behavior analysts only practice within the boundaries of their competence, based on their education, training, supervised experience, and professional credentials.',
     scenarios: [
       {
@@ -1289,6 +1327,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-40',
     domain: 'Ethics & Professional Practice',
     concept: 'Informed Consent',
+    taskCode: 'E-07',
     definition: 'The process of providing clients and/or their legal guardians with sufficient information about proposed services (including risks, benefits, and alternatives) in a manner they can understand, and obtaining their voluntary agreement before services begin.',
     scenarios: [
       {
@@ -1321,6 +1360,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-41',
     domain: 'Ethics & Professional Practice',
     concept: 'Least Restrictive Alternative',
+    taskCode: 'G-01',
     definition: 'The ethical principle that behavior analysts select interventions that are the least intrusive and most positive possible while still being effective; more restrictive procedures are used only when less restrictive alternatives have been tried or are clearly insufficient.',
     scenarios: [
       {
@@ -1355,6 +1395,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-42',
     domain: 'Behavior Principles',
     concept: 'Spontaneous Recovery',
+    taskCode: 'B-14',
     definition: 'The reappearance of an extinguished behavior after a period of time has passed since extinction was in effect, without any additional reinforcement.',
     scenarios: [
       {
@@ -1387,6 +1428,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-43',
     domain: 'Behavior Principles',
     concept: 'Abolishing Operation (AO)',
+    taskCode: 'B-06',
     definition: 'A motivating operation that decreases the reinforcing effectiveness of a stimulus and decreases the current frequency of behavior that has been reinforced by that stimulus.',
     scenarios: [
       {
@@ -1419,6 +1461,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-44',
     domain: 'Measurement',
     concept: 'Momentary Time Sampling (MTS)',
+    taskCode: 'C-03',
     definition: 'A discontinuous measurement procedure in which the observer records whether the behavior is occurring at the exact moment a time interval ends; tends to provide an estimate of the proportion of time a behavior occurs.',
     scenarios: [
       {
@@ -1451,6 +1494,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-45',
     domain: 'Skill Acquisition',
     concept: 'Shaping',
+    taskCode: 'F-05',
     definition: 'A procedure for establishing a new behavior by differentially reinforcing successive approximations to the target behavior while placing previous approximations on extinction.',
     scenarios: [
       {
@@ -1483,6 +1527,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-46',
     domain: 'Research & Design',
     concept: 'Changing Criterion Design',
+    taskCode: 'D-07',
     definition: 'A single-case experimental design in which the criterion for reinforcement is systematically changed in a stepwise fashion; experimental control is demonstrated when behavior changes to match each new criterion.',
     scenarios: [
       {
@@ -1515,6 +1560,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-47',
     domain: 'Assessment',
     concept: 'Indirect Assessment',
+    taskCode: 'E-01',
     definition: 'An assessment method that gathers information about behavior through interviews, rating scales, or questionnaires rather than through direct observation; used to generate hypotheses about the function of behavior.',
     scenarios: [
       {
@@ -1547,6 +1593,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-48',
     domain: 'Personnel Supervision',
     concept: 'Competency-Based Training',
+    taskCode: 'I-06',
     definition: 'A training approach in which supervisees must demonstrate a specified level of performance (not just knowledge) before being considered trained; mastery criteria are set and verified through direct observation.',
     scenarios: [
       {
@@ -1579,6 +1626,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-49',
     domain: 'Ethics & Professional Practice',
     concept: 'Multiple Relationships',
+    taskCode: 'E-10',
     definition: 'A situation in which a behavior analyst is in both a professional role and another role with a client, supervisee, or research participant; behavior analysts must avoid multiple relationships that could impair objectivity or harm the client.',
     scenarios: [
       {
@@ -1611,6 +1659,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-50',
     domain: 'Behavior Principles',
     concept: 'Response Generalization',
+    taskCode: 'B-12',
     definition: 'The occurrence of untrained but functionally similar responses in the presence of the training stimulus, without additional training.',
     scenarios: [
       {
@@ -1644,6 +1693,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-51',
     domain: 'Behavior Principles',
     concept: 'Extinction Burst',
+    taskCode: 'B-13',
     definition: 'A temporary increase in the frequency, duration, or intensity of a behavior immediately following the discontinuation of reinforcement.',
     scenarios: [
       {
@@ -1709,6 +1759,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-53',
     domain: 'Behavior Principles',
     concept: 'Behavioral Contrast',
+    taskCode: 'B-10',
     definition: 'A change in the rate of behavior in one component of a multiple schedule when the reinforcement contingency is altered in the other component.',
     scenarios: [
       {
@@ -1774,6 +1825,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-55',
     domain: 'Behavior Principles',
     concept: 'Conditioned Punisher',
+    taskCode: 'B-03',
     definition: 'A previously neutral stimulus that acquires punishing properties through repeated pairing with an unconditioned or established conditioned punisher.',
     scenarios: [
       {
@@ -1839,6 +1891,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-57',
     domain: 'Behavior Principles',
     concept: 'Three-Term Contingency',
+    taskCode: 'B-07',
     definition: 'The basic unit of operant analysis: an antecedent stimulus, a behavior, and a consequence  --  the relationship among which determines whether the behavior will recur in similar antecedent conditions.',
     scenarios: [
       {
@@ -1872,6 +1925,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-58',
     domain: 'Skill Acquisition',
     concept: 'Most-to-Least Prompting -- Error Prevention Strategy',
+    taskCode: 'F-06',
     definition: 'A prompting procedure that begins with the most intrusive prompt to prevent errors from the outset; particularly indicated for learners with a history of practicing errors or when errorless learning is the instructional goal.',
     scenarios: [
       {
@@ -1904,6 +1958,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-59',
     domain: 'Skill Acquisition',
     concept: 'Least-to-Most Prompting',
+    taskCode: 'F-06',
     definition: 'A prompting strategy in which the least intrusive prompt is provided first; if the learner does not respond correctly, progressively more intrusive prompts are provided until a correct response occurs.',
     scenarios: [
       {
@@ -1936,6 +1991,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-60',
     domain: 'Skill Acquisition',
     concept: 'Constant Time Delay',
+    taskCode: 'F-08',
     definition: 'A prompting procedure in which a fixed interval is inserted between the task demand and the prompt on every trial after an initial period of zero-second delay trials.',
     scenarios: [
       {
@@ -1968,6 +2024,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-61',
     domain: 'Skill Acquisition',
     concept: 'Forward Chaining',
+    taskCode: 'F-04',
     definition: 'A chaining procedure in which the first behavior in the chain is taught first; subsequent behaviors are added sequentially until the entire chain is performed independently.',
     scenarios: [
       {
@@ -2000,6 +2057,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-62',
     domain: 'Skill Acquisition',
     concept: 'Generalization Programming',
+    taskCode: 'F-09',
     definition: 'The systematic arrangement of antecedent and consequence variables during training to promote the occurrence of trained behaviors in untrained settings, with untrained people, or under untrained conditions.',
     scenarios: [
       {
@@ -2099,6 +2157,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-65',
     domain: 'Behavior Reduction',
     concept: 'Time-Out from Positive Reinforcement',
+    taskCode: 'G-07',
     definition: 'A negative punishment procedure in which access to positive reinforcement is contingently removed for a specified period following a target behavior.',
     scenarios: [
       {
@@ -2131,6 +2190,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-66',
     domain: 'Behavior Reduction',
     concept: 'Functional Communication Training (FCT)',
+    taskCode: 'G-06',
     definition: 'A differential reinforcement procedure in which a communicative response that serves the same function as the problem behavior is reinforced, while the problem behavior is placed on extinction.',
     scenarios: [
       {
@@ -2396,6 +2456,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-74',
     domain: 'Ethics & Professional Practice',
     concept: 'Assent',
+    taskCode: 'E-07',
     definition: 'The affirmative agreement of a person who lacks legal capacity to provide informed consent (e.g., a minor or individual with significant cognitive limitations) to participate in services or research.',
     scenarios: [
       {
@@ -2595,6 +2656,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-80',
     domain: 'Research & Design',
     concept: 'Social Validity',
+    taskCode: 'D-01',
     definition: 'The extent to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, caregivers, and the broader community.',
     scenarios: [
       {
@@ -2694,6 +2756,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-83',
     domain: 'Assessment',
     concept: 'Preference Assessment',
+    taskCode: 'E-04',
     definition: 'A systematic procedure used to identify stimuli that may function as reinforcers for an individual by presenting items and observing approach behavior, selection, or engagement.',
     scenarios: [
       {
@@ -2726,6 +2789,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-84',
     domain: 'Skill Acquisition',
     concept: 'Stimulus Control Transfer',
+    taskCode: 'F-07',
     definition: 'A procedure in which control over a behavior is shifted from one stimulus (e.g., a prompt) to another stimulus (e.g., the natural SD) through systematic prompt fading.',
     scenarios: [
       {
@@ -2758,6 +2822,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-85',
     domain: 'Assessment',
     concept: 'Curriculum-Based Assessment',
+    taskCode: 'E-01',
     definition: 'A direct assessment approach in which a learner\'s skills are measured against the objectives of the instructional curriculum to identify current skill levels and guide programming decisions.',
     scenarios: [
       {
@@ -2857,6 +2922,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-88',
     domain: 'Verbal Behavior',
     concept: 'Echoic',
+    taskCode: 'D-01',
     definition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and has point-to-point correspondence and formal similarity with that stimulus.',
     scenarios: [
       {
@@ -2889,6 +2955,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-89',
     domain: 'Verbal Behavior',
     concept: 'Listener Behavior (Receptive Language)',
+    taskCode: 'D-01',
     definition: 'Behavior under the control of verbal stimuli in which the listener responds nonverbally to the verbal behavior of a speaker, such as following instructions or selecting items when named.',
     scenarios: [
       {
@@ -2921,6 +2988,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-90',
     domain: 'Verbal Behavior',
     concept: 'Verbal Operant  --  Textual',
+    taskCode: 'D-01',
     definition: 'A verbal operant in which the response is controlled by a written or printed verbal stimulus and has point-to-point correspondence with that stimulus, but not formal similarity (the stimulus is visual; the response is vocal).',
     scenarios: [
       {
@@ -2954,6 +3022,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-91',
     domain: 'Skill Acquisition',
     concept: 'Errorless Learning',
+    taskCode: 'F-07',
     definition: 'A teaching strategy in which prompts are provided at a level that prevents or minimizes incorrect responses, ensuring the learner contacts reinforcement for correct responding from the beginning of instruction.',
     scenarios: [
       {
@@ -2986,6 +3055,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-92',
     domain: 'Skill Acquisition',
     concept: 'Total Task Presentation',
+    taskCode: 'F-04',
     definition: 'A chaining procedure in which the learner is prompted through every step of the chain on every trial, with prompts faded across steps as competence is demonstrated.',
     scenarios: [
       {
@@ -3018,6 +3088,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-93',
     domain: 'Skill Acquisition',
     concept: 'Fluency Training',
+    taskCode: 'F-10',
     definition: 'Instruction designed to develop both accuracy and speed of responding to a level that supports maintenance, generalization, and application of the skill in natural contexts.',
     scenarios: [
       {
@@ -3084,6 +3155,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-95',
     domain: 'Behavior Reduction',
     concept: 'Differential Reinforcement of Incompatible Behavior (DRI)',
+    taskCode: 'G-06',
     definition: 'A procedure in which reinforcement is delivered for a behavior that is physically incompatible with the problem behavior, making it impossible for both behaviors to occur simultaneously.',
     scenarios: [
       {
@@ -3150,6 +3222,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-97',
     domain: 'Measurement',
     concept: 'Inter-Response Time (IRT)',
+    taskCode: 'C-01',
     definition: 'The elapsed time between the end of one response and the beginning of the next response of the same type.',
     scenarios: [
       {
@@ -3183,6 +3256,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-98',
     domain: 'Ethics & Professional Practice',
     concept: 'Conflict of Interest',
+    taskCode: 'E-10',
     definition: 'A situation in which a behavior analyst\'s personal, financial, or professional interests could impair their objectivity, competence, or effectiveness in fulfilling their professional obligations.',
     scenarios: [
       {
@@ -3215,6 +3289,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-99',
     domain: 'Ethics & Professional Practice',
     concept: 'Ongoing Data Collection and Treatment Evaluation',
+    taskCode: 'H-05',
     definition: 'The ethical obligation of a behavior analyst to continuously collect data on client outcomes and use those data to evaluate the effectiveness of the intervention and make data-driven modifications.',
     scenarios: [
       {
@@ -3247,6 +3322,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-100',
     domain: 'Assessment',
     concept: 'Functional Behavior Assessment (FBA)',
+    taskCode: 'E-03',
     definition: 'A comprehensive assessment process that uses multiple methods (indirect, descriptive, and experimental) to identify the variables that predict and maintain problem behavior, resulting in a hypothesis about its function.',
     scenarios: [
       {
