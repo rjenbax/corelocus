@@ -1,10 +1,11 @@
-// Tier 3: Definition → Scenario Matching Data
+// Tier 3: Definition -> Scenario Matching Data
 // Each item: a concept definition + 4 clinical scenarios (1 correct, 3 distractors)
 
 export interface MatchingItem {
   id: string;
   domain: string;
   concept: string;
+  taskCode?: string;
   definition: string;
   scenarios: {
     id: string;
@@ -25,7 +26,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-01-a',
         text: 'Leo screams during math tasks. His teacher ends the math activity every time he screams. Over the next two weeks, Leo\'s screaming during math increases significantly.',
         isCorrect: true,
-        explanation: 'Screaming is followed by removal of the aversive math task (negative = removal), and screaming increases — this is the definition of negative reinforcement.',
+        explanation: 'Screaming is followed by removal of the aversive math task (negative = removal), and screaming increases  --  this is the definition of negative reinforcement.',
       },
       {
         id: 'm-01-b',
@@ -37,13 +38,13 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-01-c',
         text: 'Leo hits a peer. The teacher says "No hitting!" and Leo\'s hitting decreases over the next month.',
         isCorrect: false,
-        explanation: 'A stimulus (reprimand) is added and behavior decreases — this is positive punishment, not negative reinforcement.',
+        explanation: 'A stimulus (reprimand) is added and behavior decreases  --  this is positive punishment, not negative reinforcement.',
       },
       {
         id: 'm-01-d',
         text: 'Leo asks for a break using his AAC device. His teacher ignores the request. Leo\'s break-requesting decreases over two weeks.',
         isCorrect: false,
-        explanation: 'The reinforcer (break) is withheld and behavior decreases — this is extinction, not negative reinforcement.',
+        explanation: 'The reinforcer (break) is withheld and behavior decreases  --  this is extinction, not negative reinforcement.',
       },
     ],
   },
@@ -57,25 +58,25 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-02-a',
         text: 'Leo runs in the hallway. His BCBA immediately requires him to return to the start of the hallway and walk correctly three times. Leo\'s running in the hallway decreases over the following two weeks.',
         isCorrect: true,
-        explanation: 'A response (positive practice overcorrection) is ADDED following running, and running decreases — this is positive punishment.',
+        explanation: 'A response (positive practice overcorrection) is ADDED following running, and running decreases  --  this is positive punishment.',
       },
       {
         id: 'm-02-b',
         text: 'Leo earns tokens for completing tasks. When he engages in self-injury, two tokens are removed from his token board. His self-injury decreases over two weeks.',
         isCorrect: false,
-        explanation: 'Tokens are REMOVED and behavior decreases — this is negative punishment (response cost), not positive punishment.',
+        explanation: 'Tokens are REMOVED and behavior decreases  --  this is negative punishment (response cost), not positive punishment.',
       },
       {
         id: 'm-02-c',
         text: 'Leo\'s teacher stops presenting demands when Leo cries. Leo\'s crying during demand presentations increases over two weeks.',
         isCorrect: false,
-        explanation: 'Demands are removed and behavior increases — this is negative reinforcement, not positive punishment.',
+        explanation: 'Demands are removed and behavior increases  --  this is negative reinforcement, not positive punishment.',
       },
       {
         id: 'm-02-d',
         text: 'Leo is given a preferred video after completing his morning routine. His morning routine completion increases over two weeks.',
         isCorrect: false,
-        explanation: 'A preferred item is added and behavior increases — this is positive reinforcement, not positive punishment.',
+        explanation: 'A preferred item is added and behavior increases  --  this is positive reinforcement, not positive punishment.',
       },
     ],
   },
@@ -89,19 +90,19 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-03-a',
         text: 'Leo has not had access to his tablet for three hours. His BCBA observes that Leo is now requesting his tablet more frequently than usual and that tablet access is functioning as a stronger reinforcer than it was earlier in the day.',
         isCorrect: true,
-        explanation: 'Deprivation from the tablet (an EO) has increased both the reinforcing value of the tablet AND the frequency of tablet-seeking behavior — both effects of an MO.',
+        explanation: 'Deprivation from the tablet (an EO) has increased both the reinforcing value of the tablet AND the frequency of tablet-seeking behavior  --  both effects of an MO.',
       },
       {
         id: 'm-03-b',
         text: 'Leo\'s teacher holds up a picture of a ball and Leo says "ball." His teacher praises him and Leo continues to label objects correctly throughout the session.',
         isCorrect: false,
-        explanation: 'The picture is an SD (discriminative stimulus) that signals reinforcement is available — it does not change the value of the reinforcer. This illustrates stimulus control, not an MO.',
+        explanation: 'The picture is an SD (discriminative stimulus) that signals reinforcement is available  --  it does not change the value of the reinforcer. This illustrates stimulus control, not an MO.',
       },
       {
         id: 'm-03-c',
         text: 'Leo receives a token each time he completes a math problem. After earning 10 tokens, he exchanges them for 5 minutes of free play. Leo\'s math completion rate increases.',
         isCorrect: false,
-        explanation: 'This describes a token economy — a conditioned reinforcement system. The tokens are conditioned reinforcers, not an MO.',
+        explanation: 'This describes a token economy  --  a conditioned reinforcement system. The tokens are conditioned reinforcers, not an MO.',
       },
       {
         id: 'm-03-d',
@@ -121,7 +122,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-04-a',
         text: 'Leo\'s BCBA divides a 10-minute observation into 30-second intervals. She marks a "+" for any interval in which Leo engages in stereotypy for even one second. At the end of the session, she calculates the percentage of intervals with a "+".',
         isCorrect: true,
-        explanation: 'Recording occurs if the behavior happens at ANY POINT during the interval — this is partial interval recording. It tends to overestimate behavior occurrence.',
+        explanation: 'Recording occurs if the behavior happens at ANY POINT during the interval  --  this is partial interval recording. It tends to overestimate behavior occurrence.',
       },
       {
         id: 'm-04-b',
@@ -139,7 +140,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-04-d',
         text: 'Leo\'s BCBA counts every instance of hand-flapping during a 10-minute session and records the total number of occurrences.',
         isCorrect: false,
-        explanation: 'Counting every instance is event recording (frequency), a continuous measurement procedure — not partial interval recording.',
+        explanation: 'Counting every instance is event recording (frequency), a continuous measurement procedure  --  not partial interval recording.',
       },
     ],
   },
@@ -153,7 +154,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-05-a',
         text: 'Leo\'s BCBA begins withholding attention following his attention-maintained tantrums. On day 1 of extinction, Leo\'s tantrums increase from an average of 3 per day to 9 per day and are louder and longer than before. By day 5, tantrums have decreased to near zero.',
         isCorrect: true,
-        explanation: 'An immediate increase in frequency, duration, and intensity at the START of extinction — this is the defining feature of an extinction burst.',
+        explanation: 'An immediate increase in frequency, duration, and intensity at the START of extinction  --  this is the defining feature of an extinction burst.',
       },
       {
         id: 'm-05-b',
@@ -185,7 +186,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-06-a',
         text: 'Leo hits peers to obtain their toys (tangible function). His BCBA teaches him to say "Can I have that?" and provides immediate access to the toy when he uses this phrase. Simultaneously, hitting no longer results in toy access. Over four weeks, hitting decreases and requesting increases.',
         isCorrect: true,
-        explanation: 'A specific alternative behavior (requesting) is reinforced with the same reinforcer (toy access) that maintained the problem behavior, while the problem behavior is placed on extinction — this is DRA.',
+        explanation: 'A specific alternative behavior (requesting) is reinforced with the same reinforcer (toy access) that maintained the problem behavior, while the problem behavior is placed on extinction  --  this is DRA.',
       },
       {
         id: 'm-06-b',
@@ -217,25 +218,25 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-07-a',
         text: 'Leo has not had his preferred music for 45 minutes (EO). He approaches his BCBA and says "music." His BCBA immediately turns on his preferred music. Leo\'s music-requesting increases.',
         isCorrect: true,
-        explanation: 'The verbal behavior ("music") is controlled by an MO (deprivation from music) and reinforced by the specific, characteristic consequence (music is turned on) — this is a mand.',
+        explanation: 'The verbal behavior ("music") is controlled by an MO (deprivation from music) and reinforced by the specific, characteristic consequence (music is turned on)  --  this is a mand.',
       },
       {
         id: 'm-07-b',
         text: 'Leo\'s BCBA holds up a picture of a dog and asks "What is this?" Leo says "dog" and receives praise.',
         isCorrect: false,
-        explanation: 'The verbal behavior is controlled by a nonverbal SD (the picture) and reinforced by generalized reinforcement (praise) — this is a tact, not a mand.',
+        explanation: 'The verbal behavior is controlled by a nonverbal SD (the picture) and reinforced by generalized reinforcement (praise)  --  this is a tact, not a mand.',
       },
       {
         id: 'm-07-c',
         text: 'Leo\'s BCBA asks "What do you do when you\'re thirsty?" and Leo says "drink water." His BCBA praises him.',
         isCorrect: false,
-        explanation: 'The verbal behavior is controlled by a verbal SD (the question) and reinforced by generalized reinforcement — this is an intraverbal, not a mand.',
+        explanation: 'The verbal behavior is controlled by a verbal SD (the question) and reinforced by generalized reinforcement  --  this is an intraverbal, not a mand.',
       },
       {
         id: 'm-07-d',
         text: 'Leo\'s BCBA says "ball" and Leo repeats "ball." His BCBA praises him for the correct echoic response.',
         isCorrect: false,
-        explanation: 'The verbal behavior has point-to-point correspondence with a verbal SD (the BCBA\'s "ball") — this is an echoic, not a mand.',
+        explanation: 'The verbal behavior has point-to-point correspondence with a verbal SD (the BCBA\'s "ball")  --  this is an echoic, not a mand.',
       },
     ],
   },
@@ -249,7 +250,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-08-a',
         text: 'A BCBA implements a social skills intervention for Leo. She first establishes stable baselines for greeting, sharing, and turn-taking. She introduces the intervention for greeting first, then sharing, then turn-taking, each time waiting for stable data in the remaining baselines. All three behaviors improve only when the intervention is introduced.',
         isCorrect: true,
-        explanation: 'The intervention is introduced sequentially across three behaviors (tiers) after stable baselines — this is a multiple baseline across behaviors design.',
+        explanation: 'The intervention is introduced sequentially across three behaviors (tiers) after stable baselines  --  this is a multiple baseline across behaviors design.',
       },
       {
         id: 'm-08-b',
@@ -313,7 +314,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-10-a',
         text: 'Leo is learning to read the word "stop." Initially, the word is presented in large, bold red letters. Over successive trials, the letters are gradually made smaller and the color is faded to black until Leo reads "stop" in standard black text without error.',
         isCorrect: true,
-        explanation: 'The prompt (size and color) is gradually changed along a physical dimension until the target stimulus controls the response — this is stimulus fading.',
+        explanation: 'The prompt (size and color) is gradually changed along a physical dimension until the target stimulus controls the response  --  this is stimulus fading.',
       },
       {
         id: 'm-10-b',
@@ -345,7 +346,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-11-a',
         text: 'Leo\'s problem behavior is placed on extinction at school (reinforcement decreases). His parents report that his problem behavior at home has increased significantly, even though nothing has changed at home.',
         isCorrect: true,
-        explanation: 'When reinforcement decreases in one context (school), responding increases in another context (home) where the schedule has not changed — this is behavioral contrast.',
+        explanation: 'When reinforcement decreases in one context (school), responding increases in another context (home) where the schedule has not changed  --  this is behavioral contrast.',
       },
       {
         id: 'm-11-b',
@@ -363,7 +364,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-11-d',
         text: 'Leo\'s on-task behavior increases when his teacher provides more frequent praise. His off-task behavior decreases in the same setting.',
         isCorrect: false,
-        explanation: 'This describes the effect of increased reinforcement on behavior within the same setting — not behavioral contrast, which requires an OPPOSITE change in a DIFFERENT component.',
+        explanation: 'This describes the effect of increased reinforcement on behavior within the same setting  --  not behavioral contrast, which requires an OPPOSITE change in a DIFFERENT component.',
       },
     ],
   },
@@ -427,7 +428,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-13-d',
         text: 'Leo is learning to say "I want cookie." His BCBA initially models the full phrase, then fades to "I want...", then "I...", until Leo produces the full phrase independently.',
         isCorrect: false,
-        explanation: 'This describes prompt fading for a verbal response — not chaining. Chaining applies to multi-step behavior chains, not to fading prompts for a single verbal operant.',
+        explanation: 'This describes prompt fading for a verbal response  --  not chaining. Chaining applies to multi-step behavior chains, not to fading prompts for a single verbal operant.',
       },
     ],
   },
@@ -441,7 +442,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-14-a',
         text: 'Leo is taught to greet his BCBA by saying "Hi!" He then begins greeting his classroom teacher, his aide, and his parents with "Hi!" without any additional training for these individuals.',
         isCorrect: true,
-        explanation: 'The same greeting behavior occurs in the presence of new people (stimuli similar to the training SD) without additional training — this is stimulus generalization.',
+        explanation: 'The same greeting behavior occurs in the presence of new people (stimuli similar to the training SD) without additional training  --  this is stimulus generalization.',
       },
       {
         id: 'm-14-b',
@@ -465,40 +466,41 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-15',
-    domain: 'Assessment',
-    concept: 'Preference Assessment (MSWO)',
-    definition: 'A structured assessment procedure in which multiple stimuli are presented simultaneously, the individual selects one, it is removed, and the remaining stimuli are re-presented; this continues until all stimuli have been selected or a set number of trials is complete, yielding a rank-ordered hierarchy of preferred stimuli.',
+    concept: 'Conditioned Reinforcer',
+    domain: 'Behavior Principles',
+    taskCode: 'B-04',
+    definition: 'A stimulus that has acquired reinforcing properties through pairing with other reinforcers.',
     scenarios: [
       {
         id: 'm-15-a',
-        text: 'Leo\'s BCBA places six items on the table (tablet, ball, book, puzzle, music player, snack). Leo selects the tablet. The BCBA removes the tablet and re-presents the remaining five items. Leo selects the snack. This continues until all items have been selected, yielding a rank-ordered list of Leo\'s preferences.',
+        text: 'A child initially shows no preference for tokens. After tokens are repeatedly exchanged for preferred items (snacks, screen time), the child begins working harder to earn tokens even before exchanging them.',
         isCorrect: true,
-        explanation: 'Multiple stimuli presented simultaneously, selected item removed, remaining items re-presented — this is the Multiple Stimulus Without Replacement (MSWO) procedure.',
+        explanation: 'The tokens acquired reinforcing value through pairing with already-effective reinforcers (snacks, screen time), making them conditioned reinforcers.',
       },
       {
         id: 'm-15-b',
-        text: 'Leo\'s BCBA presents two items at a time (tablet vs. ball, tablet vs. book, ball vs. book, etc.) and records which item Leo selects in each pair. She calculates the percentage of trials each item was selected.',
+        text: 'A child works hard to earn extra recess time because running and playing are inherently enjoyable.',
         isCorrect: false,
-        explanation: 'Presenting two items at a time and recording selections is a paired stimulus (PS) preference assessment, not MSWO.',
+        explanation: 'Recess is an unconditioned reinforcer  --  its value does not depend on prior learning or pairing with other stimuli.',
       },
       {
         id: 'm-15-c',
-        text: 'Leo\'s BCBA presents one item at a time and records whether Leo approaches or avoids each item. She calculates the percentage of trials each item was approached.',
+        text: 'A child stops engaging in problem behavior after the BCBA removes all preferred items from the environment.',
         isCorrect: false,
-        explanation: 'Presenting one item at a time and recording approach/avoidance is a single stimulus (SS) preference assessment, not MSWO.',
+        explanation: 'Removing preferred items describes an abolishing operation, not the acquisition of conditioned reinforcement.',
       },
       {
         id: 'm-15-d',
-        text: 'Leo\'s BCBA asks his parents to complete a questionnaire listing his favorite activities, foods, and toys at home.',
+        text: 'A child receives praise after every correct response. Over time, the frequency of correct responses increases.',
         isCorrect: false,
-        explanation: 'Gathering preference information through parent report is an indirect assessment, not a structured preference assessment procedure like MSWO.',
+        explanation: 'While praise can be a conditioned reinforcer, this scenario describes positive reinforcement generally. The key feature of a conditioned reinforcer is its history of pairing  --  this scenario does not describe that pairing process.',
       },
     ],
   },
-// NEW ITEMS — Domains A–I — to be appended to matchingItems array
+// NEW ITEMS  --  Domains A-I  --  to be appended to matchingItems array
 // IDs continue from m-16 through m-50
 
-  // ── BEHAVIOR PRINCIPLES ───────────────────────────────────────────────────────
+  // -- BEHAVIOR PRINCIPLES -------------------------------------------------------
   {
     id: 'm-16',
     domain: 'Behavior Principles',
@@ -509,13 +511,13 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-16-a',
         text: 'Leo earns tokens throughout the day for following instructions. Each time he engages in verbal aggression, two tokens are removed from his token board. Over three weeks, verbal aggression decreases significantly.',
         isCorrect: true,
-        explanation: 'Tokens (a positive stimulus) are REMOVED following verbal aggression, and the behavior decreases — this is negative punishment (specifically, response cost).',
+        explanation: 'Tokens (a positive stimulus) are REMOVED following verbal aggression, and the behavior decreases  --  this is negative punishment (specifically, response cost).',
       },
       {
         id: 'm-16-b',
         text: 'Leo\'s BCBA requires him to practice walking calmly in the hallway five times every time he runs. Running in the hallway decreases over two weeks.',
         isCorrect: false,
-        explanation: 'A response (practice walking) is ADDED following running, and behavior decreases — this is positive punishment (positive practice overcorrection), not negative punishment.',
+        explanation: 'A response (practice walking) is ADDED following running, and behavior decreases  --  this is positive punishment (positive practice overcorrection), not negative punishment.',
       },
       {
         id: 'm-16-c',
@@ -541,25 +543,25 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-17-a',
         text: 'Leo initially showed no interest in stickers. His BCBA consistently paired stickers with access to his preferred tablet (a strong reinforcer). After several weeks, Leo began working hard to earn stickers even when tablet access was not immediately available.',
         isCorrect: true,
-        explanation: 'Stickers acquired reinforcing value through repeated pairing with an established reinforcer (tablet access) — this is the process of establishing a conditioned reinforcer.',
+        explanation: 'Stickers acquired reinforcing value through repeated pairing with an established reinforcer (tablet access)  --  this is the process of establishing a conditioned reinforcer.',
       },
       {
         id: 'm-17-b',
         text: 'Leo works hard to earn breaks from demanding tasks. His BCBA observes that break access reliably increases his work completion.',
         isCorrect: false,
-        explanation: 'Break access functions as a reinforcer because it removes an aversive stimulus (demands) — this is negative reinforcement, not a conditioned reinforcer. The break itself may be an unconditioned reinforcer (rest) rather than a conditioned one.',
+        explanation: 'Break access functions as a reinforcer because it removes an aversive stimulus (demands)  --  this is negative reinforcement, not a conditioned reinforcer. The break itself may be an unconditioned reinforcer (rest) rather than a conditioned one.',
       },
       {
         id: 'm-17-c',
         text: 'Leo consistently selects food items over toys in preference assessments. Food reliably increases his responding when used as a consequence.',
         isCorrect: false,
-        explanation: 'Food is an unconditioned (primary) reinforcer — its reinforcing value does not depend on prior learning. A conditioned reinforcer acquires its value through pairing.',
+        explanation: 'Food is an unconditioned (primary) reinforcer  --  its reinforcing value does not depend on prior learning. A conditioned reinforcer acquires its value through pairing.',
       },
       {
         id: 'm-17-d',
         text: 'Leo\'s BCBA delivers praise immediately after each correct response. Leo\'s correct responding increases over the following week.',
         isCorrect: false,
-        explanation: 'While praise can function as a conditioned reinforcer, this scenario only demonstrates that praise is functioning as a reinforcer — it does not describe the pairing process that establishes conditioned reinforcers.',
+        explanation: 'While praise can function as a conditioned reinforcer, this scenario only demonstrates that praise is functioning as a reinforcer  --  it does not describe the pairing process that establishes conditioned reinforcers.',
       },
     ],
   },
@@ -573,7 +575,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-18-a',
         text: 'Leo\'s BCBA holds up a picture of a cookie and asks "What do you want?" Leo says "cookie" and receives a cookie. Over time, Leo reliably requests cookies when the picture is presented but not when it is absent.',
         isCorrect: true,
-        explanation: 'The picture has become a discriminative stimulus (SD) — its presence signals that the verbal response "cookie" will be reinforced with cookie access.',
+        explanation: 'The picture has become a discriminative stimulus (SD)  --  its presence signals that the verbal response "cookie" will be reinforced with cookie access.',
       },
       {
         id: 'm-18-b',
@@ -585,13 +587,13 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-18-c',
         text: 'Leo\'s problem behavior is highest in the demand condition of a functional analysis, where demands are presented and escape is provided contingent on problem behavior.',
         isCorrect: false,
-        explanation: 'The demand condition identifies the function of problem behavior — this is a functional analysis result, not an example of an SD controlling appropriate behavior.',
+        explanation: 'The demand condition identifies the function of problem behavior  --  this is a functional analysis result, not an example of an SD controlling appropriate behavior.',
       },
       {
         id: 'm-18-d',
         text: 'Leo\'s BCBA delivers a token every 5 minutes regardless of his behavior. Problem behavior decreases because the token schedule abolishes the value of escape.',
         isCorrect: false,
-        explanation: 'Delivering reinforcement on a time-based schedule to reduce problem behavior is noncontingent reinforcement (NCR), which functions as an abolishing operation — not an SD.',
+        explanation: 'Delivering reinforcement on a time-based schedule to reduce problem behavior is noncontingent reinforcement (NCR), which functions as an abolishing operation  --  not an SD.',
       },
     ],
   },
@@ -605,7 +607,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-19-a',
         text: 'Leo previously hit peers to obtain toys (hitting was extinguished 6 months ago). His BCBA taught him to use an AAC device to request toys (FCT). When the FCT program is placed on extinction, Leo\'s hitting returns at a moderate rate.',
         isCorrect: true,
-        explanation: 'A previously extinguished behavior (hitting) resurfaces when the more recently reinforced behavior (AAC requesting) is placed on extinction — this is resurgence.',
+        explanation: 'A previously extinguished behavior (hitting) resurfaces when the more recently reinforced behavior (AAC requesting) is placed on extinction  --  this is resurgence.',
       },
       {
         id: 'm-19-b',
@@ -628,7 +630,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── MEASUREMENT ───────────────────────────────────────────────────────────────
+  // -- MEASUREMENT ---------------------------------------------------------------
   {
     id: 'm-20',
     domain: 'Measurement',
@@ -657,7 +659,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-20-d',
         text: 'Leo\'s BCBA counts every instance of hand-flapping during a 10-minute session and records the total number.',
         isCorrect: false,
-        explanation: 'Counting every instance of a behavior is event recording (frequency), a continuous measurement procedure — not whole interval recording.',
+        explanation: 'Counting every instance of a behavior is event recording (frequency), a continuous measurement procedure  --  not whole interval recording.',
       },
     ],
   },
@@ -735,7 +737,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-23-a',
         text: 'Leo\'s BCBA records that he made 24 correct responses during a 30-minute session on Monday and 18 correct responses during a 20-minute session on Tuesday. To compare his performance across sessions, she divides the number of responses by the session length in minutes.',
         isCorrect: true,
-        explanation: 'Dividing the number of responses by session length to allow comparison across sessions of different lengths is rate (responses per minute) — the appropriate measure when session lengths vary.',
+        explanation: 'Dividing the number of responses by session length to allow comparison across sessions of different lengths is rate (responses per minute)  --  the appropriate measure when session lengths vary.',
       },
       {
         id: 'm-23-b',
@@ -758,7 +760,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── RESEARCH & EXPERIMENTAL DESIGN ───────────────────────────────────────────
+  // -- RESEARCH & EXPERIMENTAL DESIGN -------------------------------------------
   {
     id: 'm-24',
     domain: 'Research & Design',
@@ -767,7 +769,7 @@ export const matchingItems: MatchingItem[] = [
     scenarios: [
       {
         id: 'm-24-a',
-        text: 'A BCBA implements a token economy for Leo\'s on-task behavior (B phase). On-task behavior increases. She then withdraws the token economy and returns to baseline conditions (A phase) — on-task behavior decreases. She reintroduces the token economy (B phase) and on-task behavior increases again.',
+        text: 'A BCBA implements a token economy for Leo\'s on-task behavior (B phase). On-task behavior increases. She then withdraws the token economy and returns to baseline conditions (A phase)  --  on-task behavior decreases. She reintroduces the token economy (B phase) and on-task behavior increases again.',
         isCorrect: true,
         explanation: 'Introducing, withdrawing, and reintroducing the intervention to demonstrate that behavior changes with the independent variable is a reversal (ABAB) design.',
       },
@@ -856,7 +858,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── ASSESSMENT ────────────────────────────────────────────────────────────────
+  // -- ASSESSMENT ----------------------------------------------------------------
   {
     id: 'm-27',
     domain: 'Assessment',
@@ -922,7 +924,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── SKILL ACQUISITION ─────────────────────────────────────────────────────────
+  // -- SKILL ACQUISITION ---------------------------------------------------------
   {
     id: 'm-29',
     domain: 'Skill Acquisition',
@@ -1020,7 +1022,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── BEHAVIOR REDUCTION ────────────────────────────────────────────────────────
+  // -- BEHAVIOR REDUCTION --------------------------------------------------------
   {
     id: 'm-32',
     domain: 'Behavior Reduction',
@@ -1086,7 +1088,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── VERBAL BEHAVIOR ───────────────────────────────────────────────────────────
+  // -- VERBAL BEHAVIOR -----------------------------------------------------------
   {
     id: 'm-34',
     domain: 'Verbal Behavior',
@@ -1097,25 +1099,25 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-34-a',
         text: 'Leo\'s BCBA holds up a real apple and asks "What is this?" Leo says "apple" and receives praise. Over time, Leo labels apples, oranges, and bananas correctly whenever they are presented, regardless of whether he is hungry.',
         isCorrect: true,
-        explanation: 'The verbal behavior ("apple") is controlled by a nonverbal SD (the apple) and reinforced by generalized reinforcement (praise) — this is a tact.',
+        explanation: 'The verbal behavior ("apple") is controlled by a nonverbal SD (the apple) and reinforced by generalized reinforcement (praise)  --  this is a tact.',
       },
       {
         id: 'm-34-b',
         text: 'Leo has not had his preferred snack for 45 minutes. He approaches his BCBA and says "cookie." She gives him a cookie. His cookie-requesting increases.',
         isCorrect: false,
-        explanation: 'The verbal behavior is controlled by an MO (deprivation) and reinforced by the specific, characteristic consequence (cookie) — this is a mand, not a tact.',
+        explanation: 'The verbal behavior is controlled by an MO (deprivation) and reinforced by the specific, characteristic consequence (cookie)  --  this is a mand, not a tact.',
       },
       {
         id: 'm-34-c',
         text: 'Leo\'s BCBA asks "What do you do when you\'re hungry?" and Leo says "eat food." She praises him.',
         isCorrect: false,
-        explanation: 'The verbal behavior is controlled by a verbal SD (the question) and reinforced by generalized reinforcement — this is an intraverbal, not a tact.',
+        explanation: 'The verbal behavior is controlled by a verbal SD (the question) and reinforced by generalized reinforcement  --  this is an intraverbal, not a tact.',
       },
       {
         id: 'm-34-d',
         text: 'Leo\'s BCBA says "red" and Leo immediately repeats "red." She praises him for the correct response.',
         isCorrect: false,
-        explanation: 'The verbal behavior has point-to-point correspondence with a verbal SD (the BCBA\'s "red") — this is an echoic, not a tact.',
+        explanation: 'The verbal behavior has point-to-point correspondence with a verbal SD (the BCBA\'s "red")  --  this is an echoic, not a tact.',
       },
     ],
   },
@@ -1129,25 +1131,25 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-35-a',
         text: 'Leo\'s BCBA asks "What do you do when you\'re cold?" and Leo says "put on a jacket." She praises him. The question and answer do not share any words or sounds.',
         isCorrect: true,
-        explanation: 'The verbal behavior is controlled by a verbal SD (the question) with no point-to-point correspondence between the question and the answer, reinforced by generalized reinforcement — this is an intraverbal.',
+        explanation: 'The verbal behavior is controlled by a verbal SD (the question) with no point-to-point correspondence between the question and the answer, reinforced by generalized reinforcement  --  this is an intraverbal.',
       },
       {
         id: 'm-35-b',
         text: 'Leo\'s BCBA holds up a picture of a dog and asks "What is this?" Leo says "dog" and receives praise.',
         isCorrect: false,
-        explanation: 'The verbal behavior is controlled by a nonverbal SD (the picture) — this is a tact, not an intraverbal.',
+        explanation: 'The verbal behavior is controlled by a nonverbal SD (the picture)  --  this is a tact, not an intraverbal.',
       },
       {
         id: 'm-35-c',
         text: 'Leo is hungry and says "cookie" to his BCBA. She gives him a cookie. His cookie-requesting increases.',
         isCorrect: false,
-        explanation: 'The verbal behavior is controlled by an MO and reinforced by the specific, characteristic consequence — this is a mand, not an intraverbal.',
+        explanation: 'The verbal behavior is controlled by an MO and reinforced by the specific, characteristic consequence  --  this is a mand, not an intraverbal.',
       },
       {
         id: 'm-35-d',
         text: 'Leo\'s BCBA says "dog" and Leo immediately says "dog." She praises him.',
         isCorrect: false,
-        explanation: 'The verbal behavior has point-to-point correspondence with the verbal SD — this is an echoic, not an intraverbal.',
+        explanation: 'The verbal behavior has point-to-point correspondence with the verbal SD  --  this is an echoic, not an intraverbal.',
       },
     ],
   },
@@ -1184,7 +1186,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── PERSONNEL SUPERVISION ─────────────────────────────────────────────────────
+  // -- PERSONNEL SUPERVISION -----------------------------------------------------
   {
     id: 'm-37',
     domain: 'Personnel Supervision',
@@ -1221,7 +1223,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-38',
     domain: 'Personnel Supervision',
     concept: 'Behavioral Skills Training (BST)',
-    definition: 'A training package consisting of four components — instruction, modeling, rehearsal, and feedback — used to teach new skills to supervisees and caregivers.',
+    definition: 'A training package consisting of four components  --  instruction, modeling, rehearsal, and feedback  --  used to teach new skills to supervisees and caregivers.',
     scenarios: [
       {
         id: 'm-38-a',
@@ -1250,7 +1252,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── ETHICS & PROFESSIONAL PRACTICE ───────────────────────────────────────────
+  // -- ETHICS & PROFESSIONAL PRACTICE -------------------------------------------
   {
     id: 'm-39',
     domain: 'Ethics & Professional Practice',
@@ -1348,7 +1350,7 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
 
-  // ── BEHAVIOR PRINCIPLES (additional) ─────────────────────────────────────────
+  // -- BEHAVIOR PRINCIPLES (additional) -----------------------------------------
   {
     id: 'm-42',
     domain: 'Behavior Principles',
@@ -1391,7 +1393,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-43-a',
         text: 'Leo has just finished a large snack. His BCBA observes that he is now requesting food much less frequently than before the snack, and that food is functioning as a weaker reinforcer during the current session.',
         isCorrect: true,
-        explanation: 'Satiation (having just consumed food) has decreased both the reinforcing value of food AND the frequency of food-seeking behavior — both effects of an abolishing operation (AO).',
+        explanation: 'Satiation (having just consumed food) has decreased both the reinforcing value of food AND the frequency of food-seeking behavior  --  both effects of an abolishing operation (AO).',
       },
       {
         id: 'm-43-b',
@@ -1555,7 +1557,7 @@ export const matchingItems: MatchingItem[] = [
       },
       {
         id: 'm-48-b',
-        text: 'A BCBA trains her RBT by explaining the procedure, demonstrating it, having the RBT practice, and providing feedback — but does not set a performance criterion.',
+        text: 'A BCBA trains her RBT by explaining the procedure, demonstrating it, having the RBT practice, and providing feedback  --  but does not set a performance criterion.',
         isCorrect: false,
         explanation: 'A training package with instruction, modeling, rehearsal, and feedback is BST. Without a mastery criterion, it is not competency-based training.',
       },
@@ -1613,7 +1615,7 @@ export const matchingItems: MatchingItem[] = [
     scenarios: [
       {
         id: 'm-50-a',
-        text: 'Leo is taught to greet people by saying "Hi!" After training, he also begins waving, nodding, and smiling when he sees familiar people — none of these responses were directly trained.',
+        text: 'Leo is taught to greet people by saying "Hi!" After training, he also begins waving, nodding, and smiling when he sees familiar people  --  none of these responses were directly trained.',
         isCorrect: true,
         explanation: 'New but functionally similar responses (waving, nodding, smiling) occurring in the presence of the trained stimulus (familiar people) without additional training is response generalization.',
       },
@@ -1637,7 +1639,7 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Behavior Principles (B) ────────────────────────────────────
+  // -- NEW ITEMS: Behavior Principles (B) ------------------------------------
   {
     id: 'm-51',
     domain: 'Behavior Principles',
@@ -1648,7 +1650,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-51-a',
         text: 'A child who previously received attention for tantruming is now ignored when he tantrums. During the first week, his tantrums become louder and more frequent before gradually decreasing.',
         isCorrect: true,
-        explanation: 'The initial increase in tantrum intensity and frequency following the removal of the attention contingency is a textbook extinction burst — a temporary escalation before the behavior decreases.',
+        explanation: 'The initial increase in tantrum intensity and frequency following the removal of the attention contingency is a textbook extinction burst  --  a temporary escalation before the behavior decreases.',
       },
       {
         id: 'm-51-b',
@@ -1672,33 +1674,34 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-52',
+    concept: 'Spontaneous Recovery  --  Clinical Implication',
     domain: 'Behavior Principles',
-    concept: 'Spontaneous Recovery',
-    definition: 'The reappearance of an extinguished behavior after a period of time has elapsed without exposure to the extinction contingency.',
+    taskCode: 'B-10',
+    definition: 'The reappearance of an extinguished behavior after a period of time, even without additional reinforcement  --  a predictable side effect of extinction that clinicians must plan for.',
     scenarios: [
       {
         id: 'm-52-a',
-        text: 'Marcus\'s self-injurious behavior had been successfully extinguished over eight weeks. After a two-week holiday break with no intervention, the behavior reappears at low rates when he returns to the clinic.',
+        text: 'A child\'s tantruming had been successfully reduced to near-zero levels through extinction over 10 weeks. The BCBA warns the family that tantrums may briefly return after a school break, even without any reinforcement having occurred. She instructs them to maintain extinction procedures if this happens.',
         isCorrect: true,
-        explanation: 'The reappearance of previously extinguished SIB after a period of no contact with the extinction contingency is spontaneous recovery — a predictable phenomenon that practitioners must anticipate and plan for.',
+        explanation: 'Anticipating and planning for the temporary return of extinguished behavior after a break is the clinical application of spontaneous recovery  --  a predictable side effect of extinction.',
       },
       {
         id: 'm-52-b',
-        text: 'Marcus\'s SIB increases sharply when his BCBA first begins ignoring it after a period of consistent attention delivery.',
+        text: 'A child\'s aggression increases sharply during the first week of extinction before declining.',
         isCorrect: false,
-        explanation: 'A sharp increase immediately following the onset of extinction is an extinction burst, not spontaneous recovery.',
+        explanation: 'A temporary increase in behavior at the start of extinction is an extinction burst, not spontaneous recovery. Spontaneous recovery occurs after a period of time has passed following successful extinction.',
       },
       {
         id: 'm-52-c',
-        text: 'Marcus\'s SIB increases when he is moved to a new classroom that resembles the setting where the behavior was originally reinforced.',
+        text: 'A child\'s previously extinguished behavior returns when a new, less preferred reinforcer is introduced as a replacement.',
         isCorrect: false,
-        explanation: 'Behavior increasing in a new context that shares stimulus properties with the original training context is stimulus generalization, not spontaneous recovery.',
+        explanation: 'The return of problem behavior when a replacement reinforcer loses effectiveness is resurgence, not spontaneous recovery. Spontaneous recovery occurs after a time gap, not due to reinforcement changes.',
       },
       {
         id: 'm-52-d',
-        text: 'Marcus\'s SIB returns after his parents accidentally reinforce it once during the holiday break.',
+        text: 'A child\'s behavior increases in a new setting where extinction has not been implemented.',
         isCorrect: false,
-        explanation: 'Behavior returning because of accidental reinforcement during the break is resurgence or re-acquisition, not spontaneous recovery. Spontaneous recovery occurs without any reinforcement contact.',
+        explanation: 'Behavior occurring in a new context where extinction has not been applied reflects a failure of generalization, not spontaneous recovery.',
       },
     ],
   },
@@ -1712,7 +1715,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-53-a',
         text: 'A student\'s on-task behavior is reinforced frequently in morning sessions. When the afternoon teacher stops reinforcing on-task behavior, the student\'s on-task rate in the morning sessions increases above its previous baseline.',
         isCorrect: true,
-        explanation: 'The increase in on-task behavior in the morning component following a decrease in reinforcement in the afternoon component is behavioral contrast — a change in one component producing an opposite change in the other.',
+        explanation: 'The increase in on-task behavior in the morning component following a decrease in reinforcement in the afternoon component is behavioral contrast  --  a change in one component producing an opposite change in the other.',
       },
       {
         id: 'm-53-b',
@@ -1736,33 +1739,34 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-54',
+    concept: 'Resurgence  --  Distinguishing from Spontaneous Recovery',
     domain: 'Behavior Principles',
-    concept: 'Resurgence',
-    definition: 'The reappearance of a previously extinguished behavior when a more recently reinforced behavior is placed on extinction.',
+    taskCode: 'B-11',
+    definition: 'Resurgence is the return of a previously extinguished behavior when the current reinforcement contingency is disrupted  --  distinguishable from spontaneous recovery by its trigger (reinforcement disruption, not time).',
     scenarios: [
       {
         id: 'm-54-a',
-        text: 'Keisha\'s aggression was extinguished and replaced with a functional communication response (FCT). When the FCT response is placed on extinction during a treatment integrity failure, her aggression reappears.',
+        text: 'A child\'s aggression was extinguished and replaced with a card exchange (FCT). After six months, the card exchange is placed on extinction due to a staffing change. Within two sessions, the child\'s aggression returns at high rates  --  even though aggression had not been reinforced in months.',
         isCorrect: true,
-        explanation: 'The reappearance of the previously extinguished problem behavior (aggression) when the replacement behavior (FCT) is placed on extinction is resurgence — a critical clinical concern when FCT is used as a behavior reduction strategy.',
+        explanation: 'The return of the previously extinguished behavior (aggression) when the alternative response (FCT) is placed on extinction is resurgence  --  triggered by disruption of the current reinforcement contingency.',
       },
       {
         id: 'm-54-b',
-        text: 'Keisha\'s aggression reappears after a two-week hospitalization during which no intervention was in place.',
+        text: 'A child\'s tantrums return briefly after a two-week holiday, even though no reinforcement occurred during the break.',
         isCorrect: false,
-        explanation: 'Reappearance of extinguished behavior after a time gap without any extinction of a replacement behavior is spontaneous recovery, not resurgence.',
+        explanation: 'The return of behavior after a time gap without reinforcement is spontaneous recovery, not resurgence. Resurgence requires disruption of a current reinforcement contingency.',
       },
       {
         id: 'm-54-c',
-        text: 'Keisha\'s aggression temporarily increases when her BCBA first begins ignoring it.',
+        text: 'A child\'s problem behavior increases during the first week of extinction before decreasing.',
         isCorrect: false,
-        explanation: 'A temporary increase immediately following the onset of extinction is an extinction burst, not resurgence.',
+        explanation: 'A temporary increase at the start of extinction is an extinction burst, not resurgence.',
       },
       {
         id: 'm-54-d',
-        text: 'Keisha\'s aggression occurs in a new school setting even though it had been extinguished in the clinic.',
+        text: 'A child\'s on-task behavior decreases in the afternoon session when the afternoon teacher provides less reinforcement than the morning teacher.',
         isCorrect: false,
-        explanation: 'Behavior occurring in a new setting that shares stimulus properties with the original training context is stimulus generalization, not resurgence.',
+        explanation: 'A change in behavior across settings due to different reinforcement schedules is behavioral contrast, not resurgence.',
       },
     ],
   },
@@ -1776,7 +1780,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-55-a',
         text: 'A therapist repeatedly says "No" immediately before delivering a brief physical prompt correction. Over time, "No" alone decreases the child\'s behavior even when the prompt is not delivered.',
         isCorrect: true,
-        explanation: '"No" acquired its punishing properties through repeated pairing with the physical prompt (an established aversive). This is a conditioned punisher — a neutral stimulus that becomes punishing through conditioning.',
+        explanation: '"No" acquired its punishing properties through repeated pairing with the physical prompt (an established aversive). This is a conditioned punisher  --  a neutral stimulus that becomes punishing through conditioning.',
       },
       {
         id: 'm-55-b',
@@ -1800,33 +1804,34 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-56',
+    concept: 'Abolishing Operation (AO)  --  Clinical Application',
     domain: 'Behavior Principles',
-    concept: 'Abolishing Operation (AO)',
-    definition: 'A motivating operation that decreases the reinforcing effectiveness of a stimulus and decreases the current frequency of behavior reinforced by that stimulus.',
+    taskCode: 'B-06',
+    definition: 'An AO is used clinically to reduce the reinforcing value of a stimulus before a session, thereby decreasing the motivation for problem behavior maintained by that stimulus.',
     scenarios: [
       {
         id: 'm-56-a',
-        text: 'A child who just finished a large meal is offered a cookie as a reinforcer during a DTT session. His rate of correct responding drops significantly compared to sessions conducted before meals.',
+        text: 'A BCBA knows that a child\'s aggression is attention-maintained. Before each session, she instructs staff to provide 10 minutes of high-quality, non-contingent attention. During sessions, the child\'s aggression decreases significantly compared to days when pre-session attention is not provided.',
         isCorrect: true,
-        explanation: 'Satiation from the recent meal functions as an abolishing operation — it decreases the reinforcing value of food and reduces the behavior (correct responding) that food previously maintained.',
+        explanation: 'Providing attention before the session reduces its reinforcing value (abolishes it as a reinforcer), decreasing the motivation for attention-maintained aggression. This is a clinical application of an abolishing operation.',
       },
       {
         id: 'm-56-b',
-        text: 'A child who has not eaten for four hours responds at a higher rate during a food-reinforced DTT session than he does after eating.',
+        text: 'A child who has not eaten for several hours is highly motivated to work for food reinforcers during a DTT session.',
         isCorrect: false,
-        explanation: 'Food deprivation increases the reinforcing value of food and evokes food-maintained behavior — this is an establishing operation (EO), not an abolishing operation.',
+        explanation: 'Food deprivation increases the reinforcing value of food, making it an establishing operation (EO), not an abolishing operation.',
       },
       {
         id: 'm-56-c',
-        text: 'A child\'s escape-maintained behavior decreases when the task demands are reduced.',
+        text: 'A BCBA removes all preferred items from the room before a session to increase the child\'s motivation to work.',
         isCorrect: false,
-        explanation: 'Reducing task demands removes the aversive condition that was maintaining escape behavior. This is an antecedent intervention, not an abolishing operation in the technical sense.',
+        explanation: 'Removing preferred items before a session increases their reinforcing value  --  this is an establishing operation, not an abolishing operation.',
       },
       {
         id: 'm-56-d',
-        text: 'A child\'s attention-seeking behavior decreases after the BCBA stops providing attention contingent on the behavior.',
+        text: 'A BCBA provides escape from demands contingent on problem behavior, which increases the rate of problem behavior over time.',
         isCorrect: false,
-        explanation: 'Removing the reinforcement contingency (attention) is extinction, not an abolishing operation. An AO changes the value of the reinforcer, not the contingency.',
+        explanation: 'Providing escape contingent on problem behavior is negative reinforcement, not an abolishing operation.',
       },
     ],
   },
@@ -1834,25 +1839,25 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-57',
     domain: 'Behavior Principles',
     concept: 'Three-Term Contingency',
-    definition: 'The basic unit of operant analysis: an antecedent stimulus, a behavior, and a consequence — the relationship among which determines whether the behavior will recur in similar antecedent conditions.',
+    definition: 'The basic unit of operant analysis: an antecedent stimulus, a behavior, and a consequence  --  the relationship among which determines whether the behavior will recur in similar antecedent conditions.',
     scenarios: [
       {
         id: 'm-57-a',
         text: 'When the teacher holds up a red card (SD), the student says "red" (behavior), and the teacher delivers praise (consequence). Over time, the student reliably names the color when the card is presented.',
         isCorrect: true,
-        explanation: 'The red card (SD) → naming "red" (behavior) → praise (consequence) is a complete three-term contingency. The behavior comes under stimulus control of the SD because it has been reinforced in its presence.',
+        explanation: 'The red card (SD) -> naming "red" (behavior) -> praise (consequence) is a complete three-term contingency. The behavior comes under stimulus control of the SD because it has been reinforced in its presence.',
       },
       {
         id: 'm-57-b',
         text: 'A dog salivates when it hears a bell that has been repeatedly paired with food.',
         isCorrect: false,
-        explanation: 'Salivation to a conditioned stimulus (bell) is a two-term respondent contingency (CS → CR), not a three-term operant contingency.',
+        explanation: 'Salivation to a conditioned stimulus (bell) is a two-term respondent contingency (CS -> CR), not a three-term operant contingency.',
       },
       {
         id: 'm-57-c',
         text: 'A child\'s hitting increases because it produces attention from caregivers.',
         isCorrect: false,
-        explanation: 'While this involves a behavior-consequence relationship, it describes a two-term contingency (behavior → reinforcer) without specifying the antecedent stimulus that sets the occasion for the behavior.',
+        explanation: 'While this involves a behavior-consequence relationship, it describes a two-term contingency (behavior -> reinforcer) without specifying the antecedent stimulus that sets the occasion for the behavior.',
       },
       {
         id: 'm-57-d',
@@ -1862,7 +1867,7 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Skill Acquisition (H) ──────────────────────────────────────
+  // -- NEW ITEMS: Skill Acquisition (H) --------------------------------------
   {
     id: 'm-58',
     domain: 'Skill Acquisition',
@@ -1905,7 +1910,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-59-a',
         text: 'The therapist presents a picture card and waits 3 seconds. If the child does not label the picture, she provides a partial verbal model ("b-"). If still no response, she provides a full verbal model ("ball").',
         isCorrect: true,
-        explanation: 'Starting with the least intrusive prompt (waiting) and escalating through partial then full verbal models is least-to-most prompting — designed to give the learner maximum opportunity to respond independently.',
+        explanation: 'Starting with the least intrusive prompt (waiting) and escalating through partial then full verbal models is least-to-most prompting  --  designed to give the learner maximum opportunity to respond independently.',
       },
       {
         id: 'm-59-b',
@@ -2001,13 +2006,13 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-62-a',
         text: 'A BCBA teaches requesting across multiple therapists, in multiple rooms, using multiple exemplars of the target item, and with varying motivating operations to ensure the skill transfers to the natural environment.',
         isCorrect: true,
-        explanation: 'Deliberately varying trainers, settings, stimuli, and MOs during training to promote transfer to untrained conditions is generalization programming — specifically, training sufficient exemplars and using loose training.',
+        explanation: 'Deliberately varying trainers, settings, stimuli, and MOs during training to promote transfer to untrained conditions is generalization programming  --  specifically, training sufficient exemplars and using loose training.',
       },
       {
         id: 'm-62-b',
         text: 'A BCBA teaches requesting only with one therapist in one room until the skill is fluent, then tests whether it generalizes.',
         isCorrect: false,
-        explanation: 'Training in a single context and then testing for generalization is not generalization programming — it is training without programming for generalization, which often results in limited transfer.',
+        explanation: 'Training in a single context and then testing for generalization is not generalization programming  --  it is training without programming for generalization, which often results in limited transfer.',
       },
       {
         id: 'm-62-c',
@@ -2023,68 +2028,70 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Behavior Reduction (G) ─────────────────────────────────────
+  // -- NEW ITEMS: Behavior Reduction (G) -------------------------------------
   {
     id: 'm-63',
+    concept: 'Response Blocking',
     domain: 'Behavior Reduction',
-    concept: 'Positive Punishment',
-    definition: 'A stimulus is added following a behavior, resulting in a decrease in the future frequency of that behavior.',
+    taskCode: 'G-09',
+    definition: 'A procedure in which the therapist physically prevents the completion of a problem behavior, thereby preventing access to the reinforcer maintaining it.',
     scenarios: [
       {
         id: 'm-63-a',
-        text: 'Each time a student calls out in class, the teacher assigns an additional homework problem. Over the next two weeks, the student\'s call-outs decrease significantly.',
+        text: 'Each time a child reaches toward his mouth to engage in hand mouthing, the therapist gently redirects his arm downward before contact is made, preventing the behavior from completing.',
         isCorrect: true,
-        explanation: 'Adding an aversive stimulus (extra homework) contingent on the behavior (calling out) that results in a decrease in that behavior is positive punishment.',
+        explanation: 'The therapist physically interrupts the response before it completes, preventing the sensory consequence that maintains the behavior  --  this is response blocking.',
       },
       {
         id: 'm-63-b',
-        text: 'Each time a student calls out, the teacher removes five minutes of recess time. The call-outs decrease over the following week.',
+        text: 'A child engages in hand mouthing. The therapist says "hands down" and the child complies.',
         isCorrect: false,
-        explanation: 'Removing a preferred stimulus (recess time) contingent on behavior to decrease it is negative punishment (response cost), not positive punishment.',
+        explanation: 'This describes verbal redirection and compliance, not physical response blocking. The behavior is not physically interrupted.',
       },
       {
         id: 'm-63-c',
-        text: 'The teacher stops providing attention when the student calls out. The behavior decreases over several weeks.',
+        text: 'A child engages in aggression. The BCBA removes the child from the room for 2 minutes.',
         isCorrect: false,
-        explanation: 'Discontinuing reinforcement (attention) to decrease behavior is extinction, not positive punishment.',
+        explanation: 'Removing the child from the environment describes time-out from positive reinforcement, not response blocking.',
       },
       {
         id: 'm-63-d',
-        text: 'The teacher delivers praise contingent on the student raising her hand, which increases hand-raising and reduces call-outs.',
+        text: 'A BCBA reduces the reinforcement schedule from FR1 to FR5 to decrease dependence on continuous reinforcement.',
         isCorrect: false,
-        explanation: 'Reinforcing an alternative behavior (hand-raising) that competes with call-outs is DRA, not positive punishment.',
+        explanation: 'Thinning a reinforcement schedule is a schedule-based intervention, not a response blocking procedure.',
       },
     ],
   },
   {
     id: 'm-64',
+    concept: 'Extinction  --  Attention-Maintained Behavior',
     domain: 'Behavior Reduction',
-    concept: 'Non-Contingent Reinforcement (NCR)',
-    definition: 'The delivery of reinforcers on a fixed-time or variable-time schedule independent of the occurrence of any behavior, used to reduce problem behavior by abolishing the motivating operation for that behavior.',
+    taskCode: 'G-11',
+    definition: 'The withholding of social attention following attention-maintained problem behavior, resulting in a decrease in that behavior over time.',
     scenarios: [
       {
         id: 'm-64-a',
-        text: 'A child engages in attention-maintained problem behavior. The BCBA delivers brief attention every 2 minutes regardless of what the child is doing. Problem behavior decreases because the child no longer needs to engage in it to access attention.',
+        text: 'A functional analysis reveals that a child\'s tantrums are maintained by adult attention. The BCBA instructs all staff to turn away, avoid eye contact, and withhold all verbal responses when tantrums occur. Over four weeks, tantrum frequency decreases by 85%.',
         isCorrect: true,
-        explanation: 'Delivering attention on a fixed-time schedule independent of behavior is NCR. It reduces the motivating operation for attention-maintained problem behavior by providing free access to the reinforcer.',
+        explanation: 'Withholding the maintaining reinforcer (attention) contingent on the target behavior is extinction for attention-maintained behavior.',
       },
       {
         id: 'm-64-b',
-        text: 'The BCBA delivers attention only when the child is engaging in appropriate behavior, which increases appropriate behavior and reduces problem behavior.',
+        text: 'A BCBA delivers brief attention every 3 minutes regardless of whether the child is engaging in problem behavior.',
         isCorrect: false,
-        explanation: 'Delivering reinforcement contingent on appropriate behavior is DRA, not NCR. NCR is explicitly non-contingent — delivered regardless of behavior.',
+        explanation: 'Delivering attention on a fixed-time schedule regardless of behavior is noncontingent reinforcement (NCR), not extinction.',
       },
       {
         id: 'm-64-c',
-        text: 'The BCBA stops providing attention when the child engages in problem behavior. Problem behavior decreases over several weeks.',
+        text: 'A child\'s self-injury is escape-maintained. Staff are instructed to continue presenting demands even when self-injury occurs.',
         isCorrect: false,
-        explanation: 'Discontinuing the reinforcement contingency for problem behavior is extinction, not NCR.',
+        explanation: 'Continuing demands contingent on escape-maintained behavior is extinction for escape-maintained behavior, not attention-maintained behavior.',
       },
       {
         id: 'm-64-d',
-        text: 'The BCBA provides the child with a preferred item before a demanding task to reduce escape-maintained problem behavior.',
+        text: 'A BCBA teaches a child to tap a card to request attention instead of tantruming.',
         isCorrect: false,
-        explanation: 'Providing a preferred item before a task to reduce problem behavior is an antecedent intervention (establishing operation manipulation), not NCR.',
+        explanation: 'Teaching an alternative communication response is Functional Communication Training (FCT), not extinction.',
       },
     ],
   },
@@ -2098,13 +2105,13 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-65-a',
         text: 'When a child hits a peer, the therapist immediately moves him to a chair in the corner of the room for 2 minutes, away from all ongoing activities and social interaction. Hitting decreases over the following weeks.',
         isCorrect: true,
-        explanation: 'Removing access to reinforcement (activities and social interaction) contingent on hitting for a specified period is time-out from positive reinforcement — a negative punishment procedure.',
+        explanation: 'Removing access to reinforcement (activities and social interaction) contingent on hitting for a specified period is time-out from positive reinforcement  --  a negative punishment procedure.',
       },
       {
         id: 'm-65-b',
         text: 'When a child hits a peer, the therapist removes the child\'s token board for the remainder of the session. Hitting decreases.',
         isCorrect: false,
-        explanation: 'Removing a specific reinforcer (tokens) contingent on behavior is response cost — a negative punishment procedure — but not time-out. Time-out involves removal from a reinforcing environment, not removal of a specific item.',
+        explanation: 'Removing a specific reinforcer (tokens) contingent on behavior is response cost  --  a negative punishment procedure  --  but not time-out. Time-out involves removal from a reinforcing environment, not removal of a specific item.',
       },
       {
         id: 'm-65-c',
@@ -2154,227 +2161,234 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-67',
+    concept: 'Safety Plan / Crisis Protocol',
     domain: 'Behavior Reduction',
-    concept: 'Least Restrictive Alternative',
-    definition: 'The ethical principle that the behavior analyst should select the least restrictive, least aversive intervention that is likely to be effective, prioritizing positive approaches before resorting to restrictive or aversive procedures.',
+    taskCode: 'G-21',
+    definition: 'A written plan that specifies procedures for managing dangerous behavior, including escalation indicators, staff roles, and de-escalation strategies.',
     scenarios: [
       {
         id: 'm-67-a',
-        text: 'Before recommending a contingent electric stimulation device for a client\'s SIB, the BCBA documents that multiple function-based interventions (FCT, NCR, DRA, environmental modifications) were implemented with fidelity and failed to produce clinically significant reductions.',
+        text: 'A client has a history of severe aggression. The BCBA develops a written document outlining early warning signs (pacing, vocal escalation), staff positioning, de-escalation scripts, and when to call emergency services. All team members are trained on the protocol before services begin.',
         isCorrect: true,
-        explanation: 'Exhausting less restrictive, function-based alternatives before recommending an aversive procedure demonstrates adherence to the least restrictive alternative principle.',
+        explanation: 'A written plan specifying warning signs, staff roles, de-escalation procedures, and emergency criteria is a safety plan / crisis protocol.',
       },
       {
         id: 'm-67-b',
-        text: 'The BCBA selects the intervention that produces the fastest behavior reduction, regardless of its restrictiveness.',
+        text: 'A BCBA selects DRA as the primary intervention because it is less restrictive than response cost.',
         isCorrect: false,
-        explanation: 'Selecting an intervention based solely on speed of behavior reduction without considering restrictiveness violates the least restrictive alternative principle.',
+        explanation: 'Selecting a less restrictive procedure reflects the least restrictive alternative principle, not a crisis protocol.',
       },
       {
         id: 'm-67-c',
-        text: 'The BCBA selects the intervention preferred by the caregiver, even if a less restrictive option is available.',
+        text: 'A BCBA conducts a functional analysis to identify the reinforcer maintaining aggression before selecting an intervention.',
         isCorrect: false,
-        explanation: 'While caregiver preference is important, it does not override the ethical obligation to use the least restrictive effective intervention.',
+        explanation: 'Conducting a functional analysis is an assessment procedure, not a crisis management plan.',
       },
       {
         id: 'm-67-d',
-        text: 'The BCBA uses punishment procedures from the beginning of treatment to quickly suppress dangerous behavior.',
+        text: 'A BCBA implements a DRO schedule to reduce the frequency of aggressive behavior.',
         isCorrect: false,
-        explanation: 'Using punishment procedures at the outset without first attempting less restrictive alternatives violates the least restrictive alternative principle, even when behavior is dangerous.',
+        explanation: 'DRO is a differential reinforcement procedure, not a crisis safety plan.',
       },
     ],
   },
-  // ── NEW ITEMS: Supervision (I) ─────────────────────────────────────────────
+  // -- NEW ITEMS: Supervision (I) ---------------------------------------------
   {
     id: 'm-68',
+    concept: 'Behavioral Skills Training (BST)  --  Supervision Application',
     domain: 'Supervision',
-    concept: 'Behavioral Skills Training (BST)',
-    definition: 'A training package consisting of four components — instructions, modeling, rehearsal, and feedback — used to teach new skills to supervisees and staff.',
+    taskCode: 'I-06',
+    definition: 'BST is the evidence-based method for training supervisees on new clinical skills, consisting of instructions, modeling, rehearsal, and feedback delivered in sequence.',
     scenarios: [
       {
         id: 'm-68-a',
-        text: 'A BCBA trains a new RBT by first explaining the discrete trial procedure (instructions), then demonstrating it with a client (modeling), then having the RBT practice it with the client (rehearsal), and finally providing specific corrective and positive feedback on the RBT\'s performance.',
+        text: 'A BCBA is training an RBT to implement a new preference assessment. She first explains the steps verbally (instructions), then demonstrates the assessment with a client (modeling), then has the RBT practice with her playing the role of the client (rehearsal), then provides specific corrective feedback. She repeats the cycle until the RBT reaches 90% fidelity.',
         isCorrect: true,
-        explanation: 'The sequence of instructions → modeling → rehearsal → feedback is BST — the evidence-based training package for teaching behavioral procedures to staff.',
+        explanation: 'Using instructions, modeling, rehearsal, and feedback in sequence to train a supervisee on a clinical skill is BST applied in a supervision context.',
       },
       {
         id: 'm-68-b',
-        text: 'A BCBA provides the RBT with a written manual describing the discrete trial procedure and asks her to review it before the next session.',
+        text: 'A BCBA observes an RBT twice monthly and scores implementation fidelity using a structured checklist.',
         isCorrect: false,
-        explanation: 'Providing written instructions alone is not BST. BST requires all four components: instructions, modeling, rehearsal, and feedback.',
+        explanation: 'Systematic observation and fidelity scoring is performance monitoring, not BST. BST involves active training components (modeling, rehearsal), not observation alone.',
       },
       {
         id: 'm-68-c',
-        text: 'A BCBA observes the RBT conducting a session and provides written feedback afterward.',
+        text: 'A BCBA requires an RBT to demonstrate competency on a skill before working independently with clients.',
         isCorrect: false,
-        explanation: 'Observation followed by written feedback is performance monitoring, not BST. BST requires active rehearsal and immediate feedback, not just observation and delayed written feedback.',
+        explanation: 'Requiring demonstrated competency before independent practice is competency-based training, which may use BST as its training method but is a broader standard, not BST itself.',
       },
       {
         id: 'm-68-d',
-        text: 'A BCBA asks the RBT to watch a training video on discrete trial teaching and pass a written quiz.',
+        text: 'A BCBA provides written feedback on an RBT\'s session notes after reviewing them remotely.',
         isCorrect: false,
-        explanation: 'Video instruction and written testing assess knowledge but do not constitute BST, which requires live modeling, rehearsal, and performance-based feedback.',
+        explanation: 'Written feedback on documentation is indirect supervision. BST requires in-person (or synchronous) modeling and rehearsal components.',
       },
     ],
   },
   {
     id: 'm-69',
+    concept: 'Performance Monitoring  --  Ongoing Supervision',
     domain: 'Supervision',
-    concept: 'Performance Monitoring',
-    definition: 'The systematic, ongoing observation and measurement of a supervisee\'s implementation of behavior-analytic procedures to evaluate fidelity and identify areas for improvement.',
+    taskCode: 'I-07',
+    definition: 'The BCBA\'s ongoing responsibility to systematically observe, measure, and provide feedback on supervisee performance across the full supervision period  --  not only during initial training.',
     scenarios: [
       {
         id: 'm-69-a',
-        text: 'A BCBA uses a structured fidelity checklist to observe an RBT conducting a DTT session twice per month, scores each component, and reviews the data with the RBT in the following supervision meeting.',
+        text: 'After completing initial BST with a new RBT, a BCBA continues to observe the RBT\'s session implementation twice monthly using a structured fidelity checklist. She provides written and verbal feedback after each observation and adjusts the frequency of observation based on the RBT\'s performance trend.',
         isCorrect: true,
-        explanation: 'Systematically observing the RBT\'s performance using a structured checklist, scoring it, and reviewing the data is performance monitoring — the ongoing process of evaluating supervisee fidelity.',
+        explanation: 'Systematically observing and providing feedback on supervisee performance throughout the supervision period  --  not just during initial training  --  is ongoing performance monitoring.',
       },
       {
         id: 'm-69-b',
-        text: 'A BCBA teaches an RBT the DTT procedure using instructions, modeling, rehearsal, and feedback before the RBT begins working with clients.',
+        text: 'A BCBA trains a new RBT using instructions, modeling, rehearsal, and feedback before the RBT begins working independently.',
         isCorrect: false,
-        explanation: 'Teaching a new skill using the four-component package is BST, not performance monitoring. Performance monitoring occurs after initial training to evaluate ongoing fidelity.',
+        explanation: 'Training using instructions, modeling, rehearsal, and feedback is Behavioral Skills Training (BST)  --  the initial training phase, not ongoing performance monitoring.',
       },
       {
         id: 'm-69-c',
-        text: 'A BCBA and RBT sign a written agreement specifying the responsibilities, schedule, and evaluation criteria for their supervisory relationship.',
+        text: 'A BCBA requires an RBT to pass a written knowledge test before beginning supervised fieldwork.',
         isCorrect: false,
-        explanation: 'Establishing a written agreement is the supervisory contract, not performance monitoring.',
+        explanation: 'A written knowledge test is a competency check, not ongoing performance monitoring of direct service implementation.',
       },
       {
         id: 'm-69-d',
-        text: 'A BCBA reviews the RBT\'s data sheets at the end of each week to check for data collection errors.',
+        text: 'A BCBA reviews the RBT\'s session notes and data sheets at the end of each week.',
         isCorrect: false,
-        explanation: 'Reviewing permanent products (data sheets) is one method of performance monitoring, but the scenario describes only data review, not the broader systematic observation process that defines performance monitoring.',
+        explanation: 'Reviewing data and notes is indirect supervision. Ongoing performance monitoring requires direct observation of the supervisee\'s behavior in the work setting.',
       },
     ],
   },
   {
     id: 'm-70',
+    concept: 'Competency-Based Training  --  Implementation Standards',
     domain: 'Supervision',
-    concept: 'Competency-Based Training',
-    definition: 'A training approach in which a supervisee must demonstrate a specified level of performance on a skill before advancing, rather than completing a fixed number of training hours or sessions.',
+    taskCode: 'I-05',
+    definition: 'Competency-based training requires supervisees to demonstrate a specified performance criterion (e.g., 90% fidelity across three consecutive observations) before working independently  --  not just completing training hours.',
     scenarios: [
       {
         id: 'm-70-a',
-        text: 'A BCBA requires an RBT to demonstrate 90% accuracy on a DTT fidelity checklist across three consecutive observations before allowing her to implement the procedure independently with clients.',
+        text: 'A BCBA trains an RBT on a new discrete trial procedure using BST. She does not allow the RBT to implement the procedure independently until the RBT achieves 90% procedural fidelity on the implementation checklist across three consecutive observations with different clients.',
         isCorrect: true,
-        explanation: 'Requiring a specific performance criterion (90% accuracy across three observations) before advancing is competency-based training — advancement is tied to demonstrated skill, not time.',
+        explanation: 'Requiring demonstrated performance at a specified criterion level before independent practice is competency-based training  --  the standard is mastery, not hours or attendance.',
       },
       {
         id: 'm-70-b',
-        text: 'A BCBA requires an RBT to complete 40 hours of supervised fieldwork before implementing procedures independently.',
+        text: 'A BCBA requires an RBT to complete 40 hours of supervised fieldwork before working independently.',
         isCorrect: false,
-        explanation: 'Requiring a fixed number of hours before advancement is time-based training, not competency-based training. Competency-based training requires demonstrated performance, not just hours.',
+        explanation: 'Requiring a specific number of hours is a time-based standard, not a competency-based standard. Competency-based training requires demonstrated skill, not just hours.',
       },
       {
         id: 'm-70-c',
-        text: 'A BCBA teaches an RBT the DTT procedure using instructions, modeling, rehearsal, and feedback.',
+        text: 'A BCBA trains an RBT using instructions, modeling, rehearsal, and feedback.',
         isCorrect: false,
-        explanation: 'The four-component training package is BST. Competency-based training refers to the criterion for advancement, not the method of instruction.',
+        explanation: 'Using instructions, modeling, rehearsal, and feedback is BST  --  the training method. Competency-based training is the standard (mastery criterion) applied to determine when independent practice is permitted.',
       },
       {
         id: 'm-70-d',
-        text: 'A BCBA provides weekly supervision meetings where the RBT discusses cases and asks questions.',
+        text: 'A BCBA observes an RBT twice monthly and provides feedback on session fidelity.',
         isCorrect: false,
-        explanation: 'Weekly case discussion meetings are a component of supervision, not competency-based training. Competency-based training requires objective performance measurement against a specified criterion.',
+        explanation: 'Ongoing observation and feedback is performance monitoring, not competency-based training.',
       },
     ],
   },
   {
     id: 'm-71',
+    concept: 'Scope of Competence  --  Supervision Responsibility',
     domain: 'Supervision',
-    concept: 'Scope of Competence',
-    definition: 'The range of professional activities a behavior analyst is qualified to perform based on education, training, supervised experience, and demonstrated competence.',
+    taskCode: 'I-01',
+    definition: 'BCBAs must only supervise activities within their own scope of competence and must ensure that supervisees are only assigned tasks within the BCBA\'s area of expertise.',
     scenarios: [
       {
         id: 'm-71-a',
-        text: 'A BCBA with expertise in pediatric ABA is asked to develop a vocational training program for adults with traumatic brain injury. She declines and refers the client to a BCBA with relevant experience and training in that population.',
+        text: 'A BCBA with expertise in pediatric ABA is asked to supervise an RBT working with an adult client with a traumatic brain injury. The BCBA declines and refers the case to a colleague with expertise in adult rehabilitation, explaining that supervising outside her area of competence would not serve the client\'s best interests.',
         isCorrect: true,
-        explanation: 'Declining to provide services outside one\'s area of training and referring to a more qualified practitioner is acting within scope of competence — a core ethical obligation under the BACB Ethics Code.',
+        explanation: 'Declining to supervise a case outside one\'s area of expertise and referring to a qualified colleague is the correct application of scope of competence in a supervision context.',
       },
       {
         id: 'm-71-b',
-        text: 'A BCBA declines to provide services to a client because the family\'s insurance does not cover ABA.',
+        text: 'A BCBA is asked to provide direct ABA services to a client with a medical condition she has not worked with before. She declines and refers to a specialist.',
         isCorrect: false,
-        explanation: 'Declining services due to insurance coverage is a business decision, not a scope of competence issue.',
+        explanation: 'This describes scope of competence in direct service provision, not in a supervision context specifically.',
       },
       {
         id: 'm-71-c',
-        text: 'A BCBA refers a client to a speech-language pathologist for augmentative communication assessment.',
+        text: 'A BCBA requires her RBT to complete 40 hours of supervised fieldwork before working independently.',
         isCorrect: false,
-        explanation: 'Referring a client to another discipline for a service outside the BCBA\'s scope of practice is appropriate professional collaboration, but it is not specifically a scope of competence decision — it is a recognition of disciplinary boundaries.',
+        explanation: 'Requiring supervised fieldwork hours is a supervision structure requirement, not a scope of competence decision.',
       },
       {
         id: 'm-71-d',
-        text: 'A BCBA consults with a colleague before implementing a procedure she has not used before.',
+        text: 'A BCBA consults with a colleague before implementing a new intervention she has not used before.',
         isCorrect: false,
-        explanation: 'Consulting with a colleague before using an unfamiliar procedure is good professional practice, but it is not the same as declining services outside one\'s scope of competence.',
+        explanation: 'Seeking consultation before implementing an unfamiliar procedure is good practice but describes professional development, not scope of competence in supervision.',
       },
     ],
   },
-  // ── NEW ITEMS: Ethics & Professional Practice (E) ─────────────────────────
+  // -- NEW ITEMS: Ethics & Professional Practice (E) -------------------------
   {
     id: 'm-72',
+    concept: 'Multiple Relationships  --  Navigating Boundary Conflicts',
     domain: 'Ethics & Professional Practice',
-    concept: 'Multiple Relationships',
-    definition: 'A situation in which a behavior analyst is in both a professional role and another role simultaneously with a client, supervisee, or research participant, creating a risk of impaired objectivity or exploitation.',
+    taskCode: 'E-06',
+    definition: 'When a BCBA has an existing personal, financial, or professional relationship with a client or supervisee, they must evaluate whether the relationship could impair objectivity or harm the client, and take steps to manage or avoid the conflict.',
     scenarios: [
       {
         id: 'm-72-a',
-        text: 'A BCBA is providing ABA services to the child of her close personal friend. She recognizes that the friendship may compromise her clinical objectivity and discusses the situation with her supervisor.',
+        text: 'A BCBA is approached by a former client\'s family to provide ABA services to a second child. She realizes that her close personal friendship with the family, developed during the first child\'s services, may compromise her clinical objectivity. She consults with a supervisor, documents her reasoning, and refers the case to a colleague.',
         isCorrect: true,
-        explanation: 'Simultaneously holding a professional role (BCBA) and a personal role (close friend) with a client\'s family is a multiple relationship. Recognizing and addressing it is the appropriate ethical response.',
+        explanation: 'Recognizing that an existing personal relationship may impair objectivity, consulting, documenting, and referring the case is the correct way to navigate a multiple relationship conflict.',
       },
       {
         id: 'm-72-b',
-        text: 'A BCBA provides services to two siblings in the same family at the same time.',
+        text: 'A BCBA is asked to provide ABA services to her neighbor\'s child. She recognizes the social relationship and declines without consulting or documenting.',
         isCorrect: false,
-        explanation: 'Providing services to multiple members of the same family is not inherently a multiple relationship — it is a common practice that requires careful coordination, not an ethical conflict.',
+        explanation: 'While declining may be appropriate, the BCBA should consult and document her reasoning. Simply declining without process does not fully address the ethical obligation.',
       },
       {
         id: 'm-72-c',
-        text: 'A BCBA works for two different agencies that both serve the same client.',
+        text: 'A BCBA provides services to a client and later becomes friends with the family.',
         isCorrect: false,
-        explanation: 'Working for two agencies serving the same client may create a conflict of interest, but it is not a multiple relationship in the technical sense. A multiple relationship involves holding two different roles with the same person.',
+        explanation: 'This describes the development of a multiple relationship, not the process of navigating or managing it.',
       },
       {
         id: 'm-72-d',
-        text: 'A BCBA provides both assessment and treatment services to the same client.',
+        text: 'A BCBA supervises an RBT who is also enrolled in her university course.',
         isCorrect: false,
-        explanation: 'Providing both assessment and treatment is standard BCBA practice, not a multiple relationship.',
+        explanation: 'This is an example of a multiple relationship in a supervision context, but the scenario does not describe how the BCBA navigates or manages the conflict.',
       },
     ],
   },
   {
     id: 'm-73',
+    concept: 'Informed Consent vs. Assent',
     domain: 'Ethics & Professional Practice',
-    concept: 'Informed Consent',
-    definition: 'The process of providing a client or their legal guardian with sufficient information about proposed services — including risks, benefits, and alternatives — to make a voluntary, competent decision about participation.',
+    taskCode: 'E-01',
+    definition: 'Informed consent is obtained from the legal guardian; assent is the client\'s own agreement to participate, which must be sought even when the client cannot legally consent.',
     scenarios: [
       {
         id: 'm-73-a',
-        text: 'Before beginning an assessment, the BCBA explains the purpose of the assessment, the procedures that will be used, potential risks and benefits, the right to withdraw at any time, and alternative options. The parent asks questions and signs the consent form.',
+        text: 'A BCBA is beginning services with a 10-year-old client. She obtains signed consent from the child\'s parents after explaining the assessment and treatment plan. She also explains the procedures to the child in age-appropriate language and asks if the child is willing to participate. The child nods and says "okay."',
         isCorrect: true,
-        explanation: 'Providing complete information about the assessment, ensuring understanding, and obtaining voluntary agreement is informed consent — not merely obtaining a signature.',
+        explanation: 'Obtaining legal consent from the guardian AND seeking the client\'s own agreement (assent) demonstrates the distinction between informed consent and assent  --  both are required.',
       },
       {
         id: 'm-73-b',
-        text: 'The BCBA obtains a signed consent form from the parent before beginning services.',
+        text: 'A BCBA obtains signed consent from a client\'s parents before beginning services and does not discuss the procedures with the client directly.',
         isCorrect: false,
-        explanation: 'Obtaining a signature alone is not informed consent. Informed consent requires that the person understands the information and voluntarily agrees — a signature without comprehension is not sufficient.',
+        explanation: 'Obtaining only parental consent without seeking the client\'s assent is insufficient. The BACB Ethics Code requires BCBAs to seek assent from clients who cannot legally consent.',
       },
       {
         id: 'm-73-c',
-        text: 'The BCBA obtains assent from a 10-year-old client before beginning a new intervention.',
+        text: 'A BCBA explains the purpose, procedures, risks, and benefits of a new intervention to a client\'s guardian and obtains a signed consent form.',
         isCorrect: false,
-        explanation: 'Obtaining assent from a minor is an important ethical practice, but assent is not the same as informed consent. Informed consent requires a legally competent adult (typically the parent or guardian for minors).',
+        explanation: 'This describes informed consent only. The scenario does not address assent from the client, which is a separate and required step.',
       },
       {
         id: 'm-73-d',
-        text: 'The BCBA informs the parent of the intervention plan after it has been implemented for two weeks.',
+        text: 'A BCBA asks a client to sign a consent form before beginning services.',
         isCorrect: false,
-        explanation: 'Informing a parent after implementation has already begun is not informed consent — consent must be obtained before services begin, not after.',
+        explanation: 'If the client is a minor or lacks legal capacity, they cannot provide legal consent  --  only assent. The legal guardian must provide informed consent.',
       },
     ],
   },
@@ -2388,7 +2402,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-74-a',
         text: 'Before beginning a new intervention with a 12-year-old client, the BCBA explains the procedure in age-appropriate language, answers the client\'s questions, and asks if he is willing to try it. The client nods and says "okay."',
         isCorrect: true,
-        explanation: 'Explaining the procedure in accessible language and seeking the client\'s agreement — even though he cannot legally provide informed consent — is obtaining assent.',
+        explanation: 'Explaining the procedure in accessible language and seeking the client\'s agreement  --  even though he cannot legally provide informed consent  --  is obtaining assent.',
       },
       {
         id: 'm-74-b',
@@ -2410,165 +2424,170 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Measurement (C) ─────────────────────────────────────────────
+  // -- NEW ITEMS: Measurement (C) ---------------------------------------------
   {
     id: 'm-75',
+    concept: 'Partial Interval Recording',
     domain: 'Measurement',
-    concept: 'Whole Interval Recording',
-    definition: 'A time-sampling method in which the behavior is recorded as having occurred only if it is present throughout the entire observation interval.',
+    taskCode: 'C-03',
+    definition: 'A time-sampling method in which an interval is scored as positive if the target behavior occurs at any point during the interval, regardless of duration.',
     scenarios: [
       {
         id: 'm-75-a',
-        text: 'A therapist divides a 10-minute observation into 10-second intervals. She marks "yes" for an interval only if the child was on-task for the entire 10 seconds. If the child was off-task for even 1 second, she marks "no."',
+        text: 'A therapist divides a 10-minute observation into 10-second intervals. She marks "yes" for any interval in which the child engages in stereotypy at any point, even if only for 1 second of the interval.',
         isCorrect: true,
-        explanation: 'Recording behavior as occurring only when it is present for the entire interval is whole interval recording — it tends to underestimate the true duration of behavior.',
+        explanation: 'Scoring an interval positive if the behavior occurs at any point during it  --  regardless of duration  --  is partial interval recording.',
       },
       {
         id: 'm-75-b',
-        text: 'The therapist marks "yes" for an interval if the child was on-task for any portion of the 10-second interval.',
+        text: 'A therapist marks "yes" for an interval only if the child engages in stereotypy for the entire 10-second interval.',
         isCorrect: false,
-        explanation: 'Recording behavior if it occurs at any point during the interval is partial interval recording, not whole interval recording.',
+        explanation: 'Requiring the behavior to occur throughout the entire interval is whole interval recording, not partial interval recording.',
       },
       {
         id: 'm-75-c',
-        text: 'The therapist observes the child at the end of each 10-second interval and marks whether the child is on-task at that exact moment.',
+        text: 'At the end of each 30-second interval, the therapist looks up and records whether the child is engaged in stereotypy at that exact moment.',
         isCorrect: false,
-        explanation: 'Recording whether behavior is occurring at a specific moment at the end of each interval is momentary time sampling, not whole interval recording.',
+        explanation: 'Recording behavior only at the moment the interval ends is momentary time sampling, not partial interval recording.',
       },
       {
         id: 'm-75-d',
-        text: 'The therapist records the total number of seconds the child is on-task during the 10-minute observation.',
+        text: 'A therapist records the exact number of times a child engages in stereotypy during a 10-minute session.',
         isCorrect: false,
-        explanation: 'Recording the total duration of behavior is duration recording, not whole interval recording.',
+        explanation: 'Counting each occurrence of behavior is frequency recording, not a time-sampling method.',
       },
     ],
   },
   {
     id: 'm-76',
+    concept: 'Duration Recording',
     domain: 'Measurement',
-    concept: 'Momentary Time Sampling',
-    definition: 'A time-sampling method in which the observer records whether the behavior is occurring at the precise moment the interval ends, regardless of what occurred during the rest of the interval.',
+    taskCode: 'C-02',
+    definition: 'A measurement method that captures the total amount of time a behavior occurs within an observation period.',
     scenarios: [
       {
         id: 'm-76-a',
-        text: 'Every 30 seconds, a teacher glances at a student and marks whether the student is engaged in self-stimulatory behavior at that exact moment. She does not observe the student between these check points.',
+        text: 'A BCBA wants to measure how long a child engages in on-task behavior during a 30-minute work session. She uses a stopwatch to record the start and end time of each on-task episode and sums the total time at the end of the session.',
         isCorrect: true,
-        explanation: 'Observing and recording behavior only at the precise end of each interval is momentary time sampling — it provides an estimate of prevalence and is less reactive than continuous observation.',
+        explanation: 'Measuring the total time a behavior occurs is duration recording  --  appropriate when the temporal extent of the behavior is clinically relevant.',
       },
       {
         id: 'm-76-b',
-        text: 'The teacher marks "yes" if the student engages in self-stimulatory behavior at any point during each 30-second interval.',
+        text: 'A BCBA counts the number of times a child leaves her seat during a 30-minute session.',
         isCorrect: false,
-        explanation: 'Recording behavior if it occurs at any point during the interval is partial interval recording, not momentary time sampling.',
+        explanation: 'Counting occurrences is frequency recording. Duration recording measures how long behavior lasts, not how many times it occurs.',
       },
       {
         id: 'm-76-c',
-        text: 'The teacher marks "yes" only if the student engages in self-stimulatory behavior for the entire 30-second interval.',
+        text: 'A BCBA records the time between a verbal instruction and the child\'s first response.',
         isCorrect: false,
-        explanation: 'Recording behavior only when it persists throughout the entire interval is whole interval recording, not momentary time sampling.',
+        explanation: 'Measuring the time between a stimulus and the onset of a response is latency recording, not duration recording.',
       },
       {
         id: 'm-76-d',
-        text: 'The teacher records the exact time each instance of self-stimulatory behavior begins and ends.',
+        text: 'A BCBA divides a 10-minute session into 30-second intervals and marks whether the behavior occurred during each interval.',
         isCorrect: false,
-        explanation: 'Recording start and stop times for each instance is duration recording, not momentary time sampling.',
+        explanation: 'Dividing an observation into intervals and scoring each is interval recording (partial or whole), not duration recording.',
       },
     ],
   },
   {
     id: 'm-77',
+    concept: 'IOA  --  Interval-by-Interval Agreement',
     domain: 'Measurement',
-    concept: 'Interobserver Agreement (IOA)',
-    definition: 'A measure of the consistency between two independent observers recording the same behavior at the same time, used to evaluate the reliability and accuracy of behavioral measurement.',
+    taskCode: 'C-08',
+    definition: 'A method of calculating IOA for interval data by comparing two observers\' recordings interval by interval and dividing the number of agreements by the total number of intervals.',
     scenarios: [
       {
         id: 'm-77-a',
-        text: 'Two therapists independently observe and record the frequency of a child\'s vocalizations during the same 10-minute session. Their counts are compared to calculate the percentage of agreement.',
+        text: 'Two observers independently record whether a child is on-task during each of 20 consecutive 10-second intervals. Observer A records "yes" for 14 intervals and "no" for 6. Observer B records "yes" for 13 intervals and "no" for 7. They compare their records interval by interval and find they agreed on 17 of 20 intervals. IOA = 17/20 = 85%.',
         isCorrect: true,
-        explanation: 'Two independent observers recording the same behavior simultaneously and comparing their records is IOA — a standard method for evaluating measurement reliability.',
+        explanation: 'Comparing two observers\' interval-by-interval recordings and dividing agreements by total intervals is interval-by-interval IOA  --  the standard method for time-sampling data.',
       },
       {
         id: 'm-77-b',
-        text: 'A BCBA reviews a therapist\'s data sheets at the end of the week to check for recording errors.',
+        text: 'Two observers count the total number of times a behavior occurs during a session. Observer A counts 12, Observer B counts 14. IOA = 12/14 = 86%.',
         isCorrect: false,
-        explanation: 'Reviewing data sheets after the fact is a quality control check, not IOA. IOA requires two observers recording simultaneously and independently.',
+        explanation: 'Dividing the smaller count by the larger count is frequency IOA (or count-per-interval IOA), not interval-by-interval IOA.',
       },
       {
         id: 'm-77-c',
-        text: 'A BCBA compares a client\'s behavior data from this week to data from the same week last year.',
+        text: 'Two observers record the exact time each behavior starts and stops. They compare the duration of each episode.',
         isCorrect: false,
-        explanation: 'Comparing data across time periods is trend analysis, not IOA. IOA requires simultaneous independent observation of the same behavior.',
+        explanation: 'Comparing the duration of individual behavioral episodes is duration IOA, not interval-by-interval IOA.',
       },
       {
         id: 'm-77-d',
-        text: 'A BCBA uses a video recording of a session to re-score the data and compare it to the original data sheet.',
+        text: 'Two observers record the time between the end of one response and the beginning of the next.',
         isCorrect: false,
-        explanation: 'Rescoring a video recording is a form of reliability check but is not IOA in the traditional sense. IOA requires two independent observers recording simultaneously in real time.',
+        explanation: 'Recording the time between responses is inter-response time (IRT) recording, not IOA calculation.',
       },
     ],
   },
-  // ── NEW ITEMS: Research Design (D) ─────────────────────────────────────────
+  // -- NEW ITEMS: Research Design (D) -----------------------------------------
   {
     id: 'm-78',
+    concept: 'Alternating Treatments Design (ATD)  --  Interpreting Results',
     domain: 'Research & Design',
-    concept: 'Alternating Treatments Design (ATD)',
-    definition: 'A single-subject research design in which two or more conditions are rapidly alternated across sessions to compare their effects on a target behavior.',
+    taskCode: 'F-06',
+    definition: 'In an ATD, a functional relationship is demonstrated when data paths for different conditions are clearly separated (non-overlapping), indicating that one condition produces reliably different behavior than the other.',
     scenarios: [
       {
         id: 'm-78-a',
-        text: 'A researcher alternates between two reading curricula (Curriculum A and Curriculum B) across sessions in a counterbalanced order, measuring reading fluency under each condition. After 20 sessions, Curriculum A consistently produces higher fluency scores.',
+        text: 'A researcher compares two reading interventions using an ATD. After 10 sessions, the data paths for Intervention A (averaging 85% accuracy) and Intervention B (averaging 60% accuracy) show minimal overlap across all sessions. The researcher concludes that Intervention A is more effective.',
         isCorrect: true,
-        explanation: 'Rapidly alternating between two conditions across sessions to compare their effects is an alternating treatments design. The counterbalancing controls for sequence effects.',
+        explanation: 'Clear separation (non-overlapping data paths) between conditions in an ATD indicates a functional relationship  --  one condition reliably produces better outcomes than the other.',
       },
       {
         id: 'm-78-b',
-        text: 'A researcher implements Curriculum A for 10 sessions, then switches to Curriculum B for 10 sessions, then returns to Curriculum A.',
+        text: 'A researcher alternates between two conditions across sessions in a counterbalanced order to control for sequence effects.',
         isCorrect: false,
-        explanation: 'Implementing conditions in sequential phases with a return to baseline is a reversal (ABA) design, not an ATD.',
+        explanation: 'Counterbalancing conditions describes the design structure of an ATD, not the interpretation of its results.',
       },
       {
         id: 'm-78-c',
-        text: 'A researcher introduces Curriculum A in one classroom and Curriculum B in a second classroom simultaneously, measuring fluency in both.',
+        text: 'A researcher returns to baseline after an intervention phase to demonstrate experimental control.',
         isCorrect: false,
-        explanation: 'Implementing conditions simultaneously in different settings is a between-subjects comparison, not an ATD. ATD requires the same participant to experience both conditions.',
+        explanation: 'Returning to baseline to demonstrate control is the logic of a reversal (ABAB) design, not an ATD.',
       },
       {
         id: 'm-78-d',
-        text: 'A researcher introduces Curriculum A across three classrooms in a staggered fashion, adding each classroom after the previous one shows improvement.',
+        text: 'A researcher introduces a new intervention phase only after the previous phase shows a stable trend.',
         isCorrect: false,
-        explanation: 'Staggering the introduction of a single condition across multiple settings is a multiple baseline design, not an ATD.',
+        explanation: 'Waiting for stability before changing phases is the logic of a multiple baseline design, not an ATD.',
       },
     ],
   },
   {
     id: 'm-79',
+    concept: 'Visual Analysis  --  Stability Criterion',
     domain: 'Research & Design',
-    concept: 'Visual Analysis',
-    definition: 'The primary method of data analysis in single-subject research, involving systematic examination of graphed data for level, trend, variability, immediacy of effect, overlap, and consistency across similar phases.',
+    taskCode: 'F-07',
+    definition: 'Before changing phases in single-case research, data must show a stable trend (low variability, consistent level and direction) to allow meaningful comparison across conditions.',
     scenarios: [
       {
         id: 'm-79-a',
-        text: 'A BCBA examines a graph of a client\'s problem behavior across baseline and intervention phases. She notes the mean level in each phase, the direction of trend, the degree of data variability, and the proportion of overlapping data points between phases before concluding that the intervention produced a clinically significant change.',
+        text: 'A BCBA is conducting a multiple baseline design. Before introducing the intervention to the second participant, she waits until the first participant\'s baseline data shows five consecutive data points within a 10% range of the mean, with no clear upward or downward trend.',
         isCorrect: true,
-        explanation: 'Systematically examining level, trend, variability, and overlap in graphed data is visual analysis — the standard method for evaluating data in single-subject research.',
+        explanation: 'Waiting for low variability and no trend before changing phases is the application of a stability criterion in visual analysis  --  required to make meaningful phase comparisons.',
       },
       {
         id: 'm-79-b',
-        text: 'A BCBA calculates the mean and standard deviation of the client\'s problem behavior in each phase and uses a t-test to determine whether the difference is statistically significant.',
+        text: 'A BCBA examines a graph and notes that the mean level of behavior is higher in baseline than in intervention.',
         isCorrect: false,
-        explanation: 'Using inferential statistics (t-test) is a group statistical analysis approach, not visual analysis. Single-subject research relies on visual analysis, not statistical significance testing.',
+        explanation: 'Comparing mean levels across phases is part of visual analysis, but it describes level analysis, not the stability criterion specifically.',
       },
       {
         id: 'm-79-c',
-        text: 'A BCBA calculates the percentage of non-overlapping data (PND) between baseline and intervention phases.',
+        text: 'A BCBA notes that data in the intervention phase shows an upward trend, consistent with the therapeutic goal.',
         isCorrect: false,
-        explanation: 'PND is a quantitative effect size metric derived from visual analysis, but calculating PND alone is not the same as conducting a full visual analysis of level, trend, variability, and overlap.',
+        explanation: 'Identifying a trend direction is trend analysis within visual analysis, not the stability criterion.',
       },
       {
         id: 'm-79-d',
-        text: 'A BCBA compares the client\'s behavior data to normative data from a standardized assessment.',
+        text: 'A BCBA calculates the percentage of non-overlapping data points (PND) between baseline and intervention phases.',
         isCorrect: false,
-        explanation: 'Comparing to normative data is a norm-referenced approach used in standardized testing, not visual analysis of single-subject data.',
+        explanation: 'PND is a quantitative effect size measure, not a visual analysis stability criterion.',
       },
     ],
   },
@@ -2582,7 +2601,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-80-a',
         text: 'After completing a behavior reduction program, the BCBA surveys the client\'s parents and teachers to assess whether they found the intervention goals meaningful, the procedures acceptable, and the behavior changes socially significant.',
         isCorrect: true,
-        explanation: 'Systematically assessing stakeholder perceptions of goal importance, procedural acceptability, and outcome significance is social validity assessment — a critical component of applied behavior analysis.',
+        explanation: 'Systematically assessing stakeholder perceptions of goal importance, procedural acceptability, and outcome significance is social validity assessment  --  a critical component of applied behavior analysis.',
       },
       {
         id: 'm-80-b',
@@ -2604,36 +2623,37 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Assessment (F) ──────────────────────────────────────────────
+  // -- NEW ITEMS: Assessment (F) ----------------------------------------------
   {
     id: 'm-81',
+    concept: 'Experimental Functional Analysis (FA)',
     domain: 'Assessment',
-    concept: 'Indirect Assessment',
-    definition: 'An assessment method that gathers information about behavior through interviews, rating scales, and questionnaires rather than through direct observation of the behavior.',
+    taskCode: 'E-03',
+    definition: 'A systematic assessment method in which antecedent and consequence variables are manipulated across controlled conditions to identify the function(s) of problem behavior.',
     scenarios: [
       {
         id: 'm-81-a',
-        text: 'Before conducting a functional analysis, a BCBA interviews the client\'s parents and teachers using the Functional Assessment Interview (FAI) to identify potential antecedents, consequences, and setting events associated with the problem behavior.',
+        text: 'A BCBA conducts a structured assessment with four conditions: attention (brief attention delivered contingent on problem behavior), escape (demands removed contingent on problem behavior), alone (no social interaction or demands), and play (continuous access to preferred items, no demands). Problem behavior is highest in the escape condition, suggesting escape as the maintaining function.',
         isCorrect: true,
-        explanation: 'Gathering information about behavior through structured interviews and rating scales without directly observing the behavior is indirect assessment — the appropriate first step in a comprehensive functional behavior assessment.',
+        explanation: 'Manipulating antecedent and consequence variables across controlled conditions to identify function is an experimental functional analysis (FA).',
       },
       {
         id: 'm-81-b',
-        text: 'A BCBA observes the client in the classroom and records the antecedents and consequences surrounding each instance of problem behavior.',
+        text: 'A BCBA interviews the child\'s parents and teachers using a structured questionnaire to identify possible antecedents and consequences for problem behavior.',
         isCorrect: false,
-        explanation: 'Observing behavior in the natural environment and recording ABCs is a descriptive (direct) assessment, not an indirect assessment.',
+        explanation: 'Using interviews and questionnaires is indirect assessment. An FA requires direct manipulation of environmental variables.',
       },
       {
         id: 'm-81-c',
-        text: 'A BCBA systematically manipulates antecedent and consequence conditions to identify the function of problem behavior.',
+        text: 'A BCBA observes the child in the natural environment and records antecedents, behaviors, and consequences as they naturally occur.',
         isCorrect: false,
-        explanation: 'Systematically manipulating conditions to identify behavioral function is a functional analysis (experimental assessment), not an indirect assessment.',
+        explanation: 'Observing and recording naturally occurring ABCs is a descriptive (ABC) assessment, not an experimental FA.',
       },
       {
         id: 'm-81-d',
-        text: 'A BCBA administers a standardized adaptive behavior scale by directly testing the client on each item.',
+        text: 'A BCBA reviews school records, previous therapy notes, and medical history to form a hypothesis about the function of problem behavior.',
         isCorrect: false,
-        explanation: 'Directly testing a client on standardized items is a direct skills assessment, not an indirect assessment. Indirect assessment relies on informant report, not direct testing.',
+        explanation: 'Reviewing existing records is an indirect assessment method. An FA requires experimental manipulation of variables.',
       },
     ],
   },
@@ -2647,7 +2667,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-82-a',
         text: 'A BCBA observes a student in the classroom for five sessions and records, for each instance of aggression, what happened immediately before (antecedent), the behavior itself, and what happened immediately after (consequence), without altering any classroom conditions.',
         isCorrect: true,
-        explanation: 'Recording antecedents, behaviors, and consequences in the natural environment without manipulation is a descriptive assessment (ABC recording) — it identifies patterns but cannot establish functional relationships.',
+        explanation: 'Recording antecedents, behaviors, and consequences in the natural environment without manipulation is a descriptive assessment (ABC recording)  --  it identifies patterns but cannot establish functional relationships.',
       },
       {
         id: 'm-82-b',
@@ -2665,7 +2685,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-82-d',
         text: 'A BCBA uses a scatter plot to identify the times of day when aggression is most likely to occur.',
         isCorrect: false,
-        explanation: 'A scatter plot identifies temporal patterns in behavior but does not record antecedents and consequences — it is a specific observational tool, not a full ABC descriptive assessment.',
+        explanation: 'A scatter plot identifies temporal patterns in behavior but does not record antecedents and consequences  --  it is a specific observational tool, not a full ABC descriptive assessment.',
       },
     ],
   },
@@ -2679,7 +2699,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-83-a',
         text: 'Before a therapy session, the BCBA presents six items to the client one at a time and records which items the client approaches and engages with for the longest duration, then uses the top three items as potential reinforcers during the session.',
         isCorrect: true,
-        explanation: 'Systematically presenting items and measuring approach and engagement to identify potential reinforcers is a preference assessment — specifically a single stimulus (successive) preference assessment.',
+        explanation: 'Systematically presenting items and measuring approach and engagement to identify potential reinforcers is a preference assessment  --  specifically a single stimulus (successive) preference assessment.',
       },
       {
         id: 'm-83-b',
@@ -2729,7 +2749,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-84-d',
         text: 'A child responds correctly only when the therapist is present and does not respond when a different therapist presents the same task.',
         isCorrect: false,
-        explanation: 'Responding only in the presence of a specific person is a stimulus discrimination — the behavior is under the control of the therapist as an SD, which is the problem that stimulus control transfer aims to solve.',
+        explanation: 'Responding only in the presence of a specific person is a stimulus discrimination  --  the behavior is under the control of the therapist as an SD, which is the problem that stimulus control transfer aims to solve.',
       },
     ],
   },
@@ -2765,68 +2785,70 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Verbal Behavior (VB) ────────────────────────────────────────
+  // -- NEW ITEMS: Verbal Behavior (VB) ----------------------------------------
   {
     id: 'm-86',
+    concept: 'Mand',
     domain: 'Verbal Behavior',
-    concept: 'Tact',
-    definition: 'A verbal operant controlled by a nonverbal discriminative stimulus (an object, event, or property of the environment) and reinforced by generalized conditioned reinforcement.',
+    taskCode: 'D-01',
+    definition: 'A verbal operant in which the speaker requests a specific item, action, or information, and the response is reinforced by the specific reinforcer named or implied by the mand.',
     scenarios: [
       {
         id: 'm-86-a',
-        text: 'A child sees a dog in the park and spontaneously says "dog." Her parent says "That\'s right!" The child\'s labeling of dogs in the environment increases.',
+        text: 'A child who has not eaten for several hours sees a cookie on the table. He reaches toward it and says "cookie." His mother gives him the cookie. His requesting behavior increases in similar situations.',
         isCorrect: true,
-        explanation: 'The verbal behavior ("dog") is controlled by a nonverbal SD (the actual dog) and reinforced by generalized conditioned reinforcement (praise) — this is a tact.',
+        explanation: 'The child\'s verbal behavior is controlled by a motivating operation (deprivation) and is reinforced by obtaining the specific item requested  --  this is a mand.',
       },
       {
         id: 'm-86-b',
-        text: 'A child is shown a picture of a dog and asked "What is this?" She says "dog" and receives a token.',
+        text: 'A therapist holds up a cookie and asks "What is this?" The child says "cookie." The therapist says "That\'s right!" and gives the child the cookie.',
         isCorrect: false,
-        explanation: 'While this involves a nonverbal SD (the picture), the verbal SD ("What is this?") is also present, making this a prompted tact or potentially an intraverbal-tact combination. A pure tact is emitted spontaneously in the presence of the nonverbal stimulus without a verbal prompt.',
+        explanation: 'The child\'s response is controlled by the visual stimulus (the cookie), not by deprivation. This is a tact, not a mand.',
       },
       {
         id: 'm-86-c',
-        text: 'A child says "cookie" when she is hungry and has not had a cookie for two hours. Her parent gives her a cookie.',
+        text: 'A therapist asks "What do you want to eat?" and the child says "cookie." The therapist praises the response but does not provide a cookie.',
         isCorrect: false,
-        explanation: 'The verbal behavior is controlled by a motivating operation (deprivation from cookies) and reinforced by the specific characteristic consequence (receiving a cookie) — this is a mand, not a tact.',
+        explanation: 'If the response is not reinforced by obtaining the specific item, it may function as an intraverbal rather than a mand. A mand is defined by its specific reinforcer.',
       },
       {
         id: 'm-86-d',
-        text: 'A child repeats "dog" immediately after her therapist says "dog." The therapist praises her.',
+        text: 'A child hears the word "cookie" and repeats "cookie." The therapist praises the repetition.',
         isCorrect: false,
-        explanation: 'Verbal behavior with point-to-point correspondence controlled by a verbal SD is an echoic, not a tact.',
+        explanation: 'Repeating a heard word is an echoic, not a mand. The echoic is controlled by the auditory verbal stimulus, not by deprivation.',
       },
     ],
   },
   {
     id: 'm-87',
+    concept: 'Autoclitic',
     domain: 'Verbal Behavior',
-    concept: 'Intraverbal',
-    definition: 'A verbal operant controlled by a verbal discriminative stimulus (another person\'s verbal behavior) where the response does not have point-to-point correspondence with the controlling stimulus.',
+    taskCode: 'D-07',
+    definition: 'A secondary verbal operant that modifies or qualifies other verbal behavior, providing information about the speaker\'s relation to their own primary verbal behavior (e.g., "I think," "I\'m not sure," "Please").',
     scenarios: [
       {
         id: 'm-87-a',
-        text: 'A therapist asks "What do you do when you\'re hungry?" and the child responds "eat food." The therapist praises the response. There is no food present and the child is not hungry.',
+        text: 'A child is asked where his backpack is. He responds "I think it\'s in my room." The phrase "I think" signals to the listener that the child is uncertain about the accuracy of his response.',
         isCorrect: true,
-        explanation: 'The verbal behavior ("eat food") is controlled by a verbal SD ("What do you do when you\'re hungry?") and does not have point-to-point correspondence with it — this is an intraverbal. The absence of a nonverbal SD and MO rules out tact and mand.',
+        explanation: '"I think" is an autoclitic  --  it modifies the primary verbal response ("it\'s in my room") by indicating the speaker\'s level of certainty, providing the listener with additional information about how to interpret the response.',
       },
       {
         id: 'm-87-b',
-        text: 'A therapist says "Say \'I want a break\'" and the child says "I want a break." The therapist gives the child a break.',
+        text: 'A child is asked "What do you do when you\'re tired?" and responds "I sleep." There is no sleep stimulus present.',
         isCorrect: false,
-        explanation: 'This verbal behavior has point-to-point correspondence with the verbal SD — this is an echoic (or a prompted mand), not an intraverbal.',
+        explanation: 'A response to a verbal stimulus without a corresponding nonverbal stimulus is an intraverbal, not an autoclitic.',
       },
       {
         id: 'm-87-c',
-        text: 'A child sees a fire truck and says "fire truck" without any verbal prompt.',
+        text: 'A child sees a red ball and says "red ball." The therapist praises the response.',
         isCorrect: false,
-        explanation: 'Verbal behavior controlled by a nonverbal SD (the fire truck) and reinforced by generalized reinforcement is a tact, not an intraverbal.',
+        explanation: 'Labeling a visible stimulus is a tact. Autoclitics modify other verbal behavior rather than labeling nonverbal stimuli.',
       },
       {
         id: 'm-87-d',
-        text: 'A child says "juice" when she is thirsty and has not had juice all morning. Her parent gives her juice.',
+        text: 'A child hears "Say ball" and repeats "ball." The therapist praises the response.',
         isCorrect: false,
-        explanation: 'Verbal behavior controlled by an MO (thirst/deprivation) and reinforced by the specific characteristic consequence (receiving juice) is a mand, not an intraverbal.',
+        explanation: 'Repeating a heard word is an echoic. Autoclitics are secondary verbal operants that modify primary verbal responses.',
       },
     ],
   },
@@ -2840,7 +2862,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-88-a',
         text: 'A therapist says "ball" and the child immediately says "ball." The therapist praises the child. There is no ball present.',
         isCorrect: true,
-        explanation: 'The child\'s verbal response ("ball") has point-to-point correspondence and formal similarity with the verbal SD ("ball") — this is an echoic. The absence of a nonverbal stimulus and MO rules out tact and mand.',
+        explanation: 'The child\'s verbal response ("ball") has point-to-point correspondence and formal similarity with the verbal SD ("ball")  --  this is an echoic. The absence of a nonverbal stimulus and MO rules out tact and mand.',
       },
       {
         id: 'm-88-b',
@@ -2852,7 +2874,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-88-c',
         text: 'A therapist asks "What bounces?" and the child says "ball." The therapist praises the child.',
         isCorrect: false,
-        explanation: 'The response ("ball") does not have point-to-point correspondence with the verbal SD ("What bounces?") — this is an intraverbal, not an echoic.',
+        explanation: 'The response ("ball") does not have point-to-point correspondence with the verbal SD ("What bounces?")  --  this is an intraverbal, not an echoic.',
       },
       {
         id: 'm-88-d',
@@ -2872,45 +2894,45 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-89-a',
         text: 'A therapist says "Touch the ball" and the child reaches out and touches the ball among an array of objects. The therapist praises the child.',
         isCorrect: true,
-        explanation: 'The child\'s nonverbal response (touching the ball) is controlled by the verbal stimulus ("Touch the ball") — this is listener behavior (receptive language). The child responds to verbal behavior without producing verbal behavior.',
+        explanation: 'The child\'s nonverbal response (touching the ball) is controlled by the verbal stimulus ("Touch the ball")  --  this is listener behavior (receptive language). The child responds to verbal behavior without producing verbal behavior.',
       },
       {
         id: 'm-89-b',
         text: 'A therapist holds up a ball and asks "What is this?" and the child says "ball."',
         isCorrect: false,
-        explanation: 'The child produces verbal behavior ("ball") in response to a nonverbal SD (the ball) — this is a tact, not listener behavior.',
+        explanation: 'The child produces verbal behavior ("ball") in response to a nonverbal SD (the ball)  --  this is a tact, not listener behavior.',
       },
       {
         id: 'm-89-c',
         text: 'A therapist says "ball" and the child says "ball."',
         isCorrect: false,
-        explanation: 'The child produces verbal behavior with point-to-point correspondence to the verbal SD — this is an echoic, not listener behavior.',
+        explanation: 'The child produces verbal behavior with point-to-point correspondence to the verbal SD  --  this is an echoic, not listener behavior.',
       },
       {
         id: 'm-89-d',
         text: 'A child says "I want the ball" when she sees the ball and wants to play with it.',
         isCorrect: false,
-        explanation: 'The child produces verbal behavior controlled by an MO and nonverbal SD — this is a mand (or tact-mand combination), not listener behavior.',
+        explanation: 'The child produces verbal behavior controlled by an MO and nonverbal SD  --  this is a mand (or tact-mand combination), not listener behavior.',
       },
     ],
   },
   {
     id: 'm-90',
     domain: 'Verbal Behavior',
-    concept: 'Verbal Operant — Textual',
+    concept: 'Verbal Operant  --  Textual',
     definition: 'A verbal operant in which the response is controlled by a written or printed verbal stimulus and has point-to-point correspondence with that stimulus, but not formal similarity (the stimulus is visual; the response is vocal).',
     scenarios: [
       {
         id: 'm-90-a',
         text: 'A child reads the word "cat" printed on a flashcard and says "cat" aloud. The therapist praises the child. There is no cat present.',
         isCorrect: true,
-        explanation: 'The vocal response ("cat") has point-to-point correspondence with the written stimulus ("cat") but not formal similarity (one is visual, one is vocal) — this is a textual response (reading aloud).',
+        explanation: 'The vocal response ("cat") has point-to-point correspondence with the written stimulus ("cat") but not formal similarity (one is visual, one is vocal)  --  this is a textual response (reading aloud).',
       },
       {
         id: 'm-90-b',
         text: 'A therapist says "cat" and the child says "cat."',
         isCorrect: false,
-        explanation: 'The response has point-to-point correspondence AND formal similarity with the verbal SD — this is an echoic, not a textual.',
+        explanation: 'The response has point-to-point correspondence AND formal similarity with the verbal SD  --  this is an echoic, not a textual.',
       },
       {
         id: 'm-90-c',
@@ -2926,7 +2948,7 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Skill Acquisition (H) ──────────────────────────────────────
+  // -- NEW ITEMS: Skill Acquisition (H) --------------------------------------
   {
     id: 'm-91',
     domain: 'Skill Acquisition',
@@ -2937,13 +2959,13 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-91-a',
         text: 'When teaching a new discrimination, the therapist immediately provides a full physical prompt after presenting the SD so the child always responds correctly and contacts reinforcement. Prompts are faded only after the child demonstrates consistent correct responding.',
         isCorrect: true,
-        explanation: 'Providing immediate, intrusive prompts to prevent errors and ensure the learner contacts reinforcement for correct responding is errorless learning — designed to minimize error responses that could be reinforced or interfere with acquisition.',
+        explanation: 'Providing immediate, intrusive prompts to prevent errors and ensure the learner contacts reinforcement for correct responding is errorless learning  --  designed to minimize error responses that could be reinforced or interfere with acquisition.',
       },
       {
         id: 'm-91-b',
         text: 'The therapist presents the SD and waits 5 seconds before providing any prompt, allowing the child to attempt the response independently.',
         isCorrect: false,
-        explanation: 'Waiting before prompting allows for error responses — this is a time delay procedure, not errorless learning.',
+        explanation: 'Waiting before prompting allows for error responses  --  this is a time delay procedure, not errorless learning.',
       },
       {
         id: 'm-91-c',
@@ -2969,7 +2991,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-92-a',
         text: 'When teaching hand-washing, the therapist guides the child through all seven steps on every trial, providing physical prompts for steps the child cannot yet do independently and allowing independent responding for mastered steps. Prompts are faded step by step as the child demonstrates competence.',
         isCorrect: true,
-        explanation: 'Prompting through all steps of the chain on every trial while fading prompts for mastered steps is total task presentation — the child practices the entire chain from the beginning of training.',
+        explanation: 'Prompting through all steps of the chain on every trial while fading prompts for mastered steps is total task presentation  --  the child practices the entire chain from the beginning of training.',
       },
       {
         id: 'm-92-b',
@@ -3001,7 +3023,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-93-a',
         text: 'After a student achieves 100% accuracy on math facts, the BCBA implements 1-minute timed practice sessions with a performance aim of 80 correct responses per minute. The student practices daily until she reaches the aim, after which the skill maintains without further practice.',
         isCorrect: true,
-        explanation: 'Targeting both accuracy and speed (rate) to a specified performance aim to support maintenance and generalization is fluency training — the aim is not just correctness but automaticity.',
+        explanation: 'Targeting both accuracy and speed (rate) to a specified performance aim to support maintenance and generalization is fluency training  --  the aim is not just correctness but automaticity.',
       },
       {
         id: 'm-93-b',
@@ -3023,36 +3045,37 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Behavior Reduction (G) ─────────────────────────────────────
+  // -- NEW ITEMS: Behavior Reduction (G) -------------------------------------
   {
     id: 'm-94',
+    concept: 'Momentary DRO (mDRO)',
     domain: 'Behavior Reduction',
-    concept: 'Differential Reinforcement of Other Behavior (DRO)',
-    definition: 'A procedure in which reinforcement is delivered contingent on the absence of the target behavior during a specified interval.',
+    taskCode: 'G-14',
+    definition: 'A DRO variant in which reinforcement is delivered if the target behavior is absent at the specific moment the interval ends, regardless of whether it occurred earlier in the interval.',
     scenarios: [
       {
         id: 'm-94-a',
-        text: 'A BCBA sets a timer for 5-minute intervals. If the client does not engage in self-injury during the entire interval, the client receives a preferred item. If self-injury occurs, the timer resets. Self-injury decreases over four weeks.',
+        text: 'A BCBA sets a timer for 5-minute intervals. When the timer sounds, she looks up and checks whether the client is engaging in self-stimulatory behavior at that exact moment. If not, she delivers a preferred item  --  even if the behavior occurred earlier in the interval.',
         isCorrect: true,
-        explanation: 'Delivering reinforcement contingent on the absence of the target behavior (self-injury) during a specified interval is DRO. The reinforcer is not tied to any specific alternative behavior — only to the non-occurrence of the problem behavior.',
+        explanation: 'Checking for behavior only at the moment the interval ends and reinforcing its absence at that moment is momentary DRO (mDRO)  --  less restrictive than whole-interval DRO but also less precise.',
       },
       {
         id: 'm-94-b',
-        text: 'The BCBA reinforces the client for requesting a break (a specific alternative behavior) instead of self-injuring.',
+        text: 'A BCBA sets a timer for 5-minute intervals. Reinforcement is delivered only if the client did not engage in the target behavior at any point during the entire interval.',
         isCorrect: false,
-        explanation: 'Reinforcing a specific alternative behavior is DRA, not DRO. DRO reinforces the absence of the problem behavior, not the presence of a specific alternative.',
+        explanation: 'Requiring the behavior to be absent throughout the entire interval is whole-interval DRO, not momentary DRO.',
       },
       {
         id: 'm-94-c',
-        text: 'The BCBA reinforces the client for sitting quietly (a behavior physically incompatible with self-injury).',
+        text: 'A BCBA delivers reinforcement every 3 minutes regardless of whether the target behavior occurs.',
         isCorrect: false,
-        explanation: 'Reinforcing a behavior that is physically incompatible with the problem behavior is DRI, not DRO.',
+        explanation: 'Delivering reinforcement on a fixed-time schedule regardless of behavior is noncontingent reinforcement (NCR), not DRO.',
       },
       {
         id: 'm-94-d',
-        text: 'The BCBA delivers preferred items every 5 minutes regardless of the client\'s behavior.',
+        text: 'A BCBA reinforces a behavior that is physically incompatible with the target behavior.',
         isCorrect: false,
-        explanation: 'Delivering reinforcement on a fixed-time schedule independent of behavior is NCR, not DRO. DRO requires the absence of the problem behavior during the interval.',
+        explanation: 'Reinforcing an incompatible behavior is DRI (Differential Reinforcement of Incompatible Behavior), not DRO.',
       },
     ],
   },
@@ -3064,9 +3087,9 @@ export const matchingItems: MatchingItem[] = [
     scenarios: [
       {
         id: 'm-95-a',
-        text: 'A child frequently runs in the hallway. The BCBA reinforces the child for walking with hands clasped behind his back — a behavior that is physically incompatible with running. Running decreases as walking with clasped hands increases.',
+        text: 'A child frequently runs in the hallway. The BCBA reinforces the child for walking with hands clasped behind his back  --  a behavior that is physically incompatible with running. Running decreases as walking with clasped hands increases.',
         isCorrect: true,
-        explanation: 'Reinforcing walking with clasped hands (physically incompatible with running) is DRI — the two behaviors cannot occur simultaneously, so increasing the incompatible behavior directly reduces the problem behavior.',
+        explanation: 'Reinforcing walking with clasped hands (physically incompatible with running) is DRI  --  the two behaviors cannot occur simultaneously, so increasing the incompatible behavior directly reduces the problem behavior.',
       },
       {
         id: 'm-95-b',
@@ -3088,7 +3111,7 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Measurement (C) ─────────────────────────────────────────────
+  // -- NEW ITEMS: Measurement (C) ---------------------------------------------
   {
     id: 'm-96',
     domain: 'Measurement',
@@ -3099,7 +3122,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-96-a',
         text: 'A BCBA is concerned that a student takes too long to begin tasks after instructions are given. She uses a stopwatch to measure the time between when she says "Start your work" and when the student picks up his pencil and begins writing.',
         isCorrect: true,
-        explanation: 'Measuring the time between the onset of the instruction (SD) and the initiation of the behavior (picking up the pencil) is latency recording — appropriate for measuring response initiation delays.',
+        explanation: 'Measuring the time between the onset of the instruction (SD) and the initiation of the behavior (picking up the pencil) is latency recording  --  appropriate for measuring response initiation delays.',
       },
       {
         id: 'm-96-b',
@@ -3131,7 +3154,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-97-a',
         text: 'A BCBA measures the time between the end of one instance of hand-flapping and the beginning of the next instance of hand-flapping to understand the temporal distribution of the behavior throughout the day.',
         isCorrect: true,
-        explanation: 'Measuring the time between the end of one response and the beginning of the next response of the same type is inter-response time (IRT) — useful for understanding response patterning and designing DRO interval lengths.',
+        explanation: 'Measuring the time between the end of one response and the beginning of the next response of the same type is inter-response time (IRT)  --  useful for understanding response patterning and designing DRO interval lengths.',
       },
       {
         id: 'm-97-b',
@@ -3153,7 +3176,7 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
-  // ── NEW ITEMS: Ethics & Professional Practice (E) ─────────────────────────
+  // -- NEW ITEMS: Ethics & Professional Practice (E) -------------------------
   {
     id: 'm-98',
     domain: 'Ethics & Professional Practice',
@@ -3170,7 +3193,7 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-98-b',
         text: 'A BCBA provides services to two clients who attend the same school and occasionally share the same classroom.',
         isCorrect: false,
-        explanation: 'Providing services to multiple clients in the same setting is not inherently a conflict of interest — it is a common practice that requires careful coordination.',
+        explanation: 'Providing services to multiple clients in the same setting is not inherently a conflict of interest  --  it is a common practice that requires careful coordination.',
       },
       {
         id: 'm-98-c',
@@ -3234,13 +3257,13 @@ export const matchingItems: MatchingItem[] = [
         id: 'm-100-b',
         text: 'A BCBA introduces attention, demand, alone, and control conditions in a structured analog setting to identify which condition produces the highest rate of aggression.',
         isCorrect: false,
-        explanation: 'Systematically manipulating conditions to identify behavioral function is a functional analysis (experimental assessment) — the most rigorous component of an FBA, but not the FBA itself.',
+        explanation: 'Systematically manipulating conditions to identify behavioral function is a functional analysis (experimental assessment)  --  the most rigorous component of an FBA, but not the FBA itself.',
       },
       {
         id: 'm-100-c',
         text: 'A BCBA administers the Motivation Assessment Scale (MAS) to identify the most likely function of the student\'s aggression.',
         isCorrect: false,
-        explanation: 'Administering a rating scale is an indirect assessment method — one component of an FBA, but not a complete FBA on its own.',
+        explanation: 'Administering a rating scale is an indirect assessment method  --  one component of an FBA, but not a complete FBA on its own.',
       },
       {
         id: 'm-100-d',
