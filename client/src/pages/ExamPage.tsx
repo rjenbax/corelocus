@@ -51,7 +51,7 @@ export default function ExamPage() {
   const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
-    if (!state.examStarted) navigate('/');
+    if (!state.examStarted) navigate('/dashboard');
     if (state.examComplete) navigate('/results');
   }, [state.examStarted, state.examComplete, navigate]);
 
@@ -88,7 +88,7 @@ export default function ExamPage() {
       <header className="border-b border-border bg-card/90 backdrop-blur-sm sticky top-0 z-40 h-14">
         <div className="flex items-center h-full px-4 gap-3">
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/dashboard')}
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors text-sm"
           >
             <Brain className="w-4 h-4" />

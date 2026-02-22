@@ -379,7 +379,7 @@ export default function DailyPracticePage() {
       <div className="min-h-screen bg-background flex flex-col">
         <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="container flex items-center h-14 gap-3">
-            <button onClick={() => navigate('/')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
               <ArrowLeft className="w-4 h-4" /> Dashboard
             </button>
             <span className="text-muted-foreground">/</span>
@@ -396,7 +396,7 @@ export default function DailyPracticePage() {
               Daily Practice targets your weakest task items. Complete some Flashcard or Rapid Recall sessions first so the platform knows where to focus your practice.
             </p>
             <button
-              onClick={() => navigate('/')}
+              onClick={() => navigate('/dashboard')}
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors"
             >
               <Home className="w-4 h-4" /> Start with Tier 1 Flashcards
@@ -413,7 +413,7 @@ export default function DailyPracticePage() {
       <div className="min-h-screen bg-background flex flex-col">
         <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="container flex items-center h-14 gap-3">
-            <button onClick={() => navigate('/')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
               <ArrowLeft className="w-4 h-4" /> Dashboard
             </button>
             <span className="text-muted-foreground">/</span>
@@ -470,7 +470,7 @@ export default function DailyPracticePage() {
                 <RotateCcw className="w-4 h-4" /> New Session
               </button>
               <button
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/dashboard')}
                 className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors"
               >
                 <Home className="w-4 h-4" /> Dashboard
@@ -490,7 +490,7 @@ export default function DailyPracticePage() {
       {/* Header */}
       <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container flex items-center h-14 gap-3">
-          <button onClick={() => navigate('/')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
             <ArrowLeft className="w-4 h-4" /> Dashboard
           </button>
           <span className="text-muted-foreground">/</span>

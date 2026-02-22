@@ -6,6 +6,8 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ExamProvider } from "./contexts/ExamContext";
 import { ProgressProvider } from "./contexts/ProgressContext";
+import BetaGate from "./components/BetaGate";
+import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard";
 import FlashcardsPage from "./pages/FlashcardsPage";
 import RapidRecallPage from "./pages/RapidRecallPage";
@@ -18,20 +20,54 @@ import ResultsPage from "./pages/ResultsPage";
 import DailyPracticePage from "./pages/DailyPracticePage";
 import PricingPage from "./pages/PricingPage";
 
+// Wrap a component in the BetaGate
+function Protected({ component: Component }: { component: React.ComponentType }) {
+  return (
+    <BetaGate>
+      <Component />
+    </BetaGate>
+  );
+}
+
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Dashboard} />
-      <Route path={"/flashcards"} component={FlashcardsPage} />
-      <Route path={"/rapid-recall"} component={RapidRecallPage} />
-      <Route path={"/matching"} component={MatchingPage} />
-      <Route path={"/venn"} component={VennPage} />
-      <Route path={"/scenario-justification"} component={ScenarioJustificationPage} />
-      <Route path={"/exam-hub"} component={ExamHubPage} />
-      <Route path={"/exam"} component={ExamPage} />
-      <Route path={"/results"} component={ResultsPage} />
-      <Route path={"/daily-practice"} component={DailyPracticePage} />
+      {/* Public pages — no gate */}
+      <Route path={"/"} component={LandingPage} />
       <Route path={"/pricing"} component={PricingPage} />
+
+      {/* Learning platform — all routes behind BetaGate */}
+      <Route path={"/dashboard"}>
+        {() => <Protected component={Dashboard} />}
+      </Route>
+      <Route path={"/flashcards"}>
+        {() => <Protected component={FlashcardsPage} />}
+      </Route>
+      <Route path={"/rapid-recall"}>
+        {() => <Protected component={RapidRecallPage} />}
+      </Route>
+      <Route path={"/matching"}>
+        {() => <Protected component={MatchingPage} />}
+      </Route>
+      <Route path={"/venn"}>
+        {() => <Protected component={VennPage} />}
+      </Route>
+      <Route path={"/scenario-justification"}>
+        {() => <Protected component={ScenarioJustificationPage} />}
+      </Route>
+      <Route path={"/exam-hub"}>
+        {() => <Protected component={ExamHubPage} />}
+      </Route>
+      <Route path={"/exam"}>
+        {() => <Protected component={ExamPage} />}
+      </Route>
+      <Route path={"/results"}>
+        {() => <Protected component={ResultsPage} />}
+      </Route>
+      <Route path={"/daily-practice"}>
+        {() => <Protected component={DailyPracticePage} />}
+      </Route>
+
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>

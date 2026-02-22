@@ -150,6 +150,12 @@ export default function Dashboard() {
             >
               Pricing
             </button>
+            <button
+              onClick={() => navigate('/')}
+              className="hidden sm:flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              ← Home
+            </button>
             {/* Daily Practice shortcut in header */}
             <button
               onClick={() => navigate('/daily-practice')}

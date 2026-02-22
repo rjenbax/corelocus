@@ -294,7 +294,7 @@ export default function ResultsPage() {
             Retake Exam
           </button>
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/dashboard')}
             className="flex items-center gap-2 bg-card border border-border text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-muted transition-colors"
           >
             <Home className="w-4 h-4" />
