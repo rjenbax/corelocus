@@ -218,7 +218,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-07',
     domain: 'Verbal Behavior',
     concept: 'Mand',
-    taskCode: 'D-01',
+    taskCode: 'B-19',
     definition: 'A verbal operant controlled by a motivating operation (MO) and reinforced by a specific, characteristic consequence that matches the content of the verbal behavior.',
     scenarios: [
       {
@@ -284,7 +284,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-09',
     domain: 'Assessment',
     concept: 'Functional Analysis (FA)',
-    taskCode: 'E-03',
+    taskCode: 'F-6',
     definition: 'An experimental assessment procedure in which antecedent and consequence conditions are systematically manipulated to identify the function(s) of problem behavior by demonstrating a functional relationship between environmental variables and the behavior.',
     scenarios: [
       {
@@ -888,7 +888,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-27',
     domain: 'Assessment',
     concept: 'ABC (Descriptive) Assessment',
-    taskCode: 'E-02',
+    taskCode: 'F-5',
     definition: 'A direct observational assessment procedure in which the observer records antecedents, behaviors, and consequences as they occur naturally in the environment, without experimental manipulation; used to generate hypotheses about the function of behavior.',
     scenarios: [
       {
@@ -921,7 +921,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-28',
     domain: 'Assessment',
     concept: 'Skill-Based Assessment (VB-MAPP / ABLLS-R)',
-    taskCode: 'E-01',
+    taskCode: 'F-3',
     definition: 'A criterion-referenced assessment tool used to evaluate a learner\'s current verbal behavior repertoire and other skill areas across developmental milestones, used to guide programming decisions.',
     scenarios: [
       {
@@ -1125,7 +1125,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-34',
     domain: 'Verbal Behavior',
     concept: 'Tact',
-    taskCode: 'D-01',
+    taskCode: 'B-19',
     definition: 'A verbal operant controlled by a nonverbal discriminative stimulus (an object, event, or property of the environment) and reinforced by generalized conditioned reinforcement.',
     scenarios: [
       {
@@ -1158,7 +1158,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-35',
     domain: 'Verbal Behavior',
     concept: 'Intraverbal',
-    taskCode: 'D-01',
+    taskCode: 'B-19',
     definition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and there is no point-to-point correspondence between the SD and the response; reinforced by generalized conditioned reinforcement.',
     scenarios: [
       {
@@ -1191,7 +1191,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-36',
     domain: 'Verbal Behavior',
     concept: 'Functional Communication Training (FCT)',
-    taskCode: 'D-01',
+    taskCode: 'G-2',
     definition: 'A DRA procedure in which a functionally equivalent communicative response is taught as an alternative to problem behavior; the communicative response produces the same reinforcer that previously maintained the problem behavior.',
     scenarios: [
       {
@@ -1360,7 +1360,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-41',
     domain: 'Ethics & Professional Practice',
     concept: 'Least Restrictive Alternative',
-    taskCode: 'G-01',
+    taskCode: 'H-3',
     definition: 'The ethical principle that behavior analysts select interventions that are the least intrusive and most positive possible while still being effective; more restrictive procedures are used only when less restrictive alternatives have been tried or are clearly insufficient.',
     scenarios: [
       {
@@ -1560,7 +1560,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-47',
     domain: 'Assessment',
     concept: 'Indirect Assessment',
-    taskCode: 'E-01',
+    taskCode: 'F-5',
     definition: 'An assessment method that gathers information about behavior through interviews, rating scales, or questionnaires rather than through direct observation; used to generate hypotheses about the function of behavior.',
     scenarios: [
       {
@@ -1693,7 +1693,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-51',
     domain: 'Behavior Principles',
     concept: 'Extinction Burst',
-    taskCode: 'B-13',
+    taskCode: 'B-11',
     definition: 'A temporary increase in the frequency, duration, or intensity of a behavior immediately following the discontinuation of reinforcement.',
     scenarios: [
       {
@@ -2057,7 +2057,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-62',
     domain: 'Skill Acquisition',
     concept: 'Generalization Programming',
-    taskCode: 'F-09',
+    taskCode: 'G-15',
     definition: 'The systematic arrangement of antecedent and consequence variables during training to promote the occurrence of trained behaviors in untrained settings, with untrained people, or under untrained conditions.',
     scenarios: [
       {
@@ -2190,7 +2190,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-66',
     domain: 'Behavior Reduction',
     concept: 'Functional Communication Training (FCT)',
-    taskCode: 'G-06',
+    taskCode: 'G-2',
     definition: 'A differential reinforcement procedure in which a communicative response that serves the same function as the problem behavior is reinforced, while the problem behavior is placed on extinction.',
     scenarios: [
       {
@@ -2223,7 +2223,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-67',
     concept: 'Safety Plan / Crisis Protocol',
     domain: 'Behavior Reduction',
-    taskCode: 'G-21',
+    taskCode: 'H-4',
     definition: 'A written plan that specifies procedures for managing dangerous behavior, including escalation indicators, staff roles, and de-escalation strategies.',
     scenarios: [
       {
@@ -2356,7 +2356,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-71',
     concept: 'Scope of Competence  --  Supervision Responsibility',
     domain: 'Supervision',
-    taskCode: 'I-01',
+    taskCode: 'E-3',
     definition: 'BCBAs must only supervise activities within their own scope of competence and must ensure that supervisees are only assigned tasks within the BCBA\'s area of expertise.',
     scenarios: [
       {
@@ -2590,7 +2590,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-78',
     concept: 'Alternating Treatments Design (ATD)  --  Interpreting Results',
     domain: 'Research & Design',
-    taskCode: 'F-06',
+    taskCode: 'D-7',
     definition: 'In an ATD, a functional relationship is demonstrated when data paths for different conditions are clearly separated (non-overlapping), indicating that one condition produces reliably different behavior than the other.',
     scenarios: [
       {
@@ -2623,7 +2623,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-79',
     concept: 'Visual Analysis  --  Stability Criterion',
     domain: 'Research & Design',
-    taskCode: 'F-07',
+    taskCode: 'D-6',
     definition: 'Before changing phases in single-case research, data must show a stable trend (low variability, consistent level and direction) to allow meaningful comparison across conditions.',
     scenarios: [
       {
@@ -2656,7 +2656,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-80',
     domain: 'Research & Design',
     concept: 'Social Validity',
-    taskCode: 'D-01',
+    taskCode: 'H-2',
     definition: 'The extent to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, caregivers, and the broader community.',
     scenarios: [
       {
@@ -2690,7 +2690,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-81',
     concept: 'Structural Analysis',
     domain: 'Assessment',
-    taskCode: 'E-02',
+    taskCode: 'F-6',
     definition: 'An assessment procedure in which antecedent variables (e.g., task difficulty, activity type, instructional format) are manipulated to identify the conditions under which problem behavior is most and least likely to occur, without manipulating consequences.',
     scenarios: [
       {
@@ -2723,7 +2723,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-82',
     domain: 'Assessment',
     concept: 'Scatterplot Assessment',
-    taskCode: 'E-02',
+    taskCode: 'F-5',
     definition: 'A direct observational tool that maps the temporal distribution of problem behavior across time periods and days, used to identify patterns in when behavior is most and least likely to occur and to generate hypotheses about setting events or time-based antecedents.',
     scenarios: [
       {
@@ -2756,7 +2756,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-83',
     domain: 'Assessment',
     concept: 'Preference Assessment',
-    taskCode: 'E-04',
+    taskCode: 'F-4',
     definition: 'A systematic procedure used to identify stimuli that may function as reinforcers for an individual by presenting items and observing approach behavior, selection, or engagement.',
     scenarios: [
       {
@@ -2822,7 +2822,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-85',
     domain: 'Assessment',
     concept: 'Curriculum-Based Assessment',
-    taskCode: 'E-01',
+    taskCode: 'F-3',
     definition: 'A direct assessment approach in which a learner\'s skills are measured against the objectives of the instructional curriculum to identify current skill levels and guide programming decisions.',
     scenarios: [
       {
@@ -2856,7 +2856,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-86',
     concept: 'Verbal Operant -- Mand vs. Tact Distinction',
     domain: 'Verbal Behavior',
-    taskCode: 'D-01',
+    taskCode: 'B-20',
     definition: 'Mands are controlled by motivating operations and reinforced by the specific item or action requested; tacts are controlled by a nonverbal discriminative stimulus (the item itself) and reinforced by generalized conditioned reinforcement. The same topography (e.g., "cookie") can function as either depending on the controlling variable.',
     scenarios: [
       {
@@ -2889,7 +2889,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-87',
     concept: 'Autoclitic',
     domain: 'Verbal Behavior',
-    taskCode: 'D-07',
+    taskCode: 'B-19',
     definition: 'A secondary verbal operant that modifies or qualifies other verbal behavior, providing information about the speaker\'s relation to their own primary verbal behavior (e.g., "I think," "I\'m not sure," "Please").',
     scenarios: [
       {
@@ -2922,7 +2922,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-88',
     domain: 'Verbal Behavior',
     concept: 'Echoic',
-    taskCode: 'D-01',
+    taskCode: 'B-19',
     definition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and has point-to-point correspondence and formal similarity with that stimulus.',
     scenarios: [
       {
@@ -2955,7 +2955,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-89',
     domain: 'Verbal Behavior',
     concept: 'Listener Behavior (Receptive Language)',
-    taskCode: 'D-01',
+    taskCode: 'B-19',
     definition: 'Behavior under the control of verbal stimuli in which the listener responds nonverbally to the verbal behavior of a speaker, such as following instructions or selecting items when named.',
     scenarios: [
       {
@@ -2988,7 +2988,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-90',
     domain: 'Verbal Behavior',
     concept: 'Verbal Operant  --  Textual',
-    taskCode: 'D-01',
+    taskCode: 'B-19',
     definition: 'A verbal operant in which the response is controlled by a written or printed verbal stimulus and has point-to-point correspondence with that stimulus, but not formal similarity (the stimulus is visual; the response is vocal).',
     scenarios: [
       {
@@ -3088,7 +3088,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-93',
     domain: 'Skill Acquisition',
     concept: 'Fluency Training',
-    taskCode: 'F-10',
+    taskCode: 'H-1',
     definition: 'Instruction designed to develop both accuracy and speed of responding to a level that supports maintenance, generalization, and application of the skill in natural contexts.',
     scenarios: [
       {
@@ -3322,7 +3322,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-100',
     domain: 'Assessment',
     concept: 'Functional Behavior Assessment (FBA)',
-    taskCode: 'E-03',
+    taskCode: 'F-6',
     definition: 'A comprehensive assessment process that uses multiple methods (indirect, descriptive, and experimental) to identify the variables that predict and maintain problem behavior, resulting in a hypothesis about its function.',
     scenarios: [
       {
