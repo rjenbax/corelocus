@@ -3192,6 +3192,72 @@ export const rapidRecallItems: RapidRecallItem[] = [
     domain: 'I', category: 'Supervision',
     taskItem: 'I.2',
   },
+
+  // ── Domain G: Final Four ───────────────────────────────────────────────────
+  {
+    id: 'rr-ncr', term: 'Non-Contingent Reinforcement (NCR)',
+    correctDefinition: 'Delivery of a reinforcer on a fixed-time or variable-time schedule, independent of the occurrence of any specific behavior; used to reduce problem behavior maintained by that reinforcer.',
+    distractors: [
+      'Reinforcement delivered contingent on the absence of problem behavior for a specified interval.',
+      'Reinforcement delivered for any behavior other than the target problem behavior.',
+      'Reinforcement delivered on a dense schedule to compete with problem behavior reinforcement.',
+    ],
+    misconceptions: [
+      '"Is the same as DRO because both reduce problem behavior."',
+      '"Requires identifying an alternative behavior to reinforce."',
+      '"Is contingent on the individual not engaging in problem behavior."',
+    ],
+    domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.3',
+  },
+  {
+    id: 'rr-response-cost', term: 'Response Cost',
+    correctDefinition: 'A form of negative punishment in which a specified amount of a conditioned reinforcer (e.g., tokens, points) is removed contingent on a target behavior, resulting in a decrease in that behavior.',
+    distractors: [
+      'A form of positive punishment in which an aversive stimulus is added following a behavior.',
+      'A form of extinction in which reinforcement is withheld following a behavior.',
+      'A procedure in which access to a preferred activity is removed contingent on problem behavior.',
+    ],
+    misconceptions: [
+      '"Is a form of positive punishment because something is taken away."',
+      '"Is the same as time-out from positive reinforcement."',
+      '"Requires a token economy to implement."',
+    ],
+    domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.5',
+  },
+  {
+    id: 'rr-overcorrection', term: 'Overcorrection',
+    correctDefinition: 'A form of positive punishment requiring the individual to correct the environmental effects of their behavior (restitution) and/or practice the correct form of behavior repeatedly (positive practice).',
+    distractors: [
+      'A procedure in which the individual is removed from the reinforcing environment contingent on problem behavior.',
+      'A procedure in which a specified amount of a conditioned reinforcer is removed contingent on problem behavior.',
+      'A procedure in which an aversive stimulus is added following problem behavior to decrease its future frequency.',
+    ],
+    misconceptions: [
+      '"Is the same as response cost."',
+      '"Does not involve practicing the correct behavior."',
+      '"Is a form of negative punishment."',
+    ],
+    domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.5',
+  },
+  {
+    id: 'rr-behavioral-momentum', term: 'Behavioral Momentum',
+    correctDefinition: 'The tendency for behavior to persist following a change in reinforcement conditions; increased by a history of high-rate reinforcement. Used clinically by delivering high-probability requests before a low-probability request.',
+    distractors: [
+      'The matching law principle that describes how organisms allocate behavior across concurrent schedules of reinforcement.',
+      'The tendency for behavior to increase in rate following a period of extinction.',
+      'The persistence of behavior that is maintained by automatic reinforcement despite changes in social contingencies.',
+    ],
+    misconceptions: [
+      '"Is the same as the matching law."',
+      '"Refers to the speed at which a behavior is acquired."',
+      '"Is only applicable to problem behavior, not skill acquisition."',
+    ],
+    domain: 'G', category: 'Behavior-Change Procedures',
+    taskItem: 'G.1',
+  },
 ];
 
 export const rapidRecallCategories = [
