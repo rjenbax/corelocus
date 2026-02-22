@@ -195,7 +195,7 @@ function MissedItemsPanel({
                   {/* Scenario context */}
                   <div className="bg-rose-50 border border-rose-200 rounded-lg p-3">
                     <p className="text-xs font-semibold text-rose-600 uppercase tracking-wide mb-1">Scenario Context</p>
-                    <p className="text-xs text-foreground leading-relaxed">{scenario.scenario}</p>
+                    <p className="text-xs text-foreground leading-relaxed">{scenario.scenario ?? scenario.context ?? ''}</p>
                   </div>
 
                   {/* Question stem */}
@@ -413,7 +413,7 @@ export default function ScenarioJustificationPage() {
           {/* Scenario text */}
           <div className="bg-rose-50 border-2 border-rose-200 rounded-2xl p-5 mb-6">
             <div className="text-xs font-semibold text-rose-600 uppercase tracking-wider mb-2">{scenario.domain}</div>
-            <p className="text-sm text-foreground leading-relaxed">{scenario.scenario}</p>
+            <p className="text-sm text-foreground leading-relaxed">{scenario.scenario ?? scenario.context ?? ''}</p>
           </div>
 
           {/* Question stem */}
@@ -697,7 +697,7 @@ export default function ScenarioJustificationPage() {
                           {isFullyComplete && <CheckCircle2 className="w-4 h-4 text-violet-700" />}
                         </div>
                         <h3 className="font-semibold text-foreground text-sm mb-1">{item.title}</h3>
-                        <p className="text-xs text-muted-foreground line-clamp-2">{item.scenario.substring(0, 120)}...</p>
+                        <p className="text-xs text-muted-foreground line-clamp-2">{(item.scenario ?? item.context ?? '').substring(0, 120)}...</p>
                       </div>
                       <div className="flex-shrink-0 text-right">
                         <div className="text-xs text-muted-foreground mb-1">{item.questions.length} questions</div>
