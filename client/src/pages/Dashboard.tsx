@@ -1,7 +1,7 @@
 /**
- * Dashboard — BCBA Learning Platform Home
- * Design: Academic Warmth — 6-tier visual learning path with progress tracking
- * Warm cream tones, forest green primary, editorial layout
+ * Dashboard — BehaviorPREP Learning Platform Home
+ * Design: Violet + Teal SaaS — 7-tier visual learning path with progress tracking
+ * Violet #6D28D9 primary, Teal #0F766E accent, Slate #334155 text, Off-White #F8FAFC surface
  */
 import { useLocation } from 'wouter';
 import { useProgress } from '@/contexts/ProgressContext';
@@ -42,7 +42,7 @@ const TIERS: TierConfig[] = [
     tier: 2,
     title: 'Rapid Recall',
     subtitle: 'Quick-Fire Q&A',
-    description: 'Timed quick-fire questions on definitions, functions, and key distinctions. Track your weak boundaries — the misconceptions you keep choosing.',
+    description: 'Timed quick-fire questions on definitions, functions, and key distinctions. Track your weak spots — the misconceptions you keep choosing.',
     icon: Zap,
     route: '/rapid-recall',
     bloomsLevel: 'Recall under pressure',
@@ -68,7 +68,7 @@ const TIERS: TierConfig[] = [
     tier: 4,
     title: 'Venn Diagram',
     subtitle: 'Concept Comparison',
-    description: 'Distinguish commonly confused ABA concept pairs. Identify what is unique to each concept and what they share — across 73 carefully curated pairs.',
+    description: 'Distinguish commonly confused ABA concept pairs. Identify what is unique to each concept and what they share — across 92 carefully curated pairs.',
     icon: GitMerge,
     route: '/venn',
     bloomsLevel: 'Compare & contrast',
@@ -81,7 +81,7 @@ const TIERS: TierConfig[] = [
     tier: 5,
     title: 'Scenario Justification',
     subtitle: 'Answer + Reasoning',
-    description: '34 clinical scenarios, 79 questions. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
+    description: '49 clinical scenarios, 81 questions. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
     icon: Brain,
     route: '/scenario-justification',
     bloomsLevel: 'Justify your answer',
@@ -92,19 +92,6 @@ const TIERS: TierConfig[] = [
   },
   {
     tier: 6,
-    title: 'Case Study Exam',
-    subtitle: 'Full Lifecycle Simulation',
-    description: 'Follow Leo Rodriguez from referral to discharge. 175 questions across the full client lifecycle — the capstone of your BCBA preparation.',
-    icon: ClipboardList,
-    route: '/exam-hub',
-    bloomsLevel: 'Apply to cases',
-    color: 'text-primary',
-    bgColor: 'bg-primary/5',
-    borderColor: 'border-primary/20',
-    pillColor: 'bg-primary/10 text-primary',
-  },
-  {
-    tier: 7,
     title: 'Full Mock Exam',
     subtitle: 'Timed Exam Simulation',
     description: '175 questions across all 9 TCO domains with adaptive question selection, 5 CSA archetypes, full score breakdown, and detailed analytics. Powered by BehaviorPREP Complete.',
@@ -116,6 +103,19 @@ const TIERS: TierConfig[] = [
     borderColor: 'border-amber-200',
     pillColor: 'bg-amber-100 text-amber-700',
     isExternal: true,
+  },
+  {
+    tier: 7,
+    title: 'Case Study Exam',
+    subtitle: 'Real-World Application',
+    description: 'You passed — now apply it. Follow Leo Rodriguez from referral to discharge. 175 questions simulating a real client lifecycle, the way BCBAs actually work in the field.',
+    icon: ClipboardList,
+    route: '/exam-hub',
+    bloomsLevel: 'Apply in the field',
+    color: 'text-primary',
+    bgColor: 'bg-primary/5',
+    borderColor: 'border-primary/20',
+    pillColor: 'bg-primary/10 text-primary',
   },
 ];
 
@@ -138,11 +138,18 @@ export default function Dashboard() {
               <Brain className="w-4 h-4 text-primary-foreground" />
             </div>
             <div>
-              <span className="font-semibold text-sm text-foreground">BCBAPrep</span>
+              <span className="font-semibold text-sm text-foreground">BehaviorPREP</span>
               <span className="text-muted-foreground text-xs ml-1.5">Learning Platform</span>
             </div>
           </div>
           <div className="flex items-center gap-3">
+            {/* Pricing link */}
+            <button
+              onClick={() => navigate('/pricing')}
+              className="hidden sm:flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Pricing
+            </button>
             {/* Daily Practice shortcut in header */}
             <button
               onClick={() => navigate('/daily-practice')}
@@ -186,8 +193,8 @@ export default function Dashboard() {
                 { num: '3', label: 'Scenario Matching', blurb: 'Spot the concept playing out in a real case.' },
                 { num: '4', label: 'Venn Diagram', blurb: 'Tell apart concepts that look similar.' },
                 { num: '5', label: 'Scenario Justification', blurb: 'Choose the right answer and explain why.' },
-                { num: '6', label: 'Case Study Exam', blurb: 'Handle a full client case from start to finish.' },
-                { num: '7', label: 'Full Mock Exam', blurb: 'Sit a timed 175-question exam and see your score breakdown.' },
+                { num: '6', label: 'Full Mock Exam', blurb: 'Sit a timed 175-question exam and see your score breakdown.' },
+                { num: '7', label: 'Case Study Exam', blurb: 'Apply your knowledge to a real client case — just like on the job.' },
               ] as const).map(({ num, label, blurb }) => (
                 <div key={num} className="flex items-start gap-2.5 text-sm">
                   <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-[11px] font-bold flex items-center justify-center mt-0.5">{num}</span>
@@ -250,8 +257,8 @@ export default function Dashboard() {
                     className={cn(
                       "w-full text-left rounded-xl border-2 p-5 transition-all duration-200 group",
                       "hover:shadow-md hover:-translate-y-0.5",
-                      tier.borderColor,
                       tier.bgColor,
+                      tier.borderColor,
                       isComplete && "ring-2 ring-offset-1 ring-violet-400/50"
                     )}
                   >
@@ -309,7 +316,7 @@ export default function Dashboard() {
                                   'bg-teal-500': tier.tier === 3,
                                   'bg-violet-700': tier.tier === 4,
                                   'bg-teal-700': tier.tier === 5,
-                                  'bg-primary': tier.tier === 6,
+                                  'bg-primary': tier.tier === 7,
                                 })}
                                 style={{ width: `${pct}%` }}
                               />
@@ -363,9 +370,9 @@ export default function Dashboard() {
             <div className="flex items-start gap-2.5">
               <Trophy className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-sm font-medium text-foreground mb-0.5">Complete all 6 tiers for full BCBA preparation</p>
+                <p className="text-sm font-medium text-foreground mb-0.5">Complete all 7 tiers for full BCBA preparation</p>
                 <p className="text-xs text-muted-foreground">
-                  Each tier builds on the previous — from recalling definitions (Tier 1) to applying clinical reasoning in complex case scenarios (Tier 6).
+                  Each tier builds on the previous — from recalling definitions (Tier 1) to applying clinical reasoning in a real client case (Tier 7).
                   Progress is saved automatically to your browser.
                 </p>
               </div>

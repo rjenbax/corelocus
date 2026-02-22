@@ -1,6 +1,7 @@
 /**
- * ExamHubPage — Tier 6: Apply to Cases
- * Gateway to the existing 175-question Case Study Simulation Exam
+ * ExamHubPage — Tier 7: Real-World Application
+ * Gateway to the 175-question Case Study Simulation Exam
+ * Positioned AFTER the Full Mock Exam as the capstone clinical reasoning experience
  */
 import { useLocation } from 'wouter';
 import { useExam } from '@/contexts/ExamContext';
@@ -42,7 +43,7 @@ export default function ExamHubPage() {
             <div className="flex items-center gap-2">
               <ClipboardList className="w-4 h-4 text-primary" />
               <span className="font-semibold text-sm">Case Study Exam</span>
-              <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">Tier 6</span>
+              <span className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded-full">Tier 7</span>
             </div>
           </div>
           {examCompleted && (
@@ -63,14 +64,13 @@ export default function ExamHubPage() {
             </div>
             <div>
               <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
-                Capstone · Apply to cases
+                Capstone · Real-World Application
               </div>
               <h1 className="text-2xl font-bold text-foreground mb-2">
                 BCBA Case Study Simulation Exam
               </h1>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                Follow <strong>Leo Rodriguez</strong> — a 5-year-old with Autism Spectrum Disorder — from initial referral through discharge. 
-                175 questions spanning the full client lifecycle, testing your ability to apply BCBA knowledge in realistic clinical scenarios.
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                You've studied the concepts, taken the mock exam — now apply it. Follow <strong>Leo Rodriguez</strong>, a 5-year-old with Autism Spectrum Disorder, from initial referral through discharge. 175 questions simulating the decisions BCBAs make in real clinical practice.
               </p>
               <div className="flex flex-wrap gap-2 text-xs">
                 <span className="bg-white border border-border px-2.5 py-1 rounded-full">175 questions</span>

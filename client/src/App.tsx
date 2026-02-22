@@ -16,6 +16,7 @@ import ExamHubPage from "./pages/ExamHubPage";
 import ExamPage from "./pages/ExamPage";
 import ResultsPage from "./pages/ResultsPage";
 import DailyPracticePage from "./pages/DailyPracticePage";
+import PricingPage from "./pages/PricingPage";
 
 function Router() {
   return (
@@ -30,6 +31,7 @@ function Router() {
       <Route path={"/exam"} component={ExamPage} />
       <Route path={"/results"} component={ResultsPage} />
       <Route path={"/daily-practice"} component={DailyPracticePage} />
+      <Route path={"/pricing"} component={PricingPage} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
