@@ -20,7 +20,7 @@ export const allQuestions: Question[] = [
 
 export const domainInfo: Record<string, { name: string; totalQuestions: number; color: string }> = {
   A: { name: "Behaviorism & Philosophical Foundations", totalQuestions: 8, color: "#4A7C59" },
-  B: { name: "Concepts and Principles", totalQuestions: 24, color: "#2E6B8A" },
+  B: { name: "Concepts and Principles", totalQuestions: 26, color: "#2E6B8A" },
   C: { name: "Measurement, Data Display & Interpretation", totalQuestions: 21, color: "#7A5C8A" },
   D: { name: "Experimental Design", totalQuestions: 13, color: "#8A6B2E" },
   E: { name: "Ethical and Professional Issues", totalQuestions: 22, color: "#8A2E2E" },
@@ -56,8 +56,8 @@ export const phaseInfo: Record<string, { label: string; description: string; ord
     label: "Phase 4: Intervention Implementation & Supervision",
     description: "The BIP is implemented across home and school. You supervise Marcus weekly, review graphed data, make data-based modifications, and address procedural integrity issues. You apply prompting hierarchies, shaping, chaining, and generalization procedures. You navigate supervision challenges, staff performance issues, and ethical questions that arise during active treatment.",
     order: 4,
-    questionRange: "Questions 122–165",
-    domains: "Domains G, H, C, I, E",
+    questionRange: "Questions 122–167",
+    domains: "Domains G, H, C, I, E, B",
   },
   evaluation: {
     label: "Phase 5: Evaluation, Generalization & Discharge",
