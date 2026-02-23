@@ -35,7 +35,6 @@ export const scenarioItems: ScenarioItem[] = [
     id: 'sj-01',
     domain: 'Assessment',
     title: 'Functional Assessment for Escape-Maintained Aggression',
-        difficulty: 'advanced',
     scenario: `Marcus is a 9-year-old with autism spectrum disorder who attends a self-contained classroom. His teacher reports that he frequently hits peers and staff. Review of incident reports reveals that hitting occurs most often during math instruction and transitions. When Marcus hits, staff typically remove him from the activity and allow him to sit in the hallway. His parents report no hitting at home during leisure activities.`,
     questions: [
       {
@@ -84,75 +83,7 @@ export const scenarioItems: ScenarioItem[] = [
         ],
         explanation: 'Functional analysis is the only assessment method that experimentally demonstrates a functional relationship. Indirect and descriptive assessments identify correlations but cannot establish causation.',
       },
-            {
-          id: 'sj-01-q3',
-          stem: 'The FA results for Marcus show that aggression is elevated in BOTH the attention condition (mean 4.2 responses/min) and the escape condition (mean 3.8 responses/min), with near-zero responding in the control and alone conditions. What does this pattern MOST likely indicate, and what is the appropriate next step?',
-          choices: [
-            { id: 'A', text: 'The FA was conducted incorrectly; restart with a new control condition and longer session lengths' },
-            { id: 'B', text: 'The behavior is multiply controlled by both attention and escape; the intervention must address both maintaining contingencies' },
-            { id: 'C', text: 'The escape condition result is a false positive caused by attention provided during escape trials; treat as attention-maintained only' },
-            { id: 'D', text: 'The behavior is automatically reinforced; the social conditions are irrelevant because the alone condition was near zero' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'When both attention and escape conditions are elevated with near-zero responding in the control condition, the pattern is consistent with multiple control — the behavior serves more than one function.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'An intervention that addresses only one maintaining contingency when the behavior is multiply controlled will produce incomplete behavior reduction, because the untreated contingency continues to reinforce the behavior.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'The appropriate clinical response to a multiple-control FA result is to design an intervention that addresses all identified maintaining contingencies, typically through FCT with multiple communicative responses and extinction across both conditions.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'Restarting the FA is indicated when the control condition is elevated or when all conditions show similar rates — not when two specific conditions are elevated while the control is near zero, which is a meaningful pattern.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'Attributing the escape condition elevation to attention provided during escape trials is a post-hoc rationalization that requires evidence; the data as presented do not support dismissing the escape condition result without further analysis.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j6',
-              text: 'Near-zero responding in the alone condition rules out automatic reinforcement as the primary maintaining variable; the behavior is clearly socially maintained given the elevated rates in the attention and escape conditions.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j7',
-              text: 'Longer session lengths may improve the sensitivity of the FA but are not indicated as the primary response to a clear multiple-control pattern; the data already show a meaningful differential between social and non-social conditions.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j8',
-              text: 'Treating the behavior as attention-maintained only when the escape condition is also elevated risks implementing an incomplete intervention; the escape function must be addressed to achieve durable behavior reduction.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j9',
-              text: 'Automatic reinforcement is characterized by elevated responding in the alone condition, not by near-zero responding; the near-zero alone condition in this FA is evidence against automatic reinforcement, not for it.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-          ],
-          explanation: 'When both the attention and escape conditions are elevated with near-zero responding in the control and alone conditions, the pattern indicates multiple control — the behavior is maintained by both attention and escape contingencies. This is a clinically important finding because an intervention that addresses only one maintaining contingency is likely to be partially effective at best. The appropriate next step is to design an intervention that addresses both functions — for example, FCT that teaches both an appropriate attention-seeking response and an appropriate escape response, combined with extinction for the problem behavior under both contingencies. Dismissing one elevated condition as a false positive without further analysis is not supported by the data.',
-        },
-      ],
+    ],
   },
 
   // ── Scenario 2: Reinforcement Schedules ────────────────────────────────────
@@ -272,7 +203,6 @@ export const scenarioItems: ScenarioItem[] = [
     id: 'sj-04',
     domain: 'Behavior Reduction',
     title: 'Selecting a Function-Based Intervention for SIB',
-        difficulty: 'advanced',
     scenario: `Amara is a 12-year-old with intellectual disability who engages in head-hitting. A functional analysis reveals that head-hitting is maintained by automatic reinforcement (the behavior produces sensory stimulation). Head-hitting occurs at high rates throughout the day regardless of social consequences. Amara's team is developing a behavior intervention plan.`,
     questions: [
       {
@@ -298,75 +228,7 @@ export const scenarioItems: ScenarioItem[] = [
         ],
         explanation: 'For automatically reinforced behavior, social consequence-based interventions (extinction, time-out, response cost) are ineffective because the reinforcer is inherent to the behavior. NCR with matched stimulation addresses the sensory function by providing free access to similar sensory input.',
       },
-            {
-          id: 'sj-04-q2',
-          stem: 'The team has confirmed that Maya\'s SIB is escape-maintained. Two BCBAs propose different intervention packages. BCBA-1 proposes FCT (teaching a break card) plus extinction of SIB. BCBA-2 proposes NCR (non-contingent escape on a fixed-time schedule) plus differential reinforcement of the break card. Both are function-based. Which package is MOST consistent with the principle of least restrictive treatment, and why?',
-          choices: [
-            { id: 'A', text: 'BCBA-1\'s package, because FCT plus extinction directly addresses the maintaining contingency and produces faster behavior reduction' },
-            { id: 'B', text: 'BCBA-2\'s package, because NCR reduces the motivating operation for escape before the behavior occurs, making extinction unnecessary as a starting point' },
-            { id: 'C', text: 'Both packages are equally restrictive because both include a reinforcement-based component and neither uses punishment' },
-            { id: 'D', text: 'BCBA-1\'s package, because extinction is required by the Ethics Code whenever a function-based intervention is implemented' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'NCR functions as an abolishing operation, reducing the value of escape as a reinforcer before the behavior occurs — this antecedent approach reduces the probability of SIB without requiring the client to contact an extinction contingency.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'Extinction of SIB will produce an extinction burst — a temporary increase in frequency, intensity, or variability — which carries significant safety risk; starting with an antecedent-based approach that reduces the MO is more consistent with the least-restrictive-treatment principle.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'The least-restrictive-treatment principle requires selecting the intervention that achieves the clinical goal with the least potential for harm; NCR plus differential reinforcement achieves escape-function reduction without the safety risks associated with an extinction burst for SIB.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'Speed of behavior reduction is a relevant clinical consideration but is not the primary criterion for the least-restrictive-treatment principle; safety and intrusiveness must be weighed alongside effectiveness.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'The Ethics Code does not require extinction as a component of every function-based intervention; extinction is one tool among many, and its inclusion must be justified by the clinical context and weighed against its risks.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j6',
-              text: 'The two packages are not equally restrictive; the inclusion of extinction in BCBA-1\'s package introduces the risk of an extinction burst for a dangerous behavior, making it more restrictive than a package that achieves the same functional goal without extinction.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j7',
-              text: 'FCT is a highly effective procedure, but pairing it with extinction for SIB at the outset of treatment — before antecedent strategies have been attempted — is not consistent with the least-restrictive-treatment principle when a safer alternative exists.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j8',
-              text: 'The absence of punishment in both packages does not make them equally restrictive; restrictiveness is also determined by the potential for harm during implementation, including the risk of extinction bursts for dangerous behaviors.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j9',
-              text: 'The Ethics Code requires documentation that less-restrictive alternatives have been attempted before moving to more restrictive procedures; starting with NCR rather than extinction is consistent with this requirement.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-          ],
-          explanation: 'Both packages are function-based and reinforcement-based, but they differ in restrictiveness. BCBA-1\'s package includes extinction of SIB, which is a procedure that will produce an extinction burst — a temporary increase in the frequency, intensity, or variability of the SIB. For a behavior like SIB, an extinction burst carries significant safety risk. BCBA-2\'s package uses NCR to reduce the motivating operation for escape (making escape less valuable as a reinforcer), combined with differential reinforcement of the break card. This approach reduces the probability that SIB will occur in the first place, rather than waiting for it to occur and withholding reinforcement. Starting with the antecedent-based package is more consistent with the least-restrictive-treatment principle because it reduces the likelihood of the dangerous behavior without requiring the client to contact the extinction contingency first.',
-        },
-      ],
+    ],
   },
 
   // ── Scenario 5: Ethics ─────────────────────────────────────────────────────
@@ -539,7 +401,6 @@ export const scenarioItems: ScenarioItem[] = [
     id: 'sj-10',
     domain: 'Ethics & Professional Practice',
     title: 'BCBA Supervision Responsibilities',
-        difficulty: 'advanced',
     scenario: `A BCBA supervises three RBTs who implement ABA programs for clients on her caseload. One RBT, Devon, has been implementing a DRA program for a client with escape-maintained aggression. During a supervision observation, the BCBA notices that Devon is providing the reinforcer (break from demands) after aggression rather than after the alternative behavior (requesting a break using AAC). Devon has been implementing the program incorrectly for two weeks.`,
     questions: [
       {
@@ -565,75 +426,7 @@ export const scenarioItems: ScenarioItem[] = [
         ],
         explanation: 'When a BCBA observes an implementation error during supervision, immediate corrective feedback and retraining is required. The error (reinforcing aggression) is actively harming the client and cannot wait until the next scheduled meeting.',
       },
-            {
-          id: 'sj-10-q2',
-          stem: 'Over the next three months, Dr. Patel\'s treatment integrity data show that the same RBT continues to implement extinction inconsistently — dropping below 70% integrity on 8 of 12 observation sessions despite receiving BST twice and written corrective feedback after each session. Marcus\'s SIB has not decreased. What is Dr. Patel\'s MOST appropriate next step?',
-          choices: [
-            { id: 'A', text: 'Conduct a third round of BST with more detailed modeling and increase observation frequency to weekly' },
-            { id: 'B', text: 'Evaluate whether the integrity failures reflect a skill deficit, a performance deficit, or a structural barrier, and intervene accordingly — which may include modifying the intervention to reduce implementation complexity or reassigning the case' },
-            { id: 'C', text: 'Document the integrity failures in the client\'s file and continue the current intervention, as the RBT\'s performance may improve with additional experience' },
-            { id: 'D', text: 'Immediately discontinue the extinction component and replace it with a punishment-based procedure that is easier to implement with high fidelity' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'When BST has been delivered multiple times without improvement in treatment integrity, the BCBA must evaluate whether the problem is a skill deficit, a performance deficit, or a structural barrier — because each requires a different intervention.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'The client\'s lack of progress due to persistent implementation failures creates an ethical obligation to act; continuing an ineffective supervisory approach when the client is not benefiting is not consistent with the BCBA\'s responsibility to the client.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'Modifying the intervention to reduce implementation complexity is a legitimate and often underutilized strategy; if the procedure is too complex for the implementer to execute with fidelity in the natural environment, the procedure itself may need to be simplified.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'A third round of BST is unlikely to produce different results if the previous two rounds did not; repeating the same intervention without a functional analysis of why it failed is not a defensible supervisory strategy.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'Documenting failures without taking corrective action does not fulfill the BCBA\'s supervisory obligation; when a client is not progressing due to implementation failures, documentation alone is insufficient.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j6',
-              text: 'Replacing a function-based reinforcement procedure with a punishment-based procedure solely because it is easier to implement is not consistent with the least-restrictive-treatment principle and does not address the underlying supervisory problem.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j7',
-              text: 'Increasing observation frequency is a reasonable component of a supervisory plan but is not sufficient on its own; observation without a change in the supervisory intervention is unlikely to improve integrity when BST has already failed twice.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j8',
-              text: 'Assuming that performance will improve with experience is not a data-based approach to supervision; the data show a persistent pattern of low integrity over three months, which requires active intervention rather than passive monitoring.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j9',
-              text: 'Switching to a punishment-based procedure does not address the supervisory problem and introduces new ethical concerns; the appropriate response is to address the function of the integrity failure, not to change the client\'s intervention to accommodate the supervisee\'s limitations.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-          ],
-          explanation: 'When a supervisee continues to show low treatment integrity despite multiple rounds of BST and corrective feedback, the BCBA must conduct a functional analysis of the supervisee\'s behavior before selecting the next intervention. The pattern of persistent low integrity despite training suggests that the problem may not be a skill deficit addressable by more BST — it may be a performance deficit (the supervisee knows how but is not performing), a structural barrier (the procedure is too complex to implement in the natural environment), or a motivational issue. The appropriate response is to evaluate the function of the integrity failure and intervene accordingly. This may include simplifying the procedure, providing real-time support, modifying the reinforcement contingencies for the supervisee, or — if the client\'s welfare is at risk — reassigning the case. Continuing the current approach without modification is not defensible when the client is not making progress due to implementation failures.',
-        },
-      ],
+    ],
   },
 
   // ── Scenarios 11–30: Additional scenarios ─────────────────────────────────
@@ -673,101 +466,32 @@ export const scenarioItems: ScenarioItem[] = [
     id: 'sj-12',
     domain: 'Assessment',
     title: 'Interpreting Functional Analysis Results',
-        difficulty: 'advanced',
-    scenario: `A BCBA conducts a functional analysis for Brianna's self-injurious behavior (SIB). The results show elevated SIB in the attention condition (mean 8.4 responses/session) and moderate-to-elevated SIB in the demand condition (mean 6.1 responses/session), with near-zero responding in the alone and control conditions (mean 0.8-1.2 responses/session). The difference between the attention and demand conditions is smaller than expected. The BCBA must determine the function before selecting an intervention.`,
+    scenario: `A BCBA conducts a functional analysis for Brianna's self-injurious behavior (SIB). The results show elevated SIB in the attention condition (average 12 per session), moderate SIB in the demand condition (average 6 per session), and low SIB in the alone and control conditions (average 1–2 per session). The BCBA concludes that Brianna's SIB is primarily attention-maintained.`,
     questions: [
       {
         id: 'sj-12-q1',
-        stem: 'The FA results show elevated SIB in the attention condition (mean 8.4/session) and moderate-to-elevated SIB in the demand condition (mean 6.1/session), with near-zero responding in the alone and control conditions. The difference between attention and demand is smaller than the BCBA expected. What is the MOST defensible interpretation of this FA pattern, and what does it imply for intervention?',
+        stem: 'Based on the functional analysis results, which intervention component is MOST critical for Brianna\'s BIP?',
         choices: [
-          { id: 'A', text: 'The behavior is primarily attention-maintained; implement extinction of attention plus DRA for appropriate attention-seeking' },
-          { id: 'B', text: 'The behavior may be multiply controlled by attention and escape; the intervention must address both maintaining contingencies' },
-          { id: 'C', text: 'The behavior is primarily escape-maintained because demand-related SIB is more clinically common; implement escape extinction plus FCT for break requests' },
-          { id: 'D', text: 'The FA results are inconclusive because the control condition is not zero; repeat the FA with longer session lengths before selecting an intervention' },
+          { id: 'A', text: 'Escape extinction (continuing demands despite SIB)' },
+          { id: 'B', text: 'Noncontingent reinforcement with matched sensory stimulation' },
+          { id: 'C', text: 'Extinction of attention following SIB, combined with DRA for appropriate attention-seeking' },
+          { id: 'D', text: 'Demand fading to reduce the aversiveness of tasks' },
         ],
-        correctChoice: 'B',
+        correctChoice: 'C',
         justifications: [
-          { id: 'j1', text: 'When two FA conditions are both elevated with a relatively small difference between them, the pattern is consistent with multiple control \u2014 the behavior may be maintained by both attention and escape contingencies.', isCorrect: true, justifiesChoice: 'B' },
-          { id: 'j2', text: 'An intervention that addresses only one maintaining contingency when the behavior is multiply controlled will produce incomplete behavior reduction; both the attention and escape functions must be targeted.', isCorrect: true, justifiesChoice: 'B' },
-          { id: 'j3', text: 'The near-zero responding in the alone and control conditions rules out automatic reinforcement and confirms social maintenance, but the elevated responding in both the attention and demand conditions requires an intervention that addresses both contingencies.', isCorrect: true, justifiesChoice: 'B' },
-          { id: 'j4', text: 'Selecting an intervention based on the numerically highest condition when the difference between conditions is small is a psychometric error; small differences may reflect measurement variability rather than a true functional difference.', isCorrect: false, justifiesChoice: 'A' },
-          { id: 'j5', text: 'The base rate of escape-maintained SIB in the literature is not a valid basis for interpreting an individual client\'s FA results; function must be determined from the client\'s own data, not population-level statistics.', isCorrect: false, justifiesChoice: 'C' },
-          { id: 'j6', text: 'A control condition that is near zero (0.8-1.2 responses/session) is within the expected range for a well-conducted FA; this does not make the results inconclusive.', isCorrect: false, justifiesChoice: 'D' },
-          { id: 'j7', text: 'Implementing an attention-only intervention when the demand condition is also elevated risks leaving the escape function untreated, which would result in the behavior persisting under demand conditions.', isCorrect: false, justifiesChoice: 'A' },
-          { id: 'j8', text: 'Repeating the FA with longer sessions is not indicated when the current data show a clear differential between social and non-social conditions; the ambiguity is between two social conditions, not between social and non-social conditions.', isCorrect: false, justifiesChoice: 'D' },
-          { id: 'j9', text: 'Selecting escape extinction as the primary component based on clinical prevalence rather than the individual client\'s FA data is not a defensible clinical decision; function-based intervention requires function-based data.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j1', text: 'The FA demonstrates that SIB is primarily attention-maintained — the intervention must target the attention function by withholding attention following SIB (extinction) and reinforcing appropriate attention-seeking (DRA).', isCorrect: true, justifiesChoice: 'C' },
+          { id: 'j2', text: 'Function-based interventions are more effective than non-function-based interventions — the intervention must match the identified function (attention).', isCorrect: true, justifiesChoice: 'C' },
+          { id: 'j3', text: 'DRA for appropriate attention-seeking (e.g., tapping the teacher\'s arm) provides Brianna with a functional alternative that produces the same reinforcer (attention) without SIB.', isCorrect: true, justifiesChoice: 'C' },
+          { id: 'j4', text: 'Escape extinction is the most important component because the demand condition also showed elevated SIB.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j5', text: 'NCR with matched stimulation is the most effective intervention for all forms of SIB.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j6', text: 'Demand fading addresses the escape function, which is the primary function based on the FA results.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'Escape extinction must be the primary component because SIB occurred in the demand condition.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j8', text: 'NCR is the first-line intervention for any SIB regardless of function.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j9', text: 'Demand fading is appropriate because the demand condition showed moderate SIB.', isCorrect: false, justifiesChoice: 'D' },
         ],
-        explanation: 'When both the attention and demand conditions are elevated with a relatively small difference between them, the FA pattern is consistent with multiple control. An intervention that addresses only one maintaining contingency risks being partially effective. The appropriate interpretation is that the behavior may be maintained by both attention and escape, and the intervention must address both functions. Near-zero responding in the alone and control conditions rules out automatic reinforcement and confirms that the behavior is socially maintained.',
+        explanation: 'The FA shows that SIB is primarily attention-maintained (highest in the attention condition). The intervention must target this function: extinction of attention following SIB and DRA for appropriate attention-seeking.',
       },
-            {
-          id: 'sj-12-q2',
-          stem: 'Given the ambiguous FA pattern (attention and escape both elevated, small difference between conditions), which of the following next steps would provide the MOST useful information for intervention planning?',
-          choices: [
-            { id: 'A', text: 'Proceed with an attention-based intervention because the attention condition is numerically highest and most FA results are attention-maintained' },
-            { id: 'B', text: 'Conduct a follow-up analysis — such as a synthesized contingency analysis or a trial-based FA — to test whether the behavior is maintained by attention, escape, or both simultaneously' },
-            { id: 'C', text: 'Conduct a preference assessment to identify reinforcers for the intervention before determining the function' },
-            { id: 'D', text: 'Implement FCT for both attention and escape simultaneously, because FCT is effective regardless of function' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'When two FA conditions are both elevated with a small difference between them, the data are ambiguous and do not support a confident single-function interpretation; a follow-up assessment is indicated before selecting an intervention.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'A synthesized contingency analysis tests whether the behavior is maintained by the simultaneous presence of both attention and escape contingencies, which is a common pattern in naturalistic settings and cannot be detected by a standard FA.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'Proceeding to intervention based on the numerically highest condition when the difference is small and potentially within measurement error risks implementing an intervention that addresses only one of two maintaining contingencies, producing incomplete behavior reduction.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'The base rate of attention-maintained behavior in the literature is not a valid basis for interpreting an individual client\'s FA results; function must be determined from the client\'s own data, not population-level statistics.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'A preference assessment identifies preferred stimuli for use as reinforcers but does not provide information about the function of the problem behavior; it is not a substitute for functional assessment.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j6',
-              text: 'FCT requires that the communicative response be matched to the maintaining reinforcer; an FCT program that teaches a break request when the behavior is attention-maintained will not reduce the behavior, because the reinforcer delivered does not match the function.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j7',
-              text: 'Selecting an intervention based on the numerically highest FA condition without accounting for the small magnitude of the difference between conditions is a psychometric error; small differences between conditions may reflect measurement variability rather than a true functional difference.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j8',
-              text: 'Preference assessment is an important component of intervention planning but is a separate step from functional assessment; conducting a preference assessment before determining function does not resolve the ambiguity in the FA results.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j9',
-              text: 'Implementing FCT for both functions simultaneously without confirming that both functions are operative may result in an unnecessarily complex intervention; the goal of the follow-up assessment is to clarify function so that the intervention can be precisely matched.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-          ],
-          explanation: 'When a standard FA produces ambiguous results — with two conditions both elevated and a small difference between them — the appropriate next step is a more refined assessment rather than proceeding to intervention based on incomplete data. A synthesized contingency analysis tests whether the behavior is maintained by the combined presence of both contingencies (attention and escape simultaneously), which can occur in naturalistic settings. A trial-based FA can be conducted in the natural environment to test specific hypotheses about function under more ecologically valid conditions. Proceeding to intervention based on the numerically highest condition when the difference is small risks implementing an incomplete or mismatched intervention. FCT is not effective regardless of function — the communicative response must be matched to the maintaining reinforcer.',
-        },
-      ],
+    ],
   },
 
   {
@@ -1190,7 +914,6 @@ export const scenarioItems: ScenarioItem[] = [
     id: 'sj-26',
     domain: 'Measurement',
     title: 'Graphing and Visual Analysis',
-        difficulty: 'advanced',
     scenario: `A BCBA is conducting a visual analysis of a graph showing a student's problem behavior across baseline and intervention phases. Baseline shows 5 data points with a mean of 15 and a slightly increasing trend. The intervention phase shows 8 data points with a mean of 6 and a clearly decreasing trend. The last 3 data points in the intervention phase are 4, 3, and 3.`,
     questions: [
       {
@@ -1216,75 +939,7 @@ export const scenarioItems: ScenarioItem[] = [
         ],
         explanation: 'Visual analysis examines level, trend, and variability. All three dimensions show a positive change: level decreased from 15 to 6, trend changed from increasing to decreasing, and the last 3 points show stability. This supports the conclusion that the intervention is effective.',
       },
-            {
-          id: 'sj-26-q2',
-          stem: 'Before introducing the intervention, Dr. Kim collected only 3 baseline data points for Priya\'s off-task behavior. The three points are: 85%, 72%, 91% (mean = 82.7%, high variability). Dr. Kim introduces the intervention at session 4. The next 5 data points are: 60%, 55%, 48%, 50%, 42%. What is the MOST significant threat to the internal validity of this evaluation?',
-          choices: [
-            { id: 'A', text: 'The intervention effect is clear because there is a large decrease in mean level from baseline to intervention' },
-            { id: 'B', text: 'The high variability and short length of the baseline make it impossible to establish a stable estimate of the pre-intervention level, which undermines confidence that the change reflects the intervention rather than natural fluctuation' },
-            { id: 'C', text: 'The intervention data show a decreasing trend, which confirms that the intervention is working and no further baseline data are needed' },
-            { id: 'D', text: 'The primary threat is that the intervention was not implemented with sufficient fidelity, as indicated by the variability in the intervention phase' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'A stable baseline requires both low variability and no clear trend in the direction of the desired change; with only 3 data points and a range of 19 percentage points, the baseline does not meet the stability criterion.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'High baseline variability means the behavior may naturally fluctuate to lower levels without intervention; the decrease observed in the intervention phase could reflect natural variation rather than a treatment effect.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'Three data points are generally insufficient to establish a stable baseline in single-case research; most methodologists recommend a minimum of 5 data points, and more are needed when variability is high.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'A large mean-level difference between phases is a necessary but not sufficient condition for concluding that the intervention caused the change; the baseline must be stable for the comparison to be interpretable.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'A decreasing trend in the intervention phase is consistent with a treatment effect but does not by itself confirm it; the interpretation depends on whether the baseline was stable enough to serve as a valid counterfactual.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j6',
-              text: 'Treatment integrity is a separate dimension of internal validity from baseline stability; while both are important, the primary threat identified in this scenario is the unstable and short baseline, not implementation fidelity.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j7',
-              text: 'The intervention data showing a decreasing trend do not retroactively validate an unstable baseline; the decision to introduce the intervention should have been made only after baseline stability was established.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j8',
-              text: 'Variability in the intervention phase is a separate concern from baseline instability; in this scenario, the intervention phase shows a relatively consistent decreasing trend, making baseline instability the more pressing threat to internal validity.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j9',
-              text: 'The mean-level difference between baseline (82.7%) and the final intervention data point (42%) is large, but mean comparisons are not the primary tool for visual analysis in single-case research; trend, variability, and overlap are more informative.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-          ],
-          explanation: 'A stable baseline is a prerequisite for valid interpretation of intervention effects in single-case research. Stability is typically defined as low variability and no clear trend in the direction of the desired behavior change. With only 3 data points showing high variability (range of 19 percentage points), it is not possible to establish a stable estimate of the pre-intervention level. The high baseline variability means that the subsequent decrease in the intervention phase could reflect natural fluctuation rather than a treatment effect — the behavior may have decreased to 42% even without the intervention, given that it was already as low as 72% during baseline. The large mean-level difference between phases is not sufficient to overcome this threat; the baseline must be stable before the intervention is introduced for the change to be interpretable.',
-        },
-      ],
+    ],
   },
 
   {
@@ -1498,7 +1153,6 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-32',
     title: 'Ethics: Confidentiality and Multiple Relationships',
-        difficulty: 'advanced',
     domain: 'Ethics & Professional Issues',
     scenario: `Jasmine is a BCBA providing ABA services to 7-year-old Tyler. Tyler\'s mother, Mrs. Reyes, asks Jasmine to share Tyler\'s session data with Tyler\'s pediatrician without Tyler\'s father\'s knowledge, as the parents are going through a contentious divorce. Mrs. Reyes also mentions that she would like Jasmine to babysit Tyler on weekends to give her a break. Jasmine is unsure how to respond to both requests.`,
     questions: [
@@ -1571,75 +1225,7 @@ export const scenarioItems: ScenarioItem[] = [
         ],
         explanation: 'The BACB Ethics Code requires BCBAs to avoid multiple relationships that could impair their professional judgment or exploit clients. Accepting a babysitting role would create a personal relationship that could compromise Jasmine\'s objectivity. The appropriate response is to decline respectfully and explain the professional boundary.',
       },
-            {
-          id: 'sj-32-q3',
-          stem: 'During a session, Jasmine (the BCBA) observes that Jasmine\'s client, 8-year-old Mia, has unexplained bruising on her arms. Mia\'s mother — who is also Jasmine\'s neighbor — is present and becomes visibly distressed when Jasmine asks about the bruising. Jasmine has a mandatory reporting obligation under state law. However, the mother tells Jasmine that if she reports, she will immediately withdraw Mia from services, which would eliminate Mia\'s access to ABA therapy. Jasmine is weighing two competing obligations. Which of the following BEST describes how Jasmine should proceed?',
-          choices: [
-            { id: 'A', text: 'Delay the report to allow time to gather more information and preserve the therapeutic relationship, because Mia\'s access to services is a critical welfare consideration' },
-            { id: 'B', text: 'File the mandatory report immediately, document the dual relationship, and consult with a supervisor — the mandatory reporting obligation takes precedence over confidentiality and the therapeutic relationship' },
-            { id: 'C', text: 'Discuss the concern with the mother privately and give her the opportunity to self-report before filing, because this approach preserves the relationship and may produce the same outcome' },
-            { id: 'D', text: 'Consult with the BACB ethics hotline before taking any action, because the dual relationship creates a conflict of interest that must be resolved before reporting' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'Mandatory reporting obligations are not discretionary; when a BCBA has reasonable suspicion of child abuse or neglect, the legal obligation to report is immediate and does not require certainty or additional evidence.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'The Ethics Code requires BCBAs to comply with applicable laws; mandatory reporting laws take precedence over confidentiality obligations, and the BCBA cannot withhold a report to preserve the therapeutic relationship.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'The dual relationship must be documented and managed, but it does not delay or override the mandatory reporting obligation; the BCBA\'s ethical and legal duties are not suspended by the existence of a personal relationship with the family.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'Delaying a mandatory report to gather more information is not permissible; mandatory reporting laws are triggered by reasonable suspicion, not confirmed evidence, and delay may increase the risk of harm to the child.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'Allowing the parent to self-report is not a substitute for the BCBA\'s own reporting obligation; the BCBA\'s duty to report exists independently of whether the parent chooses to report, and relying on the parent to report does not fulfill the BCBA\'s legal and ethical duty.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j6',
-              text: 'Consulting the BACB ethics hotline is a reasonable step for complex ethical dilemmas, but it does not delay a mandatory reporting obligation; the report must be filed immediately, and consultation can occur concurrently or afterward.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j7',
-              text: 'The potential loss of ABA services is a genuine welfare concern, but it does not override the mandatory reporting obligation; the BCBA\'s primary obligation in this situation is to the child\'s immediate safety, not to the preservation of services.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j8',
-              text: 'Giving the parent the opportunity to self-report may preserve the relationship in the short term, but it places the BCBA in the position of negotiating a mandatory legal obligation — which is not permissible and may itself constitute a failure to report.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j9',
-              text: 'The dual relationship creates a conflict of interest that must be managed, but it does not create a legal or ethical basis for delaying a mandatory report; the conflict of interest and the reporting obligation are separate issues that must both be addressed.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-          ],
-          explanation: 'Mandatory reporting obligations are not discretionary. When a BCBA has reasonable suspicion of child abuse or neglect — which unexplained bruising on a child constitutes — the legal and ethical obligation to report is immediate and is not contingent on the BCBA\'s certainty, the client\'s continued access to services, or the status of the therapeutic relationship. The Ethics Code is explicit that BCBAs must comply with applicable laws, and mandatory reporting laws take precedence over confidentiality. The dual relationship (Jasmine is also the mother\'s neighbor) is a separate concern that must be documented and managed, but it does not delay or override the reporting obligation. Giving the mother the opportunity to self-report before filing is not an acceptable substitute for the BCBA\'s own reporting obligation — the BCBA\'s duty to report exists independently of whether the parent chooses to report.',
-        },
-      ],
+    ],
   },
 
   // ── Domain H: Selecting and Implementing Interventions ───────────────────
@@ -1886,7 +1472,7 @@ export const scenarioItems: ScenarioItem[] = [
     id: 'sj-36',
     title: 'Selecting an Experimental Design',
     domain: 'Research & Design',
-    difficulty: 'advanced',
+    difficulty: 'intermediate',
     context: 'Dr. Chen is a BCBA conducting research on a new social skills training package. She wants to evaluate whether the intervention causes improvements in three target behaviors: initiating greetings, making eye contact, and taking conversational turns. She is concerned about the ethics of withholding treatment and wants to avoid reversing any learned skills.',
     questions: [
       {
@@ -1958,75 +1544,7 @@ export const scenarioItems: ScenarioItem[] = [
         ],
         explanation: 'When an untreated tier in a multiple baseline design changes before treatment is introduced, it is a concurrent change threat to experimental control. The design requires untreated tiers to remain stable to serve as logical comparisons. This finding should be documented and discussed as a limitation, and the researcher should consider whether the target behaviors are sufficiently functionally independent.',
       },
-            {
-          id: 'sj-36-q4',
-          stem: 'A colleague reviews Dr. Chen\'s study and raises the following critique: \'The three target behaviors — initiating greetings, maintaining eye contact, and using a peer\'s name — are not functionally independent. They all occur in the same social interaction context, and improving one may naturally improve the others.\' If this critique is valid, what is the MOST significant implication for the study\'s conclusions?',
-          choices: [
-            { id: 'A', text: 'The study\'s conclusions are strengthened, because improvement across all three behaviors demonstrates broad generalization of the intervention' },
-            { id: 'B', text: 'The concurrent change in Tier 2 (eye contact) before treatment was introduced to that tier is better explained by the functional interdependence of the behaviors than by the intervention, which undermines the experimental control demonstration' },
-            { id: 'C', text: 'The study\'s conclusions are unaffected, because multiple baseline designs are specifically designed to handle functionally related behaviors' },
-            { id: 'D', text: 'The study should be redesigned as an ABAB design to provide stronger experimental control for functionally interdependent behaviors' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'The multiple baseline design requires functional independence of tiers; if the behaviors are functionally interdependent, changes in untreated tiers may reflect natural co-variation rather than the intervention, undermining the experimental control demonstration.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'The concurrent change in eye contact before treatment was introduced to that tier — which was previously identified as a threat to experimental control — is better explained by functional interdependence than by an unexplained confound, but it still undermines the study\'s conclusions.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'A valid critique of functional interdependence means that the study cannot rule out the possibility that the behaviors would have changed together regardless of the intervention, which is the core threat to internal validity in this design.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'Generalization is a desirable clinical outcome but a methodological threat in multiple baseline research; improvement across all tiers before treatment is introduced to each tier undermines experimental control rather than strengthening the study\'s conclusions.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'Multiple baseline designs require functionally independent tiers; the design is specifically vulnerable to the threat of functional interdependence, which is why behavior selection is a critical methodological decision in multiple baseline research.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j6',
-              text: 'An ABAB design is not more appropriate for functionally interdependent behaviors; it addresses a different methodological question (reversibility) and would not resolve the problem of functional interdependence between target behaviors.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j7',
-              text: 'The colleague\'s critique, if valid, is a threat to internal validity — not a demonstration of generalization; the distinction between planned generalization and uncontrolled co-variation is critical for interpreting multiple baseline data.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j8',
-              text: 'The multiple baseline design is not immune to threats from functionally related behaviors; the assumption of functional independence is a prerequisite for the design\'s logic, and violating it undermines the conclusions.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j9',
-              text: 'Redesigning as an ABAB study would not address the functional interdependence problem and would introduce the ethical concern of withdrawing treatment from a child with social skill deficits; the appropriate response is to acknowledge the threat and interpret the conclusions with appropriate caution.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-          ],
-          explanation: 'The validity of a multiple baseline design rests on the assumption that the tiers (behaviors, settings, or participants) are functionally independent — that is, changing one tier should not automatically change another. If the three social behaviors are functionally interdependent (because they all occur in the same social interaction context and improving one naturally improves the others), then the concurrent change in eye contact (Tier 2) before treatment was introduced to that tier may be explained by the functional relationship between the behaviors rather than by the intervention. This undermines the experimental control demonstration, because the logic of the multiple baseline requires that untreated tiers remain stable. The colleague\'s critique, if valid, means that the study cannot confidently attribute the changes to the intervention rather than to the natural co-variation of the behaviors. This is a fundamental threat to the study\'s internal validity — not a strength.',
-        },
-      ],
+    ],
   },
 
   // sj-37: Verbal Behavior — Mand Training (Verbal Behavior)
