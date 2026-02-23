@@ -65,7 +65,7 @@ export default function BetaGate({ children }: BetaGateProps) {
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073430959/fVyZQGnkaLaquPGv.png" alt="BehaviorPREP" className="w-16 h-16 object-contain mb-3" />
-          <span className="font-bold text-lg text-foreground" style={{ fontFamily: "'DM Sans', sans-serif" }}>BehaviorPREP</span>
+          <span className="font-bold text-lg text-foreground" style={{ fontFamily: "'DM Sans', sans-serif" }}>CoreLocus™</span><span className="text-sm text-muted-foreground ml-1">by BehaviorPREP</span>
           <span className="text-xs text-muted-foreground mt-0.5">Beta Access</span>
         </div>
 

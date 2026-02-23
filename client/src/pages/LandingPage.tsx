@@ -17,9 +17,9 @@ const TIERS = [
   { num: 2, label: 'Rapid Recall', blurb: 'Pick the right definition under time pressure.', detail: '200 terms with timed answer selection', icon: Zap, color: 'text-teal-600', bg: 'bg-teal-50', border: 'border-teal-200' },
   { num: 3, label: 'Scenario Matching', blurb: 'Spot the concept playing out in a real case.', detail: '75 concepts mapped to clinical examples', icon: Shuffle, color: 'text-teal-700', bg: 'bg-teal-50', border: 'border-teal-200' },
   { num: 4, label: 'Venn Diagram', blurb: 'Tell apart concepts that look similar.', detail: '92 commonly confused ABA concept pairs', icon: GitMerge, color: 'text-violet-700', bg: 'bg-violet-50', border: 'border-violet-200' },
-  { num: 5, label: 'Scenario Justification', blurb: 'Choose the right answer and explain why.', detail: '104 questions across 55 clinical scenarios', icon: Brain, color: 'text-teal-800', bg: 'bg-teal-50', border: 'border-teal-200' },
+  { num: 5, label: 'Scenario Justification™', blurb: 'Choose the right answer and explain why.', detail: '104 questions across 55 clinical scenarios', icon: Brain, color: 'text-teal-800', bg: 'bg-teal-50', border: 'border-teal-200' },
   { num: 6, label: 'Full Mock Exam', blurb: 'Sit a timed 175-question exam and see your score breakdown.', detail: 'Adaptive selection, 9 domains, full analytics', icon: Award, color: 'text-amber-700', bg: 'bg-amber-50', border: 'border-amber-200' },
-  { num: 7, label: 'Case Study Exam', blurb: 'Apply your knowledge to a real client case — just like on the job.', detail: '175 questions following a full client lifecycle', icon: ClipboardList, color: 'text-violet-800', bg: 'bg-primary/5', border: 'border-primary/20' },
+  { num: 7, label: 'Case Study Exam™', blurb: 'Apply your knowledge to a real client case — just like on the job.', detail: '175 questions following a full client lifecycle', icon: ClipboardList, color: 'text-violet-800', bg: 'bg-primary/5', border: 'border-primary/20' },
 ];
 
 const LANDING_PLANS = [
@@ -31,7 +31,7 @@ const LANDING_PLANS = [
 const PLAN_FEATURES = [
   '175-question timed mock exam (unlimited retakes)',
   'Flashcards, Rapid Recall, Matching Scenarios',
-  'Scenario Justification — 1,515 items (Tier 5)',
+  'Scenario Justification™ — 1,515 items (Tier 5)',
   'Venn Diagrams, Case Simulation (Tier 7)',
   'Daily Practice — adaptive cross-tier sessions',
   'Full domain analytics across all 9 domains',
@@ -42,7 +42,7 @@ const DIFFERENTIATORS = [
   {
     icon: Target,
     title: 'Built for clinical reasoning, not just memorization',
-    body: 'Most prep platforms stop at flashcards. BehaviorPREP takes you from knowing a definition to applying it in a real clinical scenario — the skill the BCBA exam actually tests.',
+    body: 'Most prep platforms stop at flashcards. CoreLocus™ takes you from knowing a definition to applying it in a real clinical scenario — the skill the BCBA exam actually tests.',
   },
   {
     icon: BarChart2,
@@ -91,7 +91,7 @@ export default function LandingPage() {
         <div className="container flex items-center justify-between h-14">
           <div className="flex items-center gap-2">
             <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073430959/fVyZQGnkaLaquPGv.png" alt="BehaviorPREP" className="w-9 h-9 object-contain" />
-            <span className="font-semibold text-sm text-foreground">BehaviorPREP</span>
+            <span className="font-semibold text-sm text-foreground">CoreLocus™ <span className="font-normal text-muted-foreground text-xs">by BehaviorPREP</span></span>
           </div>
           <div className="flex items-center gap-4">
             <a href="#pricing" className="hidden sm:block text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
@@ -114,16 +114,17 @@ export default function LandingPage() {
               <BookOpen className="w-3 h-3" />
               <span>BACB 6th Edition · All 9 Domains · 860+ Practice Items</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-black leading-[1.05] mb-3 tracking-tight" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              <span className="text-foreground">Behavior</span><span className="text-primary">PREP</span>
+            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-2">by BehaviorPREP</p>
+            <h1 className="text-5xl md:text-7xl font-black leading-[1.0] mb-4 tracking-tight" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <span className="text-foreground">Core</span><span className="text-primary">Locus™</span>
             </h1>
             <p className="text-xl md:text-2xl font-semibold text-foreground/80 mb-5 leading-snug max-w-xl">
-              Prepare for the exam.
+              Stop memorizing.
               <br />
-              <span className="text-primary">Prepare for the field.</span>
+              <span className="text-primary">Start reasoning.</span>
             </p>
             <p className="text-base text-muted-foreground max-w-lg leading-relaxed mb-8">
-              BehaviorPREP builds the critical reasoning skills that carry you through the BCBA exam <em>and</em> your career — seven progressive tiers that take you from foundational concepts to full clinical case simulations.
+              CoreLocus™ by BehaviorPREP builds the critical reasoning skills that carry you through the BCBA exam <em>and</em> your career — seven progressive tiers that take you from foundational concepts to full clinical case simulations.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -214,10 +215,10 @@ export default function LandingPage() {
         <div className="container py-14 md:py-18">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-              Why BehaviorPREP is different
+              Why CoreLocus™ is different
             </h2>
             <p className="text-muted-foreground text-base mb-10 max-w-2xl">
-              Most prep platforms give you flashcards and a practice test. BehaviorPREP builds the clinical reasoning that the BCBA exam — and the job — actually demands.
+              Most prep platforms give you flashcards and a practice test. CoreLocus™ builds the reasoning that the BCBA exam — and the job — actually demands.
             </p>
             <div className="grid sm:grid-cols-2 gap-5">
               {DIFFERENTIATORS.map((d, i) => {
@@ -376,10 +377,12 @@ export default function LandingPage() {
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <div className="flex items-center gap-2">
             <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073430959/fVyZQGnkaLaquPGv.png" alt="BehaviorPREP" className="w-6 h-6 object-contain" />
-            <span className="font-semibold text-foreground">BehaviorPREP</span>
-            <span>· BCBA Exam Preparation</span>
+            <span className="font-semibold text-foreground">CoreLocus™</span>
+            <span className="text-muted-foreground">· by BehaviorPREP · © {new Date().getFullYear()} All rights reserved.</span>
           </div>
-          <span>Aligned to the BACB 6th Edition Test Content Outline</span>
+          <div className="flex flex-col sm:flex-row items-center gap-2 text-center sm:text-right">
+            <span>CoreLocus™, BehaviorPREP™, Scenario Justification™, Daily Practice™, and Case Study Exam™ are trademarks of BehaviorPREP.</span>
+          </div>
         </div>
       </footer>
     </div>

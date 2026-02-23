@@ -79,7 +79,7 @@ const TIERS: TierConfig[] = [
   },
   {
     tier: 5,
-    title: 'Scenario Justification',
+    title: 'Scenario Justification™',
     subtitle: 'Answer + Reasoning',
     description: '55 clinical scenarios, 104 questions. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
     icon: Brain,
@@ -105,7 +105,7 @@ const TIERS: TierConfig[] = [
   },
   {
     tier: 7,
-    title: 'Case Study Exam',
+    title: 'Case Study Exam™',
     subtitle: 'Real-World Application',
     description: 'You passed — now apply it. Follow Leo Rodriguez from referral to discharge. 175 questions simulating a real client lifecycle, the way BCBAs actually work in the field.',
     icon: ClipboardList,
@@ -135,7 +135,7 @@ export default function Dashboard() {
           <div className="flex items-center gap-2.5">
             <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073430959/fVyZQGnkaLaquPGv.png" alt="BehaviorPREP" className="w-9 h-9 object-contain" />
             <div>
-              <span className="font-semibold text-sm text-foreground">BehaviorPREP</span>
+              <span className="font-semibold text-sm text-foreground">CoreLocus™ <span className="font-normal text-muted-foreground text-xs">by BehaviorPREP</span></span>
               <span className="text-muted-foreground text-xs ml-1.5">Learning Platform</span>
             </div>
           </div>
@@ -195,9 +195,9 @@ export default function Dashboard() {
                 { num: '2', label: 'Rapid Recall', blurb: 'Pick the right definition under time pressure.' },
                 { num: '3', label: 'Scenario Matching', blurb: 'Spot the concept playing out in a real case.' },
                 { num: '4', label: 'Venn Diagram', blurb: 'Tell apart concepts that look similar.' },
-                { num: '5', label: 'Scenario Justification', blurb: 'Choose the right answer and explain why.' },
+                { num: '5', label: 'Scenario Justification™', blurb: 'Choose the right answer and explain why.' },
                 { num: '6', label: 'Full Mock Exam', blurb: 'Sit a timed 175-question exam and see your score breakdown.' },
-                { num: '7', label: 'Case Study Exam', blurb: 'Apply your knowledge to a real client case — just like on the job.' },
+                { num: '7', label: 'Case Study Exam™', blurb: 'Apply your knowledge to a real client case — just like on the job.' },
               ] as const).map(({ num, label, blurb }) => (
                 <div key={num} className="flex items-start gap-2.5 text-sm">
                   <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-[11px] font-bold flex items-center justify-center mt-0.5">{num}</span>

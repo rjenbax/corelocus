@@ -14,10 +14,10 @@ const ALL_FEATURES = [
   'Flashcards — 238 cards',
   'Rapid Recall — 213 terms',
   'Matching Scenarios — 542 items',
-  'Scenario Justification — 1,515 items (Tier 5)',
+  'Scenario Justification™ — 1,515 items (Tier 5)',
   'Venn Diagram concept comparisons — 93 diagrams',
   'Case Simulation — full client lifecycle (Tier 7)',
-  'Daily Practice — rotating cross-tier sessions',
+  'Daily Practice™ — rotating cross-tier sessions',
   'New content as released',
 ];
 
@@ -85,10 +85,10 @@ const TOOLS = [
   { icon: Layers, label: 'Flashcards', count: '238 cards', color: 'text-violet-600' },
   { icon: Shuffle, label: 'Matching Scenarios', count: '542 items', color: 'text-teal-700' },
   { icon: Award, label: 'Mock Exam', count: '175 questions', color: 'text-amber-700' },
-  { icon: BookOpen, label: 'Scenario Justification', count: '1,515 items', color: 'text-teal-800' },
+  { icon: BookOpen, label: 'Scenario Justification™', count: '1,515 items', color: 'text-teal-800' },
   { icon: GitMerge, label: 'Venn Diagrams', count: '93 diagrams', color: 'text-violet-700' },
   { icon: ClipboardList, label: 'Case Simulation', count: 'Full lifecycle', color: 'text-primary' },
-  { icon: Flame, label: 'Daily Practice', count: 'Adaptive', color: 'text-rose-600' },
+  { icon: Flame, label: 'Daily Practice™', count: 'Adaptive', color: 'text-rose-600' },
 ];
 
 export default function PricingPage() {
@@ -117,7 +117,7 @@ export default function PricingPage() {
                 className="w-7 h-7 rounded-full object-cover"
                 onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
               />
-              <span className="font-semibold text-sm text-foreground">BehaviorPREP</span>
+              <span className="font-semibold text-sm text-foreground">CoreLocus™ <span className="font-normal text-muted-foreground text-xs">by BehaviorPREP</span></span>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -150,7 +150,7 @@ export default function PricingPage() {
           </div>
           <div className="flex-1 min-w-0">
             <p className="font-semibold text-foreground text-sm">Free Sampler — no credit card required</p>
-            <p className="text-xs text-muted-foreground mt-0.5">Full Tier 1 Rapid Recall, 10 Tier 5 Scenario Justification samples, and a case vignette preview.</p>
+            <p className="text-xs text-muted-foreground mt-0.5">Full Tier 1 Rapid Recall, 10 Tier 5 Scenario Justification™ samples, and a case vignette preview.</p>
           </div>
           <button
             onClick={() => navigate('/')}
@@ -314,12 +314,12 @@ export default function PricingPage() {
 
         {/* Comparison callout */}
         <div className="mb-10 rounded-2xl bg-muted/40 border border-border p-5">
-          <h3 className="font-bold text-foreground mb-3 text-xs uppercase tracking-wide text-center">How BehaviorPREP compares</h3>
+          <h3 className="font-bold text-foreground mb-3 text-xs uppercase tracking-wide text-center">How CoreLocus™ compares</h3>
           <div className="space-y-2.5 text-sm">
             {[
               { dot: 'bg-muted-foreground/40', label: 'Other apps at $19/month', body: 'Recall and community. Flashcards, mnemonics, group energy. Bloom\'s level: Remember.' },
               { dot: 'bg-muted-foreground/40', label: 'Video courses at $325–$475', body: 'Instructor-led content, mock exams. Bloom\'s level: Understand to Analyze.' },
-              { dot: 'bg-primary', label: 'BehaviorPREP at $47/month', body: 'The only platform that takes you from recall to clinical synthesis. Bloom\'s level: Remember through Synthesize. The exam becomes a byproduct of genuine competence.' },
+              { dot: 'bg-primary', label: 'CoreLocus™ by BehaviorPREP — $47/month', body: 'The only platform that takes you from recall to clinical synthesis. Bloom\'s level: Remember through Synthesize. The exam becomes a byproduct of genuine competence.' },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <div className={cn('w-2 h-2 rounded-full mt-1.5 flex-shrink-0', item.dot)} />
@@ -336,15 +336,15 @@ export default function PricingPage() {
             {[
               {
                 q: 'Which plan should I choose?',
-                a: 'If you are 3–6 months from your exam, the Annual plan at $399 is the best value. If you want to try before committing, start with the free Sampler — completing one Tier 5 Scenario Justification item will show you exactly why this platform is different.',
+                a: 'If you are 3–6 months from your exam, the Annual plan at $399 is the best value. If you want to try before committing, start with the free Sampler — completing one Tier 5 Scenario Justification™ item will show you exactly why this platform is different.',
               },
               {
                 q: 'Is the content aligned to the BACB 6th Edition?',
                 a: 'Yes. Every flashcard, question, and scenario is mapped to a specific task code from the BACB 6th Edition Test Content Outline across all 9 domains (A through I).',
               },
               {
-                q: 'What is Scenario Justification and why does it matter?',
-                a: 'Scenario Justification (Tier 5) requires you to select the correct clinical answer AND articulate the reasoning behind it. No other platform offers this. It is the most direct preparation for clinical practice, where you must defend every decision to supervisors, caregivers, and funding bodies.',
+                q: 'What is Scenario Justification™ and why does it matter?',
+                a: 'Scenario Justification™ (Tier 5) requires you to select the correct clinical answer AND articulate the reasoning behind it. No other platform offers this. It is the most direct preparation for clinical practice, where you must defend every decision to supervisors, caregivers, and funding bodies.',
               },
               {
                 q: 'Can I cancel anytime?',
