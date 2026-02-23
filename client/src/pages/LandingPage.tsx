@@ -8,7 +8,7 @@ import { useLocation } from 'wouter';
 import {
   Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList,
   Zap, Award, Check, X, ChevronRight, ChevronDown, Star, Shield, Target,
-  ArrowRight, Users, BarChart2
+  ArrowRight, Users, BarChart2, Menu, DollarSign, Flame
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -83,6 +83,7 @@ const FAQS = [
 export default function LandingPage() {
   const [, navigate] = useLocation();
   const [openPlan, setOpenPlan] = useState<string | null>('annual');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
@@ -97,14 +98,67 @@ export default function LandingPage() {
             <a href="#pricing" className="hidden sm:block text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
             <button
               onClick={() => navigate('/dashboard')}
-              className="flex items-center gap-1.5 text-sm font-semibold text-primary-foreground bg-primary hover:bg-primary/90 rounded-lg px-4 py-1.5 transition-colors"
+              className="hidden sm:flex items-center gap-1.5 text-sm font-semibold text-primary-foreground bg-primary hover:bg-primary/90 rounded-lg px-4 py-1.5 transition-colors"
             >
               Start Free Beta
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
+            {/* Mobile hamburger */}
+            <button
+              onClick={() => setMobileMenuOpen(v => !v)}
+              className="sm:hidden flex items-center justify-center w-9 h-9 rounded-lg hover:bg-muted transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5 text-foreground" /> : <Menu className="w-5 h-5 text-foreground" />}
+            </button>
           </div>
         </div>
       </header>
+
+      {/* Mobile slide-down menu */}
+      {mobileMenuOpen && (
+        <div className="sm:hidden border-b border-border bg-card/95 backdrop-blur-sm z-40">
+          <nav className="container py-3 flex flex-col gap-1">
+            <button
+              onClick={() => { navigate('/dashboard'); setMobileMenuOpen(false); }}
+              className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-muted transition-colors text-left"
+            >
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Flame className="w-4 h-4 text-primary" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">Start Free Beta</p>
+                <p className="text-xs text-muted-foreground">Use code BPREP2026 to enter</p>
+              </div>
+            </button>
+            <a
+              href="#pricing"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-muted transition-colors"
+            >
+              <div className="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center flex-shrink-0">
+                <DollarSign className="w-4 h-4 text-teal-700" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">Pricing</p>
+                <p className="text-xs text-muted-foreground">Plans from $47/month</p>
+              </div>
+            </a>
+            <button
+              onClick={() => { navigate('/dashboard'); setMobileMenuOpen(false); }}
+              className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-muted transition-colors text-left"
+            >
+              <div className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center flex-shrink-0">
+                <BookOpen className="w-4 h-4 text-muted-foreground" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">Explore the Platform</p>
+                <p className="text-xs text-muted-foreground">All 7 tiers — free during beta</p>
+              </div>
+            </button>
+          </nav>
+        </div>
+      )}
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="border-b border-border bg-gradient-to-b from-primary/5 to-background">
