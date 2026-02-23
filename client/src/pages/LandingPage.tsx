@@ -12,11 +12,11 @@ import {
 import { cn } from '@/lib/utils';
 
 const TIERS = [
-  { num: 1, label: 'Flashcards', blurb: 'Learn what each term means.', detail: '202 cards across all 9 BACB domains', icon: Layers, color: 'text-violet-600', bg: 'bg-violet-50', border: 'border-violet-200' },
+  { num: 1, label: 'Flashcards', blurb: 'Learn what each term means.', detail: '217 cards across all 9 BACB domains', icon: Layers, color: 'text-violet-600', bg: 'bg-violet-50', border: 'border-violet-200' },
   { num: 2, label: 'Rapid Recall', blurb: 'Pick the right definition under time pressure.', detail: '200 terms with timed answer selection', icon: Zap, color: 'text-teal-600', bg: 'bg-teal-50', border: 'border-teal-200' },
   { num: 3, label: 'Scenario Matching', blurb: 'Spot the concept playing out in a real case.', detail: '75 concepts mapped to clinical examples', icon: Shuffle, color: 'text-teal-700', bg: 'bg-teal-50', border: 'border-teal-200' },
   { num: 4, label: 'Venn Diagram', blurb: 'Tell apart concepts that look similar.', detail: '92 commonly confused ABA concept pairs', icon: GitMerge, color: 'text-violet-700', bg: 'bg-violet-50', border: 'border-violet-200' },
-  { num: 5, label: 'Scenario Justification', blurb: 'Choose the right answer and explain why.', detail: '81 questions across 49 clinical scenarios', icon: Brain, color: 'text-teal-800', bg: 'bg-teal-50', border: 'border-teal-200' },
+  { num: 5, label: 'Scenario Justification', blurb: 'Choose the right answer and explain why.', detail: '104 questions across 55 clinical scenarios', icon: Brain, color: 'text-teal-800', bg: 'bg-teal-50', border: 'border-teal-200' },
   { num: 6, label: 'Full Mock Exam', blurb: 'Sit a timed 175-question exam and see your score breakdown.', detail: 'Adaptive selection, 9 domains, full analytics', icon: Award, color: 'text-amber-700', bg: 'bg-amber-50', border: 'border-amber-200' },
   { num: 7, label: 'Case Study Exam', blurb: 'Apply your knowledge to a real client case — just like on the job.', detail: '175 questions following a full client lifecycle', icon: ClipboardList, color: 'text-violet-800', bg: 'bg-primary/5', border: 'border-primary/20' },
 ];
@@ -120,7 +120,7 @@ export default function LandingPage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary bg-primary/10 rounded-full px-3 py-1 mb-6">
               <BookOpen className="w-3 h-3" />
-              <span>BACB 6th Edition · All 9 Domains · 800+ Practice Items</span>
+              <span>BACB 6th Edition · All 9 Domains · 860+ Practice Items</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-black text-foreground leading-[1.1] mb-6 tracking-tight" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               The BCBA prep platform<br />
@@ -132,11 +132,14 @@ export default function LandingPage() {
             <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => navigate('/dashboard')}
-                className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-6 py-3 rounded-xl transition-colors text-base shadow-sm"
-              >
-                Try it free — Beta access
-                <ArrowRight className="w-4 h-4" />
-              </button>
+              className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-6 py-3 rounded-xl transition-colors text-base shadow-sm"
+            >
+              Try it free — Beta access
+              <ArrowRight className="w-4 h-4" />
+            </button>
+            <p className="text-xs text-muted-foreground mt-2">
+              Use code <span className="font-mono font-semibold text-foreground">BPREP2026</span> to enter
+            </p>
               <a
                 href="#pricing"
                 className="flex items-center gap-2 border-2 border-border text-foreground font-semibold px-6 py-3 rounded-xl hover:bg-muted/50 transition-colors text-base"
@@ -339,7 +342,7 @@ export default function LandingPage() {
             </div>
             <div className="flex items-center gap-2">
               <BookOpen className="w-4 h-4 text-primary" />
-              <span>800+ practice items</span>
+              <span>860+ practice items</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-teal-600" />

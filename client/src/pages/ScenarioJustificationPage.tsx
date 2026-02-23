@@ -408,6 +408,16 @@ export default function ScenarioJustificationPage() {
     setSessionScores([]);
   };
 
+  // ── Scenario list computed values (must be above early return) ─────────────
+  const filteredScenarios = useMemo(() => {
+    if (difficultyFilter === 'advanced') return scenarioItems.filter(s => s.difficulty === 'advanced');
+    if (difficultyFilter === 'standard') return scenarioItems.filter(s => s.difficulty !== 'advanced');
+    return scenarioItems;
+  }, [difficultyFilter]);
+  const completedScenarioCount = scenarioItems.filter(s =>
+    s.questions.every(q => completedQIds.has(`${s.id}-${q.id}`))
+  ).length;
+
   // ── Scenario detail view ──────────────────────────────────────────────────
   if (scenario && question) {
     const correctJustIds = question.justifications.filter(j => j.isCorrect).map(j => j.id);
@@ -644,16 +654,6 @@ export default function ScenarioJustificationPage() {
   }
 
   // ── Scenario list / Missed Items view ─────────────────────────────────────
-  const filteredScenarios = useMemo(() => {
-    if (difficultyFilter === 'advanced') return scenarioItems.filter(s => s.difficulty === 'advanced');
-    if (difficultyFilter === 'standard') return scenarioItems.filter(s => s.difficulty !== 'advanced');
-    return scenarioItems;
-  }, [difficultyFilter]);
-
-  const completedScenarioCount = scenarioItems.filter(s =>
-    s.questions.every(q => completedQIds.has(`${s.id}-${q.id}`))
-  ).length;
-
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">

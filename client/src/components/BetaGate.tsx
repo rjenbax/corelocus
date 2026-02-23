@@ -22,6 +22,15 @@ export default function BetaGate({ children }: BetaGateProps) {
   const [checking, setChecking] = useState(true);
 
   useEffect(() => {
+    // Auto-authenticate if code is passed as URL query param (e.g. /dashboard?code=BPREP2026)
+    const params = new URLSearchParams(window.location.search);
+    const urlCode = params.get('code');
+    if (urlCode && urlCode.toUpperCase() === BETA_CODE) {
+      localStorage.setItem(STORAGE_KEY, BETA_CODE);
+      setAuthenticated(true);
+      setChecking(false);
+      return;
+    }
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === BETA_CODE) {
       setAuthenticated(true);
@@ -68,7 +77,8 @@ export default function BetaGate({ children }: BetaGateProps) {
             <h1 className="font-bold text-foreground text-base">Enter your beta code</h1>
           </div>
           <p className="text-sm text-muted-foreground mb-6">
-            BehaviorPREP is currently in private beta. Enter the code from your invitation to continue.
+            Enter your beta access code to continue. Use code{' '}
+            <span className="font-mono font-semibold text-foreground">BPREP2026</span> for free beta access.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-3">
@@ -107,8 +117,8 @@ export default function BetaGate({ children }: BetaGateProps) {
         </div>
 
         <p className="text-center text-xs text-muted-foreground mt-5">
-          Don't have a code?{' '}
-          <a href="/" className="text-primary hover:underline font-medium">Learn more about BehaviorPREP</a>
+          Beta code: <span className="font-mono font-semibold text-foreground">BPREP2026</span>{' · '}
+          <a href="/" className="text-primary hover:underline font-medium">Back to home</a>
         </p>
       </div>
     </div>

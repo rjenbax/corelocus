@@ -81,7 +81,7 @@ const TIERS: TierConfig[] = [
     tier: 5,
     title: 'Scenario Justification',
     subtitle: 'Answer + Reasoning',
-    description: '49 clinical scenarios, 81 questions. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
+    description: '55 clinical scenarios, 104 questions. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
     icon: Brain,
     route: '/scenario-justification',
     bloomsLevel: 'Justify your answer',
@@ -94,7 +94,7 @@ const TIERS: TierConfig[] = [
     tier: 6,
     title: 'Full Mock Exam',
     subtitle: 'Timed Exam Simulation',
-    description: '175 questions across all 9 TCO domains with adaptive question selection, 5 CSA archetypes, full score breakdown, and detailed analytics. Powered by BehaviorPREP Complete.',
+    description: '175 questions across all 9 TCO domains with adaptive question selection, 5 CSA archetypes, full score breakdown, and detailed analytics.',
     icon: Award,
     route: 'https://snapshot-perfectionist.lovable.app',
     bloomsLevel: 'Exam ready',
@@ -306,30 +306,24 @@ export default function Dashboard() {
                           {tier.description}
                         </p>
 
-                        {/* Progress bar / external badge */}
-                        {tier.isExternal ? (
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 border border-amber-200">Opens in new tab</span>
-                            <span className="text-xs text-muted-foreground">BehaviorPREP Complete</span>
+                        {/* Progress bar */}
+                        <div className="flex items-center gap-2">
+                          <div className="flex-1 h-1.5 bg-white/60 rounded-full overflow-hidden border border-white/80">
+                            <div
+                              className={cn("h-full rounded-full transition-all duration-500", {
+                                'bg-violet-600': tier.tier === 1,
+                                'bg-teal-600': tier.tier === 2,
+                                'bg-teal-500': tier.tier === 3,
+                                'bg-violet-700': tier.tier === 4,
+                                'bg-teal-700': tier.tier === 5,
+                                'bg-amber-600': tier.tier === 6,
+                                'bg-primary': tier.tier === 7,
+                              })}
+                              style={{ width: `${pct}%` }}
+                            />
                           </div>
-                        ) : (
-                          <div className="flex items-center gap-2">
-                            <div className="flex-1 h-1.5 bg-white/60 rounded-full overflow-hidden border border-white/80">
-                              <div
-                                className={cn("h-full rounded-full transition-all duration-500", {
-                                  'bg-violet-600': tier.tier === 1,
-                                  'bg-teal-600': tier.tier === 2,
-                                  'bg-teal-500': tier.tier === 3,
-                                  'bg-violet-700': tier.tier === 4,
-                                  'bg-teal-700': tier.tier === 5,
-                                  'bg-primary': tier.tier === 7,
-                                })}
-                                style={{ width: `${pct}%` }}
-                              />
-                            </div>
-                            <span className={cn("text-xs font-semibold", tier.color)}>{pct}%</span>
-                          </div>
-                        )}
+                          <span className={cn("text-xs font-semibold", tier.color)}>{pct}%</span>
+                        </div>
                       </div>
                     </div>
                   </button>
