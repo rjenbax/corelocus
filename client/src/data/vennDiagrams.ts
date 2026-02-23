@@ -171,7 +171,7 @@ export const vennDiagrams: VennItem[] = [
       'Example: taking aspirin to remove a headache',
     ],
     shared: [
-      'Both involve the removal of a stimulus',
+      'Both involve changes in consequence conditions following behavior',
       'Both are consequence-based procedures',
       'Both affect the future frequency of behavior',
     ],
@@ -271,7 +271,7 @@ export const vennDiagrams: VennItem[] = [
     category: 'Tier 1 – High Confusion', tier: 'tier1',
     onlyA: [
       'Reappearance of an extinguished behavior after a REST period (no extinction)',
-      'Occurs without any change in the reinforcement contingency',
+      'Occurs after extinction, following a rest period, without additional training',
       'Typically temporary — behavior extinguishes again quickly',
       'Can occur in both respondent and operant extinction',
     ],
@@ -338,7 +338,7 @@ export const vennDiagrams: VennItem[] = [
       'Addresses: "Was the intervention done correctly?"',
     ],
     shared: [
-      'Both are measures of procedural reliability',
+      'Both are measures of procedural accuracy and data validity safeguards',
       'Both are essential for scientific rigor in ABA',
       'Both involve systematic observation and recording',
       'Both support the validity of conclusions drawn from data',
@@ -562,7 +562,7 @@ export const vennDiagrams: VennItem[] = [
     onlyB: [
       'Alters the reinforcing effectiveness of a stimulus',
       'Alters the current frequency of ALL behavior in that response class',
-      'Does not require a prior learning history to function (for unconditioned MOs)',
+      'Unconditioned MOs do not require prior learning history (conditioned MOs do)',  
       'Example: deprivation increases the value of food and all food-seeking behavior',
     ],
     shared: [
@@ -1259,7 +1259,7 @@ export const vennDiagrams: VennItem[] = [
       'Demonstrating that the baseline prediction was accurate by RETURNING to baseline',
       'Rules out extraneous variables as explanations for the behavior change',
       'Requires the behavior to return to baseline levels when treatment is removed',
-      'Used in reversal (ABAB) designs',
+      'Specific to reversal (ABAB) logic — does not apply to all single-case designs',
     ],
     shared: [
       'Both are elements of baseline logic in single-case research',
@@ -2321,7 +2321,7 @@ export const vennDiagrams: VennItem[] = [
     onlyB: [
       'A consequence that DECREASES the future frequency of behavior',
       'Can involve adding an aversive stimulus (positive punishment) or removing a reinforcer (negative punishment)',
-      'Does not require knowledge of the maintaining reinforcer',
+      'Does not require identification of the maintaining reinforcer to suppress behavior (though function remains clinically relevant)',
       'Can suppress behavior without eliminating the motivation for it',
     ],
     shared: [
@@ -2345,7 +2345,7 @@ export const vennDiagrams: VennItem[] = [
       'Reinforcement is delivered on a fixed- or variable-time schedule, independent of behavior',
       'Does not require the absence of problem behavior to deliver reinforcement',
       'Works primarily by reducing the value of the reinforcer maintaining problem behavior (AO effect)',
-      'Simpler to implement — no monitoring of behavior is required for delivery',
+      'No monitoring required for reinforcement delivery (though monitoring is required for evaluation)',
     ],
     onlyB: [
       'Reinforcement is delivered only if the problem behavior has NOT occurred during the interval',
