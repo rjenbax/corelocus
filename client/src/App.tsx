@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ExamProvider } from "./contexts/ExamContext";
@@ -22,6 +22,14 @@ import DailyPracticePage from "./pages/DailyPracticePage";
 import PricingPage from "./pages/PricingPage";
 import MockExamPage from "./pages/MockExamPage";
 import MockExamResultsPage from "./pages/MockExamResultsPage";
+import { MockExamHubProvider } from "./contexts/MockExamHubContext";
+import MockExamHubLayout from "./components/MockExamHubLayout";
+import MockHubDashboard from "./pages/MockHubDashboard";
+import MockExamHubPage from "./pages/MockExamHubPage";
+import PracticeHubPage from "./pages/PracticeHubPage";
+import ReviewHubPage from "./pages/ReviewHubPage";
+import AnalyticsHubPage from "./pages/AnalyticsHubPage";
+import QuestionBankHubPage from "./pages/QuestionBankHubPage";
 
 // Wrap a component in the BetaGate
 function Protected({ component: Component }: { component: React.ComponentType }) {
@@ -29,6 +37,26 @@ function Protected({ component: Component }: { component: React.ComponentType })
     <BetaGate>
       <Component />
     </BetaGate>
+  );
+}
+
+function HubRouter() {
+  const [location] = useLocation();
+  // Question view is full-screen (no sidebar) — location is relative inside nest
+  if (location === '/exam/question' || location.startsWith('/exam/question')) {
+    return <MockExamHubPage />;
+  }
+  return (
+    <MockExamHubLayout>
+      <Switch>
+        <Route path="/" component={MockHubDashboard} />
+        <Route path="/exam" component={MockExamHubPage} />
+        <Route path="/practice" component={PracticeHubPage} />
+        <Route path="/review" component={ReviewHubPage} />
+        <Route path="/analytics" component={AnalyticsHubPage} />
+        <Route path="/question-bank" component={QuestionBankHubPage} />
+      </Switch>
+    </MockExamHubLayout>
   );
 }
 
@@ -77,6 +105,16 @@ function Router() {
       </Route>
       <Route path={"/mock-results"}>
         {() => <Protected component={MockExamResultsPage} />}
+      </Route>
+      {/* Tier 6 Hub — full sidebar experience */}
+      <Route path={"/mock-hub"} nest>
+        {() => (
+          <BetaGate>
+            <MockExamHubProvider>
+              <HubRouter />
+            </MockExamHubProvider>
+          </BetaGate>
+        )}
       </Route>
 
       <Route path={"/404"} component={NotFound} />

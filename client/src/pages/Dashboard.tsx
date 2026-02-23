@@ -97,7 +97,7 @@ const TIERS: TierConfig[] = [
     subtitle: 'Timed Exam Simulation',
     description: '175 questions across all 9 TCO domains with adaptive question selection, 5 CSA archetypes, full score breakdown, and detailed analytics.',
     icon: Award,
-    route: '/mock-exam',
+    route: '/mock-hub',
     bloomsLevel: 'Exam ready',
     color: 'text-amber-700',
     bgColor: 'bg-amber-50',
