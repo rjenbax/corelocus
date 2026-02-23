@@ -33,26 +33,47 @@ function ScoreRing({ pct, size = 120 }: { pct: number; size?: number }) {
   );
 }
 
-// ─── Domain Bar ───────────────────────────────────────────────────────────────
-function DomainBar({ domain, name, color, correct, total, pct }: {
+// ─── Domain Score Card ───────────────────────────────────────────────────────
+function DomainScoreCard({ domain, name, color, correct, total, pct }: {
   domain: string; name: string; color: string; correct: number; total: number; pct: number;
 }) {
+  const size = 72;
+  const r = (size / 2) - 6;
+  const circ = 2 * Math.PI * r;
+  const dash = (pct / 100) * circ;
+  const ringColor = pct >= 80 ? '#10b981' : pct >= 70 ? '#f59e0b' : '#ef4444';
+  const statusLabel = pct >= 80 ? 'Strong' : pct >= 70 ? 'Passing' : 'Needs Work';
+  const statusColor = pct >= 80 ? 'text-emerald-400' : pct >= 70 ? 'text-amber-400' : 'text-red-400';
+  const statusBg = pct >= 80 ? 'bg-emerald-500/10 border-emerald-500/20' : pct >= 70 ? 'bg-amber-500/10 border-amber-500/20' : 'bg-red-500/10 border-red-500/20';
+
   return (
-    <div className="flex items-center gap-3">
-      <span className="w-6 text-xs font-bold text-slate-400 text-right">{domain}</span>
-      <div className="flex-1">
-        <div className="flex items-center justify-between mb-1">
-          <span className="text-xs text-slate-300 truncate max-w-[140px]">{name}</span>
-          <span className={`text-xs font-semibold ${pct >= 70 ? 'text-emerald-400' : 'text-red-400'}`}>{pct}%</span>
-        </div>
-        <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
-          <div
-            className="h-full rounded-full transition-all duration-700"
-            style={{ width: `${pct}%`, backgroundColor: color }}
+    <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-4 flex flex-col items-center gap-2 hover:border-slate-500 transition-all">
+      {/* Circular progress ring */}
+      <div className="relative" style={{ width: size, height: size }}>
+        <svg width={size} height={size} className="transform -rotate-90">
+          <circle cx={size/2} cy={size/2} r={r} fill="none" stroke="#1e293b" strokeWidth="6" />
+          <circle
+            cx={size/2} cy={size/2} r={r} fill="none"
+            stroke={ringColor} strokeWidth="6"
+            strokeDasharray={`${dash} ${circ}`}
+            strokeLinecap="round"
+            style={{ transition: 'stroke-dasharray 1s ease' }}
           />
+        </svg>
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <span className={`text-lg font-bold leading-none ${statusColor}`}>{pct}%</span>
+          <span className="text-slate-500 text-[10px] mt-0.5 font-bold">{domain}</span>
         </div>
-        <div className="text-xs text-slate-500 mt-0.5">{correct}/{total} correct</div>
       </div>
+
+      {/* Domain name */}
+      <div className="text-center">
+        <div className="text-xs font-semibold text-white leading-tight line-clamp-2 text-center" style={{ minHeight: '2.5rem' }}>{name}</div>
+        <div className="text-[10px] text-slate-500 mt-1">{correct}/{total} correct</div>
+      </div>
+
+      {/* Status badge */}
+      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${statusBg} ${statusColor}`}>{statusLabel}</span>
     </div>
   );
 }
@@ -278,11 +299,13 @@ export default function MockExamResultsPage() {
 
         {/* Domains */}
         {activeTab === 'domains' && (
-          <div className="space-y-3">
-            <p className="text-slate-400 text-xs mb-4">70% is the passing threshold per domain. Domains below 70% are your priority study areas.</p>
-            {domainResults.sort((a, b) => a.pct - b.pct).map(d => (
-              <DomainBar key={d.domain} {...d} />
-            ))}
+          <div>
+            <p className="text-slate-400 text-xs mb-4">70% is the passing threshold per domain. Cards below 70% are your priority study areas.</p>
+            <div className="grid grid-cols-3 gap-3">
+              {domainResults.sort((a, b) => a.domain.localeCompare(b.domain)).map(d => (
+                <DomainScoreCard key={d.domain} {...d} />
+              ))}
+            </div>
           </div>
         )}
 
