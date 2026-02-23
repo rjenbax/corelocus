@@ -112,7 +112,7 @@ export default function LandingPage() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary bg-primary/10 rounded-full px-3 py-1 mb-6">
               <BookOpen className="w-3 h-3" />
-              <span>BACB 6th Edition · All 9 Domains · 860+ Practice Items</span>
+              <span>BACB 6th Edition · All 9 Domains · 3,000+ Practice Items</span>
             </div>
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-2">by BehaviorPREP</p>
             <h1 className="text-5xl md:text-7xl font-black leading-[1.0] mb-4 tracking-tight" style={{ fontFamily: "'DM Sans', sans-serif" }}>
@@ -320,7 +320,7 @@ export default function LandingPage() {
             </div>
             <div className="flex items-center gap-2">
               <BookOpen className="w-4 h-4 text-primary" />
-              <span>860+ practice items</span>
+              <span>3,000+ practice items</span>
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-teal-600" />
