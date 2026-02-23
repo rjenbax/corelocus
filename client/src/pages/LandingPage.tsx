@@ -122,12 +122,17 @@ export default function LandingPage() {
               <BookOpen className="w-3 h-3" />
               <span>BACB 6th Edition · All 9 Domains · 860+ Practice Items</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-black leading-[1.05] mb-6 tracking-tight" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            <h1 className="text-4xl md:text-6xl font-black leading-[1.05] mb-3 tracking-tight" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               <span className="text-foreground">Behavior</span><span className="text-primary">PREP</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed mb-8">
-              Passing the BCBA exam isn't just about memorizing terms — it's about being able to <strong className="text-foreground">use</strong> them. BehaviorPREP walks you through seven levels of practice, each one building on the last.
+            <p className="text-xl md:text-2xl font-semibold text-foreground/80 mb-6 leading-snug max-w-xl">
+              Not just exam-ready —{' '}
+              <span className="text-primary">field-ready.</span>
             </p>
+            <p className="text-sm text-muted-foreground max-w-lg leading-relaxed mb-8 border-l-2 border-primary/40 pl-3">
+              Most prep tools teach you to pass a test. BehaviorPREP builds the clinical reasoning you need to actually practice — so the exam becomes a byproduct of genuine competence.
+            </p>
+
             <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => navigate('/dashboard')}
