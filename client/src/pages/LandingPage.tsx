@@ -3,10 +3,11 @@
  * Design: Violet + Teal SaaS — asymmetric layout, editorial typography
  * Sections: Hero, 7-tier breakdown, differentiators, pricing, FAQ, CTA footer
  */
+import { useState } from 'react';
 import { useLocation } from 'wouter';
 import {
   Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList,
-  Zap, Award, Check, X, ChevronRight, Star, Shield, Target,
+  Zap, Award, Check, X, ChevronRight, ChevronDown, Star, Shield, Target,
   ArrowRight, Users, BarChart2
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -21,28 +22,20 @@ const TIERS = [
   { num: 7, label: 'Case Study Exam', blurb: 'Apply your knowledge to a real client case — just like on the job.', detail: '175 questions following a full client lifecycle', icon: ClipboardList, color: 'text-violet-800', bg: 'bg-primary/5', border: 'border-primary/20' },
 ];
 
-const MOCK_FEATURES = [
-  { label: '175-question timed mock exam', included: true },
-  { label: 'Adaptive question selection', included: true },
-  { label: 'Full score breakdown by domain', included: true },
-  { label: 'Detailed answer explanations', included: true },
-  { label: 'Unlimited retakes', included: true },
-  { label: 'Flashcards, Rapid Recall, Scenario tools', included: false },
-  { label: 'Venn Diagram & Scenario Justification', included: false },
-  { label: 'Case Study Exam', included: false },
-  { label: 'Daily Practice (adaptive sessions)', included: false },
+const LANDING_PLANS = [
+  { id: 'monthly', name: 'Monthly', price: '$47', period: '/month', effective: null, badge: null, highlight: false },
+  { id: 'quarterly', name: 'Quarterly', price: '$119', period: '/quarter', effective: '~$40/mo — save $22', badge: 'Save $22', highlight: false },
+  { id: 'annual', name: 'Annual', price: '$399', period: '/year', effective: '~$33/mo — best value', badge: 'Best Value', highlight: true },
+  { id: 'lifetime', name: 'Lifetime', price: '$699', period: 'one-time', effective: 'Pay once, own it forever', badge: null, highlight: false },
 ];
-
-const COMPLETE_FEATURES = [
-  { label: '175-question timed mock exam', included: true },
-  { label: 'Adaptive question selection', included: true },
-  { label: 'Full score breakdown by domain', included: true },
-  { label: 'Detailed answer explanations', included: true },
-  { label: 'Unlimited retakes', included: true },
-  { label: 'Flashcards, Rapid Recall, Scenario tools', included: true },
-  { label: 'Venn Diagram & Scenario Justification', included: true },
-  { label: 'Case Study Exam', included: true },
-  { label: 'Daily Practice (adaptive sessions)', included: true },
+const PLAN_FEATURES = [
+  '175-question timed mock exam (unlimited retakes)',
+  'Flashcards, Rapid Recall, Matching Scenarios',
+  'Scenario Justification — 1,515 items (Tier 5)',
+  'Venn Diagrams, Case Simulation (Tier 7)',
+  'Daily Practice — adaptive cross-tier sessions',
+  'Full domain analytics across all 9 domains',
+  'New content as released',
 ];
 
 const DIFFERENTIATORS = [
@@ -89,6 +82,7 @@ const FAQS = [
 
 export default function LandingPage() {
   const [, navigate] = useLocation();
+  const [openPlan, setOpenPlan] = useState<string | null>('annual');
 
   return (
     <div className="min-h-screen bg-background">
@@ -246,94 +240,74 @@ export default function LandingPage() {
       {/* ── Pricing ──────────────────────────────────────────────────────── */}
       <section id="pricing" className="border-b border-border">
         <div className="container py-14 md:py-18">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-10">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-8">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
                 Simple, transparent pricing
               </h2>
               <p className="text-muted-foreground text-base max-w-xl mx-auto">
-                Cancel anytime. No contracts. Progress saved automatically.
+                All plans include every feature. Cancel anytime.
               </p>
             </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Mock Exam Only */}
-              <div className="rounded-2xl border-2 border-border bg-card p-8 flex flex-col">
-                <div className="mb-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-9 h-9 rounded-lg bg-amber-100 flex items-center justify-center">
-                      <Award className="w-5 h-5 text-amber-700" />
-                    </div>
-                    <span className="font-semibold text-foreground">Mock Exam Only</span>
+            {/* Accordion plan rows */}
+            <div className="rounded-2xl border border-border overflow-hidden divide-y divide-border mb-4">
+              {LANDING_PLANS.map((plan) => {
+                const isOpen = openPlan === plan.id;
+                return (
+                  <div key={plan.id} className={cn('bg-card transition-colors', plan.highlight && isOpen ? 'bg-primary/5' : '')}>
+                    <button
+                      className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-muted/30 transition-colors"
+                      onClick={() => setOpenPlan(isOpen ? null : plan.id)}
+                    >
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-semibold text-sm text-foreground">{plan.name}</span>
+                          {plan.badge && (
+                            <span className={cn('text-xs font-bold px-2 py-0.5 rounded-full', plan.highlight ? 'bg-primary text-primary-foreground' : 'bg-teal-100 text-teal-700')}>
+                              {plan.badge}
+                            </span>
+                          )}
+                        </div>
+                        {plan.effective && <p className="text-xs text-muted-foreground mt-0.5">{plan.effective}</p>}
+                      </div>
+                      <div className="flex items-center gap-3 flex-shrink-0">
+                        <div className="text-right">
+                          <span className="text-xl font-black text-foreground">{plan.price}</span>
+                          <span className="text-xs text-muted-foreground ml-1">{plan.period}</span>
+                        </div>
+                        <ChevronDown className={cn('w-4 h-4 text-muted-foreground transition-transform duration-200', isOpen ? 'rotate-180' : '')} />
+                      </div>
+                    </button>
+                    {isOpen && (
+                      <div className="px-5 pb-5">
+                        <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-4">
+                          {PLAN_FEATURES.map((f, i) => (
+                            <div key={i} className="flex items-start gap-2 text-xs">
+                              <Check className="w-3.5 h-3.5 text-teal-600 flex-shrink-0 mt-0.5" />
+                              <span className="text-foreground/80">{f}</span>
+                            </div>
+                          ))}
+                        </div>
+                        <button
+                          onClick={() => navigate('/pricing')}
+                          className={cn('px-5 py-2.5 rounded-xl text-sm font-semibold transition-colors', plan.highlight ? 'bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm' : 'border-2 border-border hover:bg-muted/50 text-foreground')}
+                        >
+                          Get started — {plan.price}{plan.period !== 'one-time' ? plan.period : ' one-time'}
+                        </button>
+                      </div>
+                    )}
                   </div>
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-4xl font-black text-foreground">$25</span>
-                    <span className="text-muted-foreground text-sm">/month</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Full 175-question timed mock exam with score analytics.
-                  </p>
-                </div>
-                <ul className="space-y-2.5 flex-1 mb-8">
-                  {MOCK_FEATURES.map((f, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm">
-                      {f.included
-                        ? <Check className="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5" />
-                        : <X className="w-4 h-4 text-muted-foreground/40 flex-shrink-0 mt-0.5" />}
-                      <span className={cn(f.included ? 'text-foreground' : 'text-muted-foreground/50 line-through')}>
-                        {f.label}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <button className="w-full py-3 rounded-xl border-2 border-border text-foreground font-semibold text-sm hover:bg-muted/50 transition-colors">
-                  Get Mock Exam
-                </button>
-              </div>
-
-              {/* Complete Access */}
-              <div className="rounded-2xl border-2 border-primary bg-gradient-to-b from-primary/5 to-background p-8 flex flex-col relative">
-                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                  <span className="bg-primary text-primary-foreground text-xs font-bold px-4 py-1 rounded-full shadow-sm">
-                    Most Popular
-                  </span>
-                </div>
-                <div className="mb-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <Brain className="w-5 h-5 text-primary" />
-                    </div>
-                    <span className="font-semibold text-foreground">Complete Access</span>
-                  </div>
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-4xl font-black text-foreground">$47</span>
-                    <span className="text-muted-foreground text-sm">/month</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Every tool in the platform — the full 7-tier learning system.
-                  </p>
-                </div>
-                <ul className="space-y-2.5 flex-1 mb-8">
-                  {COMPLETE_FEATURES.map((f, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-sm">
-                      <Check className="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-foreground">{f.label}</span>
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  onClick={() => navigate('/dashboard')}
-                  className="w-full py-3 rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-sm transition-colors shadow-sm"
-                >
-                  Get Complete Access
-                </button>
-              </div>
+                );
+              })}
             </div>
+            <p className="text-center text-xs text-muted-foreground">
+              Free Sampler available — no credit card required.{' '}
+              <button onClick={() => navigate('/pricing')} className="text-primary hover:underline font-medium">View full pricing details →</button>
+            </p>
           </div>
         </div>
       </section>
-
-      {/* ── Social proof strip ───────────────────────────────────────────── */}
+            {/* ── Social proof strip ───────────────────────────────────────────── */}
       <section className="border-b border-border bg-muted/20">
         <div className="container py-8">
           <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">
