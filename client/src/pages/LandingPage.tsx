@@ -125,12 +125,13 @@ export default function LandingPage() {
             <h1 className="text-4xl md:text-6xl font-black leading-[1.05] mb-3 tracking-tight" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               <span className="text-foreground">Behavior</span><span className="text-primary">PREP</span>
             </h1>
-            <p className="text-xl md:text-2xl font-semibold text-foreground/80 mb-6 leading-snug max-w-xl">
-              Not just exam-ready —{' '}
-              <span className="text-primary">field-ready.</span>
+            <p className="text-xl md:text-2xl font-semibold text-foreground/80 mb-5 leading-snug max-w-xl">
+              Prepare for the exam.
+              <br />
+              <span className="text-primary">Prepare for the field.</span>
             </p>
-            <p className="text-sm text-muted-foreground max-w-lg leading-relaxed mb-8 border-l-2 border-primary/40 pl-3">
-              Most prep tools teach you to pass a test. BehaviorPREP builds the clinical reasoning you need to actually practice — so the exam becomes a byproduct of genuine competence.
+            <p className="text-base text-muted-foreground max-w-lg leading-relaxed mb-8">
+              BehaviorPREP builds the critical reasoning skills that carry you through the BCBA exam <em>and</em> your career — seven progressive tiers that take you from foundational concepts to full clinical case simulations.
             </p>
 
             <div className="flex flex-wrap gap-3">
