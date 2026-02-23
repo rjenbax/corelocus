@@ -5,7 +5,9 @@
  */
 import { useState, useCallback } from 'react';
 import { useLocation } from 'wouter';
-import { allQuestions, domainInfo } from '@/data/allQuestions';
+import { domainInfo } from '@/data/allQuestions';
+import { tier6Questions } from '@/data/tier6Questions';
+const allQuestions = tier6Questions as any[];
 import { useMockExamHub } from '@/contexts/MockExamHubContext';
 import { getTaskName, extractConceptFromText } from '@/data/taskListNames';
 import { cn } from '@/lib/utils';
@@ -247,7 +249,7 @@ function PracticeQuestion({ questions, onFinish }: PracticeQuestionProps) {
 
       {/* Choices */}
       <div className="space-y-3 mb-6">
-        {q.choices.map(choice => {
+        {q.choices.map((choice: any) => {
           const isSelected = selectedAnswer === choice.letter;
           const isCorrectChoice = choice.letter === q.correctAnswer;
           return (

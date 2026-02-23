@@ -23,6 +23,7 @@ import PricingPage from "./pages/PricingPage";
 import MockExamPage from "./pages/MockExamPage";
 import MockExamResultsPage from "./pages/MockExamResultsPage";
 import { MockExamHubProvider } from "./contexts/MockExamHubContext";
+import { tier6Questions } from "./data/tier6Questions";
 import MockExamHubLayout from "./components/MockExamHubLayout";
 import MockHubDashboard from "./pages/MockHubDashboard";
 import MockExamHubPage from "./pages/MockExamHubPage";
@@ -44,19 +45,25 @@ function HubRouter() {
   const [location] = useLocation();
   // Question view is full-screen (no sidebar) — location is relative inside nest
   if (location === '/exam/question' || location.startsWith('/exam/question')) {
-    return <MockExamHubPage />;
+    return (
+      <MockExamProvider questionPool={tier6Questions as any}>
+        <MockExamHubPage />
+      </MockExamProvider>
+    );
   }
   return (
-    <MockExamHubLayout>
-      <Switch>
-        <Route path="/" component={MockHubDashboard} />
-        <Route path="/exam" component={MockExamHubPage} />
-        <Route path="/practice" component={PracticeHubPage} />
-        <Route path="/review" component={ReviewHubPage} />
-        <Route path="/analytics" component={AnalyticsHubPage} />
-        <Route path="/question-bank" component={QuestionBankHubPage} />
-      </Switch>
-    </MockExamHubLayout>
+    <MockExamProvider questionPool={tier6Questions as any}>
+      <MockExamHubLayout>
+        <Switch>
+          <Route path="/" component={MockHubDashboard} />
+          <Route path="/exam" component={MockExamHubPage} />
+          <Route path="/practice" component={PracticeHubPage} />
+          <Route path="/review" component={ReviewHubPage} />
+          <Route path="/analytics" component={AnalyticsHubPage} />
+          <Route path="/question-bank" component={QuestionBankHubPage} />
+        </Switch>
+      </MockExamHubLayout>
+    </MockExamProvider>
   );
 }
 

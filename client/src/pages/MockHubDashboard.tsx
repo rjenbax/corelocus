@@ -28,12 +28,8 @@ export default function MockHubDashboard() {
   return (
     <div className="p-8 max-w-4xl">
       {/* Header */}
-      <div className="flex items-center gap-3 mb-8">
-        <img src={LOGO_URL} alt="BehaviorPREP" className="w-10 h-10 object-contain rounded-full" />
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">BehaviorPREP Dashboard</h1>
-          <p className="text-gray-500 text-sm">Complete BCBA Exam Prep Platform</p>
-        </div>
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
       </div>
 
       {/* Stats row */}

@@ -3,7 +3,9 @@
  * Browse all questions by domain, search, filter by difficulty
  */
 import { useState, useMemo } from 'react';
-import { allQuestions, domainInfo } from '@/data/allQuestions';
+import { domainInfo } from '@/data/allQuestions';
+import { tier6Questions } from '@/data/tier6Questions';
+const allQuestions = tier6Questions as any[];
 import { cn } from '@/lib/utils';
 import { Search, ChevronDown, ChevronUp, Library } from 'lucide-react';
 
@@ -108,7 +110,7 @@ export default function QuestionBankHubPage() {
                       </div>
                     )}
                     <div className="space-y-2 mb-3">
-                      {q.choices.map(choice => (
+                      {q.choices.map((choice: any) => (
                         <div
                           key={choice.letter}
                           className={cn(

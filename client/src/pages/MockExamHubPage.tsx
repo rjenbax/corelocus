@@ -8,7 +8,9 @@ import { useLocation } from 'wouter';
 import { useMockExam } from '@/contexts/MockExamContext';
 import { useMockExamHub } from '@/contexts/MockExamHubContext';
 import { getTaskName, extractConceptFromText } from '@/data/taskListNames';
-import { allQuestions, domainInfo } from '@/data/allQuestions';
+import { domainInfo } from '@/data/allQuestions';
+import { tier6Questions } from '@/data/tier6Questions';
+const allQuestions = tier6Questions as any[];
 import { cn } from '@/lib/utils';
 import {
   Play, Trash2, ClipboardList, Clock, CheckCircle2, XCircle,

@@ -5,7 +5,9 @@
  */
 import { useState, useMemo } from 'react';
 import { useMockExamHub } from '@/contexts/MockExamHubContext';
-import { allQuestions, domainInfo } from '@/data/allQuestions';
+import { domainInfo } from '@/data/allQuestions';
+import { tier6Questions } from '@/data/tier6Questions';
+const allQuestions = tier6Questions as any[];
 import { cn } from '@/lib/utils';
 import {
   XCircle, CheckCircle2, RotateCcw, BookOpen, ChevronDown, ChevronUp, Filter,
@@ -180,7 +182,7 @@ export default function ReviewHubPage() {
 
                     {/* Choices */}
                     <div className="space-y-2 mb-3">
-                      {q.choices.map(choice => {
+                      {q.choices.map((choice: any) => {
                         const isSelected = entry.selectedAnswer === choice.letter;
                         const isCorrectChoice = choice.letter === q.correctAnswer;
                         return (

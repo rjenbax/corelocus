@@ -109,8 +109,8 @@ const initialState: MockExamState = {
   completedAt: null,
 };
 
-function selectQuestions(settings: MockExamSettings): typeof allQuestions {
-  let pool = [...allQuestions];
+function selectQuestions(settings: MockExamSettings, questionPool: typeof allQuestions): typeof allQuestions {
+  let pool = [...questionPool];
   if (settings.focusDomains.length > 0) {
     pool = pool.filter(q => settings.focusDomains.includes(q.domain));
   }
@@ -183,7 +183,8 @@ function mockExamReducer(state: MockExamState, action: MockExamAction): MockExam
 
 const MockExamContext = createContext<MockExamContextType | null>(null);
 
-export function MockExamProvider({ children }: { children: React.ReactNode }) {
+export function MockExamProvider({ children, questionPool }: { children: React.ReactNode; questionPool?: typeof allQuestions }) {
+  const activePool = questionPool ?? allQuestions;
   const [state, dispatch] = useReducer(mockExamReducer, initialState);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -196,9 +197,9 @@ export function MockExamProvider({ children }: { children: React.ReactNode }) {
   }, [state.started, state.paused, state.complete, state.settings.timeLimitMinutes]);
 
   const startExam = useCallback((settings: MockExamSettings) => {
-    const questions = selectQuestions(settings);
+    const questions = selectQuestions(settings, activePool);
     dispatch({ type: 'START', questions, settings });
-  }, []);
+  }, [activePool]);
 
   const submitAnswer = useCallback((questionId: number, answer: string) => {
     dispatch({ type: 'SUBMIT_ANSWER', questionId, answer });
@@ -220,7 +221,8 @@ export function MockExamProvider({ children }: { children: React.ReactNode }) {
   const currentQuestion = state.questions[state.currentIndex] ?? null;
 
   const getDomainResults = useCallback((): DomainResult[] => {
-    return Object.entries(domainInfo).map(([domain, info]) => {
+    const activeDomains = Array.from(new Set(activePool.map((q: any) => q.domain)));
+    return Object.entries(domainInfo).filter(([d]) => activeDomains.includes(d)).map(([domain, info]) => {
       const qs = state.questions.filter(q => q.domain === domain);
       const correct = qs.filter(q => state.answers[q.id] === q.correctAnswer).length;
       return {
@@ -232,7 +234,7 @@ export function MockExamProvider({ children }: { children: React.ReactNode }) {
         pct: qs.length > 0 ? Math.round((correct / qs.length) * 100) : 0,
       };
     }).filter(r => r.total > 0);
-  }, [state.questions, state.answers]);
+  }, [state.questions, state.answers, activePool]);
 
   const getPhaseResults = useCallback((): PhaseResult[] => {
     const phaseLabels: Record<string, string> = {
