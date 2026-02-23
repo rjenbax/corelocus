@@ -15,7 +15,7 @@ import { scenarioItems, type ScenarioItem, type ScenarioQuestion } from '@/data/
 import { useProgress } from '@/contexts/ProgressContext';
 import {
   ArrowLeft, Brain, CheckCircle2, XCircle, ChevronRight, ChevronDown, ChevronUp,
-  RotateCcw, AlertCircle, BookOpen, ClipboardX, Filter
+  RotateCcw, AlertCircle, BookOpen, ClipboardX, Filter, ListTree
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -29,7 +29,7 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 type Phase = 'answer' | 'justify' | 'feedback';
-type ListTab = 'scenarios' | 'missed';
+type ListTab = 'scenarios' | 'missed' | 'tco';
 
 // ─── Missed Items Panel ───────────────────────────────────────────────────────
 
@@ -299,6 +299,102 @@ function MissedItemsPanel({
                     <RotateCcw className="w-3.5 h-3.5" />
                     Retry this scenario
                   </button>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ─── TCO Index Panel ─────────────────────────────────────────────────────────
+
+function TCOIndexPanel({
+  scenarios,
+  onGoToScenario,
+}: {
+  scenarios: ScenarioItem[];
+  onGoToScenario: (idx: number) => void;
+}) {
+  // Build a map: primary TCO code → questions
+  type TCOEntry = { tcoTask: string; scenario: ScenarioItem; question: ScenarioQuestion; scenarioIdx: number };
+  const grouped = useMemo(() => {
+    const map = new Map<string, TCOEntry[]>();
+    scenarios.forEach((s, idx) => {
+      s.questions.forEach(q => {
+        const key = q.tcoTask ?? 'Uncategorized';
+        // Use first code segment as the group key for clean grouping
+        const primary = key.split(';')[0].trim();
+        if (!map.has(primary)) map.set(primary, []);
+        map.get(primary)!.push({ tcoTask: key, scenario: s, question: q, scenarioIdx: idx });
+      });
+    });
+    // Sort by key
+    return Array.from(map.entries()).sort(([a], [b]) => a.localeCompare(b));
+  }, [scenarios]);
+
+  const [expandedKeys, setExpandedKeys] = useState<Set<string>>(new Set());
+  const toggleKey = (k: string) => setExpandedKeys(prev => {
+    const next = new Set(prev);
+    if (next.has(k)) next.delete(k); else next.add(k);
+    return next;
+  });
+
+  return (
+    <div>
+      <div className="mb-5 p-4 rounded-xl bg-amber-50 border border-amber-200">
+        <p className="text-xs font-semibold text-amber-800 uppercase tracking-wide mb-1">About TCO Index</p>
+        <p className="text-xs text-amber-900 leading-relaxed">
+          All {scenarios.reduce((n, s) => n + s.questions.length, 0)} questions grouped by BACB 6th Edition Task List objective.
+          Use this view for targeted review in the final two weeks before your exam.
+        </p>
+      </div>
+      <div className="space-y-2">
+        {grouped.map(([primary, entries]) => {
+          const isOpen = expandedKeys.has(primary);
+          return (
+            <div key={primary} className="rounded-xl border-2 border-border overflow-hidden">
+              <button
+                onClick={() => toggleKey(primary)}
+                className="w-full flex items-center justify-between px-4 py-3 bg-card hover:bg-muted/40 transition-colors text-left"
+              >
+                <div className="flex items-center gap-2.5">
+                  <span className="text-xs font-bold text-rose-600 bg-rose-100 px-2 py-0.5 rounded-full font-mono">
+                    {primary.split(':')[0].trim()}
+                  </span>
+                  <span className="text-sm font-medium text-foreground">
+                    {primary.includes(':') ? primary.split(':').slice(1).join(':').trim() : primary}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-muted-foreground">{entries.length} question{entries.length !== 1 ? 's' : ''}</span>
+                  {isOpen ? <ChevronUp className="w-4 h-4 text-muted-foreground" /> : <ChevronDown className="w-4 h-4 text-muted-foreground" />}
+                </div>
+              </button>
+              {isOpen && (
+                <div className="border-t border-border divide-y divide-border">
+                  {entries.map(({ scenario, question, scenarioIdx }) => (
+                    <button
+                      key={question.id}
+                      onClick={() => onGoToScenario(scenarioIdx)}
+                      className="w-full text-left px-4 py-3 hover:bg-rose-50 transition-colors group"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-1.5 mb-0.5">
+                            <span className="text-[10px] font-medium text-muted-foreground bg-muted px-1.5 py-0.5 rounded">
+                              {scenario.domain}
+                            </span>
+                            <span className="text-[10px] text-muted-foreground truncate">{scenario.title}</span>
+                          </div>
+                          <p className="text-xs text-foreground leading-snug line-clamp-2">{question.stem}</p>
+                        </div>
+                        <ChevronRight className="w-3.5 h-3.5 text-muted-foreground group-hover:text-rose-600 flex-shrink-0 mt-1" />
+                      </div>
+                    </button>
+                  ))}
                 </div>
               )}
             </div>
@@ -691,6 +787,18 @@ export default function ScenarioJustificationPage() {
               Scenarios
             </button>
             <button
+              onClick={() => setActiveTab('tco')}
+              className={cn(
+                "flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium border-b-2 transition-colors",
+                activeTab === 'tco'
+                  ? "border-rose-500 text-rose-600"
+                  : "border-transparent text-muted-foreground hover:text-foreground"
+              )}
+            >
+              <ListTree className="w-3.5 h-3.5" />
+              TCO Index
+            </button>
+            <button
               onClick={() => setActiveTab('missed')}
               className={cn(
                 "flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium border-b-2 transition-colors",
@@ -807,6 +915,13 @@ export default function ScenarioJustificationPage() {
           </>
         )}
 
+        {/* ── TCO Index tab ── */}
+        {activeTab === 'tco' && (
+          <TCOIndexPanel
+            scenarios={scenarioItems}
+            onGoToScenario={(idx) => openScenario(idx)}
+          />
+        )}
         {/* ── Missed Items tab ── */}
         {activeTab === 'missed' && (
           <MissedItemsPanel

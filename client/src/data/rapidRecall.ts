@@ -3345,8 +3345,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     term: 'Competing Stimulus Assessment',
     correctDefinition: 'A systematic evaluation of stimuli that may compete with the reinforcer maintaining automatically-reinforced problem behavior; used to identify items for enriched environments or alternative reinforcers in intervention.',
     distractors: [
-      'A preference assessment format in which pairs of stimuli are presented simultaneously and the client\'s approach behavior determines relative reinforcer value.',
-      'An assessment that measures the degree to which competing verbal stimuli interfere with the client\'s ability to follow instructions.',
+      `A preference assessment format in which pairs of stimuli are presented simultaneously and the client's approach behavior determines relative reinforcer value.`,
+      `An assessment that measures the degree to which competing verbal stimuli interfere with the client's ability to follow instructions.`,
       'A functional analysis condition in which competing reinforcers are delivered contingently to determine their relative reinforcing value compared to the maintaining reinforcer.'
     ],
     misconceptions: [
@@ -3361,7 +3361,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     term: 'Social Validity',
     correctDefinition: 'The degree to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, caregivers, and the broader community.',
     distractors: [
-      'The statistical measure of how much an intervention\'s effect size exceeds the standard deviation of the baseline data, indicating a socially meaningful change.',
+      `The statistical measure of how much an intervention's effect size exceeds the standard deviation of the baseline data, indicating a socially meaningful change.`,
       'The extent to which a behavior change generalizes to social settings and is maintained by natural social reinforcement from peers and community members.',
       'A measure of how frequently the target behavior occurs in social contexts compared to non-social contexts, used to determine intervention priority.'
     ],
@@ -3409,7 +3409,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     term: 'Behavioral Skills Training (BST)',
     correctDefinition: 'A staff training package consisting of four components: instructions, modeling, rehearsal, and feedback; all four components must be present for the procedure to qualify as BST.',
     distractors: [
-      'A supervision model in which the supervisor observes the supervisee\'s performance and provides written feedback within 48 hours of the observation.',
+      `A supervision model in which the supervisor observes the supervisee's performance and provides written feedback within 48 hours of the observation.`,
       'A training approach that uses video modeling and written competency exams to ensure staff can identify and describe correct implementation of procedures.',
       'A performance management system that uses goal-setting, self-monitoring, and public posting to improve staff implementation fidelity.'
     ],
@@ -3425,7 +3425,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     term: 'Performance Feedback',
     correctDefinition: 'Information provided to a supervisee about the accuracy and quality of their work, delivered in close temporal proximity to the observed behavior to promote skill acquisition and maintenance.',
     distractors: [
-      'A written evaluation of a supervisee\'s overall clinical competence completed at the end of a supervision period and used for credentialing purposes.',
+      `A written evaluation of a supervisee's overall clinical competence completed at the end of a supervision period and used for credentialing purposes.`,
       'A verbal summary of session data trends provided to the supervisee at weekly team meetings to inform intervention decisions.',
       'A formal performance improvement plan developed when a supervisee fails to meet minimum competency standards after repeated coaching.'
     ],

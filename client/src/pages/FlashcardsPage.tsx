@@ -1,12 +1,12 @@
 /**
  * Flashcards — Tier 1: Remember (L1)
- * Flip cards, domain filter, mastery tracking
+ * Flip cards, domain filter, mastery tracking, shuffle mode, mark-as-weak
  */
 import { useState, useMemo, useCallback } from 'react';
 import { useLocation } from 'wouter';
-import { flashcards, type Flashcard, allDomains } from '@/data/flashcards';
+import { flashcards, allDomains } from '@/data/flashcards';
 import { useProgress } from '@/contexts/ProgressContext';
-import { ArrowLeft, RotateCcw, CheckCircle2, ChevronLeft, ChevronRight, Filter, Layers } from 'lucide-react';
+import { ArrowLeft, RotateCcw, CheckCircle2, ChevronLeft, ChevronRight, Filter, Layers, Shuffle, Flag } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
 
@@ -19,8 +19,11 @@ export default function FlashcardsPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [showMasteredOnly, setShowMasteredOnly] = useState(false);
+  const [isShuffled, setIsShuffled] = useState(false);
+  const [showWeakOnly, setShowWeakOnly] = useState(false);
+  const [weakIds, setWeakIds] = useState<Set<string>>(new Set());
+  const [shuffleSeed, setShuffleSeed] = useState(0);
 
-  const domainList = useMemo(() => allDomains, []);
   const domains = useMemo(() => {
     const unique = Array.from(new Set(flashcards.map(f => f.domain)));
     return unique.sort();
@@ -33,8 +36,21 @@ export default function FlashcardsPage() {
       const masteredIds = new Set(progress.flashcards.filter(f => f.mastered).map(f => f.cardId));
       cards = cards.filter(f => masteredIds.has(f.id));
     }
+    if (showWeakOnly) {
+      cards = cards.filter(f => weakIds.has(f.id));
+    }
+    if (isShuffled) {
+      const arr = [...cards];
+      let seed = shuffleSeed;
+      for (let i = arr.length - 1; i > 0; i--) {
+        seed = (seed * 1664525 + 1013904223) & 0xffffffff;
+        const j = Math.abs(seed) % (i + 1);
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
     return cards;
-  }, [selectedDomain, showMasteredOnly, progress.flashcards]);
+  }, [selectedDomain, showMasteredOnly, showWeakOnly, weakIds, isShuffled, shuffleSeed, progress.flashcards]);
 
   const currentCard = filtered[currentIndex] ?? null;
   const masteredIds = useMemo(() => new Set(progress.flashcards.filter(f => f.mastered).map(f => f.cardId)), [progress.flashcards]);
@@ -72,6 +88,30 @@ export default function FlashcardsPage() {
     setIsFlipped(false);
   };
 
+  const handleShuffle = () => {
+    const next = !isShuffled;
+    setIsShuffled(next);
+    if (next) setShuffleSeed(Math.floor(Math.random() * 1e9));
+    setCurrentIndex(0);
+    setIsFlipped(false);
+    toast.info(next ? 'Deck shuffled' : 'Shuffle off — back to original order', { duration: 1500 });
+  };
+
+  const handleMarkWeak = useCallback(() => {
+    if (!currentCard) return;
+    setWeakIds(prev => {
+      const next = new Set(prev);
+      if (next.has(currentCard.id)) {
+        next.delete(currentCard.id);
+        toast.info('Removed from weak cards', { duration: 1500 });
+      } else {
+        next.add(currentCard.id);
+        toast.warning('Flagged as weak — review again soon', { duration: 1800 });
+      }
+      return next;
+    });
+  }, [currentCard]);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -89,15 +129,22 @@ export default function FlashcardsPage() {
               <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">Tier 1</span>
             </div>
           </div>
-          <div className="text-xs text-muted-foreground">
-            {masteredCount} / {filtered.length} mastered
+          <div className="flex items-center gap-2">
+            {weakIds.size > 0 && (
+              <span className="text-xs text-orange-600 bg-orange-50 border border-orange-200 px-2 py-0.5 rounded-full">
+                {weakIds.size} weak
+              </span>
+            )}
+            <span className="text-xs text-muted-foreground">
+              {masteredCount} / {filtered.length} mastered
+            </span>
           </div>
         </div>
       </header>
 
       <div className="container py-6 max-w-3xl mx-auto">
         {/* Domain filter */}
-        <div className="flex items-center gap-2 mb-6 overflow-x-auto pb-2">
+        <div className="flex items-center gap-2 mb-4 overflow-x-auto pb-2">
           <Filter className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0" />
           <button
             onClick={() => handleDomainChange(ALL_DOMAINS)}
@@ -108,7 +155,7 @@ export default function FlashcardsPage() {
                 : "border-border text-muted-foreground hover:border-blue-300"
             )}
           >
-            All Domains ({flashcards.length})
+            All ({flashcards.length})
           </button>
           {domains.map(d => {
             const count = flashcards.filter(f => f.domain === d).length;
@@ -130,6 +177,42 @@ export default function FlashcardsPage() {
           })}
         </div>
 
+        {/* Mode toggles row */}
+        <div className="flex items-center gap-2 mb-5 flex-wrap">
+          <button
+            onClick={handleShuffle}
+            className={cn(
+              "flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-colors",
+              isShuffled ? "bg-blue-100 text-blue-800 border-blue-300" : "border-border text-muted-foreground hover:border-blue-300"
+            )}
+          >
+            <Shuffle className="w-3 h-3" />
+            {isShuffled ? 'Shuffled' : 'Shuffle'}
+          </button>
+          <button
+            onClick={() => { setShowMasteredOnly(s => !s); setCurrentIndex(0); setIsFlipped(false); }}
+            className={cn(
+              "flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-colors",
+              showMasteredOnly ? "bg-violet-100 text-violet-800 border-violet-300" : "border-border text-muted-foreground hover:border-violet-300"
+            )}
+          >
+            <CheckCircle2 className="w-3 h-3" />
+            {showMasteredOnly ? 'Mastered only' : 'Show mastered'}
+          </button>
+          {weakIds.size > 0 && (
+            <button
+              onClick={() => { setShowWeakOnly(s => !s); setCurrentIndex(0); setIsFlipped(false); }}
+              className={cn(
+                "flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-colors",
+                showWeakOnly ? "bg-orange-100 text-orange-800 border-orange-300" : "border-border text-muted-foreground hover:border-orange-300"
+              )}
+            >
+              <Flag className="w-3 h-3" />
+              {showWeakOnly ? `Weak only (${weakIds.size})` : `Weak cards (${weakIds.size})`}
+            </button>
+          )}
+        </div>
+
         {/* Progress bar */}
         <div className="flex items-center gap-3 mb-6">
           <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
@@ -141,15 +224,6 @@ export default function FlashcardsPage() {
           <span className="text-xs text-muted-foreground whitespace-nowrap">
             {filtered.length > 0 ? Math.round((masteredCount / filtered.length) * 100) : 0}% mastered
           </span>
-          <button
-            onClick={() => setShowMasteredOnly(s => !s)}
-            className={cn(
-              "text-xs px-2.5 py-1 rounded-full border transition-colors",
-              showMasteredOnly ? "bg-violet-100 text-violet-800 border-violet-300" : "border-border text-muted-foreground"
-            )}
-          >
-            {showMasteredOnly ? '✓ Mastered' : 'Show mastered'}
-          </button>
         </div>
 
         {/* Card */}
@@ -157,6 +231,8 @@ export default function FlashcardsPage() {
           <>
             <div className="text-center mb-2 text-xs text-muted-foreground">
               {currentIndex + 1} of {filtered.length} · Click card to flip
+              {isShuffled && <span className="ml-1 text-blue-500">· Shuffled</span>}
+              {showWeakOnly && <span className="ml-1 text-orange-500">· Weak cards</span>}
             </div>
 
             {/* Flip card */}
@@ -177,6 +253,11 @@ export default function FlashcardsPage() {
                   className="absolute inset-0 rounded-2xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white p-8 flex flex-col items-center justify-center"
                   style={{ backfaceVisibility: 'hidden' }}
                 >
+                  {weakIds.has(currentCard.id) && (
+                    <div className="absolute top-4 right-4 text-orange-400">
+                      <Flag className="w-4 h-4 fill-orange-300" />
+                    </div>
+                  )}
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">{currentCard.domainFull}</span>
                   </div>
@@ -216,28 +297,43 @@ export default function FlashcardsPage() {
             </div>
 
             {/* Controls */}
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center justify-between gap-2 flex-wrap">
               <button
                 onClick={handlePrev}
                 className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground border border-border rounded-lg px-4 py-2 transition-colors hover:bg-muted/50"
               >
                 <ChevronLeft className="w-4 h-4" />
-                Previous
+                Prev
               </button>
 
-              <button
-                onClick={handleMastered}
-                disabled={masteredIds.has(currentCard.id)}
-                className={cn(
-                  "flex items-center gap-1.5 text-sm font-medium rounded-lg px-5 py-2 transition-colors",
-                  masteredIds.has(currentCard.id)
-                    ? "bg-violet-100 text-violet-800 border border-violet-200 cursor-default"
-                    : "bg-violet-700 text-white hover:bg-violet-800"
-                )}
-              >
-                <CheckCircle2 className="w-4 h-4" />
-                {masteredIds.has(currentCard.id) ? 'Mastered' : 'Mark Mastered'}
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handleMarkWeak}
+                  className={cn(
+                    "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-colors border",
+                    weakIds.has(currentCard.id)
+                      ? "bg-orange-100 text-orange-800 border-orange-300"
+                      : "bg-card text-muted-foreground border-border hover:border-orange-300 hover:text-orange-700"
+                  )}
+                >
+                  <Flag className="w-4 h-4" />
+                  {weakIds.has(currentCard.id) ? 'Weak' : 'Flag Weak'}
+                </button>
+
+                <button
+                  onClick={handleMastered}
+                  disabled={masteredIds.has(currentCard.id)}
+                  className={cn(
+                    "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-colors",
+                    masteredIds.has(currentCard.id)
+                      ? "bg-violet-100 text-violet-800 border border-violet-200 cursor-default"
+                      : "bg-violet-700 text-white hover:bg-violet-800"
+                  )}
+                >
+                  <CheckCircle2 className="w-4 h-4" />
+                  {masteredIds.has(currentCard.id) ? 'Mastered' : 'Mastered'}
+                </button>
+              </div>
 
               <button
                 onClick={handleNext}
