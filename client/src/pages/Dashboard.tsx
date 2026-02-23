@@ -313,9 +313,9 @@ export default function Dashboard() {
             })}
           </div>
 
-          {/* Tier cards */}
+          {/* Tier cards — Tiers 1–6 */}
           <div className="space-y-4">
-            {TIERS.map((tier, idx) => {
+            {TIERS.filter(t => t.tier !== 7).map((tier, idx, arr) => {
               const pct = tier.isExternal ? 0 : getTierCompletion(tier.tier as 1|2|3|4|5|6);
               const Icon = tier.icon;
               const isComplete = pct >= 80;
@@ -323,7 +323,7 @@ export default function Dashboard() {
               return (
                 <div key={tier.tier} className="relative">
                   {/* Connector line */}
-                  {idx < TIERS.length - 1 && (
+                  {idx < arr.length - 1 && (
                     <div className="absolute left-8 top-full w-0.5 h-4 bg-border z-10" />
                   )}
 
@@ -338,7 +338,6 @@ export default function Dashboard() {
                     )}
                   >
                     <div className="flex items-start gap-4">
-                      {/* Tier number + icon */}
                       <div className="flex-shrink-0">
                         <div className={cn(
                           "w-14 h-14 rounded-xl flex flex-col items-center justify-center border-2",
@@ -349,8 +348,6 @@ export default function Dashboard() {
                           <span className={cn("text-xl font-black leading-none", tier.color)}>{tier.tier}</span>
                         </div>
                       </div>
-
-                      {/* Content */}
                       <div className="flex-1 min-w-0">
                         <div className="flex items-start justify-between gap-2 mb-1">
                           <div className="flex-1 min-w-0">
@@ -365,17 +362,12 @@ export default function Dashboard() {
                             <span className={cn("hidden sm:inline text-xs font-medium px-2 py-0.5 rounded-full", tier.pillColor)}>
                               {tier.bloomsLevel}
                             </span>
-                              {tier.isExternal
-                                ? <ExternalLink className={cn("w-4 h-4", tier.color)} />
-                                : <ChevronRight className={cn("w-4 h-4 transition-transform group-hover:translate-x-0.5", tier.color)} />}
+                            <ChevronRight className={cn("w-4 h-4 transition-transform group-hover:translate-x-0.5", tier.color)} />
                           </div>
                         </div>
-
                         <p className="text-sm text-muted-foreground leading-relaxed mb-3 hidden sm:block">
                           {tier.description}
                         </p>
-
-                        {/* Progress bar */}
                         <div className="flex items-center gap-2">
                           <div className="flex-1 h-1.5 bg-white/60 rounded-full overflow-hidden border border-white/80">
                             <div
@@ -386,7 +378,6 @@ export default function Dashboard() {
                                 'bg-violet-700': tier.tier === 4,
                                 'bg-teal-700': tier.tier === 5,
                                 'bg-amber-600': tier.tier === 6,
-                                'bg-primary': tier.tier === 7,
                               })}
                               style={{ width: `${pct}%` }}
                             />
@@ -399,6 +390,77 @@ export default function Dashboard() {
                 </div>
               );
             })}
+          </div>
+
+          {/* ── Tier 7 Pinnacle Card ──────────────────────────────────────── */}
+          <div className="mt-6 relative">
+            {/* Connector from Tier 6 */}
+            <div className="absolute left-8 -top-6 w-0.5 h-6 bg-gradient-to-b from-border to-primary/40 z-10" />
+
+            <button
+              onClick={() => navigate('/exam-hub')}
+              className="w-full text-left rounded-2xl border-2 border-primary/40 overflow-hidden transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 group"
+            >
+              {/* Gradient header band */}
+              <div className="bg-gradient-to-r from-violet-700 via-primary to-teal-600 px-6 pt-5 pb-4">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold tracking-widest text-white/70 uppercase">Pinnacle Tier</span>
+                    <span className="text-xs font-bold bg-white/20 text-white px-2 py-0.5 rounded-full">Tier 7</span>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="text-xs font-semibold bg-white/15 text-white px-2.5 py-1 rounded-full">Apply in the field</span>
+                    <ChevronRight className="w-5 h-5 text-white/80 transition-transform group-hover:translate-x-0.5" />
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-14 h-14 rounded-xl bg-white/15 border-2 border-white/30 flex flex-col items-center justify-center flex-shrink-0">
+                    <ClipboardList className="w-7 h-7 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-black text-white leading-tight">Case Study Exam™</h3>
+                    <p className="text-sm text-white/80">Real-World Application — 175 questions · 5 clinical phases</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Body */}
+              <div className="bg-gradient-to-br from-primary/5 to-teal-50/60 px-6 py-4">
+                <p className="text-sm text-foreground leading-relaxed mb-4">
+                  Follow <strong>Leo Rodriguez</strong>, a 5-year-old with Autism Spectrum Disorder (Level 2), from initial referral through discharge. Every question mirrors a real clinical decision a BCBA makes — the way you will actually work in the field.
+                </p>
+
+                {/* Client profile strip */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+                  {[
+                    { label: 'Client', value: 'Leo Rodriguez, age 5' },
+                    { label: 'Diagnosis', value: 'ASD Level 2 + Mild ID' },
+                    { label: 'Setting', value: 'Home + Kindergarten' },
+                    { label: 'Questions', value: '175 across 9 domains' },
+                  ].map(item => (
+                    <div key={item.label} className="bg-white/70 border border-primary/10 rounded-lg px-3 py-2">
+                      <p className="text-[10px] font-bold text-primary uppercase tracking-wide mb-0.5">{item.label}</p>
+                      <p className="text-xs font-semibold text-foreground leading-tight">{item.value}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Phase pills */}
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    'Phase 1: Intake & Assessment',
+                    'Phase 2: FBA',
+                    'Phase 3: Treatment Planning',
+                    'Phase 4: Implementation',
+                    'Phase 5: Evaluation',
+                  ].map(phase => (
+                    <span key={phase} className="text-[10px] font-medium bg-primary/8 text-primary border border-primary/15 px-2 py-0.5 rounded-full">
+                      {phase}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </button>
           </div>
 
           {/* ── Daily Practice CTA ─────────────────────────────────────────── */}
