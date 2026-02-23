@@ -10,7 +10,7 @@ import { domainInfo } from '@/data/allQuestions';
 import { cn } from '@/lib/utils';
 import {
   Target, Trophy, Flame, BookOpen, TrendingUp, BarChart2, ListFilter, Brain,
-  ArrowUp, ArrowDown,
+  ArrowUp, ArrowDown, AlertCircle, CheckCircle2, ChevronDown, ChevronUp,
 } from 'lucide-react';
 
 type TabId = 'overview' | 'domains' | 'progress' | 'tasks' | 'concepts';
@@ -315,55 +315,180 @@ function TasksTab() {
 
 // ─── Concepts Tab ─────────────────────────────────────────────────────────────
 function ConceptsTab() {
-  const { getConceptAccuracy } = useMockExamHub();
-  const [sortOrder, setSortOrder] = useState<'highest' | 'lowest'>('highest');
-  const concepts = getConceptAccuracy();
+  const { getConceptAccuracy, getConceptConfusions } = useMockExamHub();
+  const [expanded, setExpanded] = useState<string | null>(null);
+  const [view, setView] = useState<'accuracy' | 'confusion'>('accuracy');
 
-  const sorted = useMemo(() => {
-    return [...concepts].sort((a, b) => sortOrder === 'highest' ? b.pct - a.pct : a.pct - b.pct);
-  }, [concepts, sortOrder]);
+  const conceptAccuracy = getConceptAccuracy();
+  const confusions = getConceptConfusions();
+
+  const conceptsWithData = useMemo(() =>
+    conceptAccuracy.filter(c => c.total > 0).slice(0, 20),
+    [conceptAccuracy]
+  );
+
+  const toggleExpand = (key: string) => setExpanded(prev => prev === key ? null : key);
 
   return (
-    <div>
-      <div className="bg-white border border-gray-200 rounded-xl p-5">
-        <div className="flex items-center justify-between mb-1">
-          <h3 className="font-bold text-gray-900 flex items-center gap-2">
-            <Brain className="w-4 h-4 text-indigo-500" />
-            Key Concept Performance
-          </h3>
-          <button
-            onClick={() => setSortOrder(s => s === 'highest' ? 'lowest' : 'highest')}
-            className="flex items-center gap-1.5 text-xs text-indigo-600 font-medium hover:text-indigo-800 transition-colors"
-          >
-            {sortOrder === 'highest' ? <ArrowDown className="w-3.5 h-3.5" /> : <ArrowUp className="w-3.5 h-3.5" />}
-            {sortOrder === 'highest' ? 'Highest first' : 'Lowest first'}
-          </button>
-        </div>
-        <p className="text-xs text-gray-400 mb-5">Your accuracy on specific ABA concepts. Min 2 attempts shown.</p>
-
-        {sorted.length === 0 ? (
-          <div className="text-center py-8">
-            <Brain className="w-10 h-10 text-gray-300 mx-auto mb-2" />
-            <p className="text-sm text-gray-400">Complete more practice sessions to see concept-level data.</p>
-          </div>
-        ) : (
-          <div className="space-y-2">
-            {sorted.map(c => (
-              <div key={c.concept} className="flex items-center gap-3">
-                <span className="text-xs text-gray-600 w-48 truncate flex-shrink-0">{c.concept}</span>
-                <div className="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
-                  <div
-                    className="h-2 bg-indigo-500 rounded-full transition-all"
-                    style={{ width: `${c.pct}%` }}
-                  />
-                </div>
-                <span className={cn('text-xs font-bold w-10 text-right', pctColor(c.pct))}>{c.pct}%</span>
-                <span className="text-xs text-gray-400 w-8 text-right">{c.correct}/{c.total}</span>
-              </div>
-            ))}
-          </div>
-        )}
+    <div className="space-y-4">
+      {/* View toggle */}
+      <div className="flex bg-gray-100 rounded-xl p-1 gap-1 w-fit">
+        <button
+          onClick={() => setView('accuracy')}
+          className={cn(
+            'px-4 py-1.5 rounded-lg text-sm font-medium transition-all',
+            view === 'accuracy' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+          )}
+        >
+          Concept Accuracy
+        </button>
+        <button
+          onClick={() => setView('confusion')}
+          className={cn(
+            'px-4 py-1.5 rounded-lg text-sm font-medium transition-all',
+            view === 'confusion' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
+          )}
+        >
+          Confusion Pairs
+        </button>
       </div>
+
+      {view === 'accuracy' && (
+        <div className="bg-white border border-gray-200 rounded-xl p-5">
+          <h3 className="font-bold text-gray-900 flex items-center gap-2 mb-1">
+            <Brain className="w-4 h-4 text-indigo-500" />
+            Concept Accuracy by Task List Item
+          </h3>
+          <p className="text-xs text-gray-400 mb-5">
+            Accuracy per BACB 6th Edition task list item. Click any row to see which concepts you confused it with.
+          </p>
+          {conceptsWithData.length === 0 ? (
+            <div className="text-center py-8">
+              <Brain className="w-10 h-10 text-gray-300 mx-auto mb-2" />
+              <p className="text-sm text-gray-400">Complete practice sessions to see concept-level data.</p>
+            </div>
+          ) : (
+            <div className="space-y-1">
+              {conceptsWithData.map(c => (
+                <div key={c.taskItem}>
+                  <button
+                    onClick={() => c.confusions.length > 0 ? toggleExpand(c.taskItem) : undefined}
+                    className={cn(
+                      'w-full flex items-center gap-3 py-2.5 px-3 rounded-lg transition-colors text-left',
+                      c.confusions.length > 0 ? 'hover:bg-gray-50 cursor-pointer' : 'cursor-default'
+                    )}
+                  >
+                    <span className="text-xs font-mono font-bold text-gray-400 w-10 flex-shrink-0">{c.taskItem}</span>
+                    <span className="text-sm text-gray-700 flex-1 truncate">{c.concept}</span>
+                    <div className="w-24 h-2 bg-gray-100 rounded-full overflow-hidden flex-shrink-0">
+                      <div
+                        className={cn('h-2 rounded-full transition-all', c.pct >= 70 ? 'bg-green-500' : c.pct >= 50 ? 'bg-amber-400' : 'bg-red-400')}
+                        style={{ width: `${c.pct}%` }}
+                      />
+                    </div>
+                    <span className={cn('text-xs font-bold w-10 text-right flex-shrink-0', pctColor(c.pct))}>{c.pct}%</span>
+                    <span className="text-xs text-gray-400 w-12 text-right flex-shrink-0">{c.correct}/{c.total}</span>
+                    {c.confusions.length > 0 && (
+                      expanded === c.taskItem
+                        ? <ChevronUp className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
+                        : <ChevronDown className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
+                    )}
+                  </button>
+                  {expanded === c.taskItem && c.confusions.length > 0 && (
+                    <div className="ml-10 mb-2 bg-red-50 border border-red-100 rounded-xl p-4">
+                      <div className="flex items-center gap-2 mb-3">
+                        <AlertCircle className="w-3.5 h-3.5 text-red-500" />
+                        <span className="text-xs font-semibold text-red-700 uppercase tracking-wider">Concept Confusions Detected</span>
+                      </div>
+                      <p className="text-xs text-red-600 mb-3 leading-relaxed">
+                        When you see a <strong>{c.concept}</strong> question, you tend to select answers about:
+                      </p>
+                      <div className="space-y-2">
+                        {c.confusions.map((pair, i) => (
+                          <div key={i} className="flex items-center gap-3 bg-white rounded-lg px-3 py-2.5 border border-red-100">
+                            <div className="flex-1">
+                              <div className="text-xs font-semibold text-gray-800">
+                                Selected &ldquo;{pair.selectedConcept}&rdquo; instead
+                              </div>
+                              <div className="text-xs text-gray-500 mt-0.5">
+                                Happened {pair.count} time{pair.count !== 1 ? 's' : ''}
+                              </div>
+                            </div>
+                            <span className="text-xs font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded-full">
+                              {pair.count}&times;
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                      <p className="text-xs text-gray-500 mt-3 leading-relaxed">
+                        <strong>Study tip:</strong> Review the key distinctions between {c.concept} and the concepts above.
+                      </p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {view === 'confusion' && (
+        <div className="bg-white border border-gray-200 rounded-xl p-5">
+          <h3 className="font-bold text-gray-900 flex items-center gap-2 mb-1">
+            <AlertCircle className="w-4 h-4 text-red-500" />
+            Concept Confusion Pairs
+          </h3>
+          <p className="text-xs text-gray-400 mb-5">
+            These are the specific concept pairs you are confusing most often.
+          </p>
+          {confusions.length === 0 ? (
+            <div className="text-center py-8">
+              <CheckCircle2 className="w-10 h-10 text-gray-300 mx-auto mb-2" />
+              <p className="text-sm text-gray-400">
+                {conceptsWithData.length === 0
+                  ? 'Complete practice sessions to see confusion data.'
+                  : 'No concept confusions detected yet — great work!'}
+              </p>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {confusions.slice(0, 15).map((pair, i) => (
+                <div key={i} className="border border-gray-100 rounded-xl p-4 hover:border-red-200 transition-colors">
+                  <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-0.5">
+                      <span className="text-xs font-bold text-red-600">{i + 1}</span>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 flex-wrap mb-1">
+                        <span className="text-sm font-semibold text-gray-900">{pair.correctConcept}</span>
+                        <span className="text-xs text-gray-400">&rarr; you selected &rarr;</span>
+                        <span className="text-sm font-semibold text-red-600">{pair.selectedConcept}</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="text-xs text-gray-500">
+                          Confused <strong>{pair.count} time{pair.count !== 1 ? 's' : ''}</strong>
+                        </span>
+                        {pair.taskItems.length > 0 && (
+                          <span className="text-xs text-gray-400">on task {pair.taskItems.join(', ')}</span>
+                        )}
+                      </div>
+                    </div>
+                    <span className={cn(
+                      'text-sm font-bold px-2.5 py-1 rounded-full flex-shrink-0',
+                      pair.count >= 3 ? 'bg-red-100 text-red-700' : pair.count === 2 ? 'bg-amber-100 text-amber-700' : 'bg-gray-100 text-gray-600'
+                    )}>
+                      {pair.count}&times;
+                    </span>
+                  </div>
+                </div>
+              ))}
+              <p className="text-xs text-gray-400 pt-2">
+                Showing top {Math.min(confusions.length, 15)} confusion pairs.
+              </p>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

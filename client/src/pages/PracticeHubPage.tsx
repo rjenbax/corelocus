@@ -7,6 +7,7 @@ import { useState, useCallback } from 'react';
 import { useLocation } from 'wouter';
 import { allQuestions, domainInfo } from '@/data/allQuestions';
 import { useMockExamHub } from '@/contexts/MockExamHubContext';
+import { getTaskName, extractConceptFromText } from '@/data/taskListNames';
 import { cn } from '@/lib/utils';
 import {
   BookOpen, ChevronLeft, ChevronRight, CheckCircle2, XCircle, Eye,
@@ -194,12 +195,16 @@ function PracticeQuestion({ questions, onFinish }: PracticeQuestionProps) {
   const handleSelect = (letter: string) => {
     if (isAnswered) return;
     setAnswers(prev => ({ ...prev, [q.id]: letter }));
+    const taskItem = q.taskItem ?? `${q.domain}.?`;
+    const selectedChoiceText = q.choices.find((c: any) => c.letter === letter)?.text ?? '';
     recordPracticeAnswer({
       questionId: q.id,
       domain: q.domain,
-      taskItem: q.taskItem ?? `${q.domain}.?`,
+      taskItem,
       selectedAnswer: letter,
       correct: letter === q.correctAnswer,
+      correctConcept: getTaskName(taskItem),
+      selectedConcept: letter === q.correctAnswer ? null : extractConceptFromText(selectedChoiceText),
     });
   };
 

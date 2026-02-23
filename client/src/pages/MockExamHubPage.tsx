@@ -7,6 +7,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { useLocation } from 'wouter';
 import { useMockExam } from '@/contexts/MockExamContext';
 import { useMockExamHub } from '@/contexts/MockExamHubContext';
+import { getTaskName, extractConceptFromText } from '@/data/taskListNames';
 import { allQuestions, domainInfo } from '@/data/allQuestions';
 import { cn } from '@/lib/utils';
 import {
@@ -181,7 +182,7 @@ function MockExamHome() {
 // ─── Question View ────────────────────────────────────────────────────────────
 function QuestionView() {
   const { state, currentQuestion, submitAnswer, revealAnswer, nextQuestion, prevQuestion, toggleFlag, pauseExam, finishExam } = useMockExam();
-  const { addExamResult } = useMockExamHub();
+  const { addExamResult, recordPracticeAnswer } = useMockExamHub();
   const [, navigate] = useLocation();
   const [showNav, setShowNav] = useState(false);
   const [showFinish, setShowFinish] = useState(false);
@@ -200,6 +201,22 @@ function QuestionView() {
       const correct = state.questions.filter(q => state.answers[q.id] === q.correctAnswer).length;
       const score = totalQ > 0 ? Math.round((correct / totalQ) * 100) : 0;
       addExamResult({ date: Date.now(), score, totalQuestions: totalQ, correct, domainScores, passed: score >= 70 });
+      // Record per-question answers for concept confusion analytics
+      state.questions.forEach(q => {
+        const letter = state.answers[q.id];
+        if (!letter) return;
+        const taskItem = q.taskItem ?? `${q.domain}.?`;
+        const selectedChoiceText = q.choices.find((c: any) => c.letter === letter)?.text ?? '';
+        recordPracticeAnswer({
+          questionId: q.id,
+          domain: q.domain,
+          taskItem,
+          selectedAnswer: letter,
+          correct: letter === q.correctAnswer,
+          correctConcept: getTaskName(taskItem),
+          selectedConcept: letter === q.correctAnswer ? null : extractConceptFromText(selectedChoiceText),
+        });
+      });
       navigate('~/mock-results');
     }
     prevCompleteRef.current = state.complete;
