@@ -316,6 +316,7 @@ export default function ScenarioJustificationPage() {
   const { recordScenarioAnswer, progress } = useProgress();
 
   const [activeTab, setActiveTab] = useState<ListTab>('scenarios');
+  const [difficultyFilter, setDifficultyFilter] = useState<'all' | 'standard' | 'advanced'>('all');
   const [selectedScenarioIdx, setSelectedScenarioIdx] = useState<number | null>(null);
   const [currentQIdx, setCurrentQIdx] = useState(0);
   const [phase, setPhase] = useState<Phase>('answer');
@@ -643,6 +644,12 @@ export default function ScenarioJustificationPage() {
   }
 
   // ── Scenario list / Missed Items view ─────────────────────────────────────
+  const filteredScenarios = useMemo(() => {
+    if (difficultyFilter === 'advanced') return scenarioItems.filter(s => s.difficulty === 'advanced');
+    if (difficultyFilter === 'standard') return scenarioItems.filter(s => s.difficulty !== 'advanced');
+    return scenarioItems;
+  }, [difficultyFilter]);
+
   const completedScenarioCount = scenarioItems.filter(s =>
     s.questions.every(q => completedQIds.has(`${s.id}-${q.id}`))
   ).length;
@@ -726,9 +733,34 @@ export default function ScenarioJustificationPage() {
               </div>
             </div>
 
+            {/* Difficulty filter toggle */}
+            <div className="flex items-center gap-2 mb-5">
+              <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mr-1">Difficulty</span>
+              {(['all', 'standard', 'advanced'] as const).map((mode) => (
+                <button
+                  key={mode}
+                  onClick={() => setDifficultyFilter(mode)}
+                  className={cn(
+                    "px-3 py-1.5 rounded-full text-xs font-semibold transition-all border",
+                    difficultyFilter === mode
+                      ? mode === 'advanced'
+                        ? "bg-rose-600 text-white border-rose-600 shadow-sm"
+                        : mode === 'standard'
+                        ? "bg-violet-600 text-white border-violet-600 shadow-sm"
+                        : "bg-foreground text-background border-foreground shadow-sm"
+                      : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
+                  )}
+                >
+                  {mode === 'all' && `All (${scenarioItems.length})`}
+                  {mode === 'standard' && `Standard (${scenarioItems.filter(s => s.difficulty !== 'advanced').length})`}
+                  {mode === 'advanced' && `Advanced (${scenarioItems.filter(s => s.difficulty === 'advanced').length})`}
+                </button>
+              ))}
+            </div>
             {/* Scenario grid */}
             <div className="space-y-3">
-              {scenarioItems.map((item, idx) => {
+              {filteredScenarios.map((item) => {
+                const idx = scenarioItems.indexOf(item);
                 const completedQs = item.questions.filter(q => completedQIds.has(`${item.id}-${q.id}`)).length;
                 const isFullyComplete = completedQs === item.questions.length;
                 const isStarted = completedQs > 0;
@@ -748,6 +780,11 @@ export default function ScenarioJustificationPage() {
                           <span className="text-xs font-medium text-rose-600 bg-rose-100 px-2 py-0.5 rounded-full">
                             {item.domain}
                           </span>
+                          {item.difficulty === 'advanced' && (
+                            <span className="text-xs font-semibold text-rose-700 bg-rose-100 border border-rose-300 px-2 py-0.5 rounded-full">
+                              Advanced
+                            </span>
+                          )}
                           {isFullyComplete && <CheckCircle2 className="w-4 h-4 text-violet-700" />}
                         </div>
                         <h3 className="font-semibold text-foreground text-sm mb-1">{item.title}</h3>
