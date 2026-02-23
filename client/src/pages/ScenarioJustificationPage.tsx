@@ -244,6 +244,33 @@ function MissedItemsPanel({
                     <p className="text-xs text-violet-800 leading-relaxed">{question.explanation}</p>
                   </div>
 
+                  {/* Metacognitive Frame */}
+                  {(question.recallTrap || question.conceptConfusion || question.tcoTask) && (
+                    <div className="rounded-xl border border-amber-200 bg-amber-50/60 p-3 space-y-2">
+                      <div className="flex items-center gap-1.5 mb-0.5">
+                        <span className="text-amber-600 text-xs font-bold">▲</span>
+                        <span className="text-xs font-semibold text-amber-800 uppercase tracking-wide">Metacognitive Frame</span>
+                      </div>
+                      {question.recallTrap && (
+                        <div className="flex items-start gap-2">
+                          <span className="text-[10px] font-bold text-amber-700 uppercase tracking-wider w-28 flex-shrink-0 pt-0.5">Recall Trap</span>
+                          <p className="text-xs text-amber-900 leading-relaxed">{question.recallTrap}</p>
+                        </div>
+                      )}
+                      {question.conceptConfusion && (
+                        <div className="flex items-start gap-2">
+                          <span className="text-[10px] font-bold text-amber-700 uppercase tracking-wider w-28 flex-shrink-0 pt-0.5">Concept Confusion</span>
+                          <p className="text-xs text-amber-900 leading-relaxed">{question.conceptConfusion}</p>
+                        </div>
+                      )}
+                      {question.tcoTask && (
+                        <div className="flex items-start gap-2">
+                          <span className="text-[10px] font-bold text-amber-700 uppercase tracking-wider w-28 flex-shrink-0 pt-0.5">TCO Task</span>
+                          <p className="text-xs text-amber-900 leading-relaxed">{question.tcoTask}</p>
+                        </div>
+                      )}
+                    </div>
+                  )}
                   {/* The 3 correct justifications */}
                   <div>
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">
@@ -544,6 +571,33 @@ export default function ScenarioJustificationPage() {
                 <p className="text-xs text-muted-foreground leading-relaxed">{question.explanation}</p>
               </div>
 
+              {/* Metacognitive Frame */}
+              {(question.recallTrap || question.conceptConfusion || question.tcoTask) && (
+                <div className="rounded-xl border border-amber-200 bg-amber-50/60 p-4 mb-4 space-y-2.5">
+                  <div className="flex items-center gap-1.5 mb-1">
+                    <span className="text-amber-600 text-xs font-bold">▲</span>
+                    <span className="text-xs font-semibold text-amber-800 uppercase tracking-wide">Metacognitive Frame</span>
+                  </div>
+                  {question.recallTrap && (
+                    <div className="flex items-start gap-2">
+                      <span className="text-[10px] font-bold text-amber-700 uppercase tracking-wider w-28 flex-shrink-0 pt-0.5">Recall Trap</span>
+                      <p className="text-xs text-amber-900 leading-relaxed">{question.recallTrap}</p>
+                    </div>
+                  )}
+                  {question.conceptConfusion && (
+                    <div className="flex items-start gap-2">
+                      <span className="text-[10px] font-bold text-amber-700 uppercase tracking-wider w-28 flex-shrink-0 pt-0.5">Concept Confusion</span>
+                      <p className="text-xs text-amber-900 leading-relaxed">{question.conceptConfusion}</p>
+                    </div>
+                  )}
+                  {question.tcoTask && (
+                    <div className="flex items-start gap-2">
+                      <span className="text-[10px] font-bold text-amber-700 uppercase tracking-wider w-28 flex-shrink-0 pt-0.5">TCO Task</span>
+                      <p className="text-xs text-amber-900 leading-relaxed">{question.tcoTask}</p>
+                    </div>
+                  )}
+                </div>
+              )}
               {/* Show all justifications with correct/incorrect */}
               <div className="space-y-2 mb-4">
                 <div className="text-xs font-medium text-foreground mb-1">Justification review:</div>
