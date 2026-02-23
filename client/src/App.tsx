@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ExamProvider } from "./contexts/ExamContext";
 import { ProgressProvider } from "./contexts/ProgressContext";
+import { MockExamProvider } from "./contexts/MockExamContext";
 import BetaGate from "./components/BetaGate";
 import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard";
@@ -19,6 +20,8 @@ import ExamPage from "./pages/ExamPage";
 import ResultsPage from "./pages/ResultsPage";
 import DailyPracticePage from "./pages/DailyPracticePage";
 import PricingPage from "./pages/PricingPage";
+import MockExamPage from "./pages/MockExamPage";
+import MockExamResultsPage from "./pages/MockExamResultsPage";
 
 // Wrap a component in the BetaGate
 function Protected({ component: Component }: { component: React.ComponentType }) {
@@ -68,6 +71,14 @@ function Router() {
         {() => <Protected component={DailyPracticePage} />}
       </Route>
 
+      {/* Tier 6 — Mock Exam (native, no external link) */}
+      <Route path={"/mock-exam"}>
+        {() => <Protected component={MockExamPage} />}
+      </Route>
+      <Route path={"/mock-results"}>
+        {() => <Protected component={MockExamResultsPage} />}
+      </Route>
+
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
@@ -80,10 +91,12 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <ProgressProvider>
           <ExamProvider>
-            <TooltipProvider>
-              <Toaster />
-              <Router />
-            </TooltipProvider>
+            <MockExamProvider>
+              <TooltipProvider>
+                <Toaster />
+                <Router />
+              </TooltipProvider>
+            </MockExamProvider>
           </ExamProvider>
         </ProgressProvider>
       </ThemeProvider>
