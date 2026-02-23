@@ -68,7 +68,7 @@ function useTaskItemStats(): TaskItemStats[] {
       if (!examByTask[q.taskItem]) examByTask[q.taskItem] = { correct: 0, total: 0 };
       if (q.id in examState.answers) {
         examByTask[q.taskItem].total += 1;
-        if (examState.answers[q.id] === q.correctAnswer) {
+        if (examState.answers[q.id as number] === q.correctAnswer) {
           examByTask[q.taskItem].correct += 1;
         }
       }

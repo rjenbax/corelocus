@@ -341,7 +341,7 @@ export default function MockExamResultsPage() {
               </div>
             ) : (
               missedQuestions.map(q => (
-                <MissedQuestionCard key={q.id} question={q} selectedAnswer={state.answers[q.id]} />
+                <MissedQuestionCard key={Number(q.id)} question={q} selectedAnswer={state.answers[Number(q.id)]} />
               ))
             )}
           </div>
@@ -358,7 +358,7 @@ export default function MockExamResultsPage() {
               </div>
             ) : (
               flaggedQuestions.map(q => (
-                <MissedQuestionCard key={q.id} question={q} selectedAnswer={state.answers[q.id]} />
+                <MissedQuestionCard key={Number(q.id)} question={q} selectedAnswer={state.answers[Number(q.id)]} />
               ))
             )}
           </div>

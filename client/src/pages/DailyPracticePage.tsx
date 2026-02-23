@@ -97,7 +97,7 @@ function useWeakTaskItems(count = 5): string[] {
       if (q.id in examState.answers) {
         scores[q.taskItem].seen = true;
         scores[q.taskItem].total += 1;
-        if (examState.answers[q.id] === q.correctAnswer) {
+        if (examState.answers[q.id as number] === q.correctAnswer) {
           scores[q.taskItem].correct += 1;
         }
       }

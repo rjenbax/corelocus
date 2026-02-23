@@ -196,21 +196,21 @@ function QuestionView() {
       const domainScores: Record<string, { correct: number; total: number }> = {};
       Object.entries(domainInfo).forEach(([domain]) => {
         const qs = state.questions.filter(q => q.domain === domain);
-        const correct = qs.filter(q => state.answers[q.id] === q.correctAnswer).length;
+        const correct = qs.filter(q => state.answers[Number(q.id)] === q.correctAnswer).length;
         domainScores[domain] = { correct, total: qs.length };
       });
       const totalQ = state.questions.length;
-      const correct = state.questions.filter(q => state.answers[q.id] === q.correctAnswer).length;
+      const correct = state.questions.filter(q => state.answers[Number(q.id)] === q.correctAnswer).length;
       const score = totalQ > 0 ? Math.round((correct / totalQ) * 100) : 0;
       addExamResult({ date: Date.now(), score, totalQuestions: totalQ, correct, domainScores, passed: score >= 70 });
       // Record per-question answers for concept confusion analytics
       state.questions.forEach(q => {
-        const letter = state.answers[q.id];
+        const letter = state.answers[Number(q.id)];
         if (!letter) return;
         const taskItem = q.taskItem ?? `${q.domain}.?`;
         const selectedChoiceText = q.choices.find((c: any) => c.letter === letter)?.text ?? '';
         recordPracticeAnswer({
-          questionId: q.id,
+          questionId: Number(q.id),
           domain: q.domain,
           taskItem,
           selectedAnswer: letter,
@@ -229,10 +229,10 @@ function QuestionView() {
   const q = currentQuestion;
   const currentIndex = state.currentIndex;
   const totalQ = state.questions.length;
-  const selectedAnswer = state.answers[q.id];
+  const selectedAnswer = state.answers[Number(q.id)];
   const isAnswered = selectedAnswer !== undefined;
-  const isRevealed = state.revealed[q.id];
-  const isFlagged = state.flagged[q.id];
+  const isRevealed = state.revealed[Number(q.id)];
+  const isFlagged = state.flagged[Number(q.id)];
   const isCorrect = selectedAnswer === q.correctAnswer;
   const urgent = state.settings.timeLimitMinutes > 0 && state.timeRemainingSeconds < 600;
 
@@ -300,7 +300,7 @@ function QuestionView() {
             return (
               <button
                 key={choice.letter}
-                onClick={() => !isAnswered && submitAnswer(q.id, choice.letter)}
+                onClick={() => !isAnswered && submitAnswer(Number(q.id), choice.letter)}
                 disabled={isAnswered}
                 className={cn(
                   'w-full flex items-start gap-4 px-5 py-4 rounded-xl border-2 text-left transition-all',
@@ -339,7 +339,7 @@ function QuestionView() {
         {/* Reveal rationale */}
         {isAnswered && !isRevealed && (
           <button
-            onClick={() => revealAnswer(q.id)}
+            onClick={() => revealAnswer(Number(q.id))}
             className="w-full flex items-center justify-center gap-2 py-3 border border-gray-200 rounded-xl text-sm font-medium text-gray-600 hover:bg-gray-50 transition-colors mb-4"
           >
             <Eye className="w-4 h-4" />
@@ -376,7 +376,7 @@ function QuestionView() {
 
           <div className="flex items-center gap-3">
             <button
-              onClick={() => toggleFlag(q.id)}
+              onClick={() => toggleFlag(Number(q.id))}
               className={cn(
                 'flex items-center gap-2 px-4 py-2.5 rounded-xl border text-sm font-medium transition-colors',
                 isFlagged ? 'border-amber-300 bg-amber-50 text-amber-700' : 'border-gray-200 text-gray-500 hover:bg-gray-50'
@@ -448,11 +448,11 @@ function QuestionView() {
             <h3 className="font-bold text-gray-900 mb-4">Question Navigator</h3>
             <div className="grid grid-cols-10 gap-1.5 max-h-64 overflow-y-auto">
               {state.questions.map((q, i) => {
-                const ans = state.answers[q.id];
-                const flagged = state.flagged[q.id];
+                const ans = state.answers[Number(q.id)];
+                const flagged = state.flagged[Number(q.id)];
                 return (
                   <button
-                    key={q.id}
+                    key={Number(q.id)}
                     onClick={() => { navigate('/exam/question'); setShowNav(false); }}
                     className={cn(
                       'w-8 h-8 rounded text-xs font-semibold transition-colors',

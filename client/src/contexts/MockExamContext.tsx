@@ -224,7 +224,7 @@ export function MockExamProvider({ children, questionPool }: { children: React.R
     const activeDomains = Array.from(new Set(activePool.map((q: any) => q.domain)));
     return Object.entries(domainInfo).filter(([d]) => activeDomains.includes(d)).map(([domain, info]) => {
       const qs = state.questions.filter(q => q.domain === domain);
-      const correct = qs.filter(q => state.answers[q.id] === q.correctAnswer).length;
+      const correct = qs.filter(q => state.answers[q.id as number] === q.correctAnswer).length;
       return {
         domain,
         name: info.name,
@@ -247,7 +247,7 @@ export function MockExamProvider({ children, questionPool }: { children: React.R
     const phases = ['assessment', 'fba', 'treatment-planning', 'implementation', 'evaluation'];
     return phases.map(phase => {
       const qs = state.questions.filter(q => q.phase === phase);
-      const correct = qs.filter(q => state.answers[q.id] === q.correctAnswer).length;
+      const correct = qs.filter(q => state.answers[q.id as number] === q.correctAnswer).length;
       return {
         phase,
         label: phaseLabels[phase] || phase,
@@ -262,17 +262,17 @@ export function MockExamProvider({ children, questionPool }: { children: React.R
     const levels = ['knowledge', 'comprehension', 'application', 'analysis', 'synthesis', 'evaluation'];
     return levels.map(level => {
       const qs = state.questions.filter(q => q.bloomsLevel === level);
-      const correct = qs.filter(q => state.answers[q.id] === q.correctAnswer).length;
+      const correct = qs.filter(q => state.answers[q.id as number] === q.correctAnswer).length;
       return { level, total: qs.length, correct, pct: qs.length > 0 ? Math.round((correct / qs.length) * 100) : 0 };
     }).filter(r => r.total > 0);
   }, [state.questions, state.answers]);
 
   const getMissedQuestions = useCallback(() => {
-    return state.questions.filter(q => state.answers[q.id] && state.answers[q.id] !== q.correctAnswer);
+    return state.questions.filter(q => state.answers[q.id as number] && state.answers[q.id as number] !== q.correctAnswer);
   }, [state.questions, state.answers]);
 
   const getFlaggedQuestions = useCallback(() => {
-    return state.questions.filter(q => state.flagged[q.id]);
+    return state.questions.filter(q => state.flagged[q.id as number]);
   }, [state.questions, state.flagged]);
 
   return (

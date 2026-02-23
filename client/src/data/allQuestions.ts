@@ -16,7 +16,7 @@ export const allQuestions: Question[] = [
   ...domainG_questions,
   ...domainH_questions,
   ...domainI_questions,
-].sort((a, b) => a.lifecycleOrder - b.lifecycleOrder);
+].sort((a, b) => (a.lifecycleOrder ?? 0) - (b.lifecycleOrder ?? 0));
 
 export const domainInfo: Record<string, { name: string; totalQuestions: number; color: string }> = {
   A: { name: "Behaviorism & Philosophical Foundations", totalQuestions: 8, color: "#4A7C59" },

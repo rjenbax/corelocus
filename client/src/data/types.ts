@@ -4,12 +4,15 @@ export interface Choice {
 }
 
 export interface Question {
-  id: number;
+  id: number | string; // string IDs allowed for tier6 questions
   domain: string;
   taskItem: string;
-  phase: string;
-  lifecycleOrder: number;
-  bloomsLevel: string;
+  phase?: string;
+  lifecycleOrder?: number;
+  bloomsLevel?: string;
+  questionType?: string;
+  dokLevel?: number;
+  difficulty?: number | string;
   scenario: string;
   question: string;
   choices: Choice[];

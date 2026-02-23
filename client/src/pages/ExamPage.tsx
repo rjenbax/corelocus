@@ -62,8 +62,8 @@ export default function ExamPage() {
   const lifecyclePhase = lifecyclePhases.find(p => p.id === currentPhase || p.id === currentPhase.replace('-discharge', ''));
   const domainData = domainInfo[currentQuestion.domain];
 
-  const selectedAnswer = state.answers[currentQuestion.id];
-  const isRevealed = state.revealed[currentQuestion.id];
+  const selectedAnswer = state.answers[currentQuestion.id as number];
+  const isRevealed = state.revealed[currentQuestion.id as number];
   const isAnswered = selectedAnswer !== undefined;
   const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
 
@@ -166,7 +166,7 @@ export default function ExamPage() {
                     <div className="flex flex-wrap gap-1.5">
                       {questions.map(({ q, i }) => {
                         const answered = q.id in state.answers;
-                        const correct = state.answers[q.id] === q.correctAnswer;
+                        const correct = state.answers[q.id as number] === q.correctAnswer;
                         const isCurrent = i === state.currentQuestionIndex;
                         return (
                           <button

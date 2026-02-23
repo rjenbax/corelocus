@@ -8,6 +8,10 @@
  *                 research_interpretation | systems_integration
  */
 
+import { tier6Questions_BG } from './tier6Questions_BG';
+import { tier6Questions_EFHI } from './tier6Questions_EFHI';
+import { tier6QuestionsACD } from './tier6Questions_ACD';
+
 export interface Tier6Choice {
   letter: string;
   text: string;
@@ -787,6 +791,9 @@ export const tier6Questions: Tier6Question[] = [
     correctAnswer: 'B',
     rationale: 'Incidental teaching is the evidence-based approach for promoting spontaneous verbal behavior in natural settings. It leverages the client\'s natural motivation and attention (EO) to evoke spontaneous communication and uses natural reinforcement (conversational response, access to the item) to maintain the behavior. This approach directly addresses the generalization deficit by training in the natural context with natural reinforcers. Option A (more massed-trial training) will not address the generalization deficit if the training context remains different from the natural environment. Option C introduces an artificial contingency that may not generalize. Option D uses prompting, which may maintain prompt dependency rather than promoting spontaneous behavior.',
   },
+  ...(tier6Questions_BG as any),
+  ...(tier6Questions_EFHI as any),
+  ...(tier6QuestionsACD as any),
 ];
 
 export const tier6DomainInfo: Record<string, { name: string; totalQuestions: number; color: string }> = {

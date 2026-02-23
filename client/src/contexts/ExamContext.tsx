@@ -45,7 +45,7 @@ function examReducer(state: ExamState, action: ExamAction): ExamState {
       return { ...state, examStarted: true };
 
     case 'SUBMIT_ANSWER': {
-      const question = allQuestions.find(q => q.id === action.questionId);
+      const question = allQuestions.find(q => Number(q.id) === action.questionId);
       if (!question) return state;
       const isCorrect = action.answer === question.correctAnswer;
       const wasAlreadyCorrect = state.answers[action.questionId] === question.correctAnswer;
@@ -116,13 +116,13 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
 
   const submitAnswer = useCallback((answer: string) => {
     if (currentQuestion) {
-      dispatch({ type: 'SUBMIT_ANSWER', questionId: currentQuestion.id, answer });
+      dispatch({ type: 'SUBMIT_ANSWER', questionId: Number(currentQuestion.id), answer });
     }
   }, [currentQuestion]);
 
   const revealAnswer = useCallback(() => {
     if (currentQuestion) {
-      dispatch({ type: 'REVEAL_ANSWER', questionId: currentQuestion.id });
+      dispatch({ type: 'REVEAL_ANSWER', questionId: Number(currentQuestion.id) });
     }
   }, [currentQuestion]);
 
@@ -135,7 +135,7 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
   const getDomainScores = useCallback((): DomainScore[] => {
     return Object.entries(domainInfo).map(([domain, info]) => {
       const domainQuestions = allQuestions.filter(q => q.domain === domain);
-      const correct = domainQuestions.filter(q => state.answers[q.id] === q.correctAnswer).length;
+      const correct = domainQuestions.filter(q => state.answers[q.id as number] === q.correctAnswer).length;
       return {
         domain,
         domainName: info.name,
@@ -153,8 +153,8 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
       const phaseQs = allQuestions.filter(q => q.phase === phase);
       result[phase] = {
         total: phaseQs.length,
-        answered: phaseQs.filter(q => q.id in state.answers).length,
-        correct: phaseQs.filter(q => state.answers[q.id] === q.correctAnswer).length,
+        answered: phaseQs.filter(q => Number(q.id) in state.answers).length,
+        correct: phaseQs.filter(q => state.answers[q.id as number] === q.correctAnswer).length,
       };
     });
     return result;

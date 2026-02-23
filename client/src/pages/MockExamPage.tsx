@@ -213,9 +213,9 @@ function QuestionNavigator({ onClose }: { onClose: () => void }) {
         </div>
         <div className="grid grid-cols-8 gap-1">
           {questions.map((q, i) => {
-            const answered = q.id in answers;
-            const correct = answers[q.id] === q.correctAnswer;
-            const isFlagged = flagged[q.id];
+            const answered = Number(q.id) in answers;
+            const correct = answers[Number(q.id)] === q.correctAnswer;
+            const isFlagged = flagged[Number(q.id)];
             const isCurrent = i === currentIndex;
             let bg = 'bg-slate-700 text-slate-300';
             if (isFlagged) bg = 'bg-amber-500 text-slate-900';
@@ -224,7 +224,7 @@ function QuestionNavigator({ onClose }: { onClose: () => void }) {
             if (isCurrent) bg += ' ring-2 ring-white ring-offset-1 ring-offset-slate-900';
             return (
               <button
-                key={q.id}
+                key={Number(q.id)}
                 onClick={() => { goToQuestion(i); onClose(); }}
                 className={`w-8 h-8 rounded text-xs font-semibold transition-all ${bg}`}
               >
@@ -275,11 +275,11 @@ function ExamView() {
   const { currentIndex, questions, answers, flagged, revealed, settings } = state;
   const totalQ = questions.length;
   const answeredCount = Object.keys(answers).length;
-  const selectedAnswer = answers[currentQuestion.id];
-  const isRevealed = revealed[currentQuestion.id];
+  const selectedAnswer = answers[Number(currentQuestion.id)];
+  const isRevealed = revealed[Number(currentQuestion.id)];
   const isAnswered = selectedAnswer !== undefined;
   const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
-  const isFlagged = flagged[currentQuestion.id];
+  const isFlagged = flagged[Number(currentQuestion.id)];
   const isUrgent = settings.timeLimitMinutes > 0 && state.timeRemainingSeconds < 600;
   const progressPct = Math.round((answeredCount / totalQ) * 100);
   const domainData = domainInfo[currentQuestion.domain];
@@ -335,7 +335,7 @@ function ExamView() {
             <span className="text-slate-500 text-xs capitalize">{currentQuestion.bloomsLevel}</span>
           </div>
           <button
-            onClick={() => toggleFlag(currentQuestion.id)}
+            onClick={() => toggleFlag(Number(currentQuestion.id))}
             className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium transition-all ${isFlagged ? 'bg-amber-500/20 text-amber-400 border border-amber-500/40' : 'bg-slate-800 text-slate-400 hover:text-amber-400 border border-slate-700'}`}
           >
             <Flag className="w-3.5 h-3.5" />
@@ -376,7 +376,7 @@ function ExamView() {
             return (
               <button
                 key={choice.letter}
-                onClick={() => !isRevealed && submitAnswer(currentQuestion.id, choice.letter)}
+                onClick={() => !isRevealed && submitAnswer(Number(currentQuestion.id), choice.letter)}
                 disabled={isRevealed}
                 className={`w-full text-left p-4 rounded-xl border transition-all flex items-start gap-3 ${style} ${isRevealed ? 'cursor-default' : 'cursor-pointer'}`}
               >
@@ -394,7 +394,7 @@ function ExamView() {
         {/* Reveal / Rationale */}
         {isAnswered && !isRevealed && (
           <button
-            onClick={() => revealAnswer(currentQuestion.id)}
+            onClick={() => revealAnswer(Number(currentQuestion.id))}
             className="w-full py-3 border border-slate-600 text-slate-300 rounded-xl text-sm font-medium hover:border-slate-400 hover:text-white transition-all flex items-center justify-center gap-2 mb-4"
           >
             <Eye className="w-4 h-4" />
