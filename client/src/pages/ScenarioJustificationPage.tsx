@@ -28,7 +28,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-type Phase = 'answer' | 'justify' | 'feedback';
+type Phase = 'select' | 'feedback';
 type ListTab = 'scenarios' | 'missed' | 'tco';
 
 // ─── Missed Items Panel ───────────────────────────────────────────────────────
@@ -415,7 +415,7 @@ export default function ScenarioJustificationPage() {
   const [difficultyFilter, setDifficultyFilter] = useState<'all' | 'standard' | 'advanced'>('all');
   const [selectedScenarioIdx, setSelectedScenarioIdx] = useState<number | null>(null);
   const [currentQIdx, setCurrentQIdx] = useState(0);
-  const [phase, setPhase] = useState<Phase>('answer');
+  const [phase, setPhase] = useState<Phase>('select');
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [selectedJustifications, setSelectedJustifications] = useState<string[]>([]);
   const [sessionScores, setSessionScores] = useState<{ qId: string; answerCorrect: boolean; justScore: number }[]>([]);
@@ -454,17 +454,14 @@ export default function ScenarioJustificationPage() {
   }, [progress.scenarioJustification]);
 
   const handleAnswerSelect = (choiceId: string) => {
-    if (phase !== 'answer') return;
+    if (phase !== 'select') return;
     setSelectedAnswer(choiceId);
   };
 
-  const handleProceedToJustify = () => {
-    if (!selectedAnswer) return;
-    setPhase('justify');
-  };
+
 
   const handleJustificationToggle = (justId: string) => {
-    if (phase !== 'justify') return;
+    if (phase !== 'select') return;
     setSelectedJustifications(prev => {
       if (prev.includes(justId)) return prev.filter(j => j !== justId);
       if (prev.length >= 3) return prev;
@@ -472,8 +469,8 @@ export default function ScenarioJustificationPage() {
     });
   };
 
-  const handleSubmitJustifications = useCallback(() => {
-    if (!question || !scenario || selectedJustifications.length !== 3) return;
+  const handleConfirm = useCallback(() => {
+    if (!question || !scenario || !selectedAnswer || selectedJustifications.length !== 3) return;
     const answerCorrect = selectedAnswer === question.correctChoice;
     const correctJustIds = question.justifications.filter(j => j.isCorrect).map(j => j.id);
     const justScore = selectedJustifications.filter(j => correctJustIds.includes(j)).length;
@@ -490,7 +487,7 @@ export default function ScenarioJustificationPage() {
     } else {
       setCurrentQIdx(i => i + 1);
     }
-    setPhase('answer');
+    setPhase('select');
     setSelectedAnswer(null);
     setSelectedJustifications([]);
   }, [scenario, currentQIdx]);
@@ -498,7 +495,7 @@ export default function ScenarioJustificationPage() {
   const openScenario = (idx: number) => {
     setSelectedScenarioIdx(idx);
     setCurrentQIdx(0);
-    setPhase('answer');
+    setPhase('select');
     setSelectedAnswer(null);
     setSelectedJustifications([]);
     setSessionScores([]);
@@ -557,10 +554,10 @@ export default function ScenarioJustificationPage() {
           </div>
 
           {/* Phase: Answer selection */}
-          {(phase === 'answer' || phase === 'justify' || phase === 'feedback') && (
+          {(phase === 'select' || phase === 'feedback') && (
             <div className="space-y-2 mb-5">
               <div className="text-xs font-medium text-muted-foreground mb-2">
-                {phase === 'answer' ? 'Step 1: Select the correct answer' : 'Answer selected:'}
+                {phase === 'select' ? 'Step 1: Select your answer' : 'Answer selected:'}
               </div>
               {question.choices.map(choice => {
                 const isSelected = choice.id === selectedAnswer;
@@ -569,29 +566,29 @@ export default function ScenarioJustificationPage() {
                   <button
                     key={choice.id}
                     onClick={() => handleAnswerSelect(choice.id)}
-                    disabled={phase !== 'answer'}
+                    disabled={phase !== 'select'}
                     className={cn(
                       "w-full text-left p-3.5 rounded-xl border-2 text-sm transition-all",
-                      phase === 'answer' && "hover:border-rose-300 hover:bg-rose-50/50 cursor-pointer",
-                      phase === 'answer' && isSelected && "border-rose-500 bg-rose-50",
-                      phase === 'answer' && !isSelected && "border-border bg-card",
-                      phase !== 'answer' && isCorrect && "border-violet-400 bg-violet-50",
-                      phase !== 'answer' && isSelected && !isCorrect && "border-red-400 bg-red-50",
-                      phase !== 'answer' && !isSelected && !isCorrect && "border-border bg-card opacity-50",
+                      phase === 'select' && "hover:border-rose-300 hover:bg-rose-50/50 cursor-pointer",
+                      phase === 'select' && isSelected && "border-rose-500 bg-rose-50",
+                      phase === 'select' && !isSelected && "border-border bg-card",
+                      phase !== 'select' && isCorrect && "border-violet-400 bg-violet-50",
+                      phase !== 'select' && isSelected && !isCorrect && "border-red-400 bg-red-50",
+                      phase !== 'select' && !isSelected && !isCorrect && "border-border bg-card opacity-50",
                     )}
                   >
                     <div className="flex items-center gap-3">
                       <span className={cn(
                         "flex-shrink-0 w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold",
-                        phase === 'answer' && isSelected ? "border-rose-500 text-rose-600" : "border-current text-muted-foreground",
-                        phase !== 'answer' && isCorrect && "border-violet-600 text-violet-700 bg-violet-100",
-                        phase !== 'answer' && isSelected && !isCorrect && "border-red-500 text-red-600 bg-red-100",
+                        phase === 'select' && isSelected ? "border-rose-500 text-rose-600" : "border-current text-muted-foreground",
+                        phase !== 'select' && isCorrect && "border-violet-600 text-violet-700 bg-violet-100",
+                        phase !== 'select' && isSelected && !isCorrect && "border-red-500 text-red-600 bg-red-100",
                       )}>
                         {choice.id}
                       </span>
                       <span>{choice.text}</span>
-                      {phase !== 'answer' && isCorrect && <CheckCircle2 className="w-4 h-4 text-violet-700 ml-auto flex-shrink-0" />}
-                      {phase !== 'answer' && isSelected && !isCorrect && <XCircle className="w-4 h-4 text-red-600 ml-auto flex-shrink-0" />}
+                      {phase !== 'select' && isCorrect && <CheckCircle2 className="w-4 h-4 text-violet-700 ml-auto flex-shrink-0" />}
+                      {phase !== 'select' && isSelected && !isCorrect && <XCircle className="w-4 h-4 text-red-600 ml-auto flex-shrink-0" />}
                     </div>
                   </button>
                 );
@@ -599,21 +596,10 @@ export default function ScenarioJustificationPage() {
             </div>
           )}
 
-          {phase === 'answer' && (
-            <button
-              onClick={handleProceedToJustify}
-              disabled={!selectedAnswer}
-              className="w-full bg-rose-500 hover:bg-rose-600 disabled:opacity-40 disabled:cursor-not-allowed text-white font-medium py-3 rounded-xl transition-colors flex items-center justify-center gap-2"
-            >
-              Confirm Answer → Select Justifications
-              <ChevronRight className="w-4 h-4" />
-            </button>
-          )}
-
-          {/* Phase: Justification selection */}
-          {phase === 'justify' && (
+          {/* Justification selection — always visible during select phase, below answer choices */}
+          {phase === 'select' && (
             <>
-              <div className="mb-3">
+              <div className="mt-5 mb-3">
                 <div className="flex items-center justify-between mb-2">
                   <div className="text-xs font-medium text-foreground">
                     Step 2: Select the 3 justifications that support your answer
@@ -626,7 +612,9 @@ export default function ScenarioJustificationPage() {
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground">
-                  You selected <strong>{selectedAnswer}</strong>. Choose exactly 3 statements that justify why {selectedAnswer} is correct.
+                  {selectedAnswer
+                    ? <><strong>Answer {selectedAnswer} selected.</strong> Now choose 3 statements that justify why {selectedAnswer} is correct.</>
+                    : 'Select an answer above, then choose 3 justifications below.'}
                 </p>
               </div>
               <div className="space-y-2 mb-4">
@@ -636,10 +624,12 @@ export default function ScenarioJustificationPage() {
                     <button
                       key={just.id}
                       onClick={() => handleJustificationToggle(just.id)}
+                      disabled={!selectedAnswer}
                       className={cn(
                         "w-full text-left p-3.5 rounded-xl border-2 text-sm transition-all",
-                        isSelected ? "border-rose-400 bg-rose-50" : "border-border bg-card hover:border-rose-200",
-                        !isSelected && selectedJustifications.length >= 3 && "opacity-50 cursor-not-allowed",
+                        !selectedAnswer && "opacity-40 cursor-not-allowed",
+                        selectedAnswer && (isSelected ? "border-rose-400 bg-rose-50" : "border-border bg-card hover:border-rose-200"),
+                        selectedAnswer && !isSelected && selectedJustifications.length >= 3 && "opacity-50 cursor-not-allowed",
                       )}
                     >
                       <div className="flex items-start gap-3">
@@ -656,11 +646,12 @@ export default function ScenarioJustificationPage() {
                 })}
               </div>
               <button
-                onClick={handleSubmitJustifications}
-                disabled={selectedJustifications.length !== 3}
-                className="w-full bg-rose-500 hover:bg-rose-600 disabled:opacity-40 disabled:cursor-not-allowed text-white font-medium py-3 rounded-xl transition-colors"
+                onClick={handleConfirm}
+                disabled={!selectedAnswer || selectedJustifications.length !== 3}
+                className="w-full bg-rose-500 hover:bg-rose-600 disabled:opacity-40 disabled:cursor-not-allowed text-white font-medium py-3 rounded-xl transition-colors flex items-center justify-center gap-2"
               >
-                Submit ({selectedJustifications.length}/3 selected)
+                Confirm ({selectedJustifications.length}/3 justifications selected)
+                <ChevronRight className="w-4 h-4" />
               </button>
             </>
           )}
