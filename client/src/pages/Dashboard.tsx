@@ -213,7 +213,7 @@ export default function Dashboard() {
       <section className="container py-10 md:py-14">
         <div className="max-w-4xl mx-auto">
           {/* Progress overview */}
-          <div className="grid grid-cols-4 md:grid-cols-7 gap-3 mb-10">
+          <div className="grid grid-cols-4 sm:grid-cols-7 gap-2 sm:gap-3 mb-10">
             {TIERS.map(tier => {
               const pct = tier.isExternal ? 0 : getTierCompletion(tier.tier as 1|2|3|4|5|6);
               return (
@@ -280,17 +280,17 @@ export default function Dashboard() {
 
                       {/* Content */}
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-start justify-between gap-3 mb-1">
-                          <div>
-                            <div className="flex items-center gap-2 mb-0.5">
-                              <Icon className={cn("w-4 h-4", tier.color)} />
+                        <div className="flex items-start justify-between gap-2 mb-1">
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 mb-0.5 flex-wrap">
+                              <Icon className={cn("w-4 h-4 flex-shrink-0", tier.color)} />
                               <h3 className="font-bold text-foreground text-base">{tier.title}</h3>
-                              {isComplete && <CheckCircle2 className="w-4 h-4 text-violet-600" />}
+                              {isComplete && <CheckCircle2 className="w-4 h-4 text-violet-600 flex-shrink-0" />}
                             </div>
                             <p className="text-xs text-muted-foreground">{tier.subtitle}</p>
                           </div>
-                          <div className="flex items-center gap-2 flex-shrink-0">
-                            <span className={cn("text-xs font-medium px-2 py-0.5 rounded-full", tier.pillColor)}>
+                          <div className="flex items-center gap-1.5 flex-shrink-0">
+                            <span className={cn("hidden sm:inline text-xs font-medium px-2 py-0.5 rounded-full", tier.pillColor)}>
                               {tier.bloomsLevel}
                             </span>
                               {tier.isExternal

@@ -221,7 +221,7 @@ export default function MockExamResultsPage() {
 
       {/* Tabs */}
       <div className="border-b border-slate-800 px-4">
-        <div className="flex gap-1 max-w-3xl mx-auto overflow-x-auto">
+        <div className="flex gap-1 max-w-3xl mx-auto overflow-x-auto pb-0.5 scrollbar-none">
           {tabs.map(tab => (
             <button
               key={tab.id}
@@ -242,7 +242,7 @@ export default function MockExamResultsPage() {
         {activeTab === 'overview' && (
           <div className="space-y-4">
             {/* Quick stats */}
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               <div className="bg-slate-800/50 border border-slate-700 rounded-xl p-4 text-center">
                 <div className="text-2xl font-bold text-emerald-400">{score}</div>
                 <div className="text-xs text-slate-400 mt-0.5">Correct</div>
@@ -301,7 +301,7 @@ export default function MockExamResultsPage() {
         {activeTab === 'domains' && (
           <div>
             <p className="text-slate-400 text-xs mb-4">70% is the passing threshold per domain. Cards below 70% are your priority study areas.</p>
-            <div className="grid grid-cols-3 gap-3">
+                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {domainResults.sort((a, b) => a.domain.localeCompare(b.domain)).map(d => (
                 <DomainScoreCard key={d.domain} {...d} />
               ))}

@@ -144,7 +144,7 @@ export default function PricingPage() {
         </div>
 
         {/* Free Sampler callout */}
-        <div className="mb-6 rounded-xl border border-dashed border-border bg-muted/30 p-4 flex items-center gap-4">
+        <div className="mb-6 rounded-xl border border-dashed border-border bg-muted/30 p-4 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
           <div className="w-9 h-9 rounded-lg bg-teal-100 flex items-center justify-center flex-shrink-0">
             <Star className="w-4 h-4 text-teal-700" />
           </div>
@@ -154,7 +154,7 @@ export default function PricingPage() {
           </div>
           <button
             onClick={() => navigate('/')}
-            className="flex-shrink-0 px-3 py-1.5 rounded-lg bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold transition-colors"
+            className="self-start sm:self-auto flex-shrink-0 px-3 py-1.5 rounded-lg bg-teal-600 hover:bg-teal-700 text-white text-xs font-semibold transition-colors"
           >
             Try Free
           </button>
@@ -199,9 +199,9 @@ export default function PricingPage() {
                     )}
                   </div>
 
-                  <div className="flex items-center gap-3 flex-shrink-0">
+                  <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
                     <div className="text-right">
-                      <span className="text-xl font-black text-foreground">{plan.price}</span>
+                      <span className="text-lg sm:text-xl font-black text-foreground">{plan.price}</span>
                       <span className="text-xs text-muted-foreground ml-1">{plan.period}</span>
                     </div>
                     <ChevronDown className={cn(
