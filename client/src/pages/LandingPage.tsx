@@ -95,10 +95,8 @@ export default function LandingPage() {
       {/* ── Nav ──────────────────────────────────────────────────────────── */}
       <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container flex items-center justify-between h-14">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded bg-primary flex items-center justify-center">
-              <Brain className="w-4 h-4 text-primary-foreground" />
-            </div>
+          <div className="flex items-center gap-2">
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073430959/fVyZQGnkaLaquPGv.png" alt="BehaviorPREP" className="w-9 h-9 object-contain" />
             <span className="font-semibold text-sm text-foreground">BehaviorPREP</span>
           </div>
           <div className="flex items-center gap-4">
@@ -403,9 +401,7 @@ export default function LandingPage() {
       <footer className="border-t border-border bg-card">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <div className="flex items-center gap-2">
-            <div className="w-5 h-5 rounded bg-primary flex items-center justify-center">
-              <Brain className="w-3 h-3 text-primary-foreground" />
-            </div>
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663073430959/fVyZQGnkaLaquPGv.png" alt="BehaviorPREP" className="w-6 h-6 object-contain" />
             <span className="font-semibold text-foreground">BehaviorPREP</span>
             <span>· BCBA Exam Preparation</span>
           </div>
