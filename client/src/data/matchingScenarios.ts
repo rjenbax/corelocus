@@ -1,6 +1,6 @@
 // Tier 3: Definition -> Scenario Matching Data
 // Each item: a concept definition + 4 clinical scenarios (1 correct, 3 distractors)
-// tcoDomain: Primary TCO Domain label (e.g. "B — Concepts and Principles")
+// tcoDomain: Primary TCO Domain label (e.g. "B  -  Concepts and Principles")
 
 export interface MatchingItem {
   id: string;
@@ -21,7 +21,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-01',
     domain: 'Behavior Principles',
     concept: 'Negative Reinforcement',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A procedure in which the removal, reduction, or postponement of a stimulus following a behavior results in an increase in the future frequency of that behavior.',
     scenarios: [
       {
@@ -54,7 +54,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-02',
     domain: 'Behavior Principles',
     concept: 'Positive Punishment',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A procedure in which a stimulus is added following a behavior, resulting in a decrease in the future frequency of that behavior.',
     scenarios: [
       {
@@ -87,7 +87,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-03',
     domain: 'Behavior Principles',
     concept: 'Motivating Operation (Establishing Operation)',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'An antecedent variable that (1) temporarily increases the reinforcing effectiveness of a stimulus and (2) increases the current frequency of all behavior that has been reinforced by that stimulus.',
     scenarios: [
       {
@@ -120,7 +120,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-04',
     domain: 'Measurement',
     concept: 'Partial Interval Recording',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'A discontinuous measurement procedure in which the observation period is divided into equal intervals; the behavior is recorded if it occurs at any point during the interval, regardless of how long it lasts.',
     scenarios: [
       {
@@ -153,7 +153,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-05',
     domain: 'Behavior Reduction',
     concept: 'Extinction Burst',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A temporary increase in the frequency, duration, or intensity of a behavior (and sometimes novel behaviors) that occurs immediately after extinction is first implemented.',
     scenarios: [
       {
@@ -186,7 +186,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-06',
     domain: 'Behavior Reduction',
     concept: 'Differential Reinforcement of Alternative Behavior (DRA)',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which reinforcement is delivered for a specific alternative behavior while reinforcement is withheld for the problem behavior (extinction component).',
     scenarios: [
       {
@@ -219,7 +219,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-07',
     domain: 'Verbal Behavior',
     concept: 'Mand',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant controlled by a motivating operation (MO) and reinforced by a specific, characteristic consequence that matches the content of the verbal behavior.',
     scenarios: [
       {
@@ -252,7 +252,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-08',
     domain: 'Research & Design',
     concept: 'Multiple Baseline Design',
-    tcoDomain: 'D — Experimental Design',
+    tcoDomain: 'D  -  Experimental Design',
     definition: 'A single-case experimental design in which the independent variable is introduced sequentially across two or more tiers (behaviors, settings, or subjects) after stable baselines are established, demonstrating experimental control without requiring a reversal.',
     scenarios: [
       {
@@ -285,7 +285,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-09',
     domain: 'Assessment',
     concept: 'Functional Analysis (FA)',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'An experimental assessment procedure in which antecedent and consequence conditions are systematically manipulated to identify the function(s) of problem behavior by demonstrating a functional relationship between environmental variables and the behavior.',
     scenarios: [
       {
@@ -318,7 +318,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-10',
     domain: 'Skill Acquisition',
     concept: 'Stimulus Fading',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A procedure in which a controlling prompt is gradually changed along a physical dimension (e.g., size, color, intensity) so that the target stimulus gradually gains control over the response, while the prompt is systematically reduced.',
     scenarios: [
       {
@@ -351,7 +351,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-11',
     domain: 'Behavior Principles',
     concept: 'Behavioral Contrast',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A phenomenon in which a change in the rate of reinforcement in one component of a multiple schedule produces an opposite change in the rate of responding in another component, even though the schedule in that component has not changed.',
     scenarios: [
       {
@@ -384,7 +384,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-12',
     domain: 'Ethics & Professional Practice',
     concept: 'Treatment Integrity',
-    tcoDomain: 'H — Selecting and Implementing Interventions',
+    tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'The degree to which the independent variable (intervention) is implemented as designed and described in the behavior intervention plan.',
     scenarios: [
       {
@@ -417,7 +417,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-13',
     domain: 'Skill Acquisition',
     concept: 'Chaining (Backward Chaining)',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A procedure for teaching a behavior chain in which the last step in the chain is taught first, and the learner is prompted through all preceding steps until the last step is mastered; steps are then added in reverse order.',
     scenarios: [
       {
@@ -450,7 +450,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-14',
     domain: 'Behavior Principles',
     concept: 'Stimulus Generalization',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The occurrence of a trained behavior in the presence of stimuli that are similar to but not identical to the training stimulus, without additional training.',
     scenarios: [
       {
@@ -483,7 +483,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-15',
     concept: 'Conditioned Reinforcer',
     domain: 'Behavior Principles',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A stimulus that has acquired reinforcing properties through pairing with other reinforcers.',
     scenarios: [
       {
@@ -520,7 +520,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-16',
     domain: 'Behavior Principles',
     concept: 'Negative Punishment',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A procedure in which a stimulus is removed following a behavior, resulting in a decrease in the future frequency of that behavior.',
     scenarios: [
       {
@@ -553,7 +553,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-17',
     domain: 'Behavior Principles',
     concept: 'Generalized Conditioned Reinforcer',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A conditioned reinforcer that has been paired with many different reinforcers and therefore maintains its effectiveness across a wide range of motivating operations; examples include money, tokens, praise, and attention.',
     scenarios: [
       {
@@ -586,7 +586,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-18',
     domain: 'Behavior Principles',
     concept: 'Discriminative Stimulus (SD)',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A stimulus in the presence of which a specific behavior has been reinforced; the SD signals that reinforcement is available for a particular response.',
     scenarios: [
       {
@@ -619,7 +619,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-19',
     domain: 'Behavior Principles',
     concept: 'Resurgence',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The reappearance of a previously extinguished behavior when a more recently reinforced behavior is placed on extinction.',
     scenarios: [
       {
@@ -654,7 +654,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-20',
     domain: 'Measurement',
     concept: 'Whole Interval Recording',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'A discontinuous measurement procedure in which the behavior is recorded only if it occurs throughout the ENTIRE interval; tends to underestimate the occurrence of behavior.',
     scenarios: [
       {
@@ -687,7 +687,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-21',
     domain: 'Measurement',
     concept: 'Interobserver Agreement (IOA)',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'The degree to which two independent observers simultaneously record the same behavior using the same measurement system; used to evaluate the reliability of behavioral measurement.',
     scenarios: [
       {
@@ -720,7 +720,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-22',
     domain: 'Measurement',
     concept: 'Latency',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'The elapsed time from the onset of a stimulus or event (e.g., an instruction) to the initiation of a response.',
     scenarios: [
       {
@@ -753,7 +753,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-23',
     domain: 'Measurement',
     concept: 'Rate (Frequency per Unit Time)',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'A measure of behavior that expresses the number of responses that occur per unit of time; allows comparison across sessions of different lengths.',
     scenarios: [
       {
@@ -788,7 +788,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-24',
     domain: 'Research & Design',
     concept: 'Reversal (ABAB) Design',
-    tcoDomain: 'D — Experimental Design',
+    tcoDomain: 'D  -  Experimental Design',
     definition: 'A single-case experimental design in which the independent variable is introduced (B phase), withdrawn to return to baseline (A phase), and then reintroduced (B phase) to demonstrate experimental control through replication.',
     scenarios: [
       {
@@ -821,7 +821,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-25',
     domain: 'Research & Design',
     concept: 'Alternating Treatments Design (ATD)',
-    tcoDomain: 'D — Experimental Design',
+    tcoDomain: 'D  -  Experimental Design',
     definition: 'A single-case experimental design in which two or more conditions are rapidly alternated within or across sessions to compare their effects on the same behavior; allows comparison of multiple independent variables without a withdrawal phase.',
     scenarios: [
       {
@@ -854,7 +854,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-26',
     domain: 'Research & Design',
     concept: 'Visual Analysis',
-    tcoDomain: 'D — Experimental Design',
+    tcoDomain: 'D  -  Experimental Design',
     definition: 'The primary method of data analysis in applied behavior analysis, in which graphed data are examined for level, trend, and variability within and across phases to determine whether a functional relationship exists between the independent and dependent variables.',
     scenarios: [
       {
@@ -889,7 +889,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-27',
     domain: 'Assessment',
     concept: 'ABC (Descriptive) Assessment',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A direct observational assessment procedure in which the observer records antecedents, behaviors, and consequences as they occur naturally in the environment, without experimental manipulation; used to generate hypotheses about the function of behavior.',
     scenarios: [
       {
@@ -922,7 +922,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-28',
     domain: 'Assessment',
     concept: 'Skill-Based Assessment (VB-MAPP / ABLLS-R)',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A criterion-referenced assessment tool used to evaluate a learner\'s current verbal behavior repertoire and other skill areas across developmental milestones, used to guide programming decisions.',
     scenarios: [
       {
@@ -957,7 +957,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-29',
     domain: 'Skill Acquisition',
     concept: 'Discrete Trial Training (DTT)',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A structured teaching method in which each trial consists of a discriminative stimulus (SD), a response opportunity, a consequence, and an inter-trial interval; used to teach skills in a controlled, massed-trial format.',
     scenarios: [
       {
@@ -990,7 +990,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-30',
     domain: 'Skill Acquisition',
     concept: 'Natural Environment Teaching (NET)',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A teaching approach in which instruction is embedded in naturally occurring activities and routines, capitalizing on the learner\'s motivating operations to teach functional skills in the context where they will be used.',
     scenarios: [
       {
@@ -1023,7 +1023,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-31',
     domain: 'Skill Acquisition',
     concept: 'Prompt Hierarchy -- Levels of Intrusiveness',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'The conceptual framework that ranks prompts from most to least intrusive (e.g., full physical > partial physical > modeling > gestural > verbal > independent), used to guide prompt selection and fading decisions across all prompting systems.',
     scenarios: [
       {
@@ -1058,7 +1058,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-32',
     domain: 'Behavior Reduction',
     concept: 'Noncontingent Reinforcement (NCR)',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which a reinforcer is delivered on a fixed- or variable-time schedule, independent of the occurrence of any specific behavior; functions as an abolishing operation to reduce problem behavior.',
     scenarios: [
       {
@@ -1091,7 +1091,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-33',
     domain: 'Behavior Reduction',
     concept: 'Differential Reinforcement of Other Behavior (DRO)',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which reinforcement is delivered at the end of an interval if the target problem behavior did NOT occur during that interval; reinforces the absence of the problem behavior.',
     scenarios: [
       {
@@ -1126,7 +1126,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-34',
     domain: 'Verbal Behavior',
     concept: 'Tact',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant controlled by a nonverbal discriminative stimulus (an object, event, or property of the environment) and reinforced by generalized conditioned reinforcement.',
     scenarios: [
       {
@@ -1159,7 +1159,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-35',
     domain: 'Verbal Behavior',
     concept: 'Intraverbal',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and there is no point-to-point correspondence between the SD and the response; reinforced by generalized conditioned reinforcement.',
     scenarios: [
       {
@@ -1192,7 +1192,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-36',
     domain: 'Verbal Behavior',
     concept: 'Functional Communication Training (FCT)',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A DRA procedure in which a functionally equivalent communicative response is taught as an alternative to problem behavior; the communicative response produces the same reinforcer that previously maintained the problem behavior.',
     scenarios: [
       {
@@ -1227,7 +1227,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-37',
     domain: 'Personnel Supervision',
     concept: 'Performance Monitoring',
-    tcoDomain: 'I — Personnel Supervision and Management',
+    tcoDomain: 'I  -  Personnel Supervision and Management',
     definition: 'The ongoing process of directly observing and measuring a supervisee\'s implementation of behavior analytic procedures to evaluate accuracy and identify areas for improvement.',
     scenarios: [
       {
@@ -1260,7 +1260,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-38',
     domain: 'Personnel Supervision',
     concept: 'Behavioral Skills Training (BST)',
-    tcoDomain: 'I — Personnel Supervision and Management',
+    tcoDomain: 'I  -  Personnel Supervision and Management',
     definition: 'A training package consisting of four components  --  instruction, modeling, rehearsal, and feedback  --  used to teach new skills to supervisees and caregivers.',
     scenarios: [
       {
@@ -1295,7 +1295,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-39',
     domain: 'Ethics & Professional Practice',
     concept: 'Scope of Competence',
-    tcoDomain: 'E — Ethical and Professional Issues',
+    tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'The principle that behavior analysts only practice within the boundaries of their competence, based on their education, training, supervised experience, and professional credentials.',
     scenarios: [
       {
@@ -1328,7 +1328,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-40',
     domain: 'Ethics & Professional Practice',
     concept: 'Informed Consent',
-    tcoDomain: 'E — Ethical and Professional Issues',
+    tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'The process of providing clients and/or their legal guardians with sufficient information about proposed services (including risks, benefits, and alternatives) in a manner they can understand, and obtaining their voluntary agreement before services begin.',
     scenarios: [
       {
@@ -1361,7 +1361,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-41',
     domain: 'Ethics & Professional Practice',
     concept: 'Least Restrictive Alternative',
-    tcoDomain: 'H — Selecting and Implementing Interventions',
+    tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'The ethical principle that behavior analysts select interventions that are the least intrusive and most positive possible while still being effective; more restrictive procedures are used only when less restrictive alternatives have been tried or are clearly insufficient.',
     scenarios: [
       {
@@ -1396,7 +1396,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-42',
     domain: 'Behavior Principles',
     concept: 'Spontaneous Recovery',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The reappearance of an extinguished behavior after a period of time has passed since extinction was in effect, without any additional reinforcement.',
     scenarios: [
       {
@@ -1429,7 +1429,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-43',
     domain: 'Behavior Principles',
     concept: 'Abolishing Operation (AO)',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A motivating operation that decreases the reinforcing effectiveness of a stimulus and decreases the current frequency of behavior that has been reinforced by that stimulus.',
     scenarios: [
       {
@@ -1462,7 +1462,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-44',
     domain: 'Measurement',
     concept: 'Momentary Time Sampling (MTS)',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'A discontinuous measurement procedure in which the observer records whether the behavior is occurring at the exact moment a time interval ends; tends to provide an estimate of the proportion of time a behavior occurs.',
     scenarios: [
       {
@@ -1495,7 +1495,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-45',
     domain: 'Skill Acquisition',
     concept: 'Shaping',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A procedure for establishing a new behavior by differentially reinforcing successive approximations to the target behavior while placing previous approximations on extinction.',
     scenarios: [
       {
@@ -1528,7 +1528,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-46',
     domain: 'Research & Design',
     concept: 'Changing Criterion Design',
-    tcoDomain: 'D — Experimental Design',
+    tcoDomain: 'D  -  Experimental Design',
     definition: 'A single-case experimental design in which the criterion for reinforcement is systematically changed in a stepwise fashion; experimental control is demonstrated when behavior changes to match each new criterion.',
     scenarios: [
       {
@@ -1561,7 +1561,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-47',
     domain: 'Assessment',
     concept: 'Indirect Assessment',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'An assessment method that gathers information about behavior through interviews, rating scales, or questionnaires rather than through direct observation; used to generate hypotheses about the function of behavior.',
     scenarios: [
       {
@@ -1594,7 +1594,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-48',
     domain: 'Personnel Supervision',
     concept: 'Competency-Based Training',
-    tcoDomain: 'I — Personnel Supervision and Management',
+    tcoDomain: 'I  -  Personnel Supervision and Management',
     definition: 'A training approach in which supervisees must demonstrate a specified level of performance (not just knowledge) before being considered trained; mastery criteria are set and verified through direct observation.',
     scenarios: [
       {
@@ -1627,7 +1627,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-49',
     domain: 'Ethics & Professional Practice',
     concept: 'Multiple Relationships',
-    tcoDomain: 'E — Ethical and Professional Issues',
+    tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'A situation in which a behavior analyst is in both a professional role and another role with a client, supervisee, or research participant; behavior analysts must avoid multiple relationships that could impair objectivity or harm the client.',
     scenarios: [
       {
@@ -1660,7 +1660,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-50',
     domain: 'Behavior Principles',
     concept: 'Response Generalization',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The occurrence of untrained but functionally similar responses in the presence of the training stimulus, without additional training.',
     scenarios: [
       {
@@ -1694,7 +1694,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-51',
     domain: 'Behavior Principles',
     concept: 'Extinction Burst',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A temporary increase in the frequency, duration, or intensity of a behavior immediately following the discontinuation of reinforcement.',
     scenarios: [
       {
@@ -1727,7 +1727,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-52',
     concept: 'Spontaneous Recovery  --  Clinical Implication',
     domain: 'Behavior Principles',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The reappearance of an extinguished behavior after a period of time, even without additional reinforcement  --  a predictable side effect of extinction that clinicians must plan for.',
     scenarios: [
       {
@@ -1760,7 +1760,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-53',
     domain: 'Behavior Principles',
     concept: 'Behavioral Contrast',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A change in the rate of behavior in one component of a multiple schedule when the reinforcement contingency is altered in the other component.',
     scenarios: [
       {
@@ -1793,7 +1793,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-54',
     concept: 'Resurgence  --  Distinguishing from Spontaneous Recovery',
     domain: 'Behavior Principles',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'Resurgence is the return of a previously extinguished behavior when the current reinforcement contingency is disrupted  --  distinguishable from spontaneous recovery by its trigger (reinforcement disruption, not time).',
     scenarios: [
       {
@@ -1826,7 +1826,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-55',
     domain: 'Behavior Principles',
     concept: 'Conditioned Punisher',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A previously neutral stimulus that acquires punishing properties through repeated pairing with an unconditioned or established conditioned punisher.',
     scenarios: [
       {
@@ -1859,7 +1859,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-56',
     concept: 'Abolishing Operation (AO)  --  Clinical Application',
     domain: 'Behavior Principles',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'An AO is used clinically to reduce the reinforcing value of a stimulus before a session, thereby decreasing the motivation for problem behavior maintained by that stimulus.',
     scenarios: [
       {
@@ -1892,7 +1892,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-57',
     domain: 'Behavior Principles',
     concept: 'Three-Term Contingency',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The basic unit of operant analysis: an antecedent stimulus, a behavior, and a consequence  --  the relationship among which determines whether the behavior will recur in similar antecedent conditions.',
     scenarios: [
       {
@@ -1926,7 +1926,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-58',
     domain: 'Skill Acquisition',
     concept: 'Most-to-Least Prompting -- Error Prevention Strategy',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A prompting procedure that begins with the most intrusive prompt to prevent errors from the outset; particularly indicated for learners with a history of practicing errors or when errorless learning is the instructional goal.',
     scenarios: [
       {
@@ -1959,7 +1959,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-59',
     domain: 'Skill Acquisition',
     concept: 'Least-to-Most Prompting',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A prompting strategy in which the least intrusive prompt is provided first; if the learner does not respond correctly, progressively more intrusive prompts are provided until a correct response occurs.',
     scenarios: [
       {
@@ -1992,7 +1992,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-60',
     domain: 'Skill Acquisition',
     concept: 'Constant Time Delay',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A prompting procedure in which a fixed interval is inserted between the task demand and the prompt on every trial after an initial period of zero-second delay trials.',
     scenarios: [
       {
@@ -2025,7 +2025,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-61',
     domain: 'Skill Acquisition',
     concept: 'Forward Chaining',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A chaining procedure in which the first behavior in the chain is taught first; subsequent behaviors are added sequentially until the entire chain is performed independently.',
     scenarios: [
       {
@@ -2058,7 +2058,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-62',
     domain: 'Skill Acquisition',
     concept: 'Generalization Programming',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'The systematic arrangement of antecedent and consequence variables during training to promote the occurrence of trained behaviors in untrained settings, with untrained people, or under untrained conditions.',
     scenarios: [
       {
@@ -2092,7 +2092,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-63',
     concept: 'Response Blocking',
     domain: 'Behavior Reduction',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which the therapist physically prevents the completion of a problem behavior, thereby preventing access to the reinforcer maintaining it.',
     scenarios: [
       {
@@ -2125,7 +2125,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-64',
     concept: 'Extinction  --  Attention-Maintained Behavior',
     domain: 'Behavior Reduction',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'The withholding of social attention following attention-maintained problem behavior, resulting in a decrease in that behavior over time.',
     scenarios: [
       {
@@ -2158,7 +2158,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-65',
     domain: 'Behavior Reduction',
     concept: 'Time-Out from Positive Reinforcement',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A negative punishment procedure in which access to positive reinforcement is contingently removed for a specified period following a target behavior.',
     scenarios: [
       {
@@ -2191,7 +2191,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-66',
     domain: 'Behavior Reduction',
     concept: 'Functional Communication Training (FCT)',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A differential reinforcement procedure in which a communicative response that serves the same function as the problem behavior is reinforced, while the problem behavior is placed on extinction.',
     scenarios: [
       {
@@ -2224,7 +2224,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-67',
     concept: 'Safety Plan / Crisis Protocol',
     domain: 'Behavior Reduction',
-    tcoDomain: 'H — Selecting and Implementing Interventions',
+    tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'A written plan that specifies procedures for managing dangerous behavior, including escalation indicators, staff roles, and de-escalation strategies.',
     scenarios: [
       {
@@ -2258,7 +2258,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-68',
     concept: 'Behavioral Skills Training (BST)  --  Supervision Application',
     domain: 'Supervision',
-    tcoDomain: 'I — Personnel Supervision and Management',
+    tcoDomain: 'I  -  Personnel Supervision and Management',
     definition: 'BST is the evidence-based method for training supervisees on new clinical skills, consisting of instructions, modeling, rehearsal, and feedback delivered in sequence.',
     scenarios: [
       {
@@ -2291,7 +2291,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-69',
     concept: 'Performance Monitoring  --  Ongoing Supervision',
     domain: 'Supervision',
-    tcoDomain: 'I — Personnel Supervision and Management',
+    tcoDomain: 'I  -  Personnel Supervision and Management',
     definition: 'The BCBA\'s ongoing responsibility to systematically observe, measure, and provide feedback on supervisee performance across the full supervision period  --  not only during initial training.',
     scenarios: [
       {
@@ -2324,7 +2324,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-70',
     concept: 'Competency-Based Training  --  Implementation Standards',
     domain: 'Supervision',
-    tcoDomain: 'I — Personnel Supervision and Management',
+    tcoDomain: 'I  -  Personnel Supervision and Management',
     definition: 'Competency-based training requires supervisees to demonstrate a specified performance criterion (e.g., 90% fidelity across three consecutive observations) before working independently  --  not just completing training hours.',
     scenarios: [
       {
@@ -2357,7 +2357,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-71',
     concept: 'Scope of Competence  --  Supervision Responsibility',
     domain: 'Supervision',
-    tcoDomain: 'E — Ethical and Professional Issues',
+    tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'BCBAs must only supervise activities within their own scope of competence and must ensure that supervisees are only assigned tasks within the BCBA\'s area of expertise.',
     scenarios: [
       {
@@ -2391,7 +2391,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-72',
     concept: 'Multiple Relationships  --  Navigating Boundary Conflicts',
     domain: 'Ethics & Professional Practice',
-    tcoDomain: 'E — Ethical and Professional Issues',
+    tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'When a BCBA has an existing personal, financial, or professional relationship with a client or supervisee, they must evaluate whether the relationship could impair objectivity or harm the client, and take steps to manage or avoid the conflict.',
     scenarios: [
       {
@@ -2424,7 +2424,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-73',
     concept: 'Informed Consent vs. Assent',
     domain: 'Ethics & Professional Practice',
-    tcoDomain: 'E — Ethical and Professional Issues',
+    tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'Informed consent is obtained from the legal guardian; assent is the client\'s own agreement to participate, which must be sought even when the client cannot legally consent.',
     scenarios: [
       {
@@ -2457,7 +2457,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-74',
     domain: 'Ethics & Professional Practice',
     concept: 'Assent',
-    tcoDomain: 'E — Ethical and Professional Issues',
+    tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'The affirmative agreement of a person who lacks legal capacity to provide informed consent (e.g., a minor or individual with significant cognitive limitations) to participate in services or research.',
     scenarios: [
       {
@@ -2491,7 +2491,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-75',
     concept: 'Event Recording (Frequency)',
     domain: 'Measurement',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'A measurement procedure in which each discrete occurrence of a target behavior is counted; produces a frequency or rate measure and is most appropriate for behaviors with a clear beginning and end.',
     scenarios: [
       {
@@ -2524,7 +2524,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-76',
     concept: 'Duration Recording',
     domain: 'Measurement',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'A measurement method that captures the total amount of time a behavior occurs within an observation period.',
     scenarios: [
       {
@@ -2557,7 +2557,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-77',
     concept: 'IOA  --  Interval-by-Interval Agreement',
     domain: 'Measurement',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'A method of calculating IOA for interval data by comparing two observers\' recordings interval by interval and dividing the number of agreements by the total number of intervals.',
     scenarios: [
       {
@@ -2591,7 +2591,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-78',
     concept: 'Alternating Treatments Design (ATD)  --  Interpreting Results',
     domain: 'Research & Design',
-    tcoDomain: 'D — Experimental Design',
+    tcoDomain: 'D  -  Experimental Design',
     definition: 'In an ATD, a functional relationship is demonstrated when data paths for different conditions are clearly separated (non-overlapping), indicating that one condition produces reliably different behavior than the other.',
     scenarios: [
       {
@@ -2624,7 +2624,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-79',
     concept: 'Visual Analysis  --  Stability Criterion',
     domain: 'Research & Design',
-    tcoDomain: 'D — Experimental Design',
+    tcoDomain: 'D  -  Experimental Design',
     definition: 'Before changing phases in single-case research, data must show a stable trend (low variability, consistent level and direction) to allow meaningful comparison across conditions.',
     scenarios: [
       {
@@ -2657,7 +2657,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-80',
     domain: 'Research & Design',
     concept: 'Social Validity',
-    tcoDomain: 'H — Selecting and Implementing Interventions',
+    tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'The extent to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, caregivers, and the broader community.',
     scenarios: [
       {
@@ -2691,7 +2691,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-81',
     concept: 'Structural Analysis',
     domain: 'Assessment',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'An assessment procedure in which antecedent variables (e.g., task difficulty, activity type, instructional format) are manipulated to identify the conditions under which problem behavior is most and least likely to occur, without manipulating consequences.',
     scenarios: [
       {
@@ -2724,7 +2724,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-82',
     domain: 'Assessment',
     concept: 'Scatterplot Assessment',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A direct observational tool that maps the temporal distribution of problem behavior across time periods and days, used to identify patterns in when behavior is most and least likely to occur and to generate hypotheses about setting events or time-based antecedents.',
     scenarios: [
       {
@@ -2757,7 +2757,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-83',
     domain: 'Assessment',
     concept: 'Preference Assessment',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A systematic procedure used to identify stimuli that may function as reinforcers for an individual by presenting items and observing approach behavior, selection, or engagement.',
     scenarios: [
       {
@@ -2790,7 +2790,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-84',
     domain: 'Skill Acquisition',
     concept: 'Stimulus Control Transfer',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A procedure in which control over a behavior is shifted from one stimulus (e.g., a prompt) to another stimulus (e.g., the natural SD) through systematic prompt fading.',
     scenarios: [
       {
@@ -2823,7 +2823,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-85',
     domain: 'Assessment',
     concept: 'Curriculum-Based Assessment',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A direct assessment approach in which a learner\'s skills are measured against the objectives of the instructional curriculum to identify current skill levels and guide programming decisions.',
     scenarios: [
       {
@@ -2857,7 +2857,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-86',
     concept: 'Verbal Operant -- Mand vs. Tact Distinction',
     domain: 'Verbal Behavior',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'Mands are controlled by motivating operations and reinforced by the specific item or action requested; tacts are controlled by a nonverbal discriminative stimulus (the item itself) and reinforced by generalized conditioned reinforcement. The same topography (e.g., "cookie") can function as either depending on the controlling variable.',
     scenarios: [
       {
@@ -2890,7 +2890,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-87',
     concept: 'Autoclitic',
     domain: 'Verbal Behavior',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A secondary verbal operant that modifies or qualifies other verbal behavior, providing information about the speaker\'s relation to their own primary verbal behavior (e.g., "I think," "I\'m not sure," "Please").',
     scenarios: [
       {
@@ -2923,7 +2923,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-88',
     domain: 'Verbal Behavior',
     concept: 'Echoic',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and has point-to-point correspondence and formal similarity with that stimulus.',
     scenarios: [
       {
@@ -2956,7 +2956,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-89',
     domain: 'Verbal Behavior',
     concept: 'Listener Behavior (Receptive Language)',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'Behavior under the control of verbal stimuli in which the listener responds nonverbally to the verbal behavior of a speaker, such as following instructions or selecting items when named.',
     scenarios: [
       {
@@ -2989,7 +2989,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-90',
     domain: 'Verbal Behavior',
     concept: 'Verbal Operant  --  Textual',
-    tcoDomain: 'B — Concepts and Principles',
+    tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant in which the response is controlled by a written or printed verbal stimulus and has point-to-point correspondence with that stimulus, but not formal similarity (the stimulus is visual; the response is vocal).',
     scenarios: [
       {
@@ -3023,7 +3023,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-91',
     domain: 'Skill Acquisition',
     concept: 'Errorless Learning',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A teaching strategy in which prompts are provided at a level that prevents or minimizes incorrect responses, ensuring the learner contacts reinforcement for correct responding from the beginning of instruction.',
     scenarios: [
       {
@@ -3056,7 +3056,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-92',
     domain: 'Skill Acquisition',
     concept: 'Total Task Presentation',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A chaining procedure in which the learner is prompted through every step of the chain on every trial, with prompts faded across steps as competence is demonstrated.',
     scenarios: [
       {
@@ -3089,7 +3089,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-93',
     domain: 'Skill Acquisition',
     concept: 'Fluency Training',
-    tcoDomain: 'H — Selecting and Implementing Interventions',
+    tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'Instruction designed to develop both accuracy and speed of responding to a level that supports maintenance, generalization, and application of the skill in natural contexts.',
     scenarios: [
       {
@@ -3123,7 +3123,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-94',
     concept: 'Momentary DRO (mDRO)',
     domain: 'Behavior Reduction',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A DRO variant in which reinforcement is delivered if the target behavior is absent at the specific moment the interval ends, regardless of whether it occurred earlier in the interval.',
     scenarios: [
       {
@@ -3156,7 +3156,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-95',
     domain: 'Behavior Reduction',
     concept: 'Differential Reinforcement of Incompatible Behavior (DRI)',
-    tcoDomain: 'G — Behavior-Change Procedures',
+    tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which reinforcement is delivered for a behavior that is physically incompatible with the problem behavior, making it impossible for both behaviors to occur simultaneously.',
     scenarios: [
       {
@@ -3190,7 +3190,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-96',
     domain: 'Measurement',
     concept: 'Latency Recording -- Clinical Application',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'A measurement procedure used when the speed of response initiation is the therapeutic target (e.g., reducing the time a student takes to begin a task after an instruction); distinct from duration recording, which measures how long a behavior lasts once initiated.',
     scenarios: [
       {
@@ -3223,7 +3223,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-97',
     domain: 'Measurement',
     concept: 'Inter-Response Time (IRT)',
-    tcoDomain: 'C — Measurement',
+    tcoDomain: 'C  -  Measurement',
     definition: 'The elapsed time between the end of one response and the beginning of the next response of the same type.',
     scenarios: [
       {
@@ -3257,7 +3257,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-98',
     domain: 'Ethics & Professional Practice',
     concept: 'Conflict of Interest',
-    tcoDomain: 'E — Ethical and Professional Issues',
+    tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'A situation in which a behavior analyst\'s personal, financial, or professional interests could impair their objectivity, competence, or effectiveness in fulfilling their professional obligations.',
     scenarios: [
       {
@@ -3290,7 +3290,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-99',
     domain: 'Ethics & Professional Practice',
     concept: 'Ongoing Data Collection and Treatment Evaluation',
-    tcoDomain: 'H — Selecting and Implementing Interventions',
+    tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'The ethical obligation of a behavior analyst to continuously collect data on client outcomes and use those data to evaluate the effectiveness of the intervention and make data-driven modifications.',
     scenarios: [
       {
@@ -3323,7 +3323,7 @@ export const matchingItems: MatchingItem[] = [
     id: 'm-100',
     domain: 'Assessment',
     concept: 'Functional Behavior Assessment (FBA)',
-    tcoDomain: 'F — Behavior Assessment',
+    tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A comprehensive assessment process that uses multiple methods (indirect, descriptive, and experimental) to identify the variables that predict and maintain problem behavior, resulting in a hypothesis about its function.',
     scenarios: [
       {
@@ -3352,4 +3352,263 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   },
+
+  // -- Domain H & I additions -----------------------------------------------
+  {
+    id: 'sm-h1',
+    domain: 'Selecting & Implementing Interventions',
+    concept: 'Functional Communication Training (FCT)',
+    definition: 'A differential reinforcement procedure that teaches a communicative response functionally equivalent to the problem behavior, producing the same reinforcer, to replace it.',
+    scenarios: [
+      {
+        id: 'sm-h1-a',
+        text: 'Marcus bites his hand when demands are placed. His BCBA teaches him to hand a break card to request a break, which produces the same escape from demands that biting previously produced. Biting decreases as the card exchange is reinforced.',
+        isCorrect: true,
+        explanation: 'FCT requires functional equivalence. The replacement response must produce the same reinforcer as the problem behavior. This scenario shows escape-maintained biting replaced by an escape-producing communicative response.'
+      },
+      {
+        id: 'sm-h1-b',
+        text: 'A therapist teaches a child to say "help" during academic tasks by prompting the word and delivering praise. Problem behavior is not addressed in the program.',
+        isCorrect: false,
+        explanation: 'Teaching communication without addressing the function of a problem behavior is not FCT. FCT requires identifying the function first and teaching a replacement that produces the same reinforcer.'
+      },
+      {
+        id: 'sm-h1-c',
+        text: 'A BCBA implements extinction for biting and simultaneously runs a DTT program to teach the child to label pictures of emotions.',
+        isCorrect: false,
+        explanation: 'Extinction plus a skill program is not FCT. FCT specifically requires the replacement response to be functionally equivalent, producing the same reinforcer as the problem behavior.'
+      },
+      {
+        id: 'sm-h1-d',
+        text: 'A child is taught to raise her hand during group instruction to gain teacher attention. The hand-raising is reinforced with attention on a fixed-ratio 1 schedule.',
+        isCorrect: false,
+        explanation: 'This describes teaching a communication skill, but without a problem behavior with an identified function to replace. FCT is a behavior reduction procedure, not a general communication training procedure.'
+      }
+    ]
+  },
+  {
+    id: 'sm-h2',
+    domain: 'Selecting & Implementing Interventions',
+    concept: 'Noncontingent Reinforcement (NCR)',
+    definition: 'Delivery of a reinforcer on a time-based schedule independent of behavior; reduces problem behavior by abolishing the motivating operation that maintains it.',
+    scenarios: [
+      {
+        id: 'sm-h2-a',
+        text: 'A child engages in attention-maintained stereotypy. Her BCBA delivers 30 seconds of attention every 3 minutes regardless of what she is doing. Stereotypy decreases across sessions as the MO for attention is continuously abolished.',
+        isCorrect: true,
+        explanation: 'NCR delivers the maintaining reinforcer on a time-based schedule independent of behavior, abolishing the MO. The fixed-time attention delivery here directly targets the attention function.'
+      },
+      {
+        id: 'sm-h2-b',
+        text: 'A BCBA provides preferred items only when the client is engaging in appropriate behavior, using a differential reinforcement of other behavior (DRO) schedule.',
+        isCorrect: false,
+        explanation: 'DRO is contingency-based. NCR is non-contingent: reinforcement is delivered regardless of behavior on a time-based schedule.'
+      },
+      {
+        id: 'sm-h2-c',
+        text: 'A therapist removes all preferred items from the environment before sessions to reduce the establishing operation for problem behavior.',
+        isCorrect: false,
+        explanation: 'Removing establishing operations is an antecedent intervention but not NCR. NCR specifically delivers the maintaining reinforcer on a time-based schedule rather than removing access to it.'
+      },
+      {
+        id: 'sm-h2-d',
+        text: 'A BCBA uses extinction by withholding attention following each instance of stereotypy, while simultaneously teaching a functionally equivalent communicative response.',
+        isCorrect: false,
+        explanation: 'This describes extinction plus FCT, not NCR. NCR does not withhold the reinforcer, it delivers it freely on a schedule to abolish the MO.'
+      }
+    ]
+  },
+  {
+    id: 'sm-h3',
+    domain: 'Selecting & Implementing Interventions',
+    concept: 'High-Probability Request Sequence',
+    definition: 'An antecedent intervention presenting several high-p requests immediately before a low-p request to increase compliance through behavioral momentum.',
+    scenarios: [
+      {
+        id: 'sm-h3-a',
+        text: 'Before asking Jalen to complete a non-preferred writing task, his teacher presents three easy requests he reliably completes. Compliance with the writing task increases following the high-p sequence.',
+        isCorrect: true,
+        explanation: 'The high-p sequence requires presenting multiple requests with a high probability of compliance immediately before the low-p request. The behavioral momentum generated increases compliance with the low-p request.'
+      },
+      {
+        id: 'sm-h3-b',
+        text: 'A BCBA modifies the difficulty of academic tasks so that all tasks are at the child\'s independent mastery level, eliminating non-preferred demands from the session.',
+        isCorrect: false,
+        explanation: 'Removing low-p demands is demand fading, not the high-p sequence. The high-p sequence retains the low-p request and uses behavioral momentum to increase compliance with it.'
+      },
+      {
+        id: 'sm-h3-c',
+        text: 'A therapist provides a preferred item contingent on compliance with difficult requests and removes it contingent on non-compliance.',
+        isCorrect: false,
+        explanation: 'This describes differential reinforcement plus response cost, not the high-p sequence. The high-p sequence is an antecedent intervention that precedes the low-p request.'
+      },
+      {
+        id: 'sm-h3-d',
+        text: 'A teacher presents preferred activities before non-preferred activities in the daily schedule to increase engagement with the non-preferred activities.',
+        isCorrect: false,
+        explanation: 'Scheduling preferred activities before non-preferred ones is a general antecedent strategy but not the high-p sequence. The high-p sequence requires presenting multiple requests with high compliance probability immediately before the low-p request.'
+      }
+    ]
+  },
+  {
+    id: 'sm-h4',
+    domain: 'Selecting & Implementing Interventions',
+    concept: 'Behavior Trap',
+    definition: 'A naturally occurring contingency that, once entered, captures and maintains behavior through natural reinforcement without continued programmed reinforcement.',
+    scenarios: [
+      {
+        id: 'sm-h4-a',
+        text: 'A child is taught to initiate greetings with peers. Once she begins initiating, peer laughter, conversation, and play naturally reinforce further initiations. The therapist fades involvement as the social environment maintains the behavior.',
+        isCorrect: true,
+        explanation: 'A behavior trap is defined by natural contingencies taking over reinforcement once the behavior is established. The peer social environment captures and maintains initiations without continued therapist involvement.'
+      },
+      {
+        id: 'sm-h4-b',
+        text: 'A BCBA uses a multiple baseline design to demonstrate that social initiations increase only when the intervention is introduced across three settings.',
+        isCorrect: false,
+        explanation: 'A multiple baseline design is a research design, not a behavior trap. A behavior trap is a maintenance strategy relying on natural contingencies, not a research methodology.'
+      },
+      {
+        id: 'sm-h4-c',
+        text: 'A therapist uses a token economy to reinforce social initiations across three settings, then gradually thins the reinforcement schedule over 12 weeks.',
+        isCorrect: false,
+        explanation: 'A token economy is a programmed reinforcement system, not a behavior trap. A behavior trap relies on natural reinforcers in the environment, not a contrived token system.'
+      },
+      {
+        id: 'sm-h4-d',
+        text: 'A child\'s social initiations are reinforced on a variable-ratio schedule to promote resistance to extinction during the maintenance phase.',
+        isCorrect: false,
+        explanation: 'Variable-ratio schedules are programmed contingencies, not behavior traps. A behavior trap requires natural environmental contingencies to capture and maintain the behavior.'
+      }
+    ]
+  },
+  {
+    id: 'sm-h5',
+    domain: 'Selecting & Implementing Interventions',
+    concept: 'Competing Stimulus Assessment',
+    definition: 'A systematic evaluation identifying stimuli that compete with the reinforcer maintaining automatically-reinforced problem behavior; used to select items for enriched environments.',
+    scenarios: [
+      {
+        id: 'sm-h5-a',
+        text: 'A child engages in hand-mouthing maintained by automatic reinforcement. Her BCBA systematically presents various toys and activities and measures which items produce the greatest reduction in hand-mouthing. Those items are incorporated into the treatment package.',
+        isCorrect: true,
+        explanation: 'A competing stimulus assessment is specifically designed for automatically-maintained behavior. The BCBA systematically identifies which stimuli compete most effectively with the automatic reinforcer maintaining the problem behavior.'
+      },
+      {
+        id: 'sm-h5-b',
+        text: 'A BCBA conducts a paired-stimulus preference assessment to identify high-preference items before beginning a skill acquisition program.',
+        isCorrect: false,
+        explanation: 'A preference assessment identifies preferred stimuli for use as reinforcers. A competing stimulus assessment specifically identifies stimuli that compete with the automatic reinforcer maintaining problem behavior.'
+      },
+      {
+        id: 'sm-h5-c',
+        text: 'A therapist presents two potential reinforcers simultaneously and records which item the child approaches first to determine relative reinforcer value.',
+        isCorrect: false,
+        explanation: 'This describes a paired-stimulus preference assessment. The competing stimulus assessment measures reduction in problem behavior, not approach behavior toward stimuli.'
+      },
+      {
+        id: 'sm-h5-d',
+        text: 'A BCBA assesses which antecedent stimuli reliably evoke problem behavior across multiple settings to identify discriminative stimuli for the behavior.',
+        isCorrect: false,
+        explanation: 'Identifying discriminative stimuli is part of a functional assessment, not a competing stimulus assessment. The competing stimulus assessment measures which stimuli reduce automatically-maintained problem behavior.'
+      }
+    ]
+  },
+  {
+    id: 'sm-i1',
+    domain: 'Personnel Supervision & Management',
+    concept: 'Behavioral Skills Training (BST)',
+    definition: 'A staff training package consisting of four components: instructions, modeling, rehearsal, and feedback; all four components must be present.',
+    scenarios: [
+      {
+        id: 'sm-i1-a',
+        text: 'A BCBA trains a new RBT to implement DTT. She explains the procedure verbally, demonstrates it with a confederate, has the RBT practice while she observes, then provides specific corrective and positive feedback on the RBT\'s performance.',
+        isCorrect: true,
+        explanation: 'BST requires all four components: instructions, modeling, rehearsal, and feedback. All four are present in this scenario.'
+      },
+      {
+        id: 'sm-i1-b',
+        text: 'A supervisor assigns a new RBT a written manual describing all intervention procedures and schedules a written competency exam for the following week.',
+        isCorrect: false,
+        explanation: 'Written instructions and a knowledge exam address only the instruction component of BST. BST requires modeling, rehearsal, and feedback in addition to instructions.'
+      },
+      {
+        id: 'sm-i1-c',
+        text: 'A BCBA observes an RBT\'s session and writes a detailed performance review that is shared at the monthly team meeting.',
+        isCorrect: false,
+        explanation: 'Observation plus delayed written feedback is not BST. BST requires all four components including modeling and rehearsal, and feedback should be delivered in close temporal proximity to the observed behavior.'
+      },
+      {
+        id: 'sm-i1-d',
+        text: 'A supervisor uses a video library of correctly implemented procedures and requires RBTs to watch relevant videos before their first client session.',
+        isCorrect: false,
+        explanation: 'Video modeling addresses only the modeling component of BST. Without instructions, rehearsal, and feedback, this does not qualify as BST.'
+      }
+    ]
+  },
+  {
+    id: 'sm-i2',
+    domain: 'Personnel Supervision & Management',
+    concept: 'Performance Feedback',
+    definition: 'Information provided to a supervisee about the accuracy and quality of their work, delivered in close temporal proximity to the observed behavior to promote skill acquisition and maintenance.',
+    scenarios: [
+      {
+        id: 'sm-i2-a',
+        text: 'After observing an RBT\'s session, a BCBA meets with the RBT within 24 hours and provides specific praise for correct prompt fading and corrective feedback on trial pacing, including a brief re-demonstration of the correct pacing.',
+        isCorrect: true,
+        explanation: 'Effective performance feedback is timely, specific, includes both positive and corrective components, and may include re-modeling. All elements are present here.'
+      },
+      {
+        id: 'sm-i2-b',
+        text: 'A supervisor sends a monthly email summarizing the RBT\'s overall performance rating and noting areas for general improvement.',
+        isCorrect: false,
+        explanation: 'Monthly, non-specific feedback delivered via email is not effective performance feedback. Feedback must be timely and specific to the observed behaviors.'
+      },
+      {
+        id: 'sm-i2-c',
+        text: 'A BCBA reviews session data graphs weekly and adjusts the intervention protocol based on the data trends without discussing the changes with the RBT.',
+        isCorrect: false,
+        explanation: 'Data-based protocol adjustments are a supervisory responsibility but are not performance feedback. Performance feedback must be directed at the supervisee\'s behavior, not just the client\'s data.'
+      },
+      {
+        id: 'sm-i2-d',
+        text: 'A supervisor provides written praise in the RBT\'s personnel file after the client meets a mastery criterion, attributing the success to the RBT\'s effort.',
+        isCorrect: false,
+        explanation: 'Documenting praise in a personnel file is not performance feedback in the behavioral sense. Effective performance feedback must be delivered in close temporal proximity to the observed behavior.'
+      }
+    ]
+  },
+  {
+    id: 'sm-i3',
+    domain: 'Personnel Supervision & Management',
+    concept: 'Pyramidal Training',
+    definition: 'A staff training model in which a behavior analyst trains a small group of lead staff who then train other staff, creating a hierarchical dissemination structure.',
+    scenarios: [
+      {
+        id: 'sm-i3-a',
+        text: 'A BCBA at a large residential facility trains three senior RBTs on a new crisis prevention protocol using BST. Each senior RBT then trains four frontline RBTs using the same BST procedures, with the BCBA providing oversight and fidelity checks.',
+        isCorrect: true,
+        explanation: 'Pyramidal training is defined by the hierarchical dissemination structure: the BCBA trains trainers who train others. The BCBA\'s oversight and fidelity checks maintain quality across the hierarchy.'
+      },
+      {
+        id: 'sm-i3-b',
+        text: 'A BCBA provides individual supervision to each of the 12 RBTs on her caseload, meeting with each one for one hour per week to review session data and provide performance feedback.',
+        isCorrect: false,
+        explanation: 'Individual supervision by the BCBA is direct supervision, not pyramidal training. Pyramidal training requires the BCBA to train intermediate trainers who then train other staff.'
+      },
+      {
+        id: 'sm-i3-c',
+        text: 'A training coordinator develops an online module that all new RBTs must complete before their first client contact, followed by a written competency exam.',
+        isCorrect: false,
+        explanation: 'Online training modules are a technology-based training approach, not pyramidal training. Pyramidal training requires human trainers at each level of the hierarchy.'
+      },
+      {
+        id: 'sm-i3-d',
+        text: 'A BCBA trains all staff simultaneously in a group workshop format, then assigns competency checks to be completed by each staff member\'s direct supervisor.',
+        isCorrect: false,
+        explanation: 'Group workshop training by a single trainer is not pyramidal training. Pyramidal training requires a hierarchical structure where trained trainers deliver the training to the next level.'
+      }
+    ]
+  }
+
 ];

@@ -6,14 +6,14 @@ export interface RapidRecallItem {
   term: string;
   correctDefinition: string;
   distractors: string[];
-  misconceptions: string[]; // statements that are WRONG — tracked as "weak boundaries"
+  misconceptions: string[]; // statements that are WRONG  -  tracked as "weak boundaries"
   domain: string;
   taskItem: string;
   category: string;
 }
 
 export const rapidRecallItems: RapidRecallItem[] = [
-  // ── Core Operant Concepts ──────────────────────────────────────────────────
+  // -- Core Operant Concepts --------------------------------------------------
   {
     id: 'rr-mo', term: 'Motivating Operation (MO)',
     correctDefinition: 'An environmental variable that alters the reinforcing/punishing effectiveness of a stimulus AND alters the current frequency of behavior reinforced by that stimulus.',
@@ -160,7 +160,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.6',
   },
 
-  // ── Differential Reinforcement ─────────────────────────────────────────────
+  // -- Differential Reinforcement ---------------------------------------------
   {
     id: 'rr-dra', term: 'DRA (Differential Reinforcement of Alternative Behavior)',
     correctDefinition: 'Reinforcement is delivered for a specific alternative behavior while withholding reinforcement for the problem behavior.',
@@ -179,7 +179,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
   },
   {
     id: 'rr-dri', term: 'DRI (Differential Reinforcement of Incompatible Behavior)',
-    correctDefinition: 'Reinforcement is delivered for a behavior that is physically incompatible with the problem behavior — both cannot occur simultaneously.',
+    correctDefinition: 'Reinforcement is delivered for a behavior that is physically incompatible with the problem behavior  -  both cannot occur simultaneously.',
     distractors: [
       'Reinforcement is delivered for any alternative behavior that serves the same function as the problem behavior.',
       'Reinforcement is delivered when the problem behavior has not occurred for a specified interval.',
@@ -258,7 +258,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'G.2',
   },
 
-  // ── Verbal Behavior ────────────────────────────────────────────────────────
+  // -- Verbal Behavior --------------------------------------------------------
   {
     id: 'rr-mand', term: 'Mand',
     correctDefinition: "A verbal operant evoked by a motivating operation; the speaker's response is reinforced by a characteristic consequence (getting what was asked for).",
@@ -340,7 +340,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.20',
   },
 
-  // ── Stimulus Control & Measurement ────────────────────────────────────────
+  // -- Stimulus Control & Measurement ----------------------------------------
   {
     id: 'rr-cond-reinf', term: 'Conditioned Reinforcement',
     correctDefinition: 'A stimulus that has acquired reinforcing function through a history of pairing with other reinforcers (secondary reinforcer).',
@@ -486,7 +486,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.13',
   },
 
-  // ── Measurement ────────────────────────────────────────────────────────────
+  // -- Measurement ------------------------------------------------------------
   {
     id: 'rr-freq-rate', term: 'Frequency/Rate',
     correctDefinition: 'Frequency: number of responses per observation period. Rate: frequency ÷ observation duration; allows comparison across sessions of different lengths.',
@@ -616,7 +616,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'C.8',
   },
 
-  // ── Research Designs ───────────────────────────────────────────────────────
+  // -- Research Designs -------------------------------------------------------
   {
     id: 'rr-reversal', term: 'Reversal Design (ABAB)',
     correctDefinition: 'A single-case design in which baseline and treatment conditions are alternated; experimental control is demonstrated when behavior changes with each condition change.',
@@ -794,7 +794,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'D.8',
   },
 
-  // ── Assessment ─────────────────────────────────────────────────────────────
+  // -- Assessment -------------------------------------------------------------
   {
     id: 'rr-indirect', term: 'Indirect Assessment',
     correctDefinition: 'An FBA method that gathers information through interviews, rating scales, and questionnaires without direct observation of the behavior.',
@@ -1004,7 +1004,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.1',
   },
 
-  // ── Behavior-Change Procedures ─────────────────────────────────────────────
+  // -- Behavior-Change Procedures ---------------------------------------------
   {
     id: 'rr-shaping', term: 'Shaping',
     correctDefinition: 'The differential reinforcement of successive approximations to a target behavior; reinforcement is delivered for responses that progressively resemble the terminal behavior.',
@@ -1086,7 +1086,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'G.12',
   },
 
-  // ── Dimensions of ABA ──────────────────────────────────────────────────────
+  // -- Dimensions of ABA ------------------------------------------------------
   {
     id: 'rr-applied', term: 'Applied (Dimension of ABA)',
     correctDefinition: 'The behavior, stimuli, and/or organism under study are chosen because of their importance to society; the focus is on socially significant behavior.',
@@ -1169,7 +1169,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
   },
   {
     id: 'rr-effective', term: 'Effective (Dimension of ABA)',
-    correctDefinition: 'The intervention produces a practical, meaningful change in the behavior — not merely a statistically significant one.',
+    correctDefinition: 'The intervention produces a practical, meaningful change in the behavior  -  not merely a statistically significant one.',
     distractors: [
       'The behavior change is shown to be a function of the intervention.',
       'The behavior change is important to society.',
@@ -1200,7 +1200,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'A.5',
   },
 
-  // ── Domain A: Behaviorism & Philosophical Foundations ─────────────────────
+  // -- Domain A: Behaviorism & Philosophical Foundations ---------------------
   {
     id: 'rr-selectionism', term: 'Selectionism',
     correctDefinition: 'The philosophical assumption that behavior is selected by its consequences over time, analogous to natural selection in biology; past consequences determine which behaviors are maintained.',
@@ -1267,7 +1267,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
   },
   {
     id: 'rr-pragmatism', term: 'Pragmatism',
-    correctDefinition: 'The philosophical assumption that the value of a concept or procedure is judged by its practical utility — whether it works to produce meaningful behavior change.',
+    correctDefinition: 'The philosophical assumption that the value of a concept or procedure is judged by its practical utility  -  whether it works to produce meaningful behavior change.',
     distractors: [
       'The view that theoretical elegance is the primary criterion for evaluating procedures.',
       'The assumption that procedures must be derived from basic research before being applied.',
@@ -1314,7 +1314,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'A.3',
   },
 
-  // ── Domain B: Additional Concepts & Principles ────────────────────────────
+  // -- Domain B: Additional Concepts & Principles ----------------------------
   {
     id: 'rr-respondent-conditioning', term: 'Respondent Conditioning',
     correctDefinition: 'A process in which a neutral stimulus acquires the ability to elicit a response by being paired with an unconditioned stimulus that already elicits that response.',
@@ -1332,7 +1332,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.3',
   },
   {
-    id: 'rr-automatic-reinforcement', term: 'Automatic Reinforcement — Functional Analysis',
+    id: 'rr-automatic-reinforcement', term: 'Automatic Reinforcement  -  Functional Analysis',
     correctDefinition: 'In a functional analysis, automatic reinforcement is indicated when behavior persists at elevated rates in the alone condition and/or the ignore condition, suggesting the reinforcer is intrinsic to the behavior rather than socially mediated.',
     distractors: [
       'Automatic reinforcement is indicated when behavior is highest in the attention condition of a functional analysis.',
@@ -1620,7 +1620,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.19',
   },
   {
-    id: 'rr-behavioral-momentum', term: 'Behavioral Momentum — Principle',
+    id: 'rr-behavioral-momentum', term: 'Behavioral Momentum  -  Principle',
     correctDefinition: 'The tendency for behavior to persist following a change in reinforcement conditions; higher rates of reinforcement in a stimulus context produce greater resistance to disruption (B.22). Analogous to physical momentum: a richer reinforcement history = greater resistance to change.',
     distractors: [
       'The increase in response rate that follows a period of extinction.',
@@ -1668,7 +1668,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.24',
   },
 
-  // ── Domain C: Additional Measurement Terms ────────────────────────────────
+  // -- Domain C: Additional Measurement Terms --------------------------------
   {
     id: 'rr-operational-definition', term: 'Operational Definition',
     correctDefinition: 'A definition of a behavior that describes it in observable and measurable terms, specifying the exact movements or actions that constitute an instance of the behavior.',
@@ -1798,7 +1798,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'C.10',
   },
 
-  // ── Domain D: Additional Research Design Terms ────────────────────────────
+  // -- Domain D: Additional Research Design Terms ----------------------------
   {
     id: 'rr-dependent-variable', term: 'Dependent Variable',
     correctDefinition: 'The behavior or outcome that is measured in an experiment; it is expected to change as a function of the independent variable.',
@@ -1896,7 +1896,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'D.3',
   },
 
-  // ── Domain E: Ethics & Professional Issues ────────────────────────────────
+  // -- Domain E: Ethics & Professional Issues --------------------------------
   {
     id: 'rr-beneficence', term: 'Beneficence (Ethics)',
     correctDefinition: 'The ethical obligation to act in the best interest of clients and others, actively promoting their welfare and well-being through competent and effective services.',
@@ -1946,7 +1946,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'E.4',
   },
   {
-    id: 'rr-confidentiality', term: 'Confidentiality — Obligation',
+    id: 'rr-confidentiality', term: 'Confidentiality  -  Obligation',
     correctDefinition: 'The ethical and legal obligation to protect client information from unauthorized disclosure; information may only be shared with appropriate consent or as required by law (E.4). Applies to all formats: verbal, written, and electronic.',
     distractors: [
       'The obligation to share all client information with the treatment team to ensure coordinated care.',
@@ -2026,7 +2026,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'E.6',
   },
 
-  // ── Domain F: Additional Assessment Terms ─────────────────────────────────
+  // -- Domain F: Additional Assessment Terms ---------------------------------
   {
     id: 'rr-skill-assessment', term: 'Skill Assessment (F.3)',
     correctDefinition: 'A systematic evaluation of a client\'s current skill repertoire across relevant domains (e.g., communication, social, adaptive) to identify strengths and areas of need for intervention.',
@@ -2060,7 +2060,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'F.2',
   },
 
-  // ── Domain G: Additional Behavior-Change Procedure Terms ──────────────────
+  // -- Domain G: Additional Behavior-Change Procedure Terms ------------------
   {
     id: 'rr-token-economy', term: 'Token Economy',
     correctDefinition: 'A behavior-change system in which conditioned reinforcers (tokens) are earned for target behaviors and exchanged for backup reinforcers; used to establish and maintain conditioned reinforcement.',
@@ -2190,7 +2190,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'G.17',
   },
 
-  // ── Domain H: Selecting & Implementing Interventions ─────────────────────
+  // -- Domain H: Selecting & Implementing Interventions ---------------------
   {
     id: 'rr-observable-measurable-goal', term: 'Observable and Measurable Goal',
     correctDefinition: 'An intervention goal written in terms of specific, directly observable behaviors with defined criteria for mastery, enabling objective measurement of progress.',
@@ -2224,7 +2224,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'H.3',
   },
   {
-    id: 'rr-treatment-integrity', term: 'Treatment Integrity — Definition',
+    id: 'rr-treatment-integrity', term: 'Treatment Integrity  -  Definition',
     correctDefinition: 'The degree to which an intervention is implemented as designed and specified in the behavior intervention plan; also called procedural fidelity (H.6). Measured by comparing actual implementation steps to the written protocol step by step.',
     distractors: [
       'The degree to which an intervention produces socially significant behavior change.',
@@ -2288,9 +2288,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'H.4',
   },
 
-  // ── Domain I: Personnel Supervision & Management ──────────────────────────
+  // -- Domain I: Personnel Supervision & Management --------------------------
   {
-    id: 'rr-supervision-contract', term: 'Supervisory Contract — Components (I.2)',
+    id: 'rr-supervision-contract', term: 'Supervisory Contract  -  Components (I.2)',
     correctDefinition: 'A written agreement between a BCBA supervisor and supervisee that specifies the responsibilities, expectations, meeting schedule, and evaluation criteria for the supervisory relationship (I.2). Distinct from an employment contract.',
     distractors: [
       'A written agreement between a BCBA and a client\'s family specifying service delivery terms.',
@@ -2387,7 +2387,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
   },
 
 
-  // ── Measurement (Domain C) — 16 new terms ─────────────────────────────────
+  // -- Measurement (Domain C)  -  16 new terms ---------------------------------
   {
     id: 'rr-trial-by-trial-recording', term: 'Trial-by-Trial Recording',
     correctDefinition: 'A measurement procedure in which the occurrence or non-occurrence of a target behavior is recorded for each discrete opportunity or trial presented.',
@@ -2645,7 +2645,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'D.1',
   },
 
-  // ── Ethics (Domain E) — 18 new terms ──────────────────────────────────────
+  // -- Ethics (Domain E)  -  18 new terms --------------------------------------
   {
     id: 'rr-assent', term: 'Assent',
     correctDefinition: 'An affirmative agreement by a client who lacks legal capacity to provide informed consent, indicating willingness to participate in assessment or intervention.',
@@ -2775,7 +2775,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'E.5',
   },
   {
-    id: 'rr-confidentiality-limits', term: 'Confidentiality — Limits and Exceptions',
+    id: 'rr-confidentiality-limits', term: 'Confidentiality  -  Limits and Exceptions',
     correctDefinition: 'Confidentiality is not absolute: it may be broken when required by law (e.g., mandated reporting of abuse), when there is imminent risk of harm to the client or others, or when the client provides written authorization to share information (E.5).',
     distractors: [
       'The right of a client to access their own treatment records at any time.',
@@ -2904,7 +2904,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
   },
   {
     id: 'rr-competing-contingencies-ethics', term: 'Competing Contingencies (Ethics)',
-    correctDefinition: 'A situation in which the behavior analyst faces conflicting obligations — such as duties to the client, employer, funding source, or regulatory body — that cannot all be satisfied simultaneously.',
+    correctDefinition: 'A situation in which the behavior analyst faces conflicting obligations  -  such as duties to the client, employer, funding source, or regulatory body  -  that cannot all be satisfied simultaneously.',
     distractors: [
       'A situation in which two reinforcement contingencies are simultaneously available for the same behavior.',
       'A situation in which a client\'s problem behavior is maintained by multiple functions.',
@@ -2935,7 +2935,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'E.7',
   },
 
-  // ── Supervision (Domain I) — 16 new terms ─────────────────────────────────
+  // -- Supervision (Domain I)  -  16 new terms ---------------------------------
   {
     id: 'rr-supervision-hours', term: 'Supervised Fieldwork Hours',
     correctDefinition: 'The documented hours of practical experience under the oversight of a qualified supervisor that are required by the BACB as a condition of eligibility for the BCBA examination.',
@@ -3065,7 +3065,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'I.5',
   },
   {
-    id: 'rr-treatment-integrity-supervision', term: 'Treatment Integrity — Supervision Monitoring',
+    id: 'rr-treatment-integrity-supervision', term: 'Treatment Integrity  -  Supervision Monitoring',
     correctDefinition: 'The supervisor\'s responsibility to systematically measure and monitor whether supervisees are implementing behavior-change procedures with fidelity, using direct observation, permanent product review, or IOA data (I.3). Low treatment integrity is a common reason interventions fail to produce expected outcomes.',
     distractors: [
       'The degree to which a behavior-change procedure produces socially significant outcomes.',
@@ -3113,7 +3113,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'I.1',
   },
   {
-    id: 'rr-supervision-contract-i4', term: 'Supervisory Contract — Ethical Obligations (I.4)',
+    id: 'rr-supervision-contract-i4', term: 'Supervisory Contract  -  Ethical Obligations (I.4)',
     correctDefinition: 'Beyond logistics, the supervisory contract must explicitly address the ethical obligations of both parties, including confidentiality of supervisee disclosures, conflict of interest procedures, and the process for addressing ethical violations (I.4).',
     distractors: [
       'A legal document signed by a client authorizing a BCBA to supervise their direct care staff.',
@@ -3193,7 +3193,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'I.2',
   },
 
-  // ── Domain G: Final Four ───────────────────────────────────────────────────
+  // -- Domain G: Final Four ---------------------------------------------------
   {
     id: 'rr-ncr', term: 'Non-Contingent Reinforcement (NCR)',
     correctDefinition: 'Delivery of a reinforcer on a fixed-time or variable-time schedule, independent of the occurrence of any specific behavior; used to reduce problem behavior maintained by that reinforcer.',
@@ -3211,8 +3211,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'G.3',
   },
   {
-    id: 'rr-response-cost-application', term: 'Response Cost — Application',
-    correctDefinition: 'Response cost is most effectively implemented within a token economy, where earned tokens can be removed contingent on problem behavior. The number of tokens removed must be calibrated carefully — removing too many can cause the system to lose its reinforcing value.',
+    id: 'rr-response-cost-application', term: 'Response Cost  -  Application',
+    correctDefinition: 'Response cost is most effectively implemented within a token economy, where earned tokens can be removed contingent on problem behavior. The number of tokens removed must be calibrated carefully  -  removing too many can cause the system to lose its reinforcing value.',
     distractors: [
       'Response cost is most effective when implemented as a stand-alone punishment procedure without a reinforcement component.',
       'Response cost requires the removal of access to a preferred activity rather than a conditioned reinforcer.',
@@ -3227,8 +3227,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'G.17',
   },
   {
-    id: 'rr-overcorrection-subtypes', term: 'Overcorrection — Restitution vs. Positive Practice',
-    correctDefinition: 'Overcorrection has two subtypes: (1) Restitution overcorrection — the individual restores the environment to a better-than-original state (e.g., cleaning up a mess they made plus additional areas); (2) Positive practice overcorrection — the individual repeatedly practices the correct form of behavior (e.g., practicing walking to the door correctly 10 times after running).',
+    id: 'rr-overcorrection-subtypes', term: 'Overcorrection  -  Restitution vs. Positive Practice',
+    correctDefinition: 'Overcorrection has two subtypes: (1) Restitution overcorrection  -  the individual restores the environment to a better-than-original state (e.g., cleaning up a mess they made plus additional areas); (2) Positive practice overcorrection  -  the individual repeatedly practices the correct form of behavior (e.g., practicing walking to the door correctly 10 times after running).',
     distractors: [
       'Restitution overcorrection involves repeatedly practicing the correct behavior; positive practice involves restoring the environment.',
       'Both subtypes of overcorrection involve removing a conditioned reinforcer contingent on problem behavior.',
@@ -3243,7 +3243,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'G.17',
   },
   {
-    id: 'rr-behavioral-momentum-clinical', term: 'Behavioral Momentum — High-p Request Sequence',
+    id: 'rr-behavioral-momentum-clinical', term: 'Behavioral Momentum  -  High-p Request Sequence',
     correctDefinition: 'The clinical application of behavioral momentum: a series of high-probability (high-p) requests are delivered and reinforced before a low-probability (low-p) request, increasing the likelihood of compliance with the low-p request (G.1). The principle (B.22) and the clinical procedure (G.1) are related but distinct concepts.',
     distractors: [
       'The matching law principle that describes how organisms allocate behavior across concurrent schedules of reinforcement.',
@@ -3258,186 +3258,198 @@ export const rapidRecallItems: RapidRecallItem[] = [
     domain: 'G', category: 'Behavior-Change Procedures',
     taskItem: 'G.1',
   },
-];
 
-export const rapidRecallCategories = [
-  'Core Concepts',
-  'Differential Reinforcement',
-  'Verbal Behavior',
-  'Stimulus Control',
-  'Measurement',
-  'Research Designs',
-  'Assessment',
-  'Behavior-Change Procedures',
-  'Dimensions of ABA',
-  'Philosophical Foundations',
-  'Schedules of Reinforcement',
-  'Ethics',
-  'Intervention',
-  'Supervision',,
-{
-    id: 'rr-goals-of-science',
-    term: 'Goals of Science (Description, Prediction, Control)',
-    category: 'Philosophical Foundations',
-    definition: 'The three goals of a natural science of behavior: (1) Description — accurately characterizing the relationship between behavior and environment; (2) Prediction — identifying variables that reliably precede behavior; (3) Control — demonstrating that manipulating a variable produces a systematic change in behavior.',
+  // -- Domain H & I additions -----------------------------------------------
+  {
+    id: 'h7',
+    term: 'Least Restrictive Alternative',
+    correctDefinition: 'The ethical principle requiring selection of the least intrusive, least restrictive intervention capable of producing the desired behavior change before considering more restrictive options.',
     distractors: [
-      'The goals of science are to explain, interpret, and generalize behavior across populations.',
-      'The goals of science are to observe, record, and report behavior without manipulation.',
-      'The goals of science are to describe, classify, and treat behavioral disorders.',
+      'The principle that the most effective intervention should always be selected regardless of intrusiveness, because client welfare depends on rapid behavior change.',
+      'A legal standard requiring that clients be placed in the least restrictive residential setting available, independent of clinical considerations.',
+      'The requirement that behavior analysts exhaust all pharmacological options before implementing behavioral interventions.'
     ],
+    misconceptions: [
+      'Candidates confuse this with effectiveness — least restrictive does not mean least effective. The principle requires starting with the least restrictive option that is likely to work, not the weakest option available.'
+    ],
+    domain: 'H',
+    taskItem: 'H.1',
+    category: 'Intervention'
   },
   {
-    id: 'rr-aba-distinctions',
-    term: 'Behaviorism, EAB, ABA, Professional Practice — Distinctions',
-    category: 'Philosophical Foundations',
-    definition: 'Four related but distinct levels: (1) Behaviorism — the philosophy of science defining subject matter and assumptions; (2) EAB — the basic science identifying behavioral principles through controlled laboratory research; (3) ABA — the applied science using principles to produce socially significant behavior change; (4) Professional Practice — service delivery in which BCBAs apply ABA to individual clients under ethical and regulatory constraints.',
+    id: 'h8',
+    term: 'Noncontingent Reinforcement (NCR)',
+    correctDefinition: 'Delivery of a reinforcer on a time-based schedule independent of behavior; reduces problem behavior by abolishing the motivating operation that maintains it.',
     distractors: [
-      'Behaviorism and EAB are identical fields; ABA and professional practice refer to the same applied context.',
-      'EAB is the applied science and ABA is the basic science; professional practice is the philosophical foundation.',
-      'Behaviorism, EAB, ABA, and professional practice are four names for the same discipline at different historical periods.',
+      'Delivery of reinforcement contingent on the absence of problem behavior for a specified interval; a form of differential reinforcement.',
+      'A procedure in which reinforcement is withheld until the problem behavior has been replaced by a communicative alternative.',
+      'Delivery of reinforcement at unpredictable intervals to maintain high response rates without producing ratio strain.'
     ],
+    misconceptions: [
+      'NCR is frequently confused with DRO. The critical distinction: NCR is time-based and independent of behavior; DRO is contingent on the absence of behavior during an interval.'
+    ],
+    domain: 'H',
+    taskItem: 'H.2',
+    category: 'Intervention'
   },
   {
-    id: 'rr-dimensions-aba',
-    term: 'Dimensions of ABA (REACCS)',
-    category: 'Philosophical Foundations',
-    definition: 'The seven defining characteristics identified by Baer, Wolf, and Risley (1968): Applied (socially significant behavior), Behavioral (directly measurable), Analytic (demonstrated experimental control), Technological (completely described procedures), Conceptually Systematic (linked to established principles), Effective (produces meaningful change), Generality (durable and generalizable outcomes).',
+    id: 'h9',
+    term: 'Functional Communication Training (FCT)',
+    correctDefinition: 'A differential reinforcement procedure that teaches a communicative response that is functionally equivalent to the problem behavior, producing the same reinforcer, to replace it.',
     distractors: [
-      'The dimensions of ABA are: Reliable, Empirical, Accountable, Collaborative, Client-Centered, and Systematic.',
-      'The dimensions of ABA are: Applied, Behavioral, Analytical, Consistent, Controlled, and Systematic.',
-      'The dimensions of ABA are defined by the BACB ethics code and include competence, integrity, and professional responsibility.',
+      'A procedure in which all instances of problem behavior are placed on extinction while simultaneously teaching a topographically similar communicative response.',
+      'A naturalistic teaching approach in which communication skills are taught during child-initiated interactions in the natural environment.',
+      'A social skills training package that uses video modeling and role-play to teach conversational turn-taking and requesting.'
     ],
+    misconceptions: [
+      'The defining feature of FCT is functional equivalence — the replacement response must produce the same reinforcer as the problem behavior. Teaching any communication skill is not FCT unless it serves the same function.'
+    ],
+    domain: 'H',
+    taskItem: 'H.2',
+    category: 'Intervention'
   },
   {
-    id: 'rr-unconditioned-punisher',
-    term: 'Unconditioned Punisher',
-    category: 'Reinforcement & Punishment',
-    definition: 'A stimulus that decreases the future frequency of behavior it follows without prior learning; its punishing function is determined by the organism\'s biology and evolutionary history.',
+    id: 'h10',
+    term: 'Behavior Intervention Plan (BIP)',
+    correctDefinition: 'A written document that describes the function of a problem behavior, the antecedent and consequence strategies to address it, and the skill-building procedures to replace it; developed from FBA results.',
     distractors: [
-      'A stimulus that decreases behavior only after being paired with a conditioned reinforcer.',
-      'A stimulus whose punishing function depends on the current establishing operation.',
-      'A neutral stimulus that becomes punishing through pairing with an aversive event.',
+      'A written document that lists all target behaviors for a client along with the reinforcement schedules and prompt hierarchies to be used in each program.',
+      'A legal document required by IDEA that specifies the educational placement and related services for students with disabilities who exhibit problem behavior.',
+      'A behavior support plan that describes the physical environment modifications needed to prevent problem behavior from occurring.'
     ],
+    misconceptions: [
+      'A BIP is not simply a list of consequences for problem behavior. It must include the function of the behavior, antecedent strategies, consequence strategies, and a replacement behavior plan derived from the FBA.'
+    ],
+    domain: 'H',
+    taskItem: 'H.3',
+    category: 'Intervention'
   },
   {
-    id: 'rr-conditioned-punisher',
-    term: 'Conditioned Punisher',
-    category: 'Reinforcement & Punishment',
-    definition: 'A previously neutral stimulus that acquires punishing properties through pairing with an unconditioned or established punisher; its effectiveness depends on learning history.',
+    id: 'h11',
+    term: 'High-Probability Request Sequence',
+    correctDefinition: 'An antecedent intervention in which several requests with a high probability of compliance are presented immediately before a low-probability request to increase compliance through behavioral momentum.',
     distractors: [
-      'A stimulus that decreases behavior across all motivating conditions without prior conditioning.',
-      'A stimulus that suppresses behavior by signaling the unavailability of reinforcement.',
-      'A stimulus whose punishing function is determined solely by the organism\'s phylogenetic history.',
+      'A consequence-based procedure in which preferred items are delivered contingent on compliance with difficult requests to increase motivation.',
+      'A prompt hierarchy in which the most intrusive prompt is presented first and faded to less intrusive prompts as compliance increases.',
+      'A token economy procedure in which tokens are delivered for each high-probability behavior completed, then exchanged for access to low-probability activities.'
     ],
+    misconceptions: [
+      'The high-p sequence is an antecedent intervention, not a consequence procedure. The high-p requests must be presented immediately before the low-p request to generate behavioral momentum.'
+    ],
+    domain: 'H',
+    taskItem: 'H.2',
+    category: 'Intervention'
   },
   {
-    id: 'rr-generalized-conditioned-punisher',
-    term: 'Generalized Conditioned Punisher',
-    category: 'Reinforcement & Punishment',
-    definition: 'A conditioned punisher that has been paired with multiple other punishers and therefore suppresses behavior across a wide range of motivating conditions; its effectiveness does not depend on a specific establishing operation.',
+    id: 'h12',
+    term: 'Competing Stimulus Assessment',
+    correctDefinition: 'A systematic evaluation of stimuli that may compete with the reinforcer maintaining automatically-reinforced problem behavior; used to identify items for enriched environments or alternative reinforcers in intervention.',
     distractors: [
-      'A punisher that is effective only when a specific deprivation state is present.',
-      'A punisher that has been paired with a single unconditioned punisher and suppresses one class of behavior.',
-      'A punisher whose effectiveness is determined by the current value of the reinforcer it removes.',
+      'A preference assessment format in which pairs of stimuli are presented simultaneously and the client\'s approach behavior determines relative reinforcer value.',
+      'An assessment that measures the degree to which competing verbal stimuli interfere with the client\'s ability to follow instructions.',
+      'A functional analysis condition in which competing reinforcers are delivered contingently to determine their relative reinforcing value compared to the maintaining reinforcer.'
     ],
+    misconceptions: [
+      'A competing stimulus assessment is specifically designed for automatically-maintained behavior. It is not a preference assessment — it measures reduction in problem behavior, not approach to stimuli.'
+    ],
+    domain: 'H',
+    taskItem: 'H.2',
+    category: 'Assessment'
   },
   {
-    id: 'rr-multiple-schedule',
-    term: 'Multiple Schedule',
-    category: 'Schedules of Reinforcement',
-    definition: 'A compound schedule of reinforcement in which two or more component schedules alternate, each signaled by a distinct discriminative stimulus; the organism must respond according to whichever schedule is currently in effect.',
+    id: 'h13',
+    term: 'Social Validity',
+    correctDefinition: 'The degree to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, caregivers, and the broader community.',
     distractors: [
-      'A compound schedule in which two or more component schedules alternate without any discriminative stimulus signaling which component is in effect.',
-      'A schedule in which completing one component produces a conditioned reinforcer and access to the next component.',
-      'A schedule in which two or more independent schedules are simultaneously available and the organism freely switches between them.',
+      'The statistical measure of how much an intervention\'s effect size exceeds the standard deviation of the baseline data, indicating a socially meaningful change.',
+      'The extent to which a behavior change generalizes to social settings and is maintained by natural social reinforcement from peers and community members.',
+      'A measure of how frequently the target behavior occurs in social contexts compared to non-social contexts, used to determine intervention priority.'
     ],
+    misconceptions: [
+      'Social validity has three components: goals, procedures, and outcomes — all three must be assessed. Candidates often focus only on outcome acceptability and overlook whether the goals themselves and the treatment procedures are considered acceptable by consumers.'
+    ],
+    domain: 'H',
+    taskItem: 'H.4',
+    category: 'Evaluation'
   },
   {
-    id: 'rr-mixed-schedule',
-    term: 'Mixed Schedule',
-    category: 'Schedules of Reinforcement',
-    definition: 'A compound schedule of reinforcement in which two or more component schedules alternate without any discriminative stimulus signaling which component is in effect; unlike a multiple schedule, no external cue differentiates the components.',
+    id: 'h14',
+    term: 'Behavior Trap',
+    correctDefinition: 'A naturally occurring contingency in the environment that, once entered, captures and maintains a behavior through natural reinforcement; used to promote generalization and maintenance without continued programmed reinforcement.',
     distractors: [
-      'A compound schedule in which each component is signaled by a distinct discriminative stimulus.',
-      'A schedule in which completing one component produces a conditioned reinforcer and access to the next component.',
-      'A schedule in which two or more independent schedules are simultaneously available and the organism freely switches between them.',
+      'A contrived contingency in which a behavior analyst arranges the environment to ensure that problem behavior is consistently followed by an aversive consequence.',
+      'A stimulus control procedure in which a discriminative stimulus is gradually introduced into natural settings to promote generalization of trained behavior.',
+      'A schedule of reinforcement in which the ratio requirement is gradually increased to thin programmed reinforcement while maintaining behavior.'
     ],
+    misconceptions: [
+      'A behavior trap relies on natural contingencies, not programmed ones. The key feature is that once the behavior is established, the natural environment takes over reinforcement without continued therapist involvement.'
+    ],
+    domain: 'H',
+    taskItem: 'H.5',
+    category: 'Intervention'
   },
   {
-    id: 'rr-chained-schedule',
-    term: 'Chained Schedule',
-    category: 'Schedules of Reinforcement',
-    definition: 'A compound schedule in which completion of each component produces a conditioned reinforcer (the SD for the next component) and access to the next component; the terminal reinforcer is delivered only upon completion of the final link.',
+    id: 'h15',
+    term: 'Antecedent Intervention',
+    correctDefinition: 'A procedure that modifies the environment or events that precede a behavior in order to prevent problem behavior or promote desired behavior, without relying solely on consequence-based strategies.',
     distractors: [
-      'A compound schedule in which two or more component schedules alternate, each signaled by a distinct discriminative stimulus, with reinforcement available in each component.',
-      'A compound schedule in which two or more component schedules alternate without any discriminative stimulus signaling which component is in effect.',
-      'A schedule in which two or more independent schedules are simultaneously available and the organism freely switches between them.',
+      'A procedure that modifies the consequences following a behavior to change the future probability of that behavior occurring in similar antecedent conditions.',
+      'A procedure that identifies the antecedent stimuli that evoke problem behavior through systematic manipulation of environmental variables.',
+      'A procedure that uses prompts delivered before a behavior to ensure the behavior occurs and can then be reinforced.'
     ],
+    misconceptions: [
+      'Antecedent interventions modify the environment before the behavior occurs. Prompting is an antecedent intervention, but not all antecedent interventions are prompts — NCR, high-p sequences, and environmental modifications are all antecedent interventions.'
+    ],
+    domain: 'H',
+    taskItem: 'H.2',
+    category: 'Intervention'
   },
   {
-    id: 'rr-response-maintenance-conceptual',
-    term: 'Response Maintenance (Conceptual)',
-    category: 'Generalization & Maintenance',
-    definition: 'The extent to which a learned behavior continues to occur after the training contingencies have been thinned, faded, or removed; a dimension of generality at the conceptual level, distinct from the programming procedures used to promote it.',
+    id: 'i7',
+    term: 'Behavioral Skills Training (BST)',
+    correctDefinition: 'A staff training package consisting of four components: instructions, modeling, rehearsal, and feedback; all four components must be present for the procedure to qualify as BST.',
     distractors: [
-      'The process of systematically fading prompts to transfer stimulus control to natural cues.',
-      'The extent to which a learned behavior occurs in settings, with people, or under conditions not present during training.',
-      'The process of gradually thinning a reinforcement schedule to reduce dependence on programmed consequences.',
+      'A supervision model in which the supervisor observes the supervisee\'s performance and provides written feedback within 48 hours of the observation.',
+      'A training approach that uses video modeling and written competency exams to ensure staff can identify and describe correct implementation of procedures.',
+      'A performance management system that uses goal-setting, self-monitoring, and public posting to improve staff implementation fidelity.'
     ],
+    misconceptions: [
+      'BST requires all four components. A common error is assuming that instructions plus feedback constitute BST. Without modeling and rehearsal, the procedure is not BST regardless of how detailed the instructions or feedback are.'
+    ],
+    domain: 'I',
+    taskItem: 'I.1',
+    category: 'Supervision'
   },
   {
-    id: 'rr-mo-vs-sd',
-    term: 'MO vs. Stimulus Control — Distinction',
-    category: 'Motivating Operations',
-    definition: 'Motivating operations (MOs) alter the value of a reinforcer and the frequency of behavior that has produced that reinforcer in the past — they affect what the organism works for. Discriminative stimuli (SDs) signal the availability of reinforcement based on a history of differential reinforcement — they affect when the organism works. MOs change reinforcer value; SDs signal reinforcement availability.',
+    id: 'i8',
+    term: 'Performance Feedback',
+    correctDefinition: 'Information provided to a supervisee about the accuracy and quality of their work, delivered in close temporal proximity to the observed behavior to promote skill acquisition and maintenance.',
     distractors: [
-      'MOs signal the availability of reinforcement; SDs alter the value of a reinforcer and the frequency of related behavior.',
-      'MOs and SDs are functionally equivalent; both increase the probability of behavior by signaling that reinforcement is available.',
-      'MOs are antecedent stimuli that evoke behavior through classical conditioning; SDs evoke behavior through operant conditioning.',
+      'A written evaluation of a supervisee\'s overall clinical competence completed at the end of a supervision period and used for credentialing purposes.',
+      'A verbal summary of session data trends provided to the supervisee at weekly team meetings to inform intervention decisions.',
+      'A formal performance improvement plan developed when a supervisee fails to meet minimum competency standards after repeated coaching.'
     ],
+    misconceptions: [
+      'Performance feedback must be specific and timely — delivered soon after the observed behavior. General praise or monthly evaluations are not performance feedback in the behavioral sense.'
+    ],
+    domain: 'I',
+    taskItem: 'I.2',
+    category: 'Supervision'
   },
   {
-    id: 'rr-imitation-vs-observational',
-    term: 'Imitation vs. Observational Learning',
-    category: 'Verbal Behavior & Learning',
-    definition: 'Imitation is the immediate reproduction of a model\'s behavior that produces reinforcement; it requires a topographically similar response. Observational learning is a broader process in which an observer\'s behavior is influenced by watching a model receive consequences — the observer need not immediately reproduce the behavior and effects may include changes in rules, expectations, or emotional responses.',
+    id: 'i9',
+    term: 'Pyramidal Training',
+    correctDefinition: 'A staff training model in which a behavior analyst trains a small group of lead staff who then train other staff, creating a hierarchical dissemination structure that extends training reach.',
     distractors: [
-      'Imitation and observational learning are synonymous terms for the same behavioral process.',
-      'Observational learning requires immediate topographic similarity to the model; imitation does not require direct contact with consequences.',
-      'Imitation is a form of respondent conditioning; observational learning is a form of operant conditioning.',
+      'A training model in which all staff receive identical training from the behavior analyst simultaneously in a group workshop format.',
+      'A supervision model in which the behavior analyst provides individual supervision to each staff member on a rotating schedule.',
+      'A training approach in which staff are ranked by competency level and assigned to client cases of increasing complexity.'
     ],
-  },
-  {
-    id: 'rr-efficiency-measures',
-    term: 'Efficiency Measures (Trials to Criterion, Cost-Benefit)',
-    category: 'Measurement',
-    definition: 'Measures of the resources required to produce a specified level of behavior change: (1) Trials to criterion — the number of learning opportunities required before a performance standard is met; (2) Cost-benefit analysis — a comparison of resources expended against the magnitude and social significance of the behavior change produced.',
-    distractors: [
-      'Efficiency measures assess the topographic accuracy of a behavior relative to a defined standard.',
-      'Efficiency measures are used exclusively to evaluate staff performance, not client behavior change.',
-      'Efficiency measures assess the degree to which a behavior generalizes across settings and people.',
+    misconceptions: [
+      'Pyramidal training is defined by the hierarchical dissemination structure, not by the number of staff trained. The BCBA trains trainers who train others — the BCBA does not directly train all staff.'
     ],
-  },
-  {
-    id: 'rr-select-measurement-procedure',
-    term: 'Selecting a Measurement Procedure Based on Environmental Constraints',
-    category: 'Measurement',
-    definition: 'The decision process for choosing a data collection method that is both technically appropriate for the behavior and feasible given real-world constraints such as staff availability, setting demands, behavior rate, and client safety. The selected procedure must produce data that are accurate, reliable, and actionable.',
-    distractors: [
-      'Measurement procedure selection is based solely on the topography of the target behavior, not on environmental factors.',
-      'The most technically precise measurement procedure should always be selected regardless of implementation constraints.',
-      'Measurement procedure selection is determined by the reinforcement schedule in effect during the observation period.',
-    ],
-  },
-  {
-    id: 'rr-procedural-integrity-selection',
-    term: 'Selecting a Procedural Integrity Measurement Procedure',
-    category: 'Measurement',
-    definition: 'The decision process for choosing how to measure whether an intervention is being implemented as designed. Options include direct observation with a fidelity checklist, permanent product review, self-monitoring, and video review. Selection depends on the complexity of the procedure, the setting, and the resources available.',
-    distractors: [
-      'Procedural integrity is always measured using interval recording regardless of the intervention type.',
-      'Procedural integrity measurement is only required when the client fails to meet treatment goals.',
-      'Procedural integrity is measured by comparing the client\'s behavior data to the baseline phase, not by observing staff implementation.',
-    ],
-  },
+    domain: 'I',
+    taskItem: 'I.3',
+    category: 'Supervision'
+  }
 ];

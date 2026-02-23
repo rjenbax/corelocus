@@ -33,7 +33,7 @@ export interface ScenarioItem {
 }
 
 export const scenarioItems: ScenarioItem[] = [
-  // ── Scenario 1: Functional Assessment ─────────────────────────────────────
+  // -- Scenario 1: Functional Assessment -------------------------------------
   {
     id: 'sj-01',
     domain: 'Assessment',
@@ -167,7 +167,7 @@ export const scenarioItems: ScenarioItem[] = [
       ],
   },
 
-  // ── Scenario 2: Reinforcement Schedules ────────────────────────────────────
+  // -- Scenario 2: Reinforcement Schedules ------------------------------------
   {
     id: 'sj-02',
     domain: 'Behavior Principles',
@@ -229,7 +229,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 3: Verbal Behavior ────────────────────────────────────────────
+  // -- Scenario 3: Verbal Behavior --------------------------------------------
   {
     id: 'sj-03',
     domain: 'Verbal Behavior',
@@ -291,7 +291,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 4: Behavior Reduction ────────────────────────────────────────
+  // -- Scenario 4: Behavior Reduction ----------------------------------------
   {
     id: 'sj-04',
     domain: 'Behavior Reduction',
@@ -399,7 +399,7 @@ export const scenarioItems: ScenarioItem[] = [
       ],
   },
 
-  // ── Scenario 5: Ethics ─────────────────────────────────────────────────────
+  // -- Scenario 5: Ethics -----------------------------------------------------
   {
     id: 'sj-05',
     domain: 'Ethics & Professional Practice',
@@ -435,7 +435,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 6: Data-Based Decision Making ─────────────────────────────────
+  // -- Scenario 6: Data-Based Decision Making ---------------------------------
   {
     id: 'sj-06',
     domain: 'Measurement & Data Analysis',
@@ -471,7 +471,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 7: Generalization Programming ─────────────────────────────────
+  // -- Scenario 7: Generalization Programming ---------------------------------
   {
     id: 'sj-07',
     domain: 'Skill Acquisition',
@@ -507,7 +507,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 8: Measurement ────────────────────────────────────────────────
+  // -- Scenario 8: Measurement ------------------------------------------------
   {
     id: 'sj-08',
     domain: 'Measurement',
@@ -543,7 +543,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 9: Prompting ──────────────────────────────────────────────────
+  // -- Scenario 9: Prompting --------------------------------------------------
   {
     id: 'sj-09',
     domain: 'Skill Acquisition',
@@ -579,7 +579,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 10: Supervision ───────────────────────────────────────────────
+  // -- Scenario 10: Supervision -----------------------------------------------
   {
     id: 'sj-10',
     domain: 'Ethics & Professional Practice',
@@ -687,7 +687,7 @@ export const scenarioItems: ScenarioItem[] = [
       ],
   },
 
-  // ── Scenarios 11–30: Additional scenarios ─────────────────────────────────
+  // -- Scenarios 11–30: Additional scenarios ---------------------------------
   {
     id: 'sj-11',
     domain: 'Behavior Principles',
@@ -1532,7 +1532,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Domain A: Behaviorism & Philosophical Foundations ─────────────────────
+  // -- Domain A: Behaviorism & Philosophical Foundations ---------------------
   {
     id: 'sj-31',
     title: 'Philosophical Foundations in Practice',
@@ -1620,7 +1620,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Domain E: Ethics & Professional Issues ────────────────────────────────
+  // -- Domain E: Ethics & Professional Issues --------------------------------
   {
     id: 'sj-32',
     title: 'Ethics: Confidentiality and Multiple Relationships',
@@ -1780,7 +1780,7 @@ export const scenarioItems: ScenarioItem[] = [
       ],
   },
 
-  // ── Domain H: Selecting and Implementing Interventions ───────────────────
+  // -- Domain H: Selecting and Implementing Interventions -------------------
   {
     id: 'sj-33',
     title: 'Intervention Selection and Data-Based Decision Making',
@@ -1868,7 +1868,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Domain I: Personnel Supervision & Management ─────────────────────────
+  // -- Domain I: Personnel Supervision & Management -------------------------
   {
     id: 'sj-34',
     title: 'Supervision: BST and Performance Management',
@@ -1955,7 +1955,7 @@ export const scenarioItems: ScenarioItem[] = [
       },
     ],
   },
-  // ─── NEW SCENARIOS sj-35 through sj-46 ──────────────────────────────────────
+  // --- NEW SCENARIOS sj-35 through sj-46 --------------------------------------
 
   // sj-35: Extinction Burst and Procedure Selection (Behavior Reduction)
   {
@@ -2836,7 +2836,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 47: IOA Calculation ──────────────────────────────────────────
+  // -- Scenario 47: IOA Calculation ------------------------------------------
   {
     id: 'sj-47',
     domain: 'Measurement',
@@ -2924,7 +2924,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 48: Prompt Fading ────────────────────────────────────────────
+  // -- Scenario 48: Prompt Fading --------------------------------------------
   {
     id: 'sj-48',
     domain: 'Skill Acquisition',
@@ -3012,7 +3012,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 49: Generalization Programming ───────────────────────────────
+  // -- Scenario 49: Generalization Programming -------------------------------
   {
     id: 'sj-49',
     domain: 'Skill Acquisition',
@@ -3100,7 +3100,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 50: Insufficient Baseline ────────────────────────────────────
+  // -- Scenario 50: Insufficient Baseline ------------------------------------
   {
     id: 'sj-50',
     domain: 'Research & Design',
@@ -3189,7 +3189,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 51: Trend Instability in Baseline ─────────────────────────────
+  // -- Scenario 51: Trend Instability in Baseline -----------------------------
   {
     id: 'sj-51',
     domain: 'Research & Design',
@@ -3278,7 +3278,7 @@ export const scenarioItems: ScenarioItem[] = [
     ],
   },
 
-  // ── Scenario 52: Multiple Baseline Concurrent Change ──────────────────────
+  // -- Scenario 52: Multiple Baseline Concurrent Change ----------------------
   {
     id: 'sj-52',
     domain: 'Research & Design',
