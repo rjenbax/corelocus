@@ -5,8 +5,9 @@
  */
 import { useLocation } from 'wouter';
 import { useProgress } from '@/contexts/ProgressContext';
-import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame, ExternalLink, Award } from 'lucide-react';
+import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame, ExternalLink, Award, Menu, X, Home, DollarSign } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useState } from 'react';
 import TaskItemProgress from '@/components/TaskItemProgress';
 
 interface TierConfig {
@@ -121,6 +122,7 @@ const TIERS: TierConfig[] = [
 export default function Dashboard() {
   const [, navigate] = useLocation();
   const { getTierCompletion } = useProgress();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const internalTiers = TIERS.filter(t => !t.isExternal);
   const totalCompletion = Math.round(
@@ -140,7 +142,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            {/* Pricing link */}
+            {/* Desktop nav links */}
             <button
               onClick={() => navigate('/pricing')}
               className="hidden sm:flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
@@ -153,7 +155,6 @@ export default function Dashboard() {
             >
               ← Home
             </button>
-            {/* Daily Practice shortcut in header */}
             <button
               onClick={() => navigate('/daily-practice')}
               className="hidden sm:flex items-center gap-1.5 text-xs font-medium text-primary bg-primary/10 hover:bg-primary/15 rounded-full px-3 py-1.5 transition-colors"
@@ -171,9 +172,80 @@ export default function Dashboard() {
               </div>
               <span className="font-medium text-foreground">{totalCompletion}%</span>
             </div>
+
+            {/* Mobile hamburger button */}
+            <button
+              onClick={() => setMobileMenuOpen(v => !v)}
+              className="sm:hidden flex items-center justify-center w-9 h-9 rounded-lg hover:bg-muted transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5 text-foreground" /> : <Menu className="w-5 h-5 text-foreground" />}
+            </button>
           </div>
         </div>
       </header>
+
+      {/* Mobile slide-down menu */}
+      {mobileMenuOpen && (
+        <div className="sm:hidden border-b border-border bg-card/95 backdrop-blur-sm z-40">
+          <nav className="container py-3 flex flex-col gap-1">
+            <button
+              onClick={() => { navigate('/daily-practice'); setMobileMenuOpen(false); }}
+              className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-muted transition-colors text-left"
+            >
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Flame className="w-4 h-4 text-primary" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">Daily Practice</p>
+                <p className="text-xs text-muted-foreground">Rotating cross-tier session</p>
+              </div>
+            </button>
+            <button
+              onClick={() => { navigate('/pricing'); setMobileMenuOpen(false); }}
+              className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-muted transition-colors text-left"
+            >
+              <div className="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center flex-shrink-0">
+                <DollarSign className="w-4 h-4 text-teal-700" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">Pricing</p>
+                <p className="text-xs text-muted-foreground">Plans from $47/month</p>
+              </div>
+            </button>
+            <button
+              onClick={() => { navigate('/'); setMobileMenuOpen(false); }}
+              className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-muted transition-colors text-left"
+            >
+              <div className="w-8 h-8 rounded-lg bg-muted flex items-center justify-center flex-shrink-0">
+                <Home className="w-4 h-4 text-muted-foreground" />
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">Home</p>
+                <p className="text-xs text-muted-foreground">Back to landing page</p>
+              </div>
+            </button>
+            {/* Progress bar in mobile menu */}
+            <div className="flex items-center gap-3 px-3 py-3">
+              <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
+                <Trophy className="w-4 h-4 text-amber-700" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold text-foreground">Overall Progress</p>
+                <div className="flex items-center gap-2 mt-1">
+                  <div className="flex-1 h-1.5 bg-muted rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-primary rounded-full transition-all duration-500"
+                      style={{ width: `${totalCompletion}%` }}
+                    />
+                  </div>
+                  <span className="text-xs font-medium text-foreground">{totalCompletion}%</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      )}
 
       {/* Hero */}
       <section className="border-b border-border bg-gradient-to-b from-card to-background">
