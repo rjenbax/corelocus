@@ -4,8 +4,8 @@
  */
 import { useState, useMemo } from 'react';
 import { domainInfo } from '@/data/allQuestions';
-import { tier6Questions } from '@/data/tier6Questions';
-const allQuestions = tier6Questions as any[];
+import { allTier6Questions } from '@/data/tier6Pool';
+const allQuestions = allTier6Questions as any[];
 import { cn } from '@/lib/utils';
 import { Search, ChevronDown, ChevronUp, Library } from 'lucide-react';
 

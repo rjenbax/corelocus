@@ -109,18 +109,53 @@ const initialState: MockExamState = {
   completedAt: null,
 };
 
+// Official BCBA 6th Edition domain weights for a 175-question exam
+const BCBA_DOMAIN_WEIGHTS: Record<string, number> = {
+  A: 8, B: 24, C: 21, D: 13, E: 22, F: 23, G: 25, H: 20, I: 19,
+};
+
 function selectQuestions(settings: MockExamSettings, questionPool: typeof allQuestions): typeof allQuestions {
-  let pool = [...questionPool];
+  // If focusing on specific domains (practice mode), just filter and shuffle
   if (settings.focusDomains.length > 0) {
-    pool = pool.filter(q => settings.focusDomains.includes(q.domain));
+    let pool = questionPool.filter(q => settings.focusDomains.includes(q.domain));
+    if (settings.shuffleQuestions) {
+      for (let i = pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[j]] = [pool[j], pool[i]];
+      }
+    }
+    return pool.slice(0, settings.questionCount);
   }
+
+  // For full mock exams: select proportionally by BCBA domain weights
+  const selected: typeof allQuestions = [];
+  const domains = Object.keys(BCBA_DOMAIN_WEIGHTS);
+  const totalWeight = Object.values(BCBA_DOMAIN_WEIGHTS).reduce((a, b) => a + b, 0);
+
+  for (const domain of domains) {
+    const domainPool = questionPool.filter(q => q.domain === domain);
+    if (domainPool.length === 0) continue;
+
+    // Calculate how many questions from this domain
+    const weight = BCBA_DOMAIN_WEIGHTS[domain] || 0;
+    const count = settings.questionCount === 175
+      ? weight  // Use exact BCBA weights for full exam
+      : Math.round((weight / totalWeight) * settings.questionCount);
+
+    // Shuffle domain pool
+    const shuffled = [...domainPool].sort(() => Math.random() - 0.5);
+    selected.push(...shuffled.slice(0, count));
+  }
+
+  // Shuffle the final selection so domains are interleaved
   if (settings.shuffleQuestions) {
-    for (let i = pool.length - 1; i > 0; i--) {
+    for (let i = selected.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [pool[i], pool[j]] = [pool[j], pool[i]];
+      [selected[i], selected[j]] = [selected[j], selected[i]];
     }
   }
-  return pool.slice(0, settings.questionCount);
+
+  return selected;
 }
 
 function mockExamReducer(state: MockExamState, action: MockExamAction): MockExamState {

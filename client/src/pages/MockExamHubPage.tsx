@@ -8,7 +8,7 @@ import { useLocation } from 'wouter';
 import { useMockExam } from '@/contexts/MockExamContext';
 import { useMockExamHub } from '@/contexts/MockExamHubContext';
 import { getTaskName, extractConceptFromText } from '@/data/taskListNames';
-import { domainInfo } from '@/data/allQuestions';
+import { tier6DomainPool } from '@/data/tier6Pool';
 import { tier6Questions } from '@/data/tier6Questions';
 const allQuestions = tier6Questions as any[];
 import { cn } from '@/lib/utils';
@@ -194,7 +194,7 @@ function QuestionView() {
   useEffect(() => {
     if (state.complete && !prevCompleteRef.current) {
       const domainScores: Record<string, { correct: number; total: number }> = {};
-      Object.entries(domainInfo).forEach(([domain]) => {
+      Object.entries(tier6DomainPool).forEach(([domain]) => {
         const qs = state.questions.filter(q => q.domain === domain);
         const correct = qs.filter(q => state.answers[Number(q.id)] === q.correctAnswer).length;
         domainScores[domain] = { correct, total: qs.length };

@@ -23,7 +23,7 @@ import PricingPage from "./pages/PricingPage";
 import MockExamPage from "./pages/MockExamPage";
 import MockExamResultsPage from "./pages/MockExamResultsPage";
 import { MockExamHubProvider } from "./contexts/MockExamHubContext";
-import { tier6Questions } from "./data/tier6Questions";
+import { allTier6Questions } from "./data/tier6Pool";
 import MockExamHubLayout from "./components/MockExamHubLayout";
 import MockHubDashboard from "./pages/MockHubDashboard";
 import MockExamHubPage from "./pages/MockExamHubPage";
@@ -46,13 +46,13 @@ function HubRouter() {
   // Question view is full-screen (no sidebar) — location is relative inside nest
   if (location === '/exam/question' || location.startsWith('/exam/question')) {
     return (
-      <MockExamProvider questionPool={tier6Questions as any}>
+      <MockExamProvider questionPool={allTier6Questions as any}>
         <MockExamHubPage />
       </MockExamProvider>
     );
   }
   return (
-    <MockExamProvider questionPool={tier6Questions as any}>
+    <MockExamProvider questionPool={allTier6Questions as any}>
       <MockExamHubLayout>
         <Switch>
           <Route path="/" component={MockHubDashboard} />

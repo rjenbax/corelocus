@@ -6,8 +6,8 @@
 import { useState, useCallback } from 'react';
 import { useLocation } from 'wouter';
 import { domainInfo } from '@/data/allQuestions';
-import { tier6Questions } from '@/data/tier6Questions';
-const allQuestions = tier6Questions as any[];
+import { allTier6Questions } from '@/data/tier6Pool';
+const allQuestions = allTier6Questions as any[];
 import { useMockExamHub } from '@/contexts/MockExamHubContext';
 import { getTaskName, extractConceptFromText } from '@/data/taskListNames';
 import { cn } from '@/lib/utils';
