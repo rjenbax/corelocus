@@ -1,7 +1,3 @@
-// Domain F — Tier 6 question pool
-// BCBA 6th Edition Task List
-// Part of the 5× question pool for the mock exam engine
-
 import { Question } from './types';
 
 export const tier6Pool_F: Question[] = [
@@ -33,12 +29,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "Based on observations, a BCBA suspects that a student\"s refusal to complete work is maintained by escape from academic tasks. The BCBA needs to articulate this suspicion as a clear, testable hypothesis.",
     question: "Which of the following best represents a testable hypothesis for the student\"s work refusal?",
     choices: [
-      { letter: "A", text: "When academic tasks are presented, the student refuses to escape the task." },
       { letter: "D", text: "The client has a diagnosis of ODD." },
       { letter: "C", text: "The child is seeking sensory input." },
       { letter: "B", text: "The student is being defiant." },
+      { letter: "A", text: "When academic tasks are presented, the student refuses to escape the task." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "A functional hypothesis states the antecedent, behavior, and maintaining consequence, identifying the function. It is a testable statement about the functional relationship. Choice D is incorrect because A diagnosis is a label, not a functional hypothesis. Choice C is incorrect because While a function, \"seeking sensory input\" is not a complete hypothesis without antecedents/consequences. Choice B is incorrect because \"Defiant\" is a label, not a functional explanation.",
   },
   {
@@ -51,12 +47,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is developing an intervention for a student struggling with writing. Before implementing the intervention, the BCBA evaluates the student\"s current writing abilities using samples of their school assignments.",
     question: "Evaluating a student\"s writing abilities using their school assignments is a form of what assessment?",
     choices: [
-      { letter: "D", text: "Norm-referenced assessment." },
-      { letter: "C", text: "Indirect assessment." },
       { letter: "A", text: "Criterion-referenced assessment aligned with the curriculum." },
       { letter: "B", text: "Social validity assessment." },
+      { letter: "D", text: "Norm-referenced assessment." },
+      { letter: "C", text: "Indirect assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Curriculum-based assessments directly measure a student\"s performance on the specific curriculum being taught, often used for progress monitoring and identifying instructional needs. Choice D is incorrect because Norm-referenced assessments compare an individual\"s performance to a normative group, not a specific curriculum. Choice C is incorrect because Indirect assessments gather information; curriculum-based assessments are direct measures of academic performance. Choice B is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes.",
   },
   {
@@ -69,12 +65,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After reviewing ABC data and conducting interviews, a BCBA notes that a client\"s hitting behavior often occurs when demands are placed and typically results in the demand being removed. The BCBA needs to summarize this information into a testable statement.",
     question: "The BCBA should formulate a hypothesis that the child\"s crying behavior is maintained by: ",
     choices: [
+      { letter: "A", text: "When demands are placed, the client hits to escape the demand." },
       { letter: "D", text: "The behavior is attention-seeking." },
       { letter: "B", text: "The child is seeking sensory input." },
       { letter: "C", text: "The client has a diagnosis of ODD." },
-      { letter: "A", text: "When demands are placed, the client hits to escape the demand." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "A functional hypothesis states the antecedent, behavior, and maintaining consequence, identifying the function. It is a testable statement about the functional relationship. Choice D is incorrect because This is a function, but the hypothesis needs to include the antecedent and behavior. Choice B is incorrect because While a function, \"seeking sensory input\" is not a complete hypothesis without antecedents/consequences. Choice C is incorrect because A diagnosis is a label, not a functional hypothesis.",
   },
   {
@@ -105,12 +101,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA has conducted indirect and descriptive assessments for a client\"s self-injurious behavior, but the function remains unclear. To definitively identify the maintaining variable, the BCBA proposes a controlled experimental approach.",
     question: "To confirm the function of aggression, the BCBA will conduct a: ",
     choices: [
-      { letter: "C", text: "A descriptive functional behavior assessment." },
       { letter: "B", text: "An indirect assessment." },
       { letter: "A", text: "An experimental functional assessment." },
       { letter: "D", text: "A skills assessment." },
+      { letter: "C", text: "A descriptive functional behavior assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Functional analysis is the experimental manipulation of environmental variables to determine the function of a behavior. It is the most definitive method for identifying functional relationships. Choice C is incorrect for a general reason related to F.3 or is a plausible but incorrect application. Choice B is incorrect because Indirect assessments gather information through interviews or questionnaires, not direct manipulation. Choice D is incorrect because Skills assessments evaluate a client\"s abilities, not the function of problem behavior.",
   },
   {
@@ -123,12 +119,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "To determine if a student has mastered specific math facts taught in class, the teacher, with BCBA guidance, administers a test composed of problems directly from the math textbook and worksheets.",
     question: "Administering a test directly from the math curriculum to assess mastery is an example of a: ",
     choices: [
-      { letter: "B", text: "Functional analysis." },
-      { letter: "C", text: "Social validity assessment." },
       { letter: "A", text: "Curriculum-based assessment." },
       { letter: "D", text: "Indirect assessment." },
+      { letter: "B", text: "Functional analysis." },
+      { letter: "C", text: "Social validity assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Curriculum-based assessments directly measure a student\"s performance on the specific curriculum being taught, often used for progress monitoring and identifying instructional needs. Choice B is incorrect because Functional analysis determines behavior function, not academic skill levels. Choice C is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes. Choice D is incorrect because Indirect assessments gather information; curriculum-based assessments are direct measures of academic performance.",
   },
   {
@@ -141,12 +137,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After reviewing ABC data and conducting interviews, a BCBA notes that a client\"s hitting behavior often occurs when demands are placed and typically results in the demand being removed. The BCBA needs to summarize this information into a testable statement.",
     question: "Which of the following best represents a testable hypothesis for the student\"s work refusal?",
     choices: [
+      { letter: "B", text: "The student is being defiant." },
       { letter: "A", text: "When academic tasks are presented, the student refuses to escape the task." },
       { letter: "D", text: "The client has a diagnosis of ODD." },
       { letter: "C", text: "The behavior is attention-seeking." },
-      { letter: "B", text: "The student is being defiant." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "A functional hypothesis states the antecedent, behavior, and maintaining consequence, identifying the function. It is a testable statement about the functional relationship. Choice D is incorrect because A diagnosis is a label, not a functional hypothesis. Choice C is incorrect because This is a function, but the hypothesis needs to include the antecedent and behavior. Choice B is incorrect because \"Defiant\" is a label, not a functional explanation.",
   },
   {
@@ -177,12 +173,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA has trained a team of staff to implement a new behavior intervention plan. To ensure the plan is being carried out correctly, the BCBA periodically observes the staff and uses a checklist to record whether each step of the intervention is followed.",
     question: "Regularly monitoring a behavior technician\"s adherence to teaching procedures is an example of assessing:",
     choices: [
-      { letter: "B", text: "Interobserver agreement (IOA)." },
       { letter: "A", text: "Implementation fidelity." },
       { letter: "C", text: "Client progress." },
       { letter: "D", text: "Social validity." },
+      { letter: "B", text: "Interobserver agreement (IOA)." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Treatment integrity (or procedural integrity/implementation fidelity) refers to the extent to which an intervention is implemented as planned. Checklists and direct observation are common methods. Choice B is incorrect because IOA measures the extent to which two or more observers record the same data, not how accurately an intervention is implemented. Choice C is incorrect because Client progress measures changes in the client\"s behavior, not the fidelity of the intervention. Choice D is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes.",
   },
   {
@@ -195,12 +191,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A team is struggling to reduce a child\"s disruptive vocalizations. The BCBA suggests setting up conditions where different potential maintaining consequences are systematically presented and withdrawn to observe their effect on the vocalizations.",
     question: "To confirm the function of aggression, the BCBA will conduct a: ",
     choices: [
-      { letter: "A", text: "A brief functional analysis." },
-      { letter: "B", text: "A skills assessment." },
       { letter: "C", text: "An indirect assessment." },
       { letter: "D", text: "A descriptive functional behavior assessment." },
+      { letter: "A", text: "A brief functional analysis." },
+      { letter: "B", text: "A skills assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Functional analysis is the experimental manipulation of environmental variables to determine the function of a behavior. It is the most definitive method for identifying functional relationships. Choice B is incorrect because Skills assessments evaluate a client\"s abilities, not the function of problem behavior. Choice C is incorrect because Indirect assessments gather information through interviews or questionnaires, not direct manipulation. Choice D is incorrect for a general reason related to F.3 or is a plausible but incorrect application.",
   },
   {
@@ -213,12 +209,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is beginning a new case with a 7-year-old client diagnosed with ASD. The parents report frequent tantrums at home, especially during transitions. The BCBA decides to start by gathering information from the parents and teachers.",
     question: "The BCBA\"s approach in this situation primarily relies on what type of assessment?",
     choices: [
+      { letter: "D", text: "Conducting a preference assessment using a multiple stimulus without replacement procedure." },
       { letter: "A", text: "Administering a functional assessment screening tool to the teacher." },
       { letter: "C", text: "Measuring the duration of tantrums using a stopwatch." },
       { letter: "B", text: "Directly observing the client\"s behavior during transitions." },
-      { letter: "D", text: "Conducting a preference assessment using a multiple stimulus without replacement procedure." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Indirect assessments involve gathering information from individuals who have direct contact with the client or reviewing existing records. Interviews, questionnaires, and record reviews are all forms of indirect assessment. Choice C is incorrect for a general reason related to F.1 or is a plausible but incorrect application. Choice B is incorrect for a general reason related to F.1 or is a plausible but incorrect application. Choice D is incorrect because Preference assessments are direct assessments used to identify potential reinforcers, not to gather general information about behavior.",
   },
   {
@@ -249,12 +245,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A client has a wide range of preferred items, and the BCBA needs to quickly identify the most potent reinforcers. The BCBA presents an array of items, and after the client selects one, it is removed from the array, and the remaining items are presented again.",
     question: "Which preference assessment method is being used when two items are presented at a time, and selections are recorded?",
     choices: [
-      { letter: "C", text: "Single stimulus preference assessment." },
       { letter: "B", text: "A reinforcer assessment." },
       { letter: "A", text: "Free operant preference assessment." },
       { letter: "D", text: "Multiple stimulus with replacement (MSW) preference assessment." },
+      { letter: "C", text: "Single stimulus preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Free operant assessments involve observing engagement with items freely available. Paired stimulus assessments present two items at a time. MSWO involves removing selected items from the array. Choice C is incorrect because Single stimulus presents one item at a time. Choice B is incorrect because Reinforcer assessment is a broader term; these are specific preference assessment types. Choice D is incorrect because MSW involves returning selected items to the array.",
   },
   {
@@ -267,12 +263,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A school psychologist refers a student for behavioral services due to disruptive classroom behavior. The BCBA reviews the student\"s cumulative file, including previous behavior plans and incident reports.",
     question: "The BCBA\"s approach in this situation primarily relies on what type of assessment?",
     choices: [
-      { letter: "B", text: "Implementing a functional analysis in a controlled setting." },
-      { letter: "A", text: "Reviewing the client\"s medical and educational records." },
       { letter: "D", text: "Directly observing the client\"s behavior during transitions." },
       { letter: "C", text: "Measuring the duration of tantrums using a stopwatch." },
+      { letter: "B", text: "Implementing a functional analysis in a controlled setting." },
+      { letter: "A", text: "Reviewing the client\"s medical and educational records." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Indirect assessments involve gathering information from individuals who have direct contact with the client or reviewing existing records. Interviews, questionnaires, and record reviews are all forms of indirect assessment. Choice B is incorrect because Functional analysis is a direct assessment method involving systematic manipulation of environmental variables. Choice D is incorrect for a general reason related to F.1 or is a plausible but incorrect application. Choice C is incorrect for a general reason related to F.1 or is a plausible but incorrect application.",
   },
   {
@@ -285,12 +281,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "During a school observation, a BCBA notes that a student\"s off-task behavior is more prevalent during independent work periods and less during group activities. To systematically document this, the BCBA initiates a specific data collection method.",
     question: "To identify the temporal patterns of the client\"s aggressive outbursts, the BCBA should recommend using a: ",
     choices: [
+      { letter: "B", text: "A structured interview." },
       { letter: "D", text: "A reinforcer assessment." },
       { letter: "A", text: "Direct observation with a focus on environmental variables." },
       { letter: "C", text: "A skills assessment." },
-      { letter: "B", text: "A structured interview." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "ABC data collection involves recording the antecedents, behaviors, and consequences as they occur in the natural environment, providing correlational information about functional relationships. A scatterplot is used to identify temporal patterns of behavior. Choice D is incorrect because Reinforcer assessments identify preferred stimuli, not functional relationships. Choice C is incorrect because Skills assessments evaluate a client\"s repertoire, not environmental influences on problem behavior. Choice B is incorrect because A structured interview is an indirect assessment, not a direct descriptive assessment.",
   },
   {
@@ -321,12 +317,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA has conducted indirect and descriptive assessments for a client\"s self-injurious behavior, but the function remains unclear. To definitively identify the maintaining variable, the BCBA proposes a controlled experimental approach.",
     question: "What type of assessment is the BCBA proposing to definitively identify the function of the self-injurious behavior?",
     choices: [
-      { letter: "C", text: "An indirect assessment." },
       { letter: "B", text: "A preference assessment." },
       { letter: "D", text: "A skills assessment." },
       { letter: "A", text: "Functional analysis." },
+      { letter: "C", text: "An indirect assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Functional analysis is the experimental manipulation of environmental variables to determine the function of a behavior. It is the most definitive method for identifying functional relationships. Choice C is incorrect because Indirect assessments gather information through interviews or questionnaires, not direct manipulation. Choice B is incorrect because Preference assessments identify preferred items, not behavior functions. Choice D is incorrect because Skills assessments evaluate a client\"s abilities, not the function of problem behavior.",
   },
   {
@@ -339,12 +335,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A client has a wide range of preferred items, and the BCBA needs to quickly identify the most potent reinforcers. The BCBA presents an array of items, and after the client selects one, it is removed from the array, and the remaining items are presented again.",
     question: "Which preference assessment method is being used when two items are presented at a time, and selections are recorded?",
     choices: [
-      { letter: "A", text: "Paired stimulus preference assessment." },
-      { letter: "C", text: "Multiple stimulus with replacement (MSW) preference assessment." },
       { letter: "D", text: "A functional analysis." },
       { letter: "B", text: "Single stimulus preference assessment." },
+      { letter: "A", text: "Paired stimulus preference assessment." },
+      { letter: "C", text: "Multiple stimulus with replacement (MSW) preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Free operant assessments involve observing engagement with items freely available. Paired stimulus assessments present two items at a time. MSWO involves removing selected items from the array. Choice C is incorrect because MSW involves returning selected items to the array. Choice D is incorrect because Functional analysis determines behavior function, not preference. Choice B is incorrect because Single stimulus presents one item at a time.",
   },
   {
@@ -357,12 +353,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A client engages in repetitive hand-flapping. The BCBA observes that this behavior often starts when the client is alone and has no access to preferred activities, and it continues until a staff member redirects them.",
     question: "What appears to be a maintaining consequence for the client\"s hand-flapping?",
     choices: [
+      { letter: "C", text: "The child\"s hunger." },
       { letter: "A", text: "Being sent to a \"break\" area." },
       { letter: "D", text: "The client\"s diagnosis." },
       { letter: "B", text: "A functional analysis." },
-      { letter: "C", text: "The child\"s hunger." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Antecedents are events that immediately precede a behavior. Consequences are events that immediately follow a behavior and may maintain it. Identifying these helps in understanding the function. Choice D is incorrect because A diagnosis is a label, not an antecedent or consequence. Choice B is incorrect because Functional analysis is an assessment method, not an antecedent or consequence. Choice C is incorrect because Hunger is an internal state, not a direct environmental antecedent.",
   },
   {
@@ -393,12 +389,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A client consistently chooses tokens over other items in a preference assessment. To determine the relative effectiveness of tokens compared to another potential reinforcer, the BCBA sets up a condition where both are available on separate schedules, and the client\"s choice is observed.",
     question: "To determine the relative effectiveness of two potential reinforcers, the BCBA is likely using a: ",
     choices: [
-      { letter: "C", text: "Preference assessment." },
       { letter: "A", text: "Progressive ratio schedule reinforcer assessment." },
       { letter: "B", text: "Functional analysis." },
       { letter: "D", text: "Stimulus preference assessment." },
+      { letter: "C", text: "Preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Reinforcer assessments directly test if a stimulus increases behavior. Concurrent schedules compare the effectiveness of two reinforcers. Progressive ratio schedules assess the \"breaking point\" by increasing response requirements. Choice C is incorrect because Preference assessments identify preferred items; reinforcer assessments confirm their reinforcing effect. Choice B is incorrect because Functional analysis determines behavior function, not reinforcer effectiveness. Choice D is incorrect because Preference assessments identify preferred items; reinforcer assessments confirm their reinforcing effect.",
   },
   {
@@ -411,12 +407,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After a behavior intervention has been implemented for several months, a client\"s progress is slower than expected. The BCBA wants to evaluate if the behavior changes are meaningful to the client and their family, and if the intervention procedures were viewed positively by the implementers.",
     question: "To ensure the target behavior is important and the procedures are acceptable, the BCBA should conduct a: ",
     choices: [
-      { letter: "C", text: "Preference assessment." },
-      { letter: "B", text: "Functional analysis." },
       { letter: "A", text: "Assessment of treatment acceptability." },
       { letter: "D", text: "Indirect assessment." },
+      { letter: "C", text: "Preference assessment." },
+      { letter: "B", text: "Functional analysis." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Social validity assessments evaluate the social significance of goals, the appropriateness of procedures, and the importance of outcomes from the perspective of stakeholders. Choice C is incorrect because Preference assessments identify preferred items. Choice B is incorrect because Functional analysis determines behavior function. Choice D is incorrect because Indirect assessments gather general information; social validity is specific to the intervention\"s social impact.",
   },
   {
@@ -429,12 +425,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "Before implementing an intensive intervention for a child\"s challenging behavior, the BCBA wants to ensure that the parents and teachers perceive the target behavior as important to change and the proposed procedures as acceptable.",
     question: "To ensure the target behavior is important and the procedures are acceptable, the BCBA should conduct a: ",
     choices: [
+      { letter: "B", text: "Indirect assessment." },
       { letter: "A", text: "Assessment of treatment acceptability." },
       { letter: "C", text: "Functional analysis." },
       { letter: "D", text: "Preference assessment." },
-      { letter: "B", text: "Indirect assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Social validity assessments evaluate the social significance of goals, the appropriateness of procedures, and the importance of outcomes from the perspective of stakeholders. Choice C is incorrect because Functional analysis determines behavior function. Choice D is incorrect because Preference assessments identify preferred items. Choice B is incorrect because Indirect assessments gather general information; social validity is specific to the intervention\"s social impact.",
   },
   {
@@ -465,12 +461,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A behavior technician reports difficulty managing a client\"s elopement behavior during community outings. The supervising BCBA wants to understand the common triggers and consequences without directly observing the behavior yet.",
     question: "Which of the following indirect assessment methods would be most appropriate for initial data collection in this scenario?",
     choices: [
-      { letter: "A", text: "Administering a functional assessment screening tool to the teacher." },
       { letter: "D", text: "Implementing a functional analysis in a controlled setting." },
       { letter: "B", text: "Conducting a preference assessment using a multiple stimulus without replacement procedure." },
       { letter: "C", text: "Measuring the duration of tantrums using a stopwatch." },
+      { letter: "A", text: "Administering a functional assessment screening tool to the teacher." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Indirect assessments involve gathering information from individuals who have direct contact with the client or reviewing existing records. Interviews, questionnaires, and record reviews are all forms of indirect assessment. Choice D is incorrect because Functional analysis is a direct assessment method involving systematic manipulation of environmental variables. Choice B is incorrect because Preference assessments are direct assessments used to identify potential reinforcers, not to gather general information about behavior. Choice C is incorrect for a general reason related to F.1 or is a plausible but incorrect application.",
   },
   {
@@ -483,12 +479,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A client consistently chooses tokens over other items in a preference assessment. To determine the relative effectiveness of tokens compared to another potential reinforcer, the BCBA sets up a condition where both are available on separate schedules, and the client\"s choice is observed.",
     question: "Increasing the response requirement to assess the \"breaking point\" of a reinforcer describes what type of reinforcer assessment?",
     choices: [
-      { letter: "D", text: "Stimulus preference assessment." },
-      { letter: "B", text: "Indirect assessment." },
       { letter: "C", text: "Preference assessment." },
       { letter: "A", text: "Reinforcer assessment (or reinforcer test)." },
+      { letter: "D", text: "Stimulus preference assessment." },
+      { letter: "B", text: "Indirect assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Reinforcer assessments directly test if a stimulus increases behavior. Concurrent schedules compare the effectiveness of two reinforcers. Progressive ratio schedules assess the \"breaking point\" by increasing response requirements. Choice D is incorrect because Preference assessments identify preferred items; reinforcer assessments confirm their reinforcing effect. Choice B is incorrect because Indirect assessments gather information; reinforcer assessments are direct experimental tests. Choice C is incorrect because Preference assessments identify preferred items; reinforcer assessments confirm their reinforcing effect.",
   },
   {
@@ -501,12 +497,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is considering two different intervention strategies for increasing a client\"s social interactions. To help decide which strategy to pursue, the BCBA surveys the client\"s caregivers about their preferences and perceived effectiveness of each strategy.",
     question: "Evaluating the meaningfulness of behavior changes and the positive perception of intervention procedures by stakeholders is part of a: ",
     choices: [
+      { letter: "B", text: "Preference assessment." },
       { letter: "C", text: "Skills assessment." },
       { letter: "D", text: "Indirect assessment." },
       { letter: "A", text: "Social validity assessment." },
-      { letter: "B", text: "Preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Social validity assessments evaluate the social significance of goals, the appropriateness of procedures, and the importance of outcomes from the perspective of stakeholders. Choice C is incorrect because Skills assessments evaluate a client\"s abilities. Choice D is incorrect because Indirect assessments gather general information; social validity is specific to the intervention\"s social impact. Choice B is incorrect because Preference assessments identify preferred items.",
   },
   {
@@ -537,12 +533,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA wants to identify potential reinforcers for a non-verbal child. The child is allowed free access to various toys and activities, and the BCBA records which items the child interacts with and for how long.",
     question: "Which preference assessment method is being used when two items are presented at a time, and selections are recorded?",
     choices: [
-      { letter: "A", text: "Multiple stimulus without replacement (MSWO) preference assessment." },
       { letter: "B", text: "A reinforcer assessment." },
       { letter: "C", text: "Single stimulus preference assessment." },
       { letter: "D", text: "A functional analysis." },
+      { letter: "A", text: "Multiple stimulus without replacement (MSWO) preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Free operant assessments involve observing engagement with items freely available. Paired stimulus assessments present two items at a time. MSWO involves removing selected items from the array. Choice B is incorrect because Reinforcer assessment is a broader term; these are specific preference assessment types. Choice C is incorrect because Single stimulus presents one item at a time. Choice D is incorrect because Functional analysis determines behavior function, not preference.",
   },
   {
@@ -555,12 +551,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is designing an early intervention program. One of the primary goals is to teach imitation, as it is seen as a foundational skill that will facilitate the acquisition of many other skills across various domains.",
     question: "The BCBA is prioritizing imitation as a foundational skill that will facilitate the acquisition of many other skills. Imitation in this context is considered a:",
     choices: [
-      { letter: "C", text: "Target behavior." },
-      { letter: "A", text: "Behavioral cusp and pivotal behavior." },
       { letter: "B", text: "Prerequisite skill." },
       { letter: "D", text: "Terminal behavior." },
+      { letter: "C", text: "Target behavior." },
+      { letter: "A", text: "Behavioral cusp and pivotal behavior." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Behavioral cusps are behaviors that open up new environments and contingencies. Pivotal behaviors are those that, when learned, produce widespread changes in other untrained behaviors. Manding can be both a cusp and pivotal behavior. Self-initiation and imitation are often considered pivotal behaviors. Choice C is incorrect because Target behavior is any behavior selected for change, not necessarily one with widespread impact. Choice B is incorrect because Prerequisite skill is needed before another skill can be learned. Choice D is incorrect because Terminal behavior is the final behavior in a shaping procedure.",
   },
   {
@@ -573,12 +569,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is designing an early intervention program. One of the primary goals is to teach imitation, as it is seen as a foundational skill that will facilitate the acquisition of many other skills across various domains.",
     question: "Improving self-initiation skills, leading to widespread changes in other untrained behaviors, is an example of targeting a: ",
     choices: [
+      { letter: "B", text: "Target behavior." },
       { letter: "D", text: "Prerequisite skill." },
       { letter: "A", text: "Behavioral cusp and pivotal behavior." },
       { letter: "C", text: "Terminal behavior." },
-      { letter: "B", text: "Target behavior." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Behavioral cusps are behaviors that open up new environments and contingencies. Pivotal behaviors are those that, when learned, produce widespread changes in other untrained behaviors. Manding can be both a cusp and pivotal behavior. Self-initiation and imitation are often considered pivotal behaviors. Choice D is incorrect because Prerequisite skill is needed before another skill can be learned. Choice C is incorrect because Terminal behavior is the final behavior in a shaping procedure. Choice B is incorrect because Target behavior is any behavior selected for change, not necessarily one with widespread impact.",
   },
   {
@@ -609,12 +605,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A student is struggling with academic tasks in a general education classroom. The BCBA collaborates with the teacher to assess the student\"s current academic repertoire to determine if there are underlying skill deficits impacting performance.",
     question: "The BCBA is assessing the student\"s academic repertoire to identify skill deficits. This falls under what broad category of assessment?",
     choices: [
-      { letter: "A", text: "A comprehensive skill assessment (e.g., VB-MAPP, ABLLS-R)." },
       { letter: "B", text: "An indirect assessment." },
       { letter: "C", text: "A functional analysis." },
       { letter: "D", text: "A reinforcer assessment." },
+      { letter: "A", text: "A comprehensive skill assessment (e.g., VB-MAPP, ABLLS-R)." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Skill assessments evaluate a client\"s current abilities across various domains to identify strengths and deficits. Tools like VB-MAPP, ABLLS-R, and AFLS are examples of comprehensive skill assessments. Choice B is incorrect because Indirect assessments gather information about behavior, not directly assess skills. Choice C is incorrect because Functional analysis determines behavior function, not skill levels. Choice D is incorrect because Reinforcer assessments determine if a stimulus functions as a reinforcer, not skill levels.",
   },
   {
@@ -627,12 +623,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A new client, a 4-year-old with developmental delays, is beginning services. The BCBA needs to establish a baseline of the child\"s verbal behavior, social skills, and daily living skills to develop an individualized treatment plan.",
     question: "The BCBA is assessing the student\"s academic repertoire to identify skill deficits. This falls under what broad category of assessment?",
     choices: [
-      { letter: "B", text: "A preference assessment." },
-      { letter: "A", text: "A functional living skills assessment (e.g., AFLS)." },
       { letter: "C", text: "A reinforcer assessment." },
       { letter: "D", text: "An indirect assessment." },
+      { letter: "B", text: "A preference assessment." },
+      { letter: "A", text: "A functional living skills assessment (e.g., AFLS)." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Skill assessments evaluate a client\"s current abilities across various domains to identify strengths and deficits. Tools like VB-MAPP, ABLLS-R, and AFLS are examples of comprehensive skill assessments. Choice B is incorrect because Preference assessments identify preferred items, not skills. Choice C is incorrect because Reinforcer assessments determine if a stimulus functions as a reinforcer, not skill levels. Choice D is incorrect because Indirect assessments gather information about behavior, not directly assess skills.",
   },
   {
@@ -645,12 +641,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A student frequently throws materials during independent work. The BCBA records that this behavior usually happens when the teacher is assisting other students and often leads to the student being sent to a \"break\" area.",
     question: "What appears to be a maintaining consequence for the client\"s hand-flapping?",
     choices: [
+      { letter: "D", text: "The teacher\"s presence." },
       { letter: "A", text: "Being alone with no access to preferred activities." },
       { letter: "C", text: "The child\"s hunger." },
       { letter: "B", text: "The client\"s diagnosis." },
-      { letter: "D", text: "The teacher\"s presence." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Antecedents are events that immediately precede a behavior. Consequences are events that immediately follow a behavior and may maintain it. Identifying these helps in understanding the function. Choice C is incorrect because Hunger is an internal state, not a direct environmental antecedent. Choice B is incorrect because A diagnosis is a label, not an antecedent or consequence. Choice D is incorrect because The teacher\"s presence alone isn\"t the specific antecedent; it\"s the teacher assisting others.",
   },
   {
@@ -681,12 +677,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is working with a child who frequently engages in property destruction. The BCBA wants to identify specific antecedents and consequences that reliably precede and follow the destructive behavior in the natural environment.",
     question: "Which descriptive assessment method would be most appropriate for identifying the immediate environmental factors influencing the property destruction?",
     choices: [
-      { letter: "D", text: "A structured interview." },
       { letter: "B", text: "A skills assessment." },
       { letter: "C", text: "A functional analysis." },
       { letter: "A", text: "Direct observation with a focus on environmental variables." },
+      { letter: "D", text: "A structured interview." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "ABC data collection involves recording the antecedents, behaviors, and consequences as they occur in the natural environment, providing correlational information about functional relationships. A scatterplot is used to identify temporal patterns of behavior. Choice D is incorrect because A structured interview is an indirect assessment, not a direct descriptive assessment. Choice B is incorrect because Skills assessments evaluate a client\"s repertoire, not environmental influences on problem behavior. Choice C is incorrect because Functional analysis involves systematic manipulation, not just description.",
   },
   {
@@ -699,12 +695,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA has conducted indirect and descriptive assessments for a client\"s self-injurious behavior, but the function remains unclear. To definitively identify the maintaining variable, the BCBA proposes a controlled experimental approach.",
     question: "What type of assessment is the BCBA proposing to definitively identify the function of the self-injurious behavior?",
     choices: [
-      { letter: "D", text: "A descriptive functional behavior assessment." },
-      { letter: "C", text: "A skills assessment." },
       { letter: "B", text: "An indirect assessment." },
       { letter: "A", text: "Functional analysis." },
+      { letter: "D", text: "A descriptive functional behavior assessment." },
+      { letter: "C", text: "A skills assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Functional analysis is the experimental manipulation of environmental variables to determine the function of a behavior. It is the most definitive method for identifying functional relationships. Choice D is incorrect for a general reason related to F.3 or is a plausible but incorrect application. Choice C is incorrect because Skills assessments evaluate a client\"s abilities, not the function of problem behavior. Choice B is incorrect because Indirect assessments gather information through interviews or questionnaires, not direct manipulation.",
   },
   {
@@ -717,12 +713,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "To create a hierarchy of preferred items for a client with limited choice-making skills, a BCBA presents two items at a time and records which one the client selects. This process is repeated for all possible pairs.",
     question: "Which preference assessment method is being used when two items are presented at a time, and selections are recorded?",
     choices: [
+      { letter: "B", text: "Multiple stimulus with replacement (MSW) preference assessment." },
       { letter: "A", text: "Multiple stimulus without replacement (MSWO) preference assessment." },
       { letter: "C", text: "A functional analysis." },
       { letter: "D", text: "Single stimulus preference assessment." },
-      { letter: "B", text: "Multiple stimulus with replacement (MSW) preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Free operant assessments involve observing engagement with items freely available. Paired stimulus assessments present two items at a time. MSWO involves removing selected items from the array. Choice C is incorrect because Functional analysis determines behavior function, not preference. Choice D is incorrect because Single stimulus presents one item at a time. Choice B is incorrect because MSW involves returning selected items to the array.",
   },
   {
@@ -753,12 +749,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A student is struggling with academic tasks in a general education classroom. The BCBA collaborates with the teacher to assess the student\"s current academic repertoire to determine if there are underlying skill deficits impacting performance.",
     question: "To identify specific independent living skill deficits, the BCBA would likely use a: ",
     choices: [
-      { letter: "A", text: "A comprehensive skill assessment (e.g., VB-MAPP, ABLLS-R)." },
       { letter: "B", text: "An indirect assessment." },
       { letter: "C", text: "A reinforcer assessment." },
       { letter: "D", text: "A functional analysis." },
+      { letter: "A", text: "A comprehensive skill assessment (e.g., VB-MAPP, ABLLS-R)." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Skill assessments evaluate a client\"s current abilities across various domains to identify strengths and deficits. Tools like VB-MAPP, ABLLS-R, and AFLS are examples of comprehensive skill assessments. Choice B is incorrect because Indirect assessments gather information about behavior, not directly assess skills. Choice C is incorrect because Reinforcer assessments determine if a stimulus functions as a reinforcer, not skill levels. Choice D is incorrect because Functional analysis determines behavior function, not skill levels.",
   },
   {
@@ -771,12 +767,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is consulting in a classroom where a student is not making adequate progress on reading fluency goals outlined in their IEP. The BCBA wants to assess the student\"s performance directly on the reading curriculum materials.",
     question: "Which type of assessment would be most appropriate for evaluating the student\"s progress on reading fluency goals within the school curriculum?",
     choices: [
-      { letter: "B", text: "Indirect assessment." },
-      { letter: "D", text: "Functional analysis." },
       { letter: "C", text: "Social validity assessment." },
       { letter: "A", text: "Criterion-referenced assessment aligned with the curriculum." },
+      { letter: "B", text: "Indirect assessment." },
+      { letter: "D", text: "Functional analysis." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Curriculum-based assessments directly measure a student\"s performance on the specific curriculum being taught, often used for progress monitoring and identifying instructional needs. Choice B is incorrect because Indirect assessments gather information; curriculum-based assessments are direct measures of academic performance. Choice D is incorrect because Functional analysis determines behavior function, not academic skill levels. Choice C is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes.",
   },
   {
@@ -789,12 +785,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "Before implementing an intensive intervention for a child\"s challenging behavior, the BCBA wants to ensure that the parents and teachers perceive the target behavior as important to change and the proposed procedures as acceptable.",
     question: "To ensure the target behavior is important and the procedures are acceptable, the BCBA should conduct a: ",
     choices: [
+      { letter: "B", text: "Skills assessment." },
       { letter: "C", text: "Indirect assessment." },
       { letter: "A", text: "Social validity assessment." },
       { letter: "D", text: "Preference assessment." },
-      { letter: "B", text: "Skills assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Social validity assessments evaluate the social significance of goals, the appropriateness of procedures, and the importance of outcomes from the perspective of stakeholders. Choice C is incorrect because Indirect assessments gather general information; social validity is specific to the intervention\"s social impact. Choice D is incorrect because Preference assessments identify preferred items. Choice B is incorrect because Skills assessments evaluate a client\"s abilities.",
   },
   {
@@ -825,12 +821,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After reviewing ABC data and conducting interviews, a BCBA notes that a client\"s hitting behavior often occurs when demands are placed and typically results in the demand being removed. The BCBA needs to summarize this information into a testable statement.",
     question: "The BCBA should formulate a hypothesis that the child\"s crying behavior is maintained by: ",
     choices: [
-      { letter: "D", text: "The behavior is attention-seeking." },
       { letter: "C", text: "The student is being defiant." },
       { letter: "B", text: "The client has a diagnosis of ODD." },
       { letter: "A", text: "When demands are placed, the client hits to escape the demand." },
+      { letter: "D", text: "The behavior is attention-seeking." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "A functional hypothesis states the antecedent, behavior, and maintaining consequence, identifying the function. It is a testable statement about the functional relationship. Choice D is incorrect because This is a function, but the hypothesis needs to include the antecedent and behavior. Choice C is incorrect because \"Defiant\" is a label, not a functional explanation. Choice B is incorrect because A diagnosis is a label, not a functional hypothesis.",
   },
   {
@@ -843,12 +839,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is working with a young child with limited communication skills. The BCBA prioritizes teaching the child to mand for desired items, as this skill is expected to open up new learning opportunities and reduce problem behaviors.",
     question: "Teaching the child to mand for desired items, which is expected to open up new learning opportunities, is an example of targeting a: ",
     choices: [
-      { letter: "B", text: "Prerequisite skill." },
-      { letter: "D", text: "Target behavior." },
       { letter: "C", text: "Terminal behavior." },
       { letter: "A", text: "Behavioral cusp." },
+      { letter: "B", text: "Prerequisite skill." },
+      { letter: "D", text: "Target behavior." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Behavioral cusps are behaviors that open up new environments and contingencies. Pivotal behaviors are those that, when learned, produce widespread changes in other untrained behaviors. Manding can be both a cusp and pivotal behavior. Self-initiation and imitation are often considered pivotal behaviors. Choice B is incorrect because Prerequisite skill is needed before another skill can be learned. Choice D is incorrect because Target behavior is any behavior selected for change, not necessarily one with widespread impact. Choice C is incorrect because Terminal behavior is the final behavior in a shaping procedure.",
   },
   {
@@ -861,12 +857,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After several weeks of an intervention, a client\"s progress is slower than expected. The BCBA suspects that the intervention might not be implemented consistently by all caregivers. To investigate this, the BCBA develops a method to measure how accurately the procedures are being followed.",
     question: "The BCBA\"s use of a checklist to record whether each step of the intervention is followed is a method for assessing: ",
     choices: [
+      { letter: "C", text: "Functional analysis." },
       { letter: "B", text: "Interobserver agreement (IOA)." },
       { letter: "A", text: "Treatment integrity (or procedural integrity)." },
       { letter: "D", text: "Client progress." },
-      { letter: "C", text: "Functional analysis." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Treatment integrity (or procedural integrity/implementation fidelity) refers to the extent to which an intervention is implemented as planned. Checklists and direct observation are common methods. Choice B is incorrect because IOA measures the extent to which two or more observers record the same data, not how accurately an intervention is implemented. Choice D is incorrect because Client progress measures changes in the client\"s behavior, not the fidelity of the intervention. Choice C is incorrect because Functional analysis determines behavior function.",
   },
   {
@@ -897,12 +893,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is working with a child who frequently engages in property destruction. The BCBA wants to identify specific antecedents and consequences that reliably precede and follow the destructive behavior in the natural environment.",
     question: "The BCBA\"s observation suggests a correlation between independent work and off-task behavior. What descriptive assessment tool would best illustrate this relationship?",
     choices: [
-      { letter: "B", text: "A functional analysis." },
       { letter: "D", text: "A skills assessment." },
       { letter: "C", text: "A reinforcer assessment." },
       { letter: "A", text: "ABC (Antecedent-Behavior-Consequence) data collection." },
+      { letter: "B", text: "A functional analysis." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "ABC data collection involves recording the antecedents, behaviors, and consequences as they occur in the natural environment, providing correlational information about functional relationships. A scatterplot is used to identify temporal patterns of behavior. Choice B is incorrect because Functional analysis involves systematic manipulation, not just description. Choice D is incorrect because Skills assessments evaluate a client\"s repertoire, not environmental influences on problem behavior. Choice C is incorrect because Reinforcer assessments identify preferred stimuli, not functional relationships.",
   },
   {
@@ -915,12 +911,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA has conducted indirect and descriptive assessments for a client\"s self-injurious behavior, but the function remains unclear. To definitively identify the maintaining variable, the BCBA proposes a controlled experimental approach.",
     question: "What type of assessment is the BCBA proposing to definitively identify the function of the self-injurious behavior?",
     choices: [
-      { letter: "C", text: "A skills assessment." },
-      { letter: "B", text: "A descriptive functional behavior assessment." },
       { letter: "D", text: "A preference assessment." },
       { letter: "A", text: "An experimental functional assessment." },
+      { letter: "C", text: "A skills assessment." },
+      { letter: "B", text: "A descriptive functional behavior assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Functional analysis is the experimental manipulation of environmental variables to determine the function of a behavior. It is the most definitive method for identifying functional relationships. Choice C is incorrect because Skills assessments evaluate a client\"s abilities, not the function of problem behavior. Choice B is incorrect for a general reason related to F.3 or is a plausible but incorrect application. Choice D is incorrect because Preference assessments identify preferred items, not behavior functions.",
   },
   {
@@ -933,12 +929,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A client has a wide range of preferred items, and the BCBA needs to quickly identify the most potent reinforcers. The BCBA presents an array of items, and after the client selects one, it is removed from the array, and the remaining items are presented again.",
     question: "The BCBA is using a multiple stimulus without replacement (MSWO) assessment. What is a key characteristic of this procedure?",
     choices: [
+      { letter: "B", text: "Multiple stimulus with replacement (MSW) preference assessment." },
       { letter: "D", text: "Single stimulus preference assessment." },
       { letter: "A", text: "Free operant preference assessment." },
       { letter: "C", text: "A functional analysis." },
-      { letter: "B", text: "Multiple stimulus with replacement (MSW) preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Free operant assessments involve observing engagement with items freely available. Paired stimulus assessments present two items at a time. MSWO involves removing selected items from the array. Choice D is incorrect because Single stimulus presents one item at a time. Choice C is incorrect because Functional analysis determines behavior function, not preference. Choice B is incorrect because MSW involves returning selected items to the array.",
   },
   {
@@ -969,12 +965,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A new client, a 4-year-old with developmental delays, is beginning services. The BCBA needs to establish a baseline of the child\"s verbal behavior, social skills, and daily living skills to develop an individualized treatment plan.",
     question: "Which type of assessment would be most appropriate for establishing a baseline of the child\"s various skill domains?",
     choices: [
-      { letter: "D", text: "A reinforcer assessment." },
       { letter: "C", text: "A functional analysis." },
       { letter: "A", text: "A comprehensive skill assessment (e.g., VB-MAPP, ABLLS-R)." },
       { letter: "B", text: "A preference assessment." },
+      { letter: "D", text: "A reinforcer assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Skill assessments evaluate a client\"s current abilities across various domains to identify strengths and deficits. Tools like VB-MAPP, ABLLS-R, and AFLS are examples of comprehensive skill assessments. Choice D is incorrect because Reinforcer assessments determine if a stimulus functions as a reinforcer, not skill levels. Choice C is incorrect because Functional analysis determines behavior function, not skill levels. Choice B is incorrect because Preference assessments identify preferred items, not skills.",
   },
   {
@@ -987,12 +983,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is consulting in a classroom where a student is not making adequate progress on reading fluency goals outlined in their IEP. The BCBA wants to assess the student\"s performance directly on the reading curriculum materials.",
     question: "Evaluating a student\"s writing abilities using their school assignments is a form of what assessment?",
     choices: [
-      { letter: "A", text: "Criterion-referenced assessment aligned with the curriculum." },
-      { letter: "D", text: "Indirect assessment." },
       { letter: "B", text: "Social validity assessment." },
       { letter: "C", text: "Norm-referenced assessment." },
+      { letter: "A", text: "Criterion-referenced assessment aligned with the curriculum." },
+      { letter: "D", text: "Indirect assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Curriculum-based assessments directly measure a student\"s performance on the specific curriculum being taught, often used for progress monitoring and identifying instructional needs. Choice D is incorrect because Indirect assessments gather information; curriculum-based assessments are direct measures of academic performance. Choice B is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes. Choice C is incorrect because Norm-referenced assessments compare an individual\"s performance to a normative group, not a specific curriculum.",
   },
   {
@@ -1005,12 +1001,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After a behavior intervention has been implemented for several months, a client\"s progress is slower than expected. The BCBA wants to evaluate if the behavior changes are meaningful to the client and their family, and if the intervention procedures were viewed positively by the implementers.",
     question: "Evaluating the meaningfulness of behavior changes and the positive perception of intervention procedures by stakeholders is part of a: ",
     choices: [
+      { letter: "D", text: "Skills assessment." },
       { letter: "B", text: "Indirect assessment." },
       { letter: "A", text: "Social validity assessment." },
       { letter: "C", text: "Preference assessment." },
-      { letter: "D", text: "Skills assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Social validity assessments evaluate the social significance of goals, the appropriateness of procedures, and the importance of outcomes from the perspective of stakeholders. Choice B is incorrect because Indirect assessments gather general information; social validity is specific to the intervention\"s social impact. Choice C is incorrect because Preference assessments identify preferred items. Choice D is incorrect because Skills assessments evaluate a client\"s abilities.",
   },
   {
@@ -1041,12 +1037,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After reviewing ABC data and conducting interviews, a BCBA notes that a client\"s hitting behavior often occurs when demands are placed and typically results in the demand being removed. The BCBA needs to summarize this information into a testable statement.",
     question: "The BCBA should formulate a hypothesis that the child\"s crying behavior is maintained by: ",
     choices: [
-      { letter: "C", text: "The child is seeking sensory input." },
       { letter: "A", text: "When adults are busy, the child cries to gain attention." },
       { letter: "D", text: "The client has a diagnosis of ODD." },
       { letter: "B", text: "The behavior is attention-seeking." },
+      { letter: "C", text: "The child is seeking sensory input." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "A functional hypothesis states the antecedent, behavior, and maintaining consequence, identifying the function. It is a testable statement about the functional relationship. Choice C is incorrect because While a function, \"seeking sensory input\" is not a complete hypothesis without antecedents/consequences. Choice D is incorrect because A diagnosis is a label, not a functional hypothesis. Choice B is incorrect because This is a function, but the hypothesis needs to include the antecedent and behavior.",
   },
   {
@@ -1059,12 +1055,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is designing an early intervention program. One of the primary goals is to teach imitation, as it is seen as a foundational skill that will facilitate the acquisition of many other skills across various domains.",
     question: "Teaching the child to mand for desired items, which is expected to open up new learning opportunities, is an example of targeting a: ",
     choices: [
-      { letter: "D", text: "Prerequisite skill." },
-      { letter: "C", text: "Terminal behavior." },
       { letter: "A", text: "Behavioral cusp and pivotal behavior." },
       { letter: "B", text: "Component skill." },
+      { letter: "D", text: "Prerequisite skill." },
+      { letter: "C", text: "Terminal behavior." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Behavioral cusps are behaviors that open up new environments and contingencies. Pivotal behaviors are those that, when learned, produce widespread changes in other untrained behaviors. Manding can be both a cusp and pivotal behavior. Self-initiation and imitation are often considered pivotal behaviors. Choice D is incorrect because Prerequisite skill is needed before another skill can be learned. Choice C is incorrect because Terminal behavior is the final behavior in a shaping procedure. Choice B is incorrect because A component skill is part of a larger skill chain.",
   },
   {
@@ -1077,12 +1073,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After several weeks of an intervention, a client\"s progress is slower than expected. The BCBA suspects that the intervention might not be implemented consistently by all caregivers. To investigate this, the BCBA develops a method to measure how accurately the procedures are being followed.",
     question: "To investigate inconsistent intervention implementation, the BCBA needs to assess: ",
     choices: [
+      { letter: "C", text: "Client progress." },
       { letter: "D", text: "Social validity." },
       { letter: "A", text: "Implementation fidelity." },
       { letter: "B", text: "Interobserver agreement (IOA)." },
-      { letter: "C", text: "Client progress." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Treatment integrity (or procedural integrity/implementation fidelity) refers to the extent to which an intervention is implemented as planned. Checklists and direct observation are common methods. Choice D is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes. Choice B is incorrect because IOA measures the extent to which two or more observers record the same data, not how accurately an intervention is implemented. Choice C is incorrect because Client progress measures changes in the client\"s behavior, not the fidelity of the intervention.",
   },
   {
@@ -1113,12 +1109,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is working with a child who frequently engages in property destruction. The BCBA wants to identify specific antecedents and consequences that reliably precede and follow the destructive behavior in the natural environment.",
     question: "Which descriptive assessment method would be most appropriate for identifying the immediate environmental factors influencing the property destruction?",
     choices: [
-      { letter: "A", text: "Direct observation with a focus on environmental variables." },
       { letter: "B", text: "A reinforcer assessment." },
       { letter: "D", text: "A skills assessment." },
       { letter: "C", text: "A structured interview." },
+      { letter: "A", text: "Direct observation with a focus on environmental variables." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "ABC data collection involves recording the antecedents, behaviors, and consequences as they occur in the natural environment, providing correlational information about functional relationships. A scatterplot is used to identify temporal patterns of behavior. Choice B is incorrect because Reinforcer assessments identify preferred stimuli, not functional relationships. Choice D is incorrect because Skills assessments evaluate a client\"s repertoire, not environmental influences on problem behavior. Choice C is incorrect because A structured interview is an indirect assessment, not a direct descriptive assessment.",
   },
   {
@@ -1131,12 +1127,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA has conducted indirect and descriptive assessments for a client\"s self-injurious behavior, but the function remains unclear. To definitively identify the maintaining variable, the BCBA proposes a controlled experimental approach.",
     question: "What type of assessment is the BCBA proposing to definitively identify the function of the self-injurious behavior?",
     choices: [
-      { letter: "C", text: "A skills assessment." },
-      { letter: "D", text: "A preference assessment." },
       { letter: "B", text: "A descriptive functional behavior assessment." },
       { letter: "A", text: "A brief functional analysis." },
+      { letter: "C", text: "A skills assessment." },
+      { letter: "D", text: "A preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Functional analysis is the experimental manipulation of environmental variables to determine the function of a behavior. It is the most definitive method for identifying functional relationships. Choice C is incorrect because Skills assessments evaluate a client\"s abilities, not the function of problem behavior. Choice D is incorrect because Preference assessments identify preferred items, not behavior functions. Choice B is incorrect for a general reason related to F.3 or is a plausible but incorrect application.",
   },
   {
@@ -1149,12 +1145,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "To create a hierarchy of preferred items for a client with limited choice-making skills, a BCBA presents two items at a time and records which one the client selects. This process is repeated for all possible pairs.",
     question: "The BCBA\"s method of allowing free access and recording engagement is an example of what type of preference assessment?",
     choices: [
+      { letter: "D", text: "Single stimulus preference assessment." },
       { letter: "A", text: "Multiple stimulus without replacement (MSWO) preference assessment." },
       { letter: "C", text: "A functional analysis." },
       { letter: "B", text: "Multiple stimulus with replacement (MSW) preference assessment." },
-      { letter: "D", text: "Single stimulus preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Free operant assessments involve observing engagement with items freely available. Paired stimulus assessments present two items at a time. MSWO involves removing selected items from the array. Choice C is incorrect because Functional analysis determines behavior function, not preference. Choice B is incorrect because MSW involves returning selected items to the array. Choice D is incorrect because Single stimulus presents one item at a time.",
   },
   {
@@ -1185,12 +1181,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A student is struggling with academic tasks in a general education classroom. The BCBA collaborates with the teacher to assess the student\"s current academic repertoire to determine if there are underlying skill deficits impacting performance.",
     question: "To identify specific independent living skill deficits, the BCBA would likely use a: ",
     choices: [
-      { letter: "B", text: "A functional analysis." },
       { letter: "A", text: "A comprehensive skill assessment (e.g., VB-MAPP, ABLLS-R)." },
       { letter: "D", text: "An indirect assessment." },
       { letter: "C", text: "A preference assessment." },
+      { letter: "B", text: "A functional analysis." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Skill assessments evaluate a client\"s current abilities across various domains to identify strengths and deficits. Tools like VB-MAPP, ABLLS-R, and AFLS are examples of comprehensive skill assessments. Choice B is incorrect because Functional analysis determines behavior function, not skill levels. Choice D is incorrect because Indirect assessments gather information about behavior, not directly assess skills. Choice C is incorrect because Preference assessments identify preferred items, not skills.",
   },
   {
@@ -1203,12 +1199,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is developing an intervention for a student struggling with writing. Before implementing the intervention, the BCBA evaluates the student\"s current writing abilities using samples of their school assignments.",
     question: "Evaluating a student\"s writing abilities using their school assignments is a form of what assessment?",
     choices: [
-      { letter: "C", text: "Social validity assessment." },
-      { letter: "A", text: "Direct assessment of academic skills using instructional materials." },
       { letter: "B", text: "Functional analysis." },
       { letter: "D", text: "Indirect assessment." },
+      { letter: "C", text: "Social validity assessment." },
+      { letter: "A", text: "Direct assessment of academic skills using instructional materials." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Curriculum-based assessments directly measure a student\"s performance on the specific curriculum being taught, often used for progress monitoring and identifying instructional needs. Choice C is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes. Choice B is incorrect because Functional analysis determines behavior function, not academic skill levels. Choice D is incorrect because Indirect assessments gather information; curriculum-based assessments are direct measures of academic performance.",
   },
   {
@@ -1221,12 +1217,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "Before implementing an intensive intervention for a child\"s challenging behavior, the BCBA wants to ensure that the parents and teachers perceive the target behavior as important to change and the proposed procedures as acceptable.",
     question: "The BCBA is surveying caregivers about their preferences for intervention strategies. This is an example of assessing:",
     choices: [
+      { letter: "D", text: "Functional analysis." },
       { letter: "B", text: "Preference assessment." },
       { letter: "C", text: "Skills assessment." },
       { letter: "A", text: "Social validity assessment." },
-      { letter: "D", text: "Functional analysis." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Social validity assessments evaluate the social significance of goals, the appropriateness of procedures, and the importance of outcomes from the perspective of stakeholders. Choice B is incorrect because Preference assessments identify preferred items. Choice C is incorrect because Skills assessments evaluate a client\"s abilities. Choice D is incorrect because Functional analysis determines behavior function.",
   },
   {
@@ -1257,12 +1253,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A team has gathered extensive descriptive data on a child\"s crying behavior, which seems to increase when adults are busy and decreases when an adult provides attention. The BCBA\"s next step is to formulate a hypothesis about the behavior\"s function.",
     question: "The BCBA should formulate a hypothesis that the child\"s crying behavior is maintained by: ",
     choices: [
-      { letter: "B", text: "The client has a diagnosis of ODD." },
       { letter: "A", text: "When adults are busy, the child cries to gain attention." },
       { letter: "C", text: "The behavior is attention-seeking." },
       { letter: "D", text: "The child is seeking sensory input." },
+      { letter: "B", text: "The client has a diagnosis of ODD." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "A functional hypothesis states the antecedent, behavior, and maintaining consequence, identifying the function. It is a testable statement about the functional relationship. Choice B is incorrect because A diagnosis is a label, not a functional hypothesis. Choice C is incorrect because This is a function, but the hypothesis needs to include the antecedent and behavior. Choice D is incorrect because While a function, \"seeking sensory input\" is not a complete hypothesis without antecedents/consequences.",
   },
   {
@@ -1275,12 +1271,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "For an adolescent with social anxiety, a BCBA focuses on teaching self-initiation skills. The BCBA believes that improving self-initiation will lead to spontaneous improvements in social interactions, academic engagement, and independent living.",
     question: "Teaching the child to mand for desired items, which is expected to open up new learning opportunities, is an example of targeting a: ",
     choices: [
-      { letter: "A", text: "Behavioral cusp and pivotal behavior." },
-      { letter: "B", text: "Target behavior." },
       { letter: "D", text: "Prerequisite skill." },
       { letter: "C", text: "Terminal behavior." },
+      { letter: "A", text: "Behavioral cusp and pivotal behavior." },
+      { letter: "B", text: "Target behavior." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Behavioral cusps are behaviors that open up new environments and contingencies. Pivotal behaviors are those that, when learned, produce widespread changes in other untrained behaviors. Manding can be both a cusp and pivotal behavior. Self-initiation and imitation are often considered pivotal behaviors. Choice B is incorrect because Target behavior is any behavior selected for change, not necessarily one with widespread impact. Choice D is incorrect because Prerequisite skill is needed before another skill can be learned. Choice C is incorrect because Terminal behavior is the final behavior in a shaping procedure.",
   },
   {
@@ -1293,12 +1289,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After several weeks of an intervention, a client\"s progress is slower than expected. The BCBA suspects that the intervention might not be implemented consistently by all caregivers. To investigate this, the BCBA develops a method to measure how accurately the procedures are being followed.",
     question: "To investigate inconsistent intervention implementation, the BCBA needs to assess: ",
     choices: [
+      { letter: "B", text: "Interobserver agreement (IOA)." },
       { letter: "A", text: "Implementation fidelity." },
       { letter: "D", text: "Functional analysis." },
       { letter: "C", text: "Client progress." },
-      { letter: "B", text: "Interobserver agreement (IOA)." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Treatment integrity (or procedural integrity/implementation fidelity) refers to the extent to which an intervention is implemented as planned. Checklists and direct observation are common methods. Choice D is incorrect because Functional analysis determines behavior function. Choice C is incorrect because Client progress measures changes in the client\"s behavior, not the fidelity of the intervention. Choice B is incorrect because IOA measures the extent to which two or more observers record the same data, not how accurately an intervention is implemented.",
   },
   {
@@ -1329,12 +1325,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A client\"s aggressive outbursts seem to occur at specific times of the day, but the staff are unsure of the exact triggers. The BCBA recommends a data collection method to pinpoint these temporal patterns.",
     question: "Which descriptive assessment method would be most appropriate for identifying the immediate environmental factors influencing the property destruction?",
     choices: [
-      { letter: "A", text: "A scatterplot." },
       { letter: "B", text: "A reinforcer assessment." },
       { letter: "D", text: "A functional analysis." },
       { letter: "C", text: "A structured interview." },
+      { letter: "A", text: "A scatterplot." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "ABC data collection involves recording the antecedents, behaviors, and consequences as they occur in the natural environment, providing correlational information about functional relationships. A scatterplot is used to identify temporal patterns of behavior. Choice B is incorrect because Reinforcer assessments identify preferred stimuli, not functional relationships. Choice D is incorrect because Functional analysis involves systematic manipulation, not just description. Choice C is incorrect because A structured interview is an indirect assessment, not a direct descriptive assessment.",
   },
   {
@@ -1347,12 +1343,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "After implementing a treatment based on a hypothesized function of attention, a client\"s aggression persists. The BCBA decides to conduct a brief functional analysis to confirm or disconfirm the hypothesis.",
     question: "The BCBA\"s approach of systematically manipulating consequences to identify the function of vocalizations is known as a:",
     choices: [
-      { letter: "D", text: "A preference assessment." },
-      { letter: "C", text: "A descriptive functional behavior assessment." },
       { letter: "B", text: "A skills assessment." },
       { letter: "A", text: "Functional analysis." },
+      { letter: "D", text: "A preference assessment." },
+      { letter: "C", text: "A descriptive functional behavior assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Functional analysis is the experimental manipulation of environmental variables to determine the function of a behavior. It is the most definitive method for identifying functional relationships. Choice D is incorrect because Preference assessments identify preferred items, not behavior functions. Choice C is incorrect for a general reason related to F.3 or is a plausible but incorrect application. Choice B is incorrect because Skills assessments evaluate a client\"s abilities, not the function of problem behavior.",
   },
   {
@@ -1365,12 +1361,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA wants to identify potential reinforcers for a non-verbal child. The child is allowed free access to various toys and activities, and the BCBA records which items the child interacts with and for how long.",
     question: "The BCBA\"s method of allowing free access and recording engagement is an example of what type of preference assessment?",
     choices: [
+      { letter: "C", text: "A functional analysis." },
       { letter: "D", text: "Multiple stimulus with replacement (MSW) preference assessment." },
       { letter: "A", text: "Free operant preference assessment." },
       { letter: "B", text: "Single stimulus preference assessment." },
-      { letter: "C", text: "A functional analysis." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Free operant assessments involve observing engagement with items freely available. Paired stimulus assessments present two items at a time. MSWO involves removing selected items from the array. Choice D is incorrect because MSW involves returning selected items to the array. Choice B is incorrect because Single stimulus presents one item at a time. Choice C is incorrect because Functional analysis determines behavior function, not preference.",
   },
   {
@@ -1401,12 +1397,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is working with an adolescent client to improve independent living skills. To identify specific areas where the client needs instruction, the BCBA uses a comprehensive assessment tool that covers various domains like self-care, domestic skills, and vocational skills.",
     question: "Which type of assessment would be most appropriate for establishing a baseline of the child\"s various skill domains?",
     choices: [
-      { letter: "D", text: "A preference assessment." },
       { letter: "B", text: "An indirect assessment." },
       { letter: "C", text: "A reinforcer assessment." },
       { letter: "A", text: "A curriculum-based assessment." },
+      { letter: "D", text: "A preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Skill assessments evaluate a client\"s current abilities across various domains to identify strengths and deficits. Tools like VB-MAPP, ABLLS-R, and AFLS are examples of comprehensive skill assessments. Choice D is incorrect because Preference assessments identify preferred items, not skills. Choice B is incorrect because Indirect assessments gather information about behavior, not directly assess skills. Choice C is incorrect because Reinforcer assessments determine if a stimulus functions as a reinforcer, not skill levels.",
   },
   {
@@ -1419,12 +1415,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is consulting in a classroom where a student is not making adequate progress on reading fluency goals outlined in their IEP. The BCBA wants to assess the student\"s performance directly on the reading curriculum materials.",
     question: "Which type of assessment would be most appropriate for evaluating the student\"s progress on reading fluency goals within the school curriculum?",
     choices: [
-      { letter: "B", text: "Norm-referenced assessment." },
-      { letter: "D", text: "Social validity assessment." },
       { letter: "C", text: "Functional analysis." },
       { letter: "A", text: "Direct assessment of academic skills using instructional materials." },
+      { letter: "B", text: "Norm-referenced assessment." },
+      { letter: "D", text: "Social validity assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Curriculum-based assessments directly measure a student\"s performance on the specific curriculum being taught, often used for progress monitoring and identifying instructional needs. Choice B is incorrect because Norm-referenced assessments compare an individual\"s performance to a normative group, not a specific curriculum. Choice D is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes. Choice C is incorrect because Functional analysis determines behavior function, not academic skill levels.",
   },
   {
@@ -1437,12 +1433,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is considering two different intervention strategies for increasing a client\"s social interactions. To help decide which strategy to pursue, the BCBA surveys the client\"s caregivers about their preferences and perceived effectiveness of each strategy.",
     question: "Evaluating the meaningfulness of behavior changes and the positive perception of intervention procedures by stakeholders is part of a: ",
     choices: [
+      { letter: "D", text: "Indirect assessment." },
       { letter: "C", text: "Preference assessment." },
       { letter: "A", text: "Consumer satisfaction survey." },
       { letter: "B", text: "Functional analysis." },
-      { letter: "D", text: "Indirect assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Social validity assessments evaluate the social significance of goals, the appropriateness of procedures, and the importance of outcomes from the perspective of stakeholders. Choice C is incorrect because Preference assessments identify preferred items. Choice B is incorrect because Functional analysis determines behavior function. Choice D is incorrect because Indirect assessments gather general information; social validity is specific to the intervention\"s social impact.",
   },
   {
@@ -1473,12 +1469,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "Based on observations, a BCBA suspects that a student\"s refusal to complete work is maintained by escape from academic tasks. The BCBA needs to articulate this suspicion as a clear, testable hypothesis.",
     question: "Based on this information, which of the following is the most appropriate hypothesis regarding the function of the hitting behavior?",
     choices: [
-      { letter: "D", text: "The child is seeking sensory input." },
       { letter: "C", text: "The student is being defiant." },
       { letter: "A", text: "When academic tasks are presented, the student refuses to escape the task." },
       { letter: "B", text: "The client has a diagnosis of ODD." },
+      { letter: "D", text: "The child is seeking sensory input." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "A functional hypothesis states the antecedent, behavior, and maintaining consequence, identifying the function. It is a testable statement about the functional relationship. Choice D is incorrect because While a function, \"seeking sensory input\" is not a complete hypothesis without antecedents/consequences. Choice C is incorrect because \"Defiant\" is a label, not a functional explanation. Choice B is incorrect because A diagnosis is a label, not a functional hypothesis.",
   },
   {
@@ -1491,12 +1487,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "For an adolescent with social anxiety, a BCBA focuses on teaching self-initiation skills. The BCBA believes that improving self-initiation will lead to spontaneous improvements in social interactions, academic engagement, and independent living.",
     question: "Teaching the child to mand for desired items, which is expected to open up new learning opportunities, is an example of targeting a: ",
     choices: [
-      { letter: "D", text: "Prerequisite skill." },
-      { letter: "B", text: "Component skill." },
       { letter: "C", text: "Target behavior." },
       { letter: "A", text: "Behavioral cusp." },
+      { letter: "D", text: "Prerequisite skill." },
+      { letter: "B", text: "Component skill." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Behavioral cusps are behaviors that open up new environments and contingencies. Pivotal behaviors are those that, when learned, produce widespread changes in other untrained behaviors. Manding can be both a cusp and pivotal behavior. Self-initiation and imitation are often considered pivotal behaviors. Choice D is incorrect because Prerequisite skill is needed before another skill can be learned. Choice B is incorrect because A component skill is part of a larger skill chain. Choice C is incorrect because Target behavior is any behavior selected for change, not necessarily one with widespread impact.",
   },
   {
@@ -1509,12 +1505,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA has trained a team of staff to implement a new behavior intervention plan. To ensure the plan is being carried out correctly, the BCBA periodically observes the staff and uses a checklist to record whether each step of the intervention is followed.",
     question: "The BCBA\"s use of a checklist to record whether each step of the intervention is followed is a method for assessing: ",
     choices: [
+      { letter: "B", text: "Functional analysis." },
       { letter: "A", text: "Procedural reliability." },
       { letter: "D", text: "Social validity." },
       { letter: "C", text: "Client progress." },
-      { letter: "B", text: "Functional analysis." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Treatment integrity (or procedural integrity/implementation fidelity) refers to the extent to which an intervention is implemented as planned. Checklists and direct observation are common methods. Choice D is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes. Choice C is incorrect because Client progress measures changes in the client\"s behavior, not the fidelity of the intervention. Choice B is incorrect because Functional analysis determines behavior function.",
   },
   {
@@ -1545,12 +1541,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "During a school observation, a BCBA notes that a student\"s off-task behavior is more prevalent during independent work periods and less during group activities. To systematically document this, the BCBA initiates a specific data collection method.",
     question: "To identify the temporal patterns of the client\"s aggressive outbursts, the BCBA should recommend using a: ",
     choices: [
-      { letter: "A", text: "A scatterplot." },
       { letter: "B", text: "A structured interview." },
       { letter: "C", text: "A skills assessment." },
       { letter: "D", text: "A reinforcer assessment." },
+      { letter: "A", text: "A scatterplot." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "ABC data collection involves recording the antecedents, behaviors, and consequences as they occur in the natural environment, providing correlational information about functional relationships. A scatterplot is used to identify temporal patterns of behavior. Choice B is incorrect because A structured interview is an indirect assessment, not a direct descriptive assessment. Choice C is incorrect because Skills assessments evaluate a client\"s repertoire, not environmental influences on problem behavior. Choice D is incorrect because Reinforcer assessments identify preferred stimuli, not functional relationships.",
   },
   {
@@ -1563,12 +1559,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA has conducted indirect and descriptive assessments for a client\"s self-injurious behavior, but the function remains unclear. To definitively identify the maintaining variable, the BCBA proposes a controlled experimental approach.",
     question: "What type of assessment is the BCBA proposing to definitively identify the function of the self-injurious behavior?",
     choices: [
-      { letter: "B", text: "An indirect assessment." },
-      { letter: "C", text: "A preference assessment." },
       { letter: "D", text: "A skills assessment." },
       { letter: "A", text: "A brief functional analysis." },
+      { letter: "B", text: "An indirect assessment." },
+      { letter: "C", text: "A preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Functional analysis is the experimental manipulation of environmental variables to determine the function of a behavior. It is the most definitive method for identifying functional relationships. Choice B is incorrect because Indirect assessments gather information through interviews or questionnaires, not direct manipulation. Choice C is incorrect because Preference assessments identify preferred items, not behavior functions. Choice D is incorrect because Skills assessments evaluate a client\"s abilities, not the function of problem behavior.",
   },
   {
@@ -1581,12 +1577,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA wants to identify potential reinforcers for a non-verbal child. The child is allowed free access to various toys and activities, and the BCBA records which items the child interacts with and for how long.",
     question: "The BCBA is using a multiple stimulus without replacement (MSWO) assessment. What is a key characteristic of this procedure?",
     choices: [
+      { letter: "B", text: "A reinforcer assessment." },
       { letter: "D", text: "A functional analysis." },
       { letter: "C", text: "Single stimulus preference assessment." },
       { letter: "A", text: "Paired stimulus preference assessment." },
-      { letter: "B", text: "A reinforcer assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Free operant assessments involve observing engagement with items freely available. Paired stimulus assessments present two items at a time. MSWO involves removing selected items from the array. Choice D is incorrect because Functional analysis determines behavior function, not preference. Choice C is incorrect because Single stimulus presents one item at a time. Choice B is incorrect because Reinforcer assessment is a broader term; these are specific preference assessment types.",
   },
   {
@@ -1617,12 +1613,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is working with an adolescent client to improve independent living skills. To identify specific areas where the client needs instruction, the BCBA uses a comprehensive assessment tool that covers various domains like self-care, domestic skills, and vocational skills.",
     question: "To identify specific independent living skill deficits, the BCBA would likely use a: ",
     choices: [
-      { letter: "D", text: "A preference assessment." },
       { letter: "A", text: "A functional living skills assessment (e.g., AFLS)." },
       { letter: "B", text: "An indirect assessment." },
       { letter: "C", text: "A functional analysis." },
+      { letter: "D", text: "A preference assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Skill assessments evaluate a client\"s current abilities across various domains to identify strengths and deficits. Tools like VB-MAPP, ABLLS-R, and AFLS are examples of comprehensive skill assessments. Choice D is incorrect because Preference assessments identify preferred items, not skills. Choice B is incorrect because Indirect assessments gather information about behavior, not directly assess skills. Choice C is incorrect because Functional analysis determines behavior function, not skill levels.",
   },
   {
@@ -1635,12 +1631,12 @@ export const tier6Pool_F: Question[] = [
     scenario: "A BCBA is developing an intervention for a student struggling with writing. Before implementing the intervention, the BCBA evaluates the student\"s current writing abilities using samples of their school assignments.",
     question: "Which type of assessment would be most appropriate for evaluating the student\"s progress on reading fluency goals within the school curriculum?",
     choices: [
-      { letter: "B", text: "Social validity assessment." },
-      { letter: "C", text: "Indirect assessment." },
       { letter: "A", text: "Criterion-referenced assessment aligned with the curriculum." },
       { letter: "D", text: "Functional analysis." },
+      { letter: "B", text: "Social validity assessment." },
+      { letter: "C", text: "Indirect assessment." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Curriculum-based assessments directly measure a student\"s performance on the specific curriculum being taught, often used for progress monitoring and identifying instructional needs. Choice B is incorrect because Social validity assesses the acceptability and importance of goals, procedures, and outcomes. Choice C is incorrect because Indirect assessments gather information; curriculum-based assessments are direct measures of academic performance. Choice D is incorrect because Functional analysis determines behavior function, not academic skill levels.",
   }
 ];

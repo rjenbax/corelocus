@@ -1,7 +1,3 @@
-// Domain B — Tier 6 question pool
-// BCBA 6th Edition Task List
-// Part of the 5× question pool for the mock exam engine
-
 import { Question } from './types';
 
 export const tier6Pool_B: Question[] = [
@@ -15,12 +11,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client typically engages in food-seeking behaviors. A behavior analyst observes that these behaviors are much more frequent and intense when the client has not eaten for several hours. When the client has recently eaten, the food-seeking behaviors are almost non-existent.",
     question: "The state of food deprivation for several hours is functioning as what type of variable?",
     choices: [
-      { letter: "A", text: "A discriminative stimulus" },
-      { letter: "B", text: "A conditioned reinforcer" },
       { letter: "C", text: "A motivating operation" },
       { letter: "D", text: "A response prompt" },
+      { letter: "A", text: "A discriminative stimulus" },
+      { letter: "B", text: "A conditioned reinforcer" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "A motivating operation (MO) alters the effectiveness of a stimulus as a reinforcer and the current frequency of behavior that has been reinforced by that stimulus. Food deprivation increases the effectiveness of food as a reinforcer and increases the frequency of behaviors that have historically led to food access. A discriminative stimulus (SD) signals the availability of reinforcement. A conditioned reinforcer is a learned reinforcer. A response prompt is an added stimulus that guides a correct response.",
   },
   {
@@ -33,12 +29,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is taught to say 'car' only when they see a picture of a car. When shown pictures of other vehicles (e.g., truck, bus), the child does not say 'car'.",
     question: "This teaching procedure is designed to establish what behavioral concept?",
     choices: [
+      { letter: "D", text: "Motivating operation" },
       { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Stimulus control" },
-      { letter: "D", text: "Motivating operation" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Stimulus control occurs when the rate, latency, duration, or amplitude of a response is altered in the presence of a stimulus. In this case, the picture of a car gains stimulus control over the response 'car' because the child says 'car' only in its presence and not in the presence of other vehicles. Stimulus generalization would be saying 'car' to other vehicles. Response generalization would be emitting different but functionally similar responses. A motivating operation alters the effectiveness of a reinforcer.",
   },
   {
@@ -51,12 +47,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client is taught to identify a 'dog' when shown a picture of a golden retriever. Later, without direct teaching, the client also correctly identifies pictures of poodles, bulldogs, and chihuahuas as 'dogs'.",
     question: "This phenomenon, where the client responds to untrained stimuli as 'dog', is an example of what?",
     choices: [
-      { letter: "A", text: "Stimulus discrimination" },
       { letter: "B", text: "Stimulus generalization" },
       { letter: "C", text: "Response generalization" },
       { letter: "D", text: "Overgeneralization" },
+      { letter: "A", text: "Stimulus discrimination" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Stimulus generalization occurs when a response that has been reinforced in the presence of one stimulus occurs in the presence of other, similar stimuli without direct training. The client learned to identify a golden retriever as 'dog' and then generalized that response to other types of dogs. Stimulus discrimination is responding differently to different stimuli. Response generalization is emitting untrained responses that are functionally equivalent. Overgeneralization is not a standard ABA term for this phenomenon.",
   },
   {
@@ -69,12 +65,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is teaching a child to identify the color 'red'. When shown a red card, the child is prompted to say 'red' and is reinforced. When shown a blue card, the child is not reinforced for saying 'red'. Over time, the child consistently says 'red' only when a red card is presented.",
     question: "The process of teaching the child to respond to the red card but not the blue card is an example of establishing what?",
     choices: [
-      { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Stimulus discrimination" },
       { letter: "D", text: "Response differentiation" },
+      { letter: "A", text: "Stimulus generalization" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Stimulus discrimination is the process by which an organism learns to respond differently to different stimuli. In this case, the child learns to discriminate between the red card (SD for 'red') and the blue card (S-delta for 'red'), responding only in the presence of the red card. Stimulus generalization is responding similarly to different stimuli. Response generalization is emitting different but functionally similar responses. Response differentiation is reinforcing some responses and not others, leading to a new response topography.",
   },
   {
@@ -105,12 +101,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst successfully teaches a child to independently wash their hands after using the restroom. After the intervention is faded and discontinued, the analyst conducts follow-up observations over several months and finds that the child continues to wash their hands consistently without any prompts or reinforcement.",
     question: "The child's continued handwashing behavior after the intervention is discontinued demonstrates what behavioral outcome?",
     choices: [
+      { letter: "D", text: "Overlearning" },
       { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Response maintenance" },
-      { letter: "D", text: "Overlearning" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Response maintenance refers to the extent to which a learner continues to perform the target behavior after a portion or all of the intervention has been terminated. The child's continued handwashing after the intervention is discontinued is a clear example of response maintenance. Stimulus generalization is responding to untrained stimuli. Response generalization is emitting untrained but functionally equivalent responses. Overlearning is practicing a skill past the point of mastery, which can contribute to maintenance but is not the outcome itself.",
   },
   {
@@ -123,12 +119,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client engages in elopement behavior. A behavior analyst notices that elopement is more likely to occur when the client has been restricted from accessing preferred outdoor activities for an extended period. When outdoor access is readily available, elopement is rare.",
     question: "The restriction from preferred outdoor activities functions as what type of motivating operation, and what effect does it have on the value of outdoor access as a reinforcer?",
     choices: [
+      { letter: "D", text: "Establishing operation; Increases value" },
       { letter: "A", text: "Abolishing operation; Decreases value" },
       { letter: "B", text: "Establishing operation; Decreases value" },
       { letter: "C", text: "Abolishing operation; Increases value" },
-      { letter: "D", text: "Establishing operation; Increases value" },
     ],
-    correctAnswer: "D",
+    correctAnswer: 'C',
     rationale: "An establishing operation (EO) increases the current effectiveness of some stimulus, object, or event as a reinforcer and increases the current frequency of all behavior that has been reinforced by that stimulus, object, or event. Restriction from preferred outdoor activities (deprivation) establishes outdoor access as a more potent reinforcer and increases behaviors (like elopement) that have historically led to outdoor access. An abolishing operation (AO) decreases the effectiveness of a reinforcer.",
   },
   {
@@ -141,12 +137,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A new employee is told during orientation, 'Always clock in before your shift starts, or you will receive a warning.' The employee consistently clocks in early, even though they have never directly experienced a warning for clocking in late.",
     question: "The employee's behavior of clocking in early is an example of what?",
     choices: [
-      { letter: "A", text: "Contingency-shaped behavior" },
-      { letter: "B", text: "Rule-governed behavior" },
       { letter: "C", text: "Operant conditioning" },
       { letter: "D", text: "Respondent conditioning" },
+      { letter: "A", text: "Contingency-shaped behavior" },
+      { letter: "B", text: "Rule-governed behavior" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Rule-governed behavior is behavior controlled by a verbal statement of a rule, rather than by direct contact with contingencies. The employee's behavior is controlled by the verbal rule given during orientation, not by direct experience with the consequence of being late. Contingency-shaped behavior is behavior that is directly controlled by its immediate consequences. Operant and respondent conditioning are broader categories of learning.",
   },
   {
@@ -159,12 +155,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child sees a cat and says 'cat'. Later, the child is asked, 'What says meow?' and responds 'cat'. Then, the child hears an adult say 'cat' and repeats 'cat'. Finally, the child points to a picture of a cat when asked, 'Show me the cat.'",
     question: "Identify the verbal operants demonstrated in the sequence: 'sees cat and says cat', 'hears adult say cat and repeats cat', 'asked what says meow and responds cat'.",
     choices: [
+      { letter: "D", text: "Intraverbal, Tact, Mand" },
       { letter: "A", text: "Mand, Echoic, Tact" },
       { letter: "B", text: "Tact, Echoic, Intraverbal" },
       { letter: "C", text: "Echoic, Intraverbal, Mand" },
-      { letter: "D", text: "Intraverbal, Tact, Mand" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "When the child sees a cat and says 'cat', this is a tact (a verbal operant under the control of a nonverbal discriminative stimulus). When the child hears an adult say 'cat' and repeats 'cat', this is an echoic (a verbal operant involving a vocal response that is under the control of a vocal verbal discriminative stimulus and has point-to-point correspondence and formal similarity). When the child is asked 'What says meow?' and responds 'cat', this is an intraverbal (a verbal operant in which a verbal discriminative stimulus evokes a verbal response that does not have point-to-point correspondence with the verbal stimulus). The last part, pointing to a picture, is not a verbal operant but a receptive skill.",
   },
   {
@@ -177,12 +173,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client engages in self-stimulatory behavior (hand flapping) in both the classroom and at home. A behavior analyst implements an intervention to reduce hand flapping in the classroom by providing differential reinforcement for other behavior (DRO). After the intervention, hand flapping significantly decreases in the classroom, but surprisingly, it increases substantially at home, where no intervention was implemented.",
     question: "The increase in hand flapping at home, following its decrease in the classroom, is an example of what behavioral phenomenon?",
     choices: [
+      { letter: "D", text: "Resurgence" },
       { letter: "A", text: "Extinction burst" },
       { letter: "B", text: "Spontaneous recovery" },
       { letter: "C", text: "Behavioral contrast" },
-      { letter: "D", text: "Resurgence" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Behavioral contrast occurs when a change in the rate of reinforcement in one setting leads to an opposite change in the rate of behavior in another setting. In this case, the reduction of hand flapping in the classroom (due to DRO) leads to an increase in hand flapping at home, where the reinforcement contingencies for hand flapping remained unchanged. Extinction burst is a temporary increase in behavior when extinction is first implemented. Spontaneous recovery is the reappearance of an extinguished behavior. Resurgence is the reappearance of a previously reinforced behavior when a more recently reinforced behavior is no longer reinforced.",
   },
   {
@@ -213,12 +209,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A teacher is working with a student who is resistant to completing academic tasks. The teacher begins by presenting several easy, high-probability tasks (e.g., 'Touch your nose,' 'Clap your hands') that the student readily completes. Immediately after the student completes these high-probability tasks, the teacher presents a low-probability task (e.g., 'Complete this math problem'). The student is now more likely to complete the low-probability task.",
     question: "The teacher's strategy of presenting high-probability tasks before a low-probability task is an application of what principle?",
     choices: [
-      { letter: "A", text: "Premack principle" },
-      { letter: "B", text: "Behavioral momentum" },
       { letter: "C", text: "Differential reinforcement" },
       { letter: "D", text: "Response cost" },
+      { letter: "A", text: "Premack principle" },
+      { letter: "B", text: "Behavioral momentum" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Behavioral momentum is a metaphor to describe the resistance to change in a behavior's rate of responding. In practice, it refers to presenting a series of high-probability requests immediately before a low-probability request. Compliance with the high-probability requests increases the likelihood of compliance with the low-probability request. The Premack principle states that a high-probability behavior can be used to reinforce a low-probability behavior. Differential reinforcement involves reinforcing some responses and not others. Response cost is a form of negative punishment.",
   },
   {
@@ -231,12 +227,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst teaches a child to match spoken words to pictures (e.g., hears 'apple', touches picture of apple) and to match pictures to written words (e.g., sees picture of apple, touches written word 'apple'). Without direct training, the child is later able to match spoken words to written words (e.g., hears 'apple', touches written word 'apple') and vice versa.",
     question: "The emergence of untrained matching relations (e.g., spoken word to written word) is characteristic of what concept?",
     choices: [
-      { letter: "A", text: "Stimulus generalization" },
-      { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Equivalence classes" },
       { letter: "D", text: "Stimulus discrimination" },
+      { letter: "A", text: "Stimulus generalization" },
+      { letter: "B", text: "Response generalization" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "Equivalence classes are formed when a set of arbitrary stimuli acquire the same function due to being linked together through conditional discrimination training. The emergence of untrained but related stimulus-stimulus relations (reflexivity, symmetry, transitivity) is the hallmark of stimulus equivalence. In this case, the spoken word, picture, and written word for 'apple' form an equivalence class. Stimulus generalization and response generalization involve responding to similar stimuli or emitting similar responses, respectively, but do not fully capture the emergent relations seen in equivalence. Stimulus discrimination is the opposite of generalization.",
   },
   {
@@ -267,12 +263,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is conducting a preference assessment for a client. They present two items, a toy car and a book, simultaneously. The client consistently chooses the toy car over the book across multiple trials.",
     question: "The client's consistent selection of the toy car indicates what about the toy car relative to the book?",
     choices: [
-      { letter: "A", text: "It is a conditioned punisher." },
       { letter: "B", text: "It is a preferred stimulus." },
       { letter: "C", text: "It is an unconditioned reinforcer." },
       { letter: "D", text: "It is an abolishing operation." },
+      { letter: "A", text: "It is a conditioned punisher." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "A preference assessment aims to identify stimuli that are likely to function as reinforcers. When a client consistently chooses one item over another, it indicates that the chosen item is a preferred stimulus. While preferred stimuli often function as reinforcers, this assessment only identifies preference, not necessarily its function as a reinforcer without further testing. A conditioned punisher decreases behavior. An unconditioned reinforcer is naturally reinforcing. An abolishing operation decreases the effectiveness of a reinforcer.",
   },
   {
@@ -285,12 +281,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A therapist is observing a child in a classroom setting. The child frequently taps their pencil on the desk, hums loudly, and rocks back and forth in their chair. These behaviors often occur together when the child is bored.",
     question: "The collection of behaviors (tapping, humming, rocking) that occur together under similar conditions could be described as what?",
     choices: [
-      { letter: "A", text: "A single response" },
-      { letter: "B", text: "A response class" },
       { letter: "C", text: "A stimulus class" },
       { letter: "D", text: "An operant behavior" },
+      { letter: "A", text: "A single response" },
+      { letter: "B", text: "A response class" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A response class is a group of responses that produce the same effect on the environment. While the scenario doesn't explicitly state the 'effect,' the behaviors occurring together under similar conditions (boredom) suggest they might serve a common function (e.g., self-stimulation, attention-seeking). A single response is one specific instance. A stimulus class is a group of stimuli. Operant behavior is behavior controlled by consequences.",
   },
   {
@@ -303,12 +299,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is teaching a client to identify 'fruit'. They present pictures of apples, bananas, and oranges, and the client correctly labels them as 'fruit'. Later, when shown a real apple, banana, or orange, the client also correctly labels them as 'fruit'.",
     question: "The pictures and real objects of apples, bananas, and oranges, all evoking the response 'fruit', form what?",
     choices: [
-      { letter: "A", text: "A response class" },
-      { letter: "B", text: "A motivating operation" },
       { letter: "C", text: "A stimulus class" },
       { letter: "D", text: "A discriminative stimulus" },
+      { letter: "A", text: "A response class" },
+      { letter: "B", text: "A motivating operation" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "A stimulus class is a group of stimuli that share specified common elements along formal, temporal, or functional dimensions. In this case, both pictures and real objects of various fruits evoke the same response ('fruit'), indicating they belong to a stimulus class. A response class is a group of responses. A motivating operation alters reinforcer effectiveness. A discriminative stimulus signals reinforcement availability.",
   },
   {
@@ -339,12 +335,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client frequently avoids doing chores. Their therapist implements a system where if the client completes their chores, they do not have to do an extra academic task they dislike. The client's chore completion increases.",
     question: "This intervention, where an aversive task is removed to increase chore completion, is an example of what?",
     choices: [
-      { letter: "A", text: "Positive reinforcement" },
       { letter: "B", text: "Negative reinforcement" },
       { letter: "C", text: "Positive punishment" },
       { letter: "D", text: "Negative punishment" },
+      { letter: "A", text: "Positive reinforcement" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Negative reinforcement occurs when the removal of an aversive stimulus following a behavior increases the future probability of that behavior. Here, the disliked academic task (aversive stimulus) is removed, and chore completion increases. Positive reinforcement adds a stimulus to increase behavior. Positive punishment adds an aversive stimulus to decrease behavior. Negative punishment removes a desirable stimulus to decrease behavior.",
   },
   {
@@ -357,12 +353,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child initially shows no interest in praise. A behavior analyst consistently pairs verbal praise ('Good job!') with access to highly preferred toys. Over time, the child begins to work harder for praise alone, even without immediate access to toys.",
     question: "In this scenario, verbal praise has become what type of reinforcer?",
     choices: [
-      { letter: "A", text: "Unconditioned reinforcer" },
-      { letter: "B", text: "Conditioned reinforcer" },
       { letter: "C", text: "Generalized conditioned reinforcer" },
       { letter: "D", text: "Automatic reinforcer" },
+      { letter: "A", text: "Unconditioned reinforcer" },
+      { letter: "B", text: "Conditioned reinforcer" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A conditioned reinforcer is a previously neutral stimulus that acquires reinforcing properties through association with unconditioned or other conditioned reinforcers. Verbal praise, initially neutral, becomes a conditioned reinforcer by being paired with preferred toys. A generalized conditioned reinforcer is paired with many different primary and secondary reinforcers. An unconditioned reinforcer is naturally reinforcing. An automatic reinforcer is produced by the behavior itself.",
   },
   {
@@ -393,12 +389,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child frequently throws their food on the floor during meal times, which typically results in their parent picking it up and engaging in a brief verbal interaction. A behavior analyst advises the parent to no longer pick up the food or engage verbally when food is thrown. After a week, the food throwing behavior has significantly decreased and is almost non-existent.",
     question: "The decrease in food throwing behavior is a result of what behavioral procedure?",
     choices: [
+      { letter: "D", text: "Response cost" },
       { letter: "A", text: "Punishment" },
       { letter: "B", text: "Time-out" },
       { letter: "C", text: "Extinction" },
-      { letter: "D", text: "Response cost" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Extinction occurs when a previously reinforced behavior is no longer followed by the reinforcing consequence, resulting in a decrease in the future frequency of the behavior. In this case, the attention (verbal interaction and picking up food) that previously reinforced food throwing is withheld, leading to a decrease in the behavior. Punishment involves decreasing behavior through the addition of an aversive stimulus or removal of a desirable one. Time-out and response cost are specific punishment procedures.",
   },
   {
@@ -429,12 +425,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is engaging in a dangerous behavior near an electrical outlet. Their parent yells 'STOP!' loudly, and the child immediately stops and moves away. In the future, the child is less likely to approach electrical outlets when the parent is present.",
     question: "The parent's loud 'STOP!' functions as what type of punisher in this scenario?",
     choices: [
-      { letter: "A", text: "Unconditioned punisher" },
-      { letter: "B", text: "Conditioned punisher" },
       { letter: "C", text: "Unconditioned reinforcer" },
       { letter: "D", text: "Generalized conditioned punisher" },
+      { letter: "A", text: "Unconditioned punisher" },
+      { letter: "B", text: "Conditioned punisher" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A conditioned punisher is a previously neutral stimulus that has acquired the capacity to function as a punisher through association with one or more unconditioned or stronger conditioned punishers. The loud 'STOP!' likely gained its punishing properties through prior pairings with other aversive events or consequences. An unconditioned punisher is naturally aversive. A generalized conditioned punisher is paired with many different primary and secondary punishers. An unconditioned reinforcer increases behavior.",
   },
   {
@@ -447,12 +443,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client typically engages in requesting for a specific toy. A behavior analyst observes that these requests are much more frequent when the toy has been out of reach for a long time. When the toy is readily available, requests are less frequent.",
     question: "The extended period of not having access to the toy is functioning as what?",
     choices: [
-      { letter: "A", text: "A discriminative stimulus" },
-      { letter: "B", text: "An abolishing operation" },
       { letter: "C", text: "An establishing operation" },
       { letter: "D", text: "A conditioned punisher" },
+      { letter: "A", text: "A discriminative stimulus" },
+      { letter: "B", text: "An abolishing operation" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "An establishing operation (EO) increases the current effectiveness of some stimulus, object, or event as a reinforcer and increases the current frequency of all behavior that has been reinforced by that stimulus, object, or event. Deprivation of the toy makes the toy a more potent reinforcer and increases requesting behavior. A discriminative stimulus signals reinforcement availability. An abolishing operation decreases reinforcer effectiveness. A conditioned punisher decreases behavior.",
   },
   {
@@ -465,12 +461,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is taught to raise their hand only when the teacher is looking at them to ask a question. When the teacher is looking away, the child does not raise their hand. The teacher reinforces hand-raising only when they are looking.",
     question: "The teacher's looking at the child serves as what for the hand-raising behavior?",
     choices: [
+      { letter: "D", text: "A conditioned reinforcer" },
       { letter: "A", text: "An S-delta" },
       { letter: "B", text: "A motivating operation" },
       { letter: "C", text: "A discriminative stimulus (SD)" },
-      { letter: "D", text: "A conditioned reinforcer" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "A discriminative stimulus (SD) is a stimulus in the presence of which a particular response is reinforced. The teacher looking at the child signals that hand-raising will be reinforced. An S-delta is a stimulus in the presence of which a particular response is not reinforced. A motivating operation alters reinforcer effectiveness. A conditioned reinforcer is a learned reinforcer.",
   },
   {
@@ -483,12 +479,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst teaches a client to identify 'red' by pointing to a red apple. Later, the client is able to correctly point to a red car, a red shirt, and a red block when asked to 'point to red', even though these specific items were not used in training.",
     question: "This demonstrates the client's ability to engage in what?",
     choices: [
-      { letter: "A", text: "Stimulus discrimination" },
       { letter: "B", text: "Stimulus generalization" },
       { letter: "C", text: "Response generalization" },
       { letter: "D", text: "Over-selectivity" },
+      { letter: "A", text: "Stimulus discrimination" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Stimulus generalization occurs when a response that has been reinforced in the presence of one stimulus occurs in the presence of other, similar stimuli without direct training. The client generalizes the response 'point to red' to various red objects beyond the trained red apple. Stimulus discrimination is responding differently to different stimuli. Response generalization is emitting untrained but functionally equivalent responses. Over-selectivity is a tendency to respond to only one or a few aspects of a stimulus.",
   },
   {
@@ -501,12 +497,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child learns to say 'ball' only when presented with a picture of a ball. When shown a picture of a balloon, the child does not say 'ball'.",
     question: "The child's differential responding to the picture of a ball versus a balloon indicates what?",
     choices: [
-      { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Stimulus discrimination" },
       { letter: "D", text: "Response maintenance" },
+      { letter: "A", text: "Stimulus generalization" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Stimulus discrimination is the process by which an organism learns to respond differently to different stimuli. The child discriminates between the picture of a ball (SD) and the picture of a balloon (S-delta), responding 'ball' only to the former. Stimulus generalization is responding similarly to different stimuli. Response generalization is emitting different but functionally similar responses. Response maintenance is the continuation of a behavior after intervention is removed.",
   },
   {
@@ -519,12 +515,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client is taught to request a break by saying 'break please'. After training, the client not only says 'break please' but also occasionally signs 'break' or uses a picture card to request a break. Furthermore, they request a break in various settings (e.g., classroom, therapy room, home) without specific training in each setting.",
     question: "This scenario illustrates both _____ and _____.",
     choices: [
+      { letter: "D", text: "Response maintenance; Stimulus control" },
       { letter: "A", text: "Stimulus discrimination; Response differentiation" },
       { letter: "B", text: "Response generalization; Stimulus generalization" },
       { letter: "C", text: "Behavioral contrast; Resurgence" },
-      { letter: "D", text: "Response maintenance; Stimulus control" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Response generalization is evident as the client uses different forms of requesting a break (saying, signing, picture card) that were not directly taught but serve the same function. Stimulus generalization is evident as the client requests a break in various untrained settings. Both are desirable outcomes for adaptive behavior. Stimulus discrimination and response differentiation are about narrowing responses or stimuli. Behavioral contrast and resurgence are different phenomena. Response maintenance is the continuation of behavior over time, and stimulus control is when a behavior occurs more often in the presence of a specific stimulus.",
   },
   {
@@ -537,12 +533,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst implements a token economy to increase a client's independent dressing skills. After several months, the client consistently dresses independently, and the token economy is gradually faded out. Six months later, the client is still dressing independently, but the analyst notices a slight decrease in consistency when new clothing items are introduced.",
     question: "While the client demonstrates response maintenance, what aspect of generalization might need further attention?",
     choices: [
-      { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Behavioral contrast" },
       { letter: "D", text: "Resurgence" },
+      { letter: "A", text: "Stimulus generalization" },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Response maintenance is present as the client continues to dress independently. However, the decrease in consistency with new clothing items suggests a lack of stimulus generalization. The client has not generalized the independent dressing skill to novel stimuli (new clothing items). Stimulus generalization would involve performing the behavior with untrained stimuli. Response generalization would involve emitting different but functionally equivalent responses. Behavioral contrast and resurgence are different behavioral phenomena.",
   },
   {
@@ -555,12 +551,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child typically engages in aggressive behavior when they are tired. A behavior analyst observes that when the child has had sufficient sleep, aggressive behaviors are almost non-existent. However, after a night of poor sleep, aggressive behaviors are significantly more likely to occur.",
     question: "The state of being tired (due to poor sleep) is functioning as what type of motivating operation for aggressive behavior?",
     choices: [
-      { letter: "A", text: "Abolishing operation" },
       { letter: "B", text: "Establishing operation" },
       { letter: "C", text: "Discriminative stimulus" },
       { letter: "D", text: "Conditioned punisher" },
+      { letter: "A", text: "Abolishing operation" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "An establishing operation (EO) increases the current effectiveness of some stimulus, object, or event as a reinforcer and increases the current frequency of all behavior that has been reinforced by that stimulus, object, or event. In this context, being tired might establish escape from demands or attention as a more potent reinforcer, thus increasing aggressive behavior that has historically led to these outcomes. An abolishing operation decreases reinforcer effectiveness. A discriminative stimulus signals reinforcement availability. A conditioned punisher decreases behavior.",
   },
   {
@@ -573,12 +569,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A driver always stops at a red light, even if no other cars are present and there are no police officers in sight. The driver learned to stop at red lights through years of driving instruction and observing traffic laws.",
     question: "The driver's consistent stopping at red lights, primarily due to prior instruction and understanding of laws, is an example of what?",
     choices: [
-      { letter: "A", text: "Contingency-shaped behavior" },
-      { letter: "B", text: "Rule-governed behavior" },
       { letter: "C", text: "Stimulus control" },
       { letter: "D", text: "Automatic reinforcement" },
+      { letter: "A", text: "Contingency-shaped behavior" },
+      { letter: "B", text: "Rule-governed behavior" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Rule-governed behavior is behavior controlled by a verbal statement of a rule, rather than by direct contact with contingencies. The driver's behavior is controlled by the rules of the road (verbal statements), not necessarily by the immediate consequences of running a red light (which they may have never experienced). While stimulus control is involved (red light is an SD), the primary controlling variable described is the rule. Contingency-shaped behavior is directly controlled by consequences. Automatic reinforcement is reinforcement that occurs without the social mediation of others.",
   },
   {
@@ -591,12 +587,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is teaching a child to request items. When the child wants a toy, they are prompted to say 'toy please' and are immediately given the toy. The child's requests for toys increase.",
     question: "The child's verbal behavior of saying 'toy please' to get the toy is an example of what verbal operant?",
     choices: [
+      { letter: "D", text: "Intraverbal" },
       { letter: "A", text: "Tact" },
       { letter: "B", text: "Mand" },
       { letter: "C", text: "Echoic" },
-      { letter: "D", text: "Intraverbal" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "A mand is a verbal operant in which the speaker asks for (or states, demands, implies) what he or she wants. It is under the control of a motivating operation and is reinforced by the specific item or event requested. In this case, the child's desire for the toy (MO) evokes the request 'toy please', which is reinforced by receiving the toy. A tact is evoked by a nonverbal stimulus. An echoic is repeating what someone else says. An intraverbal is a verbal response to another verbal stimulus without point-to-point correspondence.",
   },
   {
@@ -609,12 +605,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client engages in screaming for attention in both the therapy room and the waiting room. A behavior analyst implements an extinction procedure for screaming in the therapy room. Screaming decreases in the therapy room, but the analyst observes an increase in screaming in the waiting room, where no intervention was applied.",
     question: "This shift in screaming behavior from one setting to another is an example of what?",
     choices: [
+      { letter: "D", text: "Resurgence" },
       { letter: "A", text: "Extinction burst" },
       { letter: "B", text: "Spontaneous recovery" },
       { letter: "C", text: "Behavioral contrast" },
-      { letter: "D", text: "Resurgence" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Behavioral contrast occurs when a change in the rate of reinforcement in one setting leads to an opposite change in the rate of behavior in another setting. The decrease in screaming in the therapy room (due to extinction) leads to an increase in screaming in the waiting room, where the contingencies remained unchanged. Extinction burst is a temporary increase in behavior when extinction is first implemented. Spontaneous recovery is the reappearance of an extinguished behavior. Resurgence is the reappearance of a previously reinforced behavior when a more recently reinforced behavior is no longer reinforced.",
   },
   {
@@ -645,12 +641,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is working with an adult client who has difficulty initiating tasks. To increase task initiation, the analyst first asks the client to perform three simple, previously mastered tasks (e.g., 'Stand up,' 'Touch your head,' 'Sit down'). Immediately after these, the analyst presents the target task (e.g., 'Start writing your report'). The client is more likely to start the report after completing the easy tasks.",
     question: "This intervention strategy is known as what?",
     choices: [
-      { letter: "A", text: "Premack principle" },
-      { letter: "B", text: "Behavioral momentum" },
       { letter: "C", text: "Differential reinforcement" },
       { letter: "D", text: "Response cost" },
+      { letter: "A", text: "Premack principle" },
+      { letter: "B", text: "Behavioral momentum" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Behavioral momentum involves presenting a series of high-probability requests immediately before a low-probability request to increase compliance with the low-probability request. The easy, mastered tasks are high-probability requests, and starting the report is a low-probability request. The Premack principle uses a high-probability behavior to reinforce a low-probability behavior. Differential reinforcement involves reinforcing some responses and not others. Response cost is a form of negative punishment.",
   },
   {
@@ -663,12 +659,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is taught to select a picture of a dog when they hear the word 'dog'. They are also taught to select the written word 'dog' when they see a picture of a dog. Without any further training, the child is able to select the picture of a dog when they see the written word 'dog'.",
     question: "The emergence of the untrained relation (seeing written word 'dog' and selecting picture of dog) is an example of what property of stimulus equivalence?",
     choices: [
+      { letter: "D", text: "Generalization" },
       { letter: "A", text: "Reflexivity" },
       { letter: "B", text: "Symmetry" },
       { letter: "C", text: "Transitivity" },
-      { letter: "D", text: "Generalization" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Symmetry is a property of stimulus equivalence where if A = B, then B = A. In this case, if the child is taught (hears 'dog' (A) -> selects picture of dog (B)) and (sees picture of dog (B) -> selects written word 'dog' (C)), and then without training, they can (sees written word 'dog' (C) -> selects picture of dog (B)), this demonstrates symmetry. Reflexivity is A=A. Transitivity is if A=B and B=C, then A=C. Generalization is a broader concept, but symmetry is the specific property demonstrated here.",
   },
   {
@@ -681,12 +677,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client has two options for engaging in leisure activities: watching TV or playing video games. Watching TV is reinforced on a VI 2-minute schedule, and playing video games is reinforced on a VI 4-minute schedule. The behavior analyst observes that the client spends approximately twice as much time watching TV as playing video games.",
     question: "This distribution of leisure activity engagement is best explained by what principle?",
     choices: [
+      { letter: "D", text: "Behavioral contrast" },
       { letter: "A", text: "Premack principle" },
       { letter: "B", text: "Response effort" },
       { letter: "C", text: "Matching law" },
-      { letter: "D", text: "Behavioral contrast" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "The matching law states that the relative rate of responding to an alternative matches the relative rate of reinforcement obtained from that alternative. Since watching TV is reinforced twice as often (VI 2-min vs. VI 4-min), the client spends twice as much time watching TV. The Premack principle describes using a high-probability behavior to reinforce a low-probability behavior. Response effort is a factor influencing choice but not the primary explanation for proportional distribution. Behavioral contrast describes changes in behavior across settings.",
   },
   {
@@ -699,12 +695,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is trying to identify potential reinforcers for a client. They conduct a free operant observation, allowing the client to freely interact with various toys and activities. The analyst records the duration of time the client spends with each item.",
     question: "This method of observing free interaction to identify preferred items is a type of what assessment?",
     choices: [
-      { letter: "A", text: "Functional analysis" },
       { letter: "B", text: "Preference assessment" },
       { letter: "C", text: "Skills assessment" },
       { letter: "D", text: "Punishment assessment" },
+      { letter: "A", text: "Functional analysis" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "A preference assessment is a method for identifying stimuli that are likely to function as reinforcers. Free operant observation is one type of preference assessment where the individual is allowed unrestricted access to a variety of stimuli, and the duration of engagement with each is measured. A functional analysis identifies the function of a behavior. A skills assessment evaluates a client's abilities. A punishment assessment identifies effective punishers.",
   },
   {
@@ -717,12 +713,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is observed to engage in various forms of attention-seeking behavior, including calling out, tapping others, and making silly noises. All of these behaviors reliably result in adult attention.",
     question: "The collection of these topographically different behaviors that all serve the same function (gaining attention) is best described as what?",
     choices: [
-      { letter: "A", text: "A single response" },
-      { letter: "B", text: "A response class" },
       { letter: "C", text: "A stimulus class" },
       { letter: "D", text: "A behavioral chain" },
+      { letter: "A", text: "A single response" },
+      { letter: "B", text: "A response class" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A response class is a group of responses that produce the same effect on the environment. In this case, calling out, tapping, and making silly noises are different in form but all result in attention, thus belonging to the same response class. A single response is one specific instance. A stimulus class is a group of stimuli. A behavioral chain is a sequence of responses where each response produces the discriminative stimulus for the next response.",
   },
   {
@@ -735,12 +731,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is teaching a client to identify 'animals'. They present pictures of a dog, a cat, and a bird, and the client correctly labels them as 'animals'. Later, when shown videos of a dog, a cat, and a bird, the client also correctly labels them as 'animals'.",
     question: "The pictures and videos of various animals, all evoking the response 'animals', form what?",
     choices: [
-      { letter: "A", text: "A response class" },
-      { letter: "B", text: "A motivating operation" },
       { letter: "C", text: "A stimulus class" },
       { letter: "D", text: "A discriminative stimulus" },
+      { letter: "A", text: "A response class" },
+      { letter: "B", text: "A motivating operation" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "A stimulus class is a group of stimuli that share specified common elements along formal, temporal, or functional dimensions. Both pictures and videos of different animals evoke the same response ('animals'), indicating they belong to a stimulus class. A response class is a group of responses. A motivating operation alters reinforcer effectiveness. A discriminative stimulus signals reinforcement availability.",
   },
   {
@@ -771,12 +767,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client frequently complains about their job. Their supervisor starts giving them more interesting and challenging tasks whenever they express positive statements about their work. As a result, the client's positive statements about their job increase.",
     question: "The supervisor's action of providing more interesting tasks is an example of what behavioral principle?",
     choices: [
-      { letter: "A", text: "Positive reinforcement" },
-      { letter: "B", text: "Negative reinforcement" },
       { letter: "C", text: "Positive punishment" },
       { letter: "D", text: "Negative punishment" },
+      { letter: "A", text: "Positive reinforcement" },
+      { letter: "B", text: "Negative reinforcement" },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Positive reinforcement occurs when a stimulus is added to the environment following a behavior, and as a result, the future probability of that behavior increases. Here, interesting tasks (desirable stimuli) are added, and positive statements increase. Negative reinforcement involves removing an aversive stimulus to increase behavior. Positive punishment adds an aversive stimulus to decrease behavior. Negative punishment removes a desirable stimulus to decrease behavior.",
   },
   {
@@ -789,12 +785,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child initially does not value money. A behavior analyst consistently pairs tokens (which can be exchanged for money) with access to preferred activities. Over time, the child begins to work for money alone, even without immediate access to activities.",
     question: "In this scenario, money has become what type of reinforcer?",
     choices: [
-      { letter: "A", text: "Unconditioned reinforcer" },
       { letter: "B", text: "Conditioned reinforcer" },
       { letter: "C", text: "Generalized conditioned reinforcer" },
       { letter: "D", text: "Automatic reinforcer" },
+      { letter: "A", text: "Unconditioned reinforcer" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "A generalized conditioned reinforcer is a conditioned reinforcer that has been paired with many different primary and secondary reinforcers and therefore does not depend on a current motivating operation for any particular form of reinforcement. Money, tokens, and praise are common examples. Money's value is derived from its exchangeability for various other reinforcers. An unconditioned reinforcer is naturally reinforcing. A conditioned reinforcer is learned but might be tied to a specific reinforcer. An automatic reinforcer is produced by the behavior itself.",
   },
   {
@@ -843,12 +839,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client frequently leaves their therapy session without permission. To decrease this behavior, the behavior analyst implements a procedure where each time the client leaves without permission, they immediately lose 5 minutes of their preferred free play time. The client's unauthorized departures decrease.",
     question: "The removal of preferred free play time to decrease unauthorized departures is an example of what behavioral principle?",
     choices: [
+      { letter: "D", text: "Negative punishment" },
       { letter: "A", text: "Positive reinforcement" },
       { letter: "B", text: "Negative reinforcement" },
       { letter: "C", text: "Positive punishment" },
-      { letter: "D", text: "Negative punishment" },
     ],
-    correctAnswer: "D",
+    correctAnswer: 'C',
     rationale: "Negative punishment occurs when a desirable stimulus is removed following a behavior, and as a result, the future probability of that behavior decreases. Here, preferred free play time (a desirable stimulus) is removed, and unauthorized departures decrease. Positive reinforcement adds a stimulus to increase behavior. Negative reinforcement removes an aversive stimulus to increase behavior. Positive punishment adds an aversive stimulus to decrease behavior.",
   },
   {
@@ -861,12 +857,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is engaging in a dangerous behavior near a busy street. Their parent immediately pulls them back, causing a brief, startling physical sensation. In the future, the child is less likely to approach the street without holding a parent's hand.",
     question: "The startling physical sensation from being pulled back functions as what type of punisher in this scenario?",
     choices: [
+      { letter: "D", text: "Generalized conditioned punisher" },
       { letter: "A", text: "Unconditioned punisher" },
       { letter: "B", text: "Conditioned punisher" },
       { letter: "C", text: "Unconditioned reinforcer" },
-      { letter: "D", text: "Generalized conditioned punisher" },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "An unconditioned punisher is a stimulus that decreases the future frequency of behavior without any prior learning history. A startling physical sensation is naturally aversive and functions as an unconditioned punisher. A conditioned punisher acquires its properties through learning. A generalized conditioned punisher is paired with many different punishers. An unconditioned reinforcer increases behavior.",
   },
   {
@@ -879,12 +875,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client frequently engages in screaming behavior. A behavior analyst determines that screaming is maintained by escape from demands. The analyst observes that screaming is significantly more likely to occur when the client has been presented with a continuous stream of difficult academic tasks for an extended period without breaks.",
     question: "The continuous stream of difficult academic tasks without breaks is functioning as what type of motivating operation, and what effect does it have on the value of escape as a reinforcer?",
     choices: [
-      { letter: "A", text: "Abolishing operation; Decreases value" },
       { letter: "B", text: "Establishing operation; Decreases value" },
       { letter: "C", text: "Abolishing operation; Increases value" },
       { letter: "D", text: "Establishing operation; Increases value" },
+      { letter: "A", text: "Abolishing operation; Decreases value" },
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "An establishing operation (EO) increases the current effectiveness of some stimulus, object, or event as a reinforcer and increases the current frequency of all behavior that has been reinforced by that stimulus, object, or event. A continuous stream of difficult tasks (aversive stimulation) establishes escape as a more potent reinforcer and increases behaviors (like screaming) that have historically led to escape. An abolishing operation (AO) decreases the effectiveness of a reinforcer.",
   },
   {
@@ -897,12 +893,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is taught to clap their hands when the therapist says 'clap'. When the therapist says 'stomp', the child does not clap. The therapist only reinforces clapping when 'clap' is said.",
     question: "The therapist saying 'clap' serves as what for the clapping behavior?",
     choices: [
+      { letter: "D", text: "A conditioned punisher" },
       { letter: "A", text: "An S-delta" },
       { letter: "B", text: "A motivating operation" },
       { letter: "C", text: "A discriminative stimulus (SD)" },
-      { letter: "D", text: "A conditioned punisher" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "A discriminative stimulus (SD) is a stimulus in the presence of which a particular response is reinforced. The therapist saying 'clap' signals that clapping will be reinforced. An S-delta is a stimulus in the presence of which a particular response is not reinforced. A motivating operation alters reinforcer effectiveness. A conditioned punisher decreases behavior.",
   },
   {
@@ -915,12 +911,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst teaches a client to identify 'tree' by pointing to a picture of an oak tree. Later, the client is able to correctly point to pictures of a pine tree, a palm tree, and a maple tree when asked to 'point to tree', even though these specific trees were not used in training.",
     question: "This demonstrates the client's ability to engage in what?",
     choices: [
-      { letter: "A", text: "Stimulus discrimination" },
       { letter: "B", text: "Stimulus generalization" },
       { letter: "C", text: "Response generalization" },
       { letter: "D", text: "Over-selectivity" },
+      { letter: "A", text: "Stimulus discrimination" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Stimulus generalization occurs when a response that has been reinforced in the presence of one stimulus occurs in the presence of other, similar stimuli without direct training. The client generalizes the response 'point to tree' to various types of trees beyond the trained oak tree. Stimulus discrimination is responding differently to different stimuli. Response generalization is emitting untrained but functionally equivalent responses. Over-selectivity is a tendency to respond to only one or a few aspects of a stimulus.",
   },
   {
@@ -933,12 +929,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child learns to say 'dog' only when presented with a picture of a dog. When shown a picture of a cat, the child does not say 'dog'.",
     question: "The child's differential responding to the picture of a dog versus a cat indicates what?",
     choices: [
-      { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Stimulus discrimination" },
       { letter: "D", text: "Response maintenance" },
+      { letter: "A", text: "Stimulus generalization" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Stimulus discrimination is the process by which an organism learns to respond differently to different stimuli. The child discriminates between the picture of a dog (SD) and the picture of a cat (S-delta), responding 'dog' only to the former. Stimulus generalization is responding similarly to different stimuli. Response generalization is emitting different but functionally similar responses. Response maintenance is the continuation of a behavior after intervention is removed.",
   },
   {
@@ -951,12 +947,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client is taught to initiate social greetings by saying 'hello' and making eye contact. After training, the client not only says 'hello' but also occasionally says 'hi' or 'good morning' when greeting others. Furthermore, they initiate greetings with both familiar and unfamiliar people in various social settings.",
     question: "This scenario illustrates both _____ and _____.",
     choices: [
+      { letter: "D", text: "Response maintenance; Stimulus control" },
       { letter: "A", text: "Stimulus discrimination; Response differentiation" },
       { letter: "B", text: "Response generalization; Stimulus generalization" },
       { letter: "C", text: "Behavioral contrast; Resurgence" },
-      { letter: "D", text: "Response maintenance; Stimulus control" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Response generalization is evident as the client uses different forms of greeting (saying 'hi' or 'good morning') that were not directly taught but serve the same function. Stimulus generalization is evident as the client initiates greetings with various untrained people and in various untrained settings. Both are desirable outcomes for adaptive behavior. Stimulus discrimination and response differentiation are about narrowing responses or stimuli. Behavioral contrast and resurgence are different phenomena. Response maintenance is the continuation of behavior over time, and stimulus control is when a behavior occurs more often in the presence of a specific stimulus.",
   },
   {
@@ -969,12 +965,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst successfully teaches a child to independently put away their toys after play. After the intervention is faded and discontinued, the analyst conducts follow-up observations over several weeks and finds that the child continues to put away their toys consistently without any prompts or reinforcement.",
     question: "The child's continued toy clean-up behavior after the intervention is discontinued demonstrates what behavioral outcome?",
     choices: [
+      { letter: "D", text: "Overlearning" },
       { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Response maintenance" },
-      { letter: "D", text: "Overlearning" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Response maintenance refers to the extent to which a learner continues to perform the target behavior after a portion or all of the intervention has been terminated. The child's continued toy clean-up after the intervention is discontinued is a clear example of response maintenance. Stimulus generalization is responding to untrained stimuli. Response generalization is emitting untrained but functionally equivalent responses. Overlearning is practicing a skill past the point of mastery, which can contribute to maintenance but is not the outcome itself.",
   },
   {
@@ -987,12 +983,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client typically engages in self-injurious behavior (SIB) when they are in pain. A behavior analyst observes that when the client is not experiencing pain, SIB is almost non-existent. However, when the client reports pain, SIB is significantly more likely to occur.",
     question: "The experience of pain is functioning as what type of motivating operation for SIB?",
     choices: [
-      { letter: "A", text: "Abolishing operation" },
       { letter: "B", text: "Establishing operation" },
       { letter: "C", text: "Discriminative stimulus" },
       { letter: "D", text: "Conditioned punisher" },
+      { letter: "A", text: "Abolishing operation" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "An establishing operation (EO) increases the current effectiveness of some stimulus, object, or event as a reinforcer and increases the current frequency of all behavior that has been reinforced by that stimulus, object, or event. In this context, pain might establish escape from pain or attention for pain as a more potent reinforcer, thus increasing SIB that has historically led to these outcomes. An abolishing operation decreases reinforcer effectiveness. A discriminative stimulus signals reinforcement availability. A conditioned punisher decreases behavior.",
   },
   {
@@ -1005,12 +1001,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A new employee is given a detailed manual outlining all safety procedures. The employee follows these procedures meticulously, even for tasks they have never performed before and for which they have not yet experienced any consequences (positive or negative) related to safety.",
     question: "The employee's adherence to the safety procedures, primarily guided by the manual, is an example of what?",
     choices: [
-      { letter: "A", text: "Contingency-shaped behavior" },
-      { letter: "B", text: "Rule-governed behavior" },
       { letter: "C", text: "Stimulus control" },
       { letter: "D", text: "Automatic reinforcement" },
+      { letter: "A", text: "Contingency-shaped behavior" },
+      { letter: "B", text: "Rule-governed behavior" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Rule-governed behavior is behavior controlled by a verbal statement of a rule, rather than by direct contact with contingencies. The employee's behavior is controlled by the rules in the manual, not by direct experience with the consequences of following or not following the procedures. While stimulus control is involved (the manual is an SD), the primary controlling variable described is the rule. Contingency-shaped behavior is directly controlled by consequences. Automatic reinforcement is reinforcement that occurs without the social mediation of others.",
   },
   {
@@ -1041,12 +1037,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client engages in hitting others to gain attention in both the home and clinic settings. A behavior analyst implements a differential reinforcement of incompatible behavior (DRI) procedure in the clinic, reinforcing appropriate toy play while ignoring hitting. Hitting decreases in the clinic, but the analyst observes an increase in hitting at home, where no intervention was applied.",
     question: "This phenomenon, where hitting decreases in one setting and increases in another, is an example of what?",
     choices: [
+      { letter: "D", text: "Resurgence" },
       { letter: "A", text: "Extinction burst" },
       { letter: "B", text: "Spontaneous recovery" },
       { letter: "C", text: "Behavioral contrast" },
-      { letter: "D", text: "Resurgence" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Behavioral contrast occurs when a change in the rate of reinforcement in one setting leads to an opposite change in the rate of behavior in another setting. The reduction of hitting in the clinic (due to DRI) leads to an increase in hitting at home, where the reinforcement contingencies for hitting remained unchanged. Extinction burst is a temporary increase in behavior when extinction is first implemented. Spontaneous recovery is the reappearance of an extinguished behavior. Resurgence is the reappearance of a previously reinforced behavior when a more recently reinforced behavior is no longer reinforced.",
   },
   {
@@ -1077,12 +1073,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is working with a client who is resistant to following instructions. To increase compliance, the analyst first asks the client to perform three simple, previously mastered instructions (e.g., 'Touch your nose,' 'Give me five,' 'Sit down'). Immediately after these, the analyst presents a more difficult instruction (e.g., 'Clean up your toys'). The client is more likely to comply with the difficult instruction.",
     question: "This intervention strategy is known as what?",
     choices: [
-      { letter: "A", text: "Premack principle" },
-      { letter: "B", text: "Behavioral momentum" },
       { letter: "C", text: "Differential reinforcement" },
       { letter: "D", text: "Response cost" },
+      { letter: "A", text: "Premack principle" },
+      { letter: "B", text: "Behavioral momentum" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Behavioral momentum involves presenting a series of high-probability requests immediately before a low-probability request to increase compliance with the low-probability request. The easy, mastered instructions are high-probability requests, and cleaning up toys is a low-probability request. The Premack principle uses a high-probability behavior to reinforce a low-probability behavior. Differential reinforcement involves reinforcing some responses and not others. Response cost is a form of negative punishment.",
   },
   {
@@ -1095,12 +1091,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is taught to select a picture of a car when they hear the word 'car'. They are also taught to select the written word 'car' when they see a picture of a car. Without any further training, the child is able to say 'car' when they see the written word 'car'.",
     question: "The emergence of the untrained relation (seeing written word 'car' and saying 'car') is an example of what property of stimulus equivalence?",
     choices: [
-      { letter: "A", text: "Reflexivity" },
-      { letter: "B", text: "Symmetry" },
       { letter: "C", text: "Transitivity" },
       { letter: "D", text: "Generalization" },
+      { letter: "A", text: "Reflexivity" },
+      { letter: "B", text: "Symmetry" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "Transitivity is a property of stimulus equivalence where if A = B and B = C, then A = C. In this case, if the child is taught (hears 'car' (A) -> selects picture of car (B)) and (sees picture of car (B) -> selects written word 'car' (C)), and then without training, they can (sees written word 'car' (C) -> says 'car' (A)), this demonstrates transitivity. Reflexivity is A=A. Symmetry is if A=B, then B=A. Generalization is a broader concept, but transitivity is the specific property demonstrated here.",
   },
   {
@@ -1113,12 +1109,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client has two options for engaging in social interaction: talking to peers or talking to staff. Talking to peers is reinforced on a VR 5 schedule, and talking to staff is reinforced on a VR 15 schedule. The behavior analyst observes that the client talks to peers approximately three times more often than talking to staff.",
     question: "This distribution of social interaction is consistent with what behavioral principle?",
     choices: [
+      { letter: "D", text: "Behavioral contrast" },
       { letter: "A", text: "Premack principle" },
       { letter: "B", text: "Response effort" },
       { letter: "C", text: "Matching law" },
-      { letter: "D", text: "Behavioral contrast" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "The matching law states that the relative rate of responding to an alternative matches the relative rate of reinforcement obtained from that alternative. Since talking to peers is reinforced three times more frequently (VR 5 vs. VR 15), the client talks to peers approximately three times more often. The Premack principle describes using a high-probability behavior to reinforce a low-probability behavior. Response effort is a factor influencing choice but not the primary explanation for proportional distribution. Behavioral contrast describes changes in behavior across settings.",
   },
   {
@@ -1131,12 +1127,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is trying to identify potential reinforcers for a client. They conduct a paired-stimulus preference assessment, presenting two items at a time and recording which item the client chooses. Across multiple trials, the client consistently chooses a tablet over all other presented items.",
     question: "The client's consistent selection of the tablet indicates what about the tablet?",
     choices: [
-      { letter: "A", text: "It is a conditioned punisher." },
       { letter: "B", text: "It is a highly preferred stimulus." },
       { letter: "C", text: "It is an unconditioned reinforcer." },
       { letter: "D", text: "It is an abolishing operation." },
+      { letter: "A", text: "It is a conditioned punisher." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "A preference assessment aims to identify stimuli that are likely to function as reinforcers. When a client consistently chooses one item over others in a paired-stimulus assessment, it indicates that the chosen item is a highly preferred stimulus. While preferred stimuli often function as reinforcers, this assessment only identifies preference. A conditioned punisher decreases behavior. An unconditioned reinforcer is naturally reinforcing. An abolishing operation decreases the effectiveness of a reinforcer.",
   },
   {
@@ -1167,12 +1163,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is teaching a client to identify 'clothing'. They present pictures of a shirt, pants, and a dress, and the client correctly labels them as 'clothing'. Later, when shown actual shirts, pants, and dresses, the client also correctly labels them as 'clothing'.",
     question: "The pictures and actual items of shirts, pants, and dresses, all evoking the response 'clothing', form what?",
     choices: [
-      { letter: "A", text: "A response class" },
-      { letter: "B", text: "A motivating operation" },
       { letter: "C", text: "A stimulus class" },
       { letter: "D", text: "A discriminative stimulus" },
+      { letter: "A", text: "A response class" },
+      { letter: "B", text: "A motivating operation" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "A stimulus class is a group of stimuli that share specified common elements along formal, temporal, or functional dimensions. Both pictures and actual items of different clothing evoke the same response ('clothing'), indicating they belong to a stimulus class. A response class is a group of responses. A motivating operation alters reinforcer effectiveness. A discriminative stimulus signals reinforcement availability.",
   },
   {
@@ -1203,12 +1199,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client frequently avoids completing their homework. Their therapist implements a system where if the client completes their homework, they do not have to participate in a less preferred group activity. The client's homework completion increases.",
     question: "This intervention, where a less preferred activity is removed to increase homework completion, is an example of what?",
     choices: [
-      { letter: "A", text: "Positive reinforcement" },
       { letter: "B", text: "Negative reinforcement" },
       { letter: "C", text: "Positive punishment" },
       { letter: "D", text: "Negative punishment" },
+      { letter: "A", text: "Positive reinforcement" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Negative reinforcement occurs when the removal of an aversive stimulus following a behavior increases the future probability of that behavior. Here, the less preferred group activity (aversive stimulus) is removed, and homework completion increases. Positive reinforcement adds a stimulus to increase behavior. Positive punishment adds an aversive stimulus to decrease behavior. Negative punishment removes a desirable stimulus to decrease behavior.",
   },
   {
@@ -1221,12 +1217,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child initially shows no interest in stickers. A behavior analyst consistently pairs stickers with access to highly preferred edibles. Over time, the child begins to work harder for stickers alone, even without immediate access to edibles.",
     question: "In this scenario, stickers have become what type of reinforcer?",
     choices: [
-      { letter: "A", text: "Unconditioned reinforcer" },
-      { letter: "B", text: "Conditioned reinforcer" },
       { letter: "C", text: "Generalized conditioned reinforcer" },
       { letter: "D", text: "Automatic reinforcer" },
+      { letter: "A", text: "Unconditioned reinforcer" },
+      { letter: "B", text: "Conditioned reinforcer" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A conditioned reinforcer is a previously neutral stimulus that acquires reinforcing properties through association with unconditioned or other conditioned reinforcers. Stickers, initially neutral, become a conditioned reinforcer by being paired with preferred edibles. A generalized conditioned reinforcer is paired with many different primary and secondary reinforcers. An unconditioned reinforcer is naturally reinforcing. An automatic reinforcer is produced by the behavior itself.",
   },
   {
@@ -1239,12 +1235,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client is working on a vocational task where they sort items. They receive a token after the first correct sorting response that occurs after an average of 3 minutes. This results in a moderate, steady rate of responding.",
     question: "What schedule of reinforcement is the client on?",
     choices: [
-      { letter: "A", text: "Fixed Ratio (FR)" },
       { letter: "B", text: "Variable Ratio (VR)" },
       { letter: "C", text: "Fixed Interval (FI)" },
       { letter: "D", text: "Variable Interval (VI)" },
+      { letter: "A", text: "Fixed Ratio (FR)" },
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "A Variable Interval (VI) schedule delivers reinforcement for the first response after an average amount of time has passed. Receiving a token after the first correct response following an average of 3 minutes is a VI3 schedule. VI schedules are characterized by a moderate, steady rate of responding. Fixed Ratio (FR) involves a fixed number of responses. Variable Ratio (VR) involves an average number of responses. Fixed Interval (FI) involves a fixed amount of time.",
   },
   {
@@ -1257,12 +1253,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child frequently calls out in class to get teacher attention. The teacher, advised by a behavior analyst, decides to ignore all call-outs, providing attention only when the child raises their hand. Initially, the child calls out more frequently and loudly before gradually decreasing over several days.",
     question: "The teacher's procedure of ignoring call-outs is an example of what behavioral procedure?",
     choices: [
+      { letter: "D", text: "Response cost" },
       { letter: "A", text: "Punishment" },
       { letter: "B", text: "Time-out" },
       { letter: "C", text: "Extinction" },
-      { letter: "D", text: "Response cost" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Extinction occurs when a previously reinforced behavior is no longer followed by the reinforcing consequence, resulting in a decrease in the future frequency of the behavior. In this case, the teacher's attention (reinforcer) that previously maintained call-outs is withheld, leading to a decrease in the behavior. Punishment involves decreasing behavior through the addition of an aversive stimulus or removal of a desirable one. Time-out and response cost are specific punishment procedures.",
   },
   {
@@ -1293,12 +1289,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is engaging in a dangerous behavior by running into the street. Their parent immediately says 'NO!' in a very loud and stern voice, and the child stops and looks at the parent. In the future, the child is less likely to run into the street.",
     question: "The parent's loud and stern 'NO!' functions as what type of punisher in this scenario?",
     choices: [
-      { letter: "A", text: "Unconditioned punisher" },
-      { letter: "B", text: "Conditioned punisher" },
       { letter: "C", text: "Unconditioned reinforcer" },
       { letter: "D", text: "Generalized conditioned punisher" },
+      { letter: "A", text: "Unconditioned punisher" },
+      { letter: "B", text: "Conditioned punisher" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A conditioned punisher is a previously neutral stimulus that has acquired the capacity to function as a punisher through association with one or more unconditioned or stronger conditioned punishers. The loud and stern 'NO!' likely gained its punishing properties through prior pairings with other aversive events or consequences. An unconditioned punisher is naturally aversive. A generalized conditioned punisher is paired with many different punishers. An unconditioned reinforcer increases behavior.",
   },
   {
@@ -1311,12 +1307,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client typically engages in requesting for a specific food item. A behavior analyst observes that these requests are much more frequent when the client has not eaten for several hours. When the client has recently eaten, requests are less frequent.",
     question: "The state of food deprivation for several hours is functioning as what?",
     choices: [
-      { letter: "A", text: "A discriminative stimulus" },
-      { letter: "B", text: "An abolishing operation" },
       { letter: "C", text: "An establishing operation" },
       { letter: "D", text: "A conditioned punisher" },
+      { letter: "A", text: "A discriminative stimulus" },
+      { letter: "B", text: "An abolishing operation" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "An establishing operation (EO) increases the current effectiveness of some stimulus, object, or event as a reinforcer and increases the current frequency of all behavior that has been reinforced by that stimulus, object, or event. Food deprivation makes food a more potent reinforcer and increases requesting behavior. A discriminative stimulus signals reinforcement availability. An abolishing operation decreases reinforcer effectiveness. A conditioned punisher decreases behavior.",
   },
   {
@@ -1329,12 +1325,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child is taught to say 'yes' only when asked a question. When the therapist makes a statement, the child does not say 'yes'. The therapist reinforces 'yes' only when a question is asked.",
     question: "The therapist asking a question serves as what for the 'yes' response?",
     choices: [
+      { letter: "D", text: "A conditioned reinforcer" },
       { letter: "A", text: "An S-delta" },
       { letter: "B", text: "A motivating operation" },
       { letter: "C", text: "A discriminative stimulus (SD)" },
-      { letter: "D", text: "A conditioned reinforcer" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "A discriminative stimulus (SD) is a stimulus in the presence of which a particular response is reinforced. The therapist asking a question signals that saying 'yes' will be reinforced. An S-delta is a stimulus in the presence of which a particular response is not reinforced. A motivating operation alters reinforcer effectiveness. A conditioned reinforcer is a learned reinforcer.",
   },
   {
@@ -1347,12 +1343,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst teaches a client to identify 'vehicle' by pointing to a picture of a car. Later, the client is able to correctly point to pictures of a truck, a bus, and a motorcycle when asked to 'point to vehicle', even though these specific vehicles were not used in training.",
     question: "This demonstrates the client's ability to engage in what?",
     choices: [
-      { letter: "A", text: "Stimulus discrimination" },
       { letter: "B", text: "Stimulus generalization" },
       { letter: "C", text: "Response generalization" },
       { letter: "D", text: "Over-selectivity" },
+      { letter: "A", text: "Stimulus discrimination" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Stimulus generalization occurs when a response that has been reinforced in the presence of one stimulus occurs in the presence of other, similar stimuli without direct training. The client generalizes the response 'point to vehicle' to various types of vehicles beyond the trained car. Stimulus discrimination is responding differently to different stimuli. Response generalization is emitting untrained but functionally equivalent responses. Over-selectivity is a tendency to respond to only one or a few aspects of a stimulus.",
   },
   {
@@ -1365,12 +1361,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A child learns to say 'apple' only when presented with a picture of an apple. When shown a picture of an orange, the child does not say 'apple'.",
     question: "The child's differential responding to the picture of an apple versus an orange indicates what?",
     choices: [
-      { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Stimulus discrimination" },
       { letter: "D", text: "Response maintenance" },
+      { letter: "A", text: "Stimulus generalization" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Stimulus discrimination is the process by which an organism learns to respond differently to different stimuli. The child discriminates between the picture of an apple (SD) and the picture of an orange (S-delta), responding 'apple' only to the former. Stimulus generalization is responding similarly to different stimuli. Response generalization is emitting different but functionally similar responses. Response maintenance is the continuation of a behavior after intervention is removed.",
   },
   {
@@ -1383,12 +1379,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client is taught to ask for help by saying 'help me please'. After training, the client not only says 'help me please' but also occasionally raises their hand or uses a communication device to request help. Furthermore, they ask for help from various staff members and in different challenging situations without specific training for each.",
     question: "This scenario illustrates both _____ and _____.",
     choices: [
+      { letter: "D", text: "Response maintenance; Stimulus control" },
       { letter: "A", text: "Stimulus discrimination; Response differentiation" },
       { letter: "B", text: "Response generalization; Stimulus generalization" },
       { letter: "C", text: "Behavioral contrast; Resurgence" },
-      { letter: "D", text: "Response maintenance; Stimulus control" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Response generalization is evident as the client uses different forms of requesting help (saying, raising hand, communication device) that were not directly taught but serve the same function. Stimulus generalization is evident as the client asks for help from various untrained staff members and in various untrained situations. Both are desirable outcomes for adaptive behavior. Stimulus discrimination and response differentiation are about narrowing responses or stimuli. Behavioral contrast and resurgence are different phenomena. Response maintenance is the continuation of behavior over time, and stimulus control is when a behavior occurs more often in the presence of a specific stimulus.",
   },
   {
@@ -1401,12 +1397,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst successfully teaches a child to independently brush their teeth. After the intervention is faded and discontinued, the analyst conducts follow-up observations over several months and finds that the child continues to brush their teeth consistently without any prompts or reinforcement.",
     question: "The child's continued teeth brushing behavior after the intervention is discontinued demonstrates what behavioral outcome?",
     choices: [
+      { letter: "D", text: "Overlearning" },
       { letter: "A", text: "Stimulus generalization" },
       { letter: "B", text: "Response generalization" },
       { letter: "C", text: "Response maintenance" },
-      { letter: "D", text: "Overlearning" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Response maintenance refers to the extent to which a learner continues to perform the target behavior after a portion or all of the intervention has been terminated. The child's continued teeth brushing after the intervention is discontinued is a clear example of response maintenance. Stimulus generalization is responding to untrained stimuli. Response generalization is emitting untrained but functionally equivalent responses. Overlearning is practicing a skill past the point of mastery, which can contribute to maintenance but is not the outcome itself.",
   },
   {
@@ -1419,12 +1415,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client typically engages in screaming behavior. A behavior analyst observes that screaming is significantly more likely to occur when the client has been deprived of attention for an extended period. When the client has received ample attention, screaming is almost non-existent.",
     question: "The extended period of attention deprivation is functioning as what type of motivating operation for screaming behavior?",
     choices: [
-      { letter: "A", text: "Abolishing operation" },
       { letter: "B", text: "Establishing operation" },
       { letter: "C", text: "Discriminative stimulus" },
       { letter: "D", text: "Conditioned punisher" },
+      { letter: "A", text: "Abolishing operation" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "An establishing operation (EO) increases the current effectiveness of some stimulus, object, or event as a reinforcer and increases the current frequency of all behavior that has been reinforced by that stimulus, object, or event. Attention deprivation establishes attention as a more potent reinforcer and increases behaviors (like screaming) that have historically led to attention. An abolishing operation decreases reinforcer effectiveness. A discriminative stimulus signals reinforcement availability. A conditioned punisher decreases behavior.",
   },
   {
@@ -1437,12 +1433,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A person always wears a seatbelt when driving, even though they have never been in an accident or received a ticket for not wearing one. They learned about the importance of seatbelts through public service announcements and driver's education courses.",
     question: "The person's consistent seatbelt use, primarily due to public service announcements and education, is an example of what?",
     choices: [
-      { letter: "A", text: "Contingency-shaped behavior" },
-      { letter: "B", text: "Rule-governed behavior" },
       { letter: "C", text: "Stimulus control" },
       { letter: "D", text: "Automatic reinforcement" },
+      { letter: "A", text: "Contingency-shaped behavior" },
+      { letter: "B", text: "Rule-governed behavior" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Rule-governed behavior is behavior controlled by a verbal statement of a rule, rather than by direct contact with contingencies. The person's behavior is controlled by the rules and information conveyed through PSAs and education, not by direct experience with the consequences of wearing or not wearing a seatbelt. While stimulus control is involved (the car is an SD), the primary controlling variable described is the rule. Contingency-shaped behavior is directly controlled by consequences. Automatic reinforcement is reinforcement that occurs without the social mediation of others.",
   },
   {
@@ -1455,12 +1451,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is teaching a child to repeat words. When the child hears the therapist say 'ball', they are prompted to say 'ball' and are reinforced. The child's ability to repeat words increases.",
     question: "The child's verbal behavior of saying 'ball' when hearing the therapist say 'ball' is an example of what verbal operant?",
     choices: [
-      { letter: "A", text: "Tact" },
-      { letter: "B", text: "Mand" },
       { letter: "C", text: "Echoic" },
       { letter: "D", text: "Intraverbal" },
+      { letter: "A", text: "Tact" },
+      { letter: "B", text: "Mand" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "An echoic is a verbal operant involving a vocal response that is under the control of a vocal verbal discriminative stimulus and has point-to-point correspondence and formal similarity. The child repeating 'ball' after hearing 'ball' fits this definition. A tact is evoked by a nonverbal stimulus. A mand is a request. An intraverbal is a verbal response to another verbal stimulus without point-to-point correspondence.",
   },
   {
@@ -1473,12 +1469,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A client engages in screaming for attention in both the therapy room and the community. A behavior analyst implements an extinction procedure for screaming in the therapy room. Screaming decreases in the therapy room, but the analyst observes an increase in screaming in the community, where no intervention was applied.",
     question: "This shift in screaming behavior from one setting to another is an example of what?",
     choices: [
+      { letter: "D", text: "Resurgence" },
       { letter: "A", text: "Extinction burst" },
       { letter: "B", text: "Spontaneous recovery" },
       { letter: "C", text: "Behavioral contrast" },
-      { letter: "D", text: "Resurgence" },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Behavioral contrast occurs when a change in the rate of reinforcement in one setting leads to an opposite change in the rate of behavior in another setting. The reduction of screaming in the therapy room (due to extinction) leads to an increase in screaming in the community, where the contingencies remained unchanged. Extinction burst is a temporary increase in behavior when extinction is first implemented. Spontaneous recovery is the reappearance of an extinguished behavior. Resurgence is the reappearance of a previously reinforced behavior when a more recently reinforced behavior is no longer reinforced.",
   },
   {
@@ -1509,12 +1505,12 @@ export const tier6Pool_B: Question[] = [
     scenario: "A behavior analyst is working with a client who is resistant to completing daily living tasks. To increase compliance, the analyst first asks the client to perform three simple, previously mastered tasks (e.g., 'Brush your hair,' 'Wash your face,' 'Put on your socks'). Immediately after these, the analyst presents a more difficult task (e.g., 'Prepare your breakfast'). The client is more likely to comply with the difficult task.",
     question: "This intervention strategy is known as what?",
     choices: [
-      { letter: "A", text: "Premack principle" },
-      { letter: "B", text: "Behavioral momentum" },
       { letter: "C", text: "Differential reinforcement" },
       { letter: "D", text: "Response cost" },
+      { letter: "A", text: "Premack principle" },
+      { letter: "B", text: "Behavioral momentum" },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Behavioral momentum involves presenting a series of high-probability requests immediately before a low-probability request to increase compliance with the low-probability request. The easy, mastered tasks are high-probability requests, and preparing breakfast is a low-probability request. The Premack principle uses a high-probability behavior to reinforce a low-probability behavior. Differential reinforcement involves reinforcing some responses and not others. Response cost is a form of negative punishment.",
   }
 ];

@@ -1,7 +1,3 @@
-// Domain G — Tier 6 question pool
-// BCBA 6th Edition Task List
-// Part of the 5× question pool for the mock exam engine
-
 import { Question } from './types';
 
 export const tier6Pool_G: Question[] = [
@@ -46,10 +42,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the procedure used to ensure the client independently emits the mand?",
     choices: [
       {
-        letter: "A",
-        text: "Most-to-least prompting with prompt fading"
-      },
-      {
         letter: "B",
         text: "Least-to-most prompting with prompt fading"
       },
@@ -60,9 +52,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Stimulus fading without response prompting"
+      },
+      {
+        letter: "A",
+        text: "Most-to-least prompting with prompt fading"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The scenario describes beginning with a full physical prompt (a more intrusive prompt) and then systematically reducing the prompt intensity until the client responds independently, which is characteristic of most-to-least prompting combined with prompt fading. Option B is incorrect because least-to-most prompting starts with minimal prompts and increases prompt intensity only if the client fails to respond, which is not the case here. Option C is incorrect because time-delay involves inserting a delay before providing the prompt rather than starting with a full prompt and fading it systematically. Option D is incorrect because stimulus fading involves gradual changes to the antecedent stimuli, not varying prompt intensity aimed at the response."
   },
   {
@@ -76,23 +72,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which ethical consideration should the BCBA prioritize when addressing the technician's implementation of DTT in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Ensuring the technician uses the least restrictive prompting procedures to promote learner independence, in accordance with ethical standards."
-      },
-      {
-        letter: "B",
-        text: "Increasing the frequency of reinforcement to maximize the child\u2019s motivation during DTT sessions."
-      },
-      {
         letter: "C",
         text: "Allowing the technician to continue using full physical prompts since it guarantees correct responding and faster skill acquisition."
       },
       {
         letter: "D",
         text: "Reducing the number of DTT trials to prevent potential learner frustration and escape-maintained problem behavior."
+      },
+      {
+        letter: "A",
+        text: "Ensuring the technician uses the least restrictive prompting procedures to promote learner independence, in accordance with ethical standards."
+      },
+      {
+        letter: "B",
+        text: "Increasing the frequency of reinforcement to maximize the child\u2019s motivation during DTT sessions."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The correct answer is A because ethical guidelines require behavior analysts to implement procedures that promote learner independence and use the least restrictive prompts necessary. Over-reliance on full physical prompts may impede skill acquisition and learner autonomy. Choice B is incorrect because increasing reinforcement frequency without addressing prompting strategies does not ensure ethical or effective teaching. Choice C is incorrect because relying exclusively on full physical prompts violates ethical standards that emphasize fading prompts to promote independence. Choice D is incorrect because reducing the number of trials without analyzing the function of behavior or modifying teaching strategies may compromise the intervention's effectiveness and is not directly related to ethical considerations about prompting and reinforcement."
   },
   {
@@ -106,6 +102,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following interpretations best explains the outcome of this group contingency intervention?",
     choices: [
       {
+        letter: "D",
+        text: "The group contingency failed because group rewards do not function as reinforcers in classroom settings, indicating a need to use only individual contingencies."
+      },
+      {
         letter: "A",
         text: "The independent group contingency effectively increased overall on-task behavior but may have limited reinforcement for low-performing students, suggesting a need for additional individual supports."
       },
@@ -116,13 +116,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "The interdependent group contingency likely caused peer pressure that decreased motivation for some students, leading to inconsistent performance."
-      },
-      {
-        letter: "D",
-        text: "The group contingency failed because group rewards do not function as reinforcers in classroom settings, indicating a need to use only individual contingencies."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Answer A is correct because independent group contingencies allow each student to earn reinforcement based on their own behavior, which can increase overall performance; however, students who perform poorly may not contact reinforcement, indicating a need for supplemental individualized interventions. Answer B is incorrect because a dependent group contingency relies on one or few individuals to earn reinforcement for the whole group, which can create peer pressure and may not increase overall behavior as effectively in this scenario. Answer C is incorrect as it describes a likely effect of interdependent contingencies, not independent ones; the scenario described an independent group contingency. Answer D is incorrect because group contingencies can be effective reinforcers in classroom settings when properly implemented, and dismissing group contingencies entirely is inaccurate."
   },
   {
@@ -166,10 +162,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following strategies best exemplifies an effective self-management intervention for this client?",
     choices: [
       {
-        letter: "A",
-        text: "Teaching the client to use a checklist to monitor and record each homework task completed, with periodic review and reinforcement."
-      },
-      {
         letter: "B",
         text: "Providing the client with frequent prompts and verbal instructions throughout the homework session."
       },
@@ -180,9 +172,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Implementing a time-out procedure contingent on failure to complete homework assignments."
+      },
+      {
+        letter: "A",
+        text: "Teaching the client to use a checklist to monitor and record each homework task completed, with periodic review and reinforcement."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Choice A is correct because teaching the client to use a checklist to self-monitor and record completed tasks is a classic self-management strategy that increases independent responding. The periodic review and reinforcement supports maintenance and motivation. Choice B, providing frequent prompts and verbal instructions, relies on external control rather than promoting self-management skills. Choice C, using response cost, is an aversive punishment procedure and does not teach self-management; it focuses on decreasing behavior through punishment rather than increasing self-monitoring. Choice D, implementing a time-out, is also a punishment procedure that does not teach the client to manage their own behavior independently. Therefore, only choice A reflects an effective self-management intervention."
   },
   {
@@ -196,23 +192,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following actions best aligns with ethical practice when thinning reinforcement schedules in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Implement a gradual thinning plan while monitoring the client\u2019s behavior closely and collaborating with the caregiver to adjust as needed."
-      },
-      {
-        letter: "B",
-        text: "Immediately switch to a lean reinforcement schedule to promote rapid independence, regardless of potential behavior fluctuations."
-      },
-      {
         letter: "C",
         text: "Maintain the dense reinforcement schedule indefinitely to avoid any risk of problem behavior, despite limited progress toward generalization."
       },
       {
         letter: "D",
         text: "Ignore the caregiver\u2019s concerns and proceed with thinning solely based on the BCBA\u2019s clinical judgment."
+      },
+      {
+        letter: "A",
+        text: "Implement a gradual thinning plan while monitoring the client\u2019s behavior closely and collaborating with the caregiver to adjust as needed."
+      },
+      {
+        letter: "B",
+        text: "Immediately switch to a lean reinforcement schedule to promote rapid independence, regardless of potential behavior fluctuations."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Answer A is correct because ethical practice requires implementing reinforcement schedule thinning gradually while monitoring the client\u2019s response and involving caregivers to ensure safety and effectiveness. This approach balances behavior analytic principles with client-centered care. Answer B is incorrect because abruptly thinning reinforcement can increase problem behavior and is not consistent with ethical risk management. Answer C is incorrect because maintaining a dense schedule indefinitely may impede generalization and maintenance, which is not aligned with best practice. Answer D is incorrect because disregarding caregiver input violates ethical guidelines regarding collaboration and respect for stakeholders."
   },
   {
@@ -226,6 +222,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the procedure the BCBA is using?",
     choices: [
       {
+        letter: "D",
+        text: "Response generalization"
+      },
+      {
         letter: "A",
         text: "Stimulus fading"
       },
@@ -236,13 +236,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Shaping"
-      },
-      {
-        letter: "D",
-        text: "Response generalization"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The correct answer is A: Stimulus fading. Stimulus fading involves the gradual removal or modification of a stimulus prompt to transfer stimulus control to the natural stimulus. In this scenario, the therapist is gradually increasing the distance of the picture card, fading the prompt so the child eventually responds to the natural stimulus alone. Answer B (Prompt delay) involves inserting a delay before providing a prompt, rather than gradually changing the prompt itself. Answer C (Shaping) involves reinforcing successive approximations of a behavior, not modifying the stimulus. Answer D (Response generalization) refers to the occurrence of a learned behavior in different contexts or stimuli, not the method of prompt removal. Therefore, stimulus fading best describes the procedure used."
   },
   {
@@ -286,10 +282,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following strategies best promotes generalization of requesting behavior across settings and persons?",
     choices: [
       {
-        letter: "A",
-        text: "Conducting training sessions in multiple settings with various communication partners."
-      },
-      {
         letter: "B",
         text: "Using the same prompt hierarchy strictly in the therapy room until mastery is achieved."
       },
@@ -300,9 +292,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Teaching the child to request only with one preferred item to maintain stimulus control."
+      },
+      {
+        letter: "A",
+        text: "Conducting training sessions in multiple settings with various communication partners."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Choice A is correct because training in multiple settings with different people increases the likelihood that the requesting behavior will generalize across environments and communication partners. This approach uses programming common stimuli and multiple exemplars, which are key strategies for promoting generalization. Choice B is incorrect because restricting training to one setting limits generalization and may result in context-bound behavior. Choice C is incorrect because providing reinforcement only in one setting does not promote maintenance or generalization across other environments. Choice D is incorrect because limiting requests to one item restricts variability and may hinder generalization to other items or contexts."
   },
   {
@@ -316,23 +312,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best explains the primary behavioral mechanism by which a high-probability request sequence increases compliance with a subsequent low-probability request?",
     choices: [
       {
-        letter: "A",
-        text: "The sequence establishes a history of reinforcement through multiple compliance responses, which increases the likelihood of compliance with the low-probability request via behavioral momentum."
-      },
-      {
-        letter: "B",
-        text: "The sequence functions as an abolishing operation that decreases the value of escape as a reinforcer, thereby reducing problem behavior."
-      },
-      {
         letter: "C",
         text: "The sequence produces habituation to task demands, which decreases the aversiveness of the low-probability task."
       },
       {
         letter: "D",
         text: "The sequence creates stimulus control by pairing specific antecedent stimuli with reinforcement, resulting in compliance with the low-probability request."
+      },
+      {
+        letter: "A",
+        text: "The sequence establishes a history of reinforcement through multiple compliance responses, which increases the likelihood of compliance with the low-probability request via behavioral momentum."
+      },
+      {
+        letter: "B",
+        text: "The sequence functions as an abolishing operation that decreases the value of escape as a reinforcer, thereby reducing problem behavior."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Answer A is correct because the high-probability request sequence capitalizes on behavioral momentum, a phenomenon where compliance with multiple easy (high-probability) requests builds a pattern of reinforced behavior that increases the likelihood of compliance with a subsequent harder (low-probability) request. This is due to the recent history of reinforcement increasing response persistence. Answer B is incorrect because the sequence does not function primarily as an abolishing operation; it does not reduce the value of escape but rather increases compliance by momentum. Answer C is incorrect because habituation involves decreased responsiveness due to repeated exposure, which is not the primary mechanism in high-probability request sequences. Answer D is incorrect because while stimulus control is important in behavior, the high-probability request sequence's effect is not primarily due to establishing new stimulus control but due to behavioral momentum from reinforcement history."
   },
   {
@@ -346,6 +342,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes an important consideration for maximizing the effectiveness of the video modeling intervention in this scenario?",
     choices: [
       {
+        letter: "D",
+        text: "Avoid providing any prompts or feedback after viewing the video to allow natural learning to occur."
+      },
+      {
         letter: "A",
         text: "Ensure the video model closely resembles the learner in age and appearance to increase the likelihood of observational learning."
       },
@@ -356,13 +356,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Include multiple video models performing different skills to provide a varied learning experience."
-      },
-      {
-        letter: "D",
-        text: "Avoid providing any prompts or feedback after viewing the video to allow natural learning to occur."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Choice A is correct because research on video modeling suggests that learners are more likely to attend to and imitate models who resemble them in age and appearance, which increases the effectiveness of observational learning. Choice B is incorrect because using a highly complex context may overwhelm the learner and reduce acquisition; starting with simpler, clearly defined examples is more effective. Choice C is incorrect because including multiple video models performing different skills simultaneously can cause confusion; focusing on one skill at a time promotes clearer learning. Choice D is incorrect because providing prompting and feedback after video modeling helps reinforce correct responding and promotes skill acquisition."
   },
   {
@@ -376,6 +372,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes an effective shaping procedure in this scenario?",
     choices: [
       {
+        letter: "D",
+        text: "Providing reinforcement on a fixed ratio schedule for every attempt, regardless of accuracy, to increase motivation."
+      },
+      {
         letter: "A",
         text: "Reinforcing the client only when they complete the entire shoe-tying sequence correctly, while providing physical guidance during incorrect attempts."
       },
@@ -386,13 +386,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Using a prompt hierarchy starting with full physical prompts and fading to partial prompts as the client progresses."
-      },
-      {
-        letter: "D",
-        text: "Providing reinforcement on a fixed ratio schedule for every attempt, regardless of accuracy, to increase motivation."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Answer B correctly describes shaping, which involves differentially reinforcing successive approximations toward the target behavior\u2014in this case, starting with crossing the laces, then making a loop, and eventually completing the entire tie. Answer A is incorrect because reinforcing only the final correct behavior without reinforcing intermediate approximations does not utilize shaping; it may lead to extinction of attempts. Answer C describes prompting and prompt fading, which is a different teaching strategy than shaping. Answer D describes reinforcement on a fixed ratio schedule regardless of accuracy, which does not implement shaping since it does not differentially reinforce closer approximations. Therefore, B is the best description of an effective shaping procedure in this scenario."
   },
   {
@@ -406,10 +402,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the procedure used by the therapist in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Positive punishment by adding an aversive stimulus contingent on the behavior."
-      },
-      {
         letter: "B",
         text: "Negative punishment by removing a preferred stimulus contingent on the behavior."
       },
@@ -420,9 +412,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Negative reinforcement by removing an aversive stimulus contingent on the behavior."
+      },
+      {
+        letter: "A",
+        text: "Positive punishment by adding an aversive stimulus contingent on the behavior."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The therapist applies an aversive stimulus (a mild water spray) immediately following the target behavior (hand-biting), which is intended to decrease the behavior. This procedure is positive punishment because it involves adding (positive) a stimulus that decreases the behavior. Choice B is incorrect because negative punishment involves removing a stimulus to decrease behavior, which is not the case here. Choice C is incorrect because positive reinforcement involves adding a stimulus to increase behavior, but here the goal is to decrease hand-biting. Choice D is incorrect because negative reinforcement involves removing an aversive stimulus to increase behavior, which does not match the scenario."
   },
   {
@@ -436,23 +432,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best explains the significance of the child initiating picture exchanges independently in PECS intervention?",
     choices: [
       {
-        letter: "A",
-        text: "It indicates the child has developed functional communication and is using an appropriate mand."
-      },
-      {
-        letter: "B",
-        text: "It demonstrates that the child is engaging in tacting to label items in the environment."
-      },
-      {
         letter: "C",
         text: "It reflects the child\u2019s ability to discriminate between different picture stimuli during matching-to-sample tasks."
       },
       {
         letter: "D",
         text: "It shows the child is exhibiting echoic behavior by repeating verbal models provided by the therapist."
+      },
+      {
+        letter: "A",
+        text: "It indicates the child has developed functional communication and is using an appropriate mand."
+      },
+      {
+        letter: "B",
+        text: "It demonstrates that the child is engaging in tacting to label items in the environment."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The correct answer is A because spontaneous picture exchanges in PECS represent functional communication where the child uses a mand (request) to obtain desired items, which is the primary goal of PECS. Choice B is incorrect because tacting involves labeling or commenting on the environment, not requesting. Choice C is incorrect because discrimination of picture stimuli during matching-to-sample tasks does not necessarily involve communication or manding behavior. Choice D is incorrect because echoic behavior refers to vocal imitation, whereas PECS uses non-vocal picture exchanges to communicate."
   },
   {
@@ -466,6 +462,10 @@ export const tier6Pool_G: Question[] = [
     question: "Based on the data showing an increase in spontaneous initiations only during group play sessions after BST implementation, which conclusion is most supported?",
     choices: [
       {
+        letter: "D",
+        text: "The observed increase is likely a result of respondent conditioning rather than operant learning."
+      },
+      {
         letter: "A",
         text: "The BST intervention was effective in increasing social initiations specifically within the group play context."
       },
@@ -476,13 +476,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "The intervention failed to produce any meaningful change since initiations did not increase outside group play."
-      },
-      {
-        letter: "D",
-        text: "The observed increase is likely a result of respondent conditioning rather than operant learning."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Answer A is correct because the data specifically show increased initiations in the context where BST was implemented, indicating the intervention effectively taught the targeted social skill within that setting. Answer B is incorrect because generalization across all settings was not observed; the behavior change was context-specific. Answer C is incorrect because the increase during group play represents a meaningful behavior change, even if it did not generalize. Answer D is incorrect since respondent conditioning involves involuntary responses, whereas the increase in initiations reflects operant behavior shaped by reinforcement through BST."
   },
   {
@@ -526,10 +522,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the intervention implemented by the BCBA?",
     choices: [
       {
-        letter: "A",
-        text: "Noncontingent reinforcement (NCR) with attention as the reinforcer"
-      },
-      {
         letter: "B",
         text: "Differential reinforcement of alternative behavior (DRA) with attention delivered contingent on appropriate behavior"
       },
@@ -540,9 +532,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Response cost by removing attention following self-injurious behavior"
+      },
+      {
+        letter: "A",
+        text: "Noncontingent reinforcement (NCR) with attention as the reinforcer"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The BCBA is delivering attention on a fixed-time schedule independent of the child's behavior, which is a hallmark of noncontingent reinforcement (NCR). NCR involves providing the maintaining reinforcer freely according to a time-based schedule to reduce problem behavior. Option B (DRA) involves delivering reinforcement contingent on an alternative appropriate behavior, which is not described here. Option C describes extinction by withholding the reinforcer following problem behavior, but the scenario indicates attention is provided independent of behavior, not withheld. Option D describes response cost, which involves removal of reinforcement contingent on problem behavior, not noncontingent delivery. Therefore, A is correct and the others are plausible but not matching the intervention described."
   },
   {
@@ -556,23 +552,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following strategies best exemplifies naturalistic teaching in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Arranging the environment so preferred items are visible but out of reach to evoke spontaneous requests during play."
-      },
-      {
-        letter: "B",
-        text: "Using discrete trial training at a table with massed trials to teach requesting."
-      },
-      {
         letter: "C",
         text: "Prompting the child to request a toy immediately before giving it, without waiting for any initiation."
       },
       {
         letter: "D",
         text: "Delivering verbal instructions and providing reinforcement only after the child completes a set number of trials."
+      },
+      {
+        letter: "A",
+        text: "Arranging the environment so preferred items are visible but out of reach to evoke spontaneous requests during play."
+      },
+      {
+        letter: "B",
+        text: "Using discrete trial training at a table with massed trials to teach requesting."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Answer A is correct because arranging the environment to create natural opportunities for communication and waiting for spontaneous initiations aligns with naturalistic teaching principles, which emphasize embedding learning in naturally occurring routines and reinforcing learner-initiated communication. Answer B describes discrete trial training, which is highly structured and contrived, not naturalistic. Answer C involves prompting before any initiation, which does not encourage spontaneous communication and is less naturalistic. Answer D focuses on massed trials and reinforcement contingent on completing multiple trials, which is more characteristic of contrived teaching rather than naturalistic teaching."
   },
   {
@@ -586,6 +582,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which strategy best promotes maintenance of the cooking skill over time?",
     choices: [
       {
+        letter: "D",
+        text: "Discontinuing all practice sessions now that the client has mastered the task in the clinic."
+      },
+      {
         letter: "A",
         text: "Systematically scheduling periodic sessions to practice the cooking task in natural environments with varying levels of support."
       },
@@ -596,13 +596,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Reducing reinforcement frequency during sessions to promote independent responding."
-      },
-      {
-        letter: "D",
-        text: "Discontinuing all practice sessions now that the client has mastered the task in the clinic."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Option A is correct because maintenance programming involves scheduling intermittent practice opportunities, especially in naturalistic settings, to ensure the learned behavior persists over time and across contexts. Option B focuses on increasing instruction frequency in the clinic, which may improve acquisition or fluency but does not specifically promote maintenance in natural environments. Option C suggests reducing reinforcement frequency, which could lead to extinction or decreased responding rather than maintenance. Option D involves discontinuing practice entirely, which risks skill degradation and does not support maintenance."
   },
   {
@@ -646,10 +642,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the therapist's approach in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Using response prompting with systematic fading to transfer stimulus control to the natural SD."
-      },
-      {
         letter: "B",
         text: "Employing shaping by reinforcing successive approximations toward the target response."
       },
@@ -660,9 +652,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Using extinction to reduce prompt dependence by withholding reinforcement following prompted responses."
+      },
+      {
+        letter: "A",
+        text: "Using response prompting with systematic fading to transfer stimulus control to the natural SD."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The therapist is using response prompting by providing physical prompts initially and then systematically fading these prompts to less intrusive forms (gestural prompts). This method transfers stimulus control from the prompt to the natural discriminative stimulus (SD), which is the correct description of response prompting with fading.\n\nOption B is incorrect because shaping involves reinforcing successive approximations of a behavior, not systematically reducing prompts.\n\nOption C is incorrect because chaining involves teaching a sequence of behaviors, whereas the scenario focuses on prompting a single response (color identification).\n\nOption D is incorrect because extinction involves withholding reinforcement to reduce behavior, not fading prompts to transfer stimulus control."
   },
   {
@@ -676,23 +672,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes a critical component of an effective token economy?",
     choices: [
       {
-        letter: "A",
-        text: "Tokens should be paired with backup reinforcers that are meaningful to the individual."
-      },
-      {
-        letter: "B",
-        text: "Tokens should be delivered on a fixed interval schedule regardless of behavior."
-      },
-      {
         letter: "C",
         text: "Tokens function as primary reinforcers that directly satisfy biological needs."
       },
       {
         letter: "D",
         text: "Tokens should only be delivered after the entire behavior session is complete."
+      },
+      {
+        letter: "A",
+        text: "Tokens should be paired with backup reinforcers that are meaningful to the individual."
+      },
+      {
+        letter: "B",
+        text: "Tokens should be delivered on a fixed interval schedule regardless of behavior."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Choice A is correct because tokens themselves are conditioned reinforcers that acquire reinforcing value through association with backup reinforcers, which must be meaningful and motivating to the individual. Choice B is incorrect because tokens should be delivered contingent on the target behavior rather than on a fixed interval schedule, ensuring reinforcement is directly linked to behavior. Choice C is incorrect because tokens are conditioned (secondary) reinforcers, not primary reinforcers that satisfy biological needs directly. Choice D is incorrect because delivering tokens only after the entire session reduces the immediacy of reinforcement, which can decrease effectiveness; immediate or frequent token delivery is essential to strengthen the target behavior."
   },
   {
@@ -706,6 +702,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the purpose of the maintenance probes in this scenario?",
     choices: [
       {
+        letter: "D",
+        text: "To evaluate the effectiveness of prompting strategies during skill acquisition."
+      },
+      {
         letter: "A",
         text: "To assess whether the client's requesting behavior persists over time without ongoing reinforcement."
       },
@@ -716,13 +716,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "To measure the client\u2019s acquisition rate of new communication skills."
-      },
-      {
-        letter: "D",
-        text: "To evaluate the effectiveness of prompting strategies during skill acquisition."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The correct answer is A because maintenance programming involves assessing whether a learned behavior continues over time, typically by conducting maintenance probes without reinforcement to see if the skill persists. Answer B describes generalization, which refers to the spread of behavior across settings or stimuli, not maintenance. Answer C is incorrect because acquisition rate pertains to how quickly a new skill is learned, not maintenance of an already mastered skill. Answer D relates to acquisition and prompting effectiveness, not to maintenance of behavior after mastery."
   },
   {
@@ -766,10 +762,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following strategies is the most effective for promoting generalization and maintenance of AAC use in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Teaching the child to request using the PECS system across different environments and with various communication partners, while systematically fading prompts."
-      },
-      {
         letter: "B",
         text: "Increasing the child\u2019s vocal verbal behavior through direct vocal imitation training before continuing AAC interventions."
       },
@@ -780,9 +772,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Using a fixed schedule of reinforcement for each AAC request to promote consistent responding."
+      },
+      {
+        letter: "A",
+        text: "Teaching the child to request using the PECS system across different environments and with various communication partners, while systematically fading prompts."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Choice A is correct because teaching the child to use the AAC system across environments and communication partners while fading prompts promotes generalization and maintenance, which are critical for effective AAC intervention. Choice B, although vocal verbal behavior may be a goal, delaying AAC use in favor of vocal imitation training is not advisable when AAC supports communication immediately. Choice C limits opportunities for generalization and may lead to context-bound responding, which does not support functional communication across settings. Choice D\u2019s use of a fixed schedule of reinforcement may not promote maintenance or generalization as effectively as naturalistic reinforcement contingent on communication; variable or natural reinforcement schedules are typically more effective."
   },
   {
@@ -796,23 +792,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which ethical consideration should guide the BCBA's use of stimulus fading in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Ensure that the fading steps are gradual enough to minimize client discomfort and respect the client\u2019s dignity."
-      },
-      {
-        letter: "B",
-        text: "Prioritize rapid fading to eliminate the initial stimulus as quickly as possible to increase treatment efficiency."
-      },
-      {
         letter: "C",
         text: "Use extinction procedures alongside fading to reduce any problem behaviors associated with wearing the bracelet."
       },
       {
         letter: "D",
         text: "Apply the fading procedure without client or caregiver input to maintain procedural integrity."
+      },
+      {
+        letter: "A",
+        text: "Ensure that the fading steps are gradual enough to minimize client discomfort and respect the client\u2019s dignity."
+      },
+      {
+        letter: "B",
+        text: "Prioritize rapid fading to eliminate the initial stimulus as quickly as possible to increase treatment efficiency."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Answer A is correct because ethical practice requires that the BCBA minimize client discomfort and respect client dignity, especially when using stimulus fading. Gradual fading ensures the client can tolerate changes without undue distress. Answer B is incorrect because prioritizing rapid fading over client comfort may cause harm and violate ethical standards. Answer C is incorrect because combining extinction is not necessarily appropriate or ethical without clear indication and may increase discomfort or problem behavior. Answer D is incorrect because ethical practice involves collaboration with the client and caregivers to ensure consent and acceptability of procedures."
   },
   {
@@ -826,6 +822,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following ethical considerations should the BCBA prioritize when designing and implementing the NCR intervention in this scenario?",
     choices: [
       {
+        letter: "D",
+        text: "Implementing NCR without collecting baseline data, to prevent prolonging exposure to aggressive behavior."
+      },
+      {
         letter: "A",
         text: "Ensuring the NCR schedule is dense enough to compete with the client's motivation for aggression while monitoring for potential extinction bursts."
       },
@@ -836,13 +836,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Using NCR only after extinction has been implemented to prevent reinforcing any problem behavior."
-      },
-      {
-        letter: "D",
-        text: "Implementing NCR without collecting baseline data, to prevent prolonging exposure to aggressive behavior."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Answer A is correct because ensuring a sufficiently dense NCR schedule is critical to effectively compete with the client's motivation for aggression, thereby ethically minimizing harm and promoting behavior reduction. Monitoring for extinction bursts is also important to safeguard the client's well-being. Answer B is incorrect because avoiding NCR entirely disregards its evidence-based utility when implemented correctly; NCR can be ethical and effective when properly designed. Answer C is incorrect because waiting to implement NCR only after extinction neglects the ethical importance of minimizing problem behavior as early as possible; NCR can be used proactively. Answer D is incorrect because implementing interventions without baseline data violates ethical standards requiring data-based decision making to ensure treatment effectiveness and safety."
   },
   {
@@ -886,10 +882,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following is the most ethical course of action for the BCBA when implementing extinction in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Continue the extinction procedure consistently while providing reinforcement for alternative appropriate behaviors."
-      },
-      {
         letter: "B",
         text: "Discontinue extinction immediately to avoid any temporary increase in disruptive behavior."
       },
@@ -900,9 +892,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Implement punishment alongside extinction to suppress the disruptive behavior quickly."
+      },
+      {
+        letter: "A",
+        text: "Continue the extinction procedure consistently while providing reinforcement for alternative appropriate behaviors."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Answer A is correct because continuing extinction consistently is essential for it to be effective, and reinforcing alternative appropriate behaviors promotes ethical treatment by teaching functional communication or other replacement skills. Answer B is incorrect because discontinuing extinction due to an extinction burst undermines treatment integrity and may prolong problematic behavior. Answer C is incorrect because reinforcing the disruptive behavior contradicts the goal of extinction and reinforces maladaptive behavior. Answer D is incorrect because adding punishment without ethical justification and proper procedures may violate ethical standards and is not necessary when extinction and reinforcement of alternative behaviors are properly implemented."
   },
   {
@@ -916,23 +912,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following antecedent interventions best balances ethical considerations with effective behavior reduction in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Using a visual schedule to signal upcoming transitions, allowing the client to anticipate changes while maintaining some choice and control."
-      },
-      {
-        letter: "B",
-        text: "Implementing a response cost procedure by removing preferred items immediately upon signs of resistance during transitions."
-      },
-      {
         letter: "C",
         text: "Restricting access to all preferred activities until the client complies with the transition demand."
       },
       {
         letter: "D",
         text: "Delivering a fixed prompt to initiate the transition without providing any opportunities for the client to indicate readiness or preference."
+      },
+      {
+        letter: "A",
+        text: "Using a visual schedule to signal upcoming transitions, allowing the client to anticipate changes while maintaining some choice and control."
+      },
+      {
+        letter: "B",
+        text: "Implementing a response cost procedure by removing preferred items immediately upon signs of resistance during transitions."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Option A is correct because using a visual schedule is an antecedent intervention that helps the client anticipate transitions, reducing problem behavior while respecting the client's autonomy and choice, aligning with ethical standards. Option B involves response cost, a consequence-based strategy rather than an antecedent intervention, and poses ethical concerns about punishment without antecedent modifications. Option C restricts all preferred activities, which may be overly restrictive and ethically problematic as it removes choice and may evoke escape-maintained problem behavior. Option D involves fixed prompting without considering the client's readiness or preference, which can reduce client dignity and may not effectively reduce problem behavior. Thus, option A best balances effective antecedent intervention with ethical practice."
   },
   {
@@ -946,10 +942,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following strategies best exemplifies naturalistic teaching in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "The BCBA waits for the child to make any communicative attempt, then immediately models the word 'truck' and prompts the child to imitate before giving access to the toy."
-      },
-      {
         letter: "B",
         text: "The BCBA physically guides the child's hand to the toy truck while simultaneously saying the word 'truck' and provides the toy as a reinforcer."
       },
@@ -960,9 +952,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "The BCBA conducts a discrete trial by presenting a picture of a truck and asking, 'What is this?' then providing reinforcement for a correct vocal response."
+      },
+      {
+        letter: "A",
+        text: "The BCBA waits for the child to make any communicative attempt, then immediately models the word 'truck' and prompts the child to imitate before giving access to the toy."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Answer C best exemplifies naturalistic teaching because it incorporates environmental arrangement to create motivation, waits for a communicative attempt, and provides reinforcement contingent on that attempt in a natural context. This aligns with key features of naturalistic teaching, such as using naturally occurring motivation and embedding learning opportunities within play. Answer A involves immediate modeling and prompting which may reduce the child's motivation to initiate communication spontaneously and is less naturalistic. Answer B uses physical guidance which is more intrusive and less consistent with naturalistic teaching principles emphasizing natural communication. Answer D describes a discrete trial teaching method, which is more structured and contrived and does not represent naturalistic teaching. Therefore, C is the most appropriate strategy for naturalistic teaching in this scenario."
   },
   {
@@ -1006,10 +1002,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the primary function of the written checklist in this self-management intervention?",
     choices: [
       {
-        letter: "A",
-        text: "A self-monitoring tool that prompts the client to engage in alternative, adaptive behaviors."
-      },
-      {
         letter: "B",
         text: "A form of response cost that decreases anxiety by removing aversive stimuli."
       },
@@ -1020,9 +1012,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "A token economy system that reinforces the client's use of coping strategies."
+      },
+      {
+        letter: "A",
+        text: "A self-monitoring tool that prompts the client to engage in alternative, adaptive behaviors."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The written checklist primarily serves as a self-monitoring prompt that helps the client recognize when to implement adaptive coping strategies, which is a key component of self-management. Choice A correctly identifies this function. Choice B is incorrect because response cost involves removal of a reinforcer contingent on behavior, which is not the function of the checklist. Choice C is incorrect because an establishing operation alters the value of a reinforcer or punisher but the checklist itself is a prompt, not an EO. Choice D is incorrect because a token economy is a reinforcement system involving tokens as conditioned reinforcers, which is not described in the scenario."
   },
   {
@@ -1036,23 +1032,23 @@ export const tier6Pool_G: Question[] = [
     question: "Based on research regarding high-probability request sequences, what is the most likely effect of this intervention on the child's compliance with the homework task?",
     choices: [
       {
-        letter: "A",
-        text: "An increase in compliance with the homework task due to momentum generated by prior easy requests."
-      },
-      {
-        letter: "B",
-        text: "A decrease in compliance because the child becomes fatigued from multiple requests."
-      },
-      {
         letter: "C",
         text: "No change in compliance since high-probability requests only affect reinforcement schedules."
       },
       {
         letter: "D",
         text: "Immediate extinction of problem behavior resulting from the homework request."
+      },
+      {
+        letter: "A",
+        text: "An increase in compliance with the homework task due to momentum generated by prior easy requests."
+      },
+      {
+        letter: "B",
+        text: "A decrease in compliance because the child becomes fatigued from multiple requests."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The high-probability request sequence (also known as behavioral momentum) involves presenting several easy, high-probability requests that the learner is likely to comply with before presenting a low-probability request. Research shows this sequence increases compliance with the low-probability requests by creating behavioral momentum. Choice A correctly describes this effect. Choice B is incorrect because fatigue is not typically a factor in short sequences of high-probability requests, and the intervention is designed to increase compliance rather than decrease it. Choice C is incorrect as high-probability request sequences directly affect compliance behavior rather than reinforcement schedules alone. Choice D is incorrect because extinction is a separate procedure and is not an immediate consequence of implementing high-probability request sequences."
   },
   {
@@ -1066,6 +1062,10 @@ export const tier6Pool_G: Question[] = [
     question: "Based on the clinical scenario, which explanation best accounts for the learner's faster acquisition of tooth brushing using backward chaining compared to forward chaining?",
     choices: [
       {
+        letter: "D",
+        text: "Backward chaining minimizes prompt dependency by providing full prompts on all steps except the last one, which encourages independent responding earlier."
+      },
+      {
         letter: "A",
         text: "Backward chaining allows the learner to contact the terminal reinforcer immediately after completing the last step, increasing motivation and reinforcement effectiveness."
       },
@@ -1076,13 +1076,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Total-task chaining is less effective because it does not provide reinforcement after each individual step, leading to slower acquisition."
-      },
-      {
-        letter: "D",
-        text: "Backward chaining minimizes prompt dependency by providing full prompts on all steps except the last one, which encourages independent responding earlier."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Answer A is correct because backward chaining ensures the learner completes the terminal step independently and immediately contacts the natural reinforcer (e.g., clean teeth or praise) at the end of the chain, which can increase motivation and facilitate faster acquisition. Answer B is partially correct but is more of a reason why forward chaining might be slower rather than why backward chaining is more effective; it does not fully explain the advantage of backward chaining. Answer C incorrectly describes total-task chaining as less effective due to reinforcement delivery; total-task chaining often includes reinforcement after the entire chain, which can be effective depending on learner characteristics. Answer D is incorrect because backward chaining typically involves prompting all steps except the last one, but the rationale that this minimizes prompt dependency earlier is not necessarily accurate; prompt dependency can still occur and is not the primary reason for faster acquisition in backward chaining."
   },
   {
@@ -1126,10 +1122,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which differential reinforcement procedure is the most ethical choice to decrease the disruptive vocalizations while teaching an alternative appropriate communication behavior?",
     choices: [
       {
-        letter: "A",
-        text: "Differential Reinforcement of Alternative behavior (DRA) by reinforcing appropriate communication while withholding reinforcement for disruptive vocalizations."
-      },
-      {
         letter: "B",
         text: "Differential Reinforcement of Other behavior (DRO) by providing reinforcement when disruptive vocalizations do not occur during specific intervals."
       },
@@ -1140,9 +1132,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Differential Reinforcement of Low rates (DRL) by reinforcing occurrences of disruptive vocalizations only if they happen below a predetermined frequency."
+      },
+      {
+        letter: "A",
+        text: "Differential Reinforcement of Alternative behavior (DRA) by reinforcing appropriate communication while withholding reinforcement for disruptive vocalizations."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Choice A (DRA) is the most ethical option because it not only reduces the problematic behavior but also teaches and reinforces an appropriate alternative communication behavior, promoting skill acquisition and client dignity. Choice B (DRO) is effective at reducing behavior but does not teach an alternative skill, which may limit the client's independence. Choice C (DRI) reinforces a behavior incompatible with the problem behavior but may not be feasible if no clear incompatible behavior exists or if it does not address the function of the disruptive vocalizations. Choice D (DRL) reduces the rate of behavior but does not eliminate it or teach an alternative, which may not be sufficient for behaviors that are highly disruptive. Ethically, interventions should focus on teaching functional alternatives rather than only reducing behavior."
   },
   {
@@ -1156,23 +1152,23 @@ export const tier6Pool_G: Question[] = [
     question: "What is the most appropriate next step for the BCBA to increase the child's use of PECS in this situation?",
     choices: [
       {
-        letter: "A",
-        text: "Physically prompt the child to pick up and exchange the picture immediately after the child reaches for the item."
-      },
-      {
-        letter: "B",
-        text: "Remove the preferred item and only provide it when the child uses the picture exchange."
-      },
-      {
         letter: "C",
         text: "Provide verbal instructions to the child to use the picture before accessing the item."
       },
       {
         letter: "D",
         text: "Ignore the reaching behavior and reinforce only the picture exchange attempts."
+      },
+      {
+        letter: "A",
+        text: "Physically prompt the child to pick up and exchange the picture immediately after the child reaches for the item."
+      },
+      {
+        letter: "B",
+        text: "Remove the preferred item and only provide it when the child uses the picture exchange."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The correct answer is A because physically prompting the child to pick up and exchange the picture immediately after reaching for the item is consistent with the teaching procedures in Phase 1 of PECS, which involves prompting and shaping the exchange behavior. This helps the child learn the functional use of the picture as a communication tool. \n\nChoice B is incorrect because removing the item without prompting the exchange does not teach the child the desired communicative behavior and may lead to frustration. \n\nChoice C is incorrect because verbal instructions alone are often ineffective with nonverbal children at this early phase of PECS training; physical prompting is more effective to establish the exchange behavior. \n\nChoice D is incorrect because ignoring the reaching behavior without prompting the exchange may result in continued reaching instead of learning the picture exchange, delaying acquisition of the PECS skill."
   },
   {
@@ -1186,6 +1182,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which modification to the discrete trial training protocol is most likely to promote generalization of the color identification skill to the natural environment?",
     choices: [
       {
+        letter: "D",
+        text: "Extend the duration of each DTT session to increase the number of trials per session."
+      },
+      {
         letter: "A",
         text: "Incorporate multiple exemplars of color stimuli and vary instructional settings within DTT sessions."
       },
@@ -1196,13 +1196,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Use errorless learning by immediately prompting the correct response during trials."
-      },
-      {
-        letter: "D",
-        text: "Extend the duration of each DTT session to increase the number of trials per session."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Incorporating multiple exemplars of the color stimuli and varying instructional settings during DTT promotes stimulus generalization by exposing the learner to different examples and contexts, which supports transfer of the skill to the natural environment. Increasing reinforcement intensity (B) may strengthen responding but does not directly promote generalization. Using errorless learning (C) helps acquisition but may limit generalization if the learner does not experience natural errors and problem-solving opportunities. Extending session duration (D) increases practice but does not inherently facilitate generalization across settings or stimuli."
   },
   {
@@ -1246,10 +1242,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the procedure used by the BCBA to reduce the behavior of touching the hot stove?",
     choices: [
       {
-        letter: "A",
-        text: "Positive punishment by adding a verbal reprimand contingent on touching the stove."
-      },
-      {
         letter: "B",
         text: "Negative punishment by removing access to a preferred activity contingent on touching the stove."
       },
@@ -1260,9 +1252,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Negative reinforcement by removing the verbal warning when the child stops touching the stove."
+      },
+      {
+        letter: "A",
+        text: "Positive punishment by adding a verbal reprimand contingent on touching the stove."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The BCBA is applying a positive punishment procedure because a stimulus (verbal reprimand) is added immediately following the behavior (touching the stove) to decrease its future occurrence. Choice A correctly identifies this as positive punishment. Choice B describes negative punishment, which involves removing a stimulus to decrease behavior, but in the scenario, no stimulus is removed. Choice C incorrectly describes positive reinforcement, which would increase behavior by adding a stimulus, not decrease it. Choice D describes negative reinforcement, which involves removing an aversive stimulus to increase behavior, but here the behavior is being decreased and a stimulus is being added, not removed."
   },
   {
@@ -1276,23 +1272,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following strategies best exemplifies an evidence-based approach to social skills training for this child?",
     choices: [
       {
-        letter: "A",
-        text: "Conducting structured peer-mediated interventions where typically developing peers are trained to engage with the child during recess."
-      },
-      {
-        letter: "B",
-        text: "Using discrete trial training to teach the child scripted social phrases in a one-on-one clinical setting."
-      },
-      {
         letter: "C",
         text: "Implementing a token economy to reinforce the child for any vocalization made during recess."
       },
       {
         letter: "D",
         text: "Providing vocal prompts to the child during recess to encourage social initiations without peer involvement."
+      },
+      {
+        letter: "A",
+        text: "Conducting structured peer-mediated interventions where typically developing peers are trained to engage with the child during recess."
+      },
+      {
+        letter: "B",
+        text: "Using discrete trial training to teach the child scripted social phrases in a one-on-one clinical setting."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Answer A is correct because peer-mediated interventions involve training typically developing peers to engage with the child, which is an evidence-based strategy shown to increase social initiations and reciprocal social interactions in natural settings. Answer B, while using discrete trial training can teach social phrases, it is less effective for promoting generalized and reciprocal peer interactions in natural environments compared to peer-mediated approaches. Answer C involves a token economy for any vocalization, which may not specifically target appropriate social behaviors or reciprocal interactions, limiting its effectiveness for social skills training. Answer D uses vocal prompts without peer involvement, which may prompt behavior but does not foster natural peer interactions or reciprocal social engagement. Therefore, A best aligns with social skills training principles emphasizing naturalistic, reciprocal peer interactions."
   },
   {
@@ -1306,6 +1302,10 @@ export const tier6Pool_G: Question[] = [
     question: "Based on this scenario, which modification is most consistent with best practices in functional communication training to improve treatment effectiveness?",
     choices: [
       {
+        letter: "D",
+        text: "Using noncontingent reinforcement to provide breaks on a fixed-time schedule independent of behavior."
+      },
+      {
         letter: "A",
         text: "Implementing a chained schedule of reinforcement that gradually increases the number of demands before providing the break."
       },
@@ -1316,13 +1316,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Providing the break immediately after the first demand regardless of communication use."
-      },
-      {
-        letter: "D",
-        text: "Using noncontingent reinforcement to provide breaks on a fixed-time schedule independent of behavior."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The correct answer is A because implementing a chained schedule of reinforcement is a common strategy to promote generalization and maintenance of FCT by gradually increasing the response requirements before reinforcement (i.e., breaks) is provided. This helps the learner tolerate multiple demands while still using the communication response effectively. Choice B is incorrect because extinction alone without teaching an alternative communication response is unlikely to be effective and may cause extinction bursts or increased problem behavior. Choice C is incorrect because providing the break immediately without requiring communication undermines the purpose of FCT and does not teach the functional communication response. Choice D is incorrect because noncontingent reinforcement on a fixed-time schedule may reduce problem behavior temporarily but does not teach or strengthen the functional communication response or ensure the break is contingent on communication."
   },
   {
@@ -1366,10 +1362,6 @@ export const tier6Pool_G: Question[] = [
     question: "What is the most ethical and effective response the BCBA should make regarding the teacher's suggestion?",
     choices: [
       {
-        letter: "A",
-        text: "Explain that tokens should only be delivered for the predefined target behaviors to maintain the integrity and effectiveness of the token economy."
-      },
-      {
         letter: "B",
         text: "Agree to include the additional behaviors suggested by the teacher to promote more frequent token delivery and client motivation."
       },
@@ -1380,9 +1372,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Discontinue the token economy and switch to continuous reinforcement for all behaviors to simplify intervention."
+      },
+      {
+        letter: "A",
+        text: "Explain that tokens should only be delivered for the predefined target behaviors to maintain the integrity and effectiveness of the token economy."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The correct answer is A because tokens should only be delivered for target behaviors identified in the behavior intervention plan to ensure the system's integrity and effectiveness. Delivering tokens for non-target behaviors can dilute the contingency and reduce the efficacy of the intervention, which can be considered unethical as it does not adhere to evidence-based practice. Option B is incorrect because including non-target behaviors can undermine the behavior plan and decrease the functional relation between behavior and reinforcement. Option C is incorrect as delivering tokens on a variable ratio schedule regardless of behavior eliminates the contingency and can lead to extinction of the desired behavior. Option D is incorrect because discontinuing the token economy without a clear clinical rationale can disrupt progress and is not necessarily ethical or effective. The BCBA must maintain treatment integrity and ensure reinforcement is contingent on target behaviors."
   },
   {
@@ -1396,23 +1392,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which maintenance programming strategy would be most effective to promote generalization and long-term retention of the child's break-requesting skill?",
     choices: [
       {
-        letter: "A",
-        text: "Implement intermittent reinforcement for the break-requesting behavior across multiple therapists and settings."
-      },
-      {
-        letter: "B",
-        text: "Continue to provide continuous reinforcement for the break-requesting behavior with the primary therapist only."
-      },
-      {
         letter: "C",
         text: "Fade prompts gradually while maintaining a high rate of reinforcement in the original therapy room."
       },
       {
         letter: "D",
         text: "Conduct discrete trial training sessions exclusively with the primary therapist to strengthen the behavior."
+      },
+      {
+        letter: "A",
+        text: "Implement intermittent reinforcement for the break-requesting behavior across multiple therapists and settings."
+      },
+      {
+        letter: "B",
+        text: "Continue to provide continuous reinforcement for the break-requesting behavior with the primary therapist only."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The correct answer is A because intermittent reinforcement across multiple therapists and settings helps maintain and generalize the behavior, preventing rapid extinction and promoting long-term retention. This strategy aligns with maintenance programming by ensuring the skill persists beyond initial acquisition conditions. Option B is incorrect because continuous reinforcement with only the primary therapist limits generalization and may lead to skill loss when other therapists or environments are involved. Option C focuses on prompt fading and maintaining reinforcement only in the original setting, which does not sufficiently promote generalization or maintenance across environments. Option D emphasizes discrete trial training with only one therapist, which may strengthen acquisition but does not address maintenance or generalization effectively."
   },
   {
@@ -1426,6 +1422,10 @@ export const tier6Pool_G: Question[] = [
     question: "Based on the described group contingency arrangement and the observed data, which statement best interprets the effectiveness and ethical considerations of this intervention?",
     choices: [
       {
+        letter: "D",
+        text: "A conjunctive group contingency would be more appropriate because it requires all students to meet the criterion individually before the group earns the reward, ensuring equal accountability."
+      },
+      {
         letter: "A",
         text: "The dependent group contingency increased overall on-task behavior effectively, but the BCBA should consider additional individualized interventions for the three students consistently below criterion to ensure equitable treatment."
       },
@@ -1436,13 +1436,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "The intervention is ineffective because the group contingency failed to increase on-task behavior for all students, indicating that group contingencies should not be used in classrooms."
-      },
-      {
-        letter: "D",
-        text: "A conjunctive group contingency would be more appropriate because it requires all students to meet the criterion individually before the group earns the reward, ensuring equal accountability."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Answer A is correct because a dependent group contingency can effectively increase group behavior, as seen by the group meeting the criterion and earning rewards. However, ethical practice requires addressing the needs of individuals who do not meet the criterion, ensuring they receive individualized support rather than being left behind. Answer B is incorrect because the scenario describes a dependent group contingency, not an independent one; independent contingencies might reduce peer influence and do not leverage group reinforcement. Answer C is incorrect because the group contingency did increase overall on-task behavior; it does not mean group contingencies are ineffective. Answer D is incorrect because conjunctive group contingencies require all members to meet the criterion, which can potentially create undue pressure and may reduce overall reinforcement if one or more students struggle consistently. Therefore, while conjunctive contingencies increase individual accountability, they might not be the most practical or ethical choice in this context."
   },
   {
@@ -1486,10 +1482,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which strategy is the BCBA using to help the child respond to the instruction in different stimulus conditions?",
     choices: [
       {
-        letter: "A",
-        text: "Stimulus fading"
-      },
-      {
         letter: "B",
         text: "Stimulus generalization"
       },
@@ -1500,9 +1492,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Prompt fading"
+      },
+      {
+        letter: "A",
+        text: "Stimulus fading"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The BCBA is using stimulus fading by gradually changing the stimulus condition (adding background noise) so the child can learn to respond in increasingly challenging environments. Stimulus fading involves the gradual change of an antecedent stimulus to transfer stimulus control without losing the learned behavior. Stimulus generalization (B) refers to the occurrence of the behavior in the presence of stimuli that are similar but were not directly trained, without systematic gradual change. Response shaping (C) involves reinforcing successive approximations of a target behavior, not changing stimulus conditions. Prompt fading (D) refers to the gradual removal of prompts to transfer stimulus control to the natural cue, not the gradual change of antecedent stimuli like background noise."
   },
   {
@@ -1516,23 +1512,23 @@ export const tier6Pool_G: Question[] = [
     question: "What is the most ethical and effective approach the BCBA should take when implementing NCR in this situation?",
     choices: [
       {
-        letter: "A",
-        text: "Explain the rationale and empirical support for NCR to the caregiver, obtain informed consent, and closely monitor data to adjust the intervention as needed to ensure client safety and treatment efficacy."
-      },
-      {
-        letter: "B",
-        text: "Implement NCR without caregiver input to maintain treatment integrity and avoid caregiver bias interfering with the intervention."
-      },
-      {
         letter: "C",
         text: "Discontinue NCR and switch immediately to extinction procedures to eliminate self-injurious behavior as quickly as possible."
       },
       {
         letter: "D",
         text: "Use NCR but only deliver attention contingent on appropriate alternative behaviors to avoid reinforcing self-injury."
+      },
+      {
+        letter: "A",
+        text: "Explain the rationale and empirical support for NCR to the caregiver, obtain informed consent, and closely monitor data to adjust the intervention as needed to ensure client safety and treatment efficacy."
+      },
+      {
+        letter: "B",
+        text: "Implement NCR without caregiver input to maintain treatment integrity and avoid caregiver bias interfering with the intervention."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The correct answer is A because ethical practice requires the BCBA to provide clear explanations and obtain informed consent from caregivers before implementing interventions such as NCR. Monitoring data allows for adjustments ensuring client safety and treatment effectiveness. Answer B is incorrect because excluding caregivers violates ethical guidelines about collaboration and informed consent. Answer C is incorrect because immediate use of extinction without considering NCR\u2019s benefits or client safety may cause harm or extinction bursts. Answer D describes differential reinforcement rather than pure NCR; while it may be effective, it does not reflect the NCR procedure as defined in the task item and lacks the ethical emphasis on caregiver involvement and monitoring."
   },
   {
@@ -1546,6 +1542,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which strategy is most appropriate to promote generalization of the greeting skill across people and settings?",
     choices: [
       {
+        letter: "D",
+        text: "Prompting the child to greet only the BCBA and fading prompts gradually."
+      },
+      {
         letter: "A",
         text: "Teaching the greeting skill with multiple people and in various locations during sessions."
       },
@@ -1556,13 +1556,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Using extinction for greetings that occur outside the therapy room to maintain focus on the BCBA."
-      },
-      {
-        letter: "D",
-        text: "Prompting the child to greet only the BCBA and fading prompts gradually."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The correct answer is A because teaching the skill across multiple people and settings increases the likelihood that the behavior will generalize beyond the initial training conditions. This approach aligns with programming for generalization by varying stimuli and contexts. Option B is incorrect because reinforcing only with the BCBA in one setting limits generalization. Option C is wrong since using extinction for greetings outside the therapy room may suppress generalization rather than promote it. Option D focuses only on the BCBA and does not introduce sufficient variability to promote generalization."
   },
   {
@@ -1606,10 +1602,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following antecedent interventions would be most appropriate to reduce the child\u2019s disruptive behavior during transitions?",
     choices: [
       {
-        letter: "A",
-        text: "Provide a visual schedule to the child showing upcoming activities and give a warning before transitions."
-      },
-      {
         letter: "B",
         text: "Implement a differential reinforcement of alternative behavior (DRA) to reinforce appropriate transition behaviors."
       },
@@ -1620,9 +1612,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Apply a response cost procedure by removing tokens when disruptive behavior occurs during transitions."
+      },
+      {
+        letter: "A",
+        text: "Provide a visual schedule to the child showing upcoming activities and give a warning before transitions."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Answer A is correct because providing a visual schedule and warnings are antecedent interventions that help the child anticipate and prepare for transitions, reducing anxiety and disruptive behavior. Answer B, implementing DRA, is a behavior reduction procedure that reinforces alternative behaviors but is not an antecedent intervention; it is a consequence-based intervention. Answer C, extinction, involves withholding reinforcement following the behavior and is also a consequence-based strategy, not an antecedent intervention. Answer D, response cost, is a punishment-based consequence intervention involving the removal of reinforcers and does not modify antecedents. Therefore, only choice A directly modifies antecedents to prevent the behavior."
   },
   {
@@ -1636,23 +1632,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes an essential component of naturalistic teaching demonstrated in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Using the child's motivation and natural environment to evoke communication and reinforcing spontaneous requests."
-      },
-      {
-        letter: "B",
-        text: "Providing direct verbal prompts immediately before each mand to ensure correct response."
-      },
-      {
         letter: "C",
         text: "Delivering reinforcement on a fixed ratio schedule independent of the child's behavior."
       },
       {
         letter: "D",
         text: "Using discrete trial training with massed trials to teach manding in a structured setting."
+      },
+      {
+        letter: "A",
+        text: "Using the child's motivation and natural environment to evoke communication and reinforcing spontaneous requests."
+      },
+      {
+        letter: "B",
+        text: "Providing direct verbal prompts immediately before each mand to ensure correct response."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Option A correctly identifies a core element of naturalistic teaching: arranging the environment to capitalize on the child's motivation and reinforcing naturally occurring communication attempts, which promotes generalization and spontaneous communication. Option B describes prompt dependency and is not consistent with naturalistic teaching, which favors less intrusive prompts and more natural antecedents. Option C refers to non-contingent reinforcement, which does not effectively increase manding behavior as reinforcement must be contingent on the target behavior. Option D describes discrete trial training, a more structured and contrived teaching method that contrasts with the naturalistic, play-based approach described."
   },
   {
@@ -1666,6 +1662,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following modifications to the DTT procedure, considering ethical and effective practice, should the BCBA prioritize recommending to the RBT?",
     choices: [
       {
+        letter: "D",
+        text: "Transition immediately to naturalistic teaching methods, as DTT is clearly not effective for this client due to satiation and escape behaviors."
+      },
+      {
         letter: "A",
         text: "Implement a spaced-trial or distributed-trial schedule, varying the number of trials per target based on client performance and incorporating preferred activities as interspersal trials."
       },
@@ -1676,13 +1676,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Continue with massed trials but introduce a token economy with a wider variety of backup reinforcers to address satiation and escape."
-      },
-      {
-        letter: "D",
-        text: "Transition immediately to naturalistic teaching methods, as DTT is clearly not effective for this client due to satiation and escape behaviors."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Option A is the most ethically and clinically sound recommendation. Varying the trial schedule (e.g., spaced-trial or distributed-trial) and number of trials based on performance directly addresses satiation and potential escape by preventing over-exposure to a single task or reinforcer. Incorporating preferred activities as interspersal trials can increase motivation and reduce the aversiveness of the task. Option B is problematic because increasing magnitude might exacerbate satiation and a reduced inter-trial interval could increase aversiveness, potentially worsening escape behaviors. Option C, while introducing a token economy is a good strategy, continuing with massed trials without modification to the trial presentation itself may not fully address the underlying issues of satiation and escape. Option D is premature and potentially unethical; while naturalistic teaching is valuable, abandoning DTT entirely without attempting modifications to improve its effectiveness for the client is not best practice."
   },
   {
@@ -1756,23 +1752,23 @@ export const tier6Pool_G: Question[] = [
     question: "Based on this assessment information, what is the MOST crucial next step the BCBA should take before finalizing the token economy's exchange system?",
     choices: [
       {
-        letter: "A",
-        text: "Conduct a reinforcer assessment (e.g., progressive ratio schedule) with a subset of identified potential reinforcers to determine their reinforcing efficacy and breaking points."
-      },
-      {
-        letter: "B",
-        text: "Develop a detailed list of token-earning behaviors and their associated token values, ensuring clear operational definitions."
-      },
-      {
         letter: "C",
         text: "Establish a consistent token delivery schedule and train the teacher on its implementation to ensure fidelity."
       },
       {
         letter: "D",
         text: "Implement a preference assessment (e.g., multiple stimulus without replacement) for all identified items to create a hierarchy of preferences."
+      },
+      {
+        letter: "A",
+        text: "Conduct a reinforcer assessment (e.g., progressive ratio schedule) with a subset of identified potential reinforcers to determine their reinforcing efficacy and breaking points."
+      },
+      {
+        letter: "B",
+        text: "Develop a detailed list of token-earning behaviors and their associated token values, ensuring clear operational definitions."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The correct answer is A. While a preference assessment (D) identifies preferred items, a reinforcer assessment (A) is crucial for determining the reinforcing efficacy and 'value' of those items, especially when considering a token economy where the 'cost' of earning a reinforcer (tokens) needs to be balanced with its reinforcing power. Given the scenario highlights potential difficulties with consistent access or cost for highly preferred items, understanding their breaking points through a reinforcer assessment is vital for designing an effective and sustainable exchange system. Developing a list of behaviors (B) and training on delivery (C) are important steps, but they occur after the value of the 'back-up' reinforcers has been adequately established through assessment."
   },
   {
@@ -1786,6 +1782,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which ethical consideration is most relevant when supervising the implementation of this specific group contingency?",
     choices: [
       {
+        letter: "D",
+        text: "Selecting a group contingency that is easy to implement for the teacher."
+      },
+      {
         letter: "A",
         text: "Ensuring the group contingency does not inadvertently punish individual students."
       },
@@ -1796,13 +1796,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Promoting generalization and maintenance of on-task behavior."
-      },
-      {
-        letter: "D",
-        text: "Selecting a group contingency that is easy to implement for the teacher."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The most relevant ethical consideration for an interdependent group contingency, especially when one student consistently struggles, is to ensure that the contingency does not inadvertently punish individual students who may not be able to meet the criterion. This can lead to peer pressure, bullying, or a loss of reinforcement for the entire group due to one student's behavior, which is unethical. Maximizing efficiency, promoting generalization, and ease of implementation are important but secondary to the ethical concern of potential harm or punishment to individuals within the group."
   },
   {
@@ -1846,10 +1842,6 @@ export const tier6Pool_G: Question[] = [
     question: "Based on this assessment information, which antecedent intervention would be most appropriate to consider for initial implementation?",
     choices: [
       {
-        letter: "A",
-        text: "Task modification by reducing the writing demand."
-      },
-      {
         letter: "B",
         text: "Differential reinforcement of other behavior (DRO)."
       },
@@ -1860,9 +1852,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Response blocking and physical guidance for writing tasks."
+      },
+      {
+        letter: "A",
+        text: "Task modification by reducing the writing demand."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The assessment data strongly suggest that property destruction is maintained by negative reinforcement, specifically escape from demanding writing tasks. Task modification, such as reducing the writing demand, directly addresses this antecedent condition by making the task less aversive, thus preventing the motivating operation for escape behavior (G.1). DRO (B) is a consequence-based intervention, not an antecedent intervention. Time-out (C) is also a consequence-based punishment procedure. Response blocking (D) is a consequence-based intervention often used for safety, but it does not address the aversiveness of the antecedent task itself, which is the primary driver of the behavior according to the assessment."
   },
   {
@@ -1876,23 +1872,23 @@ export const tier6Pool_G: Question[] = [
     question: "Given the client's current skill set and the observed challenges, which chaining procedure would be most appropriate for the BCBA to implement next?",
     choices: [
       {
-        letter: "A",
-        text: "Backward chaining"
-      },
-      {
-        letter: "B",
-        text: "Forward chaining"
-      },
-      {
         letter: "C",
         text: "Total task chaining with increased prompting"
       },
       {
         letter: "D",
         text: "Shaping"
+      },
+      {
+        letter: "A",
+        text: "Backward chaining"
+      },
+      {
+        letter: "B",
+        text: "Forward chaining"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Backward chaining is most appropriate here because the client can already independently perform the last step of the chain. This procedure allows the client to experience the natural reinforcer (clean, dry hands) immediately upon completing the final, known step, which can reduce frustration and increase motivation. Forward chaining would require the client to master the first steps before experiencing reinforcement, which might be difficult given their current struggles. Total task chaining with increased prompting has already been attempted and led to frustration, indicating it may not be the most efficient approach. Shaping is used to teach novel behaviors by reinforcing successive approximations, not for linking existing behaviors into a chain."
   },
   {
@@ -1906,6 +1902,10 @@ export const tier6Pool_G: Question[] = [
     question: "What is the MOST critical ethical consideration for the BCBA to address during the assessment phase when planning to use video modeling?",
     choices: [
       {
+        letter: "D",
+        text: "Collecting baseline data on the child's current greeting initiation skills."
+      },
+      {
         letter: "A",
         text: "Ensuring client assent and minimizing potential discomfort with video watching."
       },
@@ -1916,13 +1916,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Identifying the specific target behaviors for greeting initiation."
-      },
-      {
-        letter: "D",
-        text: "Collecting baseline data on the child's current greeting initiation skills."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The most critical ethical consideration is ensuring client assent and minimizing potential discomfort (A). Given the child's mild aversion to watching videos, the BCBA must assess if video modeling is truly the least restrictive and most appropriate intervention, and if the child is willing to participate, respecting their rights and dignity. While determining the type of modeling (B), identifying target behaviors (C), and collecting baseline data (D) are all important procedural steps in assessment, they do not address the immediate ethical concern regarding the client's potential discomfort and assent to the chosen method."
   },
   {
@@ -1936,10 +1932,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which type of group contingency would best address the BCBA's concerns while promoting individual accountability and group cohesion?",
     choices: [
       {
-        letter: "A",
-        text: "Interdependent group contingency with a rotating leader responsible for monitoring and reporting group behavior."
-      },
-      {
         letter: "B",
         text: "Dependent group contingency where the highest-performing student's on-task behavior determines the group's access to reinforcement."
       },
@@ -1950,9 +1942,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Interdependent group contingency where all members must meet a specified criterion for the entire group to earn reinforcement, combined with individual bonus points for exceptional performance."
+      },
+      {
+        letter: "A",
+        text: "Interdependent group contingency with a rotating leader responsible for monitoring and reporting group behavior."
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "Option D, an interdependent group contingency with an individual bonus component, directly addresses the BCBA's concerns. The interdependent component promotes group cohesion and ensures all students contribute, while the individual bonus points mitigate the 'free rider' effect by rewarding individual exceptional performance, thus promoting individual accountability. Option A, while using an interdependent approach, relies on a 'rotating leader' which introduces potential confounds and fairness issues related to monitoring. Option B, a dependent group contingency, places too much pressure on one student and can lead to resentment or an inability for the group to earn reinforcement due to one individual's performance, which does not address 'free riders' effectively across the group. Option C, an independent group contingency, does not promote group cohesion or address the 'free rider' problem as effectively as an interdependent approach with individual accountability components."
   },
   {
@@ -1966,10 +1962,6 @@ export const tier6Pool_G: Question[] = [
     question: "Based on the supervisee's report and the client's performance, which of the following adjustments to the social skills training program would be most appropriate for the BCBA to recommend to the supervisee?",
     choices: [
       {
-        letter: "A",
-        text: "Incorporate naturalistic teaching strategies, such as incidental teaching, to prompt conversation initiations in relevant peer contexts."
-      },
-      {
         letter: "B",
         text: "Increase the number of discrete trials using the script with the supervisee to strengthen the client's repertoire before attempting generalization."
       },
@@ -1980,9 +1972,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Revise the script to include more complex vocabulary and longer conversational turns to better prepare the client for real-world interactions."
+      },
+      {
+        letter: "A",
+        text: "Incorporate naturalistic teaching strategies, such as incidental teaching, to prompt conversation initiations in relevant peer contexts."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The client's ability to use the script with the supervisee suggests acquisition, but the failure to generalize with a peer indicates a lack of transfer to naturalistic settings. Incorporating naturalistic teaching strategies, like incidental teaching, directly addresses this by prompting and reinforcing the target behavior (conversation initiation) within the actual contexts where it is needed (with peers), promoting generalization. Increasing discrete trials with the supervisee (B) would likely further strengthen the skill in an artificial context without addressing generalization. Implementing a token economy for script usage with the supervisee (C) might increase motivation for the trained response but doesn't inherently promote generalization to novel stimuli or settings. Revising the script for complexity (D) is premature; the current issue is generalization of the existing skill, not the complexity of the skill itself."
   },
   {
@@ -1996,23 +1992,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following is the most appropriate initial supervisory action Alex should take to address Sarah's response to the extinction burst?",
     choices: [
       {
-        letter: "A",
-        text: "Review the extinction procedure with Sarah, discuss the concept of extinction bursts, and role-play appropriate responses to ensure procedural fidelity."
-      },
-      {
-        letter: "B",
-        text: "Immediately report Sarah to the BACB for a procedural error that compromised the intervention's effectiveness and ethical implementation."
-      },
-      {
         letter: "C",
         text: "Adjust the client's behavior intervention plan to include an antecedent intervention to prevent future extinction bursts, given Sarah's difficulty."
       },
       {
         letter: "D",
         text: "Provide Sarah with a written warning, emphasizing the importance of adherence to the behavior intervention plan and the negative impact of her action."
+      },
+      {
+        letter: "A",
+        text: "Review the extinction procedure with Sarah, discuss the concept of extinction bursts, and role-play appropriate responses to ensure procedural fidelity."
+      },
+      {
+        letter: "B",
+        text: "Immediately report Sarah to the BACB for a procedural error that compromised the intervention's effectiveness and ethical implementation."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The most appropriate initial supervisory action is to provide further training and support (A). Sarah's action, while a procedural error, is a common reaction to an extinction burst and presents a teaching opportunity for the supervisor. Reporting her (B) is premature and likely unwarranted for a single procedural error that can be addressed through supervision. Adjusting the BIP (C) might be considered later, but the immediate need is to address the supervisee's skill deficit. A written warning (D) is overly punitive for a training issue that can be resolved through education and practice, and it does not address the underlying lack of understanding or skill."
   },
   {
@@ -2026,23 +2022,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following strategies, utilizing video modeling, would be most appropriate for improving the supervisee's DTT implementation fidelity?",
     choices: [
       {
-        letter: "A",
-        text: "Provide the supervisee with a video of an expert BCBA flawlessly implementing the entire DTT program with a different client, along with a fidelity checklist for self-assessment."
-      },
-      {
-        letter: "B",
-        text: "Record the supervisee implementing the DTT program, then review the video together, pausing to discuss errors and correct techniques."
-      },
-      {
         letter: "C",
         text: "Show the supervisee a video of the client successfully engaging in DTT with another RBT, highlighting the client's appropriate responses."
       },
       {
         letter: "D",
         text: "Create a video of yourself explaining the theoretical underpinnings of DTT and common implementation pitfalls, then ask the supervisee to watch it."
+      },
+      {
+        letter: "A",
+        text: "Provide the supervisee with a video of an expert BCBA flawlessly implementing the entire DTT program with a different client, along with a fidelity checklist for self-assessment."
+      },
+      {
+        letter: "B",
+        text: "Record the supervisee implementing the DTT program, then review the video together, pausing to discuss errors and correct techniques."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Option B, recording the supervisee and reviewing the video together, is the most appropriate application of video modeling for supervision in this scenario. This allows for direct, individualized feedback on the supervisee's specific performance deficits, promoting self-correction and skill acquisition. Option A provides a model but lacks direct feedback on the supervisee's performance. Option C focuses on client behavior rather than supervisee technique. Option D is a didactic approach and not a direct application of video modeling for skill training."
   },
   {
@@ -2086,10 +2082,6 @@ export const tier6Pool_G: Question[] = [
     question: "Based on the supervisor's observations, which of the following is the most likely reason the high-probability request sequence is failing to produce the desired effect?",
     choices: [
       {
-        letter: "A",
-        text: "The high-probability requests are not sufficiently reinforcing or are delivered without enthusiasm, reducing their evocative effect."
-      },
-      {
         letter: "B",
         text: "The supervisee is not immediately following the high-probability requests with the low-probability request, weakening the momentum."
       },
@@ -2100,9 +2092,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "The client's non-compliance is maintained by automatic reinforcement, making a high-probability request sequence ineffective."
+      },
+      {
+        letter: "A",
+        text: "The high-probability requests are not sufficiently reinforcing or are delivered without enthusiasm, reducing their evocative effect."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The scenario explicitly states that the supervisee presents high-probability requests with a 'flat affect' and delivers reinforcement 'inconsistently.' For a high-probability request sequence to be effective, the high-probability requests must evoke a high rate of compliance, which is often facilitated by enthusiastic delivery and strong reinforcement. A flat affect and inconsistent reinforcement would diminish the evocative effect of the high-probability requests, making them less likely to build behavioral momentum. Option B is incorrect because the scenario states the client 'often complies with the low-probability request, but only after a significant delay,' implying the low-p request is delivered, just not effectively. Option C is a plausible distractor but the primary issue highlighted by the supervisor's observation is the *delivery* of the high-p requests and reinforcement, not necessarily the inherent difficulty of the low-p request. Option D is a general statement about function of behavior that is not directly supported as the *most likely* reason by the specific observational details provided about the supervisee's implementation."
   },
   {
@@ -2146,6 +2142,10 @@ export const tier6Pool_G: Question[] = [
     question: "Based on the observed data, which of the following is the most appropriate conclusion regarding the maintenance programming for this client?",
     choices: [
       {
+        letter: "D",
+        text: "The data indicate a need for further stimulus generalization training in novel environments."
+      },
+      {
         letter: "A",
         text: "The intervention effects did not generalize across time, indicating insufficient maintenance programming."
       },
@@ -2156,13 +2156,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "The response cost component was likely too punishing, leading to a temporary suppression of behavior."
-      },
-      {
-        letter: "D",
-        text: "The data indicate a need for further stimulus generalization training in novel environments."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The correct answer is A. The scenario explicitly states that the behavior increased to near pre-intervention levels after the token economy was faded. This indicates a failure of the intervention's effects to persist over time in the absence of the explicit contingencies, which is a direct measure of maintenance. Option B is incorrect because the client initially met behavioral goals, suggesting the token economy was effective in establishing behavior. Option C is incorrect as the return to baseline levels after fading, rather than an immediate rebound during intervention, does not directly suggest the response cost was overly punishing. Option D is incorrect because the problem is not about the behavior occurring in new settings (stimulus generalization) but about its persistence in the original setting over time (maintenance)."
   },
   {
@@ -2206,10 +2202,6 @@ export const tier6Pool_G: Question[] = [
     question: "During the assessment phase, which of the following is the most appropriate initial step before designing a differential reinforcement intervention?",
     choices: [
       {
-        letter: "A",
-        text: "Conduct a functional behavior assessment (FBA) to identify the function(s) of hand-flapping."
-      },
-      {
         letter: "B",
         text: "Implement a DRO schedule immediately to reduce the hand-flapping behavior."
       },
@@ -2220,9 +2212,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Determine the topography of all alternative behaviors to hand-flapping."
+      },
+      {
+        letter: "A",
+        text: "Conduct a functional behavior assessment (FBA) to identify the function(s) of hand-flapping."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Before designing any differential reinforcement intervention, it is crucial to conduct a functional behavior assessment (FBA) to understand the function(s) of the target behavior. Without understanding the function, any intervention, including differential reinforcement, may be ineffective or even harmful. Implementing a DRO or training parents on DRA without an FBA (B and C) is premature. While understanding alternative behaviors is important (D), it is secondary to identifying the function of the problem behavior itself."
   },
   {
@@ -2236,23 +2232,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following strategies best represents programming for maintenance?",
     choices: [
       {
-        letter: "A",
-        text: "Gradually thinning the schedule of reinforcement for greetings and introducing naturally occurring reinforcers in the peer environment."
-      },
-      {
-        letter: "B",
-        text: "Increasing the number of different peers the client greets within the clinic setting."
-      },
-      {
         letter: "C",
         text: "Implementing a token economy for greeting behaviors that can be exchanged for highly preferred items."
       },
       {
         letter: "D",
         text: "Providing booster sessions of intensive training on greeting initiation once a week for the next month."
+      },
+      {
+        letter: "A",
+        text: "Gradually thinning the schedule of reinforcement for greetings and introducing naturally occurring reinforcers in the peer environment."
+      },
+      {
+        letter: "B",
+        text: "Increasing the number of different peers the client greets within the clinic setting."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Option A directly addresses maintenance programming by thinning artificial reinforcement and transitioning to natural contingencies, which is crucial for a skill to persist over time and across environments. Option B describes generalization across stimuli (different peers) but doesn't explicitly focus on the long-term persistence of the skill after formal intervention ends. Option C describes a reinforcement system that might be used during acquisition or initial generalization but does not inherently program for maintenance by fading artificial supports. Option D describes a strategy for re-teaching or reminding, which can be part of maintenance but is not the primary or most comprehensive 'programming for maintenance' strategy, as it implies the skill might not be maintained without direct re-intervention."
   },
   {
@@ -2266,6 +2262,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following would be the most appropriate first step in a shaping procedure for this client?",
     choices: [
       {
+        letter: "D",
+        text: "Prompt the client to say \"ball\" and reinforce correct responses."
+      },
+      {
         letter: "A",
         text: "Reinforce any 'buh' sound the client makes in response to the ball."
       },
@@ -2276,13 +2276,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Reinforce the client for looking at the ball."
-      },
-      {
-        letter: "D",
-        text: "Prompt the client to say \"ball\" and reinforce correct responses."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Shaping involves differentially reinforcing successive approximations to a target behavior. Since the client currently makes a 'buh' sound, reinforcing this existing approximation is the most appropriate first step to build upon. Reinforcing the full word 'ball' (B) would not be effective as the client is not currently producing it. Reinforcing looking at the ball (C) is a prerequisite skill, but not an approximation of the vocalization. Prompting (D) is a different teaching procedure and not the initial step of shaping which relies on naturally occurring approximations."
   },
   {
@@ -2326,10 +2322,6 @@ export const tier6Pool_G: Question[] = [
     question: "Based on this evaluation, what can the BCBA conclude about the self-management intervention?",
     choices: [
       {
-        letter: "A",
-        text: "The self-management intervention demonstrated functional control over the student's on-task behavior."
-      },
-      {
         letter: "B",
         text: "The intervention was effective, but the student's motivation for self-reinforcement was insufficient."
       },
@@ -2340,9 +2332,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Self-monitoring alone is not sufficient to maintain behavior change without external contingencies."
+      },
+      {
+        letter: "A",
+        text: "The self-management intervention demonstrated functional control over the student's on-task behavior."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The intervention demonstrated functional control because on-task behavior increased during the intervention phase and decreased when the intervention was removed (reversal), indicating a causal relationship. While the reversal wasn't to the exact baseline level, the significant decrease strongly suggests the intervention's effect. Option B is speculative and not directly supported by the data provided. Option C is incorrect because the reversal, though not to the exact baseline, was significant enough to suggest functional control rather than extraneous variables. Option D makes an unsupported generalization about self-monitoring and external contingencies, as the intervention included self-reinforcement, not just self-monitoring."
   },
   {
@@ -2386,6 +2382,10 @@ export const tier6Pool_G: Question[] = [
     question: "When evaluating the effectiveness of an AAC device, which of the following is the most important factor to consider?",
     choices: [
       {
+        letter: "D",
+        text: "The aesthetic appeal and size of the device."
+      },
+      {
         letter: "A",
         text: "The client's ability to effectively communicate wants, needs, and information using the device in various environments."
       },
@@ -2396,13 +2396,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "The number of pre-programmed messages available on the device."
-      },
-      {
-        letter: "D",
-        text: "The aesthetic appeal and size of the device."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The most important factor when evaluating the effectiveness of an AAC device is whether it enables the client to effectively communicate their wants, needs, and information across different settings. This directly addresses the primary function of an AAC system. The cost and durability (B) are practical considerations but not the primary measure of communicative effectiveness. The number of pre-programmed messages (C) might contribute to functionality but doesn't guarantee effective communication. The aesthetic appeal and size (D) are secondary considerations related to usability and acceptance, not the core communicative outcome."
   },
   {
@@ -2446,10 +2442,6 @@ export const tier6Pool_G: Question[] = [
     question: "When implementing FCT for Leo, what is the most critical component to ensure the effectiveness of the intervention?",
     choices: [
       {
-        letter: "A",
-        text: "Prompting Leo to use a communicative response (e.g., 'May I have that?') and immediately providing the preferred toy."
-      },
-      {
         letter: "B",
         text: "Teaching Leo to say 'No' when another child takes his toy, followed by peer mediation."
       },
@@ -2460,9 +2452,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Using a visual schedule to indicate when it is Leo's turn to play with specific toys."
+      },
+      {
+        letter: "A",
+        text: "Prompting Leo to use a communicative response (e.g., 'May I have that?') and immediately providing the preferred toy."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The most critical component of FCT is to teach and reinforce an alternative, functionally equivalent communicative response that replaces the problem behavior. In this scenario, Leo hits to gain access to toys (tangible function). Prompting a communicative request ('May I have that?') and immediately providing the toy directly addresses the function of the behavior by providing an alternative, appropriate way to achieve the same outcome. Option B teaches a response to being deprived, not a request for access. Option C is a general reinforcement system that does not directly teach a functionally equivalent communicative response. Option D is a proactive strategy that might reduce problem behavior but is not the core component of FCT."
   },
   {
@@ -2476,23 +2472,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following data collection methods would be most appropriate for evaluating the fading of response prompts in this manding program?",
     choices: [
       {
-        letter: "A",
-        text: "Percentage of independent mands out of total opportunities, alongside a prompt hierarchy level graph."
-      },
-      {
-        letter: "B",
-        text: "Frequency of mands per hour, with separate tallies for prompted vs. unprompted mands."
-      },
-      {
         letter: "C",
         text: "Duration of time from item presentation to mand emission, differentiated by prompt type."
       },
       {
         letter: "D",
         text: "Latency to mand emission across different preferred items, recorded daily."
+      },
+      {
+        letter: "A",
+        text: "Percentage of independent mands out of total opportunities, alongside a prompt hierarchy level graph."
+      },
+      {
+        letter: "B",
+        text: "Frequency of mands per hour, with separate tallies for prompted vs. unprompted mands."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Option A is the most appropriate for evaluating prompt fading because it directly measures the desired outcome (independent mands) as a proportion of all attempts, and the prompt hierarchy graph provides a visual representation of the decreasing level of support needed over time. Option B measures overall mand frequency, but doesn't explicitly track the progression of prompt fading or the independence level within a given opportunity. Option C and D focus on latency, which is a measure of response speed, not the level of prompting required or the independence of the response, making them less suitable for evaluating prompt fading."
   },
   {
@@ -2506,6 +2502,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which component of discrete trial training is the RBT incorrectly implementing?",
     choices: [
       {
+        letter: "D",
+        text: "The discriminative stimulus (SD)"
+      },
+      {
         letter: "A",
         text: "The inter-trial interval (ITI)"
       },
@@ -2516,13 +2516,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "The prompt"
-      },
-      {
-        letter: "D",
-        text: "The discriminative stimulus (SD)"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "The inter-trial interval (ITI) is the brief period between the end of one trial and the presentation of the SD for the next trial. Repeatedly presenting the SD after a correct response, rather than moving to the ITI, indicates a misunderstanding of this component. The consequence is what follows the response, the prompt is an antecedent stimulus to evoke a correct response, and the SD is the stimulus that signals the availability of reinforcement for a specific response; none of these are directly impacted by the RBT's action of presenting the SD multiple times after a correct response."
   },
   {
@@ -2566,10 +2562,6 @@ export const tier6Pool_G: Question[] = [
     question: "Based on this information, which of the following best describes the next phase of PECS the behavior analyst should implement?",
     choices: [
       {
-        letter: "A",
-        text: "Phase III: Picture Discrimination"
-      },
-      {
         letter: "B",
         text: "Phase IV: Sentence Structure"
       },
@@ -2580,9 +2572,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Phase IIIB: Complex Discrimination"
+      },
+      {
+        letter: "A",
+        text: "Phase III: Picture Discrimination"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "The scenario describes the child has mastered Phase I (How to Communicate) and Phase II (Distance and Persistence) by consistently giving a single picture to a communicative partner. The next logical step in the PECS protocol is Phase III: Picture Discrimination, where the child learns to discriminate between different pictures. Phase IIIA and IIIB are sub-components of Phase III, not the overarching phase. Phase IV involves teaching sentence structure, which comes after mastering picture discrimination."
   },
   {
@@ -2596,23 +2592,23 @@ export const tier6Pool_G: Question[] = [
     question: "To effectively guide the supervisee in using shaping for shoe-tying, which of the following instructions would be most appropriate?",
     choices: [
       {
-        letter: "A",
-        text: "Instruct the supervisee to reinforce successive approximations of the shoe-tying process, starting with the client's current independent steps and gradually requiring more advanced steps."
-      },
-      {
-        letter: "B",
-        text: "Advise the supervisee to use a most-to-least prompting strategy for the entire shoe-tying chain until the client can complete it independently."
-      },
-      {
         letter: "C",
         text: "Suggest the supervisee break down the shoe-tying task into smaller steps and reinforce only the completion of the final step in the chain."
       },
       {
         letter: "D",
         text: "Recommend the supervisee use differential reinforcement of other behavior (DRO) to reduce frustration during the shoe-tying task."
+      },
+      {
+        letter: "A",
+        text: "Instruct the supervisee to reinforce successive approximations of the shoe-tying process, starting with the client's current independent steps and gradually requiring more advanced steps."
+      },
+      {
+        letter: "B",
+        text: "Advise the supervisee to use a most-to-least prompting strategy for the entire shoe-tying chain until the client can complete it independently."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Option A correctly describes shaping, which involves reinforcing successive approximations of a target behavior. Given the client can complete the first two steps, the supervisee should reinforce these and then gradually require more advanced steps. Option B describes a prompting strategy, not shaping, and may not be efficient for building new skills. Option C describes backward chaining if only the final step is reinforced, which is a different procedure than shaping. Option D, DRO, is used to decrease undesirable behaviors, not to teach a new skill like shoe-tying."
   },
   {
@@ -2626,6 +2622,10 @@ export const tier6Pool_G: Question[] = [
     question: "Given the functional assessment results and the potential use of positive punishment, which of the following is the most critical question the BCBA must address during the assessment phase regarding the ethical implementation of this intervention?",
     choices: [
       {
+        letter: "D",
+        text: "Will the punishment procedure be implemented by trained staff under direct supervision?"
+      },
+      {
         letter: "A",
         text: "Has less restrictive, effective interventions been attempted and proven ineffective?"
       },
@@ -2636,13 +2636,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Are there sufficient resources to implement the punishment procedure with high fidelity?"
-      },
-      {
-        letter: "D",
-        text: "Will the punishment procedure be implemented by trained staff under direct supervision?"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Option A is the most critical question during the assessment phase because ethical guidelines (e.g., BACB Professional and Ethical Compliance Code) mandate the use of the least restrictive effective procedures. Before considering positive punishment, especially for automatically reinforced behavior which can be challenging to treat, all less restrictive alternatives must have been thoroughly attempted and documented as ineffective. Options B, C, and D are important considerations for implementation and ongoing supervision, but they are secondary to the initial ethical determination of whether positive punishment is even warranted given the hierarchy of restrictiveness, which is a key part of the assessment phase for such interventions."
   },
   {
@@ -2746,6 +2742,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which intervention strategy is the behavior analyst primarily implementing in this scenario?",
     choices: [
       {
+        letter: "D",
+        text: "Response Blocking"
+      },
+      {
         letter: "A",
         text: "Functional Communication Training (FCT)"
       },
@@ -2756,13 +2756,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Extinction"
-      },
-      {
-        letter: "D",
-        text: "Response Blocking"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Functional Communication Training (FCT) involves teaching and reinforcing an appropriate communicative response that serves the same function as the problem behavior. In this scenario, tapping and saying 'excuse me' is taught as a replacement for screaming to gain attention, directly aligning with FCT principles. DRO involves reinforcing the absence of the target behavior for a specified period, which is not the primary strategy here. Extinction involves withholding reinforcement for a previously reinforced behavior, which may be used in conjunction with FCT but is not the intervention being primarily described. Response blocking physically prevents the individual from engaging in the problem behavior, which is not mentioned in the scenario."
   },
   {
@@ -2806,10 +2802,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following intervention components is crucial to ensure the generalization and maintenance of these newly acquired conversational skills in natural settings?",
     choices: [
       {
-        letter: "A",
-        text: "Varying the confederates (peers and adults) and settings for role-playing, and incorporating naturalistic reinforcement contingencies."
-      },
-      {
         letter: "B",
         text: "Increasing the intensity and frequency of discrete trial training sessions for conversational initiations."
       },
@@ -2820,9 +2812,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "Focusing solely on the client's ability to identify appropriate conversational cues from a list of examples."
+      },
+      {
+        letter: "A",
+        text: "Varying the confederates (peers and adults) and settings for role-playing, and incorporating naturalistic reinforcement contingencies."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Option A is crucial for generalization and maintenance because varying stimuli (confederates and settings) and incorporating naturalistic reinforcement directly addresses these principles. This approach helps the client apply the skills across different people and environments and ensures the skills are reinforced by naturally occurring social consequences, promoting long-term use. Option B, increasing DTT, might build initial acquisition but doesn't inherently promote generalization to natural settings. Option C, while useful for initial skill acquisition, relies on artificial prompts and reinforcement, which can hinder generalization if not systematically faded. Option D focuses on identification rather than application, which is insufficient for functional social skill development."
   },
   {
@@ -2836,23 +2832,23 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following NCR schedules is most likely to be effective in reducing Leo's crying and toy throwing during independent play?",
     choices: [
       {
-        letter: "A",
-        text: "Providing attention every 30 seconds, regardless of Leo's behavior, and gradually thinning the schedule."
-      },
-      {
-        letter: "B",
-        text: "Providing attention immediately after 5 seconds of appropriate independent play, then gradually increasing the duration."
-      },
-      {
         letter: "C",
         text: "Providing attention contingent on the absence of crying or toy throwing for 1 minute, then increasing the interval."
       },
       {
         letter: "D",
         text: "Providing attention every 5 minutes if Leo is engaged in a preferred activity, then decreasing the interval."
+      },
+      {
+        letter: "A",
+        text: "Providing attention every 30 seconds, regardless of Leo's behavior, and gradually thinning the schedule."
+      },
+      {
+        letter: "B",
+        text: "Providing attention immediately after 5 seconds of appropriate independent play, then gradually increasing the duration."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "The correct answer is A because NCR involves delivering reinforcement on a time-based schedule, independent of the target behavior. Starting with a dense schedule (every 30 seconds) and gradually thinning it is a standard and effective approach for NCR, especially when the maintaining reinforcer is attention. Option B describes differential reinforcement of other behavior (DRO) or differential reinforcement of incompatible behavior (DRI) if 'appropriate independent play' is considered an alternative, not NCR. Option C describes a DRO procedure, as reinforcement is contingent on the absence of the problem behavior. Option D is incorrect because NCR involves delivering the reinforcer noncontingently, not based on engagement in preferred activities, and decreasing the interval would make the schedule denser, which is typically not the goal for thinning."
   },
   {
@@ -2866,6 +2862,10 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following describes the most appropriate next step the supervisor should recommend to the RBT regarding the prompting strategy?",
     choices: [
       {
+        letter: "D",
+        text: "Continue with full physical prompts until the client can complete the entire task independently without any assistance."
+      },
+      {
         letter: "A",
         text: "Implement stimulus fading by gradually reducing the intensity of the physical prompt as the client demonstrates mastery."
       },
@@ -2876,13 +2876,9 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "C",
         text: "Introduce response prompts such as gestural or modeling prompts to supplement the physical prompt."
-      },
-      {
-        letter: "D",
-        text: "Continue with full physical prompts until the client can complete the entire task independently without any assistance."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Stimulus fading involves gradually decreasing the salience of a prompt, such as reducing the intensity of a physical prompt, as the learner acquires the skill. This is the most appropriate strategy when a client is already receiving a full physical prompt and showing some independent responding, as it aims to transfer stimulus control from the prompt to the natural discriminative stimulus. Option B describes a most-to-least prompting hierarchy, which is typically used when teaching a new skill and gradually reducing the *type* of prompt, not necessarily the intensity of an existing prompt. Option C suggests adding more prompts, which would not facilitate independence. Option D would lead to prompt dependency and is counterproductive to promoting independent skill acquisition."
   },
   {
@@ -2926,10 +2922,6 @@ export const tier6Pool_G: Question[] = [
     question: "Which of the following best describes the most likely reason for the intermittent re-emergence of the screaming behavior?",
     choices: [
       {
-        letter: "A",
-        text: "The behavior is undergoing spontaneous recovery due to the passage of time since the initial extinction burst."
-      },
-      {
         letter: "B",
         text: "The extinction procedure is being implemented inconsistently, leading to intermittent reinforcement."
       },
@@ -2940,9 +2932,13 @@ export const tier6Pool_G: Question[] = [
       {
         letter: "D",
         text: "The function of the behavior has shifted, and the current extinction procedure is no longer appropriate."
+      },
+      {
+        letter: "A",
+        text: "The behavior is undergoing spontaneous recovery due to the passage of time since the initial extinction burst."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Spontaneous recovery refers to the re-emergence of a previously extinguished behavior after a period of time has passed without the behavior occurring. This is a common phenomenon in extinction and does not necessarily indicate a failure of the procedure or a change in function, especially when the behavior occurs intermittently at a low rate after an initial decrease. Option B is incorrect because the scenario states the procedure is implemented 'consistently.' Option C is incorrect as an extinction burst typically occurs early in the extinction process and involves an increase in the frequency, duration, or intensity of the behavior, not an intermittent re-emergence after a period of decrease. Option D is plausible but less likely to be the 'most likely' reason given the intermittent nature and the description, as spontaneous recovery is a known characteristic of extinction."
   }
 ];

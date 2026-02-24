@@ -1,7 +1,3 @@
-// Domain D: Experimental Design — 52 questions for the Tier 6 pool
-// BCBA 6th Edition Task List: D.1–D.13
-// These questions are part of the 5× question pool for the mock exam engine
-
 import { Question } from './types';
 
 export const tier6Pool_D: Question[] = [
@@ -51,12 +47,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is comparing the effects of three different reinforcement schedules on a student's on-task behavior. Each schedule is implemented for 5-minute segments within a single session, with the order counterbalanced across sessions. The data show that FR5 produces the highest on-task rates, followed by VR5, then FI30s.",
     question: "Which single-subject design is being used, and what is the primary threat to internal validity in this design?",
     choices: [
-      { letter: "A", text: "Multiple baseline design; the primary threat is history, because different sessions occur on different days." },
       { letter: "B", text: "Alternating treatment design (ATD); the primary threat is multiple treatment interference, where exposure to one condition may affect performance in another." },
       { letter: "C", text: "Reversal design; the primary threat is carryover effects from the previous condition." },
       { letter: "D", text: "Changing criterion design; the primary threat is the inability to replicate the effect across conditions." },
+      { letter: "A", text: "Multiple baseline design; the primary threat is history, because different sessions occur on different days." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "The design described is an alternating treatment design (ATD), which rapidly alternates between conditions within or across sessions. The primary threat to internal validity is multiple treatment interference — exposure to one condition may affect behavior in another condition, making it difficult to isolate the effect of any single condition. (A), (C), and (D) misidentify the design.",
   },
   {
@@ -69,12 +65,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is using a changing criterion design to increase a student's reading fluency. The criterion starts at 20 words per minute (WPM) and increases by 5 WPM each phase. The student consistently meets each criterion within 3 sessions before the criterion is raised.",
     question: "What feature of this data pattern most strongly demonstrates experimental control in a changing criterion design?",
     choices: [
-      { letter: "A", text: "The student's performance increases steadily across all phases, showing a positive trend." },
-      { letter: "B", text: "The student's performance closely matches each criterion level — neither substantially exceeding nor falling below it — and changes when the criterion changes." },
       { letter: "C", text: "The student meets each criterion within 3 sessions, demonstrating rapid skill acquisition." },
       { letter: "D", text: "The student's performance at the end of the final phase is significantly higher than at the start of the first phase." },
+      { letter: "A", text: "The student's performance increases steadily across all phases, showing a positive trend." },
+      { letter: "B", text: "The student's performance closely matches each criterion level — neither substantially exceeding nor falling below it — and changes when the criterion changes." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "In a changing criterion design, experimental control is demonstrated when the student's performance tracks the criterion — it matches the criterion level and changes when the criterion changes. If performance consistently exceeds the criterion, it suggests the criterion is not controlling behavior. (A) shows improvement but not control. (C) shows efficiency but not control. (D) shows overall improvement but not the step-wise control that is the hallmark of this design.",
   },
   {
@@ -87,12 +83,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A researcher conducts an AB design study to evaluate the effect of a token economy on classroom disruptions. During baseline (A), disruptions average 15 per session. During intervention (B), disruptions average 4 per session. A reviewer questions the study's internal validity.",
     question: "Which threat to internal validity is most relevant to this AB design?",
     choices: [
+      { letter: "D", text: "Testing — repeated measurement of disruptions may have caused students to reduce their disruptive behavior." },
       { letter: "A", text: "Attrition — students may have dropped out of the study during the intervention phase." },
       { letter: "B", text: "History — other events occurring concurrently with the intervention (e.g., a new classroom aide) may have caused the behavior change." },
       { letter: "C", text: "Instrumentation — the measurement tools may have changed between baseline and intervention phases." },
-      { letter: "D", text: "Testing — repeated measurement of disruptions may have caused students to reduce their disruptive behavior." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "The primary threat to internal validity in an AB design is history — because there is no reversal or replication, it is impossible to rule out that other events occurring at the same time as the intervention caused the behavior change. (A) is a concern in group designs. (C) is a concern if measurement procedures changed. (D) is less relevant for behavioral observation of disruptions.",
   },
   {
@@ -141,12 +137,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A researcher conducts a multiple baseline across behaviors design to evaluate a self-monitoring intervention for three target behaviors: on-task behavior, homework completion, and appropriate peer interactions. The data show that on-task behavior improved immediately when the intervention was introduced, homework completion improved after 3 sessions, and peer interactions improved after 6 sessions.",
     question: "What do these data demonstrate about the functional relationship between the intervention and the target behaviors?",
     choices: [
-      { letter: "A", text: "The data do not demonstrate a functional relationship because the behaviors did not all improve simultaneously." },
-      { letter: "B", text: "The data demonstrate a functional relationship because each behavior only improved when the intervention was introduced for that behavior, ruling out history and maturation as explanations." },
       { letter: "C", text: "The data demonstrate a correlational relationship because the behaviors improved in sequence, which could be due to practice effects." },
       { letter: "D", text: "The data demonstrate experimental control only for on-task behavior, as it showed the most immediate improvement." },
+      { letter: "A", text: "The data do not demonstrate a functional relationship because the behaviors did not all improve simultaneously." },
+      { letter: "B", text: "The data demonstrate a functional relationship because each behavior only improved when the intervention was introduced for that behavior, ruling out history and maturation as explanations." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "In a multiple baseline design, experimental control is demonstrated when each behavior only changes when the intervention is introduced for that behavior. The staggered improvement pattern (not simultaneous) is exactly what demonstrates that the intervention — not history or maturation — is responsible for the change. (A) misunderstands the design logic. (C) is incorrect — the staggered pattern rules out practice effects. (D) is incorrect — all three behaviors contribute to the demonstration of experimental control.",
   },
   {
@@ -159,12 +155,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA publishes a study showing that a naturalistic teaching intervention significantly increased the spontaneous language of 5 children with ASD in a clinic setting. A colleague asks whether the findings can be applied to children in public school settings.",
     question: "Which threat to external validity is most relevant to this question?",
     choices: [
-      { letter: "A", text: "Selection bias — the 5 children may not be representative of the broader population of children with ASD." },
-      { letter: "B", text: "History — events occurring during the study may have affected the results." },
       { letter: "C", text: "Ecological validity — the intervention was studied in a clinic setting, and it is unclear whether the findings generalize to public school settings." },
       { letter: "D", text: "Instrumentation — the language measurement tools used in the clinic may not be valid in school settings." },
+      { letter: "A", text: "Selection bias — the 5 children may not be representative of the broader population of children with ASD." },
+      { letter: "B", text: "History — events occurring during the study may have affected the results." },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "External validity refers to the generalizability of findings across settings, populations, and conditions. Ecological validity is the specific concern about whether findings from one setting (clinic) generalize to another (school). (A) is a concern about population generalizability, not setting. (B) is a threat to internal validity. (D) is a measurement concern, not an external validity issue.",
   },
   {
@@ -195,12 +191,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is designing a study to evaluate a new prompting procedure for teaching daily living skills. The behavior is irreversible (once learned, it is unlikely to return to baseline). The BCBA needs to choose a single-subject design.",
     question: "Which design would be most appropriate given the irreversible nature of the target behavior?",
     choices: [
-      { letter: "A", text: "ABAB reversal design, because it provides the strongest demonstration of experimental control." },
       { letter: "B", text: "Multiple baseline design, because it does not require a reversal and can demonstrate experimental control through staggered introduction." },
       { letter: "C", text: "Alternating treatment design, because it allows rapid comparison of multiple conditions." },
       { letter: "D", text: "AB design, because the irreversibility makes more complex designs unnecessary." },
+      { letter: "A", text: "ABAB reversal design, because it provides the strongest demonstration of experimental control." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "When target behaviors are irreversible (e.g., skill acquisition), a reversal design is inappropriate because behavior will not return to baseline. A multiple baseline design is ideal because it demonstrates experimental control through staggered introduction without requiring reversal. (A) is inappropriate for irreversible behaviors. (C) is used for comparing conditions, not for irreversible behaviors specifically. (D) provides no experimental control.",
   },
   {
@@ -213,12 +209,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A researcher conducts a randomized controlled trial (RCT) comparing a group receiving ABA therapy to a waitlist control group. The ABA group shows significantly greater improvement on a standardized adaptive behavior scale. A BCBA is asked to evaluate the study's relevance to single-subject practice.",
     question: "Which statement best reflects the behavior-analytic perspective on group research designs?",
     choices: [
-      { letter: "A", text: "Group research designs are superior to single-subject designs because they use statistical significance testing, which is more objective." },
-      { letter: "B", text: "Group research provides evidence about average treatment effects across populations but does not address whether the intervention will be effective for a specific individual; single-subject designs are better suited for clinical decision-making." },
       { letter: "C", text: "Group research and single-subject research are interchangeable; BCBAs should use whichever design is more convenient." },
       { letter: "D", text: "Group research is irrelevant to behavior analysis because behavior analysts only study individual behavior." },
+      { letter: "A", text: "Group research designs are superior to single-subject designs because they use statistical significance testing, which is more objective." },
+      { letter: "B", text: "Group research provides evidence about average treatment effects across populations but does not address whether the intervention will be effective for a specific individual; single-subject designs are better suited for clinical decision-making." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Group research provides evidence about average treatment effects but averages can mask individual variability. A statistically significant group difference does not guarantee the intervention will work for a specific client. Single-subject designs, which measure individual behavior continuously, are more directly applicable to clinical decision-making. (A) is incorrect — statistical significance is not the primary criterion in behavior analysis. (C) is incorrect — they serve different purposes. (D) is overstated — group research has value for informing practice.",
   },
   {
@@ -231,12 +227,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study that used an ABAB reversal design to evaluate a DRO intervention. During the study, a new teacher aide was introduced at the start of the second B phase. The behavior improved during the second B phase, but it is unclear whether the improvement was due to the DRO or the new aide.",
     question: "Which term best describes the problem with this study's internal validity?",
     choices: [
+      { letter: "D", text: "Reactivity — the participant's behavior changed because they were aware of being observed." },
       { letter: "A", text: "Attrition — participants dropped out of the study during the second B phase." },
       { letter: "B", text: "Confound — the new aide was introduced simultaneously with the second B phase, making it impossible to determine which variable caused the behavior change." },
       { letter: "C", text: "Regression to the mean — the behavior naturally improved because it was at an extreme level during the second A phase." },
-      { letter: "D", text: "Reactivity — the participant's behavior changed because they were aware of being observed." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "A confound occurs when an extraneous variable changes at the same time as the independent variable, making it impossible to determine which variable caused the behavior change. The simultaneous introduction of the new aide and the second B phase is a classic confound. (A) is not described. (C) is possible but not the primary concern given the specific confound described. (D) is a different validity concern.",
   },
   {
@@ -267,12 +263,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study that used an AB design to evaluate a social skills intervention. The researcher claims the intervention was effective because behavior improved during the B phase. A colleague argues that the study has poor internal validity.",
     question: "Which specific threat to internal validity is the colleague most likely referring to?",
     choices: [
-      { letter: "A", text: "Maturation — the participants may have naturally improved their social skills over time regardless of the intervention." },
-      { letter: "B", text: "Attrition — some participants may have dropped out during the B phase." },
       { letter: "C", text: "Instrumentation — the social skills measurement tool may have changed between phases." },
       { letter: "D", text: "Ceiling effects — participants may have already been performing at maximum levels during baseline." },
+      { letter: "A", text: "Maturation — the participants may have naturally improved their social skills over time regardless of the intervention." },
+      { letter: "B", text: "Attrition — some participants may have dropped out during the B phase." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "In an AB design without a reversal or replication, maturation is a primary threat — participants may naturally improve over time, and the AB design cannot rule this out. History (other events occurring concurrently) is also a major threat. (B) is a concern in group designs. (C) would require evidence of measurement change. (D) is contradicted by the fact that behavior improved during the B phase.",
   },
   {
@@ -285,12 +281,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA conducts a study showing that a video modeling intervention increased the independent daily living skills of 3 adults with intellectual disability in a supported living facility. The BCBA wants to determine whether the findings generalize to adults in group home settings.",
     question: "Which strategy would most directly address the question of generality of findings?",
     choices: [
-      { letter: "A", text: "Conduct a statistical meta-analysis of all published studies on video modeling for adults with intellectual disability." },
-      { letter: "B", text: "Replicate the study with different participants in group home settings to evaluate whether the functional relationship holds across populations and settings." },
       { letter: "C", text: "Increase the sample size in the original study to improve statistical power." },
       { letter: "D", text: "Conduct a follow-up assessment 6 months after the original study to evaluate maintenance." },
+      { letter: "A", text: "Conduct a statistical meta-analysis of all published studies on video modeling for adults with intellectual disability." },
+      { letter: "B", text: "Replicate the study with different participants in group home settings to evaluate whether the functional relationship holds across populations and settings." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Generality of findings is established through systematic replication — repeating the study with different participants, settings, or conditions. Direct replication in group home settings would directly address the question of whether the findings generalize to that population and setting. (A) is useful but does not directly address the specific question. (C) addresses statistical power, not generality. (D) addresses maintenance, not generality.",
   },
   {
@@ -303,12 +299,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is using an alternating treatment design to compare the effects of verbal praise versus token reinforcement on a student's math accuracy. The conditions are alternated daily. After 20 sessions, the data show consistently higher accuracy under the token reinforcement condition.",
     question: "What conclusion is most supported by these data?",
     choices: [
+      { letter: "D", text: "Verbal praise should be discontinued immediately because it is less effective than token reinforcement." },
       { letter: "A", text: "Token reinforcement is more effective than verbal praise for this student, and the BCBA should implement token reinforcement exclusively." },
       { letter: "B", text: "The data suggest that token reinforcement produces higher accuracy for this student; however, the BCBA should consider multiple treatment interference before drawing firm conclusions." },
       { letter: "C", text: "The data are inconclusive because the ATD does not allow comparison of two conditions." },
-      { letter: "D", text: "Verbal praise should be discontinued immediately because it is less effective than token reinforcement." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "The ATD data suggest token reinforcement is more effective for this student. However, multiple treatment interference — where exposure to one condition affects performance in the other — is a primary concern in ATD. The BCBA should consider this limitation before drawing firm conclusions. (A) is premature without addressing multiple treatment interference. (C) is incorrect — ATD is specifically designed for comparing conditions. (D) is premature and ignores the value of verbal praise as a natural reinforcer.",
   },
   {
@@ -339,12 +335,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is using a changing criterion design to reduce a student's screen time from 4 hours per day to 1 hour per day. The criterion is reduced by 30 minutes each week. The student's screen time closely tracks the criterion each week.",
     question: "What additional feature could be added to this changing criterion design to strengthen the demonstration of experimental control?",
     choices: [
-      { letter: "A", text: "Add a reversal phase where the criterion is temporarily increased to a previous level, then decreased again." },
-      { letter: "B", text: "Switch to a multiple baseline design to compare the student's screen time across different settings." },
       { letter: "C", text: "Increase the number of criterion changes to demonstrate more replications of the effect." },
       { letter: "D", text: "Add a control group of students who do not receive the intervention." },
+      { letter: "A", text: "Add a reversal phase where the criterion is temporarily increased to a previous level, then decreased again." },
+      { letter: "B", text: "Switch to a multiple baseline design to compare the student's screen time across different settings." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "In a changing criterion design, experimental control can be strengthened by temporarily reversing the criterion to a previous level. If behavior tracks the criterion in both directions (decreasing and increasing), this provides a stronger demonstration that the criterion is controlling behavior. (B) changes the design entirely. (C) adds replications but a reversal is a stronger demonstration. (D) is a group design approach, not a single-subject design approach.",
   },
   {
@@ -357,12 +353,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a single-subject study that used a multiple baseline across behaviors design. The data show that Behavior 1 improved immediately when the intervention was introduced, Behavior 2 improved 2 sessions after the intervention was introduced for Behavior 2, and Behavior 3 showed a gradual upward trend throughout the entire study, including during baseline.",
     question: "What concern does the Behavior 3 data pattern raise about the study's internal validity?",
     choices: [
-      { letter: "A", text: "Behavior 3 data suggest a history effect — an external event may have caused the gradual improvement." },
-      { letter: "B", text: "Behavior 3 data suggest a maturation or history effect — the gradual upward trend during baseline indicates the behavior was already improving before the intervention was introduced, raising concerns about whether the intervention caused the change." },
       { letter: "C", text: "Behavior 3 data demonstrate that the intervention was ineffective for that behavior." },
       { letter: "D", text: "Behavior 3 data are acceptable because gradual improvement is expected in skill acquisition programs." },
+      { letter: "A", text: "Behavior 3 data suggest a history effect — an external event may have caused the gradual improvement." },
+      { letter: "B", text: "Behavior 3 data suggest a maturation or history effect — the gradual upward trend during baseline indicates the behavior was already improving before the intervention was introduced, raising concerns about whether the intervention caused the change." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A gradual upward trend during baseline in a multiple baseline design is a significant concern because it suggests the behavior was already improving before the intervention was introduced. This makes it impossible to determine whether the intervention or the pre-existing trend caused the improvement. (A) is partially correct but incomplete. (C) is incorrect — the behavior did improve. (D) is incorrect — a pre-existing trend undermines experimental control.",
   },
   {
@@ -375,12 +371,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is planning a study to evaluate a new social skills curriculum across three students. The BCBA wants to demonstrate experimental control without using a reversal design, as the skills being taught are unlikely to reverse once learned.",
     question: "Which design is most appropriate for this situation?",
     choices: [
+      { letter: "D", text: "AB design, because it is the simplest design and sufficient for clinical purposes." },
       { letter: "A", text: "ABAB reversal design, because it provides the strongest demonstration of experimental control." },
       { letter: "B", text: "Multiple baseline across participants design, because it can demonstrate experimental control without requiring a reversal." },
       { letter: "C", text: "Alternating treatment design, because it allows comparison of the curriculum to a control condition." },
-      { letter: "D", text: "AB design, because it is the simplest design and sufficient for clinical purposes." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "A multiple baseline across participants design is ideal for skill acquisition targets because it demonstrates experimental control through staggered introduction without requiring a reversal. (A) is inappropriate for irreversible behaviors. (C) is used for comparing conditions, not for demonstrating that a single intervention works. (D) provides no experimental control.",
   },
   {
@@ -411,12 +407,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA conducts a study with 3 children with ASD in a university clinic and finds that a pivotal response treatment (PRT) intervention significantly increases spontaneous communication. A school district administrator asks whether the findings apply to children in public school classrooms.",
     question: "Which factor most directly limits the external validity of this study?",
     choices: [
-      { letter: "A", text: "The small sample size (3 participants) limits the statistical power of the study." },
       { letter: "B", text: "The study was conducted in a university clinic with highly trained therapists, which may not reflect the conditions, staff training levels, or resources available in public school settings." },
       { letter: "C", text: "The study did not use a control group, so it is impossible to determine whether PRT was effective." },
       { letter: "D", text: "The study measured spontaneous communication, which may not be the most important outcome for school settings." },
+      { letter: "A", text: "The small sample size (3 participants) limits the statistical power of the study." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "External validity concerns the generalizability of findings. The university clinic setting (highly trained therapists, controlled conditions, specialized resources) may differ substantially from public school settings, limiting the generalizability of the findings. (A) is a concern for statistical power, not external validity in single-subject research. (C) is an internal validity concern. (D) is a social validity concern, not external validity.",
   },
   {
@@ -429,12 +425,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is designing a study to evaluate whether a visual schedule reduces transition-related tantrums in a preschool classroom. The BCBA will measure the duration of tantrums during transitions before and after implementing the visual schedule.",
     question: "In this study, which variable is the independent variable?",
     choices: [
-      { letter: "A", text: "The duration of tantrums during transitions." },
-      { letter: "B", text: "The visual schedule." },
       { letter: "C", text: "The preschool classroom setting." },
       { letter: "D", text: "The child's age and developmental level." },
+      { letter: "A", text: "The duration of tantrums during transitions." },
+      { letter: "B", text: "The visual schedule." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "The independent variable is the variable that is systematically manipulated by the researcher — in this case, the visual schedule (present vs. absent). The dependent variable is the behavior being measured — the duration of tantrums. (A) is the dependent variable. (C) and (D) are extraneous variables.",
   },
   {
@@ -447,12 +443,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study using a reversal design. During the study, the participant's behavior improved dramatically during the first B phase. During the reversal (second A phase), the behavior returned to baseline. However, the BCBA notices that a new medication was started at the beginning of the first B phase.",
     question: "How does the medication introduction affect the study's internal validity?",
     choices: [
+      { letter: "D", text: "The medication introduction is irrelevant because medications do not affect behavior in the same way as behavioral interventions." },
       { letter: "A", text: "The medication introduction does not affect internal validity because the behavior reversed during the second A phase." },
       { letter: "B", text: "The medication introduction is a confound that makes it impossible to determine whether the intervention or the medication caused the behavior change during the first B phase." },
       { letter: "C", text: "The medication introduction strengthens internal validity because it provides an additional explanation for the behavior change." },
-      { letter: "D", text: "The medication introduction is irrelevant because medications do not affect behavior in the same way as behavioral interventions." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "A confound occurs when an extraneous variable changes at the same time as the independent variable. The simultaneous introduction of the medication and the behavioral intervention makes it impossible to determine which variable caused the behavior change. Even if the behavior reversed during the second A phase, this could be due to the medication being adjusted or discontinued. (A) is incorrect — the reversal does not resolve the confound. (C) is incorrect — additional explanations weaken, not strengthen, internal validity. (D) is incorrect — medications do affect behavior.",
   },
   {
@@ -483,12 +479,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is evaluating a changing criterion design study. The data show that the participant's behavior consistently exceeds the criterion by a large margin in every phase (e.g., the criterion is 10 correct responses, but the participant consistently achieves 18-20).",
     question: "What does this data pattern suggest about the changing criterion design?",
     choices: [
-      { letter: "A", text: "The participant is highly motivated and the intervention is very effective." },
       { letter: "B", text: "The criterion is not controlling the participant's behavior; the behavior is likely controlled by other variables (e.g., the reinforcement itself), which weakens the demonstration of experimental control." },
       { letter: "C", text: "The criterion changes are too small and should be increased to challenge the participant more." },
       { letter: "D", text: "The data demonstrate strong experimental control because the behavior consistently exceeds the criterion." },
+      { letter: "A", text: "The participant is highly motivated and the intervention is very effective." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "In a changing criterion design, experimental control is demonstrated when behavior tracks the criterion — not substantially exceeding or falling below it. When behavior consistently exceeds the criterion by a large margin, it suggests the criterion is not controlling behavior. The behavior may be controlled by the reinforcement schedule or other variables. (A) is a possible explanation but does not address the experimental control problem. (C) may be a solution but does not explain the current data pattern. (D) is incorrect — exceeding the criterion is not evidence of control.",
   },
   {
@@ -501,12 +497,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is working with a client and notices that the behavior plan is not producing the expected results. The BCBA wants to determine whether to modify the plan. A colleague suggests consulting the published research literature on the intervention.",
     question: "Which statement best describes the relationship between research and clinical practice in behavior analysis?",
     choices: [
-      { letter: "A", text: "Research findings should be applied directly to clinical practice without modification, as they represent the most rigorous evidence." },
-      { letter: "B", text: "Research findings inform clinical practice by identifying effective interventions, but the BCBA must also consider the individual client's characteristics, context, and data when making clinical decisions." },
       { letter: "C", text: "Clinical practice and research are separate activities; BCBAs should focus on practice and leave research to academics." },
       { letter: "D", text: "If an intervention is supported by research, it should always be implemented regardless of the client's individual data." },
+      { letter: "A", text: "Research findings should be applied directly to clinical practice without modification, as they represent the most rigorous evidence." },
+      { letter: "B", text: "Research findings inform clinical practice by identifying effective interventions, but the BCBA must also consider the individual client's characteristics, context, and data when making clinical decisions." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Research informs practice by identifying effective interventions, but clinical decision-making requires integrating research evidence with the individual client's data, characteristics, and context. (A) is incorrect — research findings may not apply to every individual. (C) is incorrect — behavior analysis values the integration of research and practice. (D) is incorrect — individual data should always guide clinical decisions.",
   },
   {
@@ -519,12 +515,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is conducting a multiple baseline across behaviors design. After the intervention is introduced for Behavior 1, the BCBA notices that Behavior 2 also begins to improve, even though the intervention has not yet been introduced for Behavior 2.",
     question: "What is the most likely explanation for this pattern, and what does it mean for the study's internal validity?",
     choices: [
+      { letter: "D", text: "The improvement in Behavior 2 is expected and does not affect the study's internal validity." },
       { letter: "A", text: "The improvement in Behavior 2 is due to history — an external event caused both behaviors to improve simultaneously." },
       { letter: "B", text: "The improvement in Behavior 2 may be due to behavioral covariation or generalization of the intervention effects; this weakens the demonstration of experimental control for Behavior 2." },
       { letter: "C", text: "The improvement in Behavior 2 strengthens the study because it shows the intervention has broad effects." },
-      { letter: "D", text: "The improvement in Behavior 2 is expected and does not affect the study's internal validity." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "When untreated behaviors improve before the intervention is introduced for them, it may be due to behavioral covariation (behaviors are functionally related) or generalization of the intervention. This weakens the demonstration of experimental control for Behavior 2 because it becomes unclear whether the intervention or generalization caused the change. (A) is possible but less likely if only Behavior 2 improved. (C) is incorrect — broad effects undermine the design logic. (D) is incorrect — this pattern is a threat to internal validity.",
   },
   {
@@ -555,12 +551,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a published single-subject study. The study reports that the participant's behavior improved from an average of 15 incidents per session during baseline to an average of 2 incidents per session during intervention. The data show stable baseline, immediate behavior change at the phase change, and low variability during intervention.",
     question: "Based on visual analysis, what conclusion is most supported by these data?",
     choices: [
-      { letter: "A", text: "The data are inconclusive because statistical analysis was not conducted." },
       { letter: "B", text: "The data provide strong visual evidence of a treatment effect — the stable baseline, immediate change, and low variability during intervention are all indicators of a meaningful behavior change." },
       { letter: "C", text: "The data show a treatment effect, but the effect size is too small to be clinically meaningful." },
       { letter: "D", text: "The data cannot be interpreted without knowing the participant's diagnosis and age." },
+      { letter: "A", text: "The data are inconclusive because statistical analysis was not conducted." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Visual analysis of single-subject data considers level, trend, variability, immediacy of change, and overlap between phases. Stable baseline, immediate change at the phase change, and low variability during intervention are all strong indicators of a meaningful treatment effect. (A) is incorrect — visual analysis is the primary method in single-subject research. (C) is incorrect — a reduction from 15 to 2 incidents is clinically meaningful. (D) is incorrect — the data pattern can be interpreted independently of participant characteristics.",
   },
   {
@@ -573,12 +569,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA conducts a study with 5 adults with intellectual disability in a residential facility and finds that a self-monitoring intervention increases medication adherence. The BCBA wants to determine whether the findings apply to adults with intellectual disability who live independently.",
     question: "Which factor most directly limits the generalizability of these findings to adults living independently?",
     choices: [
-      { letter: "A", text: "The study used only 5 participants, which limits statistical power." },
-      { letter: "B", text: "The residential facility setting provides structured support, prompting, and supervision that may not be available to adults living independently, limiting the ecological validity of the findings." },
       { letter: "C", text: "The study did not include a control group, so it is impossible to determine whether the intervention was effective." },
       { letter: "D", text: "Self-monitoring interventions are not evidence-based for adults with intellectual disability." },
+      { letter: "A", text: "The study used only 5 participants, which limits statistical power." },
+      { letter: "B", text: "The residential facility setting provides structured support, prompting, and supervision that may not be available to adults living independently, limiting the ecological validity of the findings." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "The residential facility provides structured support (staff prompting, supervision, consistent routines) that may not be available to adults living independently. This difference in ecological context limits the generalizability of the findings. (A) is a statistical concern, not an external validity concern. (C) is an internal validity concern. (D) is factually incorrect.",
   },
   {
@@ -591,12 +587,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study that evaluated a punishment procedure for reducing self-injurious behavior. The study used an ABAB design. During the study, the researchers also implemented a competing reinforcement procedure (DRA) at the same time as the punishment procedure in both B phases.",
     question: "What is the primary limitation of this study's design?",
     choices: [
+      { letter: "D", text: "The study should have used a multiple baseline design to evaluate the effects of each procedure separately." },
       { letter: "A", text: "The study is unethical because it used a punishment procedure." },
       { letter: "B", text: "The simultaneous implementation of punishment and DRA creates a confound — it is impossible to determine whether the punishment, the DRA, or the combination of both caused the behavior reduction." },
       { letter: "C", text: "The ABAB design is inappropriate for studying punishment procedures." },
-      { letter: "D", text: "The study should have used a multiple baseline design to evaluate the effects of each procedure separately." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "When two interventions are implemented simultaneously (punishment + DRA), it creates a confound — the independent effects of each procedure cannot be separated. The study cannot determine whether the punishment, the DRA, or the combination caused the behavior reduction. (A) is an ethical concern but not the primary design limitation. (C) is incorrect — reversal designs can be used for punishment procedures. (D) is a possible solution but does not describe the current limitation.",
   },
   {
@@ -627,12 +623,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a meta-analysis of group studies on the effectiveness of ABA interventions for children with ASD. The meta-analysis reports a large average effect size (d = 1.2) across 50 studies. A parent asks the BCBA whether this means ABA will definitely work for their child.",
     question: "Which response best reflects the behavior-analytic perspective on interpreting group research for individual clients?",
     choices: [
-      { letter: "A", text: "Yes, a large effect size guarantees that ABA will be effective for their child." },
       { letter: "B", text: "The large average effect size is encouraging and suggests ABA is generally effective, but it represents an average across many children and does not guarantee effectiveness for any specific individual; individual data collection will be essential to evaluate whether ABA is working for their child." },
       { letter: "C", text: "Group research is irrelevant to ABA practice because behavior analysts only use single-subject designs." },
       { letter: "D", text: "The effect size is too large to be credible; the parent should seek studies with smaller effect sizes." },
+      { letter: "A", text: "Yes, a large effect size guarantees that ABA will be effective for their child." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Group research provides evidence about average treatment effects, but averages can mask individual variability. A large average effect size does not guarantee effectiveness for any specific individual. Behavior analysts emphasize individual data collection to evaluate whether an intervention is working for a specific client. (A) is incorrect — no intervention guarantees effectiveness for every individual. (C) is overstated — group research has value for informing practice. (D) is incorrect — a large effect size is generally a positive indicator.",
   },
   {
@@ -645,12 +641,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is conducting an ABAB reversal design to evaluate a noncontingent reinforcement (NCR) intervention for escape-maintained aggression. During the first A phase, aggression averages 12 per session. During the first B phase, aggression decreases to 2 per session. During the second A phase, aggression returns to 10 per session.",
     question: "What should the BCBA do next to complete the demonstration of experimental control?",
     choices: [
-      { letter: "A", text: "Conclude the study because the reversal has already demonstrated experimental control." },
-      { letter: "B", text: "Implement the second B phase (reintroduce the NCR intervention) and collect data to demonstrate that aggression decreases again." },
       { letter: "C", text: "Switch to a multiple baseline design because the ABAB design has already provided sufficient evidence." },
       { letter: "D", text: "Add a third A phase to provide an additional replication of the reversal effect." },
+      { letter: "A", text: "Conclude the study because the reversal has already demonstrated experimental control." },
+      { letter: "B", text: "Implement the second B phase (reintroduce the NCR intervention) and collect data to demonstrate that aggression decreases again." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "An ABAB design requires the second B phase to complete the demonstration of experimental control. The second B phase provides a replication of the treatment effect — if aggression decreases again when NCR is reintroduced, this confirms the functional relationship. (A) is incorrect — the second B phase is essential. (C) is unnecessary — the ABAB design can be completed. (D) adds an unnecessary phase and would require a third B phase to complete the design.",
   },
   {
@@ -663,12 +659,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA publishes a study showing that a token economy intervention reduced disruptive behavior in a single classroom. Another researcher attempts to replicate the study in a different classroom with different students and a different teacher, using the same procedures. The replication produces similar results.",
     question: "What does the successful replication demonstrate?",
     choices: [
+      { letter: "D", text: "The replication is unnecessary because the original study already established the intervention's effectiveness." },
       { letter: "A", text: "The original study had high internal validity because the replication confirmed the results." },
       { letter: "B", text: "The findings have generality — the functional relationship between the token economy and disruptive behavior holds across different participants, settings, and implementers." },
       { letter: "C", text: "The token economy is the only effective intervention for disruptive behavior." },
-      { letter: "D", text: "The replication is unnecessary because the original study already established the intervention's effectiveness." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Systematic replication — repeating a study with different participants, settings, or conditions — establishes the generality of findings. A successful replication in a different classroom with different students and a different teacher demonstrates that the functional relationship holds across these variations. (A) is incorrect — replication addresses external validity, not internal validity. (C) is an overgeneralization. (D) is incorrect — replication is essential for establishing generality.",
   },
   {
@@ -699,12 +695,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is using an alternating treatment design to compare the effects of two reinforcement schedules (FR5 and VR5) on a student's math problem completion. After 15 sessions, the data show that the two conditions produce nearly identical rates of problem completion, with substantial overlap between the data paths.",
     question: "What conclusion is most appropriate based on these data?",
     choices: [
-      { letter: "A", text: "FR5 is more effective than VR5 because fixed ratio schedules always produce higher rates than variable ratio schedules." },
       { letter: "B", text: "The data suggest that the two conditions produce similar effects for this student; the BCBA may choose either schedule based on practical considerations (e.g., ease of implementation)." },
       { letter: "C", text: "The data are inconclusive because the ATD requires at least 20 sessions to produce reliable results." },
       { letter: "D", text: "VR5 is more effective because variable ratio schedules are more resistant to extinction." },
+      { letter: "A", text: "FR5 is more effective than VR5 because fixed ratio schedules always produce higher rates than variable ratio schedules." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "When ATD data show substantial overlap between conditions, it indicates that the two conditions produce similar effects for this participant. In this case, the BCBA can choose either schedule based on practical considerations. (A) is incorrect — the data, not general principles, should guide the conclusion. (C) is incorrect — there is no minimum session requirement for ATD conclusions. (D) is incorrect — resistance to extinction is relevant after the intervention is discontinued, not during it.",
   },
   {
@@ -717,12 +713,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is planning a multiple baseline across settings design to evaluate a self-monitoring intervention for a student's on-task behavior. The BCBA plans to collect baseline data in all three settings simultaneously before introducing the intervention in any setting.",
     question: "Why is it important to collect concurrent baseline data across all settings before introducing the intervention?",
     choices: [
-      { letter: "A", text: "Concurrent baseline data allow the BCBA to calculate the average baseline rate across settings." },
-      { letter: "B", text: "Concurrent baseline data establish that behavior is stable (or at least predictable) in all settings before the intervention is introduced, which is necessary to demonstrate that any subsequent change is due to the intervention, not pre-existing trends." },
       { letter: "C", text: "Concurrent baseline data are required by the BACB to ensure ethical treatment of participants." },
       { letter: "D", text: "Concurrent baseline data allow the BCBA to compare the student's performance across settings to identify which setting needs the most support." },
+      { letter: "A", text: "Concurrent baseline data allow the BCBA to calculate the average baseline rate across settings." },
+      { letter: "B", text: "Concurrent baseline data establish that behavior is stable (or at least predictable) in all settings before the intervention is introduced, which is necessary to demonstrate that any subsequent change is due to the intervention, not pre-existing trends." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Concurrent baseline data establish the stability (or predictability) of behavior across all settings before the intervention is introduced. This is essential because if behavior is already trending in the desired direction during baseline, it becomes impossible to attribute any subsequent change to the intervention. (A) is a secondary benefit. (C) is not a specific BACB requirement. (D) is a possible use of baseline data but not the primary reason for concurrent collection.",
   },
   {
@@ -735,12 +731,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is using a changing criterion design to increase a student's independent work completion. The initial criterion is 5 problems per session. Each phase, the criterion increases by 2 problems. The student's performance closely matches the criterion in each phase.",
     question: "What is the primary purpose of the changing criterion design in this context?",
     choices: [
+      { letter: "D", text: "To evaluate whether the student can maintain high rates of work completion without reinforcement." },
       { letter: "A", text: "To compare the effects of different reinforcement schedules on work completion." },
       { letter: "B", text: "To demonstrate that the student's performance is controlled by the criterion level, providing evidence that the intervention is responsible for the behavior change." },
       { letter: "C", text: "To establish a multiple baseline across different academic subjects." },
-      { letter: "D", text: "To evaluate whether the student can maintain high rates of work completion without reinforcement." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "The changing criterion design demonstrates experimental control by showing that the student's performance tracks the criterion level — when the criterion changes, performance changes accordingly. This provides evidence that the criterion (and the associated reinforcement contingency) is controlling behavior. (A) is the purpose of an ATD. (C) is the purpose of a multiple baseline design. (D) is a maintenance question, not the primary purpose of the changing criterion design.",
   },
   {
@@ -753,12 +749,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a single-subject study using a multiple baseline across behaviors design. The data show that Behavior 1 improved immediately when the intervention was introduced, but Behavior 2 showed a gradual improvement over 5 sessions after the intervention was introduced for Behavior 2, and Behavior 3 showed no improvement even after 10 sessions of intervention.",
     question: "What do the data for Behavior 3 suggest, and what should the BCBA do?",
     choices: [
-      { letter: "A", text: "Behavior 3 data suggest the intervention is ineffective for that behavior; the BCBA should conduct a functional assessment to determine why the intervention is not working and consider modifying the intervention." },
       { letter: "B", text: "Behavior 3 data suggest the student needs more time; the BCBA should continue the intervention for at least 20 more sessions." },
       { letter: "C", text: "Behavior 3 data suggest the intervention is too complex for the student; the BCBA should simplify the intervention." },
       { letter: "D", text: "Behavior 3 data suggest the measurement system is unreliable; the BCBA should recalibrate the measurement tools." },
+      { letter: "A", text: "Behavior 3 data suggest the intervention is ineffective for that behavior; the BCBA should conduct a functional assessment to determine why the intervention is not working and consider modifying the intervention." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "When an intervention produces no improvement after a reasonable number of sessions, it suggests the intervention may not be effective for that specific behavior. The BCBA should conduct a functional assessment to understand why the intervention is not working (e.g., wrong function, implementation fidelity issues, inappropriate target behavior definition) and consider modifying the intervention. (B) is inappropriate without data-based justification. (C) is speculative. (D) is speculative without evidence of measurement problems.",
   },
   {
@@ -771,12 +767,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is conducting an ABAB reversal design to evaluate a DRO intervention. During the second A phase (reversal), the BCBA notices that the behavior does not return to baseline levels — it remains at the low levels achieved during the first B phase. The BCBA is concerned about the study's experimental control.",
     question: "Which explanation is most consistent with the behavior-analytic principle of behavioral momentum?",
     choices: [
-      { letter: "A", text: "The behavior did not reverse because the DRO was ineffective." },
       { letter: "B", text: "The behavior did not reverse because the history of reinforcement for the alternative behavior (built up during the B phase) created behavioral momentum that maintained the low rate of the target behavior even after the DRO was withdrawn." },
       { letter: "C", text: "The behavior did not reverse because the student matured during the study." },
       { letter: "D", text: "The behavior did not reverse because the measurement system was unreliable." },
+      { letter: "A", text: "The behavior did not reverse because the DRO was ineffective." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Behavioral momentum refers to the tendency for behavior to persist in the face of disruption, based on the history of reinforcement. During the B phase, the alternative behavior was reinforced, building momentum. When the DRO was withdrawn, the momentum of the alternative behavior maintained the low rate of the target behavior. (A) is incorrect — the behavior did improve during the B phase. (C) is a maturation explanation. (D) is speculative without evidence.",
   },
   {
@@ -789,12 +785,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is designing a study to evaluate the effect of a peer-mediated intervention on the social initiations of a child with ASD. The BCBA will measure the number of social initiations per 10-minute observation period before and after implementing the intervention.",
     question: "What is the dependent variable in this study, and why is it important to operationally define it?",
     choices: [
-      { letter: "A", text: "The dependent variable is the peer-mediated intervention; it must be operationally defined to ensure consistent implementation." },
-      { letter: "B", text: "The dependent variable is the number of social initiations; it must be operationally defined to ensure that all observers measure the same behavior consistently, which is essential for reliability and validity." },
       { letter: "C", text: "The dependent variable is the child's diagnosis (ASD); it must be operationally defined to ensure accurate classification." },
       { letter: "D", text: "The dependent variable is the 10-minute observation period; it must be operationally defined to ensure consistent data collection." },
+      { letter: "A", text: "The dependent variable is the peer-mediated intervention; it must be operationally defined to ensure consistent implementation." },
+      { letter: "B", text: "The dependent variable is the number of social initiations; it must be operationally defined to ensure that all observers measure the same behavior consistently, which is essential for reliability and validity." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "The dependent variable is the behavior being measured — the number of social initiations. Operational definitions are essential for the dependent variable because they specify exactly what counts as a social initiation, ensuring that all observers measure the same behavior consistently. This is critical for inter-observer agreement and the validity of the data. (A) is the independent variable. (C) is not a variable in this study. (D) is the measurement context, not the dependent variable.",
   },
   {
@@ -807,12 +803,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study that used a multiple baseline across settings design. The researcher reports that the study has high internal validity. A reviewer notes that the teacher implementing the intervention in Setting 1 was replaced by a new teacher at the start of the intervention phase in Setting 2.",
     question: "Which threat to internal validity does the reviewer's concern most directly address?",
     choices: [
+      { letter: "D", text: "Selection bias — the new teacher may have been more skilled than the original teacher." },
       { letter: "A", text: "Attrition — the original teacher left the study." },
       { letter: "B", text: "History — the change in teacher is an extraneous event that occurred concurrently with the introduction of the intervention in Setting 2 and may have caused the behavior change in that setting." },
       { letter: "C", text: "Instrumentation — the new teacher may have measured behavior differently than the original teacher." },
-      { letter: "D", text: "Selection bias — the new teacher may have been more skilled than the original teacher." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "History refers to extraneous events that occur concurrently with the independent variable. The change in teacher at the start of the intervention phase in Setting 2 is a history threat — it is impossible to determine whether the behavior change in Setting 2 was due to the intervention or the new teacher. (A) is not a standard threat to internal validity. (C) is an instrumentation concern but is secondary to the history threat. (D) is a selection concern in group designs.",
   },
   {
@@ -843,12 +839,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study that used a multiple baseline across participants design. The data show that Participant 1's behavior improved immediately when the intervention was introduced. Participant 2's behavior also improved slightly at the same time, even though the intervention had not yet been introduced for Participant 2.",
     question: "What is the most likely explanation for the slight improvement in Participant 2's behavior, and what does it mean for the study?",
     choices: [
-      { letter: "A", text: "Participant 2's improvement is due to maturation — both participants naturally improved at the same time." },
       { letter: "B", text: "Participant 2's improvement may be due to observational learning or generalization — Participant 2 may have observed Participant 1 receiving the intervention. This weakens the demonstration of experimental control for Participant 2." },
       { letter: "C", text: "Participant 2's improvement confirms that the intervention is effective for all participants." },
       { letter: "D", text: "Participant 2's improvement is expected and does not affect the study's internal validity." },
+      { letter: "A", text: "Participant 2's improvement is due to maturation — both participants naturally improved at the same time." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "When participants in a multiple baseline design can observe each other, observational learning or generalization may cause behavior to change before the intervention is introduced for that participant. This weakens the demonstration of experimental control because it becomes unclear whether the intervention or observational learning caused the change. (A) is possible but less specific. (C) is incorrect — the pattern undermines experimental control. (D) is incorrect — this is a threat to internal validity.",
   },
   {
@@ -861,12 +857,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA wants to determine which of two teaching strategies — discrete trial training (DTT) or naturalistic environment training (NET) — is more effective for teaching a child with ASD to label objects. The BCBA wants to compare the two strategies within the same time period to minimize the effects of maturation.",
     question: "Which single-subject design is most appropriate for this comparison?",
     choices: [
-      { letter: "A", text: "ABAB reversal design, because it allows the BCBA to compare the effects of each strategy by alternating between them." },
-      { letter: "B", text: "Alternating treatment design, because it allows rapid comparison of two or more conditions within the same time period." },
       { letter: "C", text: "Multiple baseline across behaviors design, because it allows comparison of the two strategies across different target behaviors." },
       { letter: "D", text: "Changing criterion design, because it allows the BCBA to gradually increase the labeling criterion for each strategy." },
+      { letter: "A", text: "ABAB reversal design, because it allows the BCBA to compare the effects of each strategy by alternating between them." },
+      { letter: "B", text: "Alternating treatment design, because it allows rapid comparison of two or more conditions within the same time period." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "The alternating treatment design (ATD) is specifically designed for comparing two or more conditions within the same time period, minimizing the effects of maturation and history. (A) is used for demonstrating a functional relationship for a single intervention, not for comparing two interventions. (C) is used for demonstrating that a single intervention works across multiple behaviors. (D) is used for gradually changing a performance criterion.",
   },
   {
@@ -879,12 +875,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is working with a client whose behavior plan is not producing the expected results. The BCBA reviews the published research and finds several studies supporting the intervention. The BCBA is uncertain whether to continue the current intervention or modify it.",
     question: "Which principle should guide the BCBA's decision-making in this situation?",
     choices: [
-      { letter: "A", text: "Continue the current intervention because it is supported by published research, regardless of the individual client's data." },
-      { letter: "B", text: "Modify the intervention immediately because the lack of progress indicates the intervention is ineffective." },
       { letter: "C", text: "Use the individual client's data as the primary guide for clinical decision-making; research evidence informs the selection of interventions but does not override the client's individual response to treatment." },
       { letter: "D", text: "Consult with a supervisor and defer to their judgment, as the BCBA lacks sufficient experience to make this decision independently." },
+      { letter: "A", text: "Continue the current intervention because it is supported by published research, regardless of the individual client's data." },
+      { letter: "B", text: "Modify the intervention immediately because the lack of progress indicates the intervention is ineffective." },
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "In behavior analysis, individual client data are the primary guide for clinical decision-making. Research evidence informs the selection of interventions, but if an intervention is not producing the expected results for a specific client, the BCBA must use the client's data to guide modifications. (A) is incorrect — research evidence does not override individual data. (B) is premature — the BCBA should first evaluate implementation fidelity, measurement accuracy, and other factors. (D) is incorrect — the BCBA has a professional obligation to use data-based decision-making.",
   },
   {
@@ -915,12 +911,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is designing an ABAB reversal design to evaluate a token economy for increasing on-task behavior. The BCBA is concerned that withdrawing the token economy during the second A phase may be ethically problematic, as the student's on-task behavior is critical for academic progress.",
     question: "Which ethical principle is most relevant to this concern?",
     choices: [
-      { letter: "A", text: "The BCBA should prioritize experimental control over the student's welfare and proceed with the reversal as planned." },
       { letter: "B", text: "The BCBA should balance the scientific value of demonstrating experimental control against the potential harm of withdrawing an effective intervention; if the reversal poses significant risk to the student's academic progress, an alternative design (e.g., multiple baseline) should be considered." },
       { letter: "C", text: "The BCBA should abandon the study entirely because any reversal design is unethical." },
       { letter: "D", text: "The BCBA should obtain written consent from the student's parents before proceeding with the reversal." },
+      { letter: "A", text: "The BCBA should prioritize experimental control over the student's welfare and proceed with the reversal as planned." },
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "The BACB Ethics Code requires BCBAs to balance the scientific value of research against potential harm to participants. If withdrawing an effective intervention poses significant risk to the student's academic progress, the BCBA should consider alternative designs that do not require reversal (e.g., multiple baseline). (A) is incorrect — participant welfare always takes precedence. (C) is too absolute. (D) is partially correct but incomplete — consent alone does not resolve the ethical concern.",
   },
   {
@@ -933,12 +929,12 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study that used an ABAB reversal design to evaluate a social skills intervention. The researcher reports that the study demonstrated a functional relationship between the intervention and social skills improvement. However, the BCBA notices that the baseline phases were very short (2-3 sessions each) and showed high variability.",
     question: "What concern does this raise about the study's internal validity?",
     choices: [
+      { letter: "D", text: "The number of baseline sessions is irrelevant as long as the intervention phase shows improvement." },
       { letter: "A", text: "Short, variable baselines make it difficult to establish a stable prediction of what behavior would have looked like without the intervention, weakening the demonstration of experimental control." },
       { letter: "B", text: "Short baselines are acceptable if the behavior shows a clear trend during the intervention phase." },
       { letter: "C", text: "High variability during baseline is desirable because it shows the behavior is sensitive to environmental changes." },
-      { letter: "D", text: "The number of baseline sessions is irrelevant as long as the intervention phase shows improvement." },
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Stable baselines are essential for establishing a clear prediction of what behavior would look like without the intervention. Short, variable baselines make it difficult to determine whether the behavior change during the intervention phase represents a true treatment effect or simply a continuation of the natural variability. (B) is incorrect — a clear trend during intervention does not compensate for an unstable baseline. (C) is incorrect — high variability during baseline is a problem, not a desirable feature. (D) is incorrect — baseline stability is a critical component of experimental control.",
   },
 ];

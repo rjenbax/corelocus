@@ -1,7 +1,3 @@
-// Domain A — Tier 6 question pool
-// BCBA 6th Edition Task List
-// Part of the 5× question pool for the mock exam engine
-
 import { Question } from './types';
 
 export const tier6Pool_A: Question[] = [
@@ -16,6 +12,10 @@ export const tier6Pool_A: Question[] = [
     question: "How does radical behaviorism conceptualize private events like feelings of anxiety?",
     choices: [
       {
+        letter: "D",
+        text: "The rejection of all mentalistic terms in scientific discourse."
+      },
+      {
         letter: "A",
         text: "Methodological behaviorism, which excludes private events from scientific analysis."
       },
@@ -26,13 +26,9 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "C",
         text: "The focus on observable behavior as the sole subject matter of psychology."
-      },
-      {
-        letter: "D",
-        text: "The rejection of all mentalistic terms in scientific discourse."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Radical behaviorism, as proposed by B.F. Skinner, acknowledges the existence of private events (thoughts, feelings) but treats them as behavior that is influenced by the same environmental variables as public behavior. It views private events not as causes of public behavior, but as additional behaviors to be explained. Methodological behaviorism (A) explicitly excludes private events. While radical behaviorism focuses on observable behavior (C), it does not exclude private events from analysis, but rather includes them as a type of behavior. Radical behaviorism does not reject all mentalistic terms (D), but rather reinterprets them in behavioral terms."
   },
   {
@@ -76,6 +72,10 @@ export const tier6Pool_A: Question[] = [
     question: "Which dimension of ABA is the BCBA primarily demonstrating by grounding the intervention in established behavioral principles?",
     choices: [
       {
+        letter: "D",
+        text: "Generality"
+      },
+      {
         letter: "A",
         text: "Applied"
       },
@@ -86,13 +86,9 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "C",
         text: "Effective"
-      },
-      {
-        letter: "D",
-        text: "Generality"
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'C',
     rationale: "Generality refers to the extent to which a behavior change lasts over time, appears in environments other than the one in which the intervention was implemented, and/or spreads to other behaviors not directly treated by the intervention. The client using the skill with different people and in different settings directly exemplifies generality. Applied (A) refers to the social significance of the behavior. Behavioral (B) refers to focusing on observable and measurable behavior. Effective (C) refers to the intervention producing practical and significant changes in behavior."
   },
   {
@@ -106,6 +102,10 @@ export const tier6Pool_A: Question[] = [
     question: "The ability to draw clear conclusions about the intervention's impact, as described in the scenario, primarily fulfills which goal of behavior analysis?",
     choices: [
       {
+        letter: "D",
+        text: "Generic Choice D for t6-A-pool-4"
+      },
+      {
         letter: "A",
         text: "Generic Choice A for t6-A-pool-4"
       },
@@ -116,13 +116,9 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "C",
         text: "Generic Choice C for t6-A-pool-4"
-      },
-      {
-        letter: "D",
-        text: "Generic Choice D for t6-A-pool-4"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Generic rationale for t6-A-pool-4: Explanation for correct answer A and why distractors are wrong."
   },
   {
@@ -136,10 +132,6 @@ export const tier6Pool_A: Question[] = [
     question: "The ability to draw clear conclusions about the intervention's impact, as described in the scenario, primarily fulfills which goal of behavior analysis?",
     choices: [
       {
-        letter: "A",
-        text: "To understand the underlying neurological causes of the behavior."
-      },
-      {
         letter: "B",
         text: "To predict when and where the behavior is most likely to occur."
       },
@@ -150,9 +142,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "To achieve a socially significant improvement in the client's behavior."
+      },
+      {
+        letter: "A",
+        text: "To understand the underlying neurological causes of the behavior."
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "The primary goal of applied behavior analysis (ABA) is to achieve socially significant improvements in behavior. While understanding, predicting, and describing behavior are important aspects, the ultimate applied goal is to produce positive change. Choice A is incorrect as behavior analysis focuses on environmental factors, not neurological causes. Choices B and C are aspects of understanding and describing behavior, which are intermediate goals, not the ultimate applied goal."
   },
   {
@@ -196,10 +192,6 @@ export const tier6Pool_A: Question[] = [
     question: "The early research described, focused on identifying fundamental principles in controlled settings, is characteristic of which branch of behavior analysis?",
     choices: [
       {
-        letter: "A",
-        text: "Applied Behavior Analysis (ABA)"
-      },
-      {
         letter: "B",
         text: "Experimental Analysis of Behavior (EAB)"
       },
@@ -210,9 +202,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Radical Behaviorism"
+      },
+      {
+        letter: "A",
+        text: "Applied Behavior Analysis (ABA)"
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Experimental Analysis of Behavior (EAB) is characterized by basic research, often conducted in laboratory settings with non-human subjects, to discover fundamental principles of behavior. Applied Behavior Analysis (ABA) (A) focuses on applying these principles to socially significant human behavior. Professional Practice of Behavior Analysis (C) involves the direct application of ABA principles in real-world settings. Radical Behaviorism (D) is the philosophy underlying all branches of behavior analysis, not a branch itself."
   },
   {
@@ -226,23 +222,23 @@ export const tier6Pool_A: Question[] = [
     question: "From a radical behaviorist perspective, how is self-talk primarily conceptualized?",
     choices: [
       {
-        letter: "A",
-        text: "Methodological behaviorism, which excludes private events from scientific analysis."
-      },
-      {
-        letter: "B",
-        text: "The view that private events are simply collateral products of environmental variables, not causes."
-      },
-      {
         letter: "C",
         text: "The focus on observable behavior as the sole subject matter of psychology."
       },
       {
         letter: "D",
         text: "The rejection of all mentalistic terms in scientific discourse."
+      },
+      {
+        letter: "A",
+        text: "Methodological behaviorism, which excludes private events from scientific analysis."
+      },
+      {
+        letter: "B",
+        text: "The view that private events are simply collateral products of environmental variables, not causes."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Radical behaviorism, as proposed by B.F. Skinner, acknowledges the existence of private events (thoughts, feelings) but treats them as behavior that is influenced by the same environmental variables as public behavior. It views private events not as causes of public behavior, but as additional behaviors to be explained. Methodological behaviorism (A) explicitly excludes private events. While radical behaviorism focuses on observable behavior (C), it does not exclude private events from analysis, but rather includes them as a type of behavior. Radical behaviorism does not reject all mentalistic terms (D), but rather reinterprets them in behavioral terms."
   },
   {
@@ -256,10 +252,6 @@ export const tier6Pool_A: Question[] = [
     question: "The ability to draw clear conclusions about the intervention's impact, as described in the scenario, primarily fulfills which goal of behavior analysis?",
     choices: [
       {
-        letter: "A",
-        text: "To understand the underlying neurological causes of the behavior."
-      },
-      {
         letter: "B",
         text: "To predict when and where the behavior is most likely to occur."
       },
@@ -270,9 +262,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "To achieve a socially significant improvement in the client's behavior."
+      },
+      {
+        letter: "A",
+        text: "To understand the underlying neurological causes of the behavior."
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "The primary goal of applied behavior analysis (ABA) is to achieve socially significant improvements in behavior. While understanding, predicting, and describing behavior are important aspects, the ultimate applied goal is to produce positive change. Choice A is incorrect as behavior analysis focuses on environmental factors, not neurological causes. Choices B and C are aspects of understanding and describing behavior, which are intermediate goals, not the ultimate applied goal."
   },
   {
@@ -316,6 +312,10 @@ export const tier6Pool_A: Question[] = [
     question: "Which of the following best represents the primary goal of behavior analysis being applied in this scenario?",
     choices: [
       {
+        letter: "D",
+        text: "Generic Choice D for t6-A-pool-11"
+      },
+      {
         letter: "A",
         text: "Generic Choice A for t6-A-pool-11"
       },
@@ -326,13 +326,9 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "C",
         text: "Generic Choice C for t6-A-pool-11"
-      },
-      {
-        letter: "D",
-        text: "Generic Choice D for t6-A-pool-11"
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'C',
     rationale: "Generic rationale for t6-A-pool-11: Explanation for correct answer D and why distractors are wrong."
   },
   {
@@ -346,10 +342,6 @@ export const tier6Pool_A: Question[] = [
     question: "Which philosophical assumption of behavior analysis is primarily demonstrated by the BCBA's approach of collecting direct observational data?",
     choices: [
       {
-        letter: "A",
-        text: "Determinism"
-      },
-      {
         letter: "B",
         text: "Selectionism"
       },
@@ -360,9 +352,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Pragmatism"
+      },
+      {
+        letter: "A",
+        text: "Determinism"
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Parsimony is the philosophical assumption that states that when multiple explanations for a phenomenon are available, the simplest explanation that accounts for all the facts should be chosen. The BCBA's suggestion to simplify the intervention aligns with this principle. Determinism (A) is the assumption that behavior is caused by lawful events. Selectionism (B) refers to the idea that behavior is selected by its consequences. Pragmatism (D) focuses on the practical utility of an intervention."
   },
   {
@@ -376,10 +372,6 @@ export const tier6Pool_A: Question[] = [
     question: "The client's ability to use the requesting skill across various people and settings demonstrates which dimension of ABA?",
     choices: [
       {
-        letter: "A",
-        text: "Applied"
-      },
-      {
         letter: "B",
         text: "Behavioral"
       },
@@ -390,9 +382,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Generality"
+      },
+      {
+        letter: "A",
+        text: "Applied"
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "Generality refers to the extent to which a behavior change lasts over time, appears in environments other than the one in which the intervention was implemented, and/or spreads to other behaviors not directly treated by the intervention. The client using the skill with different people and in different settings directly exemplifies generality. Applied (A) refers to the social significance of the behavior. Behavioral (B) refers to focusing on observable and measurable behavior. Effective (C) refers to the intervention producing practical and significant changes in behavior."
   },
   {
@@ -406,6 +402,10 @@ export const tier6Pool_A: Question[] = [
     question: "Which dimension of ABA is the BCBA primarily demonstrating by grounding the intervention in established behavioral principles?",
     choices: [
       {
+        letter: "D",
+        text: "Effective"
+      },
+      {
         letter: "A",
         text: "Applied"
       },
@@ -416,13 +416,9 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "C",
         text: "Conceptually Systematic"
-      },
-      {
-        letter: "D",
-        text: "Effective"
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Conceptually Systematic refers to the fact that all procedures used in ABA are derived from basic principles of behavior. By ensuring the intervention is based on established principles like reinforcement and extinction, the BCBA is demonstrating conceptual systematicity. Applied (A) refers to the social significance of the behavior. Behavioral (B) refers to focusing on observable and measurable behavior. Effective (D) refers to the intervention producing practical and significant changes in behavior."
   },
   {
@@ -436,10 +432,6 @@ export const tier6Pool_A: Question[] = [
     question: "The early research described, focused on identifying fundamental principles in controlled settings, is characteristic of which branch of behavior analysis?",
     choices: [
       {
-        letter: "A",
-        text: "Applied Behavior Analysis (ABA)"
-      },
-      {
         letter: "B",
         text: "Experimental Analysis of Behavior (EAB)"
       },
@@ -450,9 +442,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Radical Behaviorism"
+      },
+      {
+        letter: "A",
+        text: "Applied Behavior Analysis (ABA)"
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Experimental Analysis of Behavior (EAB) is characterized by basic research, often conducted in laboratory settings with non-human subjects, to discover fundamental principles of behavior. Applied Behavior Analysis (ABA) (A) focuses on applying these principles to socially significant human behavior. Professional Practice of Behavior Analysis (C) involves the direct application of ABA principles in real-world settings. Radical Behaviorism (D) is the philosophy underlying all branches of behavior analysis, not a branch itself."
   },
   {
@@ -466,23 +462,23 @@ export const tier6Pool_A: Question[] = [
     question: "From a radical behaviorist perspective, how is self-talk primarily conceptualized?",
     choices: [
       {
-        letter: "A",
-        text: "As a cognitive process that precedes and causes overt behavior."
-      },
-      {
-        letter: "B",
-        text: "As a private event that is a form of verbal behavior, influenced by the same variables as public verbal behavior."
-      },
-      {
         letter: "C",
         text: "As an unobservable mental state that cannot be objectively studied."
       },
       {
         letter: "D",
         text: "As a hypothetical construct used to explain complex human behavior."
+      },
+      {
+        letter: "A",
+        text: "As a cognitive process that precedes and causes overt behavior."
+      },
+      {
+        letter: "B",
+        text: "As a private event that is a form of verbal behavior, influenced by the same variables as public verbal behavior."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Radical behaviorism views self-talk as a private event, but crucially, it is still considered a form of verbal behavior that is influenced by environmental contingencies, just like public verbal behavior. It is not seen as a cause of overt behavior (A), nor is it considered unobservable in principle (C) or merely hypothetical (D). Instead, it is a behavior to be analyzed within the same framework as other behaviors."
   },
   {
@@ -496,6 +492,10 @@ export const tier6Pool_A: Question[] = [
     question: "This research best exemplifies which branch of behavior analysis?",
     choices: [
       {
+        letter: "D",
+        text: "Radical Behaviorism"
+      },
+      {
         letter: "A",
         text: "Applied Behavior Analysis (ABA)"
       },
@@ -506,13 +506,9 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "C",
         text: "Professional Practice of Behavior Analysis"
-      },
-      {
-        letter: "D",
-        text: "Radical Behaviorism"
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Experimental Analysis of Behavior (EAB) is characterized by basic research, often conducted in laboratory settings with non-human subjects, to discover fundamental principles of behavior. Applied Behavior Analysis (ABA) (A) focuses on applying these principles to socially significant human behavior. Professional Practice of Behavior Analysis (C) involves the direct application of ABA principles in real-world settings. Radical Behaviorism (D) is the philosophy underlying all branches of behavior analysis, not a branch itself."
   },
   {
@@ -526,10 +522,6 @@ export const tier6Pool_A: Question[] = [
     question: "Which of the following best represents the primary goal of behavior analysis being applied in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Generic Choice A for t6-A-pool-18"
-      },
-      {
         letter: "B",
         text: "Generic Choice B for t6-A-pool-18"
       },
@@ -540,9 +532,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Generic Choice D for t6-A-pool-18"
+      },
+      {
+        letter: "A",
+        text: "Generic Choice A for t6-A-pool-18"
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "Generic rationale for t6-A-pool-18: Explanation for correct answer A and why distractors are wrong."
   },
   {
@@ -556,10 +552,6 @@ export const tier6Pool_A: Question[] = [
     question: "This research best exemplifies which branch of behavior analysis?",
     choices: [
       {
-        letter: "A",
-        text: "Applied Behavior Analysis (ABA)"
-      },
-      {
         letter: "B",
         text: "Experimental Analysis of Behavior (EAB)"
       },
@@ -570,9 +562,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Radical Behaviorism"
+      },
+      {
+        letter: "A",
+        text: "Applied Behavior Analysis (ABA)"
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Experimental Analysis of Behavior (EAB) is characterized by basic research, often conducted in laboratory settings with non-human subjects, to discover fundamental principles of behavior. Applied Behavior Analysis (ABA) (A) focuses on applying these principles to socially significant human behavior. Professional Practice of Behavior Analysis (C) involves the direct application of ABA principles in real-world settings. Radical Behaviorism (D) is the philosophy underlying all branches of behavior analysis, not a branch itself."
   },
   {
@@ -586,10 +582,6 @@ export const tier6Pool_A: Question[] = [
     question: "Which of the following best represents the primary goal of behavior analysis being applied in this scenario?",
     choices: [
       {
-        letter: "A",
-        text: "Generic Choice A for t6-A-pool-20"
-      },
-      {
         letter: "B",
         text: "Generic Choice B for t6-A-pool-20"
       },
@@ -600,9 +592,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Generic Choice D for t6-A-pool-20"
+      },
+      {
+        letter: "A",
+        text: "Generic Choice A for t6-A-pool-20"
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Generic rationale for t6-A-pool-20: Explanation for correct answer C and why distractors are wrong."
   },
   {
@@ -616,6 +612,10 @@ export const tier6Pool_A: Question[] = [
     question: "How does radical behaviorism conceptualize private events like feelings of anxiety?",
     choices: [
       {
+        letter: "D",
+        text: "As a hypothetical construct used to explain complex human behavior."
+      },
+      {
         letter: "A",
         text: "As a cognitive process that precedes and causes overt behavior."
       },
@@ -626,13 +626,9 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "C",
         text: "As an unobservable mental state that cannot be objectively studied."
-      },
-      {
-        letter: "D",
-        text: "As a hypothetical construct used to explain complex human behavior."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Radical behaviorism views self-talk as a private event, but crucially, it is still considered a form of verbal behavior that is influenced by environmental contingencies, just like public verbal behavior. It is not seen as a cause of overt behavior (A), nor is it considered unobservable in principle (C) or merely hypothetical (D). Instead, it is a behavior to be analyzed within the same framework as other behaviors."
   },
   {
@@ -676,10 +672,6 @@ export const tier6Pool_A: Question[] = [
     question: "Which statement best describes the relationship between behaviorism and the professional practice of Applied Behavior Analysis (ABA)?",
     choices: [
       {
-        letter: "A",
-        text: "Applied Behavior Analysis (ABA)"
-      },
-      {
         letter: "B",
         text: "Experimental Analysis of Behavior (EAB)"
       },
@@ -690,9 +682,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Radical Behaviorism"
+      },
+      {
+        letter: "A",
+        text: "Applied Behavior Analysis (ABA)"
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Experimental Analysis of Behavior (EAB) is characterized by basic research, often conducted in laboratory settings with non-human subjects, to discover fundamental principles of behavior. Applied Behavior Analysis (ABA) (A) focuses on applying these principles to socially significant human behavior. Professional Practice of Behavior Analysis (C) involves the direct application of ABA principles in real-world settings. Radical Behaviorism (D) is the philosophy underlying all branches of behavior analysis, not a branch itself."
   },
   {
@@ -706,10 +702,6 @@ export const tier6Pool_A: Question[] = [
     question: "Which philosophical assumption of behavior analysis is primarily demonstrated by the BCBA's approach of collecting direct observational data?",
     choices: [
       {
-        letter: "A",
-        text: "Determinism"
-      },
-      {
         letter: "B",
         text: "Parsimony"
       },
@@ -720,9 +712,13 @@ export const tier6Pool_A: Question[] = [
       {
         letter: "D",
         text: "Pragmatism"
+      },
+      {
+        letter: "A",
+        text: "Determinism"
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Empiricism is the practice of objective observation and measurement of phenomena of interest. The BCBA's reliance on direct observational data to inform the intervention is a direct application of empiricism. Determinism (A) refers to the assumption that the universe is a lawful and orderly place. Parsimony (B) refers to choosing the simplest explanation that fits the facts. Pragmatism (D) refers to the practical approach to problems, focusing on what works. While all are philosophical assumptions, empiricism is most directly demonstrated by data collection."
   },
   {
@@ -736,23 +732,23 @@ export const tier6Pool_A: Question[] = [
     question: "The behavior analyst's systematic observation and recording of the child's choices to identify preferred items is an example of which philosophical assumption?",
     choices: [
       {
-        letter: "A",
-        text: "Determinism"
-      },
-      {
-        letter: "B",
-        text: "Selectionism"
-      },
-      {
         letter: "C",
         text: "Parsimony"
       },
       {
         letter: "D",
         text: "Pragmatism"
+      },
+      {
+        letter: "A",
+        text: "Determinism"
+      },
+      {
+        letter: "B",
+        text: "Selectionism"
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "Parsimony is the philosophical assumption that states that when multiple explanations for a phenomenon are available, the simplest explanation that accounts for all the facts should be chosen. The BCBA's suggestion to simplify the intervention aligns with this principle. Determinism (A) is the assumption that behavior is caused by lawful events. Selectionism (B) refers to the idea that behavior is selected by its consequences. Pragmatism (D) focuses on the practical utility of an intervention."
   },
   {

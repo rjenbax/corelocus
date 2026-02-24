@@ -1,7 +1,3 @@
-// Domain C — Tier 6 question pool
-// BCBA 6th Edition Task List
-// Part of the 5× question pool for the mock exam engine
-
 import { Question } from './types';
 
 export const tier6Pool_C: Question[] = [
@@ -16,6 +12,10 @@ export const tier6Pool_C: Question[] = [
     question: "To measure the total time a client spends crying, which dimension of behavior is the BCBA primarily interested in?",
     choices: [
       {
+        letter: "D",
+        text: "Repeatability."
+      },
+      {
         letter: "A",
         text: "Count."
       },
@@ -26,13 +26,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Temporal locus."
-      },
-      {
-        letter: "D",
-        text: "Repeatability."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Temporal extent (C.3) refers to the duration of a behavior, or how long it lasts. This is the primary dimension of interest when measuring the total time spent crying. Count refers to frequency, temporal locus refers to when a behavior occurs (latency, IRT), and repeatability refers to frequency, rate, and count."
   },
   {
@@ -46,10 +42,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
-        letter: "A",
-        text: "Phase out the intervention or plan for generalization and maintenance."
-      },
-      {
         letter: "B",
         text: "Introduce a new, more complex intervention."
       },
@@ -60,9 +52,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Increase the reinforcement schedule to accelerate progress."
+      },
+      {
+        letter: "A",
+        text: "Phase out the intervention or plan for generalization and maintenance."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "When a client has achieved and maintained a socially acceptable level of behavior (C.15), the most appropriate data-based decision is to begin phasing out the intervention or to plan for generalization and maintenance of the skill. Introducing a new intervention, returning to baseline, or increasing reinforcement are not indicated when mastery has been achieved."
   },
   {
@@ -76,10 +72,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
-        letter: "A",
-        text: "Line graph."
-      },
-      {
         letter: "B",
         text: "Bar graph."
       },
@@ -90,9 +82,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Ratio chart."
+      },
+      {
+        letter: "A",
+        text: "Line graph."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "A bar graph (C.9) is typically most effective for comparing discrete sets of data, such as the average performance of two different groups. Line graphs show trends over time, cumulative records show total responses, and ratio charts are less common for this purpose."
   },
   {
@@ -106,23 +102,23 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
-        letter: "A",
-        text: "The intervention was ineffective."
-      },
-      {
-        letter: "B",
-        text: "A functional relationship likely exists between the intervention and the decrease in aggression."
-      },
-      {
         letter: "C",
         text: "The data collection was unreliable."
       },
       {
         letter: "D",
         text: "The behavior was naturally decreasing."
+      },
+      {
+        letter: "A",
+        text: "The intervention was ineffective."
+      },
+      {
+        letter: "B",
+        text: "A functional relationship likely exists between the intervention and the decrease in aggression."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "An immediate and sharp decrease in behavior from a stable high baseline to an intervention phase (C.10) strongly suggests a functional relationship between the intervention and the behavior change. It indicates effectiveness, not ineffectiveness, unreliability, or natural decrease."
   },
   {
@@ -136,6 +132,10 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
+        letter: "D",
+        text: "The behavior was naturally decreasing."
+      },
+      {
         letter: "A",
         text: "The intervention was ineffective."
       },
@@ -146,13 +146,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "The data is unreliable and cannot be interpreted."
-      },
-      {
-        letter: "D",
-        text: "The behavior was naturally decreasing."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "An immediate and substantial decrease from a high, stable baseline to an intervention phase (C.14) is a strong indicator of a functional relationship during visual analysis. It suggests the intervention is effective, not ineffective, unreliable, or a natural decrease."
   },
   {
@@ -196,10 +192,6 @@ export const tier6Pool_C: Question[] = [
     question: "Considering ethical guidelines, what is the BCBA's primary responsibility in this situation?",
     choices: [
       {
-        letter: "A",
-        text: "Prioritize the most accurate measurement method regardless of privacy concerns."
-      },
-      {
         letter: "B",
         text: "Obtain informed consent that explicitly addresses privacy risks and benefits."
       },
@@ -210,9 +202,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Use a less intrusive measurement method, even if less precise."
+      },
+      {
+        letter: "A",
+        text: "Prioritize the most accurate measurement method regardless of privacy concerns."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "For ethical reasoning questions, obtaining informed consent that addresses potential risks, such as privacy concerns related to data collection (C.7, C.1), is a primary ethical responsibility of the BCBA. Accuracy is important, but not at the expense of ethical practice without proper consent."
   },
   {
@@ -226,10 +222,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which measurement procedure should the BCBA use to gather data on the duration of tantrums?",
     choices: [
       {
-        letter: "A",
-        text: "Frequency."
-      },
-      {
         letter: "B",
         text: "Latency."
       },
@@ -240,9 +232,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Interresponse Time (IRT)."
+      },
+      {
+        letter: "A",
+        text: "Frequency."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Duration recording (C.3) directly measures the length of time a behavior occurs, which is exactly what is needed for tantrum behavior. Frequency measures count, latency measures time to initiation, and IRT measures time between responses."
   },
   {
@@ -286,6 +282,10 @@ export const tier6Pool_C: Question[] = [
     question: "When selecting a measurement procedure for a topographically complex behavior like vocal stereotypy, what is the primary consideration?",
     choices: [
       {
+        letter: "D",
+        text: "The client's preference for the measurement method."
+      },
+      {
         letter: "A",
         text: "The ease of data collection for the RBT."
       },
@@ -296,13 +296,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "The definition and topography of the behavior."
-      },
-      {
-        letter: "D",
-        text: "The client's preference for the measurement method."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "The definition and topography of the behavior (C.1) are crucial for selecting an appropriate measurement procedure, as they dictate what can be accurately measured. Ease of collection, social significance, and client preference are secondary considerations."
   },
   {
@@ -316,10 +312,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which of the following is a critical step in designing and implementing an effective data collection system for severe challenging behaviors?",
     choices: [
       {
-        letter: "A",
-        text: "Allowing RBTs to choose their preferred data sheet format."
-      },
-      {
         letter: "B",
         text: "Ensuring the behavior definition is clear, objective, and measurable."
       },
@@ -330,9 +322,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Using only electronic data collection methods for efficiency."
+      },
+      {
+        letter: "A",
+        text: "Allowing RBTs to choose their preferred data sheet format."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "A clear, objective, and measurable behavior definition (C.7) is foundational to any effective data collection system, especially for severe challenging behaviors. Without it, consistency and accuracy are impossible. Other options are either less critical or potentially counterproductive."
   },
   {
@@ -346,23 +342,23 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
-        letter: "A",
-        text: "The intervention is not working."
-      },
-      {
-        letter: "B",
-        text: "A strong and reliable treatment effect."
-      },
-      {
         letter: "C",
         text: "The data collection method is flawed."
       },
       {
         letter: "D",
         text: "The behavior is highly variable."
+      },
+      {
+        letter: "A",
+        text: "The intervention is not working."
+      },
+      {
+        letter: "B",
+        text: "A strong and reliable treatment effect."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A clear and consistent separation between baseline and intervention data paths, with no overlap (C.14), is a hallmark of a strong and reliable treatment effect, indicating a functional relationship. It does not suggest the intervention is not working, flawed data collection, or high variability."
   },
   {
@@ -376,10 +372,6 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
-        letter: "A",
-        text: "Frequency."
-      },
-      {
         letter: "B",
         text: "Duration."
       },
@@ -390,9 +382,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Magnitude."
+      },
+      {
+        letter: "A",
+        text: "Frequency."
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "Magnitude (C.5) refers to the intensity or force of a behavior, which directly relates to the volume of screaming. Frequency, duration, and latency measure other aspects of behavior."
   },
   {
@@ -436,10 +432,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which continuous measurement procedure is best suited for quantifying the student's out-of-seat behavior?",
     choices: [
       {
-        letter: "A",
-        text: "Duration recording."
-      },
-      {
         letter: "B",
         text: "Frequency recording."
       },
@@ -450,9 +442,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Partial interval recording."
+      },
+      {
+        letter: "A",
+        text: "Duration recording."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Frequency recording (C.2) is ideal for discrete behaviors that can be easily counted, such as out-of-seat behavior. Duration measures time, latency measures time to initiation, and partial interval is a discontinuous method."
   },
   {
@@ -466,6 +462,10 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
+        letter: "D",
+        text: "Increase the reinforcement schedule to accelerate progress."
+      },
+      {
         letter: "A",
         text: "Phase out the intervention or plan for generalization and maintenance."
       },
@@ -476,13 +476,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Return to baseline to confirm the intervention's effect."
-      },
-      {
-        letter: "D",
-        text: "Increase the reinforcement schedule to accelerate progress."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "When a client has achieved and maintained a socially acceptable level of behavior (C.15), the most appropriate data-based decision is to begin phasing out the intervention or to plan for generalization and maintenance of the skill. Introducing a new intervention, returning to baseline, or increasing reinforcement are not indicated when mastery has been achieved."
   },
   {
@@ -496,6 +492,10 @@ export const tier6Pool_C: Question[] = [
     question: "Considering ethical guidelines, what is the BCBA's primary responsibility in this situation?",
     choices: [
       {
+        letter: "D",
+        text: "Use a less intrusive measurement method, even if less precise."
+      },
+      {
         letter: "A",
         text: "Prioritize the most accurate measurement method regardless of privacy concerns."
       },
@@ -506,13 +506,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Delegate the decision to the RBT to avoid personal liability."
-      },
-      {
-        letter: "D",
-        text: "Use a less intrusive measurement method, even if less precise."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "For ethical reasoning questions, obtaining informed consent that addresses potential risks, such as privacy concerns related to data collection (C.7, C.1), is a primary ethical responsibility of the BCBA. Accuracy is important, but not at the expense of ethical practice without proper consent."
   },
   {
@@ -556,10 +552,6 @@ export const tier6Pool_C: Question[] = [
     question: "Considering ethical guidelines, what is the BCBA's primary responsibility in this situation?",
     choices: [
       {
-        letter: "A",
-        text: "Prioritize the most accurate measurement method regardless of privacy concerns."
-      },
-      {
         letter: "B",
         text: "Obtain informed consent that explicitly addresses privacy risks and benefits."
       },
@@ -570,9 +562,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Use a less intrusive measurement method, even if less precise."
+      },
+      {
+        letter: "A",
+        text: "Prioritize the most accurate measurement method regardless of privacy concerns."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "For ethical reasoning questions, obtaining informed consent that addresses potential risks, such as privacy concerns related to data collection (C.7, C.1), is a primary ethical responsibility of the BCBA. Accuracy is important, but not at the expense of ethical practice without proper consent."
   },
   {
@@ -586,23 +582,23 @@ export const tier6Pool_C: Question[] = [
     question: "Which of the following is a critical step in designing and implementing an effective data collection system for severe challenging behaviors?",
     choices: [
       {
-        letter: "A",
-        text: "Allowing RBTs to choose their preferred data sheet format."
-      },
-      {
-        letter: "B",
-        text: "Ensuring the behavior definition is clear, objective, and measurable."
-      },
-      {
         letter: "C",
         text: "Collecting data for at least two weeks before reviewing initial trends."
       },
       {
         letter: "D",
         text: "Using only electronic data collection methods for efficiency."
+      },
+      {
+        letter: "A",
+        text: "Allowing RBTs to choose their preferred data sheet format."
+      },
+      {
+        letter: "B",
+        text: "Ensuring the behavior definition is clear, objective, and measurable."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "A clear, objective, and measurable behavior definition (C.7) is foundational to any effective data collection system, especially for severe challenging behaviors. Without it, consistency and accuracy are impossible. Other options are either less critical or potentially counterproductive."
   },
   {
@@ -616,23 +612,23 @@ export const tier6Pool_C: Question[] = [
     question: "Which visual display is generally most appropriate for presenting changes in frequency data over time to stakeholders?",
     choices: [
       {
-        letter: "A",
-        text: "Bar graph."
-      },
-      {
-        letter: "B",
-        text: "Cumulative record."
-      },
-      {
         letter: "C",
         text: "Line graph."
       },
       {
         letter: "D",
         text: "Scatterplot."
+      },
+      {
+        letter: "A",
+        text: "Bar graph."
+      },
+      {
+        letter: "B",
+        text: "Cumulative record."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "A line graph (C.9) is the most common and appropriate visual display for showing changes in behavior over time, especially for frequency data, making trends easily interpretable. Bar graphs compare discrete data, cumulative records show total responses, and scatterplots show relationships between variables."
   },
   {
@@ -676,10 +672,6 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
-        letter: "A",
-        text: "80%."
-      },
-      {
         letter: "B",
         text: "66.7%."
       },
@@ -690,9 +682,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "75%."
+      },
+      {
+        letter: "A",
+        text: "80%."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Interval-by-interval IOA (C.13) is calculated by dividing the number of agreements by the total number of intervals (agreements + disagreements) and multiplying by 100. Assuming 12 intervals for O1 and 10 for O2, and 8 agreements, the total number of intervals where at least one observer recorded occurrence is 12 + 10 - 8 = 14. So, 8 agreements / 14 total intervals = 0.5714 * 100 = 57.14%. If the question implies total intervals observed is 12 (max of two observers), then (8 agreements / 12 total intervals) * 100 = 66.7%. Given the choices, 66.7% is the most plausible if the total number of intervals is considered the maximum observed by either. Let's assume the question implies agreements / (agreements + disagreements) for occurrence. Agreements = 8. Disagreements = (12-8) + (10-8) = 4 + 2 = 6. Total = 8+6 = 14. 8/14 = 57.14%. This is tricky. Let's re-evaluate. If it's interval-by-interval, it's agreements / (agreements + disagreements). If O1 recorded 12 occurrences and O2 recorded 10, and 8 were agreements, then O1 had 4 unique occurrences and O2 had 2 unique occurrences. Total intervals with at least one occurrence recorded = 8 (agreements) + 4 (O1 unique) + 2 (O2 unique) = 14. So 8/14 = 57.14%. However, often in multiple choice, they simplify. If it's agreements / total intervals where *either* recorded occurrence, and total intervals is 12 (max), then 8/12 = 66.7%. Let's go with the simpler interpretation that leads to one of the answers. The most common formula for interval-by-interval IOA is (number of agreements / (number of agreements + number of disagreements)) * 100. If O1 recorded 12 occurrences and O2 recorded 10, and they agreed on 8, then O1 had 4 occurrences O2 missed, and O2 had 2 occurrences O1 missed. Total intervals with at least one occurrence = 8 (agreed) + 4 (O1 only) + 2 (O2 only) = 14. So 8/14 = 57.14%. This is not among the choices. Let's assume the question implies agreements / total intervals *observed* by both. If both observed 12 intervals, and 8 were agreements, then 8/12 = 66.7%. This is a common simplification in exam questions. So, 66.7% is the correct answer under this interpretation."
   },
   {
@@ -706,10 +702,6 @@ export const tier6Pool_C: Question[] = [
     question: "The BCBA is concerned with the extent to which the data collection system measures what it purports to measure. This refers to which concept?",
     choices: [
       {
-        letter: "A",
-        text: "Reliability."
-      },
-      {
         letter: "B",
         text: "Accuracy."
       },
@@ -720,9 +712,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Precision."
+      },
+      {
+        letter: "A",
+        text: "Reliability."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Validity (C.8) refers to the extent to which a measurement system measures what it is intended to measure. Reliability refers to consistency, accuracy to how close to the true value, and precision to the exactness of measurement."
   },
   {
@@ -736,6 +732,10 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
+        letter: "D",
+        text: "The number of data points collected in each phase."
+      },
+      {
         letter: "A",
         text: "The overall density of data points."
       },
@@ -746,13 +746,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "The color scheme used for different data paths."
-      },
-      {
-        letter: "D",
-        text: "The number of data points collected in each phase."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Meaningful changes in behavior on a line graph (C.10) are primarily indicated by changes in level (the mean value), trend (the direction of the data path), and variability (the spread of data points) across different phases. Other options are less relevant to interpreting behavior change."
   },
   {
@@ -766,6 +762,10 @@ export const tier6Pool_C: Question[] = [
     question: "When selecting a measurement procedure for a topographically complex behavior like vocal stereotypy, what is the primary consideration?",
     choices: [
       {
+        letter: "D",
+        text: "The client's preference for the measurement method."
+      },
+      {
         letter: "A",
         text: "The ease of data collection for the RBT."
       },
@@ -776,13 +776,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "The definition and topography of the behavior."
-      },
-      {
-        letter: "D",
-        text: "The client's preference for the measurement method."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "The definition and topography of the behavior (C.1) are crucial for selecting an appropriate measurement procedure, as they dictate what can be accurately measured. Ease of collection, social significance, and client preference are secondary considerations."
   },
   {
@@ -796,10 +792,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
-        letter: "A",
-        text: "Duration recording, as it measures the length of each instance."
-      },
-      {
         letter: "B",
         text: "Frequency recording, as it provides a count of each occurrence."
       },
@@ -810,9 +802,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Magnitude recording, as it assesses the intensity of the behavior."
+      },
+      {
+        letter: "A",
+        text: "Duration recording, as it measures the length of each instance."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Frequency recording (C.1) is most appropriate for discrete behaviors like hand-flapping that have a clear beginning and end. Duration measures time, partial interval estimates, and magnitude measures intensity, none of which are ideal for simply counting occurrences."
   },
   {
@@ -826,23 +822,23 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
-        letter: "A",
-        text: "Provide a detailed written protocol for data collection."
-      },
-      {
-        letter: "B",
-        text: "Conduct thorough training and achieve high interobserver agreement (IOA) among RBTs."
-      },
-      {
         letter: "C",
         text: "Schedule frequent team meetings to discuss data collection issues."
       },
       {
         letter: "D",
         text: "Implement a reinforcement system for accurate data collection."
+      },
+      {
+        letter: "A",
+        text: "Provide a detailed written protocol for data collection."
+      },
+      {
+        letter: "B",
+        text: "Conduct thorough training and achieve high interobserver agreement (IOA) among RBTs."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Thorough training and achieving high IOA (C.7) among data collectors are essential to ensure consistency and accuracy when multiple individuals are collecting data. A written protocol is important, but training to fidelity and verifying agreement are paramount. Meetings and reinforcement are supportive but not primary."
   },
   {
@@ -856,23 +852,23 @@ export const tier6Pool_C: Question[] = [
     question: "To measure the time from the instruction to the client's initiation of the task, which temporal dimension should the BCBA use?",
     choices: [
       {
-        letter: "A",
-        text: "Duration."
-      },
-      {
-        letter: "B",
-        text: "IRT."
-      },
-      {
         letter: "C",
         text: "Latency."
       },
       {
         letter: "D",
         text: "Rate."
+      },
+      {
+        letter: "A",
+        text: "Duration."
+      },
+      {
+        letter: "B",
+        text: "IRT."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "Latency (C.4) is defined as the time from the onset of a stimulus (instruction) to the initiation of the response (task initiation). IRT measures time between responses, duration measures the length of a response, and rate is frequency over time."
   },
   {
@@ -916,6 +912,10 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
+        letter: "D",
+        text: "Magnitude."
+      },
+      {
         letter: "A",
         text: "Frequency."
       },
@@ -926,13 +926,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Latency."
-      },
-      {
-        letter: "D",
-        text: "Magnitude."
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'C',
     rationale: "Magnitude (C.5) refers to the intensity or force of a behavior, which directly relates to the volume of screaming. Frequency, duration, and latency measure other aspects of behavior."
   },
   {
@@ -946,10 +942,6 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
-        letter: "A",
-        text: "The ease of data collection for the RBT."
-      },
-      {
         letter: "B",
         text: "The social significance of the behavior change."
       },
@@ -960,9 +952,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "The client's preference for the measurement method."
+      },
+      {
+        letter: "A",
+        text: "The ease of data collection for the RBT."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "The definition and topography of the behavior (C.1) are crucial for selecting an appropriate measurement procedure, as they dictate what can be accurately measured. Ease of collection, social significance, and client preference are secondary considerations."
   },
   {
@@ -976,23 +972,23 @@ export const tier6Pool_C: Question[] = [
     question: "Which visual display is generally most appropriate for presenting changes in frequency data over time to stakeholders?",
     choices: [
       {
-        letter: "A",
-        text: "Bar graph."
-      },
-      {
-        letter: "B",
-        text: "Cumulative record."
-      },
-      {
         letter: "C",
         text: "Line graph."
       },
       {
         letter: "D",
         text: "Scatterplot."
+      },
+      {
+        letter: "A",
+        text: "Bar graph."
+      },
+      {
+        letter: "B",
+        text: "Cumulative record."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "A line graph (C.9) is the most common and appropriate visual display for showing changes in behavior over time, especially for frequency data, making trends easily interpretable. Bar graphs compare discrete data, cumulative records show total responses, and scatterplots show relationships between variables."
   },
   {
@@ -1036,10 +1032,6 @@ export const tier6Pool_C: Question[] = [
     question: "To measure the total time a client spends crying, which dimension of behavior is the BCBA primarily interested in?",
     choices: [
       {
-        letter: "A",
-        text: "Count."
-      },
-      {
         letter: "B",
         text: "Temporal extent."
       },
@@ -1050,9 +1042,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Repeatability."
+      },
+      {
+        letter: "A",
+        text: "Count."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Temporal extent (C.3) refers to the duration of a behavior, or how long it lasts. This is the primary dimension of interest when measuring the total time spent crying. Count refers to frequency, temporal locus refers to when a behavior occurs (latency, IRT), and repeatability refers to frequency, rate, and count."
   },
   {
@@ -1066,6 +1062,10 @@ export const tier6Pool_C: Question[] = [
     question: "Using the total duration IOA method, what is the Interobserver Agreement for this session?",
     choices: [
       {
+        letter: "D",
+        text: "80%."
+      },
+      {
         letter: "A",
         text: "83.3%."
       },
@@ -1076,13 +1076,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "60%."
-      },
-      {
-        letter: "D",
-        text: "80%."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Total duration IOA (C.13) is calculated by dividing the smaller duration by the larger duration and multiplying by 100. (15 / 18) * 100 = 83.3%. Therefore, the IOA is 83.3%."
   },
   {
@@ -1096,6 +1092,10 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
+        letter: "D",
+        text: "The data collector is biased."
+      },
+      {
         letter: "A",
         text: "The intervention is highly potent."
       },
@@ -1106,13 +1106,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "The behavior is undergoing a natural recovery process."
-      },
-      {
-        letter: "D",
-        text: "The data collector is biased."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "High variability in intervention phase data (C.11), especially after a stable baseline, is a strong indicator of a lack of experimental control or inconsistent application of the intervention. This makes it difficult to attribute changes solely to the intervention. It does not suggest potency, natural recovery, or necessarily data collector bias without more information."
   },
   {
@@ -1156,10 +1152,6 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
-        letter: "A",
-        text: "Percentage of opportunities."
-      },
-      {
         letter: "B",
         text: "Trials to criterion."
       },
@@ -1170,9 +1162,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Interresponse time."
+      },
+      {
+        letter: "A",
+        text: "Percentage of opportunities."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Trials to criterion (C.6) measures the number of response opportunities needed to achieve a predetermined level of performance, such as three consecutive correct hand washes. Percentage of opportunities, rate, and IRT do not directly measure the achievement of a mastery criterion."
   },
   {
@@ -1186,23 +1182,23 @@ export const tier6Pool_C: Question[] = [
     question: "To assess the efficiency of instruction for a new skill, the BCBA should measure which of the following?",
     choices: [
       {
-        letter: "A",
-        text: "Duration of instruction."
-      },
-      {
-        letter: "B",
-        text: "Trials to criterion."
-      },
-      {
         letter: "C",
         text: "Latency to initiate."
       },
       {
         letter: "D",
         text: "Frequency of prompts."
+      },
+      {
+        letter: "A",
+        text: "Duration of instruction."
+      },
+      {
+        letter: "B",
+        text: "Trials to criterion."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Trials to criterion (C.6) directly measures the number of practice opportunities required to reach a mastery level, providing a clear indicator of instructional efficiency. Other measures like duration of instruction, latency, or frequency of prompts are related but do not directly quantify the effort to reach mastery."
   },
   {
@@ -1216,6 +1212,10 @@ export const tier6Pool_C: Question[] = [
     question: "Considering ethical guidelines, what is the BCBA's primary responsibility in this situation?",
     choices: [
       {
+        letter: "D",
+        text: "Use a less intrusive measurement method, even if less precise."
+      },
+      {
         letter: "A",
         text: "Prioritize the most accurate measurement method regardless of privacy concerns."
       },
@@ -1226,13 +1226,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Delegate the decision to the RBT to avoid personal liability."
-      },
-      {
-        letter: "D",
-        text: "Use a less intrusive measurement method, even if less precise."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "For ethical reasoning questions, obtaining informed consent that addresses potential risks, such as privacy concerns related to data collection (C.7, C.1), is a primary ethical responsibility of the BCBA. Accuracy is important, but not at the expense of ethical practice without proper consent."
   },
   {
@@ -1276,10 +1272,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
-        letter: "A",
-        text: "80%."
-      },
-      {
         letter: "B",
         text: "66.7%."
       },
@@ -1290,9 +1282,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "75%."
+      },
+      {
+        letter: "A",
+        text: "80%."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Interval-by-interval IOA (C.13) is calculated by dividing the number of agreements by the total number of intervals (agreements + disagreements) and multiplying by 100. Assuming 12 intervals for O1 and 10 for O2, and 8 agreements, the total number of intervals where at least one observer recorded occurrence is 12 + 10 - 8 = 14. So, 8 agreements / 14 total intervals = 0.5714 * 100 = 57.14%. If the question implies total intervals observed is 12 (max of two observers), then (8 agreements / 12 total intervals) * 100 = 66.7%. Given the choices, 66.7% is the most plausible if the total number of intervals is considered the maximum observed by either. Let's assume the question implies agreements / (agreements + disagreements) for occurrence. Agreements = 8. Disagreements = (12-8) + (10-8) = 4 + 2 = 6. Total = 8+6 = 14. 8/14 = 57.14%. This is tricky. Let's re-evaluate. If it's interval-by-interval, it's agreements / (agreements + disagreements). If O1 recorded 12 occurrences and O2 recorded 10, and 8 were agreements, then O1 had 4 unique occurrences and O2 had 2 unique occurrences. Total intervals with at least one occurrence recorded = 8 (agreements) + 4 (O1 unique) + 2 (O2 unique) = 14. So 8/14 = 57.14%. However, often in multiple choice, they simplify. If it's agreements / total intervals where *either* recorded occurrence, and total intervals is 12 (max), then 8/12 = 66.7%. Let's go with the simpler interpretation that leads to one of the answers. The most common formula for interval-by-interval IOA is (number of agreements / (number of agreements + number of disagreements)) * 100. If O1 recorded 12 occurrences and O2 recorded 10, and they agreed on 8, then O1 had 4 occurrences O2 missed, and O2 had 2 occurrences O1 missed. Total intervals with at least one occurrence = 8 (agreed) + 4 (O1 only) + 2 (O2 only) = 14. So 8/14 = 57.14%. This is not among the choices. Let's assume the question implies agreements / total intervals *observed* by both. If both observed 12 intervals, and 8 were agreements, then 8/12 = 66.7%. This is a common simplification in exam questions. So, 66.7% is the correct answer under this interpretation."
   },
   {
@@ -1306,23 +1302,23 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
-        letter: "A",
-        text: "Percentage of opportunities."
-      },
-      {
-        letter: "B",
-        text: "Trials to criterion."
-      },
-      {
         letter: "C",
         text: "Rate of correct responses."
       },
       {
         letter: "D",
         text: "Interresponse time."
+      },
+      {
+        letter: "A",
+        text: "Percentage of opportunities."
+      },
+      {
+        letter: "B",
+        text: "Trials to criterion."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Trials to criterion (C.6) measures the number of response opportunities needed to achieve a predetermined level of performance, such as three consecutive correct hand washes. Percentage of opportunities, rate, and IRT do not directly measure the achievement of a mastery criterion."
   },
   {
@@ -1336,6 +1332,10 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
+        letter: "D",
+        text: "The generalizability of the intervention to other settings."
+      },
+      {
         letter: "A",
         text: "If the intervention is acceptable to stakeholders."
       },
@@ -1346,13 +1346,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "The exact mechanism by which the intervention works."
-      },
-      {
-        letter: "D",
-        text: "The generalizability of the intervention to other settings."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "The primary goal of evaluating treatment effects (C.12) by comparing data across phases is to determine if the intervention produced a meaningful and functional change in behavior. While acceptability, mechanisms, and generalizability are important, they are secondary to establishing the effect itself."
   },
   {
@@ -1396,23 +1392,23 @@ export const tier6Pool_C: Question[] = [
     question: "Which statement best describes the core conceptual understanding related to this task item?",
     choices: [
       {
-        letter: "A",
-        text: "83.3%."
-      },
-      {
-        letter: "B",
-        text: "120%."
-      },
-      {
         letter: "C",
         text: "60%."
       },
       {
         letter: "D",
         text: "80%."
+      },
+      {
+        letter: "A",
+        text: "83.3%."
+      },
+      {
+        letter: "B",
+        text: "120%."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'C',
     rationale: "Total duration IOA (C.13) is calculated by dividing the smaller duration by the larger duration and multiplying by 100. (15 / 18) * 100 = 83.3%. Therefore, the IOA is 83.3%."
   },
   {
@@ -1426,23 +1422,23 @@ export const tier6Pool_C: Question[] = [
     question: "Considering ethical guidelines, what is the BCBA's primary responsibility in this situation?",
     choices: [
       {
-        letter: "A",
-        text: "Prioritize the most accurate measurement method regardless of privacy concerns."
-      },
-      {
-        letter: "B",
-        text: "Obtain informed consent that explicitly addresses privacy risks and benefits."
-      },
-      {
         letter: "C",
         text: "Delegate the decision to the RBT to avoid personal liability."
       },
       {
         letter: "D",
         text: "Use a less intrusive measurement method, even if less precise."
+      },
+      {
+        letter: "A",
+        text: "Prioritize the most accurate measurement method regardless of privacy concerns."
+      },
+      {
+        letter: "B",
+        text: "Obtain informed consent that explicitly addresses privacy risks and benefits."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "For ethical reasoning questions, obtaining informed consent that addresses potential risks, such as privacy concerns related to data collection (C.7, C.1), is a primary ethical responsibility of the BCBA. Accuracy is important, but not at the expense of ethical practice without proper consent."
   },
   {
@@ -1486,6 +1482,10 @@ export const tier6Pool_C: Question[] = [
     question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
     choices: [
       {
+        letter: "D",
+        text: "Procedural reliability."
+      },
+      {
         letter: "A",
         text: "Treatment integrity."
       },
@@ -1496,13 +1496,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Interobserver Agreement (IOA)."
-      },
-      {
-        letter: "D",
-        text: "Procedural reliability."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Interobserver Agreement (IOA) (C.8) is used to evaluate the consistency of data collected by two or more independent observers. Treatment integrity refers to intervention implementation, social validity to importance, and procedural reliability to consistent procedure application."
   },
   {
@@ -1546,23 +1542,23 @@ export const tier6Pool_C: Question[] = [
     question: "When interpreting data on a line graph, what visual characteristic primarily indicates a meaningful change in behavior?",
     choices: [
       {
-        letter: "A",
-        text: "The overall density of data points."
-      },
-      {
-        letter: "B",
-        text: "Changes in level, trend, and variability across phases."
-      },
-      {
         letter: "C",
         text: "The color scheme used for different data paths."
       },
       {
         letter: "D",
         text: "The number of data points collected in each phase."
+      },
+      {
+        letter: "A",
+        text: "The overall density of data points."
+      },
+      {
+        letter: "B",
+        text: "Changes in level, trend, and variability across phases."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Meaningful changes in behavior on a line graph (C.10) are primarily indicated by changes in level (the mean value), trend (the direction of the data path), and variability (the spread of data points) across different phases. Other options are less relevant to interpreting behavior change."
   },
   {
@@ -1576,6 +1572,10 @@ export const tier6Pool_C: Question[] = [
     question: "To measure the total time a client spends crying, which dimension of behavior is the BCBA primarily interested in?",
     choices: [
       {
+        letter: "D",
+        text: "Repeatability."
+      },
+      {
         letter: "A",
         text: "Count."
       },
@@ -1586,13 +1586,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Temporal locus."
-      },
-      {
-        letter: "D",
-        text: "Repeatability."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Temporal extent (C.3) refers to the duration of a behavior, or how long it lasts. This is the primary dimension of interest when measuring the total time spent crying. Count refers to frequency, temporal locus refers to when a behavior occurs (latency, IRT), and repeatability refers to frequency, rate, and count."
   },
   {
@@ -1636,10 +1632,6 @@ export const tier6Pool_C: Question[] = [
     question: "What does the significant day-to-day fluctuation in the intervention phase suggest about the intervention's effectiveness or implementation?",
     choices: [
       {
-        letter: "A",
-        text: "The intervention is consistently effective."
-      },
-      {
         letter: "B",
         text: "There may be uncontrolled variables influencing the behavior or inconsistent intervention implementation."
       },
@@ -1650,9 +1642,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "The measurement system is likely flawed."
+      },
+      {
+        letter: "A",
+        text: "The intervention is consistently effective."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Significant day-to-day fluctuation (C.11) in data during an intervention phase, despite a decreasing trend, suggests that there might be uncontrolled variables at play or that the intervention is not being implemented consistently. It does not indicate consistent effectiveness, natural variability, or necessarily a flawed measurement system without further investigation."
   },
   {
@@ -1666,23 +1662,23 @@ export const tier6Pool_C: Question[] = [
     question: "Using the interval-by-interval IOA method, what is the IOA for this session?",
     choices: [
       {
-        letter: "A",
-        text: "80%."
-      },
-      {
-        letter: "B",
-        text: "66.7%."
-      },
-      {
         letter: "C",
         text: "83.3%."
       },
       {
         letter: "D",
         text: "75%."
+      },
+      {
+        letter: "A",
+        text: "80%."
+      },
+      {
+        letter: "B",
+        text: "66.7%."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Interval-by-interval IOA (C.13) is calculated by dividing the number of agreements by the total number of intervals (agreements + disagreements) and multiplying by 100. Assuming 12 intervals for O1 and 10 for O2, and 8 agreements, the total number of intervals where at least one observer recorded occurrence is 12 + 10 - 8 = 14. So, 8 agreements / 14 total intervals = 0.5714 * 100 = 57.14%. If the question implies total intervals observed is 12 (max of two observers), then (8 agreements / 12 total intervals) * 100 = 66.7%. Given the choices, 66.7% is the most plausible if the total number of intervals is considered the maximum observed by either. Let's assume the question implies agreements / (agreements + disagreements) for occurrence. Agreements = 8. Disagreements = (12-8) + (10-8) = 4 + 2 = 6. Total = 8+6 = 14. 8/14 = 57.14%. This is tricky. Let's re-evaluate. If it's interval-by-interval, it's agreements / (agreements + disagreements). If O1 recorded 12 occurrences and O2 recorded 10, and 8 were agreements, then O1 had 4 unique occurrences and O2 had 2 unique occurrences. Total intervals with at least one occurrence recorded = 8 (agreements) + 4 (O1 unique) + 2 (O2 unique) = 14. So 8/14 = 57.14%. However, often in multiple choice, they simplify. If it's agreements / total intervals where *either* recorded occurrence, and total intervals is 12 (max), then 8/12 = 66.7%. Let's go with the simpler interpretation that leads to one of the answers. The most common formula for interval-by-interval IOA is (number of agreements / (number of agreements + number of disagreements)) * 100. If O1 recorded 12 occurrences and O2 recorded 10, and they agreed on 8, then O1 had 4 occurrences O2 missed, and O2 had 2 occurrences O1 missed. Total intervals with at least one occurrence = 8 (agreed) + 4 (O1 only) + 2 (O2 only) = 14. So 8/14 = 57.14%. This is not among the choices. Let's assume the question implies agreements / total intervals *observed* by both. If both observed 12 intervals, and 8 were agreements, then 8/12 = 66.7%. This is a common simplification in exam questions. So, 66.7% is the correct answer under this interpretation."
   },
   {
@@ -1696,6 +1692,10 @@ export const tier6Pool_C: Question[] = [
     question: "Which of the following measurement procedures would be most appropriate for accurately quantifying the hand-flapping behavior?",
     choices: [
       {
+        letter: "D",
+        text: "Magnitude recording, as it assesses the intensity of the behavior."
+      },
+      {
         letter: "A",
         text: "Duration recording, as it measures the length of each instance."
       },
@@ -1706,13 +1706,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Partial interval recording, as it estimates occurrence within intervals."
-      },
-      {
-        letter: "D",
-        text: "Magnitude recording, as it assesses the intensity of the behavior."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Frequency recording (C.1) is most appropriate for discrete behaviors like hand-flapping that have a clear beginning and end. Duration measures time, partial interval estimates, and magnitude measures intensity, none of which are ideal for simply counting occurrences."
   },
   {
@@ -1786,6 +1782,10 @@ export const tier6Pool_C: Question[] = [
     question: "Given the client's sustained progress to a socially acceptable level, what is the most appropriate data-based decision?",
     choices: [
       {
+        letter: "D",
+        text: "Increase the reinforcement schedule to accelerate progress."
+      },
+      {
         letter: "A",
         text: "Phase out the intervention or plan for generalization and maintenance."
       },
@@ -1796,13 +1796,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Return to baseline to confirm the intervention's effect."
-      },
-      {
-        letter: "D",
-        text: "Increase the reinforcement schedule to accelerate progress."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "When a client has achieved and maintained a socially acceptable level of behavior (C.15), the most appropriate data-based decision is to begin phasing out the intervention or to plan for generalization and maintenance of the skill. Introducing a new intervention, returning to baseline, or increasing reinforcement are not indicated when mastery has been achieved."
   },
   {
@@ -1816,6 +1812,10 @@ export const tier6Pool_C: Question[] = [
     question: "The primary goal of evaluating treatment effects by comparing data across phases is to determine what?",
     choices: [
       {
+        letter: "D",
+        text: "The generalizability of the intervention to other settings."
+      },
+      {
         letter: "A",
         text: "If the intervention is acceptable to stakeholders."
       },
@@ -1826,13 +1826,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "The exact mechanism by which the intervention works."
-      },
-      {
-        letter: "D",
-        text: "The generalizability of the intervention to other settings."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "The primary goal of evaluating treatment effects (C.12) by comparing data across phases is to determine if the intervention produced a meaningful and functional change in behavior. While acceptability, mechanisms, and generalizability are important, they are secondary to establishing the effect itself."
   },
   {
@@ -1846,6 +1842,10 @@ export const tier6Pool_C: Question[] = [
     question: "Which visual display is generally most appropriate for presenting changes in frequency data over time to stakeholders?",
     choices: [
       {
+        letter: "D",
+        text: "Scatterplot."
+      },
+      {
         letter: "A",
         text: "Bar graph."
       },
@@ -1856,13 +1856,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Line graph."
-      },
-      {
-        letter: "D",
-        text: "Scatterplot."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "A line graph (C.9) is the most common and appropriate visual display for showing changes in behavior over time, especially for frequency data, making trends easily interpretable. Bar graphs compare discrete data, cumulative records show total responses, and scatterplots show relationships between variables."
   },
   {
@@ -1876,10 +1872,6 @@ export const tier6Pool_C: Question[] = [
     question: "The primary goal of evaluating treatment effects by comparing data across phases is to determine what?",
     choices: [
       {
-        letter: "A",
-        text: "If the intervention is acceptable to stakeholders."
-      },
-      {
         letter: "B",
         text: "If the intervention produced a meaningful change in behavior."
       },
@@ -1890,9 +1882,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "The generalizability of the intervention to other settings."
+      },
+      {
+        letter: "A",
+        text: "If the intervention is acceptable to stakeholders."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "The primary goal of evaluating treatment effects (C.12) by comparing data across phases is to determine if the intervention produced a meaningful and functional change in behavior. While acceptability, mechanisms, and generalizability are important, they are secondary to establishing the effect itself."
   },
   {
@@ -1906,23 +1902,23 @@ export const tier6Pool_C: Question[] = [
     question: "Which continuous measurement procedure is best suited for quantifying the student's out-of-seat behavior?",
     choices: [
       {
-        letter: "A",
-        text: "Duration recording."
-      },
-      {
-        letter: "B",
-        text: "Frequency recording."
-      },
-      {
         letter: "C",
         text: "Latency recording."
       },
       {
         letter: "D",
         text: "Partial interval recording."
+      },
+      {
+        letter: "A",
+        text: "Duration recording."
+      },
+      {
+        letter: "B",
+        text: "Frequency recording."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Frequency recording (C.2) is ideal for discrete behaviors that can be easily counted, such as out-of-seat behavior. Duration measures time, latency measures time to initiation, and partial interval is a discontinuous method."
   },
   {
@@ -1936,23 +1932,23 @@ export const tier6Pool_C: Question[] = [
     question: "To measure the time from the instruction to the client's initiation of the task, which temporal dimension should the BCBA use?",
     choices: [
       {
-        letter: "A",
-        text: "Duration."
-      },
-      {
-        letter: "B",
-        text: "IRT."
-      },
-      {
         letter: "C",
         text: "Latency."
       },
       {
         letter: "D",
         text: "Rate."
+      },
+      {
+        letter: "A",
+        text: "Duration."
+      },
+      {
+        letter: "B",
+        text: "IRT."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'A',
     rationale: "Latency (C.4) is defined as the time from the onset of a stimulus (instruction) to the initiation of the response (task initiation). IRT measures time between responses, duration measures the length of a response, and rate is frequency over time."
   },
   {
@@ -1996,10 +1992,6 @@ export const tier6Pool_C: Question[] = [
     question: "The primary goal of evaluating treatment effects by comparing data across phases is to determine what?",
     choices: [
       {
-        letter: "A",
-        text: "If the intervention is acceptable to stakeholders."
-      },
-      {
         letter: "B",
         text: "If the intervention produced a meaningful change in behavior."
       },
@@ -2010,9 +2002,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "The generalizability of the intervention to other settings."
+      },
+      {
+        letter: "A",
+        text: "If the intervention is acceptable to stakeholders."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "The primary goal of evaluating treatment effects (C.12) by comparing data across phases is to determine if the intervention produced a meaningful and functional change in behavior. While acceptability, mechanisms, and generalizability are important, they are secondary to establishing the effect itself."
   },
   {
@@ -2026,23 +2022,23 @@ export const tier6Pool_C: Question[] = [
     question: "What does the significant day-to-day fluctuation in the intervention phase suggest about the intervention's effectiveness or implementation?",
     choices: [
       {
-        letter: "A",
-        text: "The intervention is consistently effective."
-      },
-      {
-        letter: "B",
-        text: "There may be uncontrolled variables influencing the behavior or inconsistent intervention implementation."
-      },
-      {
         letter: "C",
         text: "The behavior is naturally variable and requires no adjustment."
       },
       {
         letter: "D",
         text: "The measurement system is likely flawed."
+      },
+      {
+        letter: "A",
+        text: "The intervention is consistently effective."
+      },
+      {
+        letter: "B",
+        text: "There may be uncontrolled variables influencing the behavior or inconsistent intervention implementation."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Significant day-to-day fluctuation (C.11) in data during an intervention phase, despite a decreasing trend, suggests that there might be uncontrolled variables at play or that the intervention is not being implemented consistently. It does not indicate consistent effectiveness, natural variability, or necessarily a flawed measurement system without further investigation."
   },
   {
@@ -2056,6 +2052,10 @@ export const tier6Pool_C: Question[] = [
     question: "What is the primary purpose of the BCBA comparing baseline and intervention data for aggression?",
     choices: [
       {
+        letter: "D",
+        text: "To identify potential side effects of the intervention."
+      },
+      {
         letter: "A",
         text: "To determine if the intervention is socially significant."
       },
@@ -2066,13 +2066,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "To ensure the intervention is cost-effective."
-      },
-      {
-        letter: "D",
-        text: "To identify potential side effects of the intervention."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "The primary purpose of evaluating treatment effects (C.12) by comparing baseline and intervention data is to establish a functional relationship, meaning to determine if the intervention caused the observed change in behavior. Social significance, cost-effectiveness, and side effects are important considerations but are not the primary goal of this comparison."
   },
   {
@@ -2086,6 +2082,10 @@ export const tier6Pool_C: Question[] = [
     question: "To measure the time from the instruction to the client's initiation of the task, which temporal dimension should the BCBA use?",
     choices: [
       {
+        letter: "D",
+        text: "Rate."
+      },
+      {
         letter: "A",
         text: "Duration."
       },
@@ -2096,13 +2096,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Latency."
-      },
-      {
-        letter: "D",
-        text: "Rate."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Latency (C.4) is defined as the time from the onset of a stimulus (instruction) to the initiation of the response (task initiation). IRT measures time between responses, duration measures the length of a response, and rate is frequency over time."
   },
   {
@@ -2146,23 +2142,23 @@ export const tier6Pool_C: Question[] = [
     question: "To ensure consistency and accuracy across multiple data collectors for a new program, what is the most important step the BCBA must take?",
     choices: [
       {
-        letter: "A",
-        text: "Provide a detailed written protocol for data collection."
-      },
-      {
-        letter: "B",
-        text: "Conduct thorough training and achieve high interobserver agreement (IOA) among RBTs."
-      },
-      {
         letter: "C",
         text: "Schedule frequent team meetings to discuss data collection issues."
       },
       {
         letter: "D",
         text: "Implement a reinforcement system for accurate data collection."
+      },
+      {
+        letter: "A",
+        text: "Provide a detailed written protocol for data collection."
+      },
+      {
+        letter: "B",
+        text: "Conduct thorough training and achieve high interobserver agreement (IOA) among RBTs."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Thorough training and achieving high IOA (C.7) among data collectors are essential to ensure consistency and accuracy when multiple individuals are collecting data. A written protocol is important, but training to fidelity and verifying agreement are paramount. Meetings and reinforcement are supportive but not primary."
   },
   {
@@ -2176,6 +2172,10 @@ export const tier6Pool_C: Question[] = [
     question: "To assess the efficiency of instruction for a new skill, the BCBA should measure which of the following?",
     choices: [
       {
+        letter: "D",
+        text: "Frequency of prompts."
+      },
+      {
         letter: "A",
         text: "Duration of instruction."
       },
@@ -2186,13 +2186,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Latency to initiate."
-      },
-      {
-        letter: "D",
-        text: "Frequency of prompts."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Trials to criterion (C.6) directly measures the number of practice opportunities required to reach a mastery level, providing a clear indicator of instructional efficiency. Other measures like duration of instruction, latency, or frequency of prompts are related but do not directly quantify the effort to reach mastery."
   },
   {
@@ -2206,10 +2202,6 @@ export const tier6Pool_C: Question[] = [
     question: "Given the client's sustained progress to a socially acceptable level, what is the most appropriate data-based decision?",
     choices: [
       {
-        letter: "A",
-        text: "Phase out the intervention or plan for generalization and maintenance."
-      },
-      {
         letter: "B",
         text: "Introduce a new, more complex intervention."
       },
@@ -2220,9 +2212,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Increase the reinforcement schedule to accelerate progress."
+      },
+      {
+        letter: "A",
+        text: "Phase out the intervention or plan for generalization and maintenance."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'B',
     rationale: "When a client has achieved and maintained a socially acceptable level of behavior (C.15), the most appropriate data-based decision is to begin phasing out the intervention or to plan for generalization and maintenance of the skill. Introducing a new intervention, returning to baseline, or increasing reinforcement are not indicated when mastery has been achieved."
   },
   {
@@ -2266,23 +2262,23 @@ export const tier6Pool_C: Question[] = [
     question: "To measure the total time a client spends crying, which dimension of behavior is the BCBA primarily interested in?",
     choices: [
       {
-        letter: "A",
-        text: "Count."
-      },
-      {
-        letter: "B",
-        text: "Temporal extent."
-      },
-      {
         letter: "C",
         text: "Temporal locus."
       },
       {
         letter: "D",
         text: "Repeatability."
+      },
+      {
+        letter: "A",
+        text: "Count."
+      },
+      {
+        letter: "B",
+        text: "Temporal extent."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'D',
     rationale: "Temporal extent (C.3) refers to the duration of a behavior, or how long it lasts. This is the primary dimension of interest when measuring the total time spent crying. Count refers to frequency, temporal locus refers to when a behavior occurs (latency, IRT), and repeatability refers to frequency, rate, and count."
   },
   {
@@ -2296,6 +2292,10 @@ export const tier6Pool_C: Question[] = [
     question: "Based on this visual analysis, what is the most appropriate conclusion regarding the intervention?",
     choices: [
       {
+        letter: "D",
+        text: "The behavior was naturally decreasing."
+      },
+      {
         letter: "A",
         text: "The intervention was ineffective."
       },
@@ -2306,13 +2306,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "The data is unreliable and cannot be interpreted."
-      },
-      {
-        letter: "D",
-        text: "The behavior was naturally decreasing."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "An immediate and substantial decrease from a high, stable baseline to an intervention phase (C.14) is a strong indicator of a functional relationship during visual analysis. It suggests the intervention is effective, not ineffective, unreliable, or a natural decrease."
   },
   {
@@ -2356,10 +2352,6 @@ export const tier6Pool_C: Question[] = [
     question: "What does the significant day-to-day fluctuation in the intervention phase suggest about the intervention's effectiveness or implementation?",
     choices: [
       {
-        letter: "A",
-        text: "The intervention is consistently effective."
-      },
-      {
         letter: "B",
         text: "There may be uncontrolled variables influencing the behavior or inconsistent intervention implementation."
       },
@@ -2370,9 +2362,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "The measurement system is likely flawed."
+      },
+      {
+        letter: "A",
+        text: "The intervention is consistently effective."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Significant day-to-day fluctuation (C.11) in data during an intervention phase, despite a decreasing trend, suggests that there might be uncontrolled variables at play or that the intervention is not being implemented consistently. It does not indicate consistent effectiveness, natural variability, or necessarily a flawed measurement system without further investigation."
   },
   {
@@ -2386,6 +2382,10 @@ export const tier6Pool_C: Question[] = [
     question: "Based on this data, what is the most appropriate data-based decision for the BCBA to make regarding the intervention?",
     choices: [
       {
+        letter: "D",
+        text: "Increase the intensity of the intervention."
+      },
+      {
         letter: "A",
         text: "Continue the intervention as is to maintain gains."
       },
@@ -2396,13 +2396,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Modify the intervention to target a different behavior."
-      },
-      {
-        letter: "D",
-        text: "Increase the intensity of the intervention."
       }
     ],
-    correctAnswer: "A",
+    correctAnswer: 'D',
     rationale: "Given a consistent decreasing trend and behavior occurring below the clinical threshold (C.15), the most appropriate data-based decision is to continue the intervention as is to maintain the achieved gains. Discontinuing or modifying it without further data could lead to a relapse. Increasing intensity is unnecessary if the behavior is already at an acceptable level."
   },
   {
@@ -2416,10 +2412,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which dimension of behavior is the BCBA primarily targeting when addressing the volume of screaming?",
     choices: [
       {
-        letter: "A",
-        text: "Frequency."
-      },
-      {
         letter: "B",
         text: "Duration."
       },
@@ -2430,9 +2422,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Magnitude."
+      },
+      {
+        letter: "A",
+        text: "Frequency."
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "Magnitude (C.5) refers to the intensity or force of a behavior, which directly relates to the volume of screaming. Frequency, duration, and latency measure other aspects of behavior."
   },
   {
@@ -2446,6 +2442,10 @@ export const tier6Pool_C: Question[] = [
     question: "Which measurement procedure should the BCBA use to gather data on the duration of tantrums?",
     choices: [
       {
+        letter: "D",
+        text: "Interresponse Time (IRT)."
+      },
+      {
         letter: "A",
         text: "Frequency."
       },
@@ -2456,13 +2456,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Duration."
-      },
-      {
-        letter: "D",
-        text: "Interresponse Time (IRT)."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'B',
     rationale: "Duration recording (C.3) directly measures the length of time a behavior occurs, which is exactly what is needed for tantrum behavior. Frequency measures count, latency measures time to initiation, and IRT measures time between responses."
   },
   {
@@ -2506,10 +2502,6 @@ export const tier6Pool_C: Question[] = [
     question: "To evaluate the consistency of data collection between the two RBTs, the BCBA should calculate which of the following?",
     choices: [
       {
-        letter: "A",
-        text: "Treatment integrity."
-      },
-      {
         letter: "B",
         text: "Social validity."
       },
@@ -2520,9 +2512,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Procedural reliability."
+      },
+      {
+        letter: "A",
+        text: "Treatment integrity."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Interobserver Agreement (IOA) (C.8) is used to evaluate the consistency of data collected by two or more independent observers. Treatment integrity refers to intervention implementation, social validity to importance, and procedural reliability to consistent procedure application."
   },
   {
@@ -2536,10 +2532,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which dimension of behavior is the BCBA primarily targeting when addressing the volume of screaming?",
     choices: [
       {
-        letter: "A",
-        text: "Frequency."
-      },
-      {
         letter: "B",
         text: "Duration."
       },
@@ -2550,9 +2542,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Magnitude."
+      },
+      {
+        letter: "A",
+        text: "Frequency."
       }
     ],
-    correctAnswer: "D",
+    correctAnswer: 'A',
     rationale: "Magnitude (C.5) refers to the intensity or force of a behavior, which directly relates to the volume of screaming. Frequency, duration, and latency measure other aspects of behavior."
   },
   {
@@ -2596,10 +2592,6 @@ export const tier6Pool_C: Question[] = [
     question: "Which measurement procedure is most appropriate for evaluating the client's progress towards this mastery criterion?",
     choices: [
       {
-        letter: "A",
-        text: "Percentage of opportunities."
-      },
-      {
         letter: "B",
         text: "Trials to criterion."
       },
@@ -2610,9 +2602,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Interresponse time."
+      },
+      {
+        letter: "A",
+        text: "Percentage of opportunities."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'C',
     rationale: "Trials to criterion (C.6) measures the number of response opportunities needed to achieve a predetermined level of performance, such as three consecutive correct hand washes. Percentage of opportunities, rate, and IRT do not directly measure the achievement of a mastery criterion."
   },
   {
@@ -2626,10 +2622,6 @@ export const tier6Pool_C: Question[] = [
     question: "The BCBA is concerned with the extent to which the data collection system measures what it purports to measure. This refers to which concept?",
     choices: [
       {
-        letter: "A",
-        text: "Reliability."
-      },
-      {
         letter: "B",
         text: "Accuracy."
       },
@@ -2640,9 +2632,13 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "D",
         text: "Precision."
+      },
+      {
+        letter: "A",
+        text: "Reliability."
       }
     ],
-    correctAnswer: "C",
+    correctAnswer: 'D',
     rationale: "Validity (C.8) refers to the extent to which a measurement system measures what it is intended to measure. Reliability refers to consistency, accuracy to how close to the true value, and precision to the exactness of measurement."
   },
   {
@@ -2656,6 +2652,10 @@ export const tier6Pool_C: Question[] = [
     question: "Which continuous measurement procedure is best suited for quantifying the student's out-of-seat behavior?",
     choices: [
       {
+        letter: "D",
+        text: "Partial interval recording."
+      },
+      {
         letter: "A",
         text: "Duration recording."
       },
@@ -2666,13 +2666,9 @@ export const tier6Pool_C: Question[] = [
       {
         letter: "C",
         text: "Latency recording."
-      },
-      {
-        letter: "D",
-        text: "Partial interval recording."
       }
     ],
-    correctAnswer: "B",
+    correctAnswer: 'A',
     rationale: "Frequency recording (C.2) is ideal for discrete behaviors that can be easily counted, such as out-of-seat behavior. Duration measures time, latency measures time to initiation, and partial interval is a discontinuous method."
   }
 ];
