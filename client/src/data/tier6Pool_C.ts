@@ -531,7 +531,7 @@ export const tier6Pool_C: Question[] = [
     bloomsLevel: "knowledge",
     difficulty: "easy",
     scenario: "A BCBA is reviewing a new data collection system and wants to ensure that it consistently measures what it is intended to measure.",
-    question: "The BCBA is concerned with the extent to which the data collection system measures what it purports to measure. This refers to which concept?",
+    question: "After reviewing the new data collection system, the BCBA wants to confirm that it actually measures the specific behavior it was designed to target — not a related but distinct behavior. Which measurement property is the BCBA evaluating?",
     choices: [
       { letter: "B", text: "Accuracy, which refers to how closely a measurement reflects the true value of the behavior being measured, and is distinct from reliability in that accuracy requires a known standard against which to compare the measurement, whereas reliability only requires consistency between two independent observers recording the same behavior." },
       { letter: "C", text: "Validity, which refers to the degree to which a measurement tool actually measures what it is intended to measure, and is a broader construct than reliability in that a measure can be reliable without being valid, but a valid measure must also demonstrate adequate reliability to be considered a sound assessment instrument." },
@@ -1983,7 +1983,7 @@ export const tier6Pool_C: Question[] = [
     bloomsLevel: "knowledge",
     difficulty: "medium",
     scenario: "A BCBA is reviewing a new data collection system and wants to ensure that it consistently measures what it is intended to measure.",
-    question: "The BCBA is concerned with the extent to which the data collection system measures what it purports to measure. This refers to which concept?",
+    question: "After reviewing the new data collection system, the BCBA wants to confirm that it actually measures the specific behavior it was designed to target — not a related but distinct behavior. Which measurement property is the BCBA evaluating?",
     choices: [
       { letter: "B", text: "The BCBA is ensuring that the observed values of the behavior accurately reflect the true values of the behavior, considering factors like observer drift or faulty measurement devices, which is critical for making sound clinical decisions and evaluating intervention effectiveness." },
       { letter: "C", text: "The BCBA is primarily focused on whether the data collection system consistently produces the same results under the same conditions, regardless of who is collecting the data or when it is being collected, thereby ensuring the stability and repeatability of the measurement process." },

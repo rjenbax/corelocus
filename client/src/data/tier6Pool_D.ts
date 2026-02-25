@@ -225,7 +225,7 @@ export const tier6Pool_D: Question[] = [
     bloomsLevel: "analysis",
     difficulty: "hard",
     scenario: "A BCBA is reviewing a study that used an ABAB reversal design to evaluate a DRO intervention. During the study, a new teacher aide was introduced at the start of the second B phase. The behavior improved during the second B phase, but it is unclear whether the improvement was due to the DRO or the new aide.",
-    question: "Which term best describes the problem with this study's internal validity?",
+    question: "The BCBA reviewing this study notes that the simultaneous introduction of the new aide and the start of the second B phase makes it impossible to determine whether the behavior improvement was caused by the DRO intervention or by the aide's presence. Which threat to internal validity does this represent?",
     choices: [
       { letter: "D", text: "Reactivity occurs when the participant's behavior changes simply because they are aware of being observed, potentially influencing the intervention's perceived effectiveness." },
       { letter: "A", text: "Attrition refers to the loss of participants from a study, which can compromise the representativeness of the sample and the generalizability of the findings." },
