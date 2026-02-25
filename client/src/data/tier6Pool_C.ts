@@ -19,37 +19,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'A',
     rationale: "Temporal extent (C.3) refers to the duration of a behavior, or how long it lasts. This is the primary dimension of interest when measuring the total time spent crying. Count refers to frequency, temporal locus refers to when a behavior occurs (latency, IRT), and repeatability refers to frequency, rate, and count."
   },
-  {
-    id: "t6-C-pool-2",
-    domain: "C",
-    taskItem: "C.15",
-    phase: "evaluation",
-    bloomsLevel: "evaluation",
-    difficulty: "easy",
-    scenario: "A new RBT asks for clarification on the fundamental principles behind C.15. A client's on-task behavior has shown a steady increase during an intervention phase, reaching and maintaining a level that is comparable to typically developing peers.",
-    question: "Which statement best describes the core conceptual understanding related to this task item?",
-    choices: [
-      {
-        letter: "B",
-        text: "Introduce a new, more complex intervention."
-      },
-      {
-        letter: "C",
-        text: "Return to baseline to confirm the intervention's effect."
-      },
-      {
-        letter: "D",
-        text: "Increase the reinforcement schedule to accelerate progress."
-      },
-      {
-        letter: "A",
-        text: "Phase out the intervention or plan for generalization and maintenance."
-      }
-    ],
-    correctAnswer: 'B',
-    rationale: "When a client has achieved and maintained a socially acceptable level of behavior (C.15), the most appropriate data-based decision is to begin phasing out the intervention or to plan for generalization and maintenance of the skill. Introducing a new intervention, returning to baseline, or increasing reinforcement are not indicated when mastery has been achieved."
-  },
-  {
+{
     id: "t6-C-pool-3",
     domain: "C",
     taskItem: "C.9",
@@ -217,37 +187,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'B',
     rationale: "The definition and topography of the behavior (C.1) are crucial for selecting an appropriate measurement procedure, as they dictate what can be accurately measured. Ease of collection, social significance, and client preference are secondary considerations."
   },
-  {
-    id: "t6-C-pool-11",
-    domain: "C",
-    taskItem: "C.7",
-    phase: "assessment",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: "A BCBA is developing a new behavior intervention plan for a client with severe challenging behaviors. A critical component is designing a robust data collection system.",
-    question: "Which of the following is a critical step in designing and implementing an effective data collection system for severe challenging behaviors?",
-    choices: [
-      {
-        letter: "B",
-        text: "Ensuring the behavior definition is clear, objective, and measurable."
-      },
-      {
-        letter: "C",
-        text: "Collecting data for at least two weeks before reviewing initial trends."
-      },
-      {
-        letter: "D",
-        text: "Using only electronic data collection methods for efficiency."
-      },
-      {
-        letter: "A",
-        text: "Allowing RBTs to choose their preferred data sheet format."
-      }
-    ],
-    correctAnswer: 'C',
-    rationale: "A clear, objective, and measurable behavior definition (C.7) is foundational to any effective data collection system, especially for severe challenging behaviors. Without it, consistency and accuracy are impossible. Other options are either less critical or potentially counterproductive."
-  },
-  {
+{
     id: "t6-C-pool-12",
     domain: "C",
     taskItem: "C.14",
@@ -265,25 +205,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'D',
     rationale: "A clear and consistent separation between baseline and intervention data paths, with no overlap (C.14), is a hallmark of a strong and reliable treatment effect, indicating a functional relationship. It does not suggest the intervention is not working, flawed data collection, or high variability."
   },
-  {
-    id: "t6-C-pool-13",
-    domain: "C",
-    taskItem: "C.5",
-    phase: "intervention",
-    bloomsLevel: "knowledge",
-    difficulty: "hard",
-    scenario: "A peer-reviewed study presents a graph showing data for C.5 across baseline and intervention phases. A BCBA is working with a client who frequently screams at a very high volume. The BCBA aims to reduce the intensity of these vocalizations.",
-    question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
-    choices: [
-      { letter: "B", text: "Duration recording is the most appropriate measurement procedure for determining how long each tantrum lasts. This method involves precisely measuring the total time from the beginning to the end of each tantrum episode. By collecting duration data, the BCBA can accurately assess the length of these prolonged behaviors and evaluate the effectiveness of interventions aimed at reducing their overall temporal extent." },
-      { letter: "C", text: "Latency measures the time elapsed between the onset of a stimulus and the initiation of a response. While important for understanding response initiation, it does not directly measure the total duration of a behavior like tantrums. Therefore, focusing solely on latency would not provide the BCBA with the necessary information to determine how long each tantrum lasts." },
-      { letter: "D", text: "Magnitude refers to the intensity or force of a behavior, which is the most appropriate dimension to measure when aiming to reduce the volume of vocalizations like screaming. This involves using a quantifiable scale or instrument (e.g., a decibel meter or a subjective rating scale) to assess the loudness of each vocalization. Measuring magnitude directly addresses the BCBA's goal of reducing the intensity of the screaming behavior." },
-      { letter: "A", text: "Frequency, or count, measures the number of times a behavior occurs within a given observation period. While knowing the frequency of tantrums is valuable, it does not provide information about how long each tantrum lasts. A high frequency of short tantrums would yield different clinical implications than a low frequency of long tantrums, highlighting the need for duration measurement." }
-    ],
-    correctAnswer: 'A',
-    rationale: "Magnitude (C.5) refers to the intensity or force of a behavior, which directly relates to the volume of screaming. Frequency, duration, and latency measure other aspects of behavior."
-  },
-  {
+{
     id: "t6-C-pool-14",
     domain: "C",
     taskItem: "C.11",
@@ -457,25 +379,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'D',
     rationale: "A clear, objective, and measurable behavior definition (C.7) is foundational to any effective data collection system, especially for severe challenging behaviors. Without it, consistency and accuracy are impossible. Other options are either less critical or potentially counterproductive."
   },
-  {
-    id: "t6-C-pool-21",
-    domain: "C",
-    taskItem: "C.9",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "hard",
-    scenario: "A BCBA has collected daily frequency data on a client's vocal stereotypy for several weeks. The BCBA needs to present this data to the client's parents and funding source in a clear and concise manner.",
-    question: "Which visual display is generally most appropriate for presenting changes in frequency data over time to stakeholders?",
-    choices: [
-      { letter: "C", text: "A line graph would be used to show the trend of a behavior over time, which is not the primary goal in this scenario. While a line graph could be used to plot the performance of individual subjects within each group, it is not the best choice for representing the average performance of the groups as a whole. A bar graph would be more appropriate for this purpose." },
-      { letter: "D", text: "A scatterplot, which organizes behavioral data across time intervals in a grid to reveal patterns of co-variation between behavior and environmental conditions, helping identify potential antecedent variables and setting events that reliably precede the target behavior." },
-      { letter: "A", text: "The research team should use a bar graph to visually represent the average performance of each group. A bar graph is ideal for comparing discrete sets of data, such as the mean scores of two different intervention groups. This allows for a clear visual comparison of the central tendency of each group's performance, making it easy to interpret the relative effectiveness of the interventions." },
-      { letter: "B", text: "The team could use a cumulative record to display the total number of responses accumulated over time for each group. While this would show the overall rate of responding, it is not the most effective way to compare the average performance of the two groups. A cumulative record is better suited for showing response patterns and rates of acquisition." }
-    ],
-    correctAnswer: 'A',
-    rationale: "A line graph (C.9) is the most common and appropriate visual display for showing changes in behavior over time, especially for frequency data, making trends easily interpretable. Bar graphs compare discrete data, cumulative records show total responses, and scatterplots show relationships between variables."
-  },
-  {
+{
     id: "t6-C-pool-22",
     domain: "C",
     taskItem: "C.7",
@@ -649,25 +553,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'D',
     rationale: "Thorough training and achieving high IOA (C.7) among data collectors are essential to ensure consistency and accuracy when multiple individuals are collecting data. A written protocol is important, but training to fidelity and verifying agreement are paramount. Meetings and reinforcement are supportive but not primary."
   },
-  {
-    id: "t6-C-pool-29",
-    domain: "C",
-    taskItem: "C.4",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: "A client exhibits delayed initiation of tasks after receiving an instruction. The BCBA wants to quantify this delay.",
-    question: "To measure the time from the instruction to the client's initiation of the task, which temporal dimension should the BCBA use?",
-    choices: [
-      { letter: "C", text: "Latency measures the time elapsed between the onset of a stimulus and the initiation of a response. While important for understanding response initiation, it does not directly measure the total duration of a behavior like tantrums. Therefore, focusing solely on latency would not provide the BCBA with the necessary information to determine how long each tantrum lasts." },
-      { letter: "D", text: "Rate, which is calculated by dividing the count of behavior occurrences by the observation time, yielding a measure of responses per unit time that allows for comparison across observation sessions of different durations, making it particularly useful when session lengths vary across data collection periods." },
-      { letter: "A", text: "Duration recording is the most appropriate measurement procedure for determining how long each tantrum lasts. This method involves precisely measuring the total time from the beginning to the end of each tantrum episode. By collecting duration data, the BCBA can accurately assess the length of these prolonged behaviors and evaluate the effectiveness of interventions aimed at reducing their overall temporal extent." },
-      { letter: "B", text: "Interresponse time (IRT), which measures the elapsed time between the end of one response and the beginning of the next, providing information about the temporal distribution of behavior within a session and allowing the BCBA to assess whether responses are clustering together or distributed evenly across the observation period." }
-    ],
-    correctAnswer: 'A',
-    rationale: "Latency (C.4) is defined as the time from the onset of a stimulus (instruction) to the initiation of the response (task initiation). IRT measures time between responses, duration measures the length of a response, and rate is frequency over time."
-  },
-  {
+{
     id: "t6-C-pool-30",
     domain: "C",
     taskItem: "C.10",
@@ -721,25 +607,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'D',
     rationale: "The definition and topography of the behavior (C.1) are crucial for selecting an appropriate measurement procedure, as they dictate what can be accurately measured. Ease of collection, social significance, and client preference are secondary considerations."
   },
-  {
-    id: "t6-C-pool-33",
-    domain: "C",
-    taskItem: "C.9",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "easy",
-    scenario: "A BCBA has collected daily frequency data on a client's vocal stereotypy for several weeks. The BCBA needs to present this data to the client's parents and funding source in a clear and concise manner.",
-    question: "Which visual display is generally most appropriate for presenting changes in frequency data over time to stakeholders?",
-    choices: [
-      { letter: "A", text: "A bar graph would be most appropriate for visually representing frequency data when the data points are discrete and independent, such as comparing the frequency of a behavior across different conditions, individuals, or time blocks where there is no inherent continuity between the data points. This display allows for clear comparisons of absolute counts or rates, making it suitable for presenting a snapshot of frequency data without implying a continuous trend, which might be misleading if the data is not truly continuous across the x-axis." },
-      { letter: "B", text: "A cumulative record would be an effective visual display if the primary interest is to observe the total count of responses over time, particularly for behaviors where the rate of responding is a critical variable, and the accumulation of responses provides meaningful insight into learning or behavioral change. This graph type is especially useful for demonstrating the overall progress and the rate of acquisition or emission of a behavior, as each data point represents the sum of all preceding responses, highlighting the slope as an indicator of response rate." },
-      { letter: "C", text: "A line graph is the most appropriate visual display for presenting changes in frequency data over time to stakeholders because it effectively illustrates trends, variability, and the overall trajectory of the behavior. By connecting data points representing frequency measurements taken at successive time intervals, a line graph clearly shows increases, decreases, or stability in the behavior, allowing for easy interpretation of the intervention's effect on the target behavior's occurrence. This visual representation is ideal for demonstrating continuous changes and patterns across sessions or days." },
-      { letter: "D", text: "A scatterplot would be best utilized if the primary goal is to examine the relationship or correlation between two different variables, such as the frequency of a behavior and the occurrence of a specific environmental event, rather than simply tracking changes in frequency over time. While it can display data points, its strength lies in revealing patterns of association or the absence thereof between two continuous measures, making it less direct for illustrating a single behavior's frequency trend across sequential observation periods to stakeholders." }
-    ],
-    correctAnswer: 'A',
-    rationale: "A line graph (C.9) is the most common and appropriate visual display for showing changes in behavior over time, especially for frequency data, making trends easily interpretable. Bar graphs compare discrete data, cumulative records show total responses, and scatterplots show relationships between variables."
-  },
-  {
+{
     id: "t6-C-pool-34",
     domain: "C",
     taskItem: "C.14",
@@ -769,25 +637,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: "B",
     rationale: "For ethical reasoning questions, obtaining informed consent that addresses potential risks, such as privacy concerns related to data collection (C.7, C.1), is a primary ethical responsibility of the BCBA. Accuracy is important, but not at the expense of ethical practice without proper consent."
   },
-  {
-    id: "t6-C-pool-35",
-    domain: "C",
-    taskItem: "C.3",
-    phase: "intervention",
-    bloomsLevel: "knowledge",
-    difficulty: "medium",
-    scenario: "A client often engages in sustained periods of crying. The BCBA aims to reduce the total time spent crying during therapy sessions.",
-    question: "To measure the total time a client spends crying, which dimension of behavior is the BCBA primarily interested in?",
-    choices: [
-      { letter: "A", text: "The BCBA is primarily interested in the total number of distinct crying episodes that occur during a therapy session, regardless of how long each episode lasts. This measurement would involve tallying each instance of crying as a discrete event, providing data on the frequency of the behavior to inform intervention strategies aimed at reducing its occurrence. This approach focuses on the count of the behavior rather than its duration or specific timing within the session, which might be useful for understanding how often crying initiates." },
-      { letter: "B", text: "The BCBA is primarily interested in the duration of each individual crying episode, from its onset to its cessation, and then summing these durations to obtain the total time the client spends crying. This measurement focuses on how long the behavior persists once it begins, providing critical data for interventions aimed at decreasing the overall time the client engages in this specific behavior. Understanding the total time spent crying is essential for assessing the impact of interventions on the sustained nature of the behavior." },
-      { letter: "C", text: "The BCBA is primarily interested in the point in time when each crying episode begins in relation to other events or the start of the session, or the time between the cessation of one crying episode and the onset of the next. This measurement would involve recording the latency to crying or the interresponse time between crying episodes, providing insight into the environmental triggers or maintaining variables. While valuable, this dimension does not directly quantify the total time spent crying, but rather when it occurs or how often it reoccurs." },
-      { letter: "D", text: "The BCBA is primarily interested in the frequency with which crying episodes occur during the therapy session, counting each instance as a discrete event. This measurement would involve tallying the number of times the client engages in crying behavior, providing data on how often the behavior manifests. While understanding the frequency is important, it does not directly address the total duration or the sustained nature of the crying, which is the primary focus when aiming to reduce the total time spent crying." }
-    ],
-    correctAnswer: 'C',
-    rationale: "Temporal extent (C.3) refers to the duration of a behavior, or how long it lasts. This is the primary dimension of interest when measuring the total time spent crying. Count refers to frequency, temporal locus refers to when a behavior occurs (latency, IRT), and repeatability refers to frequency, rate, and count."
-  },
-  {
+{
     id: "t6-C-pool-36",
     domain: "C",
     taskItem: "C.13",
@@ -805,91 +655,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'D',
     rationale: "Total duration IOA (C.13) is calculated by dividing the smaller duration by the larger duration and multiplying by 100. (15 / 18) * 100 = 83.3%. Therefore, the IOA is 83.3%."
   },
-  {
-    id: "t6-C-pool-37",
-    domain: "C",
-    taskItem: "C.11",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: "A peer-reviewed study presents a graph showing data for C.11 across baseline and intervention phases. A client's aggression data on a graph shows a generally stable baseline, but the intervention phase data is highly erratic, with frequent spikes and drops.",
-    question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
-    choices: [
-      { letter: "D", text: "The observed variability and trend in the data suggest that the data collector may be exhibiting observer drift or reactivity, leading to systematic errors in measurement that obscure the true effect of the intervention. This potential bias in data collection could compromise the internal validity of the study, making it difficult to confidently attribute any changes in the target behavior to the implemented intervention. Further investigation into the reliability and accuracy of the data collection procedures, such as interobserver agreement checks, would be warranted to rule out this possibility and ensure the integrity of the data." },
-      { letter: "A", text: "The visual analysis of the graph indicates a robust and immediate change in the level and trend of the target behavior upon the introduction of the intervention, with a clear and consistent therapeutic effect maintained throughout the intervention phase. The observed data path demonstrates a significant and desirable alteration in the behavior relative to the baseline, suggesting that the intervention possesses strong functional control over the target behavior. This rapid and sustained improvement provides compelling evidence for the intervention's efficacy and potency in producing meaningful behavior change for the individual." },
-      { letter: "B", text: "The erratic and inconsistent pattern of the data within the intervention phase, characterized by significant variability and an unclear functional relationship between the intervention and the target behavior, suggests a lack of experimental control. This could be due to extraneous variables influencing the behavior, inconsistent application of the intervention procedures by implementers, or insufficient procedural fidelity, which collectively undermine the ability to confidently attribute any observed changes to the intervention. Such inconsistencies prevent a clear demonstration of the intervention's effectiveness and necessitate a review of treatment integrity and environmental controls." },
-      { letter: "C", text: "The observed decline in the target behavior during the intervention phase, which appears to align with a natural decelerating trend already present in the baseline data, suggests that the behavior may be undergoing a natural recovery process independent of the implemented intervention. This interpretation implies that the intervention may not be solely responsible for the observed changes, as the behavior might have improved or resolved on its own without the introduction of specific therapeutic strategies. Without a stronger demonstration of experimental control, it is difficult to isolate the intervention's unique contribution to the behavior change." }
-    ],
-    correctAnswer: 'A',
-    rationale: "High variability in intervention phase data (C.11), especially after a stable baseline, is a strong indicator of a lack of experimental control or inconsistent application of the intervention. This makes it difficult to attribute changes solely to the intervention. It does not suggest potency, natural recovery, or necessarily data collector bias without more information."
-  },
-  {
-    id: "t6-C-pool-38",
-    domain: "C",
-    taskItem: "C.1",
-    phase: "assessment",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: "A new RBT asks for clarification on the fundamental principles behind C.1. A BCBA is initiating services for a 7-year-old client with autism who engages in frequent hand-flapping. The BCBA needs to select a measurement procedure that accurately captures the occurrence of this behavior.",
-    question: "Which statement best describes the core conceptual understanding related to this task item?",
-    choices: [
-      {
-        letter: "A",
-        text: "Duration recording, as it measures the length of each instance."
-      },
-      {
-        letter: "B",
-        text: "Frequency recording, as it provides a count of each occurrence."
-      },
-      {
-        letter: "C",
-        text: "Partial interval recording, as it estimates occurrence within intervals."
-      },
-      {
-        letter: "D",
-        text: "Magnitude recording, as it assesses the intensity of the behavior."
-      }
-    ],
-    correctAnswer: "B",
-    rationale: "Frequency recording (C.1) is most appropriate for discrete behaviors like hand-flapping that have a clear beginning and end. Duration measures time, partial interval estimates, and magnitude measures intensity, none of which are ideal for simply counting occurrences."
-  },
-  {
-    id: "t6-C-pool-39",
-    domain: "C",
-    taskItem: "C.6",
-    phase: "intervention",
-    bloomsLevel: "analysis",
-    difficulty: "easy",
-    scenario: "A peer-reviewed study presents a graph showing data for C.6 across baseline and intervention phases. A BCBA is teaching a client to independently wash their hands. The goal is for the client to complete all steps correctly for three consecutive opportunities.",
-    question: "Based on the visual analysis of the provided graph, what is the most appropriate interpretation of the intervention's effect?",
-    choices: [
-      { letter: "A", text: "The graph visually represents the percentage of opportunities in which the client independently completed all steps of the handwashing task correctly. An analysis of the data would involve tracking the proportion of trials where the client successfully performed the entire chain of behaviors as intended by the intervention. This measure is critical for evaluating the overall effectiveness of the teaching procedure in establishing the desired independent skill, specifically focusing on the consistency of accurate performance across all steps within a given opportunity to wash hands." },
-      { letter: "B", text: "The graph depicts the number of trials required for the client to achieve the predetermined mastery criterion of completing all steps of the handwashing task correctly for three consecutive opportunities. This interpretation would focus on the efficiency of the intervention in bringing the client to a state of consistent, independent performance. Observing a decrease in the number of trials needed to meet this criterion across different teaching blocks or phases would indicate a highly effective and efficient instructional strategy for skill acquisition." },
-      { letter: "C", text: "The graph illustrates the frequency with which the client accurately performed each step of the handwashing task per unit of time during the intervention phase. This measure, focusing on the rate of correct responses, provides valuable insight into the fluency and automaticity of the learned skill. A desirable outcome would be an increase in the rate of correct handwashing steps, indicating that the client is not only performing the steps accurately but also doing so with increased speed and efficiency, which is crucial for generalized and sustained independent living skills." },
-      { letter: "D", text: "The graph presents the duration of time that elapses between the completion of one step of the handwashing task and the initiation of the subsequent step. This measurement, known as interresponse time, is particularly relevant for assessing the smoothness and continuity of the behavioral chain. A reduction in interresponse time during the intervention phase would suggest that the client is performing the handwashing sequence more fluidly and with less hesitation, indicating an improvement in the overall efficiency and integration of the individual steps within the task chain." }
-    ],
-    correctAnswer: 'C',
-    rationale: "Trials to criterion (C.6) measures the number of response opportunities needed to achieve a predetermined level of performance, such as three consecutive correct hand washes. Percentage of opportunities, rate, and IRT do not directly measure the achievement of a mastery criterion."
-  },
-  {
-    id: "t6-C-pool-40",
-    domain: "C",
-    taskItem: "C.6",
-    phase: "intervention",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: "A client is learning to tie their shoes. The BCBA wants to determine how many practice opportunities are needed before the client achieves mastery.",
-    question: "To assess the efficiency of instruction for a new skill, the BCBA should measure which of the following?",
-    choices: [
-      { letter: "A", text: "The BCBA should measure the cumulative amount of time, in minutes or hours, that the client spends actively engaged in the shoe-tying task across all instructional sessions until they demonstrate consistent independent performance. This metric would provide insight into the total instructional investment required, offering a broad understanding of the time commitment without specifically detailing the number of learning opportunities or the rate of acquisition. While informative for resource allocation, it doesn't directly quantify the discrete learning instances necessary for mastery." },
-      { letter: "B", text: "The BCBA should measure the number of discrete instructional trials, or practice opportunities, that the client requires to meet a predetermined mastery criterion for independently tying their shoes. This involves systematically counting each attempt or presentation of the skill until the client consistently performs the behavior at a specified level of accuracy and independence. This metric directly assesses the efficiency of the teaching procedure by quantifying the exact amount of practice needed for the client to acquire and demonstrate proficiency in the new skill, providing a clear indicator of learning effort." },
-      { letter: "C", text: "The BCBA should measure the time elapsed from the presentation of the instruction or cue to \"tie your shoes\" until the client initiates the first step of the shoe-tying sequence. This measurement would be taken repeatedly across various sessions to assess how quickly the client begins the task following an antecedent. While a reduced latency might indicate increased responsiveness to instructions or improved understanding, it primarily reflects the client's readiness to engage rather than the overall number of practice opportunities needed to achieve the complete skill and reach mastery criteria." },
-      { letter: "D", text: "The BCBA should measure the total count of specific prompts, such as verbal, gestural, or physical prompts, that are delivered by the instructor during all instructional sessions until the client is able to independently tie their shoes according to the mastery criterion. This data would indicate the level of support the client required throughout the learning process. While a lower frequency of prompts could suggest more efficient learning, this measure primarily evaluates the instructional support provided rather than the number of independent practice opportunities or trials necessary for skill acquisition." }
-    ],
-    correctAnswer: 'D',
-    rationale: "Trials to criterion (C.6) directly measures the number of practice opportunities required to reach a mastery level, providing a clear indicator of instructional efficiency. Other measures like duration of instruction, latency, or frequency of prompts are related but do not directly quantify the effort to reach mastery."
-  },
-  {
+{
     id: "t6-C-pool-41",
     domain: "C",
     taskItem: "C.7",
@@ -949,25 +715,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: "B",
     rationale: "For ethical reasoning questions, obtaining informed consent that addresses potential risks, such as privacy concerns related to data collection (C.7, C.1), is a primary ethical responsibility of the BCBA. Accuracy is important, but not at the expense of ethical practice without proper consent."
   },
-  {
-    id: "t6-C-pool-43",
-    domain: "C",
-    taskItem: "C.13",
-    phase: "evaluation",
-    bloomsLevel: "application",
-    difficulty: "easy",
-    scenario: "A new RBT asks for clarification on the fundamental principles behind C.13. A BCBA wants to calculate the Interobserver Agreement (IOA) for interval recording data. Observer 1 recorded occurrence in 12 intervals, and Observer 2 recorded occurrence in 10 intervals, with 8 agreements on occurrence.",
-    question: "Which statement best describes the core conceptual understanding related to this task item?",
-    choices: [
-      { letter: "A", text: "When calculating the agreement for this interval recording data, if one were to use the occurrence-only IOA formula where the number of agreements on occurrence is divided by the total number of intervals where at least one observer recorded an occurrence, the resulting percentage would be 80%. This calculation method emphasizes agreement on the presence of the behavior and is often preferred when the behavior occurs at low rates, providing a more conservative estimate of agreement for those instances where the behavior was observed by at least one data collector, indicating a strong degree of reliability in identifying the target behavior when it is present." },
-      { letter: "B", text: "If the Interobserver Agreement (IOA) for this interval recording data were calculated using a total count per interval formula, which sums the agreements on occurrence and non-occurrence and divides by the total number of intervals, a percentage of 66.7% would be obtained. This method provides an overall agreement across all intervals, regardless of whether the behavior was present or absent, and might be considered when assessing the general consistency of data collection for behaviors that occur at varying rates, offering a comprehensive but potentially less sensitive measure for rare behaviors." },
-      { letter: "C", text: "To accurately determine the interobserver agreement for this interval recording data, applying the occurrence-only IOA formula is most appropriate when focusing on the reliability of identifying the presence of the target behavior. By dividing the number of agreements on occurrence (8) by the total number of intervals where at least one observer recorded an occurrence (12 + 10 - 8 = 14), a robust agreement percentage of 83.3% is derived. This specific calculation method is particularly valuable for behaviors that occur at low frequencies, as it provides a more stringent and meaningful measure of agreement for the instances when the behavior was actually observed, ensuring the RBT understands the precise agreement on detected occurrences." },
-      { letter: "D", text: "Should the Interobserver Agreement (IOA) for this interval recording data be calculated using the formula that divides the number of agreements on occurrence by the total number of intervals where Observer 1 recorded an occurrence, the resulting percentage would be 75%. This approach focuses solely on the primary observer's recorded occurrences as the denominator, potentially overestimating or underestimating agreement depending on the discrepancy in total occurrences between observers, and might not fully capture the true consistency of data collection across both independent observers, leading to a less comprehensive understanding of reliability." }
-    ],
-    correctAnswer: 'C',
-    rationale: "Interval-by-interval IOA (C.13) is calculated by dividing the number of agreements by the total number of intervals (agreements + disagreements) and multiplying by 100. Assuming 12 intervals for O1 and 10 for O2, and 8 agreements, the total number of intervals where at least one observer recorded occurrence is 12 + 10 - 8 = 14. So, 8 agreements / 14 total intervals = 0.5714 * 100 = 57.14%. If the question implies total intervals observed is 12 (max of two observers), then (8 agreements / 12 total intervals) * 100 = 66.7%. Given the choices, 66.7% is the most plausible if the total number of intervals is considered the maximum observed by either. Let's assume the question implies agreements / (agreements + disagreements) for occurrence. Agreements = 8. Disagreements = (12-8) + (10-8) = 4 + 2 = 6. Total = 8+6 = 14. 8/14 = 57.14%. This is tricky. Let's re-evaluate. If it's interval-by-interval, it's agreements / (agreements + disagreements). If O1 recorded 12 occurrences and O2 recorded 10, and 8 were agreements, then O1 had 4 unique occurrences and O2 had 2 unique occurrences. Total intervals with at least one occurrence recorded = 8 (agreements) + 4 (O1 unique) + 2 (O2 unique) = 14. So 8/14 = 57.14%. However, often in multiple choice, they simplify. If it's agreements / total intervals where *either* recorded occurrence, and total intervals is 12 (max), then 8/12 = 66.7%. Let's go with the simpler interpretation that leads to one of the answers. The most common formula for interval-by-interval IOA is (number of agreements / (number of agreements + number of disagreements)) * 100. If O1 recorded 12 occurrences and O2 recorded 10, and they agreed on 8, then O1 had 4 occurrences O2 missed, and O2 had 2 occurrences O1 missed. Total intervals with at least one occurrence = 8 (agreed) + 4 (O1 only) + 2 (O2 only) = 14. So 8/14 = 57.14%. This is not among the choices. Let's assume the question implies agreements / total intervals *observed* by both. If both observed 12 intervals, and 8 were agreements, then 8/12 = 66.7%. This is a common simplification in exam questions. So, 66.7% is the correct answer under this interpretation."
-  },
-  {
+{
     id: "t6-C-pool-44",
     domain: "C",
     taskItem: "C.6",
@@ -1225,37 +973,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: "B",
     rationale: "For ethical reasoning questions, obtaining informed consent that addresses potential risks, such as privacy concerns related to data collection (C.7, C.1), is a primary ethical responsibility of the BCBA. Accuracy is important, but not at the expense of ethical practice without proper consent."
   },
-  {
-    id: "t6-C-pool-55",
-    domain: "C",
-    taskItem: "C.11",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: "A BCBA is reviewing a client's self-stimulatory behavior data. The data points in the intervention phase show a decreasing trend, but with significant day-to-day fluctuations.",
-    question: "What does the significant day-to-day fluctuation in the intervention phase suggest about the intervention's effectiveness or implementation?",
-    choices: [
-      {
-        letter: "B",
-        text: "There may be uncontrolled variables influencing the behavior or inconsistent intervention implementation."
-      },
-      {
-        letter: "C",
-        text: "The behavior is naturally variable and requires no adjustment."
-      },
-      {
-        letter: "D",
-        text: "The measurement system is likely flawed."
-      },
-      {
-        letter: "A",
-        text: "The intervention is consistently effective."
-      }
-    ],
-    correctAnswer: 'C',
-    rationale: "Significant day-to-day fluctuation (C.11) in data during an intervention phase, despite a decreasing trend, suggests that there might be uncontrolled variables at play or that the intervention is not being implemented consistently. It does not indicate consistent effectiveness, natural variability, or necessarily a flawed measurement system without further investigation."
-  },
-  {
+{
     id: "t6-C-pool-56",
     domain: "C",
     taskItem: "C.13",
@@ -1369,37 +1087,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'D',
     rationale: "When a client has achieved and maintained a socially acceptable level of behavior (C.15), the most appropriate data-based decision is to begin phasing out the intervention or to plan for generalization and maintenance of the skill. Introducing a new intervention, returning to baseline, or increasing reinforcement are not indicated when mastery has been achieved."
   },
-  {
-    id: "t6-C-pool-61",
-    domain: "C",
-    taskItem: "C.12",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: "A school district asks a BCBA to evaluate the effectiveness of a new classroom management strategy on student engagement. The BCBA collects data before and after implementation.",
-    question: "The primary goal of evaluating treatment effects by comparing data across phases is to determine what?",
-    choices: [
-      {
-        letter: "D",
-        text: "The generalizability of the intervention to other settings."
-      },
-      {
-        letter: "A",
-        text: "If the intervention is acceptable to stakeholders."
-      },
-      {
-        letter: "B",
-        text: "If the intervention produced a meaningful change in behavior."
-      },
-      {
-        letter: "C",
-        text: "The exact mechanism by which the intervention works."
-      }
-    ],
-    correctAnswer: 'A',
-    rationale: "The primary goal of evaluating treatment effects (C.12) by comparing data across phases is to determine if the intervention produced a meaningful and functional change in behavior. While acceptability, mechanisms, and generalizability are important, they are secondary to establishing the effect itself."
-  },
-  {
+{
     id: "t6-C-pool-62",
     domain: "C",
     taskItem: "C.9",
@@ -1417,55 +1105,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'B',
     rationale: "A line graph (C.9) is the most common and appropriate visual display for showing changes in behavior over time, especially for frequency data, making trends easily interpretable. Bar graphs compare discrete data, cumulative records show total responses, and scatterplots show relationships between variables."
   },
-  {
-    id: "t6-C-pool-63",
-    domain: "C",
-    taskItem: "C.12",
-    phase: "evaluation",
-    bloomsLevel: "comprehension",
-    difficulty: "hard",
-    scenario: "A school district asks a BCBA to evaluate the effectiveness of a new classroom management strategy on student engagement. The BCBA collects data before and after implementation.",
-    question: "The primary goal of evaluating treatment effects by comparing data across phases is to determine what?",
-    choices: [
-      {
-        letter: "B",
-        text: "If the intervention produced a meaningful change in behavior."
-      },
-      {
-        letter: "C",
-        text: "The exact mechanism by which the intervention works."
-      },
-      {
-        letter: "D",
-        text: "The generalizability of the intervention to other settings."
-      },
-      {
-        letter: "A",
-        text: "If the intervention is acceptable to stakeholders."
-      }
-    ],
-    correctAnswer: 'C',
-    rationale: "The primary goal of evaluating treatment effects (C.12) by comparing data across phases is to determine if the intervention produced a meaningful and functional change in behavior. While acceptability, mechanisms, and generalizability are important, they are secondary to establishing the effect itself."
-  },
-  {
-    id: "t6-C-pool-64",
-    domain: "C",
-    taskItem: "C.2",
-    phase: "intervention",
-    bloomsLevel: "analysis",
-    difficulty: "easy",
-    scenario: "A BCBA is tracking a student's out-of-seat behavior in a classroom. The behavior is discrete and occurs multiple times per hour.",
-    question: "Which continuous measurement procedure is best suited for quantifying the student's out-of-seat behavior?",
-    choices: [
-      { letter: "C", text: "The BCBA should implement latency recording, meticulously documenting the precise amount of time that elapses between the presentation of a specific environmental stimulus or demand and the initiation of the student's target behavior. This method is particularly useful when the primary concern is how quickly the student begins a task or responds to an instruction, rather than the total time the behavior occurs or how often it happens. It provides valuable data on response initiation speed, which can be critical for behaviors like following directions or transitioning between activities, offering insights into the student's processing time or willingness to comply." },
-      { letter: "D", text: "The BCBA should utilize partial interval recording, systematically dividing the observation period into discrete, consecutive intervals and marking whether the target behavior occurred at any point during each interval, regardless of its duration or how many times it happened within that interval. This procedure is highly efficient for behaviors that do not have a clear start or end, or for behaviors that occur at high frequencies, providing an estimate of the behavior's prevalence. It is especially suitable when the goal is to get a general sense of how often a behavior is occurring across an observation period, even if it's brief or intermittent, making it a robust choice for estimating the proportion of time a behavior is present." },
-      { letter: "A", text: "The BCBA should employ duration recording, precisely measuring the total amount of time that elapses from the beginning to the end of each instance of the student's target behavior. This method is most appropriate when the primary characteristic of interest is how long a behavior lasts, such as the duration of a tantrum, the length of time spent on-task, or the persistence of a stereotypy. It offers direct and accurate data on the temporal extent of a behavior, providing critical information for interventions aimed at increasing or decreasing the persistence of specific actions, ensuring that the intervention directly addresses the temporal dimension of the behavior." },
-      { letter: "B", text: "The BCBA should implement frequency recording, systematically counting each discrete occurrence of the student's target behavior within a specified observation period. This method is best suited for behaviors that have a clear beginning and end, occur at a relatively consistent rate, and do not typically last for extended periods. It provides a direct measure of how often a behavior happens, which is essential for behaviors like hitting, calling out, or completing assignments. By quantifying the countable instances, the BCBA can track changes in the rate of behavior, allowing for precise evaluation of interventions aimed at increasing or decreasing the number of times a behavior occurs." }
-    ],
-    correctAnswer: 'D',
-    rationale: "Frequency recording (C.2) is ideal for discrete behaviors that can be easily counted, such as out-of-seat behavior. Duration measures time, latency measures time to initiation, and partial interval is a discontinuous method."
-  },
-  {
+{
     id: "t6-C-pool-65",
     domain: "C",
     taskItem: "C.4",
@@ -1501,37 +1141,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: "B",
     rationale: "A bar graph (C.9) is typically most effective for comparing discrete sets of data, such as the average performance of two different groups. Line graphs show trends over time, cumulative records show total responses, and ratio charts are less common for this purpose."
   },
-  {
-    id: "t6-C-pool-67",
-    domain: "C",
-    taskItem: "C.12",
-    phase: "evaluation",
-    bloomsLevel: "comprehension",
-    difficulty: "hard",
-    scenario: "A school district asks a BCBA to evaluate the effectiveness of a new classroom management strategy on student engagement. The BCBA collects data before and after implementation.",
-    question: "The primary goal of evaluating treatment effects by comparing data across phases is to determine what?",
-    choices: [
-      {
-        letter: "B",
-        text: "If the intervention produced a meaningful change in behavior."
-      },
-      {
-        letter: "C",
-        text: "The exact mechanism by which the intervention works."
-      },
-      {
-        letter: "D",
-        text: "The generalizability of the intervention to other settings."
-      },
-      {
-        letter: "A",
-        text: "If the intervention is acceptable to stakeholders."
-      }
-    ],
-    correctAnswer: 'C',
-    rationale: "The primary goal of evaluating treatment effects (C.12) by comparing data across phases is to determine if the intervention produced a meaningful and functional change in behavior. While acceptability, mechanisms, and generalizability are important, they are secondary to establishing the effect itself."
-  },
-  {
+{
     id: "t6-C-pool-68",
     domain: "C",
     taskItem: "C.11",
@@ -1627,37 +1237,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: "C",
     rationale: "Interobserver Agreement (IOA) (C.8) is used to evaluate the consistency of data collected by two or more independent observers. Treatment integrity refers to intervention implementation, social validity to importance, and procedural reliability to consistent procedure application."
   },
-  {
-    id: "t6-C-pool-72",
-    domain: "C",
-    taskItem: "C.7",
-    phase: "supervision",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: "A team of RBTs will be implementing a new skill acquisition program. The BCBA needs to ensure that data collected by all team members is consistent and accurate.",
-    question: "To ensure consistency and accuracy across multiple data collectors for a new program, what is the most important step the BCBA must take?",
-    choices: [
-      {
-        letter: "C",
-        text: "Schedule frequent team meetings to discuss data collection issues."
-      },
-      {
-        letter: "D",
-        text: "Implement a reinforcement system for accurate data collection."
-      },
-      {
-        letter: "A",
-        text: "Provide a detailed written protocol for data collection."
-      },
-      {
-        letter: "B",
-        text: "Conduct thorough training and achieve high interobserver agreement (IOA) among RBTs."
-      }
-    ],
-    correctAnswer: 'D',
-    rationale: "Thorough training and achieving high IOA (C.7) among data collectors are essential to ensure consistency and accuracy when multiple individuals are collecting data. A written protocol is important, but training to fidelity and verifying agreement are paramount. Meetings and reinforcement are supportive but not primary."
-  },
-  {
+{
     id: "t6-C-pool-73",
     domain: "C",
     taskItem: "C.6",
@@ -1675,139 +1255,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'A',
     rationale: "Trials to criterion (C.6) directly measures the number of practice opportunities required to reach a mastery level, providing a clear indicator of instructional efficiency. Other measures like duration of instruction, latency, or frequency of prompts are related but do not directly quantify the effort to reach mastery."
   },
-  {
-    id: "t6-C-pool-74",
-    domain: "C",
-    taskItem: "C.15",
-    phase: "evaluation",
-    bloomsLevel: "evaluation",
-    difficulty: "hard",
-    scenario: "A client's on-task behavior has shown a steady increase during an intervention phase, reaching and maintaining a level that is comparable to typically developing peers.",
-    question: "Given the client's sustained progress to a socially acceptable level, what is the most appropriate data-based decision?",
-    choices: [
-      {
-        letter: "B",
-        text: "Introduce a new, more complex intervention."
-      },
-      {
-        letter: "C",
-        text: "Return to baseline to confirm the intervention's effect."
-      },
-      {
-        letter: "D",
-        text: "Increase the reinforcement schedule to accelerate progress."
-      },
-      {
-        letter: "A",
-        text: "Phase out the intervention or plan for generalization and maintenance."
-      }
-    ],
-    correctAnswer: 'B',
-    rationale: "When a client has achieved and maintained a socially acceptable level of behavior (C.15), the most appropriate data-based decision is to begin phasing out the intervention or to plan for generalization and maintenance of the skill. Introducing a new intervention, returning to baseline, or increasing reinforcement are not indicated when mastery has been achieved."
-  },
-  {
-    id: "t6-C-pool-75",
-    domain: "C",
-    taskItem: "C.4",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: "A client exhibits delayed initiation of tasks after receiving an instruction. The BCBA wants to quantify this delay.",
-    question: "To measure the time from the instruction to the client's initiation of the task, which temporal dimension should the BCBA use?",
-    choices: [
-      { letter: "A", text: "The BCBA should measure the total amount of time from the beginning of the client's task engagement until the completion of the task, as this will provide data on how long the client sustains engagement with the instructed activity. This measurement is crucial for understanding the overall effort and persistence the client demonstrates once they have initiated the behavior. By focusing on the continuous period of time the behavior occurs, the BCBA can assess the efficiency and fluency of the client's performance throughout the task, rather than just the initial response to the instruction. This approach is particularly useful for tasks that involve a sustained period of activity." },
-      { letter: "B", text: "The BCBA should measure the time between the end of one instance of the client's behavior and the beginning of the next instance of that same behavior, especially if the task involves repetitive actions. This measurement helps in understanding the pacing and flow of the client's performance after an initial response has occurred, offering insights into the natural pauses or breaks the client takes between successive actions. While important for analyzing the fluency of ongoing behavior, this metric specifically focuses on the time interval separating discrete behavioral occurrences rather than the initial onset following an instruction, and would be less relevant for a single initiation. " },
-      { letter: "C", text: "The BCBA should measure the time elapsed from the verbal or gestural instruction being delivered to the client until the client begins the first observable response of the instructed task. This measurement is specifically designed to quantify the delay in initiating a behavior following an antecedent stimulus, providing critical data on how quickly the client transitions from receiving an instruction to commencing the expected action. Understanding this temporal interval is fundamental for addressing prompt dependency, improving instructional control, and enhancing the client's independent responsiveness to directives, directly addressing the observed delayed initiation. " },
-      { letter: "D", text: "The BCBA should measure the number of times the client performs the instructed behavior within a specific observation period, as this will provide data on the frequency of the client's task engagement. This measurement is essential for understanding the overall intensity or how often the client engages in the target behavior, which can be useful for behaviors that are discrete and repeatable. However, focusing solely on the count of responses over time would not directly capture the time it takes for the client to *start* the behavior after an instruction, but rather how often it occurs once initiated. " }
-    ],
-    correctAnswer: "C",
-    rationale: "Latency (C.4) is defined as the time from the onset of a stimulus (instruction) to the initiation of the response (task initiation). IRT measures time between responses, duration measures the length of a response, and rate is frequency over time."
-  },
-  {
-    id: "t6-C-pool-76",
-    domain: "C",
-    taskItem: "C.3",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: "A client often engages in sustained periods of crying. The BCBA aims to reduce the total time spent crying during therapy sessions.",
-    question: "To measure the total time a client spends crying, which dimension of behavior is the BCBA primarily interested in?",
-    choices: [
-      { letter: "C", text: "The BCBA is primarily interested in the temporal locus of crying, as this dimension would allow for the precise identification of when each crying episode begins and ends within the therapy session, enabling a detailed analysis of the antecedents and consequences immediately surrounding the onset and offset of the behavior. This focus would be crucial for conducting a thorough functional assessment to understand the environmental variables maintaining the crying behavior, rather than simply quantifying its total duration. By understanding the specific timing, the BCBA could implement targeted antecedent-based interventions or differential reinforcement strategies more effectively." },
-      { letter: "D", text: "The BCBA is primarily interested in the temporal extent of crying, as this dimension directly measures the duration of each instance of crying from its onset to its offset, which is then summed to calculate the total time the client engages in this behavior during a session. This measurement provides a direct and accurate quantification of how long the crying episodes last, fulfilling the objective of reducing the total time spent crying. Utilizing temporal extent allows the BCBA to track progress effectively as interventions are implemented, providing clear data on whether the cumulative duration of crying is decreasing over time, which is the direct target of the intervention in this scenario." },
-      { letter: "A", text: "The BCBA is primarily interested in the count of crying episodes, as this dimension would involve tallying each discrete instance of crying that occurs within the therapy session, regardless of how long each episode lasts. While a reduction in the number of crying episodes might indirectly contribute to a decrease in total crying time, the primary focus on count would be to address the frequency of the behavior, perhaps if the client was engaging in many short bursts of crying throughout the session. This approach would be most appropriate if the goal was to reduce the overall occurrence of the behavior rather than its cumulative duration." },
-      { letter: "B", text: "The BCBA is primarily interested in the repeatability of crying, which encompasses both the count and the rate of crying episodes, providing information on how often the behavior occurs within a given observation period. By focusing on repeatability, the BCBA could identify patterns in the frequency of crying, such as whether it occurs more often at certain times or in response to specific stimuli. This dimension is crucial for understanding the overall prevalence and intensity of the crying, as it allows for a standardized comparison across different sessions or conditions, informing interventions aimed at reducing the overall rate at which crying instances are observed." }
-    ],
-    correctAnswer: 'D',
-    rationale: "Temporal extent (C.3) refers to the duration of a behavior, or how long it lasts. This is the primary dimension of interest when measuring the total time spent crying. Count refers to frequency, temporal locus refers to when a behavior occurs (latency, IRT), and repeatability refers to frequency, rate, and count."
-  },
-  {
-    id: "t6-C-pool-77",
-    domain: "C",
-    taskItem: "C.14",
-    phase: "evaluation",
-    bloomsLevel: "comprehension",
-    difficulty: "hard",
-    scenario: "A BCBA is conducting a visual analysis of a client's tantrum data displayed on a line graph. The baseline shows high, stable rates, followed by an immediate and substantial decrease in the intervention phase.",
-    question: "Based on this visual analysis, what is the most appropriate conclusion regarding the intervention?",
-    choices: [
-      { letter: "D", text: "The visual analysis unequivocally illustrates a robust and immediate change in the level and trend of the target behavior upon intervention introduction, with subsequent stability at improved rates, providing compelling evidence for a strong functional relationship." },
-      { letter: "A", text: "The observed decline in the target behavior, while present, appears to be consistent with a natural decreasing trend that initiated prior to the introduction of the intervention, suggesting the intervention may not be the primary variable." },
-      { letter: "B", text: "The visual analysis of the client's behavior indicates that the intervention has not produced a significant or consistent change, as evidenced by overlapping data points between phases and a lack of clear trend alteration." },
-      { letter: "C", text: "The inconsistencies in data collection, including significant gaps, high variability within phases, and a lack of clear operational definitions, compromise the integrity of the collected data, making valid conclusions impossible." }
-    ],
-    correctAnswer: 'A',
-    rationale: "An immediate and substantial decrease from a high, stable baseline to an intervention phase (C.14) is a strong indicator of a functional relationship during visual analysis. It suggests the intervention is effective, not ineffective, unreliable, or a natural decrease."
-  },
-  {
-    id: "t6-C-pool-78",
-    domain: "C",
-    taskItem: "C.2",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: "A BCBA is tracking a student's out-of-seat behavior in a classroom. The behavior is discrete and occurs multiple times per hour.",
-    question: "Which continuous measurement procedure is best suited for quantifying the student's out-of-seat behavior?",
-    choices: [
-      { letter: "A", text: "The BCBA should implement duration recording to accurately quantify the total time the student engages in the target behavior from its onset to its offset, providing critical data for behaviors that vary significantly in how long they last, such as sustained tantrums or periods of focused attention, which would inform intervention strategies aimed at increasing or decreasing the persistence of the behavior over time." },
-      { letter: "B", text: "The BCBA should implement frequency recording to accurately quantify the discrete number of times the student initiates and completes the target behavior within a specified observation period, which is particularly suitable for behaviors with a clear beginning and end that occur at a relatively consistent rate, allowing for a direct and easily interpretable measure of how often the behavior occurs to track changes in its occurrence following an intervention." },
-      { letter: "C", text: "The BCBA should implement latency recording to accurately quantify the time elapsed between the presentation of a stimulus (e.g., a verbal instruction or cue) and the initiation of the student's target response, providing valuable data for behaviors where the speed of responding is a critical dimension, such as compliance with instructions or initiating academic tasks, to evaluate the efficiency of prompting procedures or the student's independent initiation." },
-      { letter: "D", text: "The BCBA should implement partial interval recording to provide an estimate of the proportion of intervals during which the target behavior occurs at any point within the interval, offering a discontinuous measure that is useful for behaviors that are high-rate or do not have a clear beginning or end, and can be used to track general trends in the occurrence of the behavior across observation sessions, though it may overestimate the actual duration or frequency." }
-    ],
-    correctAnswer: "B",
-    rationale: "Frequency recording (C.2) is ideal for discrete behaviors that can be easily counted, such as out-of-seat behavior. Duration measures time, latency measures time to initiation, and partial interval is a discontinuous method."
-  },
-  {
-    id: "t6-C-pool-79",
-    domain: "C",
-    taskItem: "C.11",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "hard",
-    scenario: "A BCBA is reviewing a client's self-stimulatory behavior data. The data points in the intervention phase show a decreasing trend, but with significant day-to-day fluctuations.",
-    question: "What does the significant day-to-day fluctuation in the intervention phase suggest about the intervention's effectiveness or implementation?",
-    choices: [
-      {
-        letter: "B",
-        text: "There may be uncontrolled variables influencing the behavior or inconsistent intervention implementation."
-      },
-      {
-        letter: "C",
-        text: "The behavior is naturally variable and requires no adjustment."
-      },
-      {
-        letter: "D",
-        text: "The measurement system is likely flawed."
-      },
-      {
-        letter: "A",
-        text: "The intervention is consistently effective."
-      }
-    ],
-    correctAnswer: 'C',
-    rationale: "Significant day-to-day fluctuation (C.11) in data during an intervention phase, despite a decreasing trend, suggests that there might be uncontrolled variables at play or that the intervention is not being implemented consistently. It does not indicate consistent effectiveness, natural variability, or necessarily a flawed measurement system without further investigation."
-  },
-  {
+{
     id: "t6-C-pool-80",
     domain: "C",
     taskItem: "C.15",
@@ -1837,43 +1285,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: 'D',
     rationale: "Given a consistent decreasing trend and behavior occurring below the clinical threshold (C.15), the most appropriate data-based decision is to continue the intervention as is to maintain the achieved gains. Discontinuing or modifying it without further data could lead to a relapse. Increasing intensity is unnecessary if the behavior is already at an acceptable level."
   },
-  {
-    id: "t6-C-pool-81",
-    domain: "C",
-    taskItem: "C.5",
-    phase: "intervention",
-    bloomsLevel: "knowledge",
-    difficulty: "hard",
-    scenario: "A BCBA is working with a client who frequently screams at a very high volume. The BCBA aims to reduce the intensity of these vocalizations.",
-    question: "Which dimension of behavior is the BCBA primarily targeting when addressing the volume of screaming?",
-    choices: [
-      { letter: "B", text: "The BCBA is primarily focusing on the amount of time that elapses between the presentation of an evocative stimulus and the initiation of the screaming behavior, indicating an interest in how quickly the client responds to environmental prompts with vocalizations. This focus allows the BCBA to identify if the client's screaming is a delayed reaction or an immediate response to specific antecedent events, which could inform the development of antecedent-based interventions aimed at preventing the screaming from occurring in the first place by modifying the environment or teaching alternative responses before the screaming can begin. Understanding this temporal relationship is crucial for pinpointing the exact moment intervention might be most effective." },
-      { letter: "C", text: "The BCBA is primarily targeting the total amount of time that the screaming behavior persists from its onset to its cessation during each occurrence, aiming to reduce how long the client engages in high-volume vocalizations once they have begun. By measuring and intervening on the duration, the BCBA seeks to decrease the overall disruptive impact of each screaming episode, even if the number of episodes remains constant. This approach often involves teaching the client replacement behaviors that can be emitted for a shorter period or implementing extinction procedures that reduce the reinforcement available for prolonged screaming, thereby making shorter episodes more likely to occur over time." },
-      { letter: "D", text: "The BCBA is primarily targeting the physical force or intensity with which the client emits the vocalizations, specifically aiming to reduce the loudness of the screaming. This dimension is crucial for addressing the disruptive and potentially aversive impact of the behavior on the environment and others, as a high-magnitude scream is often more problematic than a low-magnitude vocalization, even if emitted with the same frequency or duration. Interventions focused on this aspect might include differential reinforcement of lower-magnitude vocalizations or teaching alternative communication methods that allow the client to express needs without resorting to high-intensity sounds." },
-      { letter: "A", text: "The BCBA is primarily targeting the number of times the screaming behavior occurs within a specific observation period, aiming to reduce how often the client engages in high-volume vocalizations. By focusing on the rate of occurrence, the BCBA can track the overall prevalence of the problem behavior and evaluate the effectiveness of interventions designed to decrease its overall appearance. This approach often involves identifying the maintaining consequences for the screaming and implementing extinction or differential reinforcement procedures to reduce the likelihood of the behavior reoccurring in future similar contexts, thereby leading to a decrease in the total count of screaming episodes." }
-    ],
-    correctAnswer: 'A',
-    rationale: "Magnitude (C.5) refers to the intensity or force of a behavior, which directly relates to the volume of screaming. Frequency, duration, and latency measure other aspects of behavior."
-  },
-  {
-    id: "t6-C-pool-82",
-    domain: "C",
-    taskItem: "C.3",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: "A BCBA is working with a client who engages in prolonged tantrum behaviors. The BCBA needs to know how long each tantrum lasts.",
-    question: "Which measurement procedure should the BCBA use to gather data on the duration of tantrums?",
-    choices: [
-      { letter: "D", text: "The BCBA should implement Interresponse Time (IRT) measurement, which involves recording the elapsed time between the end of one tantrum and the beginning of the next tantrum. This procedure would provide valuable data on the temporal spacing between successive tantrum occurrences, thereby allowing the BCBA to analyze patterns in the client's behavior that might indicate the influence of antecedent or consequent events on the re-initiation of tantrums, rather than focusing on the length of a single tantrum event itself." },
-      { letter: "A", text: "The BCBA should utilize Frequency recording, counting each instance of a tantrum within a defined observation period. This measurement would provide a clear indication of how often the client engages in tantrum behavior, which is crucial for understanding the overall prevalence of the target behavior. While frequency is essential for establishing a baseline rate and evaluating the effectiveness of interventions aimed at reducing the occurrence of tantrums, it does not directly capture the specific dimension of how long each individual tantrum episode persists." },
-      { letter: "B", text: "The BCBA should employ Duration recording, meticulously measuring the total amount of time from the onset to the offset of each tantrum behavior. This direct measurement strategy is specifically designed to quantify how long a behavior lasts, providing precise data on the temporal extent of each tantrum episode. By collecting duration data, the BCBA can accurately assess the primary concern of prolonged tantrum behaviors and effectively monitor changes in the length of these episodes as interventions are implemented." },
-      { letter: "C", text: "The BCBA should apply Latency measurement, which involves recording the time elapsed between the presentation of an antecedent stimulus or demand and the initiation of the tantrum behavior. This measurement technique would offer critical insights into how quickly the client begins to tantrum following specific environmental triggers, helping to identify potential discriminative stimuli or motivating operations that precede the behavior. However, latency focuses on the time to *start* the behavior, not the total time the behavior *occurs* once it has begun." }
-    ],
-    correctAnswer: 'B',
-    rationale: "Duration recording (C.3) directly measures the length of time a behavior occurs, which is exactly what is needed for tantrum behavior. Frequency measures count, latency measures time to initiation, and IRT measures time between responses."
-  },
-  {
+{
     id: "t6-C-pool-83",
     domain: "C",
     taskItem: "C.4",
@@ -1891,43 +1303,7 @@ export const tier6Pool_C: Question[] = [
     correctAnswer: "C",
     rationale: "Latency (C.4) is defined as the time from the onset of a stimulus (instruction) to the initiation of the response (task initiation). IRT measures time between responses, duration measures the length of a response, and rate is frequency over time."
   },
-  {
-    id: "t6-C-pool-84",
-    domain: "C",
-    taskItem: "C.8",
-    phase: "evaluation",
-    bloomsLevel: "knowledge",
-    difficulty: "medium",
-    scenario: "Two RBTs independently recorded the frequency of a client's hitting behavior during a 1-hour session. RBT 1 recorded 10 instances, and RBT 2 recorded 8 instances.",
-    question: "To evaluate the consistency of data collection between the two RBTs, the BCBA should calculate which of the following?",
-    choices: [
-      { letter: "B", text: "The BCBA should calculate social validity to ascertain the extent to which the intervention goals, procedures, and outcomes are acceptable to the client, caregivers, and other relevant stakeholders, ensuring that the implemented changes are meaningful and lead to improvements that are valued within the client's natural environment and daily routines, thereby confirming the practical significance of the behavior reduction or skill acquisition program from a consumer perspective." },
-      { letter: "C", text: "The BCBA should calculate Interobserver Agreement (IOA) to assess the degree to which two or more independent observers obtain the same observational data after observing the same events, which is crucial for determining the reliability and trustworthiness of the collected frequency data and ensuring that the measurement system is consistent and objective, thereby supporting the internal validity of the behavioral assessment and intervention effectiveness." },
-      { letter: "D", text: "The BCBA should calculate procedural reliability to systematically evaluate the extent to which the intervention, as outlined in the treatment plan, is implemented by the RBTs exactly as intended and prescribed, ensuring that all components of the intervention are delivered consistently and accurately, which is fundamental for attributing observed behavior changes directly to the intervention and maintaining the internal validity of the treatment outcomes." },
-      { letter: "A", text: "The BCBA should calculate treatment integrity to verify that the independent variable (the intervention) is being applied precisely as designed and described in the intervention protocol, which involves observing the RBTs' performance against a checklist of intervention steps to ensure consistent implementation across all sessions and therapists, thereby strengthening the confidence that any observed behavior changes are directly attributable to the intervention rather than to variations in its delivery." }
-    ],
-    correctAnswer: 'D',
-    rationale: "Interobserver Agreement (IOA) (C.8) is used to evaluate the consistency of data collected by two or more independent observers. Treatment integrity refers to intervention implementation, social validity to importance, and procedural reliability to consistent procedure application."
-  },
-  {
-    id: "t6-C-pool-85",
-    domain: "C",
-    taskItem: "C.5",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: "A BCBA is working with a client who frequently screams at a very high volume. The BCBA aims to reduce the intensity of these vocalizations.",
-    question: "Which dimension of behavior is the BCBA primarily targeting when addressing the volume of screaming?",
-    choices: [
-      { letter: "B", text: "The BCBA is primarily focusing on the amount of time that passes from the presentation of an environmental stimulus to the initiation of the screaming behavior, aiming to decrease this temporal gap to promote more immediate, appropriate vocalizations. This approach would involve implementing interventions designed to reduce the period between an antecedent event and the client's vocal response, thereby addressing the speed at which the screaming begins. Such an intervention might include differential reinforcement for quicker, alternative communication attempts, ensuring that the client learns to respond to triggers with more functionally appropriate behaviors in a timelier manner, rather than allowing the screaming to serve as the initial reaction." },
-      { letter: "C", text: "The BCBA is primarily concerned with the amount of time that elapses from the client's initial scream until the screaming behavior ultimately ceases, aiming to reduce the total duration of each screaming episode. This involves implementing strategies that decrease the sustained period of the high-volume vocalizations once they have begun, focusing on the termination of the behavior rather than its onset or intensity. Interventions might include differential reinforcement of other behavior (DRO) for periods of non-screaming following an episode, or prompting and reinforcing the client to transition to a calmer state more quickly, thereby directly targeting the persistence of the vocal outburst and its temporal extent." },
-      { letter: "D", text: "The BCBA is primarily targeting the physical force or intensity of the client's vocalizations, specifically aiming to reduce the decibel level or loudness of the screaming behavior. This clinical objective involves implementing interventions designed to modify the amplitude of the client's voice, ensuring that future vocalizations, while still serving a communicative function, occur at a socially appropriate and tolerable volume. Strategies might include differential reinforcement of lower-volume vocalizations (DRL), prompting and reinforcing quiet speech, or providing feedback on vocal intensity, thereby directly addressing the excessive magnitude of the client's verbal output rather than its occurrence or duration." },
-      { letter: "A", text: "The BCBA is primarily targeting the number of times the client engages in screaming behavior within a specific observational period, aiming to decrease the overall rate at which these high-volume vocalizations occur. This clinical objective involves implementing interventions designed to reduce the total count of screaming incidents over a given timeframe, focusing on the occurrence of the behavior itself. Strategies might include differential reinforcement of alternative behavior (DRA) for appropriate communication, extinction procedures if the screaming is maintained by attention, or antecedent interventions to prevent triggers, thereby directly addressing the repeated instances of screaming rather than its loudness or duration." }
-    ],
-    correctAnswer: 'A',
-    rationale: "Magnitude (C.5) refers to the intensity or force of a behavior, which directly relates to the volume of screaming. Frequency, duration, and latency measure other aspects of behavior."
-  },
-  {
+{
     id: "t6-C-pool-86",
     domain: "C",
     taskItem: "C.12",
@@ -1992,23 +1368,5 @@ export const tier6Pool_C: Question[] = [
     ],
     correctAnswer: 'D',
     rationale: "Validity (C.8) refers to the extent to which a measurement system measures what it is intended to measure. Reliability refers to consistency, accuracy to how close to the true value, and precision to the exactness of measurement."
-  },
-  {
-    id: "t6-C-pool-89",
-    domain: "C",
-    taskItem: "C.2",
-    phase: "intervention",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: "A BCBA is tracking a student's out-of-seat behavior in a classroom. The behavior is discrete and occurs multiple times per hour.",
-    question: "Which continuous measurement procedure is best suited for quantifying the student's out-of-seat behavior?",
-    choices: [
-      { letter: "D", text: "The BCBA should implement partial interval recording, a discontinuous measurement procedure, to estimate the occurrence of the target behavior within specified observation intervals. This method is particularly useful when the behavior does not have a clear beginning or end, or when it occurs at such a high frequency that continuous measurement is impractical. By recording if the behavior occurred at any point during the interval, the BCBA can gain an understanding of its prevalence without requiring constant observation, which could be beneficial for behaviors like repetitive vocalizations or hand flapping that might be hard to count precisely." },
-      { letter: "A", text: "The BCBA should utilize duration recording, a continuous measurement procedure, to precisely quantify the total amount of time the student engages in the target behavior from its onset to its offset. This method is ideal for behaviors that have a clear beginning and end, and for which the primary concern is how long the behavior lasts, such as sustained attention to a task, tantrum episodes, or engagement in a preferred activity. By measuring the exact time spent in the behavior, the BCBA can effectively evaluate interventions aimed at increasing or decreasing the length of specific responses, providing a clear metric for therapeutic progress." },
-      { letter: "B", text: "The BCBA should employ frequency recording, a continuous measurement procedure, to count the number of times the target behavior occurs within a specific observation period. This method is most appropriate for behaviors that are discrete, have a clear beginning and end, and occur at a rate that allows for accurate counting, such as hitting, raising a hand, or completing a task. By tracking the exact count of each instance, the BCBA can establish a baseline rate and monitor changes in the occurrence of the behavior in response to interventions, providing a direct measure of behavioral change and intervention effectiveness." },
-      { letter: "C", text: "The BCBA should implement latency recording, a continuous measurement procedure, to measure the time elapsed between the presentation of a stimulus and the initiation of the target behavior. This method is particularly useful for behaviors where the speed of initiation is a critical factor, such as how quickly a student responds to an instruction, begins a task, or complies with a request. By systematically measuring the time interval from the prompt to the first instance of the behavior, the BCBA can assess and intervene on response delays, aiming to decrease the time taken for the student to begin a desired action." }
-    ],
-    correctAnswer: 'A',
-    rationale: "Frequency recording (C.2) is ideal for discrete behaviors that can be easily counted, such as out-of-seat behavior. Duration measures time, latency measures time to initiation, and partial interval is a discontinuous method."
   }
 ];

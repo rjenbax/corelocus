@@ -14,30 +14,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Ensuring the client's physical safety and the safety of others.` },
       { letter: "B", text: `Collecting data on the frequency of head-hitting.` },
       { letter: "C", text: `Determining the function of the tantrum.` },
-      { letter: "D", text: `Implementing a planned extinction procedure.` },
+      { letter: "D", text: `Implementing a planned extinction procedure.` }
     ],
     correctAnswer: "A",
     rationale: `In a crisis or emergency, the immediate priority is always to ensure the physical safety of the client and others. Data collection, functional analysis, and planned interventions are important but secondary to immediate safety concerns.`,
   }
-,
-  {
-    id: "t6-H-pool-2",
-    domain: "H",
-    taskItem: "H.8",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "easy",
-    scenario: `During a session, a client begins to engage in a severe tantrum, including hitting their head against the wall. The BCBA needs to ensure the client's safety.`,
-    question: `What is the immediate priority for the BCBA in this crisis situation?`,
-    choices: [
-      { letter: "B", text: `Collecting data on the frequency of head-hitting.` },
-      { letter: "C", text: `Determining the function of the tantrum.` },
-      { letter: "D", text: `Implementing a planned extinction procedure.` },
-      { letter: "A", text: `Ensuring the client's physical safety and the safety of others.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `In a crisis or emergency, the immediate priority is always to ensure the physical safety of the client and others. Data collection, functional analysis, and planned interventions are important but secondary to immediate safety concerns.`,
-  }
+
 ,
   {
     id: "t6-H-pool-3",
@@ -52,30 +34,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "C", text: `Partial interval recording` },
       { letter: "D", text: `Momentary time sampling` },
       { letter: "A", text: `Duration recording` },
-      { letter: "B", text: `Frequency recording` },
+      { letter: "B", text: `Frequency recording` }
     ],
     correctAnswer: 'C',
     rationale: `Duration recording is most appropriate for behaviors that are continuous and occur for varying lengths of time, like hand-flapping. Frequency recording is for discrete behaviors. Partial interval recording and momentary time sampling are discontinuous measurement methods that may underestimate or overestimate the occurrence of continuous behaviors.`,
   }
-,
-  {
-    id: "t6-H-pool-4",
-    domain: "H",
-    taskItem: "H.8",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `During a session, a client begins to engage in a severe tantrum, including hitting their head against the wall. The BCBA needs to ensure the client's safety.`,
-    question: `What is the immediate priority for the BCBA in this crisis situation?`,
-    choices: [
-      { letter: "D", text: `Implementing a planned extinction procedure.` },
-      { letter: "A", text: `Ensuring the client's physical safety and the safety of others.` },
-      { letter: "B", text: `Collecting data on the frequency of head-hitting.` },
-      { letter: "C", text: `Determining the function of the tantrum.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `In a crisis or emergency, the immediate priority is always to ensure the physical safety of the client and others. Data collection, functional analysis, and planned interventions are important but secondary to immediate safety concerns.`,
-  }
+
 ,
   {
     id: "t6-H-pool-5",
@@ -90,12 +54,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `The intervention is showing progress but requires continued monitoring and potentially adjustments.` },
       { letter: "B", text: `The intervention is ineffective and should be discontinued immediately.` },
       { letter: "C", text: `The intervention is fully effective as the behavior is increasing.` },
-      { letter: "D", text: `The data is insufficient to draw any conclusions.` },
+      { letter: "D", text: `The data is insufficient to draw any conclusions.` }
     ],
     correctAnswer: "A",
     rationale: `An increasing trend indicates progress, suggesting the intervention is having a positive effect, but since the criterion has not been met, it requires continued monitoring and potential adjustments. Discontinuing an intervention that shows progress is premature. While the behavior is increasing, it's not 'fully effective' until the criterion is met. Three weeks of data showing a trend is sufficient to draw preliminary conclusions.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-6",
     domain: "H",
@@ -109,49 +72,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Increasing the intensity of the intervention in the therapy room.` },
       { letter: "C", text: `Discontinuing the intervention in the therapy room.` },
       { letter: "D", text: `Changing the target behavior to something easier to manage.` },
-      { letter: "A", text: `Generalizing the intervention procedures to the classroom setting.` },
+      { letter: "A", text: `Generalizing the intervention procedures to the classroom setting.` }
     ],
     correctAnswer: 'B',
     rationale: `The data suggests that the intervention is effective in one setting but not generalizing to another. Therefore, the BCBA should focus on generalizing the intervention to the classroom. Increasing intensity in the therapy room is unnecessary. Discontinuing the intervention is premature. Changing the target behavior avoids addressing the core issue.`,
   }
-,
-  {
-    id: "t6-H-pool-7",
-    domain: "H",
-    taskItem: "H.15",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "hard",
-    scenario: `A BCBA has been providing services to a client for 18 months. The client has consistently met all their treatment goals, demonstrates generalized skills across environments, and the family reports high satisfaction with progress. The BCBA is considering discontinuing services.`,
-    question: `Based on ethical guidelines, what is the primary justification for discontinuing services in this situation?`,
-    choices: [
-      { letter: "C", text: `The client's insurance coverage is expiring.` },
-      { letter: "D", text: `The BCBA wants to take on a new, more interesting case.` },
-      { letter: "A", text: `The client has achieved maximum benefit from services.` },
-      { letter: "B", text: `The BCBA has reached their caseload capacity.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Services should be discontinued when the client has achieved maximum benefit, meaning they have met their goals and no longer require the current level of support. Caseload capacity, insurance expiration, or BCBA preference are not ethical justifications for discontinuing services if the client still requires them.`,
-  }
-,
-  {
-    id: "t6-H-pool-8",
-    domain: "H",
-    taskItem: "H.7",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "easy",
-    scenario: `A client engages in severe aggression that poses a significant risk to themselves and others, and less restrictive interventions have been ineffective. The BCBA team is considering a punishment procedure.`,
-    question: `Before implementing a punishment procedure, what is a critical ethical consideration?`,
-    choices: [
-      { letter: "D", text: `Focusing solely on suppressing the behavior without teaching replacement skills.` },
-      { letter: "A", text: `Ensuring all less restrictive interventions have been attempted and documented as ineffective.` },
-      { letter: "B", text: `Obtaining verbal consent from the client's guardian.` },
-      { letter: "C", text: `Only using punishment procedures that are easy to implement.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `Ethically, punishment procedures should only be considered after less restrictive interventions have been thoroughly attempted and proven ineffective. Written informed consent is required, not just verbal. Ease of implementation is not an ethical consideration. Punishment should always be paired with teaching appropriate replacement behaviors.`,
-  }
+
 ,
   {
     id: "t6-H-pool-9",
@@ -166,49 +92,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Elopement` },
       { letter: "B", text: `Aggression` },
       { letter: "C", text: `Property destruction` },
-      { letter: "D", text: `All behaviors equally` },
+      { letter: "D", text: `All behaviors equally` }
     ],
     correctAnswer: "A",
     rationale: `Elopement should be prioritized due to its immediate safety risk, which is a primary consideration in behavior prioritization. While aggression and property destruction are serious, safety concerns typically take precedence. Addressing all behaviors equally without prioritization can be less effective.`,
   }
-,
-  {
-    id: "t6-H-pool-10",
-    domain: "H",
-    taskItem: "H.13",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A client has successfully mastered a new social skill in a structured therapy setting. The BCBA wants to ensure the skill is used in various natural environments and maintained over time.`,
-    question: `Which strategy is most appropriate for promoting generalization and maintenance of the new skill?`,
-    choices: [
-      { letter: "B", text: `Continuing to provide dense, artificial reinforcement in the therapy setting.` },
-      { letter: "C", text: `Only practicing the skill in the therapy room.` },
-      { letter: "D", text: `Prompting the skill only when the client makes an error.` },
-      { letter: "A", text: `Training with multiple exemplars and naturalistic reinforcement.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `Training with multiple exemplars (different people, settings, stimuli) and shifting to naturalistic reinforcement are key strategies for promoting generalization and maintenance. Continuing dense, artificial reinforcement or only practicing in one setting hinders generalization. Prompting only after errors may not be sufficient for skill acquisition and generalization.`,
-  }
-,
-  {
-    id: "t6-H-pool-11",
-    domain: "H",
-    taskItem: "H.14",
-    phase: "evaluation",
-    bloomsLevel: "comprehension",
-    difficulty: "hard",
-    scenario: `A BCBA has been working with a client for several years, and the client has met all their treatment goals. The client is now preparing to transition to a less intensive service model.`,
-    question: `What is a crucial component of effective transition planning?`,
-    choices: [
-      { letter: "C", text: `Transferring the client to a new BCBA without prior discussion.` },
-      { letter: "D", text: `Minimizing communication with the client's family during the transition.` },
-      { letter: "A", text: `Collaborating with the client, family, and other service providers to ensure continuity of care.` },
-      { letter: "B", text: `Abruptly discontinuing services once goals are met.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Effective transition planning involves collaborative efforts with the client, family, and other service providers to ensure a smooth transition and continuity of care. Abruptly discontinuing services or transferring without discussion is unethical and can negatively impact the client. Minimizing communication is counterproductive to successful transition.`,
-  }
+
 ,
   {
     id: "t6-H-pool-12",
@@ -223,30 +112,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "D", text: `External validity` },
       { letter: "A", text: `Social validity` },
       { letter: "B", text: `Treatment integrity` },
-      { letter: "C", text: `Internal validity` },
+      { letter: "C", text: `Internal validity` }
     ],
     correctAnswer: 'D',
     rationale: `Social validity refers to the social significance of the target behavior, the appropriateness of the intervention procedures, and the social importance of the results. The parents' concerns about the child's engagement and happiness relate directly to the social importance of the results. Treatment integrity refers to the faithful implementation of the intervention. Internal and external validity relate to experimental control and generalizability, respectively.`,
   }
-,
-  {
-    id: "t6-H-pool-13",
-    domain: "H",
-    taskItem: "H.3",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A BCBA is developing an intervention plan for a student who frequently calls out in class. The goal is to increase appropriate participation.`,
-    question: `Which of the following is the most appropriately written behavioral objective?`,
-    choices: [
-      { letter: "A", text: `By the end of the week, John will raise his hand and wait to be called on during group activities for 80% of opportunities for 3 consecutive days.` },
-      { letter: "B", text: `John will stop calling out in class.` },
-      { letter: "C", text: `John will improve his classroom behavior.` },
-      { letter: "D", text: `John will raise his hand more often.` },
-    ],
-    correctAnswer: "A",
-    rationale: `A well-written behavioral objective is observable, measurable, attainable, relevant, and time-bound (SMART). Choice A includes all these components. The other choices are either not measurable, not specific enough, or lack a clear criterion.`,
-  }
+
 ,
   {
     id: "t6-H-pool-14",
@@ -261,12 +132,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Implementing a token economy for completing work tasks.` },
       { letter: "C", text: `Using a time-out procedure when disruptive behavior occurs.` },
       { letter: "D", text: `Delivering praise contingent on completing work tasks.` },
-      { letter: "A", text: `Providing a visual schedule of tasks and offering choices in task order.` },
+      { letter: "A", text: `Providing a visual schedule of tasks and offering choices in task order.` }
     ],
     correctAnswer: 'B',
     rationale: `Providing a visual schedule and choices are antecedent strategies that can reduce the aversiveness of demands, thereby decreasing the motivation for escape-maintained disruptive behavior. A token economy and praise are consequence-based interventions. Time-out is a punishment procedure.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-15",
     domain: "H",
@@ -280,30 +150,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "C", text: `Partial interval recording` },
       { letter: "D", text: `Momentary time sampling` },
       { letter: "A", text: `Duration recording` },
-      { letter: "B", text: `Frequency recording` },
+      { letter: "B", text: `Frequency recording` }
     ],
     correctAnswer: 'C',
     rationale: `Duration recording is most appropriate for behaviors that are continuous and occur for varying lengths of time, like hand-flapping. Frequency recording is for discrete behaviors. Partial interval recording and momentary time sampling are discontinuous measurement methods that may underestimate or overestimate the occurrence of continuous behaviors.`,
   }
-,
-  {
-    id: "t6-H-pool-16",
-    domain: "H",
-    taskItem: "H.12",
-    phase: "evaluation",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A BCBA is reviewing data for an intervention designed to reduce a child's aggression. The data shows that aggression has decreased significantly in the therapy room but remains high in the classroom setting.`,
-    question: `What modification should the BCBA consider based on this data?`,
-    choices: [
-      { letter: "D", text: `Changing the target behavior to something easier to manage.` },
-      { letter: "A", text: `Generalizing the intervention procedures to the classroom setting.` },
-      { letter: "B", text: `Increasing the intensity of the intervention in the therapy room.` },
-      { letter: "C", text: `Discontinuing the intervention in the therapy room.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `The data suggests that the intervention is effective in one setting but not generalizing to another. Therefore, the BCBA should focus on generalizing the intervention to the classroom. Increasing intensity in the therapy room is unnecessary. Discontinuing the intervention is premature. Changing the target behavior avoids addressing the core issue.`,
-  }
+
 ,
   {
     id: "t6-H-pool-17",
@@ -318,12 +170,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Ignoring toy throwing and prompting the child to clean up, then providing praise for compliance.` },
       { letter: "B", text: `Removing all toys from the child's reach before asking them to clean up.` },
       { letter: "C", text: `Providing a 'first-then' statement before asking the child to clean up.` },
-      { letter: "D", text: `Using a verbal reprimand each time the child throws a toy.` },
+      { letter: "D", text: `Using a verbal reprimand each time the child throws a toy.` }
     ],
     correctAnswer: "A",
     rationale: `Ignoring the toy throwing (extinction for attention) and prompting appropriate behavior with reinforcement for compliance (differential reinforcement) is a suitable consequence intervention. Removing toys is an antecedent strategy. A 'first-then' statement is also an antecedent strategy. Verbal reprimands can sometimes function as reinforcement, especially if the behavior is attention-maintained.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-18",
     domain: "H",
@@ -337,12 +188,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Increasing the intensity of the intervention in the therapy room.` },
       { letter: "C", text: `Discontinuing the intervention in the therapy room.` },
       { letter: "D", text: `Changing the target behavior to something easier to manage.` },
-      { letter: "A", text: `Generalizing the intervention procedures to the classroom setting.` },
+      { letter: "A", text: `Generalizing the intervention procedures to the classroom setting.` }
     ],
     correctAnswer: 'B',
     rationale: `The data suggests that the intervention is effective in one setting but not generalizing to another. Therefore, the BCBA should focus on generalizing the intervention to the classroom. Increasing intensity in the therapy room is unnecessary. Discontinuing the intervention is premature. Changing the target behavior avoids addressing the core issue.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-19",
     domain: "H",
@@ -356,30 +206,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "C", text: `Internal validity` },
       { letter: "D", text: `External validity` },
       { letter: "A", text: `Social validity` },
-      { letter: "B", text: `Treatment integrity` },
+      { letter: "B", text: `Treatment integrity` }
     ],
     correctAnswer: 'C',
     rationale: `Social validity refers to the social significance of the target behavior, the appropriateness of the intervention procedures, and the social importance of the results. The parents' concerns about the child's engagement and happiness relate directly to the social importance of the results. Treatment integrity refers to the faithful implementation of the intervention. Internal and external validity relate to experimental control and generalizability, respectively.`,
   }
-,
-  {
-    id: "t6-H-pool-20",
-    domain: "H",
-    taskItem: "H.11",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "easy",
-    scenario: `A BCBA has implemented a token economy to increase a student's on-task behavior. After three weeks, the data shows an increasing trend in on-task behavior, but it has not yet reached the desired criterion.`,
-    question: `Based on this data, what is the most appropriate conclusion regarding the intervention's effectiveness?`,
-    choices: [
-      { letter: "D", text: `The data is insufficient to draw any conclusions.` },
-      { letter: "A", text: `The intervention is showing progress but requires continued monitoring and potentially adjustments.` },
-      { letter: "B", text: `The intervention is ineffective and should be discontinued immediately.` },
-      { letter: "C", text: `The intervention is fully effective as the behavior is increasing.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `An increasing trend indicates progress, suggesting the intervention is having a positive effect, but since the criterion has not been met, it requires continued monitoring and potential adjustments. Discontinuing an intervention that shows progress is premature. While the behavior is increasing, it's not 'fully effective' until the criterion is met. Three weeks of data showing a trend is sufficient to draw preliminary conclusions.`,
-  }
+
 ,
   {
     id: "t6-H-pool-21",
@@ -394,12 +226,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Ignoring toy throwing and prompting the child to clean up, then providing praise for compliance.` },
       { letter: "B", text: `Removing all toys from the child's reach before asking them to clean up.` },
       { letter: "C", text: `Providing a 'first-then' statement before asking the child to clean up.` },
-      { letter: "D", text: `Using a verbal reprimand each time the child throws a toy.` },
+      { letter: "D", text: `Using a verbal reprimand each time the child throws a toy.` }
     ],
     correctAnswer: "A",
     rationale: `Ignoring the toy throwing (extinction for attention) and prompting appropriate behavior with reinforcement for compliance (differential reinforcement) is a suitable consequence intervention. Removing toys is an antecedent strategy. A 'first-then' statement is also an antecedent strategy. Verbal reprimands can sometimes function as reinforcement, especially if the behavior is attention-maintained.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-22",
     domain: "H",
@@ -413,49 +244,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `The BCBA has reached their caseload capacity.` },
       { letter: "C", text: `The client's insurance coverage is expiring.` },
       { letter: "D", text: `The BCBA wants to take on a new, more interesting case.` },
-      { letter: "A", text: `The client has achieved maximum benefit from services.` },
+      { letter: "A", text: `The client has achieved maximum benefit from services.` }
     ],
     correctAnswer: 'B',
     rationale: `Services should be discontinued when the client has achieved maximum benefit, meaning they have met their goals and no longer require the current level of support. Caseload capacity, insurance expiration, or BCBA preference are not ethical justifications for discontinuing services if the client still requires them.`,
   }
-,
-  {
-    id: "t6-H-pool-23",
-    domain: "H",
-    taskItem: "H.1",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A BCBA has completed a functional assessment for a child exhibiting self-injurious behavior. The assessment revealed that the behavior is maintained by attention from caregivers. The team is now discussing intervention options.`,
-    question: `Based on the assessment findings, which intervention approach is most appropriate?`,
-    choices: [
-      { letter: "C", text: `Implement a token economy system for academic performance.` },
-      { letter: "D", text: `Implement a response cost procedure for non-compliance.` },
-      { letter: "A", text: `Implement a differential reinforcement of other behavior (DRO) procedure for self-injurious behavior.` },
-      { letter: "B", text: `Implement a time-out procedure contingent on self-injurious behavior.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `DRO is appropriate because it directly addresses the function of attention by reinforcing the absence of the target behavior. Time-out is a punishment procedure and may not be the most appropriate first-line intervention. Token economy and response cost are not directly targeting the function of attention for self-injurious behavior.`,
-  }
-,
-  {
-    id: "t6-H-pool-24",
-    domain: "H",
-    taskItem: "H.12",
-    phase: "evaluation",
-    bloomsLevel: "application",
-    difficulty: "easy",
-    scenario: `A BCBA is reviewing data for an intervention designed to reduce a child's aggression. The data shows that aggression has decreased significantly in the therapy room but remains high in the classroom setting.`,
-    question: `What modification should the BCBA consider based on this data?`,
-    choices: [
-      { letter: "D", text: `Changing the target behavior to something easier to manage.` },
-      { letter: "A", text: `Generalizing the intervention procedures to the classroom setting.` },
-      { letter: "B", text: `Increasing the intensity of the intervention in the therapy room.` },
-      { letter: "C", text: `Discontinuing the intervention in the therapy room.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `The data suggests that the intervention is effective in one setting but not generalizing to another. Therefore, the BCBA should focus on generalizing the intervention to the classroom. Increasing intensity in the therapy room is unnecessary. Discontinuing the intervention is premature. Changing the target behavior avoids addressing the core issue.`,
-  }
+
 ,
   {
     id: "t6-H-pool-25",
@@ -470,12 +264,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Ensuring all less restrictive interventions have been attempted and documented as ineffective.` },
       { letter: "B", text: `Obtaining verbal consent from the client's guardian.` },
       { letter: "C", text: `Only using punishment procedures that are easy to implement.` },
-      { letter: "D", text: `Focusing solely on suppressing the behavior without teaching replacement skills.` },
+      { letter: "D", text: `Focusing solely on suppressing the behavior without teaching replacement skills.` }
     ],
     correctAnswer: "A",
     rationale: `Ethically, punishment procedures should only be considered after less restrictive interventions have been thoroughly attempted and proven ineffective. Written informed consent is required, not just verbal. Ease of implementation is not an ethical consideration. Punishment should always be paired with teaching appropriate replacement behaviors.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-26",
     domain: "H",
@@ -489,49 +282,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Frequency recording` },
       { letter: "C", text: `Partial interval recording` },
       { letter: "D", text: `Momentary time sampling` },
-      { letter: "A", text: `Duration recording` },
+      { letter: "A", text: `Duration recording` }
     ],
     correctAnswer: 'B',
     rationale: `Duration recording is most appropriate for behaviors that are continuous and occur for varying lengths of time, like hand-flapping. Frequency recording is for discrete behaviors. Partial interval recording and momentary time sampling are discontinuous measurement methods that may underestimate or overestimate the occurrence of continuous behaviors.`,
   }
-,
-  {
-    id: "t6-H-pool-27",
-    domain: "H",
-    taskItem: "H.15",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "easy",
-    scenario: `A BCBA has been providing services to a client for 18 months. The client has consistently met all their treatment goals, demonstrates generalized skills across environments, and the family reports high satisfaction with progress. The BCBA is considering discontinuing services.`,
-    question: `Based on ethical guidelines, what is the primary justification for discontinuing services in this situation?`,
-    choices: [
-      { letter: "C", text: `The client's insurance coverage is expiring.` },
-      { letter: "D", text: `The BCBA wants to take on a new, more interesting case.` },
-      { letter: "A", text: `The client has achieved maximum benefit from services.` },
-      { letter: "B", text: `The BCBA has reached their caseload capacity.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Services should be discontinued when the client has achieved maximum benefit, meaning they have met their goals and no longer require the current level of support. Caseload capacity, insurance expiration, or BCBA preference are not ethical justifications for discontinuing services if the client still requires them.`,
-  }
-,
-  {
-    id: "t6-H-pool-28",
-    domain: "H",
-    taskItem: "H.5",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A student frequently engages in disruptive behavior during independent work tasks. A functional assessment indicates the behavior is maintained by escape from demand. The BCBA wants to implement an antecedent strategy.`,
-    question: `Which of the following is an appropriate antecedent intervention for this scenario?`,
-    choices: [
-      { letter: "D", text: `Delivering praise contingent on completing work tasks.` },
-      { letter: "A", text: `Providing a visual schedule of tasks and offering choices in task order.` },
-      { letter: "B", text: `Implementing a token economy for completing work tasks.` },
-      { letter: "C", text: `Using a time-out procedure when disruptive behavior occurs.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `Providing a visual schedule and choices are antecedent strategies that can reduce the aversiveness of demands, thereby decreasing the motivation for escape-maintained disruptive behavior. A token economy and praise are consequence-based interventions. Time-out is a punishment procedure.`,
-  }
+
 ,
   {
     id: "t6-H-pool-29",
@@ -546,68 +302,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `The intervention is showing progress but requires continued monitoring and potentially adjustments.` },
       { letter: "B", text: `The intervention is ineffective and should be discontinued immediately.` },
       { letter: "C", text: `The intervention is fully effective as the behavior is increasing.` },
-      { letter: "D", text: `The data is insufficient to draw any conclusions.` },
+      { letter: "D", text: `The data is insufficient to draw any conclusions.` }
     ],
     correctAnswer: "A",
     rationale: `An increasing trend indicates progress, suggesting the intervention is having a positive effect, but since the criterion has not been met, it requires continued monitoring and potential adjustments. Discontinuing an intervention that shows progress is premature. While the behavior is increasing, it's not 'fully effective' until the criterion is met. Three weeks of data showing a trend is sufficient to draw preliminary conclusions.`,
   }
-,
-  {
-    id: "t6-H-pool-30",
-    domain: "H",
-    taskItem: "H.3",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A BCBA is developing an intervention plan for a student who frequently calls out in class. The goal is to increase appropriate participation.`,
-    question: `Which of the following is the most appropriately written behavioral objective?`,
-    choices: [
-      { letter: "B", text: `John will stop calling out in class.` },
-      { letter: "C", text: `John will improve his classroom behavior.` },
-      { letter: "D", text: `John will raise his hand more often.` },
-      { letter: "A", text: `By the end of the week, John will raise his hand and wait to be called on during group activities for 80% of opportunities for 3 consecutive days.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `A well-written behavioral objective is observable, measurable, attainable, relevant, and time-bound (SMART). Choice A includes all these components. The other choices are either not measurable, not specific enough, or lack a clear criterion.`,
-  }
-,
-  {
-    id: "t6-H-pool-31",
-    domain: "H",
-    taskItem: "H.10",
-    phase: "evaluation",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A BCBA has trained a new RBT on implementing a differential reinforcement procedure. During supervision, the BCBA observes the RBT frequently forgetting to deliver reinforcement when the target behavior occurs.`,
-    question: `The RBT's inconsistent implementation directly impacts which aspect of the intervention?`,
-    choices: [
-      { letter: "C", text: `Interobserver agreement (IOA)` },
-      { letter: "D", text: `Procedural fidelity` },
-      { letter: "A", text: `Treatment integrity` },
-      { letter: "B", text: `Social validity` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Treatment integrity (or procedural fidelity) refers to the extent to which the intervention is implemented as planned. The RBT's forgetting to deliver reinforcement indicates a lack of treatment integrity. Social validity relates to the acceptability and importance of the intervention and its outcomes. IOA refers to the consistency of data collection between two or more observers.`,
-  }
-,
-  {
-    id: "t6-H-pool-32",
-    domain: "H",
-    taskItem: "H.3",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A BCBA is developing an intervention plan for a student who frequently calls out in class. The goal is to increase appropriate participation.`,
-    question: `Which of the following is the most appropriately written behavioral objective?`,
-    choices: [
-      { letter: "D", text: `John will raise his hand more often.` },
-      { letter: "A", text: `By the end of the week, John will raise his hand and wait to be called on during group activities for 80% of opportunities for 3 consecutive days.` },
-      { letter: "B", text: `John will stop calling out in class.` },
-      { letter: "C", text: `John will improve his classroom behavior.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `A well-written behavioral objective is observable, measurable, attainable, relevant, and time-bound (SMART). Choice A includes all these components. The other choices are either not measurable, not specific enough, or lack a clear criterion.`,
-  }
+
 ,
   {
     id: "t6-H-pool-33",
@@ -622,30 +322,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Collaborating with the client, family, and other service providers to ensure continuity of care.` },
       { letter: "B", text: `Abruptly discontinuing services once goals are met.` },
       { letter: "C", text: `Transferring the client to a new BCBA without prior discussion.` },
-      { letter: "D", text: `Minimizing communication with the client's family during the transition.` },
+      { letter: "D", text: `Minimizing communication with the client's family during the transition.` }
     ],
     correctAnswer: "A",
     rationale: `Effective transition planning involves collaborative efforts with the client, family, and other service providers to ensure a smooth transition and continuity of care. Abruptly discontinuing services or transferring without discussion is unethical and can negatively impact the client. Minimizing communication is counterproductive to successful transition.`,
   }
-,
-  {
-    id: "t6-H-pool-34",
-    domain: "H",
-    taskItem: "H.13",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A client has successfully mastered a new social skill in a structured therapy setting. The BCBA wants to ensure the skill is used in various natural environments and maintained over time.`,
-    question: `Which strategy is most appropriate for promoting generalization and maintenance of the new skill?`,
-    choices: [
-      { letter: "B", text: `Continuing to provide dense, artificial reinforcement in the therapy setting.` },
-      { letter: "C", text: `Only practicing the skill in the therapy room.` },
-      { letter: "D", text: `Prompting the skill only when the client makes an error.` },
-      { letter: "A", text: `Training with multiple exemplars and naturalistic reinforcement.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `Training with multiple exemplars (different people, settings, stimuli) and shifting to naturalistic reinforcement are key strategies for promoting generalization and maintenance. Continuing dense, artificial reinforcement or only practicing in one setting hinders generalization. Prompting only after errors may not be sufficient for skill acquisition and generalization.`,
-  }
+
 ,
   {
     id: "t6-H-pool-35",
@@ -660,12 +342,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "C", text: `Internal validity` },
       { letter: "D", text: `External validity` },
       { letter: "A", text: `Social validity` },
-      { letter: "B", text: `Treatment integrity` },
+      { letter: "B", text: `Treatment integrity` }
     ],
     correctAnswer: 'C',
     rationale: `Social validity refers to the social significance of the target behavior, the appropriateness of the intervention procedures, and the social importance of the results. The parents' concerns about the child's engagement and happiness relate directly to the social importance of the results. Treatment integrity refers to the faithful implementation of the intervention. Internal and external validity relate to experimental control and generalizability, respectively.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-36",
     domain: "H",
@@ -679,12 +360,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "D", text: `Implement a response cost procedure for non-compliance.` },
       { letter: "A", text: `Implement a differential reinforcement of other behavior (DRO) procedure for self-injurious behavior.` },
       { letter: "B", text: `Implement a time-out procedure contingent on self-injurious behavior.` },
-      { letter: "C", text: `Implement a token economy system for academic performance.` },
+      { letter: "C", text: `Implement a token economy system for academic performance.` }
     ],
     correctAnswer: 'D',
     rationale: `DRO is appropriate because it directly addresses the function of attention by reinforcing the absence of the target behavior. Time-out is a punishment procedure and may not be the most appropriate first-line intervention. Token economy and response cost are not directly targeting the function of attention for self-injurious behavior.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-37",
     domain: "H",
@@ -698,49 +378,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Ensuring the client's physical safety and the safety of others.` },
       { letter: "B", text: `Collecting data on the frequency of head-hitting.` },
       { letter: "C", text: `Determining the function of the tantrum.` },
-      { letter: "D", text: `Implementing a planned extinction procedure.` },
+      { letter: "D", text: `Implementing a planned extinction procedure.` }
     ],
     correctAnswer: "A",
     rationale: `In a crisis or emergency, the immediate priority is always to ensure the physical safety of the client and others. Data collection, functional analysis, and planned interventions are important but secondary to immediate safety concerns.`,
   }
-,
-  {
-    id: "t6-H-pool-38",
-    domain: "H",
-    taskItem: "H.14",
-    phase: "evaluation",
-    bloomsLevel: "comprehension",
-    difficulty: "hard",
-    scenario: `A BCBA has been working with a client for several years, and the client has met all their treatment goals. The client is now preparing to transition to a less intensive service model.`,
-    question: `What is a crucial component of effective transition planning?`,
-    choices: [
-      { letter: "B", text: `Abruptly discontinuing services once goals are met.` },
-      { letter: "C", text: `Transferring the client to a new BCBA without prior discussion.` },
-      { letter: "D", text: `Minimizing communication with the client's family during the transition.` },
-      { letter: "A", text: `Collaborating with the client, family, and other service providers to ensure continuity of care.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `Effective transition planning involves collaborative efforts with the client, family, and other service providers to ensure a smooth transition and continuity of care. Abruptly discontinuing services or transferring without discussion is unethical and can negatively impact the client. Minimizing communication is counterproductive to successful transition.`,
-  }
-,
-  {
-    id: "t6-H-pool-39",
-    domain: "H",
-    taskItem: "H.11",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: `A BCBA has implemented a token economy to increase a student's on-task behavior. After three weeks, the data shows an increasing trend in on-task behavior, but it has not yet reached the desired criterion.`,
-    question: `Based on this data, what is the most appropriate conclusion regarding the intervention's effectiveness?`,
-    choices: [
-      { letter: "C", text: `The intervention is fully effective as the behavior is increasing.` },
-      { letter: "D", text: `The data is insufficient to draw any conclusions.` },
-      { letter: "A", text: `The intervention is showing progress but requires continued monitoring and potentially adjustments.` },
-      { letter: "B", text: `The intervention is ineffective and should be discontinued immediately.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `An increasing trend indicates progress, suggesting the intervention is having a positive effect, but since the criterion has not been met, it requires continued monitoring and potential adjustments. Discontinuing an intervention that shows progress is premature. While the behavior is increasing, it's not 'fully effective' until the criterion is met. Three weeks of data showing a trend is sufficient to draw preliminary conclusions.`,
-  }
+
 ,
   {
     id: "t6-H-pool-40",
@@ -755,12 +398,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "D", text: `External validity` },
       { letter: "A", text: `Social validity` },
       { letter: "B", text: `Treatment integrity` },
-      { letter: "C", text: `Internal validity` },
+      { letter: "C", text: `Internal validity` }
     ],
     correctAnswer: 'D',
     rationale: `Social validity refers to the social significance of the target behavior, the appropriateness of the intervention procedures, and the social importance of the results. The parents' concerns about the child's engagement and happiness relate directly to the social importance of the results. Treatment integrity refers to the faithful implementation of the intervention. Internal and external validity relate to experimental control and generalizability, respectively.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-41",
     domain: "H",
@@ -774,12 +416,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Elopement` },
       { letter: "B", text: `Aggression` },
       { letter: "C", text: `Property destruction` },
-      { letter: "D", text: `All behaviors equally` },
+      { letter: "D", text: `All behaviors equally` }
     ],
     correctAnswer: "A",
     rationale: `Elopement should be prioritized due to its immediate safety risk, which is a primary consideration in behavior prioritization. While aggression and property destruction are serious, safety concerns typically take precedence. Addressing all behaviors equally without prioritization can be less effective.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-42",
     domain: "H",
@@ -793,49 +434,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Aggression` },
       { letter: "C", text: `Property destruction` },
       { letter: "D", text: `All behaviors equally` },
-      { letter: "A", text: `Elopement` },
+      { letter: "A", text: `Elopement` }
     ],
     correctAnswer: 'B',
     rationale: `Elopement should be prioritized due to its immediate safety risk, which is a primary consideration in behavior prioritization. While aggression and property destruction are serious, safety concerns typically take precedence. Addressing all behaviors equally without prioritization can be less effective.`,
   }
-,
-  {
-    id: "t6-H-pool-43",
-    domain: "H",
-    taskItem: "H.13",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A client has successfully mastered a new social skill in a structured therapy setting. The BCBA wants to ensure the skill is used in various natural environments and maintained over time.`,
-    question: `Which strategy is most appropriate for promoting generalization and maintenance of the new skill?`,
-    choices: [
-      { letter: "C", text: `Only practicing the skill in the therapy room.` },
-      { letter: "D", text: `Prompting the skill only when the client makes an error.` },
-      { letter: "A", text: `Training with multiple exemplars and naturalistic reinforcement.` },
-      { letter: "B", text: `Continuing to provide dense, artificial reinforcement in the therapy setting.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Training with multiple exemplars (different people, settings, stimuli) and shifting to naturalistic reinforcement are key strategies for promoting generalization and maintenance. Continuing dense, artificial reinforcement or only practicing in one setting hinders generalization. Prompting only after errors may not be sufficient for skill acquisition and generalization.`,
-  }
-,
-  {
-    id: "t6-H-pool-44",
-    domain: "H",
-    taskItem: "H.15",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "easy",
-    scenario: `A BCBA has been providing services to a client for 18 months. The client has consistently met all their treatment goals, demonstrates generalized skills across environments, and the family reports high satisfaction with progress. The BCBA is considering discontinuing services.`,
-    question: `Based on ethical guidelines, what is the primary justification for discontinuing services in this situation?`,
-    choices: [
-      { letter: "D", text: `The BCBA wants to take on a new, more interesting case.` },
-      { letter: "A", text: `The client has achieved maximum benefit from services.` },
-      { letter: "B", text: `The BCBA has reached their caseload capacity.` },
-      { letter: "C", text: `The client's insurance coverage is expiring.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `Services should be discontinued when the client has achieved maximum benefit, meaning they have met their goals and no longer require the current level of support. Caseload capacity, insurance expiration, or BCBA preference are not ethical justifications for discontinuing services if the client still requires them.`,
-  }
+
 ,
   {
     id: "t6-H-pool-45",
@@ -850,12 +454,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Ensuring all less restrictive interventions have been attempted and documented as ineffective.` },
       { letter: "B", text: `Obtaining verbal consent from the client's guardian.` },
       { letter: "C", text: `Only using punishment procedures that are easy to implement.` },
-      { letter: "D", text: `Focusing solely on suppressing the behavior without teaching replacement skills.` },
+      { letter: "D", text: `Focusing solely on suppressing the behavior without teaching replacement skills.` }
     ],
     correctAnswer: "A",
     rationale: `Ethically, punishment procedures should only be considered after less restrictive interventions have been thoroughly attempted and proven ineffective. Written informed consent is required, not just verbal. Ease of implementation is not an ethical consideration. Punishment should always be paired with teaching appropriate replacement behaviors.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-46",
     domain: "H",
@@ -869,68 +472,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Treatment integrity` },
       { letter: "C", text: `Internal validity` },
       { letter: "D", text: `External validity` },
-      { letter: "A", text: `Social validity` },
+      { letter: "A", text: `Social validity` }
     ],
     correctAnswer: 'B',
     rationale: `Social validity refers to the social significance of the target behavior, the appropriateness of the intervention procedures, and the social importance of the results. The parents' concerns about the child's engagement and happiness relate directly to the social importance of the results. Treatment integrity refers to the faithful implementation of the intervention. Internal and external validity relate to experimental control and generalizability, respectively.`,
   }
-,
-  {
-    id: "t6-H-pool-47",
-    domain: "H",
-    taskItem: "H.7",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "easy",
-    scenario: `A client engages in severe aggression that poses a significant risk to themselves and others, and less restrictive interventions have been ineffective. The BCBA team is considering a punishment procedure.`,
-    question: `Before implementing a punishment procedure, what is a critical ethical consideration?`,
-    choices: [
-      { letter: "C", text: `Only using punishment procedures that are easy to implement.` },
-      { letter: "D", text: `Focusing solely on suppressing the behavior without teaching replacement skills.` },
-      { letter: "A", text: `Ensuring all less restrictive interventions have been attempted and documented as ineffective.` },
-      { letter: "B", text: `Obtaining verbal consent from the client's guardian.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Ethically, punishment procedures should only be considered after less restrictive interventions have been thoroughly attempted and proven ineffective. Written informed consent is required, not just verbal. Ease of implementation is not an ethical consideration. Punishment should always be paired with teaching appropriate replacement behaviors.`,
-  }
-,
-  {
-    id: "t6-H-pool-48",
-    domain: "H",
-    taskItem: "H.5",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A student frequently engages in disruptive behavior during independent work tasks. A functional assessment indicates the behavior is maintained by escape from demand. The BCBA wants to implement an antecedent strategy.`,
-    question: `Which of the following is an appropriate antecedent intervention for this scenario?`,
-    choices: [
-      { letter: "D", text: `Delivering praise contingent on completing work tasks.` },
-      { letter: "A", text: `Providing a visual schedule of tasks and offering choices in task order.` },
-      { letter: "B", text: `Implementing a token economy for completing work tasks.` },
-      { letter: "C", text: `Using a time-out procedure when disruptive behavior occurs.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `Providing a visual schedule and choices are antecedent strategies that can reduce the aversiveness of demands, thereby decreasing the motivation for escape-maintained disruptive behavior. A token economy and praise are consequence-based interventions. Time-out is a punishment procedure.`,
-  }
-,
-  {
-    id: "t6-H-pool-49",
-    domain: "H",
-    taskItem: "H.1",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A BCBA has completed a functional assessment for a child exhibiting self-injurious behavior. The assessment revealed that the behavior is maintained by attention from caregivers. The team is now discussing intervention options.`,
-    question: `Based on the assessment findings, which intervention approach is most appropriate?`,
-    choices: [
-      { letter: "A", text: `Implement a differential reinforcement of other behavior (DRO) procedure for self-injurious behavior.` },
-      { letter: "B", text: `Implement a time-out procedure contingent on self-injurious behavior.` },
-      { letter: "C", text: `Implement a token economy system for academic performance.` },
-      { letter: "D", text: `Implement a response cost procedure for non-compliance.` },
-    ],
-    correctAnswer: "A",
-    rationale: `DRO is appropriate because it directly addresses the function of attention by reinforcing the absence of the target behavior. Time-out is a punishment procedure and may not be the most appropriate first-line intervention. Token economy and response cost are not directly targeting the function of attention for self-injurious behavior.`,
-  }
+
 ,
   {
     id: "t6-H-pool-50",
@@ -945,12 +492,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Social validity` },
       { letter: "C", text: `Interobserver agreement (IOA)` },
       { letter: "D", text: `Procedural fidelity` },
-      { letter: "A", text: `Treatment integrity` },
+      { letter: "A", text: `Treatment integrity` }
     ],
     correctAnswer: 'B',
     rationale: `Treatment integrity (or procedural fidelity) refers to the extent to which the intervention is implemented as planned. The RBT's forgetting to deliver reinforcement indicates a lack of treatment integrity. Social validity relates to the acceptability and importance of the intervention and its outcomes. IOA refers to the consistency of data collection between two or more observers.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-51",
     domain: "H",
@@ -964,30 +510,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "C", text: `Discontinuing the intervention in the therapy room.` },
       { letter: "D", text: `Changing the target behavior to something easier to manage.` },
       { letter: "A", text: `Generalizing the intervention procedures to the classroom setting.` },
-      { letter: "B", text: `Increasing the intensity of the intervention in the therapy room.` },
+      { letter: "B", text: `Increasing the intensity of the intervention in the therapy room.` }
     ],
     correctAnswer: 'C',
     rationale: `The data suggests that the intervention is effective in one setting but not generalizing to another. Therefore, the BCBA should focus on generalizing the intervention to the classroom. Increasing intensity in the therapy room is unnecessary. Discontinuing the intervention is premature. Changing the target behavior avoids addressing the core issue.`,
   }
-,
-  {
-    id: "t6-H-pool-52",
-    domain: "H",
-    taskItem: "H.13",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A client has successfully mastered a new social skill in a structured therapy setting. The BCBA wants to ensure the skill is used in various natural environments and maintained over time.`,
-    question: `Which strategy is most appropriate for promoting generalization and maintenance of the new skill?`,
-    choices: [
-      { letter: "D", text: `Prompting the skill only when the client makes an error.` },
-      { letter: "A", text: `Training with multiple exemplars and naturalistic reinforcement.` },
-      { letter: "B", text: `Continuing to provide dense, artificial reinforcement in the therapy setting.` },
-      { letter: "C", text: `Only practicing the skill in the therapy room.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `Training with multiple exemplars (different people, settings, stimuli) and shifting to naturalistic reinforcement are key strategies for promoting generalization and maintenance. Continuing dense, artificial reinforcement or only practicing in one setting hinders generalization. Prompting only after errors may not be sufficient for skill acquisition and generalization.`,
-  }
+
 ,
   {
     id: "t6-H-pool-53",
@@ -1002,30 +530,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Training with multiple exemplars and naturalistic reinforcement.` },
       { letter: "B", text: `Continuing to provide dense, artificial reinforcement in the therapy setting.` },
       { letter: "C", text: `Only practicing the skill in the therapy room.` },
-      { letter: "D", text: `Prompting the skill only when the client makes an error.` },
+      { letter: "D", text: `Prompting the skill only when the client makes an error.` }
     ],
     correctAnswer: "A",
     rationale: `Training with multiple exemplars (different people, settings, stimuli) and shifting to naturalistic reinforcement are key strategies for promoting generalization and maintenance. Continuing dense, artificial reinforcement or only practicing in one setting hinders generalization. Prompting only after errors may not be sufficient for skill acquisition and generalization.`,
   }
-,
-  {
-    id: "t6-H-pool-54",
-    domain: "H",
-    taskItem: "H.11",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: `A BCBA has implemented a token economy to increase a student's on-task behavior. After three weeks, the data shows an increasing trend in on-task behavior, but it has not yet reached the desired criterion.`,
-    question: `Based on this data, what is the most appropriate conclusion regarding the intervention's effectiveness?`,
-    choices: [
-      { letter: "B", text: `The intervention is ineffective and should be discontinued immediately.` },
-      { letter: "C", text: `The intervention is fully effective as the behavior is increasing.` },
-      { letter: "D", text: `The data is insufficient to draw any conclusions.` },
-      { letter: "A", text: `The intervention is showing progress but requires continued monitoring and potentially adjustments.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `An increasing trend indicates progress, suggesting the intervention is having a positive effect, but since the criterion has not been met, it requires continued monitoring and potential adjustments. Discontinuing an intervention that shows progress is premature. While the behavior is increasing, it's not 'fully effective' until the criterion is met. Three weeks of data showing a trend is sufficient to draw preliminary conclusions.`,
-  }
+
 ,
   {
     id: "t6-H-pool-55",
@@ -1040,12 +550,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "C", text: `Partial interval recording` },
       { letter: "D", text: `Momentary time sampling` },
       { letter: "A", text: `Duration recording` },
-      { letter: "B", text: `Frequency recording` },
+      { letter: "B", text: `Frequency recording` }
     ],
     correctAnswer: 'C',
     rationale: `Duration recording is most appropriate for behaviors that are continuous and occur for varying lengths of time, like hand-flapping. Frequency recording is for discrete behaviors. Partial interval recording and momentary time sampling are discontinuous measurement methods that may underestimate or overestimate the occurrence of continuous behaviors.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-56",
     domain: "H",
@@ -1059,87 +568,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "D", text: `External validity` },
       { letter: "A", text: `Social validity` },
       { letter: "B", text: `Treatment integrity` },
-      { letter: "C", text: `Internal validity` },
+      { letter: "C", text: `Internal validity` }
     ],
     correctAnswer: 'D',
     rationale: `Social validity refers to the social significance of the target behavior, the appropriateness of the intervention procedures, and the social importance of the results. The parents' concerns about the child's engagement and happiness relate directly to the social importance of the results. Treatment integrity refers to the faithful implementation of the intervention. Internal and external validity relate to experimental control and generalizability, respectively.`,
   }
-,
-  {
-    id: "t6-H-pool-57",
-    domain: "H",
-    taskItem: "H.3",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A BCBA is developing an intervention plan for a student who frequently calls out in class. The goal is to increase appropriate participation.`,
-    question: `Which of the following is the most appropriately written behavioral objective?`,
-    choices: [
-      { letter: "A", text: `By the end of the week, John will raise his hand and wait to be called on during group activities for 80% of opportunities for 3 consecutive days.` },
-      { letter: "B", text: `John will stop calling out in class.` },
-      { letter: "C", text: `John will improve his classroom behavior.` },
-      { letter: "D", text: `John will raise his hand more often.` },
-    ],
-    correctAnswer: "A",
-    rationale: `A well-written behavioral objective is observable, measurable, attainable, relevant, and time-bound (SMART). Choice A includes all these components. The other choices are either not measurable, not specific enough, or lack a clear criterion.`,
-  }
-,
-  {
-    id: "t6-H-pool-58",
-    domain: "H",
-    taskItem: "H.3",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A BCBA is developing an intervention plan for a student who frequently calls out in class. The goal is to increase appropriate participation.`,
-    question: `Which of the following is the most appropriately written behavioral objective?`,
-    choices: [
-      { letter: "B", text: `John will stop calling out in class.` },
-      { letter: "C", text: `John will improve his classroom behavior.` },
-      { letter: "D", text: `John will raise his hand more often.` },
-      { letter: "A", text: `By the end of the week, John will raise his hand and wait to be called on during group activities for 80% of opportunities for 3 consecutive days.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `A well-written behavioral objective is observable, measurable, attainable, relevant, and time-bound (SMART). Choice A includes all these components. The other choices are either not measurable, not specific enough, or lack a clear criterion.`,
-  }
-,
-  {
-    id: "t6-H-pool-59",
-    domain: "H",
-    taskItem: "H.14",
-    phase: "evaluation",
-    bloomsLevel: "comprehension",
-    difficulty: "easy",
-    scenario: `A BCBA has been working with a client for several years, and the client has met all their treatment goals. The client is now preparing to transition to a less intensive service model.`,
-    question: `What is a crucial component of effective transition planning?`,
-    choices: [
-      { letter: "C", text: `Transferring the client to a new BCBA without prior discussion.` },
-      { letter: "D", text: `Minimizing communication with the client's family during the transition.` },
-      { letter: "A", text: `Collaborating with the client, family, and other service providers to ensure continuity of care.` },
-      { letter: "B", text: `Abruptly discontinuing services once goals are met.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Effective transition planning involves collaborative efforts with the client, family, and other service providers to ensure a smooth transition and continuity of care. Abruptly discontinuing services or transferring without discussion is unethical and can negatively impact the client. Minimizing communication is counterproductive to successful transition.`,
-  }
-,
-  {
-    id: "t6-H-pool-60",
-    domain: "H",
-    taskItem: "H.14",
-    phase: "evaluation",
-    bloomsLevel: "comprehension",
-    difficulty: "medium",
-    scenario: `A BCBA has been working with a client for several years, and the client has met all their treatment goals. The client is now preparing to transition to a less intensive service model.`,
-    question: `What is a crucial component of effective transition planning?`,
-    choices: [
-      { letter: "D", text: `Minimizing communication with the client's family during the transition.` },
-      { letter: "A", text: `Collaborating with the client, family, and other service providers to ensure continuity of care.` },
-      { letter: "B", text: `Abruptly discontinuing services once goals are met.` },
-      { letter: "C", text: `Transferring the client to a new BCBA without prior discussion.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `Effective transition planning involves collaborative efforts with the client, family, and other service providers to ensure a smooth transition and continuity of care. Abruptly discontinuing services or transferring without discussion is unethical and can negatively impact the client. Minimizing communication is counterproductive to successful transition.`,
-  }
+
 ,
   {
     id: "t6-H-pool-61",
@@ -1154,49 +588,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Treatment integrity` },
       { letter: "B", text: `Social validity` },
       { letter: "C", text: `Interobserver agreement (IOA)` },
-      { letter: "D", text: `Procedural fidelity` },
+      { letter: "D", text: `Procedural fidelity` }
     ],
     correctAnswer: "A",
     rationale: `Treatment integrity (or procedural fidelity) refers to the extent to which the intervention is implemented as planned. The RBT's forgetting to deliver reinforcement indicates a lack of treatment integrity. Social validity relates to the acceptability and importance of the intervention and its outcomes. IOA refers to the consistency of data collection between two or more observers.`,
   }
-,
-  {
-    id: "t6-H-pool-62",
-    domain: "H",
-    taskItem: "H.3",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A BCBA is developing an intervention plan for a student who frequently calls out in class. The goal is to increase appropriate participation.`,
-    question: `Which of the following is the most appropriately written behavioral objective?`,
-    choices: [
-      { letter: "B", text: `John will stop calling out in class.` },
-      { letter: "C", text: `John will improve his classroom behavior.` },
-      { letter: "D", text: `John will raise his hand more often.` },
-      { letter: "A", text: `By the end of the week, John will raise his hand and wait to be called on during group activities for 80% of opportunities for 3 consecutive days.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `A well-written behavioral objective is observable, measurable, attainable, relevant, and time-bound (SMART). Choice A includes all these components. The other choices are either not measurable, not specific enough, or lack a clear criterion.`,
-  }
-,
-  {
-    id: "t6-H-pool-63",
-    domain: "H",
-    taskItem: "H.10",
-    phase: "evaluation",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A BCBA has trained a new RBT on implementing a differential reinforcement procedure. During supervision, the BCBA observes the RBT frequently forgetting to deliver reinforcement when the target behavior occurs.`,
-    question: `The RBT's inconsistent implementation directly impacts which aspect of the intervention?`,
-    choices: [
-      { letter: "C", text: `Interobserver agreement (IOA)` },
-      { letter: "D", text: `Procedural fidelity` },
-      { letter: "A", text: `Treatment integrity` },
-      { letter: "B", text: `Social validity` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Treatment integrity (or procedural fidelity) refers to the extent to which the intervention is implemented as planned. The RBT's forgetting to deliver reinforcement indicates a lack of treatment integrity. Social validity relates to the acceptability and importance of the intervention and its outcomes. IOA refers to the consistency of data collection between two or more observers.`,
-  }
+
 ,
   {
     id: "t6-H-pool-64",
@@ -1211,30 +608,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "D", text: `Momentary time sampling` },
       { letter: "A", text: `Duration recording` },
       { letter: "B", text: `Frequency recording` },
-      { letter: "C", text: `Partial interval recording` },
+      { letter: "C", text: `Partial interval recording` }
     ],
     correctAnswer: 'D',
     rationale: `Duration recording is most appropriate for behaviors that are continuous and occur for varying lengths of time, like hand-flapping. Frequency recording is for discrete behaviors. Partial interval recording and momentary time sampling are discontinuous measurement methods that may underestimate or overestimate the occurrence of continuous behaviors.`,
   }
-,
-  {
-    id: "t6-H-pool-65",
-    domain: "H",
-    taskItem: "H.12",
-    phase: "evaluation",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `A BCBA is reviewing data for an intervention designed to reduce a child's aggression. The data shows that aggression has decreased significantly in the therapy room but remains high in the classroom setting.`,
-    question: `What modification should the BCBA consider based on this data?`,
-    choices: [
-      { letter: "A", text: `Generalizing the intervention procedures to the classroom setting.` },
-      { letter: "B", text: `Increasing the intensity of the intervention in the therapy room.` },
-      { letter: "C", text: `Discontinuing the intervention in the therapy room.` },
-      { letter: "D", text: `Changing the target behavior to something easier to manage.` },
-    ],
-    correctAnswer: "A",
-    rationale: `The data suggests that the intervention is effective in one setting but not generalizing to another. Therefore, the BCBA should focus on generalizing the intervention to the classroom. Increasing intensity in the therapy room is unnecessary. Discontinuing the intervention is premature. Changing the target behavior avoids addressing the core issue.`,
-  }
+
 ,
   {
     id: "t6-H-pool-66",
@@ -1249,12 +628,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Implementing a token economy for completing work tasks.` },
       { letter: "C", text: `Using a time-out procedure when disruptive behavior occurs.` },
       { letter: "D", text: `Delivering praise contingent on completing work tasks.` },
-      { letter: "A", text: `Providing a visual schedule of tasks and offering choices in task order.` },
+      { letter: "A", text: `Providing a visual schedule of tasks and offering choices in task order.` }
     ],
     correctAnswer: 'B',
     rationale: `Providing a visual schedule and choices are antecedent strategies that can reduce the aversiveness of demands, thereby decreasing the motivation for escape-maintained disruptive behavior. A token economy and praise are consequence-based interventions. Time-out is a punishment procedure.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-67",
     domain: "H",
@@ -1268,12 +646,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "C", text: `Using a time-out procedure when disruptive behavior occurs.` },
       { letter: "D", text: `Delivering praise contingent on completing work tasks.` },
       { letter: "A", text: `Providing a visual schedule of tasks and offering choices in task order.` },
-      { letter: "B", text: `Implementing a token economy for completing work tasks.` },
+      { letter: "B", text: `Implementing a token economy for completing work tasks.` }
     ],
     correctAnswer: 'C',
     rationale: `Providing a visual schedule and choices are antecedent strategies that can reduce the aversiveness of demands, thereby decreasing the motivation for escape-maintained disruptive behavior. A token economy and praise are consequence-based interventions. Time-out is a punishment procedure.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-68",
     domain: "H",
@@ -1287,12 +664,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "D", text: `All behaviors equally` },
       { letter: "A", text: `Elopement` },
       { letter: "B", text: `Aggression` },
-      { letter: "C", text: `Property destruction` },
+      { letter: "C", text: `Property destruction` }
     ],
     correctAnswer: 'D',
     rationale: `Elopement should be prioritized due to its immediate safety risk, which is a primary consideration in behavior prioritization. While aggression and property destruction are serious, safety concerns typically take precedence. Addressing all behaviors equally without prioritization can be less effective.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-69",
     domain: "H",
@@ -1306,68 +682,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `The client has achieved maximum benefit from services.` },
       { letter: "B", text: `The BCBA has reached their caseload capacity.` },
       { letter: "C", text: `The client's insurance coverage is expiring.` },
-      { letter: "D", text: `The BCBA wants to take on a new, more interesting case.` },
+      { letter: "D", text: `The BCBA wants to take on a new, more interesting case.` }
     ],
     correctAnswer: "A",
     rationale: `Services should be discontinued when the client has achieved maximum benefit, meaning they have met their goals and no longer require the current level of support. Caseload capacity, insurance expiration, or BCBA preference are not ethical justifications for discontinuing services if the client still requires them.`,
   }
-,
-  {
-    id: "t6-H-pool-70",
-    domain: "H",
-    taskItem: "H.8",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "medium",
-    scenario: `During a session, a client begins to engage in a severe tantrum, including hitting their head against the wall. The BCBA needs to ensure the client's safety.`,
-    question: `What is the immediate priority for the BCBA in this crisis situation?`,
-    choices: [
-      { letter: "B", text: `Collecting data on the frequency of head-hitting.` },
-      { letter: "C", text: `Determining the function of the tantrum.` },
-      { letter: "D", text: `Implementing a planned extinction procedure.` },
-      { letter: "A", text: `Ensuring the client's physical safety and the safety of others.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `In a crisis or emergency, the immediate priority is always to ensure the physical safety of the client and others. Data collection, functional analysis, and planned interventions are important but secondary to immediate safety concerns.`,
-  }
-,
-  {
-    id: "t6-H-pool-71",
-    domain: "H",
-    taskItem: "H.15",
-    phase: "evaluation",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: `A BCBA has been providing services to a client for 18 months. The client has consistently met all their treatment goals, demonstrates generalized skills across environments, and the family reports high satisfaction with progress. The BCBA is considering discontinuing services.`,
-    question: `Based on ethical guidelines, what is the primary justification for discontinuing services in this situation?`,
-    choices: [
-      { letter: "C", text: `The client's insurance coverage is expiring.` },
-      { letter: "D", text: `The BCBA wants to take on a new, more interesting case.` },
-      { letter: "A", text: `The client has achieved maximum benefit from services.` },
-      { letter: "B", text: `The BCBA has reached their caseload capacity.` },
-    ],
-    correctAnswer: 'C',
-    rationale: `Services should be discontinued when the client has achieved maximum benefit, meaning they have met their goals and no longer require the current level of support. Caseload capacity, insurance expiration, or BCBA preference are not ethical justifications for discontinuing services if the client still requires them.`,
-  }
-,
-  {
-    id: "t6-H-pool-72",
-    domain: "H",
-    taskItem: "H.5",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `A student frequently engages in disruptive behavior during independent work tasks. A functional assessment indicates the behavior is maintained by escape from demand. The BCBA wants to implement an antecedent strategy.`,
-    question: `Which of the following is an appropriate antecedent intervention for this scenario?`,
-    choices: [
-      { letter: "D", text: `Delivering praise contingent on completing work tasks.` },
-      { letter: "A", text: `Providing a visual schedule of tasks and offering choices in task order.` },
-      { letter: "B", text: `Implementing a token economy for completing work tasks.` },
-      { letter: "C", text: `Using a time-out procedure when disruptive behavior occurs.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `Providing a visual schedule and choices are antecedent strategies that can reduce the aversiveness of demands, thereby decreasing the motivation for escape-maintained disruptive behavior. A token economy and praise are consequence-based interventions. Time-out is a punishment procedure.`,
-  }
+
 ,
   {
     id: "t6-H-pool-73",
@@ -1382,30 +702,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Elopement` },
       { letter: "B", text: `Aggression` },
       { letter: "C", text: `Property destruction` },
-      { letter: "D", text: `All behaviors equally` },
+      { letter: "D", text: `All behaviors equally` }
     ],
     correctAnswer: "A",
     rationale: `Elopement should be prioritized due to its immediate safety risk, which is a primary consideration in behavior prioritization. While aggression and property destruction are serious, safety concerns typically take precedence. Addressing all behaviors equally without prioritization can be less effective.`,
   }
-,
-  {
-    id: "t6-H-pool-74",
-    domain: "H",
-    taskItem: "H.8",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "hard",
-    scenario: `During a session, a client begins to engage in a severe tantrum, including hitting their head against the wall. The BCBA needs to ensure the client's safety.`,
-    question: `What is the immediate priority for the BCBA in this crisis situation?`,
-    choices: [
-      { letter: "B", text: `Collecting data on the frequency of head-hitting.` },
-      { letter: "C", text: `Determining the function of the tantrum.` },
-      { letter: "D", text: `Implementing a planned extinction procedure.` },
-      { letter: "A", text: `Ensuring the client's physical safety and the safety of others.` },
-    ],
-    correctAnswer: 'B',
-    rationale: `In a crisis or emergency, the immediate priority is always to ensure the physical safety of the client and others. Data collection, functional analysis, and planned interventions are important but secondary to immediate safety concerns.`,
-  }
+
 ,
   {
     id: "t6-H-pool-75",
@@ -1420,30 +722,12 @@ export const tier6Pool_H: Question[] = [
       { letter: "C", text: `Property destruction` },
       { letter: "D", text: `All behaviors equally` },
       { letter: "A", text: `Elopement` },
-      { letter: "B", text: `Aggression` },
+      { letter: "B", text: `Aggression` }
     ],
     correctAnswer: 'C',
     rationale: `Elopement should be prioritized due to its immediate safety risk, which is a primary consideration in behavior prioritization. While aggression and property destruction are serious, safety concerns typically take precedence. Addressing all behaviors equally without prioritization can be less effective.`,
   }
-,
-  {
-    id: "t6-H-pool-76",
-    domain: "H",
-    taskItem: "H.13",
-    phase: "intervention",
-    bloomsLevel: "application",
-    difficulty: "easy",
-    scenario: `A client has successfully mastered a new social skill in a structured therapy setting. The BCBA wants to ensure the skill is used in various natural environments and maintained over time.`,
-    question: `Which strategy is most appropriate for promoting generalization and maintenance of the new skill?`,
-    choices: [
-      { letter: "D", text: `Prompting the skill only when the client makes an error.` },
-      { letter: "A", text: `Training with multiple exemplars and naturalistic reinforcement.` },
-      { letter: "B", text: `Continuing to provide dense, artificial reinforcement in the therapy setting.` },
-      { letter: "C", text: `Only practicing the skill in the therapy room.` },
-    ],
-    correctAnswer: 'D',
-    rationale: `Training with multiple exemplars (different people, settings, stimuli) and shifting to naturalistic reinforcement are key strategies for promoting generalization and maintenance. Continuing dense, artificial reinforcement or only practicing in one setting hinders generalization. Prompting only after errors may not be sufficient for skill acquisition and generalization.`,
-  }
+
 ,
   {
     id: "t6-H-pool-77",
@@ -1458,12 +742,11 @@ export const tier6Pool_H: Question[] = [
       { letter: "A", text: `Collaborating with the client, family, and other service providers to ensure continuity of care.` },
       { letter: "B", text: `Abruptly discontinuing services once goals are met.` },
       { letter: "C", text: `Transferring the client to a new BCBA without prior discussion.` },
-      { letter: "D", text: `Minimizing communication with the client's family during the transition.` },
+      { letter: "D", text: `Minimizing communication with the client's family during the transition.` }
     ],
     correctAnswer: "A",
     rationale: `Effective transition planning involves collaborative efforts with the client, family, and other service providers to ensure a smooth transition and continuity of care. Abruptly discontinuing services or transferring without discussion is unethical and can negatively impact the client. Minimizing communication is counterproductive to successful transition.`,
-  }
-,
+  },
   {
     id: "t6-H-pool-78",
     domain: "H",
@@ -1477,7 +760,7 @@ export const tier6Pool_H: Question[] = [
       { letter: "B", text: `Social validity` },
       { letter: "C", text: `Interobserver agreement (IOA)` },
       { letter: "D", text: `Procedural fidelity` },
-      { letter: "A", text: `Treatment integrity` },
+      { letter: "A", text: `Treatment integrity` }
     ],
     correctAnswer: 'B',
     rationale: `Treatment integrity (or procedural fidelity) refers to the extent to which the intervention is implemented as planned. The RBT's forgetting to deliver reinforcement indicates a lack of treatment integrity. Social validity relates to the acceptability and importance of the intervention and its outcomes. IOA refers to the consistency of data collection between two or more observers.`,

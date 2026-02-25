@@ -31,25 +31,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: 'A',
     rationale: "Radical behaviorism, as proposed by B.F. Skinner, acknowledges the existence of private events (thoughts, feelings) but treats them as behavior that is influenced by the same environmental variables as public behavior. It views private events not as causes of public behavior, but as additional behaviors to be explained. Methodological behaviorism (A) explicitly excludes private events. While radical behaviorism focuses on observable behavior (C), it does not exclude private events from analysis, but rather includes them as a type of behavior. Radical behaviorism does not reject all mentalistic terms (D), but rather reinterprets them in behavioral terms."
   },
-  {
-    id: "t6-A-pool-2",
-    domain: "A",
-    taskItem: "A.4",
-    phase: "evaluation",
-    bloomsLevel: "knowledge",
-    difficulty: "hard",
-    scenario: "A researcher is conducting an experiment in a laboratory setting, manipulating specific environmental variables to observe their effect on the pecking rate of pigeons. The researcher is primarily interested in discovering basic principles of learning.",
-    question: "The early research described, focused on identifying fundamental principles in controlled settings, is characteristic of which branch of behavior analysis?",
-    choices: [
-      { letter: "A", text: "This research approach involves applying the principles derived from the experimental analysis of behavior to improve socially significant behaviors in real-world settings, focusing on the practical application of behavioral interventions to address challenges faced by individuals and communities, rather than solely on discovering fundamental principles in controlled laboratory environments." },
-      { letter: "B", text: "This research exemplifies the experimental analysis of behavior, a scientific discipline focused on identifying fundamental principles of behavior through controlled laboratory experiments, often utilizing non-human subjects and precisely manipulating environmental variables to observe their effects on specific responses, thereby establishing cause-and-effect relationships that inform our understanding of learning processes." },
-      { letter: "C", text: "Professional Practice of Behavior Analysis" },
-      { letter: "D", text: "Radical behaviorism, as the overarching philosophy of behavior analysis, posits that all behavior, including private events like thoughts and feelings, is subject to the same scientific laws as publicly observable behavior, and therefore, an understanding of the environmental variables that influence these private events is crucial for a comprehensive analysis of behavior, distinguishing it from methodological behaviorism which primarily focuses on observable behavior." }
-    ],
-    correctAnswer: "B",
-    rationale: "Experimental Analysis of Behavior (EAB) is characterized by basic research, often conducted in laboratory settings with non-human subjects, to discover fundamental principles of behavior. Applied Behavior Analysis (ABA) (A) focuses on applying these principles to socially significant human behavior. Professional Practice of Behavior Analysis (C) involves the direct application of ABA principles in real-world settings. Radical Behaviorism (D) is the philosophy underlying all branches of behavior analysis, not a branch itself."
-  },
-  {
+{
     id: "t6-A-pool-3",
     domain: "A",
     taskItem: "A.5",
@@ -67,55 +49,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: 'C',
     rationale: "Generality refers to the extent to which a behavior change lasts over time, appears in environments other than the one in which the intervention was implemented, and/or spreads to other behaviors not directly treated by the intervention. The client using the skill with different people and in different settings directly exemplifies generality. Applied (A) refers to the social significance of the behavior. Behavioral (B) refers to focusing on observable and measurable behavior. Effective (C) refers to the intervention producing practical and significant changes in behavior."
   },
-  {
-    id: "t6-A-pool-4",
-    domain: "A",
-    taskItem: "A.1",
-    phase: "supervision",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: "A BCBA is consulting with a school to address a student's disruptive classroom behavior. The BCBA's initial focus is on identifying the environmental factors that maintain the behavior to inform effective intervention strategies.",
-    question: "The ability to draw clear conclusions about the intervention's impact, as described in the scenario, primarily fulfills which goal of behavior analysis?",
-    choices: [
-      { letter: "D", text: "The ability to draw clear and unambiguous conclusions about the effectiveness of the intervention is enhanced when the BCBA meticulously controls for extraneous variables, ensuring that observed changes in the student's behavior can be directly attributed to the implemented procedures rather than confounding factors, thereby supporting data-driven decision-making and ethical practice." },
-      { letter: "A", text: "The BCBA should prioritize establishing a robust system for data collection and analysis, ensuring that the intervention's impact on the student's behavior can be objectively measured and evaluated, thereby allowing for data-driven adjustments and confident conclusions regarding its effectiveness within the school setting." },
-      { letter: "B", text: "The BCBA should prioritize developing a comprehensive functional behavior assessment (FBA) to identify the maintaining variables of the student's challenging behavior, ensuring that the intervention strategies are directly linked to the identified function, thereby increasing the likelihood of durable behavior change and minimizing the risk of adverse side effects associated with non-function-based interventions." },
-      { letter: "C", text: "The ability to draw clear conclusions about the intervention's effectiveness is often compromised by a lack of consistent data collection across all relevant settings and by multiple implementers, leading to variability in measurement and thus making it difficult to confidently determine whether observed changes in the student's behavior are directly attributable to the intervention components or to uncontrolled extraneous variables, thereby hindering objective evaluation and data-based decision-making." }
-    ],
-    correctAnswer: 'D',
-    rationale: "Generic rationale for t6-A-pool-4: Explanation for correct answer A and why distractors are wrong."
-  },
-  {
-    id: "t6-A-pool-5",
-    domain: "A",
-    taskItem: "A.1",
-    phase: "supervision",
-    bloomsLevel: "knowledge",
-    difficulty: "hard",
-    scenario: "A research team is conducting a study on the effectiveness of a new teaching method for students with learning disabilities. They are meticulously collecting data on student performance to determine if the method leads to significant improvements.",
-    question: "The ability to draw clear conclusions about the intervention's impact, as described in the scenario, primarily fulfills which goal of behavior analysis?",
-    choices: [
-      {
-        letter: "B",
-        text: "To predict when and where the behavior is most likely to occur."
-      },
-      {
-        letter: "C",
-        text: "To describe the topography of the behavior in detail."
-      },
-      {
-        letter: "D",
-        text: "To achieve a socially significant improvement in the client's behavior."
-      },
-      {
-        letter: "A",
-        text: "To understand the underlying neurological causes of the behavior."
-      }
-    ],
-    correctAnswer: 'A',
-    rationale: "The primary goal of applied behavior analysis (ABA) is to achieve socially significant improvements in behavior. While understanding, predicting, and describing behavior are important aspects, the ultimate applied goal is to produce positive change. Choice A is incorrect as behavior analysis focuses on environmental factors, not neurological causes. Choices B and C are aspects of understanding and describing behavior, which are intermediate goals, not the ultimate applied goal."
-  },
-  {
+{
     id: "t6-A-pool-6",
     domain: "A",
     taskItem: "A.3",
@@ -193,73 +127,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: 'D',
     rationale: "Radical behaviorism, as proposed by B.F. Skinner, acknowledges the existence of private events (thoughts, feelings) but treats them as behavior that is influenced by the same environmental variables as public behavior. It views private events not as causes of public behavior, but as additional behaviors to be explained. Methodological behaviorism (A) explicitly excludes private events. While radical behaviorism focuses on observable behavior (C), it does not exclude private events from analysis, but rather includes them as a type of behavior. Radical behaviorism does not reject all mentalistic terms (D), but rather reinterprets them in behavioral terms."
   },
-  {
-    id: "t6-A-pool-9",
-    domain: "A",
-    taskItem: "A.1",
-    phase: "intervention",
-    bloomsLevel: "knowledge",
-    difficulty: "medium",
-    scenario: "A research team is conducting a study on the effectiveness of a new teaching method for students with learning disabilities. They are meticulously collecting data on student performance to determine if the method leads to significant improvements.",
-    question: "The ability to draw clear conclusions about the intervention's impact, as described in the scenario, primarily fulfills which goal of behavior analysis?",
-    choices: [
-      {
-        letter: "B",
-        text: "To predict when and where the behavior is most likely to occur."
-      },
-      {
-        letter: "C",
-        text: "To describe the topography of the behavior in detail."
-      },
-      {
-        letter: "D",
-        text: "To achieve a socially significant improvement in the client's behavior."
-      },
-      {
-        letter: "A",
-        text: "To understand the underlying neurological causes of the behavior."
-      }
-    ],
-    correctAnswer: 'A',
-    rationale: "The primary goal of applied behavior analysis (ABA) is to achieve socially significant improvements in behavior. While understanding, predicting, and describing behavior are important aspects, the ultimate applied goal is to produce positive change. Choice A is incorrect as behavior analysis focuses on environmental factors, not neurological causes. Choices B and C are aspects of understanding and describing behavior, which are intermediate goals, not the ultimate applied goal."
-  },
-  {
-    id: "t6-A-pool-10",
-    domain: "A",
-    taskItem: "A.2",
-    phase: "supervision",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: "A behavior analyst is conducting a preference assessment for a child with developmental disabilities. The analyst observes the child interacting with various toys and records which toys the child chooses to play with most frequently over several sessions.",
-    question: "Which philosophical assumption is the BCBA primarily applying by advocating for a simpler intervention?",
-    choices: [
-      { letter: "A", text: "The behavior analyst is adhering to the philosophical assumption that a more parsimonious explanation or intervention, meaning the simplest and most straightforward approach with the fewest assumptions, should be considered and evaluated first before moving to more complex strategies, as this aligns with the scientific principle of seeking the most direct and efficient path to understanding and addressing behavior change in clinical practice." },
-      { letter: "B", text: "The behavior analyst is primarily applying the philosophical assumption of parsimony by advocating for a simpler intervention, which suggests that when multiple explanations or interventions are available for a given phenomenon, the simplest and most straightforward one that adequately accounts for the observed data should be preferred until more complex explanations or interventions are empirically demonstrated to be necessary or more effective, thereby promoting efficient and effective practice." },
-      { letter: "C", text: "The BCBA is primarily applying the philosophical assumption of parsimony by advocating for a simpler intervention, which suggests that when multiple explanations or interventions are available, the simplest one that adequately accounts for the phenomenon should be preferred, thereby minimizing unnecessary complexity in the behavioral analytic approach to treatment." },
-      { letter: "D", text: "The behavior analyst should conduct a functional analysis to identify the maintaining variables of the target behavior, as this systematic manipulation of antecedents and consequences will provide direct and objective evidence of the function, which is critical for developing an effective, function-based intervention and adhering to the scientific principles of behavior analysis." }
-    ],
-    correctAnswer: "B",
-    rationale: "Generic rationale for t6-A-pool-10: Explanation for correct answer B and why distractors are wrong."
-  },
-  {
-    id: "t6-A-pool-11",
-    domain: "A",
-    taskItem: "A.1",
-    phase: "assessment",
-    bloomsLevel: "comprehension",
-    difficulty: "hard",
-    scenario: "A BCBA is consulting with a school to address a student's disruptive classroom behavior. The BCBA's initial focus is on identifying the environmental factors that maintain the behavior to inform effective intervention strategies.",
-    question: "Which of the following best represents the primary goal of behavior analysis being applied in this scenario?",
-    choices: [
-      { letter: "D", text: "The primary goal of behavior analysis in this school setting is to identify and analyze the functional relationships between the student's behavior and the environmental variables that precede and follow it, ultimately developing and implementing evidence-based interventions to improve socially significant behaviors and enhance the student's overall educational and social functioning within the school environment. This systematic approach involves conducting functional behavior assessments to understand why behaviors occur, designing individualized behavior intervention plans, and continuously monitoring the student's progress to ensure the interventions are effective and sustainable." },
-      { letter: "A", text: "The primary goal of behavior analysis in this school setting is to systematically apply principles of learning to improve socially significant behaviors, such as academic engagement, social interaction, or functional communication, by identifying environmental variables that maintain these behaviors and designing evidence-based interventions to promote their occurrence, thereby enhancing the student's overall educational and developmental outcomes within their natural environment." },
-      { letter: "B", text: "The BCBA should prioritize developing and implementing a behavior intervention plan (BIP) that effectively reduces the student's problematic behaviors while simultaneously increasing their engagement in appropriate academic and social skills, ultimately aiming to improve the student's overall educational experience and foster a more positive and productive learning environment within the school setting." },
-      { letter: "C", text: "The primary goal is to ensure that the interventions implemented are effective and ethical, considering the specific needs of the student, the resources available within the school setting, and the long-term sustainability of the behavioral changes, thereby promoting socially significant behavior change and improving the student's overall quality of life and academic success through data-driven decision-making and ongoing evaluation." }
-    ],
-    correctAnswer: 'C',
-    rationale: "Generic rationale for t6-A-pool-11: Explanation for correct answer D and why distractors are wrong."
-  },
-  {
+{
     id: "t6-A-pool-12",
     domain: "A",
     taskItem: "A.2",
@@ -379,25 +247,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: 'A',
     rationale: "Experimental Analysis of Behavior (EAB) is characterized by basic research, often conducted in laboratory settings with non-human subjects, to discover fundamental principles of behavior. Applied Behavior Analysis (ABA) (A) focuses on applying these principles to socially significant human behavior. Professional Practice of Behavior Analysis (C) involves the direct application of ABA principles in real-world settings. Radical Behaviorism (D) is the philosophy underlying all branches of behavior analysis, not a branch itself."
   },
-  {
-    id: "t6-A-pool-18",
-    domain: "A",
-    taskItem: "A.1",
-    phase: "supervision",
-    bloomsLevel: "analysis",
-    difficulty: "easy",
-    scenario: "A BCBA is consulting with a school to address a student's disruptive classroom behavior. The BCBA's initial focus is on identifying the environmental factors that maintain the behavior to inform effective intervention strategies.",
-    question: "Which of the following best represents the primary goal of behavior analysis being applied in this scenario?",
-    choices: [
-      { letter: "B", text: "To understand the environmental variables that are functionally related to the student’s behavior, thereby facilitating the development of effective, evidence-based interventions that will lead to meaningful and sustainable improvements in the student's academic and social functioning within the school setting, aligning with the core principles of applied behavior analysis to improve socially significant behavior." },
-      { letter: "C", text: "The BCBA should focus on conducting a comprehensive functional behavior assessment (FBA) to identify the specific environmental variables that occasion and maintain the student's problem behavior, including antecedents, behaviors, and consequences, in order to develop an evidence-based behavior intervention plan (BIP) that is tailored to the student's needs and context within the school environment." },
-      { letter: "D", text: "The primary goal of behavior analysis in this scenario is to comprehensively evaluate the student's current behavioral repertoire within the school environment, including the identification of specific target behaviors, an analysis of their environmental antecedents and consequences, and the assessment of potential maintaining variables, in order to develop an evidence-based intervention plan that promotes socially significant behavior change and improves the student's overall educational experience." },
-      { letter: "A", text: "To establish a comprehensive and data-driven understanding of the student's behavior within the school environment, the BCBA should conduct a functional behavior assessment (FBA) to identify the specific environmental variables that evoke and maintain the target behaviors, thereby informing the development of effective, function-based intervention strategies tailored to the student's individual needs." }
-    ],
-    correctAnswer: 'B',
-    rationale: "Generic rationale for t6-A-pool-18: Explanation for correct answer A and why distractors are wrong."
-  },
-  {
+{
     id: "t6-A-pool-19",
     domain: "A",
     taskItem: "A.4",
@@ -415,25 +265,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: 'C',
     rationale: "Experimental Analysis of Behavior (EAB) is characterized by basic research, often conducted in laboratory settings with non-human subjects, to discover fundamental principles of behavior. Applied Behavior Analysis (ABA) (A) focuses on applying these principles to socially significant human behavior. Professional Practice of Behavior Analysis (C) involves the direct application of ABA principles in real-world settings. Radical Behaviorism (D) is the philosophy underlying all branches of behavior analysis, not a branch itself."
   },
-  {
-    id: "t6-A-pool-20",
-    domain: "A",
-    taskItem: "A.1",
-    phase: "supervision",
-    bloomsLevel: "comprehension",
-    difficulty: "medium",
-    scenario: "A BCBA is consulting with a school to address a student's disruptive classroom behavior. The BCBA's initial focus is on identifying the environmental factors that maintain the behavior to inform effective intervention strategies.",
-    question: "Which of the following best represents the primary goal of behavior analysis being applied in this scenario?",
-    choices: [
-      { letter: "B", text: "The BCBA should prioritize developing a comprehensive behavior intervention plan that systematically addresses the student's challenging behaviors and promotes adaptive skills, ensuring the plan is individualized, evidence-based, and considers environmental factors, while also training school staff on its proper implementation and data collection procedures to ensure fidelity and facilitate ongoing evaluation of its effectiveness in the school setting." },
-      { letter: "C", text: "To conduct a thorough functional behavior assessment (FBA) to identify the specific environmental variables that evoke and maintain the student's challenging behaviors, which will then inform the development of a function-based intervention plan designed to replace maladaptive behaviors with socially appropriate alternatives." },
-      { letter: "D", text: "The primary goal is to identify the environmental variables that maintain the student's challenging behaviors and develop evidence-based interventions to improve socially significant behaviors, ultimately enhancing the student's overall educational experience and functional independence within the school setting by promoting adaptive skills and reducing maladaptive responses through systematic behavior change procedures." },
-      { letter: "A", text: "The primary goal is to ensure that the BCBA's interventions are socially significant and directly address behaviors that improve the student's quality of life and functional independence within the school environment, focusing on outcomes that are meaningful to the student, their family, and the school community, thereby promoting long-term positive behavioral change and skill acquisition that extends beyond the immediate intervention period." }
-    ],
-    correctAnswer: 'D',
-    rationale: "Generic rationale for t6-A-pool-20: Explanation for correct answer C and why distractors are wrong."
-  },
-  {
+{
     id: "t6-A-pool-21",
     domain: "A",
     taskItem: "A.3",
@@ -547,25 +379,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: 'A',
     rationale: "Parsimony is the philosophical assumption that states that when multiple explanations for a phenomenon are available, the simplest explanation that accounts for all the facts should be chosen. The BCBA's suggestion to simplify the intervention aligns with this principle. Determinism (A) is the assumption that behavior is caused by lawful events. Selectionism (B) refers to the idea that behavior is selected by its consequences. Pragmatism (D) focuses on the practical utility of an intervention."
   },
-  {
-    id: "t6-A-pool-26",
-    domain: "A",
-    taskItem: "A.2",
-    phase: "supervision",
-    bloomsLevel: "analysis",
-    difficulty: "medium",
-    scenario: "A behavior analyst is conducting a preference assessment for a child with developmental disabilities. The analyst observes the child interacting with various toys and records which toys the child chooses to play with most frequently over several sessions.",
-    question: "Which philosophical assumption of behavior analysis is primarily demonstrated by the BCBA's approach of collecting direct observational data?",
-    choices: [
-      { letter: "A", text: "The behavior analyst is demonstrating a philosophical stance where mentalistic explanations for behavior are considered outside the scope of scientific inquiry and are therefore not directly observed or manipulated, focusing instead on the direct measurement and analysis of observable actions and their environmental determinants to understand and predict behavioral phenomena." },
-      { letter: "B", text: "The behavior analyst is primarily demonstrating the philosophical assumption of empiricism by systematically observing and recording the child's direct interactions with various toys and identifying the most frequently chosen items, thereby relying on objective, observable data to inform clinical decisions rather than subjective interpretations or theoretical constructs regarding the child's preferences." },
-      { letter: "C", text: "The behavior analyst’s approach aligns with the philosophical assumption of empiricism, as the BCBA is systematically observing and recording the child's interactions with various toys to identify preferences based on direct, measurable data, rather than relying on subjective reports or assumptions about what the child might like, thereby establishing an objective basis for understanding the child's behavioral choices and informing subsequent intervention strategies." },
-      { letter: "D", text: "The behavior analyst is demonstrating the philosophical assumption of determinism by systematically observing and recording the child's toy choices, operating under the premise that the child's behavior is lawful and can be understood through its environmental antecedents and consequences, even if those influences are not immediately apparent, thereby allowing for the prediction and potential manipulation of future toy selections based on the gathered preference data." }
-    ],
-    correctAnswer: "B",
-    rationale: "Generic rationale for t6-A-pool-26: Explanation for correct answer B and why distractors are wrong."
-  },
-  {
+{
     id: "t6-A-pool-27",
     domain: "A",
     taskItem: "A.5",
