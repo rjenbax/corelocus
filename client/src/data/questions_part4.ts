@@ -820,6 +820,10 @@ export const domainH_questions: Question[] = [
       { letter: "b", text: "Develop a comprehensive relapse prevention plan that includes: (1) A clear operational definition of the target behavior so the family can identify if it returns. (2) A specific threshold for re-engaging services (e.g., 'If tantrums exceed 3 per day for 3 consecutive days, contact us'). (3) A 'booster session' protocol that can be quickly implemented if the behavior returns. (4) A schedule of follow-up contacts (monthly for 3 months). (5) Training for the family and school team on how to maintain the FCT procedure." },
       { letter: "c", text: "Tell the family to call you if the behavior returns, and you will conduct a new assessment at that time to determine the appropriate intervention." },
       { letter: "d", text: "Relapse prevention is the school team's responsibility after discharge; provide the school team with the treatment plan and discharge summary." },
+    ],
+    correctAnswer: "b",
+    rationale: "Option B correctly applies a comprehensive, specific relapse prevention plan with all key components: operational definition, threshold for re-engagement, booster protocol, follow-up schedule, and team training. Options A, C, and D are all reactive rather than proactive approaches that do not provide the family with the specific tools and criteria needed to prevent and respond to relapse.",
+  },
   {
     id: 181,
     domain: "G",
@@ -874,9 +878,4 @@ export const domainH_questions: Question[] = [
     correctAnswer: "b",
     rationale: "Option B correctly evaluates the data: the clinic intervention has produced a meaningful reduction (81%) but has plateaued, and the home data (6/hour, near baseline) indicate that generalization has not occurred. The most clinically defensible next step is to address the generalization failure — not to modify the clinic procedure, which is working. Option A incorrectly concludes that 1.5 instances/hour is a natural floor without evidence. Option C incorrectly attributes the plateau to extinction failure; a plateau after a large reduction is more likely a generalization issue than a procedure failure. Option D is possible but premature — a function change should be hypothesized only after generalization programming has been attempted and failed.",
   },
-
-    ],
-    correctAnswer: "b",
-    rationale: "Option B correctly applies a comprehensive, specific relapse prevention plan with all key components: operational definition, threshold for re-engagement, booster protocol, follow-up schedule, and team training. Options A, C, and D are all reactive rather than proactive approaches that do not provide the family with the specific tools and criteria needed to prevent and respond to relapse.",
-  }
 ];

@@ -1,4 +1,5 @@
 export interface Choice {
+  id?: number | string; // optional — present in some Tier 7 question data files
   letter: string;
   text: string;
 }

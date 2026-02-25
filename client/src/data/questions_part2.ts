@@ -624,6 +624,10 @@ export const domainD_questions: Question[] = [
       { letter: "b", text: "\"The findings cannot be generalized to any other child because single-case designs by definition apply only to the individual participant. Each child with autism is unique, and what works for Leo may not work for any other child.\"" },
       { letter: "c", text: "\"Single-case designs have the same external validity as group designs when the participant is representative of the population of interest. Since Leo is a typical child with ASD, the findings should generalize to other children with similar profiles.\"" },
       { letter: "d", text: "\"Single-case designs demonstrate internal validity for this specific individual but have limited direct external validity. Generalization is established through systematic replication — repeating the study with different participants, in different settings, and with different therapists. My study is one data point in a larger literature, and its generalizability depends on how similar other cases are to Leo's.\"" },
+    ],
+    correctAnswer: "d",
+    rationale: "Option D correctly analyzes the external validity of single-case research: internal validity is demonstrated for the individual, and external validity is established through systematic replication across participants and settings. Option A overgeneralizes by citing the broader evidence base rather than addressing the specific study. Option B incorrectly concludes that single-case findings can never be generalized. Option C incorrectly equates single-case and group design external validity.",
+  },
   {
     id: 178,
     domain: "C",
@@ -678,9 +682,4 @@ export const domainD_questions: Question[] = [
     correctAnswer: "b",
     rationale: "Interval-by-interval IOA is calculated as agreements / (agreements + disagreements) = 28 / (28 + 10) = 28/38 = 73.7%. This is above the commonly cited 80% threshold for research contexts but is marginal for clinical practice. Option B correctly identifies the formula, notes the marginal result, and recommends a calibration session — the clinically appropriate response when IOA is acceptable but not strong. Option A uses the correct formula but incorrectly states the threshold is 70%. Option C correctly identifies the formula but incorrectly states the result exceeds 80%. Option D correctly identifies the 80% threshold but incorrectly mandates discarding all prior data, which is not standard practice for a marginal IOA result.",
   },
-
-    ],
-    correctAnswer: "d",
-    rationale: "Option D correctly analyzes the external validity of single-case research: internal validity is demonstrated for the individual, and external validity is established through systematic replication across participants and settings. Option A overgeneralizes by citing the broader evidence base rather than addressing the specific study. Option B incorrectly concludes that single-case findings can never be generalized. Option C incorrectly equates single-case and group design external validity.",
-  }
 ];
