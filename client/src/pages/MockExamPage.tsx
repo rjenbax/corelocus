@@ -261,7 +261,7 @@ function PauseScreen({ onResume }: { onResume: () => void }) {
 
 // ─── Main Exam View ───────────────────────────────────────────────────────────
 function ExamView() {
-  const { state, currentQuestion, submitAnswer, revealAnswer, nextQuestion, prevQuestion, toggleFlag, pauseExam, resumeExam, finishExam } = useMockExam();
+  const { state, currentQuestion, submitAnswer, revealAnswer, nextQuestion, prevQuestion, goToQuestion, toggleFlag, pauseExam, resumeExam, finishExam } = useMockExam();
   const [navOpen, setNavOpen] = useState(false);
   const [showFinishConfirm, setShowFinishConfirm] = useState(false);
   const [, navigate] = useLocation();
@@ -275,6 +275,16 @@ function ExamView() {
   const { currentIndex, questions, answers, flagged, revealed, settings } = state;
   const totalQ = questions.length;
   const answeredCount = Object.keys(answers).length;
+
+  // Pre-submission summary
+  const flaggedList = questions
+    .map((q, i) => ({ q, i, answered: Number(q.id) in answers }))
+    .filter(({ q }) => flagged[Number(q.id)]);
+  const unansweredList = questions
+    .map((q, i) => ({ q, i }))
+    .filter(({ q }) => !(Number(q.id) in answers));
+  const hasFlagged = flaggedList.length > 0;
+  const hasUnanswered = unansweredList.length > 0;
   const selectedAnswer = answers[Number(currentQuestion.id)];
   const isRevealed = revealed[Number(currentQuestion.id)];
   const isAnswered = selectedAnswer !== undefined;
@@ -443,34 +453,96 @@ function ExamView() {
         </div>
       </div>
 
-      {/* Finish confirm modal */}
+      {/* Pre-submission summary modal */}
       {showFinishConfirm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-          <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6 max-w-sm w-full mx-4">
-            <div className="flex items-center gap-3 mb-3">
-              <AlertTriangle className="w-5 h-5 text-amber-400" />
-              <h3 className="text-white font-semibold">Finish Exam?</h3>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-lg max-h-[90vh] flex flex-col shadow-2xl">
+            {/* Header */}
+            <div className="flex items-center gap-3 px-6 pt-6 pb-4 border-b border-slate-800">
+              <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0" />
+              <div className="flex-1">
+                <h3 className="text-white font-semibold text-base">Review Before Submitting</h3>
+                <p className="text-slate-400 text-xs mt-0.5">
+                  {answeredCount} of {totalQ} answered
+                  {hasFlagged && ` · ${flaggedList.length} flagged`}
+                  {hasUnanswered && ` · ${unansweredList.length} unanswered`}
+                </p>
+              </div>
             </div>
-            <p className="text-slate-400 text-sm mb-1">
-              You have answered <strong className="text-white">{answeredCount}</strong> of <strong className="text-white">{totalQ}</strong> questions.
-            </p>
-            {answeredCount < totalQ && (
-              <p className="text-amber-400 text-xs mb-4">
-                {totalQ - answeredCount} questions are unanswered and will be marked incorrect.
-              </p>
-            )}
-            <div className="flex gap-3 mt-4">
+
+            {/* Scrollable body */}
+            <div className="overflow-y-auto flex-1 px-6 py-4 space-y-5">
+              {/* All good */}
+              {!hasFlagged && !hasUnanswered && (
+                <div className="flex items-center gap-3 bg-emerald-900/30 border border-emerald-700/40 rounded-xl p-4">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+                  <p className="text-emerald-300 text-sm">All {totalQ} questions answered with no flags. You're ready to submit.</p>
+                </div>
+              )}
+
+              {/* Flagged */}
+              {hasFlagged && (
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Flag className="w-4 h-4 text-amber-400" />
+                    <span className="text-amber-400 text-sm font-semibold">{flaggedList.length} Flagged for Review</span>
+                  </div>
+                  <div className="space-y-1.5">
+                    {flaggedList.map(({ q, i, answered }) => (
+                      <button
+                        key={Number(q.id)}
+                        onClick={() => { goToQuestion(i); setShowFinishConfirm(false); }}
+                        className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 transition-all text-left group"
+                      >
+                        <span className="w-7 h-7 rounded bg-amber-500/20 border border-amber-500/40 text-amber-400 text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                        <span className="flex-1 text-slate-300 text-xs line-clamp-2 group-hover:text-white transition-colors">{q.question.replace(/\*\*/g, '')}</span>
+                        {answered
+                          ? <span className="text-emerald-400 text-xs shrink-0">Answered</span>
+                          : <span className="text-red-400 text-xs shrink-0">Blank</span>}
+                        <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300 shrink-0" />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Unanswered */}
+              {hasUnanswered && (
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <XCircle className="w-4 h-4 text-red-400" />
+                    <span className="text-red-400 text-sm font-semibold">{unansweredList.length} Unanswered — will be marked incorrect</span>
+                  </div>
+                  <div className="space-y-1.5">
+                    {unansweredList.map(({ q, i }) => (
+                      <button
+                        key={Number(q.id)}
+                        onClick={() => { goToQuestion(i); setShowFinishConfirm(false); }}
+                        className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 transition-all text-left group"
+                      >
+                        <span className="w-7 h-7 rounded bg-red-500/20 border border-red-500/40 text-red-400 text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                        <span className="flex-1 text-slate-300 text-xs line-clamp-2 group-hover:text-white transition-colors">{q.question.replace(/\*\*/g, '')}</span>
+                        <ChevronRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-slate-300 shrink-0" />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Footer */}
+            <div className="flex gap-3 px-6 py-4 border-t border-slate-800">
               <button
                 onClick={() => setShowFinishConfirm(false)}
                 className="flex-1 py-2.5 rounded-xl border border-slate-600 text-slate-300 hover:text-white text-sm font-medium transition-all"
               >
-                Continue
+                Continue Exam
               </button>
               <button
                 onClick={() => { finishExam(); navigate('/mock-results'); }}
                 className="flex-1 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold text-sm transition-all"
               >
-                Submit
+                Submit Exam
               </button>
             </div>
           </div>
