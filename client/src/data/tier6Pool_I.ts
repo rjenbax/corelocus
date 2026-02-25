@@ -41,22 +41,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A newly certified BCBA is preparing to supervise a Registered Behavior Technician (RBT) who is pursuing certification as a BCaBA. The RBT has expressed enthusiasm but also some anxiety about the rigorous demands of the supervision process. The BCBA wants to ensure that both parties have a clear understanding of their roles, responsibilities, and the expectations for supervision.",
     question: "Which of the following elements is MOST crucial for the BCBA to include when developing the supervision contract to address the RBT's concerns and ensure a structured supervisory relationship?",
     choices: [
-      {
-        letter: "B",
-        text: "Detailed schedule of supervision meetings, preferred communication methods, and a list of required readings."
-      },
-      {
-        letter: "C",
-        text: "The supervisor's personal philosophy of behavior analysis, a statement of ethical conduct, and a confidentiality agreement."
-      },
-      {
-        letter: "D",
-        text: "An outline of potential research opportunities, a plan for professional networking, and a summary of the BCBA's credentials."
-      },
-      {
-        letter: "A",
-        text: "Specific learning objectives, methods for evaluating competency, and a clear grievance procedure."
-      }
+      { letter: "B", text: "Implement a comprehensive behavioral strategy that involves detailed schedule of supervision meetings, preferred communication methods, and a list of required readings..  considering the client's specific context as described in the scenario: A newly certified BCBA is preparing to supervise a Registered Behavior Technician (RBT) who is pursu..., to effectively address the core issue presented in the question: Which of the following elements is MOST crucial for the BCBA to include when developing the supervis...." },
+      { letter: "C", text: "Apply evidence-based procedures, such as the supervisor.  considering the client's specific context as described in the scenario: A newly certified BCBA is preparing to supervise a Registered Behavior Technician (RBT) who is pursu..., to effectively address the core issue presented in the question: Which of the following elements is MOST crucial for the BCBA to include when developing the supervis...." },
+      { letter: "D", text: "Apply evidence-based procedures, such as an outline of potential research opportunities, a plan for professional networking, and a summary of the bcba.  considering the client's specific context as described in the scenario: A newly certified BCBA is preparing to supervise a Registered Behavior Technician (RBT) who is pursu..., to effectively address the core issue presented in the question: Which of the following elements is MOST crucial for the BCBA to include when developing the supervis...." },
+      { letter: "A", text: "Apply evidence-based procedures, such as specific learning objectives, methods for evaluating competency, and a clear grievance procedure..  considering the client's specific context as described in the scenario: A newly certified BCBA is preparing to supervise a Registered Behavior Technician (RBT) who is pursu..., to effectively address the core issue presented in the question: Which of the following elements is MOST crucial for the BCBA to include when developing the supervis...." }
     ],
     correctAnswer: 'B',
     rationale: "The correct answer is A. A supervision contract is a formal agreement that outlines the parameters of the supervisory relationship. To address the RBT's anxiety and ensure a structured process, it is crucial to include specific learning objectives (what the supervisee will learn), methods for evaluating competency (how progress will be measured), and a clear grievance procedure (how conflicts or concerns will be resolved). These elements directly contribute to clarity, accountability, and support within the supervision process, which are essential for a supervisee's development and well-being.\n\nDistractor B is incorrect because while a detailed schedule and communication methods are important logistical components, they do not directly address the core 'what' and 'how' of competency development or provide a mechanism for conflict resolution, which are more central to a structured and supportive learning environment. Required readings are a component of learning but not as fundamental as defining objectives and evaluation.\n\nDistractor C is incorrect because while a statement of ethical conduct and a confidentiality agreement are vital ethical components of any professional relationship, and a supervisor's philosophy can be informative, they do not directly define the specific learning trajectory, competency evaluation, or conflict resolution mechanisms that are critical for structuring the RBT's development and addressing anxiety about the process itself.\n\nDistractor D is incorrect because potential research opportunities, professional networking, and a summary of the BCBA's credentials, while potentially beneficial for professional development, are not core, mandatory elements of a supervision contract designed to structure the acquisition of BCaBA competencies and address immediate supervisory concerns. These are often supplementary aspects rather than foundational contractual requirements."
@@ -101,22 +89,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is reviewing data from a supervisee's implementation of a discrete trial teaching (DTT) program for manding. The data show that the supervisee is consistently achieving 90% correct responses for the client's mands, but the inter-trial interval (ITI) is highly variable, ranging from 5 to 30 seconds. The BCBA also observes that the supervisee frequently provides prompts before the client has an opportunity to respond independently.",
     question: "Based on this information, which of the following conclusions is most appropriate regarding the supervisee's performance?",
     choices: [
-      {
-        letter: "D",
-        text: "The supervisee's performance suggests a need for a re-evaluation of the client's manding program, as the current DTT approach may be ineffective."
-      },
-      {
-        letter: "A",
-        text: "The supervisee demonstrates proficiency in eliciting mands but requires further training on procedural fidelity related to ITI and prompt fading."
-      },
-      {
-        letter: "B",
-        text: "The supervisee's high percentage of correct mands indicates overall effective DTT implementation, and the ITI variability is a minor issue."
-      },
-      {
-        letter: "C",
-        text: "The supervisee is not effectively teaching mands, as indicated by the inconsistent ITI and premature prompting."
-      }
+      { letter: "D", text: "Systematically address the target behavior by utilizing the supervisee.  considering the client's specific context as described in the scenario: A BCBA is reviewing data from a supervisee..., to effectively address the core issue presented in the question: Based on this information, which of the following conclusions is most appropriate regarding the supe.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "A", text: "Systematically address the target behavior by utilizing the supervisee demonstrates proficiency in eliciting mands but requires further training on procedural fidelity related to iti and prompt fading..  considering the client's specific context as described in the scenario: A BCBA is reviewing data from a supervisee..., to effectively address the core issue presented in the question: Based on this information, which of the following conclusions is most appropriate regarding the supe...." },
+      { letter: "B", text: "Develop an individualized intervention plan focusing on the supervisee.  considering the client's specific context as described in the scenario: A BCBA is reviewing data from a supervisee..., to effectively address the core issue presented in the question: Based on this information, which of the following conclusions is most appropriate regarding the supe.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "C", text: "Apply evidence-based procedures, such as the supervisee is not effectively teaching mands, as indicated by the inconsistent iti and premature prompting..  considering the client's specific context as described in the scenario: A BCBA is reviewing data from a supervisee..., to effectively address the core issue presented in the question: Based on this information, which of the following conclusions is most appropriate regarding the supe...." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A. The supervisee is achieving 90% correct responses for mands, which suggests proficiency in eliciting the target behavior. However, the highly variable ITI and frequent premature prompting indicate a lack of procedural fidelity in implementing DTT components. Therefore, the supervisee needs further training on these specific aspects of the procedure.\n\nDistractor B is incorrect because while 90% correct mands is good, ITI variability and premature prompting are not minor issues; they can significantly impact the efficiency of learning, generalization, and the client's independence. Ignoring these fidelity issues could lead to prompt dependency or slower acquisition.\n\nDistractor C is incorrect because stating the supervisee is 'not effectively teaching mands' is too strong. The high percentage of correct responses suggests some level of effectiveness in eliciting the mands, even if the procedure is not implemented with perfect fidelity. The issue is with the *how* rather than the *if* of teaching.\n\nDistractor D is incorrect because the data primarily reflect the supervisee's implementation rather than the inherent effectiveness of the client's manding program. While program effectiveness should always be monitored, the immediate data point to issues with the supervisee's procedural fidelity, not necessarily a flaw in the program design itself."
@@ -191,22 +167,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is training a new team of direct support professionals (DSPs) to implement a complex behavior intervention plan (BIP) for an individual with severe self-injurious behavior (SIB). The BIP includes multiple components: differential reinforcement of alternative behavior (DRA), response blocking with redirection, and a crisis intervention protocol. During the initial training, the BCBA observes that one DSP, Sarah, consistently struggles with the precise implementation of the response blocking component, often applying it inconsistently or with excessive force, despite multiple demonstrations and opportunities for practice.",
     question: "Given Sarah's persistent difficulty and the high-risk nature of the SIB, what is the MOST ethically sound and clinically appropriate next step for the BCBA?",
     choices: [
-      {
-        letter: "C",
-        text: "Adjust the BIP to remove the response blocking component, as it appears too challenging for Sarah, and rely solely on the DRA and crisis intervention protocol, documenting the modification and rationale."
-      },
-      {
-        letter: "D",
-        text: "Document Sarah's performance deficits and recommend she review the training materials independently, scheduling a re-assessment of her competency in two weeks, while allowing her to continue implementing other less complex components of the BIP."
-      },
-      {
-        letter: "A",
-        text: "Immediately halt Sarah's direct implementation of the response blocking procedure with the client, provide intensive one-on-one retraining focused on the specific motor skills and decision-making required for response blocking, and ensure competency through simulated practice before allowing independent implementation."
-      },
-      {
-        letter: "B",
-        text: "Continue to provide feedback during live sessions, pairing Sarah with a more experienced DSP for co-implementation, and schedule a follow-up training session for the entire team to review the BIP components."
-      }
+      { letter: "C", text: "Develop an individualized intervention plan focusing on adjust the bip to remove the response blocking component, as it appears too challenging for sarah, and rely solely on the dra and crisis intervention protocol, documenting the modification and rationale..  considering the client's specific context as described in the scenario: A BCBA is training a new team of direct support professionals (DSPs) to implement a complex behavior..., to effectively address the core issue presented in the question: Given Sarah...." },
+      { letter: "D", text: "Implement a comprehensive behavioral strategy that involves document sarah.  considering the client's specific context as described in the scenario: A BCBA is training a new team of direct support professionals (DSPs) to implement a complex behavior..., to effectively address the core issue presented in the question: Given Sarah.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "A", text: "Implement a comprehensive behavioral strategy that involves immediately halt sarah.  considering the client's specific context as described in the scenario: A BCBA is training a new team of direct support professionals (DSPs) to implement a complex behavior..., to effectively address the core issue presented in the question: Given Sarah.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "B", text: "Develop an individualized intervention plan focusing on continue to provide feedback during live sessions, pairing sarah with a more experienced dsp for co-implementation, and schedule a follow-up training session for the entire team to review the bip components..  considering the client's specific context as described in the scenario: A BCBA is training a new team of direct support professionals (DSPs) to implement a complex behavior..., to effectively address the core issue presented in the question: Given Sarah...." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. Given the high-risk nature of severe SIB and Sarah's persistent difficulty with a critical, potentially harmful procedure (response blocking), the BCBA has an ethical obligation to prioritize client safety and effective treatment. Halting direct implementation, providing intensive individualized training, and ensuring competency through simulation before allowing independent practice is the most responsible and ethical approach. This directly addresses the deficit, prevents potential harm, and ensures the client receives effective, safe treatment.\n\nDistractor B is incorrect because while providing feedback and pairing with an experienced DSP can be helpful strategies, they do not sufficiently address the immediate risk posed by inconsistent or forceful response blocking with a high-risk behavior. Continuing live implementation without ensuring competency is unethical in this context. A general team review might not target Sarah's specific motor skill and decision-making deficits.\n\nDistractor C is incorrect because unilaterally removing a critical component of a BIP, especially one designed for severe SIB, without a thorough functional reassessment or exploring all training options, is premature and potentially compromises the effectiveness of the plan. The issue is Sarah's implementation, not necessarily the component's appropriateness for the client. The BCBA's role is to ensure staff can implement the plan, not to change the plan due to staff training challenges without clinical justification related to the client's needs.\n\nDistractor D is incorrect because allowing Sarah to continue implementing even 'less complex' components while having a known deficit in a high-risk procedure (response blocking) still places the client at potential risk if the SIB escalates and requires the problematic procedure. Relying on independent review for a persistent motor skill deficit is unlikely to be effective, and delaying competency reassessment for two weeks while allowing continued partial implementation is unethical given the severity of the behavior."
@@ -221,22 +185,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA supervisor is reviewing data from a supervisee's recent session where they implemented a new discrete trial training (DTT) program. The data shows that the supervisee provided prompts inconsistently and sometimes delivered reinforcers after an incorrect response. The supervisor wants to provide constructive feedback.",
     question: "Based on the session data, what is the most appropriate initial step for the BCBA supervisor to evaluate the supervisee's performance?",
     choices: [
-      {
-        letter: "D",
-        text: "Observe the supervisee's next session without providing any immediate feedback."
-      },
-      {
-        letter: "A",
-        text: "Schedule a meeting to review the data together and discuss observed discrepancies in implementation."
-      },
-      {
-        letter: "B",
-        text: "Immediately revise the DTT program based on the supervisee's data to simplify implementation."
-      },
-      {
-        letter: "C",
-        text: "Require the supervisee to retake the DTT training module before the next session."
-      }
+      { letter: "D", text: "Apply evidence-based procedures, such as observe the supervisee.  considering the client's specific context as described in the scenario: A BCBA supervisor is reviewing data from a supervisee..., to effectively address the core issue presented in the question: Based on the session data, what is the most appropriate initial step for the BCBA supervisor to eval.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "A", text: "Systematically address the target behavior by utilizing schedule a meeting to review the data together and discuss observed discrepancies in implementation..  considering the client's specific context as described in the scenario: A BCBA supervisor is reviewing data from a supervisee..., to effectively address the core issue presented in the question: Based on the session data, what is the most appropriate initial step for the BCBA supervisor to eval...." },
+      { letter: "B", text: "Apply evidence-based procedures, such as immediately revise the dtt program based on the supervisee.  considering the client's specific context as described in the scenario: A BCBA supervisor is reviewing data from a supervisee..., to effectively address the core issue presented in the question: Based on the session data, what is the most appropriate initial step for the BCBA supervisor to eval...." },
+      { letter: "C", text: "Develop an individualized intervention plan focusing on require the supervisee to retake the dtt training module before the next session..  considering the client's specific context as described in the scenario: A BCBA supervisor is reviewing data from a supervisee..., to effectively address the core issue presented in the question: Based on the session data, what is the most appropriate initial step for the BCBA supervisor to eval...." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A. The most appropriate initial step in evaluating supervisee performance, especially when data indicates issues, is to review the data collaboratively and discuss the observations. This allows for a direct conversation about the discrepancies, helps identify the root cause (e.g., misunderstanding, skill deficit, environmental factors), and fosters a supportive supervisory relationship. \n\nB is incorrect because revising the program immediately without understanding the supervisee's perspective or the reason for the implementation issues might not address the core problem and could be premature. The program itself might not be the issue. \n\nC is incorrect because requiring retraining without first evaluating the specific performance issues and discussing them with the supervisee is a punitive and potentially inefficient approach. The supervisee might understand the module but struggle with practical application.\n\nD is incorrect because observing without providing immediate feedback, especially after already identifying issues from data, delays intervention and does not actively address the identified performance concerns in a timely manner. Direct discussion is more proactive."
@@ -341,22 +293,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is observing a new RBT implement a discrete trial training (DTT) program. The BCBA notices the RBT consistently provides the reinforcer before the learner makes eye contact, which is a target behavior for the DTT trial. After the session, the BCBA sits down with the RBT to discuss their performance.",
     question: "Which of the following is the BEST example of effective performance feedback the BCBA could provide to the RBT in this situation?",
     choices: [
-      {
-        letter: "D",
-        text: "\"What do you think went well today, and what do you think you could have done differently?\""
-      },
-      {
-        letter: "A",
-        text: "\"I noticed that during DTT, you often delivered the reinforcer before the learner made eye contact. Remember, the goal is for them to make eye contact first. Let's try practicing that specific step now.\""
-      },
-      {
-        letter: "B",
-        text: "\"Your DTT implementation needs improvement. You're not following the steps correctly, and it's affecting the learner's progress. Please review the DTT protocol again.\""
-      },
-      {
-        letter: "C",
-        text: "\"You did a good job overall today. Keep up the good work, and we'll check in next week to see how things are going.\""
-      }
+      { letter: "D", text: "Implement a comprehensive behavioral strategy that involves \.  considering the client's specific context as described in the scenario: A BCBA is observing a new RBT implement a discrete trial training (DTT) program. The BCBA notices th..., to effectively address the core issue presented in the question: Which of the following is the BEST example of effective performance feedback the BCBA could provide ...." },
+      { letter: "A", text: "Systematically address the target behavior by utilizing \.  considering the client's specific context as described in the scenario: A BCBA is observing a new RBT implement a discrete trial training (DTT) program. The BCBA notices th..., to effectively address the core issue presented in the question: Which of the following is the BEST example of effective performance feedback the BCBA could provide ...." },
+      { letter: "B", text: "Implement a comprehensive behavioral strategy that involves \.  considering the client's specific context as described in the scenario: A BCBA is observing a new RBT implement a discrete trial training (DTT) program. The BCBA notices th..., to effectively address the core issue presented in the question: Which of the following is the BEST example of effective performance feedback the BCBA could provide ...." },
+      { letter: "C", text: "Systematically address the target behavior by utilizing \.  considering the client's specific context as described in the scenario: A BCBA is observing a new RBT implement a discrete trial training (DTT) program. The BCBA notices th..., to effectively address the core issue presented in the question: Which of the following is the BEST example of effective performance feedback the BCBA could provide ...." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A because it provides specific, objective, and immediate feedback about a particular behavior (delivering reinforcer before eye contact). It also explains the impact (goal is eye contact first) and offers an opportunity for immediate practice/correction, which are all hallmarks of effective performance feedback according to I.5. \n\nDistractor B is incorrect because it is vague, critical, and does not provide specific actionable steps for improvement. It is demotivating and unhelpful.\n\nDistractor C is incorrect because it is overly general, lacks specificity regarding areas of improvement, and does not address the observed performance deficit. It doesn't provide guidance for skill development.\n\nDistractor D is incorrect because while self-reflection can be part of a feedback process, it is not the BEST example of direct performance feedback from the supervisor when a specific error has been observed. The supervisor should first provide clear, objective feedback on the observed behavior before prompting self-assessment, especially with a new RBT."
@@ -371,22 +311,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a client with autism. During direct observation, the BCBA notes that the RBT consistently delivers praise before the client makes a correct response and sometimes prompts after the client has already initiated the correct response. The BCBA has previously provided training on prompt fading and reinforcement delivery.",
     question: "To effectively evaluate the RBT's performance and address these discrepancies, what is the most appropriate next step for the BCBA?",
     choices: [
-      {
-        letter: "A",
-        text: "Provide immediate, specific performance feedback to the RBT, model the correct procedures, and then observe the RBT re-implementing the DTT program."
-      },
-      {
-        letter: "B",
-        text: "Review the RBT's competency assessment checklist from their initial training to identify areas for re-training."
-      },
-      {
-        letter: "C",
-        text: "Schedule a formal meeting next week to discuss the observed errors and review relevant sections of the DTT protocol."
-      },
-      {
-        letter: "D",
-        text: "Document the errors in the RBT's supervision log and continue observing for a few more sessions to see if the RBT self-corrects."
-      }
+      { letter: "A", text: "Formulate a clinical approach designed to provide immediate, specific performance feedback to the rbt, model the correct procedures, and then observe the rbt re-implementing the dtt program..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: To effectively evaluate the RBT...." },
+      { letter: "B", text: "Formulate a clinical approach designed to review the rbt.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: To effectively evaluate the RBT.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "C", text: "Apply evidence-based procedures, such as schedule a formal meeting next week to discuss the observed errors and review relevant sections of the dtt protocol..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: To effectively evaluate the RBT...." },
+      { letter: "D", text: "Formulate a clinical approach designed to document the errors in the rbt.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: To effectively evaluate the RBT.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. Providing immediate, specific feedback, modeling, and then observing re-implementation is a direct and effective strategy for correcting performance errors in real-time, aligning with best practices for performance feedback and skill acquisition in supervision. This approach allows for immediate correction and practice, which is crucial for skill development.\n\nDistractor B is incorrect because while reviewing the competency assessment might be useful for understanding the initial training, the current issue is a performance discrepancy, not necessarily a lack of initial understanding. Immediate feedback and modeling are more effective for correcting observed errors. \n\nDistractor C is incorrect because delaying feedback until a formal meeting next week can allow the incorrect behaviors to become more entrenched and may not be as effective as immediate correction in the natural environment. The goal is to correct the behavior as close to the occurrence as possible.\n\nDistractor D is incorrect because simply documenting errors and waiting for self-correction is a passive approach that does not actively support the supervisee's development or ensure client progress. It's the supervisor's responsibility to provide active guidance and correction."
@@ -401,22 +329,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A newly certified BCBA is supervising a Registered Behavior Technician (RBT) who is implementing a new discrete trial training (DTT) program for a client. The BCBA has provided initial training and modeling. During the first supervision session, the BCBA observes the RBT consistently missing opportunities to deliver reinforcement after correct responses.",
     question: "What is the most appropriate initial step for the BCBA to take to address the RBT's performance deficit?",
     choices: [
-      {
-        letter: "B",
-        text: "Document the RBT's performance and schedule a formal retraining session for the following week."
-      },
-      {
-        letter: "C",
-        text: "Ask the RBT to review the DTT protocol independently and report back on their understanding."
-      },
-      {
-        letter: "D",
-        text: "Reduce the RBT's caseload to allow more time for self-correction and practice."
-      },
-      {
-        letter: "A",
-        text: "Provide immediate, specific performance feedback to the RBT and model the correct procedure."
-      }
+      { letter: "B", text: "Develop an individualized intervention plan focusing on document the rbt.  considering the client's specific context as described in the scenario: A newly certified BCBA is supervising a Registered Behavior Technician (RBT) who is implementing a n..., to effectively address the core issue presented in the question: What is the most appropriate initial step for the BCBA to take to address the RBT...." },
+      { letter: "C", text: "Implement a comprehensive behavioral strategy that involves ask the rbt to review the dtt protocol independently and report back on their understanding..  considering the client's specific context as described in the scenario: A newly certified BCBA is supervising a Registered Behavior Technician (RBT) who is implementing a n..., to effectively address the core issue presented in the question: What is the most appropriate initial step for the BCBA to take to address the RBT...." },
+      { letter: "D", text: "Apply evidence-based procedures, such as reduce the rbt.  considering the client's specific context as described in the scenario: A newly certified BCBA is supervising a Registered Behavior Technician (RBT) who is implementing a n..., to effectively address the core issue presented in the question: What is the most appropriate initial step for the BCBA to take to address the RBT...." },
+      { letter: "A", text: "Formulate a clinical approach designed to provide immediate, specific performance feedback to the rbt and model the correct procedure..  considering the client's specific context as described in the scenario: A newly certified BCBA is supervising a Registered Behavior Technician (RBT) who is implementing a n..., to effectively address the core issue presented in the question: What is the most appropriate initial step for the BCBA to take to address the RBT...." }
     ],
     correctAnswer: 'B',
     rationale: "The correct answer is A. According to best practices in performance monitoring and supervision, immediate, specific, and constructive feedback, often coupled with modeling, is the most effective way to address performance deficits observed during direct supervision (Reid & Parsons, 2006). This allows for real-time correction and skill acquisition.\n\nDistractor B is incorrect because waiting a week for a formal retraining session delays intervention and allows the RBT to continue practicing the incorrect procedure, potentially impacting client progress. While documentation is important, it shouldn't be the *initial* step to address an immediate performance issue.\n\nDistractor C is incorrect because simply asking the RBT to review the protocol independently does not guarantee that the RBT will identify or correct the specific performance deficit observed. The RBT might not be aware of the error or understand *how* to apply the protocol correctly in practice.\n\nDistractor D is incorrect because reducing the RBT's caseload is an extreme and often unnecessary measure for an initial performance deficit. It does not directly address the skill gap and could be a disincentive, rather than a teaching opportunity. This might be considered if other interventions fail, but not as an initial step."
@@ -491,22 +407,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A supervisee is implementing a new discrete trial training (DTT) program for a client with severe challenging behavior. During the last supervision session, the supervisee expressed discomfort with the client's recent increase in aggressive outbursts during DTT, stating they feel unprepared to manage them effectively. The supervisee has met all their direct supervision hours for the current supervision period but is still working towards their indirect hours.",
     question: "Based on the information provided, what is the most immediate and highest priority supervision need for this supervisee?",
     choices: [
-      {
-        letter: "A",
-        text: "Providing direct observation and in-the-moment feedback on behavior reduction strategies during DTT."
-      },
-      {
-        letter: "B",
-        text: "Reviewing the supervisee's indirect supervision activities to ensure compliance with BACB requirements."
-      },
-      {
-        letter: "C",
-        text: "Discussing the ethical implications of working with clients who engage in severe challenging behavior."
-      },
-      {
-        letter: "D",
-        text: "Assigning additional readings on DTT fidelity to enhance the supervisee's programmatic knowledge."
-      }
+      { letter: "A", text: "Develop an individualized intervention plan focusing on providing direct observation and in-the-moment feedback on behavior reduction strategies during dtt..  considering the client's specific context as described in the scenario: A supervisee is implementing a new discrete trial training (DTT) program for a client with severe ch..., to effectively address the core issue presented in the question: Based on the information provided, what is the most immediate and highest priority supervision need ...." },
+      { letter: "B", text: "Implement a comprehensive behavioral strategy that involves reviewing the supervisee.  considering the client's specific context as described in the scenario: A supervisee is implementing a new discrete trial training (DTT) program for a client with severe ch..., to effectively address the core issue presented in the question: Based on the information provided, what is the most immediate and highest priority supervision need ...." },
+      { letter: "C", text: "Implement a comprehensive behavioral strategy that involves discussing the ethical implications of working with clients who engage in severe challenging behavior..  considering the client's specific context as described in the scenario: A supervisee is implementing a new discrete trial training (DTT) program for a client with severe ch..., to effectively address the core issue presented in the question: Based on the information provided, what is the most immediate and highest priority supervision need ...." },
+      { letter: "D", text: "Systematically address the target behavior by utilizing assigning additional readings on dtt fidelity to enhance the supervisee.  considering the client's specific context as described in the scenario: A supervisee is implementing a new discrete trial training (DTT) program for a client with severe ch..., to effectively address the core issue presented in the question: Based on the information provided, what is the most immediate and highest priority supervision need ...." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. The supervisee explicitly stated discomfort and feeling unprepared to manage aggressive outbursts, which poses an immediate risk to client safety, supervisee safety, and treatment integrity. Direct observation and in-the-moment feedback are crucial for addressing this performance deficit and ensuring effective and safe implementation of behavior reduction strategies. \n\nDistractor B is incorrect because while meeting indirect hours is important for BACB compliance, it does not address the immediate and critical clinical need related to client challenging behavior and supervisee competence/safety. The scenario states they are 'still working towards their indirect hours,' implying it's an ongoing process, but the immediate concern is performance.\n\nDistractor C is incorrect because while ethical considerations are always relevant, the supervisee's expressed discomfort is about managing the behavior, not primarily about the ethical implications of working with such clients. Addressing the practical skill deficit is a more immediate priority than a conceptual discussion in this context.\n\nDistractor D is incorrect because while enhancing programmatic knowledge is valuable, the supervisee's concern is about managing challenging behavior, not DTT fidelity itself. Assigning readings is an indirect approach and less effective for an immediate performance deficit related to safety and behavior management than direct, real-time feedback."
@@ -521,22 +425,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A new RBT, Sarah, is struggling to implement discrete trial training (DTT) correctly, often prompting too early or too late. Her BCBA supervisor, Mark, has observed this pattern during several sessions. Mark wants to ensure Sarah masters the DTT procedure accurately.",
     question: "What is the most appropriate first step for Mark to take to train Sarah on the correct implementation of DTT?",
     choices: [
-      {
-        letter: "B",
-        text: "Review Sarah's data collection sheets to identify specific errors in her recording."
-      },
-      {
-        letter: "C",
-        text: "Assign Sarah to observe another RBT who is proficient in DTT for several sessions."
-      },
-      {
-        letter: "D",
-        text: "Recommend Sarah read a research article about effective DTT implementation."
-      },
-      {
-        letter: "A",
-        text: "Provide direct instruction on the DTT steps, model the correct implementation, and then have Sarah practice with feedback."
-      }
+      { letter: "B", text: "Develop an individualized intervention plan focusing on review sarah.  considering the client's specific context as described in the scenario: A new RBT, Sarah, is struggling to implement discrete trial training (DTT) correctly, often promptin..., to effectively address the core issue presented in the question: What is the most appropriate first step for Mark to take to train Sarah on the correct implementatio...." },
+      { letter: "C", text: "Implement a comprehensive behavioral strategy that involves assign sarah to observe another rbt who is proficient in dtt for several sessions..  considering the client's specific context as described in the scenario: A new RBT, Sarah, is struggling to implement discrete trial training (DTT) correctly, often promptin..., to effectively address the core issue presented in the question: What is the most appropriate first step for Mark to take to train Sarah on the correct implementatio...." },
+      { letter: "D", text: "Implement a comprehensive behavioral strategy that involves recommend sarah read a research article about effective dtt implementation..  considering the client's specific context as described in the scenario: A new RBT, Sarah, is struggling to implement discrete trial training (DTT) correctly, often promptin..., to effectively address the core issue presented in the question: What is the most appropriate first step for Mark to take to train Sarah on the correct implementatio...." },
+      { letter: "A", text: "Implement a comprehensive behavioral strategy that involves provide direct instruction on the dtt steps, model the correct implementation, and then have sarah practice with feedback..  considering the client's specific context as described in the scenario: A new RBT, Sarah, is struggling to implement discrete trial training (DTT) correctly, often promptin..., to effectively address the core issue presented in the question: What is the most appropriate first step for Mark to take to train Sarah on the correct implementatio...." }
     ],
     correctAnswer: 'B',
     rationale: "The correct answer is A. This option describes a comprehensive and effective training sequence often referred to as 'tell, show, do, feedback' or behavioral skills training (BST). It directly addresses the identified skill deficit (implementing DTT) by providing instruction, modeling, and opportunities for practice with feedback, which are essential components for skill acquisition in supervisees (Task List Item I.3).\n\nDistractor B is incorrect because while data collection is important, the scenario explicitly states Sarah is struggling with the *implementation* of DTT, not necessarily her data recording. Addressing the procedural skill deficit should be the primary focus.\n\nDistractor C is incorrect because while observation can be a useful component of training, it's often insufficient on its own for skill acquisition. Without direct instruction, modeling, and opportunities for practice with feedback, Sarah may not fully grasp the nuances or be able to replicate the observed behavior effectively.\n\nDistractor D is incorrect because reading a research article is a passive learning method and is unlikely to be effective for teaching a complex procedural skill like DTT implementation. It lacks the active engagement, modeling, and practice components necessary for skill acquisition."
@@ -551,22 +443,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA supervisor, Dr. Ramirez, has been supervising a new RBT, Sarah, for three months. Dr. Ramirez notices that Sarah consistently struggles with implementing discrete trial training (DTT) procedures, particularly with error correction, despite repeated direct instruction and modeling during supervision sessions. Dr. Ramirez is also aware that Sarah is experiencing significant personal stress due to a family illness, which she disclosed during a recent check-in.",
     question: "Considering Dr. Ramirez's ethical obligations as a supervisor, which of the following actions is MOST aligned with ethical supervisory practices in this situation?",
     choices: [
-      {
-        letter: "C",
-        text: "Increase the intensity of DTT training during supervision, emphasizing that Sarah needs to master these skills quickly to maintain her RBT certification and employment."
-      },
-      {
-        letter: "D",
-        text: "Delegate the responsibility of providing additional DTT training to a more experienced RBT on the team, allowing Dr. Ramirez to focus on other supervisory duties."
-      },
-      {
-        letter: "A",
-        text: "Implement a structured performance improvement plan focusing on DTT and error correction, while also offering to adjust supervision frequency or focus to accommodate Sarah's personal circumstances and ensure her well-being."
-      },
-      {
-        letter: "B",
-        text: "Document Sarah's performance deficits and personal disclosures, then recommend a temporary suspension from direct client contact until her DTT skills improve and her personal stress resolves."
-      }
+      { letter: "C", text: "Apply evidence-based procedures, such as increase the intensity of dtt training during supervision, emphasizing that sarah needs to master these skills quickly to maintain her rbt certification and employment..  considering the client's specific context as described in the scenario: A BCBA supervisor, Dr. Ramirez, has been supervising a new RBT, Sarah, for three months. Dr. Ramirez..., to effectively address the core issue presented in the question: Considering Dr. Ramirez...." },
+      { letter: "D", text: "Apply evidence-based procedures, such as delegate the responsibility of providing additional dtt training to a more experienced rbt on the team, allowing dr. ramirez to focus on other supervisory duties..  considering the client's specific context as described in the scenario: A BCBA supervisor, Dr. Ramirez, has been supervising a new RBT, Sarah, for three months. Dr. Ramirez..., to effectively address the core issue presented in the question: Considering Dr. Ramirez...." },
+      { letter: "A", text: "Apply evidence-based procedures, such as implement a structured performance improvement plan focusing on dtt and error correction, while also offering to adjust supervision frequency or focus to accommodate sarah.  considering the client's specific context as described in the scenario: A BCBA supervisor, Dr. Ramirez, has been supervising a new RBT, Sarah, for three months. Dr. Ramirez..., to effectively address the core issue presented in the question: Considering Dr. Ramirez...." },
+      { letter: "B", text: "Apply evidence-based procedures, such as document sarah.  considering the client's specific context as described in the scenario: A BCBA supervisor, Dr. Ramirez, has been supervising a new RBT, Sarah, for three months. Dr. Ramirez..., to effectively address the core issue presented in the question: Considering Dr. Ramirez.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. This option demonstrates a balanced approach that addresses both the RBT's performance deficits and her personal well-being, which is crucial for ethical supervision (BACB Professional and Ethical Compliance Code for Behavior Analysts, 4.0 'Supervisors'). A structured performance improvement plan directly addresses the skill deficit, while offering accommodation for personal circumstances acknowledges the potential impact of personal stress on performance and upholds the supervisor's responsibility to support the supervisee. This aligns with the ethical principle of 'Benefiting Others' and 'Being Just' by providing appropriate support and fair treatment.\n\nDistractor B is incorrect because recommending a temporary suspension without first attempting to remediate the skill deficit and provide support is premature and potentially punitive. While documentation is necessary, immediate suspension without a clear plan for improvement or consideration of the RBT's well-being is not the most ethical first step. It does not prioritize remediation and support.\n\nDistractor C is incorrect because while increasing training intensity is relevant, emphasizing the risk to certification and employment without also considering the impact of personal stress can be coercive and may exacerbate Sarah's difficulties rather than support her learning. It lacks the supportive and empathetic component necessary for ethical supervision, potentially violating 'Treating Others with Dignity and Respect'.\n\nDistractor D is incorrect because delegating core supervisory training responsibilities to another RBT is inappropriate. While peer mentoring can be valuable, the primary responsibility for ensuring the RBT's competence and providing adequate supervision lies with the BCBA supervisor. This would be a failure to uphold the supervisor's ethical obligations regarding competence and responsibility (Code 4.02 'Supervisory Competence' and 4.03 'Supervisory Volume')."
@@ -731,22 +611,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA, Sarah, is supervising a new RBT. During their first supervision meeting, Sarah outlines the RBT's responsibilities, the supervision schedule, and the performance expectations. She also discusses the process for providing feedback and addressing any concerns.",
     question: "Which ethical supervisory practice is Sarah primarily demonstrating by clearly outlining expectations and responsibilities at the outset of supervision?",
     choices: [
-      {
-        letter: "A",
-        text: "Establishing a clear supervision contract."
-      },
-      {
-        letter: "B",
-        text: "Promoting professional development."
-      },
-      {
-        letter: "C",
-        text: "Ensuring client welfare."
-      },
-      {
-        letter: "D",
-        text: "Maintaining confidentiality."
-      }
+      { letter: "A", text: "Implement a comprehensive behavioral strategy that involves establishing a clear supervision contract..  considering the client's specific context as described in the scenario: A BCBA, Sarah, is supervising a new RBT. During their first supervision meeting, Sarah outlines the ..., to effectively address the core issue presented in the question: Which ethical supervisory practice is Sarah primarily demonstrating by clearly outlining expectation...." },
+      { letter: "B", text: "Systematically address the target behavior by utilizing promoting professional development..  considering the client's specific context as described in the scenario: A BCBA, Sarah, is supervising a new RBT. During their first supervision meeting, Sarah outlines the ..., to effectively address the core issue presented in the question: Which ethical supervisory practice is Sarah primarily demonstrating by clearly outlining expectation.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "C", text: "Apply evidence-based procedures, such as ensuring client welfare..  considering the client's specific context as described in the scenario: A BCBA, Sarah, is supervising a new RBT. During their first supervision meeting, Sarah outlines the ..., to effectively address the core issue presented in the question: Which ethical supervisory practice is Sarah primarily demonstrating by clearly outlining expectation.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "D", text: "Implement a comprehensive behavioral strategy that involves maintaining confidentiality..  considering the client's specific context as described in the scenario: A BCBA, Sarah, is supervising a new RBT. During their first supervision meeting, Sarah outlines the ..., to effectively address the core issue presented in the question: Which ethical supervisory practice is Sarah primarily demonstrating by clearly outlining expectation.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. By outlining responsibilities, expectations, and the supervision process, Sarah is establishing a clear supervision contract, which is a fundamental ethical practice to ensure both the supervisor and supervisee understand their roles and obligations. This sets the foundation for an effective and ethical supervisory relationship. \nB is incorrect because while outlining expectations can contribute to professional development, the primary action described is the establishment of the supervisory framework, not specific professional development activities. \nC is incorrect because while ethical supervision ultimately aims to ensure client welfare, the direct action described (outlining expectations) is a step in establishing the supervisory relationship, not a direct intervention related to client welfare. \nD is incorrect because maintaining confidentiality, while crucial in supervision, is not the specific ethical practice being demonstrated by outlining responsibilities and expectations; that would involve discussing privacy of client or supervisee information."
@@ -821,22 +689,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a client learning to identify colors. The BCBA observes the RBT for three sessions and records the percentage of trials where the RBT delivers the reinforcer within 3 seconds of a correct response. The data shows 60%, 75%, and 80% for the three sessions, respectively. The BCBA's goal is for the RBT to achieve 90% or higher for this specific skill.",
     question: "Based on the provided performance monitoring data, what is the most appropriate immediate action for the BCBA to take?",
     choices: [
-      {
-        letter: "D",
-        text: "Implement a token economy for the RBT to increase motivation for timely reinforcement."
-      },
-      {
-        letter: "A",
-        text: "Provide specific performance feedback and model the correct timing of reinforcement delivery."
-      },
-      {
-        letter: "B",
-        text: "Continue monitoring for three more sessions to establish a clearer trend before intervening."
-      },
-      {
-        letter: "C",
-        text: "Revise the DTT program as the RBT's performance indicates the program might be too complex."
-      }
+      { letter: "D", text: "Systematically address the target behavior by utilizing implement a token economy for the rbt to increase motivation for timely reinforcement..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: Based on the provided performance monitoring data, what is the most appropriate immediate action for...." },
+      { letter: "A", text: "Systematically address the target behavior by utilizing provide specific performance feedback and model the correct timing of reinforcement delivery..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: Based on the provided performance monitoring data, what is the most appropriate immediate action for...." },
+      { letter: "B", text: "Systematically address the target behavior by utilizing continue monitoring for three more sessions to establish a clearer trend before intervening..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: Based on the provided performance monitoring data, what is the most appropriate immediate action for...." },
+      { letter: "C", text: "Systematically address the target behavior by utilizing revise the dtt program as the rbt.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: Based on the provided performance monitoring data, what is the most appropriate immediate action for...." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A. The data shows an improving trend (60%, 75%, 80%) but has not yet met the performance criterion of 90%. As a supervisor, the most appropriate immediate action is to provide specific, constructive feedback and model the desired behavior to help the RBT reach the target. This directly addresses the observed performance deficit.\n\nB is incorrect because while continued monitoring is part of ongoing supervision, the RBT's performance is consistently below the target, indicating a need for immediate intervention, not just further observation. Waiting longer could delay the RBT's skill acquisition and potentially impact client progress.\n\nC is incorrect because the data reflects the RBT's implementation skill (timely reinforcement), not necessarily the complexity of the DTT program itself. There's no information to suggest the program is too complex; rather, the RBT needs support in executing a specific component of it.\n\nD is incorrect because implementing a token economy for the RBT is an overly complex and potentially unnecessary intervention at this stage. Direct feedback and modeling are typically the first and most effective strategies for addressing skill deficits in supervisees. A token economy might be considered if direct feedback proves insufficient over time, but it's not the immediate, most appropriate action."
@@ -941,22 +797,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A new RBT is struggling to implement a complex discrete trial training (DTT) program for a client with severe communication deficits. You, as the supervising BCBA, have demonstrated the procedure, provided verbal instructions, and given immediate feedback during their practice sessions. Despite these efforts, the RBT continues to make frequent errors, particularly when the client exhibits challenging behaviors during DTT.",
     question: "Considering the RBT's persistent errors and the ethical responsibility to ensure client progress and RBT competency, what is the most ethically sound next step for the supervising BCBA?",
     choices: [
-      {
-        letter: "D",
-        text: "Document the RBT's lack of progress and consider reassigning them to a different client or program that requires less complex procedural implementation."
-      },
-      {
-        letter: "A",
-        text: "Provide additional in-situ training and practice opportunities specifically targeting DTT implementation during challenging behaviors, while gradually fading prompts and increasing the complexity of scenarios."
-      },
-      {
-        letter: "B",
-        text: "Refer the RBT to online modules and written protocols for DTT, expecting them to review the materials independently before the next supervision session."
-      },
-      {
-        letter: "C",
-        text: "Modify the client's DTT program to be less complex, as the RBT appears unable to master the current level of difficulty, to ensure some level of successful implementation."
-      }
+      { letter: "D", text: "Formulate a clinical approach designed to document the rbt.  considering the client's specific context as described in the scenario: A new RBT is struggling to implement a complex discrete trial training (DTT) program for a client wi..., to effectively address the core issue presented in the question: Considering the RBT.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "A", text: "Develop an individualized intervention plan focusing on provide additional in-situ training and practice opportunities specifically targeting dtt implementation during challenging behaviors, while gradually fading prompts and increasing the complexity of scenarios..  considering the client's specific context as described in the scenario: A new RBT is struggling to implement a complex discrete trial training (DTT) program for a client wi..., to effectively address the core issue presented in the question: Considering the RBT...." },
+      { letter: "B", text: "Formulate a clinical approach designed to refer the rbt to online modules and written protocols for dtt, expecting them to review the materials independently before the next supervision session..  considering the client's specific context as described in the scenario: A new RBT is struggling to implement a complex discrete trial training (DTT) program for a client wi..., to effectively address the core issue presented in the question: Considering the RBT...." },
+      { letter: "C", text: "Apply evidence-based procedures, such as modify the client.  considering the client's specific context as described in the scenario: A new RBT is struggling to implement a complex discrete trial training (DTT) program for a client wi..., to effectively address the core issue presented in the question: Considering the RBT.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A. Behavioral Skills Training (BST) involves instruction, modeling, rehearsal, and feedback. When an RBT continues to struggle after initial BST components, the most ethically sound and behaviorally appropriate next step is to intensify and refine the BST process. This includes providing more targeted practice (rehearsal) in the natural environment (in-situ training), focusing on the specific areas of difficulty (challenging behaviors), and systematically adjusting prompts and complexity to build mastery. This demonstrates a commitment to RBT development and client welfare.\n\nDistractor B is incorrect because simply referring the RBT to independent study materials without further direct training or supervision is unlikely to address the skill deficit, especially given that instruction and modeling have already occurred. It shifts the burden of training without providing the necessary active components of BST.\n\nDistractor C is incorrect because modifying the client's program to be less complex primarily to accommodate the RBT's skill deficit is unethical. It prioritizes the RBT's comfort over the client's optimal progress and may compromise the effectiveness of the intervention. The focus should be on training the RBT to implement the necessary program, not on diluting the program.\n\nDistractor D is incorrect because immediately considering reassignment or documenting lack of progress without first exhausting more intensive and targeted training strategies is premature and does not fulfill the supervisor's ethical obligation to provide adequate training and support. While reassignment might be a last resort, it should only be considered after comprehensive and individualized training efforts have failed."
@@ -1061,22 +905,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A new RBT on your team has been consistently forgetting to collect data during the first 5 minutes of each session, despite previous training. During your supervision meeting, you plan to provide feedback on this specific behavior.",
     question: "Which of the following approaches to providing performance feedback is most ethically sound and likely to be effective in this situation?",
     choices: [
-      {
-        letter: "D",
-        text: "Document the RBT's non-compliance and inform them that disciplinary action will be taken if the behavior continues."
-      },
-      {
-        letter: "A",
-        text: "Provide specific, objective feedback on the observed behavior, explain its impact, and collaboratively develop a plan for improvement."
-      },
-      {
-        letter: "B",
-        text: "Tell the RBT that they are not performing adequately and that they need to improve their data collection immediately."
-      },
-      {
-        letter: "C",
-        text: "Ask another RBT to model correct data collection for the new RBT without directly addressing the issue with the new RBT."
-      }
+      { letter: "D", text: "Apply evidence-based procedures, such as document the rbt.  considering the client's specific context as described in the scenario: A new RBT on your team has been consistently forgetting to collect data during the first 5 minutes o..., to effectively address the core issue presented in the question: Which of the following approaches to providing performance feedback is most ethically sound and like...." },
+      { letter: "A", text: "Develop an individualized intervention plan focusing on provide specific, objective feedback on the observed behavior, explain its impact, and collaboratively develop a plan for improvement..  considering the client's specific context as described in the scenario: A new RBT on your team has been consistently forgetting to collect data during the first 5 minutes o..., to effectively address the core issue presented in the question: Which of the following approaches to providing performance feedback is most ethically sound and like...." },
+      { letter: "B", text: "Implement a comprehensive behavioral strategy that involves tell the rbt that they are not performing adequately and that they need to improve their data collection immediately..  considering the client's specific context as described in the scenario: A new RBT on your team has been consistently forgetting to collect data during the first 5 minutes o..., to effectively address the core issue presented in the question: Which of the following approaches to providing performance feedback is most ethically sound and like...." },
+      { letter: "C", text: "Apply evidence-based procedures, such as ask another rbt to model correct data collection for the new rbt without directly addressing the issue with the new rbt..  considering the client's specific context as described in the scenario: A new RBT on your team has been consistently forgetting to collect data during the first 5 minutes o..., to effectively address the core issue presented in the question: Which of the following approaches to providing performance feedback is most ethically sound and like...." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A because it aligns with best practices for providing effective and ethical performance feedback. It emphasizes being specific and objective about the observed behavior, explaining the rationale/impact (e.g., on treatment efficacy), and fostering a collaborative approach to problem-solving, which promotes RBT growth and buy-in. This approach is constructive and focuses on skill development.\n\nDistractor B is incorrect because it is accusatory, non-specific, and provides no clear path for improvement, which is likely to be demotivating and ineffective. It lacks the constructive elements of good feedback.\n\nDistractor C is incorrect because it avoids directly addressing the issue with the RBT, which is necessary for clear communication and accountability. While modeling can be a useful component of training, it's not sufficient as the sole feedback mechanism for a consistent performance deficit.\n\nDistractor D is incorrect because, while documentation is important, immediately threatening disciplinary action without first attempting constructive feedback and support is premature and unethical. It does not prioritize skill development or provide an opportunity for the RBT to improve with guidance, which is a primary goal of supervision."
@@ -1271,22 +1103,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is struggling with implementing discrete trial training (DTT) correctly. The RBT frequently prompts too early, uses inconsistent reinforcement schedules, and sometimes misses opportunities to deliver reinforcement. The BCBA wants to ensure the RBT's DTT implementation improves efficiently.",
     question: "Which of the following performance monitoring strategies would be most effective for the BCBA to implement to address the RBT's DTT implementation issues?",
     choices: [
-      {
-        letter: "C",
-        text: "Having the RBT complete a self-assessment questionnaire about their DTT skills and reviewing the results during weekly supervision meetings."
-      },
-      {
-        letter: "D",
-        text: "Providing the RBT with additional training modules on DTT procedures and requiring them to pass a written quiz on the content."
-      },
-      {
-        letter: "A",
-        text: "Conducting direct observations of the RBT's DTT sessions, providing immediate corrective feedback, and using a DTT fidelity checklist to track progress."
-      },
-      {
-        letter: "B",
-        text: "Reviewing the RBT's daily session notes and client data sheets at the end of each week to identify patterns of errors."
-      }
+      { letter: "C", text: "Implement a comprehensive behavioral strategy that involves having the rbt complete a self-assessment questionnaire about their dtt skills and reviewing the results during weekly supervision meetings..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling with implementing discrete trial training (DTT) co..., to effectively address the core issue presented in the question: Which of the following performance monitoring strategies would be most effective for the BCBA to imp...." },
+      { letter: "D", text: "Systematically address the target behavior by utilizing providing the rbt with additional training modules on dtt procedures and requiring them to pass a written quiz on the content..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling with implementing discrete trial training (DTT) co..., to effectively address the core issue presented in the question: Which of the following performance monitoring strategies would be most effective for the BCBA to imp...." },
+      { letter: "A", text: "Systematically address the target behavior by utilizing conducting direct observations of the rbt.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling with implementing discrete trial training (DTT) co..., to effectively address the core issue presented in the question: Which of the following performance monitoring strategies would be most effective for the BCBA to imp...." },
+      { letter: "B", text: "Develop an individualized intervention plan focusing on reviewing the rbt.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling with implementing discrete trial training (DTT) co..., to effectively address the core issue presented in the question: Which of the following performance monitoring strategies would be most effective for the BCBA to imp...." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. This option describes direct, real-time performance monitoring with immediate feedback and objective measurement, which is crucial for improving skill-based performance like DTT implementation. Direct observation allows the BCBA to see the specific errors (e.g., early prompting, inconsistent reinforcement) as they occur. Immediate corrective feedback allows the RBT to adjust their behavior in situ, and a fidelity checklist provides a quantifiable measure of progress over time, directly addressing the identified performance deficits.\n\nDistractor B is incorrect because reviewing notes and data sheets weekly is an indirect and delayed form of monitoring. While it can identify patterns, it doesn't allow for immediate correction or direct observation of the specific implementation errors in real-time, making it less effective for skill acquisition.\n\nDistractor C is incorrect because self-assessment, while potentially useful for self-reflection, is often unreliable for identifying skill deficits, especially in new practitioners who may not be fully aware of their own errors. It's not a direct measure of performance.\n\nDistractor D is incorrect because providing additional training modules and quizzes primarily addresses knowledge deficits, not necessarily performance deficits. The RBT might understand the concepts but still struggle with applying them. While training might be a component, it's not the most effective performance monitoring strategy for improving hands-on implementation issues without direct observation and feedback."
@@ -1451,22 +1271,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is struggling to implement a discrete trial training (DTT) program with a client. The RBT frequently prompts too early and struggles with data collection accuracy. The BCBA wants to provide effective training to improve the RBT's skills.",
     question: "Which of the following is the most ethical and effective initial step for the BCBA to take to train the RBT?",
     choices: [
-      {
-        letter: "A",
-        text: "Provide direct, in-vivo modeling of the DTT procedure, followed by opportunities for the RBT to practice with immediate feedback."
-      },
-      {
-        letter: "B",
-        text: "Direct the RBT to review the DTT protocol manual and complete an online module about DTT implementation."
-      },
-      {
-        letter: "C",
-        text: "Schedule a meeting to discuss the RBT's performance and suggest they observe another RBT implementing DTT."
-      },
-      {
-        letter: "D",
-        text: "Reduce the RBT's caseload until their DTT skills improve, to minimize potential harm to the client."
-      }
+      { letter: "A", text: "Formulate a clinical approach designed to provide direct, in-vivo modeling of the dtt procedure, followed by opportunities for the rbt to practice with immediate feedback..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling to implement a discrete trial training (DTT) progr..., to effectively address the core issue presented in the question: Which of the following is the most ethical and effective initial step for the BCBA to take to train ...." },
+      { letter: "B", text: "Systematically address the target behavior by utilizing direct the rbt to review the dtt protocol manual and complete an online module about dtt implementation..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling to implement a discrete trial training (DTT) progr..., to effectively address the core issue presented in the question: Which of the following is the most ethical and effective initial step for the BCBA to take to train ...." },
+      { letter: "C", text: "Implement a comprehensive behavioral strategy that involves schedule a meeting to discuss the rbt.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling to implement a discrete trial training (DTT) progr..., to effectively address the core issue presented in the question: Which of the following is the most ethical and effective initial step for the BCBA to take to train ...." },
+      { letter: "D", text: "Apply evidence-based procedures, such as reduce the rbt.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling to implement a discrete trial training (DTT) progr..., to effectively address the core issue presented in the question: Which of the following is the most ethical and effective initial step for the BCBA to take to train ...." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. Providing direct, in-vivo modeling followed by opportunities for practice with immediate feedback is a highly effective and ethical training strategy for skill acquisition, especially for applied skills like DTT. This approach directly addresses the RBT's observed deficits in prompting and data collection by demonstrating correct implementation and allowing for guided practice. This aligns with best practices for training supervisees (I.3).\n\nDistractor B is incorrect because while reviewing materials and completing modules can be part of training, they are typically insufficient for acquiring complex applied skills like DTT implementation, especially when an RBT is already struggling with practical application. It lacks the direct, interactive component needed for skill mastery.\n\nDistractor C is incorrect because while discussing performance and observing others can be helpful, they are less direct and effective than in-vivo modeling and practice with feedback for immediate skill improvement. Observation alone doesn't guarantee the RBT will correctly apply the observed skills without direct guidance and practice.\n\nDistractor D is incorrect because reducing the RBT's caseload, while potentially minimizing harm, does not actively train or improve the RBT's skills. It avoids the problem rather than solving it through effective training. The primary ethical responsibility here is to train the supervisee to competence."
@@ -1511,22 +1319,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is struggling to implement a complex differential reinforcement of alternative behavior (DRA) procedure for a client's severe challenging behavior. The BCBA observes the RBT's sessions and notes several errors in prompt delivery and reinforcement schedules. When providing feedback, the RBT becomes defensive and states, 'I know what I'm doing; I just had a bad day.'",
     question: "Given the RBT's response and the observed performance deficits, what is the BCBA's most ethically sound next step in performance monitoring?",
     choices: [
-      {
-        letter: "C",
-        text: "Ask the RBT to review the DRA protocol independently and report back when they feel confident in their understanding."
-      },
-      {
-        letter: "D",
-        text: "Increase the frequency of unannounced observations to catch the RBT making errors and provide immediate corrective feedback."
-      },
-      {
-        letter: "A",
-        text: "Provide specific, objective data from the observation, demonstrate the correct procedure, and schedule a follow-up observation to reassess performance."
-      },
-      {
-        letter: "B",
-        text: "Document the RBT's defensive behavior and consider reducing their caseload until their performance improves."
-      }
+      { letter: "C", text: "Apply evidence-based procedures, such as ask the rbt to review the dra protocol independently and report back when they feel confident in their understanding..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling to implement a complex differential reinforcement ..., to effectively address the core issue presented in the question: Given the RBT...." },
+      { letter: "D", text: "Systematically address the target behavior by utilizing increase the frequency of unannounced observations to catch the rbt making errors and provide immediate corrective feedback..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling to implement a complex differential reinforcement ..., to effectively address the core issue presented in the question: Given the RBT...." },
+      { letter: "A", text: "Implement a comprehensive behavioral strategy that involves provide specific, objective data from the observation, demonstrate the correct procedure, and schedule a follow-up observation to reassess performance..  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling to implement a complex differential reinforcement ..., to effectively address the core issue presented in the question: Given the RBT...." },
+      { letter: "B", text: "Apply evidence-based procedures, such as document the rbt.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is struggling to implement a complex differential reinforcement ..., to effectively address the core issue presented in the question: Given the RBT.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. This option aligns with ethical guidelines for supervision (e.g., BACB Professional and Ethical Compliance Code for Behavior Analysts, 4.05, 4.06, 4.07, 5.01, 5.02) by providing objective feedback, modeling correct procedures, and planning for ongoing monitoring and support. It addresses the RBT's performance deficits directly and constructively, focusing on skill acquisition rather than punitive measures.\n\nB is incorrect because while documenting is important, reducing the caseload without first attempting to remediate the performance deficits and support the RBT's growth is premature and potentially punitive. It doesn't directly address the RBT's skill deficit or provide an opportunity for improvement.\n\nC is incorrect because simply asking the RBT to review the protocol independently is insufficient given observed performance errors and the RBT's defensive response. It does not provide the necessary direct instruction, modeling, or supervised practice required for complex skill acquisition, nor does it address the RBT's defensiveness.\n\nD is incorrect because increasing unannounced observations in a punitive manner (to 'catch' errors) can damage the supervisory relationship, increase anxiety, and does not provide the proactive teaching and support needed to improve performance. While increased monitoring may be necessary, the intent and approach should be supportive and instructional, not punitive or surveillance-focused."
@@ -1571,22 +1367,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "Dr. Anya, a BCBA-D, supervises several RBTs and BCaBAs. During a routine supervision meeting with Alex, a BCaBA, Alex expresses significant frustration with a client's lack of progress, stating, 'I feel like I'm failing this child, and frankly, I'm starting to dread our sessions.' Alex also mentions recently experiencing increased personal stress due to family health issues. Dr. Anya notes Alex's demeanor has changed and his usual enthusiasm is absent.",
     question: "Considering Dr. Anya's ethical obligations as a supervisor, what is her MOST appropriate initial course of action?",
     choices: [
-      {
-        letter: "A",
-        text: "Initiate a discussion about Alex's well-being, explore potential impacts on his professional competence, and collaboratively develop a plan for support, which may include adjusting his caseload or recommending professional counseling."
-      },
-      {
-        letter: "B",
-        text: "Immediately assign a new BCaBA to the client's case and inform Alex that he will be temporarily removed from direct client contact until his personal issues are resolved."
-      },
-      {
-        letter: "C",
-        text: "Provide Alex with additional training modules on advanced behavior reduction strategies and schedule more frequent direct observation sessions to improve his clinical skills."
-      },
-      {
-        letter: "D",
-        text: "Advise Alex to separate his personal feelings from his professional duties and remind him of the importance of maintaining objectivity and professional boundaries in clinical practice."
-      }
+      { letter: "A", text: "Implement a comprehensive behavioral strategy that involves initiate a discussion about alex.  considering the client's specific context as described in the scenario: Dr. Anya, a BCBA-D, supervises several RBTs and BCaBAs. During a routine supervision meeting with Al..., to effectively address the core issue presented in the question: Considering Dr. Anya.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "B", text: "Implement a comprehensive behavioral strategy that involves immediately assign a new bcaba to the client.  considering the client's specific context as described in the scenario: Dr. Anya, a BCBA-D, supervises several RBTs and BCaBAs. During a routine supervision meeting with Al..., to effectively address the core issue presented in the question: Considering Dr. Anya.... This approach aims to promote skill acquisition and reduce maladaptive behaviors through consistent application of principles of behavior analysis." },
+      { letter: "C", text: "Apply evidence-based procedures, such as provide alex with additional training modules on advanced behavior reduction strategies and schedule more frequent direct observation sessions to improve his clinical skills..  considering the client's specific context as described in the scenario: Dr. Anya, a BCBA-D, supervises several RBTs and BCaBAs. During a routine supervision meeting with Al..., to effectively address the core issue presented in the question: Considering Dr. Anya...." },
+      { letter: "D", text: "Develop an individualized intervention plan focusing on advise alex to separate his personal feelings from his professional duties and remind him of the importance of maintaining objectivity and professional boundaries in clinical practice..  considering the client's specific context as described in the scenario: Dr. Anya, a BCBA-D, supervises several RBTs and BCaBAs. During a routine supervision meeting with Al..., to effectively address the core issue presented in the question: Considering Dr. Anya...." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. Dr. Anya has an ethical obligation to ensure the well-being and competence of her supervisees (BACB Professional and Ethical Compliance Code for Behavior Analysts, 4.02, 4.03, 4.04). Alex's statements and demeanor suggest potential burnout, decreased competence, or impairment due to personal stress. Dr. Anya's most appropriate initial action is to address these concerns directly, explore their impact, and collaboratively develop a supportive plan. This plan could involve adjusting his workload, providing resources, or suggesting professional counseling, all while ensuring client welfare is maintained.\n\nDistractor B is incorrect because immediately removing Alex without a discussion or collaborative plan is a punitive and potentially stigmatizing response that does not address the underlying issues in a supportive or ethical manner. It also assumes impairment without full exploration.\n\nDistractor C is incorrect because while additional training might be beneficial in some contexts, Alex's primary concern is not a lack of specific clinical skills but rather emotional exhaustion and personal stress impacting his perceived competence. Addressing the emotional and well-being aspects is paramount before focusing solely on skill deficits.\n\nDistractor D is incorrect because simply advising Alex to 'separate' feelings is dismissive of his expressed distress and does not provide the necessary support or address the potential impact on his professional competence. It fails to acknowledge the ethical responsibility to support supervisee well-being and competence."
@@ -1601,22 +1385,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a client. The BCBA observes the RBT for 30 minutes and records the percentage of trials correctly implemented according to the protocol. The RBT correctly implemented 95% of the trials during the observation.",
     question: "Based on this observation, what is the most direct measure of the RBT's performance?",
     choices: [
-      {
-        letter: "B",
-        text: "Client progress"
-      },
-      {
-        letter: "C",
-        text: "Treatment fidelity"
-      },
-      {
-        letter: "D",
-        text: "Interobserver agreement"
-      },
-      {
-        letter: "A",
-        text: "Procedural integrity"
-      }
+      { letter: "B", text: "Systematically address the target behavior by utilizing client progress.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: Based on this observation, what is the most direct measure of the RBT...." },
+      { letter: "C", text: "Formulate a clinical approach designed to treatment fidelity.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: Based on this observation, what is the most direct measure of the RBT...." },
+      { letter: "D", text: "Implement a comprehensive behavioral strategy that involves interobserver agreement.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: Based on this observation, what is the most direct measure of the RBT...." },
+      { letter: "A", text: "Systematically address the target behavior by utilizing procedural integrity.  considering the client's specific context as described in the scenario: A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a cl..., to effectively address the core issue presented in the question: Based on this observation, what is the most direct measure of the RBT...." }
     ],
     correctAnswer: 'B',
     rationale: "The correct answer is A. Procedural integrity refers to the extent to which an intervention is implemented as planned. In this scenario, the BCBA is directly measuring how well the RBT is following the DTT protocol, which is a direct measure of procedural integrity. \nB is incorrect because client progress refers to changes in the client's behavior, not the RBT's implementation of the intervention. While related, it's not what was directly measured here. \nC is incorrect because 'treatment fidelity' is a broader term that encompasses procedural integrity but is often used interchangeably or in a more general sense. However, 'procedural integrity' is the more precise and specific term for measuring the accurate implementation of a procedure. Given the options, procedural integrity is the most direct and accurate description of what was measured. \nD is incorrect because interobserver agreement (IOA) involves two or more independent observers recording data simultaneously and then comparing their data to determine consistency, which is not what the BCBA was doing in this scenario. The BCBA was observing the RBT's performance, not comparing their own data with another observer's."
@@ -1631,22 +1403,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A newly certified BCBA, Sarah, is supervising a Registered Behavior Technician (RBT) who has been consistently late to client sessions and has received multiple informal warnings. The RBT is otherwise highly skilled and has excellent rapport with clients. Sarah is aware that the RBT is a single parent struggling with childcare arrangements, which contributes to the tardiness.",
     question: "Considering ethical supervisory practices, what is the most appropriate initial action for Sarah to take?",
     choices: [
-      {
-        letter: "C",
-        text: "Offer to adjust the RBT's schedule to accommodate their childcare needs, even if it means slight inconvenience for other staff or clients, to retain a skilled technician."
-      },
-      {
-        letter: "D",
-        text: "Advise the RBT that personal issues cannot interfere with professional responsibilities and that they must find a solution independently or face disciplinary action."
-      },
-      {
-        letter: "A",
-        text: "Schedule a formal meeting to discuss the RBT's performance, document the concerns, and collaboratively develop a performance improvement plan that addresses the root cause."
-      },
-      {
-        letter: "B",
-        text: "Immediately place the RBT on probation, citing repeated tardiness as a violation of company policy, and inform them that further instances will lead to termination."
-      }
+      { letter: "C", text: "Apply evidence-based procedures, such as offer to adjust the rbt.  considering the client's specific context as described in the scenario: A newly certified BCBA, Sarah, is supervising a Registered Behavior Technician (RBT) who has been co..., to effectively address the core issue presented in the question: Considering ethical supervisory practices, what is the most appropriate initial action for Sarah to ...." },
+      { letter: "D", text: "Implement a comprehensive behavioral strategy that involves advise the rbt that personal issues cannot interfere with professional responsibilities and that they must find a solution independently or face disciplinary action..  considering the client's specific context as described in the scenario: A newly certified BCBA, Sarah, is supervising a Registered Behavior Technician (RBT) who has been co..., to effectively address the core issue presented in the question: Considering ethical supervisory practices, what is the most appropriate initial action for Sarah to ...." },
+      { letter: "A", text: "Formulate a clinical approach designed to schedule a formal meeting to discuss the rbt.  considering the client's specific context as described in the scenario: A newly certified BCBA, Sarah, is supervising a Registered Behavior Technician (RBT) who has been co..., to effectively address the core issue presented in the question: Considering ethical supervisory practices, what is the most appropriate initial action for Sarah to ...." },
+      { letter: "B", text: "Apply evidence-based procedures, such as immediately place the rbt on probation, citing repeated tardiness as a violation of company policy, and inform them that further instances will lead to termination..  considering the client's specific context as described in the scenario: A newly certified BCBA, Sarah, is supervising a Registered Behavior Technician (RBT) who has been co..., to effectively address the core issue presented in the question: Considering ethical supervisory practices, what is the most appropriate initial action for Sarah to ...." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. Ethical supervisory practices require supervisors to address performance issues professionally, systematically, and with consideration for the supervisee's well-being while maintaining client care standards. Scheduling a formal meeting, documenting concerns, and collaboratively developing a performance improvement plan (PIP) aligns with these principles. It allows for a structured discussion, acknowledges the performance deficit, and seeks to understand and address the underlying causes (the childcare issue) in a way that supports the supervisee while ensuring client services are not compromised. This approach is consistent with the BACB's ethical guidelines for supervisors, which emphasize fostering a supportive and effective supervisory relationship.\n\nB is incorrect because immediately placing the RBT on probation without a formal discussion, documentation, and an attempt to understand and resolve the issue is overly punitive and does not align with a supportive supervisory role, especially when the supervisor is aware of contributing personal factors. It bypasses the opportunity for a collaborative solution.\n\nC is incorrect because while accommodating childcare needs might be a component of a solution, offering to adjust the schedule 'even if it means slight inconvenience for other staff or clients' without a formal discussion or a clear plan is premature and could lead to ethical dilemmas regarding fairness to other staff and consistent client service. The initial step should be a formal performance discussion, not an immediate accommodation.\n\nD is incorrect because while professional responsibilities are paramount, simply stating that personal issues cannot interfere without offering support or collaboratively seeking solutions is unsupportive and lacks the ethical consideration expected of a supervisor. It can lead to supervisee burnout or resignation without addressing the core issue, potentially impacting client services in the long run. A supervisor's role includes supporting their supervisees in navigating challenges that impact their work, within professional boundaries."
@@ -1691,22 +1451,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A supervisee, who recently passed their RBT exam, is struggling to implement a new differential reinforcement of other behavior (DRO) procedure for a client's severe self-injurious behavior (SIB). During direct observation, the supervisor notes that the supervisee frequently misses opportunities to reinforce the absence of SIB and sometimes reinforces SIB inadvertently due to a lack of clarity on operational definitions. The client's SIB is increasing in frequency.",
     question: "Based on the scenario, which of the following supervision needs should be prioritized FIRST?",
     choices: [
-      {
-        letter: "A",
-        text: "Direct observation and in-the-moment feedback on DRO implementation fidelity and operational definitions."
-      },
-      {
-        letter: "B",
-        text: "Review of the client's behavior intervention plan (BIP) and data collection sheets during a weekly supervision meeting."
-      },
-      {
-        letter: "C",
-        text: "Assignment of a research article on the efficacy of DRO for severe SIB to enhance conceptual understanding."
-      },
-      {
-        letter: "D",
-        text: "Discussion of the supervisee's professional development goals and long-term career aspirations."
-      }
+      { letter: "A", text: "The most immediate priority is to conduct direct, in-person observation of the supervisee's implementation of the differential reinforcement of other behavior (DRO) procedure during a client session, providing immediate, contingent, and specific feedback on their procedural fidelity, including the consistent application of reinforcement for the absence of the target behavior and the accurate interpretation of the operational definition for both the target behavior and the 'other' behavior. This direct observation and real-time feedback will allow for the correction of any errors or inconsistencies as they occur, ensuring that the intervention is being delivered as intended and maximizing its therapeutic effect for the client, which is paramount for ethical and effective service delivery." },
+      { letter: "B", text: "While a comprehensive understanding of the client's historical and current behavioral repertoire, functional assessment data, and any relevant medical or environmental factors is always important for effective intervention, prioritizing a general review of the client's entire file is not the most immediate or efficient first step when the supervisee is specifically struggling with the implementation of a new, well-defined procedural element like DRO. The supervisee's challenge is explicitly stated as implementation, suggesting a need for direct support in skill application rather than a broader reassessment of the client's overall profile, which should have ideally been completed prior to intervention development." },
+      { letter: "C", text: "Assigning a research article on the efficacy of differential reinforcement of other behavior (DRO) for severe self-injurious behavior (SIB) is a valuable strategy for enhancing a supervisee's conceptual understanding and evidence-based practice over time. However, in a situation where a supervisee is actively struggling with the practical implementation of a procedure, merely providing theoretical literature will not directly address or remediate the immediate skill deficit. The priority should be on hands-on skill development and immediate corrective feedback, as conceptual understanding alone does not guarantee proficient application, especially for a newly certified RBT." },
+      { letter: "D", text: "Engaging in a comprehensive discussion about the supervisee's overall learning style, previous experiences with behavioral interventions, perceived barriers to implementation, and general professional development goals is a crucial component of effective supervision. However, when the immediate problem is a specific struggle with the fidelity of a new procedural implementation, this broad discussion, while beneficial for long-term growth, does not represent the most efficient or immediate first step. The priority should be to directly address the observable performance deficit related to the DRO procedure rather than starting with a general conversation about the supervisee's broader professional context." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. The scenario indicates that the supervisee is 'struggling to implement' the DRO, 'frequently misses opportunities to reinforce the absence of SIB,' and 'sometimes reinforces SIB inadvertently due to a lack of clarity on operational definitions.' Most critically, 'the client's SIB is increasing in frequency.' This presents an immediate and significant risk to the client's safety and well-being, as well as a failure to effectively implement a critical intervention. Direct, in-the-moment feedback during observation is the most effective and immediate way to correct these procedural errors, clarify definitions, and ensure the intervention is implemented correctly to address the increasing SIB.\n\nDistractor B is incorrect because while reviewing the BIP and data is important, it is a more passive approach that does not directly address the immediate procedural errors and client safety concerns identified through direct observation. The supervisee's current struggle is with *implementation*, not just understanding the written plan.\n\nDistractor C is incorrect because while enhancing conceptual understanding is valuable for long-term growth, it does not address the immediate and critical need for correct procedural implementation to prevent further increases in severe SIB. The supervisee needs practical, real-time guidance, not just theoretical knowledge.\n\nDistractor D is incorrect because discussing professional development goals, while a standard part of supervision, is not a priority when a client's severe behavior is increasing due to implementation errors. The immediate focus must be on client safety and effective intervention delivery."
@@ -1721,22 +1469,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A new RBT is struggling to implement a discrete trial training (DTT) program with a client, often forgetting to deliver reinforcement immediately after a correct response. You decide to use behavioral skills training (BST) to improve their performance. After providing instructions and modeling, you ask the RBT to role-play the DTT procedure.",
     question: "Which component of behavioral skills training (BST) are you implementing when you ask the RBT to role-play the DTT procedure?",
     choices: [
-      {
-        letter: "B",
-        text: "Feedback"
-      },
-      {
-        letter: "C",
-        text: "Instructions"
-      },
-      {
-        letter: "D",
-        text: "Modeling"
-      },
-      {
-        letter: "A",
-        text: "Rehearsal"
-      }
+      { letter: "B", text: "The component of behavioral skills training being implemented is feedback, which involves providing specific information to the RBT about the accuracy and quality of their performance during the role-play. This feedback will highlight areas where the RBT correctly implemented the DTT procedure, such as presenting the discriminative stimulus clearly, as well as identify opportunities for improvement, particularly regarding the immediacy of reinforcement delivery. This crucial step allows for the RBT to understand the discrepancies between their current performance and the desired outcome, guiding them towards more skillful and consistent application of the intervention." },
+      { letter: "C", text: "The component of behavioral skills training being implemented is instructions, which are verbal descriptions or rules provided to the RBT detailing how to perform the discrete trial training (DTT) procedure. While instructions are an essential initial step in BST to set the stage for learning, they typically precede the hands-on practice phase. In this scenario, the RBT has already received the verbal guidelines on how to conduct DTT, and the current action of asking them to role-play signifies a transition beyond the initial instructional delivery to a more active learning phase where they apply that knowledge." },
+      { letter: "D", text: "The component of behavioral skills training being implemented is modeling, where the supervisor demonstrates the correct performance of the discrete trial training (DTT) procedure for the RBT to observe. Modeling typically occurs after instructions and before the learner attempts the skill, providing a visual example of the desired behavior. In this situation, the supervisor has already completed the modeling phase, showing the RBT how to implement DTT correctly, including the timely delivery of reinforcement. The current action is the RBT's turn to actively practice the skill, not passively observe a demonstration." },
+      { letter: "A", text: "The component of behavioral skills training being implemented is rehearsal, which refers to the opportunity for the RBT to practice the discrete trial training (DTT) procedure in a simulated environment or through role-play. This active practice allows the RBT to demonstrate their understanding and application of the instructions and modeled behaviors. During rehearsal, the RBT will engage in the steps of DTT, including presenting the SD, waiting for a response, and attempting to deliver reinforcement, thereby allowing the supervisor to observe their performance and identify specific areas for subsequent feedback, such as the immediacy of reinforcement." }
     ],
     correctAnswer: 'B',
     rationale: "The correct answer is A (Rehearsal). Rehearsal, or practice, is a critical component of behavioral skills training where the learner actively practices the target skill in a simulated or real-life setting. In this scenario, asking the RBT to role-play the DTT procedure is an example of rehearsal.\n\nB (Feedback) is incorrect because feedback involves providing information about the learner's performance after they have attempted the skill. While feedback would follow the rehearsal, simply asking them to role-play is not feedback itself.\n\nC (Instructions) is incorrect because instructions involve verbally describing the target skill. The scenario states that instructions were already provided before the role-play.\n\nD (Modeling) is incorrect because modeling involves demonstrating the target skill. The scenario states that modeling was already provided before the role-play."
@@ -1751,22 +1487,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is overseeing a team of RBTs providing in-home services. She notices a pattern of RBTs consistently arriving late to client sessions, leading to reduced therapy time and parent complaints. The BCBA initially addresses each RBT individually, but the problem persists across the team.",
     question: "Considering a systems-level analysis, what is the most ethical initial step for the BCBA to take to address the persistent tardiness?",
     choices: [
-      {
-        letter: "C",
-        text: "Conduct individual performance reviews with each RBT to reiterate the importance of punctuality and client satisfaction."
-      },
-      {
-        letter: "D",
-        text: "Assign a senior RBT to mentor the tardy RBTs and provide direct supervision during their commutes to sessions."
-      },
-      {
-        letter: "A",
-        text: "Review the agency's scheduling protocols, travel time allowances, and RBT support systems to identify systemic barriers."
-      },
-      {
-        letter: "B",
-        text: "Implement a strict disciplinary action plan for any RBT who is late, including written warnings and potential termination."
-      }
+      { letter: "C", text: "The BCBA should ethically prioritize a systems-level analysis by conducting a comprehensive review of the agency's current policies, procedures, and resources related to RBT scheduling, travel time allowances, and supervision practices to identify systemic barriers contributing to the persistent tardiness. This proactive approach allows for the identification of root causes beyond individual RBT accountability, such as unrealistic scheduling expectations, inadequate travel compensation, or insufficient organizational support, thereby facilitating the development of sustainable, ethical, and effective solutions that address the systemic issues rather than solely focusing on individual performance deficits. This aligns with the ethical responsibility to promote effective behavior analytic services and ensure the well-being of both clients and staff by creating a supportive and functional work environment." },
+      { letter: "D", text: "The BCBA should ethically review and potentially revise the agency's current policies and procedures regarding RBT scheduling, travel time, and client session start times, considering factors such as geographical distribution of clients, traffic patterns, and the allocated buffer time between sessions. This systematic evaluation aims to identify potential organizational shortcomings or unrealistic expectations that may inadvertently contribute to RBT tardiness, rather than solely attributing the issue to individual RBT behavior. By addressing potential systemic flaws in scheduling or resource allocation, the BCBA can implement evidence-based adjustments that support RBT punctuality and ensure the consistent delivery of high-quality, uninterrupted services to clients, aligning with the ethical responsibility to provide effective and ethical services." },
+      { letter: "A", text: "The BCBA should ethically initiate a comprehensive review of the agency's current policies and procedures pertaining to RBT scheduling, travel time allocation, and the overall support system provided to field staff. This systematic approach aims to identify potential organizational factors, such as unrealistic scheduling demands, insufficient travel compensation, or lack of clear communication regarding punctuality expectations, that may be contributing to the widespread tardiness. By analyzing the system in which RBTs operate, the BCBA can pinpoint root causes beyond individual performance and develop evidence-based, sustainable solutions that address the systemic issues, thereby promoting ethical service delivery and fostering a more effective and supportive work environment for all team members." },
+      { letter: "B", text: "The BCBA should ethically develop and implement a comprehensive, agency-wide training module for all RBTs focusing on professional conduct, time management strategies specific to in-home services, and the direct impact of tardiness on client progress and family satisfaction. This proactive and educational approach, grounded in a systems-level analysis, aims to equip RBTs with the necessary skills and understanding to improve punctuality, rather than immediately resorting to punitive measures. By providing clear expectations, practical tools, and reinforcing the ethical imperative of reliable service delivery, the BCBA addresses the issue from a supportive and preventative standpoint, fostering a culture of accountability and professional growth within the team." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A because a systems-level analysis involves looking beyond individual behavior to identify environmental or organizational factors that may be contributing to the problem. In this scenario, persistent tardiness across multiple RBTs suggests a systemic issue rather than just individual defiance. Reviewing scheduling, travel allowances, and support systems (e.g., communication, resources) directly addresses potential systemic barriers that could be reinforcing or enabling the tardiness. This is an ethical approach as it seeks to understand and resolve the root cause rather than solely punishing individuals.\n\nDistractor B is incorrect because implementing immediate strict disciplinary action without first understanding potential systemic causes is not a systems-level approach and could be unethical if the system itself is setting RBTs up for failure. It focuses on punishment rather than prevention or systemic change.\n\nDistractor C is incorrect because conducting individual performance reviews, while potentially useful, is an individual-level intervention. The scenario states the problem persists 'across the team,' indicating that individual conversations have not been effective, pointing to a need for a broader, systems-level solution.\n\nDistractor D is incorrect because assigning a senior RBT for direct supervision during commutes is an overly intrusive and resource-intensive individual-level intervention that does not address the underlying systemic issues. It also doesn't align with a systems-level analysis, which looks at organizational processes and structures."
@@ -1781,22 +1505,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is consulting for a large ABA agency experiencing high staff turnover and inconsistent implementation of treatment plans. Exit interviews reveal that many RBTs feel their efforts are not recognized and they lack clear feedback on their performance. The BCBA decides to implement a system to improve staff performance and retention.",
     question: "Which of the following interventions best represents an organizational behavior management (OBM) approach to address the agency's challenges?",
     choices: [
-      {
-        letter: "D",
-        text: "Implementing a new electronic data collection system to streamline documentation and reduce the administrative burden on RBTs."
-      },
-      {
-        letter: "A",
-        text: "Developing a performance management system that includes clearly defined job expectations, regular performance feedback, and a tiered recognition program for RBTs."
-      },
-      {
-        letter: "B",
-        text: "Conducting a series of workshops on advanced ABA techniques to enhance RBT skills and confidence in treatment plan implementation."
-      },
-      {
-        letter: "C",
-        text: "Revising the agency's hiring process to include more rigorous screening for candidates with prior experience and strong commitment to the field."
-      }
+      { letter: "D", text: "Implementing a new electronic data collection system to streamline documentation processes, thereby reducing the administrative burden on Registered Behavior Technicians (RBTs) and allowing them to dedicate more time to direct client care and skill acquisition, which functions as an antecedent intervention to reduce effort for a desired behavior and may consequentially improve job satisfaction and treatment fidelity by minimizing non-reinforcing tasks and increasing opportunities for RBTs to engage in more impactful work with clients, ultimately contributing to a more efficient and reinforcing work environment." },
+      { letter: "A", text: "Developing a comprehensive performance management system that delineates clearly defined job expectations, incorporates regular, structured performance feedback delivered by supervisors, and establishes a tiered recognition program to acknowledge and reinforce RBTs' successful implementation of treatment plans and adherence to professional standards, thereby directly addressing the identified lack of recognition and clear performance guidance, and functioning as a multi-component intervention aimed at increasing desired staff behaviors through antecedent control (clear expectations) and consequence management (feedback and recognition)." },
+      { letter: "B", text: "Conducting a series of mandatory workshops focused on advanced applied behavior analytic techniques, such as complex mand training or functional communication training, with the goal of enhancing RBTs' clinical skills and increasing their confidence in implementing intricate treatment plans, which is primarily a staff training initiative designed to improve technical competence, but may not directly address the underlying motivational or environmental factors contributing to high turnover and inconsistent implementation, as it focuses on skill deficits rather than performance management or environmental contingencies." },
+      { letter: "C", text: "Revising the agency's existing compensation structure to include a significant increase in hourly wages and the introduction of performance-based bonuses for RBTs who consistently meet specific productivity and treatment fidelity metrics, with the intention of directly increasing the reinforcing value of remaining employed at the agency and performing at a high level, thereby serving as a direct financial incentive to reduce turnover and improve performance by manipulating the consequences associated with desired staff behaviors and retention." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A. Organizational Behavior Management (OBM) focuses on improving performance and productivity within organizations by systematically applying behavioral principles. A performance management system that includes clearly defined expectations, regular feedback, and recognition directly addresses the identified issues of lack of recognition and unclear feedback, aiming to improve staff performance and retention. This is a core OBM intervention.\n\nDistractor B is incorrect because while training can be part of OBM, focusing solely on 'advanced ABA techniques' does not directly address the systemic issues of lack of recognition and feedback, nor does it encompass the broader OBM approach to performance management. It might improve skills but not necessarily retention or consistent implementation without other supports.\n\nDistractor C is incorrect because while improving the hiring process can be beneficial for long-term staff quality, it does not directly address the current staff's feelings of lack of recognition or inconsistent treatment plan implementation. It's a preventative measure rather than an intervention for existing performance and retention issues.\n\nDistractor D is incorrect because implementing a new data collection system, while potentially reducing administrative burden, does not directly address the core OBM issues of performance feedback, recognition, or clear expectations for staff. It's a process improvement, but not a comprehensive OBM performance management strategy."
@@ -1871,22 +1583,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is learning to implement a discrete trial training (DTT) program for a client. The BCBA observes the RBT's sessions weekly and provides immediate feedback. To ensure the RBT is implementing the DTT program correctly and consistently, the BCBA regularly collects data on specific steps of the RBT's performance.",
     question: "What is the BCBA primarily engaging in by collecting data on the RBT's implementation of the DTT program?",
     choices: [
-      {
-        letter: "C",
-        text: "Fidelity checks"
-      },
-      {
-        letter: "D",
-        text: "Staff reinforcement"
-      },
-      {
-        letter: "A",
-        text: "Performance monitoring"
-      },
-      {
-        letter: "B",
-        text: "Competency-based training"
-      }
+      { letter: "C", text: "The BCBA is primarily engaging in fidelity checks by systematically collecting data on the RBT's implementation of the discrete trial training (DTT) program to ensure that the intervention is being delivered precisely as designed and prescribed in the treatment plan. This process involves comparing the RBT's actions against a predetermined set of procedural steps and criteria to objectively quantify the extent to which the intervention is being implemented consistently and accurately, which is crucial for determining the internal validity of intervention effects and making data-driven decisions about client progress and RBT performance." },
+      { letter: "D", text: "The BCBA is primarily engaging in staff reinforcement by systematically collecting data on the RBT's performance to identify specific instances of correct implementation and provide immediate positive feedback or other desired consequences, thereby increasing the likelihood that the RBT will continue to implement the DTT program accurately and consistently in the future. This approach focuses on strengthening desirable staff behaviors through contingent presentation of reinforcers, aiming to improve overall treatment integrity and client outcomes by fostering a positive and reinforcing work environment for the RBT." },
+      { letter: "A", text: "The BCBA is primarily engaging in performance monitoring by systematically collecting data on the RBT's actions during the implementation of the discrete trial training (DTT) program to track the RBT's overall adherence to established protocols and identify any deviations or areas for improvement over time. This ongoing data collection allows the BCBA to assess the RBT's skill acquisition and maintenance, providing a comprehensive overview of their work quality and efficiency, which can then inform future training needs or adjustments to supervisory strategies to optimize service delivery." },
+      { letter: "B", text: "The BCBA is primarily engaging in competency-based training by systematically collecting data on the RBT's performance during the discrete trial training (DTT) program to assess their current skill level against specific, predefined behavioral objectives and then provide targeted instruction and practice opportunities until mastery is demonstrated. This process ensures that the RBT acquires and maintains the necessary skills to implement interventions effectively and ethically, focusing on observable and measurable behaviors that are directly relevant to their role and responsibilities, thereby building their overall professional capabilities." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. Performance monitoring involves systematically collecting data on an individual's work performance to evaluate their adherence to procedures and achieve desired outcomes. In this scenario, the BCBA is collecting data on the RBT's implementation of the DTT program to ensure correctness and consistency, which directly aligns with the definition of performance monitoring. \n\nDistractor B, Competency-based training, refers to a training approach that focuses on teaching specific skills until a learner demonstrates mastery. While the RBT is likely undergoing competency-based training, the act of the BCBA collecting data on their performance *after* initial training to ensure ongoing correct implementation is specifically performance monitoring, not the training itself. \n\nDistractor C, Fidelity checks (or treatment integrity checks), is a specific type of performance monitoring that assesses the extent to which an intervention is implemented as planned. While the BCBA is essentially conducting fidelity checks, 'performance monitoring' is the broader, more encompassing term for systematically observing and collecting data on staff performance, as described in Task List Item I.4. Fidelity checks are a *method* used within performance monitoring. \n\nDistractor D, Staff reinforcement, involves providing positive consequences to staff for desirable performance. While the BCBA might provide reinforcement, the primary action described (collecting data on implementation) is not reinforcement itself, but rather the assessment that might *inform* reinforcement."
@@ -1901,22 +1601,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A newly certified BCBA is supervising a RBT who has been consistently struggling with implementing discrete trial training (DTT) procedures for a client with severe challenging behaviors. The RBT frequently misses opportunities to deliver reinforcement, prompts incorrectly, and struggles to maintain the client's attention during DTT sessions, leading to an increase in non-compliance. The BCBA has already provided written feedback and a brief verbal review of the DTT protocol.",
     question: "Based on the provided scenario, what is the most appropriate next step for the BCBA to prioritize in supervising this RBT?",
     choices: [
-      {
-        letter: "D",
-        text: "Adjust the client's DTT program to simplify the steps, assuming the program itself is too complex for the RBT to implement."
-      },
-      {
-        letter: "A",
-        text: "Conduct direct observation of the RBT's DTT implementation and provide immediate, in-situ feedback and modeling."
-      },
-      {
-        letter: "B",
-        text: "Assign the RBT to complete an online module on DTT implementation and then review the results."
-      },
-      {
-        letter: "C",
-        text: "Schedule a formal meeting to discuss the RBT's overall performance and review their competency assessment."
-      }
+      { letter: "D", text: "The BCBA should prioritize immediately adjusting the client's current discrete trial training (DTT) program to incorporate more errorless learning strategies, reduce the number of trials per block, and potentially decrease the complexity of the target skills. This modification is crucial to prevent further escalation of challenging behaviors due to poor implementation, ensure the client continues to experience success and receive reinforcement, and minimize the risk of the client associating the DTT context with aversive experiences. Simultaneously, these adjustments can provide the RBT with a more manageable and successful framework for practice, allowing for more immediate positive reinforcement for their own efforts and improving overall treatment integrity in the short term while further RBT training is planned." },
+      { letter: "A", text: "While direct observation of the RBT is an essential and ongoing component of supervision, making it the *first* and *most appropriate* next step in this specific scenario may not address the immediate and critical issues. The scenario indicates consistent struggles and severe challenging behaviors, suggesting that observation alone, without an immediate plan to mitigate the client's current negative experiences, might prolong the client's exposure to ineffective or potentially harmful intervention. Direct observation will certainly be necessary, but prioritizing it as the *initial* response overlooks the urgency of safeguarding the client's learning environment and well-being before a more comprehensive RBT training plan is implemented." },
+      { letter: "B", text: "Assigning the RBT to complete an online module on DTT implementation, followed by a review, is a valuable component of ongoing training and professional development. However, in this immediate situation where the RBT is consistently struggling, frequently missing reinforcement opportunities, prompting incorrectly, and failing to maintain client engagement, simply providing an online module as the *first* step is insufficient. This approach does not offer real-time, individualized feedback, nor does it directly address the client's current exposure to potentially ineffective or counterproductive intervention. While it can supplement hands-on training, it should not be prioritized over more direct and immediate interventions to support both the RBT and the client." },
+      { letter: "C", text: "Scheduling a formal meeting to discuss the RBT's performance and review the DTT protocol is an important supervisory responsibility that will undoubtedly be necessary. However, prioritizing a formal meeting as the *immediate next step* in a situation where a client is experiencing severe challenging behaviors due to consistent RBT implementation errors may not be the most appropriate first action. Such a meeting, while crucial for feedback and planning, does not directly intervene to prevent further escalation of the client's challenging behaviors or ensure the client receives effective treatment in the interim. The client's well-being and the integrity of the intervention should take precedence, requiring a more immediate and direct clinical adjustment before a formal discussion." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A. The RBT is consistently struggling with implementation, and previous indirect feedback (written and brief verbal review) has been insufficient. Direct observation with immediate, in-situ feedback and modeling is the most effective and prioritized approach for addressing skill deficits in applied settings, especially when client progress is being impacted. This directly addresses the 'identify/prioritize supervision needs' by focusing on the most impactful intervention for the observed performance deficit.\n\nB is incorrect because assigning an online module is an indirect method of training and may not address the specific implementation errors or provide the real-time feedback needed to correct performance in a complex clinical scenario. It's a less prioritized intervention when direct skill deficits are evident.\n\nC is incorrect because while a formal meeting and competency assessment review might be useful at some point, the immediate need is to address the RBT's ongoing implementation struggles that are impacting client behavior. This step is too general and not as targeted as direct observation and feedback.\n\nD is incorrect because it assumes the program is the issue rather than the RBT's implementation fidelity. While program complexity can be a factor, the scenario explicitly states the RBT 'struggles with implementing' and 'prompts incorrectly,' pointing to a skill deficit in the RBT, not necessarily a flawed program. Prioritizing direct support for the RBT's skills is more appropriate before altering the client's intervention."
@@ -1931,22 +1619,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A new supervisee, Sarah, is beginning her fieldwork experience under your supervision. During your initial meeting, you discuss the importance of clearly outlining expectations, responsibilities, and the structure of supervision. You emphasize that a formal agreement will guide your professional relationship.",
     question: "Which of the following documents is essential to develop at the outset of this supervision relationship to formally establish the terms and conditions?",
     choices: [
-      {
-        letter: "A",
-        text: "A supervision contract"
-      },
-      {
-        letter: "B",
-        text: "A behavior intervention plan"
-      },
-      {
-        letter: "C",
-        text: "A functional behavior assessment report"
-      },
-      {
-        letter: "D",
-        text: "An individualized education program"
-      }
+      { letter: "A", text: "At the very beginning of the supervision relationship, it is absolutely critical to develop a comprehensive supervision contract that explicitly delineates the roles, responsibilities, and ethical obligations of both the supervisor and the supervisee. This document should detail the frequency and modalities of supervision, the performance expectations, the procedures for evaluating supervisee competency, and the process for addressing any ethical concerns or grievances, thereby establishing a clear and legally sound framework for the entire fieldwork experience and ensuring adherence to the BACB's professional and ethical compliance code for behavior analysts." },
+      { letter: "B", text: "While a behavior intervention plan (BIP) is a cornerstone document in applied behavior analysis, outlining specific strategies and procedures to decrease challenging behaviors and increase adaptive skills for a client, it is not the primary document needed to initiate a supervisory relationship. A BIP is developed after a comprehensive assessment of a client's behavior and is directly focused on clinical service delivery to a client, not on establishing the professional parameters between a supervisor and a supervisee. Therefore, it would be premature and misdirected to prioritize a BIP at the outset of a supervisory agreement, as the focus is on the supervisee's professional development, not immediate client intervention planning." },
+      { letter: "C", text: "A functional behavior assessment (FBA) report is a thorough document that systematically identifies the function of a client's problem behavior by collecting and analyzing data through indirect assessments, direct observation, and functional analyses. The purpose of an FBA is to inform the development of an effective behavior intervention plan tailored to the client's specific needs. However, an FBA report is entirely client-focused and pertains to the clinical assessment phase of service delivery for an individual receiving behavioral services, not to the foundational agreement that structures a professional supervision relationship. Therefore, it is not relevant for establishing the terms of supervision." },
+      { letter: "D", text: "An Individualized Education Program (IEP) is a legally binding document developed for public school children in the United States who need special education and related services. It outlines the child's present levels of academic achievement and functional performance, annual goals, and the specific special education services, accommodations, and modifications that will be provided to help the child succeed in school. While a supervisee might eventually contribute to or implement aspects of an IEP as part of their clinical duties with a client in an educational setting, an IEP is specifically designed for a student client within an educational context and holds no relevance for formally initiating or structuring a professional supervision relationship between a BCBA and a supervisee." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A: A supervision contract. Task List Item I.2 specifically requires the development of supervision contracts. A supervision contract is a formal, written agreement that outlines the roles, responsibilities, expectations, and ethical guidelines for both the supervisor and supervisee, establishing the terms and conditions of their professional relationship. This directly aligns with the scenario where the supervisor discusses outlining expectations and a formal agreement.\n\nDistractor B: A behavior intervention plan (BIP) is a document that outlines strategies to address challenging behaviors for a client, not the terms of a supervision relationship.\n\nDistractor C: A functional behavior assessment (FBA) report is a document that summarizes the findings of an assessment conducted to determine the function of a client's challenging behavior, not a supervision agreement.\n\nDistractor D: An individualized education program (IEP) is a legal document developed for public school students in the U.S. who need special education services, outlining their educational goals and services, not a contract for professional supervision."
@@ -2051,22 +1727,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA supervisor is reviewing performance data for a supervisee implementing a discrete trial training (DTT) program. The data show that the supervisee's fidelity of implementation (IOA) is consistently above 90% for presenting SDs and delivering consequences, but only 60% for providing appropriate prompts. The supervisee's client is making slow progress on DTT targets, despite high rates of correct independent responses during sessions.",
     question: "Based on this data, what is the most appropriate initial interpretation regarding the supervisee's performance and its impact on client outcomes?",
     choices: [
-      {
-        letter: "A",
-        text: "The supervisee's inconsistent prompting may be artificially inflating independent response rates and hindering skill acquisition."
-      },
-      {
-        letter: "B",
-        text: "The supervisee is demonstrating strong overall fidelity, and client slow progress is likely due to the DTT program design."
-      },
-      {
-        letter: "C",
-        text: "The supervisee is providing too much prompting, leading to prompt dependency and slow progress."
-      },
-      {
-        letter: "D",
-        text: "The supervisee's high fidelity in SD presentation and consequence delivery indicates effective teaching, and the client's slow progress is likely unrelated to supervisee performance."
-      }
+      { letter: "A", text: "The supervisee consistently demonstrates a high level of procedural integrity across all components of the discrete trial training (DTT) program, indicating that the observed client progress, while potentially slower than anticipated, is likely attributable to factors external to the supervisee's direct implementation, such as the inherent difficulty of the target skills, the client's current learning history, or the instructional design of the DTT program itself rather than the supervisee's adherence to the protocol. Further assessment should focus on these external variables." },
+      { letter: "B", text: "The supervisee is demonstrating strong overall procedural fidelity during the discrete trial training (DTT) sessions, as evidenced by consistent adherence to the protocol's steps, prompting hierarchy, and reinforcement schedules. Therefore, the observed slower-than-expected client progress is likely not a direct consequence of the supervisee's implementation but rather suggests a need for a thorough re-evaluation of the DTT program's design, including the curriculum's scope and sequence, the selected teaching targets, or the appropriateness of the reinforcement contingencies for the client's current motivation, to identify areas for adjustment and optimization." },
+      { letter: "C", text: "The supervisee is providing an excessive amount of prompting during the discrete trial training (DTT) sessions, which is inadvertently fostering prompt dependency in the client. This over-reliance on prompts is hindering the client's ability to emit independent responses, ultimately contributing to the observed slow progress in skill acquisition. The supervisee should be coached on fading prompts more systematically and rapidly to promote independent responding and facilitate the transfer of stimulus control from prompts to the natural discriminative stimuli, thereby accelerating the client's learning trajectory." },
+      { letter: "D", text: "The supervisee is exhibiting inconsistent application of reinforcement contingencies during the discrete trial training (DTT) program, specifically failing to deliver reinforcement immediately and consistently following correct independent responses. This variability in reinforcement delivery is likely weakening the stimulus-response-reinforcement contingency, making it more challenging for the client to discriminate correct responses and maintain motivation. The supervisee requires immediate feedback and training on the principles of effective reinforcement to ensure that desired behaviors are strengthened and skill acquisition is promoted efficiently." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. The data indicate a low fidelity (60%) in providing appropriate prompts. If prompts are not being delivered consistently or correctly when needed, the client might be making 'independent' responses that are actually errors or are occurring without sufficient teaching support. This can artificially inflate independent response rates (as errors are not prompted out) and slow down true skill acquisition, as the client isn't receiving the necessary guidance to learn the correct response efficiently. The supervisor needs to investigate the nature of the 'inappropriate prompts' to understand if they are absent when needed, or incorrect when delivered.\n\nB is incorrect because while some fidelity is high, the low prompting fidelity is a significant concern that directly impacts teaching effectiveness, especially if the client is making slow progress. Attributing slow progress solely to program design without addressing the supervisee's inconsistent prompting would be premature.\n\nC is incorrect because the data indicate '60% for providing appropriate prompts,' which suggests *inconsistent* or *insufficient* appropriate prompting, not necessarily *too much* prompting. If the supervisee were providing too much prompting, the fidelity for 'appropriate prompts' might still be low (e.g., if the prompts were not appropriate for the client's current skill level or were delivered unnecessarily), but the scenario specifically highlights low fidelity in *providing* appropriate prompts, implying a deficit in their application, not an excess.\n\nD is incorrect because high fidelity in SD presentation and consequence delivery does not negate the impact of low fidelity in prompting. Prompting is a critical component of DTT for teaching new skills. If prompting is inconsistent, it directly affects the teaching process and can explain slow client progress, making it directly related to supervisee performance."
@@ -2081,22 +1745,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A newly certified RBT is struggling to accurately implement a discrete trial training (DTT) program for a client. The BCBA supervisor observes a high rate of incorrect prompts and inconsistent reinforcement delivery. The BCBA wants to ensure the RBT's performance improves to meet the client's needs and ethical standards.",
     question: "Which of the following is the most ethically sound initial step for the BCBA to take to monitor and improve the RBT's performance?",
     choices: [
-      {
-        letter: "B",
-        text: "Document the RBT's errors and schedule a formal performance review for the end of the month."
-      },
-      {
-        letter: "C",
-        text: "Assign the RBT to a different client with less complex DTT programs."
-      },
-      {
-        letter: "D",
-        text: "Require the RBT to re-read the DTT protocol and take a written quiz on it."
-      },
-      {
-        letter: "A",
-        text: "Provide immediate, constructive feedback and model the correct DTT procedures for the RBT."
-      }
+      { letter: "B", text: "The BCBA should document the observed performance deficits of the RBT, including specific instances of incorrect prompting and inconsistent reinforcement delivery during discrete trial training, as well as any subsequent training or corrective actions provided. This documentation is crucial for maintaining an objective record of supervision, tracking the RBT's progress over time, informing future supervision strategies, and ensuring accountability in accordance with the BACB's Ethical Code for Behavior Analysts, specifically section 4.04 (Supervision Documentation), which mandates thorough and accurate records of supervisory activities and outcomes. This systematic approach ensures that supervision is data-driven and ethically sound." },
+      { letter: "C", text: "The BCBA should consider reassigning the RBT to a different client whose program demands align more closely with the RBT's current skill set, particularly if the DTT programs for the current client are significantly more complex than the RBT is proficient in implementing. This proactive measure aims to prevent further potential harm to the client from suboptimal intervention delivery while simultaneously providing the RBT with an opportunity to build foundational skills in a less demanding context. This approach aligns with the ethical principle of beneficence by prioritizing client welfare and also supports the RBT's professional development by setting them up for success, rather than continued struggle, in a supervised environment." },
+      { letter: "D", text: "The BCBA should require the RBT to re-read the specific discrete trial training (DTT) protocol for the client and then complete a written quiz or demonstrate conceptual understanding through a verbal review. This step aims to assess the RBT's foundational knowledge of the DTT procedures, identify any misunderstandings or gaps in their theoretical comprehension, and ensure they have access to and have reviewed the most current and accurate procedural guidelines. While not a direct solution to performance deficits, this intellectual exercise can serve as a prerequisite to more active training interventions, addressing potential knowledge-based barriers before moving to hands-on practice, aligning with the ethical responsibility to promote competence." },
+      { letter: "A", text: "The BCBA should immediately provide direct, constructive feedback to the RBT regarding the observed inaccuracies in prompting and inconsistencies in reinforcement delivery, ensuring the feedback is specific, objective, and actionable. Concurrently, the BCBA should model the correct discrete trial training (DTT) procedures in real-time, demonstrating precise prompting techniques and consistent reinforcement delivery with the client. This immediate and direct approach allows the RBT to observe correct implementation in context, ask clarifying questions, and receive guided practice, which is a highly effective method for skill acquisition and refinement in accordance with the principles of performance-based feedback and behavioral skills training, directly addressing skill deficits in a supportive and educational manner." }
     ],
     correctAnswer: 'B',
     rationale: "The correct answer is A. Providing immediate, constructive feedback and modeling is the most ethically sound and effective initial step for performance monitoring and improvement. It directly addresses the observed deficiencies, offers a clear path for correction, and aligns with the ethical responsibility of supervisors to ensure competence (BACB Ethical Code 4.05, 4.06). This approach is proactive and supportive.\n\nDistractor B is incorrect because while documentation is important, delaying feedback until a formal review at the end of the month would be unethical as it prolongs the client's exposure to ineffective treatment and delays the RBT's opportunity to improve. Ethical practice requires timely intervention.\n\nDistractor C is incorrect because reassigning the RBT without addressing the skill deficit does not solve the underlying performance issue and could be seen as avoiding supervision responsibilities rather than fulfilling them. It also doesn't directly monitor or improve the RBT's performance on the specific skill.\n\nDistractor D is incorrect because while reviewing protocols and quizzes can be part of training, it is not the most effective or immediate way to address observed performance deficits in a hands-on skill like DTT implementation. Direct observation, feedback, and modeling are superior for skill acquisition and refinement in this context."
@@ -2201,22 +1853,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A supervisee, who has consistently struggled with implementing discrete trial teaching (DTT) procedures correctly, receives weekly performance feedback from their supervisor. During a recent observation, the supervisor noted several critical errors in DTT implementation, including incorrect prompting and reinforcement schedules. The supervisor provided detailed, constructive feedback, but the supervisee became visibly defensive, stating, 'I feel like you're always pointing out what I do wrong, and it's making me doubt if I'm cut out for this.'",
     question: "Considering the supervisee's reaction and the ethical guidelines for effective performance feedback, what is the MOST appropriate next step for the supervisor?",
     choices: [
-      {
-        letter: "B",
-        text: "Emphasize that the feedback is based on objective data and protocol adherence, and instruct the supervisee to review the DTT manual before the next session to improve their performance."
-      },
-      {
-        letter: "C",
-        text: "Shift the focus of the next feedback session to only positive aspects of the supervisee's performance to rebuild their confidence, while implicitly monitoring DTT implementation."
-      },
-      {
-        letter: "D",
-        text: "Suggest the supervisee consider if this field is a good fit for them, given their consistent struggles and emotional response to constructive criticism, and document the conversation for future reference."
-      },
-      {
-        letter: "A",
-        text: "Acknowledge the supervisee's feelings, reiterate the objective of feedback as skill development, and collaboratively develop a plan for targeted training and support, including identifying potential barriers to implementation."
-      }
+      { letter: "B", text: "The supervisor should emphasize to the supervisee that the feedback provided is objectively derived from direct observation of their procedural fidelity during discrete trial teaching (DTT) implementation, aligning with established DTT protocols and client-specific behavior reduction and skill acquisition programs. It is crucial to reiterate that the feedback is not a personal critique but rather a professional assessment aimed at enhancing the supervisee's clinical competencies and ensuring the ethical and effective delivery of services to clients. Subsequently, the supervisor should instruct the supervisee to meticulously review the DTT manual and any relevant client-specific protocols prior to their next scheduled session to facilitate a comprehensive understanding and improve their procedural adherence, thereby promoting a more accurate and consistent application of behavioral principles in practice." },
+      { letter: "C", text: "The supervisor should consider shifting the focus of the immediate subsequent feedback session to exclusively highlight the supervisee's positive performance aspects, such as instances of correct data collection or appropriate rapport building, to foster a more positive and receptive learning environment. This approach aims to rebuild the supervisee's confidence and reduce defensiveness, thereby increasing their openness to future constructive criticism. While acknowledging the importance of addressing skill deficits, temporarily prioritizing positive reinforcement for desired clinical behaviors might create a foundation for more effective remediation of DTT implementation errors in later, carefully structured feedback sessions, ensuring the supervisee feels valued and supported in their professional development journey." },
+      { letter: "D", text: "The supervisor should suggest to the supervisee that they critically evaluate their long-term professional commitment to the field of applied behavior analysis, given the observed consistent struggles with fundamental procedural implementation and their pronounced emotional reactivity to constructive performance feedback. This conversation should be framed as a supportive inquiry into the supervisee's career alignment and professional well-being, rather than a punitive measure. Following this discussion, the supervisor must meticulously document the entirety of the conversation, including the specific concerns raised, the supervisee's responses, and any agreed-upon next steps or recommendations, for future reference in performance evaluations and to maintain a comprehensive record of supervision activities and supervisee development." },
+      { letter: "A", text: "The supervisor should acknowledge the supervisee's expressed feelings of being overwhelmed or personally criticized, validating their emotional response without necessarily agreeing with the underlying interpretation of the feedback. This involves active listening and using empathetic statements such as, \"I understand that hearing this feedback can be challenging,\" to de-escalate the supervisee's defensiveness. By creating a psychologically safe space, the supervisor aims to shift the supervisee's focus from personal attack to professional growth, thereby facilitating a more productive dialogue about the DTT implementation errors. This initial step is crucial for re-establishing rapport and preparing the supervisee to engage constructively with the performance improvement plan." }
     ],
     correctAnswer: 'B',
     rationale: "The correct answer is A. Ethical and effective performance feedback requires not only clear communication of performance discrepancies but also sensitivity to the supervisee's emotional state and a collaborative approach to problem-solving. Acknowledging the supervisee's feelings (empathy), reiterating the purpose of feedback (skill development), and collaboratively developing a plan (support, identifying barriers) aligns with ethical principles of beneficence, fidelity, and responsible conduct (BACB Professional and Ethical Compliance Code for Behavior Analysts, 2.05, 2.06, 4.04, 4.05). This approach fosters a supportive learning environment and addresses both the performance deficit and the supervisee's emotional response.\n\nB is incorrect because while feedback should be objective and based on data, simply reiterating this and instructing the supervisee to review a manual without addressing their emotional response or collaboratively problem-solving is likely to exacerbate defensiveness and may not lead to improved performance. It lacks the collaborative and supportive elements crucial for effective supervision.\n\nC is incorrect because while positive feedback is important, avoiding critical feedback when significant performance deficits exist (especially with DTT, which is often foundational) is a disservice to the supervisee, the client, and the field. It neglects the supervisee's need for skill development and could lead to continued inadequate service delivery. This would violate ethical principles related to competence and client welfare.\n\nD is incorrect because it is premature and potentially unethical to suggest a supervisee consider leaving the field based on a single emotional reaction to feedback, especially when they are actively seeking to learn. This approach lacks support, empathy, and a commitment to developing competence, potentially violating ethical principles of responsible conduct and beneficence. The supervisor's role is to train and support, not to dismiss based on initial struggles or emotional responses."
@@ -2291,22 +1931,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA supervisor observes a new RBT struggling to implement a differential reinforcement of other behavior (DRO) procedure. The RBT frequently prompts the client during the 'other behavior' interval, inadvertently reinforcing the absence of the target behavior and the prompted 'other behavior' simultaneously. The BCBA wants to provide feedback that is both effective and promotes the RBT's independent problem-solving skills.",
     question: "Which of the following feedback strategies best aligns with the principles of effective performance feedback for improving the RBT's procedural fidelity and fostering independent skill development?",
     choices: [
-      {
-        letter: "A",
-        text: "Provide immediate, specific feedback on the prompting error, model the correct DRO implementation, and then have the RBT practice with immediate corrective feedback."
-      },
-      {
-        letter: "B",
-        text: "Wait until the end of the session to review the RBT's data sheet, point out the discrepancy in the DRO interval, and ask the RBT to identify the procedural error."
-      },
-      {
-        letter: "C",
-        text: "Offer general praise for the RBT's effort, then suggest they review the DRO protocol independently before the next session."
-      },
-      {
-        letter: "D",
-        text: "Intervene during the DRO interval by taking over the session to demonstrate the correct procedure, then allow the RBT to observe for the remainder of the session."
-      }
+      { letter: "A", text: "The BCBA supervisor should immediately provide specific, constructive feedback to the RBT regarding the prompting error observed during the DRO interval, clearly articulating how the prompting deviates from the procedural fidelity. Following this, the supervisor should model the correct implementation of the DRO procedure, emphasizing the importance of withholding prompts during the absence of the target behavior to ensure reinforcement is contingent on the non-occurrence. Finally, the supervisor should provide an opportunity for the RBT to practice the corrected DRO procedure with the client, offering immediate corrective feedback and positive reinforcement for accurate implementation to facilitate skill acquisition and maintenance." },
+      { letter: "B", text: "Waiting until the conclusion of the session to provide feedback to the RBT regarding their struggles with DRO implementation is unlikely to be effective. This delayed approach diminishes the immediacy of the consequence for the RBT's performance and reduces the salience of the feedback, making it more difficult for the RBT to connect the feedback to the specific instances of incorrect implementation. Such a delay can impede the RBT's ability to make timely adjustments to their behavior, potentially leading to continued procedural errors throughout the session and prolonging the acquisition of correct procedural fidelity for the DRO." },
+      { letter: "C", text: "Offering only general praise to the RBT, such as 'Good job today,' without addressing the specific challenges observed in implementing the DRO procedure, would be an ineffective feedback strategy. While positive reinforcement is crucial for RBT performance, generic praise fails to provide the RBT with actionable information regarding the areas needing improvement. This approach does not specify which behaviors are desirable or undesirable, thereby failing to guide the RBT toward correcting the identified procedural errors in the DRO and hindering their professional development and the client's progress." },
+      { letter: "D", text: "Intervening during the DRO interval by taking over the session and demonstrating the correct procedure, then relegating the RBT to an observational role for the remainder of the session, is not the most effective feedback strategy. While modeling is a valuable component of training, completely removing the RBT from the active implementation role prevents them from engaging in immediate practice and receiving direct, in-the-moment corrective feedback on their own performance. This approach limits the RBT's opportunities for active learning and skill generalization, potentially reducing their self-efficacy and delaying their independent mastery of the DRO procedure." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. This option describes a feedback strategy that is immediate, specific, includes modeling, and provides an opportunity for practice with further feedback, which are all hallmarks of effective performance feedback for skill acquisition and improvement. Immediate and specific feedback allows for contingency between the behavior and its consequence. Modeling provides a clear example of the desired performance. Practice with feedback allows the learner to apply the new skill and receive further refinement. This approach directly addresses the RBT's procedural fidelity and promotes independent skill development by actively involving them in the learning process.\n\nDistractor B is incorrect because waiting until the end of the session delays the feedback, making it less effective for immediate behavior change. While asking the RBT to identify the error promotes problem-solving, it lacks the immediate corrective action and modeling that would be most beneficial for a procedural error during implementation.\n\nDistractor C is incorrect because general praise is not specific enough to address the procedural error, and suggesting independent review without immediate, targeted instruction or practice is less likely to lead to rapid skill improvement, especially for a new RBT struggling with implementation.\n\nDistractor D is incorrect because taking over the session, while demonstrating the correct procedure, removes the RBT from the active learning process. This approach is less likely to foster independent skill development as it primarily relies on observational learning without immediate opportunities for the RBT to practice and receive feedback on their own performance."
@@ -2351,22 +1979,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "Dr. Smith is supervising a new RBT who is working with a client exhibiting severe self-injurious behavior. During a supervision session, the RBT expresses feeling overwhelmed and unsure how to implement the crisis intervention plan effectively, despite having received initial training. Dr. Smith observes that the RBT seems hesitant and lacks confidence.",
     question: "What is Dr. Smith's most ethical and immediate supervisory responsibility in this situation?",
     choices: [
-      {
-        letter: "C",
-        text: "Document the RBT's lack of confidence and inform the agency director about their performance concerns."
-      },
-      {
-        letter: "D",
-        text: "Suggest the RBT take a break from working with this client until they feel more prepared."
-      },
-      {
-        letter: "A",
-        text: "Provide direct, in-person modeling and coaching of the crisis intervention plan until the RBT demonstrates competence and confidence."
-      },
-      {
-        letter: "B",
-        text: "Refer the RBT to online training modules for crisis intervention and ask them to review the material before the next session."
-      }
+      { letter: "C", text: "Dr. Smith should document the RBT's current level of competence and confidence regarding the implementation of the crisis intervention plan, noting the specific areas of concern expressed by the RBT and observed during the supervision session. This documentation is crucial for tracking the RBT's professional development, informing future supervision goals, and ensuring that all supervisory activities comply with ethical guidelines and professional standards for RBT supervision, thereby creating a clear record of the support provided and the RBT's progress toward independent and effective practice." },
+      { letter: "D", text: "Dr. Smith should suggest that the RBT take a temporary break from direct implementation of the crisis intervention plan with this specific client until a comprehensive re-training and competency assessment can be completed, ensuring client safety and RBT well-being. This approach prioritizes client safety by preventing potential ineffective or incorrect implementation of critical procedures, while also allowing the RBT dedicated time to acquire the necessary skills and confidence without the immediate pressure of direct client care, thus promoting a more prepared and effective return to service delivery." },
+      { letter: "A", text: "Dr. Smith should provide immediate, direct, and in-person modeling of the crisis intervention plan, followed by hands-on coaching and behavioral skills training, until the RBT consistently demonstrates both procedural competence and observable confidence in executing each step of the plan. This intensive, performance-based intervention directly addresses the RBT's expressed lack of confidence and observed hesitancy by providing real-time feedback and repeated practice opportunities in a controlled environment, ensuring the RBT is fully prepared to implement the critical intervention safely and effectively with the client." },
+      { letter: "B", text: "Dr. Smith should refer the RBT to supplemental online training modules specifically focused on crisis intervention techniques and ethical considerations, instructing them to thoroughly review the material and complete any associated quizzes or assessments prior to their next scheduled supervision session. This approach aims to reinforce theoretical knowledge and provide additional educational resources, thereby addressing potential gaps in understanding that may contribute to the RBT's hesitancy, and preparing them for subsequent in-person practical training and competency demonstration." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. As per ethical guidelines for supervision (e.g., BACB Professional and Ethical Compliance Code for Behavior Analysts, 5.0 Responsible Conduct of Supervisors), supervisors must provide adequate training and support to their supervisees. Given the severity of the client's behavior (self-injurious behavior) and the RBT's expressed lack of confidence in implementing a crisis plan, direct, in-person modeling and coaching are crucial for ensuring client safety and RBT competence. This proactive approach directly addresses the RBT's skill deficit and ensures the client receives effective care.\n\nDistractor B is incorrect because while online training can be supplementary, it does not provide the immediate, direct, and individualized feedback necessary for developing competence in a high-stakes clinical skill like crisis intervention, especially when the RBT has already expressed a lack of confidence. It delays essential hands-on training.\n\nDistractor C is incorrect because while documentation is important, immediately informing the agency director about performance concerns without first attempting to remediate the skill deficit through direct supervision is premature and does not prioritize the RBT's development or client safety. It's an administrative step, not an immediate clinical intervention.\n\nDistractor D is incorrect because suggesting a break does not address the RBT's skill deficit or the client's ongoing need for effective intervention. It avoids the supervisory responsibility to train and support the RBT in developing necessary skills, potentially leaving the client without adequate care or delaying their progress."
@@ -2381,22 +1997,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is implementing a discrete trial training (DTT) program for a client. The BCBA observes the RBT's session and records data on the RBT's correct implementation of DTT steps, including presenting the SD, waiting for a response, and delivering reinforcement. The BCBA then reviews this data with the RBT weekly.",
     question: "What is the BCBA primarily engaging in by collecting and reviewing data on the RBT's DTT implementation?",
     choices: [
-      {
-        letter: "D",
-        text: "Treatment integrity check"
-      },
-      {
-        letter: "A",
-        text: "Performance monitoring"
-      },
-      {
-        letter: "B",
-        text: "Behavioral skills training"
-      },
-      {
-        letter: "C",
-        text: "Competency assessment"
-      }
+      { letter: "D", text: "The BCBA is primarily engaging in the systematic measurement of the extent to which the RBT is implementing the DTT program as it was designed, specifically assessing adherence to the procedural steps, correct delivery of antecedents and consequences, and appropriate data collection. This involves comparing the RBT's observed actions against the established protocol for DTT to ensure consistency and fidelity of implementation. The data collected directly informs whether the intervention is being delivered as intended, which is crucial for attributing changes in client behavior to the intervention itself rather than to variations in its application." },
+      { letter: "A", text: "The BCBA is primarily engaging in a general observation of the RBT's overall work performance, which includes evaluating their efficiency, adherence to the client's treatment plan, and professional conduct during sessions. This broad evaluation aims to identify areas for general improvement in the RBT's service delivery rather than specifically focusing on the fidelity of a particular intervention. The data collected would contribute to a comprehensive review of the RBT's contributions to the client's progress and the overall effectiveness of the service provision, encompassing aspects beyond just the implementation of DTT." },
+      { letter: "B", text: "The BCBA is primarily engaging in the systematic instruction of new skills to the RBT, which would typically involve providing explicit instructions, modeling the desired behavior, allowing the RBT to practice the skill with feedback, and then conducting in-situ assessments to ensure generalization. This process is designed to teach the RBT how to perform specific tasks or interventions, such as implementing DTT, rather than merely observing and collecting data on existing performance. The data collected would be used to track the RBT's acquisition of new skills and the effectiveness of the training procedures." },
+      { letter: "C", text: "The BCBA is primarily engaging in an evaluation to determine if the RBT possesses the necessary knowledge and skills to perform specific job duties or interventions, such as DTT, according to established standards. This process often involves formal assessments, such as written exams or direct observation checklists, to confirm that the RBT meets a predefined level of proficiency. The data collected would be used to certify the RBT's ability to independently and effectively carry out assigned responsibilities, often as a prerequisite for independent practice or advanced tasks, rather than ongoing monitoring of intervention delivery." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A. Performance monitoring involves systematically collecting and analyzing data on the performance of an individual (in this case, the RBT) to evaluate their work and identify areas for improvement. The BCBA is collecting data on the RBT's DTT implementation and reviewing it, which directly aligns with the definition of performance monitoring.\n\nB is incorrect because while behavioral skills training (BST) might be used to improve performance, the scenario only describes the monitoring aspect (collecting and reviewing data), not the full BST process (instruction, modeling, rehearsal, feedback).\n\nC is incorrect because competency assessment is typically a one-time or periodic evaluation to determine if an individual meets a certain standard of skill, often before they begin working independently or for certification. While monitoring contributes to understanding competency, the ongoing, systematic collection and review of performance data is more specifically 'performance monitoring.'\n\nD is incorrect because a treatment integrity check (or procedural fidelity) specifically refers to assessing whether the intervention is being implemented as planned with the client. While the RBT's performance impacts treatment integrity, the primary focus in this scenario, from the supervisor's perspective, is monitoring the RBT's *performance* of those procedures, making 'performance monitoring' the more direct answer."
@@ -2411,22 +2015,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A large ABA agency has experienced a significant increase in client cancellations and staff turnover over the past six months. Supervisors report feeling overwhelmed, and direct care staff frequently express concerns about caseload sizes and lack of support. The agency director is seeking to understand the underlying causes of these issues.",
     question: "To conduct a systems-level analysis, which of the following approaches would be most appropriate for the agency director to take?",
     choices: [
-      {
-        letter: "A",
-        text: "Reviewing agency policies on caseload management, staff training protocols, and supervisor support structures, and analyzing their interdependencies with client and staff outcomes."
-      },
-      {
-        letter: "B",
-        text: "Implementing a new incentive program for direct care staff to reduce turnover and a stricter cancellation policy for clients."
-      },
-      {
-        letter: "C",
-        text: "Conducting individual performance reviews for all supervisors to identify those contributing to the staff's lack of support."
-      },
-      {
-        letter: "D",
-        text: "Collecting data on each client's cancellation history and each staff member's reasons for leaving to identify common themes."
-      }
+      { letter: "A", text: "The most appropriate approach involves a comprehensive review of existing agency policies pertaining to caseload management, staff training protocols, and supervisor support structures, followed by a meticulous analysis of how these established frameworks interact and influence observed client and staff outcomes. This systematic examination allows for the identification of potential systemic weaknesses or misalignments that contribute to the current challenges, moving beyond individual blame to address organizational factors, thereby aligning with principles of systems-level analysis to understand interdependencies and guide effective organizational change." },
+      { letter: "B", text: "Implementing an immediate incentive program designed to reduce direct care staff turnover, alongside establishing a more stringent cancellation policy for clients, would represent a premature and potentially reactive intervention. While these actions might address surface-level symptoms, they fail to systematically analyze the root causes of the observed issues within the agency's operational system. Without a prior assessment of underlying organizational factors, such interventions risk misallocating resources, alienating staff or clients, and ultimately failing to resolve the pervasive systemic problems that contribute to high turnover and cancellations." },
+      { letter: "C", text: "Conducting individual performance reviews for all supervisory personnel, with the explicit aim of identifying specific individuals who may be contributing to staff dissatisfaction or client issues, would represent a reductionistic approach that deviates from a systems-level analysis. This method focuses on individual accountability rather than examining the broader organizational context, policies, and systemic pressures that might be impacting supervisor effectiveness. Such an approach risks fostering a culture of blame, overlooking critical systemic variables, and failing to identify the true organizational factors contributing to the agency's challenges." },
+      { letter: "D", text: "Collecting extensive individual client-level data, such as treatment progress, session attendance, and satisfaction surveys, without first establishing a systems-level framework for analysis, would be an inefficient and potentially misdirected effort for addressing agency-wide issues. While client data is valuable, focusing solely on individual client metrics in this context would fail to illuminate the systemic organizational factors contributing to widespread cancellations and staff turnover. A systems analysis requires examining the interconnections between various organizational components, not just aggregated individual client outcomes, to identify broader patterns and root causes." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A. A systems-level analysis involves examining the interconnected components and processes within an organization to understand how they collectively influence outcomes. Reviewing agency policies, training protocols, and support structures, and analyzing their interdependencies, directly addresses the systemic factors that could be contributing to client cancellations and staff turnover. This approach looks beyond individual behaviors to the organizational context.\n\nDistractor B is incorrect because implementing new programs/policies (incentives, stricter cancellation policy) is an intervention, not an analysis. While these might be potential solutions, they do not constitute a systems-level analysis of the root causes. This is a reactive measure rather than an analytical one.\n\nDistractor C is incorrect because focusing on individual performance reviews for supervisors, while potentially useful for individual development, is a micro-level analysis. A systems-level analysis would look at the supervisory system itself (e.g., training, support for supervisors, workload distribution) rather than singling out individuals.\n\nDistractor D is incorrect because collecting data on individual cancellation histories and reasons for leaving, while providing valuable descriptive data, is still a more granular, individual-focused approach. While this data could inform a systems-level analysis, it doesn't, by itself, constitute the analysis of the 'systems' (policies, structures, processes) that might be driving these individual outcomes. It identifies common themes in outcomes but doesn't analyze the systemic inputs."
@@ -2441,22 +2033,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A new RBT, Sarah, is consistently struggling with implementing discrete trial training (DTT) procedures as outlined in a client's behavior intervention plan (BIP). Specifically, she frequently forgets to deliver praise immediately after a correct response and often prompts too early. You've provided verbal feedback multiple times, but the issue persists.",
     question: "Which of the following staff management strategies would be most appropriate to address Sarah's ongoing procedural fidelity issues?",
     choices: [
-      {
-        letter: "B",
-        text: "Increase the frequency of performance monitoring observations to catch and correct errors more often."
-      },
-      {
-        letter: "C",
-        text: "Implement a token economy system where Sarah earns points for correctly implemented DTT trials."
-      },
-      {
-        letter: "D",
-        text: "Revise the client's BIP to simplify the DTT procedures, making them easier for Sarah to follow."
-      },
-      {
-        letter: "A",
-        text: "Conduct a behavioral skills training (BST) session focusing on DTT implementation, including modeling, rehearsal, and in-situ feedback."
-      }
+      { letter: "B", text: "Increase the frequency and specificity of direct performance monitoring observations of Sarah's DTT implementation, ensuring that immediate and constructive feedback is provided during or immediately following instances of both correct and incorrect procedural execution. This approach allows for prompt identification of specific skill deficits or environmental barriers impacting performance and facilitates real-time corrective feedback, which is crucial for skill acquisition and refinement in a clinical setting. The intensified monitoring will also allow the supervising BCBA to systematically track Sarah's progress and make data-driven decisions regarding subsequent training needs or adjustments to the DTT protocol, ensuring client progress is not unduly impacted by inconsistent intervention delivery." },
+      { letter: "C", text: "Implement a performance-based token economy system for Sarah, where she earns points or tokens for each discrete trial training (DTT) step she implements correctly during a session, with opportunities to exchange these tokens for preferred reinforcers or privileges. While this strategy might increase motivation for accurate performance, it primarily functions as a reinforcement intervention for an existing skill and does not directly address potential skill deficits or missing components in Sarah's DTT repertoire. Without first ensuring Sarah possesses the necessary skills through direct instruction and practice, a token economy alone may not effectively remediate the underlying procedural inconsistencies and could lead to frustration if she is being reinforced for incomplete or incorrect approximations of the DTT steps." },
+      { letter: "D", text: "Revise the client's discrete trial training (DTT) program by simplifying the instructional steps, reducing the number of trials per session, or decreasing the complexity of the target skills to accommodate Sarah's current implementation challenges. This approach inappropriately shifts the focus from Sarah's skill deficits to the client's program, potentially compromising the client's progress and the integrity of the intervention. While program adjustments may be warranted if the client is not progressing, they should be driven by client data and needs, not by staff performance issues. Addressing Sarah's DTT implementation directly through training and feedback is the more ethically and clinically sound approach, ensuring the client receives the intervention as intended." },
+      { letter: "A", text: "Conduct a comprehensive behavioral skills training (BST) session with Sarah, specifically targeting the identified components of discrete trial training (DTT) where she is struggling. This session would involve clearly explaining the DTT steps, providing a live demonstration (modeling) of correct implementation, having Sarah actively practice (rehearsal) the procedures with constructive feedback, and then conducting in-situ feedback during actual client sessions to generalize the learned skills. While BST is a highly effective method for teaching new skills or refining existing ones, implementing it as the initial and sole strategy without prior performance monitoring and assessment of specific deficits might be premature. It is crucial to first precisely identify which DTT components Sarah is consistently executing incorrectly before designing and implementing a targeted BST intervention." }
     ],
     correctAnswer: 'B',
     rationale: "The correct answer is A. Behavioral Skills Training (BST) is the most effective staff management strategy for addressing skill deficits, especially when verbal feedback alone has proven insufficient. It systematically teaches new skills or improves existing ones through instruction, modeling, rehearsal, and feedback, directly targeting Sarah's procedural fidelity issues with DTT.\n\nDistractor B is incorrect because increasing performance monitoring without directly teaching the skill is unlikely to resolve the underlying skill deficit. While monitoring is important, it primarily identifies problems rather than solving them when a skill is lacking.\n\nDistractor C is incorrect because a token economy is a reinforcement-based strategy. While reinforcement is crucial, it's typically more effective for motivating performance of an already acquired skill or increasing the rate of a behavior, not for teaching a skill that an individual is struggling to perform correctly due to a skill deficit. Sarah's issue is not a lack of motivation to perform DTT, but rather a lack of accurate DTT implementation.\n\nDistractor D is incorrect because revising the client's BIP to simplify procedures shifts the responsibility from training the staff to altering the intervention, which may compromise the client's progress or the integrity of the intervention. The goal should be to train staff to implement the prescribed intervention correctly, not to change the intervention to accommodate staff training gaps."
@@ -2471,22 +2051,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA is supervising a new RBT who has been struggling with accurate data collection for a challenging behavior. During a supervision session, the RBT reports feeling overwhelmed and admits to occasionally 'estimating' data points when direct observation is not possible due to other client demands. The BCBA documents the RBT's admission and provides immediate corrective feedback, along with a plan for re-training and increased direct observation.",
     question: "Which of the following actions by the BCBA best adheres to ethical guidelines regarding documentation of supervision?",
     choices: [
-      {
-        letter: "C",
-        text: "Documenting the incident in a personal, confidential note, separate from the official supervision record, to protect the RBT's privacy."
-      },
-      {
-        letter: "D",
-        text: "Focusing documentation solely on the re-training plan and omitting the RBT's admission, as the primary goal is skill improvement."
-      },
-      {
-        letter: "A",
-        text: "Documenting the specific date, time, content of the discussion, the RBT's admission, the corrective actions taken, and the plan for follow-up in the RBT's supervision record."
-      },
-      {
-        letter: "B",
-        text: "Documenting only that 'data collection issues were discussed and a plan was made' to avoid stigmatizing the RBT in their permanent record."
-      }
+      { letter: "C", text: "The BCBA should document the specific incident, including the RBT's verbalization of feeling overwhelmed and their admission of occasional fabrication of data, within a confidential, private record maintained solely by the BCBA. This documentation should be separate from the RBT's official supervision log or personnel file, ensuring that the RBT's professional reputation is protected while still allowing the BCBA to maintain a comprehensive account of supervision activities and concerns. This approach aligns with ethical principles of beneficence and nonmaleficence by addressing the issue constructively without causing undue harm or punitive measures to the RBT, while also providing a record for the BCBA's own professional accountability and future reference in supporting the RBT's development." },
+      { letter: "D", text: "The BCBA should focus documentation primarily on the developed re-training plan, including the specific skills to be targeted, the methods for instruction, and the criteria for mastery, while intentionally omitting any direct reference to the RBT's admission of data fabrication or their expressed feelings of overwhelm. This approach prioritizes a forward-looking, remedial strategy, aiming to improve the RBT's performance without formally documenting sensitive personal information or past errors that could negatively impact their professional standing. The documentation would highlight the proactive steps taken to enhance data collection accuracy and the RBT's professional development in a constructive, non-punitive manner." },
+      { letter: "A", text: "The BCBA should meticulously document the specific date and time of the supervision session, the precise content of the discussion regarding the RBT's challenges with data collection, and the RBT's explicit admission of occasionally fabricating data due to feeling overwhelmed. This detailed documentation should be incorporated directly into the RBT's official supervision record, indicating the nature of the concern and the immediate corrective actions or plans initiated during the session. This ensures a transparent and complete account within the formal supervisory documentation, providing a clear historical record of the RBT's performance and the supervisory interventions implemented to address identified deficits in data collection practices, aligning with principles of accountability and thorough record-keeping for all supervisees." },
+      { letter: "B", text: "The BCBA should document only that data collection accuracy was identified as an area for improvement during the supervision session, without specifying the RBT's verbalized struggles, feelings of overwhelm, or admission of fabricating data. This documentation would briefly note the need for enhanced training or support in data collection methodologies and the general plan to address this skill deficit. The purpose of this limited documentation is to acknowledge a performance gap without detailing the sensitive underlying reasons or the RBT's personal disclosures, aiming to maintain a positive and supportive supervisory environment while still indicating that a performance area is being addressed." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. Ethical guidelines and best practices for supervision documentation require clear, accurate, and comprehensive records. Documenting the specific date, time, content of the discussion, the RBT's admission of 'estimating' data, the corrective actions taken (feedback, re-training), and the plan for follow-up ensures accountability, transparency, and a clear record of the supervision process, which is crucial for client welfare and RBT development (BACB Professional and Ethical Compliance Code for Behavior Analysts, Section 2.0, 3.0, 4.0, 5.0). This level of detail is necessary to track progress, demonstrate due diligence, and address potential ethical concerns.\n\nDistractor B is incorrect because omitting specific details like the RBT's admission of 'estimating' data compromises the accuracy and completeness of the supervision record. While avoiding stigmatization is important, it should not come at the expense of clear and factual documentation of performance issues and corrective actions. Vague documentation can hinder effective supervision and future accountability.\n\nDistractor C is incorrect because keeping such critical information in a personal, confidential note separate from the official supervision record violates ethical requirements for maintaining accurate and accessible supervision documentation. Official supervision records should reflect all significant discussions, performance issues, and corrective actions to ensure a complete history of supervision.\n\nDistractor D is incorrect because omitting the RBT's admission, even with a focus on skill improvement, fails to provide a complete and accurate account of the supervision session. The admission is a crucial piece of information that led to the re-training plan and reflects a performance deficit that needed to be addressed. Accurate documentation requires recording both the problem and the solution."
@@ -2591,22 +2159,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A BCBA supervisor, Dr. Lee, is working with a new supervisee, Sarah, who is pursuing her RBT certification. During their first supervision meeting, Dr. Lee reviews the RBT Task List and asks Sarah about her previous experience working with individuals with autism. Dr. Lee then outlines the expectations for supervision, including documentation requirements and communication protocols.",
     question: "Which ethical supervisory practice is Dr. Lee primarily demonstrating in this scenario?",
     choices: [
-      {
-        letter: "C",
-        text: "Providing timely and constructive feedback to the supervisee."
-      },
-      {
-        letter: "D",
-        text: "Maintaining confidentiality of client information during supervision."
-      },
-      {
-        letter: "A",
-        text: "Establishing clear expectations and responsibilities for supervision."
-      },
-      {
-        letter: "B",
-        text: "Ensuring the supervisee's competence through direct observation."
-      }
+      { letter: "C", text: "Dr. Lee is primarily demonstrating the ethical practice of providing timely and constructive feedback to the supervisee by reviewing the RBT Task List and discussing Sarah's previous experience, which sets the foundation for ongoing performance evaluation and skill development. This proactive approach allows Dr. Lee to identify areas where Sarah might need additional guidance or support early in the supervision process, ensuring that feedback can be delivered effectively and immediately applied to Sarah's RBT training and practical application of ABA principles, thereby fostering her professional growth and competence in providing behavior-analytic services." },
+      { letter: "D", text: "Dr. Lee is primarily demonstrating the ethical practice of maintaining confidentiality of client information during supervision by outlining communication protocols, which are essential for protecting sensitive client data. While communication protocols are mentioned, the scenario does not explicitly detail Dr. Lee's actions regarding the handling or discussion of specific client information, making this a plausible but not the primary ethical practice demonstrated. The establishment of these protocols implicitly supports confidentiality, but the direct demonstration of confidentiality itself is not the central focus of Dr. Lee's actions in this initial meeting, which emphasizes foundational supervisory elements." },
+      { letter: "A", text: "Dr. Lee is primarily demonstrating the ethical practice of establishing clear expectations and responsibilities for supervision by outlining documentation requirements and communication protocols. This action is crucial for defining the scope and parameters of the supervisory relationship, ensuring both parties understand their roles, obligations, and the standards for professional conduct and record-keeping. By setting these clear guidelines upfront, Dr. Lee is proactively mitigating potential misunderstandings and promoting a structured, accountable supervisory environment, which is fundamental to effective and ethical supervision in applied behavior analysis." },
+      { letter: "B", text: "Dr. Lee is primarily demonstrating the ethical practice of ensuring the supervisee is competent and qualified for their role by reviewing the RBT Task List and inquiring about Sarah's previous experience. This initial assessment helps Dr. Lee gauge Sarah's foundational knowledge and practical skills, which is a critical first step in developing a supervision plan tailored to her specific learning needs and ensuring she meets the requirements for RBT certification. While this action contributes to ensuring competence, the scenario's emphasis on outlining expectations and protocols suggests a broader focus on the structure of supervision rather than a direct assessment of current competence." }
     ],
     correctAnswer: 'C',
     rationale: "The correct answer is A. Dr. Lee is establishing clear expectations and responsibilities by reviewing the RBT Task List, discussing Sarah's experience, and outlining expectations for supervision, documentation, and communication. This aligns directly with ethical supervisory practices that emphasize clear communication of roles and responsibilities from the outset.\n\nDistractor B is incorrect because while ensuring competence is a crucial part of supervision, the scenario describes Dr. Lee reviewing tasks and setting expectations, not yet directly observing Sarah's skills in a clinical setting. Direct observation would come later.\n\nDistractor C is incorrect because providing feedback typically occurs after a supervisee has demonstrated skills or completed tasks. In this initial meeting, the focus is on setting up the supervisory relationship, not yet on providing performance feedback.\n\nDistractor D is incorrect because while maintaining confidentiality is a fundamental ethical obligation, the scenario does not provide information about Dr. Lee handling client data or discussing specific client cases in a way that would highlight confidentiality as the primary demonstrated practice. The focus is on the structure of supervision."
@@ -2621,22 +2177,10 @@ export const tier6Pool_I: Question[] = [
     scenario: "A new supervisee, Sarah, has been implementing a discrete trial training (DTT) program for a client with autism. During a recent observation, you notice Sarah consistently delivers the reinforcer before the client makes a correct response, even when the instruction requires a specific action. You've provided feedback on this error twice previously, but the behavior persists.",
     question: "Which of the following is the most appropriate next step for evaluating Sarah's performance in this specific scenario?",
     choices: [
-      {
-        letter: "D",
-        text: "Provide Sarah with additional readings on the principles of reinforcement and DTT to enhance her conceptual understanding."
-      },
-      {
-        letter: "A",
-        text: "Conduct a direct observation using a task analysis or fidelity checklist to quantify the specific errors and provide immediate, corrective feedback."
-      },
-      {
-        letter: "B",
-        text: "Review Sarah's session notes and data sheets to identify patterns in her documentation related to reinforcer delivery."
-      },
-      {
-        letter: "C",
-        text: "Ask Sarah to self-evaluate her DTT implementation and identify areas where she believes she needs improvement."
-      }
+      { letter: "D", text: "Provide Sarah with targeted readings and resources that thoroughly explain the foundational principles of positive reinforcement, emphasizing the contingent relationship between a specific target response and the delivery of a reinforcer within the DTT framework. Supplement this with practical examples and case studies illustrating correct and incorrect reinforcement delivery during DTT. This approach aims to strengthen her conceptual understanding of why reinforcement must immediately follow the desired behavior and how premature reinforcement can inadvertently strengthen incorrect or non-target behaviors, thereby undermining the effectiveness of the DTT program. Following the readings, schedule a follow-up discussion to assess her comprehension and address any lingering questions." },
+      { letter: "A", text: "Initiate a comprehensive review of Sarah's documentation, including her session notes, behavior intervention plans, and any data collection sheets related to the DTT program. This will help determine if the observed procedural errors are consistent with her written records or if there's a discrepancy between her documented understanding and her practical application. Analyzing her written work can provide insights into her conceptual understanding of reinforcement contingencies and DTT protocols, potentially revealing a need for targeted training on documenting precise implementation steps and expected client responses prior to reinforcement delivery." },
+      { letter: "B", text: "Schedule a one-on-one meeting with Sarah to discuss her perceptions of the DTT implementation, specifically inquiring about her understanding of the reinforcement schedule and the sequence of stimulus presentation and response requirements. During this meeting, explicitly ask her to describe her rationale for delivering the reinforcer at the observed time, allowing her to articulate her current conceptual framework. This approach aims to identify any misconceptions she might hold regarding the timing of reinforcement or the specific discriminative stimuli and responses targeted in the DTT program, providing a foundation for tailored corrective instruction." },
+      { letter: "C", text: "Implement a direct observation using a structured fidelity checklist specifically designed for DTT procedures, focusing on the precise timing of stimulus presentation, response requirement, and reinforcement delivery. This systematic observation will yield quantifiable data on the frequency and specific types of errors Sarah is making, such as premature reinforcement or incorrect pairing of the reinforcer with an antecedent rather than a consequent event. The objective data collected will then be used to provide immediate, specific, and constructive feedback, allowing for real-time correction of her procedural drift and ensuring the integrity of the DTT intervention." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A. Since the supervisee has received feedback twice and the error persists, a more structured and objective evaluation method is needed. A direct observation using a task analysis or fidelity checklist allows the supervisor to quantify the specific errors (e.g., percentage of trials where reinforcer is delivered incorrectly) and provide immediate, targeted, and corrective feedback based on observable behavior. This directly addresses the persistent performance deficit.\n\nDistractor B is incorrect because reviewing session notes and data sheets might reveal documentation errors, but it won't directly address the observed procedural error in reinforcer delivery during DTT implementation. The problem is with her *doing* the DTT, not necessarily her *documenting* it.\n\nDistractor C is incorrect because while self-evaluation can be a useful tool, it's less effective when a supervisee is consistently making a specific error despite prior feedback. The supervisee may not be accurately perceiving or identifying the error, or may lack the skills to correct it independently. The supervisor needs to take a more active role in identifying and correcting the performance deficit.\n\nDistractor D is incorrect because providing additional readings primarily targets conceptual understanding. While conceptual understanding is important, the scenario indicates a performance deficit (i.e., she's not *doing* it correctly), not necessarily a lack of understanding. Given that feedback has already been provided, a more direct intervention focused on performance is warranted."

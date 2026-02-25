@@ -221,22 +221,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is teaching a child to use a picture card to request a snack. Initially, the therapist holds the picture card very close to the child's face to prompt the response, then gradually moves it farther away over successive trials.",
     question: "Which of the following best describes the procedure the BCBA is using?",
     choices: [
-      {
-        letter: "D",
-        text: "Response generalization"
-      },
-      {
-        letter: "A",
-        text: "Stimulus fading"
-      },
-      {
-        letter: "B",
-        text: "Prompt delay"
-      },
-      {
-        letter: "C",
-        text: "Shaping"
-      }
+      { letter: "A", text: "This procedure would involve the gradual reduction of a salient, non-functional antecedent stimulus that initially controls the target response, ultimately transferring stimulus control to a natural, more appropriate antecedent. If the BCBA were to progressively diminish the prominence of a co-occurring but irrelevant stimulus, while the child's requesting response remained consistent, this would be an example of stimulus fading. For instance, if the BCBA initially presented a very large, brightly colored picture card for 'snack' alongside the actual snack item, and then systematically decreased the size and vibrancy of the card until only the natural snack item occasioned the request, that would align with stimulus fading." },
+      { letter: "B", text: "This procedure involves systematically increasing the time interval between the presentation of a natural discriminative stimulus (SD) and the delivery of a prompt, with the goal of transferring stimulus control from the prompt to the natural SD. If the BCBA were to first present the snack and immediately provide a full physical prompt to pick up the picture card, and then gradually increase the latency before delivering that prompt, allowing the child an opportunity to independently initiate the request, that would be an application of prompt delay. This technique is often used to fade prompts and promote independent responding by allowing the learner to emit the correct response before the prompt is given." },
+      { letter: "C", text: "This procedure involves differentially reinforcing successive approximations to a target behavior, gradually molding an existing behavior into a new, more complex behavior that was not previously in the individual's repertoire. If the BCBA were reinforcing the child for simply looking at the picture card, then for touching it, then for picking it up, then for handing it to the therapist, and finally for saying “snack” while handing the card, this would be an example of shaping. The key is that the desired requesting behavior is being built through a series of small, reinforced steps, starting from a baseline behavior and progressively moving towards the terminal goal, with each step being a closer approximation to the final behavior." },
+      { letter: "D", text: "This procedure describes the occurrence of a target behavior under stimulus conditions that are different from those present during training, without direct training for those specific novel conditions. In this scenario, if the BCBA is teaching the child to request a snack using a specific picture card in a particular setting, and the child then independently uses a different picture card for a snack, or uses the same picture card in a novel setting or with a different person, without explicit training for those variations, this would be an instance of response generalization. The child's requesting behavior is generalizing across different stimuli, demonstrating that the skill has been acquired in a way that allows for flexible application beyond the original training parameters. This is highly desirable in skill acquisition as it indicates the behavior is functional across various contexts." }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A: Stimulus fading. Stimulus fading involves the gradual removal or modification of a stimulus prompt to transfer stimulus control to the natural stimulus. In this scenario, the therapist is gradually increasing the distance of the picture card, fading the prompt so the child eventually responds to the natural stimulus alone. Answer B (Prompt delay) involves inserting a delay before providing a prompt, rather than gradually changing the prompt itself. Answer C (Shaping) involves reinforcing successive approximations of a behavior, not modifying the stimulus. Answer D (Response generalization) refers to the occurrence of a learned behavior in different contexts or stimuli, not the method of prompt removal. Therefore, stimulus fading best describes the procedure used."
@@ -491,22 +479,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is designing a functional communication training (FCT) intervention for a child whose challenging behavior is maintained by escape from demands. The BCBA wants to teach the child an appropriate communicative response to request a break and reduce problem behavior.",
     question: "Which of the following strategies best aligns with the principles of functional communication training in this scenario?",
     choices: [
-      {
-        letter: "A",
-        text: "Teaching the child to use a simple verbal request like \"break\" immediately before task demands are presented."
-      },
-      {
-        letter: "B",
-        text: "Providing the child with a token each time they complete a demand without engaging in challenging behavior."
-      },
-      {
-        letter: "C",
-        text: "Ignoring the child's challenging behavior while reinforcing compliance with task demands."
-      },
-      {
-        letter: "D",
-        text: "Implementing a time-out procedure contingent on challenging behavior to decrease its occurrence."
-      }
+      { letter: "A", text: "The BCBA should prioritize teaching the child a functionally equivalent, appropriate communicative response, such as a simple verbal request like \"break please\" or a gestural sign for \"break,\" that directly serves the same escape function as the challenging behavior. This strategy ensures that the child has an efficient and socially acceptable means to access reinforcement (escape from demands) without resorting to problem behavior. The FCT intervention would involve systematically reinforcing the use of this new communicative response while extinguishing problem behavior, aligning with the core principles of FCT by providing a direct replacement for the maladaptive behavior." },
+      { letter: "B", text: "The BCBA could implement a token economy where the child earns tokens for completing demands without engaging in challenging behavior. These tokens could then be exchanged for preferred items or activities. While this strategy may increase compliance and reduce challenging behavior indirectly by reinforcing an incompatible behavior (completing demands), it does not directly teach a functionally equivalent communicative response for escape. It primarily focuses on demand compliance through positive reinforcement, rather than providing an alternative communication skill to request a break when demands are presented, which is the direct function of the challenging behavior in this scenario." },
+      { letter: "C", text: "The BCBA might consider an extinction procedure by consistently ignoring the child's challenging behavior when it occurs. This approach aims to withhold reinforcement for the challenging behavior, thereby decreasing its future likelihood. However, simply ignoring the behavior without simultaneously teaching an alternative, functionally equivalent communicative response can lead to an extinction burst, potentially increasing the intensity or frequency of the challenging behavior in the short term, and does not equip the child with a constructive way to communicate their desire for a break from demands, which is a critical component of effective FCT." },
+      { letter: "D", text: "The BCBA could implement a time-out procedure, where the child is briefly removed from the reinforcing environment contingent on engaging in challenging behavior. This aims to decrease the future probability of the challenging behavior by making it less reinforcing. While time-out can be an effective consequence for reducing problem behavior, it is a reactive strategy that punishes the challenging behavior rather than proactively teaching an alternative, appropriate communication skill. It does not address the underlying communicative function of the behavior by providing a replacement response, which is the primary goal of FCT in this specific scenario." }
     ],
     correctAnswer: "A",
     rationale: "Option A is correct because functional communication training involves teaching an appropriate communicative alternative that serves the same function as the challenging behavior. Teaching the child to request a break addresses the function of escape from demands and provides a socially acceptable way to communicate this need. Option B, providing tokens for compliance, is a reinforcement strategy but does not teach an alternative communication response and does not directly address the function of the behavior. Option C, ignoring challenging behavior and reinforcing compliance, may not effectively teach an alternative communication response and risks extinction bursts or increased problem behavior. Option D, using time-out, is a punishment-based procedure that does not teach an alternative communicative response and may not be as effective or appropriate as FCT for this function. Therefore, only option A aligns fully with FCT principles."
@@ -701,22 +677,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA implemented a maintenance program for a client who mastered requesting items using picture cards. After initial mastery, the BCBA arranged periodic probe sessions without providing reinforcement to assess maintenance of the skill over time.",
     question: "Which of the following best describes the purpose of the maintenance probes in this scenario?",
     choices: [
-      {
-        letter: "D",
-        text: "To evaluate the effectiveness of prompting strategies during skill acquisition."
-      },
-      {
-        letter: "A",
-        text: "To assess whether the client's requesting behavior persists over time without ongoing reinforcement."
-      },
-      {
-        letter: "B",
-        text: "To determine if generalization of the requesting behavior occurs across different settings."
-      },
-      {
-        letter: "C",
-        text: "To measure the client\u2019s acquisition rate of new communication skills."
-      }
+      { letter: "A", text: "To determine the extent to which the client continues to emit the learned requesting behavior, specifically using picture cards to ask for desired items, without the immediate provision of reinforcement or the presence of a teaching antecedent, thereby assessing the durability and persistence of the skill across various environmental conditions and over extended periods since initial mastery. This evaluation helps to confirm if the skill has become a stable part of the client's repertoire, indicating true maintenance rather than dependency on continuous instructional support or artificial contingencies." },
+      { letter: "B", text: "To ascertain if the client's established requesting behavior, specifically the use of picture cards to communicate wants and needs, has spontaneously transferred and is consistently applied across novel environments, different communication partners, or with varied stimulus materials that were not explicitly included during the initial acquisition phase. This assessment would focus on whether the skill's utility extends beyond the training context, indicating a broader functional application of the learned response, rather than merely its continued presence in the original instructional setting." },
+      { letter: "C", text: "To quantitatively measure the speed and efficiency with which the client is able to acquire and demonstrate proficiency in novel communication skills, such as learning to request items using vocalizations or a speech-generating device, following the introduction of new instructional procedures or teaching methodologies. This analysis would involve tracking the number of trials to criterion or the rate of correct responses during initial learning phases for new skills, providing insight into the client's learning capacity, rather than the retention of previously mastered behaviors." },
+      { letter: "D", text: "To evaluate the long-term effectiveness and necessity of the prompting strategies that were initially employed during the skill acquisition phase for requesting items using picture cards, by observing whether the client continues to perform the target behavior accurately and independently in the absence of those prompts. The purpose is to confirm that the client has achieved mastery and independence, demonstrating that the faded prompts successfully transferred stimulus control to the natural discriminative stimuli, thereby validating the instructional efficacy of the prompting hierarchy and ensuring the skill is robust and resistant to extinction without prompting dependency. (CORRECT)" }
     ],
     correctAnswer: 'D',
     rationale: "The correct answer is A because maintenance programming involves assessing whether a learned behavior continues over time, typically by conducting maintenance probes without reinforcement to see if the skill persists. Answer B describes generalization, which refers to the spread of behavior across settings or stimuli, not maintenance. Answer C is incorrect because acquisition rate pertains to how quickly a new skill is learned, not maintenance of an already mastered skill. Answer D relates to acquisition and prompting effectiveness, not to maintenance of behavior after mastery."
@@ -971,22 +935,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is working with a child who currently says a single word to request a toy. The BCBA decides to reinforce successive approximations toward the child saying a two-word phrase. Initially, the BCBA reinforces any attempt at vocalization, then only sounds resembling the target phrase, and finally the full two-word phrase.",
     question: "Which process is the BCBA using to increase the child's communication from a single word to a two-word phrase?",
     choices: [
-      {
-        letter: "A",
-        text: "Shaping"
-      },
-      {
-        letter: "B",
-        text: "Chaining"
-      },
-      {
-        letter: "C",
-        text: "Fading"
-      },
-      {
-        letter: "D",
-        text: "Prompting"
-      }
+      { letter: "A", text: "The BCBA is employing the behavioral principle of shaping, which involves differentially reinforcing successive approximations to a target behavior. In this scenario, the BCBA systematically reinforces increasingly closer approximations of the desired two-word phrase, starting with any vocalization, then sounds resembling the phrase, and finally the complete phrase. This systematic reinforcement of intermediate behaviors, while withholding reinforcement for previous approximations, effectively guides the learner toward the terminal behavior of producing the two-word request for the toy. This method is highly effective for teaching novel behaviors that are not currently in the learner's repertoire." },
+      { letter: "B", text: "The BCBA is likely utilizing chaining, a process where individual responses are linked together to form a complex behavioral sequence. This would involve teaching the child to perform a series of discrete steps in a specific order, where the completion of one step serves as a discriminative stimulus for the next, ultimately leading to a terminal reinforcer. For example, if the goal was to teach the child to retrieve the toy, open a box, and then play with it, each of those steps would be taught and linked together. However, the scenario describes the development of a single, more complex vocalization, rather than a sequence of distinct actions." },
+      { letter: "C", text: "The BCBA is implementing fading, a procedure used to gradually reduce the intrusiveness of a prompt until it is no longer needed. This typically occurs after a behavior has been established and maintained with the assistance of prompts. In this case, if the child was initially prompted to say the two-word phrase and the BCBA was slowly removing those prompts, fading would be occurring. However, the scenario explicitly states that the BCBA is reinforcing novel vocalizations and closer approximations, indicating the development of a new behavior rather than the reduction of prompt dependency for an already learned behavior." },
+      { letter: "D", text: "The BCBA is primarily using prompting, which involves providing supplementary antecedent stimuli to occasion a correct response. While prompts might be used within the teaching process to evoke vocalizations, the core process described is not merely the provision and subsequent removal of prompts. Prompting would involve giving specific cues, gestures, or verbal instructions to help the child produce the target phrase. The scenario focuses on the differential reinforcement of naturally occurring, albeit imperfect, vocalizations that gradually resemble the target behavior, rather than the systematic application and withdrawal of antecedent aids." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A, Shaping, which involves reinforcing successive approximations toward a target behavior\u2014in this case, the child\u2019s progression from single words to a two-word phrase. Chaining (B) involves teaching a sequence of behaviors in a specific order, which does not apply here since the focus is on modifying a single behavior gradually. Fading (C) refers to the gradual removal of prompts or assistance, not the gradual change in the form of the behavior itself. Prompting (D) involves providing additional stimuli to encourage the correct response but does not inherently involve reinforcing successive approximations toward a new behavior form. Therefore, shaping best describes the process used."
@@ -1481,22 +1433,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is working with a child who has difficulty responding to a verbal instruction when it is given in a loud environment. Initially, the BCBA provides the instruction in a quiet room and gradually introduces background noise over sessions.",
     question: "Which strategy is the BCBA using to help the child respond to the instruction in different stimulus conditions?",
     choices: [
-      {
-        letter: "B",
-        text: "Stimulus generalization"
-      },
-      {
-        letter: "C",
-        text: "Response shaping"
-      },
-      {
-        letter: "D",
-        text: "Prompt fading"
-      },
-      {
-        letter: "A",
-        text: "Stimulus fading"
-      }
+      { letter: "A", text: "The BCBA is employing stimulus fading, a procedure where the discriminative stimulus is gradually changed along a relevant dimension while the response remains constant. In this scenario, the loud environment, which functions as a competing stimulus, is being systematically reduced or altered in intensity across sessions. This allows the learner to reliably emit the target response under more optimal conditions before the full intensity of the challenging stimulus is introduced. The goal of stimulus fading is to ensure that the learner's response comes under the control of the relevant features of the instruction, even as the irrelevant or interfering aspects of the environment are progressively introduced or intensified, thereby promoting successful responding without requiring the learner to discriminate against the full, immediate presence of the challenging stimulus from the outset." },
+      { letter: "B", text: "The BCBA is implementing stimulus generalization, a behavioral principle where a response that has been reinforced in the presence of one stimulus occurs in the presence of other, similar stimuli. In this context, the child is learning to respond to a verbal instruction in a quiet room, and the BCBA is systematically introducing variations in the background noise across sessions. This methodical introduction of different environmental conditions, while maintaining the same instructional prompt and target response, aims to broaden the range of antecedent stimuli under which the child will reliably emit the desired behavior. The objective is for the child's compliance to the verbal instruction to generalize from the initial quiet training environment to progressively louder and more varied stimulus conditions, demonstrating that the instruction's control over the behavior is not restricted to a single, specific environmental context but extends across a spectrum of similar, albeit different, settings." },
+      { letter: "C", text: "The BCBA is utilizing response shaping, a differential reinforcement procedure used to establish a novel behavior by systematically reinforcing successive approximations toward the target behavior. This process involves identifying a behavior that is already in the learner's repertoire and then reinforcing closer and closer approximations of the desired, terminal behavior while extinguishing earlier approximations. In this scenario, if response shaping were being used, the BCBA would be reinforcing increasingly accurate or complete forms of the child's response to the verbal instruction, perhaps starting with a head nod and gradually shaping it into a full, compliant action. However, the scenario describes modifying the environment, not the form of the child's response, making response shaping an unlikely primary strategy for addressing the specific challenge of responding in loud environments." },
+      { letter: "D", text: "The BCBA is employing prompt fading, a procedure used to gradually reduce the intrusiveness of a prompt until the learner can emit the target behavior independently in the presence of the natural discriminative stimulus. This strategy involves providing an initial prompt that ensures correct responding, and then systematically decreasing the intensity, duration, or type of prompt across trials or sessions. If prompt fading were being used, the BCBA might initially provide a full physical prompt to follow the instruction, then fade to a gestural prompt, and finally to only the verbal instruction. However, the scenario describes a manipulation of the environmental conditions (background noise) rather than the type or intensity of assistance provided to the child to evoke the response, indicating that prompt fading is not the primary strategy being utilized to address the challenge of responding in loud environments." }
     ],
     correctAnswer: 'B',
     rationale: "The BCBA is using stimulus fading by gradually changing the stimulus condition (adding background noise) so the child can learn to respond in increasingly challenging environments. Stimulus fading involves the gradual change of an antecedent stimulus to transfer stimulus control without losing the learned behavior. Stimulus generalization (B) refers to the occurrence of the behavior in the presence of stimuli that are similar but were not directly trained, without systematic gradual change. Response shaping (C) involves reinforcing successive approximations of a target behavior, not changing stimulus conditions. Prompt fading (D) refers to the gradual removal of prompts to transfer stimulus control to the natural cue, not the gradual change of antecedent stimuli like background noise."
@@ -1571,22 +1511,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is working with a client who frequently engages in hand-flapping to gain adult attention. The BCBA implements an extinction procedure by systematically withholding attention following instances of hand-flapping. However, during the first few sessions, the frequency of hand-flapping temporarily increases before it begins to decrease.",
     question: "Which phenomenon best explains the initial increase in hand-flapping behavior observed during the extinction procedure?",
     choices: [
-      {
-        letter: "A",
-        text: "Extinction burst"
-      },
-      {
-        letter: "B",
-        text: "Spontaneous recovery"
-      },
-      {
-        letter: "C",
-        text: "Behavioral contrast"
-      },
-      {
-        letter: "D",
-        text: "Response generalization"
-      }
+      { letter: "A", text: "The initial increase in the frequency, duration, or intensity of hand-flapping behavior observed during the implementation of the extinction procedure is best explained by an extinction burst. This phenomenon occurs when a previously reinforced behavior, such as hand-flapping maintained by adult attention, temporarily increases in its topographical dimensions or variability immediately after the reinforcement contingency is removed. This temporary increase in the target behavior is a common and expected side effect of extinction, often signaling that the procedure is beginning to take effect, as the individual attempts to elicit the previously effective reinforcer through more vigorous or varied responses before the behavior ultimately decreases." },
+      { letter: "B", text: "The observed initial increase in hand-flapping is unlikely to be spontaneous recovery, as spontaneous recovery refers to the reappearance of an extinguished behavior after a period of time has passed during which the behavior was not emitted and the extinction procedure was not in effect. In this scenario, the increase in hand-flapping is occurring during the initial sessions of active extinction implementation, rather than after a period of no intervention. Spontaneous recovery typically occurs after a behavior has already been reduced to near-zero levels by extinction and then re-emerges following a break from the extinction contingencies, which is not consistent with the described immediate increase at the beginning of the intervention." },
+      { letter: "C", text: "The initial increase in hand-flapping behavior is not consistent with behavioral contrast. Behavioral contrast describes a phenomenon where a change in the rate of reinforcement for a behavior in one setting or condition leads to an opposite change in the rate of that same behavior in another setting or condition, even if the reinforcement contingencies in the second setting remain unchanged. For example, if reinforcement for hand-flapping decreased in one context, behavioral contrast might predict an increase in hand-flapping in a different context where reinforcement contingencies were stable. The described scenario, however, involves an increase in the target behavior within the same context where extinction is being applied, rather than a shift across different environments." },
+      { letter: "D", text: "The temporary increase in hand-flapping cannot be adequately explained by response generalization. Response generalization occurs when a behavior that has been reinforced in one stimulus condition leads to the emission of other, unreinforced behaviors that share similar physical properties or functions with the reinforced behavior. While the client might engage in other topographies of attention-seeking behavior, response generalization would involve the emergence of novel, functionally similar behaviors, not an increase in the rate or intensity of the specific target behavior (hand-flapping) that is currently undergoing extinction. The scenario specifically describes an increase in the *same* hand-flapping behavior, not the emergence of new, generalized responses." }
     ],
     correctAnswer: "A",
     rationale: "The initial increase in the behavior when reinforcement is first withheld is known as an extinction burst, which is a common and expected phenomenon during extinction procedures. Spontaneous recovery (B) refers to the reappearance of an extinguished behavior after a delay and is not the initial increase. Behavioral contrast (C) involves changes in one behavior due to reinforcement or extinction conditions in another context, unrelated to the immediate extinction burst. Response generalization (D) refers to the occurrence of untrained behaviors that are similar to the targeted behavior, which does not explain the temporary increase in the targeted behavior itself during extinction."
@@ -1631,22 +1559,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is implementing a naturalistic teaching program to increase a child's manding skills during playtime. The intervention involves arranging the environment so that the child must initiate communication to obtain desired items, and the BCBA provides reinforcement contingent on spontaneous requests.",
     question: "Which of the following best describes an essential component of naturalistic teaching demonstrated in this scenario?",
     choices: [
-      {
-        letter: "C",
-        text: "Delivering reinforcement on a fixed ratio schedule independent of the child's behavior."
-      },
-      {
-        letter: "D",
-        text: "Using discrete trial training with massed trials to teach manding in a structured setting."
-      },
-      {
-        letter: "A",
-        text: "Using the child's motivation and natural environment to evoke communication and reinforcing spontaneous requests."
-      },
-      {
-        letter: "B",
-        text: "Providing direct verbal prompts immediately before each mand to ensure correct response."
-      }
+      { letter: "A", text: "The BCBA is utilizing the child's intrinsic motivation by embedding learning opportunities within their preferred activities and routines, thereby increasing the likelihood of engagement and promoting generalization of learned skills. This approach leverages the child's natural interests to create highly motivating contexts for skill acquisition, fostering a more enjoyable and effective learning experience. The focus is on capitalizing on naturally occurring cues and reinforcers to make the intervention feel less like 'work' and more like play, which is a hallmark of naturalistic teaching strategies." },
+      { letter: "B", text: "The BCBA is consistently providing direct verbal prompts immediately before each mand opportunity to ensure a high rate of correct responses, aiming to establish the mand repertoire quickly and efficiently. This strategy emphasizes errorless learning by proactively guiding the child to the correct response, thereby minimizing the occurrence of incorrect behaviors and maximizing the delivery of reinforcement for appropriate communication. While effective for initial skill acquisition, the prompt dependency may need to be systematically faded to promote independent responding in various naturalistic settings." },
+      { letter: "C", text: "The BCBA is delivering reinforcement on a fixed ratio schedule, contingent upon the child's engagement in the target behavior, and the reinforcement is directly tied to the natural consequences of the behavior itself. This means that for every specified number of correct responses, a predetermined reinforcer is provided, and this reinforcer is functionally related to the child's interaction with the environment. This systematic and consistent delivery of reinforcement, directly linked to the child's actions within the natural context, is crucial for strengthening the desired behaviors and promoting their maintenance and generalization. The reinforcement is not arbitrary but rather a logical outcome of the child's participation in the activity, enhancing the ecological validity of the intervention." },
+      { letter: "D", text: "The BCBA is employing a discrete trial training methodology, characterized by presenting a specific instruction, waiting for the child's response, and delivering reinforcement or corrective feedback, with multiple trials of the same skill presented consecutively in a structured environment. This approach prioritizes the acquisition of new skills through highly controlled and repetitive practice, ensuring that the child receives numerous opportunities to respond and receive feedback. While effective for teaching foundational skills, the emphasis on a structured, adult-led environment with massed trials contrasts with the more child-led and contextually embedded nature of naturalistic teaching approaches." }
     ],
     correctAnswer: 'C',
     rationale: "Option A correctly identifies a core element of naturalistic teaching: arranging the environment to capitalize on the child's motivation and reinforcing naturally occurring communication attempts, which promotes generalization and spontaneous communication. Option B describes prompt dependency and is not consistent with naturalistic teaching, which favors less intrusive prompts and more natural antecedents. Option C refers to non-contingent reinforcement, which does not effectively increase manding behavior as reinforcement must be contingent on the target behavior. Option D describes discrete trial training, a more structured and contrived teaching method that contrasts with the naturalistic, play-based approach described."
@@ -1871,22 +1787,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is working with a client who is learning to wash their hands. The client can perform the last step (drying hands) independently, but struggles with initiating and completing the steps leading up to it. The BCBA initially implemented a total task chaining procedure, but the client became frustrated and progress was slow.",
     question: "Given the client's current skill set and the observed challenges, which chaining procedure would be most appropriate for the BCBA to implement next?",
     choices: [
-      {
-        letter: "C",
-        text: "Total task chaining with increased prompting"
-      },
-      {
-        letter: "D",
-        text: "Shaping"
-      },
-      {
-        letter: "A",
-        text: "Backward chaining"
-      },
-      {
-        letter: "B",
-        text: "Forward chaining"
-      }
+      { letter: "A", text: "Backward chaining would involve the BCBA teaching the client to perform the last step of the handwashing sequence (drying hands) independently, as they already demonstrate proficiency in this step, and then systematically introducing the second-to-last step (rinsing hands) with prompts, gradually working backward through the entire chain until the client can perform all steps from start to finish. This approach capitalizes on the client's existing ability to complete the final step, potentially increasing motivation and reducing frustration by allowing them to experience the natural reinforcer of a completed task sooner in the learning process, which could be beneficial given their prior frustration with total task chaining." },
+      { letter: "B", text: "Forward chaining would entail the BCBA teaching the client to perform the first step of the handwashing sequence (turning on the water) independently, then, upon mastery, introducing the second step (wetting hands) with prompts, and so on, until the entire chain is mastered. While this method builds momentum from the beginning of the task, the client's existing proficiency in the final step would not be immediately utilized to promote successful task completion, potentially leading to continued frustration if the initial steps are particularly challenging, similar to the issues encountered with the total task chaining procedure." },
+      { letter: "C", text: "Total task chaining with increased prompting would involve the BCBA continuing to teach all steps of the handwashing task simultaneously in their natural order, but with a more intensive and systematic application of prompts across all steps. This approach would require the BCBA to identify the specific steps where the client struggles with initiation and completion and implement a more robust prompting hierarchy, potentially including physical prompts or verbal instructions, to ensure successful completion of each step within the chain. The goal would be to reduce frustration by ensuring the client can successfully complete each step with support, gradually fading prompts as proficiency increases across the entire sequence. This method leverages the client's existing understanding of the task's full sequence while providing the necessary support to overcome current skill deficits." },
+      { letter: "D", text: "Shaping would involve differentially reinforcing successive approximations to the target behavior of handwashing, starting with a very general approximation, such as approaching the sink, and gradually requiring closer and closer approximations to the full handwashing routine before providing reinforcement. While shaping can be effective for teaching novel behaviors, it is typically used when the client does not possess any part of the terminal behavior. In this scenario, the client can already perform the last step, and the primary challenge lies in linking existing behaviors within a sequence, making shaping a less efficient and targeted strategy compared to chaining procedures for teaching a multi-step task." }
     ],
     correctAnswer: 'C',
     rationale: "Backward chaining is most appropriate here because the client can already independently perform the last step of the chain. This procedure allows the client to experience the natural reinforcer (clean, dry hands) immediately upon completing the final, known step, which can reduce frustration and increase motivation. Forward chaining would require the client to master the first steps before experiencing reinforcement, which might be difficult given their current struggles. Total task chaining with increased prompting has already been attempted and led to frustration, indicating it may not be the most efficient approach. Shaping is used to teach novel behaviors by reinforcing successive approximations, not for linking existing behaviors into a chain."
@@ -1991,22 +1895,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A supervisee, RBT Sarah, is implementing an extinction procedure for a client's attention-maintained screaming. During a session, the client begins screaming intensely, and Sarah, visibly distressed by the behavior's escalation, briefly makes eye contact and says, 'Please stop.' The screaming immediately ceases. Sarah reports this incident to her supervisor, BCBA Alex, during their supervision meeting.",
     question: "Which of the following is the most appropriate initial supervisory action Alex should take to address Sarah's response to the extinction burst?",
     choices: [
-      {
-        letter: "C",
-        text: "Adjust the client's behavior intervention plan to include an antecedent intervention to prevent future extinction bursts, given Sarah's difficulty."
-      },
-      {
-        letter: "D",
-        text: "Provide Sarah with a written warning, emphasizing the importance of adherence to the behavior intervention plan and the negative impact of her action."
-      },
-      {
-        letter: "A",
-        text: "Review the extinction procedure with Sarah, discuss the concept of extinction bursts, and role-play appropriate responses to ensure procedural fidelity."
-      },
-      {
-        letter: "B",
-        text: "Immediately report Sarah to the BACB for a procedural error that compromised the intervention's effectiveness and ethical implementation."
-      }
+      { letter: "A", text: "Alex should immediately initiate a focused review of the extinction procedure with Sarah, ensuring she fully comprehends the operational definitions of target behaviors, the specific contingencies for withholding reinforcement, and the anticipated temporary increase in the frequency, duration, or intensity of the problem behavior, known as an extinction burst. Following this review, Alex should engage in direct role-playing exercises with Sarah, simulating various scenarios where an extinction burst might occur and coaching her on appropriate, ethically sound, and procedurally faithful responses to ensure consistent implementation of the behavior intervention plan (BIP) and prevent further compromise of the intervention's effectiveness." },
+      { letter: "B", text: "Immediately reporting Sarah to the Behavior Analyst Certification Board (BACB) for a procedural error, without first attempting to provide direct supervision, corrective feedback, and training, would be a premature and potentially punitive action. While serious ethical violations or repeated, uncorrected procedural errors that jeopardize client safety or progress warrant BACB notification, an initial procedural error typically calls for a supervisory response focused on education, remediation, and direct observation to ensure competency. This approach prioritizes the supervisee's growth and the client's well-being through direct professional development, aligning with the ethical guidelines for effective supervision within the field of applied behavior analysis." },
+      { letter: "C", text: "Alex should first prioritize providing immediate, in-situ supervision to Sarah to directly observe her implementation of the extinction procedure and offer real-time, constructive feedback. This direct observation will allow Alex to accurately assess Sarah's understanding and application of the procedure, identify specific areas for improvement, and model correct implementation if necessary. This immediate, hands-on approach ensures that procedural fidelity is re-established promptly, minimizing any further potential negative impact on the client's behavior change program and reinforcing the importance of consistent and accurate intervention delivery, which is paramount for ethical and effective behavioral services. This direct, corrective action is crucial for maintaining the integrity of the behavior intervention plan." },
+      { letter: "D", text: "Issuing a formal written warning to Sarah as the initial supervisory action, while emphasizing adherence to the behavior intervention plan and the negative impact of her actions, may be an overly formal and potentially demotivating first step. This approach could be perceived as punitive rather than educational, potentially hindering a collaborative supervisory relationship. While documentation of performance is important, a more effective initial strategy would involve direct instructional and corrective feedback, coupled with opportunities for skill demonstration and reinforcement of correct procedures. A written warning is typically reserved for repeated, uncorrected errors or more severe breaches after initial attempts at direct training and feedback have not yielded the desired improvement in procedural fidelity." }
     ],
     correctAnswer: 'C',
     rationale: "The most appropriate initial supervisory action is to provide further training and support (A). Sarah's action, while a procedural error, is a common reaction to an extinction burst and presents a teaching opportunity for the supervisor. Reporting her (B) is premature and likely unwarranted for a single procedural error that can be addressed through supervision. Adjusting the BIP (C) might be considered later, but the immediate need is to address the supervisee's skill deficit. A written warning (D) is overly punitive for a training issue that can be resolved through education and practice, and it does not address the underlying lack of understanding or skill."
@@ -2081,22 +1973,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A supervisee is struggling to implement a high-probability request sequence (behavioral momentum) with a client who frequently engages in non-compliance during academic tasks. The supervisee reports that the client often complies with the low-probability request, but only after a significant delay and with visible frustration, which sometimes escalates into problem behavior. The supervisor observes the supervisee's implementation and notes that the high-probability requests are often presented with a flat affect and the reinforcement for compliance is delivered inconsistently.",
     question: "Based on the supervisor's observations, which of the following is the most likely reason the high-probability request sequence is failing to produce the desired effect?",
     choices: [
-      {
-        letter: "B",
-        text: "The supervisee is not immediately following the high-probability requests with the low-probability request, weakening the momentum."
-      },
-      {
-        letter: "C",
-        text: "The low-probability request is too difficult for the client, leading to extinction bursts when compliance is demanded."
-      },
-      {
-        letter: "D",
-        text: "The client's non-compliance is maintained by automatic reinforcement, making a high-probability request sequence ineffective."
-      },
-      {
-        letter: "A",
-        text: "The high-probability requests are not sufficiently reinforcing or are delivered without enthusiasm, reducing their evocative effect."
-      }
+      { letter: "A", text: "The high-probability requests being utilized by the supervisee may not possess sufficient reinforcing value for the client, or their delivery might lack the necessary enthusiasm and contingent praise to effectively increase the likelihood of compliance. This diminished evocative effect of the high-probability requests could be failing to establish the desired behavioral momentum, thus making the subsequent low-probability request less likely to be emitted without frustration or delay. The supervisee should evaluate the client's preferences for the high-probability tasks and ensure their delivery is paired with strong positive reinforcement and an energetic demeanor to maximize their impact on compliance." },
+      { letter: "B", text: "The supervisee is likely failing to immediately follow the client's compliance with the high-probability requests with the presentation of the low-probability request. This delay in presenting the low-probability request after the successful execution of the high-probability requests effectively weakens the behavioral momentum that the sequence is designed to establish. The immediate succession of the low-probability request after compliance with the high-probability requests is crucial for leveraging the increased probability of responding and reducing the likelihood of non-compliance, frustration, or the escalation of problem behaviors. The supervisor should emphasize the importance of rapid pacing in the implementation of the high-probability request sequence to maintain the desired momentum." },
+      { letter: "C", text: "The low-probability request, which is the target behavior for the intervention, may be too complex or demanding for the client at their current skill level, leading to significant frustration and potential extinction bursts when compliance is demanded. While the high-probability sequence aims to increase compliance, if the low-probability request is consistently beyond the client's current repertoire, the momentum generated by the high-probability requests may not be sufficient to overcome the inherent difficulty, resulting in non-compliance and an escalation of challenging behaviors. The supervisee should consider task-analyzing the low-probability request and potentially teaching prerequisite skills or modifying the task to ensure it is within the client's instructional zone." },
+      { letter: "D", text: "The client may be experiencing a generalized decrease in motivation across all academic tasks, potentially due to factors such as satiation with current reinforcers, a lack of perceived control, or an underlying medical condition. This pervasive lack of motivation could be overriding the intended effects of the high-probability request sequence, making even initially reinforcing tasks less effective in building momentum. The visible frustration and delayed compliance, even with the low-probability request, could indicate a broader issue beyond the specific implementation of the procedure. The supervisee should conduct a comprehensive assessment of the client's motivational variables and general well-being to identify and address any contributing factors to their overall academic engagement." }
     ],
     correctAnswer: 'B',
     rationale: "The scenario explicitly states that the supervisee presents high-probability requests with a 'flat affect' and delivers reinforcement 'inconsistently.' For a high-probability request sequence to be effective, the high-probability requests must evoke a high rate of compliance, which is often facilitated by enthusiastic delivery and strong reinforcement. A flat affect and inconsistent reinforcement would diminish the evocative effect of the high-probability requests, making them less likely to build behavioral momentum. Option B is incorrect because the scenario states the client 'often complies with the low-probability request, but only after a significant delay,' implying the low-p request is delivered, just not effectively. Option C is a plausible distractor but the primary issue highlighted by the supervisor's observation is the *delivery* of the high-p requests and reinforcement, not necessarily the inherent difficulty of the low-p request. Option D is a general statement about function of behavior that is not directly supported as the *most likely* reason by the specific observational details provided about the supervisee's implementation."
@@ -2261,22 +2141,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A behavior analyst is working with a client who rarely vocalizes. The goal is to increase vocalizations, specifically saying the word \"ball.\" Currently, the client only makes a 'buh' sound when prompted with a ball. The behavior analyst wants to use shaping to achieve the target behavior.",
     question: "Which of the following would be the most appropriate first step in a shaping procedure for this client?",
     choices: [
-      {
-        letter: "D",
-        text: "Prompt the client to say \"ball\" and reinforce correct responses."
-      },
-      {
-        letter: "A",
-        text: "Reinforce any 'buh' sound the client makes in response to the ball."
-      },
-      {
-        letter: "B",
-        text: "Only reinforce the client when they say the full word \"ball.\""
-      },
-      {
-        letter: "C",
-        text: "Reinforce the client for looking at the ball."
-      }
+      { letter: "A", text: "Reinforce any sound emitted by the client, regardless of its phonetic approximation to the target word \"ball.\" This approach, while initially increasing the frequency of vocalizations, may not efficiently guide the client toward the specific phonemes required for the target word. It could inadvertently strengthen non-target vocal behaviors, making subsequent differential reinforcement and shaping more challenging as the therapist would then need to extinguish a broader range of vocalizations before isolating the desired approximations. This strategy might be more appropriate for a client with no vocalizations at all, rather than one who rarely vocalizes and for whom a specific word is the target." },
+      { letter: "B", text: "Only reinforce the client when they produce the full and accurate pronunciation of the word \"ball.\" This approach is unlikely to be successful as a first step in a shaping procedure for a client who rarely vocalizes. Shaping relies on reinforcing successive approximations of a target behavior. If the client rarely vocalizes, it is highly improbable they will spontaneously produce the complete target word without prior reinforcement of smaller, achievable steps. This strategy would lead to a lack of reinforcement opportunities, resulting in extinction of any nascent vocal attempts and potentially increasing frustration for the client, thereby hindering the acquisition process." },
+      { letter: "C", text: "Reinforce the client for visually orienting towards the ball when prompted or when the ball is presented. While establishing joint attention and stimulus control over visual regard for the target object can be a valuable preparatory skill, it does not directly address the vocalization deficit. Reinforcing looking at the ball, without pairing it with any vocal response, is not a direct successive approximation of saying the word \"ball.\" It would be considered an antecedent manipulation or a prerequisite skill, but not the most appropriate first step in a shaping procedure specifically designed to increase vocalizations of a target word, as it lacks the direct behavioral component of vocal output." },
+      { letter: "D", text: "Prompt the client to emit any sound or vocalization that phonetically approximates the initial sound of the word \"ball,\" such as /b/ or /ba/, and provide immediate reinforcement for this approximation. This constitutes an appropriate first step in a shaping procedure because it establishes an achievable criterion for reinforcement, given the client rarely vocalizes. By reinforcing a close approximation, the behavior analyst can systematically increase the client's vocal repertoire while gradually raising the criterion for reinforcement to include more accurate and complete phonetic components of the target word, moving from /b/ to /ba/ to /bal/ and finally to /ball/." }
     ],
     correctAnswer: 'D',
     rationale: "Shaping involves differentially reinforcing successive approximations to a target behavior. Since the client currently makes a 'buh' sound, reinforcing this existing approximation is the most appropriate first step to build upon. Reinforcing the full word 'ball' (B) would not be effective as the client is not currently producing it. Reinforcing looking at the ball (C) is a prerequisite skill, but not an approximation of the vocalization. Prompting (D) is a different teaching procedure and not the initial step of shaping which relies on naturally occurring approximations."
@@ -2291,22 +2159,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is conducting a social skills assessment for a 10-year-old client diagnosed with autism spectrum disorder. The client's parents report that he struggles with initiating conversations with peers at school. The BCBA is considering various assessment methods.",
     question: "Which of the following assessment methods would be most appropriate and ethical for identifying specific social skill deficits related to conversation initiation in a school setting?",
     choices: [
-      {
-        letter: "A",
-        text: "Direct observation of the client during unstructured peer interactions at school."
-      },
-      {
-        letter: "B",
-        text: "Administering a standardized social skills rating scale to the client's parents and teacher."
-      },
-      {
-        letter: "C",
-        text: "Conducting a role-play assessment in the clinic, simulating conversation initiation scenarios."
-      },
-      {
-        letter: "D",
-        text: "Reviewing the client's past school records and disciplinary reports for social interaction issues."
-      }
+      { letter: "A", text: "Conducting a direct observation of the client's spontaneous social interactions with peers during naturally occurring unstructured activities within the school environment, such as recess or lunch, would provide ecologically valid data on their conversation initiation skills. This method allows the BCBA to identify specific antecedent conditions, the client's behavioral responses, and the immediate consequences that maintain or hinder conversation initiation, offering critical insights into the functional aspects of the skill deficit within the relevant context. This approach minimizes artificiality and maximizes the generalizability of findings to real-world school settings, aligning with ethical considerations for assessment in the client's natural environment." },
+      { letter: "B", text: "Administering a standardized social skills rating scale directly to the client, while potentially offering a broad overview of perceived social competencies, may not be the most appropriate or ethical method for precisely identifying specific conversation initiation deficits in a school setting for a 10-year-old with ASD. Such scales often rely on self-report, which can be influenced by the client's insight into their own social behavior, potential social desirability bias, or difficulties with abstract self-assessment. Furthermore, a rating scale would likely yield general information about perceived skill levels rather than detailed, observable instances of specific deficits in initiating conversations within the natural school context, thereby lacking the specificity needed for targeted intervention development." },
+      { letter: "C", text: "Conducting a role-play assessment in a controlled clinical setting, where simulated conversation initiation scenarios are presented to the client, could offer valuable information regarding the client's ability to perform specific components of conversation initiation under structured conditions. However, while this method allows for precise control over antecedents and immediate feedback, it may not fully capture the complexities and nuances of initiating conversations in the dynamic, unpredictable social environment of a school. The artificiality of the clinical setting could limit the ecological validity of the findings, and the client's performance might not generalize directly to their natural peer interactions, potentially leading to an incomplete or inaccurate understanding of their functional deficits in the target environment." },
+      { letter: "D", text: "Reviewing existing educational records, such as Individualized Education Program (IEP) documents, teacher reports, or previous social-emotional assessments, could provide historical context and anecdotal information regarding the client's social skills. While this method is time-efficient and can offer valuable background, it is unlikely to provide the specific, current, and observable data needed to precisely identify specific conversation initiation deficits in real-time within the school setting. Such records often contain summary statements or general observations rather than detailed behavioral descriptions of initiating conversations, and they may not reflect the client's current skill levels or the specific environmental variables influencing their behavior, thus limiting their utility for targeted intervention planning." }
     ],
     correctAnswer: "A",
     rationale: "Direct observation in the natural environment (school) provides the most ecologically valid data regarding the client's actual social skill deficits, specifically conversation initiation with peers. This method allows for the identification of specific antecedents and consequences in the context where the behavior is problematic. Administering rating scales (B) provides subjective information and may not pinpoint specific skill deficits, while role-play (C) lacks ecological validity and may not generalize to real-world settings. Reviewing past records (D) offers historical data but doesn't provide current, direct information on skill deficits or their functional context."
@@ -2381,22 +2237,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A behavior analyst is evaluating the effectiveness of an Augmentative and Alternative Communication (AAC) device for a non-verbal client. The client has been using the device for several months, and the team wants to determine if it is meeting the client's communication needs and facilitating functional communication.",
     question: "When evaluating the effectiveness of an AAC device, which of the following is the most important factor to consider?",
     choices: [
-      {
-        letter: "D",
-        text: "The aesthetic appeal and size of the device."
-      },
-      {
-        letter: "A",
-        text: "The client's ability to effectively communicate wants, needs, and information using the device in various environments."
-      },
-      {
-        letter: "B",
-        text: "The cost of the device and its long-term durability."
-      },
-      {
-        letter: "C",
-        text: "The number of pre-programmed messages available on the device."
-      }
+      { letter: "A", text: "The most critical factor in evaluating the effectiveness of an Augmentative and Alternative Communication (AAC) device is to systematically assess the extent to which the client's functional communication skills have improved, specifically observing and quantifying an increase in the initiation of communicative acts, the diversity of communicative functions expressed (e.g., requesting, protesting, commenting), and the overall reduction in challenging behaviors that previously served as communicative surrogates. This assessment should be conducted across various settings and communication partners to ensure generalization and maintenance of newly acquired communication topographies, thereby directly correlating device use with enhanced communicative independence and social interaction. Furthermore, it is imperative to evaluate the client's proficiency in operating the device, including speed, accuracy, and independent navigation, as these operational efficiencies directly impact the device's utility as a functional communication tool." },
+      { letter: "B", text: "When evaluating the effectiveness of an Augmentative and Alternative Communication (AAC) device, considering the cost of the device and its long-term durability is a significant practical consideration, particularly for ensuring sustained access to communication support. While not directly measuring the device's impact on communication, these factors influence the feasibility of continuous implementation and replacement. A device that is prohibitively expensive or frequently requires repairs may create barriers to consistent use, potentially disrupting the client's communication progress. Therefore, from a programmatic and sustainability perspective, assessing whether the device's operational lifespan and financial burden are manageable for the client and their support system is an important secondary factor, as it indirectly impacts the device's overall utility and accessibility over time." },
+      { letter: "C", text: "The number of pre-programmed messages available on an Augmentative and Alternative Communication (AAC) device is a relevant consideration when initially selecting a device, as it can influence the breadth of communicative opportunities. However, in evaluating the device's ongoing effectiveness, the sheer quantity of messages is less critical than the functional relevance and accessibility of those messages to the client's daily communicative needs. A device with numerous pre-programmed messages that are not frequently used or are difficult for the client to locate and activate effectively will not be as impactful as a device with fewer, but highly functional and easily accessible, messages. The focus should be on whether the available vocabulary facilitates spontaneous communication, allows for message generation, and supports the client's ability to express a wide range of communicative intents, rather than simply the total count of stored messages." },
+      { letter: "D", text: "When evaluating the effectiveness of an Augmentative and Alternative Communication (AAC) device for a client, the most important factor to consider is the extent to which the device's design, including its aesthetic appeal and physical size, promotes consistent and independent use by the client across various environments and communicative demands. A device that is visually appealing and appropriately sized for the client's physical capabilities and social contexts is more likely to be accepted and utilized as a functional communication tool, thereby directly influencing communication outcomes. A device that is too cumbersome, overtly stigmatizing, or difficult to manipulate will impede client engagement and reduce the likelihood of sustained use, regardless of its technological capabilities. Therefore, the device's user-friendliness and integration into the client's daily life, significantly influenced by its aesthetic and size, are paramount for achieving effective communication." }
     ],
     correctAnswer: 'D',
     rationale: "The most important factor when evaluating the effectiveness of an AAC device is whether it enables the client to effectively communicate their wants, needs, and information across different settings. This directly addresses the primary function of an AAC system. The cost and durability (B) are practical considerations but not the primary measure of communicative effectiveness. The number of pre-programmed messages (C) might contribute to functionality but doesn't guarantee effective communication. The aesthetic appeal and size (D) are secondary considerations related to usability and acceptance, not the core communicative outcome."
@@ -2411,22 +2255,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA is considering using video modeling to teach a 7-year-old client with autism spectrum disorder a complex social skill (e.g., initiating a game with peers). The client has a history of enjoying watching videos and imitating actions from them, but also has a limited attention span for tasks not directly engaging them. The BCBA is in the initial assessment phase to determine the most effective and ethical approach.",
     question: "Given the client's characteristics, which of the following considerations is MOST crucial during the assessment phase for determining the suitability of video modeling?",
     choices: [
-      {
-        letter: "A",
-        text: "Assessing the client's ability to attend to and discriminate relevant cues within a video model, and their current imitative repertoire."
-      },
-      {
-        letter: "B",
-        text: "Determining the availability of high-quality video recording equipment and editing software."
-      },
-      {
-        letter: "C",
-        text: "Evaluating the parental preference for video-based interventions versus in-person role-playing."
-      },
-      {
-        letter: "D",
-        text: "Analyzing the cost-effectiveness of video modeling compared to traditional discrete trial training (DTT)."
-      }
+      { letter: "A", text: "The BCBA's immediate priority should be to conduct a comprehensive functional assessment of the client's current skill repertoire related to social initiation, including their ability to attend to and discriminate relevant social cues, their current imitation skills, and any potential challenging behaviors that might interfere with learning or generalization. This assessment would also involve evaluating their baseline performance of the target skill in naturalistic settings, identifying potential reinforcers for skill acquisition, and determining the client's preferred video content and viewing habits to ensure the video modeling intervention is tailored to their individual needs and maximizes engagement and learning outcomes. This foundational assessment is critical for designing an effective and ethical intervention plan." },
+      { letter: "B", text: "While access to high-quality equipment is beneficial for producing clear and engaging video models, the BCBA's initial focus should not be on the logistical aspects of video production. High-quality video recording equipment and editing software are tools to implement an intervention, not a prerequisite for determining the intervention's appropriateness or effectiveness. The core principles of video modeling can often be applied with readily available technology, and prioritizing equipment acquisition over a thorough client assessment might lead to an intervention that, while technically sophisticated, is not functionally relevant or effective for the client's specific learning needs and behavioral profile. Resource availability can be addressed once the intervention's suitability is established." },
+      { letter: "C", text: "Although parental preference is an important consideration for fostering collaboration and ensuring treatment integrity, it should not be the primary determinant of the initial assessment phase for intervention selection. The BCBA's ethical responsibility is to recommend evidence-based practices that are most likely to be effective for the client, based on their individual learning characteristics and the principles of applied behavior analysis. While parental input on preferred intervention modalities can inform the implementation strategy, the initial assessment must objectively evaluate the client's behavioral repertoire and learning history to determine the most empirically supported approach. Parental preferences can then be integrated into the chosen intervention's design as appropriate." },
+      { letter: "D", text: "Analyzing the cost-effectiveness of video modeling versus traditional discrete trial training (DTT) is a valuable consideration for long-term planning and resource allocation within a service delivery system, but it is not the immediate priority during the initial assessment phase for an individual client. The primary goal at this stage is to determine the most clinically effective and ethically sound intervention for the client's specific needs, given their history and learning profile. While economic factors may influence service delivery models in the future, the initial decision to utilize video modeling should be driven by its potential efficacy for the client's skill acquisition, rather than its comparative cost relative to other intervention methodologies." }
     ],
     correctAnswer: "A",
     rationale: "The most crucial consideration during the assessment phase for video modeling is the client's prerequisite skills, specifically their ability to attend to and discriminate relevant cues in a video and their imitative repertoire. Without these foundational skills, video modeling may not be effective. While equipment, parental preference, and cost-effectiveness are practical considerations, they are secondary to the client's learning capabilities when determining the initial suitability of the intervention."
@@ -2441,22 +2273,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A behavior analyst is working with a 5-year-old child, Leo, who engages in hitting peers to gain access to preferred toys. After conducting a functional assessment, it is determined that the hitting serves a tangible function. The behavior analyst decides to implement Functional Communication Training (FCT) as an intervention.",
     question: "When implementing FCT for Leo, what is the most critical component to ensure the effectiveness of the intervention?",
     choices: [
-      {
-        letter: "B",
-        text: "Teaching Leo to say 'No' when another child takes his toy, followed by peer mediation."
-      },
-      {
-        letter: "C",
-        text: "Implementing a token economy where Leo earns tokens for playing nicely, which can be exchanged for toys later."
-      },
-      {
-        letter: "D",
-        text: "Using a visual schedule to indicate when it is Leo's turn to play with specific toys."
-      },
-      {
-        letter: "A",
-        text: "Prompting Leo to use a communicative response (e.g., 'May I have that?') and immediately providing the preferred toy."
-      }
+      { letter: "A", text: "Prompting Leo to use a communicative response (e.g., 'May I have that?') immediately prior to an instance of hitting, thereby facilitating the acquisition of a more appropriate, functionally equivalent behavior. This involves providing clear, consistent prompts across various relevant contexts, ensuring that Leo has ample opportunities to practice the desired communicative response and that the prompts are systematically faded as he gains proficiency. The goal is to establish a strong association between the prompt, the communicative response, and the subsequent access to the preferred toy, ultimately increasing the likelihood of independent communication." },
+      { letter: "B", text: "Teaching Leo to say 'My turn, please' or point to the desired toy as a functionally equivalent replacement behavior for hitting, ensuring that this communicative response is immediately and consistently reinforced with access to the preferred tangible item. This involves identifying a clear and easily discriminable communicative response, providing direct instruction and ample opportunities for practice in naturalistic settings, and ensuring that the reinforcement contingency is robust enough to compete with the historical reinforcement for hitting. The success of FCT critically depends on the efficiency and reliability of reinforcement delivery for the communicative response, making it more desirable than the problem behavior." },
+      { letter: "C", text: "Implementing a token economy where Leo earns tokens for playing nicely with peers, which can be exchanged for preferred toys later. While a token economy can be a valuable component of a comprehensive behavior intervention plan, its primary mechanism is often to reinforce appropriate behaviors that may not be directly functionally equivalent to the target problem behavior. In this scenario, the token economy might encourage general prosocial behavior, but it does not directly address the immediate function of hitting (tangible access) by providing an alternative communicative means to achieve that access. Therefore, its effectiveness in directly replacing hitting with communication might be less direct than FCT." },
+      { letter: "D", text: "Using a visual schedule to indicate when it is Leo's turn to play with specific toys, thereby providing predictability and reducing the likelihood of hitting due to uncertainty or frustration. While visual schedules are highly effective for promoting independence, reducing anxiety, and establishing routines, their primary function is often antecedent-based and preventative. They may reduce the motivating operation for hitting by clarifying expectations for toy access, but they do not directly teach a functionally equivalent communicative response for requesting access when it is not Leo's scheduled turn, which is the core mechanism of FCT for a tangible function." }
     ],
     correctAnswer: 'B',
     rationale: "The most critical component of FCT is to teach and reinforce an alternative, functionally equivalent communicative response that replaces the problem behavior. In this scenario, Leo hits to gain access to toys (tangible function). Prompting a communicative request ('May I have that?') and immediately providing the toy directly addresses the function of the behavior by providing an alternative, appropriate way to achieve the same outcome. Option B teaches a response to being deprived, not a request for access. Option C is a general reinforcement system that does not directly teach a functionally equivalent communicative response. Option D is a proactive strategy that might reduce problem behavior but is not the core component of FCT."
@@ -2501,22 +2321,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A new RBT is learning to implement discrete trial training (DTT) with a client. During a supervision session, the supervisor observes the RBT consistently presenting the discriminative stimulus (SD) multiple times before allowing the client to respond, even after the client has emitted a correct response.",
     question: "Which component of discrete trial training is the RBT incorrectly implementing?",
     choices: [
-      {
-        letter: "D",
-        text: "The discriminative stimulus (SD)"
-      },
-      {
-        letter: "A",
-        text: "The inter-trial interval (ITI)"
-      },
-      {
-        letter: "B",
-        text: "The consequence"
-      },
-      {
-        letter: "C",
-        text: "The prompt"
-      }
+      { letter: "A", text: "The RBT's actions are not directly impacting the inter-trial interval (ITI). The ITI refers to the time period between the end of one trial and the presentation of the SD for the subsequent trial. While an improperly implemented SD presentation could indirectly affect the overall pace of instruction, the fundamental error described—repeatedly presenting the SD within a single trial before a response or after a correct response—does not constitute a deviation from the defined duration or structure of the inter-trial interval itself. The ITI's purpose is to allow for data recording and preparation for the next trial, which is distinct from the within-trial presentation of the SD." },
+      { letter: "B", text: "The RBT's described behavior does not indicate an incorrect implementation of the consequence component of discrete trial training. The consequence, whether reinforcement for a correct response or an extinction burst for an incorrect one, typically follows the client's emitted response. The scenario explicitly states that the RBT is presenting the discriminative stimulus multiple times *before* allowing a response or *after* a correct response, without mentioning any issues with the type, immediacy, or schedule of reinforcement or punishment delivered *after* the response. Therefore, the error lies in the antecedent arrangement rather than the consequence delivery." },
+      { letter: "C", text: "The RBT's actions are not directly related to the implementation of prompts. Prompts are supplementary antecedent stimuli that are added to the SD to increase the likelihood of a correct response. The scenario describes the RBT repeatedly presenting the discriminative stimulus itself, not adding or fading prompts. While improper prompting can certainly occur in DTT, the specific error identified—presenting the *SD* multiple times before a response or after a correct response—is a misuse of the primary discriminative stimulus, not an issue with the nature, timing, or fading of any additional prompts that might be employed." },
+      { letter: "D", text: "The RBT is incorrectly implementing the discriminative stimulus (SD) component of discrete trial training. The SD is a specific antecedent stimulus that signals the availability of reinforcement for a particular behavior. In DTT, the SD should be presented clearly and concisely, typically once per trial, to occasion the target response. Repeatedly presenting the SD multiple times within a single trial, especially after a correct response has already been emitted, violates the principle of a clear and distinct antecedent for each response opportunity. This can lead to stimulus over-selectivity, confusion for the learner, and inefficient instructional delivery, as the learner may not learn to respond to the initial presentation of the SD." }
     ],
     correctAnswer: 'D',
     rationale: "The inter-trial interval (ITI) is the brief period between the end of one trial and the presentation of the SD for the next trial. Repeatedly presenting the SD after a correct response, rather than moving to the ITI, indicates a misunderstanding of this component. The consequence is what follows the response, the prompt is an antecedent stimulus to evoke a correct response, and the SD is the stimulus that signals the availability of reinforcement for a specific response; none of these are directly impacted by the RBT's action of presenting the SD multiple times after a correct response."
@@ -2531,22 +2339,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A BCBA implemented a non-contingent reinforcement (NCR) intervention to reduce a student's off-task behavior. Data collected over three weeks showed a significant decrease in off-task behavior following the introduction of NCR. The BCBA is now reviewing the data to determine the effectiveness of the intervention.",
     question: "Based on the observed data, which conclusion about the NCR intervention is most appropriate?",
     choices: [
-      {
-        letter: "A",
-        text: "The NCR intervention was effective in reducing off-task behavior."
-      },
-      {
-        letter: "B",
-        text: "The NCR intervention should be immediately faded to promote generalization."
-      },
-      {
-        letter: "C",
-        text: "Further functional assessment is required to confirm the intervention's efficacy."
-      },
-      {
-        letter: "D",
-        text: "The student's off-task behavior was likely maintained by automatic reinforcement."
-      }
+      { letter: "A", text: "Based on the observed data, the non-contingent reinforcement (NCR) intervention appears to have been effective in reducing the student's off-task behavior. This conclusion is drawn from a clear and consistent decrease in the frequency or duration of off-task behaviors following the implementation of NCR, as evidenced by a comparison of baseline and intervention phase data. The observed reduction suggests that the non-contingent delivery of presumed reinforcers successfully competed with the reinforcing functions of off-task behavior, thereby diminishing its occurrence. Continued monitoring and data collection are warranted to ensure the maintenance of these positive behavioral changes and to inform future decisions regarding intervention adjustments." },
+      { letter: "B", text: "Based on the observed data, it is premature to conclude that the NCR intervention should be immediately faded to promote generalization. While generalization is a critical component of successful intervention, fading an intervention too rapidly without sufficient data demonstrating maintenance and generalization across settings, people, and time could lead to a resurgence of the target behavior. A more appropriate next step would involve systematically assessing the current level of behavioral reduction, ensuring stability, and then carefully planning a gradual fading process, while continuously collecting data to monitor the student's response to these adjustments and to ensure the sustained reduction of off-task behavior." },
+      { letter: "C", text: "Based on the observed data, further functional assessment is required to confirm the intervention's effectiveness and to identify the specific maintaining variables of the off-task behavior that the NCR intervention may be inadvertently addressing. Although some changes in behavior may have been noted, a comprehensive functional assessment would provide a clearer understanding of the environmental contingencies that are currently supporting the off-task behavior. This additional assessment would involve direct observation, ABC data collection, and potentially a functional analysis, which would ultimately inform the refinement of the NCR intervention or guide the selection of alternative, more targeted interventions to achieve robust and lasting behavioral change." },
+      { letter: "D", text: "Based on the observed data, it is evident that the student's off-task behavior has shown inconsistent or minimal changes, suggesting that the current non-contingent reinforcement (NCR) intervention may not be optimally addressing the maintaining variables of the target behavior. The data likely indicate either a fluctuating pattern of off-task behavior or a plateau that has not reached clinically significant levels of reduction. Therefore, a re-evaluation of the intervention parameters, including the type and schedule of non-contingent reinforcement, is warranted. It may also be beneficial to conduct a more in-depth functional assessment to ensure that the presumed reinforcer is indeed potent and that the NCR schedule is sufficiently dense to compete with the reinforcement derived from the off-task behavior itself." }
     ],
     correctAnswer: "A",
     rationale: "The correct answer is A because the scenario explicitly states that data showed a 'significant decrease' in off-task behavior 'following the introduction of NCR,' directly indicating effectiveness. Option B is incorrect because while fading is a future step, the immediate conclusion from the data is about effectiveness, not the next intervention phase. Option C is incorrect as the scenario describes data collected during implementation, not a need for further assessment to determine efficacy at this point. Option D is incorrect because the data only shows a reduction in behavior with NCR, not the function of the behavior, which would require a functional assessment."
@@ -2561,22 +2357,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A 5-year-old child with autism spectrum disorder has been using Phase I and II of PECS effectively to request desired items. The child now consistently gives a single picture to a communicative partner to request an item within 0.5 seconds of seeing it. The behavior analyst is planning to move to the next phase of PECS to teach discrimination.",
     question: "Based on this information, which of the following best describes the next phase of PECS the behavior analyst should implement?",
     choices: [
-      {
-        letter: "B",
-        text: "Phase IV: Sentence Structure"
-      },
-      {
-        letter: "C",
-        text: "Phase IIIA: Simple Discrimination"
-      },
-      {
-        letter: "D",
-        text: "Phase IIIB: Complex Discrimination"
-      },
-      {
-        letter: "A",
-        text: "Phase III: Picture Discrimination"
-      }
+      { letter: "A", text: "The behavior analyst should implement Phase III: Picture Discrimination, which is designed to teach the child to discriminate between multiple pictures to request a specific item. This phase is crucial for developing independent communication by ensuring the child can select the correct picture from an array, moving beyond simply handing over a single picture. Given the child's established proficiency in Phase I and II, demonstrated by consistently giving a single picture within 0.5 seconds of seeing it, the next logical step involves introducing the concept of choosing among different pictures to request a desired item, thereby expanding their communicative repertoire and preventing prompt dependency on a single picture presentation." },
+      { letter: "B", text: "The behavior analyst should implement Phase IV: Sentence Structure. Given that the child has mastered Phase I (How to Communicate) and Phase II (Distance and Persistence), consistently giving a single picture to a communicative partner within 0.5 seconds of seeing a desired item, the next developmental step in the PECS protocol is to teach the child to construct simple sentences using an 'I want' sentence starter. This phase builds upon the foundational requesting skills by introducing the use of an attribute picture to expand the communicative message, allowing the child to express more complex requests beyond single-item demands. This progression is essential for enhancing the child's communicative complexity and versatility." },
+      { letter: "C", text: "The behavior analyst should implement Phase IIIA: Simple Discrimination. This phase is specifically designed to teach the child to differentiate between a highly preferred item picture and a non-preferred or neutral item picture when requesting. The goal is to ensure the child selects the picture of the desired item from an array of two, thereby demonstrating discrimination skills. While the child is proficient in requesting with a single picture, the introduction of a distractor picture in Phase IIIA is a critical step in developing true picture discrimination before moving to more complex arrays or sentence structures, preventing the child from simply selecting the closest or most salient picture without regard for the represented item." },
+      { letter: "D", text: "The behavior analyst should implement Phase IIIB: Complex Discrimination. This phase focuses on teaching the child to discriminate among multiple preferred item pictures within an array, often using a three or more picture display. This stage advances the discrimination skills developed in Phase IIIA by requiring the child to select the correct picture from a larger, more challenging set of choices. While the child has mastered requesting with a single picture, introducing complex discrimination ensures that they can independently and accurately choose from a varied and expanding vocabulary, which is essential for generalization across different contexts and for developing a robust communicative repertoire prior to constructing multi-word requests." }
     ],
     correctAnswer: 'B',
     rationale: "The scenario describes the child has mastered Phase I (How to Communicate) and Phase II (Distance and Persistence) by consistently giving a single picture to a communicative partner. The next logical step in the PECS protocol is Phase III: Picture Discrimination, where the child learns to discriminate between different pictures. Phase IIIA and IIIB are sub-components of Phase III, not the overarching phase. Phase IV involves teaching sentence structure, which comes after mastering picture discrimination."
@@ -2711,22 +2495,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A behavior analyst is working with a 5-year-old child, Leo, who needs to learn to brush his teeth independently. Leo can successfully pick up his toothbrush and put toothpaste on it, but struggles with the actual brushing motion and rinsing. The analyst wants to identify the specific steps Leo can already perform and where instruction should begin.",
     question: "Which chaining assessment strategy would be most appropriate for the behavior analyst to use to determine where to start instruction?",
     choices: [
-      {
-        letter: "A",
-        text: "Backward chaining assessment"
-      },
-      {
-        letter: "B",
-        text: "Forward chaining assessment"
-      },
-      {
-        letter: "C",
-        text: "Total task assessment"
-      },
-      {
-        letter: "D",
-        text: "Task analysis with individual step prompting"
-      }
+      { letter: "A", text: "A backward chaining assessment would be most appropriate if the behavior analyst's primary goal was to teach the final steps of the tooth brushing routine first, assuming Leo would be most motivated by completing the task and experiencing the natural reinforcer of a clean mouth. This approach typically involves the behavior analyst completing all but the last step, prompting Leo to complete the final step, and then systematically adding the second-to-last step once the last step is mastered, and so on. However, this assessment strategy is more focused on the instructional sequence rather than identifying all mastered steps across the entire chain prior to intervention." },
+      { letter: "B", text: "A forward chaining assessment would be most appropriate if the behavior analyst's primary goal was to teach the initial steps of the tooth brushing routine first, building momentum from the beginning of the sequence. This strategy involves teaching the first step until mastery, then adding the second step while maintaining mastery of the first, and continuing this progression. While useful for instruction, a forward chaining assessment, when used for initial assessment, would typically only evaluate the learner's ability to perform the initial steps, potentially missing information about independent performance on later steps in the chain that Leo might already be able to perform without direct instruction." },
+      { letter: "C", text: "A total task assessment would be the most appropriate strategy for the behavior analyst to use. This method involves presenting the entire tooth brushing task to Leo and observing which steps he can perform independently, which steps require prompts, and which steps he cannot perform at all. This comprehensive assessment allows the behavior analyst to identify all mastered steps, pinpoint precisely where the breakdown in the chain occurs, and determine the specific steps that require direct instruction, thereby providing a complete picture of Leo's current skill repertoire across the entire task sequence and informing where to begin intervention effectively." },
+      { letter: "D", text: "A task analysis with individual step prompting, while a crucial component of instruction following an assessment, is not an assessment strategy itself in the context of determining where to start instruction. A task analysis is the breakdown of a complex skill into smaller, teachable steps. Individual step prompting refers to the specific antecedent interventions used during instruction to evoke a desired response. While a task analysis is a prerequisite to any chaining assessment, the act of prompting during assessment would confound the data by not truly identifying independent performance on each step, thus not accurately pinpointing where instruction should begin based on Leo's current unassisted abilities." }
     ],
     correctAnswer: "C",
     rationale: "Total task assessment involves presenting the entire chain and observing which steps the individual can perform independently and which steps require assistance. This directly addresses the goal of identifying all steps Leo can do and where instruction should begin within the sequence. Backward and forward chaining assessments are methods of teaching, not primarily assessment strategies for identifying current skill levels across the entire chain. Task analysis with individual step prompting is a teaching method, not an assessment to determine current independent performance across the full chain."
@@ -2741,22 +2513,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A behavior analyst is working with a client who engages in screaming to gain attention from caregivers. The behavior analyst teaches the client to tap the caregiver's arm and say 'excuse me' to request attention. This new response is reinforced whenever the client uses it appropriately.",
     question: "Which intervention strategy is the behavior analyst primarily implementing in this scenario?",
     choices: [
-      {
-        letter: "D",
-        text: "Response Blocking"
-      },
-      {
-        letter: "A",
-        text: "Functional Communication Training (FCT)"
-      },
-      {
-        letter: "B",
-        text: "Differential Reinforcement of Other Behavior (DRO)"
-      },
-      {
-        letter: "C",
-        text: "Extinction"
-      }
+      { letter: "A", text: "The behavior analyst is primarily implementing Functional Communication Training (FCT) by teaching the client an alternative, functionally equivalent communicative response (tapping the caregiver) to replace the maladaptive behavior of screaming for attention. This intervention aims to directly address the communicative function of the screaming by providing a more appropriate and efficient means for the client to access reinforcement (attention), thereby reducing the reliance on the problem behavior. Through FCT, the client learns to utilize a socially acceptable form of communication to achieve their desired outcome, promoting more adaptive behavior patterns and improving social interactions within their environment." },
+      { letter: "B", text: "The behavior analyst is primarily implementing Differential Reinforcement of Other Behavior (DRO) by reinforcing the absence of screaming for attention while the client is engaged in other, more appropriate behaviors. This strategy would involve setting specific intervals during which the client is reinforced if screaming does not occur, irrespective of what other behaviors are present. The focus here is on decreasing the target behavior by strengthening any behavior other than the screaming, rather than directly teaching a specific replacement behavior. While potentially effective for reducing screaming, this approach does not directly address the communicative function of the screaming in the same manner as teaching a functionally equivalent response." },
+      { letter: "C", text: "The behavior analyst is primarily implementing Extinction by withholding reinforcement for the screaming behavior, meaning that when the client screams for attention, the caregiver no longer provides the desired attention. This strategy aims to decrease the future probability of the screaming behavior by breaking the contingency between the behavior and its maintaining consequence. However, implementing extinction alone often leads to an extinction burst and does not teach the client an alternative, more appropriate way to gain attention. While extinction may be a component of a comprehensive intervention, the primary strategy described, which involves teaching a new behavior, is not solely extinction." },
+      { letter: "D", text: "The behavior analyst is primarily implementing Response Blocking by physically preventing or interrupting the screaming behavior from occurring, thereby blocking the client's ability to engage in the problem behavior to gain attention. This intervention aims to reduce the frequency and intensity of the screaming by making it physically impossible or difficult for the client to emit the response. While response blocking can be effective in immediately suppressing behavior, it does not typically teach a functionally equivalent replacement behavior. In this scenario, teaching the client to tap the caregiver as an alternative response is a distinct strategy aimed at replacing the problematic behavior with a more appropriate one, rather than simply blocking the screaming itself." }
     ],
     correctAnswer: 'D',
     rationale: "Functional Communication Training (FCT) involves teaching and reinforcing an appropriate communicative response that serves the same function as the problem behavior. In this scenario, tapping and saying 'excuse me' is taught as a replacement for screaming to gain attention, directly aligning with FCT principles. DRO involves reinforcing the absence of the target behavior for a specified period, which is not the primary strategy here. Extinction involves withholding reinforcement for a previously reinforced behavior, which may be used in conjunction with FCT but is not the intervention being primarily described. Response blocking physically prevents the individual from engaging in the problem behavior, which is not mentioned in the scenario."
@@ -2801,22 +2561,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A 10-year-old client, diagnosed with ASD, consistently interrupts peers during group activities and struggles to initiate reciprocal conversations. A BCBA is designing a social skills training program to address these deficits, focusing on teaching the client to wait for pauses in conversation and ask relevant follow-up questions. The BCBA plans to use video modeling of appropriate conversational turns, followed by role-playing opportunities with feedback.",
     question: "Which of the following intervention components is crucial to ensure the generalization and maintenance of these newly acquired conversational skills in natural settings?",
     choices: [
-      {
-        letter: "B",
-        text: "Increasing the intensity and frequency of discrete trial training sessions for conversational initiations."
-      },
-      {
-        letter: "C",
-        text: "Providing highly structured prompts and immediate tangible reinforcement for each correct conversational turn during practice."
-      },
-      {
-        letter: "D",
-        text: "Focusing solely on the client's ability to identify appropriate conversational cues from a list of examples."
-      },
-      {
-        letter: "A",
-        text: "Varying the confederates (peers and adults) and settings for role-playing, and incorporating naturalistic reinforcement contingencies."
-      }
+      { letter: "B", text: "Implementing systematic generalization programming, such as training in multiple naturalistic settings with various communication partners and reinforcing spontaneous initiations outside of structured training, is crucial to promote the transfer of conversational skills from discrete trial training to diverse social contexts and ensure their enduring use over time, thereby addressing the client's difficulties with reciprocal conversations and interruptions beyond the clinic environment and fostering more socially appropriate interactions in their everyday life." },
+      { letter: "C", text: "Gradually fading the use of contrived prompts and immediate reinforcement, while systematically introducing naturalistic social contingencies, such as peer attention and successful conversational outcomes, across a variety of settings and conversation partners to promote the transfer of learned skills beyond the training environment and ensure their sustained use in everyday interactions." },
+      { letter: "D", text: "The intervention should primarily involve directly teaching and practicing the conversational skills within highly structured, one-on-one sessions with the BCBA, emphasizing discrete trial training to ensure the client achieves mastery criteria for each component skill before moving to more complex social interactions." },
+      { letter: "A", text: "Systematically programming for generalization by varying the confederates involved in role-playing sessions, including both peers and adults, across multiple naturalistic settings relevant to the client's daily life, while also incorporating naturalistic reinforcement contingencies that are functionally related to successful conversational exchanges, will facilitate the transfer and durability of the client's newly acquired waiting and questioning skills beyond the training environment." }
     ],
     correctAnswer: 'B',
     rationale: "Option A is crucial for generalization and maintenance because varying stimuli (confederates and settings) and incorporating naturalistic reinforcement directly addresses these principles. This approach helps the client apply the skills across different people and environments and ensures the skills are reinforced by naturally occurring social consequences, promoting long-term use. Option B, increasing DTT, might build initial acquisition but doesn't inherently promote generalization to natural settings. Option C, while useful for initial skill acquisition, relies on artificial prompts and reinforcement, which can hinder generalization if not systematically faded. Option D focuses on identification rather than application, which is insufficient for functional social skill development."
@@ -2891,22 +2639,10 @@ export const tier6Pool_G: Question[] = [
     scenario: "A behavior analyst is implementing the Picture Exchange Communication System (PECS) with a non-vocal child to teach manding. The child has successfully mastered Phase I (How to Communicate) and Phase II (Distance and Persistence). The next step involves teaching the child to discriminate between two or more pictures.",
     question: "Which phase of PECS is the behavior analyst preparing to implement?",
     choices: [
-      {
-        letter: "A",
-        text: "Phase III: Picture Discrimination"
-      },
-      {
-        letter: "B",
-        text: "Phase IV: Sentence Structure"
-      },
-      {
-        letter: "C",
-        text: "Phase V: Responding to 'What do you want?'"
-      },
-      {
-        letter: "D",
-        text: "Phase VI: Commenting"
-      }
+      { letter: "A", text: "The behavior analyst is preparing to implement Phase III: Picture Discrimination, where the primary objective is to teach the learner to select the correct picture from an array of two or more, thereby acquiring the ability to specify desired items or activities and refine their communicative repertoire beyond simply requesting \"any item.\"" },
+      { letter: "B", text: "The behavior analyst will be preparing to implement Phase III of PECS, which focuses on teaching the learner to discriminate between two or more picture symbols, typically starting with a highly preferred item and a non-preferred item, eventually progressing to multiple preferred items, thereby expanding their communicative repertoire beyond simply requesting a single item to accurately selecting from a field of choices based on their current motivation and the reinforcement history associated with each symbol." },
+      { letter: "C", text: "The behavior analyst is preparing to implement Phase III, which focuses on teaching the child to discriminate between two or more picture symbols, starting with a highly preferred item and a non-preferred item, and systematically increasing the number of available pictures to ensure the child consistently selects the picture corresponding to their desired item, thereby expanding their communicative repertoire beyond a single picture exchange." },
+      { letter: "D", text: "The behavior analyst is preparing to implement Phase VI: Commenting, which involves teaching the child to use the PECS system to respond to \"What do you see?\" or \"What do you have?\" questions by selecting a picture that matches an observed item, thereby establishing the child's ability to engage in spontaneous and prompted tacting of items within their environment, moving beyond just requesting desired objects to labeling and describing, which is a critical step in developing more complex verbal behavior and social communication skills, but is not the immediate next step after mastering Phase II as described in the scenario." }
     ],
     correctAnswer: "A",
     rationale: "The scenario describes that the child has mastered Phase I and Phase II, and the next step is teaching the child to discriminate between two or more pictures. This directly corresponds to Phase III of PECS, which focuses on Picture Discrimination. Phase IV introduces sentence structure, Phase V focuses on responding to 'What do you want?', and Phase VI involves commenting, none of which align with the immediate next step described."

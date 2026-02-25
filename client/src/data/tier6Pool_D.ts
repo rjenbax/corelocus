@@ -65,10 +65,10 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is using a changing criterion design to increase a student's reading fluency. The criterion starts at 20 words per minute (WPM) and increases by 5 WPM each phase. The student consistently meets each criterion within 3 sessions before the criterion is raised.",
     question: "What feature of this data pattern most strongly demonstrates experimental control in a changing criterion design?",
     choices: [
-      { letter: "C", text: "The student meets each criterion within 3 sessions, demonstrating rapid skill acquisition." },
-      { letter: "D", text: "The student's performance at the end of the final phase is significantly higher than at the start of the first phase." },
-      { letter: "A", text: "The student's performance increases steadily across all phases, showing a positive trend." },
-      { letter: "B", text: "The student's performance closely matches each criterion level — neither substantially exceeding nor falling below it — and changes when the criterion changes." },
+      { letter: "C", text: "The student consistently meets each new, successively higher criterion level, indicating that the behavior is under the control of the changing criterion rather than extraneous variables." },
+      { letter: "D", text: "The level of the target behavior systematically changes with each stepwise change in the criterion, demonstrating a functional relationship between the intervention and the behavior." },
+      { letter: "A", text: "The student's behavior shows a clear and immediate increase from baseline to the first intervention phase, indicating the intervention's initial effectiveness." },
+      { letter: "B", text: "The student's performance remains stable across multiple baseline conditions before the intervention is introduced, establishing a reliable pre-intervention measure." }
     ],
     correctAnswer: 'D',
     rationale: "In a changing criterion design, experimental control is demonstrated when the student's performance tracks the criterion — it matches the criterion level and changes when the criterion changes. If performance consistently exceeds the criterion, it suggests the criterion is not controlling behavior. (A) shows improvement but not control. (C) shows efficiency but not control. (D) shows overall improvement but not the step-wise control that is the hallmark of this design.",
@@ -101,10 +101,10 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA conducts a study to evaluate whether a social story intervention reduces aggressive behavior in a child with ASD. The BCBA measures the frequency of aggressive behavior before and after implementing the social story.",
     question: "In this study, what is the independent variable and what is the dependent variable?",
     choices: [
-      { letter: "A", text: "Independent variable: aggressive behavior; dependent variable: the social story intervention." },
-      { letter: "B", text: "Independent variable: the social story intervention; dependent variable: the frequency of aggressive behavior." },
-      { letter: "C", text: "Independent variable: the child's diagnosis (ASD); dependent variable: the social story intervention." },
-      { letter: "D", text: "Independent variable: the frequency of aggressive behavior; dependent variable: the child's diagnosis." },
+      { letter: "A", text: "The aggressive behavior is the independent variable, while the social story intervention represents the dependent variable in this experimental design." },
+      { letter: "B", text: "The social story intervention is the independent variable, which is manipulated, and the frequency of aggressive behavior is the dependent variable, which is measured." },
+      { letter: "C", text: "The child's diagnosis of ASD serves as the independent variable, influencing the observed changes in the frequency of aggressive behavior as the dependent measure." },
+      { letter: "D", text: "The frequency of aggressive behavior is the independent variable, and the child's characteristics, such as age and diagnosis, constitute the dependent variable." }
     ],
     correctAnswer: "B",
     rationale: "The independent variable is the variable that is manipulated by the researcher — in this case, the social story intervention. The dependent variable is the behavior being measured — the frequency of aggressive behavior. (A) reverses the variables. (C) and (D) incorrectly identify the diagnosis as the independent variable.",
@@ -227,10 +227,10 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study that used an ABAB reversal design to evaluate a DRO intervention. During the study, a new teacher aide was introduced at the start of the second B phase. The behavior improved during the second B phase, but it is unclear whether the improvement was due to the DRO or the new aide.",
     question: "Which term best describes the problem with this study's internal validity?",
     choices: [
-      { letter: "D", text: "Reactivity — the participant's behavior changed because they were aware of being observed." },
-      { letter: "A", text: "Attrition — participants dropped out of the study during the second B phase." },
-      { letter: "B", text: "Confound — the new aide was introduced simultaneously with the second B phase, making it impossible to determine which variable caused the behavior change." },
-      { letter: "C", text: "Regression to the mean — the behavior naturally improved because it was at an extreme level during the second A phase." },
+      { letter: "D", text: "Reactivity occurs when the participant's behavior changes simply because they are aware of being observed, potentially influencing the intervention's perceived effectiveness." },
+      { letter: "A", text: "Attrition refers to the loss of participants from a study, which can compromise the representativeness of the sample and the generalizability of the findings." },
+      { letter: "B", text: "A confound exists when an uncontrolled extraneous variable, like the new aide, changes simultaneously with the independent variable, making causal attribution ambiguous." },
+      { letter: "C", text: "Regression to the mean suggests that extreme scores tend to move closer to the average upon retesting, which could explain behavioral improvements unrelated to the intervention." }
     ],
     correctAnswer: 'A',
     rationale: "A confound occurs when an extraneous variable changes at the same time as the independent variable, making it impossible to determine which variable caused the behavior change. The simultaneous introduction of the new aide and the second B phase is a classic confound. (A) is not described. (C) is possible but not the primary concern given the specific confound described. (D) is a different validity concern.",
@@ -425,10 +425,10 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is designing a study to evaluate whether a visual schedule reduces transition-related tantrums in a preschool classroom. The BCBA will measure the duration of tantrums during transitions before and after implementing the visual schedule.",
     question: "In this study, which variable is the independent variable?",
     choices: [
-      { letter: "C", text: "The preschool classroom setting." },
-      { letter: "D", text: "The child's age and developmental level." },
-      { letter: "A", text: "The duration of tantrums during transitions." },
-      { letter: "B", text: "The visual schedule." },
+      { letter: "C", text: "The preschool classroom setting is a contextual factor that may influence behavior but is not systematically manipulated as the independent variable." },
+      { letter: "D", text: "The child's individual characteristics, such as age or developmental level, are subject variables and not the manipulated independent variable in this experimental design." },
+      { letter: "A", text: "The duration of tantrums during transitions is the measured outcome, serving as the dependent variable that is expected to change in response to the intervention." },
+      { letter: "B", text: "The visual schedule is the independent variable, as it is the intervention being systematically introduced and manipulated to observe its effect on tantrum duration." }
     ],
     correctAnswer: 'D',
     rationale: "The independent variable is the variable that is systematically manipulated by the researcher — in this case, the visual schedule (present vs. absent). The dependent variable is the behavior being measured — the duration of tantrums. (A) is the dependent variable. (C) and (D) are extraneous variables.",
@@ -731,10 +731,10 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is using a changing criterion design to increase a student's independent work completion. The initial criterion is 5 problems per session. Each phase, the criterion increases by 2 problems. The student's performance closely matches the criterion in each phase.",
     question: "What is the primary purpose of the changing criterion design in this context?",
     choices: [
-      { letter: "D", text: "To evaluate whether the student can maintain high rates of work completion without reinforcement." },
-      { letter: "A", text: "To compare the effects of different reinforcement schedules on work completion." },
-      { letter: "B", text: "To demonstrate that the student's performance is controlled by the criterion level, providing evidence that the intervention is responsible for the behavior change." },
-      { letter: "C", text: "To establish a multiple baseline across different academic subjects." },
+      { letter: "D", text: "To evaluate whether the student can maintain high rates of work completion without reinforcement, assessing the generalization and maintenance of the target behavior." },
+      { letter: "A", text: "To demonstrate experimental control by showing that the student's behavior systematically changes as the criterion for reinforcement is progressively altered." },
+      { letter: "B", text: "To demonstrate that the student's behavior can be brought under stimulus control by introducing a novel antecedent stimulus and observing its effect on response rates." },
+      { letter: "C", text: "To establish a multiple baseline across different academic subjects, comparing the effects of the intervention on various behaviors or settings simultaneously." }
     ],
     correctAnswer: 'A',
     rationale: "The changing criterion design demonstrates experimental control by showing that the student's performance tracks the criterion level — when the criterion changes, performance changes accordingly. This provides evidence that the criterion (and the associated reinforcement contingency) is controlling behavior. (A) is the purpose of an ATD. (C) is the purpose of a multiple baseline design. (D) is a maintenance question, not the primary purpose of the changing criterion design.",
@@ -839,10 +839,10 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is reviewing a study that used a multiple baseline across participants design. The data show that Participant 1's behavior improved immediately when the intervention was introduced. Participant 2's behavior also improved slightly at the same time, even though the intervention had not yet been introduced for Participant 2.",
     question: "What is the most likely explanation for the slight improvement in Participant 2's behavior, and what does it mean for the study?",
     choices: [
-      { letter: "B", text: "Participant 2's improvement may be due to observational learning or generalization — Participant 2 may have observed Participant 1 receiving the intervention. This weakens the demonstration of experimental control for Participant 2." },
-      { letter: "C", text: "Participant 2's improvement confirms that the intervention is effective for all participants." },
-      { letter: "D", text: "Participant 2's improvement is expected and does not affect the study's internal validity." },
-      { letter: "A", text: "Participant 2's improvement is due to maturation — both participants naturally improved at the same time." },
+      { letter: "B", text: "Participant 2 may have experienced a spontaneous recovery of the target behavior, which is a return of the behavior after a period of extinction or suppression." },
+      { letter: "C", text: "Participant 2's improvement could be attributed to observational learning or vicarious reinforcement from observing Participant 1 receiving the intervention." },
+      { letter: "D", text: "Participant 2's behavior may have been influenced by a history of reinforcement for similar behaviors in other contexts, leading to generalized responding." },
+      { letter: "A", text: "Participant 2's behavior may have improved due to an unknown confounding variable that was not controlled for in the experimental design, impacting internal validity." }
     ],
     correctAnswer: 'C',
     rationale: "When participants in a multiple baseline design can observe each other, observational learning or generalization may cause behavior to change before the intervention is introduced for that participant. This weakens the demonstration of experimental control because it becomes unclear whether the intervention or observational learning caused the change. (A) is possible but less specific. (C) is incorrect — the pattern undermines experimental control. (D) is incorrect — this is a threat to internal validity.",
@@ -875,10 +875,10 @@ export const tier6Pool_D: Question[] = [
     scenario: "A BCBA is working with a client whose behavior plan is not producing the expected results. The BCBA reviews the published research and finds several studies supporting the intervention. The BCBA is uncertain whether to continue the current intervention or modify it.",
     question: "Which principle should guide the BCBA's decision-making in this situation?",
     choices: [
-      { letter: "C", text: "Use the individual client's data as the primary guide for clinical decision-making; research evidence informs the selection of interventions but does not override the client's individual response to treatment." },
+      { letter: "C", text: "Use the individual client's data as the primary determinant for clinical decision-making, adjusting the intervention based on observed progress and outcomes." },
       { letter: "D", text: "Consult with a supervisor and defer to their judgment, as the BCBA lacks sufficient experience to make this decision independently." },
-      { letter: "A", text: "Continue the current intervention because it is supported by published research, regardless of the individual client's data." },
-      { letter: "B", text: "Modify the intervention immediately because the lack of progress indicates the intervention is ineffective." },
+      { letter: "A", text: "Continue the current intervention because it is supported by published research, regardless of the individual client's specific response, prioritizing evidence-based practice over individual data." },
+      { letter: "B", text: "Modify the intervention immediately because the lack of progress indicates the intervention is ineffective, necessitating a prompt change in the treatment plan." }
     ],
     correctAnswer: 'A',
     rationale: "In behavior analysis, individual client data are the primary guide for clinical decision-making. Research evidence informs the selection of interventions, but if an intervention is not producing the expected results for a specific client, the BCBA must use the client's data to guide modifications. (A) is incorrect — research evidence does not override individual data. (B) is premature — the BCBA should first evaluate implementation fidelity, measurement accuracy, and other factors. (D) is incorrect — the BCBA has a professional obligation to use data-based decision-making.",

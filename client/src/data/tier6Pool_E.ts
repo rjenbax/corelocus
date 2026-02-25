@@ -30,10 +30,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA owns a company that sells ABA-related educational materials. A client\"s family asks the BCBA for recommendations on study guides for their child\"s RBT exam preparation.",
     question: "What is the most ethical way for the BCBA to respond?",
     choices: [
-      { letter: "A", text: "Recommend their own company\"s materials as the best option." },
-      { letter: "B", text: "Recommend a variety of materials, including their own, disclosing their ownership interest." },
-      { letter: "C", text: "Only recommend materials from other companies to avoid any appearance of conflict." },
-      { letter: "D", text: "Decline to make any recommendations, stating it\"s outside their scope." },
+      { letter: "A", text: "The BCBA should avoid recommending their own company’s products to prevent conflicts of interest and maintain professional integrity." },
+      { letter: "B", text: "The BCBA should recommend various educational materials and fully disclose their ownership interest to maintain ethical transparency." },
+      { letter: "C", text: "The BCBA can recommend their own materials if they disclose the relationship and ensure recommendations are in the client’s best interest." },
+      { letter: "D", text: "The BCBA should avoid making recommendations to prevent conflicts of interest but still provide unbiased guidance when asked." }
     ],
     correctAnswer: "B",
     rationale: "BCBAs must avoid conflicts of interest and, when unavoidable, disclose them and ensure client welfare is not compromised (BACB Ethical Code 1.07). Recommending various materials and disclosing their ownership interest (B) allows the family to make an informed decision. Option A is a direct conflict. Option C might unnecessarily limit options. Option D is unhelpful.",
@@ -49,10 +49,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is working with a non-verbal client who uses an augmentative and alternative communication (AAC) device. The school district proposes to remove the AAC device, citing cost and a belief that the client should learn to speak verbally instead.",
     question: "What is the BCBA\"s ethical responsibility regarding the client\"s communication device?",
     choices: [
-      { letter: "B", text: "Advocate for the client\"s right to effective communication, providing data on the AAC device\"s effectiveness and the client\"s progress." },
-      { letter: "C", text: "Remain neutral, as it is a school administrative decision." },
-      { letter: "D", text: "Advise the family to purchase a new, less expensive AAC device." },
-      { letter: "A", text: "Support the school\"s decision, as verbal communication is ideal." },
+      { letter: "B", text: "Suggest discussing the benefits of the AAC device while exploring additional communication supports to promote verbal skills." },
+      { letter: "C", text: "The BCBA should remain neutral because decisions about AAC device removal fall under school administrative authority." },
+      { letter: "D", text: "Recommend collaborating with the team to maintain the current AAC device to support effective communication and skill acquisition." },
+      { letter: "A", text: "Advocate for continued use of the AAC device to support effective communication and prevent skill regression in the client." }
     ],
     correctAnswer: 'C',
     rationale: "BCBAs have an ethical responsibility to advocate for the best interests of their clients, including their right to effective treatment and communication (BACB Ethical Code 2.07). Advocating with data is crucial. Option A compromises client welfare. Option C is a dereliction of duty. Option D might not address the core issue of the school\"s decision.",
@@ -106,10 +106,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is unsure about the ethical implications of a new clinical situation they are facing. They recall there is a document outlining professional conduct for behavior analysts.",
     question: "What is the primary resource the BCBA should consult for guidance?",
     choices: [
-      { letter: "A", text: "A colleague\"s opinion." },
-      { letter: "B", text: "The BACB Professional and Ethical Conduct Code for Behavior Analysts." },
-      { letter: "C", text: "Online forums for behavior analysts." },
-      { letter: "D", text: "Their personal moral compass." },
+      { letter: "A", text: "The BCBA should collaborate with a colleague to discuss the ethical dilemma and gain additional professional perspectives." },
+      { letter: "B", text: "The BCBA should consult the BACB Professional and Ethical Conduct Code for Behavior Analysts to guide ethical decision-making." },
+      { letter: "C", text: "Consulting online forums may provide opinions but does not offer authoritative guidance on ethical standards for behavior analysts." },
+      { letter: "D", text: "The BCBA should not rely solely on their personal moral compass when determining ethical guidelines in clinical practice." }
     ],
     correctAnswer: "B",
     rationale: "The BACB Professional and Ethical Conduct Code for Behavior Analysts is the primary authoritative document for ethical guidance for BCBAs (BACB, 2020). While other resources might offer perspectives, the Code is the definitive standard. Options A, C, and D are not authoritative sources.",
@@ -125,10 +125,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is supervising a new RBT who is struggling to implement a discrete trial training (DTT) program correctly. The RBT frequently misses opportunities to reinforce correct responses.",
     question: "What is the BCBA\"s immediate ethical responsibility as a supervisor?",
     choices: [
-      { letter: "B", text: "Provide immediate, constructive feedback and additional training on DTT implementation." },
-      { letter: "C", text: "Reduce the RBT\"s caseload until they improve independently." },
-      { letter: "D", text: "Ignore the errors, assuming the RBT will improve with more experience." },
-      { letter: "A", text: "Document the RBT\"s poor performance and report it to the BACB." },
+      { letter: "B", text: "The BCBA should model correct DTT procedures and coach the RBT during sessions to improve reinforcement delivery accuracy." },
+      { letter: "C", text: "The BCBA should reduce the RBT’s task complexity and provide modeling to improve reinforcement delivery during discrete trial training." },
+      { letter: "D", text: "The BCBA should provide immediate feedback and coaching to the RBT to improve reinforcement delivery during DTT sessions." },
+      { letter: "A", text: "Provide the RBT with corrective feedback and model reinforcement delivery to improve their implementation of discrete trial training." }
     ],
     correctAnswer: 'C',
     rationale: "Supervisors have an ethical responsibility to provide ongoing feedback and training to their supervisees to ensure competent service delivery (BACB Ethical Code 3.01). Option A is premature and punitive. Option C might be necessary if training fails, but not the immediate step. Option D is neglectful of supervisory duties.",
@@ -182,10 +182,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is unsure about the ethical implications of a new clinical situation they are facing. They recall there is a document outlining professional conduct for behavior analysts.",
     question: "What is the primary resource the BCBA should consult for guidance?",
     choices: [
-      { letter: "A", text: "A colleague\"s opinion." },
-      { letter: "B", text: "The BACB Professional and Ethical Conduct Code for Behavior Analysts." },
-      { letter: "C", text: "Online forums for behavior analysts." },
-      { letter: "D", text: "Their personal moral compass." },
+      { letter: "A", text: "Consulting a colleague may provide insight but does not replace reviewing the Behavior Analyst Certification Board's Professional and Ethical." },
+      { letter: "B", text: "The BCBA should consult the BACB Professional and Ethical Conduct Code for Behavior Analysts to guide ethical decision-making." },
+      { letter: "C", text: "Consulting online forums may provide opinions but does not replace the official ethical guidelines established by the BACB." },
+      { letter: "D", text: "The BCBA should not rely solely on their personal moral compass when addressing ethical dilemmas in clinical practice." }
     ],
     correctAnswer: "B",
     rationale: "The BACB Professional and Ethical Conduct Code for Behavior Analysts is the primary authoritative document for ethical guidance for BCBAs (BACB, 2020). While other resources might offer perspectives, the Code is the definitive standard. Options A, C, and D are not authoritative sources.",
@@ -220,10 +220,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is about to begin services with a new adult client who has the capacity to make their own decisions. The BCBA presents the service agreement and explains the proposed intervention plan.",
     question: "What is the essential next step to ensure ethical practice regarding informed consent?",
     choices: [
-      { letter: "B", text: "Obtain the client\"s verbal agreement to proceed." },
-      { letter: "C", text: "Ensure the client fully understands the nature of services, risks, benefits, and alternatives, and then obtain their written consent." },
-      { letter: "D", text: "Provide the service agreement for the client to review at their leisure." },
-      { letter: "A", text: "Begin services immediately, assuming the client understands." },
+      { letter: "B", text: "Obtain informed consent directly from the client after thoroughly explaining the service agreement and intervention plan." },
+      { letter: "C", text: "Confirm the client comprehensively understands the treatment plan, including risks and benefits, before obtaining their signed informed consent." },
+      { letter: "D", text: "Provide the client with the service agreement to review thoroughly and encourage questions to ensure informed consent is obtained." },
+      { letter: "A", text: "The BCBA must obtain the client's informed consent by ensuring they fully understand the service agreement before starting services." }
     ],
     correctAnswer: 'D',
     rationale: "Informed consent requires that the client (or their legal guardian) fully understands the proposed services, including risks, benefits, and alternatives, and provides voluntary written consent (BACB Ethical Code 2.05). Options A, B, and D do not meet the full requirements for informed consent.",
@@ -239,10 +239,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is working with a non-verbal client who uses an augmentative and alternative communication (AAC) device. The school district proposes to remove the AAC device, citing cost and a belief that the client should learn to speak verbally instead.",
     question: "What is the BCBA\"s ethical responsibility regarding the client\"s communication device?",
     choices: [
-      { letter: "D", text: "Advise the family to purchase a new, less expensive AAC device." },
-      { letter: "A", text: "Support the school\"s decision, as verbal communication is ideal." },
-      { letter: "B", text: "Advocate for the client\"s right to effective communication, providing data on the AAC device\"s effectiveness and the client\"s progress." },
-      { letter: "C", text: "Remain neutral, as it is a school administrative decision." },
+      { letter: "D", text: "Recommend maintaining the current AAC device to support effective communication and prevent regression in language skills." },
+      { letter: "A", text: "Support the school’s decision to remove the AAC device to encourage the client to develop verbal speech skills independently." },
+      { letter: "B", text: "Collaborate with the team to ensure the AAC device remains accessible, supporting effective communication and client dignity." },
+      { letter: "C", text: "The BCBA must advocate for the client's communication needs by supporting continued use of the AAC device based on assessment data." }
     ],
     correctAnswer: 'A',
     rationale: "BCBAs have an ethical responsibility to advocate for the best interests of their clients, including their right to effective treatment and communication (BACB Ethical Code 2.07). Advocating with data is crucial. Option A compromises client welfare. Option C is a dereliction of duty. Option D might not address the core issue of the school\"s decision.",
@@ -296,10 +296,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is unsure about the ethical implications of a new clinical situation they are facing. They recall there is a document outlining professional conduct for behavior analysts.",
     question: "What is the primary resource the BCBA should consult for guidance?",
     choices: [
-      { letter: "C", text: "Online forums for behavior analysts." },
-      { letter: "D", text: "Their personal moral compass." },
-      { letter: "A", text: "A colleague\"s opinion." },
-      { letter: "B", text: "The BACB Professional and Ethical Conduct Code for Behavior Analysts." },
+      { letter: "C", text: "Consulting online forums for behavior analysts may provide opinions but lacks the authoritative ethical guidance needed." },
+      { letter: "D", text: "The BCBA should rely on their personal moral compass to guide ethical decision-making when facing new clinical situations." },
+      { letter: "A", text: "The BCBA should consult with a colleague for informal advice but not as the primary source of ethical guidelines." },
+      { letter: "B", text: "The BCBA should consult the BACB’s Professional and Ethical Compliance Code for Behavior Analysts to clarify ethical concerns." }
     ],
     correctAnswer: 'D',
     rationale: "The BACB Professional and Ethical Conduct Code for Behavior Analysts is the primary authoritative document for ethical guidance for BCBAs (BACB, 2020). While other resources might offer perspectives, the Code is the definitive standard. Options A, C, and D are not authoritative sources.",
@@ -315,10 +315,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is working with a family from a cultural background that emphasizes collective decision-making, while the BCBA is accustomed to working with individualistic families.",
     question: "What is the most appropriate initial step for the BCBA to take to ensure cultural responsiveness?",
     choices: [
-      { letter: "C", text: "Research the family\"s cultural practices and consult with cultural mediators if available." },
-      { letter: "D", text: "Proceed with the standard intervention plan, assuming universal applicability." },
-      { letter: "A", text: "Insist on individual meetings with the primary caregiver to streamline decision-making." },
-      { letter: "B", text: "Educate the family about the importance of individual autonomy in ABA interventions." },
+      { letter: "C", text: "Gather detailed information about the family’s cultural values and decision-making processes before planning interventions." },
+      { letter: "D", text: "Implementing the standard intervention plan without cultural adaptation may overlook important family values and reduce treatment effectiveness." },
+      { letter: "A", text: "The BCBA should hold individual meetings with the primary caregiver to respect family roles and facilitate clear decision-making." },
+      { letter: "B", text: "The BCBA should avoid imposing individualistic values and instead explore the family's cultural practices and decision-making preferences." }
     ],
     correctAnswer: 'A',
     rationale: "Cultural responsiveness requires BCBAs to understand and respect cultural differences. Researching cultural practices and consulting with cultural mediators (C) demonstrates an ethical commitment to providing culturally sensitive services (BACB Ethical Code 2.02). Options A and B are culturally insensitive and may damage rapport. Option D ignores cultural context, which can lead to ineffective or harmful interventions.",
@@ -334,10 +334,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is working with a non-verbal client who uses an augmentative and alternative communication (AAC) device. The school district proposes to remove the AAC device, citing cost and a belief that the client should learn to speak verbally instead.",
     question: "What is the BCBA\"s ethical responsibility regarding the client\"s communication device?",
     choices: [
-      { letter: "A", text: "Support the school\"s decision, as verbal communication is ideal." },
-      { letter: "B", text: "Advocate for the client\"s right to effective communication, providing data on the AAC device\"s effectiveness and the client\"s progress." },
-      { letter: "C", text: "Remain neutral, as it is a school administrative decision." },
-      { letter: "D", text: "Advise the family to purchase a new, less expensive AAC device." },
+      { letter: "A", text: "Support the school’s decision to remove the AAC device despite its importance for the client’s communication and learning." },
+      { letter: "B", text: "Advocate for the client by emphasizing the AAC device’s role in supporting communication and preventing skill regression." },
+      { letter: "C", text: "The BCBA should advocate for continued use of the AAC device to support effective communication and client progress." },
+      { letter: "D", text: "Recommend maintaining the current AAC device to support effective communication and prevent skill regression in the client." }
     ],
     correctAnswer: "B",
     rationale: "BCBAs have an ethical responsibility to advocate for the best interests of their clients, including their right to effective treatment and communication (BACB Ethical Code 2.07). Advocating with data is crucial. Option A compromises client welfare. Option C is a dereliction of duty. Option D might not address the core issue of the school\"s decision.",
@@ -448,10 +448,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is collaborating with a speech-language pathologist (SLP) on a client\"s interdisciplinary team. During a team meeting, the SLP suggests an intervention that the BCBA believes is not evidence-based for the client\"s specific needs.",
     question: "What is the most ethical way for the BCBA to address this disagreement?",
     choices: [
-      { letter: "C", text: "Implement the SLP\"s suggestion to maintain team harmony." },
-      { letter: "D", text: "Report the SLP to their licensing board for suggesting a non-evidence-based intervention." },
-      { letter: "A", text: "Publicly challenge the SLP\"s suggestion during the meeting." },
-      { letter: "B", text: "Privately discuss concerns with the SLP, providing evidence-based rationales for their perspective." },
+      { letter: "C", text: "Implementing the SLP’s recommendations without discussion disregards collaborative decision-making and ethical practice standards." },
+      { letter: "D", text: "The BCBA ethically reports the SLP to their licensing board for recommending an intervention lacking empirical support." },
+      { letter: "A", text: "The BCBA should avoid publicly challenging the SLP to maintain professional collaboration and respect confidentiality." },
+      { letter: "B", text: "The BCBA should openly communicate with the SLP during a team meeting to collaboratively resolve disagreements using data." }
     ],
     correctAnswer: 'D',
     rationale: "BCBAs are expected to maintain professional relationships and resolve disagreements constructively (BACB Ethical Code 2.03). Privately discussing concerns and providing evidence-based rationales (B) is the most ethical approach. Option A is unprofessional. Option C compromises effective treatment. Option D is an extreme and premature action.",
@@ -467,10 +467,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is discussing a client\"s progress with a colleague during a lunch break in a public cafeteria. They use the client\"s first name and discuss specific behavioral challenges.",
     question: "Which ethical principle is the BCBA violating?",
     choices: [
-      { letter: "D", text: "Integrity." },
-      { letter: "A", text: "Client\"s right to effective treatment." },
-      { letter: "B", text: "Confidentiality." },
-      { letter: "C", text: "Professional boundaries." },
+      { letter: "D", text: "The BCBA demonstrates honesty and accuracy in all communications, maintaining professional integrity at all times." },
+      { letter: "A", text: "The BCBA is violating the ethical principle of client dignity by failing to prioritize the client’s rights and well-being." },
+      { letter: "B", text: "The BCBA is maintaining confidentiality by protecting client information and not disclosing it without consent." },
+      { letter: "C", text: "The BCBA maintains appropriate professional boundaries by avoiding dual relationships and conflicts of interest with the client." }
     ],
     correctAnswer: 'A',
     rationale: "Discussing client information, even using only a first name, in a public place violates the ethical principle of confidentiality (BACB Ethical Code 2.06). Client\"s right to effective treatment (A) is not directly violated here. Professional boundaries (C) and integrity (D) are broader principles, but confidentiality is the most direct violation.",
@@ -809,10 +809,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA becomes aware that a fellow BCBA is practicing outside their scope of competence, leading to ineffective and potentially harmful interventions for clients. The BCBA has attempted informal resolution, but the colleague has not changed their practice.",
     question: "What is the BCBA\"s ethical obligation now?",
     choices: [
-      { letter: "B", text: "Report the colleague to the BACB or other appropriate regulatory body." },
-      { letter: "C", text: "Advise the colleague\"s clients to seek services elsewhere." },
-      { letter: "D", text: "Discuss the issue with other colleagues to gather support." },
-      { letter: "A", text: "Continue to monitor the situation, hoping for improvement." },
+      { letter: "B", text: "The BCBA should continue providing supervision and training to the colleague to improve their competence before reporting to a regulatory body." },
+      { letter: "C", text: "Advise the colleague to seek additional training and supervision to ensure interventions are ethical and within their competence." },
+      { letter: "D", text: "The BCBA should maintain confidentiality and avoid discussing the colleague’s practice with others without proper authorization." },
+      { letter: "A", text: "The BCBA should not simply monitor the situation but take formal steps to address the colleague’s unethical practice." }
     ],
     correctAnswer: 'C',
     rationale: "When informal resolution fails for serious ethical violations that impact client welfare, the BCBA has an ethical obligation to report the colleague to the BACB or other appropriate regulatory body (BACB Ethical Code 7.02). Options A, C, and D are insufficient or inappropriate responses to a serious ethical concern.",
@@ -1018,10 +1018,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA becomes aware that a fellow BCBA is practicing outside their scope of competence, leading to ineffective and potentially harmful interventions for clients. The BCBA has attempted informal resolution, but the colleague has not changed their practice.",
     question: "What is the BCBA\"s ethical obligation now?",
     choices: [
-      { letter: "A", text: "Continue to monitor the situation, hoping for improvement." },
-      { letter: "B", text: "Report the colleague to the BACB or other appropriate regulatory body." },
-      { letter: "C", text: "Advise the colleague\"s clients to seek services elsewhere." },
-      { letter: "D", text: "Discuss the issue with other colleagues to gather support." },
+      { letter: "A", text: "Continuing to monitor without action fails to protect clients and does not meet ethical obligations to address incompetent practice." },
+      { letter: "B", text: "The BCBA should report the colleague to the BACB or relevant regulatory body to protect clients and uphold professional standards." },
+      { letter: "C", text: "Provide the colleague with formal feedback and recommend supervision or additional training to address their scope of competence concerns." },
+      { letter: "D", text: "Consulting other colleagues without first addressing the issue directly with the colleague may violate confidentiality and is not recommended." }
     ],
     correctAnswer: "B",
     rationale: "When informal resolution fails for serious ethical violations that impact client welfare, the BCBA has an ethical obligation to report the colleague to the BACB or other appropriate regulatory body (BACB Ethical Code 7.02). Options A, C, and D are insufficient or inappropriate responses to a serious ethical concern.",
@@ -1056,10 +1056,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA identifies that a client\"s current educational placement is not providing adequate support for their behavioral and academic needs, despite the BCBA\"s recommendations for increased services. The school district is resistant to providing additional resources.",
     question: "What is the most appropriate ethical action for the BCBA to take to advocate for the client?",
     choices: [
-      { letter: "C", text: "Withdraw services from the client due to the unsupportive environment." },
-      { letter: "D", text: "Publicly criticize the school district\"s policies." },
-      { letter: "A", text: "Accept the school\"s decision, as resources are limited." },
-      { letter: "B", text: "Document the inadequacy of the placement and inform the parents of their rights to pursue further action, offering support in navigating the process." },
+      { letter: "C", text: "Continuing services while collaborating with stakeholders to improve the client’s environment and support system ethically advocates for them." },
+      { letter: "D", text: "The BCBA should publicly criticize the school district to address unethical practices and advocate effectively for the client’s rights." },
+      { letter: "A", text: "Accept the school’s current plan without consulting the client’s family or team members about their needs and preferences." },
+      { letter: "B", text: "The BCBA should report concerns to the appropriate authorities rather than solely documenting and advising parents about placement issues." }
     ],
     correctAnswer: 'D',
     rationale: "BCBAs must advocate for their clients\" best interests (BACB Ethical Code 2.07). This includes informing parents of their rights and supporting them in navigating systems to obtain appropriate services. Option A compromises client welfare. Option C abandons the client. Option D is unprofessional and may harm advocacy efforts.",
@@ -1094,10 +1094,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA identifies that a client\"s current educational placement is not providing adequate support for their behavioral and academic needs, despite the BCBA\"s recommendations for increased services. The school district is resistant to providing additional resources.",
     question: "What is the most appropriate ethical action for the BCBA to take to advocate for the client?",
     choices: [
-      { letter: "A", text: "Accept the school\"s decision, as resources are limited." },
-      { letter: "B", text: "Document the inadequacy of the placement and inform the parents of their rights to pursue further action, offering support in navigating the process." },
-      { letter: "C", text: "Withdraw services from the client due to the unsupportive environment." },
-      { letter: "D", text: "Publicly criticize the school district\"s policies." },
+      { letter: "A", text: "Accept the school’s current program without question, even if it does not meet the client’s individualized needs." },
+      { letter: "B", text: "The BCBA should document placement concerns, inform parents of their rights, and provide support to navigate appropriate services." },
+      { letter: "C", text: "The BCBA should continue services while collaborating with stakeholders to improve the client's unsupportive environment ethically." },
+      { letter: "D", text: "The BCBA should avoid publicly criticizing the school district and instead address concerns through professional channels." }
     ],
     correctAnswer: "B",
     rationale: "BCBAs must advocate for their clients\" best interests (BACB Ethical Code 2.07). This includes informing parents of their rights and supporting them in navigating systems to obtain appropriate services. Option A compromises client welfare. Option C abandons the client. Option D is unprofessional and may harm advocacy efforts.",
@@ -1151,10 +1151,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is presented with a novel ethical dilemma that is not explicitly covered by a specific standard in the BACB Professional and Ethical Conduct Code. The dilemma involves balancing client autonomy with potential risks of a proposed intervention.",
     question: "Beyond consulting the specific Code, what additional ethical decision-making framework or principle should the BCBA consider to resolve this dilemma?",
     choices: [
-      { letter: "C", text: "A hierarchical ethical decision-making model that considers principles like beneficence, non-maleficence, autonomy, justice, and fidelity." },
-      { letter: "D", text: "The preferences of the funding source, as they dictate service provision." },
-      { letter: "A", text: "The \"do no harm\" principle, exclusively." },
-      { letter: "B", text: "The seven dimensions of ABA, to ensure the intervention is applied behavior analysis." },
+      { letter: "C", text: "The BCBA should apply a hierarchical ethical decision-making model weighing beneficence, non-maleficence, autonomy, justice, and fidelity principles." },
+      { letter: "D", text: "The BCBA should not prioritize the funding source's preferences over the client's best interests and ethical guidelines." },
+      { letter: "A", text: "The BCBA should apply the ethical principle of beneficence to maximize client welfare while respecting client autonomy." },
+      { letter: "B", text: "The BCBA should consider the seven dimensions of ABA to ensure the intervention maintains applied behavior analysis integrity and effectiveness." }
     ],
     correctAnswer: 'A',
     rationale: "When specific ethical standards don\"t fully cover a dilemma, BCBAs should utilize broader ethical decision-making frameworks that consider foundational principles like beneficence, non-maleficence, autonomy, justice, and fidelity (Bailey & Burch, 2016; BACB, 2020). Option A is too narrow. Option B is about the science of ABA, not ethical decision-making. Option D is an inappropriate influence on ethical decisions.",
@@ -1322,10 +1322,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA discovers that a colleague, also a BCBA, is consistently billing for services not rendered and fabricating client progress data to meet funding requirements. The colleague is a close friend, and reporting them could severely impact their career and personal life.",
     question: "What is the BCBA\"s ethical obligation regarding this discovery?",
     choices: [
-      { letter: "D", text: "Document the behavior but wait to see if it stops on its own." },
-      { letter: "A", text: "Confront the colleague privately and ask them to stop, without further action." },
-      { letter: "B", text: "Ignore the behavior to protect the friendship and avoid personal discomfort." },
-      { letter: "C", text: "Report the colleague\"s unethical conduct to the appropriate authorities (e.g., BACB, employer), prioritizing client welfare and the integrity of the profession, even if it impacts the friendship." },
+      { letter: "D", text: "Document the unethical behavior but delay reporting in hopes that the colleague will correct the misconduct independently." },
+      { letter: "A", text: "Confronting the colleague privately without reporting fails to uphold ethical obligations to protect clients and maintain professional integrity." },
+      { letter: "B", text: "Ignoring unethical behavior to protect a friendship violates the BACB Code and compromises client welfare and professional integrity." },
+      { letter: "C", text: "The BCBA should first gather all relevant evidence and consult the BACB ethics code before deciding whether to report the colleague." }
     ],
     correctAnswer: 'B',
     rationale: "BCBAs have an ethical obligation to uphold professional integrity and report ethical violations, especially when client welfare is at risk (BACB Ethical Code 1.01, 7.02). Fabricating data and billing for unrendered services are serious violations. Reporting to the appropriate authorities is necessary, despite personal discomfort. Option A is insufficient. Options B and D are unethical and negligent.",
@@ -1341,10 +1341,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA has been working with a client with severe self-injurious behavior (SIB) for several years, successfully reducing its frequency. The client\"s family now requests the BCBA to implement a novel, unproven neurofeedback intervention they read about online, believing it will further reduce SIB. The BCBA has no training or experience in neurofeedback.",
     question: "Which ethical principle should primarily guide the BCBA\"s decision-making in this situation?",
     choices: [
-      { letter: "A", text: "Client\"s right to effective treatment." },
-      { letter: "B", text: "Maintaining professional boundaries." },
-      { letter: "C", text: "Practicing within one\"s scope of competence." },
-      { letter: "D", text: "Avoiding conflicts of interest." },
+      { letter: "A", text: "The BCBA must prioritize client dignity by ensuring treatment promotes the client’s quality of life and respects their rights." },
+      { letter: "B", text: "The BCBA should maintain professional boundaries to ensure clear roles and prevent conflicts of interest during treatment." },
+      { letter: "C", text: "The BCBA should ensure they practice within their defined scope of competence to provide safe and effective treatment." },
+      { letter: "D", text: "The BCBA should prioritize client welfare by maintaining professional boundaries and avoiding conflicts of interest." }
     ],
     correctAnswer: "C",
     rationale: "The primary ethical principle here is practicing within one\"s scope of competence (BACB Ethical Code 2.01). The BCBA has no training in neurofeedback, making it unethical to implement. While client\"s right to effective treatment (A) is important, it doesn\"t supersede the need for the practitioner to be competent in the intervention. Maintaining professional boundaries (B) is relevant but secondary to competence in this context. Avoiding conflicts of interest (D) is not the most direct ethical concern here.",
@@ -1360,10 +1360,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is supervising a candidate who is preparing for their certification exam. The supervisee confides in the BCBA that they are experiencing significant personal stress and anxiety, which is impacting their ability to focus on supervision tasks and client work. The supervisee requests a temporary reduction in supervision hours and client responsibilities.",
     question: "What is the BCBA supervisor\"s ethical obligation in this situation, considering both the supervisee\"s well-being and client welfare?",
     choices: [
-      { letter: "B", text: "Deny the request, emphasizing the importance of consistent client services." },
-      { letter: "C", text: "Discuss the supervisee\"s concerns, assess the potential impact on client services, and collaboratively develop a plan that prioritizes client welfare while supporting the supervisee\"s needs, potentially involving temporary adjustments or referrals for support." },
-      { letter: "D", text: "Advise the supervisee to take a complete leave of absence until their personal issues are resolved." },
-      { letter: "A", text: "Grant the request immediately to support the supervisee\"s mental health." },
+      { letter: "B", text: "Explain the importance of flexibility by adjusting supervision hours to support the supervisee’s well-being and maintain ethical practice." },
+      { letter: "C", text: "Discuss the supervisee’s current stress and collaboratively develop a plan to temporarily adjust supervision and client duties." },
+      { letter: "D", text: "Advise the supervisee to take a temporary leave of absence to prioritize personal well-being and ensure client safety during this period." },
+      { letter: "A", text: "The BCBA should assess the supervisee’s workload and stress before adjusting supervision hours to ensure client safety and learning needs." }
     ],
     correctAnswer: 'D',
     rationale: "Supervisors have an ethical responsibility to support their supervisees while prioritizing client welfare (BACB Ethical Code 3.01). This involves open communication, assessing risks to clients, and collaboratively developing a plan that may include temporary adjustments or referrals for support. Option A might compromise client services. Option B disregards the supervisee\"s well-being. Option D might be an extreme measure that is not always necessary.",
@@ -1379,10 +1379,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is working with an adult client with limited communication skills who resides in a group home. The group home staff frequently use a \"token economy\" system that involves withholding preferred activities (e.g., watching TV, going for walks) for minor infractions, even when these activities are not directly related to the infraction or part of a formal behavior plan. The BCBA observes that this system appears punitive and is not individualized.",
     question: "What is the BCBA\"s ethical obligation regarding the client\"s rights in this group home setting?",
     choices: [
-      { letter: "D", text: "Recommend the client be moved to a different group home." },
-      { letter: "A", text: "Document the observations but avoid interfering with the group home\"s established practices." },
-      { letter: "B", text: "Advocate for the client\"s right to humane treatment and least restrictive procedures, educate the staff on ethical behavior analytic practices, and collaborate to develop individualized, positive behavior support plans." },
-      { letter: "C", text: "Report the group home to regulatory authorities immediately." },
+      { letter: "D", text: "Recommend the client be moved to a different group home, as the current environment is not conducive to their well-being and ethical treatment, necessitating a change in placement." },
+      { letter: "A", text: "Initiate a collaborative discussion with group home staff to provide education on ethical treatment, client rights, and evidence-based behavioral interventions to improve care." },
+      { letter: "B", text: "Advocate for the client\'s rights by formally addressing concerns with the group home administration and developing a plan for ethical, individualized care in accordance with BACB guidelines." },
+      { letter: "C", text: "Report the group home to regulatory authorities immediately due to observed unethical practices that pose a direct threat to the client\'s safety and well-being." }
     ],
     correctAnswer: 'A',
     rationale: "BCBAs have an ethical obligation to advocate for the rights of their clients, including the right to humane treatment and least restrictive procedures (BACB Ethical Code 2.14, 2.08). This involves educating staff and collaborating to implement ethical, individualized plans. Option A is negligent. Option C might be necessary if advocacy fails, but education and collaboration are initial steps. Option D might be a last resort, not an initial ethical response.",
@@ -1417,10 +1417,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is employed by an agency that has a policy requiring them to use a specific, proprietary assessment tool that the BCBA knows is not evidence-based and provides inaccurate results. The agency threatens termination if the BCBA refuses to use it. The BCBA has documented concerns internally, but no changes have been made.",
     question: "What is the BCBA\"s ethical obligation in this situation, balancing employment and ethical practice?",
     choices: [
-      { letter: "A", text: "Comply with the agency policy to avoid termination, as long as they provide other evidence-based services." },
-      { letter: "B", text: "Resign immediately without reporting the agency, to avoid personal repercussions." },
-      { letter: "C", text: "Report the agency\"s unethical practice to the BACB and other relevant authorities, while seeking legal counsel regarding employment implications and client welfare." },
-      { letter: "D", text: "Continue to use the tool but inform clients that it is not evidence-based." },
+      { letter: "A", text: "Comply with the agency policy to avoid termination, as long as they provide other evidence-based services that do not rely on the flawed assessment tool." },
+      { letter: "B", text: "Resign immediately without reporting the agency, to avoid personal repercussions and distance themselves from unethical practices without further engagement." },
+      { letter: "C", text: "Report the agency\'s unethical practices to the appropriate regulatory bodies, such as the BACB, and seek legal counsel regarding their employment situation and ethical obligations." },
+      { letter: "D", text: "Continue to use the tool but inform clients that it is not evidence-based, thereby attempting to mitigate harm while maintaining employment within the agency." }
     ],
     correctAnswer: "C",
     rationale: "BCBAs have an ethical obligation to prioritize client welfare and evidence-based practice over employment demands (BACB Ethical Code 7.02). When internal advocacy fails, reporting the agency to the BACB and seeking legal counsel is necessary to address systemic ethical violations. Option A compromises client welfare. Option B avoids responsibility. Option D is insufficient and may still compromise client welfare.",
@@ -1436,10 +1436,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is asked to implement a highly restrictive intervention for a client with severe problem behavior. The client\"s legal guardian provides informed consent for the intervention. However, during the consent process, the BCBA observes that the guardian appears visibly distressed and repeatedly states, \"I just want the behavior to stop, whatever it takes,\" without asking clarifying questions about the intervention\"s details or alternatives.",
     question: "What ethical concern should the BCBA prioritize, and what action should they take?",
     choices: [
-      { letter: "B", text: "Prioritize the client\"s right to effective treatment; proceed with the restrictive intervention." },
-      { letter: "C", text: "Prioritize truly informed consent; pause the process, re-explain the intervention, risks, benefits, and alternatives in a supportive manner, ensuring the guardian\"s comprehension and voluntary agreement." },
-      { letter: "D", text: "Prioritize avoiding conflict; suggest a less restrictive intervention without further discussion." },
-      { letter: "A", text: "Prioritize the guardian\"s distress; proceed with the intervention as consent was given." },
+      { letter: "B", text: "Prioritize the client\'s immediate safety by implementing the restrictive intervention as requested, without further delay, to prevent severe problem behavior." },
+      { letter: "C", text: "Prioritize truly informed consent; pause the process, re-explain the intervention, risks, benefits, and alternatives in a supportive manner, ensuring the guardian\'s full comprehension and voluntary agreement." },
+      { letter: "D", text: "Prioritize avoiding conflict; suggest a less restrictive intervention without further discussion, to maintain a harmonious relationship with the requesting party." },
+      { letter: "A", text: "Prioritize the guardian\'s wishes by proceeding with the requested restrictive intervention, assuming their request implies informed consent and understanding of the procedure." }
     ],
     correctAnswer: 'D',
     rationale: "Informed consent (BACB Ethical Code 2.05) requires not just a signature, but a clear understanding and voluntary agreement. The guardian\"s distress and lack of questions suggest they may not be truly informed or acting voluntarily. The BCBA must ensure genuine informed consent by re-explaining and confirming comprehension. Option A and B disregard the quality of consent. Option D avoids the core issue of informed consent.",
@@ -1455,10 +1455,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is presented with a novel ethical dilemma that is not explicitly covered by a specific standard in the BACB Professional and Ethical Conduct Code. The dilemma involves balancing client autonomy with potential risks of a proposed intervention.",
     question: "Beyond consulting the specific Code, what additional ethical decision-making framework or principle should the BCBA consider to resolve this dilemma?",
     choices: [
-      { letter: "C", text: "A hierarchical ethical decision-making model that considers principles like beneficence, non-maleficence, autonomy, justice, and fidelity." },
-      { letter: "D", text: "The preferences of the funding source, as they dictate service provision." },
-      { letter: "A", text: "The \"do no harm\" principle, exclusively." },
-      { letter: "B", text: "The seven dimensions of ABA, to ensure the intervention is applied behavior analysis." },
+      { letter: "C", text: "A hierarchical ethical decision-making model that considers principles like beneficence, non-maleficence, autonomy, justice, and fidelity, to guide complex ethical considerations." },
+      { letter: "D", text: "The preferences of the funding source, as they dictate service provision and therefore should influence the ethical decision-making process for intervention selection." },
+      { letter: "A", text: "The \'Ethics Box\' framework, which systematically analyzes ethical dilemmas by considering relevant ethical principles, professional guidelines, and contextual factors to reach a defensible decision." },
+      { letter: "B", text: "The seven dimensions of ABA, to ensure the intervention is applied behavior analysis and adheres to its core principles, rather than focusing on ethical frameworks." }
     ],
     correctAnswer: 'A',
     rationale: "When specific ethical standards don\"t fully cover a dilemma, BCBAs should utilize broader ethical decision-making frameworks that consider foundational principles like beneficence, non-maleficence, autonomy, justice, and fidelity (Bailey & Burch, 2016; BACB, 2020). Option A is too narrow. Option B is about the science of ABA, not ethical decision-making. Option D is an inappropriate influence on ethical decisions.",
@@ -1493,10 +1493,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is asked to implement a highly restrictive intervention for a client with severe problem behavior. The client\"s legal guardian provides informed consent for the intervention. However, during the consent process, the BCBA observes that the guardian appears visibly distressed and repeatedly states, \"I just want the behavior to stop, whatever it takes,\" without asking clarifying questions about the intervention\"s details or alternatives.",
     question: "What ethical concern should the BCBA prioritize, and what action should they take?",
     choices: [
-      { letter: "A", text: "Prioritize the guardian\"s distress; proceed with the intervention as consent was given." },
-      { letter: "B", text: "Prioritize the client\"s right to effective treatment; proceed with the restrictive intervention." },
-      { letter: "C", text: "Prioritize truly informed consent; pause the process, re-explain the intervention, risks, benefits, and alternatives in a supportive manner, ensuring the guardian\"s comprehension and voluntary agreement." },
-      { letter: "D", text: "Prioritize avoiding conflict; suggest a less restrictive intervention without further discussion." },
+      { letter: "A", text: "Prioritize the guardian\'s wishes by proceeding with the requested restrictive intervention, assuming their request implies informed consent and understanding of the procedure." },
+      { letter: "B", text: "Prioritize the client\'s immediate safety by implementing the restrictive intervention as requested, without further delay, to prevent severe problem behavior." },
+      { letter: "C", text: "Prioritize truly informed consent; pause the process, re-explain the intervention, risks, benefits, and alternatives in a supportive manner, ensuring the guardian\'s full comprehension and voluntary agreement." },
+      { letter: "D", text: "Prioritize avoiding conflict; suggest a less restrictive intervention without further discussion, to maintain a harmonious relationship with the requesting party." }
     ],
     correctAnswer: "C",
     rationale: "Informed consent (BACB Ethical Code 2.05) requires not just a signature, but a clear understanding and voluntary agreement. The guardian\"s distress and lack of questions suggest they may not be truly informed or acting voluntarily. The BCBA must ensure genuine informed consent by re-explaining and confirming comprehension. Option A and B disregard the quality of consent. Option D avoids the core issue of informed consent.",
@@ -1512,10 +1512,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is supervising a candidate who is preparing for their certification exam. The supervisee confides in the BCBA that they are experiencing significant personal stress and anxiety, which is impacting their ability to focus on supervision tasks and client work. The supervisee requests a temporary reduction in supervision hours and client responsibilities.",
     question: "What is the BCBA supervisor\"s ethical obligation in this situation, considering both the supervisee\"s well-being and client welfare?",
     choices: [
-      { letter: "B", text: "Deny the request, emphasizing the importance of consistent client services." },
-      { letter: "C", text: "Discuss the supervisee\"s concerns, assess the potential impact on client services, and collaboratively develop a plan that prioritizes client welfare while supporting the supervisee\"s needs, potentially involving temporary adjustments or referrals for support." },
-      { letter: "D", text: "Advise the supervisee to take a complete leave of absence until their personal issues are resolved." },
-      { letter: "A", text: "Grant the request immediately to support the supervisee\"s mental health." },
+      { letter: "B", text: "Deny the request, emphasizing the importance of consistent client services and the supervisee\'s professional obligation to maintain their workload despite personal challenges." },
+      { letter: "C", text: "Discuss the supervisee\'s stress and anxiety, assess the potential impact on client welfare, and collaboratively develop a temporary plan that includes reduced hours and referrals for support." },
+      { letter: "D", text: "Advise the supervisee to take a complete leave of absence until their personal issues are resolved, ensuring no client services are compromised during this period of personal difficulty." },
+      { letter: "A", text: "Grant the request immediately to support the supervisee\'s well-being, without further assessment, assuming they are capable of managing their reduced responsibilities effectively." }
     ],
     correctAnswer: 'D',
     rationale: "Supervisors have an ethical responsibility to support their supervisees while prioritizing client welfare (BACB Ethical Code 3.01). This involves open communication, assessing risks to clients, and collaboratively developing a plan that may include temporary adjustments or referrals for support. Option A might compromise client services. Option B disregards the supervisee\"s well-being. Option D might be an extreme measure that is not always necessary.",
@@ -1550,10 +1550,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is presented with a novel ethical dilemma that is not explicitly covered by a specific standard in the BACB Professional and Ethical Conduct Code. The dilemma involves balancing client autonomy with potential risks of a proposed intervention.",
     question: "Beyond consulting the specific Code, what additional ethical decision-making framework or principle should the BCBA consider to resolve this dilemma?",
     choices: [
-      { letter: "D", text: "The preferences of the funding source, as they dictate service provision." },
-      { letter: "A", text: "The \"do no harm\" principle, exclusively." },
-      { letter: "B", text: "The seven dimensions of ABA, to ensure the intervention is applied behavior analysis." },
-      { letter: "C", text: "A hierarchical ethical decision-making model that considers principles like beneficence, non-maleficence, autonomy, justice, and fidelity." },
+      { letter: "D", text: "The preferences of the funding source, as they dictate service provision and therefore should influence the ethical decision-making process for intervention selection." },
+      { letter: "A", text: "The \'Ethics Box\' framework, which systematically analyzes ethical dilemmas by considering relevant ethical principles, professional guidelines, and contextual factors to reach a defensible decision." },
+      { letter: "B", text: "The seven dimensions of ABA, to ensure the intervention is applied behavior analysis and adheres to its core principles, rather than focusing on ethical frameworks." },
+      { letter: "C", text: "A hierarchical ethical decision-making model that considers principles like beneficence, non-maleficence, autonomy, justice, and fidelity, to guide complex ethical considerations." }
     ],
     correctAnswer: 'B',
     rationale: "When specific ethical standards don\"t fully cover a dilemma, BCBAs should utilize broader ethical decision-making frameworks that consider foundational principles like beneficence, non-maleficence, autonomy, justice, and fidelity (Bailey & Burch, 2016; BACB, 2020). Option A is too narrow. Option B is about the science of ABA, not ethical decision-making. Option D is an inappropriate influence on ethical decisions.",
@@ -1607,10 +1607,10 @@ export const tier6Pool_E: Question[] = [
     scenario: "A BCBA is asked to implement a highly restrictive intervention for a client with severe problem behavior. The client\"s legal guardian provides informed consent for the intervention. However, during the consent process, the BCBA observes that the guardian appears visibly distressed and repeatedly states, \"I just want the behavior to stop, whatever it takes,\" without asking clarifying questions about the intervention\"s details or alternatives.",
     question: "What ethical concern should the BCBA prioritize, and what action should they take?",
     choices: [
-      { letter: "C", text: "Prioritize truly informed consent; pause the process, re-explain the intervention, risks, benefits, and alternatives in a supportive manner, ensuring the guardian\"s comprehension and voluntary agreement." },
-      { letter: "D", text: "Prioritize avoiding conflict; suggest a less restrictive intervention without further discussion." },
-      { letter: "A", text: "Prioritize the guardian\"s distress; proceed with the intervention as consent was given." },
-      { letter: "B", text: "Prioritize the client\"s right to effective treatment; proceed with the restrictive intervention." },
+      { letter: "C", text: "Prioritize truly informed consent; pause the process, re-explain the intervention, risks, benefits, and alternatives in a supportive manner, ensuring the guardian\'s full comprehension and voluntary agreement." },
+      { letter: "D", text: "Prioritize avoiding conflict; suggest a less restrictive intervention without further discussion, to maintain a harmonious relationship with the requesting party." },
+      { letter: "A", text: "Prioritize the guardian\'s wishes by proceeding with the requested restrictive intervention, assuming their request implies informed consent and understanding of the procedure." },
+      { letter: "B", text: "Prioritize the client\'s immediate safety by implementing the restrictive intervention as requested, without further delay, to prevent severe problem behavior." }
     ],
     correctAnswer: 'A',
     rationale: "Informed consent (BACB Ethical Code 2.05) requires not just a signature, but a clear understanding and voluntary agreement. The guardian\"s distress and lack of questions suggest they may not be truly informed or acting voluntarily. The BCBA must ensure genuine informed consent by re-explaining and confirming comprehension. Option A and B disregard the quality of consent. Option D avoids the core issue of informed consent.",

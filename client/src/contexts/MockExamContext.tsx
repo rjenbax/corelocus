@@ -2,6 +2,7 @@
  * MockExamContext — Tier 6 Full Mock Exam State Management
  * Separate from ExamContext (Tier 7) to avoid shared state
  * Features: timed exam, adaptive selection, domain tracking, pause/resume
+ * Persistence: in-progress exam state saved to localStorage on every answer/navigation
  */
 import React, { createContext, useContext, useReducer, useCallback, useEffect, useRef } from 'react';
 import { allQuestions } from '@/data/allQuestions';
@@ -69,6 +70,9 @@ interface MockExamContextType {
   getBloomsResults: () => { level: string; total: number; correct: number; pct: number }[];
   getMissedQuestions: () => typeof allQuestions;
   getFlaggedQuestions: () => typeof allQuestions;
+  hasInProgressExam: boolean;
+  resumeInProgressExam: () => void;
+  discardInProgressExam: () => void;
 }
 
 type MockExamAction =
@@ -83,7 +87,8 @@ type MockExamAction =
   | { type: 'RESUME' }
   | { type: 'FINISH' }
   | { type: 'RESTART' }
-  | { type: 'TICK' };
+  | { type: 'TICK' }
+  | { type: 'RESTORE'; state: MockExamState };
 
 const defaultSettings: MockExamSettings = {
   mode: 'timed',
@@ -108,6 +113,9 @@ const initialState: MockExamState = {
   startedAt: null,
   completedAt: null,
 };
+
+// localStorage key for in-progress exam state
+const IN_PROGRESS_KEY = 'corelocus_exam_inprogress_v1';
 
 // Official BCBA 6th Edition domain weights for a 175-question exam
 const BCBA_DOMAIN_WEIGHTS: Record<string, number> = {
@@ -171,6 +179,8 @@ function mockExamReducer(state: MockExamState, action: MockExamAction): MockExam
           ? action.settings.timeLimitMinutes * 60
           : Infinity,
       };
+    case 'RESTORE':
+      return action.state;
     case 'SUBMIT_ANSWER': {
       const q = state.questions.find(q => q.id === action.questionId);
       if (!q) return state;
@@ -216,12 +226,65 @@ function mockExamReducer(state: MockExamState, action: MockExamAction): MockExam
   }
 }
 
+function loadInProgressState(): MockExamState | null {
+  try {
+    const raw = localStorage.getItem(IN_PROGRESS_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as MockExamState;
+    // Only restore if it's an active, non-complete exam
+    if (!parsed.started || parsed.complete || !parsed.questions?.length) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function saveInProgressState(state: MockExamState) {
+  try {
+    if (state.started && !state.complete && state.questions.length > 0) {
+      localStorage.setItem(IN_PROGRESS_KEY, JSON.stringify(state));
+    } else {
+      localStorage.removeItem(IN_PROGRESS_KEY);
+    }
+  } catch {
+    // localStorage quota exceeded or unavailable — silently ignore
+  }
+}
+
 const MockExamContext = createContext<MockExamContextType | null>(null);
 
 export function MockExamProvider({ children, questionPool }: { children: React.ReactNode; questionPool?: typeof allQuestions }) {
   const activePool = questionPool ?? allQuestions;
   const [state, dispatch] = useReducer(mockExamReducer, initialState);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Check if there's a saved in-progress exam on mount
+  const [hasInProgressExam, setHasInProgressExam] = React.useState(() => {
+    const saved = loadInProgressState();
+    return saved !== null;
+  });
+
+  // Persist state to localStorage whenever it changes (but not on every tick to avoid performance issues)
+  const saveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => {
+    if (!state.started) return;
+    // Debounce saves to avoid writing on every timer tick (save at most every 5s)
+    if (saveTimerRef.current) clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = setTimeout(() => {
+      saveInProgressState(state);
+    }, 5000);
+    return () => { if (saveTimerRef.current) clearTimeout(saveTimerRef.current); };
+  }, [state.currentIndex, state.answers, state.flagged, state.complete, state.started]);
+
+  // Save immediately on answer submission and completion (not just debounced)
+  useEffect(() => {
+    if (state.started) {
+      saveInProgressState(state);
+      if (state.complete) {
+        setHasInProgressExam(false);
+      }
+    }
+  }, [state.answers, state.complete]);
 
   // Timer tick
   useEffect(() => {
@@ -234,7 +297,21 @@ export function MockExamProvider({ children, questionPool }: { children: React.R
   const startExam = useCallback((settings: MockExamSettings) => {
     const questions = selectQuestions(settings, activePool);
     dispatch({ type: 'START', questions, settings });
+    setHasInProgressExam(false);
   }, [activePool]);
+
+  const resumeInProgressExam = useCallback(() => {
+    const saved = loadInProgressState();
+    if (saved) {
+      dispatch({ type: 'RESTORE', state: saved });
+      setHasInProgressExam(false);
+    }
+  }, []);
+
+  const discardInProgressExam = useCallback(() => {
+    localStorage.removeItem(IN_PROGRESS_KEY);
+    setHasInProgressExam(false);
+  }, []);
 
   const submitAnswer = useCallback((questionId: number, answer: string) => {
     dispatch({ type: 'SUBMIT_ANSWER', questionId, answer });
@@ -251,7 +328,11 @@ export function MockExamProvider({ children, questionPool }: { children: React.R
   const pauseExam = useCallback(() => dispatch({ type: 'PAUSE' }), []);
   const resumeExam = useCallback(() => dispatch({ type: 'RESUME' }), []);
   const finishExam = useCallback(() => dispatch({ type: 'FINISH' }), []);
-  const restartExam = useCallback(() => dispatch({ type: 'RESTART' }), []);
+  const restartExam = useCallback(() => {
+    dispatch({ type: 'RESTART' });
+    localStorage.removeItem(IN_PROGRESS_KEY);
+    setHasInProgressExam(false);
+  }, []);
 
   const currentQuestion = state.questions[state.currentIndex] ?? null;
 
@@ -319,6 +400,9 @@ export function MockExamProvider({ children, questionPool }: { children: React.R
       finishExam, restartExam,
       getDomainResults, getPhaseResults, getBloomsResults,
       getMissedQuestions, getFlaggedQuestions,
+      hasInProgressExam,
+      resumeInProgressExam,
+      discardInProgressExam,
     }}>
       {children}
     </MockExamContext.Provider>

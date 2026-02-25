@@ -29,7 +29,7 @@ function formatTime(seconds: number): string {
 
 // ─── Mock Exam Setup / Home ───────────────────────────────────────────────────
 function MockExamHome() {
-  const { state, startExam, resumeExam, restartExam } = useMockExam();
+  const { state, startExam, resumeExam, restartExam, hasInProgressExam, resumeInProgressExam, discardInProgressExam } = useMockExam();
   const [enableTimer, setEnableTimer] = useState(true);
   const [, navigate] = useLocation();
 
@@ -38,6 +38,11 @@ function MockExamHome() {
   const totalQ = state.questions.length;
   const timeLeft = state.timeRemainingSeconds;
   const progressPct = totalQ > 0 ? Math.round((answeredCount / totalQ) * 100) : 0;
+
+  const handleResumeFromStorage = () => {
+    resumeInProgressExam();
+    navigate('/exam/question');
+  };
 
   const handleStart = () => {
     startExam({ mode: enableTimer ? 'timed' : 'standard', questionCount: 175, timeLimitMinutes: enableTimer ? 240 : 0, shuffleQuestions: false, focusDomains: [] });
@@ -58,7 +63,38 @@ function MockExamHome() {
       <h1 className="text-3xl font-bold text-gray-900 mb-1">Mock Exam</h1>
       <p className="text-gray-500 mb-8">Simulate the real BCBA certification exam experience.</p>
 
-      {/* Resume card */}
+      {/* Resume from localStorage (page reload / cross-session) */}
+      {hasInProgressExam && !hasPausedExam && (
+        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-6">
+          <div className="flex items-center gap-4 mb-4">
+            <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center">
+              <Play className="w-6 h-6 text-blue-500" />
+            </div>
+            <div>
+              <div className="font-bold text-gray-900 text-lg">Resume Your Exam</div>
+              <div className="text-gray-500 text-sm">You have a saved exam from a previous session.</div>
+            </div>
+          </div>
+          <div className="flex gap-3">
+            <button
+              onClick={handleResumeFromStorage}
+              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-colors"
+            >
+              <Play className="w-4 h-4" />
+              Resume Saved Exam
+            </button>
+            <button
+              onClick={discardInProgressExam}
+              className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-gray-200 bg-white hover:bg-gray-50 text-gray-600 font-medium transition-colors"
+            >
+              <Trash2 className="w-4 h-4" />
+              Discard
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Resume card (in-memory paused exam) */}
       {hasPausedExam && (
         <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 mb-6">
           <div className="flex items-center gap-4 mb-5">
