@@ -19,6 +19,7 @@ export interface Question {
   choices: Choice[];
   correctAnswer: string;
   rationale: string;
+  graphData?: import('./graphTypes').BehaviorGraphData;
 }
 
 export interface ExamState {

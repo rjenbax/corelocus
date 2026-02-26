@@ -13,6 +13,7 @@ import {
   AlertTriangle, Timer, Shuffle, Target, Brain, Eye
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { BehaviorGraph } from '@/components/BehaviorGraph';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import type { MockExamSettings, ExamMode } from '@/contexts/MockExamContext';
@@ -363,7 +364,12 @@ function ExamView() {
             {currentQuestion.scenario}
           </div>
         )}
-
+        {/* Behavior graph (Domain D experimental design questions) */}
+        {currentQuestion.graphData && (
+          <div className="mb-4">
+            <BehaviorGraph graph={currentQuestion.graphData} />
+          </div>
+        )}
         {/* Question */}
         <div className="text-white text-base font-medium leading-relaxed mb-5"
           dangerouslySetInnerHTML={{ __html: currentQuestion.question.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') }}
