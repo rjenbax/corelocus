@@ -2,6 +2,7 @@ export interface Choice {
   id?: number | string; // optional — present in some Tier 7 question data files
   letter: string;
   text: string;
+  rationale?: string; // per-choice explanation of why this option is correct or incorrect
 }
 
 export interface Question {
