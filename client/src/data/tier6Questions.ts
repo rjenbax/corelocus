@@ -63,13 +63,13 @@ export const tier6Questions: Tier6Question[] = [
     scenario: 'During a supervision session, a BCBA-candidate states: "I think Marcus is hitting because he feels frustrated and doesn\'t know how to express himself." The supervising BCBA wants to redirect the candidate toward a behavior-analytic conceptualization.',
     question: 'Which response by the supervising BCBA best illustrates the behavior-analytic approach to private events?',
     choices: [
-      { letter: 'A', text: '"Private events like frustration are not relevant to behavior analysis; we only focus on observable behavior."' },
-      { letter: 'B', text: '"Frustration may be a relevant private event, but it should be treated as behavior itself — subject to the same principles of learning — and we should identify the environmental variables that produce both the private event and the hitting."' },
+      { letter: 'A', text: '"Frustration may be a relevant private event, but it should be treated as behavior itself — subject to the same principles of learning — and we should identify the environmental variables that produce both the private event and the hitting."' },
+      { letter: 'B', text: '"Private events like frustration are not relevant to behavior analysis; we only focus on observable behavior."' },
       { letter: 'C', text: '"We should conduct a cognitive-behavioral assessment to measure Marcus\'s frustration tolerance before designing the intervention."' },
       { letter: 'D', text: '"The feeling of frustration is the cause of the hitting, so we need to address the underlying emotion first before targeting the behavior."' },
     ],
-    correctAnswer: 'B',
-    rationale: 'Behavior analysis does not dismiss private events; it treats them as covert behavior subject to the same environmental determinism as overt behavior. The supervising BCBA should redirect the candidate to identify environmental antecedents and consequences that control both the private event (frustration) and the overt behavior (hitting), rather than treating the private event as a mentalistic cause. Option A incorrectly dismisses private events entirely. Option C introduces a cognitive-behavioral framework outside behavior analysis. Option D commits the explanatory fiction error of using an internal state as a causal explanation.',
+    correctAnswer: 'A',
+    rationale: 'Behavior analysis does not dismiss private events; it treats them as covert behavior subject to the same environmental determinism as overt behavior. The supervising BCBA should redirect the candidate to identify environmental antecedents and consequences that control both the private event (frustration) and the overt behavior (hitting), rather than treating the private event as a mentalistic cause. Option B incorrectly dismisses private events entirely. Option C introduces a cognitive-behavioral framework outside behavior analysis. Option D commits the explanatory fiction error of using an internal state as a causal explanation.',
   },
 
   // ─────────────────────────────────────────────
@@ -86,11 +86,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'What is the most likely explanation for the resurgence of toy-throwing, and what is the most appropriate next step?',
     choices: [
       { letter: 'A', text: 'The NCR schedule has become a conditioned reinforcer for toy-throwing; the BCBA should thin the NCR schedule gradually to eliminate this pairing.' },
-      { letter: 'B', text: 'The NCR schedule may have been thinned too rapidly, reducing the rate of freely available reinforcement below the reinforcing value of toy-throwing; the BCBA should re-densify the schedule and thin more gradually while simultaneously teaching an alternative behavior.' },
+      { letter: 'B', text: 'The initial decrease was due to satiation; the BCBA should conduct a new preference assessment to identify a different reinforcer for NCR.' },
       { letter: 'C', text: 'Automatic reinforcement cannot be treated with NCR; the BCBA should switch immediately to a punishment-based procedure to suppress the behavior.' },
-      { letter: 'D', text: 'The initial decrease was due to satiation; the BCBA should conduct a new preference assessment to identify a different reinforcer for NCR.' },
+      { letter: 'D', text: 'The NCR schedule may have been thinned too rapidly, reducing the rate of freely available reinforcement below the reinforcing value of toy-throwing; the BCBA should re-densify the schedule and thin more gradually while simultaneously teaching an alternative behavior.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'D',
     rationale: 'When NCR is thinned too rapidly, the freely available reinforcement rate drops below the level needed to compete with the behavior\'s reinforcing value, causing resurgence. The appropriate response is to re-densify the schedule, establish a stable low rate of the target behavior, and then thin more gradually while concurrently building an alternative behavior that produces the same sensory reinforcement. Option A misidentifies the mechanism. Option C is incorrect — NCR is a well-established treatment for automatically reinforced behavior. Option D confuses satiation effects with schedule thinning effects.',
   },
   {
@@ -121,12 +121,12 @@ export const tier6Questions: Tier6Question[] = [
     scenario: 'A BCBA is reviewing data on a client\'s choice behavior between two concurrent schedules of reinforcement. On Schedule A (VI 30s), the client responds at a rate of 40 responses per minute. On Schedule B (VI 60s), the client responds at 20 responses per minute. The total reinforcement obtained from Schedule A is approximately twice that from Schedule B.',
     question: 'Which statement best describes this pattern in relation to the Matching Law?',
     choices: [
-      { letter: 'A', text: 'The data demonstrate undermatching because the client is allocating more than twice the responses to Schedule A relative to the reinforcement ratio.' },
-      { letter: 'B', text: 'The data demonstrate strict matching because the ratio of responses (40:20 = 2:1) equals the ratio of reinforcement rates obtained from the two schedules (2:1).' },
+      { letter: 'A', text: 'The data demonstrate strict matching because the ratio of responses (40:20 = 2:1) equals the ratio of reinforcement rates obtained from the two schedules (2:1).' },
+      { letter: 'B', text: 'The data demonstrate undermatching because the client is allocating more than twice the responses to Schedule A relative to the reinforcement ratio.' },
       { letter: 'C', text: 'The data demonstrate overmatching because the client is allocating responses disproportionately to the richer schedule.' },
       { letter: 'D', text: 'The Matching Law does not apply here because the schedules are variable-interval, not variable-ratio.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'A',
     rationale: 'The Matching Law (Herrnstein, 1961) predicts that the proportion of responses allocated to an alternative will equal the proportion of reinforcement obtained from that alternative. Here, the response ratio (40:20 = 2:1) exactly matches the reinforcement ratio (2:1), demonstrating strict matching. Undermatching would occur if the response ratio were less extreme than the reinforcement ratio. Overmatching would occur if the response ratio were more extreme. The Matching Law applies to concurrent VI schedules — in fact, it was originally derived from VI-VI concurrent schedules.',
   },
   {
@@ -140,11 +140,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'Which strategy most directly leverages the establishing operation (EO) to increase Mia\'s manding?',
     choices: [
       { letter: 'A', text: 'Provide Mia with free access to all preferred items for 30 minutes before each session to identify which items she will mand for most frequently.' },
-      { letter: 'B', text: 'Withhold access to highly preferred items before sessions and present them within Mia\'s sight but out of reach during sessions to increase their reinforcing value and evoke mands.' },
+      { letter: 'B', text: 'Conduct a stimulus preference assessment at the beginning of each session to identify the highest-preference item and use it as the sole reinforcer throughout the session.' },
       { letter: 'C', text: 'Implement a dense continuous reinforcement schedule for any vocalization to increase the overall rate of vocal behavior before shaping specific mands.' },
-      { letter: 'D', text: 'Conduct a stimulus preference assessment at the beginning of each session to identify the highest-preference item and use it as the sole reinforcer throughout the session.' },
+      { letter: 'D', text: 'Withhold access to highly preferred items before sessions and present them within Mia\'s sight but out of reach during sessions to increase their reinforcing value and evoke mands.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'D',
     rationale: 'An establishing operation (EO) increases the reinforcing effectiveness of a stimulus and evokes behavior that has previously produced that stimulus. Withholding preferred items before sessions (deprivation) increases their reinforcing value, and presenting them visibly but inaccessibly during sessions creates the motivational state that evokes manding. Option A (free access) would create an abolishing operation (AO), decreasing the reinforcing value of those items. Option C targets general vocal behavior rather than specifically leveraging the EO for manding. Option D identifies preferences but does not specifically manipulate deprivation/satiation to maximize the EO effect.',
   },
 
@@ -197,13 +197,13 @@ export const tier6Questions: Tier6Question[] = [
     scenario: 'A BCBA is training an RBT to collect interobserver agreement (IOA) data on a client\'s on-task behavior using a 10-second partial interval recording system. During a 10-minute observation, the BCBA and RBT independently record whether on-task behavior occurred in each 10-second interval. The BCBA records 45 intervals as "occurrence" and the RBT records 38 intervals as "occurrence."',
     question: 'Which IOA calculation method is most appropriate for this measurement system, and what does it specifically assess?',
     choices: [
-      { letter: 'A', text: 'Total count IOA, which compares the total number of occurrences recorded by each observer and is appropriate for frequency data.' },
-      { letter: 'B', text: 'Interval-by-interval IOA, which compares observer agreement on each individual interval and is appropriate for interval recording systems.' },
+      { letter: 'A', text: 'Interval-by-interval IOA, which compares observer agreement on each individual interval and is appropriate for interval recording systems.' },
+      { letter: 'B', text: 'Total count IOA, which compares the total number of occurrences recorded by each observer and is appropriate for frequency data.' },
       { letter: 'C', text: 'Occurrence IOA, which calculates agreement only on intervals where at least one observer recorded an occurrence, and is most appropriate when the behavior has a low rate.' },
       { letter: 'D', text: 'Non-occurrence IOA, which calculates agreement only on intervals where neither observer recorded an occurrence, and is most appropriate when the behavior has a high rate.' },
     ],
-    correctAnswer: 'B',
-    rationale: 'Interval-by-interval IOA is the standard method for interval recording systems because it assesses agreement on each individual interval, providing the most comprehensive measure of observer consistency. It is calculated by dividing the number of intervals with agreement by the total number of intervals and multiplying by 100. Total count IOA (A) is used for frequency data, not interval data. Occurrence IOA (C) is appropriate when behavior is rare (low rate) to avoid inflated agreement from non-occurrence intervals. Non-occurrence IOA (D) is appropriate when behavior is frequent. Neither C nor D is the primary recommended method for interval recording systems.',
+    correctAnswer: 'A',
+    rationale: 'Interval-by-interval IOA is the standard method for interval recording systems because it assesses agreement on each individual interval, providing the most comprehensive measure of observer consistency. It is calculated by dividing the number of intervals with agreement by the total number of intervals and multiplying by 100. Total count IOA (B) is used for frequency data, not interval data. Occurrence IOA (C) is appropriate when behavior is rare (low rate) to avoid inflated agreement from non-occurrence intervals. Non-occurrence IOA (D) is appropriate when behavior is frequent. Neither C nor D is the primary recommended method for interval recording systems.',
   },
 
   // ─────────────────────────────────────────────
@@ -220,11 +220,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'Which data pattern would provide the strongest evidence for a functional relationship between the self-management intervention and the target behaviors?',
     choices: [
       { letter: 'A', text: 'All three behaviors improve simultaneously when the intervention is introduced to the first behavior, demonstrating the broad effectiveness of the intervention.' },
-      { letter: 'B', text: 'Each behavior improves only when the intervention is directly applied to it, while the other behaviors remain at baseline levels until the intervention is introduced to them.' },
+      { letter: 'B', text: 'All three behaviors show gradual improvement across the entire study period regardless of when the intervention is introduced, demonstrating generalization.' },
       { letter: 'C', text: 'The first behavior improves substantially, the second improves moderately, and the third shows minimal improvement, demonstrating a dose-response relationship.' },
-      { letter: 'D', text: 'All three behaviors show gradual improvement across the entire study period regardless of when the intervention is introduced, demonstrating generalization.' },
+      { letter: 'D', text: 'Each behavior improves only when the intervention is directly applied to it, while the other behaviors remain at baseline levels until the intervention is introduced to them.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'D',
     rationale: 'In a multiple baseline design, the strongest evidence for a functional relationship is demonstrated when each behavior changes only when the intervention is directly applied to it, while untreated behaviors remain stable at baseline. This staggered pattern rules out threats to internal validity such as maturation, history, and spontaneous recovery. Option A (simultaneous improvement) would suggest a confound rather than the intervention\'s effect. Option C describes a dose-response pattern but does not demonstrate the staggered control that is the hallmark of multiple baseline logic. Option D (gradual improvement regardless of intervention timing) would suggest a history or maturation confound.',
   },
   {
@@ -296,12 +296,12 @@ export const tier6Questions: Tier6Question[] = [
     question: 'What is the most appropriate guidance for the BCBA to provide?',
     choices: [
       { letter: 'A', text: 'Instruct the RBT to implement the parent\'s requested procedure because parents have the right to direct their child\'s treatment.' },
-      { letter: 'B', text: 'Instruct the RBT to decline the parent\'s request, explain that new procedures must be reviewed and approved by the BCBA before implementation, and schedule a meeting with the parent to discuss appropriate evidence-based alternatives.' },
+      { letter: 'B', text: 'Transfer supervisory responsibility to the parent for this specific procedure since she is the one requesting it.' },
       { letter: 'C', text: 'Instruct the RBT to implement the procedure only if the parent signs a written consent form during the session.' },
-      { letter: 'D', text: 'Transfer supervisory responsibility to the parent for this specific procedure since she is the one requesting it.' },
+      { letter: 'D', text: 'Instruct the RBT to decline the parent\'s request, explain that new procedures must be reviewed and approved by the BCBA before implementation, and schedule a meeting with the parent to discuss appropriate evidence-based alternatives.' },
     ],
-    correctAnswer: 'B',
-    rationale: 'RBTs must only implement procedures that have been approved and trained by their supervising BCBA. The BCBA is responsible for the clinical integrity of all procedures implemented under their supervision. The RBT should decline the parent\'s request, explain the supervisory structure, and the BCBA should schedule a meeting to discuss the parent\'s concerns and identify evidence-based alternatives. Option A violates the supervisory chain and could result in harm. Option C is insufficient — a consent form does not substitute for clinical review and training. Option D is not a valid supervisory option.',
+    correctAnswer: 'D',
+    rationale: 'RBTs must only implement procedures that have been approved and trained by their supervising BCBA. The BCBA is responsible for the clinical integrity of all procedures implemented under their supervision. The RBT should decline the parent\'s request, explain the supervisory structure, and the BCBA should schedule a meeting to discuss the parent\'s concerns and identify evidence-based alternatives. Option A violates the supervisory chain and could result in harm. Option C is insufficient — a consent form does not substitute for clinical review and training. Option B is not a valid supervisory option.',
   },
 
   // ─────────────────────────────────────────────
@@ -318,11 +318,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'What is the most appropriate next step in the FBA process, and why?',
     choices: [
       { letter: 'A', text: 'Conclude the FBA and develop an attention-extinction intervention based on the indirect assessment data, since teacher and parent reports are the most ecologically valid sources of information.' },
-      { letter: 'B', text: 'Conduct additional direct observation using an ABC recording system during independent seatwork to clarify the antecedent conditions and potential consequences maintaining the outbursts, since the indirect and direct data are inconsistent.' },
-      { letter: 'C', text: 'Proceed directly to a functional analysis (FA) to experimentally test the attention hypothesis, skipping additional descriptive assessment since the indirect data are sufficient to form a testable hypothesis.' },
+      { letter: 'B', text: 'Proceed directly to a functional analysis (FA) to experimentally test the attention hypothesis, skipping additional descriptive assessment since the indirect data are sufficient to form a testable hypothesis.' },
+      { letter: 'C', text: 'Conduct additional direct observation using an ABC recording system during independent seatwork to clarify the antecedent conditions and potential consequences maintaining the outbursts, since the indirect and direct data are inconsistent.' },
       { letter: 'D', text: 'Conclude that the behavior is automatically reinforced because it occurs when the teacher is not attending, and develop a sensory extinction procedure.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'C',
     rationale: 'When indirect and direct assessment data are inconsistent, the BCBA should conduct additional descriptive assessment before drawing conclusions about function. The fact that outbursts occur most during independent seatwork when the teacher is absent could suggest escape from task demands, automatic reinforcement, or a more nuanced attention function (e.g., peer attention). Additional ABC recording during the specific antecedent conditions will clarify the maintaining variables. Option A relies solely on indirect data despite contradictory direct observation. Option C skips additional descriptive assessment prematurely. Option D draws an unsupported conclusion about automatic reinforcement.',
   },
   {
@@ -353,12 +353,12 @@ export const tier6Questions: Tier6Question[] = [
     scenario: 'A BCBA is conducting a functional analysis (FA) of a 6-year-old client\'s aggression. During the attention condition, aggression occurs at a rate of 8 responses per minute. During the escape condition, aggression occurs at 2 responses per minute. During the tangible condition, aggression occurs at 6 responses per minute. During the alone condition, aggression occurs at 0.5 responses per minute. During the control/play condition, aggression occurs at 0.2 responses per minute.',
     question: 'What is the most accurate interpretation of these FA results?',
     choices: [
-      { letter: 'A', text: 'The FA results indicate a single attention function because the attention condition produced the highest rate of aggression.' },
-      { letter: 'B', text: 'The FA results indicate a multiply-maintained function, with attention and tangible access as the primary maintaining variables, since both conditions produced substantially elevated rates compared to the control condition.' },
+      { letter: 'A', text: 'The FA results indicate a multiply-maintained function, with attention and tangible access as the primary maintaining variables, since both conditions produced substantially elevated rates compared to the control condition.' },
+      { letter: 'B', text: 'The FA results indicate a single attention function because the attention condition produced the highest rate of aggression.' },
       { letter: 'C', text: 'The FA results are inconclusive because the escape condition also showed elevated rates compared to the control condition.' },
       { letter: 'D', text: 'The FA results indicate automatic reinforcement is the primary function because aggression occurred in the alone condition.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'A',
     rationale: 'FA results are interpreted by comparing rates in each test condition to the control condition. Here, attention (8/min) and tangible (6/min) conditions both show substantially elevated rates compared to control (0.2/min), indicating both are maintaining variables. Escape (2/min) shows some elevation but is substantially lower than attention and tangible. The alone condition (0.5/min) is close to control, suggesting automatic reinforcement is not a primary function. This pattern indicates multiply-maintained aggression primarily maintained by attention and tangible access. Option A ignores the tangible condition elevation. Option C incorrectly treats the escape elevation as making results inconclusive. Option D misinterprets the alone condition data.',
   },
 
@@ -411,13 +411,13 @@ export const tier6Questions: Tier6Question[] = [
     scenario: 'A BCBA is working with a 14-year-old client, Alex, who engages in severe self-injurious behavior (SIB) maintained by automatic reinforcement. Previous interventions including NCR, DRA, and environmental enrichment have produced only modest reductions (30%) in SIB. The SIB is causing significant tissue damage and the team is considering adding a punishment component to the treatment package.',
     question: 'Which ethical consideration is most critical before implementing a punishment procedure in this case?',
     choices: [
-      { letter: 'A', text: 'Obtaining written consent from the client\'s parents or guardians, since they have the legal authority to authorize any treatment procedure.' },
-      { letter: 'B', text: 'Documenting that less restrictive, reinforcement-based procedures have been implemented with fidelity and have been insufficient to reduce the behavior to a safe level, and obtaining required approvals (e.g., human rights committee, behavior support team) before implementing the least restrictive effective punishment procedure.' },
+      { letter: 'A', text: 'Documenting that less restrictive, reinforcement-based procedures have been implemented with fidelity and have been insufficient to reduce the behavior to a safe level, and obtaining required approvals (e.g., human rights committee, behavior support team) before implementing the least restrictive effective punishment procedure.' },
+      { letter: 'B', text: 'Obtaining written consent from the client\'s parents or guardians, since they have the legal authority to authorize any treatment procedure.' },
       { letter: 'C', text: 'Selecting the most effective punishment procedure available regardless of restrictiveness, since the severity of the SIB justifies using the most powerful intervention.' },
       { letter: 'D', text: 'Ensuring that the punishment procedure is implemented consistently across all settings and caregivers before obtaining any additional approvals.' },
     ],
-    correctAnswer: 'B',
-    rationale: 'The BACB Ethics Code requires that BCBAs use the least restrictive effective procedures and that more restrictive procedures (including punishment) are only implemented after less restrictive alternatives have been tried with fidelity and found insufficient. Before implementing punishment, the BCBA must document: (1) the reinforcement-based procedures that were implemented, (2) the fidelity of implementation, (3) the insufficient outcomes, and (4) obtain required approvals from oversight bodies. Parental consent (A) is necessary but not sufficient — it does not replace the requirement for clinical justification and oversight approval. Option C violates the least restrictive principle. Option D reverses the required sequence.',
+    correctAnswer: 'A',
+    rationale: 'The BACB Ethics Code requires that BCBAs use the least restrictive effective procedures and that more restrictive procedures (including punishment) are only implemented after less restrictive alternatives have been tried with fidelity and found insufficient. Before implementing punishment, the BCBA must document: (1) the reinforcement-based procedures that were implemented, (2) the fidelity of implementation, (3) the insufficient outcomes, and (4) obtain required approvals from oversight bodies. Parental consent (B) is necessary but not sufficient — it does not replace the requirement for clinical justification and oversight approval. Option C violates the least restrictive principle. Option D reverses the required sequence.',
   },
 
   // ─────────────────────────────────────────────
@@ -434,11 +434,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'Which intervention approach is most evidence-based and appropriate for building Liam\'s independent play duration?',
     choices: [
       { letter: 'A', text: 'Implement a fixed-duration reinforcement schedule, reinforcing Liam every 10 minutes of independent play from the start of intervention to establish the target criterion immediately.' },
-      { letter: 'B', text: 'Use a systematic schedule thinning procedure, starting with a reinforcement interval slightly above Liam\'s current average (e.g., 60 seconds) and gradually increasing the interval toward the 10-minute goal as Liam meets each criterion.' },
+      { letter: 'B', text: 'Conduct a preference assessment to identify a highly preferred toy and provide Liam with that toy during independent play, relying on the toy\'s intrinsic reinforcing value to maintain play for 10 minutes.' },
       { letter: 'C', text: 'Implement extinction for attention-seeking behavior during independent play and reinforce only after 10 minutes to establish the target behavior directly.' },
-      { letter: 'D', text: 'Conduct a preference assessment to identify a highly preferred toy and provide Liam with that toy during independent play, relying on the toy\'s intrinsic reinforcing value to maintain play for 10 minutes.' },
+      { letter: 'D', text: 'Use a systematic schedule thinning procedure, starting with a reinforcement interval slightly above Liam\'s current average (e.g., 60 seconds) and gradually increasing the interval toward the 10-minute goal as Liam meets each criterion.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'D',
     rationale: 'Systematic schedule thinning (also called graduated interval building) is the evidence-based approach for building tolerance for delayed reinforcement. Starting at a criterion slightly above the client\'s current baseline (60 seconds vs. 45 seconds average) and gradually increasing the interval toward the target (10 minutes) allows for consistent success and prevents the frustration and problem behavior that would result from abruptly requiring 10 minutes. Option A sets an unreachable initial criterion. Option C uses extinction without a concurrent reinforcement procedure, which is likely to produce an extinction burst and problem behavior. Option D relies solely on the toy\'s intrinsic value without a systematic reinforcement contingency.',
   },
   {
@@ -452,12 +452,12 @@ export const tier6Questions: Tier6Question[] = [
     question: 'Which strategy is most likely to promote generalization of the mastered social skills to the natural classroom environment?',
     choices: [
       { letter: 'A', text: 'Continue practicing the social skills in the therapy room with more trials to strengthen the behavior before expecting generalization.' },
-      { letter: 'B', text: 'Train the social skills in the natural classroom environment using natural reinforcers (peer responses, teacher praise) and program common stimuli between the therapy room and classroom to facilitate transfer.' },
-      { letter: 'C', text: 'Provide the classroom teacher with a written description of the social skills and ask her to prompt the client to use them during recess.' },
+      { letter: 'B', text: 'Provide the classroom teacher with a written description of the social skills and ask her to prompt the client to use them during recess.' },
+      { letter: 'C', text: 'Train the social skills in the natural classroom environment using natural reinforcers (peer responses, teacher praise) and program common stimuli between the therapy room and classroom to facilitate transfer.' },
       { letter: 'D', text: 'Conduct a new preference assessment in the classroom to identify reinforcers that are available in that environment before attempting generalization.' },
     ],
-    correctAnswer: 'B',
-    rationale: 'Generalization failures often occur when skills are trained in a context that is too different from the natural environment. The most effective generalization strategy is to train in the natural environment using natural reinforcers and to program common stimuli between training and generalization contexts. Training in the classroom during recess with natural peer and teacher responses directly addresses the generalization deficit. Option A (more therapy room trials) will not promote generalization if the training context remains different from the target context. Option C provides a prompt but does not address the underlying generalization programming. Option D addresses reinforcer identification but not the primary generalization strategy.',
+    correctAnswer: 'C',
+    rationale: 'Generalization failures often occur when skills are trained in a context that is too different from the natural environment. The most effective generalization strategy is to train in the natural environment using natural reinforcers and to program common stimuli between training and generalization contexts. Training in the classroom during recess with natural peer and teacher responses directly addresses the generalization deficit. Option A (more therapy room trials) will not promote generalization if the training context remains different from the target context. Option B provides a prompt but does not address the underlying generalization programming. Option D addresses reinforcer identification but not the primary generalization strategy.',
   },
 
   // ─────────────────────────────────────────────
@@ -492,11 +492,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'Which performance management strategy is most appropriate for addressing Maria\'s prompting fidelity deficit?',
     choices: [
       { letter: 'A', text: 'Provide written feedback in Maria\'s performance review documenting the 65% fidelity score and set a goal of 90% fidelity for the next review period.' },
-      { letter: 'B', text: 'Conduct a behavioral skills training (BST) session specifically targeting the prompting procedure, including instruction on the wait time requirement, modeling correct implementation, rehearsal with the BCBA providing feedback, and in-vivo observation with immediate corrective feedback until Maria meets the fidelity criterion.' },
+      { letter: 'B', text: 'Reassign Maria to clients whose programs do not require prompting procedures until her skills improve.' },
       { letter: 'C', text: 'Increase the frequency of supervision observations for Maria until her prompting fidelity improves, providing written feedback after each observation.' },
-      { letter: 'D', text: 'Reassign Maria to clients whose programs do not require prompting procedures until her skills improve.' },
+      { letter: 'D', text: 'Conduct a behavioral skills training (BST) session specifically targeting the prompting procedure, including instruction on the wait time requirement, modeling correct implementation, rehearsal with the BCBA providing feedback, and in-vivo observation with immediate corrective feedback until Maria meets the fidelity criterion.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'D',
     rationale: 'Behavioral skills training (BST) — comprising instruction, modeling, rehearsal, and feedback — is the evidence-based approach for training and remediating specific skill deficits in supervisees. Maria\'s specific deficit (insufficient wait time) requires targeted skill training, not just increased observation or written feedback. BST directly addresses the skill gap through active practice and immediate corrective feedback. Option A provides feedback but no active training. Option C increases observation frequency but without the active skill-building component of BST. Option D avoids the problem rather than addressing it.',
   },
   {
@@ -510,12 +510,12 @@ export const tier6Questions: Tier6Question[] = [
     question: 'What is the most appropriate response by the BCBA?',
     choices: [
       { letter: 'A', text: 'Reassure the RBT that the safety protocols are sufficient and encourage her to continue working with the client to build her confidence.' },
-      { letter: 'B', text: 'Acknowledge the RBT\'s concerns, conduct a safety review of the current protocols, provide additional training on safe implementation and crisis procedures, assess whether the current safety plan adequately protects the RBT, and document the conversation and any protocol modifications.' },
+      { letter: 'B', text: 'Refer the RBT to the employee assistance program (EAP) for anxiety management support and continue the current supervision structure.' },
       { letter: 'C', text: 'Immediately remove the RBT from the case and assign a more experienced RBT to work with the client.' },
-      { letter: 'D', text: 'Refer the RBT to the employee assistance program (EAP) for anxiety management support and continue the current supervision structure.' },
+      { letter: 'D', text: 'Acknowledge the RBT\'s concerns, conduct a safety review of the current protocols, provide additional training on safe implementation and crisis procedures, assess whether the current safety plan adequately protects the RBT, and document the conversation and any protocol modifications.' },
     ],
-    correctAnswer: 'B',
-    rationale: 'A supervisee\'s safety concerns must be taken seriously and addressed systematically. The BCBA\'s responsibilities include ensuring that the work environment is safe for supervisees and that safety protocols are adequate. The appropriate response is to: (1) validate the RBT\'s concerns, (2) review current safety protocols, (3) provide additional training, (4) assess whether the safety plan is adequate, and (5) document the conversation. Option A dismisses the concern without investigation. Option C removes the RBT without addressing the underlying safety issues. Option D addresses the RBT\'s anxiety but does not address the potential safety protocol gaps that may be contributing to the concern.',
+    correctAnswer: 'D',
+    rationale: 'A supervisee\'s safety concerns must be taken seriously and addressed systematically. The BCBA\'s responsibilities include ensuring that the work environment is safe for supervisees and that safety protocols are adequate. The appropriate response is to: (1) validate the RBT\'s concerns, (2) review current safety protocols, (3) provide additional training, (4) assess whether the safety plan is adequate, and (5) document the conversation. Option A dismisses the concern without investigation. Option C removes the RBT without addressing the underlying safety issues. Option B addresses the RBT\'s anxiety but does not address the potential safety protocol gaps that may be contributing to the concern.',
   },
 
   // ─────────────────────────────────────────────
@@ -531,13 +531,13 @@ export const tier6Questions: Tier6Question[] = [
     scenario: 'A BCBA is explaining the difference between negative reinforcement and punishment to a group of parents during a training workshop. One parent states: "I thought taking away screen time when my child misbehaves was negative reinforcement because I\'m removing something."',
     question: 'Which response by the BCBA most accurately corrects the parent\'s misconception?',
     choices: [
-      { letter: 'A', text: '"You\'re correct — removing something is always negative reinforcement, regardless of whether the behavior increases or decreases."' },
-      { letter: 'B', text: '"Negative reinforcement involves removing an aversive stimulus contingent on behavior, which increases the future frequency of that behavior. What you\'re describing — removing screen time contingent on misbehavior — is response cost, a form of negative punishment, because you\'re removing a preferred stimulus to decrease the behavior."' },
+      { letter: 'A', text: '"Negative reinforcement involves removing an aversive stimulus contingent on behavior, which increases the future frequency of that behavior. What you\'re describing — removing screen time contingent on misbehavior — is response cost, a form of negative punishment, because you\'re removing a preferred stimulus to decrease the behavior."' },
+      { letter: 'B', text: '"You\'re correct — removing something is always negative reinforcement, regardless of whether the behavior increases or decreases."' },
       { letter: 'C', text: '"Negative reinforcement and negative punishment are essentially the same thing — both involve removing something after behavior occurs."' },
       { letter: 'D', text: '"What you\'re describing is actually positive punishment because you\'re adding a consequence (the loss of screen time) to decrease the behavior."' },
     ],
-    correctAnswer: 'B',
-    rationale: 'The critical distinction is the effect on future behavior, not whether something is added or removed. Negative reinforcement involves removing an aversive stimulus contingent on behavior, which increases the future frequency of that behavior. Response cost (a form of negative punishment) involves removing a positive reinforcer contingent on behavior, which decreases the future frequency of that behavior. The parent is describing response cost — removing screen time (a preferred stimulus) to decrease misbehavior. Option A is incorrect because the effect on behavior determines whether a procedure is reinforcement or punishment. Option C conflates negative reinforcement and negative punishment. Option D incorrectly labels the procedure as positive punishment.',
+    correctAnswer: 'A',
+    rationale: 'The critical distinction is the effect on future behavior, not whether something is added or removed. Negative reinforcement involves removing an aversive stimulus contingent on behavior, which increases the future frequency of that behavior. Response cost (a form of negative punishment) involves removing a positive reinforcer contingent on behavior, which decreases the future frequency of that behavior. The parent is describing response cost — removing screen time (a preferred stimulus) to decrease misbehavior. Option B is incorrect because the effect on behavior determines whether a procedure is reinforcement or punishment. Option C conflates negative reinforcement and negative punishment. Option D incorrectly labels the procedure as positive punishment.',
   },
   {
     id: 6027,
@@ -622,11 +622,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'How should the BCBA address the school team\'s concern while maintaining the clinical integrity of the FCT intervention?',
     choices: [
       { letter: 'A', text: 'Agree with the school team and remove the break request from the FCT program, replacing it with a non-contingent reinforcement schedule to reduce the motivation for escape.' },
-      { letter: 'B', text: 'Explain that FCT will initially honor all break requests to establish the communicative function, and then systematically thin the break schedule over time while simultaneously using demand fading to build the client\'s tolerance for academic tasks — ensuring that the client has a functional alternative to aggression while gradually increasing academic engagement.' },
-      { letter: 'C', text: 'Implement FCT only during non-academic activities initially, and introduce it during academic activities only after the client has demonstrated consistent use of the break request in easier contexts.' },
+      { letter: 'B', text: 'Implement FCT only during non-academic activities initially, and introduce it during academic activities only after the client has demonstrated consistent use of the break request in easier contexts.' },
+      { letter: 'C', text: 'Explain that FCT will initially honor all break requests to establish the communicative function, and then systematically thin the break schedule over time while simultaneously using demand fading to build the client\'s tolerance for academic tasks — ensuring that the client has a functional alternative to aggression while gradually increasing academic engagement.' },
       { letter: 'D', text: 'Reduce the number of academic demands in the client\'s schedule to decrease the motivation for escape, making FCT unnecessary.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'C',
     rationale: 'The school team\'s concern reflects a common misunderstanding about FCT. The BCBA should explain that FCT is implemented in two phases: (1) an initial phase in which all break requests are honored to establish the communicative function and reduce aggression, and (2) a thinning phase in which the break schedule is gradually thinned and demand tolerance is built through demand fading. This approach maintains the clinical integrity of FCT while addressing the school team\'s concern about academic avoidance. Option A removes the evidence-based intervention without clinical justification. Option C delays FCT implementation in the most relevant context. Option D reduces demands rather than building the client\'s tolerance.',
   },
   {
@@ -640,12 +640,12 @@ export const tier6Questions: Tier6Question[] = [
     question: 'Which additional design feature would most strengthen the internal validity of this changing criterion design?',
     choices: [
       { letter: 'A', text: 'Including a larger number of participants to increase the generalizability of the findings.' },
-      { letter: 'B', text: 'Incorporating a reversal or hold phase (maintaining a criterion level for additional sessions before advancing) to demonstrate that behavior tracks the criterion rather than simply improving over time.' },
+      { letter: 'B', text: 'Adding a social validity measure to assess whether the criterion levels were meaningful to the student and teacher.' },
       { letter: 'C', text: 'Using a longer baseline phase to establish a more stable pre-intervention level of on-task behavior.' },
-      { letter: 'D', text: 'Adding a social validity measure to assess whether the criterion levels were meaningful to the student and teacher.' },
+      { letter: 'D', text: 'Incorporating a reversal or hold phase (maintaining a criterion level for additional sessions before advancing) to demonstrate that behavior tracks the criterion rather than simply improving over time.' },
     ],
-    correctAnswer: 'B',
-    rationale: 'The primary internal validity concern in a changing criterion design is whether the behavior is truly tracking the criterion or simply improving over time due to maturation or other confounds. The strongest way to address this is to incorporate a reversal phase (returning to a previous criterion) or a hold phase (maintaining a criterion level for additional sessions before advancing). If behavior tracks the criterion — including reversals to lower criteria — this provides strong evidence that the criterion is the controlling variable. Option A addresses external validity (generalizability), not internal validity. Option C strengthens baseline stability but does not address the criterion-tracking question. Option D addresses social validity, not internal validity.',
+    correctAnswer: 'D',
+    rationale: 'The primary internal validity concern in a changing criterion design is whether the behavior is truly tracking the criterion or simply improving over time due to maturation or other confounds. The strongest way to address this is to incorporate a reversal phase (returning to a previous criterion) or a hold phase (maintaining a criterion level for additional sessions before advancing). If behavior tracks the criterion — including reversals to lower criteria — this provides strong evidence that the criterion is the controlling variable. Option A addresses external validity (generalizability), not internal validity. Option C strengthens baseline stability but does not address the criterion-tracking question. Option B addresses social validity, not internal validity.',
   },
   {
     id: 6033,
@@ -657,13 +657,13 @@ export const tier6Questions: Tier6Question[] = [
     scenario: 'A BCBA is explaining the concept of parsimony to a group of graduate students. One student asks: "Does parsimony mean we should always choose the simplest explanation, even if a more complex explanation might be more accurate?"',
     question: 'Which response best explains the role of parsimony in behavior analysis?',
     choices: [
-      { letter: 'A', text: '"Yes — parsimony means we always choose the simplest explanation, regardless of the evidence, because simpler explanations are always more accurate."' },
-      { letter: 'B', text: '"Parsimony means we should begin with the simplest, most established explanation and only move to more complex explanations when the simpler ones have been ruled out by evidence. It is a heuristic for guiding hypothesis generation, not a rule that overrides empirical data."' },
+      { letter: 'A', text: '"Parsimony means we should begin with the simplest, most established explanation and only move to more complex explanations when the simpler ones have been ruled out by evidence. It is a heuristic for guiding hypothesis generation, not a rule that overrides empirical data."' },
+      { letter: 'B', text: '"Yes — parsimony means we always choose the simplest explanation, regardless of the evidence, because simpler explanations are always more accurate."' },
       { letter: 'C', text: '"Parsimony is not relevant to behavior analysis because we rely on empirical data rather than theoretical explanations."' },
       { letter: 'D', text: '"Parsimony means we should prefer behavioral explanations over biological explanations because behavioral explanations are always simpler."' },
     ],
-    correctAnswer: 'B',
-    rationale: 'Parsimony in behavior analysis means that the simplest, most established explanation consistent with the available data should be preferred. It is a heuristic that guides hypothesis generation — directing analysts to first test simple, well-established explanations before invoking more complex ones. It does not mean ignoring evidence in favor of simplicity; if the simpler explanation is ruled out by data, a more complex explanation is warranted. Option A incorrectly states that parsimony overrides evidence. Option C incorrectly dismisses parsimony as irrelevant to behavior analysis. Option D incorrectly equates parsimony with a preference for behavioral over biological explanations.',
+    correctAnswer: 'A',
+    rationale: 'Parsimony in behavior analysis means that the simplest, most established explanation consistent with the available data should be preferred. It is a heuristic that guides hypothesis generation — directing analysts to first test simple, well-established explanations before invoking more complex ones. It does not mean ignoring evidence in favor of simplicity; if the simpler explanation is ruled out by data, a more complex explanation is warranted. Option B incorrectly states that parsimony overrides evidence. Option C incorrectly dismisses parsimony as irrelevant to behavior analysis. Option D incorrectly equates parsimony with a preference for behavioral over biological explanations.',
   },
   {
     id: 6034,
@@ -694,11 +694,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'Which sequence of BST components is most appropriate for this situation?',
     choices: [
       { letter: 'A', text: 'Rehearsal → Feedback → Instruction → Modeling, starting with practice to assess current skill level before providing instruction.' },
-      { letter: 'B', text: 'Instruction → Modeling → Rehearsal → Feedback, providing a description and rationale for the skill, demonstrating it, having clients practice with each other, and providing specific corrective feedback.' },
+      { letter: 'B', text: 'Feedback → Instruction → Modeling → Rehearsal, providing feedback on current performance first to motivate improvement.' },
       { letter: 'C', text: 'Modeling → Instruction → Feedback → Rehearsal, showing the skill first to establish a visual reference before providing verbal instruction.' },
-      { letter: 'D', text: 'Feedback → Instruction → Modeling → Rehearsal, providing feedback on current performance first to motivate improvement.' },
+      { letter: 'D', text: 'Instruction → Modeling → Rehearsal → Feedback, providing a description and rationale for the skill, demonstrating it, having clients practice with each other, and providing specific corrective feedback.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'D',
     rationale: 'Behavioral skills training (BST) follows a specific evidence-based sequence: (1) Instruction — provide a verbal description and rationale for the skill, (2) Modeling — demonstrate the skill correctly, (3) Rehearsal — have the learner practice the skill, and (4) Feedback — provide specific, immediate feedback on the rehearsal performance. This sequence ensures that learners have both a verbal understanding and a visual model of the skill before attempting to practice it. Options A, C, and D present the components in sequences that deviate from the evidence-based BST protocol and would be less effective.',
   },
   {
@@ -711,13 +711,13 @@ export const tier6Questions: Tier6Question[] = [
     scenario: 'A BCBA is designing a supervision structure for three newly hired RBTs who will be providing services to clients in a school setting. The BCBA has 20 hours per week available for supervision activities. The BACB requires a minimum of 5% supervision of total service hours. Each RBT provides 30 hours of direct service per week.',
     question: 'What is the minimum number of direct observation hours the BCBA must provide per RBT per week to meet BACB supervision requirements?',
     choices: [
-      { letter: 'A', text: '1 hour per RBT per week (3 hours total), because 5% of 30 hours = 1.5 hours, and at least 50% of supervision must be individual, requiring a minimum of 0.75 hours of individual supervision.' },
-      { letter: 'B', text: '1.5 hours per RBT per week (4.5 hours total), because 5% of 30 hours = 1.5 hours of required supervision per RBT.' },
+      { letter: 'A', text: '1.5 hours per RBT per week (4.5 hours total), because 5% of 30 hours = 1.5 hours of required supervision per RBT.' },
+      { letter: 'B', text: '1 hour per RBT per week (3 hours total), because 5% of 30 hours = 1.5 hours, and at least 50% of supervision must be individual, requiring a minimum of 0.75 hours of individual supervision.' },
       { letter: 'C', text: '2 hours per RBT per week (6 hours total), because the BACB requires a minimum of 2 hours of supervision per week regardless of service hours.' },
       { letter: 'D', text: '3 hours per RBT per week (9 hours total), because the BCBA must observe each RBT for 10% of their service hours to ensure adequate oversight.' },
     ],
-    correctAnswer: 'B',
-    rationale: 'The BACB requires a minimum of 5% of the RBT\'s total service hours to be supervised. With 30 hours of direct service per week, 5% = 1.5 hours of required supervision per RBT per week. For three RBTs, this totals 4.5 hours of supervision per week. The BCBA has 20 hours available, which is sufficient to meet this requirement. Note that the BACB also requires that at least 50% of supervision contacts be individual (one-on-one) and that supervision includes direct observation of the RBT implementing behavior-analytic services. Option A incorrectly calculates the minimum. Options C and D specify higher minimums that are not required by the BACB.',
+    correctAnswer: 'A',
+    rationale: 'The BACB requires a minimum of 5% of the RBT\'s total service hours to be supervised. With 30 hours of direct service per week, 5% = 1.5 hours of required supervision per RBT per week. For three RBTs, this totals 4.5 hours of supervision per week. The BCBA has 20 hours available, which is sufficient to meet this requirement. Note that the BACB also requires that at least 50% of supervision contacts be individual (one-on-one) and that supervision includes direct observation of the RBT implementing behavior-analytic services. Option B incorrectly calculates the minimum. Options C and D specify higher minimums that are not required by the BACB.',
   },
   {
     id: 6037,
@@ -730,12 +730,12 @@ export const tier6Questions: Tier6Question[] = [
     question: 'Based on this indirect assessment information, which hypothesis about the function of Noah\'s out-of-seat behavior is most supported, and what direct assessment should the BCBA conduct next?',
     choices: [
       { letter: 'A', text: 'Hypothesis: automatic reinforcement (sensory stimulation from walking). Next step: conduct a functional analysis with an alone condition to test the automatic reinforcement hypothesis.' },
-      { letter: 'B', text: 'Hypothesis: escape from academic demands (math worksheets are aversive due to skill deficits). Next step: conduct structured ABC observations during math class to identify the antecedent-behavior-consequence pattern and determine whether out-of-seat behavior is followed by reduced task demands.' },
+      { letter: 'B', text: 'Hypothesis: tangible access (Noah is accessing preferred items when out of seat). Next step: conduct a preference assessment to identify what tangible items Noah accesses when out of seat.' },
       { letter: 'C', text: 'Hypothesis: attention from teacher. Next step: conduct a functional analysis with an attention condition to test whether teacher attention maintains the behavior.' },
-      { letter: 'D', text: 'Hypothesis: tangible access (Noah is accessing preferred items when out of seat). Next step: conduct a preference assessment to identify what tangible items Noah accesses when out of seat.' },
+      { letter: 'D', text: 'Hypothesis: escape from academic demands (math worksheets are aversive due to skill deficits). Next step: conduct structured ABC observations during math class to identify the antecedent-behavior-consequence pattern and determine whether out-of-seat behavior is followed by reduced task demands.' },
     ],
-    correctAnswer: 'B',
-    rationale: 'The indirect assessment data most strongly support an escape hypothesis: (1) the behavior occurs specifically during math worksheets (a demand context), (2) Noah performs below grade level in math (suggesting the task may be aversive due to skill deficits), and (3) the teacher\'s description of Noah "enjoying" walking around may reflect the relief from an aversive task rather than sensory reinforcement. The next step is structured ABC observation to document the antecedent conditions and consequences — specifically whether out-of-seat behavior results in reduced task demands (escape). Option A is possible but less supported by the pattern. Option C lacks support from the indirect data. Option D is not supported by the available information.',
+    correctAnswer: 'D',
+    rationale: 'The indirect assessment data most strongly support an escape hypothesis: (1) the behavior occurs specifically during math worksheets (a demand context), (2) Noah performs below grade level in math (suggesting the task may be aversive due to skill deficits), and (3) the teacher\'s description of Noah "enjoying" walking around may reflect the relief from an aversive task rather than sensory reinforcement. The next step is structured ABC observation to document the antecedent conditions and consequences — specifically whether out-of-seat behavior results in reduced task demands (escape). Option A is possible but less supported by the pattern. Option C lacks support from the indirect data. Option B is not supported by the available information.',
   },
   {
     id: 6038,
@@ -766,11 +766,11 @@ export const tier6Questions: Tier6Question[] = [
     question: 'What is the most accurate interpretation of this data pattern?',
     choices: [
       { letter: 'A', text: 'The intervention is effective because the phase mean (9.5) is below the baseline mean (14), indicating an overall reduction in behavior.' },
-      { letter: 'B', text: 'The data pattern suggests high variability that may indicate the intervention is inconsistently implemented or that an uncontrolled variable is alternating with the intervention; the BCBA should investigate implementation fidelity and potential confounding variables before concluding the intervention is effective.' },
-      { letter: 'C', text: 'The data pattern indicates the intervention is partially effective; the BCBA should continue the current protocol and collect more data to allow the trend to stabilize.' },
+      { letter: 'B', text: 'The data pattern indicates the intervention is partially effective; the BCBA should continue the current protocol and collect more data to allow the trend to stabilize.' },
+      { letter: 'C', text: 'The data pattern suggests high variability that may indicate the intervention is inconsistently implemented or that an uncontrolled variable is alternating with the intervention; the BCBA should investigate implementation fidelity and potential confounding variables before concluding the intervention is effective.' },
       { letter: 'D', text: 'The alternating pattern indicates the behavior is cyclical and not amenable to behavioral intervention; the BCBA should refer the client for a medical evaluation.' },
     ],
-    correctAnswer: 'B',
+    correctAnswer: 'C',
     rationale: 'Highly variable data with a consistent alternating pattern (high-low-high-low) is a significant red flag that suggests an uncontrolled variable may be systematically alternating with the intervention. This pattern could indicate: (1) inconsistent implementation fidelity (intervention implemented on some days but not others), (2) a schedule-related variable (e.g., different staff on alternating days), or (3) a biological variable (e.g., medication cycles). Simply averaging the data (Option A) obscures this important pattern. The BCBA should investigate the source of the variability before concluding the intervention is effective. Option C ignores the clinical significance of the alternating pattern. Option D draws an unsupported conclusion.',
   },
   {
