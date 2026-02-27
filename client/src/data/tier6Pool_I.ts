@@ -213,7 +213,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-14",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who reports that a client's parent has been asking the BCaBA to modify the behavior intervention plan — specifically, the parent wants to remove the extinction component because it is 'too hard' to implement at home. The BCaBA is unsure how to respond and asks the BCBA for guidance.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "Which supervisory action BEST supports the BCaBA in navigating this scope-of-practice conflict with the client's parent?",
     choices: [
       { letter: "B", text: "Advise the BCaBA to modify the BIP as the parent requests, as parental preferences should always be honored and the BCaBA should support the parent's decision.", rationale: "Choice B is incorrect because modifying the BIP based solely on parental preference, without clinical justification, is not appropriate — the BCaBA should consult with the BCBA before making any BIP modifications." },
       { letter: "A", text: "Advise the BCaBA that BIP modifications require BCBA approval, and that the BCaBA should acknowledge the parent's concern, explain that she will discuss it with the BCBA, and schedule a meeting with the parent and BCBA to address the concern collaboratively.", rationale: "Choice B is correct. BIP modifications require BCBA-level oversight. The BCaBA should acknowledge the parent's concern, explain that BIP modifications require BCBA approval, and facilitate a meeting with the parent and BCBA to address the concern collaboratively." },
@@ -245,7 +245,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-16",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who reports that she has been asked by her agency's director to implement a new assessment protocol that the BCaBA believes is not evidence-based. The BCaBA is concerned about implementing a procedure that she does not believe is clinically appropriate. She asks the BCBA for guidance.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "How should the BCBA guide the BCaBA in responding to this directive from agency administration?",
     choices: [
       { letter: "A", text: "Advise the BCaBA to implement the new protocol as directed by the agency director, as the director has authority over clinical decisions.", rationale: "Choice A is incorrect because implementing a procedure that is not evidence-based without raising concerns is not consistent with ethical practice — the BCaBA has a professional responsibility to advocate for evidence-based practice." },
       { letter: "B", text: "Advise the BCaBA to refuse to implement the protocol and report the agency director to the BACB for requiring non-evidence-based practice.", rationale: "Choice B is incorrect because refusing to implement and immediately reporting to the BACB is an escalated response that is not appropriate before attempting to resolve the concern through internal channels." },
@@ -277,7 +277,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-18",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who is working with a 7-year-old boy from a Southeast Asian family. The BCaBA reports that the family uses physical discipline (spanking) as a primary behavior management strategy at home. The BCaBA is concerned about the use of physical discipline and its potential impact on the client's behavior and well-being. The BCaBA asks the BCBA for guidance.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "Which supervisory approach BEST addresses the ethical and cultural tensions the BCaBA is navigating with this family?",
     choices: [
       { letter: "A", text: "Advise the BCaBA to respect the family's cultural practices and not address the use of physical discipline, as it is a culturally sanctioned practice.", rationale: "Choice A is incorrect because the BCaBA has a professional and ethical responsibility to address practices that may harm the client, regardless of cultural context." },
       { letter: "B", text: "Advise the BCaBA to immediately report the family to child protective services for using physical discipline, as any physical discipline constitutes abuse.", rationale: "Choice B is incorrect because not all physical discipline constitutes abuse — the BCaBA should first assess the severity of the discipline and attempt to address the concern through education and support before reporting." },
@@ -325,7 +325,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-21",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who is working with a 9-year-old boy with autism. The BCaBA reports that the client's teacher has been asking the BCaBA to provide her with information about the client's diagnosis and medical history. The BCaBA is unsure whether she can share this information and asks the BCBA for guidance.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "What should the BCBA advise the BCaBA regarding this request for client information from the teacher?",
     choices: [
       { letter: "A", text: "Advise the BCaBA to share all requested information with the teacher, as the teacher is part of the client's educational team and has a right to know.", rationale: "Choice A is incorrect because sharing confidential information without proper authorization (signed release of information) is not appropriate, even with team members." },
       { letter: "C", text: "Advise the BCaBA that sharing confidential client information requires a signed release of information from the client's parents. The BCaBA should explain to the teacher that she cannot share the information without authorization, and facilitate the process of obtaining a release if the parents agree.", rationale: "Choice B is correct. Sharing confidential client information requires a signed release of information from the client's parents. The BCaBA should explain this to the teacher and facilitate the authorization process if the parents agree." },
@@ -341,7 +341,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-22",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who is working with a 14-year-old student with autism. The BCaBA reports that the student has recently disclosed to her that he is being bullied at school and is feeling depressed. The BCaBA is unsure how to respond and asks the BCBA for guidance.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "Which supervisory guidance BEST reflects the BCaBA's ethical and legal obligations following this client disclosure?",
     choices: [
       { letter: "A", text: "Advise the BCaBA to address the bullying and depression through the behavior intervention plan, as these are behavioral issues within the BCaBA's scope of practice.", rationale: "Choice A is incorrect because addressing depression through a behavior intervention plan alone is not appropriate — the student may need mental health services that are outside the BCaBA's scope of practice." },
       { letter: "D", text: "Advise the BCaBA to acknowledge the student's disclosure empathetically, consult with the BCBA immediately, and facilitate a referral to appropriate mental health services. The BCaBA should also assess whether the bullying constitutes abuse or neglect that requires mandatory reporting.", rationale: "Choice B is correct. When a client discloses bullying and depression, the BCaBA should acknowledge the disclosure empathetically, consult with the BCBA, facilitate a referral to mental health services, and assess mandatory reporting obligations." },
@@ -373,7 +373,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-24",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who is working with a 6-year-old girl with autism from a Muslim family. The BCaBA reports that the family has requested that only female staff work with their daughter, for religious and cultural reasons. The BCaBA is currently the only female staff member assigned to this client, but the agency has a male RBT who would be more available for additional session hours.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "How should the BCBA guide the BCaBA in responding to this religious and cultural accommodation request?",
     choices: [
       { letter: "A", text: "Honor the family's request and ensure that only female staff are assigned to this client, even if it limits the available session hours.", rationale: "Choice A is correct. The family's religious and cultural request for female-only staff is a legitimate preference that should be honored. The BCBA should work to accommodate this request, even if it requires creative scheduling or staffing solutions." },
       { letter: "B", text: "Explain to the family that the agency cannot accommodate gender-specific staffing requests, as this would be discriminatory toward male staff.", rationale: "Choice B is incorrect because accommodating a family's religious and cultural preferences for staff gender is not discriminatory — it is a reasonable accommodation that respects the family's values." },
@@ -421,7 +421,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-27",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who is working with a 5-year-old boy with autism from a family that speaks Spanish as their primary language. The BCaBA does not speak Spanish and has been relying on the client's older sibling (age 12) to interpret during parent training sessions. The BCBA is concerned about the use of a family member as an interpreter.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "Which supervisory strategy BEST addresses the communication and service-delivery challenges created by this language barrier?",
     choices: [
       { letter: "A", text: "Continue using the sibling as an interpreter, as the sibling is bilingual and the family is comfortable with this arrangement.", rationale: "Choice A is incorrect because using a child as an interpreter for clinical discussions is not appropriate — children may not accurately interpret clinical information, and it places an inappropriate burden on the child." },
       { letter: "D", text: "Use a professional interpreter (in-person or via phone/video) for parent training sessions, and work with the agency to identify and fund appropriate interpretation services.", rationale: "Choice B is correct. Using a professional interpreter ensures accurate communication of clinical information and protects the child from the burden of interpreting clinical discussions. The agency has a responsibility to provide appropriate interpretation services." },
@@ -469,7 +469,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-30",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who is working with a 15-year-old student with autism. The BCaBA reports that the student's parents have requested that the BCaBA provide them with copies of all session notes and data sheets. The BCaBA is unsure whether she can provide this information and asks the BCBA for guidance.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "What guidance should the BCBA provide regarding the family's request for access to all session documentation?",
     choices: [
       { letter: "A", text: "Provide the parents with copies of all session notes and data sheets, as parents have a right to their child's records.", rationale: "Choice A is correct. Parents of minor clients generally have the right to access their child's records. The BCaBA should provide the parents with copies of session notes and data sheets, following the agency's procedures for records requests." },
       { letter: "B", text: "Deny the request, as session notes and data sheets are confidential clinical documents that cannot be shared with non-clinicians.", rationale: "Choice B is incorrect because parents of minor clients generally have the right to access their child's records — denying the request without legal justification is not appropriate." },
@@ -501,7 +501,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-32",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who is working with a 3-year-old girl with autism. The BCaBA reports that the client's grandmother, who is the primary caregiver, does not believe that the child has autism and refuses to implement the behavior intervention plan at home. The BCaBA is frustrated and asks the BCBA for guidance.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "Which supervisory approach BEST supports the BCaBA in working with a primary caregiver who does not accept the client's diagnosis?",
     choices: [
       { letter: "A", text: "Continue implementing the BIP in the clinical setting only, as the grandmother's refusal makes home implementation impossible.", rationale: "Choice A is incorrect because continuing without addressing the grandmother's concerns limits the effectiveness of the intervention — generalization to the home environment is critical for young children." },
       { letter: "D", text: "Engage the grandmother in a respectful, non-judgmental discussion: explore her concerns and beliefs, provide psychoeducation about autism and the rationale for the intervention, and identify any components of the BIP that the grandmother might be willing to implement. Consider involving the BCBA in a meeting with the grandmother.", rationale: "Choice B is correct. Engaging the grandmother in a respectful, non-judgmental discussion that explores her concerns, provides psychoeducation, and identifies any components she might be willing to implement is the most appropriate approach. Involving the BCBA in a meeting with the grandmother may also be helpful." },
@@ -517,7 +517,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-33",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who reports that she has been asked by a colleague (another BCaBA at the same agency) to sign off on session notes for sessions that the colleague did not actually attend. The BCaBA is uncomfortable with this request and asks the BCBA for guidance.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "What is the MOST appropriate supervisory response to the BCaBA's report of this documentation ethics concern?",
     choices: [
       { letter: "A", text: "Sign the session notes as requested, as the colleague is a trusted professional and the request is likely a minor administrative issue.", rationale: "Choice A is incorrect because signing session notes for sessions that did not occur is fraudulent documentation — it is a serious ethical and legal violation." },
       { letter: "D", text: "Refuse to sign the session notes, report the request to the BCBA supervisor and the agency's compliance officer, and document the incident.", rationale: "Choice B is correct. Signing session notes for sessions that did not occur is fraudulent documentation. The BCaBA should refuse the request, report it to the appropriate supervisory and compliance personnel, and document the incident." },
@@ -549,7 +549,7 @@ export const tier6Pool_I: Question[] = [
     id: "t6-I-pool-35",
     domain: "I",
     scenario: "A BCBA is supervising a BCaBA who is working with a 12-year-old student with autism. The BCaBA reports that the student's teacher has been implementing a behavior management strategy that is inconsistent with the student's BIP — specifically, the teacher has been providing verbal praise following problem behavior, which may be reinforcing it. The BCaBA has spoken to the teacher about this but the teacher has continued the practice.",
-    question: "What is the MOST appropriate supervisory guidance for this situation?",
+    question: "How should the BCBA guide the BCaBA in addressing the teacher's use of a behavior strategy that conflicts with the client's BIP?",
     choices: [
       { letter: "A", text: "Document the teacher's inconsistent implementation and continue to monitor, as the teacher is not under the BCaBA's supervision.", rationale: "Choice A is incorrect because documenting and monitoring without escalating is not sufficient when the teacher's behavior may be reinforcing problem behavior and harming the client." },
       { letter: "D", text: "Escalate the concern to the BCBA, who should then meet with the teacher and the school team to address the inconsistency. The BCBA should provide the teacher with specific feedback and training on the BIP procedures.", rationale: "Choice B is correct. When a BCaBA has been unable to resolve an implementation concern with a teacher, the appropriate next step is to escalate to the BCBA, who has the authority and expertise to address the concern with the school team." },
