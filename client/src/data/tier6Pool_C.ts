@@ -289,7 +289,7 @@ export const tier6Pool_C: Question[] = [
     { letter: "D", text: "The intervention had no significant effect on the client's on-task behavior, as the range of data points remained relatively consistent despite the phase change." }
     ],
     correctAnswer: "A",
-    rationale: "Level refers to the value on the vertical axis around which a series of data points converge. A distinct and immediate shift in the range of data points from 20-30% to 70-80% after intervention introduction indicates a significant change in the level of the behavior. This suggests the intervention had an immediate and substantial positive effect. Choice A is incorrect because the change was immediate, not gradual. Choice C is incorrect as the data points are consistently within a new range, indicating stability, not increased variability. Choice D is incorrect because there was a clear and substantial shift in the behavior's level."
+    rationale: "Level refers to the value on the vertical axis around which a series of data points converge. A distinct and immediate shift in the range of data points from 20-30% to 70-80% after intervention introduction indicates a significant change in the level of the behavior. This suggests the intervention had an immediate and substantial positive effect. Choice B is incorrect because the change was immediate, not gradual. Choice C is incorrect as the data points are consistently within a new range, indicating stability, not increased variability. Choice D is incorrect because there was a clear and substantial shift in the behavior's level."
   },
   {
     id: "t6-C-pool-18",
@@ -307,7 +307,7 @@ export const tier6Pool_C: Question[] = [
     { letter: "D", text: "The intervention is effectively decreasing the hitting behavior, as indicated by a clear downward trend and a reduction in its overall magnitude." }
     ],
     correctAnswer: "D",
-    rationale: "A downward trend directly indicates a decrease in behavior. The magnitude of 5-10 instances per day, when compared to a likely higher baseline, further supports a reduction. Choice A is incorrect because the trend is downward. Choice C is incorrect because a clear downward trend is present. Choice D is incorrect because the trend is consistent in its direction."
+    rationale: "A downward trend directly indicates a decrease in behavior. The magnitude of 5-10 instances per day, when compared to a likely higher baseline, further supports a reduction. Choice A is incorrect because the trend is downward. Choice C is incorrect because a clear downward trend is present. Choice B is incorrect because the trend is consistent in its direction."
   },
   {
     id: "t6-C-pool-19",
