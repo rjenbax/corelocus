@@ -40,6 +40,8 @@ import { tier6Pool_D_easy } from './tier6Pool_D_easy';
 import { tier6Pool_E_easy } from './tier6Pool_E_easy';
 import { tier6Pool_F_easy } from './tier6Pool_F_easy';
 import { tier6Pool_G_easy } from './tier6Pool_G_easy';
+import { tier6Pool_G_batch1 } from './tier6Pool_G_batch1';
+import { tier6Pool_G_batch2 } from './tier6Pool_G_batch2';
 import { tier6Pool_H_easy } from './tier6Pool_H_easy';
 import { tier6Pool_I_easy } from './tier6Pool_I_easy';
 import { tier6Questions } from './tier6Questions';
@@ -65,7 +67,7 @@ const poolByDomain: Record<string, Question[]> = {
   D: [...tier6Pool_D, ...tier6Pool_D_neg, ...tier6Pool_D_easy, ...tier6Questions.filter(q => q.domain === 'D')],
   E: [...tier6Pool_E, ...tier6Pool_E_neg, ...tier6Pool_E_expanded, ...tier6Pool_E_easy, ...tier6Questions.filter(q => q.domain === 'E')],
   F: [...tier6Pool_F, ...tier6Pool_F_neg, ...tier6Pool_F_easy, ...tier6Questions.filter(q => q.domain === 'F')],
-  G: [...tier6Pool_G, ...tier6Pool_G_neg, ...tier6Pool_G_easy, ...tier6Questions.filter(q => q.domain === 'G')],
+  G: [...tier6Pool_G, ...tier6Pool_G_neg, ...tier6Pool_G_easy, ...tier6Pool_G_batch1, ...tier6Pool_G_batch2, ...tier6Questions.filter(q => q.domain === 'G')],
   H: [...tier6Pool_H, ...tier6Pool_H_neg, ...tier6Pool_H_easy, ...tier6Questions.filter(q => q.domain === 'H')],
   I: [...tier6Pool_I, ...tier6Pool_I_neg, ...tier6Pool_I_easy, ...tier6Questions.filter(q => q.domain === 'I')],
 };
