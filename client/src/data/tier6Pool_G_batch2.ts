@@ -9,7 +9,7 @@ export const tier6Pool_G_batch2: Question[] = [
     choices: [
       { letter: "A", text: `Set the interval equal to the mean interresponse time (IRT) of the target behavior, so that the child has a reasonable probability of success at the start of the program.` },
       { letter: "B", text: `Set the interval at 30 minutes to encourage the child to maintain appropriate behavior for extended periods from the beginning of the program.` },
-      { letter: "C", text: `Set the interval equal to the longest observed IRT so that the child must demonstrate maximum behavioral control before earning reinforcement.` },
+      { letter: "C", text: `Set the interval equal to the longest observed IRT so that the child should demonstrate maximum behavioral control before earning reinforcement.` },
       { letter: "D", text: `Set the interval at 1 minute regardless of baseline data, then increase it systematically once the child achieves 80% success.` },
     ],
     correctAnswer: "A",
@@ -40,7 +40,7 @@ export const tier6Pool_G_batch2: Question[] = [
     question: `Which of the following best explains why consistent ITI duration is important in DTT?`,
     choices: [
       { letter: "A", text: `A consistent ITI ensures that the child's response on each trial is independent of the previous trial, reducing the likelihood that the child is responding based on position or perseveration rather than the discriminative stimulus.` },
-      { letter: "B", text: `A consistent ITI is required by the BACB Ethics Code to ensure that all DTT programs are implemented with procedural fidelity across all practitioners.` },
+      { letter: "B", text: `A consistent ITI is recommended by the BACB Ethics Code to ensure that all DTT programs are implemented with procedural fidelity across all practitioners.` },
       { letter: "C", text: `A consistent ITI prevents the child from becoming bored with the task, which is the primary reason for off-task behavior during DTT sessions.` },
       { letter: "D", text: `A consistent ITI ensures that the total number of trials per session remains constant, which is the most important variable for measuring learning rate.` },
     ],
