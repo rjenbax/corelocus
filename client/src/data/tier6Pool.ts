@@ -33,6 +33,15 @@ import { tier6Pool_F_neg } from './tier6Pool_F_neg';
 import { tier6Pool_G_neg } from './tier6Pool_G_neg';
 import { tier6Pool_H_neg } from './tier6Pool_H_neg';
 import { tier6Pool_I_neg } from './tier6Pool_I_neg';
+import { tier6Pool_A_easy } from './tier6Pool_A_easy';
+import { tier6Pool_B_easy } from './tier6Pool_B_easy';
+import { tier6Pool_C_easy } from './tier6Pool_C_easy';
+import { tier6Pool_D_easy } from './tier6Pool_D_easy';
+import { tier6Pool_E_easy } from './tier6Pool_E_easy';
+import { tier6Pool_F_easy } from './tier6Pool_F_easy';
+import { tier6Pool_G_easy } from './tier6Pool_G_easy';
+import { tier6Pool_H_easy } from './tier6Pool_H_easy';
+import { tier6Pool_I_easy } from './tier6Pool_I_easy';
 import { tier6Questions } from './tier6Questions';
 
 // Official BCBA 6th Edition domain weights (number of questions per exam)
@@ -50,15 +59,15 @@ export const BCBA_DOMAIN_WEIGHTS: Record<string, number> = {
 
 // Full question pool organized by domain
 const poolByDomain: Record<string, Question[]> = {
-  A: [...tier6Pool_A, ...tier6Pool_A_neg, ...tier6Questions.filter(q => q.domain === 'A')],
-  B: [...tier6Pool_B, ...tier6Pool_B_neg, ...tier6Questions.filter(q => q.domain === 'B')],
-  C: [...tier6Pool_C, ...tier6Pool_C_neg, ...tier6Questions.filter(q => q.domain === 'C')],
-  D: [...tier6Pool_D, ...tier6Pool_D_neg, ...tier6Questions.filter(q => q.domain === 'D')],
-  E: [...tier6Pool_E, ...tier6Pool_E_neg, ...tier6Pool_E_expanded, ...tier6Questions.filter(q => q.domain === 'E')],
-  F: [...tier6Pool_F, ...tier6Pool_F_neg, ...tier6Questions.filter(q => q.domain === 'F')],
-  G: [...tier6Pool_G, ...tier6Pool_G_neg, ...tier6Questions.filter(q => q.domain === 'G')],
-  H: [...tier6Pool_H, ...tier6Pool_H_neg, ...tier6Questions.filter(q => q.domain === 'H')],
-  I: [...tier6Pool_I, ...tier6Pool_I_neg, ...tier6Questions.filter(q => q.domain === 'I')],
+  A: [...tier6Pool_A, ...tier6Pool_A_neg, ...tier6Pool_A_easy, ...tier6Questions.filter(q => q.domain === 'A')],
+  B: [...tier6Pool_B, ...tier6Pool_B_neg, ...tier6Pool_B_easy, ...tier6Questions.filter(q => q.domain === 'B')],
+  C: [...tier6Pool_C, ...tier6Pool_C_neg, ...tier6Pool_C_easy, ...tier6Questions.filter(q => q.domain === 'C')],
+  D: [...tier6Pool_D, ...tier6Pool_D_neg, ...tier6Pool_D_easy, ...tier6Questions.filter(q => q.domain === 'D')],
+  E: [...tier6Pool_E, ...tier6Pool_E_neg, ...tier6Pool_E_expanded, ...tier6Pool_E_easy, ...tier6Questions.filter(q => q.domain === 'E')],
+  F: [...tier6Pool_F, ...tier6Pool_F_neg, ...tier6Pool_F_easy, ...tier6Questions.filter(q => q.domain === 'F')],
+  G: [...tier6Pool_G, ...tier6Pool_G_neg, ...tier6Pool_G_easy, ...tier6Questions.filter(q => q.domain === 'G')],
+  H: [...tier6Pool_H, ...tier6Pool_H_neg, ...tier6Pool_H_easy, ...tier6Questions.filter(q => q.domain === 'H')],
+  I: [...tier6Pool_I, ...tier6Pool_I_neg, ...tier6Pool_I_easy, ...tier6Questions.filter(q => q.domain === 'I')],
 };
 
 // Flat array of all pool questions (for practice mode, review, question bank)
