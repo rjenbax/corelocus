@@ -28,6 +28,7 @@ import { tier6Pool_B_neg } from './tier6Pool_B_neg';
 import { tier6Pool_C_neg } from './tier6Pool_C_neg';
 import { tier6Pool_D_neg } from './tier6Pool_D_neg';
 import { tier6Pool_E_neg } from './tier6Pool_E_neg';
+import { tier6Pool_E_expanded } from './tier6Pool_E_expanded';
 import { tier6Pool_F_neg } from './tier6Pool_F_neg';
 import { tier6Pool_G_neg } from './tier6Pool_G_neg';
 import { tier6Pool_H_neg } from './tier6Pool_H_neg';
@@ -53,7 +54,7 @@ const poolByDomain: Record<string, Question[]> = {
   B: [...tier6Pool_B, ...tier6Pool_B_neg, ...tier6Questions.filter(q => q.domain === 'B')],
   C: [...tier6Pool_C, ...tier6Pool_C_neg, ...tier6Questions.filter(q => q.domain === 'C')],
   D: [...tier6Pool_D, ...tier6Pool_D_neg, ...tier6Questions.filter(q => q.domain === 'D')],
-  E: [...tier6Pool_E, ...tier6Pool_E_neg, ...tier6Questions.filter(q => q.domain === 'E')],
+  E: [...tier6Pool_E, ...tier6Pool_E_neg, ...tier6Pool_E_expanded, ...tier6Questions.filter(q => q.domain === 'E')],
   F: [...tier6Pool_F, ...tier6Pool_F_neg, ...tier6Questions.filter(q => q.domain === 'F')],
   G: [...tier6Pool_G, ...tier6Pool_G_neg, ...tier6Questions.filter(q => q.domain === 'G')],
   H: [...tier6Pool_H, ...tier6Pool_H_neg, ...tier6Questions.filter(q => q.domain === 'H')],

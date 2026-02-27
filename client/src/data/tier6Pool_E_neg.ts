@@ -20,7 +20,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "medium",
-    taskItem: "E-01",
+    taskItem: "E.1",
     rationale: `Choice B is the correct answer to this EXCEPT question because the BACB Ethics Code does NOT require certificants to report all suspected violations within a specific 30-day window. The Code encourages certificants to address ethics concerns, but it does not mandate a specific reporting timeline for all suspected violations. The Code does require certificants to cooperate with BACB investigations when contacted, but proactive mandatory reporting with a 30-day deadline is not a stated requirement. Choices A, C, and D all accurately describe responsibilities placed on certificants by the BACB Ethics Code.`,
   },
   {
@@ -36,7 +36,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
-    taskItem: "E-03",
+    taskItem: "E.3",
     rationale: `Choice A is the correct answer to this EXCEPT question because IRB approval is NOT a required element of informed consent for clinical ABA services. IRB review is a requirement for research involving human subjects, not for routine clinical service delivery. A BCBA providing ABA therapy to a client does not need IRB approval for the consent process — the consent process for clinical services is governed by professional ethics standards, agency policies, and applicable laws, not by IRB requirements. Choices A, B, and D all correctly identify required elements of a valid informed consent process in clinical practice.`,
   },
   {
@@ -52,7 +52,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "medium",
-    taskItem: "E-06",
+    taskItem: "E.6",
     rationale: `Choice B is the correct answer to this EXCEPT question because the BACB Ethics Code does NOT prohibit multiple relationships under all circumstances. The Code recognizes that some multiple relationships are unavoidable (e.g., in rural communities where the BCBA may also be a neighbor or community member) and requires certificants to take reasonable steps to avoid harm and to manage multiple relationships responsibly. The Code requires BCBAs to refrain from entering into multiple relationships that could reasonably be expected to impair their objectivity or effectiveness, but it does not categorically prohibit all multiple relationships. Choice A correctly defines multiple relationships. Choice C correctly identifies that multiple relationships can develop over time. Choice D correctly identifies the harm-evaluation framework.`,
   },
   {
@@ -68,7 +68,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
-    taskItem: "E-07",
+    taskItem: "E.7",
     rationale: `Choice A is the correct answer to this EXCEPT question because obtaining BACB approval before implementing restrictive or aversive procedures is NOT a requirement of the BACB Ethics Code. The BACB does not function as a pre-approval authority for individual clinical decisions. The ethical requirements for restrictive procedures are governed by the Ethics Code, applicable laws, agency policies, and human rights committees — not by direct BACB approval of individual cases. The BACB's role is to establish ethical standards and investigate violations, not to pre-approve clinical procedures. Choices A, B, and D all correctly identify genuine ethical requirements for implementing restrictive or aversive procedures.`,
   },
   {
@@ -84,7 +84,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "easy",
-    taskItem: "E-04",
+    taskItem: "E.4",
     rationale: `Choice A is the correct answer to this EXCEPT question because accepting a case and learning through trial and error during service delivery is NOT an appropriate way to expand one's scope of competence. This approach places the client at risk of harm from incompetent service delivery and violates the ethical obligation to practice within one's scope of competence. The BACB Ethics Code requires that BCBAs only provide services within their area of competence and that they take appropriate steps to expand their competence before — not during — service delivery in a new area. Choices A, B, and D all describe appropriate and ethical pathways for expanding scope of competence.`,
   },
   {
@@ -100,7 +100,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "easy",
-    taskItem: "E-05",
+    taskItem: "E.5",
     rationale: `Choice D is the correct answer to this EXCEPT question because satisfying a colleague's personal curiosity is NOT a condition that justifies disclosing confidential client information without consent. Confidentiality protections exist to protect the client's privacy and to maintain trust in the therapeutic relationship. Disclosures without consent are permitted only in specific, legally or ethically justified circumstances — such as mandatory reporting, imminent safety concerns, or treatment-related communications with the care team. A colleague's personal interest in a case does not meet any of these criteria. Choices A, B, and D all correctly identify conditions under which disclosure without explicit consent may be ethically or legally permissible.`,
   },
   {
@@ -116,7 +116,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "easy",
-    taskItem: "E-08",
+    taskItem: "E.8",
     rationale: `Choice D is the correct answer to this EXCEPT question because guaranteeing that a supervisee will pass the BCBA examination is NOT an ethical responsibility — or even a realistic commitment — of a supervising BCBA. Exam outcomes depend on many factors beyond the supervisor's control, including the supervisee's study habits, test-taking skills, and individual knowledge base. The supervisor's responsibility is to provide competent, ethical supervision that prepares the supervisee for independent practice — not to guarantee a specific exam outcome. Making such a guarantee would be misleading and potentially exploitative. Choices A, B, and D all correctly describe genuine ethical responsibilities of a supervising BCBA.`,
   },
   {
@@ -132,7 +132,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "medium",
-    taskItem: "E-02",
+    taskItem: "E.2",
     rationale: `Choice C is the correct answer to this EXCEPT question because implementing a treatment that lacks scientific support simply because the client or caregiver requests it is NOT an appropriate response. The BACB Ethics Code requires BCBAs to rely on scientific knowledge and to use evidence-based practices. Client autonomy is an important value, but it does not override the BCBA's ethical obligation to provide competent, evidence-based services. The appropriate response is to educate the caregiver about the evidence base, offer evidence-based alternatives, and — if the caregiver insists on a procedure the BCBA cannot ethically implement — to facilitate a transfer to another provider. Choices A, B, and D all describe ethically appropriate responses.`,
   },
   {
@@ -148,7 +148,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "medium",
-    taskItem: "E-06",
+    taskItem: "E.6",
     rationale: `Choice C is the correct answer to this EXCEPT question because the BACB Ethics Code does NOT categorically prohibit accepting any gift under all circumstances. The Code requires BCBAs to avoid conflicts of interest and to maintain professional boundaries, but it does not establish a blanket prohibition on all gift-giving. The ethical evaluation of gift-giving involves considering the value of the gift, the potential impact on the professional relationship, the cultural context, and the frequency of gift-giving. A nominal token of appreciation in a culturally appropriate context is generally treated differently from a gift of significant monetary value. Choice A correctly identifies the relational impact consideration. Choice B correctly identifies value as a relevant factor. Choice D correctly identifies cultural context as a relevant consideration.`,
   },
   {
@@ -164,7 +164,7 @@ export const tier6Pool_E_neg: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "medium",
-    taskItem: "E-09",
+    taskItem: "E.9",
     rationale: `Choice C is the correct answer to this EXCEPT question because immediately filing a formal complaint with the BACB without first attempting informal resolution is NOT consistent with the BACB Ethics Code's guidance. The Code encourages certificants to attempt informal resolution of ethics concerns when doing so is appropriate and does not compromise the rights or welfare of the affected parties. Bypassing informal resolution and going directly to a formal complaint is not the preferred first step unless the violation is severe, ongoing, or the informal approach is clearly inappropriate. Choice A correctly identifies informal resolution as the preferred first step. Choice B correctly identifies documentation as an appropriate action. Choice D correctly identifies escalation as an appropriate next step when informal resolution fails.`,
   },
 ];
