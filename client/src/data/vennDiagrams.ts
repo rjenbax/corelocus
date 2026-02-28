@@ -2313,7 +2313,7 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-most-to-least-least-to-most',
     conceptA: 'Most-to-Least Prompting',
     conceptB: 'Least-to-Most Prompting',
-    category: 'Skill Acquisition', tier: 'skill',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
     onlyA: [
       'Begins with the most intrusive prompt level and systematically fades toward independence',
       'Minimizes errors by providing maximum support at the start of training',
@@ -2344,7 +2344,7 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-prompt-fading-prompt-delay',
     conceptA: 'Prompt Fading',
     conceptB: 'Time Delay',
-    category: 'Skill Acquisition', tier: 'skill',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
     onlyA: [
       'Involves systematically reducing the intrusiveness or intensity of a prompt across trials',
       'Includes procedures such as most-to-least, graduated guidance, and stimulus fading',
@@ -2375,7 +2375,7 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-total-task-chaining',
     conceptA: 'Total Task Chaining',
     conceptB: 'Backward Chaining',
-    category: 'Skill Acquisition', tier: 'skill',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
     onlyA: [
       'The learner attempts every step of the task analysis on every training trial',
       'Prompts are provided for steps the learner cannot complete independently',
@@ -2406,7 +2406,7 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-mand-training-tact-training',
     conceptA: 'Mand Training',
     conceptB: 'Tact Training',
-    category: 'Skill Acquisition', tier: 'skill',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
     onlyA: [
       'Teaches the learner to request preferred items, activities, or information',
       'Requires an establishing operation (EO) to be in effect — the learner must be motivated for the item',
@@ -2437,7 +2437,7 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-generalization-programming-maintenance-programming',
     conceptA: 'Generalization Programming',
     conceptB: 'Maintenance Programming',
-    category: 'Skill Acquisition', tier: 'skill',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
     onlyA: [
       'Targets the transfer of a trained skill to untrained stimuli, settings, people, or response forms',
       'Strategies include training loosely, using multiple exemplars, and programming common stimuli',
@@ -2468,7 +2468,7 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-incidental-teaching-pivotal-response-training',
     conceptA: 'Incidental Teaching',
     conceptB: 'Pivotal Response Training (PRT)',
-    category: 'Skill Acquisition', tier: 'skill',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
     onlyA: [
       'A naturalistic teaching procedure developed by Hart and Risley (1975)',
       'Initiated when the learner approaches a preferred item or activity and shows interest',
@@ -2499,7 +2499,7 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-stimulus-control-transfer-response-prompting',
     conceptA: 'Stimulus Control Transfer',
     conceptB: 'Response Prompting',
-    category: 'Skill Acquisition', tier: 'skill',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
     onlyA: [
       'The process by which a response comes under the control of a new or different antecedent stimulus',
       'The goal of all prompting and fading procedures — to shift control from the prompt to the natural SD',
@@ -2530,7 +2530,7 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-dri-alt-response',
     conceptA: 'Differential Reinforcement of Incompatible Behavior (DRI)',
     conceptB: 'Differential Reinforcement of Alternative Behavior (DRA)',
-    category: 'Skill Acquisition', tier: 'skill',
+    category: 'Skill Acquisition', tier: 'skill-acquisition',
     onlyA: [
       'Reinforces a behavior that is PHYSICALLY INCOMPATIBLE with the problem behavior — both cannot occur simultaneously',
       'The alternative behavior and the problem behavior share the same body part or movement',
