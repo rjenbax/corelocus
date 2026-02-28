@@ -207,7 +207,16 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const recordExamCompletion = useCallback((score: number, totalQuestions: number) => {
-    setProgress(prev => ({ ...prev, exam: { completed: true, score, totalQuestions } }));
+    // Only mark as completed if the student achieves ≥ 70% — consistent with Tiers 3 and 4
+    const passed = score >= 70;
+    setProgress(prev => ({
+      ...prev,
+      exam: {
+        completed: passed ? true : prev.exam.completed, // preserve prior completion if already passed
+        score: Math.max(prev.exam.score, score),        // always record best score
+        totalQuestions,
+      },
+    }));
   }, []);
 
   const getTierCompletion = useCallback((tier: 1 | 2 | 3 | 4 | 5 | 6): number => {

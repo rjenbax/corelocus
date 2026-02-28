@@ -187,31 +187,46 @@ export default function ResultsPage() {
 
         {/* Phase performance */}
         <div className="bg-card border border-border rounded-xl p-5 mb-6">
-          <h2 className="font-bold text-foreground mb-4">Performance by Clinical Phase</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {phaseEntries.map(([phase, data]) => {
+          <h2 className="font-bold text-foreground mb-1 flex items-center gap-2">
+            <TrendingUp className="w-4 h-4 text-primary" />
+            Performance by Clinical Phase
+          </h2>
+          <p className="text-xs text-muted-foreground mb-4 case-text">Leo's case study spans five clinical phases. Your score in each phase reveals where your clinical reasoning is strongest — and where to focus next.</p>
+          <div className="space-y-3">
+            {phaseEntries.map(([phase, data], idx) => {
               const info = phaseInfo[phase];
               const pct = data.answered > 0 ? Math.round((data.correct / data.answered) * 100) : 0;
+              const phaseColor = pct >= 70 ? '#4A7C59' : pct >= 50 ? '#8A6B2E' : '#8A2E2E';
+              const phaseBg = pct >= 70 ? 'bg-green-50 border-green-200' : pct >= 50 ? 'bg-amber-50 border-amber-200' : 'bg-red-50 border-red-200';
+              const shortLabel = info?.label?.replace(/Phase \d+: /, '') || phase;
               return (
-                <div key={phase} className="bg-muted/50 rounded-lg p-3">
-                  <p className="text-xs font-semibold text-foreground mb-1 truncate">
-                    {info?.label?.replace(/Phase \d+: /, '') || phase}
-                  </p>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <span className="text-xs text-muted-foreground">{data.correct}/{data.answered} answered</span>
-                    <span className="text-xs font-bold" style={{ color: pct >= 70 ? '#4A7C59' : pct >= 50 ? '#8A6B2E' : '#8A2E2E' }}>
-                      {data.answered > 0 ? `${pct}%` : '—'}
-                    </span>
+                <div key={phase} className={`border rounded-lg p-3.5 ${phaseBg}`}>
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-2">
+                      <span className="w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px] font-bold flex-shrink-0"
+                        style={{ backgroundColor: phaseColor }}>
+                        {idx + 1}
+                      </span>
+                      <span className="text-sm font-semibold text-foreground">{shortLabel}</span>
+                    </div>
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      <span className="text-xs text-muted-foreground">{data.correct}/{data.answered}</span>
+                      <span className="text-sm font-bold" style={{ color: phaseColor }}>
+                        {data.answered > 0 ? `${pct}%` : '—'}
+                      </span>
+                    </div>
                   </div>
-                  <div className="w-full bg-border rounded-full h-1.5 overflow-hidden">
+                  <div className="w-full bg-white/70 rounded-full h-2 overflow-hidden">
                     <div
-                      className="h-full rounded-full"
-                      style={{
-                        width: `${pct}%`,
-                        backgroundColor: pct >= 70 ? '#4A7C59' : pct >= 50 ? '#8A6B2E' : '#8A2E2E'
-                      }}
+                      className="h-full rounded-full transition-all duration-700"
+                      style={{ width: `${pct}%`, backgroundColor: phaseColor }}
                     />
                   </div>
+                  {data.answered > 0 && pct < 70 && (
+                    <p className="text-xs mt-1.5" style={{ color: phaseColor }}>
+                      Below 70% — review {info?.domains ? `Domains ${info.domains}` : 'task list items'} for this phase
+                    </p>
+                  )}
                 </div>
               );
             })}
