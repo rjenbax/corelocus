@@ -37,7 +37,7 @@ export const tier6Pool_G_batch1: Question[] = [
   {
     id: "G-b1-003",
     domain: "G",
-    scenario: "A BCBA is conducting a training session with a newly hired RBT who will be implementing ABA programs for a 7-year-old child with autism. During the session on reinforcement concepts, the RBT incorrectly states: \"Negative reinforcement means giving a child something bad after a behavior to make it stop.\" The BCBA must correct this common misconception before the RBT begins working with clients.",
+    scenario: "A BCBA is conducting a training session with a newly hired RBT who will be implementing ABA programs for a 7-year-old child with autism. During the session on reinforcement concepts, the RBT incorrectly states: 'Negative reinforcement means giving a child something bad after a behavior to make it stop.' The BCBA must correct this common misconception before the RBT begins working with clients.",
     question: "Which response by the BCBA MOST accurately corrects the RBT's misconception?",
     choices: [
       { letter: "A", text: "Negative reinforcement involves the removal or avoidance of an aversive stimulus contingent on a behavior, which increases the future probability of that behavior — the 'negative' refers to subtraction, not something bad.", rationale: "" },
