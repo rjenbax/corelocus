@@ -1332,7 +1332,7 @@ export const scenarioItems: ScenarioItem[] = [
       },
       {
         id: 'sj-13-q3',
-        stem: 'A BCBA notices that a client\'s problem behavior increases dramatically whenever the client\'s preferred activity is about to end. The BCBA hypothesizes that the impending removal of the preferred activity is functioning as a motivating operation. This is BEST classified as which type of CMO?',
+        stem: "A BCBA notices that a client's problem behavior increases dramatically whenever the client's preferred activity is about to end. The BCBA hypothesizes that the impending removal of the preferred activity is functioning as a motivating operation. This is BEST classified as which type of CMO?",
         choices: [
           { id: 'A', text: 'CMO-R (reflexive CMO) — a stimulus that signals worsening conditions and establishes escape from it as a reinforcer.' },
           { id: 'B', text: 'CMO-T (transitive CMO) — a stimulus that establishes another stimulus as a reinforcer.' },
@@ -1393,7 +1393,7 @@ export const scenarioItems: ScenarioItem[] = [
       },
       {
         id: 'sj-14-q2',
-        stem: 'After a baseline phase (A), an intervention reduces a client\'s self-injurious behavior to near zero (B). The researcher withdraws the intervention (return to A). The client\'s SIB does NOT return to baseline levels. Which conclusion is MOST appropriate?',
+        stem: "After a baseline phase (A), an intervention reduces a client's self-injurious behavior to near zero (B). The researcher withdraws the intervention (return to A). The client's SIB does NOT return to baseline levels. Which conclusion is MOST appropriate?",
         choices: [
           { id: 'A', text: 'Experimental control has been demonstrated because the intervention produced a change from baseline.' },
           { id: 'B', text: 'The reversal design has failed to demonstrate experimental control because the behavior did not reverse, and an alternative design should be considered.' },

@@ -153,6 +153,8 @@ export default function VennPage() {
     setCards(prev => prev.map(c => c.id === id ? { ...c, placedZone: 'unplaced' } : c));
   };
 
+  const PASS_THRESHOLD = 70;
+
   const handleSubmit = () => {
     const correct = cards.filter(c => c.placedZone === c.correctZone).length;
     const total = cards.length;
@@ -160,7 +162,10 @@ export default function VennPage() {
     setSubmitted(true);
     setShowKeyDistinction(true);
     const pct = Math.round((correct / total) * 100);
-    recordVennCompletion(currentItem?.id ?? '', pct);
+    // Only mark as completed when the student meets the ≥ 70% threshold
+    if (pct >= PASS_THRESHOLD) {
+      recordVennCompletion(currentItem?.id ?? '', pct);
+    }
   };
 
   const handleNext = () => {
@@ -466,24 +471,38 @@ export default function VennPage() {
         ) : mode === 'sort' ? (
           <>
             {/* Score Banner */}
-            {submitted && score && (
+            {submitted && score && (() => {
+              const pct = Math.round((score.correct / score.total) * 100);
+              const isPerfect = score.correct === score.total;
+              const isPassing = pct >= PASS_THRESHOLD;
+              return (
               <div className={cn(
                 'rounded-xl border p-4 flex items-center justify-between',
-                score.correct === score.total ? 'bg-emerald-50 border-emerald-200' : 'bg-teal-50 border-teal-200'
+                isPerfect ? 'bg-emerald-50 border-emerald-200'
+                  : isPassing ? 'bg-teal-50 border-teal-200'
+                  : 'bg-rose-50 border-rose-200'
               )}>
                 <div className="flex items-center gap-3">
-                  {score.correct === score.total
+                  {isPerfect
                     ? <Trophy className="w-6 h-6 text-violet-700" />
-                    : <XCircle className="w-6 h-6 text-teal-700" />
+                    : isPassing
+                      ? <CheckCircle2 className="w-6 h-6 text-teal-700" />
+                      : <XCircle className="w-6 h-6 text-rose-600" />
                   }
                   <div>
-                    <p className={cn('font-bold text-base', score.correct === score.total ? 'text-emerald-800' : 'text-teal-800')}>
-                      {score.correct === score.total ? 'Perfect Sort!' : `${score.correct} / ${score.total} correct`}
+                    <p className={cn('font-bold text-base',
+                      isPerfect ? 'text-emerald-800'
+                        : isPassing ? 'text-teal-800'
+                        : 'text-rose-700'
+                    )}>
+                      {isPerfect ? 'Perfect Sort!' : `${score.correct} / ${score.total} correct (${pct}%)`}
                     </p>
                     <p className="text-xs text-slate-500">
-                      {score.correct === score.total
+                      {isPerfect
                         ? 'You correctly classified all features.'
-                        : 'Review the highlighted items, then try again or move on.'}
+                        : isPassing
+                          ? 'Passed ✓ — review the highlighted items to reinforce your understanding.'
+                          : `Score below 70% — this diagram is not yet marked complete. Review and retry.`}
                     </p>
                   </div>
                 </div>
@@ -496,7 +515,8 @@ export default function VennPage() {
                   </Button>
                 </div>
               </div>
-            )}
+              );
+            })()}
 
             {/* Feature Pool */}
             {!submitted && unplacedCards.length > 0 && (
