@@ -11,7 +11,7 @@ import { phaseInfo, domainInfo } from '@/data/allQuestions';
 import { lifecyclePhases } from '@/data/caseNarrative';
 import {
   ChevronLeft, ChevronRight, Brain, CheckCircle2, XCircle,
-  BookOpen, BarChart3, Menu, X, Eye, Flag
+  BookOpen, BarChart3, Menu, X, Eye, Flag, Filter
 } from 'lucide-react';
 
 const phaseOrder = ['assessment', 'fba', 'treatment-planning', 'implementation', 'evaluation'];
@@ -96,9 +96,16 @@ export default function ExamPage() {
           </button>
           <span className="text-border">|</span>
 
-          {/* Phase breadcrumb */}
+          {/* Phase breadcrumb / Retake badge */}
           <div className="flex items-center gap-1.5 text-xs text-muted-foreground overflow-hidden">
-            <span className="hidden md:inline truncate">{phaseData?.label}</span>
+            {state.phaseFilter ? (
+              <span className="inline-flex items-center gap-1 bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30 rounded-full px-2.5 py-0.5 font-medium text-xs whitespace-nowrap">
+                <Filter className="w-3 h-3" />
+                {phaseInfo[state.phaseFilter]?.label || state.phaseFilter} Retake &middot; {totalQuestions}q
+              </span>
+            ) : (
+              <span className="hidden md:inline truncate">{phaseData?.label}</span>
+            )}
           </div>
 
           <div className="ml-auto flex items-center gap-2">
