@@ -226,7 +226,33 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing a normal FR schedule feature (post-reinforcement pause) with a problem (ratio strain)',
         tcoTask: 'E-4: Use reinforcement procedures',
       },
-    ],
+        {
+              id: 'sj-02-q3',
+              stem: 'After thinning from CRF to FR5, the child\'s behavior begins to break down with long pauses after reinforcement. This pattern is MOST consistent with:',
+              choices: [
+                { id: 'A', text: 'Extinction burst' },
+                { id: 'B', text: 'Post-reinforcement pause' },
+                { id: 'C', text: 'Behavioral contrast' },
+                { id: 'D', text: 'Resurgence' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'Post-reinforcement pauses are a defining characteristic of fixed-ratio schedules — the organism pauses briefly after each reinforcer delivery before resuming responding.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'FR5 is a fixed schedule, and fixed schedules reliably produce post-reinforcement pauses that increase in duration as the ratio requirement increases.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'The pause occurs after reinforcement, not before — this temporal pattern (pause → run) is the hallmark of fixed-ratio responding.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'An extinction burst would involve an increase in response rate and intensity, not pausing — and extinction has not been implemented here.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Behavioral contrast refers to a change in response rate in one component of a multiple schedule when the reinforcement rate changes in the other component.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'Resurgence refers to the reappearance of a previously reinforced behavior when a current behavior is placed on extinction — no extinction is occurring here.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Extinction bursts are temporary increases in behavior, not pauses, and require the removal of reinforcement — which has not occurred.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Behavioral contrast requires a multiple schedule with two alternating components — a single FR5 schedule does not produce contrast.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Resurgence is observed during extinction of a replacement behavior, not during schedule thinning of the target behavior.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'Post-reinforcement pauses are a predictable and defining feature of fixed-ratio schedules. The pause duration increases as the ratio requirement increases. This is not a problem to be solved — it is an expected schedule effect.',
+              recallTrap: 'Confusing post-reinforcement pause with extinction burst',
+              conceptConfusion: 'Extinction burst requires removal of reinforcement; post-reinforcement pause occurs with continued reinforcement delivery on a fixed schedule',
+              tcoTask: 'B-4: Define and provide examples of schedules of reinforcement',
+            },
+      ],
   },
 
   // -- Scenario 3: Verbal Behavior --------------------------------------------
@@ -288,7 +314,33 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing a mand (controlled by MO + reinforced by the specific item) with a tact (controlled by a stimulus and reinforced by generalized conditioned reinforcement)',
         tcoTask: 'F-1: Identify and teach verbal operants',
       },
-    ],
+        {
+              id: 'sj-03-q3',
+              stem: 'Before implementing response cost, the BCBA must ensure which prerequisite condition is met?',
+              choices: [
+                { id: 'A', text: 'The client has a history of responding to verbal reprimands' },
+                { id: 'B', text: 'The client has access to a sufficient supply of the conditioned reinforcer being removed' },
+                { id: 'C', text: 'The behavior has been placed on extinction in all settings' },
+                { id: 'D', text: 'The client has mastered at least three replacement behaviors' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'Response cost requires removing a conditioned reinforcer (e.g., tokens) contingent on the target behavior — if the client has no tokens to lose, the procedure cannot be implemented.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'The effectiveness of response cost depends entirely on the client having earned and possessing the conditioned reinforcers that will be removed — an empty token economy cannot support response cost.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'Without a sufficient supply of tokens, the client will quickly reach zero tokens, at which point response cost cannot be applied and may produce aggression or escape behavior.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'A history of responding to verbal reprimands is not a prerequisite for response cost — these are different procedures with different mechanisms.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Extinction is not a prerequisite for response cost — they can be used independently or in combination, but extinction is not required first.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'While replacement behaviors are important for ethical practice, mastery of three replacement behaviors is not a formal prerequisite for response cost implementation.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Verbal reprimands are a different form of punishment (Type I) and are not mechanistically related to response cost (Type II).', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Extinction and response cost are independent procedures — extinction removes the reinforcer maintaining the behavior, while response cost removes a conditioned reinforcer contingently.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'The number of replacement behaviors mastered is a clinical consideration but not a prerequisite condition for the mechanics of response cost to function.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'Response cost is only viable when the client has earned and possesses conditioned reinforcers (typically tokens) that can be removed. If the client has no tokens, the procedure cannot be applied. This is why token economies are typically designed to ensure clients always have a positive balance.',
+              recallTrap: 'Confusing response cost prerequisites with general punishment ethics requirements',
+              conceptConfusion: 'Response cost is specifically the removal of a conditioned reinforcer — it requires the client to possess that reinforcer before the procedure can function',
+              tcoTask: 'G-7: Use punishment: response cost',
+            },
+      ],
   },
 
   // -- Scenario 4: Behavior Reduction ----------------------------------------
@@ -396,6 +448,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Failing to apply the full least-restrictive hierarchy: the question requires selecting the correct tier, not just avoiding punishment',
         tcoTask: 'G-2: Identify potential interventions; H-1: Implement behavior reduction procedures',
         },
+        {
+              id: 'sj-04-q3',
+              stem: 'During FCT implementation, the BCBA observes that the problem behavior has decreased but the FCR is being used excessively (every 30 seconds). The MOST appropriate next step is to:',
+              choices: [
+                { id: 'A', text: 'Immediately place the FCR on extinction to reduce its frequency' },
+                { id: 'B', text: 'Gradually thin the schedule of reinforcement for the FCR' },
+                { id: 'C', text: 'Reinstate the original problem behavior intervention' },
+                { id: 'D', text: 'Add a punishment procedure for excessive FCR use' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'Schedule thinning is the standard procedure for reducing excessive FCR use while maintaining the functional communication skill — it gradually increases the response requirement before reinforcement is delivered.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'Thinning the reinforcement schedule for the FCR teaches the client to tolerate delays to reinforcement, which is a critical skill for generalization to natural environments.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'Abrupt extinction of the FCR would likely produce an extinction burst and resurgence of the original problem behavior — gradual thinning prevents this.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'Placing the FCR on extinction would likely cause resurgence of the original problem behavior — the FCR must remain functional while its frequency is reduced through thinning.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Reinstating the original problem behavior intervention is not indicated — the FCT is working; the issue is the FCR frequency, which is addressed through schedule thinning.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'Adding punishment for FCR use would suppress communication behavior and undermine the FCT intervention — punishment is contraindicated for functional communication responses.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Extinction of the FCR would remove the function-based replacement behavior, causing the problem behavior to resurge — this is the opposite of the intended outcome.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'The original intervention is not needed — the FCT is succeeding; the next step is to shape more naturalistic use of the FCR through schedule thinning.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Punishing the FCR would suppress communication and likely cause resurgence of the problem behavior — this is ethically and clinically contraindicated.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'Excessive FCR use is a common and expected early phase of FCT. The solution is gradual schedule thinning — increasing the response requirement (e.g., requiring 2 FCRs before reinforcement, then 3) or introducing delay to reinforcement. Abrupt extinction of the FCR would cause resurgence of the problem behavior.',
+              recallTrap: 'Treating excessive FCR use as a problem requiring punishment rather than a thinning opportunity',
+              conceptConfusion: 'Extinction of the FCR vs. schedule thinning of the FCR — extinction removes the reinforcer entirely; thinning gradually increases the requirement while maintaining the reinforcer',
+              tcoTask: 'G-3: Establish and use conditioned reinforcers',
+            },
       ],
   },
 
@@ -432,7 +510,59 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing acquisition (mastery in training) with generalization (performance across untrained settings)',
         tcoTask: 'E-6: Use generalization and maintenance procedures',
       },
-    ],
+        {
+              id: 'sj-05-q2',
+              stem: 'The BCBA identifies that the self-injurious behavior is maintained by automatic reinforcement. Which intervention is MOST directly matched to this function?',
+              choices: [
+                { id: 'A', text: 'Differential reinforcement of alternative behavior (DRA) using social praise' },
+                { id: 'B', text: 'Noncontingent reinforcement (NCR) using matched stimulation' },
+                { id: 'C', text: 'Extinction via planned ignoring' },
+                { id: 'D', text: 'Response interruption and redirection (RIRD)' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'NCR with matched stimulation provides the sensory consequence that maintains the behavior on a time-based schedule, reducing the motivating operation for the SIB.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'Matched stimulation directly addresses the automatic reinforcement function by providing a similar sensory experience through a safer alternative, thereby reducing the value of the SIB as a reinforcer.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'For automatically maintained behavior, the intervention must address the sensory function directly — NCR with matched stimulation is the most function-matched approach for automatic reinforcement.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'DRA with social praise would not be effective for automatically maintained behavior because social praise is not the maintaining reinforcer — the behavior is maintained by sensory consequences, not social attention.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Planned ignoring is extinction for socially maintained behavior — it has no effect on automatically maintained behavior because the reinforcer (sensory stimulation) is not delivered by another person.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'RIRD is an effective intervention for automatically maintained stereotypy but is more restrictive than NCR with matched stimulation and should be considered after less restrictive options.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Social praise does not address the sensory function of automatically maintained SIB — the reinforcer maintaining the behavior is internal, not social.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Planned ignoring only works for socially maintained behavior — for automatic reinforcement, the behavior produces its own reinforcer regardless of whether others ignore it.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'RIRD is a valid option but is more restrictive than NCR — the least restrictive effective intervention should be tried first.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'For automatically maintained behavior, the intervention must address the sensory function directly. NCR with matched stimulation provides the sensory consequence on a time-based schedule, reducing the motivating operation for the SIB. Planned ignoring is ineffective because the reinforcer is not socially mediated.',
+              recallTrap: 'Applying planned ignoring to automatically maintained behavior',
+              conceptConfusion: 'Planned ignoring = extinction for socially maintained behavior; NCR with matched stimulation = function-matched intervention for automatically maintained behavior',
+              tcoTask: 'G-9: Use extinction',
+            },
+        {
+              id: 'sj-05-q3',
+              stem: 'The treatment team asks whether they should implement a punishment procedure alongside the function-based intervention. According to the BACB Ethics Code, the BCBA should:',
+              choices: [
+                { id: 'A', text: 'Implement punishment immediately because SIB is a safety concern that justifies bypassing the least restrictive principle' },
+                { id: 'B', text: 'Recommend the least restrictive effective intervention first and document the rationale for any more restrictive procedures' },
+                { id: 'C', text: 'Defer the decision to the treatment team because punishment decisions are outside the BCBA\'s scope of practice' },
+                { id: 'D', text: 'Implement punishment only if the parent provides written consent, regardless of whether less restrictive options have been tried' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'The BACB Ethics Code requires BCBAs to recommend the least restrictive effective intervention and to document the rationale for any procedures that are more restrictive.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'BCBAs must consider the full range of interventions and select those that are least restrictive while still being effective — safety concerns do not automatically justify bypassing this principle.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'The Ethics Code specifically addresses the use of restrictive and punishment-based procedures, requiring documentation of the rationale and evidence that less restrictive options were considered or tried.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'Safety concerns are relevant but do not automatically justify bypassing the least restrictive principle — the BCBA must still document why less restrictive options are insufficient before implementing punishment.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Punishment decisions are within the BCBA\'s scope of practice — deferring to the treatment team without providing professional guidance would be an abdication of the BCBA\'s ethical responsibility.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'Parental consent is necessary but not sufficient — the BCBA must also ensure that less restrictive options have been considered and that the procedure is clinically justified.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'The least restrictive principle applies even in safety situations — the BCBA must document why less restrictive options are insufficient before escalating to punishment.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'The BCBA is responsible for making clinical recommendations — deferring entirely to the treatment team without professional guidance violates the BCBA\'s ethical obligations.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Consent is a necessary but not sufficient condition — the BCBA must also ensure clinical justification and documentation of the least restrictive principle consideration.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'The BACB Ethics Code requires BCBAs to use the least restrictive effective intervention and to document the rationale for any more restrictive procedures. Safety concerns are relevant but do not automatically bypass this requirement — the BCBA must document why less restrictive options are insufficient.',
+              recallTrap: 'Believing that safety concerns automatically justify bypassing the least restrictive principle',
+              conceptConfusion: 'Least restrictive principle vs. safety exception — safety is a factor in clinical decision-making but does not eliminate the requirement to document rationale for restrictive procedures',
+              tcoTask: 'E-6: Apply ethical decision-making guidelines',
+            }
+      ],
   },
 
   // -- Scenario 6: Data-Based Decision Making ---------------------------------
@@ -468,7 +598,59 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing an extinction burst (temporary increase — expected) with treatment failure',
         tcoTask: 'H-1: Implement behavior reduction procedures',
       },
-    ],
+        {
+              id: 'sj-06-q2',
+              stem: 'The parent signs the informed consent form but later tells the BCBA they did not understand what they were signing. According to the BACB Ethics Code, the BCBA should:',
+              choices: [
+                { id: 'A', text: 'Proceed with the intervention because the consent form was signed' },
+                { id: 'B', text: 'Re-explain the intervention in plain language and obtain renewed informed consent' },
+                { id: 'C', text: 'Contact the BACB to report the parent\'s statement as a potential ethics violation' },
+                { id: 'D', text: 'Suspend all services until a legal guardian reviews the consent form' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'Informed consent requires that the person understands what they are consenting to — a signature alone is not sufficient if the person did not comprehend the information.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'The BACB Ethics Code requires BCBAs to ensure that clients and stakeholders understand the nature of services, including risks and benefits, before consent is considered valid.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'Re-explaining in plain language and obtaining renewed consent is the ethically required response — it ensures the parent\'s consent is genuinely informed rather than merely documented.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'A signature without comprehension does not constitute valid informed consent — proceeding would violate the Ethics Code\'s requirement for genuine understanding.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'The parent\'s statement is not an ethics violation — it is a communication gap that the BCBA is responsible for addressing through re-explanation.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'Suspending all services is not required — the BCBA should re-explain and obtain renewed consent, which can be done promptly without suspending services.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'The Ethics Code specifies that consent must be informed — a signature on a form the parent did not understand does not meet this standard.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Reporting the parent to the BACB is not appropriate — the BCBA is responsible for ensuring comprehension, and the parent\'s statement reflects a gap in the consent process, not an ethics violation by the parent.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Suspending services is a disproportionate response — the BCBA can re-explain and obtain renewed consent without interrupting the client\'s services.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'Informed consent is only valid when the person understands what they are consenting to. A signature alone is not sufficient. The BCBA is responsible for ensuring comprehension and must re-explain in plain language and obtain renewed consent when a stakeholder indicates they did not understand.',
+              recallTrap: 'Treating a signed consent form as automatically valid regardless of comprehension',
+              conceptConfusion: 'Documented consent vs. informed consent — documentation is necessary but not sufficient; genuine understanding is the defining feature of informed consent',
+              tcoTask: 'E-3: Obtain informed consent',
+            },
+        {
+              id: 'sj-06-q3',
+              stem: 'A BCBA is working with a 16-year-old client who has the cognitive ability to understand the intervention. Regarding assent, the BCBA should:',
+              choices: [
+                { id: 'A', text: 'Obtain assent only if the client is legally an adult' },
+                { id: 'B', text: 'Obtain assent from the client in addition to consent from the legal guardian' },
+                { id: 'C', text: 'Assent is not required because the legal guardian has provided consent' },
+                { id: 'D', text: 'Obtain assent only if the intervention involves punishment procedures' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'The BACB Ethics Code requires BCBAs to obtain assent from clients who have the ability to provide it, regardless of whether they are legally able to provide consent.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'Assent is the client\'s agreement to participate — it is distinct from legal consent and is required from clients who can understand the nature of the intervention.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'A 16-year-old with the cognitive ability to understand the intervention can provide meaningful assent — the BCBA must seek this assent in addition to the guardian\'s legal consent.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'Assent is not limited to legal adults — it is required from any client who has the ability to understand and agree to the intervention, regardless of age.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Guardian consent does not substitute for client assent — both are required when the client has the capacity to provide assent.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'Assent is required for all interventions, not just punishment procedures — the Ethics Code does not limit assent requirements to restrictive procedures.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Assent applies to minors and adults with limited legal capacity who nonetheless have the cognitive ability to understand and agree — age alone does not determine assent requirements.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Legal consent and assent serve different functions — consent is a legal authorization; assent is the client\'s voluntary agreement based on understanding.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'The Ethics Code requires assent for all services from clients who can provide it — this is not limited to punishment or restrictive procedures.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'Assent is the client\'s voluntary agreement to participate in services, distinct from legal consent. The BACB Ethics Code requires BCBAs to obtain assent from clients who have the cognitive ability to provide it, regardless of their legal status. Guardian consent does not substitute for client assent.',
+              recallTrap: 'Conflating legal consent with assent, or believing guardian consent eliminates the need for client assent',
+              conceptConfusion: 'Consent (legal authorization from guardian) vs. assent (voluntary agreement from the client) — both are required when the client has the capacity to assent',
+              tcoTask: 'E-3: Obtain informed consent',
+            }
+      ],
   },
 
   // -- Scenario 7: Generalization Programming ---------------------------------
@@ -504,7 +686,59 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the goal of shaping (successive approximations) with the criterion for advancing (stable responding)',
         tcoTask: 'E-3: Use shaping',
       },
-    ],
+        {
+              id: 'sj-07-q2',
+              stem: 'A BCBA supervisor notices that an RBT is implementing a procedure incorrectly. The MOST appropriate immediate response is to:',
+              choices: [
+                { id: 'A', text: 'Document the error and address it at the next scheduled supervision meeting' },
+                { id: 'B', text: 'Provide immediate corrective feedback using behavioral skills training components' },
+                { id: 'C', text: 'Remove the RBT from the case and assign a different technician' },
+                { id: 'D', text: 'Contact the client\'s family to inform them of the implementation error' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'Behavioral skills training (BST) — which includes instruction, modeling, rehearsal, and feedback — is the evidence-based approach for correcting skill deficits in supervisees.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'Immediate corrective feedback is more effective than delayed feedback because it allows the RBT to correct the behavior while the context is still present.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'The BACB Ethics Code requires supervisors to provide feedback that is timely and specific — waiting until the next meeting would allow the incorrect implementation to continue and potentially harm the client.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'Delaying feedback until the next supervision meeting allows the incorrect procedure to continue, which could harm the client and reinforce the RBT\'s incorrect behavior.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Removing the RBT from the case is a disproportionate response to a correctable implementation error — the supervisor\'s role is to train and develop supervisees, not to remove them for errors.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'Contacting the family before addressing the error with the RBT is premature and could damage the therapeutic relationship — the supervisor should correct the error first.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Delayed feedback is less effective than immediate feedback and allows the incorrect behavior to continue — the supervisor must act immediately to protect the client.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Removal is a last resort for persistent performance problems, not a first response to a correctable error — the supervisor must first attempt to correct the behavior through training.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Family notification may be appropriate in some circumstances but is not the immediate priority — correcting the RBT\'s behavior to protect the client is the first obligation.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'When a supervisor observes an implementation error, immediate corrective feedback using BST components is the appropriate response. Delayed feedback allows the error to continue and is less effective. Removal from the case is disproportionate for a correctable error.',
+              recallTrap: 'Waiting for the scheduled supervision meeting to address an observed error',
+              conceptConfusion: 'Scheduled supervision vs. immediate corrective feedback — scheduled supervision is for ongoing training; immediate feedback is required when errors are observed in real time',
+              tcoTask: 'I-4: Evaluate the effects of supervision',
+            },
+        {
+              id: 'sj-07-q3',
+              stem: 'A BCBA is providing supervision to an RBT who is meeting all performance criteria. The BCBA should:',
+              choices: [
+                { id: 'A', text: 'Reduce supervision frequency below the BACB minimum because the RBT is performing well' },
+                { id: 'B', text: 'Maintain the required supervision frequency and continue to provide performance feedback' },
+                { id: 'C', text: 'Transition the RBT to self-supervision because they no longer need direct oversight' },
+                { id: 'D', text: 'Increase supervision frequency to prevent performance decay' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'The BACB requires a minimum of 5% of the RBT\'s monthly service hours to be supervised, regardless of performance level — this minimum cannot be reduced based on performance.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'Ongoing performance feedback is required even when the RBT is meeting criteria — supervision is not only for correcting errors but also for maintaining performance and professional development.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'The BACB supervision requirements are minimum standards that apply to all RBTs regardless of performance — a BCBA cannot unilaterally reduce supervision below these minimums.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'Reducing supervision below the BACB minimum (5% of monthly service hours) violates the RBT Supervision Requirements regardless of performance level.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'RBTs cannot self-supervise — the BACB requires that supervision be provided by a qualified BCBA or BCaBA, and this requirement does not end when performance criteria are met.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'Increasing supervision frequency beyond the required minimum is not indicated when the RBT is performing well — it would be an inefficient use of supervision resources.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'The 5% minimum is a floor, not a ceiling — but it cannot be reduced below this minimum regardless of how well the RBT is performing.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Self-supervision is not a recognized BACB category — RBTs must always have a qualified supervisor, and this requirement is not waived based on performance.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Increasing supervision frequency is not required when performance criteria are being met — the BCBA should maintain the required minimum and continue providing feedback.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'The BACB requires a minimum of 5% of the RBT\'s monthly service hours to be supervised, and this minimum applies regardless of performance level. Supervision is not only for correcting errors — it also serves to maintain performance, support professional development, and ensure ongoing quality of care.',
+              recallTrap: 'Believing that good performance justifies reducing supervision below the BACB minimum',
+              conceptConfusion: 'Supervision minimum as a floor vs. a flexible standard — the 5% minimum is a non-negotiable floor that cannot be reduced based on performance',
+              tcoTask: 'I-1: State the reasons for using supervision',
+            }
+      ],
   },
 
   // -- Scenario 8: Measurement ------------------------------------------------
@@ -540,7 +774,59 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing DRO (reinforces absence of behavior) with DRA/FCT (reinforces a functional alternative)',
         tcoTask: 'H-2: Use differential reinforcement procedures',
       },
-    ],
+        {
+              id: 'sj-08-q2',
+              stem: 'A BCBA is deciding whether to use frequency or rate to measure a client\'s behavior. The observation sessions vary in length from 20 to 45 minutes. Which measurement dimension is MOST appropriate?',
+              choices: [
+                { id: 'A', text: 'Frequency, because it directly counts the number of occurrences' },
+                { id: 'B', text: 'Rate, because it accounts for the varying session lengths' },
+                { id: 'C', text: 'Duration, because the session length variation affects the data' },
+                { id: 'D', text: 'Latency, because it measures the time between sessions' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'Rate (responses per unit time) accounts for varying observation periods, making it a more valid comparison across sessions of different lengths.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'When session lengths vary, raw frequency counts are not directly comparable — a session with 10 responses in 20 minutes reflects a different level of behavior than 10 responses in 45 minutes.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'Rate standardizes the count by dividing responses by time, allowing valid comparison across sessions of different durations — this is why rate is preferred when observation periods are not equal.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'Frequency counts are only directly comparable when observation periods are equal in length — with varying session lengths, frequency data cannot be validly compared across sessions.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Duration measures how long a behavior lasts, not how often it occurs — it is not the appropriate dimension for counting discrete behavioral events.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'Latency measures the time between a stimulus and the onset of behavior — it does not measure the frequency of behavior across sessions.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Frequency without a time denominator is only valid for comparison when all sessions are equal in length — varying session lengths require rate measurement.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Duration is the appropriate dimension for behaviors that vary in how long they last (e.g., on-task behavior) — not for behaviors measured by how often they occur.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Latency is the time from the onset of a stimulus to the onset of a response — it is a different dimension entirely and does not address session-length variability.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'Rate (responses per unit time) is the appropriate measurement dimension when observation sessions vary in length. Frequency counts are only directly comparable when session lengths are equal. Rate standardizes the count by dividing by time, allowing valid comparison across sessions of different durations.',
+              recallTrap: 'Using frequency when session lengths vary',
+              conceptConfusion: 'Frequency vs. rate — frequency is the raw count; rate divides by time to allow comparison across unequal observation periods',
+              tcoTask: 'C-1: Measure frequency (i.e., count) and rate (i.e., count per unit time)',
+            },
+        {
+              id: 'sj-08-q3',
+              stem: 'A client engages in hand-flapping that occurs in continuous bouts lasting 30–120 seconds. Which measurement dimension is MOST appropriate for this behavior?',
+              choices: [
+                { id: 'A', text: 'Frequency' },
+                { id: 'B', text: 'Rate' },
+                { id: 'C', text: 'Duration' },
+                { id: 'D', text: 'Interresponse time' },
+              ],
+              correctChoice: 'C',
+              justifications: [
+                { id: 'j1', text: 'Duration is the most appropriate dimension for behaviors that occur in continuous bouts and vary in how long they last — it captures the temporal extent of the behavior.', isCorrect: true, justifiesChoice: 'C' },
+                { id: 'j2', text: 'For hand-flapping that lasts 30–120 seconds per bout, the clinically meaningful question is "how long does the behavior last?" — duration directly answers this question.', isCorrect: true, justifiesChoice: 'C' },
+                { id: 'j3', text: 'Duration recording captures the total time engaged in the behavior, which is the most sensitive measure for behaviors with variable bout lengths — frequency would miss the intensity of longer bouts.', isCorrect: true, justifiesChoice: 'C' },
+                { id: 'j4', text: 'Frequency counts the number of discrete occurrences — for continuous behaviors with variable bout lengths, frequency does not capture the clinical significance of longer bouts.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Rate (count per unit time) has the same limitation as frequency for continuous behaviors — it does not capture the duration of individual bouts.', isCorrect: false, justifiesChoice: 'B' },
+                { id: 'j6', text: 'Interresponse time (IRT) measures the time between responses — it is appropriate for behaviors where the spacing between responses is clinically relevant, not for continuous bout behaviors.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Frequency is appropriate for discrete behaviors with clear onset and offset — continuous behaviors with variable bout lengths are better captured by duration.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Rate does not capture the duration of individual bouts — two sessions with the same rate could have very different total durations of the behavior.', isCorrect: false, justifiesChoice: 'B' },
+                { id: 'j9', text: 'IRT is the time between the end of one response and the start of the next — it is not the appropriate dimension for measuring how long a continuous behavior lasts.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'Duration is the most appropriate measurement dimension for behaviors that occur in continuous bouts and vary in how long they last. Frequency would treat a 30-second bout and a 120-second bout as equivalent — duration captures the clinical difference between them.',
+              recallTrap: 'Using frequency for continuous behaviors with variable bout lengths',
+              conceptConfusion: 'Frequency vs. duration — frequency counts discrete occurrences; duration measures the temporal extent of behavior — for continuous behaviors, duration is more clinically informative',
+              tcoTask: 'C-2: Measure duration',
+            }
+      ],
   },
 
   // -- Scenario 9: Prompting --------------------------------------------------
@@ -576,7 +862,59 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Conflating client consent with ethical permissibility — consent does not eliminate the ethical concern about multiple relationships',
         tcoTask: 'I-1: Comply with BACB ethics code; I-5: Avoid multiple relationships',
       },
-    ],
+        {
+              id: 'sj-09-q2',
+              stem: 'A child says "cookie" when she sees a cookie on the table but does not want one. This verbal behavior is BEST classified as:',
+              choices: [
+                { id: 'A', text: 'Mand' },
+                { id: 'B', text: 'Tact' },
+                { id: 'C', text: 'Echoic' },
+                { id: 'D', text: 'Intraverbal' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'A tact is a verbal operant controlled by a nonverbal discriminative stimulus (seeing the cookie) and maintained by generalized conditioned reinforcement — the child is labeling what she sees.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'The antecedent is a nonverbal stimulus (the cookie on the table), and the child is not under a motivating operation for the cookie — this rules out mand and confirms tact.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'The key distinguishing feature of a tact is that it is controlled by a nonverbal stimulus and maintained by generalized conditioned reinforcement, not by the specific item named — the child is commenting, not requesting.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'A mand is controlled by a motivating operation and specifies its own reinforcer — the child does not want the cookie, so there is no MO for it, ruling out mand.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'An echoic is a verbal operant controlled by a verbal antecedent (another person\'s speech) — there is no verbal antecedent here, ruling out echoic.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'An intraverbal is controlled by a verbal antecedent and does not have point-to-point correspondence with it — there is no verbal antecedent here, ruling out intraverbal.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'The absence of an MO for the cookie is the critical feature that distinguishes this as a tact rather than a mand — the child is labeling, not requesting.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Echoics require a verbal antecedent with point-to-point correspondence — the antecedent here is the cookie (nonverbal), not speech.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Intraverbals require a verbal antecedent — the antecedent here is the nonverbal stimulus of seeing the cookie, not a verbal stimulus.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'A tact is a verbal operant controlled by a nonverbal discriminative stimulus and maintained by generalized conditioned reinforcement. The child is labeling the cookie she sees (nonverbal SD), not requesting it (no MO). The absence of a motivating operation for the cookie is the key feature that distinguishes this as a tact rather than a mand.',
+              recallTrap: 'Classifying any verbal response about an item as a mand',
+              conceptConfusion: 'Mand vs. tact — mands are controlled by MOs and specify their own reinforcer; tacts are controlled by nonverbal SDs and maintained by generalized conditioned reinforcement',
+              tcoTask: 'B-14: Define and provide examples of verbal operants',
+            },
+        {
+              id: 'sj-09-q3',
+              stem: 'A child says "more" when given a piece of cracker and wanting additional crackers. This verbal behavior is BEST classified as:',
+              choices: [
+                { id: 'A', text: 'Tact' },
+                { id: 'B', text: 'Mand' },
+                { id: 'C', text: 'Intraverbal' },
+                { id: 'D', text: 'Textual' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'A mand is a verbal operant controlled by a motivating operation (deprivation for crackers) and specifies its own reinforcer (more crackers) — "more" functions as a request for additional crackers.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'The child is under an MO (wanting more crackers) and the verbal response ("more") specifies the reinforcer (additional crackers) — both defining features of a mand are present.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'The reinforcer for a mand is the specific item or action requested — the child\'s "more" is reinforced by receiving additional crackers, confirming the mand classification.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'A tact is controlled by a nonverbal SD and maintained by generalized conditioned reinforcement — the child is not labeling the cracker, she is requesting more of it under an MO.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'An intraverbal is controlled by a verbal antecedent — there is no verbal antecedent here; the behavior is controlled by the MO (wanting crackers).', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'A textual is a verbal operant controlled by written text — there is no written text present, ruling out textual.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'The tact requires a nonverbal SD and generalized conditioned reinforcement — the MO (wanting crackers) is the controlling variable here, not a nonverbal SD, ruling out tact.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Intraverbals require a verbal antecedent — the controlling variable here is the MO (deprivation for crackers), not a verbal stimulus.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Textuals are controlled by written text with point-to-point correspondence — there is no written text in this scenario.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'A mand is defined by two features: (1) it is controlled by a motivating operation, and (2) it specifies its own reinforcer. The child is under an MO (wanting more crackers) and her verbal response ("more") specifies the reinforcer (additional crackers). Both features confirm this as a mand.',
+              recallTrap: 'Classifying "more" as a tact because the cracker is visible',
+              conceptConfusion: 'The presence of the item does not determine the verbal operant class — the controlling variable (MO vs. nonverbal SD) and the maintaining reinforcer determine the classification',
+              tcoTask: 'B-14: Define and provide examples of verbal operants',
+            }
+      ],
   },
 
   // -- Scenario 10: Supervision -----------------------------------------------
@@ -684,6 +1022,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Failing to distinguish between a skill deficit (needs training) and a performance deficit (needs supervision/accountability) — the question requires identifying which type of problem this is',
         tcoTask: 'D-1: Design supervision systems; D-4: Evaluate supervisee performance',
         },
+        {
+              id: 'sj-10-q3',
+              stem: 'A BCBA is using a multiple baseline across behaviors design. After the intervention is introduced for Behavior 1 and shows improvement, the BCBA should:',
+              choices: [
+                { id: 'A', text: 'Immediately introduce the intervention for all remaining behaviors simultaneously' },
+                { id: 'B', text: 'Continue baseline for Behaviors 2 and 3 until Behavior 1 shows stable improvement, then introduce the intervention sequentially' },
+                { id: 'C', text: 'Withdraw the intervention from Behavior 1 to demonstrate experimental control' },
+                { id: 'D', text: 'Introduce the intervention for Behavior 2 only if Behavior 1 returns to baseline levels' },
+              ],
+              correctChoice: 'B',
+              justifications: [
+                { id: 'j1', text: 'The multiple baseline design demonstrates experimental control by showing that behaviors change only when the intervention is introduced — maintaining baseline for untreated behaviors while one improves is the defining feature of the design.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j2', text: 'Sequential introduction of the intervention across behaviors, while maintaining baseline for untreated behaviors, allows the researcher to rule out history and maturation as alternative explanations.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j3', text: 'Waiting for stable improvement in Behavior 1 before introducing the intervention to Behavior 2 ensures that the change in Behavior 1 is clearly attributable to the intervention, strengthening the experimental logic.', isCorrect: true, justifiesChoice: 'B' },
+                { id: 'j4', text: 'Introducing the intervention for all behaviors simultaneously would eliminate the staggered introduction that is the defining feature of the multiple baseline design — it would not demonstrate experimental control.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j5', text: 'Withdrawing the intervention from Behavior 1 is the logic of an ABAB reversal design, not a multiple baseline design — multiple baselines do not require withdrawal.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j6', text: 'The multiple baseline design does not require Behavior 1 to return to baseline before introducing the intervention to Behavior 2 — that is the logic of a reversal design.', isCorrect: false, justifiesChoice: 'D' },
+                { id: 'j7', text: 'Simultaneous introduction eliminates the staggered logic of the multiple baseline design and prevents demonstration of experimental control.', isCorrect: false, justifiesChoice: 'A' },
+                { id: 'j8', text: 'Withdrawal is the logic of reversal/ABAB designs — multiple baseline designs demonstrate experimental control through sequential introduction, not withdrawal.', isCorrect: false, justifiesChoice: 'C' },
+                { id: 'j9', text: 'Waiting for Behavior 1 to return to baseline is the reversal design logic — multiple baseline designs do not require this and are preferred precisely because withdrawal is not necessary.', isCorrect: false, justifiesChoice: 'D' },
+              ],
+              explanation: 'The multiple baseline design demonstrates experimental control through sequential, staggered introduction of the intervention across behaviors (or settings or participants). Maintaining baseline for untreated behaviors while one improves rules out alternative explanations. Simultaneous introduction or withdrawal of the intervention would undermine the experimental logic.',
+              recallTrap: 'Confusing multiple baseline logic with reversal/ABAB logic',
+              conceptConfusion: 'Multiple baseline (staggered sequential introduction) vs. reversal/ABAB (withdrawal and reintroduction) — these are fundamentally different strategies for demonstrating experimental control',
+              tcoTask: 'D-3: Identify the defining features of multiple baseline designs',
+            }
       ],
   },
 
@@ -719,6 +1083,58 @@ export const scenarioItems: ScenarioItem[] = [
         recallTrap: 'Confusing behavioral momentum with NCR or high-p sequences',
         conceptConfusion: 'Conflating the mechanism of behavioral momentum (response persistence from reinforcement history) with the procedure (high-p request sequence)',
         tcoTask: 'E-4: Use reinforcement procedures; E-5: Use antecedent interventions',
+      },
+      {
+        id: 'sj-11-q2',
+        stem: 'A student receives a sticker every time she completes a math worksheet. Over two weeks, her completion rate doubles. Her teacher then stops giving stickers, and within a week, her completion rate returns to baseline. Which conclusion is MOST supported by this data?',
+        choices: [
+          { id: 'A', text: 'The sticker was a conditioned punisher because it suppressed behavior when removed.' },
+          { id: 'B', text: 'The sticker functioned as a positive reinforcer because its contingent delivery was followed by an increase in the target behavior.' },
+          { id: 'C', text: 'The sticker was a negative reinforcer because the student was motivated to avoid not receiving it.' },
+          { id: 'D', text: 'The data are inconclusive because no functional analysis was conducted.' },
+        ],
+        correctChoice: 'B',
+        justifications: [
+          { id: 'j1', text: 'Reinforcement is defined functionally — if behavior increased after the consequence, the consequence was a reinforcer, regardless of the deliverer\'s intent.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j2', text: 'Positive reinforcement involves the addition of a stimulus following a behavior that increases future frequency — stickers were added and behavior increased.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j3', text: 'The return to baseline after sticker removal is consistent with extinction of a positively reinforced behavior, not punishment.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j4', text: 'A punisher decreases behavior — the sticker increased behavior, so it cannot be a punisher regardless of what happened when it was removed.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j5', text: 'Negative reinforcement requires the removal of a stimulus to increase behavior — the sticker was added, not removed, to produce the increase.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j6', text: 'A functional analysis is not required to identify reinforcement — a well-controlled behavioral intervention with clear data is sufficient.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'The term positive in positive reinforcement refers to stimulus addition, not to the pleasantness of the stimulus.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j8', text: 'Conditioned punishers suppress behavior — the sticker increased behavior, so it cannot function as a punisher.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j9', text: 'Reinforcement and punishment are defined by their effects on future behavior, not by the intentions of the person delivering the consequence.', isCorrect: false, justifiesChoice: 'A' },
+        ],
+        explanation: 'Reinforcement is defined entirely by its effect on future behavior. The sticker increased worksheet completion (positive reinforcement: stimulus added, behavior increased). The return to baseline during extinction confirms the functional relationship.',
+        recallTrap: 'Confusing negative reinforcement with punishment — both may involve aversive elements, but negative reinforcement increases behavior by removing a stimulus.',
+        conceptConfusion: 'Positive and negative in reinforcement/punishment refer to stimulus addition (+) or removal (-), not to pleasant or unpleasant outcomes.',
+        tcoTask: 'B-3: Use behavioral concepts and principles',
+      },
+      {
+        id: 'sj-11-q3',
+        stem: 'A teacher uses a loud verbal reprimand every time a student engages in off-task behavior. After two weeks, the student\'s off-task behavior has increased significantly. Which statement BEST explains this outcome?',
+        choices: [
+          { id: 'A', text: 'The reprimand is functioning as a positive reinforcer because it is a social consequence that followed the behavior and increased it.' },
+          { id: 'B', text: 'The reprimand is functioning as a negative punisher because the teacher removed attention from the student.' },
+          { id: 'C', text: 'The reprimand is functioning as a positive punisher because it is an aversive stimulus added after the behavior.' },
+          { id: 'D', text: 'The reprimand has no functional relationship with the behavior because it was not delivered on a fixed schedule.' },
+        ],
+        correctChoice: 'A',
+        justifications: [
+          { id: 'j1', text: 'Reinforcement is defined by its effect — if behavior increased after the consequence, the consequence was a reinforcer, regardless of the deliverer\'s intent.', isCorrect: true, justifiesChoice: 'A' },
+          { id: 'j2', text: 'Attention, even in the form of a reprimand, can function as a positive reinforcer for attention-maintained behavior.', isCorrect: true, justifiesChoice: 'A' },
+          { id: 'j3', text: 'The teacher added a stimulus (verbal reprimand) and behavior increased — this meets the definition of positive reinforcement.', isCorrect: true, justifiesChoice: 'A' },
+          { id: 'j4', text: 'A punisher decreases behavior — since off-task behavior increased, the reprimand cannot be functioning as a punisher.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j5', text: 'Negative punishment involves removing a stimulus to decrease behavior — the teacher added a stimulus, not removed one.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j6', text: 'Schedule of delivery does not determine whether a consequence is a reinforcer or punisher — only the effect on future behavior does.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'The intent of the person delivering the consequence is irrelevant to its functional classification.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j8', text: 'Aversive stimuli can function as reinforcers if the behavior they follow increases — aversiveness is not the defining feature of punishment.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j9', text: 'Positive punishment requires that behavior decreases after an aversive stimulus is added — behavior increased here, so this is reinforcement.', isCorrect: false, justifiesChoice: 'C' },
+        ],
+        explanation: 'Regardless of intent, the verbal reprimand increased off-task behavior — making it a positive reinforcer. Attention (even negative attention) commonly functions as reinforcement for attention-maintained behavior. Behavioral procedures are classified by their effects, not their form.',
+        recallTrap: 'Assuming that an unpleasant consequence must be a punisher — but if behavior increases, the consequence is a reinforcer by definition.',
+        conceptConfusion: 'The functional classification of a consequence is determined entirely by its effect on future behavior, not by the nature or intent of the stimulus.',
+        tcoTask: 'B-3: Use behavioral concepts and principles',
       },
     ],
   },
@@ -827,6 +1243,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing \'the attention condition is highest\' with \'the behavior is attention-maintained\' — ambiguous FA data require follow-up assessment, not immediate intervention',
         tcoTask: 'B-8: Conduct functional assessments; E-1: Use interventions based on assessment results',
         },
+      {
+        id: 'sj-12-q3',
+        stem: 'A functional analysis reveals elevated rates of self-injurious behavior (SIB) in the alone condition and low rates in the attention, tangible, and demand conditions. Which function is MOST supported, and what is the MOST appropriate initial treatment approach?',
+        choices: [
+          { id: 'A', text: 'Attention function; implement extinction by withholding attention following SIB.' },
+          { id: 'B', text: 'Automatic reinforcement; implement a noncontingent reinforcement schedule with preferred sensory stimulation and consider a sensory extinction procedure.' },
+          { id: 'C', text: 'Escape function; modify task demands and implement differential reinforcement of alternative behavior.' },
+          { id: 'D', text: 'Tangible function; implement a token economy with access to preferred items contingent on the absence of SIB.' },
+        ],
+        correctChoice: 'B',
+        justifications: [
+          { id: 'j1', text: 'The alone condition in a functional analysis isolates automatic reinforcement — behavior that occurs without any social consequence is maintained by the behavior itself.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j2', text: 'Noncontingent reinforcement with competing sensory stimulation reduces the motivating operation for automatically reinforced behavior.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j3', text: 'Sensory extinction (blocking the sensory consequence) is the most direct treatment for automatic reinforcement, though it requires careful implementation.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j4', text: 'Social extinction (withholding attention) is only effective for attention-maintained behavior — it would have no effect on automatically reinforced SIB.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j5', text: 'Low rates in the demand condition indicate escape is not the primary function — escape-maintained behavior would be elevated in the demand condition.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j6', text: 'Low rates in the tangible condition indicate tangible reinforcement is not the function — a token economy targeting tangible access would be misdirected.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'The alone condition is specifically designed to identify automatic reinforcement — this is a standard interpretation of functional analysis results.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j8', text: 'Escape-based interventions are indicated for escape-maintained behavior, not automatically reinforced behavior.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j9', text: 'Treatment selection must be matched to the identified function — applying an attention-based treatment to automatically reinforced behavior would be ineffective.', isCorrect: false, justifiesChoice: 'A' },
+        ],
+        explanation: 'Elevated rates in the alone condition with low rates in all social conditions indicate automatic (sensory) reinforcement. Treatment involves noncontingent sensory stimulation (competing reinforcement) and sensory extinction when feasible. Social extinction would be ineffective because attention is not the reinforcer.',
+        recallTrap: 'Selecting attention extinction for all SIB without checking FA results — always match treatment to the identified function.',
+        conceptConfusion: 'The alone condition identifies automatic reinforcement — behavior in the alone condition is maintained by the sensory consequences of the behavior itself, not by social consequences.',
+        tcoTask: 'F-2: Conduct functional analyses; E-1: Use interventions based on assessment results',
+      },
       ],
   },
 
@@ -861,6 +1303,58 @@ export const scenarioItems: ScenarioItem[] = [
         recallTrap: 'Attributing the increase in one setting to a new antecedent or motivating operation',
         conceptConfusion: 'Confusing behavioral contrast (schedule change in one context produces opposite change in another) with a direct environmental cause in the second setting',
         tcoTask: 'B-3: Use behavioral concepts and principles',
+      },
+      {
+        id: 'sj-13-q2',
+        stem: 'A child who typically eats lunch at noon has not eaten since the previous evening. According to behavior analysis, this food deprivation state is BEST described as which type of motivating operation, and what are its two effects?',
+        choices: [
+          { id: 'A', text: 'A conditioned motivating operation (CMO) that establishes food as a reinforcer and evokes food-seeking behavior.' },
+          { id: 'B', text: 'An unconditioned motivating operation (UMO) that increases the reinforcing value of food and evokes behavior that has previously produced food.' },
+          { id: 'C', text: 'A discriminative stimulus (SD) that signals that food reinforcement is available and evokes food-seeking behavior.' },
+          { id: 'D', text: 'A conditioned motivating operation (CMO-R) that abolishes the reinforcing value of food and abates food-seeking behavior.' },
+        ],
+        correctChoice: 'B',
+        justifications: [
+          { id: 'j1', text: 'Food deprivation is a UMO because its reinforcer-establishing effect is unlearned — no conditioning history is required for food deprivation to make food a reinforcer.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j2', text: 'All MOs have two effects: a value-altering effect (establishing or abolishing) and a behavior-altering effect (evoking or abating).', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j3', text: 'Food deprivation establishes food as a reinforcer (value-altering) and evokes behavior that has previously produced food (behavior-altering).', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j4', text: 'A CMO acquires its MO function through conditioning — food deprivation does not require conditioning, so it is a UMO.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j5', text: 'A discriminative stimulus signals the availability of reinforcement but does not alter the value of the reinforcer — MOs alter value.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j6', text: 'A CMO-R is a stimulus that has been paired with worsening conditions — food deprivation is not a CMO-R.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'Abolishing operations reduce the reinforcing value of a stimulus — food deprivation increases (establishes) the reinforcing value of food.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j8', text: 'The behavior-altering effect of an establishing operation is evocative (increases behavior), not abative.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j9', text: 'MOs and SDs are distinct concepts — MOs alter reinforcer value, SDs signal reinforcement availability without altering value.', isCorrect: false, justifiesChoice: 'C' },
+        ],
+        explanation: 'Food deprivation is a prototypical UMO — its effects are unlearned and biologically based. All MOs have two effects: value-altering (establishes/abolishes) and behavior-altering (evokes/abates). Food deprivation establishes food as a reinforcer and evokes food-seeking behavior.',
+        recallTrap: 'Confusing MOs with SDs because both affect behavior — MOs alter the value of reinforcers while SDs signal their availability.',
+        conceptConfusion: 'UMOs (like food deprivation) have unlearned effects; CMOs acquire their MO function through conditioning history.',
+        tcoTask: 'B-6: Use motivating operations',
+      },
+      {
+        id: 'sj-13-q3',
+        stem: 'A BCBA notices that a client\'s problem behavior increases dramatically whenever the client\'s preferred activity is about to end. The BCBA hypothesizes that the impending removal of the preferred activity is functioning as a motivating operation. This is BEST classified as which type of CMO?',
+        choices: [
+          { id: 'A', text: 'CMO-R (reflexive CMO) — a stimulus that signals worsening conditions and establishes escape from it as a reinforcer.' },
+          { id: 'B', text: 'CMO-T (transitive CMO) — a stimulus that establishes another stimulus as a reinforcer.' },
+          { id: 'C', text: 'CMO-S (surrogate CMO) — a stimulus that has been paired with an unconditioned MO.' },
+          { id: 'D', text: 'UMO (unconditioned MO) — a biologically based deprivation state.' },
+        ],
+        correctChoice: 'A',
+        justifications: [
+          { id: 'j1', text: 'A CMO-R signals worsening conditions — the impending end of a preferred activity is a worsening condition (loss of preferred access).', isCorrect: true, justifiesChoice: 'A' },
+          { id: 'j2', text: 'CMO-Rs establish escape from the worsening condition as a reinforcer and evoke escape behavior — problem behavior is the escape response here.', isCorrect: true, justifiesChoice: 'A' },
+          { id: 'j3', text: 'Transition warnings and activity endings are common CMO-R stimuli in clinical ABA — they signal the loss of preferred access.', isCorrect: true, justifiesChoice: 'A' },
+          { id: 'j4', text: 'A CMO-T establishes another stimulus as a reinforcer — for example, a locked box establishes a key as a reinforcer. This is not what is described.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j5', text: 'A CMO-S has been paired with an unconditioned MO — for example, a stimulus paired with food deprivation. This is not what is described.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j6', text: 'UMOs have unlearned effects — the client\'s response to activity endings is learned through conditioning history, not biology.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'CMO-Rs signal worsening conditions (not improvement) — a stimulus that signals improvement would be an abolishing operation.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j8', text: 'The three types of CMOs are CMO-R (reflexive), CMO-T (transitive), and CMO-S (surrogate) — each has a distinct conditioning history.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j9', text: 'Problem behavior that increases before transitions is a hallmark of CMO-R function — the transition signal establishes escape as a reinforcer.', isCorrect: false, justifiesChoice: 'A' },
+        ],
+        explanation: 'The impending end of a preferred activity signals worsening conditions (loss of preferred access), making it a CMO-R. CMO-Rs establish escape from the worsening condition as a reinforcer and evoke escape behavior — in this case, problem behavior that delays or prevents the transition.',
+        recallTrap: 'Confusing CMO-R with CMO-T because both involve conditioned stimuli — CMO-R signals worsening conditions while CMO-T establishes another stimulus as a reinforcer.',
+        conceptConfusion: 'CMO-R signals worsening conditions; CMO-T establishes another stimulus as a reinforcer; CMO-S has been paired with an unconditioned MO.',
+        tcoTask: 'B-6: Use motivating operations',
       },
     ],
   },
@@ -897,6 +1391,58 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the appropriate design for demonstrating functional relationships in applied settings (single-subject) with group designs used in basic research',
         tcoTask: 'C-1: Select appropriate research designs',
       },
+      {
+        id: 'sj-14-q2',
+        stem: 'After a baseline phase (A), an intervention reduces a client\'s self-injurious behavior to near zero (B). The researcher withdraws the intervention (return to A). The client\'s SIB does NOT return to baseline levels. Which conclusion is MOST appropriate?',
+        choices: [
+          { id: 'A', text: 'Experimental control has been demonstrated because the intervention produced a change from baseline.' },
+          { id: 'B', text: 'The reversal design has failed to demonstrate experimental control because the behavior did not reverse, and an alternative design should be considered.' },
+          { id: 'C', text: 'The data are invalid because the researcher made an error in withdrawing the intervention.' },
+          { id: 'D', text: 'The intervention should be immediately reinstated because the failure to reverse indicates a treatment effect that cannot be undone.' },
+        ],
+        correctChoice: 'B',
+        justifications: [
+          { id: 'j1', text: 'Experimental control in a reversal design requires demonstration that behavior changes with intervention and reverses without it — one direction of change is insufficient.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j2', text: 'Failure to reverse does not invalidate the data — it indicates that the reversal design may not be appropriate for this behavior.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j3', text: 'When a reversal design cannot demonstrate experimental control due to irreversibility, a multiple baseline design is a common alternative.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j4', text: 'A single A-to-B change does not demonstrate experimental control — it could be due to history, maturation, or other confounds.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j5', text: 'The researcher did not make an error — withdrawing the intervention is the standard procedure for a reversal design.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j6', text: 'Immediately reinstating the intervention is a clinical decision, not a research conclusion — the research question is about experimental control.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'Some behaviors cannot be reversed — this is a known limitation of reversal designs for behaviors maintained by learning or irreversible changes.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j8', text: 'Experimental control requires replication of the effect — in a reversal design, behavior must change in both directions.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j9', text: 'A multiple baseline design does not require withdrawal of the intervention and is preferred when reversal is not possible or ethical.', isCorrect: false, justifiesChoice: 'B' },
+        ],
+        explanation: 'A reversal design demonstrates experimental control by showing behavior changes when the IV is applied AND reverses when it is withdrawn. Failure to reverse means experimental control has not been demonstrated. This is a known limitation for behaviors that may not reverse (e.g., due to learning or carryover effects).',
+        recallTrap: 'Concluding that experimental control is demonstrated whenever behavior changes from baseline — reversal designs require the behavior to change in both directions.',
+        conceptConfusion: 'Experimental control in a reversal design requires replication: behavior must change when the IV is applied AND reverse when it is withdrawn.',
+        tcoTask: 'D-3: Identify threats to internal validity',
+      },
+      {
+        id: 'sj-14-q3',
+        stem: 'A BCBA wants to compare the relative effectiveness of two communication interventions for a single student without withdrawing either intervention. Which design is MOST appropriate?',
+        choices: [
+          { id: 'A', text: 'Reversal (ABAB) design, because it allows comparison of baseline and intervention conditions.' },
+          { id: 'B', text: 'Multiple baseline across behaviors design, because it controls for history and maturation.' },
+          { id: 'C', text: 'Alternating treatments design (ATD), because it allows rapid alternation between two conditions within the same participant.' },
+          { id: 'D', text: 'Changing criterion design, because it evaluates whether behavior meets a series of progressively stricter criteria.' },
+        ],
+        correctChoice: 'C',
+        justifications: [
+          { id: 'j1', text: 'The ATD compares two conditions by rapidly alternating between them — it is specifically designed for within-participant treatment comparisons.', isCorrect: true, justifiesChoice: 'C' },
+          { id: 'j2', text: 'The ATD does not require withdrawal of either intervention — both conditions are maintained throughout the study.', isCorrect: true, justifiesChoice: 'C' },
+          { id: 'j3', text: 'The ATD produces a direct visual comparison of two intervention conditions within the same participant.', isCorrect: true, justifiesChoice: 'C' },
+          { id: 'j4', text: 'A reversal design compares intervention to baseline, not two interventions to each other — it would require withdrawing both interventions.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j5', text: 'A multiple baseline design controls for history and maturation but does not directly compare two interventions within the same participant.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j6', text: 'A changing criterion design evaluates whether behavior meets progressively stricter criteria — it is not designed for comparing two interventions.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'The ATD is the most efficient design for comparing two treatments because it does not require extended baseline or withdrawal phases.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j8', text: 'Multiple baseline designs are preferred when withdrawal is not possible or ethical — but they do not directly compare two active interventions.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j9', text: 'The research question of which intervention is more effective maps directly to the ATD.', isCorrect: false, justifiesChoice: 'C' },
+        ],
+        explanation: 'The ATD is specifically designed to compare two or more interventions within a single participant by rapidly alternating between conditions. It does not require withdrawal of either treatment and produces a direct visual comparison — making it the design of choice when the question is which of two interventions is more effective.',
+        recallTrap: 'Selecting multiple baseline when comparing two interventions — multiple baseline controls for confounds across participants/behaviors but does not directly compare two active treatments.',
+        conceptConfusion: 'ATD is for comparing two or more conditions; reversal design is for demonstrating that a single IV controls behavior; multiple baseline is for demonstrating generality of an effect.',
+        tcoTask: 'D-4: Select appropriate research designs',
+      },
     ],
   },
 
@@ -931,6 +1477,58 @@ export const scenarioItems: ScenarioItem[] = [
         recallTrap: 'Defaulting to DTT because it is the most structured and well-documented procedure',
         conceptConfusion: 'Confusing the most structured procedure (DTT) with the most appropriate procedure for naturalistic social skills (incidental teaching / NTT)',
         tcoTask: 'E-2: Use naturalistic teaching procedures',
+      },
+      {
+        id: 'sj-15-q2',
+        stem: 'A 4-year-old with ASD can label red and blue in structured DTT sessions but does not label colors spontaneously in the natural environment. Which instructional approach would BEST address this generalization problem?',
+        choices: [
+          { id: 'A', text: 'Continue DTT with more trials until the child reaches 100% accuracy across 5 consecutive sessions.' },
+          { id: 'B', text: 'Transition to NET by embedding color labeling opportunities into natural activities with natural reinforcers.' },
+          { id: 'C', text: 'Add a new color to the DTT program to increase the complexity of the discrimination.' },
+          { id: 'D', text: 'Implement a token economy to increase motivation for color labeling in structured sessions.' },
+        ],
+        correctChoice: 'B',
+        justifications: [
+          { id: 'j1', text: 'Generalization failure after DTT mastery indicates that the skill is under narrow stimulus control — NET addresses this by teaching in varied natural contexts.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j2', text: 'NET embeds instruction in activities where the skill is naturally needed, using natural reinforcers present in the environment.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j3', text: 'Teaching in the natural environment promotes stimulus generalization because the natural environment contains the varied stimuli the learner will encounter in daily life.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j4', text: 'More DTT trials will increase accuracy in the structured setting but will not address the generalization problem — the skill is already at mastery in DTT.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j5', text: 'Adding a new color to DTT increases discrimination complexity but does not address the failure to generalize to the natural environment.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j6', text: 'A token economy increases motivation in structured sessions but does not address the generalization problem.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'Generalization must be programmed, not assumed — mastery in DTT does not guarantee generalization to the natural environment.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j8', text: 'NET is not a replacement for DTT but a complement — it is specifically indicated when generalization from structured settings is the goal.', isCorrect: false, justifiesChoice: 'B' },
+          { id: 'j9', text: 'Natural reinforcers are more likely to maintain the skill in the natural environment than arbitrary reinforcers used in DTT.', isCorrect: false, justifiesChoice: 'B' },
+        ],
+        explanation: 'When a skill is mastered in DTT but does not generalize to the natural environment, the solution is to embed instruction in natural contexts with natural reinforcers — this is the core principle of NET. Simply adding more DTT trials does not address the generalization problem.',
+        recallTrap: 'Recommending more DTT when a skill fails to generalize — if the skill is already at mastery in DTT, more DTT will not produce generalization.',
+        conceptConfusion: 'DTT is efficient for initial skill acquisition; NET is indicated for generalization. The two approaches are complementary, not mutually exclusive.',
+        tcoTask: 'G-2: Use naturalistic teaching procedures',
+      },
+      {
+        id: 'sj-15-q3',
+        stem: 'A BCBA is designing an initial skill acquisition program for a 3-year-old with ASD who has no functional communication and is highly distractible (attention span under 30 seconds). Which instructional format is MOST appropriate for initial skill acquisition?',
+        choices: [
+          { id: 'A', text: 'Natural Environment Teaching (NET) exclusively, because it is the most naturalistic and least restrictive approach.' },
+          { id: 'B', text: 'Discrete Trial Training (DTT) in a distraction-reduced environment, because it provides the structure and massed practice needed for initial skill acquisition with a distractible learner.' },
+          { id: 'C', text: 'Incidental teaching exclusively, because it capitalizes on the child\'s natural motivation.' },
+          { id: 'D', text: 'Video modeling, because it requires minimal attention from the instructor.' },
+        ],
+        correctChoice: 'B',
+        justifications: [
+          { id: 'j1', text: 'DTT provides a structured, distraction-reduced environment that is optimal for initial skill acquisition with distractible learners.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j2', text: 'Massed practice in DTT allows for rapid skill acquisition by providing many learning opportunities in a short time.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j3', text: 'DTT\'s clear antecedent-behavior-consequence structure is especially beneficial for learners in the initial stages of skill acquisition.', isCorrect: true, justifiesChoice: 'B' },
+          { id: 'j4', text: 'NET requires the learner to attend to naturally occurring antecedents — a highly distractible learner with no communication may not benefit from NET until basic skills are established.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j5', text: 'Incidental teaching requires the learner to initiate interactions — a child with no functional communication cannot initiate in the way incidental teaching requires.', isCorrect: false, justifiesChoice: 'C' },
+          { id: 'j6', text: 'Video modeling requires sustained attention to video stimuli — a child who cannot sustain attention for 30 seconds is unlikely to benefit from video modeling for initial skill acquisition.', isCorrect: false, justifiesChoice: 'D' },
+          { id: 'j7', text: 'The least restrictive environment principle applies to placement decisions, not to instructional format selection.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j8', text: 'DTT and NET are not mutually exclusive — DTT is typically used for initial acquisition, with NET added as skills develop.', isCorrect: false, justifiesChoice: 'A' },
+          { id: 'j9', text: 'Naturalness of the teaching environment is one consideration, but the primary consideration is the learner\'s current skill level and learning needs.', isCorrect: false, justifiesChoice: 'A' },
+        ],
+        explanation: 'DTT is the most appropriate format for initial skill acquisition with a distractible learner who has no functional communication. DTT provides a distraction-reduced environment, clear A-B-C structure, massed practice, and immediate reinforcement — all critical for establishing new skills in learners with limited attention.',
+        recallTrap: 'Selecting NET as the default because it is more naturalistic — for initial skill acquisition with a distractible learner, DTT\'s structure is a clinical advantage.',
+        conceptConfusion: 'DTT and NET serve different purposes: DTT is optimal for initial acquisition; NET is optimal for generalization.',
+        tcoTask: 'G-2: Use naturalistic teaching procedures',
       },
     ],
   },
@@ -967,7 +1565,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the discriminative stimulus (sets the occasion) with the reinforcer (selects the behavior) in a three-term contingency',
         tcoTask: 'B-3: Use behavioral concepts and principles',
       },
+    {id: "sj-16-q2",
+    stem: "Marcus, a 9-year-old with ASD, is learning to wash his hands. He can already perform the last two steps independently but struggles with earlier steps. Which chaining procedure is MOST appropriate?",
+    choices: [
+      { id: 'A', text: "Forward chaining, because it teaches steps in the natural order from first to last." },
+      { id: 'B', text: "Backward chaining, because Marcus already has the terminal steps and can experience natural reinforcement sooner." },
+      { id: 'C', text: "Total task chaining, because all steps should be taught simultaneously to maximize efficiency." },
+      { id: 'D', text: "Graduated guidance, because physical prompts are always required for multi-step tasks." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Backward chaining begins with the last step and works backward, allowing the learner to contact natural reinforcement (task completion) from the earliest sessions.", isCorrect: true },
+      { id: "j2", text: "When a learner already has terminal steps, backward chaining capitalizes on existing skills and reduces the number of steps requiring instruction.", isCorrect: true },
+      { id: "j3", text: "Natural reinforcement for task completion is more powerful than arbitrary reinforcement, and backward chaining maximizes contact with it.", isCorrect: true },
+      { id: "j4", text: "Forward chaining is appropriate when the learner has no steps in the chain, not when terminal steps are already mastered.", isCorrect: false },
+      { id: "j5", text: "Total task chaining requires the learner to attempt all steps each session, which is inefficient when only early steps are problematic.", isCorrect: false },
+      { id: "j6", text: "Graduated guidance is a prompting procedure, not a chaining procedure, and does not determine the order of step instruction.", isCorrect: false },
+      { id: "j7", text: "The selection of chaining procedure should be based on the learner's existing skill repertoire, not solely on the task structure.", isCorrect: false },
+      { id: "j8", text: "Backward chaining is contraindicated when the learner already has terminal steps — this is actually when it is most efficient.", isCorrect: false },
+      { id: "j9", text: "Chaining procedure selection is arbitrary and does not affect learning outcomes.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Graduated guidance is a prompting procedure, not a chaining procedure — the two are often conflated.. A common error is: Candidates often default to forward chaining because it matches the natural task order, overlooking that backward chaining is more efficient when terminal steps are already present..',
+    recallTrap: "Candidates often default to forward chaining because it matches the natural task order, overlooking that backward chaining is more efficient when terminal steps are already present.",
+    conceptConfusion: "Graduated guidance is a prompting procedure, not a chaining procedure — the two are often conflated.",
+    tcoTask: "G-12"
+  },
+    {id: "sj-16-q3",
+    stem: "Before implementing a chaining procedure for a self-care skill, a BCBA should first complete a task analysis. Which method of task analysis development is MOST rigorous?",
+    choices: [
+      { id: 'A', text: "Consulting a subject matter expert to list the steps from memory." },
+      { id: 'B', text: "Observing a competent individual perform the task and recording each discrete step." },
+      { id: 'C', text: "Asking the caregiver to describe the steps based on their experience." },
+      { id: 'D', text: "Using a published task analysis from a textbook without modification." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Direct observation of a competent performer captures the actual topography of each step, including subtle movements that verbal descriptions miss.", isCorrect: true },
+      { id: "j2", text: "Observational task analysis produces a more complete and accurate step sequence than memory-based or verbal-report methods.", isCorrect: true },
+      { id: "j3", text: "Recording each discrete step during observation ensures the task analysis reflects the natural performance sequence.", isCorrect: true },
+      { id: "j4", text: "Expert consultation relies on verbal reconstruction of a motor sequence, which is subject to omission errors.", isCorrect: false },
+      { id: "j5", text: "Caregiver descriptions are valuable for social validity but are not the most rigorous method for task analysis development.", isCorrect: false },
+      { id: "j6", text: "Published task analyses may not match the specific materials, environment, or learner characteristics of the current case.", isCorrect: false },
+      { id: "j7", text: "Task analyses should always be individualized to the learner, not adopted wholesale from published sources.", isCorrect: false },
+      { id: "j8", text: "Memory-based task analyses are sufficient when the analyst has personal experience with the task.", isCorrect: false },
+      { id: "j9", text: "The rigor of task analysis development does not affect the effectiveness of the chaining procedure.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Task analysis is a prerequisite to chaining, not a component of it — the two are related but distinct procedures.. A common error is: Candidates may select expert consultation because it sounds authoritative, but direct observation is empirically more rigorous..',
+    recallTrap: "Candidates may select expert consultation because it sounds authoritative, but direct observation is empirically more rigorous.",
+    conceptConfusion: "Task analysis is a prerequisite to chaining, not a component of it — the two are related but distinct procedures.",
+    tcoTask: "G-12"
+  }
+  ],
   },
 
   {
@@ -1002,7 +1650,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the mechanism of NCR (abolishes the MO by pre-satiation) with the mechanism of extinction (removes the contingency)',
         tcoTask: 'H-2: Use differential reinforcement procedures; E-5: Use antecedent interventions',
       },
+    {id: "sj-17-q2",
+    stem: "A BCBA is teaching a new skill to a learner with no prior exposure to the task. Which prompt hierarchy is MOST appropriate for initial instruction?",
+    choices: [
+      { id: 'A', text: "Least-to-most prompting, to promote independence from the first trial." },
+      { id: 'B', text: "Most-to-least prompting, to ensure errorless learning and prevent the establishment of error patterns." },
+      { id: 'C', text: "Time delay, to allow the learner to respond independently before a prompt is delivered." },
+      { id: 'D', text: "Simultaneous prompting, to pair the discriminative stimulus with the controlling prompt from the first trial." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Most-to-least prompting begins with the most intrusive prompt necessary to ensure correct responding, preventing errors from being practiced.", isCorrect: true },
+      { id: "j2", text: "Errorless learning is particularly important for new skills where the learner has no existing response in their repertoire.", isCorrect: true },
+      { id: "j3", text: "Preventing error patterns from establishing is more efficient than correcting them after they have been reinforced.", isCorrect: true },
+      { id: "j4", text: "Least-to-most prompting is appropriate for skills the learner partially knows, not for entirely new skills.", isCorrect: false },
+      { id: "j5", text: "Time delay requires the learner to have some existing response to the SD — it is not appropriate for brand-new skills.", isCorrect: false },
+      { id: "j6", text: "Simultaneous prompting is a valid errorless procedure but is most commonly used after the skill has been introduced.", isCorrect: false },
+      { id: "j7", text: "Prompt hierarchy selection should be based on the learner's current repertoire, not on a fixed preference for independence.", isCorrect: false },
+      { id: "j8", text: "Least-to-most prompting always promotes faster acquisition than most-to-least prompting.", isCorrect: false },
+      { id: "j9", text: "The type of prompt hierarchy used does not affect the rate of skill acquisition.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Time delay is a prompting procedure but requires an existing response — it is not an initial instruction strategy for new skills.. A common error is: Candidates often select least-to-most because it sounds like it promotes independence, but for brand-new skills, errorless learning (most-to-least) is more appropriate..',
+    recallTrap: "Candidates often select least-to-most because it sounds like it promotes independence, but for brand-new skills, errorless learning (most-to-least) is more appropriate.",
+    conceptConfusion: "Time delay is a prompting procedure but requires an existing response — it is not an initial instruction strategy for new skills.",
+    tcoTask: "G-11"
+  },
+    {id: "sj-17-q3",
+    stem: "A learner has acquired a skill under full physical guidance. The BCBA wants to fade the prompt. Which fading method is MOST likely to maintain accurate responding while building independence?",
+    choices: [
+      { id: 'A', text: "Abruptly removing all physical guidance in the next session." },
+      { id: 'B', text: "Systematically reducing the intrusiveness of the physical prompt across trials (e.g., hand-over-hand to wrist guidance to light touch)." },
+      { id: 'C', text: "Switching immediately to a verbal prompt to change the modality." },
+      { id: 'D', text: "Continuing full physical guidance indefinitely to prevent errors." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Systematic prompt fading reduces the intrusiveness of the prompt in small steps, maintaining accuracy while gradually transferring stimulus control to the natural SD.", isCorrect: true },
+      { id: "j2", text: "Gradual fading prevents the abrupt loss of support that can cause error spikes when prompts are removed too quickly.", isCorrect: true },
+      { id: "j3", text: "Fading within a prompt modality (e.g., physical) before switching modalities maintains response topography consistency.", isCorrect: true },
+      { id: "j4", text: "Abrupt removal of prompts frequently causes error spikes and can undermine previously acquired skills.", isCorrect: false },
+      { id: "j5", text: "Switching modalities abruptly (physical to verbal) does not fade the prompt — it changes it, which may disrupt stimulus control.", isCorrect: false },
+      { id: "j6", text: "Continuing full physical guidance indefinitely creates prompt dependency and prevents the development of independent responding.", isCorrect: false },
+      { id: "j7", text: "Prompt fading should always be done across sessions, never within a session.", isCorrect: false },
+      { id: "j8", text: "The goal of prompt fading is to remove prompts as quickly as possible, regardless of accuracy.", isCorrect: false },
+      { id: "j9", text: "Prompt fading is only necessary when the learner requests less assistance.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Changing prompt modality (physical to verbal) is not fading — it is a modality shift that requires its own fading procedure.. A common error is: Candidates sometimes confuse prompt fading with prompt removal — fading is gradual and systematic, not abrupt..',
+    recallTrap: "Candidates sometimes confuse prompt fading with prompt removal — fading is gradual and systematic, not abrupt.",
+    conceptConfusion: "Changing prompt modality (physical to verbal) is not fading — it is a modality shift that requires its own fading procedure.",
+    tcoTask: "G-11"
+  }
+  ],
   },
 
   {
@@ -1037,7 +1735,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Conflating client need with BCBA competence — the ethics code requires practicing within competence regardless of service availability',
         tcoTask: 'I-1: Comply with BACB ethics code; I-2: Practice within scope of competence',
       },
+    {id: "sj-18-q2",
+    stem: "A BCBA is using shaping to increase the duration of on-task behavior. The learner currently sustains attention for 30 seconds. The BCBA sets the next criterion at 5 minutes. What is the MOST likely outcome?",
+    choices: [
+      { id: 'A', text: "Rapid acquisition because the large step motivates the learner to try harder." },
+      { id: 'B', text: "Extinction of the target behavior because the criterion is too far from the current level and reinforcement is withheld too long." },
+      { id: 'C', text: "Spontaneous recovery of the previous 30-second duration." },
+      { id: 'D', text: "Successful shaping because the learner will gradually approximate the 5-minute criterion." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "When the shaping criterion jumps too far from the current level, the learner cannot contact reinforcement, and the behavior undergoes extinction.", isCorrect: true },
+      { id: "j2", text: "Successive approximations must be small enough that the learner can reach the next criterion with reasonable effort.", isCorrect: true },
+      { id: "j3", text: "Withholding reinforcement for too long produces frustration and behavioral deterioration, not increased effort.", isCorrect: true },
+      { id: "j4", text: "Large criterion jumps do not motivate learners — they produce extinction, not increased responding.", isCorrect: false },
+      { id: "j5", text: "Spontaneous recovery refers to the reappearance of an extinguished response after a rest period, not a response to a criterion change.", isCorrect: false },
+      { id: "j6", text: "Gradual approximation requires the criterion to be within reach of the current level — a jump from 30 seconds to 5 minutes is not a successive approximation.", isCorrect: false },
+      { id: "j7", text: "The size of the shaping step does not affect the outcome as long as the terminal goal is clearly defined.", isCorrect: false },
+      { id: "j8", text: "Shaping always produces successful acquisition regardless of step size.", isCorrect: false },
+      { id: "j9", text: "The learner's motivation level is the primary determinant of shaping success, not the step size.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Spontaneous recovery is an extinction phenomenon, not a shaping outcome — the two concepts are frequently confused.. A common error is: Candidates may select A because they conflate challenge with motivation, but in behavior analysis, reinforcement contact — not challenge — drives acquisition..',
+    recallTrap: "Candidates may select A because they conflate challenge with motivation, but in behavior analysis, reinforcement contact — not challenge — drives acquisition.",
+    conceptConfusion: "Spontaneous recovery is an extinction phenomenon, not a shaping outcome — the two concepts are frequently confused.",
+    tcoTask: "G-10"
+  },
+    {id: "sj-18-q3",
+    stem: "During shaping, the BCBA reinforces only responses that meet the current criterion and withholds reinforcement for responses below criterion. This is an example of:",
+    choices: [
+      { id: 'A', text: "DRO — differential reinforcement of other behavior." },
+      { id: 'B', text: "Differential reinforcement of successive approximations — the defining mechanism of shaping." },
+      { id: 'C', text: "Extinction — because reinforcement is withheld for some responses." },
+      { id: 'D', text: "DRI — differential reinforcement of incompatible behavior." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Shaping is defined as the differential reinforcement of successive approximations to a terminal behavior.", isCorrect: true },
+      { id: "j2", text: "Reinforcing only responses that meet the current criterion while withholding reinforcement for lower-quality responses is the operational definition of differential reinforcement in shaping.", isCorrect: true },
+      { id: "j3", text: "The combination of reinforcement for criterion-meeting responses and extinction for below-criterion responses is what produces the progressive shift toward the terminal behavior.", isCorrect: true },
+      { id: "j4", text: "DRO reinforces the absence of a specific behavior, not the presence of a better approximation — it is not the mechanism of shaping.", isCorrect: false },
+      { id: "j5", text: "Extinction involves withholding reinforcement for a previously reinforced response — in shaping, the below-criterion responses were never reinforced at this criterion level.", isCorrect: false },
+      { id: "j6", text: "DRI reinforces a behavior that is physically incompatible with the problem behavior — it is not the mechanism of shaping.", isCorrect: false },
+      { id: "j7", text: "Differential reinforcement in shaping is the same as DRO.", isCorrect: false },
+      { id: "j8", text: "Shaping does not involve extinction — all responses are reinforced regardless of quality.", isCorrect: false },
+      { id: "j9", text: "The mechanism of shaping is punishment of below-criterion responses, not extinction.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. DRO and DRI are differential reinforcement procedures but are not the mechanism of shaping — they reinforce specific response classes, not approximations.. A common error is: Candidates often confuse the extinction component of shaping with the procedure of extinction — in shaping, below-criterion responses are placed on extinction, but the overall procedure is not extinction..',
+    recallTrap: "Candidates often confuse the extinction component of shaping with the procedure of extinction — in shaping, below-criterion responses are placed on extinction, but the overall procedure is not extinction.",
+    conceptConfusion: "DRO and DRI are differential reinforcement procedures but are not the mechanism of shaping — they reinforce specific response classes, not approximations.",
+    tcoTask: "G-10"
+  }
+  ],
   },
 
   {
@@ -1072,7 +1820,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing behavioral topography (repetitive) with function (automatic) — function must be assessed, not assumed from topography',
         tcoTask: 'B-8: Conduct functional assessments',
       },
+    {id: "sj-19-q2",
+    stem: "A token economy is implemented in a classroom. After two weeks, students begin exchanging tokens for backup reinforcers but the target behaviors have not increased. What is the MOST likely explanation?",
+    choices: [
+      { id: 'A', text: "The token exchange ratio is too low, causing satiation with tokens." },
+      { id: 'B', text: "The backup reinforcers are not sufficiently preferred, so tokens have not acquired conditioned reinforcing properties." },
+      { id: 'C', text: "The token delivery schedule is too dense, providing too much reinforcement." },
+      { id: 'D', text: "The students have not been taught the token exchange procedure." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Tokens function as conditioned reinforcers only when they are reliably paired with preferred backup reinforcers — if backups are not preferred, tokens do not acquire reinforcing value.", isCorrect: true },
+      { id: "j2", text: "The fact that students exchange tokens but behaviors do not increase suggests the exchange is occurring but the tokens are not functioning as reinforcers.", isCorrect: true },
+      { id: "j3", text: "Preference assessments should be conducted to identify truly preferred backup reinforcers before implementing a token economy.", isCorrect: true },
+      { id: "j4", text: "A low exchange ratio would cause satiation with backup reinforcers, not failure to increase behavior.", isCorrect: false },
+      { id: "j5", text: "Dense token delivery would increase behavior, not prevent its increase.", isCorrect: false },
+      { id: "j6", text: "If students are exchanging tokens, they have learned the exchange procedure — the problem is not procedural knowledge.", isCorrect: false },
+      { id: "j7", text: "Token economies always increase behavior regardless of backup reinforcer preference.", isCorrect: false },
+      { id: "j8", text: "The problem is the token delivery schedule, not the backup reinforcers.", isCorrect: false },
+      { id: "j9", text: "Token economies are ineffective for classroom settings and should not be used.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Tokens are conditioned reinforcers — their effectiveness depends entirely on the value of the backup reinforcers they are paired with.. A common error is: Candidates may focus on the token mechanics (ratio, schedule) rather than the foundational requirement that backup reinforcers must be preferred..',
+    recallTrap: "Candidates may focus on the token mechanics (ratio, schedule) rather than the foundational requirement that backup reinforcers must be preferred.",
+    conceptConfusion: "Tokens are conditioned reinforcers — their effectiveness depends entirely on the value of the backup reinforcers they are paired with.",
+    tcoTask: "G-14"
+  },
+    {id: "sj-19-q3",
+    stem: "A student in a token economy begins showing decreased responding and emotional outbursts when the exchange ratio is increased from 5 tokens to 20 tokens for the same backup reinforcer. This pattern is BEST described as:",
+    choices: [
+      { id: 'A', text: "Behavioral contrast — the student is responding to a change in reinforcement conditions." },
+      { id: 'B', text: "Ratio strain — the response requirement has been increased too rapidly, producing emotional behavior and reduced responding." },
+      { id: 'C', text: "Extinction burst — the student is showing an initial increase before behavior decreases." },
+      { id: 'D', text: "Satiation — the student has received too much of the backup reinforcer." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Ratio strain occurs when the response requirement (ratio) is increased too rapidly, producing emotional behavior and a breakdown in responding.", isCorrect: true },
+      { id: "j2", text: "A jump from FR5 to FR20 is a fourfold increase in requirement — this is too large a step and produces ratio strain.", isCorrect: true },
+      { id: "j3", text: "The emotional outbursts are a hallmark of ratio strain, reflecting the aversive nature of a response requirement that exceeds the learner's current capacity.", isCorrect: true },
+      { id: "j4", text: "Behavioral contrast involves a change in responding in one setting due to changes in another setting — it does not describe ratio-induced emotional behavior.", isCorrect: false },
+      { id: "j5", text: "An extinction burst involves an initial increase in responding, not a decrease — the student is showing decreased responding.", isCorrect: false },
+      { id: "j6", text: "Satiation involves reduced responding due to excessive reinforcement delivery, not due to an increased response requirement.", isCorrect: false },
+      { id: "j7", text: "Ratio strain only occurs with fixed ratio schedules, not with token economies.", isCorrect: false },
+      { id: "j8", text: "Emotional outbursts during ratio increases are a sign of motivation, not ratio strain.", isCorrect: false },
+      { id: "j9", text: "The student's behavior is unrelated to the ratio change.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Ratio strain and extinction burst both involve emotional behavior, but ratio strain is caused by an excessive response requirement, while extinction burst is caused by removal of reinforcement.. A common error is: Candidates may select extinction burst because emotional behavior is present, but the behavior is decreasing (not increasing), which rules out an extinction burst..',
+    recallTrap: "Candidates may select extinction burst because emotional behavior is present, but the behavior is decreasing (not increasing), which rules out an extinction burst.",
+    conceptConfusion: "Ratio strain and extinction burst both involve emotional behavior, but ratio strain is caused by an excessive response requirement, while extinction burst is caused by removal of reinforcement.",
+    tcoTask: "G-14"
+  }
+  ],
   },
 
   {
@@ -1107,7 +1905,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing a time-based criterion (number of trials) with a performance-based criterion (stable responding at the current approximation)',
         tcoTask: 'E-3: Use shaping',
       },
+    {id: "sj-20-q2",
+    stem: "A BCBA implements a response cost procedure for a student who frequently calls out in class. After two weeks, the student begins refusing to participate in any classroom activities. This is BEST described as:",
+    choices: [
+      { id: 'A', text: "Extinction — the student has learned that participation is no longer reinforced." },
+      { id: 'B', text: "A negative side effect of punishment — avoidance of the punishing context has generalized to all classroom participation."},
+      { id: 'C', text: "Behavioral contrast — the student is compensating for reduced calling out with reduced participation." },
+      { id: 'D', text: "Spontaneous recovery — the calling-out behavior is returning in a new form." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Punishment procedures can produce avoidance and escape behaviors that generalize beyond the specific punished response.", isCorrect: true },
+      { id: "j2", text: "Refusal to participate is a form of avoidance — the student is avoiding the context in which punishment (response cost) occurs.", isCorrect: true },
+      { id: "j3", text: "This is a well-documented side effect of punishment: the learner avoids not just the punished behavior but the entire setting or activity.", isCorrect: true },
+      { id: "j4", text: "Extinction involves withholding reinforcement for a previously reinforced response — the student is not experiencing extinction of participation.", isCorrect: false },
+      { id: "j5", text: "Behavioral contrast involves increased responding in one context due to changes in another — the student is showing decreased responding.", isCorrect: false },
+      { id: "j6", text: "Spontaneous recovery is the reappearance of an extinguished response after a rest period — it does not describe generalized avoidance.", isCorrect: false },
+      { id: "j7", text: "Punishment side effects are rare and clinically insignificant.", isCorrect: false },
+      { id: "j8", text: "The student is showing a motivational deficit, not a side effect of punishment.", isCorrect: false },
+      { id: "j9", text: "Response cost does not produce avoidance behaviors.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Spontaneous recovery and avoidance are both consequences of extinction/punishment but describe different phenomena — recovery is a return of the original response, avoidance is escape from the context.. A common error is: Candidates may select behavioral contrast because two behaviors are changing simultaneously, but contrast involves an inverse relationship in two settings, not generalized avoidance..',
+    recallTrap: "Candidates may select behavioral contrast because two behaviors are changing simultaneously, but contrast involves an inverse relationship in two settings, not generalized avoidance.",
+    conceptConfusion: "Spontaneous recovery and avoidance are both consequences of extinction/punishment but describe different phenomena — recovery is a return of the original response, avoidance is escape from the context.",
+    tcoTask: "G-17"
+  },
+    {id: "sj-20-q3",
+    stem: "Before implementing a punishment procedure, a BCBA should FIRST:",
+    choices: [
+      { id: 'A', text: "Obtain supervisor approval and document the decision in the client file." },
+      { id: 'B', text: "Demonstrate that less restrictive, reinforcement-based procedures have been tried and found insufficient." },
+      { id: 'C', text: "Conduct a functional behavior assessment to identify the function of the target behavior." },
+      { id: 'D', text: "Obtain written consent from the client or guardian." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The BACB Ethics Code requires that BCBAs use the least restrictive effective procedure — punishment is only justified after reinforcement-based alternatives have been attempted.", isCorrect: true },
+      { id: "j2", text: "Documenting that less restrictive procedures were tried and found insufficient is the ethical prerequisite for implementing punishment.", isCorrect: true },
+      { id: "j3", text: "The hierarchy of restrictiveness places reinforcement-based procedures before punishment — this must be demonstrated before punishment is introduced.", isCorrect: true },
+      { id: "j4", text: "Supervisor approval is important but is not the first step — the ethical justification for punishment must be established first.", isCorrect: false },
+      { id: "j5", text: "FBA is important for intervention design but is not the specific prerequisite for punishment — the least-restrictive principle is.", isCorrect: false },
+      { id: "j6", text: "Informed consent is required but is not the first step — the clinical justification must precede the consent process.", isCorrect: false },
+      { id: "j7", text: "Punishment can be implemented at any time as long as it is effective.", isCorrect: false },
+      { id: "j8", text: "The first step is always to obtain written consent, regardless of other considerations.", isCorrect: false },
+      { id: "j9", text: "Punishment procedures do not require any special justification beyond clinical effectiveness.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. FBA and the least-restrictive principle are both prerequisites for punishment, but the least-restrictive principle is the more specific and primary ethical requirement.. A common error is: Candidates often select informed consent as the first step, but the ethical justification (least restrictive principle) must be established before consent is sought..',
+    recallTrap: "Candidates often select informed consent as the first step, but the ethical justification (least restrictive principle) must be established before consent is sought.",
+    conceptConfusion: "FBA and the least-restrictive principle are both prerequisites for punishment, but the least-restrictive principle is the more specific and primary ethical requirement.",
+    tcoTask: "G-17"
+  }
+  ],
   },
 
   {
@@ -1142,7 +1990,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the formula for total count IOA with the acceptability threshold — calculating correctly but misidentifying whether the result is acceptable',
         tcoTask: 'A-4: Design and implement measurement systems; A-5: Evaluate measurement systems',
       },
+    {id: "sj-21-q2",
+    stem: "A BCBA wants to identify a hierarchy of preferred stimuli for a learner. Which preference assessment method provides the MOST information about relative preference among multiple stimuli?",
+    choices: [
+      { id: 'A', text: "Single stimulus (SS) presentation, because it assesses each stimulus independently." },
+      { id: 'B', text: "Multiple stimulus without replacement (MSWO), because it produces a preference hierarchy by tracking selection order as options are removed." },
+      { id: 'C', text: "Paired stimulus (PS) presentation, because it directly compares two stimuli at a time." },
+      { id: 'D', text: "Free operant observation, because it measures natural stimulus engagement without structured trials." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "MSWO presents all stimuli simultaneously and removes each selected item, producing a rank-ordered preference hierarchy from a single assessment.", isCorrect: true },
+      { id: "j2", text: "The removal of selected stimuli in MSWO prevents re-selection of the same item, forcing the learner to reveal their relative preference among all remaining options.", isCorrect: true },
+      { id: "j3", text: "MSWO is more efficient than paired stimulus for producing a full hierarchy because it does not require all possible pairings.", isCorrect: true },
+      { id: "j4", text: "Single stimulus assessment only indicates whether each stimulus is preferred or not — it does not produce a relative hierarchy.", isCorrect: false },
+      { id: "j5", text: "Paired stimulus produces a hierarchy but requires many more trials than MSWO to assess the same number of stimuli.", isCorrect: false },
+      { id: "j6", text: "Free operant observation provides naturalistic preference data but does not produce a controlled, rank-ordered hierarchy.", isCorrect: false },
+      { id: "j7", text: "All preference assessment methods produce equivalent hierarchies.", isCorrect: false },
+      { id: "j8", text: "MSWO is less valid than paired stimulus because it does not compare stimuli directly.", isCorrect: false },
+      { id: "j9", text: "Preference assessment is not necessary before implementing a reinforcement-based intervention.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. MSWO and multiple stimulus with replacement (MSW) differ in one critical way — MSWO removes selected items, which is what produces the hierarchy.. A common error is: Candidates may select paired stimulus because it sounds more rigorous, but MSWO produces a full hierarchy more efficiently..',
+    recallTrap: "Candidates may select paired stimulus because it sounds more rigorous, but MSWO produces a full hierarchy more efficiently.",
+    conceptConfusion: "MSWO and multiple stimulus with replacement (MSW) differ in one critical way — MSWO removes selected items, which is what produces the hierarchy.",
+    tcoTask: "F-2"
+  },
+    {id: "sj-21-q3",
+    stem: "A stimulus is identified as highly preferred in an MSWO preference assessment. The BCBA uses it as a reinforcer in a skill acquisition program, but the target behavior does not increase. What does this indicate?",
+    choices: [
+      { id: 'A', text: "The preference assessment was conducted incorrectly." },
+      { id: 'B', text: "Preference does not guarantee reinforcing function — a reinforcer assessment is needed to confirm the stimulus increases behavior." },
+      { id: 'C', text: "The skill acquisition program has a procedural flaw unrelated to the reinforcer." },
+      { id: 'D', text: "The learner has become satiated with the preferred stimulus." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "A preferred stimulus is not necessarily a reinforcer — reinforcement is defined by its effect on behavior, not by preference.", isCorrect: true },
+      { id: "j2", text: "A reinforcer assessment (e.g., concurrent operants arrangement) is required to confirm that a stimulus functions as a reinforcer for a specific behavior.", isCorrect: true },
+      { id: "j3", text: "The distinction between preference and reinforcing function is a foundational concept in behavior analysis — preference assessments identify candidates, not confirmed reinforcers.", isCorrect: true },
+      { id: "j4", text: "A correctly conducted preference assessment identifies preferred stimuli — the problem is not the assessment methodology.", isCorrect: false },
+      { id: "j5", text: "A procedural flaw is possible but is not the most parsimonious explanation when the reinforcer has not been confirmed.", isCorrect: false },
+      { id: "j6", text: "Satiation is possible but is not the most likely explanation when the stimulus has not been confirmed as a reinforcer.", isCorrect: false },
+      { id: "j7", text: "Highly preferred stimuli always function as reinforcers.", isCorrect: false },
+      { id: "j8", text: "If a behavior does not increase, the reinforcer should be replaced without further assessment.", isCorrect: false },
+      { id: "j9", text: "Preference assessments and reinforcer assessments are the same procedure.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Preference assessment identifies stimuli the learner approaches or selects; reinforcer assessment confirms that those stimuli increase the frequency of a target behavior.. A common error is: Candidates often assume that a preferred stimulus will function as a reinforcer — the distinction between preference and reinforcing function is a common exam trap..',
+    recallTrap: "Candidates often assume that a preferred stimulus will function as a reinforcer — the distinction between preference and reinforcing function is a common exam trap.",
+    conceptConfusion: "Preference assessment identifies stimuli the learner approaches or selects; reinforcer assessment confirms that those stimuli increase the frequency of a target behavior.",
+    tcoTask: "F-2"
+  }
+  ],
   },
 
   {
@@ -1177,7 +2075,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the backup reinforcer\'s value (confirmed by preference assessment) with the token\'s conditioned reinforcer status (requires pairing history)',
         tcoTask: 'E-4: Use reinforcement procedures',
       },
+    {id: "sj-22-q2",
+    stem: "A BCBA is conducting an FBA for a student who engages in frequent property destruction. The teacher reports that the behavior occurs most often during math. Which FBA method provides the MOST direct and objective data about the behavior's function?",
+    choices: [
+      { id: 'A', text: "Structured interview with the teacher about antecedents and consequences." },
+      { id: 'B', text: "Rating scales completed by multiple informants." },
+      { id: 'C', text: "Systematic direct observation using ABC data collection in the natural environment." },
+      { id: 'D', text: "A functional analysis (experimental manipulation of antecedents and consequences)." }
     ],
+    correctChoice: 'D',
+    justifications: [
+      { id: "j1", text: "Functional analysis is the only FBA method that experimentally manipulates antecedents and consequences to establish a functional relationship between the behavior and its maintaining variables.", isCorrect: true },
+      { id: "j2", text: "Functional analysis provides the most direct and objective evidence of behavioral function because it controls for confounding variables.", isCorrect: true },
+      { id: "j3", text: "The question asks for the most direct and objective method — functional analysis is the gold standard for identifying behavioral function.", isCorrect: true },
+      { id: "j4", text: "Structured interviews are indirect methods that rely on informant report, which is subject to bias and memory errors.", isCorrect: false },
+      { id: "j5", text: "Rating scales are indirect methods that aggregate informant perceptions — they do not directly measure the behavior or its function.", isCorrect: false },
+      { id: "j6", text: "ABC observation is a direct method but does not establish functional relationships — it only identifies correlations between antecedents, behaviors, and consequences.", isCorrect: false },
+      { id: "j7", text: "Indirect methods are preferred over direct methods because they are less time-consuming.", isCorrect: false },
+      { id: "j8", text: "ABC observation is equivalent to functional analysis in terms of the evidence it provides.", isCorrect: false },
+      { id: "j9", text: "Functional analysis is too risky to use in school settings and should be avoided.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is D. FBA is a broad term that includes indirect methods (interviews, rating scales), direct observation (ABC), and functional analysis — these are not equivalent in the strength of evidence they provide.. A common error is: Candidates may select ABC observation because it is direct, but functional analysis is the only method that establishes a functional relationship — observation only identifies correlations..',
+    recallTrap: "Candidates may select ABC observation because it is direct, but functional analysis is the only method that establishes a functional relationship — observation only identifies correlations.",
+    conceptConfusion: "FBA is a broad term that includes indirect methods (interviews, rating scales), direct observation (ABC), and functional analysis — these are not equivalent in the strength of evidence they provide.",
+    tcoTask: "F-1"
+  },
+    {id: "sj-22-q3",
+    stem: "An FBA reveals that a student's self-injurious behavior (SIB) is maintained by automatic reinforcement (sensory stimulation). Which intervention is MOST consistent with a function-based approach?",
+    choices: [
+      { id: 'A', text: "Extinction — blocking the sensory consequence of SIB." },
+      { id: 'B', text: "DRA — reinforcing an alternative behavior with teacher attention." },
+      { id: 'C', text: "NCR — providing non-contingent access to preferred sensory stimulation on a fixed-time schedule." },
+      { id: 'D', text: "Response cost — removing tokens contingent on SIB." }
+    ],
+    correctChoice: 'C',
+    justifications: [
+      { id: "j1", text: "NCR for automatically maintained behavior involves providing non-contingent access to the maintaining sensory stimulation, abolishing the motivating operation for SIB.", isCorrect: true },
+      { id: "j2", text: "Providing the sensory consequence non-contingently reduces the deprivation state that drives SIB, making the behavior less likely to occur.", isCorrect: true },
+      { id: "j3", text: "Function-based interventions target the maintaining variable — for automatic reinforcement, this means manipulating the availability of the sensory consequence.", isCorrect: true },
+      { id: "j4", text: "Extinction for automatically maintained behavior requires blocking the sensory consequence, which is often impractical and does not address the motivating operation.", isCorrect: false },
+      { id: "j5", text: "DRA with teacher attention is function-based only when attention is the maintaining variable — for automatic reinforcement, social consequences are not the maintaining variable.", isCorrect: false },
+      { id: "j6", text: "Response cost is a punishment procedure that does not address the function of the behavior.", isCorrect: false },
+      { id: "j7", text: "Function-based interventions are only necessary for socially maintained behaviors.", isCorrect: false },
+      { id: "j8", text: "Extinction is always the first-line intervention for automatically maintained behavior.", isCorrect: false },
+      { id: "j9", text: "Automatic reinforcement cannot be targeted with function-based interventions.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is C. NCR is often confused with DRO — NCR provides the maintaining reinforcer non-contingently, while DRO provides a different reinforcer contingent on the absence of the target behavior.. A common error is: Candidates may select extinction because it is commonly paired with function-based treatment, but extinction for automatic reinforcement (sensory blocking) is often impractical and does not address the MO..',
+    recallTrap: "Candidates may select extinction because it is commonly paired with function-based treatment, but extinction for automatic reinforcement (sensory blocking) is often impractical and does not address the MO.",
+    conceptConfusion: "NCR is often confused with DRO — NCR provides the maintaining reinforcer non-contingently, while DRO provides a different reinforcer contingent on the absence of the target behavior.",
+    tcoTask: "F-1"
+  }
+  ],
   },
 
   {
@@ -1212,7 +2160,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the most rigorous preference assessment (MSWO) with the most appropriate one given the client\'s motor and cognitive profile',
         tcoTask: 'B-1: Conduct preference and reinforcer assessments',
       },
+    {id: "sj-23-q2",
+    stem: "A BCBA supervisor is evaluating a supervisee's performance implementing a discrete trial training (DTT) program. The supervisee scores 70% on a performance checklist. What is the MOST appropriate next step?",
+    choices: [
+      { id: 'A', text: "Provide written feedback via email and schedule a follow-up observation in two weeks." },
+      { id: 'B', text: "Provide immediate, specific, behavior-specific feedback and model the correct procedure, then observe the supervisee practice." },
+      { id: 'C', text: "Discontinue the supervisee from implementing DTT until they complete additional training." },
+      { id: 'D', text: "Document the performance and move on to other supervision activities." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Competency-based supervision requires immediate, specific, behavior-specific feedback to correct performance deficits as they occur.", isCorrect: true },
+      { id: "j2", text: "Modeling the correct procedure and observing the supervisee practice (BST — behavior skills training) is the most effective method for correcting performance deficits.", isCorrect: true },
+      { id: "j3", text: "Delayed feedback (email, two-week follow-up) is less effective than immediate feedback for correcting procedural errors.", isCorrect: true },
+      { id: "j4", text: "Written feedback alone is insufficient for correcting motor skill deficits — modeling and practice are required.", isCorrect: false },
+      { id: "j5", text: "Discontinuing the supervisee is an extreme response to a 70% performance score — corrective feedback and practice are the appropriate first step.", isCorrect: false },
+      { id: "j6", text: "Documenting without providing feedback fails the supervisee and potentially harms the client.", isCorrect: false },
+      { id: "j7", text: "A 70% performance score is acceptable for initial implementation and does not require corrective action.", isCorrect: false },
+      { id: "j8", text: "Supervision feedback should always be delivered in writing to create a documentation trail.", isCorrect: false },
+      { id: "j9", text: "The supervisee should self-identify their own performance deficits without supervisor feedback.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Competency-based supervision is not just about documenting performance — it requires active intervention (BST) when performance is below criterion.. A common error is: Candidates may select written feedback because it creates documentation, but immediate behavior-specific feedback with modeling is more effective for correcting performance deficits..',
+    recallTrap: "Candidates may select written feedback because it creates documentation, but immediate behavior-specific feedback with modeling is more effective for correcting performance deficits.",
+    conceptConfusion: "Competency-based supervision is not just about documenting performance — it requires active intervention (BST) when performance is below criterion.",
+    tcoTask: "I-4"
+  },
+    {id: "sj-23-q3",
+    stem: "A BCBA is supervising 8 RBTs across 3 different clinic sites. She is having difficulty providing the BACB-required supervision hours to all supervisees. What is the MOST appropriate action?",
+    choices: [
+      { id: 'A', text: "Reduce the frequency of supervision for lower-performing supervisees to prioritize higher-performing ones." },
+      { id: 'B', text: "Reduce the total number of supervisees to a manageable caseload that allows compliance with supervision requirements." },
+      { id: 'C', text: "Use group supervision exclusively to meet all supervisees' hours simultaneously." },
+      { id: 'D', text: "Delegate supervision responsibilities to the most experienced RBT." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The BACB Ethics Code requires BCBAs to only take on a caseload that allows them to provide adequate supervision — reducing supervisees to a manageable number is the ethical solution.", isCorrect: true },
+      { id: "j2", text: "Accepting more supervisees than can be adequately supervised is an ethical violation — the BCBA must proactively manage their caseload.", isCorrect: true },
+      { id: "j3", text: "Compliance with supervision requirements is a non-negotiable ethical obligation, not a goal to be balanced against convenience.", isCorrect: true },
+      { id: "j4", text: "Reducing supervision for lower-performing supervisees is the opposite of what is needed — they require more supervision, not less.", isCorrect: false },
+      { id: "j5", text: "Group supervision can supplement but cannot replace individual supervision — it cannot be used exclusively to meet all supervision hours.", isCorrect: false },
+      { id: "j6", text: "RBTs cannot supervise other RBTs — only BCBAs and BCaBAs can provide BACB-approved supervision.", isCorrect: false },
+      { id: "j7", text: "Supervision requirements can be adjusted based on the supervisor's caseload.", isCorrect: false },
+      { id: "j8", text: "The BCBA should continue with the current caseload and document the supervision challenges.", isCorrect: false },
+      { id: "j9", text: "Group supervision counts as individual supervision hours for each participant.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Group supervision is a valid supplement to individual supervision but has specific limitations — it cannot be used as the sole method of meeting supervision hour requirements.. A common error is: Candidates may select group supervision as a creative solution, but group supervision cannot replace individual supervision for meeting BACB requirements..',
+    recallTrap: "Candidates may select group supervision as a creative solution, but group supervision cannot replace individual supervision for meeting BACB requirements.",
+    conceptConfusion: "Group supervision is a valid supplement to individual supervision but has specific limitations — it cannot be used as the sole method of meeting supervision hour requirements.",
+    tcoTask: "I-4"
+  }
+  ],
   },
 
   {
@@ -1247,7 +2245,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the scope of parental consent (authorizes treatment) with the scope of confidentiality (limits disclosure to need-to-know)',
         tcoTask: 'I-1: Comply with BACB ethics code; I-4: Maintain client confidentiality',
       },
+    {id: "sj-24-q2",
+    stem: "During a home visit, a BCBA notices that a client's parent appears to be experiencing significant depression and is struggling to implement the behavior plan. What is the MOST appropriate action?",
+    choices: [
+      { id: 'A', text: "Provide the parent with psychoeducation about depression and teach coping strategies." },
+      { id: 'B', text: "Refer the parent to a licensed mental health professional and adjust the behavior plan to reduce caregiver burden." },
+      { id: 'C', text: "Document the observation and continue with the behavior plan as written." },
+      { id: 'D', text: "Contact the client's school to report the parent's mental health concerns." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "BCBAs are not licensed to provide mental health treatment — referring the parent to an appropriate professional is within scope.", isCorrect: true },
+      { id: "j2", text: "Adjusting the behavior plan to reduce caregiver burden is a behavior-analytic action that addresses the implementation barrier within the BCBA's scope.", isCorrect: true },
+      { id: "j3", text: "Addressing both the referral need and the implementation barrier reflects a comprehensive, ethical response to the situation.", isCorrect: true },
+      { id: "j4", text: "Providing psychoeducation about depression and teaching coping strategies is outside the BCBA's scope of practice.", isCorrect: false },
+      { id: "j5", text: "Documenting and continuing without action fails to address a significant barrier to treatment effectiveness.", isCorrect: false },
+      { id: "j6", text: "Contacting the school about a parent's mental health is a breach of confidentiality and is not within the BCBA's role.", isCorrect: false },
+      { id: "j7", text: "BCBAs can provide mental health treatment as part of a comprehensive behavior plan.", isCorrect: false },
+      { id: "j8", text: "The parent's mental health is not relevant to the behavior plan and should not be addressed.", isCorrect: false },
+      { id: "j9", text: "The BCBA should wait until the parent raises the issue before taking action.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Scope of practice does not mean ignoring related issues — BCBAs should refer to appropriate professionals while also addressing the behavior-analytic dimensions of the situation.. A common error is: Candidates may select psychoeducation because it seems helpful, but providing mental health treatment is outside the BCBA\'s scope of practice..',
+    recallTrap: "Candidates may select psychoeducation because it seems helpful, but providing mental health treatment is outside the BCBA's scope of practice.",
+    conceptConfusion: "Scope of practice does not mean ignoring related issues — BCBAs should refer to appropriate professionals while also addressing the behavior-analytic dimensions of the situation.",
+    tcoTask: "E-1"
+  },
+    {id: "sj-24-q3",
+    stem: "A BCBA is asked by a client's parent to provide ABA services to the parent's neighbor's child. The BCBA has a close personal friendship with the parent. What is the MOST appropriate action?",
+    choices: [
+      { id: 'A', text: "Accept the referral because the BCBA already has a positive relationship with the family." },
+      { id: 'B', text: "Decline the referral to avoid a multiple relationship that could impair professional judgment." },
+      { id: 'C', text: "Accept the referral but disclose the friendship to the neighbor." },
+      { id: 'D', text: "Accept the referral and maintain strict professional boundaries during sessions." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Multiple relationships occur when a BCBA has a professional relationship with a person who is also connected to someone in their personal life — this can impair objectivity.", isCorrect: true },
+      { id: "j2", text: "The BACB Ethics Code requires BCBAs to avoid multiple relationships that could impair professional judgment or harm clients.", isCorrect: true },
+      { id: "j3", text: "The close personal friendship with the referring parent creates a multiple relationship risk that is best avoided by declining the referral.", isCorrect: true },
+      { id: "j4", text: "A positive existing relationship does not mitigate the multiple relationship risk — it may actually increase it.", isCorrect: false },
+      { id: "j5", text: "Disclosing the friendship does not eliminate the multiple relationship — it only informs the new client of its existence.", isCorrect: false },
+      { id: "j6", text: "Maintaining professional boundaries during sessions does not prevent the multiple relationship from impairing judgment outside of sessions.", isCorrect: false },
+      { id: "j7", text: "Multiple relationships are only problematic when the BCBA has a direct relationship with the client, not with a referral source.", isCorrect: false },
+      { id: "j8", text: "The BCBA should accept all referrals from existing clients and their networks.", isCorrect: false },
+      { id: "j9", text: "Disclosure and consent are sufficient to manage multiple relationship risks.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Multiple relationships are not limited to direct relationships with clients — they include relationships with people connected to clients that could impair professional judgment.. A common error is: Candidates may select disclosure as sufficient, but disclosure does not eliminate the multiple relationship — it only makes it transparent..',
+    recallTrap: "Candidates may select disclosure as sufficient, but disclosure does not eliminate the multiple relationship — it only makes it transparent.",
+    conceptConfusion: "Multiple relationships are not limited to direct relationships with clients — they include relationships with people connected to clients that could impair professional judgment.",
+    tcoTask: "E-1"
+  }
+  ],
   },
 
   {
@@ -1282,7 +2330,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing DRI (requires a physically incompatible response) with DRA/FCT (requires a functionally equivalent alternative) — the function determines which DR procedure is appropriate',
         tcoTask: 'H-2: Use differential reinforcement procedures',
       },
+    {id: "sj-25-q2",
+    stem: "Two observers record the occurrence of a target behavior across 10 intervals. Observer 1 records: + + - + + - - + + -. Observer 2 records: + + + + - - - + + -. What is the point-by-point IOA?",
+    choices: [
+      { id: 'A', text: "70% — 7 agreements out of 10 intervals." },
+      { id: 'B', text: "80% — 8 agreements out of 10 intervals." },
+      { id: 'C', text: "90% — 9 agreements out of 10 intervals." },
+      { id: 'D', text: "60% — 6 agreements out of 10 intervals." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Point-by-point IOA compares each interval independently: agreements occur when both observers record the same outcome (both + or both -).", isCorrect: true },
+      { id: "j2", text: "Comparing interval by interval: ++, ++, -+, ++, +-, --, --, ++, ++, -- = agreements at intervals 1, 2, 4, 6, 7, 8, 9, 10 = 8 agreements.", isCorrect: true },
+      { id: "j3", text: "8 agreements out of 10 intervals = 80% point-by-point IOA.", isCorrect: true },
+      { id: "j4", text: "Intervals 3 and 5 are disagreements (Observer 1 records -, Observer 2 records + for interval 3; Observer 1 records +, Observer 2 records - for interval 5).", isCorrect: false },
+      { id: "j5", text: "Total occurrence IOA would compare total counts, not interval-by-interval agreement.", isCorrect: false },
+      { id: "j6", text: "Exact agreement IOA requires both observers to record the same count for the same interval — this is the same as point-by-point for event recording.", isCorrect: false },
+      { id: "j7", text: "IOA is calculated by dividing the smaller count by the larger count, not by comparing interval by interval.", isCorrect: false },
+      { id: "j8", text: "Point-by-point IOA is only appropriate for continuous recording, not interval recording.", isCorrect: false },
+      { id: "j9", text: "IOA of 80% is below the acceptable threshold of 90% and indicates poor reliability.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. The acceptable threshold for IOA is typically 80% or above (not 90%) — candidates often overestimate the required threshold.. A common error is: Candidates may confuse point-by-point IOA with total occurrence IOA — point-by-point compares each interval independently, not total counts..',
+    recallTrap: "Candidates may confuse point-by-point IOA with total occurrence IOA — point-by-point compares each interval independently, not total counts.",
+    conceptConfusion: "The acceptable threshold for IOA is typically 80% or above (not 90%) — candidates often overestimate the required threshold.",
+    tcoTask: "C-5"
+  },
+    {id: "sj-25-q3",
+    stem: "A BCBA reports 90% point-by-point IOA for a low-frequency behavior that occurs in only 1 of 10 intervals. A colleague suggests that Cohen's kappa would be a more appropriate reliability index. Why?",
+    choices: [
+      { id: 'A', text: "Kappa is easier to calculate than point-by-point IOA." },
+      { id: 'B', text: "Point-by-point IOA can be inflated by chance agreement when the behavior has a very low (or very high) base rate." },
+      { id: 'C', text: "Kappa is required by the BACB for all IOA calculations." },
+      { id: 'D', text: "Point-by-point IOA is only valid for behaviors that occur in more than 50% of intervals." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "When a behavior occurs in only 1 of 10 intervals, both observers are likely to record 9 non-occurrences by chance — inflating point-by-point IOA.", isCorrect: true },
+      { id: "j2", text: "Cohen's kappa corrects for chance agreement, providing a more conservative and accurate estimate of reliability for low-frequency behaviors.", isCorrect: true },
+      { id: "j3", text: "High point-by-point IOA for rare behaviors often reflects agreement on non-occurrences rather than genuine observer reliability.", isCorrect: true },
+      { id: "j4", text: "Kappa is not easier to calculate — it is more complex, requiring calculation of observed and expected agreement.", isCorrect: false },
+      { id: "j5", text: "The BACB does not require kappa — it is a methodological recommendation, not a regulatory requirement.", isCorrect: false },
+      { id: "j6", text: "Point-by-point IOA is valid for any base rate — the issue is interpretation, not validity.", isCorrect: false },
+      { id: "j7", text: "Kappa and point-by-point IOA always produce the same result.", isCorrect: false },
+      { id: "j8", text: "Low-frequency behaviors do not require IOA because they are too rare to measure reliably.", isCorrect: false },
+      { id: "j9", text: "Point-by-point IOA is always the preferred reliability index regardless of base rate.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Cohen\'s kappa is not a replacement for IOA — it is a supplement that corrects for chance agreement when base rates are extreme.. A common error is: Candidates may not know that point-by-point IOA can be inflated by chance agreement at extreme base rates — this is a nuanced psychometric concept that appears on the BCBA exam..',
+    recallTrap: "Candidates may not know that point-by-point IOA can be inflated by chance agreement at extreme base rates — this is a nuanced psychometric concept that appears on the BCBA exam.",
+    conceptConfusion: "Cohen's kappa is not a replacement for IOA — it is a supplement that corrects for chance agreement when base rates are extreme.",
+    tcoTask: "C-5"
+  }
+  ],
   },
 
   {
@@ -1389,7 +2487,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing apparent stability (3 points look flat) with demonstrated stability (sufficient data to establish a reliable baseline trend and rule out maturation/history threats)',
         tcoTask: 'A-3: Display and interpret data; C-1: Select appropriate research designs',
         },
-      ],
+    {id: "sj-26-q2",
+    stem: "A BCBA is conducting visual analysis of a line graph showing a decreasing trend in problem behavior during baseline. When the intervention is introduced, the behavior continues to decrease at the same rate. What is the MOST appropriate conclusion?",
+    choices: [
+      { id: 'A', text: "The intervention is effective because the behavior decreased during the intervention phase." },
+      { id: 'B', text: "The data are inconclusive because the decrease in the intervention phase cannot be attributed to the intervention given the pre-existing trend." },
+      { id: 'C', text: "The intervention is ineffective and should be discontinued." },
+      { id: 'D', text: "The baseline was too short to establish a stable trend." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "A pre-existing decreasing trend in baseline means the behavior was already changing before the intervention — any continued decrease cannot be attributed to the intervention.", isCorrect: true },
+      { id: "j2", text: "Visual analysis requires evaluating whether the intervention produced a change beyond what was already occurring — a continuation of the baseline trend does not demonstrate intervention effect.", isCorrect: true },
+      { id: "j3", text: "The principle of baseline logic requires that the baseline predict what would have happened without the intervention — a continuing trend suggests the intervention is not responsible for the change.", isCorrect: true },
+      { id: "j4", text: "Attributing the decrease to the intervention when a pre-existing trend exists is a threat to internal validity.", isCorrect: false },
+      { id: "j5", text: "The intervention cannot be judged ineffective simply because the trend continued — it may be maintaining the trend, but this cannot be determined without a reversal or replication.", isCorrect: false },
+      { id: "j6", text: "Baseline length is a separate concern from the interpretation of a pre-existing trend.", isCorrect: false },
+      { id: "j7", text: "Any decrease in behavior during an intervention phase is evidence of intervention effectiveness.", isCorrect: false },
+      { id: "j8", text: "Visual analysis does not consider baseline trends when evaluating intervention effects.", isCorrect: false },
+      { id: "j9", text: "A decreasing trend in baseline is always desirable and does not affect the interpretation of intervention data.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Visual analysis requires comparing the intervention phase to the predicted continuation of the baseline trend, not just to the baseline mean.. A common error is: Candidates may conclude the intervention is effective because the behavior decreased, without considering that the decrease was already occurring before the intervention..',
+    recallTrap: "Candidates may conclude the intervention is effective because the behavior decreased, without considering that the decrease was already occurring before the intervention.",
+    conceptConfusion: "Visual analysis requires comparing the intervention phase to the predicted continuation of the baseline trend, not just to the baseline mean.",
+    tcoTask: "C-7"
+  },
+    {id: "sj-26-q3",
+    stem: "A BCBA is analyzing a graph and notes that the data show high variability within the intervention phase, with some sessions showing near-zero responding and others showing high responding. What is the MOST appropriate next step?",
+    choices: [
+      { id: 'A', text: "Conclude that the intervention is ineffective and discontinue it." },
+      { id: 'B', text: "Investigate potential sources of variability (e.g., procedural inconsistency, setting variables, health) before drawing conclusions about intervention effectiveness." },
+      { id: 'C', text: "Extend the intervention phase until variability decreases naturally." },
+      { id: 'D', text: "Calculate the mean of the intervention phase and use it to determine effectiveness." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "High variability within a phase indicates that uncontrolled variables are affecting the behavior — identifying these sources is a prerequisite to interpreting the data.", isCorrect: true },
+      { id: "j2", text: "Procedural inconsistency, setting variables, and health factors are common sources of within-phase variability that should be investigated before concluding about intervention effectiveness.", isCorrect: true },
+      { id: "j3", text: "Drawing conclusions about intervention effectiveness when data are highly variable risks both false positive and false negative errors.", isCorrect: true },
+      { id: "j4", text: "High variability alone does not indicate ineffectiveness — it indicates that the conditions producing the behavior are not stable.", isCorrect: false },
+      { id: "j5", text: "Extending the phase without investigating the source of variability will not resolve the problem.", isCorrect: false },
+      { id: "j6", text: "Using the mean to determine effectiveness when data are highly variable is misleading — the mean obscures the variability.", isCorrect: false },
+      { id: "j7", text: "High variability is expected in behavior analytic data and does not require investigation.", isCorrect: false },
+      { id: "j8", text: "Variability within a phase is always caused by measurement error.", isCorrect: false },
+      { id: "j9", text: "The appropriate response to high variability is to increase the number of data points until a trend emerges.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. High variability is not the same as no effect — it indicates unstable conditions, not necessarily that the intervention is ineffective.. A common error is: Candidates may select extending the phase, but extending without investigating the source of variability does not address the underlying problem..',
+    recallTrap: "Candidates may select extending the phase, but extending without investigating the source of variability does not address the underlying problem.",
+    conceptConfusion: "High variability is not the same as no effect — it indicates unstable conditions, not necessarily that the intervention is ineffective.",
+    tcoTask: "C-7"
+  }
+  ],
   },
 
   {
@@ -1424,7 +2572,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the definition of forward chaining (teach from first step) with the correct starting point (the first step the learner cannot perform independently)',
         tcoTask: 'E-7: Use chaining procedures',
       },
+    {id: "sj-27-q2",
+    stem: "A student's tantrum behavior was successfully reduced using extinction. After a weekend break, the behavior returns at near-baseline levels on Monday morning. This is BEST described as:",
+    choices: [
+      { id: 'A', text: "Resurgence — the behavior returned because a new intervention was introduced." },
+      { id: 'B', text: "Spontaneous recovery — the extinguished behavior reappears after a period of non-exposure to the extinction contingency." },
+      { id: 'C', text: "Extinction burst — the behavior increased before decreasing again." },
+      { id: 'D', text: "Behavioral contrast — the behavior increased in one setting due to extinction in another." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Spontaneous recovery is the reappearance of an extinguished behavior after a period of time without exposure to the extinction contingency.", isCorrect: true },
+      { id: "j2", text: "The weekend break represents a period of non-exposure to the extinction contingency — the return of behavior on Monday is a textbook example of spontaneous recovery.", isCorrect: true },
+      { id: "j3", text: "Spontaneous recovery is temporary and typically weaker than the original behavior — consistent application of extinction will reduce it again.", isCorrect: true },
+      { id: "j4", text: "Resurgence occurs when a previously extinguished behavior returns during extinction of a more recently reinforced behavior — no new intervention was introduced here.", isCorrect: false },
+      { id: "j5", text: "An extinction burst is an initial increase in responding at the beginning of extinction, not a return after a break.", isCorrect: false },
+      { id: "j6", text: "Behavioral contrast involves a change in responding in one setting due to changes in reinforcement in another setting.", isCorrect: false },
+      { id: "j7", text: "Spontaneous recovery indicates that extinction was ineffective and should be abandoned.", isCorrect: false },
+      { id: "j8", text: "The return of behavior after a weekend break indicates that the extinction procedure was applied incorrectly.", isCorrect: false },
+      { id: "j9", text: "Spontaneous recovery is permanent and indicates that the behavior was never truly extinguished.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Spontaneous recovery is often mistaken for extinction failure — it is a normal phenomenon that occurs even after successful extinction and does not indicate the procedure was ineffective.. A common error is: Candidates frequently confuse spontaneous recovery with resurgence — resurgence requires a new extinction contingency, while spontaneous recovery only requires a passage of time..',
+    recallTrap: "Candidates frequently confuse spontaneous recovery with resurgence — resurgence requires a new extinction contingency, while spontaneous recovery only requires a passage of time.",
+    conceptConfusion: "Spontaneous recovery is often mistaken for extinction failure — it is a normal phenomenon that occurs even after successful extinction and does not indicate the procedure was ineffective.",
+    tcoTask: "B-9"
+  },
+    {id: "sj-27-q3",
+    stem: "A behavior that was maintained on a variable ratio schedule of reinforcement is placed on extinction. Compared to a behavior maintained on a continuous reinforcement schedule, this behavior will MOST likely:",
+    choices: [
+      { id: 'A', text: "Extinguish more quickly because variable ratio schedules produce lower response rates." },
+      { id: 'B', text: "Extinguish more slowly because variable ratio schedules produce greater resistance to extinction." },
+      { id: 'C', text: "Extinguish at the same rate because the schedule of reinforcement does not affect extinction." },
+      { id: 'D', text: "Not extinguish at all because variable ratio schedules prevent extinction." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Variable ratio schedules produce the greatest resistance to extinction of all reinforcement schedules.", isCorrect: true },
+      { id: "j2", text: "The partial reinforcement extinction effect (PREE) explains why intermittently reinforced behaviors persist longer during extinction than continuously reinforced behaviors.", isCorrect: true },
+      { id: "j3", text: "Under variable ratio schedules, the learner has experienced reinforcement after varying numbers of responses — during extinction, they continue responding because they cannot discriminate that reinforcement is no longer available.", isCorrect: true },
+      { id: "j4", text: "Variable ratio schedules produce the highest response rates of all schedules — the opposite of lower response rates.", isCorrect: false },
+      { id: "j5", text: "The schedule of reinforcement is one of the most important determinants of resistance to extinction.", isCorrect: false },
+      { id: "j6", text: "All behaviors eventually extinguish when reinforcement is withheld — variable ratio schedules increase resistance, not immunity.", isCorrect: false },
+      { id: "j7", text: "Continuous reinforcement produces greater resistance to extinction than variable ratio reinforcement.", isCorrect: false },
+      { id: "j8", text: "Fixed ratio schedules produce greater resistance to extinction than variable ratio schedules.", isCorrect: false },
+      { id: "j9", text: "The partial reinforcement extinction effect applies only to animal research, not to human behavior.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. The partial reinforcement extinction effect (PREE) is the mechanism behind VR\'s resistance to extinction — candidates should know both the phenomenon and its explanation.. A common error is: Candidates may know that VR produces high response rates and confuse this with quick extinction — high response rate and high resistance to extinction are related but distinct properties of VR schedules..',
+    recallTrap: "Candidates may know that VR produces high response rates and confuse this with quick extinction — high response rate and high resistance to extinction are related but distinct properties of VR schedules.",
+    conceptConfusion: "The partial reinforcement extinction effect (PREE) is the mechanism behind VR's resistance to extinction — candidates should know both the phenomenon and its explanation.",
+    tcoTask: "B-9"
+  }
+  ],
   },
 
   {
@@ -1459,7 +2657,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing spontaneous recovery (return of extinguished behavior after a rest period) with an extinction burst (initial increase at the start of extinction)',
         tcoTask: 'B-3: Use behavioral concepts and principles; H-1: Implement behavior reduction procedures',
       },
+    {id: "sj-28-q2",
+    stem: "A BCBA wants to reduce the frequency of a student's hand-raising behavior without eliminating it entirely. The student currently raises their hand 20 times per class period. Which schedule is MOST appropriate?",
+    choices: [
+      { id: 'A', text: "DRO — reinforce the absence of hand-raising for a specified interval." },
+      { id: 'B', text: "DRL — reinforce hand-raising only when it occurs at or below a specified rate." },
+      { id: 'C', text: "DRH — reinforce hand-raising only when it occurs above a specified rate." },
+      { id: 'D', text: "Extinction — withhold all reinforcement for hand-raising." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "DRL (differential reinforcement of low rates) reinforces the target behavior when it occurs at or below a specified criterion rate, reducing frequency while maintaining the behavior.", isCorrect: true },
+      { id: "j2", text: "The goal is to reduce but not eliminate hand-raising — DRL is the only procedure that achieves this by reinforcing the behavior at a lower rate.", isCorrect: true },
+      { id: "j3", text: "DRL is appropriate when the behavior is appropriate in kind but excessive in frequency.", isCorrect: true },
+      { id: "j4", text: "DRO reinforces the absence of the behavior — this would eliminate hand-raising, not reduce it to an acceptable rate.", isCorrect: false },
+      { id: "j5", text: "DRH reinforces high rates of behavior — this would increase hand-raising, not reduce it.", isCorrect: false },
+      { id: "j6", text: "Extinction would eliminate hand-raising entirely, which is not the goal.", isCorrect: false },
+      { id: "j7", text: "DRL is only appropriate for behaviors that should be completely eliminated.", isCorrect: false },
+      { id: "j8", text: "DRO and DRL produce the same outcome for behaviors that should be reduced but not eliminated.", isCorrect: false },
+      { id: "j9", text: "Schedules of reinforcement cannot be used to reduce behavior frequency.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. DRL and DRO are both differential reinforcement procedures for reducing behavior, but DRL maintains the behavior at a lower rate while DRO targets its elimination.. A common error is: Candidates may select DRO because it reduces behavior, but DRO eliminates the behavior entirely — DRL reduces it to an acceptable rate while maintaining it..',
+    recallTrap: "Candidates may select DRO because it reduces behavior, but DRO eliminates the behavior entirely — DRL reduces it to an acceptable rate while maintaining it.",
+    conceptConfusion: "DRL and DRO are both differential reinforcement procedures for reducing behavior, but DRL maintains the behavior at a lower rate while DRO targets its elimination.",
+    tcoTask: "B-7"
+  },
+    {id: "sj-28-q3",
+    stem: "A BCBA is designing a reinforcement schedule for a learner who is acquiring a new skill. Initially, which schedule is MOST appropriate to establish the behavior?",
+    choices: [
+      { id: 'A', text: "FR 5 — reinforce every 5th response to build response strength quickly." },
+      { id: 'B', text: "VR 10 — use variable ratio to maximize response rate from the start." },
+      { id: 'C', text: "CRF (FR1) — reinforce every response to establish the behavior reliably." },
+      { id: 'D', text: "FI 30s — use a fixed interval to teach the learner to wait before responding." }
+    ],
+    correctChoice: 'C',
+    justifications: [
+      { id: "j1", text: "CRF (continuous reinforcement) is the most appropriate schedule for initial skill acquisition because every correct response is reinforced, maximizing the learning signal.", isCorrect: true },
+      { id: "j2", text: "During acquisition, the learner needs to contact reinforcement frequently to establish the response-reinforcement contingency.", isCorrect: true },
+      { id: "j3", text: "Thinning to intermittent schedules (FR, VR) should occur after the behavior is reliably established under CRF.", isCorrect: true },
+      { id: "j4", text: "FR5 requires 5 responses before reinforcement — this is appropriate for maintenance, not initial acquisition.", isCorrect: false },
+      { id: "j5", text: "VR10 requires an average of 10 responses before reinforcement — this is too lean for initial acquisition.", isCorrect: false },
+      { id: "j6", text: "Fixed interval schedules reinforce the first response after a time interval — they are not appropriate for initial skill acquisition.", isCorrect: false },
+      { id: "j7", text: "Intermittent schedules should be used from the beginning to build resistance to extinction.", isCorrect: false },
+      { id: "j8", text: "CRF produces satiation too quickly and should be avoided during acquisition.", isCorrect: false },
+      { id: "j9", text: "The schedule of reinforcement does not affect the rate of skill acquisition.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is C. The distinction between acquisition schedules (CRF) and maintenance schedules (intermittent) is a fundamental concept that is frequently tested on the BCBA exam.. A common error is: Candidates may select VR10 because VR produces high response rates, but high response rate is a maintenance goal — acquisition requires CRF..',
+    recallTrap: "Candidates may select VR10 because VR produces high response rates, but high response rate is a maintenance goal — acquisition requires CRF.",
+    conceptConfusion: "The distinction between acquisition schedules (CRF) and maintenance schedules (intermittent) is a fundamental concept that is frequently tested on the BCBA exam.",
+    tcoTask: "B-7"
+  }
+  ],
   },
 
   {
@@ -1494,7 +2742,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing detail (length, elaborateness) with objectivity and measurability — a good operational definition is observable and measurable, not necessarily lengthy',
         tcoTask: 'A-1: Prepare for data collection; A-2: Define behavior',
       },
+    {id: "sj-29-q2",
+    stem: "A BCBA writes a behavior intervention plan that uses vague language such as 'provide praise when appropriate.' Which dimension of ABA is MOST clearly violated?",
+    choices: [
+      { id: 'A', text: "Applied — the behavior is not socially significant." },
+      { id: 'B', text: "Technological — the procedures are not described with sufficient precision to be replicated by others." },
+      { id: 'C', text: "Conceptually systematic — the procedures are not derived from basic behavioral principles." },
+      { id: 'D', text: "Effective — the intervention has not been shown to produce meaningful behavior change." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The technological dimension requires that procedures be described in sufficient detail that a trained reader could replicate them without additional guidance.", isCorrect: true },
+      { id: "j2", text: "Vague language like 'provide praise when appropriate' does not specify the antecedent conditions, the form of praise, or the schedule of delivery — it fails the technological standard.", isCorrect: true },
+      { id: "j3", text: "A procedure that cannot be replicated cannot be evaluated for effectiveness or generalized to other practitioners.", isCorrect: true },
+      { id: "j4", text: "The applied dimension refers to the social significance of the target behavior, not the precision of the procedure description.", isCorrect: false },
+      { id: "j5", text: "The conceptually systematic dimension requires that procedures be derived from and described in terms of basic behavioral principles — vague language may also violate this, but technological is the most direct violation.", isCorrect: false },
+      { id: "j6", text: "The effective dimension refers to the magnitude of behavior change produced — effectiveness cannot be evaluated until the procedure is implemented.", isCorrect: false },
+      { id: "j7", text: "Vague procedure descriptions violate the generality dimension, not the technological dimension.", isCorrect: false },
+      { id: "j8", text: "The technological dimension only applies to research publications, not clinical practice.", isCorrect: false },
+      { id: "j9", text: "All seven dimensions of ABA are equally violated by vague procedure descriptions.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Technological and conceptually systematic are frequently confused — technological refers to precision and replicability, while conceptually systematic refers to derivation from behavioral principles.. A common error is: Candidates may select conceptually systematic because vague language could also reflect poor theoretical grounding, but the most direct violation of \'provide praise when appropriate\' is the lack of replicable precision (technological)..',
+    recallTrap: "Candidates may select conceptually systematic because vague language could also reflect poor theoretical grounding, but the most direct violation of 'provide praise when appropriate' is the lack of replicable precision (technological).",
+    conceptConfusion: "Technological and conceptually systematic are frequently confused — technological refers to precision and replicability, while conceptually systematic refers to derivation from behavioral principles.",
+    tcoTask: "A-5"
+  },
+    {id: "sj-29-q3",
+    stem: "A BCBA teaches a child to request preferred items using a picture exchange system in the therapy room. The child does not use the system at home or school. Which dimension of ABA is NOT being achieved?",
+    choices: [
+      { id: 'A', text: "Applied — the skill is not socially significant." },
+      { id: 'B', text: "Effective — the intervention did not produce meaningful behavior change." },
+      { id: 'C', text: "Generality — the behavior change does not extend across settings and people." },
+      { id: 'D', text: "Behavioral — the target is not a measurable behavior." }
+    ],
+    correctChoice: 'C',
+    justifications: [
+      { id: "j1", text: "Generality requires that behavior changes generalize across settings, people, and time — a skill that only occurs in the therapy room lacks generality.", isCorrect: true },
+      { id: "j2", text: "The failure to use the skill at home or school is a direct failure of the generality dimension.", isCorrect: true },
+      { id: "j3", text: "Generalization programming (multiple exemplar training, common stimuli, loose training) should be built into the intervention from the start to achieve this dimension.", isCorrect: true },
+      { id: "j4", text: "The skill is socially significant (requesting preferred items) — the applied dimension is not violated.", isCorrect: false },
+      { id: "j5", text: "The intervention produced behavior change in the therapy room — the effective dimension is partially achieved, though generalization is a component of effectiveness.", isCorrect: false },
+      { id: "j6", text: "The target behavior (requesting using PECS) is observable and measurable — the behavioral dimension is not violated.", isCorrect: false },
+      { id: "j7", text: "Generality is not one of the seven dimensions of ABA — it is a separate concept.", isCorrect: false },
+      { id: "j8", text: "Generality refers to the durability of behavior change over time, not its extension across settings.", isCorrect: false },
+      { id: "j9", text: "The failure to generalize indicates that the intervention was ineffective and should be discontinued.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is C. Generality is sometimes confused with maintenance — generality refers to extension across settings/people/behaviors, while maintenance refers to persistence over time.. A common error is: Candidates may select effective because the skill did not generalize, but the effective dimension refers to the magnitude of change in the trained context — generality is the specific dimension that addresses cross-setting transfer..',
+    recallTrap: "Candidates may select effective because the skill did not generalize, but the effective dimension refers to the magnitude of change in the trained context — generality is the specific dimension that addresses cross-setting transfer.",
+    conceptConfusion: "Generality is sometimes confused with maintenance — generality refers to extension across settings/people/behaviors, while maintenance refers to persistence over time.",
+    tcoTask: "A-5"
+  }
+  ],
   },
 
   {
@@ -1529,7 +2827,57 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Conflating the MO (alters reinforcer value and evocative effect) with the SD (signals availability of reinforcement) — both precede behavior but have different mechanisms',
         tcoTask: 'B-3: Use behavioral concepts and principles; B-6: Use motivating operations',
       },
+    {id: "sj-30-q2",
+    stem: "A BCBA wants to program for generalization of a newly acquired skill across multiple community settings. Which strategy is MOST likely to produce broad generalization?",
+    choices: [
+      { id: 'A', text: "Train in one setting to mastery, then test generalization in other settings." },
+      { id: 'B', text: "Use multiple exemplar training — teach the skill across multiple settings, people, and materials from the beginning." },
+      { id: 'C', text: "Use a single exemplar with high reinforcement density to establish a strong response." },
+      { id: 'D', text: "Rely on natural generalization to occur without explicit programming." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Multiple exemplar training is the most evidence-based strategy for producing broad generalization across settings, people, and materials.", isCorrect: true },
+      { id: "j2", text: "Teaching across multiple exemplars from the beginning prevents the behavior from becoming narrowly stimulus-controlled to the training context.", isCorrect: true },
+      { id: "j3", text: "Generalization must be programmed, not assumed — multiple exemplar training is the proactive approach.", isCorrect: true },
+      { id: "j4", text: "Training to mastery in one setting before testing generalization is a sequential approach that often produces limited generalization.", isCorrect: false },
+      { id: "j5", text: "A single exemplar with high reinforcement density produces strong responding in the training context but does not promote generalization.", isCorrect: false },
+      { id: "j6", text: "Natural generalization is unreliable for learners with ASD and other developmental disabilities — it must be explicitly programmed.", isCorrect: false },
+      { id: "j7", text: "Generalization always occurs naturally after a skill is mastered.", isCorrect: false },
+      { id: "j8", text: "The number of training exemplars does not affect the breadth of generalization.", isCorrect: false },
+      { id: "j9", text: "Generalization programming is only necessary for social skills, not for academic or daily living skills.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Multiple exemplar training and general case programming are related but distinct — multiple exemplar training uses varied examples, while general case programming systematically samples the full range of stimulus and response variation.. A common error is: Candidates may select training to mastery first because it seems logical, but this sequential approach consistently produces less generalization than concurrent multiple exemplar training..',
+    recallTrap: "Candidates may select training to mastery first because it seems logical, but this sequential approach consistently produces less generalization than concurrent multiple exemplar training.",
+    conceptConfusion: "Multiple exemplar training and general case programming are related but distinct — multiple exemplar training uses varied examples, while general case programming systematically samples the full range of stimulus and response variation.",
+    tcoTask: "H-1"
+  },
+    {id: "sj-30-q3",
+    stem: "A learner has generalized a skill across 5 community settings. Six months later, the skill has deteriorated. What is the MOST appropriate intervention to restore and maintain the skill?",
+    choices: [
+      { id: 'A', text: "Reteach the skill from the beginning using the original training protocol." },
+      { id: 'B', text: "Implement a booster session in the natural environment using intermittent reinforcement and natural contingencies." },
+      { id: 'C', text: "Increase the density of reinforcement in the therapy room to re-establish the skill." },
+      { id: 'D', text: "Conduct a new FBA to identify the function of the skill deterioration." }
+    ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Booster sessions in the natural environment using intermittent reinforcement are the most effective strategy for restoring and maintaining generalized skills.", isCorrect: true },
+      { id: "j2", text: "Natural contingencies are more durable than artificial reinforcement — using them in booster sessions promotes long-term maintenance.", isCorrect: true },
+      { id: "j3", text: "Intermittent reinforcement during maintenance produces greater resistance to extinction than continuous reinforcement.", isCorrect: true },
+      { id: "j4", text: "Reteaching from the beginning is inefficient when the skill was previously generalized — booster sessions are more targeted.", isCorrect: false },
+      { id: "j5", text: "Increasing reinforcement in the therapy room does not address the generalization or maintenance problem in the natural environment.", isCorrect: false },
+      { id: "j6", text: "FBA is a tool for understanding problem behavior, not for addressing skill deterioration in an acquired skill.", isCorrect: false },
+      { id: "j7", text: "Skill deterioration after 6 months indicates the skill was never truly acquired and should be retaught from scratch.", isCorrect: false },
+      { id: "j8", text: "Maintenance does not require active programming — skills that have generalized will maintain themselves.", isCorrect: false },
+      { id: "j9", text: "The most appropriate response to skill deterioration is to discontinue the skill from the program and focus on new skills.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Maintenance and generalization are related but distinct — generalization refers to extension across contexts, maintenance refers to persistence over time. Both require explicit programming.. A common error is: Candidates may select reteaching from the beginning because it seems thorough, but booster sessions are more efficient and effective for restoring previously generalized skills..',
+    recallTrap: "Candidates may select reteaching from the beginning because it seems thorough, but booster sessions are more efficient and effective for restoring previously generalized skills.",
+    conceptConfusion: "Maintenance and generalization are related but distinct — generalization refers to extension across contexts, maintenance refers to persistence over time. Both require explicit programming.",
+    tcoTask: "H-1"
+  }
+  ],
   },
 
   // -- Domain A: Behaviorism & Philosophical Foundations ---------------------
@@ -1617,7 +2965,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing scientific rigor with parsimony — the principle of parsimony requires preferring the simplest explanation that accounts for the data',
         tcoTask: 'B-7: Apply philosophical assumptions of ABA',
       },
+    {id: "sj-31-q3",
+    stem: "A BCBA is teaching mand training to a 3-year-old with limited vocal behavior. The child has no functional communication. Which approach is MOST appropriate to begin mand training?",
+    choices: [
+      { id: 'A', text: "Begin with vocal mands using full physical prompting to shape mouth movements." },
+      { id: 'B', text: "Begin with an augmentative and alternative communication (AAC) system to establish a functional mand repertoire quickly." },
+      { id: 'C', text: "Wait until the child has a 10-word vocal vocabulary before beginning mand training." },
+      { id: 'D', text: "Begin with tact training to build a vocabulary base before teaching mands." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "When a child has no functional communication, establishing a functional mand repertoire as quickly as possible is the priority — AAC systems (PECS, SGDs) can achieve this faster than waiting for vocal behavior to emerge.", isCorrect: true },
+      { id: "j2", text: "AAC systems provide an immediate functional communication modality that does not require the motor prerequisites of vocal speech.", isCorrect: true },
+      { id: "j3", text: "Mand training should begin as early as possible — delaying until vocal prerequisites are met denies the child a functional communication system.", isCorrect: true },
+      { id: "j4", text: "Physical prompting for vocal behavior is not effective for establishing mands — it does not shape the relevant vocal topography.", isCorrect: false },
+      { id: "j5", text: "Waiting for a 10-word vocabulary before beginning mand training unnecessarily delays functional communication.", isCorrect: false },
+      { id: "j6", text: "Tact training before mand training is not supported by the verbal behavior literature — mands are typically taught first because they are immediately reinforced by the environment.", isCorrect: false },
+      { id: "j7", text: "AAC systems impede the development of vocal speech and should be avoided.", isCorrect: false },
+      { id: "j8", text: "Mand training requires vocal behavior — it cannot be implemented with AAC.", isCorrect: false },
+      { id: "j9", text: "The order of verbal operant training does not affect communication outcomes.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Mands can be expressed through any response modality (vocal, gestural, AAC) — the defining feature is the controlling variable (MO) and the specific reinforcement, not the topography.. A common error is: Candidates may select vocal mands because mands are often associated with vocal behavior, but AAC is the most appropriate starting point when no functional communication exists..',
+    recallTrap: "Candidates may select vocal mands because mands are often associated with vocal behavior, but AAC is the most appropriate starting point when no functional communication exists.",
+    conceptConfusion: "Mands can be expressed through any response modality (vocal, gestural, AAC) — the defining feature is the controlling variable (MO) and the specific reinforcement, not the topography.",
+    tcoTask: "B-14"
+  }
+  ],
   },
 
   // -- Domain E: Ethics & Professional Issues --------------------------------
@@ -1706,78 +3079,8 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing procedural documentation (creates a record) with ethical permissibility (documentation does not eliminate the ethical concern)',
         tcoTask: 'I-1: Comply with BACB ethics code; I-5: Avoid multiple relationships',
       },
-            {
-          id: 'sj-32-q4',
-          stem: 'During a session, Jasmine (the BCBA) observes that Jasmine\'s client, 8-year-old Mia, has unexplained bruising on her arms. Mia\'s mother — who is also Jasmine\'s neighbor — is present and becomes visibly distressed when Jasmine asks about the bruising. Jasmine has a mandatory reporting obligation under state law. However, the mother tells Jasmine that if she reports, she will immediately withdraw Mia from services, which would eliminate Mia\'s access to ABA therapy. Jasmine is weighing two competing obligations. Which of the following BEST describes how Jasmine should proceed?',
-          choices: [
-            { id: 'A', text: 'Delay the report to allow time to gather more information and preserve the therapeutic relationship, because Mia\'s access to services is a critical welfare consideration' },
-            { id: 'B', text: 'File the mandatory report immediately, document the dual relationship, and consult with a supervisor — the mandatory reporting obligation takes precedence over confidentiality and the therapeutic relationship' },
-            { id: 'C', text: 'Discuss the concern with the mother privately and give her the opportunity to self-report before filing, because this approach preserves the relationship and may produce the same outcome' },
-            { id: 'D', text: 'Consult with the BACB ethics hotline before taking any action, because the dual relationship creates a conflict of interest that must be resolved before reporting' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'Mandatory reporting obligations are not discretionary; when a BCBA has reasonable suspicion of child abuse or neglect, the legal obligation to report is immediate and does not require certainty or additional evidence.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'The Ethics Code requires BCBAs to comply with applicable laws; mandatory reporting laws take precedence over confidentiality obligations, and the BCBA cannot withhold a report to preserve the therapeutic relationship.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'The dual relationship must be documented and managed, but it does not delay or override the mandatory reporting obligation; the BCBA\'s ethical and legal duties are not suspended by the existence of a personal relationship with the family.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'Delaying a mandatory report to gather more information is not permissible; mandatory reporting laws are triggered by reasonable suspicion, not confirmed evidence, and delay may increase the risk of harm to the child.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'Allowing the parent to self-report is not a substitute for the BCBA\'s own reporting obligation; the BCBA\'s duty to report exists independently of whether the parent chooses to report, and relying on the parent to report does not fulfill the BCBA\'s legal and ethical duty.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j6',
-              text: 'Consulting the BACB ethics hotline is a reasonable step for complex ethical dilemmas, but it does not delay a mandatory reporting obligation; the report must be filed immediately, and consultation can occur concurrently or afterward.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j7',
-              text: 'The potential loss of ABA services is a genuine welfare concern, but it does not override the mandatory reporting obligation; the BCBA\'s primary obligation in this situation is to the child\'s immediate safety, not to the preservation of services.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j8',
-              text: 'Giving the parent the opportunity to self-report may preserve the relationship in the short term, but it places the BCBA in the position of negotiating a mandatory legal obligation — which is not permissible and may itself constitute a failure to report.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j9',
-              text: 'The dual relationship creates a conflict of interest that must be managed, but it does not create a legal or ethical basis for delaying a mandatory report; the conflict of interest and the reporting obligation are separate issues that must both be addressed.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-          ],
-          explanation: 'Mandatory reporting obligations are not discretionary. When a BCBA has reasonable suspicion of child abuse or neglect — which unexplained bruising on a child constitutes — the legal and ethical obligation to report is immediate and is not contingent on the BCBA\'s certainty, the client\'s continued access to services, or the status of the therapeutic relationship. The Ethics Code is explicit that BCBAs must comply with applicable laws, and mandatory reporting laws take precedence over confidentiality. The dual relationship (Jasmine is also the mother\'s neighbor) is a separate concern that must be documented and managed, but it does not delay or override the reporting obligation. Giving the mother the opportunity to self-report before filing is not an acceptable substitute for the BCBA\'s own reporting obligation — the BCBA\'s duty to report exists independently of whether the parent chooses to report.',
-        recallTrap: 'Delaying mandatory reporting to preserve the therapeutic relationship or gather more information',
-        conceptConfusion: 'Conflating the BCBA\'s obligation to the client\'s welfare (access to services) with the mandatory reporting obligation — mandatory reporting is not discretionary and takes precedence',
-        tcoTask: 'I-1: Comply with BACB ethics code; I-3: Respond to ethical violations',
-        },
-      ],
+
+  ],
   },
 
   // -- Domain H: Selecting and Implementing Interventions -------------------
@@ -1865,7 +3168,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing mastery (criterion met in training) with maintenance (criterion met over time without intervention) — maintenance requires a planned thinning and monitoring phase',
         tcoTask: 'E-6: Use generalization and maintenance procedures',
       },
+    {id: "sj-33-q3",
+    stem: "A student completes their work quickly whenever the teacher announces a quiz. The teacher notices that work completion increases when quizzes are announced. This is BEST explained by:",
+    choices: [
+      { id: 'A', text: "Positive reinforcement — the teacher's announcement increases work completion." },
+      { id: 'B', text: "Negative reinforcement — completing work quickly removes or prevents the aversive quiz." },
+      { id: 'C', text: "Punishment — the quiz announcement suppresses the student's behavior." },
+      { id: 'D', text: "Extinction — the student is avoiding the quiz by completing work." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Negative reinforcement involves the removal or prevention of an aversive stimulus contingent on a behavior — completing work quickly prevents the quiz.", isCorrect: true },
+      { id: "j2", text: "The quiz functions as an aversive stimulus (S-aversive) — work completion is negatively reinforced by its prevention.", isCorrect: true },
+      { id: "j3", text: "The behavior (work completion) increases — this is reinforcement, not punishment.", isCorrect: true },
+      { id: "j4", text: "Positive reinforcement involves the addition of a stimulus following behavior — no stimulus is added here; the quiz is prevented.", isCorrect: false },
+      { id: "j5", text: "Punishment involves a decrease in behavior following a consequence — work completion is increasing, not decreasing.", isCorrect: false },
+      { id: "j6", text: "Extinction involves withholding a previously delivered reinforcer — no reinforcer is being withheld here.", isCorrect: false },
+      { id: "j7", text: "Negative reinforcement is a form of punishment because it involves an aversive stimulus.", isCorrect: false },
+      { id: "j8", text: "The student is positively reinforced by the teacher's announcement.", isCorrect: false },
+      { id: "j9", text: "This scenario cannot be classified as reinforcement or punishment without a functional analysis.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Negative reinforcement is not negative in the colloquial sense — it is defined by the removal or prevention of a stimulus (negative = subtraction) that results in an increase in behavior.. A common error is: Candidates frequently confuse negative reinforcement with punishment because both involve aversive stimuli — the key distinction is that reinforcement increases behavior and punishment decreases it..',
+    recallTrap: "Candidates frequently confuse negative reinforcement with punishment because both involve aversive stimuli — the key distinction is that reinforcement increases behavior and punishment decreases it.",
+    conceptConfusion: "Negative reinforcement is not negative in the colloquial sense — it is defined by the removal or prevention of a stimulus (negative = subtraction) that results in an increase in behavior.",
+    tcoTask: "B-3"
+  }
+  ],
   },
 
   // -- Domain I: Personnel Supervision & Management -------------------------
@@ -1953,7 +3281,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing a skill deficit (does not know how) with a performance deficit (knows how but does not do it) — the intervention for each is different',
         tcoTask: 'D-1: Design supervision systems; D-4: Evaluate supervisee performance',
       },
+    {id: "sj-34-q3",
+    stem: "A BCBA is presenting a case study at a professional conference. She wants to include video footage of a client demonstrating skill acquisition. What is the MOST important ethical consideration?",
+    choices: [
+      { id: 'A', text: "The video should be edited to remove identifying information before presentation." },
+      { id: 'B', text: "Written informed consent from the client or guardian must be obtained before using the footage in a public presentation." },
+      { id: 'C', text: "The BCBA should describe the case verbally without using video to protect confidentiality." },
+      { id: 'D', text: "Consent is implied when a client participates in ABA services." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The BACB Ethics Code requires written informed consent before using client information (including video) for educational or professional purposes.", isCorrect: true },
+      { id: "j2", text: "Video footage is identifiable client information — its use in a public presentation requires explicit written consent from the client or guardian.", isCorrect: true },
+      { id: "j3", text: "Consent must be informed and specific — it must cover the use of the footage in a conference presentation, not just general service participation.", isCorrect: true },
+      { id: "j4", text: "Editing to remove identifying information reduces risk but does not replace the requirement for written consent.", isCorrect: false },
+      { id: "j5", text: "Verbal description without video avoids the issue but is not required if proper consent is obtained.", isCorrect: false },
+      { id: "j6", text: "Consent for ABA services does not imply consent for public presentation of video footage.", isCorrect: false },
+      { id: "j7", text: "Professional conference presentations are exempt from confidentiality requirements.", isCorrect: false },
+      { id: "j8", text: "The BCBA can use de-identified video without consent.", isCorrect: false },
+      { id: "j9", text: "Consent is only required for video footage used in research publications, not conference presentations.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Consent for services and consent for educational use of client information are distinct — participation in ABA services does not constitute consent for public presentation.. A common error is: Candidates may select editing as sufficient, but editing reduces risk — it does not replace the requirement for explicit written consent..',
+    recallTrap: "Candidates may select editing as sufficient, but editing reduces risk — it does not replace the requirement for explicit written consent.",
+    conceptConfusion: "Consent for services and consent for educational use of client information are distinct — participation in ABA services does not constitute consent for public presentation.",
+    tcoTask: "E-3"
+  }
+  ],
   },
   // --- NEW SCENARIOS sj-35 through sj-46 --------------------------------------
 
@@ -2043,7 +3396,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing behavior reduction (criterion met) with treatment completion (intervention can be faded) — premature discontinuation of extinction risks resurgence',
         tcoTask: 'H-1: Implement behavior reduction procedures; E-6: Use generalization and maintenance procedures',
       },
+    {id: "sj-35-q3",
+    stem: "A BCBA wants to measure the total time a student engages in on-task behavior during a 30-minute work period. Which measurement procedure is MOST appropriate?",
+    choices: [
+      { id: 'A', text: "Frequency recording — count the number of on-task episodes." },
+      { id: 'B', text: "Duration recording — measure the total time spent on-task." },
+      { id: 'C', text: "Latency recording — measure the time from the work instruction to the first on-task response." },
+      { id: 'D', text: "Momentary time sampling — record whether the student is on-task at the end of each 5-minute interval." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Duration recording directly measures the total time a behavior occurs, which is the most appropriate measure when the goal is to quantify the amount of time spent on-task.", isCorrect: true },
+      { id: "j2", text: "The question asks for total time engaged — duration recording provides this information directly.", isCorrect: true },
+      { id: "j3", text: "Duration recording is the most appropriate measure for behaviors where the temporal extent (how long) is the primary dimension of interest.", isCorrect: true },
+      { id: "j4", text: "Frequency recording counts occurrences, not duration — it does not capture how long each on-task episode lasts.", isCorrect: false },
+      { id: "j5", text: "Latency recording measures the time from a signal to the first occurrence of the behavior — it does not measure total duration.", isCorrect: false },
+      { id: "j6", text: "Momentary time sampling estimates the proportion of intervals in which the behavior occurs — it does not provide exact total duration.", isCorrect: false },
+      { id: "j7", text: "Frequency and duration recording provide equivalent information for on-task behavior.", isCorrect: false },
+      { id: "j8", text: "Momentary time sampling is more accurate than duration recording for measuring on-task behavior.", isCorrect: false },
+      { id: "j9", text: "Latency recording is appropriate when the goal is to measure total time on-task.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Duration recording and latency recording both involve timing, but duration measures how long a behavior lasts, while latency measures the time from a stimulus to the first occurrence of the behavior.. A common error is: Candidates may select momentary time sampling because it is commonly used for on-task behavior, but MTS estimates proportion, not total duration..',
+    recallTrap: "Candidates may select momentary time sampling because it is commonly used for on-task behavior, but MTS estimates proportion, not total duration.",
+    conceptConfusion: "Duration recording and latency recording both involve timing, but duration measures how long a behavior lasts, while latency measures the time from a stimulus to the first occurrence of the behavior.",
+    tcoTask: "C-2"
+  }
+  ],
   },
 
   // sj-36: Multiple Baseline Design (Research & Design)
@@ -2132,78 +3510,8 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing concurrent improvement (a threat to internal validity in multiple baseline designs) with experimental control (staggered improvement tied to staggered intervention introduction)',
         tcoTask: 'C-2: Evaluate research designs; A-3: Display and interpret data',
       },
-            {
-          id: 'sj-36-q4',
-          stem: 'A colleague reviews Dr. Chen\'s study and raises the following critique: \'The three target behaviors — initiating greetings, maintaining eye contact, and using a peer\'s name — are not functionally independent. They all occur in the same social interaction context, and improving one may naturally improve the others.\' If this critique is valid, what is the MOST significant implication for the study\'s conclusions?',
-          choices: [
-            { id: 'A', text: 'The study\'s conclusions are strengthened, because improvement across all three behaviors demonstrates broad generalization of the intervention' },
-            { id: 'B', text: 'The concurrent change in Tier 2 (eye contact) before treatment was introduced to that tier is better explained by the functional interdependence of the behaviors than by the intervention, which undermines the experimental control demonstration' },
-            { id: 'C', text: 'The study\'s conclusions are unaffected, because multiple baseline designs are specifically designed to handle functionally related behaviors' },
-            { id: 'D', text: 'The study should be redesigned as an ABAB design to provide stronger experimental control for functionally interdependent behaviors' },
-          ],
-          correctChoice: 'B',
-          justifications: [
-            {
-              id: 'j1',
-              text: 'The multiple baseline design requires functional independence of tiers; if the behaviors are functionally interdependent, changes in untreated tiers may reflect natural co-variation rather than the intervention, undermining the experimental control demonstration.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j2',
-              text: 'The concurrent change in eye contact before treatment was introduced to that tier — which was previously identified as a threat to experimental control — is better explained by functional interdependence than by an unexplained confound, but it still undermines the study\'s conclusions.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j3',
-              text: 'A valid critique of functional interdependence means that the study cannot rule out the possibility that the behaviors would have changed together regardless of the intervention, which is the core threat to internal validity in this design.',
-              isCorrect: true,
-              justifiesChoice: 'B',
-            },
-            {
-              id: 'j4',
-              text: 'Generalization is a desirable clinical outcome but a methodological threat in multiple baseline research; improvement across all tiers before treatment is introduced to each tier undermines experimental control rather than strengthening the study\'s conclusions.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j5',
-              text: 'Multiple baseline designs require functionally independent tiers; the design is specifically vulnerable to the threat of functional interdependence, which is why behavior selection is a critical methodological decision in multiple baseline research.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j6',
-              text: 'An ABAB design is not more appropriate for functionally interdependent behaviors; it addresses a different methodological question (reversibility) and would not resolve the problem of functional interdependence between target behaviors.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-            {
-              id: 'j7',
-              text: 'The colleague\'s critique, if valid, is a threat to internal validity — not a demonstration of generalization; the distinction between planned generalization and uncontrolled co-variation is critical for interpreting multiple baseline data.',
-              isCorrect: false,
-              justifiesChoice: 'A',
-            },
-            {
-              id: 'j8',
-              text: 'The multiple baseline design is not immune to threats from functionally related behaviors; the assumption of functional independence is a prerequisite for the design\'s logic, and violating it undermines the conclusions.',
-              isCorrect: false,
-              justifiesChoice: 'C',
-            },
-            {
-              id: 'j9',
-              text: 'Redesigning as an ABAB study would not address the functional interdependence problem and would introduce the ethical concern of withdrawing treatment from a child with social skill deficits; the appropriate response is to acknowledge the threat and interpret the conclusions with appropriate caution.',
-              isCorrect: false,
-              justifiesChoice: 'D',
-            },
-          ],
-          explanation: 'The validity of a multiple baseline design rests on the assumption that the tiers (behaviors, settings, or participants) are functionally independent — that is, changing one tier should not automatically change another. If the three social behaviors are functionally interdependent (because they all occur in the same social interaction context and improving one naturally improves the others), then the concurrent change in eye contact (Tier 2) before treatment was introduced to that tier may be explained by the functional relationship between the behaviors rather than by the intervention. This undermines the experimental control demonstration, because the logic of the multiple baseline requires that untreated tiers remain stable. The colleague\'s critique, if valid, means that the study cannot confidently attribute the changes to the intervention rather than to the natural co-variation of the behaviors. This is a fundamental threat to the study\'s internal validity — not a strength.',
-        recallTrap: 'Accepting the multiple baseline as valid because each tier shows improvement',
-        conceptConfusion: 'Confusing outcome validity (did behavior improve?) with design validity (does the design demonstrate that the intervention caused the improvement?) — improvement without staggered control is not experimental control',
-        tcoTask: 'C-1: Select appropriate research designs; C-2: Evaluate research designs',
-        },
-      ],
+
+  ],
   },
 
   // sj-37: Verbal Behavior — Mand Training (Verbal Behavior)
@@ -2266,7 +3574,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing a prompt (provides the response) with an errorless learning trial (provides the response before an error) — the question requires identifying the correct prompting strategy for a mand, not whether to prompt',
         tcoTask: 'E-1: Use interventions based on assessment results; F-1: Identify and teach verbal operants',
       },
+    {id: "sj-37-q3",
+    stem: "A BCBA implements DRO for a student's out-of-seat behavior. The DRO interval is set at 5 minutes. The student remains seated for 4 minutes and 50 seconds, then stands up briefly, then sits back down. What happens to the DRO interval?",
+    choices: [
+      { id: 'A', text: "The student receives reinforcement because they were seated for most of the interval." },
+      { id: 'B', text: "The DRO interval resets to 5 minutes because the target behavior occurred during the interval." },
+      { id: 'C', text: "The DRO interval is shortened to 2 minutes for the next trial." },
+      { id: 'D', text: "The student receives partial reinforcement for the time they were seated." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "DRO requires that the target behavior NOT occur for the entire interval — any occurrence of the target behavior resets the interval.", isCorrect: true },
+      { id: "j2", text: "The student stood up (target behavior occurred) at 4:50, so the interval resets to 5 minutes from that point.", isCorrect: true },
+      { id: "j3", text: "DRO is an all-or-nothing contingency — the behavior must be absent for the full interval to earn reinforcement.", isCorrect: true },
+      { id: "j4", text: "Partial credit is not a feature of DRO — the behavior must be absent for the entire interval.", isCorrect: false },
+      { id: "j5", text: "Shortening the interval is a schedule thinning decision, not a response to a target behavior occurrence.", isCorrect: false },
+      { id: "j6", text: "The student does not receive reinforcement because the target behavior occurred during the interval, regardless of how briefly.", isCorrect: false },
+      { id: "j7", text: "DRO intervals do not reset — they continue regardless of whether the target behavior occurs.", isCorrect: false },
+      { id: "j8", text: "The student should receive reinforcement because they returned to the appropriate behavior (sitting) after the brief occurrence.", isCorrect: false },
+      { id: "j9", text: "DRO reinforces the absence of behavior for most of the interval, not all of it.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. DRO resets the interval when the target behavior occurs — this is different from DRL, which reinforces the behavior when it occurs at or below a specified rate.. A common error is: Candidates may feel the student deserves credit for sitting for 4:50 of 5:00, but DRO is strictly all-or-nothing — any occurrence of the target behavior during the interval resets the clock..',
+    recallTrap: "Candidates may feel the student deserves credit for sitting for 4:50 of 5:00, but DRO is strictly all-or-nothing — any occurrence of the target behavior during the interval resets the clock.",
+    conceptConfusion: "DRO resets the interval when the target behavior occurs — this is different from DRL, which reinforces the behavior when it occurs at or below a specified rate.",
+    tcoTask: "G-18"
+  }
+  ],
   },
 
   // sj-38: IOA Calculation and Data Reliability (Measurement)
@@ -2329,7 +3662,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the accuracy of total count IOA (can be high even when observers disagree on individual occurrences) with the accuracy of occurrence IOA (sensitive to disagreements on specific occurrences)',
         tcoTask: 'A-4: Design and implement measurement systems; A-5: Evaluate measurement systems',
       },
+    {id: "sj-38-q3",
+    stem: "A BCBA supervisor conducts monthly observations of a supervisee's session implementation. The supervisee consistently scores 95% on the performance checklist. What is the MOST appropriate adjustment to the supervision plan?",
+    choices: [
+      { id: 'A', text: "Maintain the current monthly observation frequency because performance is excellent." },
+      { id: 'B', text: "Increase observation frequency to ensure the high performance is maintained." },
+      { id: 'C', text: "Reduce the frequency of direct observation and shift to more consultative supervision activities (e.g., case conceptualization, professional development)." },
+      { id: 'D', text: "Discontinue direct observation entirely because the supervisee has demonstrated competence." }
     ],
+    correctChoice: 'C',
+    justifications: [
+      { id: "j1", text: "Competency-based supervision adjusts the type and intensity of supervision based on demonstrated performance — high performance warrants a shift toward consultative activities.", isCorrect: true },
+      { id: "j2", text: "Reducing direct observation for high-performing supervisees allows supervision time to be allocated to higher-level professional development activities.", isCorrect: true },
+      { id: "j3", text: "Supervision should be responsive to the supervisee's current needs — a supervisee consistently performing at 95% needs different support than one performing at 70%.", isCorrect: true },
+      { id: "j4", text: "Maintaining the same observation frequency regardless of performance is not responsive supervision — it fails to adapt to the supervisee's demonstrated competence.", isCorrect: false },
+      { id: "j5", text: "Increasing observation for a high-performing supervisee is an inefficient use of supervision time.", isCorrect: false },
+      { id: "j6", text: "Discontinuing direct observation entirely is inappropriate — some level of ongoing monitoring is required to maintain accountability.", isCorrect: false },
+      { id: "j7", text: "Supervision intensity should remain constant regardless of supervisee performance.", isCorrect: false },
+      { id: "j8", text: "A 95% performance score indicates the supervisee no longer needs any supervision.", isCorrect: false },
+      { id: "j9", text: "The BACB requires the same supervision intensity for all supervisees regardless of performance.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is C. Reducing direct observation does not mean reducing supervision — it means shifting the focus of supervision from performance monitoring to professional development.. A common error is: Candidates may select maintaining the same frequency because the performance is excellent and they do not want to risk a decline, but competency-based supervision requires adapting to demonstrated performance..',
+    recallTrap: "Candidates may select maintaining the same frequency because the performance is excellent and they do not want to risk a decline, but competency-based supervision requires adapting to demonstrated performance.",
+    conceptConfusion: "Reducing direct observation does not mean reducing supervision — it means shifting the focus of supervision from performance monitoring to professional development.",
+    tcoTask: "I-4"
+  }
+  ],
   },
 
   // sj-39: Dual Relationship and Ethics (Ethics & Professional Practice)
@@ -2392,7 +3750,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing scope of competence (clinical services) with professional communication (a letter describing the client\'s diagnosis and needs is within scope if the BCBA has the relevant knowledge)',
         tcoTask: 'I-1: Comply with BACB ethics code; I-2: Practice within scope of competence',
       },
+    {id: "sj-39-q3",
+    stem: "ABC data collected over 2 weeks show that a student's aggression occurs most frequently when academic demands are presented and is followed by task removal 80% of the time. What function is MOST likely?",
+    choices: [
+      { id: 'A', text: "Attention — the student is seeking social interaction from the teacher." },
+      { id: 'B', text: "Escape/avoidance — the student is negatively reinforced by the removal of the academic demand." },
+      { id: 'C', text: "Tangible — the student is seeking access to a preferred item." },
+      { id: 'D', text: "Automatic — the behavior is maintained by sensory stimulation." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The antecedent (academic demand) and consequence (task removal) pattern is the defining signature of escape/avoidance-maintained behavior.", isCorrect: true },
+      { id: "j2", text: "Negative reinforcement (removal of an aversive stimulus — the demand) contingent on aggression maintains the behavior.", isCorrect: true },
+      { id: "j3", text: "The 80% consistency between aggression and task removal provides strong correlational evidence for an escape function.", isCorrect: true },
+      { id: "j4", text: "Attention-maintained behavior is followed by social interaction (eye contact, verbal reprimand, proximity) — task removal is not attention.", isCorrect: false },
+      { id: "j5", text: "Tangible-maintained behavior is followed by access to a preferred item — task removal is not a tangible item.", isCorrect: false },
+      { id: "j6", text: "Automatic reinforcement occurs independently of social consequences — the consistent social consequence (task removal) rules out automatic reinforcement.", isCorrect: false },
+      { id: "j7", text: "ABC data cannot identify behavioral function — only a functional analysis can do this.", isCorrect: false },
+      { id: "j8", text: "The antecedent alone (academic demand) determines the function of the behavior.", isCorrect: false },
+      { id: "j9", text: "Aggression is always automatically reinforced.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. ABC data can suggest a function but cannot confirm it — a functional analysis is required for confirmation. However, for exam purposes, ABC data patterns are used to identify the most likely function.. A common error is: Candidates may note that the teacher is present and select attention, but the consequence is task removal, not social attention — the consequence determines the function..',
+    recallTrap: "Candidates may note that the teacher is present and select attention, but the consequence is task removal, not social attention — the consequence determines the function.",
+    conceptConfusion: "ABC data can suggest a function but cannot confirm it — a functional analysis is required for confirmation. However, for exam purposes, ABC data patterns are used to identify the most likely function.",
+    tcoTask: "F-1"
+  }
+  ],
   },
 
   // sj-40: Preference Assessment Selection (Assessment)
@@ -2455,7 +3838,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing preference (the item is selected most often) with reinforcer status (the item increases the behavior it follows) — preference assessment identifies candidates, not confirmed reinforcers',
         tcoTask: 'B-1: Conduct preference and reinforcer assessments',
       },
+    {id: "sj-40-q3",
+    stem: "A BCBA implements NCR for attention-maintained problem behavior by providing attention every 3 minutes regardless of behavior. After 2 weeks, the problem behavior has not decreased. What is the MOST likely explanation?",
+    choices: [
+      { id: 'A', text: "The NCR schedule is too dense — attention is being provided too frequently." },
+      { id: 'B', text: "The NCR schedule is too lean — the 3-minute interval is longer than the learner's current deprivation state, so the MO for attention is not being abolished." },
+      { id: 'C', text: "NCR is not appropriate for attention-maintained behavior." },
+      { id: 'D', text: "The problem behavior is not actually maintained by attention." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "NCR works by abolishing the motivating operation (MO) for the maintaining reinforcer — if the NCR schedule is too lean (intervals too long), the learner still experiences deprivation and the MO remains intact.", isCorrect: true },
+      { id: "j2", text: "A 3-minute NCR schedule may be too long if the learner's attention deprivation state recovers in less than 3 minutes.", isCorrect: true },
+      { id: "j3", text: "The NCR schedule should be denser than the current problem behavior rate to ensure the MO is abolished before the learner engages in problem behavior.", isCorrect: true },
+      { id: "j4", text: "A dense NCR schedule would abolish the MO and reduce problem behavior — too dense a schedule is not the problem here.", isCorrect: false },
+      { id: "j5", text: "NCR is an evidence-based intervention for attention-maintained behavior — it is appropriate.", isCorrect: false },
+      { id: "j6", text: "If the problem behavior were not maintained by attention, NCR with attention would not be expected to work — but the question states the function is attention.", isCorrect: false },
+      { id: "j7", text: "NCR is ineffective for all functions of problem behavior.", isCorrect: false },
+      { id: "j8", text: "The NCR schedule should always start at a 5-minute interval and be thinned from there.", isCorrect: false },
+      { id: "j9", text: "NCR should be combined with punishment to be effective.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. NCR works through MO abolition, not through response-reinforcement contingencies — the schedule must be dense enough to prevent the deprivation state from recovering between deliveries.. A common error is: Candidates may select the dense schedule option because they associate NCR with over-reinforcement, but the problem here is under-reinforcement — the schedule is too lean to abolish the MO..',
+    recallTrap: "Candidates may select the dense schedule option because they associate NCR with over-reinforcement, but the problem here is under-reinforcement — the schedule is too lean to abolish the MO.",
+    conceptConfusion: "NCR works through MO abolition, not through response-reinforcement contingencies — the schedule must be dense enough to prevent the deprivation state from recovering between deliveries.",
+    tcoTask: "G-18"
+  }
+  ],
   },
 
   // sj-41: Scope of Competence (Ethics & Professional Issues)
@@ -2518,7 +3926,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing referral (add a qualified provider) with discontinuation (stop ABA services) — the BCBA continues ABA services while coordinating with the referred provider',
         tcoTask: 'I-2: Practice within scope of competence; D-5: Coordinate services',
       },
+    {id: "sj-41-q3",
+    stem: "A BCBA observes an immediate level change in a graph when the intervention is introduced. The data in the intervention phase are stable and at a higher level than baseline. What does this pattern indicate?",
+    choices: [
+      { id: 'A', text: "The intervention produced a gradual, cumulative effect on the behavior." },
+      { id: 'B', text: "The intervention produced an immediate, strong effect on the behavior, suggesting a functional relationship." },
+      { id: 'C', text: "The level change is likely due to a confounding variable, not the intervention." },
+      { id: 'D', text: "The data are inconclusive because a stable trend in the intervention phase is required for interpretation." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "An immediate level change at the phase boundary, combined with stable data in the intervention phase, is strong visual evidence of an intervention effect.", isCorrect: true },
+      { id: "j2", text: "Immediacy of effect is one of the key criteria in visual analysis — an immediate change is more convincing than a gradual one.", isCorrect: true },
+      { id: "j3", text: "Stable intervention data at a higher level than baseline, with an immediate change at the phase boundary, is the ideal pattern for demonstrating a functional relationship.", isCorrect: true },
+      { id: "j4", text: "A gradual effect would suggest a slow-acting intervention, not an immediate level change.", isCorrect: false },
+      { id: "j5", text: "An immediate level change is less likely to be due to a confounding variable than a gradual change — confounds typically produce gradual effects.", isCorrect: false },
+      { id: "j6", text: "Stable intervention data are desirable for interpretation — the pattern described is ideal for visual analysis.", isCorrect: false },
+      { id: "j7", text: "Level changes must be gradual to be attributed to an intervention.", isCorrect: false },
+      { id: "j8", text: "An immediate level change always indicates a measurement artifact.", isCorrect: false },
+      { id: "j9", text: "Visual analysis cannot determine whether a level change is due to the intervention.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Level change and trend change are both components of visual analysis — level change refers to the mean level of data, while trend change refers to the direction and slope of the data path.. A common error is: Candidates may doubt an immediate level change, assuming it is too abrupt to be real, but immediacy of effect is actually stronger evidence of intervention effectiveness than gradual change..',
+    recallTrap: "Candidates may doubt an immediate level change, assuming it is too abrupt to be real, but immediacy of effect is actually stronger evidence of intervention effectiveness than gradual change.",
+    conceptConfusion: "Level change and trend change are both components of visual analysis — level change refers to the mean level of data, while trend change refers to the direction and slope of the data path.",
+    tcoTask: "C-7"
+  }
+  ],
   },
 
   // sj-42: Stimulus Control and Generalization (Behavior Principles)
@@ -2581,7 +4014,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing multiple exemplar training (adds exemplars) with programming for generalization (requires training across settings, people, and materials) — multiple exemplars alone do not guarantee generalization to natural settings',
         tcoTask: 'E-6: Use generalization and maintenance procedures',
       },
+    {id: "sj-42-q3",
+    stem: "A parent provides verbal consent for a new behavior intervention plan during a phone call. The BCBA proceeds with implementation. What ethical concern does this raise?",
+    choices: [
+      { id: 'A', text: "Verbal consent is sufficient for behavior intervention plans — no written consent is required." },
+      { id: 'B', text: "The BACB Ethics Code requires written informed consent for behavior intervention plans — verbal consent is not sufficient." },
+      { id: 'C', text: "Consent is only required for punishment procedures, not reinforcement-based plans." },
+      { id: 'D', text: "Phone consent is acceptable as long as it is documented in the session notes." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The BACB Ethics Code requires written informed consent for behavior intervention plans — verbal consent does not meet this standard.", isCorrect: true },
+      { id: "j2", text: "Written consent creates a documented record that the client or guardian was informed of the nature, risks, and alternatives of the intervention.", isCorrect: true },
+      { id: "j3", text: "Proceeding with implementation based only on verbal consent is an ethics violation regardless of the urgency of the situation.", isCorrect: true },
+      { id: "j4", text: "Verbal consent does not meet the written consent requirement — the form of consent matters, not just the content.", isCorrect: false },
+      { id: "j5", text: "Written consent is required for all behavior intervention plans, not just punishment procedures.", isCorrect: false },
+      { id: "j6", text: "Documenting verbal consent in session notes does not convert it to written consent.", isCorrect: false },
+      { id: "j7", text: "Verbal consent is equivalent to written consent when documented.", isCorrect: false },
+      { id: "j8", text: "Consent requirements are flexible and can be adapted based on the urgency of the situation.", isCorrect: false },
+      { id: "j9", text: "The BACB only requires consent for research, not for clinical practice.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Documentation of verbal consent in session notes is good practice but does not satisfy the written consent requirement — written consent requires the parent to sign a document.. A common error is: Candidates may accept verbal consent as sufficient because the parent agreed, but the ethics code specifically requires written consent — the form of consent is not optional..',
+    recallTrap: "Candidates may accept verbal consent as sufficient because the parent agreed, but the ethics code specifically requires written consent — the form of consent is not optional.",
+    conceptConfusion: "Documentation of verbal consent in session notes is good practice but does not satisfy the written consent requirement — written consent requires the parent to sign a document.",
+    tcoTask: "E-3"
+  }
+  ],
   },
 
   // sj-43: Data-Based Decision Making (Measurement & Data Analysis)
@@ -2644,7 +4102,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the highest observed performance (ceiling) with a criterion that reflects consistent, reliable performance across sessions and conditions',
         tcoTask: 'A-1: Prepare for data collection; G-4: Evaluate intervention effectiveness',
       },
+    {id: "sj-43-q3",
+    stem: "A BCBA wants to measure a student's academic productivity by counting the number of math problems completed correctly during a 20-minute work period. Which measurement procedure is MOST appropriate?",
+    choices: [
+      { id: 'A', text: "Direct observation using event recording during the work period." },
+      { id: 'B', text: "Permanent product recording — counting the number of correctly completed problems on the completed worksheet after the session." },
+      { id: 'C', text: "Interval recording — recording whether the student is working at the end of each 2-minute interval." },
+      { id: 'D', text: "Duration recording — measuring the total time the student spends writing." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Permanent product recording measures the tangible outcomes of behavior (completed problems) rather than the behavior itself — it is ideal for academic productivity.", isCorrect: true },
+      { id: "j2", text: "The completed worksheet is a permanent product that can be reviewed after the session without requiring continuous observation.", isCorrect: true },
+      { id: "j3", text: "Permanent product recording is efficient, reliable, and directly measures the outcome of interest (correct problem completion).", isCorrect: true },
+      { id: "j4", text: "Event recording during the session requires continuous observation and is less efficient than reviewing the permanent product.", isCorrect: false },
+      { id: "j5", text: "Interval recording measures whether the student is working, not whether they are completing problems correctly.", isCorrect: false },
+      { id: "j6", text: "Duration recording measures time spent writing, not the number of correctly completed problems.", isCorrect: false },
+      { id: "j7", text: "Permanent product recording is only appropriate for behaviors that leave a physical trace.", isCorrect: false },
+      { id: "j8", text: "Permanent product recording is less valid than direct observation because it does not capture the behavior in real time.", isCorrect: false },
+      { id: "j9", text: "All measurement procedures are equally appropriate for measuring academic productivity.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Permanent product recording measures the outcome of behavior, not the behavior itself — it is appropriate when the behavior leaves a tangible, countable product.. A common error is: Candidates may select event recording because it is a direct measure, but permanent product recording is more efficient and equally valid for measuring academic output..',
+    recallTrap: "Candidates may select event recording because it is a direct measure, but permanent product recording is more efficient and equally valid for measuring academic output.",
+    conceptConfusion: "Permanent product recording measures the outcome of behavior, not the behavior itself — it is appropriate when the behavior leaves a tangible, countable product.",
+    tcoTask: "C-1"
+  }
+  ],
   },
 
   // sj-44: Chaining and Skill Acquisition (Skill Acquisition)
@@ -2707,7 +4190,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing error correction (addresses the error after it occurs) with errorless learning (prevents the error before it occurs) — the appropriate error correction procedure depends on the chaining method and the learner\'s history',
         tcoTask: 'E-7: Use chaining procedures; E-1: Use interventions based on assessment results',
       },
+    {id: "sj-44-q3",
+    stem: "A child has not eaten for 6 hours. A BCBA presents a preferred food item as a reinforcer for correct responding. The child's rate of correct responding increases dramatically. This increase is BEST explained by:",
+    choices: [
+      { id: 'A', text: "The food item is a conditioned reinforcer that has been paired with praise." },
+      { id: 'B', text: "A motivating operation (deprivation) has increased the reinforcing value of the food item and the frequency of food-seeking behavior." },
+      { id: 'C', text: "The child's behavior is under stimulus control of the food item." },
+      { id: 'D', text: "The food item functions as a discriminative stimulus for correct responding." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Food deprivation is an establishing operation (EO) that increases the reinforcing value of food and increases the frequency of food-seeking behavior.", isCorrect: true },
+      { id: "j2", text: "The 6-hour deprivation state is the motivating operation — it is responsible for the increased effectiveness of the food reinforcer.", isCorrect: true },
+      { id: "j3", text: "Understanding MOs is essential for designing effective reinforcement-based interventions — the same stimulus may have different reinforcing value depending on the current MO.", isCorrect: true },
+      { id: "j4", text: "The food item may be a conditioned reinforcer, but this does not explain the increase in responding due to deprivation.", isCorrect: false },
+      { id: "j5", text: "Stimulus control refers to the relationship between an SD and a response — the food item is a reinforcer, not an SD.", isCorrect: false },
+      { id: "j6", text: "A discriminative stimulus signals the availability of reinforcement — the food item is the reinforcer itself, not the signal.", isCorrect: false },
+      { id: "j7", text: "The increase in responding is due to the child being hungry, which is a physiological state, not a behavioral principle.", isCorrect: false },
+      { id: "j8", text: "MOs only affect unconditioned reinforcers, not conditioned reinforcers.", isCorrect: false },
+      { id: "j9", text: "The child's behavior increased because the BCBA provided a preferred item — the deprivation state is irrelevant.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. MOs affect both the value of reinforcers (value-altering effect) and the frequency of behaviors that have produced that reinforcer in the past (behavior-altering effect) — both effects are present in this scenario.. A common error is: Candidates may select stimulus control because the food item is present, but stimulus control refers to the SD-response relationship — the food item here is the reinforcer, not the SD..',
+    recallTrap: "Candidates may select stimulus control because the food item is present, but stimulus control refers to the SD-response relationship — the food item here is the reinforcer, not the SD.",
+    conceptConfusion: "MOs affect both the value of reinforcers (value-altering effect) and the frequency of behaviors that have produced that reinforcer in the past (behavior-altering effect) — both effects are present in this scenario.",
+    tcoTask: "B-6"
+  }
+  ],
   },
 
   // sj-45: Differential Reinforcement Procedures (Behavior Reduction)
@@ -2770,7 +4278,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the effect of DRA (increases the alternative behavior) with the effect of extinction (decreases the problem behavior) — both components are necessary for the procedure to work as intended',
         tcoTask: 'H-2: Use differential reinforcement procedures; H-1: Implement behavior reduction procedures',
       },
+    {id: "sj-45-q3",
+    stem: "A BCBA is teaching a child to initiate greetings with peers. The child learns to say 'Hi' in the therapy room but does not greet peers at school. Which intervention component is MISSING?",
+    choices: [
+      { id: 'A', text: "Reinforcement — the child is not being reinforced for greeting in the therapy room." },
+      { id: 'B', text: "Generalization programming — the skill was not taught across the relevant settings and people." },
+      { id: 'C', text: "Prompting — the child needs more prompts to initiate greetings." },
+      { id: 'D', text: "Task analysis — the greeting behavior has not been broken into sufficient steps." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The child has acquired the skill in the therapy room but has not generalized it to the natural environment — generalization programming was not included.", isCorrect: true },
+      { id: "j2", text: "Generalization programming (multiple exemplar training, common stimuli, natural contingencies) should be built into the intervention from the start.", isCorrect: true },
+      { id: "j3", text: "The failure to greet at school is a generalization failure, not a skill acquisition failure — the child can perform the behavior but only in the training context.", isCorrect: true },
+      { id: "j4", text: "The child is being reinforced in the therapy room (the skill was acquired there) — reinforcement is not the missing component.", isCorrect: false },
+      { id: "j5", text: "Additional prompts in the therapy room would not address the generalization failure at school.", isCorrect: false },
+      { id: "j6", text: "A task analysis is appropriate for complex multi-step skills — a greeting is a simple behavior that does not require further task analysis.", isCorrect: false },
+      { id: "j7", text: "The child's failure to greet at school indicates the skill was never truly acquired.", isCorrect: false },
+      { id: "j8", text: "Generalization always occurs naturally after a skill is mastered in the therapy room.", isCorrect: false },
+      { id: "j9", text: "The missing component is a more powerful reinforcer in the school setting.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Skill acquisition and generalization are distinct — a child can acquire a skill in one context without it generalizing to others. Generalization must be explicitly programmed.. A common error is: Candidates may select prompting because the child is not performing at school, but the child can perform the behavior — the problem is generalization, not skill acquisition..',
+    recallTrap: "Candidates may select prompting because the child is not performing at school, but the child can perform the behavior — the problem is generalization, not skill acquisition.",
+    conceptConfusion: "Skill acquisition and generalization are distinct — a child can acquire a skill in one context without it generalizing to others. Generalization must be explicitly programmed.",
+    tcoTask: "H-1"
+  }
+  ],
   },
 
   // sj-46: Supervision and Training (Personnel Supervision & Management)
@@ -2833,7 +4366,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing clinical decision-making (selecting the procedure) with procedural requirements (documenting the plan, obtaining consent, and training implementers before starting)',
         tcoTask: 'G-5: Obtain informed consent; H-1: Implement behavior reduction procedures',
       },
+    {id: "sj-46-q3",
+    stem: "A BCBA is approached by a parent who wants to hire her to provide private ABA services to their child outside of the school setting where the BCBA currently works. The BCBA's employer does not prohibit private practice. What is the MOST important ethical consideration?",
+    choices: [
+      { id: 'A', text: "The BCBA should decline because providing services to a current client outside of the employment context always constitutes a multiple relationship." },
+      { id: 'B', text: "The BCBA should evaluate whether the private arrangement creates a conflict of interest with her employer and whether it could compromise the objectivity of her services." },
+      { id: 'C', text: "The BCBA can accept the arrangement because the employer does not prohibit private practice." },
+      { id: 'D', text: "The BCBA should refer the family to another provider to avoid any potential conflict." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The BACB Ethics Code requires BCBAs to identify and manage conflicts of interest — the BCBA must evaluate whether the private arrangement creates competing interests.", isCorrect: true },
+      { id: "j2", text: "Even when not prohibited by the employer, private arrangements with current clients require careful evaluation of potential conflicts of interest and multiple relationship risks.", isCorrect: true },
+      { id: "j3", text: "The key ethical question is whether the arrangement could compromise the BCBA's objectivity or create divided loyalties — this must be evaluated before proceeding.", isCorrect: true },
+      { id: "j4", text: "The arrangement is not automatically a multiple relationship — it requires evaluation of the specific circumstances.", isCorrect: false },
+      { id: "j5", text: "Employer permission is necessary but not sufficient — the BCBA must also evaluate ethical considerations independently.", isCorrect: false },
+      { id: "j6", text: "Automatic referral without evaluation is not required — the BCBA should evaluate the situation and make an informed decision.", isCorrect: false },
+      { id: "j7", text: "Private practice with current clients is always ethically permissible when the employer does not prohibit it.", isCorrect: false },
+      { id: "j8", text: "The BCBA has no ethical obligations beyond complying with employer policies.", isCorrect: false },
+      { id: "j9", text: "Conflicts of interest are only relevant when the employer explicitly prohibits private practice.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Employer permission and ethical permissibility are distinct — an action can be permitted by an employer but still raise ethical concerns that the BCBA must independently evaluate.. A common error is: Candidates may select automatic acceptance (employer permits it) or automatic refusal (it is a multiple relationship) — the correct answer requires evaluation of the specific circumstances..',
+    recallTrap: "Candidates may select automatic acceptance (employer permits it) or automatic refusal (it is a multiple relationship) — the correct answer requires evaluation of the specific circumstances.",
+    conceptConfusion: "Employer permission and ethical permissibility are distinct — an action can be permitted by an employer but still raise ethical concerns that the BCBA must independently evaluate.",
+    tcoTask: "E-2"
+  }
+  ],
   },
 
   // -- Scenario 47: IOA Calculation ------------------------------------------
@@ -2921,7 +4479,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the formula for interval-by-interval IOA with the acceptability threshold — the question tests whether the learner can both calculate correctly and evaluate the result',
         tcoTask: 'A-4: Design and implement measurement systems; A-5: Evaluate measurement systems',
       },
+    {id: "sj-47-q3",
+    stem: "A student completes 30 math problems in 15 minutes on Monday and 30 math problems in 20 minutes on Wednesday. Which measure BEST captures the difference in performance between the two sessions?",
+    choices: [
+      { id: 'A', text: "Frequency — both sessions had the same number of correct responses (30)." },
+      { id: 'B', text: "Rate — Monday's rate (2 problems/min) was higher than Wednesday's rate (1.5 problems/min)." },
+      { id: 'C', text: "Duration — Wednesday's session was longer than Monday's." },
+      { id: 'D', text: "Percentage — both sessions had the same percentage of correct responses." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Rate (frequency per unit time) captures the difference in performance because the number of problems was the same but the time differed.", isCorrect: true },
+      { id: "j2", text: "Monday: 30 problems / 15 min = 2 problems/min. Wednesday: 30 problems / 20 min = 1.5 problems/min — rate reveals the performance difference.", isCorrect: true },
+      { id: "j3", text: "Rate is the appropriate measure when comparing performance across sessions with different observation durations.", isCorrect: true },
+      { id: "j4", text: "Frequency (count) is the same in both sessions (30) — it does not capture the performance difference.", isCorrect: false },
+      { id: "j5", text: "Duration measures the length of the session, not the performance within it.", isCorrect: false },
+      { id: "j6", text: "Percentage requires a denominator (total opportunities) — without knowing the total problems available, percentage cannot be calculated.", isCorrect: false },
+      { id: "j7", text: "Frequency and rate are equivalent measures and always produce the same conclusions.", isCorrect: false },
+      { id: "j8", text: "Duration recording is the most appropriate measure for academic productivity.", isCorrect: false },
+      { id: "j9", text: "The difference in session length is irrelevant to the comparison of performance.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Frequency (count) and rate (count per unit time) are related but distinct — rate is the preferred measure when observation durations differ across sessions.. A common error is: Candidates may select frequency because both sessions had 30 correct responses, but frequency does not account for the difference in session duration — rate is the appropriate measure..',
+    recallTrap: "Candidates may select frequency because both sessions had 30 correct responses, but frequency does not account for the difference in session duration — rate is the appropriate measure.",
+    conceptConfusion: "Frequency (count) and rate (count per unit time) are related but distinct — rate is the preferred measure when observation durations differ across sessions.",
+    tcoTask: "C-2"
+  }
+  ],
   },
 
   // -- Scenario 48: Prompt Fading --------------------------------------------
@@ -3009,7 +4592,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing an anticipation response (correct response before the prompt — evidence of learning) with an error (incorrect response) — anticipation responses indicate the prompt can be faded',
         tcoTask: 'E-1: Use interventions based on assessment results; A-3: Display and interpret data',
       },
+    {id: "sj-48-q3",
+    stem: "A teacher says 'What is 2+2?' (SD), the student says '4' (response), and the teacher says 'Correct!' (consequence). The student's correct responding increases over time. This is an example of:",
+    choices: [
+      { id: 'A', text: "A two-term contingency — the response is followed by a reinforcer." },
+      { id: 'B', text: "A three-term contingency (ABC) — an antecedent, behavior, and consequence that together constitute operant conditioning." },
+      { id: 'C', text: "Classical conditioning — the SD is paired with the reinforcer." },
+      { id: 'D', text: "A four-term contingency — the MO, SD, response, and consequence." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The three-term contingency (SD → R → SR+) is the basic unit of operant conditioning: the SD sets the occasion for the response, and the consequence reinforces it.", isCorrect: true },
+      { id: "j2", text: "The teacher's question is the SD, the student's answer is the response, and 'Correct!' is the positive reinforcer — all three terms are present.", isCorrect: true },
+      { id: "j3", text: "The three-term contingency is also called the ABC contingency (Antecedent-Behavior-Consequence) and is the foundation of applied behavior analysis.", isCorrect: true },
+      { id: "j4", text: "A two-term contingency (R → SR+) does not include the antecedent — the SD is a critical component of this example.", isCorrect: false },
+      { id: "j5", text: "Classical conditioning involves the pairing of a neutral stimulus with an unconditioned stimulus — no response is required for the stimulus to acquire value.", isCorrect: false },
+      { id: "j6", text: "A four-term contingency includes the MO — while MOs are always operating, the standard unit of operant analysis is the three-term contingency.", isCorrect: false },
+      { id: "j7", text: "The SD is not part of the contingency — it is only the response and consequence that matter.", isCorrect: false },
+      { id: "j8", text: "This is an example of respondent conditioning because the teacher's praise is an unconditioned reinforcer.", isCorrect: false },
+      { id: "j9", text: "Three-term contingencies only apply to discrete trial training, not to naturalistic teaching.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Two-term and three-term contingencies are frequently confused — the three-term contingency includes the antecedent (SD) that sets the occasion for the response, which is absent in a two-term contingency.. A common error is: Candidates may select the four-term contingency because they know MOs are always operating, but the standard unit of operant analysis is the three-term contingency — MOs are contextual, not part of the basic contingency..',
+    recallTrap: "Candidates may select the four-term contingency because they know MOs are always operating, but the standard unit of operant analysis is the three-term contingency — MOs are contextual, not part of the basic contingency.",
+    conceptConfusion: "Two-term and three-term contingencies are frequently confused — the three-term contingency includes the antecedent (SD) that sets the occasion for the response, which is absent in a two-term contingency.",
+    tcoTask: "B-1"
+  }
+  ],
   },
 
   // -- Scenario 49: Generalization Programming -------------------------------
@@ -3097,7 +4705,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing generalization (performance across untrained settings) with maintenance (performance over time without intervention) — generalization does not guarantee maintenance; monitoring must continue',
         tcoTask: 'E-6: Use generalization and maintenance procedures',
       },
+    {id: "sj-49-q3",
+    stem: "A BCBA teaches a high school student to monitor her own on-task behavior using a wrist counter and to self-administer reinforcement when she reaches a daily goal. This is an example of:",
+    choices: [
+      { id: 'A', text: "External reinforcement — the BCBA is controlling the reinforcement contingency." },
+      { id: 'B', text: "Self-management — the student is monitoring and reinforcing her own behavior." },
+      { id: 'C', text: "Token economy — the wrist counter functions as a token." },
+      { id: 'D', text: "Behavioral contract — the student has agreed to a performance standard." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Self-management involves the learner controlling the antecedents and consequences of their own behavior — self-monitoring and self-reinforcement are core components.", isCorrect: true },
+      { id: "j2", text: "The student is both the manager and the managed — she monitors her own behavior and delivers her own reinforcement.", isCorrect: true },
+      { id: "j3", text: "Self-management promotes independence and generalization because the learner is not dependent on an external agent for behavior change.", isCorrect: true },
+      { id: "j4", text: "External reinforcement is controlled by another person — the student is self-administering reinforcement, not receiving it from the BCBA.", isCorrect: false },
+      { id: "j5", text: "A token economy uses tokens as conditioned reinforcers exchanged for backup reinforcers — the wrist counter is a self-monitoring tool, not a token.", isCorrect: false },
+      { id: "j6", text: "A behavioral contract is a written agreement specifying performance criteria and consequences — no contract is described here.", isCorrect: false },
+      { id: "j7", text: "Self-management is only effective for adults, not for adolescents.", isCorrect: false },
+      { id: "j8", text: "Self-monitoring without external verification is not a valid behavior change procedure.", isCorrect: false },
+      { id: "j9", text: "The wrist counter functions as a discriminative stimulus, making this an example of stimulus control.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. Self-management and token economies both involve counting and reinforcement, but self-management places the learner in control of the entire contingency, while token economies are externally managed.. A common error is: Candidates may select token economy because a counting device is used, but the wrist counter is a self-monitoring tool, not a token — tokens are exchanged for backup reinforcers..',
+    recallTrap: "Candidates may select token economy because a counting device is used, but the wrist counter is a self-monitoring tool, not a token — tokens are exchanged for backup reinforcers.",
+    conceptConfusion: "Self-management and token economies both involve counting and reinforcement, but self-management places the learner in control of the entire contingency, while token economies are externally managed.",
+    tcoTask: "G-15"
+  }
+  ],
   },
 
   // -- Scenario 50: Insufficient Baseline ------------------------------------
@@ -3186,7 +4819,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing external validity (replication across participants) with internal validity (ruling out alternative explanations within the original study)',
         tcoTask: 'C-1: Select appropriate research designs; C-2: Evaluate research designs',
       },
+    {id: "sj-50-q3",
+    stem: "A BCBA implements a multiple baseline across behaviors design. The intervention is introduced for Behavior 1, and both Behavior 1 and Behavior 2 change simultaneously. What does this indicate?",
+    choices: [
+      { id: 'A', text: "The intervention is highly effective because it changed two behaviors at once." },
+      { id: 'B', text: "The behaviors are not functionally independent — the simultaneous change threatens the internal validity of the design." },
+      { id: 'C', text: "The multiple baseline design has been implemented correctly." },
+      { id: 'D', text: "Behavior 2 changed due to spontaneous recovery." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Multiple baseline designs require that the untreated tiers remain stable while the treated tier changes — simultaneous change in an untreated tier threatens internal validity.", isCorrect: true },
+      { id: "j2", text: "If Behavior 2 changes when only Behavior 1 is treated, the behaviors are not functionally independent — a key assumption of the multiple baseline design is violated.", isCorrect: true },
+      { id: "j3", text: "The logic of the multiple baseline design depends on the untreated tiers serving as controls — simultaneous change eliminates this control.", isCorrect: true },
+      { id: "j4", text: "Simultaneous change in both behaviors does not demonstrate that the intervention caused the change — it undermines the design's ability to demonstrate experimental control.", isCorrect: false },
+      { id: "j5", text: "The design is not implemented correctly — the simultaneous change indicates a design flaw or a violation of the independence assumption.", isCorrect: false },
+      { id: "j6", text: "Spontaneous recovery refers to the return of an extinguished behavior after a rest period — Behavior 2 was not previously extinguished.", isCorrect: false },
+      { id: "j7", text: "Simultaneous change in multiple tiers strengthens the multiple baseline design.", isCorrect: false },
+      { id: "j8", text: "The multiple baseline design does not require behaviors to be functionally independent.", isCorrect: false },
+      { id: "j9", text: "Simultaneous change indicates that the intervention is generalizing, which is a positive outcome.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. The multiple baseline design uses staggered introduction of the intervention to demonstrate experimental control — simultaneous change eliminates the staggered control and undermines the design\'s logic.. A common error is: Candidates may view simultaneous change positively because both behaviors improved, but in a multiple baseline design, simultaneous change in untreated tiers is a threat to internal validity, not a sign of effectiveness..',
+    recallTrap: "Candidates may view simultaneous change positively because both behaviors improved, but in a multiple baseline design, simultaneous change in untreated tiers is a threat to internal validity, not a sign of effectiveness.",
+    conceptConfusion: "The multiple baseline design uses staggered introduction of the intervention to demonstrate experimental control — simultaneous change eliminates the staggered control and undermines the design's logic.",
+    tcoTask: "D-5"
+  }
+  ],
   },
 
   // -- Scenario 51: Trend Instability in Baseline -----------------------------
@@ -3275,7 +4933,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the standard of evidence in single-subject research (visual analysis + replication) with group research standards (statistical significance testing)',
         tcoTask: 'C-1: Select appropriate research designs; C-2: Evaluate research designs; A-3: Display and interpret data',
       },
+    {id: "sj-51-q3",
+    stem: "A teacher sends a student to the principal's office every time the student talks out of turn. The student's talking out of turn increases over the following weeks. What does this indicate?",
+    choices: [
+      { id: 'A', text: "The principal's office visit is functioning as a punisher." },
+      { id: 'B', text: "The principal's office visit is functioning as a reinforcer — the behavior increased." },
+      { id: 'C', text: "The teacher's intervention is ineffective and should be replaced with a different punisher." },
+      { id: 'D', text: "The student is engaging in behavioral contrast." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Reinforcement is defined by its effect on behavior — if the behavior increased, the consequence is functioning as a reinforcer, regardless of the teacher's intent.", isCorrect: true },
+      { id: "j2", text: "The principal's office visit may be providing escape from the classroom, attention from the principal, or some other reinforcing consequence.", isCorrect: true },
+      { id: "j3", text: "The function of a consequence is determined by its effect on behavior, not by the practitioner's intention or the label applied to it.", isCorrect: true },
+      { id: "j4", text: "A punisher decreases behavior — the behavior increased, so the consequence is not functioning as a punisher.", isCorrect: false },
+      { id: "j5", text: "The intervention is not functioning as intended, but the solution is to identify and remove the reinforcing consequence, not to find a more aversive punisher.", isCorrect: false },
+      { id: "j6", text: "Behavioral contrast involves a change in responding in one setting due to changes in another — this is not described here.", isCorrect: false },
+      { id: "j7", text: "The teacher's intention determines whether the consequence is a reinforcer or a punisher.", isCorrect: false },
+      { id: "j8", text: "The behavior increased because the student is testing the teacher's authority.", isCorrect: false },
+      { id: "j9", text: "The consequence is neutral — it neither reinforces nor punishes the behavior.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. This is a classic example of the distinction between intended function and actual function — practitioners must always evaluate the effect of consequences on behavior, not assume their intended function.. A common error is: Candidates may select punishment because the teacher intended the office visit as a punisher, but reinforcement and punishment are defined by their effects on behavior, not by intent..',
+    recallTrap: "Candidates may select punishment because the teacher intended the office visit as a punisher, but reinforcement and punishment are defined by their effects on behavior, not by intent.",
+    conceptConfusion: "This is a classic example of the distinction between intended function and actual function — practitioners must always evaluate the effect of consequences on behavior, not assume their intended function.",
+    tcoTask: "B-4"
+  }
+  ],
   },
 
   // -- Scenario 52: Multiple Baseline Concurrent Change ----------------------
@@ -3364,7 +5047,32 @@ export const scenarioItems: ScenarioItem[] = [
         conceptConfusion: 'Confusing the appropriateness of a reversal design (requires reversible behaviors) with the appropriateness of a multiple baseline design (appropriate for behaviors that are not expected to reverse)',
         tcoTask: 'C-1: Select appropriate research designs; C-2: Evaluate research designs',
       },
+    {id: "sj-52-q3",
+    stem: "A child is in Phase 1 of the Picture Exchange Communication System (PECS). What is the PRIMARY goal of Phase 1?",
+    choices: [
+      { id: 'A', text: "Teaching the child to discriminate between pictures of preferred and non-preferred items." },
+      { id: 'B', text: "Teaching the child to physically exchange a picture card with a communicative partner to obtain a preferred item." },
+      { id: 'C', text: "Teaching the child to construct a sentence strip using an 'I want' card and a picture." },
+      { id: 'D', text: "Teaching the child to respond to questions using picture cards." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "Phase 1 of PECS teaches the physical exchange — the child learns to pick up a picture and hand it to a communicative partner to obtain a preferred item.", isCorrect: true },
+      { id: "j2", text: "The physical exchange is the foundational mand response in PECS — all subsequent phases build on this basic exchange.", isCorrect: true },
+      { id: "j3", text: "Phase 1 does not require discrimination between pictures — only one picture is used, and the focus is on the exchange behavior.", isCorrect: true },
+      { id: "j4", text: "Discrimination between pictures is taught in Phase 3, not Phase 1.", isCorrect: false },
+      { id: "j5", text: "Sentence strip construction is taught in Phase 4, not Phase 1.", isCorrect: false },
+      { id: "j6", text: "Responding to questions is taught in Phase 6, not Phase 1.", isCorrect: false },
+      { id: "j7", text: "Phase 1 requires the child to have an existing picture discrimination repertoire.", isCorrect: false },
+      { id: "j8", text: "Phase 1 teaches the child to point to pictures, not to exchange them.", isCorrect: false },
+      { id: "j9", text: "All phases of PECS are taught simultaneously.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. PECS phases are sequential and build on each other — Phase 1 (exchange) must be mastered before Phase 3 (discrimination) or Phase 4 (sentence construction).. A common error is: Candidates may select discrimination because it seems like a prerequisite, but Phase 1 uses only one picture and focuses exclusively on the physical exchange behavior..',
+    recallTrap: "Candidates may select discrimination because it seems like a prerequisite, but Phase 1 uses only one picture and focuses exclusively on the physical exchange behavior.",
+    conceptConfusion: "PECS phases are sequential and build on each other — Phase 1 (exchange) must be mastered before Phase 3 (discrimination) or Phase 4 (sentence construction).",
+    tcoTask: "G-11"
+  }
+  ],
   },
 
 
@@ -3453,7 +5161,32 @@ export const scenarioItems: ScenarioItem[] = [
           { id: 'sj-53-q3-j9', text: 'The between-groups comparison (Choice D) would require randomly assigning sites to conditions, which is not feasible in an applied organizational setting and would not provide the replication of effect across individual units that single-subject methodology requires.', isCorrect: false, justifiesChoice: 'D' },
         ],
       },
+    {id: "sj-53-q3",
+    stem: "A BCBA draws a split-middle line of progress on a graph. The data in the intervention phase fall mostly above the line. What does this indicate?",
+    choices: [
+      { id: 'A', text: "The intervention is producing less progress than expected." },
+      { id: 'B', text: "The intervention is producing more progress than the trend line projects — the behavior is improving faster than predicted." },
+      { id: 'C', text: "The data are too variable to draw conclusions." },
+      { id: 'D', text: "The split-middle line indicates the average of the data, not the expected trend." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The split-middle line of progress represents the projected trend — data falling above the line (for an increasing behavior) indicates better-than-projected progress.", isCorrect: true },
+      { id: "j2", text: "When data points consistently fall above the trend line, the behavior is improving faster than the line projects.", isCorrect: true },
+      { id: "j3", text: "The split-middle line is used to evaluate whether the current rate of progress is sufficient to meet the goal — data above the line indicate the goal may be met ahead of schedule.", isCorrect: true },
+      { id: "j4", text: "Data falling above the line indicates more progress, not less — less progress would be indicated by data falling below the line.", isCorrect: false },
+      { id: "j5", text: "Data falling above the trend line does not indicate high variability — it indicates a consistent upward deviation from the projected trend.", isCorrect: false },
+      { id: "j6", text: "The split-middle line is a trend line, not a mean line — it represents the projected rate of progress, not the average of the data.", isCorrect: false },
+      { id: "j7", text: "Data above the trend line indicate that the intervention should be intensified.", isCorrect: false },
+      { id: "j8", text: "The split-middle line is only used for decreasing behaviors, not increasing behaviors.", isCorrect: false },
+      { id: "j9", text: "Data above the trend line indicate a measurement error.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. The split-middle line of progress is a celeration line, not a mean line — it projects the rate of change over time and is used to evaluate whether the current trajectory will meet the goal.. A common error is: Candidates may confuse above/below the trend line with above/below the mean — the trend line represents projected progress, not the average..',
+    recallTrap: "Candidates may confuse above/below the trend line with above/below the mean — the trend line represents projected progress, not the average.",
+    conceptConfusion: "The split-middle line of progress is a celeration line, not a mean line — it projects the rate of change over time and is used to evaluate whether the current trajectory will meet the goal.",
+    tcoTask: "C-7"
+  }
+  ],
   },
   {
     id: 'sj-54',
@@ -3514,7 +5247,32 @@ export const scenarioItems: ScenarioItem[] = [
           { id: 'sj-54-q2-j9', text: 'Choice D addresses schedule density, which is a legitimate consideration, but it does not identify the primary flaw — the competitive contingency structure that limits access to reinforcement to a fixed proportion of performers.', isCorrect: false, justifiesChoice: 'D' },
         ],
       },
+    {id: "sj-54-q3",
+    stem: "A BCBA is asked to implement a new intervention approach that is outside her current area of competence. She has not received training in this approach. What is the MOST appropriate action?",
+    choices: [
+      { id: 'A', text: "Implement the intervention because the client's needs are urgent." },
+      { id: 'B', text: "Decline to implement the intervention and refer the client to a BCBA with competence in this area." },
+      { id: 'C', text: "Seek training and supervision in the new approach before implementing it, or refer to a competent colleague." },
+      { id: 'D', text: "Implement the intervention with close supervision from the referring professional." }
     ],
+    correctChoice: 'C',
+    justifications: [
+      { id: "j1", text: "The BACB Ethics Code requires BCBAs to practice only within their areas of competence — implementing an approach without training is an ethics violation.", isCorrect: true },
+      { id: "j2", text: "Seeking training and supervision before implementing is the preferred path when the BCBA wants to develop competence in the new area.", isCorrect: true },
+      { id: "j3", text: "Referring to a competent colleague is appropriate when the BCBA cannot or does not want to develop competence in the new approach.", isCorrect: true },
+      { id: "j4", text: "Client urgency does not override the competence requirement — implementing without competence risks harming the client.", isCorrect: false },
+      { id: "j5", text: "Automatic referral without considering whether competence can be developed is not the only option — training and supervision are also appropriate.", isCorrect: false },
+      { id: "j6", text: "Supervision from a non-BCBA professional does not satisfy the BACB competence requirement.", isCorrect: false },
+      { id: "j7", text: "BCBAs can implement any evidence-based intervention regardless of their specific training.", isCorrect: false },
+      { id: "j8", text: "Competence is determined by the BCBA's confidence in the approach, not by formal training.", isCorrect: false },
+      { id: "j9", text: "The BACB Ethics Code does not address competence requirements for specific intervention approaches.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is C. Competence is not binary — it can be developed through training and supervision. The ethics code requires either competence or referral, not always referral.. A common error is: Candidates may select automatic referral, but the ethics code also allows for developing competence through training and supervision — both options are appropriate..',
+    recallTrap: "Candidates may select automatic referral, but the ethics code also allows for developing competence through training and supervision — both options are appropriate.",
+    conceptConfusion: "Competence is not binary — it can be developed through training and supervision. The ethics code requires either competence or referral, not always referral.",
+    tcoTask: "E-6"
+  }
+  ],
   },
   {
     id: 'sj-55',
@@ -3601,6 +5359,31 @@ export const scenarioItems: ScenarioItem[] = [
           { id: 'sj-55-q3-j9', text: 'Choice C retroactively redefines success to match the achieved performance level, which is a form of criterion shifting that undermines the validity of the PIP as a performance management tool.', isCorrect: false, justifiesChoice: 'C' },
         ],
       },
+    {id: "sj-55-q3",
+    stem: "A child begins to cry when she sees the building where she receives injections, even before entering the building. This is BEST explained by:",
+    choices: [
+      { id: 'A', text: "Operant conditioning — the crying is reinforced by parental attention." },
+      { id: 'B', text: "Respondent conditioning — the building (CS) has been paired with the injection (US) and now elicits a conditioned emotional response (CR)." },
+      { id: 'C', text: "Stimulus generalization — the building resembles other aversive stimuli." },
+      { id: 'D', text: "Negative reinforcement — the child cries to escape the building." }
     ],
+    correctChoice: 'B',
+    justifications: [
+      { id: "j1", text: "The building has been repeatedly paired with the injection (an unconditioned stimulus that elicits pain/distress) and has become a conditioned stimulus that elicits a conditioned emotional response.", isCorrect: true },
+      { id: "j2", text: "The crying occurs before any operant contingency can operate — it is elicited by the CS (building), not emitted in response to a consequence.", isCorrect: true },
+      { id: "j3", text: "Respondent conditioning explains the acquisition of conditioned emotional responses through stimulus-stimulus pairing.", isCorrect: true },
+      { id: "j4", text: "Operant conditioning requires a consequence that follows the behavior — the crying occurs before any consequence is delivered.", isCorrect: false },
+      { id: "j5", text: "Stimulus generalization involves responding to stimuli similar to the CS — the building is the specific CS, not a generalized stimulus.", isCorrect: false },
+      { id: "j6", text: "Negative reinforcement involves the removal of an aversive stimulus contingent on behavior — the child has not yet engaged in any escape behavior.", isCorrect: false },
+      { id: "j7", text: "The child is crying because she is manipulating the parent, not because of conditioning.", isCorrect: false },
+      { id: "j8", text: "This is an example of operant extinction — the child is no longer receiving reinforcement for entering the building.", isCorrect: false },
+      { id: "j9", text: "Respondent conditioning only applies to physiological responses, not to emotional responses like crying.", isCorrect: false }
+    ],
+    explanation: 'The correct answer is B. The distinction between elicited (respondent) and emitted (operant) behavior is fundamental — respondent behavior is triggered by a preceding stimulus, operant behavior is controlled by its consequences.. A common error is: Candidates may select operant conditioning because crying is often reinforced by attention, but the key here is that the crying occurs before any consequence — it is elicited, not emitted..',
+    recallTrap: "Candidates may select operant conditioning because crying is often reinforced by attention, but the key here is that the crying occurs before any consequence — it is elicited, not emitted.",
+    conceptConfusion: "The distinction between elicited (respondent) and emitted (operant) behavior is fundamental — respondent behavior is triggered by a preceding stimulus, operant behavior is controlled by its consequences.",
+    tcoTask: "B-2"
+  }
+  ],
   },
 ];
