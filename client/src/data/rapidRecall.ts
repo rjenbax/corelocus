@@ -3452,4 +3452,200 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'I.3',
     category: 'Supervision'
   }
+,
+
+
+  // ── Verbal Behavior Expansion ──────────────────────────────────────────────
+  {
+    id: 'vb-point-to-point',
+    term: 'Point-to-Point Correspondence',
+    correctDefinition: 'A formal property of verbal behavior in which each unit of the verbal response corresponds to a specific unit of the controlling stimulus, such that the sequence and form of the response mirrors the sequence and form of the stimulus.',
+    distractors: [
+      'A property of verbal behavior in which the overall meaning of a response matches the overall meaning of the stimulus, even if individual units do not correspond sequentially.',
+      'A reinforcement contingency in which each instance of a verbal response produces a specific consequence that matches the topography of the response.',
+      'A training procedure in which the therapist points to each component of a stimulus array and the learner names each component in order.',
+    ],
+    misconceptions: [
+      'Point-to-point correspondence is about the formal relationship between stimulus units and response units, not about meaning or reinforcement. Echoics and textual responses both have point-to-point correspondence; mands and tacts do not.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-formal-similarity',
+    term: 'Formal Similarity',
+    correctDefinition: 'A formal property of verbal behavior in which the controlling stimulus and the verbal response share the same sense mode (e.g., both are auditory, or both are visual) and have physically similar forms.',
+    distractors: [
+      'A property of verbal behavior in which the verbal response is functionally equivalent to the controlling stimulus, producing the same reinforcing outcome regardless of topography.',
+      'A property of verbal behavior in which the speaker and listener share a common history of reinforcement for the same verbal forms.',
+      'A training criterion requiring that a learner produce verbal responses that are topographically identical to the model across at least three consecutive sessions.',
+    ],
+    misconceptions: [
+      'Formal similarity requires both same sense mode AND physical similarity of form. Echoics have both point-to-point correspondence and formal similarity. Textual responses have point-to-point correspondence but not formal similarity (visual stimulus to auditory response).'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-extended-tact',
+    term: 'Extended Tact',
+    correctDefinition: 'A tact that occurs in the presence of a novel stimulus that shares some but not all properties with the original training stimulus, resulting in a response that was not directly trained under that specific stimulus condition.',
+    distractors: [
+      'A tact emitted in the absence of the relevant stimulus due to a strong motivating operation that has temporarily increased the value of the associated reinforcer.',
+      'A tact trained to a high level of fluency so that it occurs rapidly and automatically across all members of the stimulus class.',
+      'A tact reinforced with a generalized conditioned reinforcer rather than a specific item, allowing it to occur across a wide range of contexts.',
+    ],
+    misconceptions: [
+      'An extended tact occurs because of stimulus generalization. It is not an error; it is a predictable product of the training history. The three subtypes (metaphorical, metonymical, solistic) differ in which property of the original stimulus controls the response.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-metaphorical-tact',
+    term: 'Metaphorical Tact Extension',
+    correctDefinition: 'An extended tact in which a response is controlled by a novel stimulus that shares a property with the original training stimulus, even though the novel stimulus belongs to a different stimulus class.',
+    distractors: [
+      'An extended tact in which a response is controlled by a stimulus that was present at the same time as the original training stimulus, even though the two stimuli are not physically similar.',
+      'An extended tact in which a response is controlled by a part of the original training stimulus rather than the whole stimulus.',
+      'An extended tact in which a response occurs in the absence of any relevant stimulus due to a strong history of reinforcement for that verbal form.',
+    ],
+    misconceptions: [
+      'Metaphorical tact extensions involve shared physical or functional properties between the novel and original stimulus. They differ from metonymical extensions (contiguity-based) and solistic extensions (part-whole based).'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-metonymical-tact',
+    term: 'Metonymical Tact Extension',
+    correctDefinition: 'An extended tact in which a response is controlled by a stimulus that was merely present at the same time as the original training stimulus, with no physical similarity between the two stimuli.',
+    distractors: [
+      'An extended tact in which a response is controlled by a novel stimulus that shares a physical property with the original training stimulus, such as shape, color, or texture.',
+      'An extended tact in which a response is controlled by a part of the original training stimulus rather than the whole, such as saying the name of an animal upon seeing only its tail.',
+      'An extended tact in which a response is emitted in the absence of any stimulus due to a covert motivating operation.',
+    ],
+    misconceptions: [
+      'Metonymical extensions are controlled by contiguity: the novel stimulus was present alongside the original, not because it shares properties with it. This distinguishes it from metaphorical (property-based) and solistic (part-whole) extensions.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-solistic-tact',
+    term: 'Solistic Tact Extension',
+    correctDefinition: 'An extended tact in which a response is controlled by only a part of the original training stimulus, such that the response occurs when only a portion of the original stimulus complex is present.',
+    distractors: [
+      'An extended tact in which a response is controlled by a novel stimulus that shares a functional property with the original training stimulus, even though the two stimuli belong to different classes.',
+      'An extended tact in which a response is controlled by a stimulus that was present at the same time as the original training stimulus, with no physical similarity between them.',
+      'An extended tact in which a response is emitted in the absence of the original stimulus due to a history of intermittent reinforcement.',
+    ],
+    misconceptions: [
+      'Solistic extensions are part-whole: the part controls the same response as the whole. This is distinct from metaphorical (shared property) and metonymical (temporal contiguity) extensions.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-generic-tact',
+    term: 'Generic Tact Extension',
+    correctDefinition: 'An extended tact in which a response is controlled by a novel stimulus that is a member of the same general stimulus class as the original training stimulus, occurring because the novel stimulus shares defining features of that class.',
+    distractors: [
+      'An extended tact in which a response is controlled by a stimulus that shares only a superficial physical property with the original training stimulus, such as color or size, rather than defining class features.',
+      'An extended tact in which a response is controlled by a stimulus that was present at the same time as the original training stimulus across multiple training trials.',
+      'An extended tact that is trained directly by presenting multiple exemplars of the stimulus class until the response generalizes to all members.',
+    ],
+    misconceptions: [
+      'Generic tact extensions are the most common and educationally desirable form of tact extension. Unlike metaphorical or metonymical extensions, the novel stimulus is a true member of the original class.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-extended-mand',
+    term: 'Extended Mand',
+    correctDefinition: 'A mand emitted under a novel motivating operation or in novel stimulus conditions that were not part of original mand training, resulting in a request that was not directly trained under those specific conditions.',
+    distractors: [
+      'A mand reinforced with a non-specific generalized conditioned reinforcer rather than the specific item or activity named in the response.',
+      'A mand emitted at a high rate due to a strong establishing operation that has greatly increased the value of the relevant reinforcer.',
+      'A mand trained using a transfer of stimulus control procedure in which an echoic prompt is systematically faded until the mand occurs independently.',
+    ],
+    misconceptions: [
+      'An extended mand occurs because the motivating operation or antecedent conditions have generalized beyond the original training context. The form of the response may be the same as the trained mand, but it is now controlled by novel conditions.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-superstitious-mand',
+    term: 'Superstitious Mand',
+    correctDefinition: 'A mand maintained by an accidental reinforcement history in which the verbal response was coincidentally followed by the relevant reinforcer, even though the response did not actually produce the reinforcer.',
+    distractors: [
+      'A mand emitted in the absence of a relevant motivating operation because the speaker has a long history of reinforcement for that verbal form across many different contexts.',
+      'A mand emitted in the presence of a novel stimulus condition that shares properties with the original training context, resulting in generalized requesting behavior.',
+      'A mand reinforced on a variable-ratio schedule, producing a high and steady rate of requesting behavior that is highly resistant to extinction.',
+    ],
+    misconceptions: [
+      'Superstitious mands are maintained by accidental contingencies: the reinforcer was available by coincidence, not because the mand produced it. This is distinct from extended mands, which involve stimulus generalization.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-magical-mand',
+    term: 'Magical Mand',
+    correctDefinition: 'A mand emitted under a strong motivating operation but in the absence of a listener who has the ability or willingness to provide the relevant reinforcer, such that the verbal response cannot actually produce the specified reinforcer.',
+    distractors: [
+      'A mand emitted in the presence of a listener who is known to never provide reinforcement, maintained solely by the history of occasional accidental reinforcement.',
+      'A mand emitted at a very high rate during extinction because the motivating operation has greatly increased the value of the reinforcer that is no longer available.',
+      'A mand emitted in the absence of any motivating operation because the speaker has been reinforced for requesting in that context regardless of deprivation state.',
+    ],
+    misconceptions: [
+      'Magical mands occur under strong motivating operations but without a capable listener. Wishing, praying, and talking to oneself about a desired item are common examples.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-codic',
+    term: 'Codic',
+    correctDefinition: 'A verbal operant in which a written or printed verbal stimulus controls a written or printed verbal response, with point-to-point correspondence and formal similarity between stimulus and response; the written equivalent of the echoic.',
+    distractors: [
+      'A verbal operant in which an auditory verbal stimulus controls a written verbal response, with point-to-point correspondence between the spoken stimulus and the written response.',
+      'A verbal operant in which a written verbal stimulus controls an auditory verbal response, such as reading aloud from a written text.',
+      'A verbal operant in which a non-verbal visual stimulus controls a written verbal response, such as writing the name of an object after seeing a picture of it.',
+    ],
+    misconceptions: [
+      'The codic involves written stimulus to written response, with both point-to-point correspondence and formal similarity. Copying text is a codic; reading aloud is a textual response, not a codic.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'vb-duplic',
+    term: 'Duplic',
+    correctDefinition: 'A class of verbal operants in which the verbal response reproduces the formal properties of the controlling verbal stimulus with point-to-point correspondence; includes both echoics (auditory to auditory) and codics (written to written).',
+    distractors: [
+      'A class of verbal operants in which the verbal response is controlled by a non-verbal stimulus and produces a specific reinforcer, encompassing both mands and tacts across all sense modalities.',
+      'A class of verbal operants in which the verbal response is controlled by the verbal behavior of another speaker and produces a generalized conditioned reinforcer rather than a specific item.',
+      'A class of verbal operants in which the verbal response reproduces the meaning of the controlling stimulus without necessarily reproducing its formal properties, such as paraphrasing.',
+    ],
+    misconceptions: [
+      'Duplics are defined by formal reproduction of the stimulus. Echoics and codics are both duplics. Textual responses and transcription are not duplics because they cross sense modalities.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Verbal Behavior'
+  }
 ];
