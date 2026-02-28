@@ -31,6 +31,7 @@ export interface ExamState {
   examStarted: boolean;
   examComplete: boolean;
   currentPhase: string;
+  phaseFilter: string | null;
 }
 
 export interface DomainScore {

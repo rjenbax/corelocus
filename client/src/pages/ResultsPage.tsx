@@ -7,7 +7,7 @@ import { useEffect, useRef } from 'react';
 import { useExam } from '@/contexts/ExamContext';
 import { useProgress } from '@/contexts/ProgressContext';
 import { allQuestions, domainInfo, phaseInfo } from '@/data/allQuestions';
-import { Brain, RotateCcw, Home, CheckCircle2, XCircle, BookOpen, TrendingUp, Award } from 'lucide-react';
+import { Brain, RotateCcw, Home, CheckCircle2, XCircle, BookOpen, TrendingUp, Award, Target } from 'lucide-react';
 
 function RadialScore({ score, total }: { score: number; total: number }) {
   const pct = total > 0 ? Math.round((score / total) * 100) : 0;
@@ -78,7 +78,7 @@ function DomainBar({ domain, name, correct, total, color }: {
 
 export default function ResultsPage() {
   const [, navigate] = useLocation();
-  const { state, restartExam, getDomainScores, getPhaseProgress } = useExam();
+  const { state, restartExam, retakePhase, getDomainScores, getPhaseProgress } = useExam();
 
   const domainScores = getDomainScores();
   const phaseProgress = getPhaseProgress();
@@ -112,6 +112,22 @@ export default function ResultsPage() {
   const unansweredDomains = domainScores.filter(d => d.correct === 0 && allQuestions.filter(q => q.domain === d.domain).some(q => q.id in state.answers));
 
   const phaseEntries = Object.entries(phaseProgress);
+
+  // Identify the weakest answered phase for the targeted retake button
+  const weakestPhase = phaseEntries
+    .filter(([, data]) => data.answered > 0)
+    .map(([phase, data]) => ({
+      phase,
+      pct: Math.round((data.correct / data.answered) * 100),
+      label: phaseInfo[phase]?.label?.replace(/Phase \d+: /, '') || phase,
+    }))
+    .sort((a, b) => a.pct - b.pct)[0] || null;
+
+  const handleRetakeWeakPhase = () => {
+    if (!weakestPhase) return;
+    retakePhase(weakestPhase.phase);
+    navigate('/exam');
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -299,6 +315,30 @@ export default function ResultsPage() {
           </div>
         )}
 
+        {/* Targeted retake callout — shown when a weak phase exists */}
+        {weakestPhase && weakestPhase.pct < 70 && (
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-6">
+            <div className="flex items-start gap-3">
+              <div className="w-9 h-9 rounded-full bg-amber-100 border border-amber-300 flex items-center justify-center flex-shrink-0">
+                <Target className="w-4 h-4 text-amber-700" />
+              </div>
+              <div className="flex-1">
+                <h2 className="font-bold text-amber-900 mb-1">Targeted Practice Available</h2>
+                <p className="text-sm text-amber-800 case-text mb-3">
+                  Your weakest phase is <span className="font-semibold">{weakestPhase.label}</span> ({weakestPhase.pct}%). Retaking just this phase lets you drill the specific clinical reasoning skills where you need the most work — without re-doing the full 189-question exam.
+                </p>
+                <button
+                  onClick={handleRetakeWeakPhase}
+                  className="inline-flex items-center gap-2 bg-amber-700 text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-amber-800 transition-colors"
+                >
+                  <Target className="w-4 h-4" />
+                  Retake {weakestPhase.label}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Actions */}
         <div className="flex flex-wrap gap-3 justify-center pt-2">
           <button
@@ -306,7 +346,7 @@ export default function ResultsPage() {
             className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
             <RotateCcw className="w-4 h-4" />
-            Retake Exam
+            Retake Full Exam
           </button>
           <button
             onClick={() => navigate('/dashboard')}

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useReducer, useCallback } from 'react';
+import React, { createContext, useContext, useReducer, useCallback, useMemo } from 'react';
 import { allQuestions } from '@/data/allQuestions';
 import type { ExamState, DomainScore } from '@/data/types';
 import { domainInfo } from '@/data/allQuestions';
@@ -7,6 +7,7 @@ interface ExamContextType {
   state: ExamState;
   currentQuestion: typeof allQuestions[0] | null;
   totalQuestions: number;
+  activeQuestions: typeof allQuestions;
   startExam: () => void;
   submitAnswer: (answer: string) => void;
   revealAnswer: () => void;
@@ -15,19 +16,21 @@ interface ExamContextType {
   goToQuestion: (index: number) => void;
   finishExam: () => void;
   restartExam: () => void;
+  retakePhase: (phase: string) => void;
   getDomainScores: () => DomainScore[];
   getPhaseProgress: () => Record<string, { total: number; answered: number; correct: number }>;
 }
 
 type ExamAction =
   | { type: 'START_EXAM' }
-  | { type: 'SUBMIT_ANSWER'; questionId: number; answer: string }
+  | { type: 'SUBMIT_ANSWER'; questionId: number; answer: string; activeQuestions: typeof allQuestions }
   | { type: 'REVEAL_ANSWER'; questionId: number }
-  | { type: 'NEXT_QUESTION' }
-  | { type: 'PREV_QUESTION' }
-  | { type: 'GO_TO_QUESTION'; index: number }
+  | { type: 'NEXT_QUESTION'; activeLength: number; activeQuestions: typeof allQuestions }
+  | { type: 'PREV_QUESTION'; activeQuestions: typeof allQuestions }
+  | { type: 'GO_TO_QUESTION'; index: number; activeQuestions: typeof allQuestions }
   | { type: 'FINISH_EXAM' }
-  | { type: 'RESTART_EXAM' };
+  | { type: 'RESTART_EXAM' }
+  | { type: 'RETAKE_PHASE'; phase: string };
 
 const initialState: ExamState = {
   currentQuestionIndex: 0,
@@ -37,6 +40,7 @@ const initialState: ExamState = {
   examStarted: false,
   examComplete: false,
   currentPhase: 'assessment',
+  phaseFilter: null,
 };
 
 function examReducer(state: ExamState, action: ExamAction): ExamState {
@@ -45,7 +49,7 @@ function examReducer(state: ExamState, action: ExamAction): ExamState {
       return { ...state, examStarted: true };
 
     case 'SUBMIT_ANSWER': {
-      const question = allQuestions.find(q => Number(q.id) === action.questionId);
+      const question = action.activeQuestions.find(q => Number(q.id) === action.questionId);
       if (!question) return state;
       const isCorrect = action.answer === question.correctAnswer;
       const wasAlreadyCorrect = state.answers[action.questionId] === question.correctAnswer;
@@ -68,11 +72,11 @@ function examReducer(state: ExamState, action: ExamAction): ExamState {
       };
 
     case 'NEXT_QUESTION': {
-      const nextIndex = Math.min(state.currentQuestionIndex + 1, allQuestions.length - 1);
+      const nextIndex = Math.min(state.currentQuestionIndex + 1, action.activeLength - 1);
       return {
         ...state,
         currentQuestionIndex: nextIndex,
-        currentPhase: allQuestions[nextIndex]?.phase || state.currentPhase,
+        currentPhase: action.activeQuestions[nextIndex]?.phase || state.currentPhase,
       };
     }
 
@@ -81,16 +85,16 @@ function examReducer(state: ExamState, action: ExamAction): ExamState {
       return {
         ...state,
         currentQuestionIndex: prevIndex,
-        currentPhase: allQuestions[prevIndex]?.phase || state.currentPhase,
+        currentPhase: action.activeQuestions[prevIndex]?.phase || state.currentPhase,
       };
     }
 
     case 'GO_TO_QUESTION': {
-      const idx = Math.max(0, Math.min(action.index, allQuestions.length - 1));
+      const idx = Math.max(0, Math.min(action.index, action.activeQuestions.length - 1));
       return {
         ...state,
         currentQuestionIndex: idx,
-        currentPhase: allQuestions[idx]?.phase || state.currentPhase,
+        currentPhase: action.activeQuestions[idx]?.phase || state.currentPhase,
       };
     }
 
@@ -99,6 +103,14 @@ function examReducer(state: ExamState, action: ExamAction): ExamState {
 
     case 'RESTART_EXAM':
       return { ...initialState };
+
+    case 'RETAKE_PHASE':
+      return {
+        ...initialState,
+        phaseFilter: action.phase,
+        currentPhase: action.phase,
+        examStarted: true,
+      };
 
     default:
       return state;
@@ -110,15 +122,23 @@ const ExamContext = createContext<ExamContextType | null>(null);
 export function ExamProvider({ children }: { children: React.ReactNode }) {
   const [state, dispatch] = useReducer(examReducer, initialState);
 
-  const currentQuestion = allQuestions[state.currentQuestionIndex] || null;
+  // Derive the active question list based on phaseFilter
+  const activeQuestions = useMemo(() => {
+    if (state.phaseFilter) {
+      return allQuestions.filter(q => q.phase === state.phaseFilter);
+    }
+    return allQuestions;
+  }, [state.phaseFilter]);
+
+  const currentQuestion = activeQuestions[state.currentQuestionIndex] || null;
 
   const startExam = useCallback(() => dispatch({ type: 'START_EXAM' }), []);
 
   const submitAnswer = useCallback((answer: string) => {
     if (currentQuestion) {
-      dispatch({ type: 'SUBMIT_ANSWER', questionId: Number(currentQuestion.id), answer });
+      dispatch({ type: 'SUBMIT_ANSWER', questionId: Number(currentQuestion.id), answer, activeQuestions });
     }
-  }, [currentQuestion]);
+  }, [currentQuestion, activeQuestions]);
 
   const revealAnswer = useCallback(() => {
     if (currentQuestion) {
@@ -126,11 +146,21 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
     }
   }, [currentQuestion]);
 
-  const nextQuestion = useCallback(() => dispatch({ type: 'NEXT_QUESTION' }), []);
-  const prevQuestion = useCallback(() => dispatch({ type: 'PREV_QUESTION' }), []);
-  const goToQuestion = useCallback((index: number) => dispatch({ type: 'GO_TO_QUESTION', index }), []);
+  const nextQuestion = useCallback(() =>
+    dispatch({ type: 'NEXT_QUESTION', activeLength: activeQuestions.length, activeQuestions }),
+    [activeQuestions]
+  );
+  const prevQuestion = useCallback(() =>
+    dispatch({ type: 'PREV_QUESTION', activeQuestions }),
+    [activeQuestions]
+  );
+  const goToQuestion = useCallback((index: number) =>
+    dispatch({ type: 'GO_TO_QUESTION', index, activeQuestions }),
+    [activeQuestions]
+  );
   const finishExam = useCallback(() => dispatch({ type: 'FINISH_EXAM' }), []);
   const restartExam = useCallback(() => dispatch({ type: 'RESTART_EXAM' }), []);
+  const retakePhase = useCallback((phase: string) => dispatch({ type: 'RETAKE_PHASE', phase }), []);
 
   const getDomainScores = useCallback((): DomainScore[] => {
     return Object.entries(domainInfo).map(([domain, info]) => {
@@ -164,7 +194,8 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
     <ExamContext.Provider value={{
       state,
       currentQuestion,
-      totalQuestions: allQuestions.length,
+      totalQuestions: activeQuestions.length,
+      activeQuestions,
       startExam,
       submitAnswer,
       revealAnswer,
@@ -173,6 +204,7 @@ export function ExamProvider({ children }: { children: React.ReactNode }) {
       goToQuestion,
       finishExam,
       restartExam,
+      retakePhase,
       getDomainScores,
       getPhaseProgress,
     }}>
