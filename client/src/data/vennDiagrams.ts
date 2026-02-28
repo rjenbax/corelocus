@@ -1929,6 +1929,40 @@ export const vennDiagrams: VennItem[] = [
     keyDistinction: 'Combinatorial entailment applies to ALL relational frames. Transitivity is specific to the EQUIVALENCE frame.',
   },
 
+  // ── Verbal Behavior + Stimulus Control (additional) ──────────────────────
+  {
+    id: 'v-stimulus-control-discrimination-training',
+    conceptA: 'Stimulus Control',
+    conceptB: 'Discrimination Training',
+    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    onlyA: [
+      'A PROPERTY OF BEHAVIOR — a stimulus is said to exert stimulus control when the behavior is more likely in its presence',
+      'Stimulus control is the OUTCOME or END STATE achieved after discrimination training is complete',
+      'Described as narrow (responding only to the exact trained SD) or broad (responding to a wide range of stimuli)',
+      'Can develop unintentionally through adventitious reinforcement or incidental learning',
+    ],
+    onlyB: [
+      'A PROCEDURE — the process of differentially reinforcing responding in the presence of the SD and extinguishing it in the presence of the S-delta',
+      'Discrimination training is the METHOD used to produce stimulus control',
+      'Requires the systematic presentation of both the SD and the S-delta across training trials',
+      'Produces a discrimination when the organism responds reliably to the SD and not to the S-delta',
+    ],
+    shared: [
+      'Both involve the relationship between antecedent stimuli and operant behavior',
+      'Both are central concepts in the analysis of stimulus-response relationships in ABA',
+      'Both require the identification of the SD (discriminative stimulus) and S-delta',
+      'Both are relevant to skill acquisition, verbal behavior, and behavior reduction programs',
+    ],
+    distractors: [
+      'Both require the trainer to use a time delay procedure before delivering the controlling prompt',
+      'Both are exclusively relevant to verbal behavior training and do not apply to motor skill acquisition',
+      'Both are measured using a multiple probe design across behaviors and settings',
+      'Both require the learner to have a mastered imitation repertoire before training can begin',
+    ],
+    keyDistinction: 'DISCRIMINATION TRAINING is the PROCEDURE — you differentially reinforce responding to the SD and extinguish responding to the S-delta. STIMULUS CONTROL is the RESULT — after training, the behavior reliably occurs in the presence of the SD and not in its absence. Discrimination training produces stimulus control; stimulus control is what you have when discrimination training has been successful.',
+  },
+
+
   // ── Tier 3 – Subtle Distinction ───────────────────────────────────────────
   {
     id: 'v-atd-multiple-treatment', conceptA: 'Alternating Treatments Design', conceptB: 'Multiple Treatment Design',
@@ -2160,6 +2194,40 @@ export const vennDiagrams: VennItem[] = [
     ],
     keyDistinction: 'Permanent product measures the RESULT of behavior (the artifact). Direct recording measures the behavior ITSELF as it happens.',
   },
+
+  // ── Measurement (additional) ──────────────────────────────────────────────
+  {
+    id: 'v-level-trend',
+    conceptA: 'Level',
+    conceptB: 'Trend',
+    category: 'Measurement', tier: 'measurement',
+    onlyA: [
+      'Refers to the mean or median value of data points within a phase or condition',
+      'Described as high, low, or moderate relative to the target criterion',
+      'Calculated by finding the mean of all data points in a phase',
+      'A change in level between phases is called a level change and indicates an immediate effect',
+    ],
+    onlyB: [
+      'Refers to the direction and degree of systematic increase or decrease in data over time',
+      'Described as accelerating (increasing), decelerating (decreasing), or zero (flat)',
+      'Calculated using the split-middle or least-squares method to draw a line of progress',
+      'A change in trend between phases indicates a gradual or delayed treatment effect',
+    ],
+    shared: [
+      'Both are visual analysis features used to evaluate data within and between phases of a graph',
+      'Both are assessed when comparing baseline and intervention phases in single-case designs',
+      'Both contribute to determining whether a functional relationship exists between the IV and DV',
+      'Both are evaluated before making decisions about continuing, modifying, or terminating an intervention',
+    ],
+    distractors: [
+      'Both are calculated using the same formula as interobserver agreement (IOA)',
+      'Both are exclusively used in group experimental designs and are not applicable to single-case research',
+      'Both require a minimum of 20 data points per phase before they can be interpreted',
+      'Both are measures of variability and are used to calculate the standard deviation of a data set',
+    ],
+    keyDistinction: 'LEVEL is the AVERAGE VALUE of the data — where the data sits on the y-axis. TREND is the DIRECTION AND SLOPE of the data — whether it is going up, down, or staying flat over time. A phase can have a high level with a decelerating trend, or a low level with an accelerating trend. Both must be evaluated together for complete visual analysis.',
+  },
+
 
   // ── Skill Acquisition / Behavior Change Procedures ─────────────────────────
   {
@@ -2676,6 +2744,102 @@ export const vennDiagrams: VennItem[] = [
     ],
     keyDistinction: 'Response blocking is a CONSEQUENCE procedure (interrupts behavior after it starts). Physical guidance is an ANTECEDENT prompt (guides correct behavior before or during the response).',
   },
+
+  // ── Behavior Reduction (additional) ──────────────────────────────────────
+  {
+    id: 'v-response-cost-timeout',
+    conceptA: 'Response Cost',
+    conceptB: 'Time-Out from Positive Reinforcement',
+    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    onlyA: [
+      'Involves the removal of a SPECIFIC QUANTITY of a previously earned reinforcer contingent on the target behavior',
+      'Requires the individual to have a reserve of reinforcers (tokens, points, privileges) that can be removed',
+      'The individual remains in the reinforcing environment — only the reinforcer is removed',
+      'Commonly used in token economy systems where tokens are subtracted following problem behavior',
+    ],
+    onlyB: [
+      'Involves removing ACCESS TO ALL sources of positive reinforcement for a specified period of time',
+      'Includes exclusionary time-out (removal from the environment) and non-exclusionary time-out (within the environment)',
+      'The individual is removed from or denied access to the reinforcing environment, not just a specific reinforcer',
+      'Requires the environment outside the time-out period to be more reinforcing than the time-out setting',
+    ],
+    shared: [
+      'Both are negative punishment procedures — they reduce behavior by removing a stimulus',
+      'Both require the behavior analyst to identify the reinforcer maintaining the problem behavior before selecting the procedure',
+      'Both require documentation, informed consent, and a behavior intervention plan',
+      'Both are considered less restrictive than aversive positive punishment procedures',
+    ],
+    distractors: [
+      'Both involve delivering an aversive stimulus contingent on the occurrence of the target behavior',
+      'Both require the problem behavior to be placed on a variable ratio schedule of extinction simultaneously',
+      'Both are exclusively used with self-injurious behavior and are not appropriate for verbal problem behaviors',
+      'Both require the learner to complete a task analysis before the procedure can be implemented',
+    ],
+    keyDistinction: 'RESPONSE COST removes a SPECIFIC AMOUNT of a previously earned reinforcer (e.g., lose 2 tokens) — the person stays in the reinforcing environment. TIME-OUT removes ACCESS TO ALL reinforcement for a period — the person is removed from or denied access to the reinforcing environment entirely. Both are negative punishment, but response cost is token-based while time-out is environment-based.',
+  },
+  {
+    id: 'v-behavioral-contrast-behavioral-momentum',
+    conceptA: 'Behavioral Contrast',
+    conceptB: 'Behavioral Momentum',
+    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    onlyA: [
+      'Occurs when a change in reinforcement in one component of a multiple schedule produces an OPPOSITE change in another component',
+      'Example: reducing reinforcement in Component A causes response rate to INCREASE in Component B, even without any change to Component B',
+      'A side effect of differential reinforcement — not a planned intervention',
+      'Demonstrates that behavior in one context is influenced by the reinforcement history in adjacent contexts',
+    ],
+    onlyB: [
+      'Refers to the tendency of behavior to persist in the face of disruption based on the history of reinforcement in that context',
+      'Behavior maintained by a rich reinforcement history is more resistant to extinction, satiation, and competing contingencies',
+      'Used clinically to explain why problem behavior persists even after reinforcement is withheld',
+      'Measured by the rate of responding during disruption relative to baseline — higher persistence indicates greater momentum',
+    ],
+    shared: [
+      'Both are phenomena that emerge from the history of reinforcement in a given context',
+      'Both are relevant to understanding why behavior change is sometimes slower or more complex than expected',
+      'Both are studied in the context of concurrent and multiple operant schedules',
+      'Both have clinical implications for designing behavior reduction and skill acquisition programs',
+    ],
+    distractors: [
+      'Both require the behavior analyst to implement a differential reinforcement procedure before either phenomenon can occur',
+      'Both are measured using a reversal design and require a minimum of three phases to demonstrate',
+      'Both are exclusively observed in non-human animal research and have not been replicated in clinical ABA settings',
+      'Both are forms of positive punishment that increase the future frequency of the target behavior',
+    ],
+    keyDistinction: 'BEHAVIORAL CONTRAST is an UNINTENDED SIDE EFFECT — changing reinforcement in one schedule component causes an opposite change in another component. BEHAVIORAL MOMENTUM is a PROPERTY OF BEHAVIOR — behavior with a rich reinforcement history is more resistant to disruption. Contrast is about CROSS-CONTEXT EFFECTS of schedule changes; momentum is about WITHIN-CONTEXT PERSISTENCE of behavior.',
+  },
+  {
+    id: 'v-satiation-deprivation',
+    conceptA: 'Satiation',
+    conceptB: 'Deprivation',
+    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    onlyA: [
+      'A motivating operation (MO) that DECREASES the reinforcing effectiveness of a stimulus',
+      'Occurs when an organism has had recent or continuous access to a reinforcer',
+      'Abolishes the current value of the reinforcer — the individual is less motivated to work for it',
+      'Used clinically to reduce problem behavior maintained by access to a specific reinforcer (satiation therapy)',
+    ],
+    onlyB: [
+      'A motivating operation (MO) that INCREASES the reinforcing effectiveness of a stimulus',
+      'Occurs when an organism has been without access to a reinforcer for a period of time',
+      'Establishes the current value of the reinforcer — the individual is more motivated to work for it',
+      'Used clinically to increase the potency of reinforcers before skill acquisition sessions',
+    ],
+    shared: [
+      'Both are unconditioned motivating operations (UMOs) that alter the reinforcing value of stimuli',
+      'Both affect the frequency of behavior that has previously produced the relevant reinforcer',
+      'Both are temporary states — satiation resolves with deprivation, and deprivation resolves with access',
+      'Both must be considered when designing reinforcement-based interventions to ensure reinforcer potency',
+    ],
+    distractors: [
+      'Both are measured using a preference assessment conducted immediately before each session',
+      'Both are forms of extinction that reduce the future frequency of the target behavior',
+      'Both require the behavior analyst to deliver a conditioned reinforcer before the MO can take effect',
+      'Both are exclusively relevant to food-based reinforcers and do not apply to social or activity reinforcers',
+    ],
+    keyDistinction: 'SATIATION ABOLISHES the value of a reinforcer — the person has had enough and is no longer motivated for it. DEPRIVATION ESTABLISHES the value of a reinforcer — the person has been without it and is now highly motivated. They are opposite poles of the same motivating operation continuum. Satiation is an abolishing operation (AO); deprivation is an establishing operation (EO).',
+  },
+
 
   // ── Ethics & Supervision ────────────────────────────────────────────────────
   {
