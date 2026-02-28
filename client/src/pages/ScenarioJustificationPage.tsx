@@ -19,6 +19,23 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+// Domain color helper — maps official TCO domain letter (A–I) to a distinct color pair
+function domainBadgeClass(domain: string): string {
+  const letter = domain.charAt(0).toUpperCase();
+  const map: Record<string, string> = {
+    A: 'bg-slate-100 text-slate-700',
+    B: 'bg-violet-100 text-violet-700',
+    C: 'bg-teal-100 text-teal-700',
+    D: 'bg-blue-100 text-blue-700',
+    E: 'bg-amber-100 text-amber-700',
+    F: 'bg-emerald-100 text-emerald-700',
+    G: 'bg-rose-100 text-rose-700',
+    H: 'bg-orange-100 text-orange-700',
+    I: 'bg-indigo-100 text-indigo-700',
+  };
+  return map[letter] ?? 'bg-muted text-muted-foreground';
+}
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -162,7 +179,7 @@ function MissedItemsPanel({
                 {/* Text */}
                 <div className="flex-1 min-w-0 text-left">
                   <div className="flex items-center gap-2 mb-0.5 flex-wrap">
-                    <span className="text-xs font-medium text-rose-600 bg-rose-100 px-2 py-0.5 rounded-full">
+                    <span className={cn("text-xs font-medium px-2 py-0.5 rounded-full", domainBadgeClass(scenario.domain))}>
                       {scenario.domain}
                     </span>
                     <span className="text-xs text-muted-foreground font-medium">{scenario.title}</span>
@@ -384,9 +401,7 @@ function TCOIndexPanel({
                       <div className="flex items-start justify-between gap-3">
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-1.5 mb-0.5">
-                            <span className="text-[10px] font-medium text-muted-foreground bg-muted px-1.5 py-0.5 rounded">
-                              {scenario.domain}
-                            </span>
+                            <span className={cn("text-[10px] font-medium px-1.5 py-0.5 rounded", domainBadgeClass(scenario.domain))}>{scenario.domain}</span>
                             <span className="text-[10px] text-muted-foreground truncate">{scenario.title}</span>
                           </div>
                           <p className="text-xs text-foreground leading-snug line-clamp-2">{question.stem}</p>
@@ -543,7 +558,7 @@ export default function ScenarioJustificationPage() {
         <div className="container py-6 max-w-3xl mx-auto">
           {/* Scenario text */}
           <div className="bg-rose-50 border-2 border-rose-200 rounded-2xl p-5 mb-6">
-            <div className="text-xs font-semibold text-rose-600 uppercase tracking-wider mb-2">{scenario.domain}</div>
+            <div className={cn("text-xs font-semibold uppercase tracking-wider mb-2", domainBadgeClass(scenario.domain))}>{scenario.domain}</div>
             <p className="text-sm text-foreground leading-relaxed">{scenario.scenario ?? scenario.context ?? ''}</p>
           </div>
 
@@ -876,7 +891,7 @@ export default function ScenarioJustificationPage() {
                     <div className="flex items-start justify-between gap-3">
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <span className="text-xs font-medium text-rose-600 bg-rose-100 px-2 py-0.5 rounded-full">
+                          <span className={cn("text-xs font-medium px-2 py-0.5 rounded-full", domainBadgeClass(item.domain))}>
                             {item.domain}
                           </span>
                           {item.difficulty === 'advanced' && (

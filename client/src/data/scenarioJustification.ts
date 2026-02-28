@@ -36,7 +36,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 1: Functional Assessment -------------------------------------
   {
     id: 'sj-01',
-    domain: 'Assessment',
+    domain: 'F. Behavior Assessment',
     title: 'Functional Assessment for Escape-Maintained Aggression',
         difficulty: 'advanced',
     scenario: `Marcus is a 9-year-old with autism spectrum disorder who attends a self-contained classroom. His teacher reports that he frequently hits peers and staff. Review of incident reports reveals that hitting occurs most often during math instruction and transitions. When Marcus hits, staff typically remove him from the activity and allow him to sit in the hallway. His parents report no hitting at home during leisure activities.`,
@@ -170,7 +170,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 2: Reinforcement Schedules ------------------------------------
   {
     id: 'sj-02',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Schedule Thinning After Skill Acquisition',
     scenario: `Priya is a 7-year-old who has recently mastered requesting preferred items using a picture exchange system. During acquisition, her BCBA reinforced every correct request (CRF). Now that Priya reliably uses PECS, her BCBA wants to thin the reinforcement schedule to promote maintenance and prepare Priya for naturalistic environments where reinforcement will not be available for every request.`,
     questions: [
@@ -232,7 +232,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 3: Verbal Behavior --------------------------------------------
   {
     id: 'sj-03',
-    domain: 'Verbal Behavior',
+    domain: 'B. Concepts and Principles',
     title: 'Identifying Verbal Operants in a Teaching Session',
     scenario: `During a discrete trial training session, a BCBA is working with Darius, a 5-year-old with limited vocal language. The BCBA presents a picture of a dog and asks "What is this?" Darius says "dog" and receives praise. Later, the BCBA asks "What sound does a dog make?" and Darius says "woof." Finally, Darius has not had his preferred toy car for 20 minutes. He approaches the BCBA and says "car." The BCBA gives him the car.`,
     questions: [
@@ -294,7 +294,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 4: Behavior Reduction ----------------------------------------
   {
     id: 'sj-04',
-    domain: 'Behavior Reduction',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Selecting a Function-Based Intervention for SIB',
         difficulty: 'advanced',
     scenario: `Amara is a 12-year-old with intellectual disability who engages in head-hitting. A functional analysis reveals that head-hitting is maintained by automatic reinforcement (the behavior produces sensory stimulation). Head-hitting occurs at high rates throughout the day regardless of social consequences. Amara's team is developing a behavior intervention plan.`,
@@ -402,7 +402,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 5: Ethics -----------------------------------------------------
   {
     id: 'sj-05',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E. Ethics and Professional Conduct',
     title: 'Least Restrictive Treatment and Informed Consent',
     scenario: `A BCBA is developing a behavior intervention plan for Jaylen, a 10-year-old with autism who engages in severe self-injurious behavior (SIB) that has resulted in tissue damage. Previous interventions including DRA, NCR, and extinction have been implemented with high treatment integrity for 12 weeks but have not produced clinically significant reductions in SIB. The BCBA is considering recommending a more restrictive procedure.`,
     questions: [
@@ -438,7 +438,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 6: Data-Based Decision Making ---------------------------------
   {
     id: 'sj-06',
-    domain: 'Measurement & Data Analysis',
+    domain: 'C. Measurement',
     title: 'Interpreting Graphed Data and Making Treatment Decisions',
     scenario: `A BCBA is reviewing a graph of Keisha's problem behavior during a DRA intervention. Baseline data (5 sessions) show a stable, elevated rate of approximately 15 behaviors per session. After 10 sessions of DRA, the data show a gradual decreasing trend, with the most recent 3 sessions averaging 8 behaviors per session. However, the data are variable (ranging from 5 to 12 in the last 5 sessions).`,
     questions: [
@@ -474,7 +474,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 7: Generalization Programming ---------------------------------
   {
     id: 'sj-07',
-    domain: 'Skill Acquisition',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Programming for Generalization',
     scenario: `Tomás is a 6-year-old who has mastered requesting preferred items using PECS with his BCBA in the therapy room. However, his parents report that he does not use PECS at home, and his classroom teacher reports that he does not use PECS in the classroom. His BCBA is planning to address generalization.`,
     questions: [
@@ -510,7 +510,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 8: Measurement ------------------------------------------------
   {
     id: 'sj-08',
-    domain: 'Measurement',
+    domain: 'C. Measurement',
     title: 'Selecting the Appropriate Measurement Procedure',
     scenario: `A BCBA is designing a data collection system for three different behaviors: (1) Ellie's hand-flapping, which occurs at very high rates (50–100 times per minute) and is difficult to count individually; (2) Ellie's tantrums, which are low-frequency but long-duration events; and (3) Ellie's on-task behavior during academic tasks, which the BCBA wants to sample efficiently without recording every instance.`,
     questions: [
@@ -546,7 +546,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 9: Prompting --------------------------------------------------
   {
     id: 'sj-09',
-    domain: 'Skill Acquisition',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Prompt Fading and Errorless Learning',
     scenario: `A BCBA is teaching Nadia, a 4-year-old, to identify colors. She uses a most-to-least (MTL) prompting strategy, beginning with a full physical prompt (hand-over-hand pointing) and gradually reducing to a partial physical prompt, then a gestural prompt, then an independent response. After 20 sessions, Nadia consistently responds correctly with the gestural prompt but makes errors when the gestural prompt is removed.`,
     questions: [
@@ -582,7 +582,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 10: Supervision -----------------------------------------------
   {
     id: 'sj-10',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E. Ethics and Professional Conduct',
     title: 'BCBA Supervision Responsibilities',
         difficulty: 'advanced',
     scenario: `A BCBA supervises three RBTs who implement ABA programs for clients on her caseload. One RBT, Devon, has been implementing a DRA program for a client with escape-maintained aggression. During a supervision observation, the BCBA notices that Devon is providing the reinforcer (break from demands) after aggression rather than after the alternative behavior (requesting a break using AAC). Devon has been implementing the program incorrectly for two weeks.`,
@@ -690,7 +690,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenarios 11–30: Additional scenarios ---------------------------------
   {
     id: 'sj-11',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Identifying Reinforcement vs. Punishment',
     scenario: `A classroom teacher is trying to manage three students' behaviors. For Student A: she provides verbal praise after the student raises their hand, and hand-raising increases. For Student B: she removes recess time when the student talks out of turn, and talking out decreases. For Student C: she sends the student to the principal's office when they are disruptive, but disruptions continue to increase over the following weeks.`,
     questions: [
@@ -725,7 +725,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-12',
-    domain: 'Assessment',
+    domain: 'F. Behavior Assessment',
     title: 'Interpreting Functional Analysis Results',
         difficulty: 'advanced',
     scenario: `A BCBA conducts a functional analysis for Brianna's self-injurious behavior (SIB). The results show elevated SIB in the attention condition (mean 8.4 responses/session) and moderate-to-elevated SIB in the demand condition (mean 6.1 responses/session), with near-zero responding in the alone and control conditions (mean 0.8-1.2 responses/session). The difference between the attention and demand conditions is smaller than expected. The BCBA must determine the function before selecting an intervention.`,
@@ -832,7 +832,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-13',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Motivating Operations in Clinical Practice',
     scenario: `A BCBA notices that Leo's requesting behavior is much higher in the morning before snack than after snack. She also notices that Leo engages in more problem behavior during math tasks when the tasks are long and difficult compared to when they are short and easy. She hypothesizes that two different MOs are influencing Leo's behavior.`,
     questions: [
@@ -867,7 +867,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-14',
-    domain: 'Research & Design',
+    domain: 'D. Experimental Design',
     title: 'Single-Case Research Design Selection',
     scenario: `A BCBA wants to evaluate the effectiveness of a social skills intervention for a student with autism. The target behaviors are greeting peers, sharing materials, and initiating play. The BCBA is concerned that if the intervention is effective, the behaviors should not be reversed (it would be unethical to take away social skills that have been learned). She wants to demonstrate experimental control.`,
     questions: [
@@ -902,7 +902,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-15',
-    domain: 'Skill Acquisition',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Discrete Trial Training vs. Natural Environment Teaching',
     scenario: `A BCBA is planning instruction for two skills for a 5-year-old client: (1) identifying colors (a discrete skill with a clear correct answer), and (2) initiating play with peers (a complex social skill that requires flexibility and responsiveness to natural cues). She is deciding between discrete trial training (DTT) and natural environment teaching (NET) for each skill.`,
     questions: [
@@ -937,7 +937,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-16',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Three-Term Contingency Analysis',
     scenario: `During a classroom observation, a BCBA records the following sequence: The teacher presents a math worksheet (Antecedent). The student pushes the worksheet off the desk (Behavior). The teacher picks up the worksheet and says "Let's take a short break" (Consequence). This sequence repeats three times during the observation, and the student's worksheet-pushing increases over the following week.`,
     questions: [
@@ -972,7 +972,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-17',
-    domain: 'Behavior Reduction',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Noncontingent Reinforcement as an Antecedent Intervention',
     scenario: `Zara engages in attention-maintained problem behavior at an average rate of 20 per session during baseline. Her BCBA implements a noncontingent reinforcement (NCR) schedule, providing Zara with attention every 2 minutes regardless of her behavior. After 2 weeks, problem behavior decreases to an average of 4 per session.`,
     questions: [
@@ -1007,7 +1007,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-18',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E. Ethics and Professional Conduct',
     title: 'Scope of Competence',
     scenario: `A BCBA who specializes in early intensive behavioral intervention for young children with autism is asked by a school district to provide consultation for a 16-year-old student with intellectual disability who has severe self-injurious behavior. The BCBA has never worked with adolescents or with severe SIB. The district is in a rural area with limited access to other behavior analysts.`,
     questions: [
@@ -1042,7 +1042,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-19',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Stimulus Control and Discrimination Training',
     scenario: `A BCBA is teaching a child to respond differently to two stimuli: a green card (SD) and a red card (SΔ). She reinforces the child for touching the green card and does not reinforce touching the red card. After 20 sessions, the child consistently touches the green card and rarely touches the red card. The BCBA then introduces a yellow card and observes that the child touches it at an intermediate rate.`,
     questions: [
@@ -1077,7 +1077,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-20',
-    domain: 'Skill Acquisition',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Shaping a New Behavior',
     scenario: `A BCBA is teaching a nonverbal child to produce the word "more." The child currently produces no vocalizations. The BCBA decides to use shaping, beginning with any vocalization, then reinforcing vocalizations that sound like "m," then "mo," then "mor," then "more."`,
     questions: [
@@ -1112,7 +1112,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-21',
-    domain: 'Measurement',
+    domain: 'C. Measurement',
     title: 'Interobserver Agreement Calculation',
     scenario: `Two observers independently record Leo's on-task behavior using event recording during a 10-minute session. Observer 1 records 20 instances; Observer 2 records 25 instances. The BCBA calculates IOA using the smaller/larger method.`,
     questions: [
@@ -1147,7 +1147,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-22',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Conditioned vs. Unconditioned Reinforcers',
     scenario: `A BCBA is designing a token economy for a classroom. She uses plastic chips as tokens, which students can exchange for preferred activities (free time, computer time, choice of activity). A new student, Kai, does not respond to the tokens initially — he shows no increase in behavior when tokens are delivered.`,
     questions: [
@@ -1182,7 +1182,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-23',
-    domain: 'Assessment',
+    domain: 'F. Behavior Assessment',
     title: 'Preference Assessment Selection',
     scenario: `A BCBA needs to identify reinforcers for a 3-year-old child who has limited language and does not reliably respond to verbal instructions. The child has a history of quickly losing interest in items. The BCBA wants to identify a rank-ordered hierarchy of preferred stimuli to use in intervention.`,
     questions: [
@@ -1217,7 +1217,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-24',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E. Ethics and Professional Conduct',
     title: 'Confidentiality and Reporting Obligations',
     scenario: `During a home visit, a BCBA notices bruising on a child client's arms that is inconsistent with the parent's explanation. The BCBA suspects possible physical abuse. The BCBA is concerned about maintaining a positive working relationship with the family and is uncertain about her reporting obligations.`,
     questions: [
@@ -1252,7 +1252,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-25',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Differential Reinforcement Procedures',
     scenario: `A BCBA is selecting a differential reinforcement procedure for three different clients: Client 1 engages in head-banging maintained by automatic reinforcement; Client 2 engages in talking out maintained by attention, and the team wants to reduce but not eliminate talking out; Client 3 engages in hitting maintained by escape, and the team wants to teach a specific replacement behavior (requesting a break).`,
     questions: [
@@ -1287,7 +1287,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-26',
-    domain: 'Measurement',
+    domain: 'C. Measurement',
     title: 'Graphing and Visual Analysis',
         difficulty: 'advanced',
     scenario: `A BCBA is conducting a visual analysis of a graph showing a student's problem behavior across baseline and intervention phases. Baseline shows 5 data points with a mean of 15 and a slightly increasing trend. The intervention phase shows 8 data points with a mean of 6 and a clearly decreasing trend. The last 3 data points in the intervention phase are 4, 3, and 3.`,
@@ -1394,7 +1394,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-27',
-    domain: 'Skill Acquisition',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Task Analysis and Chaining',
     scenario: `A BCBA is teaching a 10-year-old student to independently prepare a simple snack (making a peanut butter sandwich). She conducts a task analysis and identifies 12 steps. During baseline, the student independently completes steps 1, 2, and 3 but requires prompting for steps 4–12. The BCBA decides to use forward chaining.`,
     questions: [
@@ -1429,7 +1429,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-28',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Extinction and Its Side Effects',
     scenario: `A BCBA implements extinction for a child's attention-maintained tantrums. On day 1, the child's tantrums increase dramatically in frequency and intensity. On day 3, tantrums decrease to near zero. On day 7 (after a weekend), tantrums return briefly at a low rate but decrease again within the session. The BCBA is concerned about these patterns.`,
     questions: [
@@ -1464,7 +1464,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-29',
-    domain: 'Assessment',
+    domain: 'F. Behavior Assessment',
     title: 'Operational Definitions',
     scenario: `A BCBA is writing an operational definition for "aggression" for a new client. She considers several options: (1) "Hitting, kicking, or biting that makes contact with another person's body"; (2) "Any behavior that is aggressive"; (3) "Hitting with an open or closed hand, kicking with a foot or leg, or biting with teeth, that makes physical contact with another person's skin or clothing"; (4) "Behavior that hurts others."`,
     questions: [
@@ -1499,7 +1499,7 @@ export const scenarioItems: ScenarioItem[] = [
 
   {
     id: 'sj-30',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     title: 'Maintenance and Generalization Programming',
     scenario: `A BCBA has successfully taught a child to use a 3-step hand-washing routine in the therapy room. The child performs the routine at 100% accuracy for 5 consecutive sessions. However, the child's parents report that he does not wash his hands at home, and his teacher reports that he does not wash his hands at school.`,
     questions: [
@@ -1536,7 +1536,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-31',
     title: 'Philosophical Foundations in Practice',
-    domain: 'Behaviorism & Philosophical Foundations',
+    domain: 'A. Philosophical Underpinnings',
     scenario: `Dr. Chen, a BCBA, is consulting on a case involving a 10-year-old named Priya who engages in frequent hand-flapping. A school psychologist suggests the behavior is caused by "anxiety" and recommends addressing Priya's "internal emotional state" through cognitive-behavioral therapy. Dr. Chen disagrees and proposes instead to identify the environmental variables maintaining the behavior through direct observation and measurement.`,
     questions: [
       {
@@ -1625,7 +1625,7 @@ export const scenarioItems: ScenarioItem[] = [
     id: 'sj-32',
     title: 'Ethics: Confidentiality and Multiple Relationships',
         difficulty: 'advanced',
-    domain: 'Ethics & Professional Issues',
+    domain: 'E. Ethics and Professional Conduct',
     scenario: `Jasmine is a BCBA providing ABA services to 7-year-old Tyler. Tyler\'s mother, Mrs. Reyes, asks Jasmine to share Tyler\'s session data with Tyler\'s pediatrician without Tyler\'s father\'s knowledge, as the parents are going through a contentious divorce. Mrs. Reyes also mentions that she would like Jasmine to babysit Tyler on weekends to give her a break. Jasmine is unsure how to respond to both requests.`,
     questions: [
       {
@@ -1784,7 +1784,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-33',
     title: 'Intervention Selection and Data-Based Decision Making',
-    domain: 'Selecting and Implementing Interventions',
+    domain: 'H. Selecting and Implementing Behavior-Change Systems',
     scenario: `Darius is a 12-year-old with intellectual disability who engages in self-injurious behavior (SIB) in the form of head-hitting. An FBA identified the function as escape from academic demands. The BCBA, Ms. Park, has been implementing a DRA procedure (reinforcing requests for breaks) combined with extinction (not allowing escape contingent on SIB). After 3 weeks of intervention, the data show a 30% reduction in SIB, but the behavior has not yet reached the mastery criterion. Ms. Park\'s supervisor asks her to evaluate whether the intervention should be continued, modified, or discontinued.`,
     questions: [
       {
@@ -1872,7 +1872,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-34',
     title: 'Supervision: BST and Performance Management',
-    domain: 'Personnel Supervision & Management',
+    domain: 'I. Personnel Supervision and Management',
     scenario: `Carlos is a BCBA who supervises three RBTs: Amara, Ben, and Sofia. During a recent observation, Carlos notices that Amara consistently fails to implement discrete trial training (DTT) correctly — she provides the prompt before the discriminative stimulus rather than after it. Ben has been implementing his programs correctly but has been arriving late to sessions. Sofia is a new RBT who has never been trained on DTT. Carlos needs to address all three situations.`,
     questions: [
       {
@@ -1961,7 +1961,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-35',
     title: 'Extinction Burst and Procedure Selection',
-    domain: 'Behavior Reduction',
+    domain: 'G. Behavior-Change Procedures',
     difficulty: 'intermediate',
     context: 'Maya, a 9-year-old with ASD, engages in loud screaming (avg. 12 times/session) maintained by escape from non-preferred tasks. Her BCBA, Dr. Rivera, is considering implementing extinction. The family reports screaming has occasionally escalated to self-injurious behavior (SIB) when demands are not removed.',
     questions: [
@@ -2050,7 +2050,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-36',
     title: 'Selecting an Experimental Design',
-    domain: 'Research & Design',
+    domain: 'D. Experimental Design',
     difficulty: 'advanced',
     context: 'Dr. Chen is a BCBA conducting research on a new social skills training package. She wants to evaluate whether the intervention causes improvements in three target behaviors: initiating greetings, making eye contact, and taking conversational turns. She is concerned about the ethics of withholding treatment and wants to avoid reversing any learned skills.',
     questions: [
@@ -2210,7 +2210,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-37',
     title: 'Mand Training and Verbal Operant Selection',
-    domain: 'Verbal Behavior',
+    domain: 'B. Concepts and Principles',
     difficulty: 'intermediate',
     context: 'Leo, a 5-year-old with limited vocal speech, currently communicates by grabbing items, leading adults by the hand, and occasionally crying when preferred items are unavailable. His BCBA, Ms. Park, is developing a verbal behavior intervention. Leo has a strong preference for iPad games and crackers, which have been confirmed through a paired stimulus preference assessment.',
     questions: [
@@ -2273,7 +2273,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-38',
     title: 'Interobserver Agreement and Data Reliability',
-    domain: 'Measurement',
+    domain: 'C. Measurement',
     difficulty: 'intermediate',
     context: 'Two observers, Priya and James, are simultaneously and independently recording instances of hand-flapping in a 10-minute session. Priya records 20 instances; James records 25 instances. Their session-by-session totals are being used to calculate interobserver agreement (IOA) for a frequency measure.',
     questions: [
@@ -2336,7 +2336,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-39',
     title: 'Dual Relationships and Boundary Management',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E. Ethics and Professional Conduct',
     difficulty: 'intermediate',
     context: 'Dr. Patel is a BCBA who has been providing ABA services to a 7-year-old client, Zara, for 18 months. Zara\'s mother, Nina, recently lost her job and has been struggling financially. Nina asks Dr. Patel if she can clean Dr. Patel\'s house in exchange for a reduced session fee. Dr. Patel finds Nina personable and has enjoyed their professional relationship.',
     questions: [
@@ -2399,7 +2399,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-40',
     title: 'Selecting and Interpreting Preference Assessments',
-    domain: 'Assessment',
+    domain: 'F. Behavior Assessment',
     difficulty: 'intermediate',
     context: 'A BCBA, Mr. Torres, is beginning services with Kai, a 6-year-old with ASD and limited communication. Kai\'s parents report that he "likes everything" and it is hard to identify what motivates him. Mr. Torres wants to identify high-preference items to use as reinforcers in skill acquisition programs.',
     questions: [
@@ -2462,7 +2462,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-41',
     title: 'Scope of Competence and Referral',
-    domain: 'Ethics & Professional Issues',
+    domain: 'E. Ethics and Professional Conduct',
     difficulty: 'advanced',
     context: 'A BCBA, Ms. Okafor, has been providing ABA services to a 10-year-old client, Dani, for six months. Dani\'s parents recently report that Dani has been expressing persistent sadness, loss of interest in preferred activities, and difficulty sleeping. They ask Ms. Okafor if she can address these concerns within their current ABA sessions.',
     questions: [
@@ -2525,7 +2525,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-42',
     title: 'Stimulus Control and Generalization Programming',
-    domain: 'Behavior Principles',
+    domain: 'B. Concepts and Principles',
     difficulty: 'intermediate',
     context: 'Theo, an 8-year-old with ASD, has mastered labeling colors using flashcards in a clinic setting. However, his parents report that he does not label colors at home or in the community. His BCBA, Dr. Kim, observes that Theo consistently labels colors correctly when shown the specific clinic flashcards but fails when shown colored objects in natural settings.',
     questions: [
@@ -2588,7 +2588,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-43',
     title: 'Data-Based Decision Making and Trend Analysis',
-    domain: 'Measurement & Data Analysis',
+    domain: 'C. Measurement',
     difficulty: 'advanced',
     context: 'A BCBA, Ms. Reyes, is reviewing data for a client\'s target behavior (frequency of unprompted greetings) over 12 sessions. Sessions 1–4 show a stable baseline at 2–3 greetings/session. Sessions 5–8 (first phase of intervention) show a gradual upward trend from 3 to 6 greetings/session. Sessions 9–12 show a flat trend at 6–7 greetings/session.',
     questions: [
@@ -2651,7 +2651,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-44',
     title: 'Chaining Procedures and Error Correction',
-    domain: 'Skill Acquisition',
+    domain: 'G. Behavior-Change Procedures',
     difficulty: 'intermediate',
     context: 'A BCBA, Dr. Nguyen, is teaching a 12-year-old client, Sam, to independently wash hands — a 7-step task analysis. Sam can perform steps 1–4 independently but consistently requires prompting for steps 5–7. Dr. Nguyen is considering which chaining procedure to use.',
     questions: [
@@ -2714,7 +2714,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-45',
     title: 'Selecting Differential Reinforcement Procedures',
-    domain: 'Behavior Reduction',
+    domain: 'G. Behavior-Change Procedures',
     difficulty: 'intermediate',
     context: 'A BCBA, Ms. Walsh, is working with a 10-year-old client, Eli, who engages in frequent interrupting during group instruction (avg. 15 times per 30-minute session). FBA results indicate the behavior is maintained by attention from the teacher and peers. Ms. Walsh wants to reduce interrupting using a differential reinforcement procedure.',
     questions: [
@@ -2777,7 +2777,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-46',
     title: 'Behavioral Skills Training in Supervision',
-    domain: 'Personnel Supervision & Management',
+    domain: 'I. Personnel Supervision and Management',
     difficulty: 'advanced',
     context: 'A BCBA, Dr. Ellis, is supervising a new RBT, Marcus, who is learning to implement discrete trial training (DTT). During observations, Dr. Ellis notices that Marcus consistently delivers reinforcement 3–5 seconds after the correct response rather than immediately. Marcus has read the DTT manual and passed a written knowledge test on reinforcement timing.',
     questions: [
@@ -2839,7 +2839,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 47: IOA Calculation ------------------------------------------
   {
     id: 'sj-47',
-    domain: 'Measurement',
+    domain: 'C. Measurement',
     title: 'Selecting and Calculating Interobserver Agreement',
     scenario: `Two observers independently recorded data on Kenji's hand-flapping behavior during a 10-minute session. Observer 1 recorded 18 occurrences; Observer 2 recorded 20 occurrences. In a second session, the observers used 10-second interval recording. Observer 1 scored intervals as: + + - + + - - + + - and Observer 2 scored: + + + + - - - + + -. The BCBA is reviewing the data to determine whether the IOA is acceptable and which IOA method is most appropriate for each data type.`,
     questions: [
@@ -2927,7 +2927,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 48: Prompt Fading --------------------------------------------
   {
     id: 'sj-48',
-    domain: 'Skill Acquisition',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Selecting a Prompt Fading Strategy',
     scenario: `Amara is a 6-year-old learning to independently button her shirt. Her BCBA, Dr. Reyes, has been using a most-to-least (MTL) prompting hierarchy, starting with full physical guidance. Amara has mastered the fully prompted step but shows prompt dependency — she waits for the physical prompt before initiating each button. Dr. Reyes is considering switching to a least-to-most (LTM) hierarchy or implementing a time delay procedure to address the prompt dependency.`,
     questions: [
@@ -3015,7 +3015,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 49: Generalization Programming -------------------------------
   {
     id: 'sj-49',
-    domain: 'Skill Acquisition',
+    domain: 'G. Behavior-Change Procedures',
     title: 'Programming for Generalization and Maintenance',
     scenario: `Theo is a 10-year-old who has mastered greeting adults by saying "Hi, [name]!" with 100% accuracy across 5 consecutive sessions in his clinic therapy room with his BCBA. However, his parents report that he does not greet adults at home, at school, or in the community. His teacher confirms that Theo has never greeted her or any school staff unprompted. The BCBA is planning a generalization program.`,
     questions: [
@@ -3103,7 +3103,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 50: Insufficient Baseline ------------------------------------
   {
     id: 'sj-50',
-    domain: 'Research & Design',
+    domain: 'D. Experimental Design',
     title: 'Insufficient Baseline Before Intervention',
     difficulty: 'advanced',
     scenario: `Dr. Patel is a BCBA conducting a reversal (ABAB) design study to evaluate the effect of a self-monitoring intervention on the on-task behavior of Marcus, a 10-year-old with ADHD. During the initial baseline phase (A1), Dr. Patel collects data for 3 sessions. The data points are: Session 1 = 42%, Session 2 = 38%, Session 3 = 40%. Dr. Patel notes that the data appear stable and introduces the self-monitoring intervention (B1). During B1, on-task behavior increases to a mean of 74% over 6 sessions. Dr. Patel then withdraws the intervention (A2), and on-task behavior returns to a mean of 41% over 5 sessions. She then reintroduces the intervention (B2), and on-task behavior increases again to a mean of 78%.`,
@@ -3192,7 +3192,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 51: Trend Instability in Baseline -----------------------------
   {
     id: 'sj-51',
-    domain: 'Research & Design',
+    domain: 'D. Experimental Design',
     title: 'Variable Baseline and Premature Intervention Introduction',
     difficulty: 'advanced',
     scenario: `Ms. Rivera is a BCBA evaluating the effect of a self-management intervention on the homework completion rate of Jaylen, a 12-year-old. She uses an AB design and collects the following baseline (A) data over 8 sessions: 20%, 65%, 30%, 70%, 25%, 60%, 35%, 55%. She notes that the mean baseline rate is approximately 45% and that the data do not show a clear upward or downward trend. She introduces the self-management intervention (B), and Jaylen\'s homework completion rate over the next 8 sessions is: 50%, 60%, 55%, 70%, 65%, 75%, 70%, 80%. Ms. Rivera concludes that the intervention was effective because the mean B-phase rate (65.6%) is substantially higher than the mean A-phase rate (45%).`,
@@ -3281,7 +3281,7 @@ export const scenarioItems: ScenarioItem[] = [
   // -- Scenario 52: Multiple Baseline Concurrent Change ----------------------
   {
     id: 'sj-52',
-    domain: 'Research & Design',
+    domain: 'D. Experimental Design',
     title: 'Concurrent Change Across Tiers in a Multiple Baseline Design',
     difficulty: 'advanced',
     scenario: `Dr. Chen is conducting a multiple baseline design across three behaviors (eye contact, greeting peers, and initiating conversation) to evaluate the effect of a social skills intervention for Lily, a 9-year-old with autism spectrum disorder. The design is structured so that the intervention is introduced to each behavior in a staggered sequence: eye contact first (after 5 baseline sessions), greeting peers second (after 10 baseline sessions), and initiating conversation third (after 15 baseline sessions). However, when Dr. Chen introduces the intervention for eye contact (Tier 1), she observes that greeting peers (Tier 2) also begins to improve during Tier 2\'s baseline phase — before the intervention has been introduced for greeting peers. Initiating conversation (Tier 3) remains stable throughout Tier 2\'s baseline phase.`,
@@ -3371,7 +3371,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-53',
     title: 'OBM: Performance Management System Design',
-    domain: 'Organizational Behavior Management',
+    domain: 'I. Personnel Supervision and Management',
     difficulty: 'advanced',
     scenario: `A regional ABA organization employs 42 registered behavior technicians (RBTs) across six clinic sites. The clinical director, Dr. Reyes, has asked the lead BCBA, Marcus, to design a performance management system to address a pattern of inconsistent treatment fidelity across sites. Data collected over the past quarter show that treatment fidelity scores range from 61% to 94% across RBTs, with the lowest scores concentrated at two sites. Exit interviews with three RBTs who resigned indicate they felt they received insufficient feedback and were unclear about expectations. Marcus has been given authority to design and implement a system-wide performance management intervention.`,
     questions: [
@@ -3458,7 +3458,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-54',
     title: 'OBM: Behavioral Systems Analysis and Staff Incentive Design',
-    domain: 'Organizational Behavior Management',
+    domain: 'I. Personnel Supervision and Management',
     difficulty: 'advanced',
     scenario: `A BCBA named Dr. Patel has been hired as a consultant by a mid-sized ABA clinic experiencing high RBT turnover (42% annualized) and declining client outcomes. The owner believes the problem is motivational and has asked Dr. Patel to design a staff incentive program. Before designing any intervention, Dr. Patel conducts a behavioral systems analysis (BSA). The BSA reveals: (1) The clinic\'s mission and client outcome goals are not documented or communicated to staff; (2) RBTs receive no performance feedback between monthly supervision meetings; (3) The scheduling system frequently assigns RBTs to clients outside their trained skill areas; (4) RBTs who perform well receive the same compensation as those who perform poorly; and (5) The clinic has no formal onboarding process — new RBTs are paired with a client on their first day with minimal orientation.`,
     questions: [
@@ -3519,7 +3519,7 @@ export const scenarioItems: ScenarioItem[] = [
   {
     id: 'sj-55',
     title: 'Supervision Failure Escalation: Full Sequence',
-    domain: 'Supervision & Ethics',
+    domain: 'E. Ethics and Professional Conduct',
     difficulty: 'advanced',
     scenario: `Dr. Chen is a BCBA supervising Marcus, an RBT employed at the clinic for seven months. Over six weeks, Dr. Chen has documented: Marcus\'s treatment fidelity scores have declined from 88% to 67% across three consecutive monthly observations. In Month 1, Dr. Chen provided verbal corrective feedback immediately following the observation and Marcus acknowledged it. In Month 2, fidelity remained low (71%); Dr. Chen provided written feedback with specific behavioral objectives and scheduled a mid-month check-in (69% at check-in). In Month 3, fidelity was 67%. Marcus has not missed any supervision meetings, responds appropriately during feedback conversations, and reports he is trying to implement the feedback. Dr. Chen has ruled out external factors (schedule changes, new client assignments, personal stressors) as explanations for the decline.`,
     questions: [
