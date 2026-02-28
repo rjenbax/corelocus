@@ -122,7 +122,7 @@ function DomainAccordion({
                   <span className={cn(
                     'text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0',
                     bestScore >= 80 ? 'bg-teal-100 text-teal-800' :
-                    bestScore >= 50 ? 'bg-amber-100 text-amber-800' :
+                    bestScore >= 70 ? 'bg-amber-100 text-amber-800' :
                     'bg-red-100 text-red-700'
                   )}>
                     Best: {bestScore}%
@@ -360,9 +360,9 @@ export default function MatchingPage() {
           <div className="text-6xl font-black text-teal-600 mb-2">{pct}%</div>
           <div className="text-lg font-semibold text-foreground mb-1">{correct} of {results.length} correct</div>
           <p className="text-sm text-muted-foreground mb-8">
-            {pct >= 80
+            {pct >= 70
               ? 'Strong conceptual understanding! Try the Venn Diagram tool next.'
-              : 'Review the concepts you missed and try again.'}
+              : 'Score 70% or higher to mark this session complete. Review the concepts you missed and try again.'}
           </p>
           <div className="flex gap-3 justify-center flex-wrap">
             <button onClick={() => startQuiz()} className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
