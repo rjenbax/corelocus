@@ -286,6 +286,148 @@ function MissedItemsPanel({
   );
 }
 
+// ─── Category Accordion ─────────────────────────────────────────────────────
+
+// Canonical category order — mirrors the BCBA TCO progression
+const CATEGORY_ORDER = [
+  'Philosophical Foundations',
+  'Dimensions of ABA',
+  'Core Concepts',
+  'Schedules of Reinforcement',
+  'Stimulus Control',
+  'Verbal Behavior',
+  'Differential Reinforcement',
+  'Measurement',
+  'Research Designs',
+  'Assessment',
+  'Behavior-Change Procedures',
+  'Intervention',
+  'Ethics',
+  'Supervision',
+  'Evaluation',
+];
+
+function CategoryAccordion({
+  items,
+  progress: prog,
+  onPracticeCategory,
+}: {
+  items: typeof rapidRecallItems;
+  progress: ReturnType<typeof useProgress>['progress'];
+  onPracticeCategory: (items: typeof rapidRecallItems) => void;
+}) {
+  const [openCats, setOpenCats] = useState<Set<string>>(new Set());
+
+  const toggleCat = (cat: string) => {
+    setOpenCats(prev => {
+      const next = new Set(prev);
+      if (next.has(cat)) next.delete(cat); else next.add(cat);
+      return next;
+    });
+  };
+
+  // Group items by category, preserving canonical order
+  const grouped = useMemo(() => {
+    const map = new Map<string, typeof rapidRecallItems>();
+    CATEGORY_ORDER.forEach(c => map.set(c, []));
+    items.forEach(item => {
+      if (!map.has(item.category)) map.set(item.category, []);
+      map.get(item.category)!.push(item);
+    });
+    // Remove empty categories
+    map.forEach((v, k) => { if (v.length === 0) map.delete(k); });
+    return map;
+  }, [items]);
+
+  return (
+    <div className="space-y-2">
+      {Array.from(grouped.entries()).map(([cat, catItems]) => {
+        const isOpen = openCats.has(cat);
+        // Compute aggregate accuracy for this category
+        let totalCorrect = 0, totalAttempts = 0;
+        catItems.forEach(item => {
+          const rec = prog.rapidRecall.find(r => r.termId === item.id);
+          if (rec) { totalCorrect += rec.correct; totalAttempts += rec.correct + rec.incorrect; }
+        });
+        const catAcc = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : null;
+        const masteredCount = catItems.filter(item => {
+          const rec = prog.rapidRecall.find(r => r.termId === item.id);
+          return rec && rec.correct > rec.incorrect;
+        }).length;
+
+        return (
+          <div key={cat} className="border border-border rounded-xl overflow-hidden bg-card">
+            {/* Section header */}
+            <div className="flex items-center gap-3 px-4 py-3">
+              <button
+                onClick={() => toggleCat(cat)}
+                className="flex items-center gap-3 flex-1 min-w-0 text-left"
+              >
+                {isOpen
+                  ? <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0" />
+                  : <ChevronRight className="w-4 h-4 text-muted-foreground flex-shrink-0" />}
+                <span className="font-semibold text-sm text-foreground truncate">{cat}</span>
+                <span className="text-xs text-muted-foreground flex-shrink-0">{catItems.length} terms</span>
+                {catAcc !== null && (
+                  <span className={cn(
+                    'text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0',
+                    catAcc >= 80 ? 'bg-teal-100 text-teal-800' :
+                    catAcc >= 50 ? 'bg-amber-100 text-amber-800' :
+                    'bg-red-100 text-red-700'
+                  )}>
+                    {catAcc}%
+                  </span>
+                )}
+                {catAcc === null && (
+                  <span className="text-[10px] text-muted-foreground/50 flex-shrink-0">Not started</span>
+                )}
+                {masteredCount > 0 && (
+                  <span className="text-[10px] text-violet-600 flex-shrink-0">{masteredCount}/{catItems.length} mastered</span>
+                )}
+              </button>
+              {/* Practice this category button */}
+              <button
+                onClick={() => onPracticeCategory(catItems)}
+                className="flex items-center gap-1.5 text-xs font-medium text-teal-700 border border-teal-200 bg-teal-50 hover:bg-teal-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
+              >
+                <Zap className="w-3 h-3" />
+                Practice
+              </button>
+            </div>
+
+            {/* Expanded term list */}
+            {isOpen && (
+              <div className="border-t border-border">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-border">
+                  {catItems.map(item => {
+                    const rec = prog.rapidRecall.find(r => r.termId === item.id);
+                    const attempted = rec ? rec.correct + rec.incorrect : 0;
+                    const acc = attempted > 0 ? Math.round((rec!.correct / attempted) * 100) : null;
+                    return (
+                      <div key={item.id} className="p-3 bg-card hover:bg-muted/40 transition-colors">
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="text-[10px] font-bold text-teal-700 bg-teal-50 border border-teal-200 px-1.5 py-0.5 rounded">{item.taskItem}</span>
+                          {acc !== null && (
+                            <span className={cn('text-[10px] font-bold', acc >= 70 ? 'text-teal-700' : 'text-red-500')}>{acc}%</span>
+                          )}
+                        </div>
+                        <div className="text-sm font-medium text-foreground leading-tight">{item.term}</div>
+                        {acc === null && (
+                          <div className="text-[10px] mt-0.5 text-muted-foreground/50">Not started</div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function RapidRecallPage() {
@@ -727,39 +869,20 @@ export default function RapidRecallPage() {
               </div>
             )}
 
-            {/* Term grid */}
-            <h3 className="font-semibold text-sm text-foreground mb-3">
-              {selectedDomain === 'All'
-                ? `All Terms (${rapidRecallItems.length})`
-                : `Domain ${selectedDomain} Terms (${filteredItems.length})`}
-            </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {filteredItems.map(item => {
-                const rec = progress.rapidRecall.find(r => r.termId === item.id);
-                const attempted = rec ? rec.correct + rec.incorrect : 0;
-                const acc = attempted > 0 ? Math.round((rec!.correct / attempted) * 100) : null;
-                return (
-                  <div
-                    key={item.id}
-                    className="p-3 rounded-lg border border-border bg-card hover:border-teal-300 transition-colors"
-                  >
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-xs text-muted-foreground">{item.category}</span>
-                      <span className="text-[10px] font-bold text-teal-700 bg-teal-50 border border-teal-200 px-1.5 py-0.5 rounded">{item.taskItem}</span>
-                    </div>
-                    <div className="text-sm font-semibold text-foreground leading-tight">{item.term}</div>
-                    {acc !== null && (
-                      <div className={cn("text-xs mt-1 font-medium", acc >= 70 ? "text-violet-700" : "text-red-500")}>
-                        {acc}% accuracy
-                      </div>
-                    )}
-                    {acc === null && (
-                      <div className="text-xs mt-1 text-muted-foreground/60">Not started</div>
-                    )}
-                  </div>
-                );
-              })}
+            {/* Category-grouped accordion */}
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="font-semibold text-sm text-foreground">
+                {selectedDomain === 'All'
+                  ? `All Terms (${rapidRecallItems.length})`
+                  : `Domain ${selectedDomain} Terms (${filteredItems.length})`}
+              </h3>
+              <span className="text-xs text-muted-foreground">Click a category to expand · Practice to drill</span>
             </div>
+            <CategoryAccordion
+              items={filteredItems}
+              progress={progress}
+              onPracticeCategory={(catItems) => startQuiz(catItems)}
+            />
           </>
         )}
 
