@@ -19,6 +19,7 @@ export const tier6Pool_B_easy: Question[] = [
     domain: "B",
     taskItem: "B-1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `An RBT is working with a 6-year-old child who is learning to request preferred items. Each time the child says "cookie," the RBT immediately provides a cookie. The child's rate of requesting cookies increases over the following week.`,
     question: `Which operant conditioning principle best explains the increase in the child's requesting behavior?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_B_easy: Question[] = [
     domain: "B",
     taskItem: "B-2",
     difficulty: "easy",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is reviewing data for a client whose self-injurious behavior (SIB) has been maintained by escape from non-preferred tasks. The team has been implementing extinction by requiring the client to complete tasks despite SIB. The BCBA notices that SIB initially increased after extinction was implemented before it began to decrease.`,
     question: `What is the term for the initial increase in behavior that often occurs when extinction is first implemented?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_B_easy: Question[] = [
     domain: "B",
     taskItem: "B-3",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is teaching a parent about the concept of stimulus control. She explains that her child's tantrum behavior occurs almost exclusively when the father is present but rarely when the mother is present. The father has a history of providing attention and preferred items following tantrums, while the mother does not.`,
     question: `Which concept best explains why the child's tantrums occur more frequently in the father's presence than in the mother's presence?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_B_easy: Question[] = [
     domain: "B",
     taskItem: "B-4",
     difficulty: "easy",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is explaining schedules of reinforcement to a parent. She describes how a vending machine delivers a snack every time money is inserted and the correct button is pressed, and contrasts this with a slot machine that delivers a payout after an unpredictable number of plays.`,
     question: `Which schedules of reinforcement do the vending machine and the slot machine respectively represent?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_B_easy: Question[] = [
     domain: "B",
     taskItem: "B-5",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is conducting a functional behavior assessment for a student who engages in frequent off-task behavior during math class. Observations reveal that the student's off-task behavior consistently results in the teacher redirecting the student, which temporarily stops the math assignment.`,
     question: `Based on this information, which function of behavior is most likely maintaining the student's off-task behavior?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_B_easy: Question[] = [
     domain: "B",
     taskItem: "B-6",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of a three-term contingency to a new staff member. She draws a diagram showing an antecedent, a behavior, and a consequence, and explains how these three elements work together to explain operant behavior.`,
     question: `In the three-term contingency (A-B-C), what is the role of the antecedent stimulus?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_B_easy: Question[] = [
     domain: "B",
     taskItem: "B-7",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a behavior intervention plan that includes a differential reinforcement of other behavior (DRO) procedure. The plan specifies that the client will receive reinforcement at the end of each 5-minute interval during which the target behavior did not occur.`,
     question: `What is the defining feature of a differential reinforcement of other behavior (DRO) procedure?`,
     choices: [

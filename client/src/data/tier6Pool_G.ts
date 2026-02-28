@@ -15,6 +15,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "The correct approach is to thin the reinforcement schedule from CRF to a fixed-ratio schedule, gradually requiring more responses before the break is honored — this is the standard schedule-thinning procedure after a functional communication response is established. Choice B is incorrect because placing the FCR on extinction would eliminate the communicative behavior that was taught as a replacement for task refusal, likely causing an extinction burst and resurgence of the original problem behavior. Choice A is incorrect because a VI schedule is appropriate for maintaining behavior over time but is not the standard first step in schedule thinning after CRF; FR thinning provides a more predictable and gradual transition. Choice D is incorrect because DRO reinforces the absence of a target behavior, not the presence of on-task behavior, and does not address the underlying issue of an unsustainably dense break schedule.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.2",
   },
   {
@@ -31,6 +32,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "The most parsimonious explanation is that the sensory extinction procedure (helmet) is not blocking the automatic reinforcement in the home setting — either the helmet is not being used consistently at home, or the SIB at home is maintained by a different sensory consequence that the helmet does not address. This is a common finding when automatic reinforcement is hypothesized: the specific sensory consequence must be identified and blocked for extinction to work. Choice A is incorrect because a punisher would decrease behavior in the setting where it is applied, not suppress it in one setting while increasing it in another. Choice B is incorrect because spontaneous recovery refers to the temporary reappearance of an extinguished behavior after a rest period, not a sustained 4-month elevation — spontaneous recovery is brief and time-limited. Choice D is incorrect because behavioral contrast describes an increase in behavior in one setting when reinforcement is reduced in another setting, not when reinforcement is increased in another setting.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.4",
   },
   {
@@ -47,6 +49,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "The technician is implementing a fixed-ratio schedule (reinforcing every 5th response without variation) rather than the prescribed VR5 schedule. FR schedules produce a characteristic post-reinforcement pause — a period of no responding immediately after reinforcement is delivered — because the organism has just completed the ratio requirement and the next reinforcer is still far away. VR schedules do not produce post-reinforcement pauses because the next reinforcer could occur after any number of responses. Choice B is incorrect because ratio strain occurs when the ratio requirement is increased too rapidly, producing emotional behavior and abandonment of responding — it is not characterized by post-reinforcement pauses specifically. Choice A is incorrect because satiation would produce a general decrease in responding throughout the session, not a post-reinforcement pause pattern tied specifically to the moment after reinforcement delivery. Choice D is incorrect because non-contingent reinforcement would not produce post-reinforcement pauses — it would produce a general decrease in responding due to the broken contingency.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.2",
   },
   {
@@ -63,6 +66,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "Resurgence is the most likely explanation. When a previously reinforced behavior (aggression) is placed on extinction as part of a DRA procedure, other members of the same response class that were previously reinforced may resurge — including behaviors like object-throwing that may have been reinforced in the past for the same function (access to tangibles). The object-throwing is occurring in the same contexts and serves the same function, which is the hallmark of resurgence within a functional response class. Choice A is incorrect because response generalization refers to the spread of trained behavior to untrained but functionally similar responses — it describes a desirable outcome of training, not the emergence of a problem behavior. Choice B is incorrect because behavioral contrast describes an increase in behavior in one setting when reinforcement is reduced in another setting, not the emergence of a new topography within the same setting. Choice D is incorrect because stimulus generalization refers to a trained response occurring in the presence of stimuli similar to the training stimulus — it does not account for the emergence of a new response topography.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.4",
   },
   {
@@ -79,6 +83,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "The fundamental limitation of DRO is that it reinforces the omission of the target behavior but does not specify what the individual should be doing during the interval. Any behavior other than elopement — including floor-lying, which also functions as escape from demands — is eligible for reinforcement. This is why DRI (differential reinforcement of incompatible behavior) or DRA (differential reinforcement of alternative behavior) are often preferred when a specific replacement behavior is needed. Choice A is incorrect because interval length affects the rate of reinforcement delivery but does not explain why a specific alternative behavior emerges — a shorter interval would not prevent floor-lying from being reinforced. Choice B is incorrect because satiation of the reinforcer would produce a general decrease in all behavior, not the selective emergence of a specific alternative escape behavior. Choice D is incorrect because DRO does not place elopement on a VI schedule — it places elopement on extinction while delivering reinforcement on a time-based schedule, which is categorically different from a VI schedule.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.5",
   },
   {
@@ -95,6 +100,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "Ratio strain occurs when a reinforcement schedule is thinned too rapidly, resulting in a breakdown in responding and often emotional behavior. Jumping from VR3 to VR10 is a more than threefold increase in the response requirement, which is too abrupt for maintaining stable responding. The standard practice is to thin schedules gradually (e.g., VR3 → VR5 → VR7 → VR10) to avoid ratio strain. Choice A is incorrect because extinction refers to the complete removal of reinforcement — a VR10 schedule still delivers reinforcement, so it is not extinction, and the emotional behavior is better explained by ratio strain than extinction-induced aggression. Choice B is incorrect because VR schedules by definition are variable and do not produce post-reinforcement pauses — the girl's behavior reflects a breakdown in responding, not a pause pattern. Choice D is incorrect because motivating operations alter the value of reinforcers and the frequency of behavior maintained by those reinforcers, but they do not produce the specific pattern of abrupt behavioral breakdown and emotional behavior that characterizes ratio strain.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.2",
   },
   {
@@ -111,6 +117,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "DRL (differential reinforcement of low rates) is designed to reduce behavior to a socially acceptable level, not necessarily to eliminate it. Out-of-seat behavior at 2–3 times per 30-minute period may be within the normal range for a 10-year-old with ADHD, and the goal should be socially significant rather than zero. The BCBA should evaluate whether the current rate is acceptable in the natural environment and whether further reduction is warranted. Choice A is incorrect because maintaining the criterion indefinitely without evaluating the social significance of the current rate is not best practice — the criterion should be adjusted based on the treatment goal. Choice C is incorrect because DRL is not ineffective simply because it allows a low rate of behavior — it is an appropriate procedure when the goal is rate reduction rather than elimination, and the 69% reduction achieved is clinically meaningful. Choice B is incorrect because meeting the DRL criterion does not automatically indicate the procedure should be discontinued — the team should evaluate whether the current rate is acceptable before deciding on next steps.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.5",
   },
   {
@@ -127,6 +134,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "When a systematic desensitization or food hierarchy program produces an increase in avoidance behavior and generalization of refusal to new contexts (table refusal), the most likely explanation is that the hierarchy was set too aggressively — the initial steps are beyond the child's current tolerance, producing an escalation of avoidance rather than gradual approach. The appropriate adjustment is to re-evaluate the hierarchy and identify a starting point that produces minimal distress. Choice A is incorrect because an extinction burst would be expected to be temporary and would not explain the generalization of refusal to the table itself — generalization of avoidance suggests the procedure is aversive rather than simply producing a temporary increase. Choice C is incorrect because differential reinforcement is delivered contingent on approach or acceptance behaviors, not in close temporal proximity to gagging — if the program is implemented correctly, reinforcement should not be contiguous with gagging. Choice B is incorrect because while gagging can have a reflexive component, it is also commonly under operant control in the context of food refusal, and a blanket referral without first adjusting the behavioral program is not the most appropriate first step.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.5",
   },
   {
@@ -143,6 +151,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "Abruptly removing reinforcement for the DRI behavior (hands on table) will place that behavior on extinction. When the incompatible behavior is extinguished, the original escape-maintained property destruction — which was not independently addressed through a functional communication training or other replacement behavior program — is likely to resurge. The appropriate fading strategy involves thinning the reinforcement schedule gradually rather than abruptly removing it, and ideally pairing the DRI procedure with a functional replacement behavior. Choice B is incorrect because while hands-on-table is not a highly functional skill, it is a valid incompatible behavior for the purpose of the DRI procedure — the concern about its social significance is secondary to the extinction/resurgence risk. Choice C is incorrect because waiting for complete elimination before fading is not standard practice — fading should begin when behavior has reached a clinically significant level of reduction, not necessarily zero. Choice D is incorrect because increasing the duration requirement is a component of schedule thinning, but it does not address the primary concern about what happens when reinforcement is eventually removed — the resurgence risk remains regardless of how the duration was faded.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.5",
   },
   {
@@ -159,6 +168,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "Spontaneous recovery is the temporary reappearance of an extinguished behavior following a period of no responding, without any intervening reinforcement. It is a predictable and expected phenomenon during the extinction process and typically occurs after a rest period or passage of time. The behavior is usually at a lower intensity than the original baseline and extinguishes more quickly than the original behavior. Choice A is incorrect because an extinction burst occurs at the beginning of the extinction process when reinforcement is first withheld — it does not occur after the behavior has already been extinguished for 4 days. Choice C is incorrect because resurgence requires that a different behavior was placed on extinction (not just reinforced) — it occurs when a currently reinforced behavior is placed on extinction, causing a previously reinforced behavior to recover. Choice B is incorrect because behavioral contrast describes an increase in behavior in one setting when reinforcement is reduced in another setting — it does not explain a temporary recovery of an extinguished behavior within the same setting.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.4",
   },
   {
@@ -175,6 +185,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "NCR reduces behavior primarily by abolishing the motivating operation (MO) — in this case, the aversive state created by demand exposure that establishes escape as a reinforcer. When breaks are provided non-contingently, the individual is no longer in a state of deprivation for escape, which reduces the value of escape as a reinforcer and consequently reduces the frequency of behavior that produces escape. This is an antecedent-based mechanism, not a consequence-based one. Choice B is incorrect because NCR does not place the behavior on extinction — extinction requires that the behavior no longer produces the reinforcer, but in NCR, the reinforcer (breaks) is still available, just not contingent on the behavior. Choice C is incorrect because DRO reinforces the absence of a specific behavior contingently (at the end of an interval during which the behavior did not occur) — NCR delivers reinforcement on a time-based schedule regardless of behavior, which is a fundamentally different procedure. Choice D is incorrect because NCR does not involve competing stimulation or physical incompatibility — the mechanism is motivational (MO abolishment), not physical.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.5",
   },
   {
@@ -191,6 +202,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "The girl has developed prompt dependency — the physical prompt has become a discriminative stimulus (SD) that controls the response, meaning she waits for the prompt before responding rather than responding to the natural SD (the spoon and bowl). This is a known risk of MTL prompting, particularly when the fading is not systematic or when the individual has a history of reinforcement only in the presence of prompts. The appropriate adjustment is to either switch to a least-to-most procedure (which begins with the natural SD and adds prompts only if needed) or implement a time-delay procedure to create a pause during which independent responding can occur. Choice B is incorrect because the girl is performing the skill with a partial physical prompt, indicating the motor skill is present — the issue is stimulus control, not a motor deficit. Choice C is incorrect because increasing the prompt delay is a component of time-delay fading, which is one appropriate adjustment, but it does not address the underlying prompt dependency — the BCBA should also consider whether the prompting procedure itself needs to change. Choice D is incorrect because changing the reinforcement schedule does not address the stimulus control problem — the girl is waiting for the prompt as an SD, not failing to respond due to insufficient motivation.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.7",
   },
   {
@@ -207,6 +219,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "The primary advantage of backward chaining is that the student contacts the terminal reinforcer (the natural consequence of completing the chain — in this case, clean, dry hands) at the end of every trial, regardless of how many steps they are independently performing. This is because the trainer completes all steps up to the last step being trained, and the student completes the final step(s) to access the terminal reinforcer. This consistent contact with the terminal reinforcer maintains motivation and provides a clear signal that the chain is complete. Choice B is incorrect because the effort required of staff is not a rationale for choosing backward over forward chaining — both procedures require staff guidance for the steps not yet trained. Choice C is incorrect because backward chaining does not require the terminal behavior to already be in the student's repertoire — it simply begins training with the last step in the chain. Choice D is incorrect because backward chaining does not necessarily produce faster acquisition than forward chaining — the research on this is mixed, and the choice between procedures is typically based on the characteristics of the skill and the learner, not acquisition speed.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "G.9",
   },
   {
@@ -223,6 +236,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "The girl's pattern of waiting for the prompt and then echoing it suggests that on trials where she does not know the label, she has learned to wait for the model prompt rather than attempting an independent response. This is a known limitation of time-delay procedures when the learner has a strong echoic repertoire — the delay interval creates an opportunity for the learner to wait for the model. Increasing the delay interval would create more time during which independent responding must occur before the prompt is available, which may promote independent retrieval. Choice A is incorrect because switching to simultaneous prompting would eliminate the delay entirely, which would prevent any independent responding — simultaneous prompting is appropriate for initial acquisition but would not address the prompt-waiting pattern. Choice C is incorrect because interpreting the 85% rate as genuine acquisition while dismissing the echoing pattern misses the clinical concern — the echoing pattern suggests the 85% may reflect a mix of genuine acquisition and prompt-dependent responding. Choice B is incorrect because switching to a least-to-most hierarchy does not address the specific issue of the girl waiting for the model prompt — the problem is the time-delay structure, not the prompt hierarchy.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.7",
   },
   {
@@ -239,6 +253,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "When a learner has mastered the beginning and end steps of a chain but struggles with middle steps, the most appropriate approach within total task chaining is to provide additional concentrated practice on the difficult steps as a separate skill cluster before reintegrating them into the full chain. This allows for more repetitions on the specific steps that need more training without disrupting the overall chain structure. Choice A is incorrect because switching to backward chaining for the entire task would require re-teaching the steps the boy has already mastered (steps 1–4 and 9–12) in a new sequence, which is inefficient and potentially confusing. Choice C is incorrect because switching to forward chaining starting from step 5 would not address the boy's difficulty with steps 6–8 — it would simply move the training focus to step 5 while providing guidance for the remaining steps. Choice B is incorrect because combining steps into a single step reduces the precision of the task analysis and makes it harder to identify exactly which component is causing difficulty — it is not a standard approach to addressing step-specific deficits.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.9",
   },
   {
@@ -255,6 +270,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "Generalization failure across settings is a common and expected outcome when training is conducted exclusively in one setting. The fact that the girl uses picture exchange reliably with multiple therapists and across multiple tables in the clinic indicates that the behavior is under stimulus control of clinic-specific stimuli, not the natural stimuli that should control requesting in all settings. The appropriate intervention is a generalization program that extends training to the home setting using multiple exemplar training, loose training, and natural contingencies. Choice B is incorrect because there is no evidence that the tantrum behavior serves a different function at home — the most parsimonious explanation is generalization failure, not a different function. Choice C is incorrect because while subtle stimulus differences could play a role, the primary issue is the absence of training in the home setting — conducting a detailed stimulus comparison is not the most appropriate first step. Choice D is incorrect because attributing the failure to a deliberate choice by the girl anthropomorphizes the behavior and does not reflect a behavioral analysis — the behavior is under stimulus control of clinic-specific stimuli, not a product of deliberate decision-making.",
     difficulty: "medium",
+    bloomsLevel: "analysis",
     taskItem: "G.10",
   },
   {
@@ -271,6 +287,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "Multiple exemplar training promotes generalization by training across a sufficient variety of exemplars — in this case, different peers, different settings, and different contextual features — so that the behavior comes under the control of the relevant stimulus features (the presence of a peer) rather than the irrelevant features (specific peers, specific room). Training with 8–10 different peers across multiple settings provides the breadth of exemplars needed to produce generalization to novel peers and settings. Choice A is incorrect because training with the same three peers in different settings addresses setting generalization but not peer generalization — the boy would learn to greet those specific three peers in more settings but would not necessarily generalize to novel peers. Choice C is incorrect because training with novel peers in the original training room addresses peer generalization but not setting generalization — the same limitation applies in reverse. Choice B is incorrect because a token economy in natural settings reinforces greeting behavior when it occurs but does not address the fact that the behavior is not occurring in those settings — reinforcement cannot increase the frequency of a behavior that is not occurring.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.10",
   },
   {
@@ -287,6 +304,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "The most important consideration is identifying the natural reinforcers available in the employment setting and programming for them during the transition. Natural reinforcers (social praise from supervisors, coworker interactions, the activity itself) are more likely to maintain behavior long-term than artificial reinforcers, and the clinic schedule should be thinned to approximate the natural reinforcement density before transitioning. This is the principle of 'trapping' — getting the behavior into contact with natural reinforcers that will maintain it. Choice A is incorrect because a fixed-interval schedule in the clinic would produce post-reinforcement pauses and scalloping, which is not the behavioral pattern needed for consistent work performance — the goal is to approximate the natural reinforcement density, not to match the schedule type. Choice C is incorrect because abruptly transitioning without programming for natural reinforcers risks behavioral breakdown — the natural contingencies may not be sufficient to maintain behavior that was trained under artificial reinforcement. Choice B is incorrect because self-monitoring is a useful maintenance strategy but is not the most important consideration — identifying and programming for natural reinforcers is the foundational step in any generalization and maintenance plan.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.10",
   },
   {
@@ -303,6 +321,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "The most important consideration is that RIRD can function as either a punisher (if the redirection is aversive) or a negative reinforcer (if the interruption itself is aversive and the redirection terminates the interruption). Understanding the function of the RIRD procedure for this specific student is critical to predicting its effects and ensuring it is implemented ethically. The BCBA must conduct a careful analysis of how the student responds to the interruption and redirection components. Choice A is incorrect because RIRD has been shown to be effective for automatically reinforced behavior — the mechanism is not solely about removing the reinforcer but also about providing competing stimulation. Choice C is incorrect because RIRD does not necessarily require physical contact — vocal interrupts and gestural redirections are valid implementations of the procedure, so the parents' concern does not automatically rule out RIRD. Choice B is incorrect because RIRD has been used effectively for automatically reinforced behaviors — the claim that it only works for socially reinforced behavior is not supported by the literature.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.6",
   },
   {
@@ -319,6 +338,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "The boy's consistent failure to respond to the gestural and partial physical prompts for the 8 non-mastered actions, combined with his consistent response to the full physical prompt, suggests that the gestural prompt is not a functional prompt for these specific actions — it does not have stimulus control over the imitative response for these actions. The appropriate adjustment is to begin training for these specific actions at a more intrusive prompt level (e.g., full physical guidance) rather than starting with the gestural prompt, which is not functional. Choice B is incorrect because the boy is responding to the full physical prompt for all 8 actions, indicating the motor skill is present — the issue is prompt hierarchy, not motor ability. Choice C is incorrect because the LTL procedure is designed to start with the least intrusive prompt and escalate — the boy's waiting behavior is more consistent with the gestural prompt not being functional than with prompt dependency, which would be characterized by waiting for the most intrusive prompt regardless of the prompt hierarchy. Choice D is incorrect because the reinforcer is the same for all 20 actions — if it were insufficient, the boy would fail to respond to all actions, not specifically the 8 where the gestural prompt is not functional.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.7",
   },
   {
@@ -335,6 +355,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "The hiding behavior is a member of the same functional response class as pica — both behaviors serve the function of accessing the sensory reinforcer (the oral stimulation from ingesting objects). The emergence of a new topography that serves the same function is a hallmark sign that the intervention is addressing the behavioral topography (the specific act of placing objects in the mouth) rather than the maintaining function (sensory reinforcement). This is a critical limitation of response blocking — it prevents the specific behavior but does not address the motivating operation or provide an alternative source of the sensory reinforcer. Choice A is incorrect because behavioral contrast describes an increase in behavior in one setting when reinforcement is reduced in another — it does not explain the emergence of a new topography that serves the same function. Choice C is incorrect because resurgence requires that a previously reinforced behavior recovers when a currently reinforced behavior is placed on extinction — hiding objects may not have been previously reinforced, and the mechanism here is functional equivalence, not resurgence. Choice B is incorrect because generalization of a response to a new topography is not a standard behavioral process — the hiding behavior is better understood as a functionally equivalent behavior that emerged because the original topography was blocked.",
     difficulty: "hard",
+    bloomsLevel: "comprehension",
     taskItem: "G.6",
   },
   {
@@ -351,6 +372,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "The consistent pairing of high-p requests with subsequent low-p demands has established the high-p requests as a conditioned aversive stimulus (a warning signal for upcoming demands). Through respondent conditioning, the high-p requests have acquired aversive properties because they reliably predict the presentation of low-p demands, which are aversive. This is a known limitation of the high-p sequence when the pairing is too predictable. The appropriate adjustment is to vary the sequence (sometimes presenting high-p requests without following with low-p demands) and to ensure the transition from high-p to low-p is gradual. Choice A is incorrect because while the mechanism involves conditioning, it is better characterized as the high-p requests becoming conditioned aversive stimuli rather than simply losing their high-probability status — the distinction matters for the intervention. Choice C is incorrect because a preference shift would produce a general decrease in compliance with the specific high-p requests, not a refusal pattern that emerged specifically after the high-p sequence was implemented. Choice B is incorrect because extinction-induced aggression occurs at the beginning of an extinction procedure and is not the same as refusal of high-p requests — behavioral contrast also does not describe this pattern.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.8",
   },
   {
@@ -367,6 +389,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "Errorless learning is used to prevent the reinforcement of incorrect responses (which can strengthen error patterns) and to build a dense history of reinforcement for correct responses, which establishes and strengthens the correct stimulus-response relationship. The primary consideration when fading the prompt is to use a systematic procedure (such as progressive time delay or stimulus fading) that maintains high accuracy while gradually reducing the controlling prompt, thereby preventing the development of prompt dependency. Choice A is incorrect because while errors can be aversive for some learners, the primary rationale for errorless learning is not to prevent aversive experiences — it is to prevent the reinforcement of errors and build a history of correct responding. Choice C is incorrect because while a history of punishment for errors is a valid consideration for some learners, it is not the primary rationale for errorless learning in general — the rationale is about the reinforcement contingency, not the learner's emotional history. Choice B is incorrect because errorless learning does not produce faster acquisition for all learners — the research is mixed, and the choice is based on the learner's characteristics and learning history, not a universal speed advantage.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "G.7",
   },
   {
@@ -383,6 +406,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "The boy's variable task completion on days when backup reinforcers are unavailable suggests that the tokens have not been sufficiently paired with a variety of backup reinforcers to develop strong generalized conditioned reinforcer properties. A well-functioning token economy should produce relatively stable task completion because the tokens have been paired with many different backup reinforcers, making them less sensitive to the availability of any single backup reinforcer. The appropriate adjustment is to ensure consistent pairing and diversify the backup reinforcer menu. Choice A is incorrect because while sensitivity to backup reinforcer availability demonstrates that tokens are functioning as conditioned reinforcers, the variability in task completion is a sign that the conditioned reinforcer properties are not sufficiently generalized — this is a problem, not evidence that the system is working correctly. Choice B is incorrect because increasing the token requirement would not strengthen the conditioned reinforcer properties of the tokens — it would simply increase the response requirement for the same reinforcer. Choice D is incorrect because discontinuing the token economy is not warranted — the system is working but needs adjustment to strengthen the generalized conditioned reinforcer properties of the tokens.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.1",
   },
   {
@@ -399,6 +423,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "The boy's consistent echoing of the item name when prompted, combined with the absence of spontaneous mands, suggests that his manding has come under the control of the echoic prompt rather than the motivating operation (MO) for the preferred item. A true mand is controlled by the MO — the boy should mand when he wants the item, not when the BCBA models the word. The appropriate adjustment is to fade the echoic prompt and ensure that mands are only reinforced when they occur in the presence of the relevant MO (i.e., when the boy is in a state of deprivation for the item). Choice B is incorrect because the boy is manding for 3 items consistently, indicating that motivating operations are present for at least some items — the issue is prompt control, not absent MOs. Choice C is incorrect because the echoic response is not being reinforced by access to the item in the standard mand training procedure — the item is presented as the antecedent, not the consequence for echoing. Choice D is incorrect because a strong echoic repertoire is an asset for mand training, not a reason to switch to tact training — the echoic repertoire provides the vocal behavior that can be brought under MO control.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.8",
   },
   {
@@ -415,6 +440,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "A 75% reduction in problem behavior and establishment of a functional replacement behavior is meaningful progress, but it does not indicate that the DRA procedure is complete. Critical next steps include: (1) thinning the reinforcement schedule for the replacement behavior to promote maintenance, (2) programming for generalization across settings, staff, and contexts, (3) monitoring for resurgence of property destruction if the replacement behavior is ever placed on extinction, and (4) evaluating whether the 25% remaining property destruction requires additional intervention. Ongoing BCBA supervision is essential during these phases. Choice A is incorrect because there is no standard '75% threshold' for treatment completion in ABA — treatment completion is determined by the achievement of socially significant goals and the stability of behavior change across time and settings. Choice B is incorrect because requiring zero behavior for 30 days before discontinuing supervision is an overly rigid criterion that does not reflect best practice — the focus should be on social significance and maintenance, not zero behavior. Choice D is incorrect because staff training and treatment integrity are important but are not the primary reason ongoing supervision is needed — the behavioral programming tasks (schedule thinning, generalization, maintenance monitoring) require ongoing clinical judgment.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.5",
   },
   {
@@ -431,6 +457,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "The matched stimulation procedure has successfully reduced stereotypy by providing a competing source of the same sensory reinforcer, but the abrupt removal of the headphones during transitions has created a situation where the boy is in a state of deprivation for the auditory reinforcer, which motivates aggression to regain access. The appropriate adjustment is to fade the headphone use gradually — for example, by using a timer to signal transitions and gradually increasing the time between the timer and headphone removal — so the boy can transition without the abrupt loss of the reinforcer. Choice B is incorrect because while the aggression during transitions could have an escape component, the most parsimonious explanation given the context is that it is maintained by access to the headphones (the auditory reinforcer) — a new FBA is premature when the most likely function is already apparent. Choice C is incorrect because the headphones themselves are not a conditioned reinforcer — the music is the reinforcer, and the headphones are simply the delivery mechanism. The removal of the headphones is better understood as removing access to the reinforcer, not as negative punishment. Choice D is incorrect because discontinuing the procedure is not warranted when the primary issue is the transition protocol — the procedure is effective for stereotypy and should be maintained while the transition issue is addressed.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.6",
   },
   {
@@ -447,6 +474,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "The girl's consistent failure to respond to indirect verbal prompts across 10 weeks indicates that the indirect verbal prompt is not a functional prompt for this student — it does not have stimulus control over the schedule-following behavior. Beginning the SLP hierarchy at a prompt level that is not functional wastes instructional time and may contribute to the perception of failure. The appropriate adjustment is to begin the hierarchy at the direct verbal prompt level, which is the lowest functional prompt for this student, and work toward fading from there. Choice B is incorrect because prompt dependency on the direct verbal prompt would be characterized by the girl waiting for the direct verbal prompt even when she could respond independently — the issue here is that the indirect verbal prompt is not functional, not that the girl is dependent on the direct verbal prompt. Choice C is incorrect because the girl is responding to the direct verbal prompt and progressing through the schedule with support — she has the prerequisite skills, just not at the level of independence required to respond to indirect verbal prompts. Choice D is incorrect because adding a new prompt level between indirect and direct verbal prompts does not address the fundamental issue that the indirect verbal prompt is not functional — it would simply add another non-functional prompt level.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.7",
   },
   {
@@ -463,6 +491,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "In forward chaining, the learner performs all previously mastered steps independently at the beginning of each trial before the trainer provides guidance for the new step being trained. This means step 1 will continue to be practiced every session as the first step of the chain — the girl will independently pick up the toy at the beginning of every trial, then receive guidance for step 2 (shaking). This built-in practice maintains previously mastered steps. Choice A is incorrect because it mischaracterizes how forward chaining works — step 1 is not set aside when training moves to step 2; it continues to be performed independently at the start of every trial. Choice C is incorrect because a separate maintenance schedule for step 1 is not needed in forward chaining — the chaining procedure itself provides maintenance through the continued practice of mastered steps. Choice B is incorrect because the physical guidance for steps 2 and 3 does not serve as a prompt for step 1 — step 1 is performed independently before any guidance is provided, and its maintenance is ensured by the chaining procedure, not by stimulus generalization from the guidance.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "G.9",
   },
   {
@@ -479,6 +508,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "D",
     rationale: "The parents' concern about self-awareness is legitimate but not a contraindication for HRT. The most important consideration is assessing the boy's current ability to detect the nail-biting behavior and perform a competing response, and then adapting the HRT procedure to provide external prompting and reinforcement for the competing response when self-detection is limited. HRT has been successfully adapted for individuals with limited self-awareness by using external prompts (e.g., a therapist or parent prompting the competing response when the behavior is observed) rather than relying solely on self-monitoring. Choice A is incorrect because HRT does not require a specific minimum level of verbal behavior or self-awareness — it can be adapted for individuals with varying levels of cognitive ability. Choice C is incorrect because HRT does require some level of self-awareness for the awareness training component — the claim that it does not require self-awareness is inaccurate. Choice B is incorrect because DRI and HRT are not equally effective for all automatically reinforced behaviors — the choice between procedures should be based on the individual's characteristics and the specific behavior, not a blanket equivalence claim.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.6",
   },
   {
@@ -495,6 +525,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "Stimulus fading involves gradually removing a prompt (an added stimulus feature, such as a color cue or size difference) that was added to make the discrimination easier, while stimulus shaping involves gradually changing the physical dimensions of the stimulus itself toward the terminal stimulus. For the D vs. B discrimination, stimulus shaping would be appropriate — for example, starting with an exaggerated D (with a very pronounced curve) and gradually shaping it toward the standard D while keeping B constant, or using color to highlight the distinguishing feature and gradually fading the color. Choice B is incorrect because the distinction between fading and shaping is not based on the learner's prior discrimination history — it is based on whether a prompt is being added and removed (fading) or whether the stimulus itself is being gradually changed (shaping). Choice C is incorrect because stimulus fading and stimulus shaping are not functionally equivalent — they involve different operations on the stimulus and are appropriate for different situations. Choice D is incorrect because the distinction between fading and shaping is not based on the modality (visual vs. auditory) — both procedures can be used for visual or auditory discriminations.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.7",
   },
   {
@@ -511,6 +542,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "The picture schedule is currently functioning as a prompt — it is an added stimulus that helps the boy complete the routine, but it requires an additional gestural prompt (to look at the schedule) to be effective. The goal is for the picture schedule to become an SD that independently controls the routine-following behavior — the boy should look at the schedule and follow it without any additional prompting. This is the distinction between a prompt (a supplementary stimulus that is eventually faded) and an SD (a stimulus that reliably controls behavior in the natural environment). In this case, the picture schedule is intended to be a permanent SD, not a temporary prompt. Choice A is incorrect because the picture schedule is not intended to be faded — it is intended to be a permanent environmental support that controls the routine. Choice B is incorrect because while the goal is for the schedule to function as an SD, it is currently functioning as a prompt because it requires additional prompting to be used — the distinction matters for understanding the current state of the training. Choice D is incorrect because the picture schedule is not functioning as a conditioned reinforcer — it is not a consequence that follows behavior, it is an antecedent stimulus.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "G.7",
   },
   {
@@ -527,6 +559,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "The most important consideration is whether the remaining 8 episodes per hour represent a socially significant level of skin-picking that requires further intervention. The treatment goal should be defined in terms of social significance — if 8 episodes per hour still results in open wounds and significant tissue damage, the current level of reduction is not sufficient and a more comprehensive intervention (e.g., adding a competing response, response blocking, or a more intensive NCR schedule) is warranted. If 8 episodes per hour is within an acceptable range, continuing NCR may be appropriate. Choice A is incorrect because continuing NCR indefinitely without evaluating the treatment goal is not best practice — the decision to continue or modify should be based on whether the current level of behavior is socially significant. Choice C is incorrect because DRO reinforces the absence of a target behavior on a time-based schedule, but for automatically reinforced behavior, the mechanism of NCR (MO abolishment) may be more directly relevant than DRO — the choice between procedures should be based on the function of the behavior, not a blanket preference for DRO. Choice D is incorrect because there is no established 'floor effect' for NCR — the remaining behavior may be addressable through adjustments to the NCR schedule or the addition of other procedures.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.5",
   },
   {
@@ -543,6 +576,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "The key distinction is that the mand model procedure uses a direct model prompt (the BCBA models the target response), while incidental teaching uses a time delay — the BCBA presents the preferred item and waits for the child to initiate before providing any prompt. Since the girl is echoing the model but not manding spontaneously, the model prompt may be preventing independent responding by providing the answer before the girl has an opportunity to produce the mand independently. Switching to incidental teaching with a time delay would create an opportunity for spontaneous responding before any prompt is provided. Choice B is incorrect because while setting is a difference between the procedures, the key functional distinction for this student's specific issue (echoing vs. spontaneous manding) is the prompt structure, not the setting. Choice C is incorrect because the mand model procedure and incidental teaching are not functionally equivalent — they differ in the prompt structure, which is the critical variable for this student. Choice D is incorrect because incidental teaching is not exclusively for generalization — it is an effective acquisition procedure that promotes spontaneous responding from the beginning.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.8",
   },
   {
@@ -559,6 +593,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "A",
     rationale: "Doubling the token exchange requirement from 5 to 10 tokens is a significant increase in the response requirement (100% increase) that risks producing ratio strain — a breakdown in responding characterized by emotional behavior and abandonment of the target response. If the boy experiences ratio strain, the appropriate requesting behavior may decrease and biting (the previously reinforced behavior for accessing tangibles) may resurge. The appropriate approach is to increase the requirement gradually (e.g., 5 → 6 → 7 → 8 → 9 → 10) while monitoring for any increase in biting. Choice B is incorrect because satiation occurs when the reinforcer is delivered too frequently, not when the exchange requirement is increased — increasing the requirement would reduce the frequency of reinforcement, which is the opposite of satiation. Choice C is incorrect because behavioral stability does not guarantee that a significant schedule change will not produce negative effects — the risk of ratio strain is present regardless of prior stability. Choice D is incorrect because behavioral contrast describes an increase in behavior in one setting when reinforcement is reduced in another setting — the risk here is ratio strain within the token economy setting, not behavioral contrast across settings.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.2",
   },
   {
@@ -575,6 +610,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "30% independent responding on the first session of a new step in backward chaining is a positive sign — it suggests the boy has some prerequisite skills for step 8 (likely from the motor practice on steps 9 and 10, which involve similar buttoning movements). The appropriate response is to continue with the backward chaining procedure, providing prompts for the 70% of trials where the boy does not respond independently, and monitoring for improvement across sessions. Choice A is incorrect because response generalization refers to the spread of a trained response to untrained but functionally similar responses — in this context, the 30% responding is better explained by the motor skill transfer from similar steps, which is a form of stimulus generalization (similar stimuli controlling similar responses), not response generalization. Choice B is incorrect because 30% independent responding on the first session of a new step is actually above what might be expected for a completely novel step — it warrants acknowledgment and monitoring, not dismissal. Choice D is incorrect because 30% independent responding on one step does not indicate readiness for total task chaining — the decision to switch procedures should be based on overall performance across the chain, not a single session on one step.",
     difficulty: "medium",
+    bloomsLevel: "comprehension",
     taskItem: "G.9",
   },
   {
@@ -591,6 +627,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "A 70% reduction in repetitive questioning (from 40 to 12 instances per hour) is a clinically meaningful improvement, but reaching zero may not be a realistic or appropriate treatment goal. Some level of questioning is a normal and socially appropriate behavior — the goal should be to reduce repetitive questioning to a socially acceptable level, not to eliminate all questioning. The BCBA should have a values-based conversation with the family about what level of questioning is acceptable in different contexts. Choice A is incorrect because there is no established timeline for complete elimination of behavior through extinction, and making specific predictions about when behavior will reach zero is not appropriate — the timeline depends on many factors including the reinforcement history and the consistency of implementation. Choice C is incorrect because a 70% reduction after 6 weeks is a meaningful improvement — there is no established benchmark that a 70% reduction is 'below expected,' and adding punishment based on this criterion is not justified. Choice D is incorrect because increasing the ignoring interval does not accelerate the extinction process — the rate of extinction is determined by the reinforcement history and the consistency of the extinction procedure, not the length of the ignoring interval.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.5",
   },
   {
@@ -607,6 +644,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "The BCBA's ethical obligation is to work collaboratively with the family, not to override their concerns or to continue a procedure without their informed consent. The appropriate response is to acknowledge the parents' concerns, present the data showing meaningful progress (70% reduction), explain the clinical rationale for continuing the procedure, and discuss the risks of discontinuing EE — including the likelihood of resurgence and return to baseline. The family has the right to make an informed decision about their daughter's treatment, and the BCBA's role is to ensure they have the information needed to make that decision. Choice A is incorrect because immediately discontinuing the procedure without discussion does not serve the girl's best interests — the parents' concerns are valid but should be addressed through informed consent and collaborative decision-making, not unilateral discontinuation. Choice C is incorrect because continuing the procedure without addressing the parents' concerns violates the principle of informed consent and the ethical obligation to involve families in treatment decisions. Choice D is incorrect because adding a punishment component to address the parents' concerns without their informed consent and without a clear clinical rationale is not appropriate — the decision to add punishment should be based on clinical need, not parental pressure.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.6",
   },
   {
@@ -623,6 +661,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "The boy's consistent waiting for the gestural prompt (9 of 10 trials) during the first session of time-delay fading suggests that the gestural prompt has become a strong discriminative stimulus for the schedule-following behavior — the boy has learned to wait for the prompt rather than responding to the picture schedule independently. This is a form of prompt dependency that may not be effectively addressed by simply increasing the delay interval. The BCBA should consider alternative fading procedures — for example, graduated guidance (providing physical guidance that is gradually faded) or stimulus fading (gradually making the gestural prompt less salient) — that may be more effective for this student. Choice A is incorrect because increasing the delay from 3 to 5 seconds would simply give the boy more time to wait for the prompt — if the prompt has become an SD, increasing the delay does not address the underlying stimulus control problem. Choice C is incorrect because waiting for the prompt on 9 of 10 trials during the first session is not a sign that the procedure is working correctly — it is a sign of prompt dependency that requires clinical attention. Choice D is incorrect because the issue is not with the picture schedule itself — the boy is using the schedule with a gestural prompt, indicating the schedule is functional. The issue is the prompt dependency, not the schedule design.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.7",
   },
   {
@@ -639,6 +678,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "Before adding any new intervention component, the BCBA should conduct a contextual analysis of the remaining 20% of food stealing to identify whether it is occurring in specific conditions — for example, specific types of food (highly preferred items), specific settings (cafeteria vs. classroom), or specific antecedent conditions (when the girl is hungry, when staff are not present). This analysis may reveal that targeted modifications to the existing DRA procedure (e.g., ensuring the asking behavior is reinforced in all relevant contexts) are sufficient to address the remaining behavior without adding a more intrusive component. Choice A is incorrect because extinction of food stealing may be difficult to implement consistently in natural settings (other students and staff may not ignore the behavior) and may produce an extinction burst — the contextual analysis should come first. Choice B is incorrect because adding a punishment component (response cost) without first conducting a contextual analysis is premature — the remaining behavior may be addressable through less intrusive modifications. Choice D is incorrect because accepting 20% food stealing as clinically acceptable without evaluating the social significance of the behavior is not best practice — the determination of what is acceptable should be based on the values and needs of the individual and their family, not a blanket acceptance of any level of problem behavior.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.5",
   },
   {
@@ -655,6 +695,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "When a student demonstrates inconsistent performance on a single step within a chaining routine, the appropriate response is to provide additional targeted practice on that specific step rather than restructuring the entire procedure. Massed practice on step 2 within the existing total task chaining framework directly addresses the skill deficit while preserving the student's mastered performance on steps 1 and 3.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "G.7",
   },
   {
@@ -671,6 +712,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "C",
     rationale: "The child's behavior is under narrow stimulus control — it occurs only in the presence of the specific SD complex present during training (the BCBA, the 1:1 setting). This is a failure of stimulus generalization across both people and settings simultaneously, which is the most precise characterization. Option A is partially correct but incomplete — it identifies setting generalization but misses the people dimension, which is equally relevant. Option B describes response generalization (producing topographically different responses), which is not the issue here — the child is using the same response form (picture exchange), just not with different people or in different settings. Option D describes maintenance (behavior persisting over time), which is not the issue — the child is performing the behavior consistently in training; the problem is transfer to new stimulus conditions.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.14",
   },
   {
@@ -687,6 +729,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "The student has mastered the skill in one setting but it has not transferred to the natural environment after two weeks of access — this indicates the behavior is under narrow stimulus control tied to the resource room. The most efficient first step is to use common stimuli: identify what is different about the general education classroom (the teacher, the physical environment, the break card location) and bring those stimuli into training. This directly addresses the stimulus control problem without requiring the BCBA to conduct full training in every target setting. Option A (train loosely) is a prevention strategy used during initial acquisition to prevent narrow stimulus control from forming — it is less efficient as a remediation strategy after narrow control has already developed. Option C (sequential modification) is the most resource-intensive approach and is typically used as a last resort when other generalization strategies have failed. Option D (multiple exemplar training) addresses people generalization but does not directly address the setting generalization failure that is the presenting problem.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "G.14",
   },
   {
@@ -703,6 +746,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "Train and hope is the practice of teaching a skill to mastery in a training setting and then assuming — hoping — that generalization will occur without any deliberate programming. It is considered insufficient because generalization is not a natural byproduct of mastery, particularly for individuals with intellectual disability who characteristically show limited generalization without explicit programming. Option A describes prompt fading, which is a component of skill acquisition but is not the definition of train and hope. Option C describes multiple exemplar training, which is actually a recommended generalization strategy — the opposite of train and hope. Option D describes naturalistic teaching, which is a recommended practice; the concern about community safety is a legitimate clinical consideration but does not define train and hope.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "G.14",
   },
   {
@@ -719,6 +763,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "When a learner consistently meets one criterion but fails to meet the next criterion across multiple sessions, the most direct indication is that the step size is too large. The solution is to reduce the step size by inserting an intermediate criterion. In this case, a 75-second criterion between 60 and 90 seconds would provide a smaller increment that the child is more likely to meet, allowing the shaping program to continue progressing. Option A (return to baseline criterion) is overly conservative — the child is consistently meeting the 60-second criterion, so there is no need to return to it. The problem is not that the behavior has deteriorated; it is that the next step is too large. Option C (change reinforcement schedule) addresses motivation but not the step size problem — the child is not failing because of insufficient motivation at the 90-second criterion; the criterion itself is too large a jump. Option D (DRO) is contraindicated here — DRO reinforces the absence of a behavior, which would undermine the shaping program by reinforcing not being on-task during the DRO interval.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "G.10",
   },
   {
@@ -735,6 +780,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "The defining feature of backward chaining that accounts for its effectiveness is that each trained step is immediately followed by the terminal reinforcer (the completed sandwich). Because the BCBA completes all steps before the trained step, the student's response at the trained step directly produces the reinforcer — there is no delay between the student's response and reinforcement. This is in contrast to forward chaining, where the student's response at step 1 is followed by many additional steps before the terminal reinforcer is delivered. Option A is incorrect — backward chaining does not necessarily begin with the easiest steps. The last step of a chain is not inherently easier than the first; the rationale for starting at the end is about reinforcement proximity, not difficulty. Option C is incorrect — the student is not being trained on the early steps at all in backward chaining, so prompt dependency on those steps is not the relevant concern. The concern about prompt dependency applies to the steps being trained, not the steps being completed by the BCBA. Option D may be true in some cases but is not the primary rationale for backward chaining — the efficiency argument is secondary to the reinforcement proximity argument.",
     difficulty: "hard",
+    bloomsLevel: "comprehension",
     taskItem: "G.11",
   },
   {
@@ -751,6 +797,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "The student's work behavior is maintained by supervisor attention, and the behavior breaks down when supervisor attention is not available at the rate present during training. The most direct intervention is to thin the schedule of supervisor attention during training to match the natural environment — this is the principle of programming common stimuli and thinning reinforcement schedules to match the natural environment. By reinforcing work completion with supervisor attention on a schedule that approximates the work environment, the BCBA is directly addressing the maintaining variable (attention) while preparing the student for the actual contingencies in the work setting. Option A (self-monitoring) is a useful generalization strategy but does not directly address the maintaining variable — it provides visual prompts but does not address the fact that the student's work behavior is maintained by attention, not by task completion per se. Option C (token economy) introduces an alternative reinforcer but does not address the maintaining variable — the student's behavior is maintained by attention, and a token economy does not reduce the student's dependence on attention as a reinforcer. Option D (additional training with supervisor present) would strengthen the behavior in the presence of the supervisor but would not address the transfer to conditions where the supervisor is absent — it would likely worsen the stimulus control problem.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.15",
   },
   {
@@ -767,6 +814,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "Spontaneous recovery is the temporary reappearance of a previously extinguished behavior after a period during which the behavior has not occurred. It is a predictable phenomenon during extinction — after a period of no responding, the behavior may briefly reappear at a lower intensity than the original baseline. The key features in this scenario are: (1) the behavior had been decreasing over 3 weeks, (2) there was a 5-day period of no tantrums, and (3) the behavior reappeared. This is the textbook presentation of spontaneous recovery. The BCBA should advise the technician to continue implementing extinction consistently — the behavior will extinguish again, typically more quickly than the initial extinction. Option A describes an extinction burst, which occurs at the beginning of extinction (when a previously reinforced behavior is first placed on extinction), not after weeks of successful extinction and a period of no responding. Option C describes resurgence, which requires a specific condition — a competing behavior being placed on extinction — which is not described in this scenario. Option D describes behavioral contrast, which involves a change in behavior in one setting in response to a contingency change in a different setting — not the pattern described here.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "G.07",
   },
   {
@@ -783,6 +831,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "For response cost to function as a punisher, the removal of tokens must represent a meaningful loss — the student must value the tokens being removed. In this case, the student earns 10–15 tokens per session and loses only 2–3, which means the response cost represents a loss of approximately 15–25% of earnings. More importantly, the student shows no distress when tokens are removed, which is a direct behavioral indicator that the tokens being removed do not have sufficient conditioned reinforcer value to function as an effective punisher. The response cost is not functioning as punishment because the loss is not aversive. The BCBA should consider increasing the magnitude of the response cost or ensuring that the tokens have stronger conditioned reinforcer value. Option A (delayed delivery) is a plausible concern but is not supported by the data — the scenario does not indicate a delay, and the student's lack of distress is a more direct indicator of the problem. Option C is a legitimate concern for attention-maintained behavior, but the scenario does not indicate the function of calling out — the BCBA should not assume the function without data. Option D (satiation) is the opposite of the problem — if the student were satiated on tokens, the student would not be earning 10–15 per session, and satiation would affect the reinforcement component, not the response cost component specifically.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.12",
   },
   {
@@ -799,6 +848,7 @@ export const tier6Pool_G: Question[] = [
     correctAnswer: "B",
     rationale: "This is a foundational clinical reasoning question about the importance of function-based intervention. Time-out is a form of negative punishment — it is intended to decrease behavior by removing access to reinforcement. However, for time-out to function as punishment, the environment from which the child is removed must be more reinforcing than the time-out environment. In this case, the child's biting is maintained by escape from non-preferred activities — the child bites to get away from the activity. Time-out removes the child from the activity, which is exactly what the child wants. The time-out procedure is therefore functioning as negative reinforcement (the child bites → biting is followed by removal from the aversive activity → biting increases). This is one of the most common errors in behavior intervention: applying a consequence that inadvertently provides the maintaining reinforcer. The BCBA should discontinue the time-out procedure and implement a function-based intervention (e.g., DRA with a break card, NCR with scheduled escape). Option A (reduce duration) does not address the fundamental problem — the issue is not the duration but the function of the consequence. Option C (integrity check) is a reasonable clinical step but does not address the fundamental problem that the procedure is providing the maintaining reinforcer. Option D (make time-out more aversive) moves in the wrong direction — making the time-out environment more restrictive does not address the fact that the procedure is providing escape from the non-preferred activity.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "G.13",
   },
 ];

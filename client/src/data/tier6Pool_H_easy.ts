@@ -19,6 +19,7 @@ export const tier6Pool_H_easy: Question[] = [
     domain: "H",
     taskItem: "H-1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of least restrictive intervention to a parent. She explains that the BACB Ethics Code requires behavior analysts to consider the least restrictive effective intervention when selecting procedures.`,
     question: `What does the principle of least restrictive intervention require when selecting behavior-change procedures?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_H_easy: Question[] = [
     domain: "H",
     taskItem: "H-2",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing the components of a behavior intervention plan with a new staff member. She explains that an effective BIP includes both procedures for reducing challenging behavior and procedures for teaching replacement behaviors.`,
     question: `What is a functionally equivalent replacement behavior (FERB)?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_H_easy: Question[] = [
     domain: "H",
     taskItem: "H-3",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining antecedent-based interventions to a parent. She explains that antecedent interventions modify the environment before the challenging behavior occurs, rather than relying solely on consequence-based procedures.`,
     question: `Which of the following is an example of an antecedent-based intervention?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_H_easy: Question[] = [
     domain: "H",
     taskItem: "H-4",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of treatment integrity to a supervisee. She explains that treatment integrity is an important component of effective intervention implementation.`,
     question: `What does treatment integrity (also called procedural fidelity) refer to?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_H_easy: Question[] = [
     domain: "H",
     taskItem: "H-5",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is explaining the concept of behavior momentum to a parent. She explains that behavior momentum is a strategy that can be used to increase compliance with difficult requests.`,
     question: `What is the primary mechanism of the high-probability (high-p) instructional sequence (behavioral momentum)?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_H_easy: Question[] = [
     domain: "H",
     taskItem: "H-6",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a social skills training program for a client with autism spectrum disorder. She explains to the team that social skills training typically involves teaching specific social behaviors using a structured instructional approach.`,
     question: `Which instructional approach is most commonly used in structured social skills training programs for individuals with ASD?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_H_easy: Question[] = [
     domain: "H",
     taskItem: "H-7",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of crisis management to a new staff member. She explains that behavior analysts must be prepared to respond safely and effectively when a client's behavior poses an immediate risk of harm.`,
     question: `What is the primary goal of crisis management procedures in ABA?`,
     choices: [

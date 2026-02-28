@@ -19,6 +19,7 @@ export const tier6Pool_G_easy: Question[] = [
     domain: "G",
     taskItem: "G-1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is training a new RBT on prompting procedures. She explains that prompts are supplementary antecedent stimuli used to increase the likelihood that the learner will emit the correct response.`,
     question: `What is the primary goal of prompting in skill acquisition programs?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_G_easy: Question[] = [
     domain: "G",
     taskItem: "G-2",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is explaining the difference between shaping and chaining to a supervisee. She explains that both procedures are used to teach new behaviors but use different mechanisms.`,
     question: `What is the defining feature of shaping as a behavior-change procedure?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_G_easy: Question[] = [
     domain: "G",
     taskItem: "G-3",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a behavior intervention plan that includes a token economy. She explains to the team that token economies are a common and effective behavior-change procedure.`,
     question: `What is the defining feature of a token economy?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_G_easy: Question[] = [
     domain: "G",
     taskItem: "G-4",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is explaining the concept of extinction to a parent. She explains that extinction is a procedure used to decrease the frequency of a behavior by withholding the reinforcer that has been maintaining it.`,
     question: `What is the defining feature of an extinction procedure in behavior analysis?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_G_easy: Question[] = [
     domain: "G",
     taskItem: "G-5",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is explaining the concept of generalization to a parent. She explains that generalization is an important goal of behavior intervention because it ensures that behavior changes extend beyond the training context.`,
     question: `Which type of generalization refers to the occurrence of a trained behavior in the presence of stimuli that were not present during training?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_G_easy: Question[] = [
     domain: "G",
     taskItem: "G-6",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a behavior intervention plan that includes a response interruption and redirection (RIRD) procedure for a client who engages in vocal stereotypy. She explains the procedure to the team.`,
     question: `What is the primary mechanism of response interruption and redirection (RIRD)?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_G_easy: Question[] = [
     domain: "G",
     taskItem: "G-7",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of a behavior intervention plan (BIP) to a new team member. She explains that a BIP is a written document that outlines the procedures for addressing a client's challenging behavior.`,
     question: `What is the primary reason that behavior intervention plans should be function-based?`,
     choices: [

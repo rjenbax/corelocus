@@ -15,6 +15,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "A measurable behavioral goal must include an observable and measurable behavior, a criterion for success, a measurement method, and a timeframe. Choice D specifies the target behavior (appropriate behavior during academic tasks), a clear criterion (80% of intervals), a specific measurement method (10-minute partial interval recording), and a condition for mastery (3 consecutive school days). Choice A is incorrect because 'cope with frustration' and 'decrease aggressive behavior' are vague — 'cope with frustration' is not operationally defined, and no criterion or measurement method is specified. Choice B is incorrect because 'zero incidents per week' is an unrealistic and potentially unachievable criterion for initial goal-setting, and the goal does not specify a replacement behavior. Choice C is incorrect because 'emotional regulation' and 'self-control' are not operationally defined, and 'teacher report' is not a systematic measurement method.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.1",
   },
   {
@@ -31,6 +32,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "Choice A specifies the target behavior (using SGD to request preferred items), a clear criterion (80% of opportunities), a condition for mastery (3 consecutive sessions), and a measurement method (session data by SLP). This is specific, measurable, achievable, relevant, and time-bound. Choice B is incorrect because 'improve communication skills' is not operationally defined and lacks a criterion or measurement method. Choice C is incorrect because 'all environments' and 'communicate her needs and wants' are vague, and no measurement method or criterion is specified. Choice D is incorrect because moving from 0% to 100% within 3 months is likely unrealistic for a student who is currently at 0% — goals should be achievable within the timeframe.",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "H.1",
   },
   {
@@ -47,6 +49,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "Intervention selection should be guided by the principle of least restrictive, function-based intervention. The DRA/FCT program is the most appropriate first-line intervention because it directly addresses the escape function identified in the FBA by teaching a functionally equivalent replacement behavior. This approach is both function-based and the least restrictive option. Choice B is incorrect because evidence base is important but must be considered in the context of behavioral function. Choice C is incorrect because speed of behavior reduction is not the primary criterion for intervention selection. Choice D is incorrect because NCR does not teach a replacement behavior.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.2",
   },
   {
@@ -63,6 +66,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "For automatically reinforced SIB, the function-based approach involves addressing the sensory reinforcement directly. NCR with competing stimulation reduces the motivating operation by providing alternative sensory input non-contingently, and DRA teaches an appropriate alternative behavior that provides similar sensory stimulation. This combination is function-based and least restrictive. Choice A is incorrect because automatically reinforced behaviors can respond to reinforcement-based interventions. Choice B is incorrect because sensory extinction alone does not teach an alternative behavior. Choice D is incorrect because DRO with a social reinforcer does not address the sensory function.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "H.2",
   },
   {
@@ -79,6 +83,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "A BIP must include operational definitions of target and replacement behaviors (so all team members are measuring the same thing), specific implementation procedures (so the plan is implemented consistently), data collection procedures (so progress can be monitored), and decision rules (so the team knows when and how to modify the plan). These components ensure treatment fidelity and allow for data-based decision-making. Choice B is incorrect because theoretical rationale is not the most essential component for consistent implementation. Choice C is incorrect because a literature review is not essential for consistent implementation. Choice D is incorrect because contact information is an administrative detail.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.3",
   },
   {
@@ -95,6 +100,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "The data shows significant progress — aggression decreased by 73% and break card use increased — indicating the BIP is working. The appropriate action is to continue the current plan while beginning to plan for systematic fading of supports. The BCBA should also evaluate whether break card use is at an appropriate rate and whether it is being used functionally. Choice A is incorrect because the BCBA should also begin planning for fading. Choice B is incorrect because immediately fading all supports is premature. Choice D is incorrect because adding punishment when the plan is working is not indicated.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.3",
   },
   {
@@ -111,6 +117,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "In a crisis situation, the immediate priority is safety. The BCBA should direct the teacher to follow the established crisis management protocol, which is designed for exactly this situation and should include calling trained crisis staff. The BCBA should document the incident and follow up in person. Choice B is incorrect because providing verbal instructions for physical restraint over the phone is dangerous. Choice C is incorrect because implementing extinction during a crisis when a staff member has been injured is inappropriate. Choice D is incorrect because providing unrestricted access to preferred items may reinforce the aggressive behavior.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "H.4",
   },
   {
@@ -127,6 +134,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "Evidence-based crisis management planning is proactive, tiered, and focused on prevention and least restrictive intervention. A comprehensive plan includes prevention strategies, early warning sign recognition, de-escalation procedures, crisis response (with least restrictive options prioritized), and post-crisis review. This approach minimizes the use of restraint by addressing the conditions that lead to escalation. Choice B is incorrect because a restraint protocol alone does not address prevention or de-escalation. Choice C is incorrect because eliminating all demands is not sustainable. Choice D is incorrect because the BCBA is responsible for proactive strategies.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "H.4",
   },
   {
@@ -143,6 +151,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "Behavioral skills training (BST) is the evidence-based approach for training staff on behavioral procedures. BST includes four components: instructions (written and verbal), modeling (demonstration), rehearsal (practice), and feedback (specific, immediate). Research consistently shows that BST produces higher treatment fidelity than instruction-only or observation-only approaches. Choice B is incorrect because written instructions alone are insufficient. Choice C is incorrect because video modeling and observation without rehearsal and feedback are insufficient. Choice D is incorrect because theoretical understanding alone does not build procedural skills.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.5",
   },
   {
@@ -159,6 +168,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "When treatment fidelity errors are identified, the BCBA's responsibility is to provide immediate, specific corrective feedback, re-demonstrate the correct procedure, provide practice opportunities, and follow up to verify improvement. This is consistent with the BST model used for initial training. Choice B is incorrect because modifying the BIP to remove a critical component is not appropriate. Choice C is incorrect because treatment fidelity errors do not resolve themselves through practice alone. Choice D is incorrect because reporting to the principal is not the appropriate first response.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.5",
   },
   {
@@ -175,6 +185,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "Caregiver training requires addressing both the technical aspects of the intervention and the emotional concerns of caregivers. Validating the mother's concern, providing psychoeducation about appropriate limit-setting versus trauma, and explaining the evidence base for the intervention are all appropriate responses that support caregiver buy-in and implementation. Choice B is incorrect because dismissing the caregiver's concern damages the therapeutic relationship. Choice C is incorrect because modifying the intervention based solely on caregiver discomfort may result in a less effective plan. Choice D is incorrect because threatening the mother is coercive.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.6",
   },
   {
@@ -191,6 +202,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "When parents are implementing the current phase correctly and the child is making progress (70% initiation is a strong indicator of readiness to advance), the appropriate next step is to train the parents on the next phase. Using BST (written instructions, modeling, practice, feedback) during the home visit ensures that parents learn the new procedures correctly. Choice B is incorrect because waiting for 100% mastery is overly conservative. Choice C is incorrect because discharging parents after Phase 1 is premature. Choice D is incorrect because referring to a workshop is less efficient than direct coaching.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.6",
   },
   {
@@ -207,6 +219,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "Effective collaboration requires integrating multiple perspectives, presenting data to support clinical recommendations, and working toward consensus. The BCBA should use behavioral data to make the case for prioritizing problem behavior reduction while also acknowledging the importance of social skills goals and working to integrate both into a comprehensive plan. Choice A is incorrect because asserting dominance damages collaborative relationships. Choice B is incorrect because deferring entirely without presenting data is a failure of professional responsibility. Choice D is incorrect because separate, uncoordinated plans may result in conflicting procedures.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.7",
   },
   {
@@ -223,6 +236,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "Effective interprofessional collaboration involves sharing expertise, discussing evidence, and developing integrated plans. The BCBA should engage in a collaborative discussion with the SLP, sharing behavioral data and FBA findings, while also learning about the SLP's rationale for the AAC system. This allows both professionals to contribute their expertise to a comprehensive plan. Choice A is incorrect because deferring entirely to the SLP is a failure of professional responsibility. Choice B is incorrect because refusing to collaborate results in fragmented procedures. Choice D is incorrect because the issue is effectiveness, not scope of practice.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.7",
   },
   {
@@ -239,6 +253,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "Effective supervision requires providing immediate, specific feedback following observed errors, explaining the clinical rationale, demonstrating the correct procedure, and providing practice opportunities. Addressing the error promptly prevents continued inadvertent reinforcement of the problem behavior. Choice A is incorrect because waiting 2 weeks is not appropriate for an ongoing error. Choice B is incorrect because feedback should be provided privately after the session. Choice D is incorrect because modifying the BIP to accommodate an error is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.8",
   },
   {
@@ -255,6 +270,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "Treatment fidelity is essential for valid data and effective intervention. Deviating from programmed reinforcement schedules and ending sessions early are implementation errors that should be addressed through supervision. The BCBA should provide specific feedback, explain the clinical rationale for treatment fidelity, and collaboratively address the underlying concern (child fatigue) through appropriate program modifications if warranted. Choice A is incorrect because allowing implementation errors compromises data validity. Choice B is incorrect because terminating employment is disproportionate. Choice D is incorrect because modifying programs to accommodate errors is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.8",
   },
   {
@@ -271,6 +287,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "Choice C provides operationally defined behaviors (elopement defined as leaving the designated area without permission; break card use defined as independently presenting the card), specific criteria (fewer than 2 incidents per week; 80% of demand presentations), conditions for mastery (4 consecutive weeks; 3 consecutive school days), and measurement methods (daily frequency recording; session data). Choice A is incorrect because the behaviors are not operationally defined. Choice B is incorrect because zero incidents per week is an unrealistically high criterion. Choice D is incorrect because the behaviors are not operationally defined.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "H.1",
   },
   {
@@ -287,6 +304,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "For escape-maintained behavior in a young child, the most appropriate first-line treatment package combines antecedent modifications (visual schedules and transition warnings reduce the aversiveness of transitions) with FCT (teaching a 'help' sign provides a functionally equivalent replacement behavior). This combination is function-based, least restrictive, and developmentally appropriate for a 3-year-old. Choice A is incorrect because punishment should not be the first-line intervention for a 3-year-old. Choice B is incorrect because extinction alone is less comprehensive. Choice D is incorrect because FCT alone does not address the antecedent conditions.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.2",
   },
   {
@@ -303,6 +321,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "When a new behavior emerges in the same context and with the same consequence as the behavior being treated, it is most likely a member of the same response class — a behavior that serves the same function. This is a common occurrence when one member of a response class is placed on extinction. The appropriate response is to extend extinction to the new behavior while ensuring the FCT component is reinforced. Choice A is incorrect because the function is clear from existing data. Choice C is incorrect because this is a predictable response to extinction, not BIP failure. Choice B is incorrect because throwing is a new response class member, not an extinction burst.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "H.3",
   },
   {
@@ -319,6 +338,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "Proactive planning for novel environments involves modifying the support plan to address the specific risk factors present in the new context. Previewing the environment, providing a visual schedule, ensuring familiar staff, briefing all staff on BIP procedures, and identifying a quiet space are all evidence-based strategies for supporting students with autism in novel environments. Choice A is incorrect because excluding the student from educational activities is not appropriate. Choice C is incorrect because the standard BIP may not be sufficient in a novel environment. Choice B is incorrect because continuous access to preferred items does not address the specific risk factors.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.4",
   },
   {
@@ -335,6 +355,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "A 60-75% accuracy rate is insufficient for implementing a behavioral intervention — high treatment fidelity (typically 80-90% or greater) is required for the intervention to be effective. The appropriate response is to provide individualized coaching, specific feedback, and additional practice to the 5 paraprofessionals who did not reach criterion before allowing independent implementation. Choice A is incorrect because 60-75% accuracy is not sufficient. Choice C is incorrect because replacing staff is not the appropriate response. Choice B is incorrect because simplifying the intervention based on staff difficulties is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.5",
   },
   {
@@ -351,6 +372,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "Caregiver training requires obtaining informed consent and addressing caregiver concerns through education and collaborative discussion. The BCBA should explain the rationale for escape extinction, the evidence base, and the risks of not treating food refusal, while also acknowledging the parents' concerns. A collaborative approach that may include starting with a modified version of the procedure can help build parental confidence and buy-in. Choice A is incorrect because implementing without informed consent is ethically inappropriate. Choice B is incorrect because removing a critical component based solely on parental discomfort may result in a less effective plan. Choice D is incorrect because referring the family is premature.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "H.6",
   },
   {
@@ -367,6 +389,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "C",
     rationale: "The BCBA's role in this collaboration is to support the general education teacher in implementing effective behavioral supports. This includes adapting the BIP for the general education setting, training the teacher, providing ongoing consultation, and gradually fading direct involvement as the teacher's competence increases. Choice A is incorrect because attending all classes is not sustainable and does not build teacher capacity. Choice B is incorrect because providing a written BIP without training and support is insufficient. Choice D is incorrect because delaying the transition until behavior is at zero is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.7",
   },
   {
@@ -383,6 +406,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "The BCBA's supervisory responsibility includes ensuring that supervisees develop BIPs that follow best practices. A BIP that relies on punishment without function-based components is not consistent with evidence-based practice. The supervisor should provide specific feedback, explain the rationale for function-based intervention, and guide the BCaBA to conduct an FBA and revise the BIP. Choice A is incorrect because approving a non-best-practice BIP is a failure of supervisory responsibility. Choice C is incorrect because the FBA should precede the BIP. Choice B is incorrect because implementing a punishment-only plan without an FBA may cause harm.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.8",
   },
   {
@@ -399,6 +423,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "For chaining procedures, the goal should reference the task analysis (all steps), specify the independence criterion (without physical prompting), include a mastery criterion (80% of opportunities), and specify a measurement method (task analysis data) and condition for mastery (3 consecutive sessions). Choice A is incorrect because it is not operationally defined. Choice C is incorrect because 'improve self-care skills' is vague. Choice B is incorrect because it does not specify the measurement method or reference the task analysis.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.1",
   },
   {
@@ -415,6 +440,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "A",
     rationale: "Response interruption and redirection (RIRD) is an evidence-based intervention for automatically reinforced vocal behaviors. It involves interrupting the stereotypy and redirecting the student to an alternative vocal response, which disrupts the automatic reinforcement cycle. RIRD has a strong evidence base specifically for vocal stereotypy. Choice B is incorrect because requiring silence at all times is overly restrictive. Choice C is incorrect because punishment should not be the first-line intervention when RIRD is available. Choice D is incorrect because verbal stereotypy that interferes with academic instruction is a legitimate target for intervention.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.2",
   },
   {
@@ -431,6 +457,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "When a student meets the goal criterion for an extended period (4 weeks at goal), the appropriate next step is to begin systematic fading of BIP components. Fading should be gradual and data-driven, including increasing demand tolerance, fading the break card to a more natural request form, and thinning the reinforcement schedule. This promotes generalization and independence. Choice A is incorrect because discharging immediately does not allow for systematic fading. Choice C is incorrect because maintaining artificial supports indefinitely limits independence. Choice B is incorrect because immediately removing all supports risks rapid regression.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.3",
   },
   {
@@ -447,6 +474,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "A comprehensive safety plan for elopement should include environmental modifications to reduce opportunities for elopement, a supervision protocol to prevent incidents, a response protocol for when elopement occurs, and data collection to identify patterns. This multi-component approach addresses safety while also gathering data to inform the behavioral intervention. Choice A is incorrect because punishment does not address the immediate safety concern. Choice C is incorrect because restricting the student to an enclosed space is overly restrictive. Choice B is incorrect because recommending a more restrictive placement without first implementing supports is not consistent with least restrictive environment principles.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.4",
   },
   {
@@ -463,6 +491,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "A common challenge in staff training is the failure to generalize skills from the training context to the natural environment. High training accuracy but low in-vivo accuracy suggests that the staff member has learned the procedures but has not yet generalized them to the real-world context. In-vivo coaching with immediate feedback is the most effective strategy for supporting generalization. Choice A is incorrect because the discrepancy is more parsimoniously explained by generalization failure. Choice C is incorrect because repeating the entire training sequence is not the most efficient response. Choice B is incorrect because 60% in-vivo accuracy is not acceptable.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "H.5",
   },
   {
@@ -479,6 +508,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "D",
     rationale: "Effective caregiver training must be adapted to the caregiver's language, literacy level, and learning style. Using visual supports, simple language, demonstrations, and practice with feedback is consistent with BST principles and is accessible to caregivers with limited formal education. Breaking training into manageable components and providing ongoing support increases the likelihood of successful implementation. Choice A is incorrect because a written BIP in English is not accessible. Choice C is incorrect because reducing the complexity of the BIP is not appropriate — adapt the training, not the intervention. Choice B is incorrect because referring the family is premature.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.6",
   },
   {
@@ -495,6 +525,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "Interprofessional collaboration between BCBAs and medical professionals is appropriate and beneficial. The BCBA should provide behavioral data to the psychiatrist, along with contextual information about the measurement system and any concurrent changes in the behavioral intervention, to allow accurate interpretation. This is within the BCBA's scope of practice and supports comprehensive care. Choice A is incorrect because sharing behavioral data with medical professionals is appropriate. Choice C is incorrect because recommending medication dosages is outside the BCBA's scope. Choice D is incorrect because artificially controlling for medication effects is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.7",
   },
   {
@@ -511,6 +542,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "Consistent data collection is essential for valid clinical decision-making. The BCBA should provide feedback about the importance of data integrity and work collaboratively with the BCaBA to find practical solutions that improve data collection efficiency without compromising session quality. This may include simplified data sheets, technology-based systems, or modified data collection schedules. Choice A is incorrect because estimated data is not valid. Choice C is incorrect because a collaborative problem-solving approach is more effective than a mandate. Choice D is incorrect because reducing to 25% is insufficient for valid decision-making.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.8",
   },
   {
@@ -527,6 +559,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "For parents to implement extinction correctly, the BIP must include an operational definition of the target behavior (so parents know exactly when to apply the procedure), specific step-by-step instructions (including what not to do), examples of common errors (to prevent inadvertent reinforcement), and guidance on extinction bursts (so parents are prepared for the initial increase in behavior and do not abandon the procedure). Choice A is incorrect because theoretical explanation is not the most critical component. Choice C is incorrect because a literature review is not necessary. Choice D is incorrect because threatening parents is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.3",
   },
   {
@@ -543,6 +576,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "A comprehensive, function-based intervention for tangible-maintained aggression should include: antecedent modification (providing duplicate items reduces competition), FCT (teaching an appropriate way to request items), and extinction (not allowing items obtained through aggression). This combination is function-based, comprehensive, and least restrictive. Choice A is incorrect because extinction alone does not teach a replacement behavior. Choice C is incorrect because social skills training does not directly address the tangible function. Choice D is incorrect because environmental modification alone does not teach the child an appropriate way to request items.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.2",
   },
   {
@@ -559,6 +593,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "Implementing an intervention without proper training is outside the BCaBA's scope of competence and may harm the client. The BCBA's supervisory responsibility is to ensure that supervisees practice within their competence. The appropriate response is to evaluate the evidence base for the requested intervention, discuss it with the parents, and either provide training to the BCaBA or implement the intervention under direct supervision. Choice A is incorrect because parental preferences do not override the requirement for competent practice. Choice C is incorrect because dismissing the parents' request without discussion is not collaborative. Choice D is incorrect because implementing an untrained intervention without supervision exposes the client to potential harm.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.8",
   },
   {
@@ -575,6 +610,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "The BCBA should provide parents with honest, realistic expectations about the goals and outcomes of the BIP. The goal is to reduce SIB to a level that no longer interferes with quality of life and to teach a replacement behavior — not to 'cure' the behavior. Discussing realistic expectations, the importance of consistent implementation, and the plan for monitoring progress supports informed consent and caregiver buy-in. Choice A is incorrect because overpromising outcomes is dishonest. Choice C is incorrect because accepting permanent SIB without intervention is not consistent with evidence-based practice. Choice D is incorrect because discussing prognosis is within the BCBA's scope.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.6",
   },
   {
@@ -591,6 +627,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "Professional disagreements in interprofessional collaboration should be resolved through data-based discussion and collaborative problem-solving. The BCBA should present the FBA data, acknowledge the OT's perspective, and propose an integrated approach that tests both hypotheses while monitoring data. This approach is collaborative, data-driven, and respects both professionals' expertise. Choice A is incorrect because deferring entirely to the OT is a failure of professional responsibility. Choice C is incorrect because dismissing the OT's approach without discussion is not collaborative. Choice D is incorrect because implementing both approaches without discussion is not transparent.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "H.7",
   },
   {
@@ -607,6 +644,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "A sudden increase in problem behavior without changes to the intervention often indicates the presence of a new setting event or establishing operation — such as illness, sleep disruption, changes in the home environment, or medication changes. The BCBA should investigate these potential explanations before modifying the BIP. Consulting with the family and potentially recommending a medical evaluation is appropriate. Choice A is incorrect because adding punishment without investigating the cause is not appropriate. Choice C is incorrect because a sudden increase requires investigation. Choice D is incorrect because a new FBA from scratch is premature.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "H.8",
   },
   {
@@ -623,6 +661,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "Choice B specifies the target behavior (initiating a greeting with an operational definition of acceptable forms), a generalization criterion (at least 2 different peers), a mastery criterion (4 of 5 naturally occurring opportunities), a condition for mastery (3 consecutive school days), and a measurement method (frequency data by classroom teacher). This goal reflects naturalistic teaching by specifying naturally occurring opportunities and generalization across peers. Choice A is incorrect because the behaviors are not operationally defined. Choice C is incorrect because the goal requires adult prompting, not independent initiation. Choice D is incorrect because 'improved social interaction skills' is not operationally defined.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.1",
   },
   {
@@ -639,6 +678,7 @@ export const tier6Pool_H: Question[] = [
     correctAnswer: "B",
     rationale: "Generalization must be programmed, not assumed. The most effective strategy for promoting generalization is to train across multiple exemplars (multiple supervisors, multiple settings) from the beginning, ensure that all supervisors are trained to respond consistently to the break card, and use sufficient exemplars to promote generalization. Choice A is incorrect because sequential training delays generalization. Choice C is incorrect because relying on natural generalization is not effective. Choice D is incorrect because generalization does not occur automatically for individuals with autism and intellectual disability.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "H.3",
   },
 ];

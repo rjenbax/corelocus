@@ -19,6 +19,7 @@ export const tier6Pool_F_easy: Question[] = [
     domain: "F",
     taskItem: "F-1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is beginning the assessment process for a new client. She explains to the family that she will conduct several different types of assessments before developing a behavior intervention plan.`,
     question: `What is the primary purpose of conducting a functional behavior assessment (FBA) before developing a behavior intervention plan?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_F_easy: Question[] = [
     domain: "F",
     taskItem: "F-2",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the different methods of functional behavior assessment to a team. She describes three main approaches: indirect assessment, descriptive assessment, and functional analysis.`,
     question: `Which FBA method provides the most direct evidence of a functional relationship between the behavior and its maintaining variables?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_F_easy: Question[] = [
     domain: "F",
     taskItem: "F-3",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is conducting a preference assessment with a 5-year-old client who has limited verbal communication. She wants to identify which items are most preferred so she can use them as reinforcers in the intervention.`,
     question: `Which type of preference assessment involves presenting items one at a time and recording whether the client approaches or engages with each item?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_F_easy: Question[] = [
     domain: "F",
     taskItem: "F-4",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing the results of a skills assessment for a new client. She explains to the family that the assessment identified both the skills the client has already mastered and the skills that are emerging or not yet acquired.`,
     question: `What is the primary purpose of conducting a skills assessment (such as the VB-MAPP or ABLLS-R) before beginning skill acquisition programming?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_F_easy: Question[] = [
     domain: "F",
     taskItem: "F-5",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the ABC (Antecedent-Behavior-Consequence) recording method to a new RBT. She explains that ABC recording is a type of descriptive assessment used to gather information about the variables associated with a target behavior.`,
     question: `In ABC recording, what does the "A" (antecedent) refer to?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_F_easy: Question[] = [
     domain: "F",
     taskItem: "F-6",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of a motivating operation (MO) to a parent. She explains that MOs are antecedent variables that affect the value of reinforcers and the frequency of behavior.`,
     question: `Which of the following best describes the effect of an establishing operation (EO)?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_F_easy: Question[] = [
     domain: "F",
     taskItem: "F-7",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is conducting a functional analysis for a client whose self-injurious behavior (SIB) is hypothesized to be maintained by automatic reinforcement. She designs a test condition and a control condition to evaluate this hypothesis.`,
     question: `In a functional analysis, what is the defining feature of the "alone" or "no interaction" condition used to test for automatic reinforcement?`,
     choices: [

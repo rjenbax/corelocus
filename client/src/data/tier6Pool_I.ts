@@ -15,6 +15,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "The BCBA's primary supervisory responsibility is to ensure that supervisees practice within their scope of competence and that clients receive effective, ethical services. This encompasses both the welfare of clients and the professional development of supervisees. Choice A is incorrect because documentation is an administrative responsibility. Choice C is incorrect because supervisee satisfaction is not the primary ethical responsibility. Choice D is incorrect because maintaining certifications is the supervisee's individual responsibility.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.1",
   },
   {
@@ -31,6 +32,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "When a supervisee is implementing correctly but the client is not making progress, the BCBA should conduct a data-based review of the program design. The lack of progress may be due to issues with the program design (e.g., inappropriate target behavior, ineffective reinforcer, incorrect prompting strategy, or criterion set too high), not the implementation. Choice A is incorrect because the implementation is correct. Choice C is incorrect because 3 weeks without progress warrants review. Choice D is incorrect because referral is premature.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.1",
   },
   {
@@ -47,6 +49,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "A persistent implementation error that has occurred across 3 sessions requires escalated supervisory response: immediate specific feedback, re-demonstration, practice, and a plan for follow-up. If the error persists despite training, the BCBA must consider whether the RBT is appropriate for this client. Choice A is incorrect because a persistent error is not likely to self-correct without intervention. Choice C is incorrect because terminating the assignment without additional training is premature. Choice D is incorrect because modifying the BIP to accommodate an error is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.1",
   },
   {
@@ -63,6 +66,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "A comprehensive assessment of supervisee competence should use multiple methods: direct observation (to assess implementation accuracy), review of written products (to assess conceptual and documentation skills), and structured performance feedback. This multi-method approach provides a more complete and accurate picture of competence than any single method. Choice A is incorrect because self-report alone is not reliable. Choice B is incorrect because client outcomes reflect many factors beyond supervisee competence. Choice D is incorrect because a written test does not assess applied competence.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.2",
   },
   {
@@ -79,6 +83,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "In-session coaching with immediate feedback is more effective than post-session feedback alone for improving implementation accuracy. Immediate feedback allows the RBT to correct errors in real time, which accelerates skill acquisition. This approach is consistent with BST principles applied to ongoing supervision. Choice A is incorrect because verbal feedback alone has not been effective for 3 sessions. Choice C is incorrect because reassigning the RBT does not address the skill deficit. Choice D is incorrect because written materials alone are insufficient.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.2",
   },
   {
@@ -95,6 +100,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "Effective performance feedback is balanced (acknowledges strengths and areas for improvement), specific (provides examples of the documentation concern), explains the impact of the concern on client care and compliance, and includes a collaborative improvement plan with measurable goals and a timeline. This approach is honest, constructive, and motivating. Choice A is incorrect because avoiding the concern is not honest or helpful. Choice C is incorrect because focusing exclusively on the concern is not balanced. Choice D is incorrect because a formal written warning is not appropriate for a first formal discussion.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.3",
   },
   {
@@ -111,6 +117,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "Effective feedback is specific, data-based, balanced, and connected to client outcomes. Even when performance is good, feedback should acknowledge specific strengths with examples and identify areas for continued growth to support the supervisee's professional development. Choice A is incorrect because providing only positive feedback does not support continued growth. Choice C is incorrect because positive performance also warrants feedback to reinforce effective behaviors. Choice D is incorrect because delaying feedback reduces its effectiveness.",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "I.3",
   },
   {
@@ -127,6 +134,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "Training RBTs on skill acquisition programs is an appropriate task to delegate to a BCaBA, as it is within the BCaBA's scope of practice and is a task that the BCaBA can perform competently. The BCBA should maintain oversight of the training and ensure that it is conducted correctly. Choice A is incorrect because initial FBAs for new clients require BCBA oversight. Choice C is incorrect because final BIP decisions require BCBA-level expertise. Choice D is incorrect because serving as the primary clinical decision-maker in treatment team meetings requires BCBA-level authority.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.4",
   },
   {
@@ -143,6 +151,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "Delegation decisions should be guided by the competence and scope of practice of each supervisee. Tasks that are within the supervisee's scope and that they can perform accurately can be delegated; tasks requiring BCBA-level expertise or with significant clinical implications should be retained. This approach maximizes efficiency while maintaining clinical quality. Choice A is incorrect because some administrative tasks require BCBA-level judgment. Choice C is incorrect because delegation based solely on availability ignores competence. Choice D is incorrect because avoiding delegation entirely is not practical.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.4",
   },
   {
@@ -159,6 +168,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "The BCBA has a supervisory responsibility to ensure that supervisees can provide adequate services to all clients. When a caseload is genuinely excessive, the BCBA should acknowledge the concern, review the caseload together to identify priorities and potential modifications, and advocate with agency administration for a reduction in caseload or additional support. Choice B is incorrect because dismissing the concern is not appropriate. Choice C is incorrect because reducing data collection compromises clinical quality. Choice D is incorrect because RBTs cannot implement BIPs independently without oversight.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.1",
   },
   {
@@ -175,6 +185,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "Supervision for a BCaBA seeking BCBA certification should be structured to systematically address all areas of the BCBA task list, provide opportunities to practice BCBA-level skills (e.g., conducting FBAs, developing BIPs, training staff), and provide feedback relative to BCBA-level expectations. This structured approach ensures comprehensive preparation for certification. Choice B is incorrect because focusing only on current cases does not systematically address all task list areas. Choice C is incorrect because independent study without structured supervision is insufficient. Choice D is incorrect because a comprehensive approach is more appropriate than focusing only on weak areas.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.2",
   },
   {
@@ -191,6 +202,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "The most effective supervisory sequence is: (1) acknowledge the RBT's concern (validating her experience), (2) provide specific feedback on the extinction error, (3) explain why consistency is critical, (4) re-demonstrate the correct response, (5) have the RBT practice through role-play, and (6) schedule a follow-up observation. This sequence is consistent with BST and addresses both the emotional and technical aspects of the concern. Choice B is incorrect because written review and waiting is not the most effective approach. Choice C is incorrect because threatening disciplinary action is not appropriate as the first response. Choice D is incorrect because modifying the BIP to accommodate an error is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.3",
   },
   {
@@ -207,6 +219,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "Preparing a supervisee for a new, challenging client requires: providing background information, reviewing the BIP together, providing training on specific procedures (including crisis management), accompanying the BCaBA for initial sessions to provide in-vivo support, and gradually fading support as the BCaBA's confidence and competence increase. This approach ensures that both the BCaBA and the client are safe. Choice B is incorrect because assigning without preparation may put both at risk. Choice C is incorrect because reassigning without attempting to prepare is not appropriate. Choice D is incorrect because a written summary alone is insufficient.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.2",
   },
   {
@@ -223,6 +236,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "BIP modifications require BCBA-level oversight. The BCaBA should acknowledge the parent's concern, explain that BIP modifications require BCBA approval, and facilitate a meeting with the parent and BCBA to address the concern collaboratively. This approach respects the parent's concern while maintaining appropriate clinical oversight. Choice B is incorrect because modifying the BIP based solely on parental preference without BCBA oversight is not appropriate. Choice C is incorrect because telling the parent the component 'cannot be removed' without discussion is not collaborative. Choice D is incorrect because implementing different BIP versions across settings is not clinically sound.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.4",
   },
   {
@@ -239,6 +253,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "The BCBA should address the dual relationship concern directly in supervision, explaining the ethical risks (compromised objectivity, potential harm to the client and family), reviewing the relevant Ethics Code provisions, and developing a plan for establishing appropriate professional boundaries. This approach gives the BCaBA the opportunity to understand the ethical issues and correct the behavior. Choice A is incorrect because allowing a dual relationship to continue is not appropriate. Choice B is incorrect because terminating the assignment without addressing the concern through supervision is not appropriate. Choice D is incorrect because reporting to the BACB is not the appropriate first response.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.5",
   },
   {
@@ -255,6 +270,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "The BCaBA has a professional responsibility to advocate for evidence-based practice. The appropriate first step is to raise concerns through internal channels (e.g., a meeting with the director, a written memo), document the concerns, and seek BCBA support in advocating for evidence-based practice. This approach is consistent with the BACB Ethics Code's requirement to advocate for evidence-based practice while using appropriate channels for raising concerns. Choice A is incorrect because implementing without raising concerns is not consistent with ethical practice. Choice B is incorrect because immediately reporting to the BACB is an escalated response not appropriate before attempting internal resolution. Choice D is incorrect because implementing without raising concerns is not appropriate.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "I.5",
   },
   {
@@ -271,6 +287,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "Culturally responsive practice requires engaging the family in a discussion that explores their concerns and values, explains the rationale for the intervention in a culturally sensitive way, and considers whether any modifications can be made that are both culturally acceptable and clinically effective. This approach respects the family's cultural values while maintaining clinical effectiveness. Choice A is incorrect because insisting on implementation without addressing cultural concerns is not effective. Choice B is incorrect because removing a critical component based solely on cultural resistance may result in a less effective plan. Choice D is incorrect because referral is not the appropriate first response.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.6",
   },
   {
@@ -287,6 +304,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "The BCaBA should engage the family in a respectful, non-judgmental discussion about the impact of physical discipline on the child's behavior, provide psychoeducation about positive behavior support strategies, and offer training on alternative discipline strategies. If there are concerns about the child's safety, the BCaBA should consult with the BCBA and follow mandatory reporting requirements. Choice A is incorrect because the BCaBA has a professional and ethical responsibility to address practices that may harm the client. Choice B is incorrect because not all physical discipline constitutes abuse. Choice D is incorrect because the BCaBA's responsibility extends beyond the clinical setting.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "I.6",
   },
   {
@@ -303,6 +321,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "A comprehensive OBM performance management system that includes regular treatment fidelity observations, immediate and specific feedback, and recognition for achieving targets is most likely to produce sustained improvement in treatment fidelity. This approach addresses both antecedents (clear expectations) and consequences (feedback and recognition). Choice A is incorrect because a reminder email is an antecedent-only intervention. Choice B is incorrect because a punishment-only system is not consistent with evidence-based OBM practice. Choice D is incorrect because a one-time training alone is unlikely to produce sustained improvement.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.7",
   },
   {
@@ -319,6 +338,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "Evidence-based OBM practice involves conducting a functional analysis of the problem behavior (tardiness) to identify the antecedents and consequences maintaining it, and then implementing an intervention that addresses the identified maintaining variables. This approach is analogous to the FBA-based approach used in clinical practice. Choice A is incorrect because a disciplinary policy alone does not address the root cause. Choice B is incorrect because implementing a token economy without a functional analysis may not address the root cause. Choice D is incorrect because terminating employment without investigating the causes is not appropriate.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "I.7",
   },
   {
@@ -335,6 +355,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "Sharing confidential client information requires a signed release of information from the client's parents. The BCaBA should explain this to the teacher and facilitate the authorization process if the parents agree. This approach protects client confidentiality while supporting appropriate information sharing within the educational team. Choice A is incorrect because sharing without authorization is not appropriate. Choice B is incorrect because diagnostic information is also confidential and requires a release. Choice D is incorrect because the BCaBA has a responsibility to facilitate appropriate information sharing.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.5",
   },
   {
@@ -351,6 +372,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "When a client discloses bullying and depression, the BCaBA should acknowledge the disclosure empathetically, consult with the BCBA, facilitate a referral to appropriate mental health services, and assess whether the bullying constitutes abuse or neglect that requires mandatory reporting. Choice A is incorrect because addressing depression through a BIP alone is not appropriate. Choice C is incorrect because keeping the disclosure confidential when the student may be at risk is not appropriate. Choice B is incorrect because dismissing the disclosure without providing support or referral is not appropriate.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "I.5",
   },
   {
@@ -367,6 +389,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "A performance feedback system that includes regular review of session notes, specific written feedback on strengths and areas for improvement (with examples), and tracking of quality scores over time is most likely to improve session note quality. This approach provides both antecedents (clear expectations) and consequences (specific feedback). Choice A is incorrect because a written memo is an antecedent-only intervention. Choice C is incorrect because a punishment-only system is not consistent with evidence-based OBM practice. Choice B is incorrect because a one-time training alone is unlikely to produce sustained improvement.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.7",
   },
   {
@@ -383,6 +406,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "The family's religious and cultural request for female-only staff is a legitimate preference that should be honored. The BCBA should work to accommodate this request, even if it requires creative scheduling or staffing solutions. Respecting cultural and religious preferences is a core component of culturally responsive practice. Choice B is incorrect because accommodating religious and cultural preferences is not discriminatory. Choice C is incorrect because assigning staff against the family's explicit preferences without their knowledge is not respectful. Choice D is incorrect because referral is premature before attempting to accommodate the request.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.6",
   },
   {
@@ -399,6 +423,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "Developing supervisory skills requires training (using BST), gradual increase in responsibilities (starting with co-supervision and progressing to independent supervision), feedback on supervisory performance, and maintained oversight until competence is demonstrated. This approach mirrors the supervised fieldwork model used to develop clinical skills. Choice B is incorrect because assigning full supervisory responsibility without preparation may result in poor supervisory practices. Choice C is incorrect because written materials alone are insufficient. Choice D is incorrect because clinical skills and supervisory skills are distinct.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.2",
   },
   {
@@ -415,6 +440,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "The BCBA should acknowledge the BCaBA's disclosure with empathy, discuss the potential impact on professional performance, explore available support resources (EAP, reduced caseload, flexible scheduling), and collaboratively develop a plan to maintain client care quality. This approach supports the BCaBA's well-being while also protecting client welfare. Choice B is incorrect because dismissing the BCaBA's personal stress is not supportive. Choice C is incorrect because placing the BCaBA on leave immediately is not appropriate before exploring less restrictive options. Choice D is incorrect because ignoring the disclosure is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.1",
   },
   {
@@ -431,6 +457,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "Using a professional interpreter ensures accurate communication of clinical information and protects the child from the burden of interpreting clinical discussions. The agency has a responsibility to provide appropriate interpretation services to ensure equitable access to treatment. Choice A is incorrect because using a child as an interpreter is not appropriate. Choice C is incorrect because requiring parents to participate in English only is not respectful or equitable. Choice B is incorrect because referral is premature before providing appropriate interpretation services.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.6",
   },
   {
@@ -447,6 +474,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "A comprehensive onboarding and support program that addresses the identified contributing factors (poor onboarding, inadequate supervision) is most likely to reduce turnover. This approach addresses both antecedents (clear expectations, structured onboarding) and consequences (feedback, professional development, mentorship). Choice A is incorrect because compensation alone is not sufficient to address turnover. Choice C is incorrect because contractual obligations do not address the underlying causes. Choice B is incorrect because limiting hiring to experienced RBTs does not address the organizational factors.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.7",
   },
   {
@@ -463,6 +491,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "When a program has not produced progress after 8 weeks, the BCBA should conduct a collaborative data-based review with the BCaBA to identify potential issues with the program design (target behavior, prompting strategy, reinforcer, criterion) or implementation fidelity. This approach is educational for the BCaBA and leads to data-based program modification. Choice A is incorrect because 8 weeks without progress warrants review. Choice C is incorrect because immediately discontinuing the program is premature. Choice B is incorrect because dismissing the concern is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.3",
   },
   {
@@ -479,6 +508,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "Parents of minor clients generally have the right to access their child's records, including session notes and data sheets. The BCaBA should provide the parents with copies of the requested records, following the agency's procedures for records requests. Choice B is incorrect because denying the request without legal justification is not appropriate. Choice C is incorrect because selectively withholding records is not appropriate without legal justification. Choice D is incorrect because referring to the legal department for a routine records request is unnecessarily bureaucratic.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.5",
   },
   {
@@ -495,6 +525,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "A",
     rationale: "A performance feedback system that includes regular review of billing documentation, specific feedback on errors (with examples of correct documentation), and tracking of error rates over time is most likely to improve billing accuracy. This approach provides both antecedents (clear expectations) and consequences (specific feedback). Choice B is incorrect because a disciplinary policy alone is not consistent with evidence-based OBM practice. Choice C is incorrect because a one-time training alone is unlikely to produce sustained improvement. Choice D is incorrect because hiring a billing specialist does not change the BCaBAs' behavior.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.7",
   },
   {
@@ -511,6 +542,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "Engaging the grandmother in a respectful, non-judgmental discussion that explores her concerns, provides psychoeducation about autism and the rationale for the intervention, and identifies any components she might be willing to implement is the most appropriate approach. Involving the BCBA in a meeting with the grandmother may also be helpful. Choice A is incorrect because continuing without addressing the grandmother's concerns limits effectiveness. Choice C is incorrect because refusing to implement a BIP does not constitute medical neglect. Choice B is incorrect because threatening discharge is coercive.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.6",
   },
   {
@@ -527,6 +559,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "Signing session notes for sessions that did not occur is fraudulent documentation — it is a serious ethical and legal violation. The BCaBA should refuse the request, report it to the appropriate supervisory and compliance personnel, and document the incident. Choice A is incorrect because signing fraudulent documentation is a serious violation. Choice C is incorrect because discussing with the colleague alone is not sufficient. Choice B is incorrect because ignoring the request without reporting it is not sufficient.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "I.5",
   },
   {
@@ -543,6 +576,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "A comprehensive performance evaluation that includes specific examples of strong performance, specific areas for growth with actionable recommendations, a collaborative discussion of professional development goals, and a written development plan is most supportive of the BCaBA's professional development. This approach is honest, balanced, and actionable. Choice A is incorrect because a rating-scale evaluation without specific examples does not provide actionable information. Choice C is incorrect because providing only positive feedback does not give accurate information about areas for growth. Choice B is incorrect because focusing exclusively on areas for growth is not balanced.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.3",
   },
   {
@@ -559,6 +593,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "D",
     rationale: "When a BCaBA has been unable to resolve an implementation concern with a teacher, the appropriate next step is to escalate to the BCBA, who has the authority and expertise to address the concern with the school team. The BCBA should provide the teacher with specific feedback and training on the BIP procedures. Choice A is incorrect because documenting and monitoring without escalating is not sufficient when the client may be harmed. Choice C is incorrect because reporting to the principal is an escalated response that may damage professional relationships. Choice B is incorrect because modifying the BIP to accommodate an error is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.4",
   },
   {
@@ -575,6 +610,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "When there is a concern about the impact of a new system on data quality, the appropriate response is to evaluate the system empirically before full implementation. A pilot study allows the BCBA to present data-based evidence to the owner, supporting a collaborative and evidence-based decision. Choice A is incorrect because implementing without raising concerns is not consistent with ethical practice. Choice B is incorrect because immediately reporting to the BACB is an escalated response not appropriate before internal resolution. Choice D is incorrect because implementing a potentially inadequate system is less transparent than evaluating it first.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "I.7",
   },
   {
@@ -591,6 +627,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "C",
     rationale: "Culturally responsive practice requires engaging the family in a discussion about their educational values and preferences, explaining the rationale for naturalistic teaching in a culturally sensitive way, and exploring whether a hybrid approach can be developed that is both culturally acceptable and clinically effective. This approach respects the family's cultural values while maintaining clinical effectiveness. Choice A is incorrect because insisting on a specific approach without considering cultural values is not culturally responsive. Choice B is incorrect because abandoning evidence-based strategies entirely is not appropriate. Choice D is incorrect because referral is premature.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.6",
   },
   {
@@ -607,6 +644,7 @@ export const tier6Pool_I: Question[] = [
     correctAnswer: "B",
     rationale: "Preparing the BCaBA for a new client population requires training on the specific skills and knowledge needed for adult services and transition planning (including relevant laws, community resources, and evidence-based practices), mentorship from an experienced practitioner, and close supervision during the initial phase. This approach builds the BCaBA's competence while ensuring client safety. Choice A is incorrect because school-based and adult services involve different skills. Choice C is incorrect because a written summary alone is insufficient. Choice D is incorrect because reassigning without attempting to prepare the BCaBA is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "I.2",
   },
 ];

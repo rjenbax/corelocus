@@ -19,6 +19,7 @@ export const tier6Pool_E_easy: Question[] = [
     domain: "E",
     taskItem: "E.1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is orienting a new RBT to the BACB Ethics Code. The RBT asks who is responsible for following the Ethics Code and whether it applies only to BCBAs or to all BACB certificants.`,
     question: `To whom does the BACB Ethics Code apply?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_E_easy: Question[] = [
     domain: "E",
     taskItem: "E.2",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of informed consent to a parent who is new to ABA services. The parent asks what informed consent means and why it is required before services begin.`,
     question: `Which of the following best describes the purpose of obtaining informed consent before beginning ABA services?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_E_easy: Question[] = [
     domain: "E",
     taskItem: "E.3",
     difficulty: "easy",
+    bloomsLevel: "analysis",
     scenario: `A BCBA has been providing ABA services to a 9-year-old client for two years. The client's mother asks the BCBA to also provide individual therapy for her own anxiety, as she has developed a trusting relationship with the BCBA and feels comfortable with her.`,
     question: `What is the primary ethical concern with the BCBA providing individual therapy for the client's mother?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_E_easy: Question[] = [
     domain: "E",
     taskItem: "E.4",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is asked to provide services to a client with a rare genetic syndrome that she has never worked with before. She has general ABA training and experience but no specific knowledge of the syndrome's behavioral phenotype or the specialized interventions that have been shown to be effective for this population.`,
     question: `What does the BACB Ethics Code require the BCBA to do before accepting this case?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_E_easy: Question[] = [
     domain: "E",
     taskItem: "E.7",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is at a social gathering and a neighbor asks about her work. The neighbor mentions that she knows a family in the neighborhood whose child receives ABA services and asks if the BCBA works with that child.`,
     question: `What is the BCBA's ethical obligation regarding client confidentiality in this situation?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_E_easy: Question[] = [
     domain: "E",
     taskItem: "E.5",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is supervising a BCaBA who has been providing ABA services to a client for six months. The BCBA has been conducting monthly supervision meetings but has not directly observed the BCaBA's work with the client during this time.`,
     question: `What is the primary concern with the BCBA's current supervision approach?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_E_easy: Question[] = [
     domain: "E",
     taskItem: "E.9",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `During a home visit, a BCBA notices bruising on a child client that appears inconsistent with the caregiver's explanation. The BCBA is uncertain whether the bruising is the result of abuse, but she is concerned.`,
     question: `What is the BCBA's ethical and legal obligation in this situation?`,
     choices: [

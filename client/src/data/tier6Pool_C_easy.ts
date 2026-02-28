@@ -19,6 +19,7 @@ export const tier6Pool_C_easy: Question[] = [
     domain: "C",
     taskItem: "C-1",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is training a new RBT on how to measure behavior. She explains that there are several different ways to measure behavior, and the method chosen should match the characteristics of the behavior being measured.`,
     question: `Which measurement dimension captures the number of times a behavior occurs within an observation period?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_C_easy: Question[] = [
     domain: "C",
     taskItem: "C-2",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the difference between rate and frequency to a BCaBA. She notes that rate is often a more useful measure than raw frequency when observation sessions vary in length.`,
     question: `How is rate of behavior calculated?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_C_easy: Question[] = [
     domain: "C",
     taskItem: "C-3",
     difficulty: "easy",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is reviewing data collection methods with her team. She explains that partial interval recording tends to overestimate the occurrence of behavior, while whole interval recording tends to underestimate it.`,
     question: `What is the key difference between partial interval recording and whole interval recording?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_C_easy: Question[] = [
     domain: "C",
     taskItem: "C-4",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a line graph with a supervisee. The graph shows a client's frequency of on-task behavior across multiple sessions, with a vertical dashed line separating the baseline phase from the intervention phase.`,
     question: `What is the term for the vertical dashed line that separates phases on a behavior-analytic graph?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_C_easy: Question[] = [
     domain: "C",
     taskItem: "C-5",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining interobserver agreement (IOA) to a new staff member. She explains that IOA is calculated to assess the reliability of the data being collected.`,
     question: `What does interobserver agreement (IOA) measure?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_C_easy: Question[] = [
     domain: "C",
     taskItem: "C-6",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a cumulative record graph with a supervisee. She explains that cumulative records are useful for visualizing the overall pattern of responding over time.`,
     question: `What is the defining feature of a cumulative record?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_C_easy: Question[] = [
     domain: "C",
     taskItem: "C-7",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a client's data and notices that the behavior shows a stable, flat trend during baseline with low variability. She explains to her supervisee that this baseline pattern is ideal before introducing an intervention.`,
     question: `Why is a stable baseline with low variability preferred before introducing an intervention?`,
     choices: [

@@ -29,6 +29,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.3",
     difficulty: "hard",
+    bloomsLevel: "comprehension",
     scenario: `A BCBA has been providing ABA services to a 10-year-old client for two years. The client's mother, who is a licensed massage therapist, offers the BCBA a complimentary massage in exchange for the extra time the BCBA has spent on home visits. The BCBA is experiencing significant muscle tension from a recent injury.`,
     question: `Which of the following represents the most ethically sound response?`,
     choices: [
@@ -46,6 +47,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.3",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA working in a school district is approached by the parent of one of her clients, who asks the BCBA to provide private tutoring to the client's younger sibling — a child who is not receiving ABA services — for a fee. The parent states that the sibling struggles academically and that the BCBA's behavioral expertise would be helpful.`,
     question: `Which of the following is the most appropriate response?`,
     choices: [
@@ -65,6 +67,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.5",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: `A BCBA is providing supervision to an RBT candidate who is accumulating hours toward BACB certification. The BCBA has been conducting all supervision remotely via video conferencing due to the candidate's rural location. The candidate's employer has asked the BCBA to sign off on supervision hours for two weeks during which the BCBA was traveling internationally and was only available by text message for brief check-ins.`,
     question: `Which of the following is the most appropriate action?`,
     choices: [
@@ -82,6 +85,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.5",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is supervising three RBTs at a clinic. One RBT, who has been with the clinic for 18 months, consistently performs at a high level and requires minimal corrective feedback. The BCBA is considering reducing this RBT's supervision to below the BACB minimum requirement to allocate more time to a newer, less experienced RBT who needs more support.`,
     question: `Which of the following best describes the ethical obligation in this situation?`,
     choices: [
@@ -101,6 +105,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.6",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is initiating services for a 7-year-old client with autism spectrum disorder. The client's parents are divorced, and the father holds sole legal custody. The mother, who has regular visitation rights but no legal custody, contacts the BCBA and requests to be included in the consent process and to receive copies of all treatment documentation.`,
     question: `Which of the following best describes the BCBA's ethical and legal obligation?`,
     choices: [
@@ -118,6 +123,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.6",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is preparing to implement a new behavior intervention plan that includes a response cost component for a 12-year-old client. The client's parents signed a general consent for ABA services at intake six months ago. The parents speak limited English, and the consent form was provided only in English.`,
     question: `Which of the following is the most appropriate action before implementing the new procedure?`,
     choices: [
@@ -135,6 +141,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.6",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: `A BCBA is working with an adult client with a moderate intellectual disability who lives in a group home. The group home administrator has signed all consent forms on behalf of the client. During a session, the client tells the BCBA that he does not want to continue with the current behavior plan and asks the BCBA to stop. The group home administrator, when contacted, insists that the plan should continue.`,
     question: `Which of the following best describes the BCBA's ethical obligation?`,
     choices: [
@@ -152,6 +159,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.6",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is conducting an initial assessment for a new client. During the intake meeting, the parents ask the BCBA to begin services immediately without signing any consent forms, stating that they trust the BCBA completely and that paperwork can be handled later. The family is in crisis and the child's behavior is severely impacting the household.`,
     question: `Which of the following is the most appropriate response?`,
     choices: [
@@ -169,6 +177,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.6",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is asked by a school district to implement a behavior intervention plan developed by the district's multidisciplinary team for a student with emotional and behavioral disorders. The parents have signed the IEP, which includes a brief description of the behavior plan. However, the parents have not been specifically informed about the use of planned ignoring and differential reinforcement of alternative behavior as the primary procedures.`,
     question: `Which of the following best describes the BCBA's ethical obligation?`,
     choices: [
@@ -188,6 +197,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.8",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: `A BCBA is developing a behavior intervention plan for a 9-year-old client who engages in severe self-injurious behavior (SIB) that has resulted in multiple hospitalizations. Previous interventions using differential reinforcement and antecedent modifications have been implemented with fidelity for six months but have produced only a 20% reduction in SIB. The treatment team is considering adding a punishment-based component.`,
     question: `Which of the following best describes the BCBA's ethical obligation in this situation?`,
     choices: [
@@ -205,6 +215,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.8",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is reviewing a behavior intervention plan written by a previous provider for a new client. The plan includes a contingent exercise procedure (requiring the client to perform 10 push-ups following each instance of aggression) as the primary intervention. There is no documentation indicating that reinforcement-based or antecedent-based strategies were attempted before implementing this procedure.`,
     question: `Which of the following is the most appropriate action?`,
     choices: [
@@ -224,6 +235,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.9",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `During a home visit, a BCBA notices that a 6-year-old client has several unexplained bruises on his arms and legs. When the BCBA asks about the bruises, the client's mother becomes defensive and states that the child "bruises easily." The BCBA has no prior concerns about this family.`,
     question: `Which of the following best describes the BCBA's obligation?`,
     choices: [
@@ -241,6 +253,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.9",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA learns from an RBT she supervises that another BCBA at the same agency has been falsifying session notes — recording sessions as completed when they were not conducted. The RBT witnessed this directly on two occasions.`,
     question: `Which of the following best describes the BCBA's ethical obligation?`,
     choices: [
@@ -258,6 +271,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.9",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: `A BCBA receives a subpoena requiring her to testify in a custody dispute involving a former client. The subpoena requests that the BCBA bring all session notes, assessment reports, and correspondence related to the client. The client's mother (who has legal custody) has not provided written authorization for the BCBA to disclose records.`,
     question: `Which of the following is the most appropriate action?`,
     choices: [
@@ -275,6 +289,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.9",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA working in a residential facility observes a direct care staff member physically restrain a client in a manner that is not consistent with the facility's approved crisis intervention protocol and appears to cause the client pain. The BCBA is not the client's primary behavior analyst.`,
     question: `Which of the following is the most appropriate action?`,
     choices: [
@@ -292,6 +307,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.9",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `A BCBA suspects that a colleague has submitted fraudulent billing claims to a client's insurance company, billing for services that were not provided. The BCBA has indirect evidence — inconsistencies between session notes and billing records — but has not directly witnessed the billing fraud.`,
     question: `Which of the following best describes the BCBA's ethical obligation?`,
     choices: [
@@ -311,6 +327,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.10",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `A BCBA works for an ABA agency that receives referrals from a pediatric neurologist. The neurologist has recently begun recommending a specific brand of weighted blankets to families and has asked the BCBA to endorse the product to clients during sessions, offering the BCBA a 15% commission on each sale.`,
     question: `Which of the following best describes the ethical concern and appropriate response?`,
     choices: [
@@ -328,6 +345,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.10",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is employed by an ABA agency and is also a part-owner of a social skills training program that operates independently. One of the BCBA's current clients at the agency would likely benefit from social skills training.`,
     question: `Which of the following is the most ethically appropriate action?`,
     choices: [
@@ -345,6 +363,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.10",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is hired as an expert witness by an attorney representing a family in a dispute with a school district over the appropriateness of the student's educational placement. The BCBA has never met the student but is asked to review records and provide testimony supporting the family's position. The attorney offers a fee of $300 per hour for the BCBA's time.`,
     question: `Which of the following best describes the ethical considerations?`,
     choices: [
@@ -362,6 +381,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.10",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA's spouse is the director of a company that manufactures ABA curriculum materials. The BCBA is on a school district's committee that is selecting new curriculum materials for its ABA programs. The BCBA's spouse's company has submitted a bid for the contract.`,
     question: `Which of the following is the most appropriate action?`,
     choices: [
@@ -379,6 +399,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.10",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `A BCBA has been providing services to a client for three years. The client's family has become close with the BCBA over this time, and the family has invited the BCBA to the client's birthday party. The BCBA genuinely cares about the family and believes that attending would strengthen the therapeutic relationship.`,
     question: `Which of the following best describes the ethical considerations?`,
     choices: [
@@ -398,6 +419,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.11",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is working with a 14-year-old client whose insurance company has denied continued authorization for ABA services, stating that the client has "plateaued" and no longer meets medical necessity criteria. The BCBA has data showing continued progress on functional goals.`,
     question: `Which of the following best describes the BCBA's ethical obligation?`,
     choices: [
@@ -415,6 +437,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.11",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is aware that a proposed state regulation would significantly restrict the use of functional communication training (FCT) in school settings by requiring prior approval from a state committee for each individual implementation. The BCBA believes this regulation would harm clients by delaying access to an evidence-based intervention.`,
     question: `Which of the following is the most appropriate professional response?`,
     choices: [
@@ -432,6 +455,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.11",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is working in a school district where administrators have implemented a policy requiring all students with IEPs to participate in a school-wide token economy system, regardless of the individualized behavior support plans developed by BCBAs. The BCBA believes this policy undermines individualized treatment and is not in the best interests of several of her clients.`,
     question: `Which of the following is the most appropriate action?`,
     choices: [
@@ -449,6 +473,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.11",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is asked by a parent advocacy group to provide public testimony at a city council meeting about the importance of ABA services for children with autism. The BCBA is employed by an ABA agency and has not obtained her employer's permission to testify. The BCBA's testimony would be based on her professional expertise and would not disclose any client information.`,
     question: `Which of the following best describes the ethical considerations?`,
     choices: [
@@ -466,6 +491,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.11",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is aware that a client's school placement is inappropriate — the client is placed in a self-contained classroom with minimal access to general education peers, despite having the skills to participate in inclusive settings with support. The parents are unaware that more inclusive options exist and have not questioned the placement.`,
     question: `Which of the following best describes the BCBA's ethical obligation?`,
     choices: [
@@ -485,6 +511,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.12",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: `A BCBA is working with a family from a Southeast Asian cultural background. The family's approach to discipline involves practices that differ significantly from the reinforcement-based strategies recommended in the client's behavior intervention plan. The parents express that they are uncomfortable with the BIP because it conflicts with their cultural values about child-rearing.`,
     question: `Which of the following best describes the BCBA's ethical obligation?`,
     choices: [
@@ -502,6 +529,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.12",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: `A BCBA is conducting a functional behavior assessment for a 5-year-old client whose family recently immigrated from West Africa. During the assessment, the BCBA observes behaviors that she initially interprets as attention-maintained. However, after speaking with a cultural consultant, the BCBA learns that several of the behaviors are consistent with culturally normative practices in the family's community.`,
     question: `Which of the following best describes the most appropriate action?`,
     choices: [
@@ -519,6 +547,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.12",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: `A BCBA is working with a client whose family holds strong religious beliefs that include a prohibition on certain types of physical contact between unrelated adults and children of the opposite sex. The BCBA's standard prompting procedures involve hand-over-hand physical guidance. The family requests that the BCBA modify the prompting procedures to avoid physical contact.`,
     question: `Which of the following is the most appropriate response?`,
     choices: [
@@ -536,6 +565,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.12",
     difficulty: "medium",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is supervising an RBT who frequently uses culturally specific idioms and humor during sessions with a client from a different cultural background. The client appears confused by some of the RBT's communication, and the BCBA has observed that the client's engagement decreases during these interactions.`,
     question: `Which of the following is the most appropriate supervisory response?`,
     choices: [
@@ -553,6 +583,7 @@ export const tier6Pool_E_expanded: Question[] = [
     domain: "E",
     taskItem: "E.12",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: `A BCBA is developing treatment goals for a client from a collectivist cultural background. The family emphasizes interdependence, family harmony, and group participation as core values. The BCBA's standard goal-setting framework focuses primarily on individual independence and self-sufficiency.`,
     question: `Which of the following best describes the culturally responsive approach to goal development?`,
     choices: [

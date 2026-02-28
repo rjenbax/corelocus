@@ -15,6 +15,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "A",
     rationale: `A is correct. Radical behaviorism objects to mentalistic explanations not because private events are denied, but because invoking an unobservable construct ('low frustration tolerance') as the cause of behavior without identifying its own environmental determinants creates a circular explanation that cannot be tested or used to guide intervention. The construct explains nothing — it merely redescribes the behavior. B is incorrect and reflects a common misconception: radical behaviorism does not exclude private events from analysis. Skinner explicitly included thoughts and feelings as legitimate subjects of study — they are behavior, not causes of behavior. C is incorrect because parsimony in behavior analysis means preferring behavioral explanations over mentalistic ones, not preferring neurological explanations over psychological ones. D is incorrect because the objection is philosophical, not procedural — the Ethics Code does not prohibit psychological explanations; the objection is that such explanations lack explanatory power.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-1",
   },
   {
@@ -31,6 +32,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "A",
     rationale: `A is correct. Determinism in behavior analysis holds that all behavior, including what we colloquially call 'choice,' is caused by identifiable antecedent and consequent variables. Framing behavior as a 'choice' or 'decision' implies an autonomous internal agent that initiates behavior independent of environmental history, which is incompatible with the deterministic foundation of the science. The practical problem is that it directs attention away from the modifiable variables (EOs, SDs, reinforcement history) that the BCBA can actually change. B is incorrect and reflects methodological behaviorism, not radical behaviorism — radical behaviorism does study private events including choice behavior, but treats them as behavior to be explained, not as explanatory causes. C is incorrect because attributing behavior to a diagnosis is itself a form of circular mentalistic explanation — the diagnosis is a label for a pattern of behavior, not a cause of it. D is incorrect because the issue is not language style or Ethics Code compliance; it is the underlying philosophical assumption that behavior is caused by internal autonomous decisions.`,
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "A-1",
   },
   {
@@ -47,6 +49,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "D",
     rationale: `D is correct. This is the defining distinction between the two schools. Watson's methodological behaviorism excluded private events from scientific study because they are not publicly observable and therefore cannot be verified by independent observers. Skinner's radical behaviorism took a different position: private events (thoughts, feelings, covert behavior) are real — they are behavior occurring 'under the skin' — and they are subject to the same principles of operant and respondent conditioning as overt behavior. However, they are not explanatory causes; they are part of the causal chain to be explained, not the explanation itself. A is incorrect because methodological behaviorism explicitly excluded private events from scientific analysis. B is incorrect and represents a common mischaracterization of radical behaviorism — Skinner did not deny the existence of private events; he denied that they are autonomous causes of behavior. C is incorrect because CBT treats cognitions as mediating causes of behavior, while radical behaviorism treats private events as behavior that itself requires environmental explanation — a fundamentally different causal model.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-2",
   },
   {
@@ -63,6 +66,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "A",
     rationale: `A is correct. Parsimony in behavior analysis means preferring the explanation that accounts for the data using the fewest and most directly observable variables. The data here — behavior occurring during non-preferred tasks, history of escape to sensory room — is fully accounted for by a negative reinforcement function (escape from non-preferred tasks). Invoking an unobservable 'sensory need' adds an explanatory layer that is not required by the data and that cannot be directly measured or manipulated. This is the core behavior-analytic objection to sensory explanations: they are not parsimonious when a functional explanation fits the data. B is incorrect because generality is a dimension of ABA research design, not a criterion for evaluating the validity of a functional explanation in a single case. C is incorrect because empiricism in behavior analysis means relying on direct observation and measurement of behavior and environment — it does not require neurological measurement. D is incorrect because the applied dimension refers to the social significance of the target behavior, not to whether the explanation is medical or behavioral.`,
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "A-3",
   },
   {
@@ -79,6 +83,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "D",
     rationale: `D is correct. The analytic dimension of ABA requires that the practitioner or researcher demonstrate a functional relationship between the independent variable (the intervention) and the dependent variable (the behavior). An A-B design cannot establish this because there is no experimental control — the behavior change in the B phase could be due to maturation, history, regression to the mean, or any number of concurrent events. Demonstrating experimental control requires at minimum a withdrawal (A-B-A or A-B-A-B) or a multiple baseline design that rules out these alternative explanations. A is incorrect because token economies are conceptually grounded in operant conditioning principles (conditioned reinforcement, token as generalized conditioned reinforcer) and are not derived from cognitive theory. C is incorrect because the technological dimension refers to the clarity and replicability of the procedural description, not to the experimental design used to evaluate the intervention. B is incorrect because the effective dimension refers to whether the behavior change is practically significant, which is a separate question from whether a functional relationship was demonstrated.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-4",
   },
   {
@@ -95,6 +100,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "D",
     rationale: `D is correct. The generality dimension of ABA (one of Baer, Wolf, and Risley's seven dimensions) requires that behavior change persist over time, appear in a variety of environments, and spread to a variety of related behaviors. An intervention that reduces aggression only in the residential setting has not demonstrated generality — the behavior change is setting-specific and does not represent a meaningful improvement in the client's overall functioning across the relevant contexts of their life. The BCBA's recommendation reflects this dimension directly. A is incorrect because the applied dimension refers to the social significance of the target behavior itself, not to the breadth of settings in which it is addressed. The aggression in the day program is indeed socially significant, but the BCBA's argument is about generality, not about identifying a new target. B is incorrect because the effective dimension refers to the magnitude of change within a setting, not to the breadth of settings. C is incorrect because the conceptually systematic dimension refers to the theoretical grounding of the procedures used, not to consistency across settings.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-5",
   },
   {
@@ -111,6 +117,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "C",
     rationale: `C is correct. Skinner explicitly addressed the free will objection in 'Beyond Freedom and Dignity' and elsewhere. The behavior-analytic position is that determinism is not a denial of human dignity — it is actually an optimistic position because it means that behavior is caused by identifiable and modifiable variables. If a person's aggression is caused by a history of intermittent reinforcement and current establishing operations, those variables can be changed. The alternative — that behavior is caused by an autonomous inner agent — is actually less hopeful because it implies the behavior cannot be changed by environmental manipulation. A is incorrect because radical behaviorism applies the deterministic framework to all behavior, including complex verbal and social behavior — Skinner's 'Verbal Behavior' is an explicit application of operant principles to language. B is incorrect because behavior analysts do not remain agnostic about determinism — it is a foundational philosophical commitment of the science, not merely a pragmatic assumption. D is incorrect because Skinner did use 'freedom' in a specific sense (behavior free from aversive control), but this is not the same as validating the concept of free will as an autonomous causal agent.`,
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "A-1",
   },
   {
@@ -127,6 +134,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "D",
     rationale: `D is correct. Describing behavior as 'purposeful' or 'goal-directed' implies that the future outcome (getting attention, avoiding work) is the cause of the present behavior — this is a teleological explanation. Behavior analysis uses a selectionist account: behavior is selected by its past consequences, not pulled forward by future goals. The practical significance is that teleological framing can lead to interventions that target the student's 'intentions' or 'goals' rather than the maintaining contingencies. For example, if the behavior is 'purposeful avoidance,' the intervention might focus on motivation or attitude rather than on the escape function and the antecedent task demands. A is incorrect because the concern is philosophical and clinical, not about Ethics Code language requirements — the Ethics Code does not prohibit describing behavior functions in terms of wants or goals. C is incorrect because the language does not imply a cognitive deficit; it implies intentionality, which is a different philosophical issue. B is incorrect because the philosophical framing of an FBA report does have practical impact — it shapes how staff understand the behavior and what interventions they consider appropriate.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-2",
   },
   {
@@ -143,6 +151,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "C",
     rationale: `C is correct. This is a fundamental distinction in scientific reasoning: demonstrating that an intervention works does not establish the cause of the problem the intervention addresses. The fact that reinforcement training improves social initiations demonstrates a functional relationship between the training and the behavior change — it does not demonstrate that the original deficit was caused by a lack of reinforcement history. The deficit could have multiple causes (neurological, genetic, environmental) and the intervention may work regardless of the original cause. This is the analytic dimension applied to causal inference: the study demonstrates experimental control over the behavior change, not over the etiology of the deficit. A is incorrect because empiricism in behavior analysis does not require randomized controlled trials — single-subject designs are the primary methodology of ABA and can demonstrate functional relationships. B is incorrect because parsimony applies to choosing between competing explanations for the same data, not to inferring etiology from treatment response. D is incorrect because the technological dimension refers to procedural description, not to the scope of causal claims that can be made.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-3",
   },
   {
@@ -159,6 +168,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "B",
     rationale: `B is correct. Empiricism — the commitment to basing practice on direct observation and controlled scientific evidence — is the principle that guides the BCBA's evaluation. The controlled research on facilitated communication (using message-passing experiments where the facilitator and client have access to different information) consistently shows that the communication reflects the facilitator's knowledge, not the client's. Testimonials and anecdotal reports are not controlled evidence and are subject to confirmation bias, expectation effects, and the ideomotor effect. The BCBA's obligation is to recommend interventions supported by scientific evidence, not by testimonials. A is incorrect because social validity is an important consideration in ABA, but it does not override the requirement to use evidence-based interventions — parents' preferences cannot validate an intervention that controlled research has shown to be invalid. C is incorrect because parsimony means preferring the simplest explanation consistent with all the data, including the controlled research — the simplest explanation consistent with the controlled research is that the facilitator is producing the communication. D is incorrect because the behavioral dimension refers to the measurability of the target behavior, not to the validity of the intervention — the fact that typing is observable does not make facilitated communication a valid intervention.`,
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "A-4",
   },
   {
@@ -175,6 +185,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "C",
     rationale: `C is correct. The parent advocate's question has two components: (1) will it last and transfer to other settings? — this is the generality dimension, which requires that behavior change be demonstrated across time, settings, and people; and (2) will it make a practical difference in the client's daily life? — this is the effective dimension, which requires that the behavior change be of sufficient magnitude to be practically meaningful. The BCBA's acknowledgment that generalization has not been assessed is a direct admission that the generality dimension has not yet been satisfied. A is incorrect because the applied dimension (social significance of the target behavior) and the behavioral dimension (measurability) were both satisfied during the intervention — toileting is socially significant and was measured. The parent advocate is not questioning these. B is incorrect because the conceptually systematic dimension (theoretical grounding of procedures) is not what the parent is asking about. D is incorrect because the analytic dimension (demonstration of functional relationship) was addressed by the experimental design used during training, and the technological dimension (procedural replicability) is a separate question from whether the behavior will generalize.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-5",
   },
   {
@@ -191,6 +202,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "B",
     rationale: `B is correct. Parsimony is the most directly relevant principle here. The behavioral data — aggression occurring exclusively in the context of denied requests with a documented history of reinforcement by access to preferred items — provides a complete, parsimonious, and testable account of the behavior. Invoking 'impulse control disorder' as the cause adds an explanatory layer that is not required by the data and that cannot be directly manipulated. The behavior-analytic account is more parsimonious because it identifies the specific environmental variables (antecedents and consequences) that can be directly modified to change the behavior. A is incorrect because while least restrictive treatment is an important ethical principle, it is not the philosophical principle most directly relevant to the BCBA's objection to the diagnostic explanation. The BCBA's concern is about the explanatory adequacy of the diagnosis, not primarily about treatment restrictiveness. C is incorrect because the BCBA's objection is not that the diagnosis is unmeasurable — it is that the diagnosis is an unnecessary and circular explanation given the available behavioral data. D is incorrect because the applied dimension refers to the social significance of target behaviors, not to the scope of the BCBA's role in multidisciplinary settings.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-1",
   },
   {
@@ -207,6 +219,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "A",
     rationale: `A is correct. This is a precise statement of Skinner's position in 'About Behaviorism' and elsewhere. Radical behaviorism does not deny the existence of private events — it acknowledges that people have inner experiences (thoughts, feelings, emotions) and that these are real behavioral events. The key points are: (1) they are behavior, not causes of behavior; (2) they are subject to the same principles of learning as overt behavior; and (3) they must themselves be explained by their environmental determinants. The radical behaviorist asks: what in the person's history caused them to feel anxious? — not: why did the anxiety cause the behavior? B is incorrect because radical behaviorism does not reduce behavior to neural events — Skinner explicitly rejected neurological reductionism, arguing that behavioral explanations at the level of the organism are complete and valid without reference to underlying physiology. C is incorrect because this describes a position closer to eliminative materialism — Skinner did not deny the existence of private events; he denied that they are autonomous causes of overt behavior. D is incorrect because this describes Watson's methodological behaviorism, which Skinner explicitly distinguished his position from — the defining feature of radical behaviorism is precisely that it includes private events in the subject matter of the science.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-2",
   },
   {
@@ -223,6 +236,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "B",
     rationale: `B is correct. The technological dimension of ABA requires that procedures be described with sufficient clarity and detail that a trained practitioner could implement them consistently without additional guidance from the author. The deficiencies identified — no rationale for the interval length, no specification of what behaviors qualify for reinforcement, no schedule for interval thinning — all represent failures of technological adequacy. A practitioner implementing this plan would have to make arbitrary decisions about each of these parameters, leading to inconsistent implementation and potentially ineffective or harmful outcomes. A is incorrect because the conceptually systematic dimension refers to whether the procedures are grounded in established behavioral principles — DRO is clearly grounded in differential reinforcement, so this dimension is not the primary concern. C is incorrect because the analytic dimension refers to the demonstration of experimental control, not to the presence of a data collection system — though data collection is necessary for the analytic dimension, the specific deficiencies described are about procedural specification, not experimental design. D is incorrect because the applied dimension refers to the social significance of the target behavior (aggression reduction is clearly socially significant), not to the procedural adequacy of the intervention.`,
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "A-5",
   },
   {
@@ -239,6 +253,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "B",
     rationale: `B is correct. Empiricism — the commitment to basing practice decisions on direct observation and controlled scientific evidence — is the principle that most directly guides the evaluation of interventions. The previous interventions (sensory integration, dietary modification, social stories) share a common characteristic: they are not supported by controlled scientific evidence for self-injurious behavior maintained by operant functions. The family's experience with them is consistent with the research literature. The BCBA's role is to explain that the standard for evaluating interventions is controlled evidence, not theoretical plausibility or testimonials, and to apply this standard to any future intervention the family is considering. A is incorrect because while social validity is important, it is not the principle that explains why the previous interventions failed or how to evaluate future ones. C is incorrect because parsimony refers to choosing the simplest explanation that fits the data, not to recommending the simplest intervention — and extinction without a functional analysis would be inappropriate for severe SIB. D is incorrect because while the effective dimension requires clinically meaningful change, the specific criterion of 'three published studies' is not a formal standard in ABA — the principle being applied is empiricism, not a specific publication threshold.`,
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "A-3",
   },
   {
@@ -255,6 +270,7 @@ export const tier6Pool_A: Question[] = [
     correctAnswer: "C",
     rationale: `C is correct. The effective dimension of ABA requires that behavior change be of sufficient magnitude to make a practical difference — this is the distinction between statistical or experimental significance and clinical or practical significance. The A-B-A-B design successfully demonstrated experimental control (the analytic dimension is satisfied), but a 12% increase in on-task behavior may not represent a meaningful improvement in the student's academic performance, social functioning, or quality of life. The BCBA's concern is that the authors conflated demonstrating a functional relationship with demonstrating a successful outcome — these are separate standards. A is incorrect because the A-B-A-B design does demonstrate a functional relationship — the analytic dimension is satisfied by the reversal design. The concern is not about whether the relationship is real, but about whether the magnitude of change is meaningful. B is incorrect because the conceptually systematic dimension refers to whether the procedures are grounded in behavioral principles, not to whether the effect size is large enough. D is incorrect because the generality dimension refers to the breadth of the behavior change across settings and time — while this is a valid concern, the BCBA's specific concern about the 12% improvement is about practical significance, which is the effective dimension.`,
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "A-4",
   },
 ];

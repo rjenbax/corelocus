@@ -14,6 +14,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.20",
     rationale: "Choice B is correct. DRO (differential reinforcement of other behavior) delivers reinforcement at the end of a specified interval during which the target behavior did not occur. The reinforcer is contingent on the absence of the target behavior — any other behavior may occur during the interval. Choice A describes DRI (differential reinforcement of incompatible behavior). Choice C describes a fixed ratio schedule with no differential contingency. Choice D describes DRA (differential reinforcement of alternative behavior) based on function."
   },
@@ -30,6 +31,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.20",
     rationale: "Choice B is correct. DRA provides the learner with a functional communication response that serves the same purpose as the problem behavior (in this case, escaping demands). This reduces the motivation to engage in SIB because the alternative behavior is more efficient and produces the same reinforcer. DRA also reduces the risk of extinction bursts compared to extinction alone because the learner is not left without a way to access the reinforcer. Choice A is incorrect — DRA does not automatically eliminate SIB without an extinction component. Choice C is incorrect — the advantage of DRA is functional equivalence, not simply the type of reinforcement. Choice D is incorrect — DRA is often combined with other components and is not the only evidence-based approach."
   },
@@ -46,6 +48,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "easy",
+    bloomsLevel: "comprehension",
     taskItem: "B.20",
     rationale: "Choice B is correct. In DRI, the alternative behavior must be physically incompatible with the target behavior — both behaviors cannot occur at the same time. Raising a hand and waiting quietly is physically incompatible with interrupting (speaking out of turn), because a child cannot simultaneously raise a hand silently and interrupt verbally. Choice A is incorrect — topographical similarity is not a criterion for DRI; incompatibility is. Choice C accurately notes that the reinforcer should match, but this alone does not define the incompatibility requirement of DRI. Choice D is incorrect — the defining feature of DRI is incompatibility, not whether the behavior is already in repertoire."
   },
@@ -62,6 +65,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "B.20",
     rationale: "Choice A is correct. When a learner is consistently meeting the DRO criterion (e.g., 80% or more of intervals are reinforced), the interval should be gradually increased to thin the schedule of reinforcement. Moving from 5 minutes to 7 minutes is a reasonable incremental increase. Choice B is incorrect — decreasing the interval would make the criterion easier, which is appropriate when the learner is struggling, not when they are succeeding. Choice C is incorrect — a 70% reduction in rate is significant progress; switching procedures is not indicated. Choice D is incorrect — abruptly removing the DRO without a systematic thinning plan risks rapid return to baseline rates."
   },
@@ -78,6 +82,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.19",
     rationale: "Choice C is correct. An extinction burst is a temporary increase in the frequency, duration, or intensity of a behavior when extinction is first implemented. This is a well-documented and expected phenomenon when extinction is applied to previously reinforced behavior. The increase typically subsides as the behavior is no longer reinforced. Choice A is incorrect — behavioral contrast involves a change in behavior in one setting when reinforcement conditions change in another setting. Choice B is incorrect — resurgence refers to the reappearance of a previously extinguished behavior when a more recently reinforced behavior is placed on extinction. Choice D is incorrect — spontaneous recovery refers to the temporary reappearance of an extinguished behavior after a rest period, not an increase during active extinction."
   },
@@ -94,6 +99,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.19",
     rationale: "Choice C is correct. Spontaneous recovery is the temporary reappearance of a previously extinguished behavior after a rest period (a period during which the behavior has not occurred and extinction has not been actively applied). The school break represents a rest period, and the reappearance of aggression on the first day back is consistent with spontaneous recovery. The BCBA should continue extinction and expect the behavior to extinguish again. Choice A is incorrect — an extinction burst occurs at the beginning of extinction, not after a rest period. Choice B is incorrect — resurgence occurs when a more recently reinforced behavior is placed on extinction, causing a previously extinguished behavior to reappear. Choice D is incorrect — behavioral contrast involves changes in behavior in one setting due to reinforcement changes in another setting."
   },
@@ -110,6 +116,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.24",
     rationale: "Choice B is correct. Resurgence occurs when a previously extinguished behavior reappears when a more recently reinforced behavior is placed on extinction. In this case, the SIB was previously extinguished, and when the new intervention placed the more recently reinforced behavior on extinction (or reduced its reinforcement), the SIB resurged. This is a well-documented phenomenon in behavior analysis and has important clinical implications for intervention planning. Choice A is incorrect — spontaneous recovery occurs after a rest period without any change in contingencies, not in response to a new intervention. Choice C is incorrect — an extinction burst is a temporary increase at the beginning of extinction, not a return to baseline rates months later. Choice D is incorrect — behavioral contrast involves changes in behavior in one setting due to reinforcement changes in another setting."
   },
@@ -126,6 +133,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.23",
     rationale: "Choice C is correct. Behavioral contrast occurs when a change in the reinforcement rate in one setting produces a change in behavior in the opposite direction in another setting. The high rate of attention (reinforcement) at home has produced a contrast effect at school, where the low rate of attention results in an increase in attention-seeking disruptive behavior. This is a clinically important phenomenon because interventions in one setting can inadvertently affect behavior in other settings. Choice A is incorrect — resurgence requires a previously extinguished behavior to reappear when a more recently reinforced behavior is placed on extinction. Choice B is incorrect — spontaneous recovery occurs after a rest period. Choice D is incorrect — there is no indication that the teacher has implemented extinction."
   },
@@ -142,6 +150,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.21",
     rationale: "Choice A is correct. Shaping involves the differential reinforcement of successive approximations toward a terminal behavior. In this context, the BCBA reinforces the child for completing increasingly longer work periods (successive approximations toward the terminal behavior of tolerating the full work period), while placing shorter work periods on extinction as the criterion is raised. Choice B describes prompt fading, not shaping. Choice C is incorrect — starting with the full work period would not be shaping; it would require the terminal behavior from the first session. Choice D describes a token economy, which is a reinforcement delivery system, not a shaping procedure."
   },
@@ -158,6 +167,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.21",
     rationale: "Choice B is correct. If the criterion is raised too quickly during shaping, the child may not be able to meet the new criterion, and the previously reinforced approximation is placed on extinction. This can result in the extinction of the behavior altogether — a phenomenon sometimes called 'losing the behavior.' The BCBA must raise criteria gradually and systematically to avoid this outcome. Choice A is incorrect — reinforcer satiation is a concern but is not the primary risk of raising criteria too quickly. Choice C is incorrect — premature generalization is not a typical consequence of rapid criterion changes in shaping. Choice D is incorrect — stimulus overselectivity is a separate phenomenon not directly related to shaping criterion changes."
   },
@@ -174,6 +184,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "easy",
+    bloomsLevel: "comprehension",
     taskItem: "B.22",
     rationale: "Choice B is correct. In backward chaining, the last step is taught first. Because the last step immediately precedes the terminal reinforcer (completing the routine), the learner contacts the conditioned reinforcer on every trial from the very first session. This maximizes the motivating value of the chain's completion and may facilitate faster acquisition. Choice A describes total task chaining, not backward chaining. Choice C is incorrect — backward chaining is not universally faster; its advantage is early reinforcement contact, not fewer steps. Choice D is incorrect — backward chaining still requires prompting on steps not yet mastered."
   },
@@ -190,6 +201,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.22",
     rationale: "Choice A is correct. In forward chaining, the instructor completes all steps beyond the current training step for the learner. This ensures the chain is completed on every trial and the terminal reinforcer is delivered, maintaining the motivating value of the chain. The learner performs steps 1–4 independently, receives instruction on step 5, and the instructor completes steps 6–10. Choice B is incorrect — skipping steps would prevent the learner from experiencing the complete chain. Choice C is incorrect — requiring independent attempts on unlearned steps without prompting would result in errors and is not consistent with forward chaining. Choice D is incorrect — full physical prompting for all remaining steps simultaneously is not the standard forward chaining protocol."
   },
@@ -206,6 +218,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.13",
     rationale: "Choice C is correct. Variable interval (VI) schedules produce a moderate, steady response rate with no post-reinforcement pause. Because the time until the next reinforcer is unpredictable, the learner maintains a consistent moderate rate of responding. Choice A describes the pattern for fixed ratio (FR) schedules. Choice B is incorrect — VI schedules produce moderate rates, not low rates. Choice D describes the scallop pattern characteristic of fixed interval (FI) schedules."
   },
@@ -222,6 +235,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.13",
     rationale: "Choice B is correct. Fixed interval (FI) schedules produce a characteristic scallop pattern — low responding early in the interval followed by an acceleration in responding as the end of the interval approaches. This pattern occurs because only the first response after the interval has elapsed is reinforced, so responding early in the interval has no effect on reinforcement delivery. Choice A describes the post-reinforcement pause pattern of fixed ratio schedules. Choice C describes variable interval schedules. Choice D describes variable ratio schedules."
   },
@@ -238,6 +252,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.13",
     rationale: "Choice B is correct. In variable ratio schedules, the number of responses required for reinforcement varies unpredictably. Because the learner cannot predict when the next reinforcer will be available, there is no discriminative stimulus signaling that a pause is 'safe' (as there is immediately after reinforcement in a fixed ratio schedule). This eliminates the post-reinforcement pause and produces high, steady responding. Choice A is incorrect — VR schedules do not necessarily deliver reinforcement more frequently; the ratio value determines frequency. Choice C is incorrect — the type of reinforcer is not what distinguishes VR from FR schedules. Choice D is incorrect — schedule predictability, not ease of understanding, determines the response pattern."
   },
@@ -254,6 +269,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.11",
     rationale: "Choice A is correct. Stimulus discrimination training requires presenting the SD (red) and the SΔ (blue) simultaneously and differentially reinforcing responses to the SD while placing responses to the SΔ on extinction. This differential reinforcement in the presence of both stimuli is the defining feature of discrimination training. Choice B is incorrect — presenting only the SD does not establish discrimination; the child must learn to respond differently in the presence of the SΔ. Choice C describes errorless learning, which is a prompting strategy, not discrimination training per se. Choice D describes generalization training, not discrimination training."
   },
@@ -270,6 +286,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.11",
     rationale: "Choice B is correct. Stimulus generalization occurs when a response trained in the presence of one stimulus also occurs in the presence of other stimuli that share similar properties. The child's mand 'cookie' was trained in the presence of cookies but has generalized to all food items, which share the property of being edible. This is an example of overgeneralization that needs to be addressed through discrimination training. Choice A is incorrect — stimulus discrimination would predict that the child requests 'cookie' only for cookies, not for all food items. Choice C is incorrect — response generalization refers to the occurrence of untrained response topographies, not the same response to different stimuli. Choice D is incorrect — behavioral contrast involves changes in behavior across settings."
   },
@@ -286,6 +303,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.11",
     rationale: "Choice C is correct. Stimulus generalization occurs when a response trained in the presence of one stimulus (the hallway) also occurs in the presence of other stimuli with similar properties (cafeteria, gym, library) without additional training. This is the desired outcome of generalization programming. Choice A is incorrect — stimulus discrimination would predict that the student greets only in the hallway and not in other settings. Choice B is incorrect — response generalization refers to the occurrence of untrained response topographies (e.g., waving instead of saying 'Hi'), not the same response in new settings. Choice D is incorrect — behavioral contrast would predict a decrease in behavior in one setting when reinforcement increases in another."
   },
@@ -302,6 +320,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.11",
     rationale: "Choice A is correct. Stimulus discrimination training involves presenting the SD (cookie picture) and the SΔ (juice picture) and differentially reinforcing responses to the SD while placing responses to the SΔ on extinction. This differential reinforcement in the presence of both stimuli simultaneously is the defining feature of discrimination training. Choice B is incorrect — presenting only the SD does not establish discrimination. Choice C is incorrect — reinforcing all exchanges equally would not establish a discrimination. Choice D is incorrect — alternating sessions does not provide the simultaneous discrimination training needed to establish differential responding."
   },
@@ -318,6 +337,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.11",
     rationale: "Choice A is correct. Multiple exemplar training (MET) is the most direct strategy for broadening stimulus control. By training with multiple conversation partners who use varied, unpredictable responses, the BCBA ensures that the student's conversation initiation is controlled by the relevant features of social conversation stimuli, not just the specific script and predictable responses. Choice B is incorrect — backward chaining is a strategy for sequential behaviors, not for addressing narrow stimulus control. Choice C is incorrect — shaping is used to develop new behaviors, not to address stimulus control problems directly. Choice D is incorrect — a fixed ratio schedule addresses reinforcement density, not stimulus control breadth."
   },
@@ -334,6 +354,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.1",
     rationale: "Choice A is correct. Manding is controlled by motivating operations (MOs), specifically establishing operations (EOs) that increase the reinforcing value of the item and evoke the mand. When the child is in a state of deprivation for the toy (the EO), the value of the toy as a reinforcer increases, and the mand is evoked. Teaching the child to mand in the absence of the item requires establishing the EO (deprivation) as the controlling variable, not the presence of the item. Choice B is incorrect — the SD signals that a response will be reinforced, but manding is primarily controlled by MOs, not SDs. Choice C is incorrect — conditioned reinforcers maintain behavior but do not evoke manding. Choice D is incorrect — the absence of the item is an EO (establishing operation), not a punishing stimulus."
   },
@@ -350,6 +371,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.2",
     rationale: "Choice B is correct. Tacting is controlled by a nonverbal discriminative stimulus — the presence of the object, event, or property that the tact names. The tact 'dog' is evoked by the presence of a dog (or its representation). The child's narrow stimulus control (only the picture) indicates that the tact has not yet generalized to other representations of dogs, which is a stimulus generalization issue. Choice A is incorrect — MOs control manding, not tacting. Tacting is maintained by generalized conditioned reinforcement (social praise), not by specific MOs. Choice C is incorrect — while verbal cues can prompt tacting, the controlling variable for a pure tact is the nonverbal SD. Choice D is incorrect — conditioned reinforcers maintain behavior but are not the controlling variable (antecedent) for tacting."
   },
@@ -366,6 +388,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.2",
     rationale: "Choice C is correct. Intraverbal behavior is controlled by a verbal discriminative stimulus — a prior verbal stimulus (e.g., 'What do you like to eat?') that does not have point-to-point correspondence with the response (e.g., 'pizza'). The response is not a direct echo or copy of the verbal stimulus, which distinguishes intraverbals from echoics. Choice A is incorrect — nonverbal SDs control tacting, not intraverbals. Choice B is incorrect — MOs control manding. While motivation may affect response probability, the controlling variable (antecedent) for intraverbal behavior is the verbal SD. Choice D is incorrect — conditioned reinforcers maintain behavior but are not the controlling antecedent variable."
   },
@@ -382,6 +405,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.2",
     rationale: "Choice B is correct. Textual behavior is controlled by a written text discriminative stimulus — the presence of written words evokes the verbal response of reading aloud. The child's narrow stimulus control (only the book) indicates that the textual behavior has not yet generalized to other presentations of the same written words. Choice A is incorrect — verbal SDs control intraverbal behavior, not textual behavior. Choice C is incorrect — MOs control manding. Choice D is incorrect — conditioned reinforcers maintain behavior but are not the controlling antecedent variable for textual behavior."
   },
@@ -398,6 +422,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.2",
     rationale: "Choice C is correct. Listener behavior (following instructions) is controlled by a verbal discriminative stimulus — the verbal instruction from another person evokes the nonverbal response of following the instruction. The instruction 'put the red block on the blue mat' is a verbal SD that evokes the corresponding nonverbal behavior. Choice A is incorrect — MOs affect the probability of manding but are not the primary controlling variable for listener behavior. Choice B is incorrect — while nonverbal stimuli may be involved in the response (e.g., the block and mat), the controlling antecedent is the verbal instruction. Choice D is incorrect — conditioned reinforcers maintain behavior but are not the controlling antecedent."
   },
@@ -414,6 +439,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "hard",
+    bloomsLevel: "comprehension",
     taskItem: "B.3",
     rationale: "Choice B is correct. NCR reduces behavior by abolishing the establishing operation (EO) for the maintaining reinforcer. In this case, providing scheduled breaks every 10 minutes abolishes the EO for escape (the child is not deprived of escape because breaks are freely available), thereby reducing the motivation to elope. The behavior is not reinforced (no contingency), but the EO is abolished. Choice A is incorrect — NCR does not provide a competing reinforcer; it provides the maintaining reinforcer noncontingently. Choice C describes DRO, not NCR. Choice D is incorrect — NCR does not teach the child that elopement will not be reinforced; it reduces the motivation to elope by abolishing the EO."
   },
@@ -430,6 +456,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.3",
     rationale: "Choice B is correct. A primary limitation of NCR as a standalone intervention is that it does not teach the child an appropriate alternative behavior for accessing the maintaining reinforcer. When NCR is thinned (the schedule of noncontingent reinforcement is reduced), the EO for attention may re-establish, and the child may return to aggression because no alternative behavior has been taught. NCR is most effective when combined with functional communication training (FCT) or DRA. Choice A is incorrect — NCR does reduce the frequency of target behavior by abolishing the EO. Choice C is incorrect — attention can be delivered noncontingently. Choice D is incorrect — NCR has an evidence base for attention-maintained behavior."
   },
@@ -446,6 +473,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.7",
     rationale: "Choice A is correct. A token economy is a system in which conditioned reinforcers (tokens) are delivered contingent on target behaviors and can be exchanged for backup reinforcers (preferred items or activities). The tokens function as generalized conditioned reinforcers because they have been paired with multiple backup reinforcers. Choice B describes a response cost system, which is a component that can be added to a token economy but is not its defining feature. Choice C describes immediate tangible reinforcement, not a token economy. Choice D describes noncontingent reinforcement, not a token economy."
   },
@@ -462,6 +490,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "B",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.7",
     rationale: "Choice B is correct. The decrease in responding after token exchange is analogous to a post-reinforcement pause on a fixed ratio schedule. Decreasing the number of tokens required for exchange (reducing the ratio) would reduce the pause by making the next exchange opportunity closer. This is similar to thinning a fixed ratio schedule by reducing the ratio requirement. Choice A is incorrect — increasing the number of tokens required would increase the pause, not decrease it. Choice C is incorrect — switching to continuous reinforcement would not be practical in a classroom setting and would not address the underlying schedule effect. Choice D is incorrect — removing the token economy without a replacement plan risks loss of the behavior gains."
   },
@@ -478,6 +507,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.8",
     rationale: "Choice A is correct. Self-monitoring functions primarily by providing the learner with a discriminative stimulus (the self-monitoring cue) that signals the availability of reinforcement contingent on the target behavior. The act of monitoring one's own behavior increases the salience of the behavior-reinforcement contingency, which increases the probability of the target behavior. Choice B is incorrect — while awareness may be a component, the behavioral mechanism is the discriminative function of the self-monitoring cue, not a mentalistic concept of self-reinforcement. Choice C is incorrect — while self-monitoring data can inform schedule adjustments, this is not the primary behavioral mechanism. Choice D is incorrect — self-monitoring is not defined as a competing behavior in the DRI sense."
   },
@@ -494,6 +524,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.8",
     rationale: "Choice D is correct. This is a comprehensive self-management package that includes all four core components: goal setting (establishing the behavioral criterion), self-monitoring (recording behavior), self-evaluation (comparing performance to the goal), and self-reinforcement (delivering reinforcement when the goal is met). Self-management packages are used to promote independence and generalization of behavior change. Choice C is incorrect — a token economy involves an external agent delivering tokens; this package involves self-administration. Choice A is incorrect — a contingency contract is a written agreement between the learner and an external agent, not a self-management package. Choice B is incorrect — BST is a teaching strategy, not a self-management package."
   },
@@ -510,6 +541,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.3",
     rationale: "Choice D is correct. The visual schedule functions as an abolishing operation (AO) — it reduces the aversiveness (and therefore the reinforcing value of escape from) transitions by making them predictable and controllable. When transitions are unpredictable, the uncertainty itself is aversive and increases the EO for escape. The visual schedule abolishes this EO by providing predictability, reducing the motivation to engage in tantrum behavior. Choice C is incorrect — an SD signals reinforcement availability for a specific behavior; the visual schedule does not signal that tantrums will be reinforced. Choice A is incorrect — conditioned reinforcers are consequences, not antecedents that reduce aversiveness. Choice B is incorrect — the visual schedule reduces the aversiveness of transitions rather than signaling an aversive event."
   },
@@ -526,6 +558,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.3",
     rationale: "Choice D is correct. The first-then board functions as an abolishing operation (AO) — it reduces the aversiveness of the non-preferred task by making the preferred activity contingent and predictable. When the child knows that the preferred activity will be available after the non-preferred task, the motivation to escape the task (and therefore engage in aggression) is reduced. Choice C is incorrect — an EO increases the reinforcing value of a stimulus; the first-then board reduces the aversiveness of the non-preferred task. Choice A is incorrect — while the first-then board does signal the availability of the preferred activity, its primary mechanism is reducing the aversiveness of the non-preferred task, which is an AO function. Choice B is incorrect — the first-then board does not function as a punisher."
   },
@@ -542,6 +575,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.2",
     rationale: "Choice D is correct. PECS Phase III focuses on discrimination training — teaching the child to discriminate between pictures of different items to request the specific item they want. The child must select the correct picture from multiple options rather than exchanging any available picture. Choice A describes PECS Phase IV, which involves constructing a sentence strip. Choice C describes commenting, which is a later phase of PECS. Choice D describes responding to questions, which is also a later phase."
   },
@@ -558,6 +592,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.2",
     rationale: "Choice D is correct. The child is using the SGD to request preferred items, which is manding — verbal behavior controlled by a motivating operation (deprivation for the preferred item) and reinforced by access to that item. The child needs to develop tacting (labeling objects and events), intraverbal behavior (answering questions and engaging in conversational exchanges), and listener behavior (following instructions). Choice C is incorrect — tacting is controlled by a nonverbal SD (the object), not by a motivating operation. Choice A is incorrect — intraverbal behavior is controlled by a prior verbal stimulus. Choice B is incorrect — echoic behavior is controlled by a verbal model and requires point-to-point correspondence."
   },
@@ -574,6 +609,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.9",
     rationale: "Choice C is correct. In a least-to-most (LTM) prompting hierarchy, the therapist begins with the least intrusive prompt and increases to more intrusive prompts only if the learner does not respond correctly. A common LTM hierarchy is: verbal prompt → gestural prompt → model prompt → partial physical prompt → full physical prompt. The goal is to use the least amount of assistance necessary to evoke the correct response. Choice A describes the order for most-to-least (MTL) prompting, not LTM. Choice B moves in the correct direction but is incorrect in sequence — independent responding is the goal, not a prompt level. Choice D is incomplete and in the wrong order."
   },
@@ -590,6 +626,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.9",
     rationale: "Choice D is correct. The primary advantage of most-to-least (MTL) prompting is that it minimizes errors during acquisition by providing maximum support from the beginning. This is particularly advantageous for learners for whom errors are reinforcing or who have a history of error-related problem behavior. By starting with full support and fading gradually, the learner experiences success from the first trial. Choice C is incorrect — the rate of reinforcement depends on the learner's performance, not the prompting hierarchy. Choice A is incorrect — MTL prompting starts with the most intrusive prompt (full physical), not verbal prompts. Choice B is incorrect — MTL prompting is particularly suited for learners who benefit from errorless learning, not specifically those with strong verbal skills."
   },
@@ -606,6 +643,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.9",
     rationale: "Choice D is correct. In progressive time delay, the delay interval between the natural SD and the prompt is gradually increased over time (e.g., 0s → 2s → 4s → 6s). Initially, the prompt is delivered immediately (0-second delay), ensuring errorless responding. As the delay increases, the learner has the opportunity to respond before the prompt is delivered, transferring stimulus control from the prompt to the natural SD. Choice A describes constant time delay at 0 seconds, which is not progressive time delay. Choice A is incorrect — the delay is increased, not decreased. Choice D describes a variable time delay, not progressive time delay."
   },
@@ -622,6 +660,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.10",
     rationale: "Choice D is correct. Stimulus fading involves gradually changing a dimension of the stimulus itself (e.g., size, color, contrast, intensity) to transfer stimulus control from an exaggerated or highlighted version of the stimulus to the natural stimulus. In this case, the contrast of the word is gradually reduced until the word appears in standard text. This is distinct from prompt fading, which involves removing a separate prompt added to the stimulus. Choice A describes prompt fading, not stimulus fading. Choice C describes time delay prompting. Choice D describes distractor fading, which is a different procedure."
   },
@@ -638,6 +677,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.10",
     rationale: "Choice A is correct. Stimulus shaping involves gradually changing the topography (shape or form) of the stimulus from one form to another to transfer stimulus control. In this case, the stimulus is gradually morphed from an apple (a stimulus the child already responds to) to the letter 'A' (the target stimulus). This procedure transfers the child's existing response to the apple to the letter 'A' through gradual morphing. Choice B describes stimulus fading, which involves changing a dimension (e.g., intensity, color) rather than the topography. Choice C describes time delay prompting. Choice D describes distractor training."
   },
@@ -654,6 +694,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.8",
     rationale: "Choice A is correct. A contingency contract is a written agreement between the learner and an external agent (e.g., parent, teacher, BCBA) that specifies the behavior required and the reinforcement to be delivered contingent on that behavior. The written format makes the contingency explicit and provides a visual reminder of the agreement. Choice B describes a token economy. Choice C describes a self-management package. Choice D describes noncontingent reinforcement."
   },
@@ -670,6 +711,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.8",
     rationale: "Choice D is correct. Behavioral skills training (BST) consists of four components: (1) instructions — explaining the skill verbally or in writing; (2) modeling — demonstrating the skill; (3) rehearsal — having the learner practice the skill; and (4) feedback — providing corrective or positive feedback on the learner's performance. BST is an evidence-based approach for teaching a wide range of skills. Choice A describes a general behavior analytic process, not BST. Choice C describes a self-management package. Choice D describes a behavior intervention plan."
   },
@@ -686,6 +728,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.9",
     rationale: "Choice D is correct. Video modeling teaches new behavior through observational learning — the learner acquires new behaviors by watching a model perform them on video. The video serves as a model that demonstrates the target behavior, and the learner imitates the modeled behavior. Observational learning is a well-documented behavioral mechanism that does not require direct reinforcement of the learner's behavior during the observation phase. Choice C is incorrect — the video is not a discriminative stimulus in the traditional sense. Choice A is incorrect — the video is not a conditioned reinforcer. Choice B is incorrect — the video does not function as an abolishing operation."
   },
@@ -702,6 +745,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.9",
     rationale: "Choice D is correct. Social stories are antecedent-based interventions — they provide information and context before the social situation occurs, which alters the learner's behavior when the situation is encountered. The story functions as an antecedent that sets the occasion for appropriate social behavior. Choice C is incorrect — while the story describes positive outcomes, it is delivered before the behavior occurs (antecedent), not after (consequence). Choice A is incorrect — social stories are not punishment-based interventions. Choice B is incorrect — while the learner may read the story independently, this does not make it a self-management intervention in the behavioral sense."
   },
@@ -718,6 +762,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.21",
     rationale: "Choice D is correct. Graduated exposure is most closely related to shaping — the BCBA reinforces successive approximations toward the terminal behavior (tolerating the hearing aid for the full wearing period) while placing previous approximations on extinction as the criterion is raised. The gradual increase in proximity and duration represents successive approximations toward the terminal behavior. Choice C is incorrect — extinction alone would not teach the child to tolerate the hearing aid. Choice A is incorrect — chaining is used for sequential behaviors, not for graduated exposure to aversive stimuli. Choice B is incorrect — noncontingent reinforcement would not systematically build tolerance."
   },
@@ -734,6 +779,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "D",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.19",
     rationale: "Choice D is correct. RIRD reduces automatically reinforced SIB by interrupting the behavior before it can produce the automatic reinforcement that maintains it. By preventing the behavior from contacting its maintaining reinforcer, RIRD functions as a form of extinction for automatically reinforced behavior. The redirection component also provides an alternative activity that may compete with the SIB. Choice C is incorrect — RIRD does not provide a competing reinforcer; it interrupts the behavior. Choice A is incorrect — the redirection tasks are not intended to function as punishers. Choice D describes noncontingent reinforcement, not RIRD."
   },
@@ -750,6 +796,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "medium",
+    bloomsLevel: "comprehension",
     taskItem: "B.20",
     rationale: "Choice C is correct. FCT is effective because the alternative communication response (break request) is functionally equivalent to the problem behavior (elopement) — both produce the same reinforcer (escape from demands). The break request is also more efficient (requires less effort and produces the reinforcer more quickly) and more socially appropriate than elopement. When the alternative behavior is more efficient than the problem behavior, the problem behavior decreases. Choice B is incorrect — FCT alone does not place elopement on extinction; extinction is often combined with FCT but is not the mechanism of FCT itself. Choice D is incorrect — the picture card is not a discriminative stimulus for escape availability. Choice A is incorrect — while FCT may increase the child's sense of control, the behavioral mechanism is functional equivalence and efficiency."
   },
@@ -766,6 +813,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.16",
     rationale: "Choice C is correct. Response cost is a negative punishment procedure — a specified amount of a positive reinforcer (screen time) is removed contingent on the target behavior (property destruction). The removal of the positive reinforcer decreases the future probability of the target behavior. Choice A describes positive punishment (presentation of an aversive stimulus). Choice C describes extinction (withholding the maintaining reinforcer). Choice D describes negative reinforcement (removal of an aversive stimulus increases behavior)."
   },
@@ -782,6 +830,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "B.16",
     rationale: "Choice C is correct. Time-out from positive reinforcement is a negative punishment procedure — access to positive reinforcement (peer attention) is removed contingent on the target behavior (name-calling). The removal of access to positive reinforcement decreases the future probability of the target behavior. Choice B is incorrect — time-out is not the presentation of an aversive stimulus; it is the removal of access to positive reinforcement. Choice D is incorrect — extinction involves withholding the specific reinforcer maintaining the behavior; time-out removes access to all positive reinforcement in the environment. Choice A is incorrect — if the child is escaping from an aversive environment, time-out may function as negative reinforcement rather than punishment, which is a contraindication for using time-out."
   },
@@ -798,6 +847,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.17",
     rationale: "Choice C is correct. Before implementing any restrictive or aversive procedure, the BCBA must ensure that the procedure meets the least restrictive treatment principle, has been reviewed and approved by the treatment team and guardian, is consistent with ethical guidelines (BACB Ethics Code), and is implemented only when less restrictive alternatives have been tried and found ineffective. These ethical and procedural safeguards are the most important consideration. Choice B is incorrect — while functional effectiveness is important, ethical approval and least restrictive treatment considerations take precedence. Choice D is incorrect — implementation timing is a procedural detail, not the most important consideration. Choice A is incorrect — positive reinforcement-based interventions should be tried first, but the most important consideration before implementing restraint is the ethical and procedural requirements."
   },
@@ -814,6 +864,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.19",
     rationale: "Choice C is correct. Sensory extinction reduces automatically reinforced behavior by blocking the sensory consequences (automatic reinforcement) of the behavior. The helmet prevents the head-banging from producing the sensory stimulation that maintains it, thereby placing the behavior on extinction. Without the maintaining reinforcer, the behavior decreases. Choice A describes sensory reinforcement of a competing behavior, not sensory extinction. Choice D is incorrect — the helmet does not make head-banging physically impossible; it blocks the sensory consequences. Choice D describes noncontingent sensory reinforcement, not sensory extinction."
   },
@@ -830,6 +881,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "C",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.19",
     rationale: "Choice C is correct. A competing stimulus assessment identifies stimuli that produce sensory consequences similar to the automatically reinforced behavior (pica) and that the child will engage with instead of the pica. These stimuli can be provided noncontingently (as NCR) to reduce the EO for pica by providing the maintaining sensory stimulation through a safer alternative. Choice B is incorrect — competing stimuli are not backup reinforcers in a token economy. Choice D is incorrect — the assessment identifies competing stimuli, not discriminative stimuli for pica. Choice A is incorrect — competing stimuli are used as NCR, not as punishers."
   },
@@ -846,6 +898,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "B.3",
     rationale: "Choice A is correct. Behavioral momentum works by presenting a series of high-probability requests (requests the child complies with at a high rate) before the low-probability request. The high rate of reinforcement for complying with the high-probability requests increases the momentum of compliance behavior, making it more likely that the child will comply with the subsequent low-probability request. This is analogous to physical momentum — a behavior in motion tends to stay in motion. Choice B is incorrect — behavioral momentum does not place escape on extinction. Choice C is incorrect — providing a break before the demand would be NCR, not behavioral momentum. Choice D is incorrect — the high-probability requests are not discriminative stimuli for compliance in the traditional sense."
   },
@@ -862,6 +915,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.7",
     rationale: "Choice A is correct. An interdependent group contingency delivers reinforcement to the entire group based on the behavior of all group members meeting the criterion. In this case, the entire class earns free play only if no student engages in aggression — the group's reinforcement depends on every member's behavior. Choice D is incorrect — an independent group contingency delivers reinforcement to each student based on their own behavior, regardless of other students. Choice B is incorrect — a dependent group contingency delivers reinforcement to the entire group based on the behavior of one specific student (the 'hero'). Choice C is incorrect — the hero procedure is a type of dependent group contingency, not a separate category."
   },
@@ -878,6 +932,7 @@ export const tier6Pool_B_batch1: Question[] = [
     ],
     correctAnswer: "A",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "B.7",
     rationale: "Choice A is correct. This system is most closely related to a self-administered token economy — the child earns points (tokens) contingent on appropriate social behavior and exchanges them for backup reinforcers (preferred activities). The self-monitoring component adds a self-management element, but the core structure is a token economy. Choice B is incorrect — the points are contingent on behavior, not delivered on a fixed schedule. Choice C is incorrect — a contingency contract is a written agreement with an external agent, not a self-monitoring app. Choice D is incorrect — while the BCBA teaches the child to use the app, the intervention itself is a self-administered token economy."
   },

@@ -19,6 +19,7 @@ export const tier6Pool_D_easy: Question[] = [
     domain: "D",
     taskItem: "D-1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the purpose of experimental design to a supervisee. She explains that behavior analysts use single-subject experimental designs rather than group designs because they are interested in the behavior of individual clients.`,
     question: `What is the primary purpose of using a single-subject experimental design in applied behavior analysis?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_D_easy: Question[] = [
     domain: "D",
     taskItem: "D-2",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a research study that used a reversal design (ABAB). She explains to her supervisee that the reversal design is one of the most common single-subject designs used in behavior analysis.`,
     question: `What is the defining feature of a reversal (ABAB) design?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_D_easy: Question[] = [
     domain: "D",
     taskItem: "D-3",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of internal validity to a graduate student. She explains that internal validity is a key criterion for evaluating the quality of an experiment.`,
     question: `What does internal validity refer to in the context of single-subject experimental design?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_D_easy: Question[] = [
     domain: "D",
     taskItem: "D-4",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a study that used a multiple baseline design across three participants. The intervention was introduced to each participant at a different point in time, and behavior changed for each participant only after the intervention was introduced.`,
     question: `What is the primary advantage of a multiple baseline design over a reversal (ABAB) design?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_D_easy: Question[] = [
     domain: "D",
     taskItem: "D-5",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of a dependent variable to a new supervisee. She explains that the dependent variable is what is measured in an experiment.`,
     question: `In a behavior-analytic experiment, what is the dependent variable?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_D_easy: Question[] = [
     domain: "D",
     taskItem: "D-6",
     difficulty: "easy",
+    bloomsLevel: "analysis",
     scenario: `A BCBA is reviewing a graph and explaining the concept of visual analysis to a supervisee. She explains that behavior analysts use visual analysis rather than statistical analysis to evaluate the effects of interventions.`,
     question: `Which of the following is a key feature that behavior analysts examine when visually analyzing data within a phase?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_D_easy: Question[] = [
     domain: "D",
     taskItem: "D-7",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of replication to a supervisee. She explains that replication is essential for establishing confidence in the findings of a study and for building the science of behavior analysis.`,
     question: `What is the purpose of replication in single-subject research?`,
     choices: [

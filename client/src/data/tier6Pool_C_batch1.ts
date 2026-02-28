@@ -5,6 +5,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.3",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is designing a data collection system for a 6-year-old child who engages in hand-mouthing throughout the school day. The behavior occurs at a relatively consistent rate across the day. The BCBA wants to capture every instance of the behavior and measure how long each episode lasts.",
     question: "Which measurement system would be most appropriate for capturing both the frequency and duration of each hand-mouthing episode?",
     choices: [
@@ -21,6 +22,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.3",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is working with a school team to collect data on a student's on-task behavior during math instruction. The behavior is defined as 'eyes oriented toward the teacher or assigned work.' The team has limited time for data collection and can only dedicate one observer for 10-second intervals during a 30-minute math period.",
     question: "Which continuous measurement procedure would provide the most accurate estimate of the proportion of time the student is on-task during the math period?",
     choices: [
@@ -37,6 +39,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.3",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is designing a data collection system to measure the latency of a child's compliance with instructions. The child's teacher reports that the child often takes a long time to begin complying after an instruction is given, but once she starts, she completes the task quickly. The BCBA wants to measure the time between the instruction and the initiation of compliance.",
     question: "Which measurement dimension should the BCBA use to capture the time between the instruction and the initiation of compliance?",
     choices: [
@@ -53,6 +56,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.3",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is reviewing data on a client's self-injurious behavior (SIB). The data show that SIB occurs at a rate of 3 responses per minute during baseline. After implementing a DRO procedure, the rate drops to 0.5 responses per minute. The BCBA wants to calculate the percentage reduction in rate.",
     question: "Which of the following correctly calculates the percentage reduction in the rate of SIB from baseline to treatment?",
     choices: [
@@ -69,6 +73,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.3",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is training a new RBT to collect data on a client's vocal stereotypy. The behavior is defined as 'any non-contextual vocalization lasting at least 3 seconds.' The RBT will use a 10-second partial interval recording system during a 20-minute observation session.",
     question: "Which of the following best describes a limitation of using partial interval recording for this behavior?",
     choices: [
@@ -85,6 +90,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.3",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is reviewing data collected by two RBTs on a client's aggression. RBT 1 recorded 12 instances of aggression during a 30-minute session. RBT 2 recorded 8 instances during the same session. The BCBA wants to calculate the frequency IOA for this session.",
     question: "Which of the following correctly calculates the frequency IOA for this session?",
     choices: [
@@ -101,6 +107,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.4",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is designing a data collection system for a classroom teacher who cannot observe a student continuously. The teacher needs to collect data on the student's out-of-seat behavior during a 40-minute class period. The teacher can only look up from instruction every 5 minutes to record whether the student is in or out of their seat.",
     question: "Which discontinuous measurement procedure is the teacher using?",
     choices: [
@@ -117,6 +124,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.4",
     difficulty: "hard",
+    bloomsLevel: "comprehension",
     scenario: "A BCBA is comparing two data collection methods for a client's stereotypic hand movements. Method 1 uses 10-second partial interval recording. Method 2 uses 10-second whole interval recording. The behavior actually occurs for approximately 40% of the observation time. After a 20-minute session, Method 1 shows 75% of intervals scored positive, and Method 2 shows 15% of intervals scored positive.",
     question: "Which of the following best explains why the two methods produce such different estimates of the behavior?",
     choices: [
@@ -133,6 +141,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.4",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is training a school aide to use momentary time sampling to collect data on a student's engagement during group instruction. The aide will observe the student at the end of every 2-minute interval and record whether the student is engaged. The BCBA wants to explain the limitations of this method.",
     question: "Which of the following is the most significant limitation of momentary time sampling for measuring engagement?",
     choices: [
@@ -149,6 +158,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.4",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is reviewing a study that used 30-second partial interval recording to measure the percentage of intervals in which a child engaged in stereotypy. The study reports that stereotypy occurred in 85% of intervals during baseline. The BCBA wants to determine whether this estimate accurately reflects the true proportion of time the behavior occurred.",
     question: "Which of the following statements about the accuracy of the 85% estimate is most accurate?",
     choices: [
@@ -165,6 +175,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.4",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is working with a teacher to select a data collection method for monitoring a student's on-task behavior during independent work time. The teacher has 25 students and cannot watch any one student continuously. The BCBA recommends a method that requires only a brief observation at the end of each interval.",
     question: "Which data collection method is the BCBA most likely recommending, and what is its primary advantage in this context?",
     choices: [
@@ -181,6 +192,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.5",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is designing a data collection system for a client who is learning to complete multi-step math worksheets. The BCBA wants to measure the accuracy of the client's work without requiring an observer to be present during the task.",
     question: "Which data collection method would be most appropriate for measuring the accuracy of the client's completed math worksheets?",
     choices: [
@@ -197,6 +209,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.5",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: "A BCBA is reviewing data on a client's handwriting skills. The RBT has been using permanent product recording to score the client's handwriting samples. The BCBA notices that the RBT's scores are inconsistent — the same sample is scored differently on different days. The BCBA wants to address this issue.",
     question: "Which of the following is the most appropriate first step to address the inconsistency in the RBT's permanent product scoring?",
     choices: [
@@ -213,6 +226,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.5",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is working with a client who is learning to write his name. The BCBA wants to track the number of letters the client writes correctly each session. The client practices writing his name 10 times per session. The BCBA reviews the completed worksheets after each session.",
     question: "Which of the following best describes the advantage of using permanent product recording for this skill?",
     choices: [
@@ -229,6 +243,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.5",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is designing a data collection system for a vocational training program. The client is learning to assemble a product on an assembly line. The BCBA wants to measure both the accuracy and the rate of assembly. The supervisor can only check the client's work at the end of each shift.",
     question: "Which combination of measurement approaches would best capture both the accuracy and rate of the client's assembly work?",
     choices: [
@@ -245,6 +260,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.6",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is reviewing a line graph showing a client's rate of challenging behavior across 15 sessions. The first 5 sessions show baseline data with rates ranging from 8 to 12 per hour. Sessions 6 through 10 show a decreasing trend after implementing a DRO procedure. Sessions 11 through 15 show rates stabilizing at 1 to 2 per hour.",
     question: "Which of the following best describes the pattern shown in the graph?",
     choices: [
@@ -261,6 +277,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.6",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is presenting data to a parent and team. The graph shows a reversal (ABAB) design. During the first A phase, the behavior averages 15 per session. During the first B phase, it drops to 3 per session. During the second A phase (reversal), it returns to 12 per session. During the second B phase, it drops again to 2 per session.",
     question: "Which of the following conclusions is most strongly supported by this data pattern?",
     choices: [
@@ -277,6 +294,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.6",
     difficulty: "medium",
+    bloomsLevel: "comprehension",
     scenario: "A BCBA is reviewing a cumulative record of a client's correct responses during discrete trial training. The graph shows a steep slope during the first 10 sessions, a flat portion for sessions 11 through 15, and then a moderate slope for sessions 16 through 20.",
     question: "Which of the following best describes what the flat portion of the cumulative record (sessions 11–15) indicates?",
     choices: [
@@ -293,6 +311,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.6",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is reviewing a multiple baseline across behaviors design. The data show that Behavior 1 changed immediately when the intervention was introduced at session 5. Behavior 2 changed when the intervention was introduced at session 10. Behavior 3 changed when the intervention was introduced at session 15. All three behaviors remained stable during their respective baseline phases.",
     question: "Which of the following conclusions is most strongly supported by this data pattern?",
     choices: [
@@ -309,6 +328,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.6",
     difficulty: "medium",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is reviewing a bar graph showing the percentage of correct responses across five skill areas for a client. The bars show: Skill A = 90%, Skill B = 45%, Skill C = 80%, Skill D = 30%, Skill E = 70%. The mastery criterion is 80% correct across three consecutive sessions.",
     question: "Based on the graph, which skills require the most immediate attention in the client's programming?",
     choices: [
@@ -325,6 +345,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.7",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is developing mastery criteria for a client's receptive identification program. The client is learning to identify 20 common objects. The BCBA wants to ensure that the client has truly mastered each object before moving to the next, and wants to minimize the risk of premature advancement.",
     question: "Which mastery criterion would best minimize the risk of premature advancement while still allowing efficient progress through the program?",
     choices: [
@@ -341,6 +362,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.7",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is reviewing a client's data on a tacting program. The client has met the mastery criterion of 80% correct across three consecutive sessions for 15 of the 20 target items. However, the BCBA notices that the client's performance drops significantly when tested in a novel environment. The BCBA wants to revise the mastery criteria to address this issue.",
     question: "Which revision to the mastery criteria would best address the generalization problem?",
     choices: [
@@ -357,6 +379,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.7",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is designing a discrete trial training program for a client learning to match colors. The BCBA wants to set mastery criteria that are both clinically meaningful and achievable within a reasonable timeframe. The client is currently performing at 60% correct across sessions.",
     question: "Which of the following best describes the purpose of setting mastery criteria in ABA programs?",
     choices: [
@@ -373,6 +396,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.7",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is reviewing a client's data and notices that the client has met the mastery criterion of 80% correct across three consecutive sessions for a skill, but the data show high variability — some sessions are at 95% and others are at 65%. The BCBA is concerned that the client has not truly mastered the skill.",
     question: "Which modification to the mastery criteria would best address the concern about high variability?",
     choices: [
@@ -389,6 +413,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.8",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is training two RBTs to collect data on a client's self-injurious behavior using event recording. During a 30-minute session, RBT 1 records 15 instances and RBT 2 records 12 instances. The BCBA calculates the IOA for this session.",
     question: "Which of the following correctly calculates the frequency IOA for this session?",
     choices: [
@@ -405,6 +430,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.8",
     difficulty: "hard",
+    bloomsLevel: "comprehension",
     scenario: "A BCBA is reviewing IOA data for a client's vocal stereotypy program. The data show that total agreement IOA is consistently above 90%, but occurrence agreement IOA is consistently around 60%. The BCBA is concerned about the discrepancy.",
     question: "Which of the following best explains why total agreement IOA can be high while occurrence agreement IOA is low?",
     choices: [
@@ -421,6 +447,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.8",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is calculating IOA for a client's on-task behavior using 10-second interval recording. Observer 1 scored 18 of 30 intervals as positive. Observer 2 scored 20 of 30 intervals as positive. They agreed on 16 intervals as positive and 8 intervals as negative.",
     question: "Which of the following correctly calculates the exact agreement IOA for this session?",
     choices: [
@@ -437,6 +464,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.8",
     difficulty: "hard",
+    bloomsLevel: "application",
     scenario: "A BCBA is reviewing the IOA data for a new behavior program. The IOA data show 75% agreement. The BCBA knows that the generally accepted minimum standard for IOA in ABA research is 80%. The BCBA must decide whether to continue data collection or address the IOA issue first.",
     question: "Which of the following is the most appropriate action for the BCBA to take?",
     choices: [
@@ -453,6 +481,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.8",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is calculating both total agreement IOA and occurrence agreement IOA for a client's aggression data. During a 20-interval session, Observer 1 scored 10 intervals as positive (occurrence) and Observer 2 scored 8 intervals as positive. They agreed on 7 intervals as positive and 9 intervals as negative.",
     question: "Which of the following correctly calculates both total agreement IOA and occurrence agreement IOA for this data set?",
     choices: [
@@ -469,6 +498,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.9",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is reviewing treatment integrity data for a client's behavior intervention plan. The data show that the RBT is implementing the extinction procedure with 70% fidelity — meaning that 30% of the time, the RBT is providing attention following the target behavior, which should be on extinction.",
     question: "Which of the following best describes the clinical significance of 70% treatment integrity for an extinction procedure?",
     choices: [
@@ -485,6 +515,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.9",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is designing a treatment integrity measurement system for a school-based behavior intervention plan. The plan includes 12 specific steps that the teacher must follow when a student engages in problem behavior. The BCBA wants to measure both the overall fidelity of implementation and which specific steps are most frequently missed.",
     question: "Which treatment integrity measurement approach would best capture both overall fidelity and step-specific implementation errors?",
     choices: [
@@ -501,6 +532,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.9",
     difficulty: "medium",
+    bloomsLevel: "comprehension",
     scenario: "A BCBA is reviewing treatment integrity data for a client's reinforcement schedule. The data show that the RBT is delivering reinforcement on a variable ratio 5 schedule, but the actual delivery is occurring on a fixed ratio 3 schedule. The client's behavior has been increasing rather than maintaining.",
     question: "Which of the following best explains the relationship between the treatment integrity error and the client's behavior pattern?",
     choices: [
@@ -517,6 +549,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.9",
     difficulty: "hard",
+    bloomsLevel: "comprehension",
     scenario: "A BCBA is reviewing treatment integrity data and notices that a new RBT has been implementing a behavior intervention plan with 65% fidelity. The BCBA must decide how to address this issue while maintaining the therapeutic relationship with the RBT.",
     question: "Which of the following represents the most appropriate sequence of steps to address the treatment integrity problem?",
     choices: [
@@ -533,6 +566,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.9",
     difficulty: "medium",
+    bloomsLevel: "comprehension",
     scenario: "A BCBA is explaining the importance of treatment integrity to a parent who is implementing a home-based behavior intervention plan. The parent asks why it matters whether they follow every step exactly, as long as the child's behavior is improving.",
     question: "Which of the following best explains why treatment integrity is important even when behavior appears to be improving?",
     choices: [
@@ -549,6 +583,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.6",
     difficulty: "medium",
+    bloomsLevel: "comprehension",
     scenario: "A BCBA is reviewing a line graph showing a client's percentage of correct responses across 20 sessions. The data show a generally increasing trend from sessions 1 through 15, followed by a plateau from sessions 16 through 20. The mastery criterion is 90% correct across three consecutive sessions.",
     question: "Which of the following best describes what the plateau in sessions 16 through 20 indicates and what the BCBA should consider?",
     choices: [
@@ -565,6 +600,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.7",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is reviewing a client's data on a manding program. The client has been meeting the mastery criterion of 80% correct across three consecutive sessions for 'requesting preferred items.' The BCBA wants to determine whether the skill has been maintained over time.",
     question: "Which of the following best describes the purpose of conducting maintenance probes after a skill has met the mastery criterion?",
     choices: [
@@ -581,6 +617,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.8",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is explaining the difference between occurrence agreement IOA and non-occurrence agreement IOA to a new BCBA supervisor. The BCBA wants to explain when each type of IOA is most informative.",
     question: "Which of the following best describes when occurrence agreement IOA is more informative than total agreement IOA?",
     choices: [
@@ -597,6 +634,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.9",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is reviewing treatment integrity data for a social skills group. The group protocol includes 8 specific steps for each session. The treatment integrity data show that the group facilitator is consistently missing steps 5 and 6, which involve providing specific feedback to individual students. The overall treatment integrity is 75%.",
     question: "Which of the following is the most appropriate action for the BCBA to take?",
     choices: [
@@ -613,6 +651,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.3",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is selecting a measurement system for a client's tantrum behavior. Tantrums are defined as any episode of crying, screaming, or dropping to the floor lasting at least 10 seconds. The BCBA wants to measure both how often tantrums occur and how long each episode lasts.",
     question: "Which combination of measurement dimensions would best capture both the frequency and duration of tantrum episodes?",
     choices: [
@@ -629,6 +668,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.4",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is comparing three data collection methods for measuring a student's off-task behavior: (1) 30-second partial interval recording, (2) 30-second whole interval recording, and (3) 30-second momentary time sampling. The behavior actually occurs for 50% of the observation time.",
     question: "Which of the following correctly describes the expected direction of bias for each method relative to the true 50% occurrence rate?",
     choices: [
@@ -645,6 +685,7 @@ export const tier6Pool_C_batch1: Question[] = [
     domain: "C",
     taskItem: "C.5",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is designing a data collection system for a client who is learning to complete independent living skills, including making a sandwich. The BCBA wants to measure the client's performance on each step of the task analysis without requiring a therapist to be present during every practice session.",
     question: "Which data collection method would be most appropriate for measuring the client's performance on the sandwich-making task analysis?",
     choices: [

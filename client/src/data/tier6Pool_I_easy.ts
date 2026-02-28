@@ -19,6 +19,7 @@ export const tier6Pool_I_easy: Question[] = [
     domain: "I",
     taskItem: "I-1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is beginning a supervisory relationship with a new RBT. She explains to the RBT that the supervisory relationship has specific requirements and expectations that both parties must understand.`,
     question: `What is the primary purpose of supervision in the context of ABA service delivery?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_I_easy: Question[] = [
     domain: "I",
     taskItem: "I-2",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the components of effective performance feedback to a supervisee. She explains that feedback is one of the most important tools a supervisor has for improving supervisee performance.`,
     question: `Which of the following best describes effective performance feedback in the context of ABA supervision?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_I_easy: Question[] = [
     domain: "I",
     taskItem: "I-3",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of staff training to a new supervisor. She explains that effective staff training is essential for ensuring that behavior technicians implement intervention procedures with fidelity.`,
     question: `Which training approach is most likely to produce accurate implementation of a new behavior intervention procedure by a behavior technician?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_I_easy: Question[] = [
     domain: "I",
     taskItem: "I-4",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of scope of practice to a new RBT. She explains that all BACB certificants must practice within their scope of practice.`,
     question: `What does "scope of practice" refer to for a BACB certificant?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_I_easy: Question[] = [
     domain: "I",
     taskItem: "I-5",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is reviewing a supervisee's data collection during a direct observation. She notices that the supervisee is recording data inconsistently — sometimes recording the behavior and sometimes missing occurrences.`,
     question: `What is the most appropriate first step for the BCBA to take in response to this observation?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_I_easy: Question[] = [
     domain: "I",
     taskItem: "I-6",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is explaining the BACB's requirements for ongoing supervision to a supervisee who is working toward their BCBA certification. The supervisee asks about the minimum supervision requirements.`,
     question: `What is the primary reason that the BACB requires ongoing supervision for individuals working toward BCBA certification?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_I_easy: Question[] = [
     domain: "I",
     taskItem: "I-7",
     difficulty: "easy",
+    bloomsLevel: "application",
     scenario: `A BCBA is explaining the concept of organizational behavior management (OBM) to a new supervisor. She explains that OBM applies behavior-analytic principles to improve staff performance and organizational systems.`,
     question: `Which of the following best describes the focus of organizational behavior management (OBM)?`,
     choices: [

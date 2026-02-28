@@ -19,6 +19,7 @@ export const tier6Pool_A_easy: Question[] = [
     domain: "A",
     taskItem: "A-1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A new RBT is learning about the foundational philosophy of behavior analysis. Her supervisor explains that behavior analysis is grounded in a specific philosophical position about the nature of science and the study of behavior.`,
     question: `Which philosophical position serves as the foundation for applied behavior analysis?`,
     choices: [
@@ -36,6 +37,7 @@ export const tier6Pool_A_easy: Question[] = [
     domain: "A",
     taskItem: "A-2",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `During a team training, a BCBA is explaining the concept of determinism to a group of new staff members. One staff member asks why behavior analysts assume that behavior is determined by prior causes rather than by free will.`,
     question: `Which statement best describes the behavior-analytic position on determinism?`,
     choices: [
@@ -53,6 +55,7 @@ export const tier6Pool_A_easy: Question[] = [
     domain: "A",
     taskItem: "A-3",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a case conceptualization written by a BCaBA. The BCaBA wrote that the client "engages in aggression because he has poor impulse control." The BCBA explains that this explanation is problematic from a behavior-analytic perspective.`,
     question: `What is the term for the type of explanation the BCaBA used, in which an internal trait is invoked to explain behavior?`,
     choices: [
@@ -70,6 +73,7 @@ export const tier6Pool_A_easy: Question[] = [
     domain: "A",
     taskItem: "A-4",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the principle of parsimony to a student who is learning about behavior-analytic science. The student asks why behavior analysts prefer simpler explanations over more complex ones.`,
     question: `Which statement best describes the principle of parsimony as applied in behavior analysis?`,
     choices: [
@@ -87,6 +91,7 @@ export const tier6Pool_A_easy: Question[] = [
     domain: "A",
     taskItem: "A-5",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is teaching a workshop on the dimensions of applied behavior analysis. She explains that ABA is defined by seven dimensions that distinguish it from other approaches to behavior change.`,
     question: `Which of the following is one of the seven dimensions of applied behavior analysis as described by Baer, Wolf, and Risley (1968)?`,
     choices: [
@@ -104,6 +109,7 @@ export const tier6Pool_A_easy: Question[] = [
     domain: "A",
     taskItem: "A-6",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is explaining the concept of private events to a new supervisee. The supervisee asks whether thoughts and feelings are considered relevant in behavior analysis, since they cannot be directly observed by others.`,
     question: `How does radical behaviorism treat private events such as thoughts and feelings?`,
     choices: [
@@ -121,6 +127,7 @@ export const tier6Pool_A_easy: Question[] = [
     domain: "A",
     taskItem: "A-7",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: `A BCBA is reviewing a research article with her supervisee. The article describes a study in which a researcher systematically manipulated an independent variable and measured its effect on a dependent variable to determine whether a functional relationship existed.`,
     question: `What is the term for the type of relationship the researcher was attempting to establish between the independent and dependent variables?`,
     choices: [

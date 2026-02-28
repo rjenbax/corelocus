@@ -6,6 +6,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.3",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is consulting with a school team about a student who has learned to raise her hand to request help. The team notes that the student now raises her hand not only with her regular teacher but also with substitute teachers and parent volunteers. The BCBA uses this observation to explain a fundamental operant conditioning concept.",
     question: "The student raising her hand with multiple adults in the classroom best illustrates which concept?",
     choices: [
@@ -22,6 +23,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.5",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is explaining the concept of reinforcement to a parent who is skeptical about using rewards. The parent states that giving the child stickers for completing homework is bribery and will make the child dependent on external rewards. The BCBA wants to clarify the behavioral definition of reinforcement.",
     question: "Which of the following best captures the behavioral definition of positive reinforcement?",
     choices: [
@@ -38,6 +40,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.7",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is working with a 5-year-old child who is learning to use picture exchange to request preferred items. The BCBA wants to use a Pavlovian conditioning procedure to establish the picture cards as conditioned reinforcers before beginning the PECS protocol. The BCBA repeatedly pairs each picture card with the actual item it represents.",
     question: "In this conditioning procedure, the actual item (e.g., a cookie) serves as which type of stimulus?",
     choices: [
@@ -54,6 +57,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.15",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is working with a 3-year-old child who is beginning to develop language. The child's parents report that the child frequently repeats the last word or phrase of what others say but does not seem to understand the meaning. The BCBA explains that this is a common early verbal behavior and describes the operant class it belongs to.",
     question: "A child who immediately repeats the last word of an adult's sentence without understanding its meaning is demonstrating which verbal operant?",
     choices: [
@@ -70,6 +74,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.16",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is conducting a verbal behavior assessment for a 4-year-old child with ASD. During the assessment, the BCBA asks the child 'What do you do when you are hungry?' and the child responds 'Eat food.' The BCBA notes this as an example of a specific verbal operant.",
     question: "The child's response 'Eat food' to the question 'What do you do when you are hungry?' is best classified as which verbal operant?",
     choices: [
@@ -86,6 +91,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.18",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is working with a 5-year-old child who has learned to request preferred items using single words. The BCBA now wants to teach the child to request items using two-word combinations (e.g., 'want cookie,' 'more juice'). The BCBA plans to use a shaping procedure to build this more complex verbal behavior.",
     question: "In a shaping procedure for two-word mands, which of the following best describes the role of successive approximations?",
     choices: [
@@ -102,6 +108,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.19",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is working with a 9-year-old child whose tantrum behavior has been on extinction for four weeks. The data show a clear downward trend in tantrum frequency. However, during the fourth week, the child's grandmother visited and, when the child tantrumed, the grandmother provided comfort and attention. The following week, tantrums returned to near-baseline levels.",
     question: "The return of tantrums to near-baseline levels after the grandmother's visit most likely represents which phenomenon?",
     choices: [
@@ -118,6 +125,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.21",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is using shaping to teach a 4-year-old child with ASD to make eye contact. The child currently looks in the general direction of the BCBA's face for approximately 0.5 seconds. The BCBA's terminal goal is for the child to make direct eye contact for 3 seconds when their name is called. The BCBA is planning the successive approximations.",
     question: "Which of the following best describes the most appropriate next step in the shaping procedure after the child consistently looks toward the BCBA's face for 0.5 seconds?",
     choices: [
@@ -134,6 +142,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.22",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is teaching a 6-year-old child with ASD to independently complete a 5-step morning routine (get backpack, put on shoes, open door, walk to bus, greet driver). The BCBA decides to use backward chaining because the child has a history of difficulty initiating multi-step tasks but can complete individual steps when prompted.",
     question: "In a backward chaining procedure for this 5-step morning routine, which step would be taught first?",
     choices: [
@@ -150,6 +159,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.23",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is working in a clinic where a child's problem behavior is on extinction in the therapy room but continues to be reinforced at home. The BCBA observes that the child's problem behavior in the therapy room has increased above its pre-extinction baseline during the weeks when the child's home behavior is being reinforced. The BCBA recognizes this as a specific behavioral phenomenon.",
     question: "The increase in problem behavior in the therapy room when reinforcement is available at home but not in the clinic best illustrates which phenomenon?",
     choices: [
@@ -166,6 +176,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.24",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA has been using a DRA procedure to teach a client to request breaks appropriately instead of engaging in aggression. After six months, the client's aggression has been reduced to near-zero levels and break requests are occurring at a high rate. The BCBA begins thinning the reinforcement schedule for break requests. The following week, the client's aggression returns to moderate levels.",
     question: "The return of aggression when the reinforcement schedule for break requests is thinned most likely represents which phenomenon?",
     choices: [
@@ -182,6 +193,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.1",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is explaining the difference between respondent and operant behavior to a parent during a training session. The parent asks for an example of each type of behavior to help them understand the distinction.",
     question: "Which of the following is the best example of an operant behavior?",
     choices: [
@@ -198,6 +210,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.5",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is explaining reinforcement to a new RBT during a training session. The RBT asks how to determine whether a consequence is actually a reinforcer for a specific client.",
     question: "According to the behavioral definition, which of the following is the most reliable way to determine whether a consequence is a reinforcer?",
     choices: [
@@ -214,6 +227,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.9",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is reviewing a behavior intervention plan with a school team. The plan includes a consequence procedure where the teacher removes a preferred activity (free time) contingent on the student's off-task behavior. The team asks the BCBA to classify this consequence procedure.",
     question: "Removing a preferred activity contingent on off-task behavior is best classified as which type of consequence procedure?",
     choices: [
@@ -230,6 +244,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.14",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is conducting a verbal behavior assessment for a 3-year-old child with limited language. The BCBA observes that when the child wants juice, the child says 'juice.' The BCBA notes that this response is evoked by the child's deprivation state and results in the child receiving juice.",
     question: "The child saying 'juice' when wanting juice is best classified as which verbal operant?",
     choices: [
@@ -246,6 +261,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.17",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is explaining differential reinforcement procedures to a parent. The parent asks about the difference between DRI and DRO. The BCBA uses a simple example: the child's problem behavior is hitting, and the BCBA is considering which procedure to use.",
     question: "Which of the following best describes a DRI (differential reinforcement of incompatible behavior) procedure for hitting?",
     choices: [
@@ -262,6 +278,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.18",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is explaining shaping to a parent who wants to understand how their child learned to say full sentences when they started with only single sounds. The BCBA uses the concept of shaping to explain the gradual development of complex verbal behavior.",
     question: "Which of the following best describes the key mechanism of shaping?",
     choices: [
@@ -278,6 +295,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.7",
     difficulty: "easy",
+    bloomsLevel: "comprehension",
     scenario: "A BCBA is explaining the concept of conditioned reinforcers to a parent. The parent asks why praise ('Good job!') is effective for some children but not others. The BCBA explains that praise is a conditioned reinforcer that must be established through pairing.",
     question: "Which of the following best describes how a neutral stimulus becomes a conditioned reinforcer?",
     choices: [
@@ -294,6 +312,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.3",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is explaining stimulus control to a parent. The parent notices that their child always asks for candy at the grocery store checkout but never at home. The BCBA explains that the checkout display has become a discriminative stimulus for candy-requesting behavior.",
     question: "A discriminative stimulus (SD) is best defined as which of the following?",
     choices: [
@@ -310,6 +329,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.6",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is conducting a functional behavior assessment for a 5-year-old child who engages in tantrums. The FBA reveals that tantrums occur most frequently when the child is asked to stop a preferred activity. The BCBA explains that the tantrums are maintained by negative reinforcement.",
     question: "In this scenario, how does negative reinforcement maintain the child's tantrums?",
     choices: [
@@ -326,6 +346,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.2",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is explaining Pavlovian conditioning to a parent whose child has developed a fear of the doctor's office. The child used to be calm at the doctor's office but now cries as soon as they enter the waiting room, before any examination occurs. The BCBA explains this using classical conditioning principles.",
     question: "In this example, what is the unconditioned stimulus (US) that originally elicited the fear response?",
     choices: [
@@ -342,6 +363,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.11",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is working with a 6-year-old child who has learned to say 'I want a break' to request breaks from demanding tasks. The BCBA wants to ensure this skill generalizes across different settings, teachers, and types of tasks. The BCBA plans to program for generalization.",
     question: "Teaching the child to request breaks with multiple different teachers, in multiple settings, and across multiple types of tasks is an example of programming for which type of generalization?",
     choices: [
@@ -358,6 +380,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.12",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is explaining motivating operations to a school team. The team asks why a student who usually responds well to praise is not responding to praise today. The BCBA asks whether anything has changed in the student's routine and learns that the student received extensive praise from the principal for a special project earlier in the day.",
     question: "The student's reduced responsiveness to praise after receiving extensive praise earlier in the day is best explained by which concept?",
     choices: [
@@ -374,6 +397,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.16",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is assessing a 5-year-old child's verbal behavior repertoire. The BCBA holds up a red ball and asks 'What color is this?' The child responds 'Red.' The BCBA notes that this response is controlled by the nonverbal stimulus (the red ball) and is maintained by generalized conditioned reinforcement (praise).",
     question: "The child's response 'Red' when shown a red ball and asked 'What color is this?' is best classified as which verbal operant?",
     choices: [
@@ -390,6 +414,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.15",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     scenario: "A BCBA is working with a 4-year-old child who is learning to imitate sounds and words. During a session, the BCBA says 'ball' and the child immediately says 'ball.' The BCBA notes that this response is controlled by the verbal stimulus and has point-to-point correspondence with it.",
     question: "The child saying 'ball' immediately after the BCBA says 'ball' is best classified as which verbal operant?",
     choices: [
@@ -406,6 +431,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.13",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is designing a token economy for a classroom of students with behavioral challenges. The BCBA is deciding between a fixed-ratio and a variable-ratio schedule for token delivery. The BCBA wants to maximize the rate of on-task behavior and minimize the post-reinforcement pause.",
     question: "Which schedule of reinforcement would best achieve the BCBA's goals of high response rate and minimal post-reinforcement pause?",
     choices: [
@@ -422,6 +448,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.20",
     difficulty: "medium",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is working with a 7-year-old child whose aggression is maintained by escape from non-preferred tasks. The BCBA is considering using DRI (differential reinforcement of incompatible behavior) as an intervention. The BCBA identifies 'hands folded in lap' as the incompatible behavior to reinforce.",
     question: "Which of the following best justifies the selection of 'hands folded in lap' as the incompatible behavior for a DRI intervention targeting aggression?",
     choices: [
@@ -438,6 +465,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.21",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is using shaping to teach a 5-year-old child with ASD to tolerate wearing a hat. The child currently refuses to have any object placed on their head. The BCBA starts by reinforcing the child for touching the hat, then for holding the hat near their head, then for placing the hat on their head briefly, and so on.",
     question: "The BCBA's approach of reinforcing progressively closer approximations to wearing the hat while placing earlier approximations on extinction best illustrates which principle of shaping?",
     choices: [
@@ -454,6 +482,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.23",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is working with a 10-year-old child in a clinic setting. The child's on-task behavior is reinforced in the therapy room but not in the waiting room. The BCBA observes that the child's on-task behavior in the waiting room has decreased below its pre-intervention baseline since the reinforcement program began in the therapy room.",
     question: "The decrease in on-task behavior in the waiting room (where no reinforcement program is in place) when reinforcement is available in the therapy room best illustrates which phenomenon?",
     choices: [
@@ -470,6 +499,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.24",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is working with a 12-year-old client who previously engaged in property destruction to escape from homework. The BCBA implemented a DRA procedure that successfully reduced property destruction to zero by teaching the client to request a break. After six months, the BCBA begins thinning the break schedule. The client's property destruction returns to moderate levels.",
     question: "To minimize the risk of resurgence when thinning the break schedule, which of the following strategies would be most appropriate?",
     choices: [
@@ -486,6 +516,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.19",
     difficulty: "medium",
+    bloomsLevel: "application",
     scenario: "A BCBA is implementing an extinction procedure for a 6-year-old child's tantrum behavior, which is maintained by adult attention. The BCBA has trained all team members to withhold attention during tantrums. After two weeks, tantrums have decreased significantly. However, the child's grandmother, who was not trained, provided comfort during a tantrum at a family gathering.",
     question: "To prevent reinstatement of tantrums following the grandmother's accidental reinforcement, which of the following is the most appropriate next step?",
     choices: [
@@ -502,6 +533,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.13",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is reviewing data for a client on a variable-interval 30-second (VI 30-s) schedule of reinforcement for appropriate play behavior. The BCBA is considering switching to a fixed-interval 30-second (FI 30-s) schedule to make the schedule more predictable for the client. The team asks about the behavioral implications of this change.",
     question: "Compared to the VI 30-s schedule, switching to an FI 30-s schedule would most likely produce which behavioral change?",
     choices: [
@@ -518,6 +550,7 @@ export const tier6Pool_B_batch2: Question[] = [
     domain: "B",
     taskItem: "B.24",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     scenario: "A BCBA is conducting a study on resurgence in a clinical setting. A client's self-injurious behavior (SIB) was previously maintained by automatic reinforcement and has been successfully suppressed using a DRA procedure (teaching a competing behavior reinforced by access to sensory stimulation). The BCBA is now studying the conditions under which the SIB resurges.",
     question: "Based on the behavioral literature on resurgence, which condition would most likely produce the highest level of resurgent SIB?",
     choices: [

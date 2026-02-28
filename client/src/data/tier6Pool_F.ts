@@ -15,6 +15,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "Record review is a foundational component of behavior assessment because it provides historical context, identifies prior interventions and their outcomes, and helps the BCBA understand the antecedents, consequences, and setting events that have been associated with the behavior over time. This prevents duplication of ineffective strategies and allows for a more targeted and efficient assessment. Choice B is incorrect because while ethical practice requires competence and thoroughness, the Ethics Code does not specify record review as a prerequisite in the way described — the primary rationale is clinical, not regulatory. Choice C is incorrect because records rarely provide sufficient information to determine behavioral function; direct observation and functional analysis are still required. Choice D is incorrect because billing documentation is an administrative concern, not the clinical purpose of record review.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.1",
   },
   {
@@ -31,6 +32,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "Record review is valuable precisely because it can reveal inconsistencies or gaps that require further investigation. The fact that SIB continued after the medical issue resolved does not confirm the previous FBA's conclusion — it could mean the function was always attention, or it could mean the function shifted, or the original FBA was inaccurate. A thorough, current assessment is warranted. Choice B is incorrect because the persistence of SIB after medical resolution does not validate the previous FBA — the function could have changed, or the original assessment may have been flawed. Choice C is incorrect because concluding automatic reinforcement without direct observation or functional analysis is not supported by the data; the record review raises questions but does not answer them. Choice D is incorrect because while medical consultation may be appropriate, it is not a prerequisite to behavioral assessment, and the BCBA should not delay assessment pending a medical evaluation.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.1",
   },
   {
@@ -47,6 +49,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "Discrepancies between informant reports are common and clinically informative — they often reflect genuine differences in the conditions under which behavior occurs across settings, times, or people. Rather than dismissing either report, the BCBA should treat both as hypotheses to be tested through direct observation. Choice B is incorrect because weighting one informant's report over another based on time spent with the child introduces bias and may cause the BCBA to miss important contextual variables. Choice C is incorrect because discrepant interview data does not invalidate indirect assessment — it generates multiple hypotheses that direct observation can test. Choice D is incorrect because while psychoeducation may be appropriate at some point, the primary response to discrepant reports is to use them to guide direct observation, not to educate parents about objectivity.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.2",
   },
   {
@@ -63,6 +66,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "Structured interviews are most valuable when they elicit specific behavioral examples rather than interpretations. The specific examples provided by the teacher — independent seatwork, following teacher attention to another student, resolved by one-on-one assistance — are consistent with an attention hypothesis, but this hypothesis must be confirmed through direct observation before intervention. Choice B is incorrect because the teacher's initial interpretation being consistent with the examples does not eliminate the need for direct observation; indirect assessment generates hypotheses, it does not confirm them. Choice C is incorrect for the same reason — consistency between interpretation and examples strengthens a hypothesis but does not constitute sufficient evidence for intervention design. Choice D is incorrect because teacher interpretations, while not definitive, provide useful context and should be considered alongside specific examples.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.2",
   },
   {
@@ -79,6 +83,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "ABC data should be interpreted by looking at patterns across multiple observations. With 6 of 8 instances showing the same antecedent-consequence pattern (demand → property destruction → demand removal), the primary hypothesis is escape from demands via negative reinforcement. The remaining instances are interesting but do not override the dominant pattern — they suggest possible secondary functions that should be explored further, not ignored. Choice B is incorrect because concluding multiple functions from 2 outlier observations is premature; the data strongly suggests a primary function of escape. Choice C is incorrect because a single instance without a clear antecedent does not establish automatic reinforcement as the primary function — it may reflect measurement limitations or a rare occurrence. Choice D is incorrect because there is no fixed minimum number of observations required to generate a hypothesis; 8 observations showing a clear pattern is sufficient to form a working hypothesis.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.3",
   },
   {
@@ -95,6 +100,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "Momentary time sampling estimates the proportion of time a behavior occurs but can miss brief episodes that occur between observation points, and a single observation session may not be representative of typical behavior. The teacher's report of atypicality is clinically relevant and suggests that additional observations are needed to establish a reliable baseline. Choice B is incorrect because momentary time sampling is actually more appropriate for behaviors with duration (like out-of-seat) than for discrete behaviors; event recording would be more appropriate for discrete behaviors. Choice C is incorrect because a single atypical observation is not necessarily invalid — it provides information about the upper range of behavior and should be retained as part of a multi-session baseline. Choice D is incorrect because dismissing the teacher's perception is not appropriate; the discrepancy between the data and the teacher's report is clinically meaningful and warrants further investigation.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.3",
   },
   {
@@ -111,6 +117,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "The FBA data presents a clear and consistent pattern: verbal aggression occurs exclusively in the context of academic demands and is resolved by demand removal or reduction. This pattern is the hallmark of escape-maintained behavior via negative reinforcement. The one-on-one assistance is likely functioning as a form of demand modification (reduced task difficulty or pacing), not as an independent attention reinforcer. Choice B is incorrect because while teacher attention accompanies the one-on-one assistance, the primary consequence is demand modification — the behavior does not occur during free periods when attention is available without demands. Choice C is incorrect because the data does not support a separate attention function; the one-on-one assistance is best understood as part of the escape contingency. Choice D is incorrect because a well-conducted FBA with consistent data across multiple methods is sufficient to generate a defensible functional hypothesis and design an intervention; FA is not always required.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.4",
   },
   {
@@ -127,6 +134,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "The pattern described — no consistent social antecedents or consequences, increase during unengaged periods, presence of other repetitive behaviors — is characteristic of automatically reinforced behavior. The behavior appears to produce its own reinforcement through sensory stimulation. A functional analysis with an 'alone' condition (where the child is alone with no demands and no social attention) would directly test this hypothesis by showing whether the behavior occurs at high rates even without social consequences. Choice B is incorrect because the inconsistent staff responses do not establish attention as the primary function — if attention were the function, behavior would be expected to increase specifically when staff are present and decrease when alone, which is the opposite of what is observed. Choice C is incorrect because the absence of a specific demand antecedent and the pattern of increase during unengaged periods does not support escape as the primary function. Choice D is incorrect because 'random' behavior is a common description of automatically reinforced behavior, and the FBA data provides sufficient information to generate a testable hypothesis without a neurological referral.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.4",
   },
   {
@@ -143,6 +151,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "Functional analysis is the gold standard for identifying behavioral function because it directly tests the relationship between environmental variables and behavior under controlled conditions. For severe behaviors, safety concerns are legitimate but do not eliminate the need for FA — they require modification of the protocol. Brief FA formats (e.g., Iwata's brief FA, trial-based FA), precursor behavior targeting, and rigorous safety protocols allow FA to be conducted safely even with severe behavior. Choice B is incorrect because proceeding without safety precautions is ethically indefensible — the BCBA has a responsibility to protect both clients and staff. Choice C is incorrect because forgoing FA in favor of indirect assessment alone increases the risk of designing an ineffective intervention, which could prolong the client's exposure to severe behavior and its consequences. Choice D is incorrect because insurance approval is not a clinical or ethical prerequisite for conducting an FA; the decision is made by the clinical team based on clinical need and safety planning.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.5",
   },
   {
@@ -159,6 +168,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "Functional analysis data is interpreted by comparing the target condition rates to the control condition (alone or play). The escape condition showing the highest rate (8 responses per minute average) compared to all other conditions (1-2 responses per minute) provides clear differentiation supporting an escape function. Variability within a condition is common in FA data and does not invalidate the conclusion when the overall pattern is clear. Choice A is incorrect because the attention condition (2 responses per minute) is only marginally elevated above the alone condition (1 response per minute) — this small difference does not establish a separate attention function. Choice B is incorrect because variability is expected in FA data, and the overall pattern is sufficiently differentiated to support a conclusion; additional sessions may be warranted but the current data is not inconclusive. Choice D is incorrect because the alone condition being similar to attention and tangible conditions is expected when the behavior is not automatically reinforced — it does not mean the escape condition elevation is artifactual.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.5",
   },
   {
@@ -175,6 +185,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "Antecedent analysis identifies the conditions that reliably precede and predict behavior, allowing for antecedent modifications that reduce the likelihood of behavior occurring. The identified antecedents (transitions, large groups, noise, lack of visual schedules) are modifiable, and addressing them directly is consistent with the least restrictive, function-based approach. Choice B is incorrect because extinction alone does not address the antecedent conditions that set the occasion for elopement, and physical return without social interaction may be insufficient for a safety concern. Choice C is incorrect because physical restraint is a highly restrictive procedure that should not be implemented as a first response to elopement when less restrictive antecedent modifications have not been tried. Choice D is incorrect because antecedent analysis can inform intervention even without a formal functional analysis — the identified antecedents provide sufficient information to implement modifications that reduce the likelihood of elopement.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.6",
   },
   {
@@ -191,6 +202,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "A",
     rationale: "The antecedent analysis reveals two potentially important variables: setting events (weekend family visits that may alter the girl's motivational state) and discriminative stimuli (Staff A's presence, associated with higher demands). Both warrant further investigation before intervention design. The setting event hypothesis (family visits affecting mood or behavioral state) and the discriminative stimulus hypothesis (Staff A's demands) are not mutually exclusive and may interact. Choice B is incorrect because Staff A's presence is associated with higher demands, not just attention — the more parsimonious explanation is escape from demands, not attention-seeking. Choice C is incorrect because while escape is a plausible hypothesis, the data is not yet definitive — the role of the family visit setting event and the specific nature of Staff A's demands need further clarification. Choice D is incorrect because behavioral patterns related to setting events (like transitions between environments) are within the scope of behavioral assessment and do not automatically require psychiatric referral.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.6",
   },
   {
@@ -207,6 +219,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "A free-operant preference assessment is particularly well-suited for children with limited communication because it does not require explicit choices or responses — the child simply interacts with available items, and the BCBA records time spent with each item. This method also captures naturalistic preference and avoids the potential for satiation that can occur with forced-choice methods. The fact that the boy loses interest in the iPad after 3 minutes suggests that satiation is a concern, making a free-operant assessment that samples multiple items more informative. Choice A is incorrect because single-stimulus assessments are the least efficient and do not produce a preference hierarchy; relying solely on parent report is insufficient for identifying effective reinforcers. Choice B is incorrect because paired-stimulus assessments require the child to make explicit choices, which may be difficult for a child with limited communication, and the forced-choice format can produce satiation. Choice D is incorrect because MSWO is efficient but requires the child to select from an array, which may be challenging for a child with limited communication; it is not universally the gold standard for all clients.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.7",
   },
   {
@@ -223,6 +236,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "Satiation occurs when repeated access to a reinforcer reduces its reinforcing value. The pattern described — decreased responding and pushing the item away after 10 minutes — is classic satiation. The toy car may have been a genuine reinforcer at the start of the session but lost its effectiveness due to repeated access. Strategies to address satiation include limiting pre-session access, using intermittent rather than continuous reinforcement, and rotating multiple reinforcers. Choice A is incorrect because the MSWO results and the initial responding suggest the toy car was a genuine reinforcer; satiation does not mean the preference assessment was invalid. Choice B is incorrect because the initial responding during skill acquisition (before satiation) suggests the toy car was functioning as a reinforcer; the issue is satiation, not the absence of reinforcing properties. Choice D is incorrect because the pattern of decreasing responding specifically after 10 minutes, combined with pushing the item away, points to satiation rather than task difficulty.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.7",
   },
   {
@@ -239,6 +253,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "Function-based interventions directly address the maintaining contingency identified in the FBA. If aggression is maintained by escape from demands, the most direct intervention is to teach a functionally equivalent replacement behavior — a break card or verbal request — that provides the same escape function through a socially appropriate response. This is the core principle of functional communication training (FCT). Choice A is incorrect because a token economy addresses motivation for task completion but does not directly address the escape function — it may reduce aggression if the tasks become more reinforcing, but it does not teach a replacement behavior. Choice B is incorrect because response cost is a punishment procedure that may suppress aggression but does not teach a replacement behavior or address the escape function; it is not the most direct application of FBA findings. Choice D is incorrect because social skills training addresses peer interaction, not the escape function identified in the FBA — it is not derived from the FBA finding.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.8",
   },
   {
@@ -255,6 +270,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "An extinction burst is a predictable and expected increase in the frequency, duration, or intensity of a previously reinforced behavior when extinction is first implemented. The pattern described — initial increase followed by decrease — is the classic extinction burst pattern and indicates that the extinction procedure is working as intended. The BCBA should continue the BIP with consistent implementation and prepare staff for the possibility of continued variability. Choice A is incorrect because an extinction burst is not evidence of BIP failure; it is evidence that extinction is being implemented correctly and the behavior is responding as expected. Choice B is incorrect because an extinction burst would not occur if extinction were being implemented incorrectly — if demands were still being removed, the behavior would be maintained, not show the burst-then-decrease pattern. Choice D is incorrect because while FCR reinforcement density is important, the described pattern is most parsimoniously explained by an extinction burst, not insufficient FCR reinforcement.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.8",
   },
   {
@@ -271,6 +287,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "Preference is not a fixed property of stimuli — it varies with motivating operations, particularly deprivation and satiation. A preference assessment conducted at one point in time captures preference under the specific motivational conditions present at that time. When motivational states change across sessions (e.g., the boy has had access to Item A at home, or is not hungry/tired), the reinforcing value of Item A will vary. Brief, session-by-session preference assessments address this by identifying the current high-preference item under the current motivational conditions. Choice A is incorrect because the inconsistency is not a measurement artifact — it reflects genuine variation in motivational state, not a flaw in the assessment method. Choice B is incorrect because the inconsistency is more parsimoniously explained by motivating operations than by the absence of reinforcing properties; the boy's responding was sometimes high, suggesting Item A can function as a reinforcer. Choice D is incorrect because the inconsistency is not a feature of autism per se — it reflects normal variation in motivational states that affects all individuals.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.7",
   },
   {
@@ -287,6 +304,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "The consistent antecedent (transitions) and consistent consequence (delayed transition = escape from the transition) strongly suggest escape-maintained behavior. The 100% occurrence rate across all transitions indicates that transitions reliably set the occasion for the behavior, and the delayed transition consistently follows, providing negative reinforcement. Function-based intervention directly addresses this contingency. Choice A is incorrect because while staff attention accompanies the response, the primary consequence is the delayed transition — staff attention alone would not explain why the behavior occurs specifically during transitions and not at other times. Choice B is incorrect because automatically reinforced behavior would not be expected to occur exclusively during transitions and would not be so consistently followed by a social consequence (delayed transition); the pattern is more consistent with social reinforcement. Choice D is incorrect because the consistent antecedent-consequence pattern indicates a behavioral function, not merely a skill deficit; even if transition skills are also a target, the behavior serves an escape function that must be addressed.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.4",
   },
   {
@@ -303,6 +321,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "When two conditions are elevated in a functional analysis, the data may reflect genuine multiple control or may reflect methodological issues (e.g., the attention and escape conditions share common elements). A component analysis or differentiated FA can help determine whether both functions are truly maintaining the behavior or whether one is primary. This is important because multi-component interventions are more complex and may be unnecessary if one function is primary. Choice A is incorrect because concluding multiple control from ambiguous FA data without further investigation may lead to an unnecessarily complex intervention. Choice B is incorrect because a 1-response-per-session difference is not sufficient to conclude that escape is the primary function — the difference is within the range of normal variability. Choice D is incorrect because the data is not invalid — it is ambiguous, which is a different issue; the appropriate response is further analysis, not discarding the data.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.5",
   },
   {
@@ -319,6 +338,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "The fundamental problem with the FBA report is that it uses a mentalistic explanation ('frustration') that does not identify an environmental function and therefore cannot guide function-based intervention. The behavioral data in the report — aggression following demands, ending with demand removal — is actually consistent with escape-maintained behavior, but this was not identified. The 'frustration management' recommendation does not follow from the behavioral data and is not function-based. Choice A is incorrect because FBA findings can inform subsequent assessments, and a new BCBA is not required to start from scratch — they should review existing data and conduct additional assessment as needed. Choice B is incorrect because while 3 observations is a small sample, the primary problem is the mentalistic interpretation, not the sample size. Choice D is incorrect because functional analysis is not always required; a well-conducted FBA with consistent ABC data can support a functional hypothesis and guide intervention.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.4",
   },
   {
@@ -335,6 +355,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "When ABC data shows variable antecedents and consequences across multiple instances, it suggests either multiple control or insufficient observational control to identify a clear function. Naturalistic observations are subject to many confounds, and the variability in this data warrants further investigation through more controlled assessment methods, including a functional analysis. Choice A is incorrect because the presence of some social antecedents and consequences (demand presentations, peer approaches, staff attention) does not support automatic reinforcement as the primary function — automatic reinforcement is characterized by the absence of social consequences, not variable ones. Choice B is incorrect because 4 of 12 instances (33%) with a demand antecedent is not sufficient to conclude escape as the primary function — the remaining 67% of instances have different antecedents. Choice D is incorrect because variable ABC data is common and does not indicate that standard FBA methods are inappropriate; it indicates that more controlled assessment is needed.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.3",
   },
   {
@@ -351,6 +372,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "When behavior is maintained by access to tangibles, the most function-based reinforcement intervention is functional communication training (FCT) — teaching a replacement behavior that produces the same tangible reinforcement through a socially appropriate response. This directly addresses the maintaining contingency by providing an alternative path to the same reinforcer. Choice A is incorrect because DRO reinforces the absence of tantrums but does not teach a replacement behavior or directly address the tangible function — the child still has no appropriate way to request preferred items. Choice C is incorrect because a token economy adds an additional step between behavior and reinforcement and does not directly teach a functional communication response; it may be a useful component but is not the most direct application of the FBA finding. Choice B is incorrect because non-contingent reinforcement (NCR) can reduce the motivating operation for tantrums, but it does not teach a replacement behavior and may not be practical for all preferred items; it is better conceptualized as an antecedent modification than a reinforcement-based component.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.8",
   },
   {
@@ -367,6 +389,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "Record review is particularly valuable for transition planning because it provides historical context about the conditions under which behavior has and has not occurred. The near-zero rate of aggression in the current environment is likely due to the low-demand, highly structured conditions — not because the escape function has been eliminated. When the student transitions to a higher-demand environment, the conditions that previously maintained aggression will be present again, creating a high risk for resurgence. Proactive planning is essential. Choice A is incorrect because while a new FBA in the adult day program is appropriate, the previous FBA finding is still relevant — it informs the transition plan and identifies the conditions to monitor. Choice C is incorrect because near-zero rates in a controlled environment do not indicate that behavior support is no longer needed; they indicate that the current environment is effectively managing the behavior. Choice B is incorrect because waiting 3 months without proactive planning exposes the student and staff to unnecessary risk; the record review provides sufficient information to develop a proactive transition plan.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.1",
   },
   {
@@ -383,6 +406,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "The precursor behavior approach is a well-established method for conducting functional assessments when the target behavior is too dangerous, low-frequency, or otherwise difficult to assess directly. By identifying a behavior that reliably precedes pica (e.g., mouthing objects, picking up items) and using it as the target in the FA, the BCBA can identify the function without the safety risks of allowing pica to occur. Choice A is incorrect because removing non-food items from the environment would prevent pica from occurring but would also prevent the assessment from testing the conditions that maintain pica — the FA would not be valid. Choice C is incorrect because indirect assessment alone is insufficient for identifying the function of pica; a functional analysis provides more direct and reliable information that is essential for designing an effective intervention. Choice B is incorrect because hospital-based FA is one option but is not the only or most practical approach; the precursor behavior method is less resource-intensive and equally valid.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.5",
   },
   {
@@ -399,6 +423,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "Satiation from exclusive use of a single reinforcer is a common and well-documented phenomenon. When the same reinforcer is used repeatedly across sessions, its reinforcing value decreases, leading to slower acquisition and potentially increased problem behavior (as sessions become less reinforcing). Reinforcer rotation — systematically varying reinforcers within and across sessions — is the standard strategy to prevent satiation and maintain reinforcer effectiveness. Choice A is incorrect because the pattern of slowed acquisition and problem behavior at session start is more consistent with satiation than skill mastery; if skills were mastered, responding would remain high (or be at ceiling) rather than slowing. Choice C is incorrect because while task difficulty can contribute to problem behavior, the specific pattern of slowed acquisition combined with problem behavior at session start is more consistent with satiation than task difficulty. Choice B is incorrect because conducting a new preference assessment is appropriate but does not address the satiation issue — the BCBA should also implement reinforcer rotation.",
     difficulty: "medium",
+    bloomsLevel: "analysis",
     taskItem: "F.7",
   },
   {
@@ -415,6 +440,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "The pattern described — high rate across all conditions (preferred/non-preferred, structured/unstructured, alone/with others), no consistent social antecedents or consequences — is the hallmark of automatically reinforced behavior. The behavior appears to produce its own reinforcement through sensory stimulation (auditory feedback from the vocalizations). An alone condition in a functional analysis would directly test this by showing whether the behavior occurs at high rates even without social consequences. Choice A is incorrect because attention-maintained behavior would be expected to occur at higher rates in the presence of others and lower rates when alone — the described pattern of consistent rates across social conditions does not support attention. Choice C is incorrect because escape-maintained behavior would be expected to occur specifically during demand conditions and decrease during preferred activities — the described pattern of consistent rates across all activities does not support escape. Choice B is incorrect because all behavior has a function, and automatic reinforcement is a well-established behavioral function; dismissing the behavior as a symptom without functional assessment is inconsistent with evidence-based practice.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.4",
   },
   {
@@ -431,6 +457,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "Brief FA formats are a valid and well-researched alternative to extended formats when specific conditions are met: the behavior occurs at sufficient rates to produce differentiated data within shorter sessions, practical constraints favor brevity, and the behavior's severity allows for brief occurrences during assessment. The tradeoff is reduced data stability, which the BCBA must account for in interpretation. Choice A is incorrect because brief formats are not always preferable — extended formats produce more stable data and are more appropriate when behavior rates are low or when data differentiation requires more observations. Choice C is incorrect because brief FA formats have been validated across all behavioral functions, including escape; there is no evidence that escape conditions specifically require longer sessions. Choice B is incorrect because age is not the primary determinant of FA format selection — behavior rate, severity, and practical constraints are more relevant considerations.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.5",
   },
   {
@@ -447,6 +474,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "The most common reason for BIP ineffectiveness is the absence of function-based components. A BIP that uses only consequence-based procedures without identifying and addressing the maintaining contingency may suppress behavior temporarily but will not produce lasting change because the function of the behavior remains unaddressed. The behavior will persist or re-emerge because the reinforcement contingency has not changed. Choice A is incorrect because increasing reinforcement density may improve compliance but does not address the underlying function of the problem behavior. Choice C is incorrect because response cost is not inherently unethical — it is a legitimate procedure when used appropriately; the primary problem is the absence of function-based components, not the use of response cost. Choice B is incorrect because 6 months of consistent implementation with no change in behavior rate is sufficient evidence of ineffectiveness; waiting longer without investigating the cause of failure is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "analysis",
     taskItem: "F.8",
   },
   {
@@ -463,6 +491,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "Setting events and establishing operations are important antecedent variables that can increase the likelihood of problem behavior even when they do not directly precede the behavior. The environmental conditions described — crowding, heat, extended work without breaks — are classic setting events that can increase the aversiveness of demands and the motivating operation for escape. The teacher's initial report of 'no warning signs' reflects a lack of awareness of these distal antecedents, not their absence. Choice A is incorrect because initial global impressions are often less accurate than specific recalled details — the specific environmental conditions are more clinically useful than the teacher's overall impression. Choice C is incorrect because setting events and establishing operations are legitimate behavioral antecedents that can and should be addressed through antecedent modifications; limiting assessment to immediate discriminative stimuli misses important contextual variables. Choice B is incorrect because the presence of identifiable environmental conditions associated with the behavior argues against automatic reinforcement as the primary function.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.2",
   },
   {
@@ -479,6 +508,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "A function-based BIP for escape-maintained elopement should include antecedent modifications that reduce the aversiveness of demands (demand modification, visual schedules, frequent breaks) and consequence-based components that teach a replacement behavior (FCR: break card) while placing elopement on extinction. This combination directly addresses the maintaining contingency. Choice A is incorrect because increasing task difficulty would increase the aversiveness of demands and the motivation to elope, and response cost does not address the escape function. Choice C is incorrect because removing all demands is not a sustainable or clinically appropriate intervention — it eliminates the antecedent but does not teach the girl to tolerate or request breaks from demands; NCR with sensory room access may also inadvertently reinforce elopement if the timing is not carefully managed. Choice B is incorrect because a token economy for staying in the classroom does not directly address the escape function, and ignoring elopement without an extinction component (blocking access to the sensory room) may not effectively reduce the behavior.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.8",
   },
   {
@@ -495,6 +525,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "The preference assessment identified three clearly high-preference items (tablet, toy car, bubbles) that are meaningfully differentiated from the remaining items. Using these three items in rotation provides variety to prevent satiation while focusing on the most potent reinforcers. Regular follow-up assessments are important because preference can change over time. Choice A is incorrect because exclusive use of the highest-preference item will lead to satiation, reducing its reinforcing value over time. Choice B is incorrect because using all 10 items, including low-preference items, would dilute the reinforcement schedule with ineffective reinforcers, reducing the efficiency of skill acquisition. Choice D is incorrect because free-operant preference assessments are a well-validated method for identifying preference hierarchies; the results are valid and clinically useful.",
     difficulty: "easy",
+    bloomsLevel: "knowledge",
     taskItem: "F.7",
   },
   {
@@ -511,6 +542,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "C",
     rationale: "The pattern of repetitive questioning during unstructured time, with unfamiliar adults, and before transitions is consistent with behavior that serves a social function (attention/reassurance) and may also be influenced by anxiety-related motivating operations. The behavior decreases temporarily after answers, suggesting the attention/reassurance is functioning as a reinforcer. However, the context (unfamiliar adults, transitions) also suggests that uncertainty and anxiety may be establishing operations. A comprehensive intervention addresses both the function (attention/reassurance) and the contextual factors. Choice A is incorrect because the behavior is clearly socially mediated — it occurs specifically with adults and decreases after adult responses — which is inconsistent with automatic reinforcement. Choice B is incorrect because planned ignoring alone does not address the contextual factors (unfamiliar adults, transitions) that set the occasion for the behavior, and extinction of socially important behavior without teaching a replacement may increase distress. Choice D is incorrect because the behavior does not occur exclusively during unstructured time — it also occurs with unfamiliar adults and before transitions, suggesting the antecedent is more complex than simply unstructured time.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.4",
   },
   {
@@ -527,6 +559,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "Undifferentiated FA data — where all conditions show similar rates — is not necessarily conclusive. It may reflect low behavior rates (insufficient data), inadequate differentiation between conditions, or behavior controlled by variables not represented in the standard conditions (e.g., specific people, specific tasks, specific settings). The appropriate response is to review the procedures and consider modifications before drawing conclusions. Choice A is incorrect because undifferentiated data with low rates across all conditions does not support automatic reinforcement — if the behavior were automatically reinforced, the alone condition would be expected to show elevated rates relative to social conditions. Choice C is incorrect because equal low rates across all conditions do not indicate multiple control — they indicate insufficient differentiation to identify any function. Choice D is incorrect because undifferentiated FA data does not mean the behavior lacks a function; it means the assessment has not yet identified the function.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.5",
   },
   {
@@ -543,6 +576,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "The interview information reveals a consistent pattern: non-preferred food is presented, the girl refuses (with gagging/vomiting), and the consequence is removal of non-preferred food and provision of preferred food. This pattern is consistent with escape from non-preferred foods (negative reinforcement) and access to preferred foods (positive reinforcement). Direct observation during mealtimes would allow the BCBA to confirm this hypothesis and gather more detailed antecedent-behavior-consequence data. Choice A is incorrect because food refusal can have both medical and behavioral components, and the pediatrician's ruling out of medical causes indicates that behavioral assessment is appropriate. Choice C is incorrect because while gagging can have a reflexive component, the consistent antecedent-consequence pattern described suggests an operant function; behavioral assessment is appropriate and should precede any intervention. Choice B is incorrect because implementing escape extinction without a thorough assessment is premature and potentially harmful — escape extinction for food refusal can be aversive and requires careful assessment and planning.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.2",
   },
   {
@@ -559,6 +593,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "Behavior naturally varies across days and sessions due to setting events, motivating operations, and other contextual factors. A single non-occurrence does not invalidate the teacher's report or the observation plan. The BCBA should continue with the planned schedule, document the conditions during non-occurrence (which may reveal important contextual variables), and look for patterns across multiple sessions. Choice A is incorrect because a single non-occurrence is not sufficient to revise the baseline estimate — multiple sessions are needed to establish a reliable baseline. Choice C is incorrect because reactivity is a possibility but should not be assumed from a single non-occurrence; covert observation raises ethical concerns and should not be the first response. Choice D is incorrect because non-occurrence sessions are not wasted — they provide information about the conditions under which the behavior does not occur, which is clinically valuable.",
     difficulty: "easy",
+    bloomsLevel: "application",
     taskItem: "F.3",
   },
   {
@@ -575,6 +610,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "D",
     rationale: "Direct observation is a critical component of a comprehensive FBA because it provides objective, first-hand data about the behavior in the natural environment. Interview data is subject to informant bias, recall errors, and incomplete information. Skipping observation increases the risk of developing an ineffective BIP based on inaccurate hypotheses. The BCBA has an ethical and professional obligation to conduct a thorough assessment. Choice A is incorrect because interview data alone is insufficient for a comprehensive FBA — it generates hypotheses that must be confirmed through direct observation. Choice C is incorrect because documenting the decision does not fulfill the BCBA's professional obligation to conduct a thorough assessment; compliance with an inappropriate request does not protect the BCBA from liability. Choice B is incorrect because skipping naturalistic observation to proceed directly to functional analysis is not standard practice — observation typically precedes FA and informs the FA design.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.3",
   },
   {
@@ -591,6 +627,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "The most common reason for BIP ineffectiveness is the absence of function-based components. A BIP developed without an FBA cannot be matched to the function of the behavior. Critically, if aggression is escape-maintained, time-out (removal from the demand situation) would actually reinforce the behavior by providing the same escape function — this is a well-documented iatrogenic effect of time-out for escape-maintained behavior. The BCBA should conduct an FBA to identify the function and redesign the BIP accordingly. Choice A is incorrect because while reinforcer selection is important, the primary problem is the absence of function-based components — even the most powerful reinforcer will not produce lasting change if the BIP does not address the maintaining contingency. Choice C is incorrect because time-out is not inherently inappropriate for children with autism — the problem is that it may be functioning as a reinforcer for escape-maintained behavior, not that it is categorically inappropriate. Choice D is incorrect because 4 months of consistent implementation with no change is sufficient evidence of ineffectiveness; waiting longer without investigating the cause of failure is not appropriate.",
     difficulty: "medium",
+    bloomsLevel: "analysis",
     taskItem: "F.8",
   },
   {
@@ -607,6 +644,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "Client safety and welfare are paramount in functional analysis. When a client is showing very high rates of the target behavior and signs of distress, the BCBA must implement safety protocols and assess whether to continue or modify the procedure. The goal of FA is to identify function to guide intervention — not to collect data at the expense of client welfare. Modifications such as briefer sessions, precursor behavior targeting, or modified escape conditions can allow the assessment to continue safely. Choice A is incorrect because continuing a procedure that is causing significant distress and high rates of severe behavior is ethically indefensible, regardless of the data value. Choice C is incorrect because switching to the attention condition without addressing the distress and safety concerns is not a systematic or ethical response; it also does not address the procedural issue. Choice D is incorrect because terminating the FA based on a single condition's data is premature — the data from one condition alone is insufficient to confirm function, and the BCBA should attempt to modify the procedure rather than abandon the assessment.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.5",
   },
   {
@@ -623,6 +661,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "Discrepant FBA findings across multiple assessments are clinically informative — they may reflect genuine changes in behavioral function over time, variation across settings, or methodological inconsistencies in previous assessments. Rather than accepting any single previous FBA as definitive, the BCBA should use all three as sources of hypotheses and conduct a new, current assessment in the present setting. Choice A is incorrect because recency alone does not make an FBA valid — the most recent FBA may have been conducted in a different setting with different conditions, and 2 years is a significant amount of time during which the function may have changed. Choice C is incorrect because concluding multiple control from discrepant findings across different assessments is not valid — the discrepancy may reflect different conditions, not simultaneous multiple functions. Choice D is incorrect because previous FBAs provide valuable hypotheses and contextual information, even if their conclusions are discrepant; the appropriate response is to use them to inform a new assessment, not to discard them.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.1",
   },
   {
@@ -639,6 +678,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "Medical conditions can function as setting events or establishing operations that alter the value of reinforcers and the frequency of behavior. An ear infection can increase the aversiveness of demands (due to pain, reduced tolerance for noise) and thereby increase the motivating operation for escape, leading to higher rates of escape-maintained SIB. The BCBA should communicate with the medical team, document the relationship, and consider whether the current FBA data is representative of the student's typical behavior. Choice A is incorrect because medical conditions are relevant to behavioral assessment — they can function as setting events that influence the rate and function of behavior. Choice C is incorrect because while the ear infection may be contributing to SIB, concluding automatic reinforcement based on the correlation alone is premature — the ABC data showing SIB during academic tasks suggests escape as the primary function. Choice D is incorrect because correlation between a medical condition and SIB does not confirm automatic reinforcement — the function must be determined through systematic assessment, and the existing ABC data suggests escape.",
     difficulty: "hard",
+    bloomsLevel: "application",
     taskItem: "F.6",
   },
   {
@@ -655,6 +695,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "The single-stimulus preference assessment identifies items that a child will approach and interact with, but it does not differentiate between items when many are approached. Without comparison between items, it is impossible to identify which items are highest-preference and most likely to function as effective reinforcers. A paired-stimulus or MSWO assessment forces comparisons between items, producing a relative preference hierarchy. Choice A is incorrect because approaching many items is not evidence of an invalid assessment — it reflects the child's general approach tendencies; the limitation is the absence of relative comparison, not the number of items approached. Choice C is incorrect because approaching many items indicates broad preferences, not the absence of preferences; reinforcement-based interventions are still appropriate. Choice D is incorrect because using all 8 items without differentiation may include low-preference items that are not effective reinforcers; a preference hierarchy would allow the BCBA to prioritize the highest-preference items.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.7",
   },
   {
@@ -671,6 +712,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "When a behavior is placed on extinction, other members of the same response class that serve the same function may emerge — this is known as response class resurgence or response class expansion. Floor-dropping likely serves the same escape function as tantrums and has emerged as the girl attempts to access escape through a different topography. The appropriate response is to extend extinction to the new behavior while continuing to reinforce the FCR. Choice A is incorrect because conducting a new FBA for floor-dropping is unnecessary — the context (emergence during tantrum extinction, same function) strongly suggests it is a member of the same response class. Choice C is incorrect because reducing demands further would reinforce the escape function of floor-dropping and undermine the extinction procedure. Choice D is incorrect because while FCR reinforcement density is important, the emergence of floor-dropping is most parsimoniously explained by response class resurgence, not insufficient FCR reinforcement.",
     difficulty: "hard",
+    bloomsLevel: "analysis",
     taskItem: "F.8",
   },
   {
@@ -687,6 +729,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "The consistent antecedent (peer proximity during group activities) and consistent consequence (removal from the group) strongly suggest escape from peer proximity as the maintaining function. The behavior does not occur during individual work or one-on-one instruction, which rules out escape from academic demands as the primary function. The intervention should address the escape function directly by teaching an appropriate replacement behavior and gradually building tolerance for peer proximity. Choice A is incorrect because while staff respond to aggression, the primary consequence is removal from the group — the behavior is specifically triggered by peer proximity, not by the presence of staff attention. Choice C is incorrect because the behavior does not occur during individual work (which also involves demands), suggesting the antecedent is peer proximity, not academic demands per se. Choice D is incorrect because automatically reinforced behavior would not be expected to occur exclusively in the presence of peers and to be consistently resolved by peer removal — the social contingency is clear.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.4",
   },
   {
@@ -703,6 +746,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "The adequacy of FA data is determined by the stability and clarity of the data, not by a fixed minimum number of sessions. Three sessions per condition showing clear differentiation (escape condition 8 responses per session vs. all others 1-2 responses per session) provides a reasonable basis for concluding escape as the primary function. However, the BCBA should consider data variability — if the escape condition data is highly variable, additional sessions may be warranted. Choice A is incorrect because the BACB does not specify a minimum number of sessions for a valid FA; the standard is data stability and differentiation. Choice C is incorrect for the same reason — there is no fixed minimum of 5 sessions; the standard is data quality, not quantity. Choice D is incorrect because a reversal condition is not a standard component of functional analysis; the FA itself provides sufficient evidence of function through the differentiated condition data.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.5",
   },
   {
@@ -719,6 +763,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "Antecedent modifications are most effective when they are eventually faded to more natural conditions, allowing the student to function in typical environments without artificial supports. Fading should be systematic, gradual, and data-driven — beginning only when behavior has stabilized at a low level and the student has acquired replacement skills. Monitoring for increases in problem behavior during fading allows for adjustments. Choice A is incorrect because fading too quickly or before replacement skills are established can lead to rapid increases in problem behavior; the timing and pace of fading must be based on data. Choice C is incorrect because maintaining artificial supports indefinitely limits the student's independence and generalization; the goal is to transfer to natural supports. Choice D is incorrect because zero problem behavior is not a prerequisite for fading — a stable, low level of behavior combined with acquired replacement skills is sufficient to begin systematic fading.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.6",
   },
   {
@@ -735,6 +780,7 @@ export const tier6Pool_F: Question[] = [
     correctAnswer: "B",
     rationale: "An actionable FBA report must include: (1) an operational definition of the target behavior so all team members are measuring the same thing; (2) a summary of assessment methods and data so the conclusions are transparent and evidence-based; (3) the identified function with supporting evidence so the team understands why the function was identified; and (4) specific, function-based intervention recommendations so the findings directly guide the BIP. Choice A is incorrect because while background information provides context, it is not the most important element for guiding intervention — the functional hypothesis and recommendations are more critical. Choice C is incorrect because a literature review, while potentially useful, is not the most important element of an FBA report; the report's primary purpose is to communicate findings and guide intervention, not to review the literature. Choice D is incorrect because while person-centered planning is important, a description of strengths and interests is not the most critical element for ensuring that FBA findings are actionable.",
     difficulty: "medium",
+    bloomsLevel: "application",
     taskItem: "F.4",
   },
 ];
