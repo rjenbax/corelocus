@@ -1,13 +1,23 @@
 /**
  * MatchingPage — Tier 3: Recognize in context
  * Given a concept definition, select the clinical scenario that illustrates it.
- * Design: Academic Warmth — teal palette, domain filter pill bar, concept grid preview
+ *
+ * Design: Academic Warmth — teal palette, domain-grouped accordion browse view
+ * matching Tier 2 (RapidRecall) layout pattern.
+ *
+ * Browse view:
+ *   - Domain filter pill bar
+ *   - Start quiz CTA card
+ *   - Domain-grouped accordion (expand to see concepts, practice per domain)
  */
 import { useState, useMemo, useCallback } from 'react';
 import { useLocation } from 'wouter';
 import { matchingItems } from '@/data/matchingScenarios';
 import { useProgress } from '@/contexts/ProgressContext';
-import { ArrowLeft, Shuffle, CheckCircle2, XCircle, ChevronRight, RotateCcw, BookOpen, Filter } from 'lucide-react';
+import {
+  ArrowLeft, Shuffle, CheckCircle2, XCircle, ChevronRight, RotateCcw,
+  BookOpen, Filter, ChevronDown, Zap
+} from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 function shuffle<T>(arr: T[]): T[] {
@@ -19,15 +29,144 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-// Derive sorted unique domains from data
-const ALL_DOMAINS = ['All', ...Array.from(new Set(matchingItems.map(m => m.domain))).sort()];
+// Canonical domain order — mirrors BCBA exam weighting
+const DOMAIN_ORDER = [
+  'Behavior Principles',
+  'Verbal Behavior',
+  'Measurement',
+  'Research & Design',
+  'Assessment',
+  'Skill Acquisition',
+  'Behavior Reduction',
+  'Selecting & Implementing Interventions',
+  'Ethics & Professional Practice',
+  'Supervision',
+  'Personnel Supervision',
+  'Personnel Supervision & Management',
+];
 
-type Mode = 'intro' | 'quiz' | 'results';
+const DOMAIN_LABELS: Record<string, string> = {
+  All: 'All Domains',
+  'Behavior Principles': 'Behavior Principles',
+  'Verbal Behavior': 'Verbal Behavior',
+  'Measurement': 'Measurement',
+  'Research & Design': 'Research & Design',
+  'Assessment': 'Assessment',
+  'Skill Acquisition': 'Skill Acquisition',
+  'Behavior Reduction': 'Behavior Reduction',
+  'Selecting & Implementing Interventions': 'Selecting & Implementing Interventions',
+  'Ethics & Professional Practice': 'Ethics & Professional Practice',
+  'Supervision': 'Supervision',
+  'Personnel Supervision': 'Personnel Supervision',
+  'Personnel Supervision & Management': 'Personnel Supervision & Management',
+};
+
+type Mode = 'browse' | 'quiz' | 'results';
+
+// ─── Domain Accordion ────────────────────────────────────────────────────────
+
+function DomainAccordion({
+  items,
+  progress: prog,
+  onPracticeDomain,
+}: {
+  items: typeof matchingItems;
+  progress: ReturnType<typeof useProgress>['progress'];
+  onPracticeDomain: (domainItems: typeof matchingItems) => void;
+}) {
+  const [openDomains, setOpenDomains] = useState<Set<string>>(new Set());
+
+  const toggleDomain = (domain: string) => {
+    setOpenDomains(prev => {
+      const next = new Set(prev);
+      if (next.has(domain)) next.delete(domain); else next.add(domain);
+      return next;
+    });
+  };
+
+  // Group items by domain, preserving canonical order
+  const grouped = useMemo(() => {
+    const map = new Map<string, typeof matchingItems>();
+    DOMAIN_ORDER.forEach(d => map.set(d, []));
+    items.forEach(item => {
+      if (!map.has(item.domain)) map.set(item.domain, []);
+      map.get(item.domain)!.push(item);
+    });
+    // Remove empty domains
+    map.forEach((v, k) => { if (v.length === 0) map.delete(k); });
+    return map;
+  }, [items]);
+
+  // Best score for matching (single global score, not per-concept)
+  const bestScore = prog.matching[0]?.score ?? null;
+
+  return (
+    <div className="space-y-2">
+      {Array.from(grouped.entries()).map(([domain, domainItems]) => {
+        const isOpen = openDomains.has(domain);
+
+        return (
+          <div key={domain} className="border border-border rounded-xl overflow-hidden bg-card">
+            {/* Section header */}
+            <div className="flex items-center gap-3 px-4 py-3">
+              <button
+                onClick={() => toggleDomain(domain)}
+                className="flex items-center gap-3 flex-1 min-w-0 text-left"
+              >
+                {isOpen
+                  ? <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0" />
+                  : <ChevronRight className="w-4 h-4 text-muted-foreground flex-shrink-0" />}
+                <span className="font-semibold text-sm text-foreground truncate">{domain}</span>
+                <span className="text-xs text-muted-foreground flex-shrink-0">{domainItems.length} concepts</span>
+                {bestScore !== null && (
+                  <span className={cn(
+                    'text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0',
+                    bestScore >= 80 ? 'bg-teal-100 text-teal-800' :
+                    bestScore >= 50 ? 'bg-amber-100 text-amber-800' :
+                    'bg-red-100 text-red-700'
+                  )}>
+                    Best: {bestScore}%
+                  </span>
+                )}
+              </button>
+              {/* Practice this domain button */}
+              <button
+                onClick={() => onPracticeDomain(domainItems)}
+                className="flex items-center gap-1.5 text-xs font-medium text-teal-700 border border-teal-200 bg-teal-50 hover:bg-teal-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
+              >
+                <Zap className="w-3 h-3" />
+                Practice
+              </button>
+            </div>
+
+            {/* Expanded concept list */}
+            {isOpen && (
+              <div className="border-t border-border">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-border">
+                  {domainItems.map(item => (
+                    <div key={item.id} className="p-3 bg-card hover:bg-muted/40 transition-colors">
+                      <div className="text-sm font-medium text-foreground leading-tight">{item.concept}</div>
+                      <div className="text-[10px] mt-0.5 text-muted-foreground/70 italic leading-snug line-clamp-2">
+                        {item.definition.substring(0, 80)}...
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function MatchingPage() {
   const [, navigate] = useLocation();
-  const { recordMatchingSession } = useProgress();
-  const [mode, setMode] = useState<Mode>('intro');
+  const { progress, recordMatchingSession } = useProgress();
+  const [mode, setMode] = useState<Mode>('browse');
   const [selectedDomain, setSelectedDomain] = useState<string>('All');
   const [quizItems, setQuizItems] = useState(matchingItems);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -35,11 +174,20 @@ export default function MatchingPage() {
   const [showFeedback, setShowFeedback] = useState(false);
   const [results, setResults] = useState<{ itemId: string; correct: boolean }[]>([]);
 
-  // Items filtered by selected domain (for preview grid + quiz pool)
+  // Items filtered by selected domain
   const filteredItems = useMemo(
     () => selectedDomain === 'All' ? matchingItems : matchingItems.filter(m => m.domain === selectedDomain),
     [selectedDomain]
   );
+
+  // Domain item counts
+  const domainCounts = useMemo(() => {
+    const counts: Record<string, number> = { All: matchingItems.length };
+    DOMAIN_ORDER.forEach(key => {
+      counts[key] = matchingItems.filter(i => i.domain === key).length;
+    });
+    return counts;
+  }, []);
 
   const currentItem = quizItems[currentIdx];
   const shuffledScenarios = useMemo(() => currentItem ? shuffle(currentItem.scenarios) : [], [currentItem]);
@@ -66,14 +214,17 @@ export default function MatchingPage() {
     }
   }, [currentIdx, quizItems.length, results, recordMatchingSession]);
 
-  const startQuiz = () => {
-    setQuizItems(shuffle(filteredItems));
+  const startQuiz = (items = filteredItems) => {
+    setQuizItems(shuffle(items));
     setCurrentIdx(0);
     setSelectedId(null);
     setShowFeedback(false);
     setResults([]);
     setMode('quiz');
   };
+
+  const totalAttempts = progress.matching[0]?.totalAttempts ?? 0;
+  const bestScore = progress.matching[0]?.score ?? null;
 
   // ── Quiz screen ──────────────────────────────────────────────────────────
   if (mode === 'quiz' && currentItem) {
@@ -86,9 +237,9 @@ export default function MatchingPage() {
       <div className="min-h-screen bg-background">
         <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="container flex items-center justify-between h-14">
-            <button onClick={() => setMode('intro')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
+            <button onClick={() => setMode('browse')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
               <ArrowLeft className="w-4 h-4" />
-              Exit
+              Exit Quiz
             </button>
             <div className="flex items-center gap-2">
               {selectedDomain !== 'All' && (
@@ -193,9 +344,9 @@ export default function MatchingPage() {
       <div className="min-h-screen bg-background">
         <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
           <div className="container flex items-center h-14">
-            <button onClick={() => setMode('intro')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
+            <button onClick={() => setMode('browse')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
               <ArrowLeft className="w-4 h-4" />
-              Back
+              Back to Scenario Matching
             </button>
           </div>
         </header>
@@ -214,13 +365,13 @@ export default function MatchingPage() {
               : 'Review the concepts you missed and try again.'}
           </p>
           <div className="flex gap-3 justify-center flex-wrap">
-            <button onClick={startQuiz} className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
+            <button onClick={() => startQuiz()} className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
               <RotateCcw className="w-4 h-4" />
               Try Again
             </button>
             {selectedDomain !== 'All' && (
               <button
-                onClick={() => { setSelectedDomain('All'); setMode('intro'); }}
+                onClick={() => { setSelectedDomain('All'); setMode('browse'); }}
                 className="flex items-center gap-2 border border-teal-300 text-teal-700 bg-teal-50 px-5 py-2.5 rounded-lg hover:bg-teal-100 transition-colors"
               >
                 Practice All Domains
@@ -235,13 +386,13 @@ export default function MatchingPage() {
     );
   }
 
-  // ── Intro screen ─────────────────────────────────────────────────────────
+  // ── Browse view ───────────────────────────────────────────────────────────
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container flex items-center justify-between h-14">
           <div className="flex items-center gap-3">
-            <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
+            <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
               <ArrowLeft className="w-4 h-4" />
               <span className="hidden sm:inline">Dashboard</span>
             </button>
@@ -249,99 +400,99 @@ export default function MatchingPage() {
             <div className="flex items-center gap-2">
               <Shuffle className="w-4 h-4 text-teal-600" />
               <span className="font-semibold text-sm">Scenario Matching</span>
-              <span className="text-xs bg-teal-100 text-teal-700 px-2 py-0.5 rounded-full">Tier 3</span>
+              <span className="text-xs bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full">Tier 3</span>
             </div>
+          </div>
+          <div className="text-xs text-muted-foreground">
+            {totalAttempts} session{totalAttempts !== 1 ? 's' : ''} completed
+            {bestScore !== null && <span className="ml-1">· best {bestScore}%</span>}
           </div>
         </div>
       </header>
 
-      <div className="container py-10 max-w-2xl mx-auto">
-        {/* Info card */}
-        <div className="bg-teal-50 border-2 border-teal-200 rounded-2xl p-6 mb-8">
-          <div className="flex items-start gap-3">
-            <BookOpen className="w-8 h-8 text-teal-600 flex-shrink-0 mt-0.5" />
-            <div>
-              <h2 className="text-xl font-bold text-foreground mb-2">Definition → Clinical Scenario</h2>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                You'll see a concept definition. Select the clinical scenario that best illustrates it from 4 options.
-                This bridges the gap between knowing a definition and recognizing it in practice.
-              </p>
-              <div className="flex items-center gap-3 text-xs text-teal-700 flex-wrap">
-                <span className="bg-teal-100 px-2 py-1 rounded">{matchingItems.length} concepts total</span>
-                <span className="bg-teal-100 px-2 py-1 rounded">4 scenarios each</span>
-                <span className="bg-teal-100 px-2 py-1 rounded">8 domains</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* ── Domain filter pill bar ── */}
+      <div className="container py-6 max-w-3xl mx-auto">
+        {/* Domain Filter */}
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-3">
             <Filter className="w-3.5 h-3.5 text-muted-foreground" />
-            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Filter by domain</span>
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Filter by Domain</span>
           </div>
           <div className="flex flex-wrap gap-2">
-            {ALL_DOMAINS.map(domain => {
-              const count = domain === 'All'
-                ? matchingItems.length
-                : matchingItems.filter(m => m.domain === domain).length;
-              const isActive = selectedDomain === domain;
-              return (
-                <button
-                  key={domain}
-                  onClick={() => setSelectedDomain(domain)}
-                  className={cn(
-                    "flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all",
-                    isActive
-                      ? "bg-teal-600 text-white border-teal-600 shadow-sm"
-                      : "bg-card text-muted-foreground border-border hover:border-teal-300 hover:text-teal-700 hover:bg-teal-50"
-                  )}
-                >
-                  {domain}
-                  <span className={cn(
-                    "text-[10px] font-bold px-1 py-0.5 rounded-full min-w-[18px] text-center",
-                    isActive ? "bg-white/20 text-white" : "bg-muted text-muted-foreground"
-                  )}>
-                    {count}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Start button — updates with filtered count */}
-        <div className="mb-10">
-          <button
-            onClick={startQuiz}
-            disabled={filteredItems.length === 0}
-            className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 disabled:opacity-50 text-white font-semibold px-8 py-3 rounded-xl transition-colors"
-          >
-            <Shuffle className="w-5 h-5" />
-            {selectedDomain === 'All'
-              ? `Start Matching (${filteredItems.length} items)`
-              : `Start — ${selectedDomain} (${filteredItems.length} items)`}
-          </button>
-        </div>
-
-        {/* Concept preview grid — filtered */}
-        <div>
-          <div className="flex items-center justify-between mb-3">
-            <h3 className="font-semibold text-sm text-foreground">
-              {selectedDomain === 'All' ? 'All concepts' : `${selectedDomain} concepts`}
-              <span className="ml-2 text-xs text-muted-foreground font-normal">({filteredItems.length})</span>
-            </h3>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {filteredItems.map(item => (
-              <div key={item.id} className="p-2.5 rounded-lg border border-border bg-card text-xs hover:border-teal-200 hover:bg-teal-50/30 transition-colors">
-                <div className="text-muted-foreground mb-0.5 truncate">{item.domain}</div>
-                <div className="font-medium text-foreground">{item.concept}</div>
-              </div>
+            {['All', ...DOMAIN_ORDER.filter(d => domainCounts[d] > 0)].map(key => (
+              <button
+                key={key}
+                onClick={() => setSelectedDomain(key)}
+                className={cn(
+                  'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
+                  selectedDomain === key
+                    ? 'bg-teal-600 text-white border-teal-600 shadow-sm'
+                    : 'bg-card text-muted-foreground border-border hover:border-teal-300 hover:text-teal-800'
+                )}
+              >
+                {key === 'All' ? 'All Domains' : key}
+                <span className={cn('ml-1.5 text-[10px]', selectedDomain === key ? 'text-teal-100' : 'text-muted-foreground/60')}>
+                  ({domainCounts[key] ?? 0})
+                </span>
+              </button>
             ))}
           </div>
         </div>
+
+        {/* Start quiz CTA */}
+        <div className="bg-gradient-to-r from-teal-50 to-cyan-50 border-2 border-teal-200 rounded-2xl p-6 mb-8">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <h2 className="text-xl font-bold text-foreground mb-1">
+                {selectedDomain === 'All' ? 'Scenario Matching Quiz' : `${selectedDomain} Quiz`}
+              </h2>
+              <p className="text-sm text-muted-foreground mb-4">
+                See a concept definition. Pick the clinical scenario that best illustrates it.
+                {selectedDomain !== 'All' && ` Drilling ${selectedDomain}.`}
+              </p>
+              <div className="flex gap-2 flex-wrap">
+                <button
+                  onClick={() => startQuiz(filteredItems)}
+                  disabled={filteredItems.length === 0}
+                  className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 disabled:opacity-50 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
+                >
+                  <Shuffle className="w-4 h-4" />
+                  {selectedDomain === 'All'
+                    ? `Start Full Quiz (${filteredItems.length} concepts)`
+                    : `Start ${selectedDomain} (${filteredItems.length} concepts)`}
+                </button>
+                {filteredItems.length > 10 && (
+                  <button
+                    onClick={() => startQuiz(shuffle(filteredItems).slice(0, Math.min(20, filteredItems.length)))}
+                    className="flex items-center gap-2 border border-teal-300 text-teal-800 bg-white px-4 py-2.5 rounded-lg hover:bg-teal-50 transition-colors text-sm"
+                  >
+                    Quick {Math.min(20, filteredItems.length)}
+                  </button>
+                )}
+              </div>
+            </div>
+            {bestScore !== null && (
+              <div className="text-right flex-shrink-0">
+                <div className="text-3xl font-black text-teal-700">{bestScore}%</div>
+                <div className="text-xs text-muted-foreground">best score</div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Domain-grouped accordion */}
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="font-semibold text-sm text-foreground">
+            {selectedDomain === 'All'
+              ? `All Concepts (${matchingItems.length})`
+              : `${selectedDomain} (${filteredItems.length})`}
+          </h3>
+          <span className="text-xs text-muted-foreground">Click a domain to expand · Practice to drill</span>
+        </div>
+        <DomainAccordion
+          items={filteredItems}
+          progress={progress}
+          onPracticeDomain={(domainItems) => startQuiz(domainItems)}
+        />
       </div>
     </div>
   );

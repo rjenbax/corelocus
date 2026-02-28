@@ -6,7 +6,7 @@
 
 import { useState, useCallback, useMemo } from 'react';
 import { useLocation } from 'wouter';
-import { ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, XCircle, RotateCcw, Trophy, Filter, GitMerge, BookOpen, Swords } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, XCircle, RotateCcw, Trophy, Filter, GitMerge, BookOpen, Swords, ChevronDown, Zap } from 'lucide-react';
 import { vennDiagrams, VennItem } from '@/data/vennDiagrams';
 import { useProgress } from '@/contexts/ProgressContext';
 import { Button } from '@/components/ui/button';
@@ -85,6 +85,248 @@ function buildFeatureCards(item: VennItem): FeatureCard[] {
   ];
   return shuffle(cards);
 }
+
+// ─── Venn Grid View (Accordion) ─────────────────────────────────────────────
+
+function VennGridView({
+  categories,
+  categoryOrderList,
+  filteredItems,
+  selectedCategory,
+  setSelectedCategory,
+  completedIds,
+  openExercise,
+  navigate,
+  vennDiagrams: allDiagrams,
+  getCatColors,
+}: {
+  categories: string[];
+  categoryOrderList: string[];
+  filteredItems: VennItem[];
+  selectedCategory: string;
+  setSelectedCategory: (c: string) => void;
+  completedIds: Set<string>;
+  openExercise: (item: VennItem, mode?: 'study' | 'sort') => void;
+  navigate: (path: string) => void;
+  vennDiagrams: VennItem[];
+  getCatColors: (cat: string) => { bg: string; text: string; border: string; pill: string };
+}) {
+  const [openCats, setOpenCats] = useState<Set<string>>(new Set());
+
+  const toggleCat = (cat: string) => {
+    setOpenCats(prev => {
+      const next = new Set(prev);
+      if (next.has(cat)) next.delete(cat); else next.add(cat);
+      return next;
+    });
+  };
+
+  // Group items by category, preserving canonical order
+  const grouped = useMemo(() => {
+    const map = new Map<string, VennItem[]>();
+    categoryOrderList.forEach(c => map.set(c, []));
+    filteredItems.forEach(item => {
+      if (!map.has(item.category)) map.set(item.category, []);
+      map.get(item.category)!.push(item);
+    });
+    map.forEach((v, k) => { if (v.length === 0) map.delete(k); });
+    return map;
+  }, [filteredItems, categoryOrderList]);
+
+  const totalCompleted = completedIds.size;
+  const totalDiagrams = allDiagrams.length;
+
+  return (
+    <div className="min-h-screen bg-background">
+      <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
+        <div className="container flex items-center justify-between h-14">
+          <div className="flex items-center gap-3">
+            <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <ArrowLeft className="w-4 h-4" />
+              <span className="hidden sm:inline">Dashboard</span>
+            </button>
+            <span className="text-border">|</span>
+            <div className="flex items-center gap-2">
+              <GitMerge className="w-4 h-4 text-violet-700" />
+              <span className="font-semibold text-sm">Venn Diagram</span>
+              <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">Tier 4</span>
+            </div>
+          </div>
+          <div className="text-xs text-muted-foreground">
+            {totalCompleted} / {totalDiagrams} completed
+          </div>
+        </div>
+      </header>
+
+      <div className="container py-6 max-w-3xl mx-auto">
+        {/* Category filter pills */}
+        <div className="mb-6">
+          <div className="flex items-center gap-2 mb-3">
+            <Filter className="w-3.5 h-3.5 text-muted-foreground" />
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Filter by Category</span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setSelectedCategory('ALL')}
+              className={cn(
+                'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
+                selectedCategory === 'ALL'
+                  ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
+                  : 'bg-card text-muted-foreground border-border hover:border-violet-300 hover:text-violet-800'
+              )}
+            >
+              All
+              <span className={cn('ml-1.5 text-[10px]', selectedCategory === 'ALL' ? 'text-violet-200' : 'text-muted-foreground/60')}>
+                ({allDiagrams.length})
+              </span>
+            </button>
+            {categories.map(cat => {
+              const count = allDiagrams.filter(v => v.category === cat).length;
+              const isActive = selectedCategory === cat;
+              const cc = getCatColors(cat);
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={cn(
+                    'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
+                    isActive
+                      ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
+                      : cn('bg-card border-border hover:border-violet-300', cc.text)
+                  )}
+                >
+                  {cat}
+                  <span className={cn('ml-1.5 text-[10px]', isActive ? 'text-violet-200' : 'text-muted-foreground/60')}>
+                    ({count})
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Start CTA */}
+        <div className="bg-gradient-to-r from-violet-50 to-purple-50 border-2 border-violet-200 rounded-2xl p-6 mb-8">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <h2 className="text-xl font-bold text-foreground mb-1">
+                {selectedCategory === 'ALL' ? 'Venn Diagram Sort' : `${selectedCategory}`}
+              </h2>
+              <p className="text-sm text-muted-foreground mb-4">
+                Sort features into the correct zones: Term A Only, Shared, Term B Only, or Does Not Belong.
+                {selectedCategory !== 'ALL' && ` Drilling ${selectedCategory}.`}
+              </p>
+              <div className="flex gap-2 flex-wrap">
+                <button
+                  onClick={() => openExercise(filteredItems[0], 'study')}
+                  disabled={filteredItems.length === 0}
+                  className="flex items-center gap-2 bg-violet-700 hover:bg-violet-800 disabled:opacity-50 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
+                >
+                  <BookOpen className="w-4 h-4" />
+                  {selectedCategory === 'ALL'
+                    ? `Browse All (${filteredItems.length} pairs)`
+                    : `Browse ${selectedCategory} (${filteredItems.length})`}
+                </button>
+                <button
+                  onClick={() => openExercise(filteredItems[0], 'sort')}
+                  disabled={filteredItems.length === 0}
+                  className="flex items-center gap-2 border border-violet-300 text-violet-800 bg-white px-4 py-2.5 rounded-lg hover:bg-violet-50 transition-colors text-sm"
+                >
+                  <Swords className="w-4 h-4" />
+                  Jump to Sort Mode
+                </button>
+              </div>
+            </div>
+            {totalCompleted > 0 && (
+              <div className="text-right flex-shrink-0">
+                <div className="text-3xl font-black text-violet-700">{totalCompleted}</div>
+                <div className="text-xs text-muted-foreground">completed</div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Category accordion */}
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="font-semibold text-sm text-foreground">
+            {selectedCategory === 'ALL'
+              ? `All Pairs (${allDiagrams.length})`
+              : `${selectedCategory} (${filteredItems.length})`}
+          </h3>
+          <span className="text-xs text-muted-foreground">Click a category to expand · Practice to drill</span>
+        </div>
+
+        <div className="space-y-2">
+          {Array.from(grouped.entries()).map(([cat, catItems]) => {
+            const isOpen = openCats.has(cat);
+            const cc = getCatColors(cat);
+            const completedInCat = catItems.filter(item => completedIds.has(item.id)).length;
+
+            return (
+              <div key={cat} className="border border-border rounded-xl overflow-hidden bg-card">
+                {/* Section header */}
+                <div className="flex items-center gap-3 px-4 py-3">
+                  <button
+                    onClick={() => toggleCat(cat)}
+                    className="flex items-center gap-3 flex-1 min-w-0 text-left"
+                  >
+                    {isOpen
+                      ? <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0" />
+                      : <ChevronRight className="w-4 h-4 text-muted-foreground flex-shrink-0" />}
+                    <span className={cn('text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0', cc.pill)}>{cat}</span>
+                    <span className="text-xs text-muted-foreground flex-shrink-0">{catItems.length} pairs</span>
+                    {completedInCat > 0 && (
+                      <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 flex-shrink-0">
+                        {completedInCat}/{catItems.length} done
+                      </span>
+                    )}
+                    {completedInCat === 0 && (
+                      <span className="text-[10px] text-muted-foreground/50 flex-shrink-0">Not started</span>
+                    )}
+                  </button>
+                  {/* Practice this category button */}
+                  <button
+                    onClick={() => openExercise(catItems[0], 'sort')}
+                    className="flex items-center gap-1.5 text-xs font-medium text-violet-700 border border-violet-200 bg-violet-50 hover:bg-violet-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
+                  >
+                    <Zap className="w-3 h-3" />
+                    Practice
+                  </button>
+                </div>
+
+                {/* Expanded pair list */}
+                {isOpen && (
+                  <div className="border-t border-border">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-border">
+                      {catItems.map(pair => {
+                        const isCompleted = completedIds.has(pair.id);
+                        return (
+                          <button
+                            key={pair.id}
+                            onClick={() => openExercise(pair)}
+                            className="p-3 bg-card hover:bg-muted/40 transition-colors text-left"
+                          >
+                            <div className="flex items-center justify-between mb-1">
+                              <span className="text-sm font-medium text-foreground leading-tight">{pair.conceptA}</span>
+                              {isCompleted && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0 ml-2" />}
+                            </div>
+                            <div className="text-xs text-muted-foreground">vs {pair.conceptB}</div>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ─── Main Page ────────────────────────────────────────────────────────────────
 
 export default function VennPage() {
   const [, navigate] = useLocation();
@@ -195,101 +437,32 @@ export default function VennPage() {
 
   // ── GRID VIEW ──────────────────────────────────────────────────────────────
   if (view === 'grid') {
+    // Build accordion grouped by category
+    const CATEGORY_ORDER_LIST = [
+      'Tier 1 – High Confusion',
+      'Tier 2 – Moderate Confusion',
+      'Tier 3 – Subtle Distinction',
+      'Behavior Reduction',
+      'Research & Design',
+      'Verbal Behavior + Stimulus Control',
+      'Measurement',
+      'Skill Acquisition',
+      'Ethics & Supervision',
+    ];
+
     return (
-      <div className="min-h-screen bg-[#F8FAFC]">
-        <header className="border-b border-slate-200 bg-white sticky top-0 z-50">
-          <div className="max-w-5xl mx-auto px-4 flex items-center justify-between h-14">
-            <div className="flex items-center gap-3">
-              <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-slate-800">
-                <ArrowLeft className="w-4 h-4" />
-                <span className="hidden sm:inline">Dashboard</span>
-              </button>
-              <span className="text-slate-200">|</span>
-              <div className="flex items-center gap-2">
-                <GitMerge className="w-4 h-4 text-violet-700" />
-                <span className="font-semibold text-sm text-slate-800">Venn Diagram</span>
-                <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">Tier 4</span>
-              </div>
-            </div>
-            <div className="text-xs text-slate-500">
-              {completedIds.size} / {vennDiagrams.length} completed
-            </div>
-          </div>
-        </header>
-
-        <div className="max-w-5xl mx-auto px-4 py-6">
-          {/* Category filter */}
-          <div className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <Filter className="w-3.5 h-3.5 text-slate-400" />
-              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Filter by category</span>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setSelectedCategory('ALL')}
-                className={cn(
-                  'flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
-                  selectedCategory === 'ALL'
-                    ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
-                    : 'bg-white text-slate-500 border-slate-200 hover:border-purple-300 hover:text-purple-700 hover:bg-purple-50'
-                )}
-              >
-                All
-                <span className={cn(
-                  'text-[10px] font-bold px-1 py-0.5 rounded-full min-w-[18px] text-center',
-                  selectedCategory === 'ALL' ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-500'
-                )}>{vennDiagrams.length}</span>
-              </button>
-              {categories.map(cat => {
-                const count = vennDiagrams.filter(v => v.category === cat).length;
-                const isActive = selectedCategory === cat;
-                return (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    className={cn(
-                      'flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
-                      isActive
-                        ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
-                        : 'bg-white text-slate-500 border-slate-200 hover:border-purple-300 hover:text-purple-700 hover:bg-purple-50'
-                    )}
-                  >
-                    {cat}
-                    <span className={cn(
-                      'text-[10px] font-bold px-1 py-0.5 rounded-full min-w-[18px] text-center',
-                      isActive ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-500'
-                    )}>{count}</span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Pair grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {filteredItems.map(pair => {
-              const cc = getCatColors(pair.category);
-              const isCompleted = completedIds.has(pair.id);
-              return (
-                <button
-                  key={pair.id}
-                  onClick={() => openExercise(pair)}
-                  className={cn(
-                    'text-left p-4 rounded-xl border-2 transition-all hover:shadow-md hover:-translate-y-0.5',
-                    cc.border, cc.bg,
-                    isCompleted && 'ring-1 ring-emerald-400/60'
-                  )}
-                >
-                  <div className={cn('text-xs mb-2', cc.text)}>{pair.category}</div>
-                  <div className="font-bold text-slate-800 text-sm leading-tight mb-1">{pair.conceptA}</div>
-                  <div className="text-xs text-slate-500">vs {pair.conceptB}</div>
-                  {isCompleted && <div className="text-xs text-violet-700 mt-2 font-medium">✓ Completed</div>}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </div>
+      <VennGridView
+        categories={categories}
+        categoryOrderList={CATEGORY_ORDER_LIST}
+        filteredItems={filteredItems}
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        completedIds={completedIds}
+        openExercise={openExercise}
+        navigate={navigate}
+        vennDiagrams={vennDiagrams}
+        getCatColors={getCatColors}
+      />
     );
   }
 
