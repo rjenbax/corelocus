@@ -37,6 +37,7 @@ import { tier6Pool_G_neg } from './tier6Pool_G_neg';
 import { tier6Pool_H_neg } from './tier6Pool_H_neg';
 import { tier6Pool_I_neg } from './tier6Pool_I_neg';
 import { tier6Pool_A_easy } from './tier6Pool_A_easy';
+import { tier6Pool_A_expansion } from './tier6Pool_A_expansion';
 import { tier6Pool_B_easy } from './tier6Pool_B_easy';
 import { tier6Pool_C_easy } from './tier6Pool_C_easy';
 import { tier6Pool_D_easy } from './tier6Pool_D_easy';
@@ -64,7 +65,7 @@ export const BCBA_DOMAIN_WEIGHTS: Record<string, number> = {
 
 // Full question pool organized by domain
 const poolByDomain: Record<string, Question[]> = {
-  A: [...tier6Pool_A, ...tier6Pool_A_neg, ...tier6Pool_A_easy, ...tier6Questions.filter(q => q.domain === 'A')],
+  A: [...tier6Pool_A, ...tier6Pool_A_neg, ...tier6Pool_A_easy, ...tier6Pool_A_expansion, ...tier6Questions.filter(q => q.domain === 'A')],
   B: [...tier6Pool_B, ...tier6Pool_B_neg, ...tier6Pool_B_easy, ...tier6Pool_B_batch1, ...tier6Pool_B_batch2, ...tier6Questions.filter(q => q.domain === 'B')],
   C: [...tier6Pool_C, ...tier6Pool_C_neg, ...tier6Pool_C_easy, ...tier6Pool_C_batch1, ...tier6Questions.filter(q => q.domain === 'C')],
   D: [...tier6Pool_D, ...tier6Pool_D_neg, ...tier6Pool_D_easy, ...tier6Questions.filter(q => q.domain === 'D')],
