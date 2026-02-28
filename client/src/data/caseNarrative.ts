@@ -24,7 +24,7 @@ export const clientProfile = {
 
 export const lifecyclePhases: LifecyclePhase[] = [
   {
-    id: "intake",
+    id: "assessment",
     title: "Phase 1: Intake & Initial Assessment",
     subtitle: "Domains A, B, E, F — Questions 1–46",
     narrative: `You have just received a referral for Leo Rodriguez, a 5-year-old boy recently diagnosed with Autism Spectrum Disorder (Level 2) and mild intellectual disability. Leo has been enrolled in a general education kindergarten class with a part-time paraprofessional. His parents, Mr. and Mrs. Rodriguez, are a bilingual family who primarily speak Spanish at home. They report that Leo has between 10 and 15 tantrums per day, characterized by screaming, dropping to the floor, and occasionally throwing objects. He has fewer than 10 functional words and primarily communicates by grabbing, leading adults by the hand, or having tantrums when his needs are not met.
@@ -63,7 +63,7 @@ You write observable, measurable goals and obtain signed consent from the Rodrig
     domainFocus: ["B", "E", "F", "G", "H"],
   },
   {
-    id: "intervention",
+    id: "implementation",
     title: "Phase 4: Intervention Implementation",
     subtitle: "Domains B, C, G, H, I — Questions 121–152",
     narrative: `The intervention is underway. Marcus, the RBT, is implementing the FCT and token economy program under Sarah's direct supervision. You are providing weekly supervision to Sarah and conducting bi-weekly observations of Marcus's sessions.
@@ -78,7 +78,7 @@ By week eight, Leo's tantrums have decreased from 10–15 per day to an average 
     domainFocus: ["B", "C", "G", "H", "I"],
   },
   {
-    id: "evaluation-discharge",
+    id: "evaluation",
     title: "Phase 5: Ongoing Evaluation, Generalization & Discharge",
     subtitle: "Domains C, D, E, H, I — Questions 153–175",
     narrative: `It has been six months since Leo began services. His progress has been remarkable. His tantrums now occur fewer than once per week. He has a functional communication system using both picture cards and some verbal approximations. He is participating in group instruction in his kindergarten class for up to 20 minutes at a time. His teacher reports that he is "a different kid."

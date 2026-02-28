@@ -297,6 +297,30 @@ function ExamView() {
 
   const choiceLabels = ['a', 'b', 'c', 'd'];
 
+  // Keyboard navigation: arrow keys to navigate, A/B/C/D to select answers
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      // Don't fire when typing in inputs
+      if ((e.target as HTMLElement).tagName === 'INPUT' || (e.target as HTMLElement).tagName === 'TEXTAREA') return;
+      if (state.paused) return;
+      const key = e.key.toLowerCase();
+      if (key === 'arrowright' || key === 'arrowdown') {
+        e.preventDefault();
+        if (currentIndex < totalQ - 1) nextQuestion();
+      } else if (key === 'arrowleft' || key === 'arrowup') {
+        e.preventDefault();
+        if (currentIndex > 0) prevQuestion();
+      } else if (['a', 'b', 'c', 'd'].includes(key) && !isRevealed) {
+        const choice = currentQuestion?.choices.find(c => c.letter === key);
+        if (choice) submitAnswer(Number(currentQuestion!.id), key);
+      } else if (key === 'r' && isAnswered && !isRevealed) {
+        revealAnswer(Number(currentQuestion!.id));
+      }
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [currentIndex, totalQ, nextQuestion, prevQuestion, submitAnswer, revealAnswer, currentQuestion, isRevealed, isAnswered, state.paused]);
+
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col">
       {/* Top bar */}
@@ -332,7 +356,7 @@ function ExamView() {
       {state.paused && <PauseScreen onResume={resumeExam} />}
 
       {/* Main content */}
-      <div className="flex-1 flex flex-col max-w-3xl mx-auto w-full px-4 py-6">
+      <div className="flex-1 flex flex-col max-w-3xl mx-auto w-full px-4 pt-6 pb-24">
         {/* Domain badge */}
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
@@ -428,8 +452,9 @@ function ExamView() {
           </div>
         )}
 
-        {/* Navigation */}
-        <div className="flex items-center justify-between mt-auto pt-4">
+        {/* Navigation — sticky bottom bar */}
+        <div className="fixed bottom-0 left-0 right-0 z-30 bg-slate-950/95 backdrop-blur border-t border-slate-800 px-4 py-3">
+        <div className="flex items-center justify-between max-w-3xl mx-auto">
           <button
             onClick={prevQuestion}
             disabled={currentIndex === 0}
@@ -457,8 +482,8 @@ function ExamView() {
             </button>
           )}
         </div>
+        </div>
       </div>
-
       {/* Pre-submission summary modal */}
       {showFinishConfirm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
