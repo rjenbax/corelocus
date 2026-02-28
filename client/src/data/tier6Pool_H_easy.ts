@@ -23,8 +23,8 @@ export const tier6Pool_H_easy: Question[] = [
     scenario: `A BCBA is explaining the concept of least restrictive intervention to a parent. She explains that the BACB Ethics Code requires behavior analysts to consider the least restrictive effective intervention when selecting procedures.`,
     question: `What does the principle of least restrictive intervention require when selecting behavior-change procedures?`,
     choices: [
-      { letter: "A", text: `The principle requires that behavior analysts select the intervention that produces the fastest reduction in challenging behavior, regardless of its restrictiveness.` },
-      { letter: "B", text: `The principle requires that behavior analysts select the most effective intervention available, and then consider restrictiveness only if multiple equally effective options exist.` },
+      { letter: "A", text: `The principle requires that behavior analysts select the intervention that produces the fastest reduction in challenging behavior, regardless of its restrictiveness, because minimizing the duration of the challenging behavior is the highest ethical priority.` },
+      { letter: "B", text: `The principle requires that behavior analysts select the most effective intervention available, and then consider restrictiveness only if multiple equally effective options exist, because effectiveness must always take precedence over concerns about intrusiveness.` },
       { letter: "C", text: `The principle requires that behavior analysts select the least restrictive procedure that is likely to be effective, prioritizing positive and reinforcement-based approaches before considering more restrictive procedures.` },
       { letter: "D", text: `The principle requires that behavior analysts select the intervention that has the most empirical support in the published literature, regardless of its restrictiveness or the client's individual needs.` },
     ],
@@ -59,8 +59,8 @@ export const tier6Pool_H_easy: Question[] = [
     scenario: `A BCBA is explaining antecedent-based interventions to a parent. She explains that antecedent interventions modify the environment before the challenging behavior occurs, rather than relying solely on consequence-based procedures.`,
     question: `Which of the following is an example of an antecedent-based intervention?`,
     choices: [
-      { letter: "A", text: `Delivering a preferred item contingent on the occurrence of the target replacement behavior to increase the frequency of the replacement behavior.` },
-      { letter: "B", text: `Withholding the reinforcer that has been maintaining the challenging behavior to place the behavior on extinction.` },
+      { letter: "A", text: `Delivering a preferred item contingent on the occurrence of the target replacement behavior to increase the frequency of the replacement behavior and decrease the frequency of the challenging behavior.` },
+      { letter: "B", text: `Withholding the reinforcer that has been maintaining the challenging behavior to place the behavior on extinction and reduce its future frequency.` },
       { letter: "C", text: `Modifying the physical environment to reduce the likelihood that the challenging behavior will occur, such as removing access to items that trigger the behavior.` },
       { letter: "D", text: `Delivering a brief aversive stimulus contingent on the challenging behavior to decrease its future frequency.` },
     ],
