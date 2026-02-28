@@ -20,6 +20,7 @@ export interface Question {
   choices: Choice[];
   correctAnswer: string;
   rationale: string;
+  distractorRationale?: Record<string, string>; // per-choice explanation for evaluation-level items
   graphData?: import('./graphTypes').BehaviorGraphData;
 }
 

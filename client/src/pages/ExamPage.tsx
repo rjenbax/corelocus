@@ -3,7 +3,7 @@
  * Design: Academic Warmth — split layout: sidebar (case context) + main (question)
  * Forest green accents, Lora serif for case narrative, DM Sans for UI
  */
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { useExam } from '@/contexts/ExamContext';
 import { allQuestions } from '@/data/allQuestions';
@@ -302,8 +302,8 @@ export default function ExamPage() {
                 }
 
                 return (
+                  <React.Fragment key={choice.letter}>
                   <button
-                    key={choice.letter}
                     className={btnClass}
                     onClick={() => !isRevealed && submitAnswer(choice.letter)}
                     disabled={isRevealed}
@@ -327,6 +327,22 @@ export default function ExamPage() {
                       <XCircle className="w-4 h-4 text-red-500 flex-shrink-0 ml-auto mt-0.5" />
                     )}
                   </button>
+                  {/* Per-choice distractor rationale for evaluation-level items */}
+                  {isRevealed && currentQuestion.distractorRationale && currentQuestion.distractorRationale[choice.letter] && (
+                    <div className={`mx-1 mb-1 px-4 py-2.5 rounded-b-lg text-xs leading-relaxed border-t-0 ${
+                      choice.letter === currentQuestion.correctAnswer
+                        ? 'bg-violet-50/80 border border-violet-200 text-violet-900'
+                        : 'bg-slate-50 border border-slate-200 text-slate-700'
+                    }`}>
+                      <span className={`font-semibold mr-1 ${
+                        choice.letter === currentQuestion.correctAnswer ? 'text-violet-700' : 'text-slate-500'
+                      }`}>
+                        {choice.letter === currentQuestion.correctAnswer ? '✓ Why this is correct:' : '✗ Why this is incorrect:'}
+                      </span>
+                      {currentQuestion.distractorRationale[choice.letter]}
+                    </div>
+                  )}
+                  </React.Fragment>
                 );
               })}
             </div>
