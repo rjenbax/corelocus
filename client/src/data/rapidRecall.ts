@@ -1461,22 +1461,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'A.1',
   },
   {
-    id: 'rr-goals-science-order', term: 'Order of the Three Goals of Science',
-    correctDefinition: 'The three goals of a natural science progress from (1) Description to (2) Prediction to (3) Control, with each level building on the prior: description establishes what occurs, prediction identifies reliable antecedents, and control demonstrates cause-and-effect.',
-    distractors: [
-      'The three goals progress from Prediction to Description to Control.',
-      'The three goals progress from Control to Prediction to Description.',
-      'The three goals are independent and do not build on one another in a fixed sequence.',
-    ],
-    misconceptions: [
-      '"Control can be demonstrated without first establishing description and prediction."',
-      '"Prediction is the highest goal because it shows the most scientific rigor."',
-      '"Description is not a true scientific goal because it does not involve manipulation."',
-    ],
-    domain: 'A', category: 'Goals of Science',
-    taskItem: 'A.1',
-  },
-  {
     id: 'rr-private-event', term: 'Private Event',
     correctDefinition: 'Any stimulus or response that occurs within the skin of an organism and is not directly observable by others; in radical behaviorism, these are treated as real behaviors subject to the same lawful relationships as publicly observable responses, not as causes of overt behavior.',
     distractors: [
@@ -1536,38 +1520,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Behaviorism denies that thoughts and feelings exist."',
       '"Behaviorism is the same as applied behavior analysis."',
       '"Behaviorism holds that behavior is random and unpredictable."',
-    ],
-    domain: 'A', category: 'Levels of Behavioral Science',
-    taskItem: 'A.4',
-  },
-  {
-    id: 'rr-eab', term: 'Experimental Analysis of Behavior (EAB)',
-    correctDefinition: 'The basic science of behavior that uses controlled laboratory methods with individual organisms under precisely arranged contingencies to identify the fundamental principles governing relationships between behavior and environmental variables; the scientific foundation of applied behavior analysis.',
-    distractors: [
-      'The applied science that uses behavioral principles to produce socially significant improvements in human behavior.',
-      'The service delivery context in which credentialed behavior analysts apply behavioral procedures to individual clients.',
-      'The branch of psychology that uses group experimental designs to identify effective treatments for clinical populations.',
-    ],
-    misconceptions: [
-      '"EAB is the same as ABA."',
-      '"EAB findings from animal research do not apply to human behavior."',
-      '"EAB is only relevant to basic researchers, not to practicing BCBAs."',
-    ],
-    domain: 'A', category: 'Levels of Behavioral Science',
-    taskItem: 'A.4',
-  },
-  {
-    id: 'rr-four-levels-hierarchy', term: 'Four Levels: Behaviorism, EAB, ABA, Professional Practice',
-    correctDefinition: 'Behaviorism is the philosophy; EAB is the basic science that identifies principles; ABA is the applied science that uses those principles to produce socially significant change; professional practice is the service delivery context in which BCBAs apply ABA under ethical and regulatory constraints.',
-    distractors: [
-      'EAB is the philosophy; behaviorism is the basic science; ABA is the applied science; professional practice is the regulatory framework.',
-      'ABA is the philosophy; EAB is the applied science; behaviorism is the basic science; professional practice is the ethical framework.',
-      'Professional practice is the philosophy; ABA is the basic science; EAB is the applied science; behaviorism is the regulatory framework.',
-    ],
-    misconceptions: [
-      '"Behaviorism and ABA are at the same level of the hierarchy."',
-      '"EAB findings must be directly replicated in applied settings before they can be used in ABA."',
-      '"Professional practice is more scientific than ABA because it involves real-world clients."',
     ],
     domain: 'A', category: 'Levels of Behavioral Science',
     taskItem: 'A.4',
