@@ -1314,6 +1314,377 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'A.3',
   },
 
+
+  // -- Domain A: New Terms (a19-a38) -----------------------------------------
+  {
+    id: 'rr-experimentation', term: 'Experimentation',
+    correctDefinition: 'A scientific method in which one or more independent variables are systematically manipulated while measuring the effect on a dependent variable under controlled conditions, to establish a cause-and-effect relationship.',
+    distractors: [
+      'The process of observing and recording behavior as it naturally occurs without manipulating any variables.',
+      'A method of gathering information about behavior through interviews and questionnaires.',
+      'The systematic comparison of two groups using statistical tests to identify differences.',
+    ],
+    misconceptions: [
+      '"Experimentation is the same as observation."',
+      '"Experimentation requires large groups of participants to be valid."',
+      '"Any procedure that produces behavior change counts as an experiment."',
+    ],
+    domain: 'A', category: 'Scientific Methods',
+    taskItem: 'A.1',
+  },
+  {
+    id: 'rr-experimentation-purpose', term: 'Experimentation - Purpose in ABA',
+    correctDefinition: 'In applied behavior analysis, experimentation is used to identify the specific environmental variables responsible for behavior change by demonstrating a functional relationship between the independent and dependent variable.',
+    distractors: [
+      'In ABA, experimentation is used primarily to compare the effectiveness of different treatment packages across large populations.',
+      'In ABA, experimentation is used to confirm theoretical models of behavior derived from cognitive science.',
+      'In ABA, experimentation is used to establish normative baselines for comparing individual client performance.',
+    ],
+    misconceptions: [
+      '"Experimentation in ABA always requires a control group."',
+      '"Experimentation in ABA is only conducted in laboratory settings."',
+      '"Experimentation in ABA is optional if the intervention is evidence-based."',
+    ],
+    domain: 'A', category: 'Scientific Methods',
+    taskItem: 'A.1',
+  },
+  {
+    id: 'rr-replication', term: 'Replication',
+    correctDefinition: 'The repetition of an experiment or its findings, either within the same study across participants or conditions (direct replication) or across different subjects, settings, or experimenters (systematic replication), to establish reliability and generality.',
+    distractors: [
+      'The process of applying a previously validated intervention to a new client without collecting new data.',
+      'The statistical technique of running the same analysis on a dataset multiple times to confirm the result.',
+      'The practice of using the same measurement instrument across multiple assessment sessions.',
+    ],
+    misconceptions: [
+      '"Replication means repeating the exact same study with no changes."',
+      '"Systematic replication weakens the original finding by introducing variability."',
+      '"Replication is only necessary when the original study had methodological flaws."',
+    ],
+    domain: 'A', category: 'Scientific Methods',
+    taskItem: 'A.1',
+  },
+  {
+    id: 'rr-replication-types', term: 'Direct vs. Systematic Replication',
+    correctDefinition: 'Direct replication repeats the original experiment as closely as possible to confirm reliability. Systematic replication introduces planned variations in participants, settings, or procedures to test the generality of the finding.',
+    distractors: [
+      'Direct replication introduces new variables to extend the finding; systematic replication reproduces the original study exactly.',
+      'Direct replication uses a different dependent variable; systematic replication uses the same dependent variable across new settings.',
+      'Direct and systematic replication are interchangeable terms referring to the same process.',
+    ],
+    misconceptions: [
+      '"Systematic replication is more rigorous than direct replication."',
+      '"Direct replication is only done in basic research, not in ABA."',
+      '"Systematic replication invalidates the original finding if results differ."',
+    ],
+    domain: 'A', category: 'Scientific Methods',
+    taskItem: 'A.1',
+  },
+  {
+    id: 'rr-philosophical-doubt', term: 'Philosophical Doubt',
+    correctDefinition: 'The scientific attitude of treating all currently accepted knowledge as tentative and subject to revision in light of new evidence; a commitment to questioning assumptions and remaining open to disconfirming data.',
+    distractors: [
+      "The ethical obligation to question a client's self-report before accepting it as accurate.",
+      'The practice of withholding a clinical decision until a second opinion has been obtained.',
+      'The requirement to conduct a literature review before implementing any new procedure.',
+    ],
+    misconceptions: [
+      '"Philosophical doubt means a BCBA should never trust established research."',
+      '"Philosophical doubt is the same as skepticism about the client\'s progress."',
+      '"Philosophical doubt requires abandoning an intervention whenever data are variable."',
+    ],
+    domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.2',
+  },
+  {
+    id: 'rr-philosophical-doubt-applied', term: 'Philosophical Doubt - Clinical Application',
+    correctDefinition: 'In practice, philosophical doubt means a BCBA continues to monitor data critically even when an intervention appears to be working, remains open to revising the behavior support plan if new evidence warrants it, and does not defend a procedure simply because it has been used before.',
+    distractors: [
+      'In practice, philosophical doubt means a BCBA must obtain peer review approval before implementing any procedure.',
+      'In practice, philosophical doubt means a BCBA avoids using any procedure that has not been replicated in at least five published studies.',
+      'In practice, philosophical doubt means a BCBA changes the intervention whenever data show any variability.',
+    ],
+    misconceptions: [
+      '"Philosophical doubt requires changing interventions frequently to test alternatives."',
+      '"Philosophical doubt is incompatible with using evidence-based practices."',
+      '"Philosophical doubt only applies to new or experimental procedures."',
+    ],
+    domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.2',
+  },
+  {
+    id: 'rr-description-goal', term: 'Description (Goal of Science)',
+    correctDefinition: 'The first goal of a natural science: the systematic and objective recording of the relationship between behavior and environmental events, producing an accurate account of what occurs and under what conditions, without inferring causation.',
+    distractors: [
+      'The ability to specify in advance the likelihood that a behavior will occur given particular environmental conditions.',
+      'The ability to produce or prevent a behavior by manipulating the environmental variables that control it.',
+      'The process of generating hypotheses about the function of behavior based on theoretical models.',
+    ],
+    misconceptions: [
+      '"Description is the least important goal of science because it does not prove causation."',
+      '"Description requires experimental manipulation to be scientifically valid."',
+      '"Description is the same as diagnosis."',
+    ],
+    domain: 'A', category: 'Goals of Science',
+    taskItem: 'A.1',
+  },
+  {
+    id: 'rr-prediction-goal', term: 'Prediction (Goal of Science)',
+    correctDefinition: 'The second goal of a natural science: the ability to specify, in advance, the likelihood that a behavior will occur given the presence of particular environmental conditions, based on an established descriptive or functional relationship.',
+    distractors: [
+      'The systematic recording of behavior and environmental events to produce an accurate account of what occurs.',
+      'The ability to produce or prevent a behavior by systematically manipulating the environmental variables that control it.',
+      'The process of identifying the reinforcing consequences that maintain a target behavior.',
+    ],
+    misconceptions: [
+      '"Prediction requires experimental manipulation of the independent variable."',
+      '"Prediction is the same as control because both involve knowing what will happen."',
+      '"Prediction is only possible after a functional analysis has been completed."',
+    ],
+    domain: 'A', category: 'Goals of Science',
+    taskItem: 'A.1',
+  },
+  {
+    id: 'rr-control-goal', term: 'Control (Goal of Science)',
+    correctDefinition: 'The third and highest goal of a natural science: the ability to produce or prevent a behavior by systematically manipulating the environmental variables identified through description and prediction, thereby demonstrating a functional (cause-and-effect) relationship.',
+    distractors: [
+      'The systematic recording of behavior and environmental events to produce an accurate account of what occurs.',
+      'The ability to specify in advance the likelihood that a behavior will occur given particular environmental conditions.',
+      "The ethical obligation to manage a client's environment to prevent harm.",
+    ],
+    misconceptions: [
+      '"Control means physically restraining or managing a client\'s behavior."',
+      '"Control is achieved whenever an intervention reduces problem behavior."',
+      '"Control requires a between-groups experimental design."',
+    ],
+    domain: 'A', category: 'Goals of Science',
+    taskItem: 'A.1',
+  },
+  {
+    id: 'rr-goals-science-order', term: 'Order of the Three Goals of Science',
+    correctDefinition: 'The three goals of a natural science progress from (1) Description to (2) Prediction to (3) Control, with each level building on the prior: description establishes what occurs, prediction identifies reliable antecedents, and control demonstrates cause-and-effect.',
+    distractors: [
+      'The three goals progress from Prediction to Description to Control.',
+      'The three goals progress from Control to Prediction to Description.',
+      'The three goals are independent and do not build on one another in a fixed sequence.',
+    ],
+    misconceptions: [
+      '"Control can be demonstrated without first establishing description and prediction."',
+      '"Prediction is the highest goal because it shows the most scientific rigor."',
+      '"Description is not a true scientific goal because it does not involve manipulation."',
+    ],
+    domain: 'A', category: 'Goals of Science',
+    taskItem: 'A.1',
+  },
+  {
+    id: 'rr-private-event', term: 'Private Event',
+    correctDefinition: 'Any stimulus or response that occurs within the skin of an organism and is not directly observable by others; in radical behaviorism, these are treated as real behaviors subject to the same lawful relationships as publicly observable responses, not as causes of overt behavior.',
+    distractors: [
+      'Any behavior that occurs in a private setting, such as a therapy room, rather than in a public environment.',
+      'A hypothetical internal state that mediates between environmental stimuli and overt responses.',
+      'A behavior that is excluded from scientific analysis because it cannot be directly measured.',
+    ],
+    misconceptions: [
+      '"Private events cause overt behavior in radical behaviorism."',
+      '"Private events are ignored by behavior analysts because they cannot be observed."',
+      '"Private events are the same as mentalistic constructs."',
+    ],
+    domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.3',
+  },
+  {
+    id: 'rr-overt-behavior', term: 'Overt Behavior',
+    correctDefinition: 'Any action of an organism that is publicly observable and directly measurable by an external observer without special instrumentation.',
+    distractors: [
+      'Any behavior that occurs in a public setting and is therefore subject to social reinforcement.',
+      'Any behavior that is targeted for change in a behavior support plan.',
+      'Any behavior that can be directly elicited by an antecedent stimulus.',
+    ],
+    misconceptions: [
+      '"Overt behavior is more important than covert behavior in ABA."',
+      '"Overt behavior is the only legitimate subject matter of radical behaviorism."',
+      '"Overt behavior must be high-frequency to be measurable."',
+    ],
+    domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.3',
+  },
+  {
+    id: 'rr-covert-behavior', term: 'Covert Behavior',
+    correctDefinition: "Any action of an organism that occurs at a level of intensity too small to be observed by others, or that takes place entirely within the organism's skin; treated in radical behaviorism as real behavior governed by the same principles as overt behavior.",
+    distractors: [
+      'Any behavior that a client deliberately conceals from the therapist during a session.',
+      'A hypothetical internal state that mediates between antecedent stimuli and overt responses.',
+      'Any behavior that occurs in the absence of an observer and is therefore not subject to social contingencies.',
+    ],
+    misconceptions: [
+      '"Covert behavior is the same as a mentalistic construct."',
+      '"Covert behavior is excluded from the subject matter of radical behaviorism."',
+      '"Covert behavior causes overt behavior in the same way that thoughts cause actions."',
+    ],
+    domain: 'A', category: 'Philosophical Foundations',
+    taskItem: 'A.3',
+  },
+  {
+    id: 'rr-behaviorism-philosophy', term: 'Behaviorism (Philosophy)',
+    correctDefinition: 'The philosophy of science that defines behavior as the proper subject matter of psychology and holds that a complete account of behavior can be achieved by identifying the environmental variables that control it, without invoking unobservable mental entities as explanatory causes.',
+    distractors: [
+      'A therapeutic approach that uses reinforcement and punishment to modify maladaptive behavior patterns.',
+      'The branch of psychology that studies the neurological substrates of learning and behavior.',
+      'A philosophy that holds that all behavior is genetically determined and cannot be modified by environmental events.',
+    ],
+    misconceptions: [
+      '"Behaviorism denies that thoughts and feelings exist."',
+      '"Behaviorism is the same as applied behavior analysis."',
+      '"Behaviorism holds that behavior is random and unpredictable."',
+    ],
+    domain: 'A', category: 'Levels of Behavioral Science',
+    taskItem: 'A.4',
+  },
+  {
+    id: 'rr-eab', term: 'Experimental Analysis of Behavior (EAB)',
+    correctDefinition: 'The basic science of behavior that uses controlled laboratory methods with individual organisms under precisely arranged contingencies to identify the fundamental principles governing relationships between behavior and environmental variables; the scientific foundation of applied behavior analysis.',
+    distractors: [
+      'The applied science that uses behavioral principles to produce socially significant improvements in human behavior.',
+      'The service delivery context in which credentialed behavior analysts apply behavioral procedures to individual clients.',
+      'The branch of psychology that uses group experimental designs to identify effective treatments for clinical populations.',
+    ],
+    misconceptions: [
+      '"EAB is the same as ABA."',
+      '"EAB findings from animal research do not apply to human behavior."',
+      '"EAB is only relevant to basic researchers, not to practicing BCBAs."',
+    ],
+    domain: 'A', category: 'Levels of Behavioral Science',
+    taskItem: 'A.4',
+  },
+  {
+    id: 'rr-four-levels-hierarchy', term: 'Four Levels: Behaviorism, EAB, ABA, Professional Practice',
+    correctDefinition: 'Behaviorism is the philosophy; EAB is the basic science that identifies principles; ABA is the applied science that uses those principles to produce socially significant change; professional practice is the service delivery context in which BCBAs apply ABA under ethical and regulatory constraints.',
+    distractors: [
+      'EAB is the philosophy; behaviorism is the basic science; ABA is the applied science; professional practice is the regulatory framework.',
+      'ABA is the philosophy; EAB is the applied science; behaviorism is the basic science; professional practice is the ethical framework.',
+      'Professional practice is the philosophy; ABA is the basic science; EAB is the applied science; behaviorism is the regulatory framework.',
+    ],
+    misconceptions: [
+      '"Behaviorism and ABA are at the same level of the hierarchy."',
+      '"EAB findings must be directly replicated in applied settings before they can be used in ABA."',
+      '"Professional practice is more scientific than ABA because it involves real-world clients."',
+    ],
+    domain: 'A', category: 'Levels of Behavioral Science',
+    taskItem: 'A.4',
+  },
+  {
+    id: 'rr-behavioral-dim', term: 'Behavioral (Dimension of ABA)',
+    correctDefinition: 'The dimension of ABA requiring that the subject matter be a directly measurable aspect of the behavior of interest - the behavior itself must be observed and quantified, not inferred from a test score, rating, or construct.',
+    distractors: [
+      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
+      'The dimension of ABA requiring that the behaviors targeted for change be of demonstrable importance to the individual or society.',
+      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
+    ],
+    misconceptions: [
+      '"Behavioral means the intervention uses behavioral procedures."',
+      '"Behavioral means the target is a problem behavior rather than a skill."',
+      '"Behavioral is satisfied by using a standardized rating scale completed by a teacher."',
+    ],
+    domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
+  },
+  {
+    id: 'rr-applied-dim', term: 'Applied (Dimension of ABA)',
+    correctDefinition: 'The dimension of ABA requiring that the behaviors and environmental variables selected for study be of demonstrable importance to the individual or to society - the social significance of the target must be justified.',
+    distractors: [
+      'The dimension of ABA requiring that the subject matter be a directly measurable aspect of the behavior of interest.',
+      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
+      'The dimension of ABA requiring that behavior changes be durable over time and appear across a variety of settings.',
+    ],
+    misconceptions: [
+      '"Applied means the intervention is delivered in a natural setting rather than a clinic."',
+      '"Applied means the procedure has been published in a peer-reviewed journal."',
+      '"Applied is satisfied whenever the client or family agrees the target is important."',
+    ],
+    domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
+  },
+  {
+    id: 'rr-technological-dim', term: 'Technological (Dimension of ABA)',
+    correctDefinition: 'The dimension of ABA requiring that procedures be described with sufficient precision and completeness that any trained practitioner could implement them accurately without additional information from the original researcher or clinician.',
+    distractors: [
+      'The dimension of ABA requiring that the behaviors targeted for change be of demonstrable importance to the individual or society.',
+      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
+      'The dimension of ABA requiring that procedures be linked to established behavioral principles.',
+    ],
+    misconceptions: [
+      '"Technological means the intervention uses technology such as apps or devices."',
+      '"Technological is satisfied by providing a brief summary of the procedure."',
+      '"Technological only applies to published research, not to clinical practice."',
+    ],
+    domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
+  },
+  {
+    id: 'rr-conceptually-systematic-dim', term: 'Conceptually Systematic (Dimension of ABA)',
+    correctDefinition: 'The dimension of ABA requiring that procedures and interpretations be described in terms of the established principles of behavior from which they are derived, linking applied work back to the basic science and its theoretical framework.',
+    distractors: [
+      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
+      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
+      'The dimension of ABA requiring that behavior changes be durable over time and appear across a variety of settings.',
+    ],
+    misconceptions: [
+      '"Conceptually systematic means the intervention follows a structured, step-by-step protocol."',
+      '"Conceptually systematic is satisfied by citing a published study that used the same procedure."',
+      '"Conceptually systematic means the intervention is consistent with the client\'s treatment history."',
+    ],
+    domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
+  },
+  {
+    id: 'rr-analytic-dim', term: 'Analytic (Dimension of ABA)',
+    correctDefinition: 'The dimension of ABA requiring that the practitioner demonstrate a reliable, functional relationship between the intervention (independent variable) and the behavior change (dependent variable), typically through the use of a single-subject experimental design.',
+    distractors: [
+      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
+      'The dimension of ABA requiring that the behaviors targeted for change be of demonstrable importance to the individual or society.',
+      'The dimension of ABA requiring that procedures be linked to established behavioral principles.',
+    ],
+    misconceptions: [
+      '"Analytic is satisfied whenever a behavior improves during intervention."',
+      '"Analytic requires a between-groups randomized controlled trial."',
+      '"Analytic means the BCBA has analyzed the function of the behavior before intervening."',
+    ],
+    domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
+  },
+  {
+    id: 'rr-generality-dim', term: 'Generality (Dimension of ABA)',
+    correctDefinition: 'The dimension of ABA requiring that behavior changes prove durable over time, appear across a variety of settings and conditions, and spread to a range of related behaviors beyond those directly trained - the extent to which outcomes are broadly useful to the individual.',
+    distractors: [
+      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
+      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
+      'The dimension of ABA requiring that interventions produce behavior changes of practical and social significance.',
+    ],
+    misconceptions: [
+      '"Generality is satisfied when the behavior improves in the training setting."',
+      '"Generality only refers to maintenance over time, not transfer across settings."',
+      '"Generality is the same as social validity."',
+    ],
+    domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
+  },
+  {
+    id: 'rr-effective-dim', term: 'Effective (Dimension of ABA)',
+    correctDefinition: 'The dimension of ABA requiring that interventions produce behavior changes of practical and social significance - not merely statistically detectable differences - that make a real difference in the life of the individual and those around them.',
+    distractors: [
+      'The dimension of ABA requiring that behavior changes prove durable over time and appear across a variety of settings.',
+      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
+      'The dimension of ABA requiring that the behaviors targeted for change be of demonstrable importance to the individual or society.',
+    ],
+    misconceptions: [
+      '"Effective is satisfied whenever data show a statistically significant improvement."',
+      '"Effective means the intervention produced the fastest possible behavior change."',
+      '"Effective is the same as the applied dimension because both concern social importance."',
+    ],
+    domain: 'A', category: 'Dimensions of ABA',
+    taskItem: 'A.5',
+  },
+
   // -- Domain B: Additional Concepts & Principles ----------------------------
   {
     id: 'rr-respondent-conditioning', term: 'Respondent Conditioning',
