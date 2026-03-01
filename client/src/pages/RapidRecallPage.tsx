@@ -288,24 +288,30 @@ function MissedItemsPanel({
 
 // ─── Category Accordion ─────────────────────────────────────────────────────
 
-// Canonical category order — mirrors the BCBA TCO progression
-const CATEGORY_ORDER = [
-  'Philosophical Foundations',
-  'Dimensions of ABA',
-  'Core Concepts',
-  'Schedules of Reinforcement',
-  'Stimulus Control',
-  'Verbal Behavior',
-  'Differential Reinforcement',
-  'Measurement',
-  'Research Designs',
-  'Assessment',
-  'Behavior-Change Procedures',
-  'Intervention',
-  'Ethics',
-  'Supervision',
-  'Evaluation',
-];
+// Canonical domain order — BACB 6th Edition TCO
+const DOMAIN_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+const DOMAIN_FULL: Record<string, string> = {
+  A: 'Behaviorism & Philosophical Foundations',
+  B: 'Concepts & Principles',
+  C: 'Measurement, Data Display & Interpretation',
+  D: 'Experimental Design',
+  E: 'Ethical & Professional Issues',
+  F: 'Behavior Assessment',
+  G: 'Behavior-Change Procedures',
+  H: 'Selecting & Implementing Interventions',
+  I: 'Personnel Supervision & Management',
+};
+const DOMAIN_COLORS: Record<string, { badge: string; pill: string }> = {
+  A: { badge: 'bg-violet-100 text-violet-800', pill: 'bg-violet-50 border-violet-200 text-violet-700' },
+  B: { badge: 'bg-teal-100 text-teal-800',    pill: 'bg-teal-50 border-teal-200 text-teal-700' },
+  C: { badge: 'bg-sky-100 text-sky-800',      pill: 'bg-sky-50 border-sky-200 text-sky-700' },
+  D: { badge: 'bg-indigo-100 text-indigo-800', pill: 'bg-indigo-50 border-indigo-200 text-indigo-700' },
+  E: { badge: 'bg-rose-100 text-rose-800',    pill: 'bg-rose-50 border-rose-200 text-rose-700' },
+  F: { badge: 'bg-amber-100 text-amber-800',  pill: 'bg-amber-50 border-amber-200 text-amber-700' },
+  G: { badge: 'bg-emerald-100 text-emerald-800', pill: 'bg-emerald-50 border-emerald-200 text-emerald-700' },
+  H: { badge: 'bg-cyan-100 text-cyan-800',    pill: 'bg-cyan-50 border-cyan-200 text-cyan-700' },
+  I: { badge: 'bg-purple-100 text-purple-800', pill: 'bg-purple-50 border-purple-200 text-purple-700' },
+};
 
 function CategoryAccordion({
   items,
@@ -316,78 +322,84 @@ function CategoryAccordion({
   progress: ReturnType<typeof useProgress>['progress'];
   onPracticeCategory: (items: typeof rapidRecallItems) => void;
 }) {
-  const [openCats, setOpenCats] = useState<Set<string>>(new Set());
+  const [openDomains, setOpenDomains] = useState<Set<string>>(new Set());
 
-  const toggleCat = (cat: string) => {
-    setOpenCats(prev => {
+  const toggleDomain = (d: string) => {
+    setOpenDomains(prev => {
       const next = new Set(prev);
-      if (next.has(cat)) next.delete(cat); else next.add(cat);
+      if (next.has(d)) next.delete(d); else next.add(d);
       return next;
     });
   };
 
-  // Group items by category, preserving canonical order
+  // Group items by BACB domain, preserving canonical order
   const grouped = useMemo(() => {
     const map = new Map<string, typeof rapidRecallItems>();
-    CATEGORY_ORDER.forEach(c => map.set(c, []));
+    DOMAIN_ORDER.forEach(d => map.set(d, []));
     items.forEach(item => {
-      if (!map.has(item.category)) map.set(item.category, []);
-      map.get(item.category)!.push(item);
+      const d = item.domain;
+      if (!map.has(d)) map.set(d, []);
+      map.get(d)!.push(item);
     });
-    // Remove empty categories
+    // Remove empty domains
     map.forEach((v, k) => { if (v.length === 0) map.delete(k); });
     return map;
   }, [items]);
 
   return (
     <div className="space-y-2">
-      {Array.from(grouped.entries()).map(([cat, catItems]) => {
-        const isOpen = openCats.has(cat);
-        // Compute aggregate accuracy for this category
+      {Array.from(grouped.entries()).map(([domain, domItems]) => {
+        const isOpen = openDomains.has(domain);
+        const colors = DOMAIN_COLORS[domain] ?? { badge: 'bg-muted text-foreground', pill: 'bg-muted border-border text-foreground' };
+        // Compute aggregate accuracy for this domain
         let totalCorrect = 0, totalAttempts = 0;
-        catItems.forEach(item => {
+        domItems.forEach(item => {
           const rec = prog.rapidRecall.find(r => r.termId === item.id);
           if (rec) { totalCorrect += rec.correct; totalAttempts += rec.correct + rec.incorrect; }
         });
-        const catAcc = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : null;
-        const masteredCount = catItems.filter(item => {
+        const domAcc = totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : null;
+        const masteredCount = domItems.filter(item => {
           const rec = prog.rapidRecall.find(r => r.termId === item.id);
           return rec && rec.correct > rec.incorrect;
         }).length;
 
         return (
-          <div key={cat} className="border border-border rounded-xl overflow-hidden bg-card">
+          <div key={domain} className="border border-border rounded-xl overflow-hidden bg-card">
             {/* Section header */}
             <div className="flex items-center gap-3 px-4 py-3">
               <button
-                onClick={() => toggleCat(cat)}
+                onClick={() => toggleDomain(domain)}
                 className="flex items-center gap-3 flex-1 min-w-0 text-left"
               >
                 {isOpen
                   ? <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0" />
                   : <ChevronRight className="w-4 h-4 text-muted-foreground flex-shrink-0" />}
-                <span className="font-semibold text-sm text-foreground truncate">{cat}</span>
-                <span className="text-xs text-muted-foreground flex-shrink-0">{catItems.length} terms</span>
-                {catAcc !== null && (
+                {/* Domain letter badge */}
+                <span className={cn('text-xs font-black px-2 py-0.5 rounded-md flex-shrink-0', colors.badge)}>
+                  {domain}
+                </span>
+                <span className="font-semibold text-sm text-foreground truncate">{DOMAIN_FULL[domain]}</span>
+                <span className="text-xs text-muted-foreground flex-shrink-0">{domItems.length} terms</span>
+                {domAcc !== null && (
                   <span className={cn(
                     'text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0',
-                    catAcc >= 80 ? 'bg-teal-100 text-teal-800' :
-                    catAcc >= 50 ? 'bg-amber-100 text-amber-800' :
+                    domAcc >= 80 ? 'bg-teal-100 text-teal-800' :
+                    domAcc >= 50 ? 'bg-amber-100 text-amber-800' :
                     'bg-red-100 text-red-700'
                   )}>
-                    {catAcc}%
+                    {domAcc}%
                   </span>
                 )}
-                {catAcc === null && (
+                {domAcc === null && (
                   <span className="text-[10px] text-muted-foreground/50 flex-shrink-0">Not started</span>
                 )}
                 {masteredCount > 0 && (
-                  <span className="text-[10px] text-violet-600 flex-shrink-0">{masteredCount}/{catItems.length} mastered</span>
+                  <span className="text-[10px] text-violet-600 flex-shrink-0">{masteredCount}/{domItems.length} mastered</span>
                 )}
               </button>
-              {/* Practice this category button */}
+              {/* Practice this domain button */}
               <button
-                onClick={() => onPracticeCategory(catItems)}
+                onClick={() => onPracticeCategory(domItems)}
                 className="flex items-center gap-1.5 text-xs font-medium text-teal-700 border border-teal-200 bg-teal-50 hover:bg-teal-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
               >
                 <Zap className="w-3 h-3" />
@@ -399,14 +411,14 @@ function CategoryAccordion({
             {isOpen && (
               <div className="border-t border-border">
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-px bg-border">
-                  {catItems.map(item => {
+                  {domItems.map(item => {
                     const rec = prog.rapidRecall.find(r => r.termId === item.id);
                     const attempted = rec ? rec.correct + rec.incorrect : 0;
                     const acc = attempted > 0 ? Math.round((rec!.correct / attempted) * 100) : null;
                     return (
                       <div key={item.id} className="p-3 bg-card hover:bg-muted/40 transition-colors">
                         <div className="flex items-center justify-between mb-1">
-                          <span className="text-[10px] font-bold text-teal-700 bg-teal-50 border border-teal-200 px-1.5 py-0.5 rounded">{item.taskItem}</span>
+                          <span className={cn('text-[10px] font-bold border px-1.5 py-0.5 rounded', colors.pill)}>{item.taskItem}</span>
                           {acc !== null && (
                             <span className={cn('text-[10px] font-bold', acc >= 70 ? 'text-teal-700' : 'text-red-500')}>{acc}%</span>
                           )}
