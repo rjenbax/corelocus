@@ -480,7 +480,7 @@ export const domainB_questions: Question[] = [
     lifecycleOrder: 81,
     bloomsLevel: "application",
     scenario: "You have taught Leo to touch the picture of a 'cat' when you say 'cat.' Now, you present him with a picture of a dog and a picture of a cat simultaneously and say 'cat.' He correctly touches the cat picture and does not touch the dog picture.",
-    question: "This outcome is best explained by the **application** of which concept?",
+    question: "Leo's correct selection of the cat picture while rejecting the dog picture is best explained by the **application** of which behavioral concept?",
     choices: [
       { letter: "a", text: "Stimulus generalization, because Leo is now responding to the word 'cat' in a new context (with a competing stimulus present) that was not present during training." },
       { letter: "b", text: "Conditional discrimination, because the correct response (touching the cat) depends on the condition created by the simultaneous presence of both pictures — the response is conditional on the context of the comparison stimulus." },
@@ -516,7 +516,7 @@ export const domainB_questions: Question[] = [
     lifecycleOrder: 83,
     bloomsLevel: "application",
     scenario: "Leo has learned to use his 'break' card in the classroom. After three months of consistent reinforcement, you begin to thin the schedule (from FR-1 to VR-3). He continues to use the card appropriately even when breaks are not always provided immediately.",
-    question: "This outcome is best explained by the **application** of which concept?",
+    question: "Leo's continued appropriate use of the break card under a thinned VR-3 schedule is best explained by the **application** of which behavioral concept?",
     choices: [
       { letter: "a", text: "Stimulus generalization, because Leo is using the card in new situations and under new schedule conditions that were not present during the initial training phase." },
       { letter: "b", text: "Behavioral momentum, because the history of consistent reinforcement during the initial training phase has built up a strong response tendency that persists even when the reinforcement schedule is thinned to a leaner schedule." },

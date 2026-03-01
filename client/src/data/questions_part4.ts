@@ -414,7 +414,7 @@ export const domainG_questions: Question[] = [{
     lifecycleOrder: 140,
     bloomsLevel: "analysis",
     scenario: "After 6 months of intervention, Leo's tantrums have decreased to near zero. You are now fading the token economy. After the first week of fading, the tantrums begin to increase slightly.",
-    question: "How would you **analyze** this data and determine the appropriate clinical response?",
+    question: "How would you **analyze** the slight increase in tantrums during token economy fading and determine the appropriate clinical response?",
     choices: [
       { letter: "a", text: "The increase in tantrums means the treatment has failed; restart the token economy at the original schedule and do not attempt to fade again." },
       { letter: "b", text: "The increase in tantrums is an extinction burst caused by the removal of the token economy; continue fading as planned because the increase will resolve on its own." },
@@ -706,7 +706,7 @@ export const domainH_questions: Question[] = [
     lifecycleOrder: 149,
     bloomsLevel: "analysis",
     scenario: "You are reviewing the procedural integrity data for the FCT procedure over the past 4 weeks. The data shows that fidelity has been consistently above 90% for the first 3 weeks, but dropped to 65% in week 4.",
-    question: "How would you **analyze** this data and determine the appropriate clinical response?",
+    question: "How would you **analyze** the procedural integrity data pattern and determine the appropriate supervisory response?",
     choices: [
       { letter: "a", text: "A significant drop in fidelity (from >90% to 65%) requires immediate investigation. You should: (1) Review the session notes and observe a session to identify which specific steps are being implemented incorrectly. (2) Talk to Marcus to understand what changed in week 4 (e.g., new challenging behavior from Leo, changes in Leo's schedule, Marcus's own workload). (3) Provide targeted retraining on the specific steps that are being implemented incorrectly. (4) Increase the frequency of observation and feedback until fidelity is restored." },
       { letter: "b", text: "The drop in fidelity is a normal fluctuation and does not require action; fidelity naturally varies week to week and will return to baseline without intervention." },
