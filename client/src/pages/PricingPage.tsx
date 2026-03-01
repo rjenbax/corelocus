@@ -1,7 +1,7 @@
 /**
  * PricingPage — BehaviorPREP subscription plans
  * Design: Violet + Teal SaaS — accordion plan rows, compact layout
- * Free Sampler · $47/mo Monthly · $119/quarter · $399/year · $699 Lifetime · $199/mo Supervision Cohort
+ * Free Sampler · $47/mo Monthly · $399/year · $699 Lifetime · $199/mo Supervision Cohort
  */
 import { useLocation } from 'wouter';
 import { ArrowLeft, Check, ChevronDown, Zap, Award, Layers, Shuffle, GitMerge, ClipboardList, Target, Flame, Users, Star, BookOpen, Infinity } from 'lucide-react';
@@ -35,20 +35,6 @@ const PLANS = [
     icon: Zap,
     iconColor: 'text-teal-600',
     iconBg: 'bg-teal-100',
-  },
-  {
-    id: 'quarterly',
-    name: 'Quarterly',
-    price: '$119',
-    period: '/quarter',
-    effective: '~$40/mo — save $22',
-    badge: 'Save $22',
-    description: 'Three months of full access — ideal for a focused study block.',
-    cta: 'Start Quarterly',
-    highlight: false,
-    icon: Layers,
-    iconColor: 'text-violet-600',
-    iconBg: 'bg-violet-100',
   },
   {
     id: 'annual',

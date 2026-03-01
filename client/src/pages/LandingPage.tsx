@@ -24,7 +24,6 @@ const TIERS = [
 
 const LANDING_PLANS = [
   { id: 'monthly', name: 'Monthly', price: '$47', period: '/month', effective: null, badge: null, highlight: false },
-  { id: 'quarterly', name: 'Quarterly', price: '$119', period: '/quarter', effective: '~$40/mo — save $22', badge: 'Save $22', highlight: false },
   { id: 'annual', name: 'Annual', price: '$399', period: '/year', effective: '~$33/mo — best value', badge: 'Best Value', highlight: true },
   { id: 'lifetime', name: 'Lifetime', price: '$699', period: 'one-time', effective: 'Pay once, own it forever', badge: null, highlight: false },
 ];

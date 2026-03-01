@@ -323,7 +323,7 @@ export default function Dashboard() {
                           <span className={cn("text-[11px] font-semibold tabular-nums", tier.color)}>{pct}%</span>
                         </span>
                       ) : (
-                        <span className="text-[11px] font-medium text-muted-foreground flex-shrink-0">Start</span>
+                        <span className={cn("text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0", tier.pillColor)}>Start</span>
                       )}
                     </div>
                   </div>
