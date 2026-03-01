@@ -1333,22 +1333,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'A.1',
   },
   {
-    id: 'rr-experimentation-purpose', term: 'Experimentation - Purpose in ABA',
-    correctDefinition: 'In applied behavior analysis, experimentation is used to identify the specific environmental variables responsible for behavior change by demonstrating a functional relationship between the independent and dependent variable.',
-    distractors: [
-      'In ABA, experimentation is used primarily to compare the effectiveness of different treatment packages across large populations.',
-      'In ABA, experimentation is used to confirm theoretical models of behavior derived from cognitive science.',
-      'In ABA, experimentation is used to establish normative baselines for comparing individual client performance.',
-    ],
-    misconceptions: [
-      '"Experimentation in ABA always requires a control group."',
-      '"Experimentation in ABA is only conducted in laboratory settings."',
-      '"Experimentation in ABA is optional if the intervention is evidence-based."',
-    ],
-    domain: 'A', category: 'Scientific Methods',
-    taskItem: 'A.1',
-  },
-  {
     id: 'rr-replication', term: 'Replication',
     correctDefinition: 'The repetition of an experiment or its findings, either within the same study across participants or conditions (direct replication) or across different subjects, settings, or experimenters (systematic replication), to establish reliability and generality.',
     distractors: [
@@ -1392,22 +1376,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Philosophical doubt means a BCBA should never trust established research."',
       '"Philosophical doubt is the same as skepticism about the client\'s progress."',
       '"Philosophical doubt requires abandoning an intervention whenever data are variable."',
-    ],
-    domain: 'A', category: 'Philosophical Foundations',
-    taskItem: 'A.2',
-  },
-  {
-    id: 'rr-philosophical-doubt-applied', term: 'Philosophical Doubt - Clinical Application',
-    correctDefinition: 'In practice, philosophical doubt means a BCBA continues to monitor data critically even when an intervention appears to be working, remains open to revising the behavior support plan if new evidence warrants it, and does not defend a procedure simply because it has been used before.',
-    distractors: [
-      'In practice, philosophical doubt means a BCBA must obtain peer review approval before implementing any procedure.',
-      'In practice, philosophical doubt means a BCBA avoids using any procedure that has not been replicated in at least five published studies.',
-      'In practice, philosophical doubt means a BCBA changes the intervention whenever data show any variability.',
-    ],
-    misconceptions: [
-      '"Philosophical doubt requires changing interventions frequently to test alternatives."',
-      '"Philosophical doubt is incompatible with using evidence-based practices."',
-      '"Philosophical doubt only applies to new or experimental procedures."',
     ],
     domain: 'A', category: 'Philosophical Foundations',
     taskItem: 'A.2',
@@ -1523,118 +1491,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     domain: 'A', category: 'Levels of Behavioral Science',
     taskItem: 'A.4',
-  },
-  {
-    id: 'rr-behavioral-dim', term: 'Behavioral (Dimension of ABA)',
-    correctDefinition: 'The dimension of ABA requiring that the subject matter be a directly measurable aspect of the behavior of interest - the behavior itself must be observed and quantified, not inferred from a test score, rating, or construct.',
-    distractors: [
-      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
-      'The dimension of ABA requiring that the behaviors targeted for change be of demonstrable importance to the individual or society.',
-      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
-    ],
-    misconceptions: [
-      '"Behavioral means the intervention uses behavioral procedures."',
-      '"Behavioral means the target is a problem behavior rather than a skill."',
-      '"Behavioral is satisfied by using a standardized rating scale completed by a teacher."',
-    ],
-    domain: 'A', category: 'Dimensions of ABA',
-    taskItem: 'A.5',
-  },
-  {
-    id: 'rr-applied-dim', term: 'Applied (Dimension of ABA)',
-    correctDefinition: 'The dimension of ABA requiring that the behaviors and environmental variables selected for study be of demonstrable importance to the individual or to society - the social significance of the target must be justified.',
-    distractors: [
-      'The dimension of ABA requiring that the subject matter be a directly measurable aspect of the behavior of interest.',
-      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
-      'The dimension of ABA requiring that behavior changes be durable over time and appear across a variety of settings.',
-    ],
-    misconceptions: [
-      '"Applied means the intervention is delivered in a natural setting rather than a clinic."',
-      '"Applied means the procedure has been published in a peer-reviewed journal."',
-      '"Applied is satisfied whenever the client or family agrees the target is important."',
-    ],
-    domain: 'A', category: 'Dimensions of ABA',
-    taskItem: 'A.5',
-  },
-  {
-    id: 'rr-technological-dim', term: 'Technological (Dimension of ABA)',
-    correctDefinition: 'The dimension of ABA requiring that procedures be described with sufficient precision and completeness that any trained practitioner could implement them accurately without additional information from the original researcher or clinician.',
-    distractors: [
-      'The dimension of ABA requiring that the behaviors targeted for change be of demonstrable importance to the individual or society.',
-      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
-      'The dimension of ABA requiring that procedures be linked to established behavioral principles.',
-    ],
-    misconceptions: [
-      '"Technological means the intervention uses technology such as apps or devices."',
-      '"Technological is satisfied by providing a brief summary of the procedure."',
-      '"Technological only applies to published research, not to clinical practice."',
-    ],
-    domain: 'A', category: 'Dimensions of ABA',
-    taskItem: 'A.5',
-  },
-  {
-    id: 'rr-conceptually-systematic-dim', term: 'Conceptually Systematic (Dimension of ABA)',
-    correctDefinition: 'The dimension of ABA requiring that procedures and interpretations be described in terms of the established principles of behavior from which they are derived, linking applied work back to the basic science and its theoretical framework.',
-    distractors: [
-      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
-      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
-      'The dimension of ABA requiring that behavior changes be durable over time and appear across a variety of settings.',
-    ],
-    misconceptions: [
-      '"Conceptually systematic means the intervention follows a structured, step-by-step protocol."',
-      '"Conceptually systematic is satisfied by citing a published study that used the same procedure."',
-      '"Conceptually systematic means the intervention is consistent with the client\'s treatment history."',
-    ],
-    domain: 'A', category: 'Dimensions of ABA',
-    taskItem: 'A.5',
-  },
-  {
-    id: 'rr-analytic-dim', term: 'Analytic (Dimension of ABA)',
-    correctDefinition: 'The dimension of ABA requiring that the practitioner demonstrate a reliable, functional relationship between the intervention (independent variable) and the behavior change (dependent variable), typically through the use of a single-subject experimental design.',
-    distractors: [
-      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
-      'The dimension of ABA requiring that the behaviors targeted for change be of demonstrable importance to the individual or society.',
-      'The dimension of ABA requiring that procedures be linked to established behavioral principles.',
-    ],
-    misconceptions: [
-      '"Analytic is satisfied whenever a behavior improves during intervention."',
-      '"Analytic requires a between-groups randomized controlled trial."',
-      '"Analytic means the BCBA has analyzed the function of the behavior before intervening."',
-    ],
-    domain: 'A', category: 'Dimensions of ABA',
-    taskItem: 'A.5',
-  },
-  {
-    id: 'rr-generality-dim', term: 'Generality (Dimension of ABA)',
-    correctDefinition: 'The dimension of ABA requiring that behavior changes prove durable over time, appear across a variety of settings and conditions, and spread to a range of related behaviors beyond those directly trained - the extent to which outcomes are broadly useful to the individual.',
-    distractors: [
-      'The dimension of ABA requiring that procedures be described with sufficient precision that any trained practitioner could implement them accurately.',
-      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
-      'The dimension of ABA requiring that interventions produce behavior changes of practical and social significance.',
-    ],
-    misconceptions: [
-      '"Generality is satisfied when the behavior improves in the training setting."',
-      '"Generality only refers to maintenance over time, not transfer across settings."',
-      '"Generality is the same as social validity."',
-    ],
-    domain: 'A', category: 'Dimensions of ABA',
-    taskItem: 'A.5',
-  },
-  {
-    id: 'rr-effective-dim', term: 'Effective (Dimension of ABA)',
-    correctDefinition: 'The dimension of ABA requiring that interventions produce behavior changes of practical and social significance - not merely statistically detectable differences - that make a real difference in the life of the individual and those around them.',
-    distractors: [
-      'The dimension of ABA requiring that behavior changes prove durable over time and appear across a variety of settings.',
-      'The dimension of ABA requiring that a functional relationship between the intervention and behavior change be demonstrated.',
-      'The dimension of ABA requiring that the behaviors targeted for change be of demonstrable importance to the individual or society.',
-    ],
-    misconceptions: [
-      '"Effective is satisfied whenever data show a statistically significant improvement."',
-      '"Effective means the intervention produced the fastest possible behavior change."',
-      '"Effective is the same as the applied dimension because both concern social importance."',
-    ],
-    domain: 'A', category: 'Dimensions of ABA',
-    taskItem: 'A.5',
   },
 
   // -- Domain B: Additional Concepts & Principles ----------------------------
