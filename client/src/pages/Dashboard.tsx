@@ -1,11 +1,11 @@
 /**
  * Dashboard — BehaviorPREP Learning Platform Home
- * Design: Violet + Teal SaaS — 7-tier visual learning path with progress tracking
+ * Design: Violet + Teal SaaS — 7-tier compact list with inline progress
  * Violet #6D28D9 primary, Teal #0F766E accent, Slate #334155 text, Off-White #F8FAFC surface
  */
 import { useLocation } from 'wouter';
 import { useProgress } from '@/contexts/ProgressContext';
-import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame, ExternalLink, Award, Menu, X, Home, DollarSign } from 'lucide-react';
+import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame, Award, Menu, X, Home, DollarSign } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import TaskItemProgress from '@/components/TaskItemProgress';
@@ -23,13 +23,14 @@ interface TierConfig {
   bgColor: string;
   borderColor: string;
   pillColor: string;
+  barColor: string;
 }
 
 const TIERS: TierConfig[] = [
   {
     tier: 1,
     title: 'Flashcards',
-    subtitle: 'Term & Definition',
+    subtitle: 'Learn what each term means',
     description: 'Master every term, definition, and concept across all 9 BACB domains. Flip cards to reveal definitions, mark mastered items, and filter by domain.',
     icon: Layers,
     route: '/flashcards',
@@ -38,11 +39,12 @@ const TIERS: TierConfig[] = [
     bgColor: 'bg-violet-50',
     borderColor: 'border-violet-200',
     pillColor: 'bg-violet-100 text-violet-700',
+    barColor: 'bg-violet-600',
   },
   {
     tier: 2,
     title: 'Rapid Recall',
-    subtitle: 'Quick-Fire Q&A',
+    subtitle: 'Pick the right definition under pressure',
     description: 'Timed quick-fire questions on definitions, functions, and key distinctions. Track your weak spots — the misconceptions you keep choosing.',
     icon: Zap,
     route: '/rapid-recall',
@@ -51,11 +53,12 @@ const TIERS: TierConfig[] = [
     bgColor: 'bg-teal-50',
     borderColor: 'border-teal-200',
     pillColor: 'bg-teal-100 text-teal-700',
+    barColor: 'bg-teal-600',
   },
   {
     tier: 3,
     title: 'Scenario Matching',
-    subtitle: 'Definition → Clinical Example',
+    subtitle: 'Spot the concept in a real case',
     description: 'Given a concept, identify which clinical scenario best illustrates it. Bridge the gap between knowing a definition and recognizing it in practice.',
     icon: Shuffle,
     route: '/matching',
@@ -64,11 +67,12 @@ const TIERS: TierConfig[] = [
     bgColor: 'bg-teal-50',
     borderColor: 'border-teal-200',
     pillColor: 'bg-teal-100 text-teal-700',
+    barColor: 'bg-teal-500',
   },
   {
     tier: 4,
     title: 'Venn Diagram',
-    subtitle: 'Concept Comparison',
+    subtitle: 'Tell apart concepts that look similar',
     description: 'Distinguish commonly confused ABA concept pairs. Identify what is unique to each concept and what they share — across 92 carefully curated pairs.',
     icon: GitMerge,
     route: '/venn',
@@ -77,12 +81,13 @@ const TIERS: TierConfig[] = [
     bgColor: 'bg-violet-50',
     borderColor: 'border-violet-200',
     pillColor: 'bg-violet-100 text-violet-800',
+    barColor: 'bg-violet-700',
   },
   {
     tier: 5,
     title: 'Scenario Justification™',
-    subtitle: 'Answer + Reasoning',
-    description: '55 clinical scenarios, 104 questions. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
+    subtitle: 'Choose the right answer and explain why',
+    description: '59 clinical scenarios. Select the correct answer AND choose the 3 justifications that support it from a pool of 9 — 6 of which justify the wrong answers.',
     icon: Brain,
     route: '/scenario-justification',
     bloomsLevel: 'Justify your answer',
@@ -90,11 +95,12 @@ const TIERS: TierConfig[] = [
     bgColor: 'bg-teal-50',
     borderColor: 'border-teal-200',
     pillColor: 'bg-teal-100 text-teal-800',
+    barColor: 'bg-teal-700',
   },
   {
     tier: 6,
     title: 'Full Mock Exam',
-    subtitle: 'Timed Exam Simulation',
+    subtitle: 'Sit a timed 175-question exam',
     description: '175 questions across all 9 TCO domains with adaptive question selection, 5 CSA archetypes, full score breakdown, and detailed analytics.',
     icon: Award,
     route: '/mock-hub',
@@ -103,12 +109,13 @@ const TIERS: TierConfig[] = [
     bgColor: 'bg-amber-50',
     borderColor: 'border-amber-200',
     pillColor: 'bg-amber-100 text-amber-700',
+    barColor: 'bg-amber-600',
   },
   {
     tier: 7,
     title: 'Case Study Exam™',
-    subtitle: 'Real-World Application',
-    description: 'You passed — now apply it. Follow Leo Rodriguez from referral to discharge. 175 questions simulating a real client lifecycle, the way BCBAs actually work in the field.',
+    subtitle: 'Apply knowledge to a real client case',
+    description: 'Follow Leo Rodriguez from referral to discharge. 175 questions simulating a real client lifecycle, the way BCBAs actually work in the field.',
     icon: ClipboardList,
     route: '/exam-hub',
     bloomsLevel: 'Apply in the field',
@@ -116,6 +123,7 @@ const TIERS: TierConfig[] = [
     bgColor: 'bg-primary/5',
     borderColor: 'border-primary/20',
     pillColor: 'bg-primary/10 text-primary',
+    barColor: 'bg-primary',
   },
 ];
 
@@ -142,7 +150,6 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            {/* Desktop nav links */}
             <button
               onClick={() => navigate('/pricing')}
               className="hidden sm:flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
@@ -163,8 +170,8 @@ export default function Dashboard() {
               Daily Practice
             </button>
             <div className="hidden sm:flex items-center gap-2 text-xs text-muted-foreground">
-              <span>Overall Progress</span>
-              <div className="w-24 h-1.5 bg-muted rounded-full overflow-hidden">
+              <span>Overall</span>
+              <div className="w-20 h-1.5 bg-muted rounded-full overflow-hidden">
                 <div
                   className="h-full bg-primary rounded-full transition-all duration-500"
                   style={{ width: `${totalCompletion}%` }}
@@ -173,7 +180,7 @@ export default function Dashboard() {
               <span className="font-medium text-foreground">{totalCompletion}%</span>
             </div>
 
-            {/* Mobile hamburger button */}
+            {/* Mobile hamburger */}
             <button
               onClick={() => setMobileMenuOpen(v => !v)}
               className="sm:hidden flex items-center justify-center w-9 h-9 rounded-lg hover:bg-muted transition-colors"
@@ -225,7 +232,6 @@ export default function Dashboard() {
                 <p className="text-xs text-muted-foreground">Back to landing page</p>
               </div>
             </button>
-            {/* Progress bar in mobile menu */}
             <div className="flex items-center gap-3 px-3 py-3">
               <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
                 <Trophy className="w-4 h-4 text-amber-700" />
@@ -239,7 +245,7 @@ export default function Dashboard() {
                       style={{ width: `${totalCompletion}%` }}
                     />
                   </div>
-                  <span className="text-xs font-medium text-foreground">{totalCompletion}%</span>
+                  <span className="text-xs font-semibold text-foreground">{totalCompletion}%</span>
                 </div>
               </div>
             </div>
@@ -247,248 +253,101 @@ export default function Dashboard() {
         </div>
       )}
 
-      {/* Hero */}
+      {/* Hero — compact */}
       <section className="border-b border-border bg-gradient-to-b from-card to-background">
-        <div className="container py-12 md:py-16">
+        <div className="container py-8 md:py-12">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-primary/10 rounded-full px-3 py-1 mb-5">
+            <div className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-primary/10 rounded-full px-3 py-1 mb-4">
               <BookOpen className="w-3 h-3" />
               <span>BACB 6th Edition Task List</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-4" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground leading-tight mb-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
               Your BCBA Learning Path
             </h1>
-            <p className="text-muted-foreground text-base max-w-2xl leading-relaxed mb-5">
-              Passing the BCBA exam isn't just about memorizing terms — it's about being able to <strong className="text-foreground font-semibold">use</strong> them. This platform walks you through seven levels of practice, each one building on the last.
+            <p className="text-muted-foreground text-sm max-w-2xl leading-relaxed">
+              Seven progressive tiers — from recalling definitions to applying clinical reasoning in a real client case. Each tier builds on the last.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 max-w-2xl">
-              {([
-                { num: '1', label: 'Flashcards', blurb: 'Learn what each term means.' },
-                { num: '2', label: 'Rapid Recall', blurb: 'Pick the right definition under time pressure.' },
-                { num: '3', label: 'Scenario Matching', blurb: 'Spot the concept playing out in a real case.' },
-                { num: '4', label: 'Venn Diagram', blurb: 'Tell apart concepts that look similar.' },
-                { num: '5', label: 'Scenario Justification™', blurb: 'Choose the right answer and explain why.' },
-                { num: '6', label: 'Full Mock Exam', blurb: 'Sit a timed 175-question exam and see your score breakdown.' },
-                { num: '7', label: 'Case Study Exam™', blurb: 'Apply your knowledge to a real client case — just like on the job.' },
-              ] as const).map(({ num, label, blurb }) => (
-                <div key={num} className="flex items-start gap-2.5 text-sm">
-                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-[11px] font-bold flex items-center justify-center mt-0.5">{num}</span>
-                  <span className="text-muted-foreground"><span className="font-semibold text-foreground">{label}:</span> {blurb}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
       {/* Learning Path */}
-      <section className="container py-10 md:py-14">
-        <div className="max-w-4xl mx-auto">
-          {/* Progress overview */}
-          <div className="grid grid-cols-4 sm:grid-cols-7 gap-2 sm:gap-3 mb-10">
-            {TIERS.map(tier => {
-              const pct = tier.isExternal ? 0 : getTierCompletion(tier.tier as 1|2|3|4|5|6);
-              return (
-                <div key={tier.tier} className="text-center">
-                  <div className="text-xs text-muted-foreground mb-1">Tier {tier.tier}</div>
-                  <div className="relative w-10 h-10 mx-auto mb-1">
-                    <svg className="w-10 h-10 -rotate-90" viewBox="0 0 36 36">
-                      <circle cx="18" cy="18" r="15.9" fill="none" stroke="currentColor" strokeWidth="3" className="text-muted/40" />
-                      <circle
-                        cx="18" cy="18" r="15.9" fill="none" stroke="currentColor" strokeWidth="3"
-                        strokeDasharray={`${pct} ${100 - pct}`}
-                        strokeDashoffset="0"
-                        strokeLinecap="round"
-                        className={tier.color}
-                        style={{ transition: 'stroke-dasharray 0.5s ease' }}
-                      />
-                    </svg>
-                    <span className="absolute inset-0 flex items-center justify-center text-[10px] font-semibold text-foreground">
-                      {pct}%
-                    </span>
-                  </div>
-                  <div className="text-[10px] text-muted-foreground leading-tight">{tier.title}</div>
-                </div>
-              );
-            })}
-          </div>
+      <section className="container py-8 md:py-12">
+        <div className="max-w-2xl mx-auto">
 
-          {/* Tier cards — Tiers 1–6 */}
-          <div className="space-y-4">
-            {TIERS.filter(t => t.tier !== 7).map((tier, idx, arr) => {
+          {/* ── Compact Tier List ─────────────────────────────────────────── */}
+          <div className="rounded-xl border border-border bg-card overflow-hidden divide-y divide-border mb-6">
+            {TIERS.map((tier) => {
               const pct = tier.isExternal ? 0 : getTierCompletion(tier.tier as 1|2|3|4|5|6);
               const Icon = tier.icon;
               const isComplete = pct >= 80;
 
               return (
-                <div key={tier.tier} className="relative">
-                  {/* Connector line */}
-                  {idx < arr.length - 1 && (
-                    <div className="absolute left-8 top-full w-0.5 h-4 bg-border z-10" />
-                  )}
+                <button
+                  key={tier.tier}
+                  onClick={() => tier.isExternal ? window.open(tier.route, '_blank') : navigate(tier.route)}
+                  className="w-full text-left px-4 py-3.5 flex items-center gap-3.5 hover:bg-muted/40 active:bg-muted/60 transition-colors group"
+                >
+                  {/* Tier badge */}
+                  <div className={cn(
+                    "flex-shrink-0 w-9 h-9 rounded-lg flex flex-col items-center justify-center border",
+                    tier.bgColor,
+                    tier.borderColor
+                  )}>
+                    <span className={cn("text-[9px] font-bold leading-none", tier.color)}>T{tier.tier}</span>
+                    <Icon className={cn("w-3.5 h-3.5 mt-0.5", tier.color)} />
+                  </div>
 
-                  <button
-                    onClick={() => tier.isExternal ? window.open(tier.route, '_blank') : navigate(tier.route)}
-                    className={cn(
-                      "w-full text-left rounded-xl border-2 p-5 transition-all duration-200 group",
-                      "hover:shadow-md hover:-translate-y-0.5",
-                      tier.bgColor,
-                      tier.borderColor,
-                      isComplete && "ring-2 ring-offset-1 ring-violet-400/50"
-                    )}
-                  >
-                    <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0">
-                        <div className={cn(
-                          "w-14 h-14 rounded-xl flex flex-col items-center justify-center border-2",
-                          tier.borderColor,
-                          "bg-white/60"
-                        )}>
-                          <span className="text-[10px] font-bold text-muted-foreground">TIER</span>
-                          <span className={cn("text-xl font-black leading-none", tier.color)}>{tier.tier}</span>
-                        </div>
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-start justify-between gap-2 mb-1">
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-2 mb-0.5 flex-wrap">
-                              <Icon className={cn("w-4 h-4 flex-shrink-0", tier.color)} />
-                              <h3 className="font-bold text-foreground text-base">{tier.title}</h3>
-                              {isComplete && <CheckCircle2 className="w-4 h-4 text-violet-600 flex-shrink-0" />}
-                            </div>
-                            <p className="text-xs text-muted-foreground">{tier.subtitle}</p>
-                          </div>
-                          <div className="flex items-center gap-1.5 flex-shrink-0">
-                            <span className={cn("hidden sm:inline text-xs font-medium px-2 py-0.5 rounded-full", tier.pillColor)}>
-                              {tier.bloomsLevel}
-                            </span>
-                            <ChevronRight className={cn("w-4 h-4 transition-transform group-hover:translate-x-0.5", tier.color)} />
-                          </div>
-                        </div>
-                        <p className="text-sm text-muted-foreground leading-relaxed mb-3 hidden sm:block">
-                          {tier.description}
-                        </p>
-                        <div className="flex items-center gap-2">
-                          <div className="flex-1 h-1.5 bg-white/60 rounded-full overflow-hidden border border-white/80">
-                            <div
-                              className={cn("h-full rounded-full transition-all duration-500", {
-                                'bg-violet-600': tier.tier === 1,
-                                'bg-teal-600': tier.tier === 2,
-                                'bg-teal-500': tier.tier === 3,
-                                'bg-violet-700': tier.tier === 4,
-                                'bg-teal-700': tier.tier === 5,
-                                'bg-amber-600': tier.tier === 6,
-                              })}
-                              style={{ width: `${pct}%` }}
-                            />
-                          </div>
-                          <span className={cn("text-xs font-semibold", tier.color)}>{pct}%</span>
-                        </div>
-                      </div>
+                  {/* Title + subtitle + progress */}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-1.5 mb-0.5">
+                      <span className="text-sm font-semibold text-foreground truncate">{tier.title}</span>
+                      {isComplete && <CheckCircle2 className="w-3.5 h-3.5 text-violet-600 flex-shrink-0" />}
                     </div>
-                  </button>
-                </div>
+                    <div className="flex items-center gap-2">
+                      <div className="flex-1 h-1 bg-muted rounded-full overflow-hidden">
+                        <div
+                          className={cn("h-full rounded-full transition-all duration-500", tier.barColor)}
+                          style={{ width: `${pct}%` }}
+                        />
+                      </div>
+                      <span className={cn("text-[11px] font-semibold tabular-nums flex-shrink-0", tier.color)}>{pct}%</span>
+                    </div>
+                  </div>
+
+                  {/* Blooms pill — hidden on small screens */}
+                  <span className={cn("hidden md:inline-flex text-[11px] font-medium px-2 py-0.5 rounded-full flex-shrink-0", tier.pillColor)}>
+                    {tier.bloomsLevel}
+                  </span>
+
+                  {/* Chevron */}
+                  <ChevronRight className={cn("w-4 h-4 flex-shrink-0 transition-transform group-hover:translate-x-0.5", tier.color)} />
+                </button>
               );
             })}
           </div>
 
-          {/* ── Tier 7 Pinnacle Card ──────────────────────────────────────── */}
-          <div className="mt-6 relative">
-            {/* Connector from Tier 6 */}
-            <div className="absolute left-8 -top-6 w-0.5 h-6 bg-gradient-to-b from-border to-primary/40 z-10" />
-
-            <button
-              onClick={() => navigate('/exam-hub')}
-              className="w-full text-left rounded-2xl border-2 border-primary/40 overflow-hidden transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 group"
-            >
-              {/* Gradient header band */}
-              <div className="bg-gradient-to-r from-violet-700 via-primary to-teal-600 px-6 pt-5 pb-4">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold tracking-widest text-white/70 uppercase">Pinnacle Tier</span>
-                    <span className="text-xs font-bold bg-white/20 text-white px-2 py-0.5 rounded-full">Tier 7</span>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-xs font-semibold bg-white/15 text-white px-2.5 py-1 rounded-full">Apply in the field</span>
-                    <ChevronRight className="w-5 h-5 text-white/80 transition-transform group-hover:translate-x-0.5" />
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-14 h-14 rounded-xl bg-white/15 border-2 border-white/30 flex flex-col items-center justify-center flex-shrink-0">
-                    <ClipboardList className="w-7 h-7 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-black text-white leading-tight">Case Study Exam™</h3>
-                    <p className="text-sm text-white/80">Real-World Application — 175 questions · 5 clinical phases</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Body */}
-              <div className="bg-gradient-to-br from-primary/5 to-teal-50/60 px-6 py-4">
-                <p className="text-sm text-foreground leading-relaxed mb-4">
-                  Follow <strong>Leo Rodriguez</strong>, a 5-year-old with Autism Spectrum Disorder (Level 2), from initial referral through discharge. Every question mirrors a real clinical decision a BCBA makes — the way you will actually work in the field.
-                </p>
-
-                {/* Client profile strip */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-                  {[
-                    { label: 'Client', value: 'Leo Rodriguez, age 5' },
-                    { label: 'Diagnosis', value: 'ASD Level 2 + Mild ID' },
-                    { label: 'Setting', value: 'Home + Kindergarten' },
-                    { label: 'Questions', value: '175 across 9 domains' },
-                  ].map(item => (
-                    <div key={item.label} className="bg-white/70 border border-primary/10 rounded-lg px-3 py-2">
-                      <p className="text-[10px] font-bold text-primary uppercase tracking-wide mb-0.5">{item.label}</p>
-                      <p className="text-xs font-semibold text-foreground leading-tight">{item.value}</p>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Phase pills */}
-                <div className="flex flex-wrap gap-1.5">
-                  {[
-                    'Phase 1: Intake & Assessment',
-                    'Phase 2: FBA',
-                    'Phase 3: Treatment Planning',
-                    'Phase 4: Implementation',
-                    'Phase 5: Evaluation',
-                  ].map(phase => (
-                    <span key={phase} className="text-[10px] font-medium bg-primary/8 text-primary border border-primary/15 px-2 py-0.5 rounded-full">
-                      {phase}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </button>
-          </div>
-
           {/* ── Daily Practice CTA ─────────────────────────────────────────── */}
-          <div className="mt-10">
+          <div className="mb-8">
             <button
               onClick={() => navigate('/daily-practice')}
-              className="w-full text-left rounded-2xl border-2 border-primary/30 bg-gradient-to-r from-primary/8 to-primary/4 p-5 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+              className="w-full text-left rounded-xl border-2 border-primary/30 bg-gradient-to-r from-primary/8 to-primary/4 px-4 py-4 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
             >
-              <div className="flex items-center gap-4">
-                {/* Icon block */}
-                <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-primary/10 border-2 border-primary/20 flex items-center justify-center">
-                  <Flame className="w-7 h-7 text-primary" />
+              <div className="flex items-center gap-3.5">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
+                  <Flame className="w-5 h-5 text-primary" />
                 </div>
-
-                {/* Text */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-0.5">
-                    <Target className="w-4 h-4 text-primary" />
-                    <h3 className="font-bold text-foreground text-base">Daily Practice</h3>
-                    <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-primary/10 text-primary">Adaptive</span>
+                    <Target className="w-3.5 h-3.5 text-primary" />
+                    <span className="text-sm font-bold text-foreground">Daily Practice</span>
+                    <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-primary/10 text-primary">Adaptive</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-2">Targeted mixed-tool session</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed hidden sm:block">
-                    Automatically detects your 5 weakest task items and chains a 10–12 question session mixing Flashcards, Rapid Recall, and Scenario Matching — all targeting your gaps.
+                  <p className="text-xs text-muted-foreground leading-snug">
+                    Targets your 5 weakest task items — mixed Flashcards, Rapid Recall, and Scenario Matching in one session.
                   </p>
                 </div>
-
-                <ChevronRight className="w-5 h-5 text-primary flex-shrink-0 transition-transform group-hover:translate-x-0.5" />
+                <ChevronRight className="w-4 h-4 text-primary flex-shrink-0 transition-transform group-hover:translate-x-0.5" />
               </div>
             </button>
           </div>
@@ -497,7 +356,7 @@ export default function Dashboard() {
           <TaskItemProgress />
 
           {/* Footer note */}
-          <div className="mt-10 p-4 bg-muted/40 rounded-lg border border-border">
+          <div className="mt-8 p-4 bg-muted/40 rounded-lg border border-border">
             <div className="flex items-start gap-2.5">
               <Trophy className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
               <div>
@@ -509,6 +368,7 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
+
         </div>
       </section>
     </div>
