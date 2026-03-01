@@ -311,14 +311,33 @@ export default function Dashboard() {
                           style={{ width: `${pct}%` }}
                         />
                       </div>
-                      <span className={cn("text-[11px] font-semibold tabular-nums flex-shrink-0", tier.color)}>{pct}%</span>
+                      {/* State label */}
+                      {isComplete ? (
+                        <span className="text-[11px] font-semibold text-violet-600 flex-shrink-0">Done</span>
+                      ) : pct > 0 ? (
+                        <span className="flex items-center gap-1 flex-shrink-0">
+                          <span className="relative flex h-1.5 w-1.5">
+                            <span className={cn("animate-ping absolute inline-flex h-full w-full rounded-full opacity-75", tier.barColor)} />
+                            <span className={cn("relative inline-flex rounded-full h-1.5 w-1.5", tier.barColor)} />
+                          </span>
+                          <span className={cn("text-[11px] font-semibold tabular-nums", tier.color)}>{pct}%</span>
+                        </span>
+                      ) : (
+                        <span className="text-[11px] font-medium text-muted-foreground flex-shrink-0">Start</span>
+                      )}
                     </div>
                   </div>
 
-                  {/* Blooms pill — hidden on small screens */}
-                  <span className={cn("hidden md:inline-flex text-[11px] font-medium px-2 py-0.5 rounded-full flex-shrink-0", tier.pillColor)}>
-                    {tier.bloomsLevel}
-                  </span>
+                  {/* Resume / Blooms pill — hidden on small screens */}
+                  {pct > 0 && !isComplete ? (
+                    <span className={cn("hidden md:inline-flex text-[11px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0", tier.pillColor)}>
+                      Resume →
+                    </span>
+                  ) : (
+                    <span className={cn("hidden md:inline-flex text-[11px] font-medium px-2 py-0.5 rounded-full flex-shrink-0", tier.pillColor)}>
+                      {tier.bloomsLevel}
+                    </span>
+                  )}
 
                   {/* Chevron */}
                   <ChevronRight className={cn("w-4 h-4 flex-shrink-0 transition-transform group-hover:translate-x-0.5", tier.color)} />
