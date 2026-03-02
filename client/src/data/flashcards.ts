@@ -380,7 +380,6 @@ export const flashcards: Flashcard[] = [
     term: 'Antecedent',
     definition: 'Any environmental condition or change in condition that precedes a behavior and may influence its occurrence.',
     example: 'The therapist places a preferred toy on the table (antecedent) before asking the child to sit down.',
-    chapter: 'Ch02',
   },
   {
     id: 'b63',
@@ -388,7 +387,6 @@ export const flashcards: Flashcard[] = [
     term: 'Reinforcer',
     definition: 'A stimulus whose presentation or removal following a behavior increases the future frequency of that behavior under similar conditions.',
     example: 'Praise delivered after a student completes a math problem increases the rate of problem completion.',
-    chapter: 'Ch02',
   },
   {
     id: 'b64',
@@ -396,7 +394,6 @@ export const flashcards: Flashcard[] = [
     term: 'Automatic Contingency',
     definition: 'A reinforcing or punishing consequence that is produced directly by the behavior itself, without mediation by another person.',
     example: 'A child hums to herself because the auditory stimulation produced by humming is itself reinforcing.',
-    chapter: 'Ch02',
   },
   {
     id: 'b65',
@@ -404,7 +401,6 @@ export const flashcards: Flashcard[] = [
     term: 'Higher-Order Conditioning',
     definition: 'A procedure in which a previously conditioned stimulus is paired with a new neutral stimulus, making the new stimulus a conditioned stimulus.',
     example: 'A tone (CS1) that signals food is paired with a light; the light alone later elicits salivation.',
-    chapter: 'Ch02',
   },
   {
     id: 'b66',
@@ -412,7 +408,6 @@ export const flashcards: Flashcard[] = [
     term: 'Repertoire',
     definition: 'The total collection of behaviors a person is capable of performing at a given time, shaped by learning history and biology.',
     example: 'A BCBA assesses a child\'s verbal repertoire to determine which mands, tacts, and intraverbals are present.',
-    chapter: 'Ch02',
   },
   {
     id: 'b67',
@@ -420,7 +415,6 @@ export const flashcards: Flashcard[] = [
     term: 'Automaticity of Reinforcement',
     definition: 'The property of reinforcement that describes how it strengthens behavior without requiring the organism to be aware of or understand the contingency.',
     example: 'A child\'s self-stimulatory behavior is maintained automatically even though the child cannot describe why they engage in it.',
-    chapter: 'Ch02',
   },
   {
     id: 'b68',
@@ -428,7 +422,6 @@ export const flashcards: Flashcard[] = [
     term: 'History of Reinforcement',
     definition: 'The cumulative record of all past reinforcement contingencies that have shaped an organism\'s current behavioral patterns.',
     example: 'A client\'s history of intermittent reinforcement for tantrum behavior explains why extinction produces a prolonged burst.',
-    chapter: 'Ch02',
   },
   {
     id: 'b69',
@@ -436,7 +429,6 @@ export const flashcards: Flashcard[] = [
     term: 'Respondent Behavior',
     definition: 'Behavior that is elicited by an antecedent stimulus and occurs reflexively, without requiring prior learning of the specific stimulus-response relationship.',
     example: 'Pupil dilation in dim light and salivation to food in the mouth are examples of respondent behaviors.',
-    chapter: 'Ch02',
   },
   {
     id: 'b70',
@@ -444,7 +436,6 @@ export const flashcards: Flashcard[] = [
     term: 'Aversive Stimulus',
     definition: 'A stimulus whose presentation decreases the future frequency of behavior it follows (punisher), or whose removal increases the future frequency of behavior it follows (negative reinforcer).',
     example: 'Loud noise functions as an aversive stimulus when its termination reinforces the behavior of putting on earplugs.',
-    chapter: 'Ch02',
   },
   {
     id: 'b71',
@@ -452,7 +443,6 @@ export const flashcards: Flashcard[] = [
     term: 'Joint Control',
     definition: 'A verbal behavior phenomenon in which a speaker\'s selection of a response is controlled by both a verbal stimulus and a nonverbal stimulus simultaneously.',
     example: 'A child asked to "find the red ball" must match the spoken word "red" to the visual property of the ball before responding.',
-    chapter: 'Ch02',
   },
   {
     id: 'b72',
@@ -460,7 +450,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavior',
     definition: 'The activity of living organisms; any muscular, glandular, or electrical activity of an organism that can be measured.',
     example: 'Talking, walking, thinking, and heart rate are all behaviors because they are measurable activities of a living organism.',
-    chapter: 'Ch02',
   },
   {
     id: 'b73',
@@ -468,7 +457,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavior Change Tactic',
     definition: 'A technologically consistent method for changing behavior that is derived from one or more principles of behavior.',
     example: 'Differential reinforcement of alternative behavior (DRA) is a behavior change tactic derived from the principle of reinforcement.',
-    chapter: 'Ch02',
   },
   {
     id: 'b74',
@@ -476,7 +464,6 @@ export const flashcards: Flashcard[] = [
     term: 'Response',
     definition: 'A single instance of a behavior; one occurrence of a specific action by an organism.',
     example: 'Each time a student raises their hand to answer a question, that constitutes one response.',
-    chapter: 'Ch02',
   },
   {
     id: 'b75',
@@ -484,7 +471,6 @@ export const flashcards: Flashcard[] = [
     term: 'Conditioned Reflex',
     definition: 'A learned stimulus-response relationship in which a previously neutral stimulus acquires the ability to elicit a response through repeated pairing with an unconditioned stimulus.',
     example: 'A child who has been repeatedly hurt during dental procedures cries when entering the dental office.',
-    chapter: 'Ch02',
   },
   {
     id: 'b76',
@@ -492,7 +478,6 @@ export const flashcards: Flashcard[] = [
     term: 'Neutral Stimulus',
     definition: 'A stimulus that, prior to conditioning, does not elicit the response of interest and has no established reinforcing or punishing function.',
     example: 'A metronome is a neutral stimulus before it is paired with food in a Pavlovian conditioning procedure.',
-    chapter: 'Ch02',
   },
   {
     id: 'b77',
@@ -500,7 +485,6 @@ export const flashcards: Flashcard[] = [
     term: 'Ontogeny',
     definition: 'The behavioral and biological development of an individual organism across its lifetime, shaped by both genetic endowment and learning history.',
     example: 'A child\'s verbal behavior repertoire develops through ontogeny as a result of reinforcement provided by caregivers.',
-    chapter: 'Ch02',
   },
   {
     id: 'b78',
@@ -508,7 +492,6 @@ export const flashcards: Flashcard[] = [
     term: 'Selectionism',
     definition: 'The philosophical position that behavior is selected and shaped by its consequences, analogous to the way natural selection shapes species over generations.',
     example: 'Skinner\'s analysis of operant conditioning is grounded in selectionism: behaviors that produce favorable consequences are selected and strengthened.',
-    chapter: 'Ch02',
   },
   {
     id: 'b79',
@@ -516,7 +499,6 @@ export const flashcards: Flashcard[] = [
     term: 'Operant Behavior',
     definition: 'Behavior that is selected, maintained, and brought under stimulus control by its consequences; behavior that operates on the environment to produce consequences.',
     example: 'Pressing a lever to obtain food is operant behavior because it is maintained by its consequence (food delivery).',
-    chapter: 'Ch02',
   },
   {
     id: 'b80',
@@ -524,7 +506,6 @@ export const flashcards: Flashcard[] = [
     term: 'Socially Mediated Contingency',
     definition: 'A reinforcement or punishment contingency in which the consequence is delivered by another person rather than produced directly by the behavior itself.',
     example: 'A teacher providing praise after a student answers correctly is a socially mediated reinforcement contingency.',
-    chapter: 'Ch02',
   },
   {
     id: 'b81',
@@ -532,7 +513,6 @@ export const flashcards: Flashcard[] = [
     term: 'Consequence',
     definition: 'A stimulus change that follows a behavior and may increase or decrease the future frequency of that behavior.',
     example: 'The delivery of a token following correct responding is a consequence that increases future responding.',
-    chapter: 'Ch02',
   },
   {
     id: 'b82',
@@ -540,7 +520,6 @@ export const flashcards: Flashcard[] = [
     term: 'Operant Conditioning',
     definition: 'A type of learning in which the future frequency of a behavior is modified by its consequences; behavior is strengthened by reinforcement and weakened by punishment or extinction.',
     example: 'A rat learns to press a lever more frequently when lever presses produce food pellets — an example of operant conditioning.',
-    chapter: 'Ch02',
   },
   {
     id: 'b83',
@@ -548,7 +527,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus',
     definition: 'Any energy change in the environment that affects an organism\'s sensory receptors and may influence behavior.',
     example: 'A flashing light, a spoken word, and a change in room temperature are all stimuli that can influence behavior.',
-    chapter: 'Ch02',
   },
   {
     id: 'b84',
@@ -556,7 +534,6 @@ export const flashcards: Flashcard[] = [
     term: 'Contingency',
     definition: 'A conditional relationship between a behavior and an antecedent or consequent event; the "if-then" relationship specifying when and how consequences follow behavior.',
     example: 'The contingency "if the student completes 10 problems, then they earn 5 minutes of free time" describes a fixed-ratio reinforcement schedule.',
-    chapter: 'Ch02',
   },
   {
     id: 'b85',
@@ -564,7 +541,6 @@ export const flashcards: Flashcard[] = [
     term: 'Phylogeny',
     definition: 'The evolutionary history of a species; the biological endowment that determines which stimuli can function as reinforcers or punishers without prior learning.',
     example: 'Humans\' phylogenetic history makes food, water, and warmth function as unconditioned reinforcers.',
-    chapter: 'Ch02',
   },
   {
     id: 'b86',
@@ -572,7 +548,6 @@ export const flashcards: Flashcard[] = [
     term: 'Contingent',
     definition: 'Describes a consequence that is delivered only when a specific behavior occurs; the consequence depends on the behavior.',
     example: 'Praise is contingent on correct responding when it is delivered only after the student answers correctly, not at other times.',
-    chapter: 'Ch02',
   },
   {
     id: 'b87',
@@ -580,7 +555,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus-Stimulus Pairing',
     definition: 'A procedure in which two stimuli are presented together repeatedly, so that one stimulus acquires the reinforcing or eliciting properties of the other.',
     example: 'Pairing a therapist\'s voice with preferred items can make the therapist\'s voice a conditioned reinforcer.',
-    chapter: 'Ch02',
   },
   {
     id: 'b88',
@@ -588,7 +562,6 @@ export const flashcards: Flashcard[] = [
     term: 'Deprivation',
     definition: 'A condition in which access to a specific reinforcer has been withheld or reduced, increasing the current reinforcing value of that stimulus.',
     example: 'A child who has not had access to a preferred toy for several hours will show increased motivation to obtain that toy.',
-    chapter: 'Ch02',
   },
   {
     id: 'b89',
@@ -596,7 +569,6 @@ export const flashcards: Flashcard[] = [
     term: 'Principle of Behavior',
     definition: 'A statement that describes a functional relationship between behavior and environmental variables that holds across organisms, settings, and time.',
     example: 'The principle of reinforcement states that behavior followed by a reinforcing consequence will increase in future frequency.',
-    chapter: 'Ch02',
   },
   {
     id: 'b90',
@@ -604,7 +576,6 @@ export const flashcards: Flashcard[] = [
     term: 'Three-Term Contingency',
     definition: 'The fundamental unit of operant analysis consisting of an antecedent stimulus, a behavior, and a consequence; also called the ABCs of behavior.',
     example: 'SD (teacher says "sit down") → B (student sits) → C (teacher delivers praise) is a three-term contingency.',
-    chapter: 'Ch02',
   },
   {
     id: 'b91',
@@ -612,7 +583,6 @@ export const flashcards: Flashcard[] = [
     term: 'Discriminated Operant',
     definition: 'An operant behavior that occurs more frequently in the presence of a specific antecedent stimulus (SD) than in its absence, due to a history of differential reinforcement.',
     example: 'A child who asks for juice only when juice is visible has learned a discriminated operant under the control of the visible juice.',
-    chapter: 'Ch02',
   },
   {
     id: 'b92',
@@ -620,7 +590,6 @@ export const flashcards: Flashcard[] = [
     term: 'Punisher',
     definition: 'A stimulus whose presentation following a behavior decreases the future frequency of that behavior under similar conditions.',
     example: 'A reprimand that decreases a student\'s talking out of turn functions as a punisher.',
-    chapter: 'Ch02',
   },
   {
     id: 'b93',
@@ -628,7 +597,6 @@ export const flashcards: Flashcard[] = [
     term: 'Environment',
     definition: 'The total constellation of external and internal stimuli that can influence an organism\'s behavior at any given moment.',
     example: 'The physical setting, the presence of other people, and the organism\'s internal physiological state all constitute parts of the environment.',
-    chapter: 'Ch02',
   },
   {
     id: 'b94',
@@ -636,7 +604,6 @@ export const flashcards: Flashcard[] = [
     term: 'Reflex',
     definition: 'An unlearned, automatic stimulus-response relationship in which a specific stimulus reliably elicits a specific response without prior conditioning.',
     example: 'The knee-jerk response to a tap on the patellar tendon is a reflex.',
-    chapter: 'Ch02',
   },
   {
     id: 'b95',
@@ -644,7 +611,6 @@ export const flashcards: Flashcard[] = [
     term: 'ABC Recording',
     definition: 'A direct observation method in which the observer records the antecedent, behavior, and consequence for each occurrence of a target behavior in sequence.',
     example: 'A teacher records that a student\'s hitting (B) was preceded by a peer taking a toy (A) and followed by the peer crying and returning the toy (C).',
-    chapter: 'Ch03',
   },
   {
     id: 'b96',
@@ -652,7 +618,6 @@ export const flashcards: Flashcard[] = [
     term: 'Anecdotal Observation',
     definition: 'A narrative, non-systematic method of recording behavior in which the observer writes a running account of events as they occur, without predetermined categories.',
     example: 'A teacher writes "Marcus became upset during math and threw his pencil" as an anecdotal observation.',
-    chapter: 'Ch03',
   },
   {
     id: 'b97',
@@ -660,7 +625,6 @@ export const flashcards: Flashcard[] = [
     term: 'Relevance of Behavior Rule',
     definition: 'The guideline that target behaviors selected for intervention must be relevant to the client\'s current and future functioning in natural environments.',
     example: 'Teaching a child to request preferred items is more relevant than teaching them to name colors if requesting is the skill most needed for daily functioning.',
-    chapter: 'Ch03',
   },
   {
     id: 'b98',
@@ -668,7 +632,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavior Checklist',
     definition: 'A structured assessment tool listing specific behaviors that an observer checks off as present or absent during an observation period.',
     example: 'A BCBA uses a behavior checklist to assess which adaptive living skills a client can and cannot perform independently.',
-    chapter: 'Ch03',
   },
   {
     id: 'b99',
@@ -676,7 +639,6 @@ export const flashcards: Flashcard[] = [
     term: 'Habilitation',
     definition: 'The process of teaching new skills and behaviors that enable a person to function more effectively and independently in their environment.',
     example: 'Teaching a young child with autism to communicate using PECS is a habilitation goal.',
-    chapter: 'Ch03',
   },
   {
     id: 'b100',
@@ -684,7 +646,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavioral Assessment',
     definition: 'A systematic process of gathering information about a person\'s behavior and the environmental variables that influence it, used to guide intervention planning.',
     example: 'A BCBA conducts a behavioral assessment including interviews, direct observation, and preference assessments before designing a behavior intervention plan.',
-    chapter: 'Ch03',
   },
   {
     id: 'b101',
@@ -692,7 +653,6 @@ export const flashcards: Flashcard[] = [
     term: 'Normalization',
     definition: 'The principle that people with disabilities should have access to living conditions and opportunities as close as possible to those of typical members of society.',
     example: 'Placing a student with a disability in a general education classroom with appropriate supports reflects the principle of normalization.',
-    chapter: 'Ch03',
   },
   {
     id: 'b102',
@@ -700,7 +660,6 @@ export const flashcards: Flashcard[] = [
     term: 'Target Behavior',
     definition: 'The specific behavior selected for measurement and change in a behavior analysis program; defined in observable and measurable terms.',
     example: 'The target behavior "will independently request a preferred item using a complete sentence" is defined in observable and measurable terms.',
-    chapter: 'Ch03',
   },
   {
     id: 'b103',
@@ -708,7 +667,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavioral Cusp',
     definition: 'A behavior change that has consequences beyond the change itself, opening access to new reinforcers, contingencies, and environments.',
     example: 'Learning to read is a behavioral cusp because it opens access to an enormous range of new learning opportunities and reinforcers.',
-    chapter: 'Ch03',
   },
   {
     id: 'b104',
@@ -716,7 +674,6 @@ export const flashcards: Flashcard[] = [
     term: 'Pivotal Behavior',
     definition: 'A behavior that, when changed, produces widespread collateral improvements in other behaviors that were not directly targeted for intervention.',
     example: 'Increasing a child\'s motivation to engage with the environment is a pivotal behavior because it produces improvements across multiple skill areas.',
-    chapter: 'Ch03',
   },
   {
     id: 'b105',
@@ -724,7 +681,6 @@ export const flashcards: Flashcard[] = [
     term: 'Positive Reinforcer',
     definition: 'A stimulus whose presentation following a behavior increases the future frequency of that behavior under similar conditions.',
     example: 'A token delivered after each correct math problem functions as a positive reinforcer if problem-solving frequency increases.',
-    chapter: 'Ch11',
   },
   {
     id: 'b106',
@@ -732,7 +688,6 @@ export const flashcards: Flashcard[] = [
     term: 'Premack Principle',
     definition: 'The principle that a higher-probability behavior can be used to reinforce a lower-probability behavior; access to a preferred activity contingent on completing a less preferred activity.',
     example: 'Allowing a child to play video games (high-probability behavior) contingent on completing homework (low-probability behavior) applies the Premack Principle.',
-    chapter: 'Ch11',
   },
   {
     id: 'b107',
@@ -740,7 +695,6 @@ export const flashcards: Flashcard[] = [
     term: 'Generalized Conditioned Reinforcer',
     definition: 'A conditioned reinforcer that has been paired with many other reinforcers and therefore maintains its reinforcing value across a wide range of motivating operations.',
     example: 'Money is a generalized conditioned reinforcer because it can be exchanged for many different primary and conditioned reinforcers.',
-    chapter: 'Ch11',
   },
   {
     id: 'b108',
@@ -748,7 +702,6 @@ export const flashcards: Flashcard[] = [
     term: 'Reinforcer Assessment',
     definition: 'A systematic procedure for identifying stimuli that function as reinforcers for a specific individual under current motivating conditions.',
     example: 'A BCBA conducts a paired-stimulus preference assessment and then tests whether high-preference items function as reinforcers by measuring their effect on behavior.',
-    chapter: 'Ch11',
   },
   {
     id: 'b109',
@@ -756,7 +709,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus Preference Assessment',
     definition: 'A systematic procedure for identifying stimuli that an individual prefers, used to identify potential reinforcers; includes single-stimulus, paired-stimulus, and multiple-stimulus formats.',
     example: 'A BCBA presents pairs of items and records which item the client consistently approaches to identify high-preference stimuli.',
-    chapter: 'Ch11',
   },
   {
     id: 'b110',
@@ -764,7 +716,6 @@ export const flashcards: Flashcard[] = [
     term: 'Response-Deprivation Hypothesis',
     definition: 'The hypothesis that any behavior can function as a reinforcer if access to it is restricted below its free-operant baseline rate.',
     example: 'If a child typically runs for 30 minutes per day, restricting running below that baseline makes running a reinforcer for other behaviors.',
-    chapter: 'Ch11',
   },
   {
     id: 'b111',
@@ -772,7 +723,6 @@ export const flashcards: Flashcard[] = [
     term: 'Avoidance Contingency',
     definition: 'A negative reinforcement contingency in which a behavior prevents the onset of an aversive stimulus that has not yet occurred.',
     example: 'A student completes homework to avoid the aversive experience of receiving a failing grade.',
-    chapter: 'Ch12',
   },
   {
     id: 'b112',
@@ -780,7 +730,6 @@ export const flashcards: Flashcard[] = [
     term: 'Escape Contingency',
     definition: 'A negative reinforcement contingency in which a behavior terminates or reduces an aversive stimulus that is already present.',
     example: 'A child cries during a difficult task and the task is removed; the removal of the task negatively reinforces crying via an escape contingency.',
-    chapter: 'Ch12',
   },
   {
     id: 'b113',
@@ -788,7 +737,6 @@ export const flashcards: Flashcard[] = [
     term: 'Conditioned Negative Reinforcer',
     definition: 'A previously neutral stimulus that has acquired the ability to function as a negative reinforcer through pairing with an unconditioned or other conditioned aversive stimulus.',
     example: 'A warning tone that signals an impending shock becomes a conditioned negative reinforcer; behaviors that terminate the tone are negatively reinforced.',
-    chapter: 'Ch12',
   },
   {
     id: 'b114',
@@ -796,7 +744,6 @@ export const flashcards: Flashcard[] = [
     term: 'Free-Operant Avoidance',
     definition: 'An avoidance contingency in which the organism can respond at any time to postpone or prevent an aversive stimulus, with no discrete trials or warning signals.',
     example: 'A rat in a Sidman avoidance procedure can press a lever at any time to reset a shock timer, with no warning stimulus.',
-    chapter: 'Ch12',
   },
   {
     id: 'b115',
@@ -804,7 +751,6 @@ export const flashcards: Flashcard[] = [
     term: 'Unconditioned Negative Reinforcer',
     definition: 'A stimulus whose removal or reduction increases the future frequency of behavior without prior conditioning; an aversive stimulus by phylogenetic history.',
     example: 'Extreme heat is an unconditioned negative reinforcer; behaviors that reduce heat exposure are negatively reinforced without any prior learning.',
-    chapter: 'Ch12',
   },
   {
     id: 'b116',
@@ -812,7 +758,6 @@ export const flashcards: Flashcard[] = [
     term: 'Discriminated Avoidance',
     definition: 'An avoidance contingency in which a warning signal (CS) precedes the aversive stimulus (US), and behavior that occurs during the warning signal prevents the US.',
     example: 'A driver slows down when they see a speed limit sign (warning signal) to avoid a speeding ticket (aversive stimulus).',
-    chapter: 'Ch12',
   },
   {
     id: 'b117',
@@ -820,7 +765,6 @@ export const flashcards: Flashcard[] = [
     term: 'Adjunctive Behaviors',
     definition: 'Behaviors that emerge as a by-product of intermittent reinforcement schedules, occurring at high rates during the interval between reinforcement opportunities.',
     example: 'Excessive drinking in animals on fixed-interval schedules is an adjunctive behavior that emerges without direct reinforcement.',
-    chapter: 'Ch13',
   },
   {
     id: 'b118',
@@ -828,7 +772,6 @@ export const flashcards: Flashcard[] = [
     term: 'Alternative Schedule (Alt)',
     definition: 'A compound schedule in which reinforcement is delivered for the first response after either a fixed/variable interval or a fixed/variable ratio requirement is met, whichever occurs first.',
     example: 'An Alt FR10 VI60s schedule delivers reinforcement after 10 responses OR after 60 seconds, whichever comes first.',
-    chapter: 'Ch13',
   },
   {
     id: 'b119',
@@ -836,7 +779,6 @@ export const flashcards: Flashcard[] = [
     term: 'Differential Reinforcement of Low Rates (DRL)',
     definition: 'A schedule in which reinforcement is delivered only when a behavior occurs at or below a specified rate or after a minimum inter-response time has elapsed.',
     example: 'A DRL 5-minute schedule delivers reinforcement only if the student waits at least 5 minutes between requests.',
-    chapter: 'Ch13',
   },
   {
     id: 'b120',
@@ -844,7 +786,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavioral Contrast',
     definition: 'An increase in response rate in one component of a multiple schedule when reinforcement is reduced or removed in the other component.',
     example: 'When a child\'s disruptive behavior is placed on extinction in the classroom, it may temporarily increase at home — an example of behavioral contrast.',
-    chapter: 'Ch13',
   },
   {
     id: 'b121',
@@ -852,7 +793,6 @@ export const flashcards: Flashcard[] = [
     term: 'Chained Schedule',
     definition: 'A compound schedule in which a series of component schedules must be completed in sequence, with each component signaled by a distinct stimulus and only the final component producing the terminal reinforcer.',
     example: 'A chained FR5 FR10 schedule requires 5 responses in the first component (signaled by a green light) and then 10 responses in the second component (signaled by a red light) before food is delivered.',
-    chapter: 'Ch13',
   },
   {
     id: 'b122',
@@ -860,7 +800,6 @@ export const flashcards: Flashcard[] = [
     term: 'Compound Schedule of Reinforcement',
     definition: 'A schedule that combines two or more simple schedules of reinforcement, either simultaneously or sequentially, to govern when reinforcement is delivered.',
     example: 'A multiple schedule that alternates between FR10 and extinction components is a compound schedule.',
-    chapter: 'Ch13',
   },
   {
     id: 'b123',
@@ -868,7 +807,6 @@ export const flashcards: Flashcard[] = [
     term: 'Conjunctive Schedule (Conj)',
     definition: 'A compound schedule in which both a ratio and an interval requirement must be satisfied before reinforcement is delivered.',
     example: 'A Conj FR5 FI60s schedule requires both 5 responses AND 60 seconds to have elapsed before reinforcement is available.',
-    chapter: 'Ch13',
   },
   {
     id: 'b124',
@@ -876,7 +814,6 @@ export const flashcards: Flashcard[] = [
     term: 'Continuous Reinforcement (CRF)',
     definition: 'A schedule in which every occurrence of the target behavior produces reinforcement; the simplest reinforcement schedule, used to establish new behaviors.',
     example: 'During initial skill acquisition, a therapist delivers a token after every correct response — a CRF schedule.',
-    chapter: 'Ch13',
   },
   {
     id: 'b125',
@@ -884,7 +821,6 @@ export const flashcards: Flashcard[] = [
     term: 'Differential Reinforcement of Diminishing Rates (DRD)',
     definition: 'A schedule in which reinforcement is delivered at the end of an interval only if the number of responses during that interval is less than or equal to a decreasing criterion.',
     example: 'A DRD schedule is used to gradually reduce a student\'s hand-raising from 20 times per hour to 5 times per hour.',
-    chapter: 'Ch13',
   },
   {
     id: 'b126',
@@ -892,7 +828,6 @@ export const flashcards: Flashcard[] = [
     term: 'Differential Reinforcement of High Rates (DRH)',
     definition: 'A schedule in which reinforcement is delivered only when the rate of responding meets or exceeds a specified minimum criterion.',
     example: 'A DRH schedule is used to increase a student\'s reading fluency by reinforcing only when they read at least 100 words per minute.',
-    chapter: 'Ch13',
   },
   {
     id: 'b127',
@@ -900,7 +835,6 @@ export const flashcards: Flashcard[] = [
     term: 'Lag Schedule',
     definition: 'A reinforcement schedule in which a response is reinforced only if it is different from the previous n responses, used to increase behavioral variability.',
     example: 'A Lag 1 schedule reinforces a child\'s play behavior only when it differs from the immediately preceding play behavior, increasing variety.',
-    chapter: 'Ch13',
   },
   {
     id: 'b128',
@@ -908,7 +842,6 @@ export const flashcards: Flashcard[] = [
     term: 'Postreinforcement Pause',
     definition: 'A period of no or low responding that occurs immediately after reinforcement delivery, most prominently observed on fixed-ratio and fixed-interval schedules.',
     example: 'A student who just received a reward for completing 20 math problems pauses before beginning the next set — a postreinforcement pause on an FR20 schedule.',
-    chapter: 'Ch13',
   },
   {
     id: 'b129',
@@ -916,7 +849,6 @@ export const flashcards: Flashcard[] = [
     term: 'Progressive Schedule of Reinforcement',
     definition: 'A schedule in which the response requirement or time interval systematically increases (or decreases) across successive reinforcement deliveries.',
     example: 'A progressive-ratio schedule that doubles the ratio requirement after each reinforcer delivery is used to assess the reinforcing value of a stimulus.',
-    chapter: 'Ch13',
   },
   {
     id: 'b130',
@@ -924,7 +856,6 @@ export const flashcards: Flashcard[] = [
     term: 'Progressive-Ratio (PR) Schedule',
     definition: 'A specific type of progressive schedule in which the ratio requirement increases after each reinforcer delivery; the ratio at which the organism stops responding is called the break point.',
     example: 'A PR schedule starting at FR5 and increasing by 5 after each reinforcer is used to determine the break point for a preferred food item.',
-    chapter: 'Ch13',
   },
   {
     id: 'b131',
@@ -932,7 +863,6 @@ export const flashcards: Flashcard[] = [
     term: 'Ratio Strain',
     definition: 'A disruption in responding characterized by pausing, emotional behavior, and eventual cessation that occurs when a ratio schedule is increased too rapidly.',
     example: 'A student who was on FR5 and is abruptly shifted to FR100 may show ratio strain, with long pauses and eventual refusal to respond.',
-    chapter: 'Ch13',
   },
   {
     id: 'b132',
@@ -940,7 +870,6 @@ export const flashcards: Flashcard[] = [
     term: 'Schedule of Reinforcement',
     definition: 'The rule that specifies which occurrences of a behavior will be followed by a reinforcer; describes the relationship between responding and reinforcement delivery.',
     example: 'A fixed-ratio 10 schedule of reinforcement delivers a reinforcer after every 10th response.',
-    chapter: 'Ch13',
   },
   {
     id: 'b133',
@@ -948,7 +877,6 @@ export const flashcards: Flashcard[] = [
     term: 'Limited Hold',
     definition: 'An added contingency specifying that reinforcement is available only for a limited time after the schedule requirement is met; responses after the window closes do not produce reinforcement.',
     example: 'An FI 60s LH 10s schedule means the reinforcer is available only during the 10-second window after the 60-second interval has elapsed.',
-    chapter: 'Ch13',
   },
   {
     id: 'b134',
@@ -956,7 +884,6 @@ export const flashcards: Flashcard[] = [
     term: 'Schedule Thinning',
     definition: 'The systematic process of gradually increasing the response requirement or time interval between reinforcements to shift from a dense to a leaner schedule.',
     example: 'A BCBA thins a CRF schedule to VR10 over several weeks to maintain behavior with less frequent reinforcement.',
-    chapter: 'Ch13',
   },
   {
     id: 'b135',
@@ -964,7 +891,6 @@ export const flashcards: Flashcard[] = [
     term: 'Tandem Schedule (Tand)',
     definition: 'A compound schedule in which two or more component schedules must be completed in sequence to produce reinforcement, but without discriminative stimuli signaling the change between components.',
     example: 'A Tand FR5 FI30s schedule requires 5 responses followed by 30 seconds of elapsed time, with no signal indicating the transition between components.',
-    chapter: 'Ch13',
   },
   {
     id: 'b136',
@@ -972,7 +898,6 @@ export const flashcards: Flashcard[] = [
     term: 'Response Blocking',
     definition: 'A punishment procedure in which the practitioner physically prevents the completion of a problem behavior, typically used to interrupt self-injurious or stereotypic behavior.',
     example: 'A therapist gently holds a client\'s hands down when they attempt to hit their head, blocking the completion of the self-injurious response.',
-    chapter: 'Ch14',
   },
   {
     id: 'b137',
@@ -980,7 +905,6 @@ export const flashcards: Flashcard[] = [
     term: 'Positive Practice Overcorrection',
     definition: 'A punishment procedure requiring the individual to repeatedly practice the correct form of the behavior contingent on each occurrence of the problem behavior.',
     example: 'After a student writes on the desk, they are required to practice writing on paper 20 times as positive practice overcorrection.',
-    chapter: 'Ch14',
   },
   {
     id: 'b138',
@@ -988,7 +912,6 @@ export const flashcards: Flashcard[] = [
     term: 'Response Interruption and Redirection (RIRD)',
     definition: 'A procedure in which stereotypic or problem behavior is interrupted and the individual is prompted to engage in an alternative, incompatible behavior.',
     example: 'When a child begins to vocally stim, the therapist interrupts by saying "hands down" and redirects the child to a functional communication response.',
-    chapter: 'Ch14',
   },
   {
     id: 'b139',
@@ -996,7 +919,6 @@ export const flashcards: Flashcard[] = [
     term: 'Discriminative Stimulus for Punishment (S^P)',
     definition: 'A stimulus in the presence of which a behavior has been punished and whose presence therefore suppresses that behavior.',
     example: 'A student who has been reprimanded for talking in class only when the principal is present may suppress talking in the principal\'s presence — the principal functions as an S^P.',
-    chapter: 'Ch14',
   },
   {
     id: 'b140',
@@ -1004,7 +926,6 @@ export const flashcards: Flashcard[] = [
     term: 'Restitutional Overcorrection',
     definition: 'A punishment procedure requiring the individual to restore the environment to a state better than it was before the problem behavior occurred.',
     example: 'After a student knocks items off a shelf, they are required to pick up those items AND straighten all other items on the shelf.',
-    chapter: 'Ch14',
   },
   {
     id: 'b141',
@@ -1012,7 +933,6 @@ export const flashcards: Flashcard[] = [
     term: 'Recovery from Punishment',
     definition: 'The return of a suppressed behavior to near-baseline levels after punishment is discontinued, analogous to spontaneous recovery after extinction.',
     example: 'A child\'s hitting that was suppressed by time-out may recover to near-baseline levels after time-out is no longer implemented.',
-    chapter: 'Ch14',
   },
   {
     id: 'b142',
@@ -1020,7 +940,6 @@ export const flashcards: Flashcard[] = [
     term: 'Bonus Response Cost',
     definition: 'A response cost variation in which the individual begins a session with bonus tokens beyond the minimum needed, and tokens are removed contingent on problem behavior.',
     example: 'A student begins class with 5 bonus tokens and loses one token each time they call out without raising their hand.',
-    chapter: 'Ch15',
   },
   {
     id: 'b143',
@@ -1028,7 +947,6 @@ export const flashcards: Flashcard[] = [
     term: 'Nonexclusion Time-Out',
     definition: 'A time-out procedure in which the individual remains in the environment but is denied access to reinforcement for a specified period contingent on problem behavior.',
     example: 'A student who engages in disruptive behavior is moved to a chair at the edge of the classroom where they can observe but not participate in the activity.',
-    chapter: 'Ch15',
   },
   {
     id: 'b144',
@@ -1036,7 +954,6 @@ export const flashcards: Flashcard[] = [
     term: 'Contingent Observation',
     definition: 'A mild nonexclusion time-out procedure in which the individual is moved to the periphery of the activity to observe peers engaging in the activity without being able to participate.',
     example: 'A child who hits during a game is moved to sit and watch the game for 2 minutes before returning to play.',
-    chapter: 'Ch15',
   },
   {
     id: 'b145',
@@ -1044,7 +961,6 @@ export const flashcards: Flashcard[] = [
     term: 'Partition Time-Out',
     definition: 'A nonexclusion time-out procedure in which a screen or partition is placed between the individual and the reinforcing environment, blocking access to reinforcement without removing the individual from the room.',
     example: 'A screen is placed in front of a student who engages in disruptive behavior, blocking their view of the classroom activity.',
-    chapter: 'Ch15',
   },
   {
     id: 'b146',
@@ -1052,7 +968,6 @@ export const flashcards: Flashcard[] = [
     term: 'Exclusion Time-Out',
     definition: 'A time-out procedure in which the individual is physically removed from the reinforcing environment to a less reinforcing area contingent on problem behavior.',
     example: 'A student who engages in aggression is escorted to a quiet room adjacent to the classroom for a 5-minute time-out.',
-    chapter: 'Ch15',
   },
   {
     id: 'b147',
@@ -1060,7 +975,6 @@ export const flashcards: Flashcard[] = [
     term: 'Time-Out from Positive Reinforcement',
     definition: 'A negative punishment procedure in which access to sources of positive reinforcement is contingently removed for a specified period following problem behavior.',
     example: 'Removing a child from a preferred activity for 3 minutes contingent on hitting is a time-out from positive reinforcement procedure.',
-    chapter: 'Ch15',
   },
   {
     id: 'b148',
@@ -1068,7 +982,6 @@ export const flashcards: Flashcard[] = [
     term: 'Response Cost',
     definition: 'A negative punishment procedure in which a specified amount of a reinforcer is contingently removed following each occurrence of problem behavior.',
     example: 'Removing 5 minutes of free time each time a student is off-task is a response cost procedure.',
-    chapter: 'Ch15',
   },
   {
     id: 'b149',
@@ -1076,7 +989,6 @@ export const flashcards: Flashcard[] = [
     term: 'Planned Ignoring',
     definition: 'A mild negative punishment procedure in which all social attention is withheld contingent on problem behavior; effective only when social attention is the maintaining reinforcer.',
     example: 'A teacher turns away and provides no attention when a student whines, using planned ignoring to reduce attention-maintained whining.',
-    chapter: 'Ch15',
   },
   {
     id: 'b150',
@@ -1084,7 +996,6 @@ export const flashcards: Flashcard[] = [
     term: 'Abative Effect',
     definition: 'The effect of an abolishing operation that decreases the current reinforcing value of a stimulus and decreases the current frequency of behavior that has been reinforced by that stimulus.',
     example: 'Satiation with food has an abative effect: it decreases the reinforcing value of food and decreases food-seeking behavior.',
-    chapter: 'Ch16',
   },
   {
     id: 'b151',
@@ -1092,7 +1003,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavior-Altering Effect',
     definition: 'The effect of a motivating operation on the current frequency of behavior; includes the evocative effect (increases behavior) and the abative effect (decreases behavior).',
     example: 'Food deprivation has a behavior-altering effect: it increases food-seeking behavior (evocative effect) and increases the reinforcing value of food (value-altering effect).',
-    chapter: 'Ch16',
   },
   {
     id: 'b152',
@@ -1100,7 +1010,6 @@ export const flashcards: Flashcard[] = [
     term: 'Reflexive Conditioned Motivating Operation (CMO-R)',
     definition: 'A conditioned motivating operation that has acquired its MO properties by being paired with worsening conditions; its presence signals that conditions are about to worsen.',
     example: 'A warning tone that reliably precedes an aversive event functions as a CMO-R: its presence evokes escape behavior and increases the reinforcing value of escape.',
-    chapter: 'Ch16',
   },
   {
     id: 'b153',
@@ -1108,7 +1017,6 @@ export const flashcards: Flashcard[] = [
     term: 'Conditioned Motivating Operation (CMO)',
     definition: 'A motivating operation whose value-altering and behavior-altering effects are the result of learning; acquired through experience rather than phylogeny.',
     example: 'A locked door becomes a CMO for key-seeking behavior because a history of learning has established the locked door as a signal that access is restricted.',
-    chapter: 'Ch16',
   },
   {
     id: 'b154',
@@ -1116,7 +1024,6 @@ export const flashcards: Flashcard[] = [
     term: 'Reinforcer-Establishing Effect',
     definition: 'The value-altering effect of an establishing operation that increases the current reinforcing value of a specific stimulus.',
     example: 'Water deprivation has a reinforcer-establishing effect: it increases the reinforcing value of water.',
-    chapter: 'Ch16',
   },
   {
     id: 'b155',
@@ -1124,7 +1031,6 @@ export const flashcards: Flashcard[] = [
     term: 'MO Unpairing',
     definition: 'A procedure in which a conditioned motivating operation is repeatedly presented without the unconditioned aversive event it previously signaled, reducing its MO properties.',
     example: 'Repeatedly presenting the warning tone without the aversive event reduces the CMO-R properties of the tone through MO unpairing.',
-    chapter: 'Ch16',
   },
   {
     id: 'b156',
@@ -1132,7 +1038,6 @@ export const flashcards: Flashcard[] = [
     term: 'Surrogate Conditioned Motivating Operation (CMO-S)',
     definition: 'A conditioned motivating operation that has acquired its MO properties by being paired with an unconditioned motivating operation; it mimics the effects of the UMO it was paired with.',
     example: 'A specific room where a child has experienced pain may function as a CMO-S, evoking escape behavior and increasing the reinforcing value of escape even without pain present.',
-    chapter: 'Ch16',
   },
   {
     id: 'b157',
@@ -1140,7 +1045,6 @@ export const flashcards: Flashcard[] = [
     term: 'Value-Altering Effect',
     definition: 'The effect of a motivating operation on the reinforcing or punishing effectiveness of a stimulus; either increases (establishing) or decreases (abolishing) the current value of the stimulus.',
     example: 'Food deprivation has a value-altering effect by increasing the reinforcing value of food; satiation has the opposite value-altering effect.',
-    chapter: 'Ch16',
   },
   {
     id: 'b158',
@@ -1148,7 +1052,6 @@ export const flashcards: Flashcard[] = [
     term: 'Evocative Effect',
     definition: 'The behavior-altering effect of an establishing operation that increases the current frequency of behavior that has been reinforced by the relevant stimulus.',
     example: 'Food deprivation has an evocative effect: it increases the current frequency of food-seeking and food-requesting behavior.',
-    chapter: 'Ch16',
   },
   {
     id: 'b159',
@@ -1156,7 +1059,6 @@ export const flashcards: Flashcard[] = [
     term: 'Reinforcer-Abolishing Effect',
     definition: 'The value-altering effect of an abolishing operation that decreases the current reinforcing value of a specific stimulus.',
     example: 'Satiation with a preferred food has a reinforcer-abolishing effect: it decreases the reinforcing value of that food.',
-    chapter: 'Ch16',
   },
   {
     id: 'b160',
@@ -1164,7 +1066,6 @@ export const flashcards: Flashcard[] = [
     term: 'Transitive Conditioned Motivating Operation (CMO-T)',
     definition: 'A conditioned motivating operation that establishes the reinforcing value of a stimulus that is needed to obtain another reinforcer; it makes an instrumental stimulus valuable.',
     example: 'A locked door functions as a CMO-T for key-seeking behavior: the locked door establishes the key as a reinforcer because the key is needed to access the room.',
-    chapter: 'Ch16',
   },
   {
     id: 'b161',
@@ -1172,7 +1073,6 @@ export const flashcards: Flashcard[] = [
     term: 'Unconditioned Motivating Operation (UMO)',
     definition: 'A motivating operation whose value-altering and behavior-altering effects are unlearned; effective without prior conditioning due to phylogenetic history.',
     example: 'Food deprivation, water deprivation, and extreme temperature are unconditioned motivating operations.',
-    chapter: 'Ch16',
   },
   {
     id: 'b162',
@@ -1180,7 +1080,6 @@ export const flashcards: Flashcard[] = [
     term: 'Function-Altering Effect',
     definition: 'The effect of a verbal stimulus (rule or instruction) that changes the function of other stimuli, making them function as SDs, reinforcers, or punishers.',
     example: 'Telling a child "if you finish your work, you can have a cookie" gives the cookie a function-altering effect, making it function as a reinforcer for work completion.',
-    chapter: 'Ch16',
   },
   {
     id: 'b163',
@@ -1188,7 +1087,6 @@ export const flashcards: Flashcard[] = [
     term: 'Antecedent Stimulus Class',
     definition: 'A group of stimuli that all evoke the same operant behavior because they share a history of differential reinforcement.',
     example: 'All instances of the letter "A" — regardless of font, size, or color — form an antecedent stimulus class because they all evoke the same reading response.',
-    chapter: 'Ch17',
   },
   {
     id: 'b164',
@@ -1196,7 +1094,6 @@ export const flashcards: Flashcard[] = [
     term: 'Matching-to-Sample',
     definition: 'A procedure in which the participant is presented with a sample stimulus and must select the matching comparison stimulus from an array of alternatives.',
     example: 'A child is shown a picture of a dog (sample) and must touch the matching picture of a dog from an array of pictures.',
-    chapter: 'Ch17',
   },
   {
     id: 'b165',
@@ -1204,7 +1101,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus Delta (SΔ)',
     definition: 'A stimulus in the presence of which a behavior has not been reinforced and therefore occurs at a lower rate; signals that reinforcement is not available.',
     example: 'A red light at a crosswalk is an SΔ for crossing because crossing during a red light has not been reinforced (and has been punished).',
-    chapter: 'Ch17',
   },
   {
     id: 'b166',
@@ -1212,7 +1108,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus Discrimination',
     definition: 'The differential responding to two or more stimuli as a result of reinforcement in the presence of one stimulus (SD) and extinction in the presence of another (SΔ).',
     example: 'A child who asks for cookies when the cookie jar is visible but not when it is put away has learned a stimulus discrimination.',
-    chapter: 'Ch17',
   },
   {
     id: 'b167',
@@ -1220,7 +1115,6 @@ export const flashcards: Flashcard[] = [
     term: 'Arbitrary Stimulus Class',
     definition: 'A group of stimuli that control the same response but share no common physical features; membership in the class is defined by the organism\'s learning history.',
     example: 'The spoken word "dog," a picture of a dog, and a toy dog form an arbitrary stimulus class because they share no physical features but all evoke the same tact response.',
-    chapter: 'Ch17',
   },
   {
     id: 'b168',
@@ -1228,7 +1122,6 @@ export const flashcards: Flashcard[] = [
     term: 'Most-to-Least Response Prompts',
     definition: 'A prompting procedure that begins with the most intrusive prompt and systematically fades to less intrusive prompts as the learner demonstrates correct responding.',
     example: 'A therapist begins with full physical guidance to help a child wash hands, then fades to partial physical, then gestural, then verbal prompts.',
-    chapter: 'Ch17',
   },
   {
     id: 'b169',
@@ -1236,7 +1129,6 @@ export const flashcards: Flashcard[] = [
     term: 'Concept',
     definition: 'A stimulus class defined by a common property or set of properties; responding to all members of the class and not to non-members constitutes concept formation.',
     example: 'A child who correctly identifies all red objects as "red" and no non-red objects as "red" has formed the concept of redness.',
-    chapter: 'Ch17',
   },
   {
     id: 'b170',
@@ -1244,7 +1136,6 @@ export const flashcards: Flashcard[] = [
     term: 'Overselective Stimulus Control',
     definition: 'A pattern in which behavior comes under the control of only a subset of the relevant stimulus features, leading to failure to respond to the full stimulus complex.',
     example: 'A child who only responds to the word "sit" when it is spoken by their therapist (but not by other people) shows overselective stimulus control.',
-    chapter: 'Ch17',
   },
   {
     id: 'b171',
@@ -1252,7 +1143,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus Discrimination Training',
     definition: 'A procedure that produces differential responding to two or more stimuli by reinforcing responding in the presence of the SD and withholding reinforcement in the presence of the SΔ.',
     example: 'A therapist reinforces a child for touching the red card and withholds reinforcement for touching the blue card, conducting stimulus discrimination training.',
-    chapter: 'Ch17',
   },
   {
     id: 'b172',
@@ -1260,7 +1150,6 @@ export const flashcards: Flashcard[] = [
     term: 'Conditional Discrimination',
     definition: 'A discrimination in which the correct response to a comparison stimulus depends on the value of a sample or contextual stimulus; the SD changes depending on the context.',
     example: 'A child must touch the circle when the sample is red and touch the square when the sample is blue — the correct response is conditional on the sample.',
-    chapter: 'Ch17',
   },
   {
     id: 'b173',
@@ -1268,7 +1157,6 @@ export const flashcards: Flashcard[] = [
     term: 'Overshadowing',
     definition: 'A stimulus control phenomenon in which a more salient stimulus in a compound stimulus prevents a less salient stimulus from acquiring stimulus control.',
     example: 'If a loud tone and a dim light are presented together as a compound CS, the tone may overshadow the light, preventing the light from acquiring conditioned eliciting properties.',
-    chapter: 'Ch17',
   },
   {
     id: 'b174',
@@ -1276,7 +1164,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus Fading',
     definition: 'A procedure for transferring stimulus control in which the properties of the SD are gradually changed while the learner continues to respond correctly.',
     example: 'A therapist fades a written prompt from bold black text to light gray to invisible while the student continues to read the word correctly.',
-    chapter: 'Ch17',
   },
   {
     id: 'b175',
@@ -1284,7 +1171,6 @@ export const flashcards: Flashcard[] = [
     term: 'Constant Time Delay',
     definition: 'A prompting procedure in which a fixed interval (e.g., 4 seconds) is always inserted between the SD and the prompt, giving the learner an opportunity to respond before the prompt is delivered.',
     example: 'A therapist says "What is this?" and waits exactly 4 seconds before pointing to the correct picture, using constant time delay.',
-    chapter: 'Ch17',
   },
   {
     id: 'b176',
@@ -1292,7 +1178,6 @@ export const flashcards: Flashcard[] = [
     term: 'Progressive Time Delay',
     definition: 'A prompting procedure in which the interval between the SD and the prompt is gradually increased across trials, giving the learner increasing opportunity to respond independently.',
     example: 'A therapist begins with a 0-second delay (simultaneous prompting) and increases the delay by 1 second per session until reaching a 5-second delay.',
-    chapter: 'Ch17',
   },
   {
     id: 'b177',
@@ -1300,7 +1185,6 @@ export const flashcards: Flashcard[] = [
     term: 'Response Prompts',
     definition: 'Supplementary stimuli that are added to the SD to increase the probability of a correct response; prompts that involve the behavior of another person, such as verbal instructions, modeling, or physical guidance.',
     example: 'A therapist says "Touch your nose" and then models touching their own nose — the model is a response prompt.',
-    chapter: 'Ch17',
   },
   {
     id: 'b178',
@@ -1308,7 +1192,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus Generalization Gradient',
     definition: 'A graphic representation showing the relationship between the degree of similarity of a stimulus to the original SD and the rate of responding to that stimulus.',
     example: 'A pigeon trained to peck at a 550nm light shows a stimulus generalization gradient: highest responding at 550nm and decreasing responding as wavelength deviates from 550nm.',
-    chapter: 'Ch17',
   },
   {
     id: 'b179',
@@ -1316,7 +1199,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus Blocking',
     definition: 'A stimulus control phenomenon in which prior conditioning to one stimulus prevents a second stimulus from acquiring stimulus control when both are presented together.',
     example: 'If a tone has already been conditioned as a CS, pairing a light with the tone and the US may not condition the light because the tone blocks the light from acquiring CS properties.',
-    chapter: 'Ch17',
   },
   {
     id: 'b180',
@@ -1324,7 +1206,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus Prompts',
     definition: 'Supplementary stimuli added to or removed from the SD to increase the probability of a correct response; prompts that involve changes to the stimulus itself rather than the behavior of another person.',
     example: 'Highlighting the target letter in a word in red to help a child identify it is a stimulus prompt.',
-    chapter: 'Ch17',
   },
   {
     id: 'b181',
@@ -1332,7 +1213,6 @@ export const flashcards: Flashcard[] = [
     term: 'Feature Stimulus Class',
     definition: 'A group of stimuli that share one or more common physical features (topography, size, color, function) and therefore evoke the same response.',
     example: 'All round objects form a feature stimulus class because they share the physical feature of roundness.',
-    chapter: 'Ch17',
   },
   {
     id: 'b182',
@@ -1340,7 +1220,6 @@ export const flashcards: Flashcard[] = [
     term: 'Time Delay',
     definition: 'A prompting procedure in which a brief interval is inserted between the presentation of the SD and the delivery of the prompt, allowing the learner an opportunity to respond independently.',
     example: 'A therapist presents a picture card and waits 3 seconds before providing a verbal prompt, using time delay to promote independent responding.',
-    chapter: 'Ch17',
   },
   {
     id: 'b183',
@@ -1348,7 +1227,6 @@ export const flashcards: Flashcard[] = [
     term: 'Least-to-Most Response Prompts',
     definition: 'A prompting hierarchy that begins with the least intrusive prompt and increases intrusiveness only if the learner does not respond correctly at the current level.',
     example: 'A therapist first provides a verbal prompt; if the child does not respond, they provide a gestural prompt; if still no response, they provide physical guidance.',
-    chapter: 'Ch17',
   },
   {
     id: 'b184',
@@ -1356,7 +1234,6 @@ export const flashcards: Flashcard[] = [
     term: 'Speaker',
     definition: 'In Skinner\'s analysis of verbal behavior, the organism whose verbal behavior is shaped and maintained by a verbal community.',
     example: 'A child who has learned to say "cookie" to request a cookie is functioning as a speaker in a verbal episode.',
-    chapter: 'Ch18',
   },
   {
     id: 'b185',
@@ -1364,7 +1241,6 @@ export const flashcards: Flashcard[] = [
     term: 'Listener',
     definition: 'In Skinner\'s analysis of verbal behavior, the organism whose behavior mediates the reinforcement of the speaker\'s verbal behavior.',
     example: 'A parent who gives a cookie when a child says "cookie" is functioning as a listener in a verbal episode.',
-    chapter: 'Ch18',
   },
   {
     id: 'b186',
@@ -1372,7 +1248,6 @@ export const flashcards: Flashcard[] = [
     term: 'Bidirectional Naming',
     definition: 'A higher-order operant in which an organism can both tact (name) and respond to the names of stimuli after observing a single naming event, without direct reinforcement of both functions.',
     example: 'A child who observes a teacher naming a new object can then both tact the object and respond to its name without additional training — demonstrating bidirectional naming.',
-    chapter: 'Ch18',
   },
   {
     id: 'b187',
@@ -1380,7 +1255,6 @@ export const flashcards: Flashcard[] = [
     term: 'Listener Discrimination',
     definition: 'The ability to respond differentially to verbal stimuli as a listener; the listener selects, touches, or otherwise responds to the correct referent when named.',
     example: 'A child who touches the correct picture when asked "show me the dog" is demonstrating listener discrimination.',
-    chapter: 'Ch18',
   },
   {
     id: 'b188',
@@ -1388,7 +1262,6 @@ export const flashcards: Flashcard[] = [
     term: 'Tact Extension',
     definition: 'A tact that occurs in the presence of a novel stimulus that shares some properties with the original tact stimulus; the speaker extends an existing tact to a new but related stimulus.',
     example: 'A child who has learned to tact "dog" for a German Shepherd uses tact extension when they also tact "dog" for a Chihuahua they have never seen before.',
-    chapter: 'Ch18',
   },
   {
     id: 'b189',
@@ -1396,7 +1269,6 @@ export const flashcards: Flashcard[] = [
     term: 'Taking Dictation',
     definition: 'A verbal operant in which the speaker writes what another person says; controlled by the verbal behavior of another speaker and results in a written product.',
     example: 'A student who writes down words as a teacher dictates them is demonstrating the taking dictation verbal operant.',
-    chapter: 'Ch18',
   },
   {
     id: 'b190',
@@ -1404,7 +1276,6 @@ export const flashcards: Flashcard[] = [
     term: 'Compound Verbal Discrimination',
     definition: 'A verbal operant controlled by two or more verbal stimuli simultaneously; the response is under the joint control of multiple verbal antecedents.',
     example: 'Answering the question "What color is the big ball?" requires compound verbal discrimination because the response is controlled by both "color" and "big ball."',
-    chapter: 'Ch18',
   },
   {
     id: 'b191',
@@ -1412,7 +1283,6 @@ export const flashcards: Flashcard[] = [
     term: 'Copying Text',
     definition: 'A verbal operant in which the speaker writes a copy of written verbal behavior; point-to-point correspondence between the written stimulus and the written response.',
     example: 'A student who copies a sentence from the board is demonstrating the copying text verbal operant.',
-    chapter: 'Ch18',
   },
   {
     id: 'b192',
@@ -1420,7 +1290,6 @@ export const flashcards: Flashcard[] = [
     term: 'Topography-Based Verbal Behavior',
     definition: 'Verbal behavior in which the response form (topography) determines the verbal operant; includes vocal verbal behavior and written verbal behavior.',
     example: 'Saying "cookie" to request a cookie is topography-based verbal behavior because the response form (the spoken word) determines its function.',
-    chapter: 'Ch18',
   },
   {
     id: 'b193',
@@ -1428,7 +1297,6 @@ export const flashcards: Flashcard[] = [
     term: 'Multiple Control',
     definition: 'A condition in which a single verbal response is controlled by more than one variable simultaneously; includes convergent (multiple variables controlling one response) and divergent (one variable controlling multiple responses) control.',
     example: 'Saying "fire" in response to seeing flames AND in response to feeling heat is an example of multiple control (convergent).',
-    chapter: 'Ch18',
   },
   {
     id: 'b194',
@@ -1436,7 +1304,6 @@ export const flashcards: Flashcard[] = [
     term: 'Verbal Behavior',
     definition: 'Behavior that is reinforced through the mediation of another person who has been trained by the verbal community; behavior whose consequences are socially mediated.',
     example: 'Saying "water" to obtain water from a caregiver is verbal behavior because its reinforcement is mediated by another person.',
-    chapter: 'Ch18',
   },
   {
     id: 'b195',
@@ -1444,7 +1311,6 @@ export const flashcards: Flashcard[] = [
     term: 'Verbal Conditional Discrimination',
     definition: 'A verbal operant in which the correct response to a verbal stimulus depends on a contextual verbal stimulus; the response is conditional on additional verbal information.',
     example: 'Answering "red" to "What color is the apple?" requires a verbal conditional discrimination because the response depends on both the question and the visual stimulus.',
-    chapter: 'Ch18',
   },
   {
     id: 'b196',
@@ -1452,7 +1318,6 @@ export const flashcards: Flashcard[] = [
     term: 'Elementary Verbal Operants',
     definition: 'The basic functional units of verbal behavior identified by Skinner: mand, tact, echoic, intraverbal, textual, transcription, and copying text.',
     example: 'A BCBA assesses all elementary verbal operants to determine which are present and which require intervention.',
-    chapter: 'Ch18',
   },
   {
     id: 'b197',
@@ -1460,7 +1325,6 @@ export const flashcards: Flashcard[] = [
     term: 'Verbal Episode',
     definition: 'The complete interaction between a speaker and a listener in which the speaker\'s verbal behavior is reinforced through the listener\'s mediation.',
     example: 'A child says "juice" (speaker), the parent pours juice (listener), and the child drinks the juice (reinforcement) — this constitutes a verbal episode.',
-    chapter: 'Ch18',
   },
   {
     id: 'b198',
@@ -1468,7 +1332,6 @@ export const flashcards: Flashcard[] = [
     term: 'Selection-Based Verbal Behavior',
     definition: 'Verbal behavior in which the response involves selecting from an array of stimuli rather than producing a topographically novel response; includes pointing, touching, and eye-gaze.',
     example: 'A child who touches a picture of a dog when asked "show me the dog" is demonstrating selection-based verbal behavior.',
-    chapter: 'Ch18',
   },
   {
     id: 'b199',
@@ -1476,7 +1339,6 @@ export const flashcards: Flashcard[] = [
     term: 'Verbal Function-Altering Effect',
     definition: 'The effect of a verbal stimulus (rule, instruction) that changes the function of other stimuli, making them function as SDs, reinforcers, or punishers without direct conditioning.',
     example: 'Telling a child "the green button gives you a sticker" gives the green button a reinforcing function through verbal function-altering effect.',
-    chapter: 'Ch18',
   },
   {
     id: 'b200',
@@ -1484,7 +1346,6 @@ export const flashcards: Flashcard[] = [
     term: 'Generative Learning',
     definition: 'The ability to produce novel responses or respond to novel stimuli that were not directly trained, as a result of the organism\'s learning history.',
     example: 'A child who has learned to tact individual animals can generatively tact novel animal combinations (e.g., "a big brown dog") without direct training.',
-    chapter: 'Ch18',
   },
   {
     id: 'b201',
@@ -1492,7 +1353,6 @@ export const flashcards: Flashcard[] = [
     term: 'Simple Verbal Discrimination',
     definition: 'A verbal operant controlled by a single verbal stimulus; the response is under the control of one verbal antecedent.',
     example: 'Answering "blue" to "What color is the sky?" is a simple verbal discrimination controlled by the single verbal stimulus "What color is the sky?"',
-    chapter: 'Ch18',
   },
   {
     id: 'b202',
@@ -1500,7 +1360,6 @@ export const flashcards: Flashcard[] = [
     term: 'Class Expansion',
     definition: 'The addition of new stimuli to an existing equivalence class through training, so that the new stimuli acquire all the functions of the existing class members.',
     example: 'After establishing an equivalence class for "dog" (spoken word, picture, written word), adding the sign for "dog" expands the class.',
-    chapter: 'Ch19',
   },
   {
     id: 'b203',
@@ -1508,7 +1367,6 @@ export const flashcards: Flashcard[] = [
     term: 'Equivalence Test',
     definition: 'A test for the emergence of untrained stimulus relations (reflexivity, symmetry, transitivity) following conditional discrimination training.',
     example: 'After training A→B and B→C relations, an equivalence test probes for the emergence of B→A, C→B, A→C, and C→A relations.',
-    chapter: 'Ch19',
   },
   {
     id: 'b204',
@@ -1516,7 +1374,6 @@ export const flashcards: Flashcard[] = [
     term: 'Stimulus-Control Topographies',
     definition: 'The different forms of stimulus control that can develop, including selection-based and topography-based forms, which may develop independently and require separate training.',
     example: 'A child may learn to select a picture of a dog (selection-based) without learning to say "dog" (topography-based), demonstrating different stimulus-control topographies.',
-    chapter: 'Ch19',
   },
   {
     id: 'b205',
@@ -1524,7 +1381,6 @@ export const flashcards: Flashcard[] = [
     term: 'Class Merger',
     definition: 'The combination of two previously separate equivalence classes into a single larger class when a common element is added that is a member of both classes.',
     example: 'If class 1 contains {A1, B1, C1} and class 2 contains {A2, B2, C2}, adding a stimulus D that is trained as equivalent to both C1 and A2 merges the two classes.',
-    chapter: 'Ch19',
   },
   {
     id: 'b206',
@@ -1532,7 +1388,6 @@ export const flashcards: Flashcard[] = [
     term: 'Exclusion',
     definition: 'A derived stimulus relation in which an organism selects a novel stimulus when asked to select a named stimulus, by excluding all known stimuli from consideration.',
     example: 'A child who knows the names of all items in an array except one will select the unnamed item when asked for a novel name — demonstrating exclusion.',
-    chapter: 'Ch19',
   },
   {
     id: 'b207',
@@ -1540,7 +1395,6 @@ export const flashcards: Flashcard[] = [
     term: 'Class-Specific Reinforcement',
     definition: 'A procedure in which reinforcement is delivered for correct responses to one equivalence class but not another, used to establish or test class membership.',
     example: 'Reinforcing responses to class A stimuli but not class B stimuli is class-specific reinforcement.',
-    chapter: 'Ch19',
   },
   {
     id: 'b208',
@@ -1548,7 +1402,6 @@ export const flashcards: Flashcard[] = [
     term: 'Higher-Order Operant Class',
     definition: 'A class of behaviors that share a common functional property and are all reinforced by the same contingency, even though the individual behaviors may differ in topography.',
     example: 'All behaviors that result in escape from an aversive situation form a higher-order operant class maintained by negative reinforcement.',
-    chapter: 'Ch19',
   },
   {
     id: 'b209',
@@ -1556,7 +1409,6 @@ export const flashcards: Flashcard[] = [
     term: 'Training Structure',
     definition: 'The arrangement of conditional discrimination training trials that determines how stimuli are related to each other; includes linear series, one-to-many, and many-to-one structures.',
     example: 'A one-to-many training structure (training A→B and A→C) produces larger equivalence classes with fewer training trials than a linear series structure.',
-    chapter: 'Ch19',
   },
   {
     id: 'b210',
@@ -1564,7 +1416,6 @@ export const flashcards: Flashcard[] = [
     term: 'Contextual Control',
     definition: 'A form of conditional discrimination in which a contextual stimulus determines which of two or more discriminations is in effect.',
     example: 'A child who touches the circle when a green light is on and touches the square when a red light is on demonstrates contextual control by the lights.',
-    chapter: 'Ch19',
   },
   {
     id: 'b211',
@@ -1572,7 +1423,6 @@ export const flashcards: Flashcard[] = [
     term: 'Nodal Stimulus (Node)',
     definition: 'A stimulus that connects two or more equivalence classes; a stimulus that is a member of multiple trained conditional discriminations and mediates the formation of equivalence classes.',
     example: 'In the training structure A→B and B→C, stimulus B is the nodal stimulus that connects A and C into an equivalence class.',
-    chapter: 'Ch19',
   },
   {
     id: 'b212',
@@ -1580,7 +1430,6 @@ export const flashcards: Flashcard[] = [
     term: 'Transfer of Function',
     definition: 'The process by which the behavioral function of one stimulus in an equivalence class is acquired by other members of the class without direct conditioning.',
     example: 'If a picture of a dog acquires a reinforcing function, the spoken word "dog" and the written word "dog" may also acquire reinforcing functions through transfer of function.',
-    chapter: 'Ch19',
   },
   {
     id: 'b213',
@@ -1588,7 +1437,6 @@ export const flashcards: Flashcard[] = [
     term: 'Derived Stimulus Relations',
     definition: 'Stimulus relations that emerge without direct training as a result of equivalence class formation; includes symmetry, transitivity, and combined symmetry-transitivity.',
     example: 'After training A→B and B→C, the derived relations B→A, C→B, A→C, and C→A emerge without direct training.',
-    chapter: 'Ch19',
   },
   {
     id: 'b214',
@@ -1596,7 +1444,6 @@ export const flashcards: Flashcard[] = [
     term: 'Emergent Stimulus Relations',
     definition: 'Untrained stimulus relations that arise from the formation of equivalence classes; synonymous with derived stimulus relations.',
     example: 'Symmetry (B→A emerging from trained A→B) is an emergent stimulus relation.',
-    chapter: 'Ch19',
   },
   {
     id: 'b215',
@@ -1604,7 +1451,6 @@ export const flashcards: Flashcard[] = [
     term: 'Simple Discrimination',
     definition: 'A discrimination in which responding to one stimulus is reinforced and responding to another stimulus is not reinforced, without the correct response depending on a contextual stimulus.',
     example: 'A child who touches the red card and not the blue card has learned a simple discrimination.',
-    chapter: 'Ch19',
   },
   {
     id: 'b216',
@@ -1612,7 +1458,6 @@ export const flashcards: Flashcard[] = [
     term: 'Equivalence-Class Formation',
     definition: 'The emergence of a class of stimuli that are interchangeable in terms of behavioral function, characterized by reflexivity, symmetry, and transitivity.',
     example: 'After training A→B and B→C, the formation of an equivalence class is demonstrated when A→C, C→A, B→A, and C→B all emerge without direct training.',
-    chapter: 'Ch19',
   },
   {
     id: 'b217',
@@ -1620,7 +1465,6 @@ export const flashcards: Flashcard[] = [
     term: 'Simple-to-Complex Testing Protocol',
     definition: 'A testing sequence that begins with simpler derived relations (symmetry) before testing more complex ones (transitivity, equivalence) to ensure accurate assessment of class formation.',
     example: 'A BCBA tests symmetry probes before transitivity probes to confirm that simpler derived relations are established before testing more complex ones.',
-    chapter: 'Ch19',
   },
   {
     id: 'b218',
@@ -1628,7 +1472,6 @@ export const flashcards: Flashcard[] = [
     term: 'Acceptance and Commitment Therapy (ACT)',
     definition: 'A behavioral intervention based on Relational Frame Theory that uses acceptance, mindfulness, and values clarification to increase psychological flexibility.',
     example: 'A BCBA uses ACT strategies to help a client with anxiety accept uncomfortable thoughts without allowing them to control behavior.',
-    chapter: 'Ch20',
   },
   {
     id: 'b219',
@@ -1636,7 +1479,6 @@ export const flashcards: Flashcard[] = [
     term: 'Deictic Relations',
     definition: 'Relational frames that involve perspective-taking and are defined relative to the speaker\'s point of view; includes I/you, here/there, and now/then.',
     example: 'Understanding that "I" refers to the speaker and "you" refers to the listener requires learning deictic relations.',
-    chapter: 'Ch20',
   },
   {
     id: 'b220',
@@ -1644,7 +1486,6 @@ export const flashcards: Flashcard[] = [
     term: 'Arbitrarily Applicable Relational Responding',
     definition: 'The ability to respond to stimuli in terms of derived relations that are not based on the physical properties of the stimuli but on contextual cues.',
     example: 'Responding to a coin as "more valuable" than a larger rock because of learned social conventions is arbitrarily applicable relational responding.',
-    chapter: 'Ch20',
   },
   {
     id: 'b221',
@@ -1652,7 +1493,6 @@ export const flashcards: Flashcard[] = [
     term: 'Derived Relations',
     definition: 'Stimulus relations that emerge without direct training as a result of relational framing; broader than equivalence, including relations such as more/less, before/after, and part/whole.',
     example: 'After learning that A is larger than B and B is larger than C, deriving that A is larger than C without direct training is a derived relation.',
-    chapter: 'Ch20',
   },
   {
     id: 'b222',
@@ -1660,7 +1500,6 @@ export const flashcards: Flashcard[] = [
     term: 'Relational Frame Theory (RFT)',
     definition: 'A behavior-analytic account of human language and cognition that explains complex verbal behavior as a generalized operant class of arbitrarily applicable relational responding.',
     example: 'RFT explains why humans can derive that if A > B and B > C, then A > C, without direct training on the A-C comparison.',
-    chapter: 'Ch20',
   },
   {
     id: 'b223',
@@ -1668,7 +1507,6 @@ export const flashcards: Flashcard[] = [
     term: 'Distinction Relations',
     definition: 'Relational frames in which stimuli are responded to as different from each other; the contextual cue signals that the stimuli are not equivalent.',
     example: 'Responding to a cat as "not a dog" involves distinction relations.',
-    chapter: 'Ch20',
   },
   {
     id: 'b224',
@@ -1676,7 +1514,6 @@ export const flashcards: Flashcard[] = [
     term: 'Relational Frame',
     definition: 'A generalized operant class of arbitrarily applicable relational responding that is brought under the control of contextual cues; the basic unit of analysis in RFT.',
     example: 'The frame of coordination (equivalence), the frame of comparison, and the frame of opposition are all examples of relational frames.',
-    chapter: 'Ch20',
   },
   {
     id: 'b225',
@@ -1684,7 +1521,6 @@ export const flashcards: Flashcard[] = [
     term: 'Arbitrary Relations',
     definition: 'Relations between stimuli that are not based on the physical properties of the stimuli but are established by social convention and contextual cues.',
     example: 'The relation between the word "dog" and an actual dog is an arbitrary relation because nothing about the physical properties of the word resembles a dog.',
-    chapter: 'Ch20',
   },
   {
     id: 'b226',
@@ -1692,7 +1528,6 @@ export const flashcards: Flashcard[] = [
     term: 'Hierarchical Relations',
     definition: 'Relational frames in which one stimulus is responded to as containing or being a category of another stimulus; includes part-whole and category-member relations.',
     example: 'Responding to "poodle" as a type of "dog" involves hierarchical relations.',
-    chapter: 'Ch20',
   },
   {
     id: 'b227',
@@ -1700,7 +1535,6 @@ export const flashcards: Flashcard[] = [
     term: 'Perspective Shifting',
     definition: 'The ability to take the perspective of another person, derived from deictic relational framing; involves understanding I/you, here/there, and now/then from another\'s viewpoint.',
     example: 'A child who can describe what another person sees from a different location is demonstrating perspective shifting.',
-    chapter: 'Ch20',
   },
   {
     id: 'b228',
@@ -1708,7 +1542,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavioral Inflexibility',
     definition: 'A pattern in which behavior is controlled by verbal rules or private events in ways that are insensitive to direct contingencies; a target of ACT interventions.',
     example: 'A client who avoids all social situations because of a rule "I am unlikeable" demonstrates behavioral inflexibility.',
-    chapter: 'Ch20',
   },
   {
     id: 'b229',
@@ -1716,7 +1549,6 @@ export const flashcards: Flashcard[] = [
     term: 'Spatial Relations',
     definition: 'Relational frames involving the position of stimuli in space relative to each other or to the speaker; includes above/below, left/right, in front of/behind.',
     example: 'Responding to an object as "above" another object involves spatial relations.',
-    chapter: 'Ch20',
   },
   {
     id: 'b230',
@@ -1724,7 +1556,6 @@ export const flashcards: Flashcard[] = [
     term: 'Causal Relations',
     definition: 'Relational frames in which one event is responded to as causing another; includes if/then and because relations.',
     example: 'Understanding that "if it rains, the ground gets wet" involves causal relational framing.',
-    chapter: 'Ch20',
   },
   {
     id: 'b231',
@@ -1732,7 +1563,6 @@ export const flashcards: Flashcard[] = [
     term: 'Mutual Entailment',
     definition: 'A property of relational framing in which if A is related to B in a given way, then B is related to A in a derived way; the bidirectional nature of relational frames.',
     example: 'If A is trained as "same as" B (mutual entailment), then B is also "same as" A without direct training.',
-    chapter: 'Ch20',
   },
   {
     id: 'b232',
@@ -1740,7 +1570,6 @@ export const flashcards: Flashcard[] = [
     term: 'Transformation of Function',
     definition: 'The process by which the psychological functions of one stimulus in a relational network are altered and transferred to other stimuli in the network.',
     example: 'If a word acquires a fear function through conditioning, other words in the same relational frame may also acquire fear functions through transformation of function.',
-    chapter: 'Ch20',
   },
   {
     id: 'b233',
@@ -1748,7 +1577,6 @@ export const flashcards: Flashcard[] = [
     term: 'Contextual Stimulus',
     definition: 'In RFT, a stimulus that specifies the type of relational framing that is in effect; Crel specifies the relation and Cfunc specifies which function is transformed.',
     example: 'The word "same" functions as a Crel contextual stimulus that specifies a frame of coordination between stimuli.',
-    chapter: 'Ch20',
   },
   {
     id: 'b234',
@@ -1756,7 +1584,6 @@ export const flashcards: Flashcard[] = [
     term: 'Nonequivalence Relations',
     definition: 'Relational frames other than equivalence, including comparison (more/less), opposition (opposite), hierarchy (part/whole), and temporal (before/after) relations.',
     example: 'Responding to 10 as "more than" 5 involves a nonequivalence comparison relation.',
-    chapter: 'Ch20',
   },
   {
     id: 'b235',
@@ -1764,7 +1591,6 @@ export const flashcards: Flashcard[] = [
     term: 'Temporal Relations',
     definition: 'Relational frames involving the sequence of events in time; includes before/after, first/last, and earlier/later relations.',
     example: 'Understanding that breakfast comes before lunch involves temporal relational framing.',
-    chapter: 'Ch20',
   },
   {
     id: 'b236',
@@ -1772,7 +1598,6 @@ export const flashcards: Flashcard[] = [
     term: 'Combinatorial Entailment',
     definition: 'A property of relational framing in which if A is related to B and B is related to C, then A is related to C and C is related to A in derived ways.',
     example: 'If A is trained as "same as" B and B is trained as "same as" C, combinatorial entailment produces the derived relations A-C and C-A.',
-    chapter: 'Ch20',
   },
   { id: 'c26', term: 'Efficiency Measures (Trials to Criterion, Cost-Benefit)', definition: 'Measures of the resources required to produce a specified level of behavior change: (1) Trials to criterion  -  the number of learning opportunities required before a performance standard is met; (2) Cost-benefit analysis  -  a comparison of the resources expended (time, effort, materials) against the magnitude and social significance of the behavior change produced.', domain: 'C', domainFull: 'Measurement, Data Display & Interpretation', example: 'Procedure A achieves criterion in 20 trials; Procedure B achieves the same criterion in 50 trials. Procedure A is more efficient. A BCBA also considers whether the 30-trial savings justifies any difference in staff training cost.' },
   { id: 'c27', term: 'Selecting a Measurement Procedure Based on Environmental Constraints', definition: 'The decision process for choosing a data collection method that is both technically appropriate for the behavior and feasible given real-world constraints such as staff availability, setting demands, behavior rate, and client safety. The selected procedure must produce data that are accurate, reliable, and actionable.', domain: 'C', domainFull: 'Measurement, Data Display & Interpretation', example: 'In a busy classroom with one aide, a BCBA selects 10-second partial interval recording rather than continuous frequency recording for a high-rate behavior  -  because it is feasible for the aide to implement without disrupting instruction.' },
