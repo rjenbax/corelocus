@@ -2194,6 +2194,145 @@ export const rapidRecallItems: RapidRecallItem[] = [
     domain: 'D', category: 'Research Designs',
     taskItem: 'D.3',
   },
+  {
+    id: 'rr-steady-state-responding',
+    term: 'Steady State Responding',
+    question: 'Before introducing an intervention, a BCBA waits until the client\'s baseline data shows minimal variability and no systematic trend. This criterion is called:',
+    correctAnswer: 'Steady state responding — a stable, low-variability pattern of behavior that provides a valid basis for comparison with treatment data',
+    incorrectAnswers: [
+      'Experimental control — the demonstration that changes in behavior are caused by the independent variable',
+      'Procedural fidelity — the degree to which the intervention is implemented as planned',
+      'Social validity — the degree to which the goals and outcomes of an intervention are acceptable to stakeholders',
+    ],
+    misconceptions: [
+      'Experimental control is the outcome of a well-designed study, not a criterion for beginning treatment',
+      'Procedural fidelity refers to treatment implementation accuracy, not baseline stability',
+      'Social validity refers to stakeholder acceptability, not data stability',
+    ],
+    domain: 'D',
+    category: 'Baseline Logic',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-withdrawal-design',
+    term: 'A-B-A-B Design',
+    question: 'Which experimental design demonstrates experimental control through two replications of the treatment effect AND ends in the treatment condition?',
+    correctAnswer: 'A-B-A-B design — two baseline (A) phases alternate with two treatment (B) phases, providing two replications of the effect and ending with treatment in place',
+    incorrectAnswers: [
+      'A-B-A design — two baseline phases and one treatment phase; demonstrates control but ends in a no-treatment condition',
+      'Multiple baseline design — applies the independent variable sequentially across behaviors, settings, or participants without withdrawing treatment',
+      'B-A-B design — begins with treatment, withdraws it, then reinstates it; used when baseline cannot be collected first',
+    ],
+    misconceptions: [
+      'The A-B-A design ends in a baseline (no-treatment) condition, which is ethically problematic if the treatment is effective',
+      'The multiple baseline design does not involve withdrawing and reinstating treatment — it is used when reversal is not possible',
+      'The B-A-B design begins with treatment rather than baseline and provides weaker experimental control than A-B-A-B',
+    ],
+    domain: 'D',
+    category: 'Reversal Designs',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-irreversibility',
+    term: 'Irreversibility',
+    question: 'A BCBA teaches a client to read 30 sight words and then withdraws the teaching procedure. The client continues to read the words correctly. This is an example of:',
+    correctAnswer: 'Irreversibility — the learned skill does not return to baseline levels when the intervention is withdrawn, making reversal designs inappropriate for this behavior',
+    incorrectAnswers: [
+      'Generalization — the skill transfers to new stimuli or settings beyond those used in training',
+      'Maintenance — the skill continues to be performed over time after the intervention is withdrawn',
+      'Treatment drift — the intervention gradually changes from the original protocol over time',
+    ],
+    misconceptions: [
+      'Generalization refers to transfer to new stimuli or settings, not to persistence after withdrawal of the teaching procedure',
+      'Maintenance is a desirable outcome, not a design limitation — irreversibility specifically refers to the inability to demonstrate experimental control through reversal',
+      'Treatment drift refers to unplanned changes in how the intervention is implemented, not to the persistence of learned behavior',
+    ],
+    domain: 'D',
+    category: 'Reversal Designs',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-multiple-baseline-types',
+    term: 'Multiple Baseline Across Subjects Design',
+    question: 'A BCBA applies a token economy sequentially to three students in the same classroom — each student\'s behavior improves only after the token economy is introduced for them. This is an example of:',
+    correctAnswer: 'Multiple baseline across subjects design — the independent variable is applied sequentially to the same behavior across different participants, demonstrating control through staggered introduction',
+    incorrectAnswers: [
+      'Multiple baseline across behaviors design — the independent variable is applied sequentially to different behaviors of the same participant',
+      'Multiple baseline across settings design — the independent variable is applied sequentially to the same behavior in different settings for the same participant',
+      'Alternating treatments design — two or more conditions are rapidly alternated to compare their effects on behavior',
+    ],
+    misconceptions: [
+      'Multiple baseline across behaviors uses one participant with multiple target behaviors, not multiple participants with the same behavior',
+      'Multiple baseline across settings uses one participant in multiple settings, not multiple participants in the same setting',
+      'Alternating treatments design compares conditions within the same participant, not across participants',
+    ],
+    domain: 'D',
+    category: 'Multiple Baseline Designs',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-treatment-integrity',
+    term: 'Treatment Integrity',
+    question: 'A therapist gradually begins skipping steps of a prompting hierarchy after several weeks of implementation. This unplanned change is called:',
+    correctAnswer: 'Treatment drift — a gradual, unplanned deviation from the original intervention protocol that threatens internal validity and replication',
+    incorrectAnswers: [
+      'Treatment integrity — the degree to which the intervention is implemented as planned (the opposite of the problem described)',
+      'Procedural fidelity — the accurate implementation of each step of the intervention protocol (the opposite of the problem described)',
+      'Sequence effects — changes in behavior due to the order in which conditions are presented',
+    ],
+    misconceptions: [
+      'Treatment integrity and procedural fidelity describe accurate implementation — the question describes a failure of implementation accuracy (treatment drift)',
+      'Sequence effects refer to order effects in alternating treatments designs, not to gradual implementation changes over time',
+    ],
+    domain: 'D',
+    category: 'Applied Research Issues',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-type-errors',
+    term: 'Type I Error',
+    question: 'A researcher concludes that a new teaching procedure improved performance when the improvement was actually due to natural maturation. This is an example of:',
+    correctAnswer: 'Type I error — a false positive conclusion that the independent variable had an effect when it actually did not',
+    incorrectAnswers: [
+      'Type II error — a false negative conclusion that the independent variable had no effect when it actually did',
+      'Measurement bias — a systematic error in data collection that causes observed values to differ from true values',
+      'Affirmation of the consequent — concluding a specific cause produced an effect without ruling out other possible causes',
+    ],
+    misconceptions: [
+      'Type II error is the opposite — concluding no effect when there was one (false negative)',
+      'Measurement bias refers to systematic observer error, not to incorrect conclusions about causation',
+      'Affirmation of the consequent is the logical fallacy underlying Type I errors, but the specific term for the incorrect conclusion is Type I error',
+    ],
+    domain: 'D',
+    category: 'Applied Research Issues',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-social-validity',
+    term: 'Social Validity',
+    question: 'After a successful intervention, a BCBA surveys parents and teachers about whether the goals were important, the procedures were acceptable, and the outcomes were meaningful. This assessment is called:',
+    correctAnswer: 'Social validity — the degree to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, family, and other stakeholders',
+    incorrectAnswers: [
+      'Treatment integrity — the degree to which the intervention was implemented as planned',
+      'Generality — the degree to which behavior change extends to untrained settings, stimuli, or behaviors',
+      'Consumer satisfaction — a component of social validity but not the full construct, which also includes goal and procedure acceptability',
+    ],
+    misconceptions: [
+      'Treatment integrity refers to implementation accuracy, not stakeholder acceptability',
+      'Generality refers to the spread of behavior change, not to stakeholder judgments about the intervention',
+      'Consumer satisfaction is one dimension of social validity (outcome acceptability), but social validity also includes goal importance and procedure acceptability',
+    ],
+    domain: 'D',
+    category: 'Applied Research Issues',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
 
   // -- Domain E: Ethics & Professional Issues --------------------------------
   {
@@ -2357,6 +2496,106 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     domain: 'F', category: 'Assessment',
     taskItem: 'F.2',
+  },
+  {
+    id: 'rr-generalized-imitation',
+    term: 'Generalized Imitation',
+    question: 'After being reinforced for imitating many different actions, a child imitates a novel action the first time it is modeled, without having been directly reinforced for that specific imitation. This is an example of:',
+    correctAnswer: 'Generalized imitation — a behavioral repertoire in which the organism imitates novel behaviors as a result of a history of reinforcement for imitating a variety of modeled behaviors',
+    incorrectAnswers: [
+      'Observational learning — behavior change that occurs as a result of observing a model\'s behavior and its consequences',
+      'Stimulus generalization — responding to a new stimulus that was not present during training because it shares properties with the training stimulus',
+      'Imitation training — a systematic procedure for teaching a learner to imitate modeled behaviors through reinforcement',
+    ],
+    misconceptions: [
+      'Observational learning involves learning from the consequences observed for a model — generalized imitation involves imitating novel behaviors without direct reinforcement for that specific imitation',
+      'Stimulus generalization involves responding to new stimuli based on their similarity to training stimuli — generalized imitation involves producing new responses that match novel models',
+      'Imitation training is the teaching procedure — generalized imitation is the outcome (the ability to imitate novel behaviors without direct training)',
+    ],
+    domain: 'F',
+    category: 'Imitation',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-behavior-chain-types',
+    term: 'Total-Task Chaining',
+    question: 'A BCBA teaches a student to make a sandwich by prompting through all 12 steps in every session from the very first session. This chaining procedure is called:',
+    correctAnswer: 'Total-task chaining — the learner is prompted through all steps of the chain in every training trial from the first session, practicing the entire chain on every trial',
+    incorrectAnswers: [
+      'Forward chaining — training begins with the first step of the chain; subsequent steps are added as each step is mastered',
+      'Backward chaining — training begins with the last step of the chain; preceding steps are added as each step is mastered',
+      'Backward chaining with leap aheads — a variation of backward chaining in which some middle steps are skipped to accelerate acquisition',
+    ],
+    misconceptions: [
+      'Forward chaining starts with step 1 and adds steps sequentially — total-task chaining practices all steps from the beginning',
+      'Backward chaining starts with the last step and works backward — total-task chaining does not start at the end',
+      'Backward chaining with leap aheads skips middle steps — total-task chaining includes all steps from the first session',
+    ],
+    domain: 'F',
+    category: 'Chaining',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-dro-types',
+    term: 'Fixed-Momentary DRO (FM-DRO)',
+    question: 'A BCBA checks every 5 minutes and delivers reinforcement if the student is NOT engaging in self-stimulatory behavior at that exact moment. This DRO variation is called:',
+    correctAnswer: 'Fixed-momentary DRO (FM-DRO) — reinforcement is delivered at fixed time points only if the target behavior is not occurring at that exact moment; does not require behavior to be absent for the entire interval',
+    incorrectAnswers: [
+      'Fixed-interval DRO (FI-DRO) — reinforcement is delivered at the end of each fixed interval during which the target behavior did not occur at any point during the interval',
+      'Variable-momentary DRO (VM-DRO) — reinforcement is delivered at variable time points only if the target behavior is not occurring at that exact moment',
+      'Whole-interval DRO — reinforcement requires the behavior to be absent for the entire duration of the interval, not just at the moment of checking',
+    ],
+    misconceptions: [
+      'Fixed-interval DRO requires the behavior to be absent for the entire interval — momentary DRO only checks at the specific moment of reinforcement delivery',
+      'Variable-momentary DRO uses variable intervals — fixed-momentary DRO uses consistent 5-minute intervals',
+      'Whole-interval DRO is the most stringent form — momentary DRO is easier to implement but less effective at reducing behavior',
+    ],
+    domain: 'F',
+    category: 'Differential Reinforcement',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-fct',
+    term: 'Functional Communication Training (FCT)',
+    question: 'A BCBA places a student\'s aggression (maintained by escape) on extinction and teaches the student to hand a "break" card to request escape from demands. This procedure is called:',
+    correctAnswer: 'Functional Communication Training (FCT) — the problem behavior is placed on extinction and a functionally equivalent communicative response is taught that accesses the same reinforcer',
+    incorrectAnswers: [
+      'Differential Reinforcement of Alternative Behavior (DRA) — reinforcing an alternative behavior while withholding reinforcement for the problem behavior, without requiring functional equivalence',
+      'Behavior Chain Interruption Strategy — interrupting an established behavior chain to create an opportunity for the learner to request assistance or a missing item',
+      'Noncontingent Reinforcement (NCR) — delivering the maintaining reinforcer on a fixed- or variable-time schedule independent of behavior',
+    ],
+    misconceptions: [
+      'DRA reinforces any alternative behavior — FCT specifically requires the replacement behavior to be a communicative response that accesses the same reinforcer as the problem behavior',
+      'Behavior chain interruption strategy is used to teach manding within existing chains — FCT is a comprehensive intervention that includes extinction of the problem behavior and systematic teaching of a communicative replacement',
+      'NCR delivers the reinforcer noncontingently to abolish the motivating operation — FCT teaches a new communicative behavior that earns the reinforcer contingently',
+    ],
+    domain: 'F',
+    category: 'Antecedent Interventions',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-high-p-sequence',
+    term: 'High-Probability Request Sequence',
+    question: 'Before asking a student to complete a math worksheet, a BCBA presents three easy requests the student reliably complies with. This antecedent intervention is called:',
+    correctAnswer: 'High-probability request sequence — a series of high-p requests are presented before a low-p request to generate behavioral momentum that increases compliance with the low-p request',
+    incorrectAnswers: [
+      'Antecedent exercise — vigorous physical exercise provided before a session to reduce subsequent problem behavior',
+      'Noncontingent reinforcement — delivering a reinforcer on a time-based schedule independent of behavior to abolish the motivating operation',
+      'Errorless learning — a teaching procedure that prevents errors by providing prompts before the learner can make an incorrect response',
+    ],
+    misconceptions: [
+      'Antecedent exercise uses physical activity to reduce problem behavior — the high-p sequence uses easy compliance requests to build behavioral momentum',
+      'Noncontingent reinforcement delivers the maintaining reinforcer freely — the high-p sequence uses easy task requests to build momentum for a difficult task',
+      'Errorless learning prevents errors during skill acquisition — the high-p sequence increases compliance with a specific request through behavioral momentum',
+    ],
+    domain: 'F',
+    category: 'Antecedent Interventions',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
   },
 
   // -- Domain G: Additional Behavior-Change Procedure Terms ------------------
@@ -2942,6 +3181,186 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     domain: 'C', category: 'Measurement',
     taskItem: 'D.1',
+  },
+  {
+    id: 'rr-repeatability',
+    term: 'Repeatability',
+    question: 'Which dimensional quantity of behavior is the basis for frequency and rate measures?',
+    correctAnswer: 'Repeatability — the fact that a behavior can occur more than once within an observation period',
+    incorrectAnswers: [
+      'Temporal extent — the fact that every instance of behavior occupies some amount of time',
+      'Temporal locus — the fact that behavior occurs at a specific point in time relative to other events',
+      'Magnitude — the force or intensity with which a response is emitted',
+    ],
+    misconceptions: [
+      'Temporal extent is the basis for duration measures, not frequency or rate',
+      'Temporal locus is the basis for latency and IRT measures, not frequency or rate',
+      'Magnitude is the basis for force or intensity measures, not frequency or rate',
+    ],
+    domain: 'C',
+    category: 'Measurement Concepts',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-temporal-extent',
+    term: 'Temporal Extent',
+    question: 'A BCBA wants to measure how long a client engages in stereotypy during a session. Which dimensional quantity of behavior justifies using duration as the measure?',
+    correctAnswer: 'Temporal extent — every instance of stereotypy occupies some amount of time, making duration an appropriate measure',
+    incorrectAnswers: [
+      'Repeatability — stereotypy can occur more than once, making frequency the appropriate measure',
+      'Temporal locus — stereotypy occurs at a specific point in time, making latency the appropriate measure',
+      'Magnitude — stereotypy varies in intensity, making force the appropriate measure',
+    ],
+    misconceptions: [
+      'Repeatability justifies frequency/rate, not duration — though stereotypy does repeat, the question asks about how long it lasts',
+      'Temporal locus justifies latency (time from antecedent to response), not duration of the behavior itself',
+      'Magnitude justifies intensity measures, not duration',
+    ],
+    domain: 'C',
+    category: 'Measurement Concepts',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-temporal-locus',
+    term: 'Temporal Locus',
+    question: 'A BCBA measures the time between a teacher\'s instruction and a student\'s first response. Which dimensional quantity of behavior is the basis for this measure?',
+    correctAnswer: 'Temporal locus — every response occurs at a specific point in time relative to other events, making latency an appropriate measure',
+    incorrectAnswers: [
+      'Temporal extent — the behavior occupies time, making duration the appropriate measure',
+      'Repeatability — the behavior can occur more than once, making frequency the appropriate measure',
+      'Magnitude — the behavior varies in intensity, making force the appropriate measure',
+    ],
+    misconceptions: [
+      'Temporal extent is the basis for duration (how long a behavior lasts), not latency (when it occurs relative to an antecedent)',
+      'Repeatability is the basis for frequency/rate, not the timing of a response relative to an antecedent',
+      'Magnitude is the basis for intensity measures, not temporal positioning',
+    ],
+    domain: 'C',
+    category: 'Measurement Concepts',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-whole-vs-partial-interval',
+    term: 'Whole-Interval Recording',
+    question: 'A BCBA is measuring on-task behavior and wants to err on the side of underestimating the behavior. Which time sampling method should they use?',
+    correctAnswer: 'Whole-interval recording — behavior is scored as occurring only if it was present for the entire interval, which tends to underestimate true occurrence',
+    incorrectAnswers: [
+      'Partial-interval recording — behavior is scored if it occurred at any point in the interval, which tends to overestimate true occurrence',
+      'Momentary time sampling — behavior is scored only if it is occurring at the exact moment the interval ends, which provides an unbiased estimate',
+      'PLACHECK — behavior is scored for a group at the moment of observation, which is not appropriate for individual behavior',
+    ],
+    misconceptions: [
+      'Partial-interval recording overestimates, not underestimates — it is used when you want to detect any occurrence of a behavior to be reduced',
+      'Momentary time sampling provides an unbiased estimate, not an underestimate',
+      'PLACHECK is a group measurement method, not appropriate for individual behavior measurement',
+    ],
+    domain: 'C',
+    category: 'Time Sampling',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-partial-interval',
+    term: 'Partial-Interval Recording',
+    question: 'Which time sampling method tends to overestimate the true occurrence of behavior and is best suited for measuring behaviors targeted for reduction?',
+    correctAnswer: 'Partial-interval recording — behavior is scored if it occurred at any point during the interval, which inflates the estimated percentage of intervals with the behavior',
+    incorrectAnswers: [
+      'Whole-interval recording — behavior is scored only if it occurred throughout the entire interval, which underestimates true occurrence',
+      'Momentary time sampling — behavior is scored only at the exact moment of observation, which provides an unbiased estimate',
+      'Measurement by permanent product — behavior is measured by its lasting outcomes, not by time sampling',
+    ],
+    misconceptions: [
+      'Whole-interval recording underestimates, not overestimates — it is used for behaviors that should be maintained continuously',
+      'Momentary time sampling provides an unbiased estimate and is not systematically inflated',
+      'Permanent product measurement is not a time sampling method',
+    ],
+    domain: 'C',
+    category: 'Time Sampling',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-ioa-formulas',
+    term: 'Total Duration IOA',
+    question: 'Observer A records a total tantrum duration of 6 minutes; Observer B records 8 minutes. What is the Total Duration IOA?',
+    correctAnswer: '75% — calculated by dividing the shorter duration (6) by the longer duration (8) and multiplying by 100',
+    incorrectAnswers: [
+      '80% — calculated by averaging the two durations and dividing by the larger value',
+      '87.5% — calculated by dividing the difference (2 minutes) by the larger value (8 minutes) and subtracting from 100%',
+      '133% — calculated by dividing the longer duration by the shorter duration',
+    ],
+    misconceptions: [
+      'Total Duration IOA always divides the smaller value by the larger value — averaging would not yield a valid agreement percentage',
+      'The formula is smaller ÷ larger × 100, not (1 - difference/larger) × 100',
+      'IOA is always expressed as a value ≤ 100%; dividing larger by smaller would exceed 100%',
+    ],
+    domain: 'C',
+    category: 'IOA Formulas',
+    difficulty: 'hard',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-measurement-bias',
+    term: 'Measurement Bias',
+    question: 'An observer who knows a client is in the treatment phase consistently records slightly higher rates of appropriate behavior than a naive observer. This is an example of:',
+    correctAnswer: 'Measurement bias — a systematic error caused by observer expectations that consistently skews observed values in one direction',
+    incorrectAnswers: [
+      'Observer reactivity — a change in the client\'s behavior because they know they are being observed',
+      'Artifact — a spurious data point caused by an error in the measurement process',
+      'Calibration error — a failure to train the observer to criterion against a known standard',
+    ],
+    misconceptions: [
+      'Observer reactivity refers to the client\'s behavior changing due to observation, not the observer\'s recording being biased',
+      'An artifact is a single spurious data point, not a systematic directional bias across sessions',
+      'Calibration error refers to inadequate observer training, not expectation-driven systematic bias',
+    ],
+    domain: 'C',
+    category: 'Measurement Quality',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-equal-vs-ratio-scale',
+    term: 'Equal-Interval Scale',
+    question: 'A BCBA uses a standard line graph with an equal-interval y-axis. A change from 2 to 4 responses per minute appears visually larger than a change from 20 to 22 responses per minute, even though both are 2-unit changes. This is a characteristic of:',
+    correctAnswer: 'Equal-interval scaling — equal distances represent equal absolute amounts, so a 2-unit change always looks the same regardless of the baseline rate',
+    incorrectAnswers: [
+      'Ratio scaling — equal distances represent equal proportional changes, so a doubling always looks the same',
+      'Celeration — the rate of change in rate over time, used in precision teaching',
+      'Measurement bias — a systematic error that causes observed values to differ from true values',
+    ],
+    misconceptions: [
+      'Ratio scaling (logarithmic) would make the 2→4 change (doubling) look larger than the 20→22 change (10% increase), the opposite of equal-interval',
+      'Celeration is a measure of learning rate, not a graph scale property',
+      'Measurement bias refers to systematic observer error, not a property of graph scales',
+    ],
+    domain: 'C',
+    category: 'Graphing',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-precision-teaching',
+    term: 'Precision Teaching',
+    question: 'Which measurement and instructional system uses the Standard Celeration Chart, emphasizes fluency building, and uses celeration (rate of change in rate) as the primary measure of learning?',
+    correctAnswer: 'Precision Teaching — developed by Ogden Lindsley, uses daily frequency measures plotted on a ratio-scale chart to track learning and guide instructional decisions',
+    incorrectAnswers: [
+      'Discrete Trial Training (DTT) — a structured teaching method that uses antecedent-response-consequence trials to teach skills',
+      'Direct Instruction — a scripted, teacher-led instructional method emphasizing explicit teaching and error correction',
+      'Naturalistic Teaching — an instructional approach that embeds learning opportunities in natural environments and routines',
+    ],
+    misconceptions: [
+      'DTT is a teaching method, not a measurement system — it does not use the Standard Celeration Chart',
+      'Direct Instruction is a curriculum and teaching approach, not a measurement system',
+      'Naturalistic Teaching is an instructional context, not a measurement system',
+    ],
+    domain: 'C',
+    category: 'Graphing',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
   },
 
   // -- Ethics (Domain E)  -  18 new terms --------------------------------------
@@ -3822,6 +4241,86 @@ export const rapidRecallItems: RapidRecallItem[] = [
     domain: 'H',
     taskItem: 'H.2',
     category: 'Intervention'
+  },
+  {
+    id: 'rr-indirect-fba',
+    term: 'Indirect Functional Assessment',
+    question: 'A BCBA administers the Functional Assessment Interview and the Motivation Assessment Scale to a student\'s parents and teacher before conducting any direct observations. This is an example of:',
+    correctAnswer: 'Indirect functional assessment — gathering information about potential maintaining variables through interviews and rating scales without directly observing the behavior',
+    incorrectAnswers: [
+      'Descriptive functional behavior assessment — direct observation of behavior in the natural environment without manipulating variables',
+      'Brief functional analysis — a condensed experimental analysis with short test conditions to identify behavioral function',
+      'Contingency space analysis — a method of analyzing descriptive data by plotting conditional probabilities of reinforcement',
+    ],
+    misconceptions: [
+      'Descriptive FBA requires direct observation — indirect FBA uses only interviews and questionnaires without observing the behavior',
+      'Brief functional analysis involves direct manipulation of antecedents and consequences — indirect FBA does not manipulate any variables',
+      'Contingency space analysis is a data analysis method applied to descriptive observation data, not an interview-based procedure',
+    ],
+    domain: 'H',
+    category: 'Functional Behavior Assessment',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-group-contingencies',
+    term: 'Interdependent Group Contingency',
+    question: 'A teacher announces that the class will earn a pizza party if the class average on homework completion exceeds 90% for the week. This is an example of:',
+    correctAnswer: 'Interdependent group contingency — all members must meet a collective criterion before any member receives the consequence',
+    incorrectAnswers: [
+      'Independent group contingency — the same criterion is applied to all members but each member\'s consequence depends only on their own behavior',
+      'Dependent group contingency — the group\'s consequence depends on the behavior of one selected member or subset of members',
+      'Hero procedure — one student\'s behavior determines the consequence for the entire group',
+    ],
+    misconceptions: [
+      'Independent group contingency gives each student their own individual outcome based on their own performance — the pizza party here depends on the group average, not individual performance',
+      'Dependent group contingency singles out one student whose behavior determines the group\'s outcome — this scenario uses the group average, not one student\'s behavior',
+      'The hero procedure specifically selects one student as the "hero" whose behavior determines the group\'s reward — this scenario uses a collective group average',
+    ],
+    domain: 'H',
+    category: 'Group Contingencies',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-self-management',
+    term: 'Self-Management',
+    question: 'A graduate student tracks their daily study hours, compares them to a 2-hour goal, and rewards themselves with a movie if they meet the weekly goal. This is an example of:',
+    correctAnswer: 'Self-management — the individual applies behavior-change strategies (self-monitoring, self-evaluation, self-reinforcement) to their own behavior to achieve a self-selected goal',
+    incorrectAnswers: [
+      'Contingency contract — a written agreement between two parties specifying a behavior-consequence relationship',
+      'Self-control (Skinner\'s analysis) — arranging environmental variables to alter the probability of one\'s own subsequent behavior',
+      'Token economy — a system in which tokens are earned for target behaviors and exchanged for backup reinforcers',
+    ],
+    misconceptions: [
+      'A contingency contract requires a written document and typically involves another party — self-management can be informal and self-directed',
+      'Skinner\'s self-control specifically refers to the manipulation of environmental antecedents — self-management is a broader term that includes monitoring and evaluation components',
+      'A token economy uses tokens as conditioned reinforcers — the movie reward here is a direct backup reinforcer, not a token system',
+    ],
+    domain: 'H',
+    category: 'Self-Management',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-generalization-strategies',
+    term: 'Program Common Stimuli',
+    question: 'A BCBA uses the same type of desk, chair, and materials found in the student\'s classroom during therapy sessions to promote transfer of skills. This generalization strategy is called:',
+    correctAnswer: 'Program common stimuli — incorporating stimuli from the generalization setting into the training setting to increase the likelihood that behavior will transfer to the natural environment',
+    incorrectAnswers: [
+      'Multiple-exemplar training — training with multiple varied examples of the training stimuli to promote generalization to untrained stimuli',
+      'Teach loosely — conducting training with varied, non-essential stimuli to prevent overly narrow stimulus control',
+      'General case analysis — systematically identifying the full range of stimulus variations in the generalization setting and sampling them during training',
+    ],
+    misconceptions: [
+      'Multiple-exemplar training varies the training stimuli themselves — programming common stimuli copies the natural environment\'s stimuli into the training setting',
+      'Teaching loosely intentionally varies non-essential stimuli — programming common stimuli intentionally replicates essential stimuli from the generalization setting',
+      'General case analysis is a planning procedure for selecting training examples — programming common stimuli is an implementation strategy for making the training environment resemble the natural environment',
+    ],
+    domain: 'H',
+    category: 'Generalization',
+    difficulty: 'hard',
+    bloomsLevel: 'apply'
   },
   {
     id: 'i7',
