@@ -32,7 +32,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.16',
   },
   {
-    id: 'rr-sd', term: 'SD (Discriminative Stimulus)',
+    id: 'rr-sd', term: 'Discriminative Stimulus (SD)',
     correctDefinition: 'A stimulus in the presence of which a behavior has been reinforced; it signals that reinforcement is currently available.',
     distractors: [
       'An environmental variable that increases the value of a reinforcer and evokes behavior.',
@@ -308,7 +308,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.19',
   },
   {
-    id: 'rr-convergent', term: 'Convergent Control',
+    id: 'rr-convergent', term: 'Convergent Multiple Control',
     correctDefinition: 'A condition in which a single verbal response is controlled by more than one variable simultaneously (multiple variables → one response).',
     distractors: [
       'A condition in which a single variable controls more than one verbal response.',
@@ -324,7 +324,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.20',
   },
   {
-    id: 'rr-divergent', term: 'Divergent Control',
+    id: 'rr-divergent', term: 'Divergent Multiple Control',
     correctDefinition: 'A condition in which a single variable affects more than one verbal response (one variable → multiple responses).',
     distractors: [
       'A condition in which multiple variables control a single verbal response.',
@@ -342,7 +342,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
 
   // -- Stimulus Control & Measurement ----------------------------------------
   {
-    id: 'rr-cond-reinf', term: 'Conditioned Reinforcement',
+    id: 'rr-cond-reinf', term: 'Conditioned Reinforcer',
     correctDefinition: 'A stimulus that has acquired reinforcing function through a history of pairing with other reinforcers (secondary reinforcer).',
     distractors: [
       'A stimulus whose reinforcing value is biologically determined and does not require prior learning.',
@@ -358,7 +358,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.7',
   },
   {
-    id: 'rr-uncond-reinf', term: 'Unconditioned Reinforcement',
+    id: 'rr-uncond-reinf', term: 'Unconditioned Reinforcer',
     correctDefinition: 'A stimulus whose reinforcing value is biologically determined and does not require prior learning (primary reinforcer; e.g., food, water, warmth).',
     distractors: [
       'A stimulus that has acquired reinforcing function through a history of pairing with other reinforcers.',
@@ -438,7 +438,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.12',
   },
   {
-    id: 'rr-stim-gen', term: 'Stimulus Generalization',
+    id: 'rr-stim-gen', term: 'Stimulus Generalization Programming',
     correctDefinition: 'The occurrence of a behavior in the presence of stimuli that are similar to but not identical to the training stimulus.',
     distractors: [
       'The occurrence of untrained responses that are functionally similar to the trained response.',
@@ -584,7 +584,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'C.6',
   },
   {
-    id: 'rr-mts', term: 'Momentary Time Sampling',
+    id: 'rr-mts', term: 'Momentary Time Sampling (MTS)',
     correctDefinition: 'Records whether the behavior is occurring at the MOMENT the interval ends; can over- or underestimate depending on behavior characteristics.',
     distractors: [
       'Records whether the behavior occurred throughout the entire interval.',
@@ -714,7 +714,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'D.4',
   },
   {
-    id: 'rr-replication', term: 'Replication (Baseline Logic)',
+    id: 'rr-replication', term: 'Replication',
     correctDefinition: 'The third element of baseline logic: the effect is reproduced by reintroducing the intervention, strengthening the demonstration of experimental control.',
     distractors: [
       'The element of baseline logic that allows prediction of the future course of behavior.',
@@ -828,7 +828,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'F.5',
   },
   {
-    id: 'rr-fa', term: 'Functional Analysis',
+    id: 'rr-fa', term: 'Functional Analysis (FA)',
     correctDefinition: 'An FBA method that involves systematic manipulation of antecedent and consequence variables to experimentally identify the function(s) of a behavior; the most rigorous method.',
     distractors: [
       'An FBA method that involves direct observation of behavior in the natural environment.',
@@ -1477,7 +1477,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'A.3',
   },
   {
-    id: 'rr-behaviorism-philosophy', term: 'Behaviorism (Philosophy)',
+    id: 'rr-behaviorism-philosophy', term: 'Behaviorism',
     correctDefinition: 'The philosophy of science that defines behavior as the proper subject matter of psychology and holds that a complete account of behavior can be achieved by identifying the environmental variables that control it, without invoking unobservable mental entities as explanatory causes.',
     distractors: [
       'A therapeutic approach that uses reinforcement and punishment to modify maladaptive behavior patterns.',
@@ -1492,10 +1492,130 @@ export const rapidRecallItems: RapidRecallItem[] = [
     domain: 'A', category: 'Levels of Behavioral Science',
     taskItem: 'A.4',
   },
+  {
+    id: 'rr-science-aba',
+    term: 'Science',
+    question: 'Which of the following best describes science as a systematic approach to understanding natural phenomena?',
+    correctAnswer: 'An empirical, objective approach characterized by description, prediction, and control of subject matter through observation and experimentation',
+    incorrectAnswers: [
+      'A collection of established facts and theories accepted by consensus among experts in a field',
+      'A method of generating hypotheses about unobservable internal processes that drive behavior',
+      'A philosophical framework for interpreting behavior in terms of cognitive and emotional states',
+    ],
+    misconceptions: [
+      'Science is not simply a body of accepted facts — it is a process of empirical inquiry',
+      'Science in behavior analysis focuses on observable, measurable events, not unobservable internal processes',
+      'The three goals of science (description, prediction, control) are the defining features, not consensus or theory',
+    ],
+    domain: 'A',
+    category: 'Philosophical Foundations',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-experiment-aba',
+    term: 'Experiment',
+    question: 'A behavior analyst manipulates an independent variable under controlled conditions to measure its effect on a dependent variable. This procedure is best described as:',
+    correctAnswer: 'An experiment designed to establish a functional relation between the independent and dependent variables',
+    incorrectAnswers: [
+      'A descriptive assessment designed to identify correlations between environmental events and behavior',
+      'A preference assessment designed to identify effective reinforcers for a specific client',
+      'A normative comparison designed to evaluate a client\'s behavior relative to same-age peers',
+    ],
+    misconceptions: [
+      'Correlation studies and descriptive assessments do not involve manipulation of variables — they observe naturally occurring events',
+      'An experiment requires active manipulation of the independent variable, not just observation',
+      'Preference assessments identify reinforcers but do not establish functional relations',
+    ],
+    domain: 'A',
+    category: 'Philosophical Foundations',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-functional-relation',
+    term: 'Functional Relation',
+    question: 'A BCBA demonstrates that a client\'s on-task behavior increases when a token economy is in place and returns to baseline when it is removed, across three replications. This finding establishes:',
+    correctAnswer: 'A functional relation between the token economy (independent variable) and on-task behavior (dependent variable)',
+    incorrectAnswers: [
+      'A correlational relationship between the token economy and on-task behavior',
+      'A hypothetical construct explaining why the client responds to token reinforcement',
+      'A normative standard for on-task behavior in similar clients',
+    ],
+    misconceptions: [
+      'Correlation does not require manipulation or replication — a functional relation requires both',
+      'A functional relation is not a hypothetical construct; it is a demonstrated, empirical relationship',
+      'Normative standards describe typical performance, not cause-and-effect relationships',
+    ],
+    domain: 'A',
+    category: 'Philosophical Foundations',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-hypothetical-construct',
+    term: 'Hypothetical Construct',
+    question: 'A clinician explains a child\'s aggression by stating the child has "poor impulse control." From a behavior analytic perspective, this explanation is problematic because:',
+    correctAnswer: 'It invokes a hypothetical construct — an unobservable, unmeasurable internal entity — rather than identifying the environmental variables controlling the behavior',
+    incorrectAnswers: [
+      'It uses mentalistic language that is incompatible with the technological dimension of ABA',
+      'It fails to specify the reinforcement schedule maintaining the aggressive behavior',
+      'It violates the principle of parsimony by offering an overly complex explanation',
+    ],
+    misconceptions: [
+      'While mentalism is related, the specific problem here is the use of a hypothetical construct as a causal explanation',
+      'The technological dimension concerns procedural description, not causal explanation',
+      'Parsimony concerns choosing the simplest explanation, but the primary issue is that the construct cannot be directly measured or manipulated',
+    ],
+    domain: 'A',
+    category: 'Philosophical Foundations',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-explanatory-fiction',
+    term: 'Explanatory Fiction',
+    question: 'A teacher says "Jada is disruptive because she has ADHD." A behavior analyst identifies this as an explanatory fiction because:',
+    correctAnswer: 'The label "ADHD" is derived from the disruptive behavior itself and is then used as its cause, creating a circular explanation that identifies no actual environmental variable',
+    incorrectAnswers: [
+      'Medical diagnoses are not valid explanations for behavior in any context',
+      'The explanation violates the conceptually systematic dimension by not referencing reinforcement principles',
+      'The explanation is too simple and violates the principle of parsimony',
+    ],
+    misconceptions: [
+      'Medical diagnoses can be valid descriptors but become explanatory fictions when used as circular causal explanations',
+      'Conceptually systematic concerns linking procedures to principles, not the validity of causal explanations',
+      'Parsimony favors simpler explanations — an explanatory fiction is problematic because it is circular, not because it is simple',
+    ],
+    domain: 'A',
+    category: 'Philosophical Foundations',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-parsimony-aba',
+    term: 'Parsimony',
+    question: 'When two explanations account equally well for a client\'s behavior, the principle of parsimony directs a behavior analyst to:',
+    correctAnswer: 'Prefer the simpler, more straightforward explanation — typically one that references observable environmental variables rather than inferred internal states',
+    incorrectAnswers: [
+      'Prefer the explanation that incorporates the most comprehensive theoretical framework',
+      'Prefer the explanation offered by the professional with the highest level of training',
+      'Prefer the explanation that is most consistent with the client\'s cultural background and values',
+    ],
+    misconceptions: [
+      'Parsimony favors simplicity and observability, not theoretical comprehensiveness',
+      'Parsimony is a scientific principle about explanations, not a hierarchy of professional authority',
+      'Cultural considerations are important in ABA but are not the basis for the principle of parsimony',
+    ],
+    domain: 'A',
+    category: 'Philosophical Foundations',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
 
   // -- Domain B: Additional Concepts & Principles ----------------------------
   {
-    id: 'rr-respondent-conditioning', term: 'Respondent Conditioning',
+    id: 'rr-respondent-conditioning', term: 'Respondent Conditioning (Classical Conditioning)',
     correctDefinition: 'A process in which a neutral stimulus acquires the ability to elicit a response by being paired with an unconditioned stimulus that already elicits that response.',
     distractors: [
       'A process in which behavior is strengthened by its consequences.',
@@ -1799,7 +1919,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.19',
   },
   {
-    id: 'rr-behavioral-momentum', term: 'Behavioral Momentum  -  Principle',
+    id: 'rr-behavioral-momentum', term: 'Behavioral Momentum',
     correctDefinition: 'The tendency for behavior to persist following a change in reinforcement conditions; higher rates of reinforcement in a stimulus context produce greater resistance to disruption (B.22). Analogous to physical momentum: a richer reinforcement history = greater resistance to change.',
     distractors: [
       'The increase in response rate that follows a period of extinction.',
@@ -1815,7 +1935,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'B.22',
   },
   {
-    id: 'rr-imitation', term: 'Imitation',
+    id: 'rr-imitation', term: 'Imitation vs. Observational Learning',
     correctDefinition: 'A behavior that is controlled by a model and has formal similarity to that model; the behavior is reinforced by the social community for matching the model.',
     distractors: [
       'A behavior that is controlled by a verbal description of the desired response.',
@@ -1929,7 +2049,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'C.5',
   },
   {
-    id: 'rr-count', term: 'Count (Occurrence)',
+    id: 'rr-count', term: 'Frequency / Count',
     correctDefinition: 'The number of times a behavior occurs during an observation period; the most basic measure of behavior.',
     distractors: [
       'The number of behaviors per unit of time during an observation period.',
@@ -2632,7 +2752,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'C.6',
   },
   {
-    id: 'rr-ioa-occurrence', term: 'Occurrence IOA',
+    id: 'rr-ioa-occurrence', term: 'Exact Count IOA',
     correctDefinition: 'An IOA calculation in which agreement is scored only for intervals in which at least one observer recorded the behavior; more conservative for low-rate behaviors.',
     distractors: [
       'An IOA calculation in which all intervals, regardless of whether behavior was recorded, are included in the agreement calculation.',
@@ -2842,7 +2962,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'E.1',
   },
   {
-    id: 'rr-scope-of-practice', term: 'Scope of Practice',
+    id: 'rr-scope-of-practice', term: 'Scope of Competence',
     correctDefinition: 'The boundaries of professional competence defined by one\'s training, education, supervised experience, and credentialing, within which a practitioner is ethically permitted to provide services.',
     distractors: [
       'The geographic region in which a practitioner is licensed to provide behavior-analytic services.',
@@ -3112,6 +3232,126 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     domain: 'E', category: 'Ethics',
     taskItem: 'E.7',
+  },
+  {
+    id: 'rr-ethics-aba',
+    term: 'Ethics',
+    question: 'In behavior analysis, ethics is best understood as:',
+    correctAnswer: 'A set of professional obligations derived from the BACB Ethics Code that governs conduct toward clients, supervisees, colleagues, and the public',
+    incorrectAnswers: [
+      'A personal belief system about right and wrong that each practitioner develops independently',
+      'A set of aspirational ideals that guide practice but carry no formal enforcement mechanisms',
+      'A branch of philosophy concerned only with theoretical moral questions unrelated to clinical practice',
+    ],
+    misconceptions: [
+      'Professional ethics in behavior analysis is codified and enforceable, not merely personal',
+      'The BACB Ethics Code is a compliance code with formal disciplinary consequences, not merely aspirational',
+      'Ethics in behavior analysis is directly applied to clinical practice, not purely theoretical',
+    ],
+    domain: 'E',
+    category: 'Ethics & Professional Conduct',
+    difficulty: 'easy',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-compliance-code',
+    term: 'Compliance Code',
+    question: 'The BACB Ethics Code functions as a compliance code rather than merely an aspirational document because:',
+    correctAnswer: 'Violations are subject to formal investigation and may result in sanctions including suspension or revocation of certification',
+    incorrectAnswers: [
+      'It is written by practicing behavior analysts rather than by a regulatory body',
+      'It applies only to BCBAs and not to other BACB certificants such as BCaBAs or RBTs',
+      'It is updated annually to reflect current best practices in the field',
+    ],
+    misconceptions: [
+      'The authorship of the code does not determine whether it is a compliance code',
+      'The BACB Ethics Code applies to all BACB certificants, not only BCBAs',
+      'Update frequency does not distinguish compliance codes from aspirational standards',
+    ],
+    domain: 'E',
+    category: 'Ethics & Professional Conduct',
+    difficulty: 'medium',
+    bloomsLevel: 'understand'
+  },
+  {
+    id: 'rr-negligence-aba',
+    term: 'Negligence',
+    question: 'A BCBA implements a punishment procedure without conducting a prior functional assessment, and the client\'s problem behavior escalates. This situation most closely reflects:',
+    correctAnswer: 'Negligence — a failure to exercise the standard of care expected of a competent behavior analyst, resulting in potential harm to the client',
+    incorrectAnswers: [
+      'Fraudulent conduct, because the BCBA misrepresented the likely outcome of the procedure',
+      'A conflict of interest, because the BCBA had a financial incentive to implement the procedure',
+      'Countercontrol, because the client is responding to the aversive nature of the procedure',
+    ],
+    misconceptions: [
+      'Fraudulent conduct involves intentional deception for personal gain, not a failure of clinical judgment',
+      'Conflict of interest involves competing personal and professional interests, not a failure to follow standard of care',
+      'Countercontrol is the client\'s behavioral response to aversive control, not the practitioner\'s ethical violation',
+    ],
+    domain: 'E',
+    category: 'Ethics & Professional Conduct',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-risk-benefit-analysis',
+    term: 'Risk-Benefit Analysis',
+    question: 'Before recommending a restrictive procedure, a BCBA is ethically required to conduct a risk-benefit analysis. The primary purpose of this analysis is to:',
+    correctAnswer: 'Determine whether the expected benefits of the procedure justify its potential harms, ensuring the intervention is warranted and proportionate',
+    incorrectAnswers: [
+      'Identify the least expensive intervention option that is likely to be effective for the client',
+      'Document that the BCBA has obtained informed consent from the client\'s legal guardian',
+      'Establish that the procedure has been validated through peer-reviewed research with similar populations',
+    ],
+    misconceptions: [
+      'Cost is not the primary consideration in a risk-benefit analysis — harm and benefit to the client are',
+      'Informed consent is a separate ethical requirement, not the purpose of a risk-benefit analysis',
+      'Research validation is relevant but does not replace the individualized weighing of risks and benefits for a specific client',
+    ],
+    domain: 'E',
+    category: 'Ethics & Professional Conduct',
+    difficulty: 'medium',
+    bloomsLevel: 'apply'
+  },
+  {
+    id: 'rr-countercontrol-aba',
+    term: 'Countercontrol',
+    question: 'A client who is subjected to highly restrictive procedures begins refusing to attend sessions and engaging in aggression toward staff. A behavior analyst recognizes this as:',
+    correctAnswer: 'Countercontrol — behavior emitted in response to aversive control, aimed at reducing or escaping that control',
+    incorrectAnswers: [
+      'Extinction-induced aggression resulting from the removal of a previously reinforced behavior',
+      'A new behavioral function that has emerged due to changes in the client\'s motivating operations',
+      'An ethical violation by the client that must be addressed through a formal behavior intervention plan',
+    ],
+    misconceptions: [
+      'Extinction-induced aggression occurs when a specific behavior is placed on extinction — countercontrol is a broader response to coercive control',
+      'Countercontrol is not a change in behavioral function; it is a response to aversive control by another person',
+      'Countercontrol is a natural behavioral response, not an ethical violation by the client',
+    ],
+    domain: 'E',
+    category: 'Ethics & Professional Conduct',
+    difficulty: 'hard',
+    bloomsLevel: 'analyze'
+  },
+  {
+    id: 'rr-fraudulent-conduct',
+    term: 'Fraudulent Conduct',
+    question: 'A BCBA submits billing records to an insurance company for 10 hours of services that were never provided. This is best classified as:',
+    correctAnswer: 'Fraudulent conduct — intentional misrepresentation for personal financial gain, which is both an ethical violation and potentially a criminal offense',
+    incorrectAnswers: [
+      'Negligence, because the BCBA failed to maintain accurate records of services provided',
+      'A conflict of interest, because the BCBA\'s financial interests conflicted with the client\'s interests',
+      'A disciplinary standards violation only, with no potential criminal liability',
+    ],
+    misconceptions: [
+      'Negligence involves a failure of care, not intentional deception — fraudulent conduct is intentional',
+      'Conflict of interest involves competing interests, not deliberate falsification of records',
+      'Insurance fraud is a criminal offense in most jurisdictions, not merely a professional standards violation',
+    ],
+    domain: 'E',
+    category: 'Ethics & Professional Conduct',
+    difficulty: 'easy',
+    bloomsLevel: 'understand'
   },
 
   // -- Supervision (Domain I)  -  16 new terms ---------------------------------
