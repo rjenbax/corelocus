@@ -475,11 +475,13 @@ export default function RapidRecallPage() {
     return counts;
   }, []);
 
-  // Build shuffled choices for current item
+  // Build shuffled choices for current item — re-shuffle on every card advance
+  // currentIdx is included so the same item appearing twice in a row still gets a fresh shuffle
   const choices = useMemo(() => {
     if (!currentItem) return [];
     return shuffle([currentItem.correctDefinition ?? '', ...(currentItem.distractors ?? []).slice(0, 3)]);
-  }, [currentItem]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentItem, currentIdx]);
 
   // Missed items: terms with more incorrect than correct (or 0 correct and ≥1 incorrect)
   const missedItems = useMemo((): MissedTermEntry[] => {
