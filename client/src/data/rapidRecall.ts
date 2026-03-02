@@ -6841,6 +6841,348 @@ export const rapidRecallItems: RapidRecallItem[] = [
     domain: 'B',
     taskItem: 'B.10',
     category: 'Verbal Behavior'
-  }
+  },
 
+  {
+    id: 'rr-prompt',
+    term: 'Prompt',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A supplemental antecedent stimulus added to an SD to increase the likelihood of a correct response; intended to be temporary and systematically faded.',
+    distractors: ['A consequence delivered after a correct response', 'A discriminative stimulus that controls behavior without supplemental cues', 'A reinforcer used to increase future behavior', 'A punisher used to decrease future behavior'],
+    commonMisconceptions: ['Prompts are permanent features of the instructional environment', 'A prompt is the same as a discriminative stimulus', 'Prompts are only used with verbal behavior', 'Prompts should never be faded once established']
+  },
+  {
+    id: 'rr-response-prompt',
+    term: 'Response Prompt',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A prompt that involves a behavior of the trainer — physical assist, model, gesture, or verbal cue — that increases the probability of a correct response.',
+    distractors: ['A change to the target stimulus itself to increase correct responding', 'A consequence delivered after an error response', 'A schedule of reinforcement for correct responses', 'A preference assessment tool'],
+    commonMisconceptions: ['Response prompts and stimulus prompts are the same thing', 'A gestural prompt is not a response prompt', 'Response prompts are only physical in nature', 'Response prompts should always be the most intrusive option']
+  },
+  {
+    id: 'rr-stimulus-prompt',
+    term: 'Stimulus Prompt',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A prompt that involves a change to the target discriminative stimulus itself — position, size, color, or intensity — to increase correct responding.',
+    distractors: ['A trainer behavior that increases correct responding', 'A reinforcer delivered after a correct response', 'A verbal cue provided by the trainer', 'A physical guidance procedure'],
+    commonMisconceptions: ['Stimulus prompts involve trainer behavior', 'Stimulus prompts are always verbal', 'Stimulus prompts cannot be faded', 'Stimulus prompts are the same as extra-stimulus prompts']
+  },
+  {
+    id: 'rr-within-stimulus-prompt',
+    term: 'Within-Stimulus Prompt',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A stimulus prompt in which a feature of the target SD is exaggerated to direct attention to the relevant dimension, then gradually faded to the natural form.',
+    distractors: ['An additional cue added outside the target stimulus', 'A trainer behavior used to guide responding', 'A verbal instruction provided before the SD', 'A consequence delivered for correct responding'],
+    commonMisconceptions: ['Within-stimulus prompts add a separate cue to the environment', 'Within-stimulus prompts are the same as extra-stimulus prompts', 'Within-stimulus prompts cannot be used for visual discrimination tasks', 'Within-stimulus prompts are never faded']
+  },
+  {
+    id: 'rr-most-to-least-prompting',
+    term: 'Most-to-Least Prompting',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A prompting procedure starting with the most intrusive prompt and systematically decreasing intrusiveness as the learner demonstrates accuracy.',
+    distractors: ['A procedure starting with the least intrusive prompt and increasing as needed', 'A procedure in which all prompts are delivered simultaneously', 'A procedure in which prompts are never faded', 'A procedure based on time delay between SD and prompt'],
+    commonMisconceptions: ['Most-to-least prompting starts with no prompt', 'Most-to-least and least-to-most prompting are identical procedures', 'Most-to-least prompting is always less effective than least-to-most', 'Most-to-least prompting does not require fading']
+  },
+  {
+    id: 'rr-least-to-most-prompting',
+    term: 'Least-to-Most Prompting',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A prompting procedure starting with the least intrusive prompt after an error or no response, with progressively more intrusive prompts added until a correct response occurs.',
+    distractors: ['A procedure starting with the most intrusive prompt', 'A procedure in which prompts are delivered before the SD', 'A procedure in which the same prompt is used on every trial', 'A procedure based on shaping successive approximations'],
+    commonMisconceptions: ['Least-to-most prompting starts with full physical guidance', 'Least-to-most prompting does not allow for independent responding', 'Least-to-most and most-to-least prompting produce identical outcomes', 'Least-to-most prompting is only used for motor skills']
+  },
+  {
+    id: 'rr-time-delay',
+    term: 'Time Delay',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A prompting procedure inserting a brief interval between the SD and the prompt, giving the learner an opportunity to respond independently before the prompt is delivered.',
+    distractors: ['A procedure in which the prompt is delivered simultaneously with the SD', 'A procedure in which the interval between trials is increased', 'A procedure in which reinforcement is delayed after a correct response', 'A procedure in which the SD is presented more slowly over time'],
+    commonMisconceptions: ['Time delay means the SD is presented after a delay', 'Time delay always uses a fixed interval', 'Time delay is only used for verbal behavior', 'Time delay eliminates the need for prompt fading']
+  },
+  {
+    id: 'rr-constant-time-delay',
+    term: 'Constant Time Delay',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A time delay procedure in which the interval between the SD and the prompt remains the same throughout training after an initial zero-delay phase.',
+    distractors: ['A time delay procedure in which the interval is gradually increased', 'A procedure in which the prompt is delivered at a random time', 'A procedure in which no delay is ever used', 'A procedure in which the SD is repeated after the delay'],
+    commonMisconceptions: ['Constant time delay gradually increases the delay interval', 'Constant time delay and progressive time delay are the same procedure', 'Constant time delay begins with the maximum delay interval', 'Constant time delay does not include a zero-delay phase']
+  },
+  {
+    id: 'rr-progressive-time-delay',
+    term: 'Progressive Time Delay',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A time delay procedure in which the interval between the SD and the prompt is systematically increased across trials or sessions, starting at 0 seconds.',
+    distractors: ['A time delay procedure in which the interval remains constant', 'A procedure in which the prompt is delivered before the SD', 'A procedure in which the delay is randomly varied', 'A procedure in which the SD is faded over time'],
+    commonMisconceptions: ['Progressive time delay starts with the maximum delay interval', 'Progressive time delay and constant time delay are identical', 'Progressive time delay does not include a zero-delay phase', 'Progressive time delay is only used for chaining procedures']
+  },
+  {
+    id: 'rr-transfer-of-stimulus-control',
+    term: 'Transfer of Stimulus Control',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'The process by which stimulus control shifts from a prompt to the target SD through systematic prompt fading or time delay procedures.',
+    distractors: ['The process by which a new behavior is shaped from existing behaviors', 'The process by which a reinforcer loses its effectiveness over time', 'The process by which punishment suppresses behavior', 'The process by which a behavior generalizes to new settings'],
+    commonMisconceptions: ['Transfer of stimulus control means the SD loses control of behavior', 'Transfer of stimulus control occurs automatically without fading', 'Transfer of stimulus control is the same as generalization', 'Transfer of stimulus control only applies to verbal behavior']
+  },
+  {
+    id: 'rr-shaping',
+    term: 'Shaping',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A procedure for developing a new behavior by differentially reinforcing successive approximations to the target behavior while placing previous approximations on extinction.',
+    distractors: ['A procedure for teaching behavior chains by linking stimulus-response components', 'A procedure for reducing behavior by withholding reinforcement', 'A procedure for teaching discrimination between two stimuli', 'A procedure for increasing behavior through contingent reinforcement'],
+    commonMisconceptions: ['Shaping reinforces all responses equally', 'Shaping does not require extinction of previous approximations', 'Shaping can only be used for verbal behavior', 'Shaping and chaining are the same procedure']
+  },
+  {
+    id: 'rr-successive-approximations',
+    term: 'Successive Approximations',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'The intermediate behaviors reinforced during shaping, each closer to the terminal target behavior than the previous step; each is reinforced until reliable, then placed on extinction as the criterion advances.',
+    distractors: ['The final target behavior in a shaping program', 'The discriminative stimuli used during shaping', 'The reinforcers delivered during shaping', 'The error responses that occur during shaping'],
+    commonMisconceptions: ['Successive approximations are all reinforced simultaneously', 'Successive approximations are never placed on extinction', 'Successive approximations are the same as behavior chains', 'Successive approximations only apply to verbal behavior']
+  },
+  {
+    id: 'rr-chaining',
+    term: 'Chaining',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A procedure for teaching a behavior chain by linking individual stimulus-response components, with each response serving as both the terminal behavior of the preceding component and the SD for the next.',
+    distractors: ['A procedure for developing new behaviors through differential reinforcement of approximations', 'A procedure for reducing behavior by withholding reinforcement', 'A procedure for teaching single discrete responses', 'A procedure for establishing stimulus control through time delay'],
+    commonMisconceptions: ['Chaining and shaping are the same procedure', 'In chaining, each response is independently reinforced', 'Chaining can only be used for motor skills', 'Chaining does not involve task analysis']
+  },
+  {
+    id: 'rr-task-analysis',
+    term: 'Task Analysis',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'The process of breaking a complex behavior chain into its component stimulus-response steps to create a teachable sequence.',
+    distractors: ['A functional analysis of the variables maintaining a behavior', 'A preference assessment identifying preferred stimuli', 'A measurement procedure for recording behavior frequency', 'A graph of behavior data over time'],
+    commonMisconceptions: ['Task analysis is the same as functional behavior assessment', 'Task analysis is only used for academic skills', 'Task analysis does not require identifying discriminative stimuli', 'Task analysis produces a list of reinforcers, not steps']
+  },
+  {
+    id: 'rr-forward-chaining',
+    term: 'Forward Chaining',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A chaining procedure in which the first step is taught first; the trainer completes all remaining steps after the learner\'s trained steps.',
+    distractors: ['A chaining procedure in which the last step is taught first', 'A chaining procedure in which all steps are trained simultaneously', 'A chaining procedure in which the most difficult step is trained first', 'A chaining procedure in which steps are taught in random order'],
+    commonMisconceptions: ['Forward chaining begins with the last step of the task', 'Forward chaining and backward chaining produce identical outcomes', 'Forward chaining does not require a task analysis', 'In forward chaining, the learner performs all steps on every trial']
+  },
+  {
+    id: 'rr-backward-chaining',
+    term: 'Backward Chaining',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A chaining procedure in which the last step is taught first; the trainer completes all preceding steps, and the learner performs only the final step, which is immediately followed by the terminal reinforcer.',
+    distractors: ['A chaining procedure in which the first step is taught first', 'A chaining procedure in which all steps are trained simultaneously', 'A chaining procedure in which steps are taught in reverse order without the trainer completing preceding steps', 'A chaining procedure in which the most difficult step is trained first'],
+    commonMisconceptions: ['Backward chaining begins with the first step of the task', 'In backward chaining, the learner performs all steps on every trial', 'Backward chaining does not use a task analysis', 'Backward chaining is the same as total-task chaining']
+  },
+  {
+    id: 'rr-total-task-chaining',
+    term: 'Total-Task Chaining',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A chaining procedure in which the learner performs every step of the task analysis on every training trial, with the trainer providing prompts as needed for steps not yet performed independently.',
+    distractors: ['A chaining procedure in which only one step is trained per session', 'A chaining procedure in which the last step is trained first', 'A chaining procedure in which the first step is trained first', 'A chaining procedure in which steps are trained in random order'],
+    commonMisconceptions: ['Total-task chaining is the same as forward chaining', 'In total-task chaining, the trainer completes steps the learner cannot perform', 'Total-task chaining does not require a task analysis', 'Total-task chaining is only used for short behavior chains']
+  },
+  {
+    id: 'rr-extinction',
+    term: 'Extinction',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A procedure in which reinforcement that previously followed a behavior is discontinued, resulting in a decrease in the future frequency of that behavior.',
+    distractors: ['A procedure in which a punisher is delivered contingent on a behavior', 'A procedure in which a reinforcer is delivered on an intermittent schedule', 'A procedure in which the SD is removed to reduce behavior', 'A procedure in which the response requirement is increased'],
+    commonMisconceptions: ['Extinction and punishment are the same procedure', 'Extinction always produces an immediate decrease in behavior', 'Extinction can only be used for attention-maintained behavior', 'Extinction does not affect the future frequency of behavior']
+  },
+  {
+    id: 'rr-escape-extinction',
+    term: 'Escape Extinction',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A form of extinction for behavior maintained by negative reinforcement (escape), in which the aversive stimulus is no longer removed contingent on the problem behavior.',
+    distractors: ['A form of extinction for behavior maintained by positive reinforcement', 'A procedure in which escape is provided contingent on appropriate behavior', 'A procedure in which the aversive stimulus is removed before the behavior occurs', 'A procedure in which punishment is used to reduce escape behavior'],
+    commonMisconceptions: ['Escape extinction is used for attention-maintained behavior', 'In escape extinction, demands are removed when problem behavior occurs', 'Escape extinction and extinction are different procedures', 'Escape extinction does not require identifying the function of behavior']
+  },
+  {
+    id: 'rr-extinction-burst',
+    term: 'Extinction Burst',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'The temporary increase in frequency, duration, intensity, or variability of a previously reinforced behavior when extinction is first implemented.',
+    distractors: ['The permanent increase in behavior that occurs when extinction is implemented', 'The decrease in behavior that occurs immediately when extinction is implemented', 'The spontaneous recovery of behavior after extinction is complete', 'The generalization of extinction effects to other behaviors'],
+    commonMisconceptions: ['Extinction bursts indicate that extinction is not working', 'Extinction bursts are permanent increases in behavior', 'Extinction bursts only occur with attention-maintained behavior', 'Extinction bursts do not include increases in response variability']
+  },
+  {
+    id: 'rr-spontaneous-recovery',
+    term: 'Spontaneous Recovery',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'The reappearance of a previously extinguished behavior after a period of time has elapsed since extinction was in effect, without additional reinforcement.',
+    distractors: ['The permanent return of a behavior after extinction', 'The increase in behavior that occurs when extinction is first implemented', 'The generalization of extinction effects to new settings', 'The transfer of behavior control from a prompt to the SD'],
+    commonMisconceptions: ['Spontaneous recovery indicates that extinction failed', 'Spontaneous recovery is permanent and requires re-extinction', 'Spontaneous recovery only occurs with punishment procedures', 'Spontaneous recovery is the same as resurgence']
+  },
+  {
+    id: 'rr-resurgence',
+    term: 'Resurgence',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'The reappearance of a previously extinguished behavior when a more recently reinforced alternative behavior is placed on extinction.',
+    distractors: ['The reappearance of behavior after a period of time without reinforcement', 'The increase in behavior that occurs when extinction is first implemented', 'The generalization of a trained behavior to new settings', 'The transfer of stimulus control from a prompt to the SD'],
+    commonMisconceptions: ['Resurgence and spontaneous recovery are the same phenomenon', 'Resurgence only occurs with self-injurious behavior', 'Resurgence indicates that the original extinction was ineffective', 'Resurgence cannot occur if FCT was used as the alternative behavior']
+  },
+  {
+    id: 'rr-dra',
+    term: 'Differential Reinforcement of Alternative Behavior (DRA)',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'Reinforcement delivered contingent on a specific alternative behavior that serves the same function as the problem behavior, while the problem behavior is placed on extinction.',
+    distractors: ['Reinforcement delivered contingent on the absence of the problem behavior for a specified interval', 'Reinforcement delivered contingent on a behavior that is physically incompatible with the problem behavior', 'Reinforcement delivered contingent on low rates of the problem behavior', 'Reinforcement delivered on a noncontingent schedule to reduce the EO'],
+    commonMisconceptions: ['DRA does not require extinction of the problem behavior', 'DRA is the same as DRI', 'DRA reinforces the problem behavior at low rates', 'DRA and DRO are identical procedures']
+  },
+  {
+    id: 'rr-dri',
+    term: 'Differential Reinforcement of Incompatible Behavior (DRI)',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'Reinforcement delivered contingent on a behavior that is physically incompatible with the problem behavior, while the problem behavior is placed on extinction.',
+    distractors: ['Reinforcement delivered contingent on a specific alternative behavior serving the same function', 'Reinforcement delivered contingent on the absence of the problem behavior', 'Reinforcement delivered contingent on low rates of the problem behavior', 'Reinforcement delivered on a noncontingent schedule'],
+    commonMisconceptions: ['DRI is the same as DRA', 'DRI does not require the behaviors to be physically incompatible', 'DRI reinforces the problem behavior at reduced rates', 'DRI does not require extinction of the problem behavior']
+  },
+  {
+    id: 'rr-dro',
+    term: 'Differential Reinforcement of Other Behavior (DRO)',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'Reinforcement delivered contingent on the absence of the target problem behavior for a specified interval of time.',
+    distractors: ['Reinforcement delivered contingent on a specific alternative behavior', 'Reinforcement delivered contingent on a physically incompatible behavior', 'Reinforcement delivered contingent on low rates of the problem behavior', 'Reinforcement delivered on a fixed-time schedule regardless of behavior'],
+    commonMisconceptions: ['DRO reinforces the absence of all behavior', 'DRO is the same as NCR', 'DRO does not use a time interval', 'DRO and DRA are identical procedures']
+  },
+  {
+    id: 'rr-drl',
+    term: 'Differential Reinforcement of Low Rates (DRL)',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'Reinforcement delivered when the rate of a behavior is at or below a specified criterion level; used to reduce frequency of a behavior appropriate in some quantities but problematic when too frequent.',
+    distractors: ['Reinforcement delivered contingent on the absence of the behavior for a specified interval', 'Reinforcement delivered contingent on a physically incompatible behavior', 'Reinforcement delivered contingent on a specific alternative behavior', 'Reinforcement delivered on a noncontingent schedule'],
+    commonMisconceptions: ['DRL eliminates the target behavior entirely', 'DRL is the same as DRO', 'DRL reinforces the behavior at high rates', 'DRL does not require specifying a criterion rate']
+  },
+  {
+    id: 'rr-ncr',
+    term: 'Noncontingent Reinforcement (NCR)',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A procedure in which a reinforcer is delivered on a fixed-time or variable-time schedule independent of any specific behavior; functions as an antecedent intervention by abolishing the EO for problem behavior.',
+    distractors: ['Reinforcement delivered contingent on the absence of problem behavior', 'Reinforcement delivered contingent on a specific alternative behavior', 'Reinforcement delivered contingent on low rates of problem behavior', 'Reinforcement delivered contingent on a physically incompatible behavior'],
+    commonMisconceptions: ['NCR is a consequence-based procedure', 'NCR and DRO are the same procedure', 'NCR reinforces appropriate behavior contingently', 'NCR increases the EO for problem behavior']
+  },
+  {
+    id: 'rr-high-p-sequence',
+    term: 'High-Probability Request Sequence (High-p)',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'An antecedent intervention in which high-p requests are presented immediately before a low-p request, using behavioral momentum to increase compliance.',
+    distractors: ['A punishment procedure for reducing noncompliance', 'A shaping procedure for building compliance gradually', 'A chaining procedure for teaching multi-step compliance', 'A DRL procedure for reducing noncompliance frequency'],
+    commonMisconceptions: ['High-p requests are presented after the low-p request', 'High-p sequences are a consequence-based procedure', 'High-p sequences are used to reduce the rate of compliant behavior', 'High-p sequences require the low-p request to be presented first']
+  },
+  {
+    id: 'rr-token-economy',
+    term: 'Token Economy',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A behavior change system in which conditioned reinforcers (tokens) are delivered contingent on target behaviors and later exchanged for backup reinforcers.',
+    distractors: ['A system in which backup reinforcers are delivered directly contingent on behavior', 'A system in which behavior is reduced through response cost only', 'A system in which group contingencies determine individual reinforcement', 'A system in which reinforcement is delivered on a noncontingent schedule'],
+    commonMisconceptions: ['Tokens are primary reinforcers', 'Token economies cannot include response cost', 'Token economies are only used with children', 'Backup reinforcers are delivered immediately without token exchange']
+  },
+  {
+    id: 'rr-group-contingency',
+    term: 'Group Contingency',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A behavior change procedure in which consequences for individuals are determined by the behavior of the group, a subset, or an individual member; can be dependent, independent, or interdependent.',
+    distractors: ['A procedure in which each individual\'s consequences are determined solely by their own behavior', 'A procedure in which consequences are delivered noncontingently to the group', 'A procedure in which group members compete for a single reinforcer', 'A procedure in which the group selects the target behavior'],
+    commonMisconceptions: ['All group contingencies are interdependent', 'Group contingencies always require all members to meet the criterion', 'Group contingencies cannot be used with adults', 'Dependent and interdependent group contingencies are identical']
+  },
+  {
+    id: 'rr-self-management',
+    term: 'Self-Management',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'The personal application of behavior change tactics to produce a desired change in one\'s own behavior by arranging antecedents and consequences.',
+    distractors: ['The application of behavior change tactics by a therapist to change a client\'s behavior', 'The use of medication to manage one\'s own behavior', 'The process of observing and recording another person\'s behavior', 'The arrangement of group contingencies by a supervisor'],
+    commonMisconceptions: ['Self-management only involves self-monitoring', 'Self-management is not a behavior analytic procedure', 'Self-management cannot include antecedent manipulation', 'Self-management requires a therapist to deliver consequences']
+  },
+  {
+    id: 'rr-self-monitoring',
+    term: 'Self-Monitoring',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A self-management procedure in which an individual observes and records their own behavior; serves as both a data collection method and a behavior change procedure through reactivity.',
+    distractors: ['A procedure in which a therapist observes and records a client\'s behavior', 'A procedure in which behavior is recorded by an automated device', 'A procedure in which a supervisor monitors an employee\'s performance', 'A procedure in which a parent records a child\'s behavior'],
+    commonMisconceptions: ['Self-monitoring does not change behavior', 'Self-monitoring is the same as self-evaluation', 'Self-monitoring requires another person to verify the data', 'Self-monitoring is only used for decreasing behavior']
+  },
+  {
+    id: 'rr-generalization-probe',
+    term: 'Generalization Probe',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A measurement procedure assessing the target behavior in a non-training context without reinforcement, to determine whether generalization has occurred.',
+    distractors: ['A measurement procedure assessing behavior during training with reinforcement', 'A functional analysis conducted in the natural environment', 'A preference assessment conducted in a novel setting', 'A baseline measurement conducted before intervention'],
+    commonMisconceptions: ['Generalization probes include reinforcement for correct responses', 'Generalization probes are conducted in the training setting', 'Generalization probes are the same as baseline probes', 'Generalization probes require prompting to assess performance']
+  },
+  {
+    id: 'rr-response-maintenance',
+    term: 'Response Maintenance',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'The continuation of a target behavior after training contingencies have been thinned or removed.',
+    distractors: ['The occurrence of a trained behavior in new settings without direct training', 'The occurrence of untrained response variations in the presence of the trained SD', 'The occurrence of behavior change in untrained individuals', 'The transfer of stimulus control from a prompt to the SD'],
+    commonMisconceptions: ['Response maintenance is the same as generalization', 'Response maintenance refers to behavior during active training', 'Response maintenance and response generalization are identical', 'Response maintenance only applies to newly acquired behaviors']
+  },
+  {
+    id: 'rr-behavior-trap',
+    term: 'Behavior Trap',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A naturally occurring contingency that traps a newly acquired behavior by providing rich, naturally occurring reinforcement, maintaining it without continued programmed intervention.',
+    distractors: ['A programmed reinforcement contingency arranged by a behavior analyst', 'A punishment contingency that reduces behavior in the natural environment', 'A group contingency that maintains behavior through peer pressure', 'A token economy that bridges training and natural reinforcement'],
+    commonMisconceptions: ['Behavior traps are arranged by the behavior analyst', 'Behavior traps require continued programmed intervention', 'Behavior traps only work for academic skills', 'Behavior traps are the same as contrived contingencies']
+  },
+  {
+    id: 'rr-program-common-stimuli',
+    term: 'Program Common Stimuli',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A generalization strategy in which stimuli from the generalization setting are incorporated into the training setting, so the trained behavior comes under the control of stimuli present in the natural environment.',
+    distractors: ['A strategy in which training is conducted across multiple examples of the stimulus class', 'A strategy in which the training setting is moved to the generalization setting', 'A strategy in which naturally occurring reinforcers are identified and used during training', 'A strategy in which the number of training trials is increased'],
+    commonMisconceptions: ['Programming common stimuli means training in the generalization setting', 'Programming common stimuli is the same as multiple-exemplar training', 'Programming common stimuli only applies to verbal behavior', 'Programming common stimuli eliminates the need for generalization probes']
+  },
+  {
+    id: 'rr-multiple-exemplar-training',
+    term: 'Multiple-Exemplar Training',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A generalization strategy in which training is conducted across multiple examples of the stimulus class so the trained behavior generalizes to untrained members of the same class.',
+    distractors: ['A strategy in which training stimuli from the generalization setting are used during training', 'A strategy in which the same example is used repeatedly to ensure mastery', 'A strategy in which the learner is trained in multiple settings simultaneously', 'A strategy in which multiple trainers deliver the same instruction'],
+    commonMisconceptions: ['Multiple-exemplar training uses a single example to ensure mastery', 'Multiple-exemplar training is the same as programming common stimuli', 'Multiple-exemplar training only applies to receptive identification', 'Multiple-exemplar training eliminates the need for generalization probes']
+  },
+  {
+    id: 'rr-general-case-analysis',
+    term: 'General Case Analysis',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
+    correctDefinition: 'A generalization strategy in which the full range of stimulus and response variations in the generalization setting is analyzed and training examples are selected to sample the full range.',
+    distractors: ['A functional analysis of the variables maintaining a behavior', 'A task analysis of the steps in a behavior chain', 'A preference assessment identifying the full range of preferred stimuli', 'A data analysis procedure for identifying trends in behavior'],
+    commonMisconceptions: ['General case analysis is the same as task analysis', 'General case analysis is only used for self-care skills', 'General case analysis does not require analyzing the generalization setting', 'General case analysis produces a list of reinforcers, not training examples']
+  },
 ];
