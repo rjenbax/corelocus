@@ -86,9 +86,9 @@ function useWeakTaskItems(count = 5): string[] {
     rapidRecallItems.forEach(item => {
       const p = progress.rapidRecall.find(r => r.termId === item.id);
       if (p && (p.correct + p.incorrect) > 0) {
-        scores[item.taskItem].seen = true;
-        scores[item.taskItem].total += p.correct + p.incorrect;
-        scores[item.taskItem].correct += p.correct;
+        if (item.taskItem) scores[item.taskItem].seen = true;
+        if (item.taskItem) scores[item.taskItem].total += p.correct + p.incorrect;
+        if (item.taskItem) scores[item.taskItem].correct += p.correct;
       }
     });
 
@@ -142,9 +142,9 @@ function buildSession(weakCodes: string[]): PracticeItem[] {
         taskCode: code,
         id: pick.id,
         term: pick.term,
-        correctDefinition: pick.correctDefinition,
-        distractors: pick.distractors,
-        domain: pick.domain,
+        correctDefinition: pick.correctDefinition ?? '',
+        distractors: pick.distractors ?? [],
+        domain: pick.domain ?? 'A',
       });
     }
 
@@ -162,7 +162,7 @@ function buildSession(weakCodes: string[]): PracticeItem[] {
         id: pick.id,
         concept: pick.concept,
         definition: pick.definition,
-        domain: pick.domain,
+        domain: pick.domain ?? 'A',
         scenarios: pick.scenarios,
       });
     }

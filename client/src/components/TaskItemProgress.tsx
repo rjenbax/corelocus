@@ -54,11 +54,12 @@ function useTaskItemStats(): TaskItemStats[] {
     // Rapid Recall: termId → taskItem
     const rrByTask: Record<string, { correct: number; total: number }> = {};
     rapidRecallItems.forEach(item => {
+      if (!item.taskItem) return;
       if (!rrByTask[item.taskItem]) rrByTask[item.taskItem] = { correct: 0, total: 0 };
       const p = progress.rapidRecall.find(r => r.termId === item.id);
       if (p) {
-        rrByTask[item.taskItem].correct += p.correct;
-        rrByTask[item.taskItem].total += p.correct + p.incorrect;
+        if (item.taskItem) rrByTask[item.taskItem].correct += p.correct;
+        if (item.taskItem) rrByTask[item.taskItem].total += p.correct + p.incorrect;
       }
     });
 

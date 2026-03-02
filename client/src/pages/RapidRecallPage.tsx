@@ -49,12 +49,12 @@ function shuffle<T>(arr: T[]): T[] {
 interface MissedTermEntry {
   id: string;
   term: string;
-  correctDefinition: string;
-  distractors: string[];
-  misconceptions: string[];
-  domain: string;
-  taskItem: string;
-  category: string;
+  correctDefinition?: string;
+  distractors?: string[];
+  misconceptions?: string[];
+  domain?: string;
+  taskItem?: string;
+  category?: string;
   correct: number;
   incorrect: number;
   accuracy: number;
@@ -239,7 +239,7 @@ function MissedItemsPanel({
                       Common Distractors (Wrong Definitions)
                     </p>
                     <div className="space-y-1.5">
-                      {entry.distractors.slice(0, 3).map((d, i) => (
+                      {(entry.distractors ?? []).slice(0, 3).map((d, i) => (
                         <div key={i} className="flex items-start gap-2 px-3 py-2 rounded-lg border border-red-100 bg-red-50/50">
                           <XCircle className="w-3.5 h-3.5 text-red-400 flex-shrink-0 mt-0.5" />
                           <p className="text-xs text-red-700/80 leading-relaxed">{d}</p>
@@ -249,13 +249,13 @@ function MissedItemsPanel({
                   </div>
 
                   {/* Misconceptions / weak boundaries */}
-                  {entry.misconceptions.length > 0 && (
+                  {(entry.misconceptions?.length ?? 0) > 0 && (
                     <div>
                       <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">
                         Watch Out For These Misconceptions
                       </p>
                       <div className="space-y-1.5">
-                        {entry.misconceptions.map((m, i) => (
+                        {(entry.misconceptions ?? []).map((m, i) => (
                           <div key={i} className="flex items-start gap-2 px-3 py-2 rounded-lg border border-teal-200 bg-teal-50">
                             <AlertTriangle className="w-3.5 h-3.5 text-teal-600 flex-shrink-0 mt-0.5" />
                             <p className="text-xs text-teal-800 leading-relaxed">{m}</p>
@@ -337,7 +337,7 @@ function CategoryAccordion({
     const map = new Map<string, typeof rapidRecallItems>();
     DOMAIN_ORDER.forEach(d => map.set(d, []));
     items.forEach(item => {
-      const d = item.domain;
+      const d = item.domain ?? 'B';
       if (!map.has(d)) map.set(d, []);
       map.get(d)!.push(item);
     });
@@ -478,7 +478,7 @@ export default function RapidRecallPage() {
   // Build shuffled choices for current item
   const choices = useMemo(() => {
     if (!currentItem) return [];
-    return shuffle([currentItem.correctDefinition, ...currentItem.distractors.slice(0, 3)]);
+    return shuffle([currentItem.correctDefinition ?? '', ...(currentItem.distractors ?? []).slice(0, 3)]);
   }, [currentItem]);
 
   // Missed items: terms with more incorrect than correct (or 0 correct and ≥1 incorrect)
@@ -565,7 +565,7 @@ export default function RapidRecallPage() {
       if (!item) return;
       if (selectedDomain !== 'All' && item.domain !== selectedDomain) return;
       r.weakBoundaries.forEach(wb => {
-        const misconception = item.misconceptions.find(m => m === wb.misconceptionId) ?? wb.misconceptionId;
+        const misconception = (item.misconceptions ?? []).find(m => m === wb.misconceptionId) ?? wb.misconceptionId;
         all.push({ termId: r.termId, term: item.term, misconception, count: wb.count });
       });
     });
@@ -624,7 +624,7 @@ export default function RapidRecallPage() {
               return (
                 <button
                   key={i}
-                  onClick={() => !showFeedback && handleAnswer(choice)}
+                  onClick={() => !showFeedback && handleAnswer(choice ?? null)}
                   disabled={showFeedback}
                   className={cn(
                     "w-full text-left p-4 rounded-xl border-2 text-sm leading-relaxed transition-all",
@@ -651,14 +651,14 @@ export default function RapidRecallPage() {
 
           {showFeedback && (
             <div className="space-y-3">
-              {selectedAnswer !== currentItem.correctDefinition && currentItem.misconceptions.length > 0 && (
+              {selectedAnswer !== currentItem.correctDefinition && (currentItem.misconceptions?.length ?? 0) > 0 && (
                 <div className="p-3 bg-teal-50 border border-teal-200 rounded-lg">
                   <div className="flex items-center gap-1.5 text-xs font-semibold text-teal-800 mb-1.5">
                     <AlertTriangle className="w-3.5 h-3.5" />
                     Common misconceptions about {currentItem.term}:
                   </div>
                   <ul className="space-y-1">
-                    {currentItem.misconceptions.slice(0, 2).map((m, i) => (
+                    {(currentItem.misconceptions ?? []).slice(0, 2).map((m, i) => (
                       <li key={i} className="text-xs text-teal-800 flex items-start gap-1.5">
                         <span className="text-teal-500 mt-0.5">✗</span>
                         <span>{m}</span>
