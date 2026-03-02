@@ -4565,5 +4565,2282 @@ export const rapidRecallItems: RapidRecallItem[] = [
     domain: 'B',
     taskItem: 'B.19',
     category: 'Verbal Behavior'
+  },
+
+  {
+    id: 'rr-antecedent',
+    domain: 'B',
+    term: 'Antecedent',
+    correctDefinition: 'Any environmental condition or change in condition that precedes a behavior and may influence its occurrence.',
+    distractors: [
+      'The behavior itself, not what comes before it',
+      'The consequence that follows a behavior',
+      'A reinforcer delivered after a response',
+    ],
+    misconceptions: [
+      'Antecedents always cause behavior (incorrect — they set the occasion for behavior, not cause it)',
+      'Antecedents are only external stimuli (incorrect — internal states can also function as antecedents)',
+      'The SD and the antecedent are different things (incorrect — the SD is a type of antecedent)',
+    ],
+  },
+  {
+    id: 'rr-three-term-contingency',
+    domain: 'B',
+    term: 'Three-Term Contingency',
+    correctDefinition: 'The fundamental unit of operant analysis: antecedent stimulus → behavior → consequence; also called the ABCs of behavior.',
+    distractors: [
+      'Two-term contingency: behavior and consequence only',
+      'Four-term contingency: setting event, antecedent, behavior, consequence',
+      'The operant: behavior and its reinforcement history',
+    ],
+    misconceptions: [
+      'The three-term contingency is the same as the two-term contingency (incorrect — the antecedent is a distinct third term)',
+      'Setting events are part of the three-term contingency (incorrect — they are a fourth term added to the extended analysis)',
+      'The three-term contingency only applies to positive reinforcement (incorrect — it applies to all operant contingencies)',
+    ],
+  },
+  {
+    id: 'rr-respondent-behavior',
+    domain: 'B',
+    term: 'Respondent Behavior',
+    correctDefinition: 'Behavior elicited by an antecedent stimulus that occurs reflexively, without requiring prior learning of the specific stimulus-response relationship.',
+    distractors: [
+      'Operant behavior: behavior controlled by its consequences',
+      'Verbal behavior: behavior reinforced through social mediation',
+      'Rule-governed behavior: behavior controlled by verbal rules',
+    ],
+    misconceptions: [
+      'Respondent behavior can be strengthened by reinforcement (incorrect — it is elicited, not reinforced)',
+      'Respondent behavior only occurs in animals (incorrect — humans show respondent behavior too)',
+      'Respondent behavior is the same as voluntary behavior (incorrect — it is involuntary and reflexive)',
+    ],
+  },
+  {
+    id: 'rr-operant-behavior',
+    domain: 'B',
+    term: 'Operant Behavior',
+    correctDefinition: 'Behavior selected, maintained, and brought under stimulus control by its consequences; behavior that operates on the environment to produce consequences.',
+    distractors: [
+      'Respondent behavior: behavior elicited by antecedent stimuli',
+      'Reflexive behavior: automatic, unlearned stimulus-response relations',
+      'Instinctive behavior: behavior determined entirely by phylogeny',
+    ],
+    misconceptions: [
+      'Operant behavior is caused by antecedents (incorrect — it is selected by consequences)',
+      'Operant behavior cannot be influenced by antecedents (incorrect — SDs set the occasion for operant behavior)',
+      'All operant behavior is voluntary (incorrect — the distinction between voluntary and involuntary is not the defining feature)',
+    ],
+  },
+  {
+    id: 'rr-behavioral-cusp',
+    domain: 'B',
+    term: 'Behavioral Cusp',
+    correctDefinition: 'A behavior change that opens access to new reinforcers, contingencies, and environments beyond the change itself.',
+    distractors: [
+      'Pivotal behavior: a behavior whose change produces collateral improvements in other behaviors',
+      'Target behavior: any behavior selected for change in an intervention',
+      'Keystone behavior: a behavior that supports multiple other behaviors',
+    ],
+    misconceptions: [
+      'Behavioral cusp and pivotal behavior are the same thing (incorrect — a cusp opens new environments; a pivotal behavior produces collateral changes)',
+      'A behavioral cusp only applies to language (incorrect — any behavior that opens new contingencies qualifies)',
+      'Behavioral cusps are always socially significant (incorrect — significance is assessed separately)',
+    ],
+  },
+  {
+    id: 'rr-positive-reinforcer',
+    domain: 'B',
+    term: 'Positive Reinforcer',
+    correctDefinition: 'A stimulus whose presentation following a behavior increases the future frequency of that behavior under similar conditions.',
+    distractors: [
+      'Negative reinforcer: a stimulus whose removal increases future behavior',
+      'Punisher: a stimulus whose presentation decreases future behavior',
+      'Conditioned reinforcer: a stimulus that acquires reinforcing value through pairing',
+    ],
+    misconceptions: [
+      'A positive reinforcer is anything the person likes (incorrect — it is defined by its effect on behavior, not preference)',
+      'Positive reinforcement always involves adding something pleasant (incorrect — it is defined by the increase in future behavior)',
+      'A positive reinforcer is the same as a reward (incorrect — a reward is defined by social convention, not by its behavioral effect)',
+    ],
+  },
+  {
+    id: 'rr-premack-principle',
+    domain: 'B',
+    term: 'Premack Principle',
+    correctDefinition: 'A higher-probability behavior can reinforce a lower-probability behavior when access to the high-probability behavior is made contingent on the low-probability behavior.',
+    distractors: [
+      'Response-deprivation hypothesis: any behavior below its baseline rate can function as a reinforcer',
+      'Matching law: response rates match relative reinforcement rates across concurrent schedules',
+      'Behavioral momentum: high-rate behavior in a context resists disruption',
+    ],
+    misconceptions: [
+      'The Premack Principle only applies to preferred activities (incorrect — it applies to any high-probability behavior)',
+      'The Premack Principle is the same as the response-deprivation hypothesis (incorrect — the RDH is a more precise formulation that supersedes the Premack Principle)',
+      'The Premack Principle requires the person to enjoy the high-probability activity (incorrect — it is defined by relative response rates, not enjoyment)',
+    ],
+  },
+  {
+    id: 'rr-avoidance-contingency',
+    domain: 'B',
+    term: 'Avoidance Contingency',
+    correctDefinition: 'A negative reinforcement contingency in which behavior prevents the onset of an aversive stimulus that has not yet occurred.',
+    distractors: [
+      'Escape contingency: behavior terminates an aversive stimulus already present',
+      'Punishment contingency: behavior produces an aversive stimulus',
+      'Extinction contingency: behavior no longer produces reinforcement',
+    ],
+    misconceptions: [
+      'Avoidance and escape are the same contingency (incorrect — avoidance prevents onset; escape terminates an ongoing aversive stimulus)',
+      'Avoidance behavior is always maladaptive (incorrect — many adaptive behaviors are maintained by avoidance contingencies)',
+      'Avoidance contingencies involve positive reinforcement (incorrect — they involve negative reinforcement)',
+    ],
+  },
+  {
+    id: 'rr-postreinforcement-pause',
+    domain: 'B',
+    term: 'Postreinforcement Pause',
+    correctDefinition: 'A period of no or low responding immediately after reinforcement delivery, most prominently observed on fixed-ratio and fixed-interval schedules.',
+    distractors: [
+      'Ratio strain: disrupted responding from too-rapid ratio increases',
+      'Extinction burst: temporary increase in responding when reinforcement is withheld',
+      'Behavioral contrast: increased responding in one schedule component when reinforcement is reduced in another',
+    ],
+    misconceptions: [
+      'Postreinforcement pauses occur on all schedules (incorrect — they are most prominent on fixed schedules)',
+      'The postreinforcement pause is the same as ratio strain (incorrect — ratio strain involves emotional behavior and cessation; the pause is a normal schedule effect)',
+      'Postreinforcement pauses indicate the behavior is being extinguished (incorrect — they are a normal feature of fixed-schedule performance)',
+    ],
+  },
+  {
+    id: 'rr-schedule-thinning',
+    domain: 'B',
+    term: 'Schedule Thinning',
+    correctDefinition: 'The systematic process of gradually increasing the response requirement or time interval between reinforcements to shift from a dense to a leaner schedule.',
+    distractors: [
+      'Extinction: complete removal of reinforcement for a behavior',
+      'Ratio strain: disrupted responding from too-rapid ratio increases',
+      'Fading: gradual removal of prompts to promote independent responding',
+    ],
+    misconceptions: [
+      'Schedule thinning is the same as extinction (incorrect — schedule thinning maintains reinforcement at a lower density; extinction removes it entirely)',
+      'Schedule thinning always causes ratio strain (incorrect — gradual thinning prevents ratio strain)',
+      'Schedule thinning only applies to ratio schedules (incorrect — it applies to both ratio and interval schedules)',
+    ],
+  },
+  {
+    id: 'rr-response-cost',
+    domain: 'B',
+    term: 'Response Cost',
+    correctDefinition: 'A negative punishment procedure in which a specified amount of a reinforcer is contingently removed following each occurrence of problem behavior.',
+    distractors: [
+      'Time-out: removal of access to all reinforcement for a period',
+      'Overcorrection: requiring the individual to practice correct behavior or restore the environment',
+      'Response blocking: physically preventing completion of a problem behavior',
+    ],
+    misconceptions: [
+      'Response cost is a positive punishment procedure (incorrect — it is negative punishment because a reinforcer is removed)',
+      'Response cost and time-out are the same procedure (incorrect — response cost removes a specific reinforcer; time-out removes access to all reinforcement)',
+      'Response cost only works with token economies (incorrect — it can be applied to any quantifiable reinforcer)',
+    ],
+  },
+  {
+    id: 'rr-time-out',
+    domain: 'B',
+    term: 'Time-Out from Positive Reinforcement',
+    correctDefinition: 'A negative punishment procedure in which access to sources of positive reinforcement is contingently removed for a specified period following problem behavior.',
+    distractors: [
+      'Response cost: removal of a specific quantity of a reinforcer',
+      'Extinction: withholding reinforcement that previously maintained a behavior',
+      'Planned ignoring: withholding social attention contingent on problem behavior',
+    ],
+    misconceptions: [
+      'Time-out is a positive punishment procedure (incorrect — it is negative punishment because access to reinforcement is removed)',
+      'Time-out is effective regardless of the maintaining reinforcer (incorrect — it is only effective when the maintained reinforcer is present in the environment)',
+      'Time-out requires physical removal from the room (incorrect — nonexclusion time-out keeps the individual in the environment)',
+    ],
+  },
+  {
+    id: 'rr-abative-effect',
+    domain: 'B',
+    term: 'Abative Effect',
+    correctDefinition: 'The effect of an abolishing operation that decreases the current reinforcing value of a stimulus and decreases the current frequency of behavior reinforced by that stimulus.',
+    distractors: [
+      'Evocative effect: the behavior-altering effect of an establishing operation that increases behavior',
+      'Reinforcer-establishing effect: the value-altering effect of an EO that increases reinforcing value',
+      'Punishing effect: a consequence that decreases future behavior',
+    ],
+    misconceptions: [
+      'The abative effect only applies to food and water (incorrect — it applies to any reinforcer affected by an abolishing operation)',
+      'The abative effect is the same as extinction (incorrect — extinction removes reinforcement; the abative effect reduces the value of the reinforcer)',
+      'The abative effect and the reinforcer-abolishing effect are different things (incorrect — they are the same effect described from different perspectives)',
+    ],
+  },
+  {
+    id: 'rr-cmo-r',
+    domain: 'B',
+    term: 'Reflexive CMO (CMO-R)',
+    correctDefinition: 'A conditioned motivating operation that has acquired its MO properties by being paired with worsening conditions; its presence signals that conditions are about to worsen.',
+    distractors: [
+      'Transitive CMO (CMO-T): establishes the reinforcing value of a stimulus needed to obtain another reinforcer',
+      'Surrogate CMO (CMO-S): acquires MO properties by pairing with an unconditioned MO',
+      'Establishing operation (EO): increases the reinforcing value of a stimulus',
+    ],
+    misconceptions: [
+      'The CMO-R is the same as the CMO-T (incorrect — CMO-R signals worsening; CMO-T establishes instrumental stimuli as reinforcers)',
+      'The CMO-R is an unconditioned MO (incorrect — it is conditioned through pairing with aversive events)',
+      'The CMO-R only evokes escape behavior (incorrect — it also increases the reinforcing value of escape-producing stimuli)',
+    ],
+  },
+  {
+    id: 'rr-stimulus-fading',
+    domain: 'B',
+    term: 'Stimulus Fading',
+    correctDefinition: 'A procedure for transferring stimulus control in which the properties of the SD are gradually changed while the learner continues to respond correctly.',
+    distractors: [
+      'Response fading: gradual reduction of prompts to promote independent responding',
+      'Errorless learning: a teaching procedure that prevents errors by providing prompts before incorrect responses occur',
+      'Stimulus shaping: gradually changing the form of a stimulus across trials',
+    ],
+    misconceptions: [
+      'Stimulus fading and prompt fading are the same procedure (incorrect — stimulus fading changes the SD itself; prompt fading removes supplementary stimuli)',
+      'Stimulus fading always involves reducing the intensity of the SD (incorrect — it can involve changes in any dimension of the SD)',
+      'Stimulus fading is only used in errorless learning (incorrect — it can be used in any procedure that requires transfer of stimulus control)',
+    ],
+  },
+  {
+    id: 'rr-conditional-discrimination',
+    domain: 'B',
+    term: 'Conditional Discrimination',
+    correctDefinition: 'A discrimination in which the correct response to a comparison stimulus depends on the value of a sample or contextual stimulus.',
+    distractors: [
+      'Simple discrimination: responding to one stimulus is reinforced and responding to another is not',
+      'Stimulus generalization: responding to stimuli similar to the original SD',
+      'Matching-to-sample: a procedure used to train conditional discriminations',
+    ],
+    misconceptions: [
+      'Conditional discrimination is the same as simple discrimination (incorrect — in conditional discrimination, the correct response depends on context)',
+      'Matching-to-sample is a conditional discrimination (incorrect — matching-to-sample is a procedure used to train conditional discriminations, not a discrimination itself)',
+      'Conditional discriminations cannot be trained (incorrect — they are routinely trained using matching-to-sample procedures)',
+    ],
+  },
+  {
+    id: 'rr-verbal-episode',
+    domain: 'B',
+    term: 'Verbal Episode',
+    correctDefinition: 'The complete interaction between a speaker and a listener in which the speaker\'s verbal behavior is reinforced through the listener\'s mediation.',
+    distractors: [
+      'Verbal operant: a functional unit of verbal behavior (mand, tact, echoic, etc.)',
+      'Verbal community: the group of listeners who reinforce a speaker\'s verbal behavior',
+      'Verbal behavior: behavior reinforced through the mediation of another person',
+    ],
+    misconceptions: [
+      'A verbal episode requires spoken language (incorrect — it can involve any form of verbal behavior including written, signed, or gestural)',
+      'The verbal episode is the same as the verbal operant (incorrect — the episode is the full speaker-listener interaction; the operant is the functional unit)',
+      'A verbal episode ends when the speaker stops talking (incorrect — it ends when the reinforcement cycle is complete)',
+    ],
+  },
+  {
+    id: 'rr-tact-extension',
+    domain: 'B',
+    term: 'Tact Extension',
+    correctDefinition: 'A tact that occurs in the presence of a novel stimulus that shares some properties with the original tact stimulus; the speaker extends an existing tact to a new but related stimulus.',
+    distractors: [
+      'Intraverbal: a verbal operant controlled by another verbal stimulus',
+      'Mand: a verbal operant controlled by a motivating operation and reinforced by a specific consequence',
+      'Echoic: a verbal operant in which the response formally resembles the verbal stimulus',
+    ],
+    misconceptions: [
+      'Tact extension is the same as stimulus generalization (incorrect — tact extension is a specific form of verbal generalization involving tacts)',
+      'Tact extensions are always incorrect responses (incorrect — they are appropriate generalizations of existing tacts to novel stimuli)',
+      'Tact extension requires direct reinforcement of the new response (incorrect — it emerges without direct reinforcement of the extended tact)',
+    ],
+  },
+  {
+    id: 'rr-transfer-of-function',
+    domain: 'B',
+    term: 'Transfer of Function',
+    correctDefinition: 'The process by which the behavioral function of one stimulus in an equivalence class is acquired by other members of the class without direct conditioning.',
+    distractors: [
+      'Derived stimulus relations: untrained stimulus relations that emerge from equivalence class formation',
+      'Stimulus generalization: responding to stimuli similar to the original SD',
+      'Transformation of function: the alteration of psychological functions through relational framing (RFT)',
+    ],
+    misconceptions: [
+      'Transfer of function requires direct conditioning of each class member (incorrect — it occurs without direct conditioning)',
+      'Transfer of function is the same as transformation of function (incorrect — transfer occurs within equivalence classes; transformation occurs through relational frames)',
+      'Transfer of function only applies to reinforcing functions (incorrect — any behavioral function can transfer across equivalence class members)',
+    ],
+  },
+  {
+    id: 'rr-mutual-entailment',
+    domain: 'B',
+    term: 'Mutual Entailment',
+    correctDefinition: 'A property of relational framing in which if A is related to B in a given way, then B is related to A in a derived way; the bidirectional nature of relational frames.',
+    distractors: [
+      'Combinatorial entailment: if A→B and B→C, then A→C and C→A are derived',
+      'Symmetry: a specific form of mutual entailment in equivalence relations',
+      'Transitivity: a derived relation in which A→C follows from A→B and B→C',
+    ],
+    misconceptions: [
+      'Mutual entailment is the same as symmetry (incorrect — symmetry is a specific form of mutual entailment in equivalence relations; mutual entailment is the broader property)',
+      'Mutual entailment only applies to equivalence relations (incorrect — it applies to all relational frames)',
+      'Mutual entailment requires direct training of both directions (incorrect — the reverse relation is derived without direct training)',
+    ],
+  },,
+  {
+    id: 'rr-reinforcement',
+    domain: 'B',
+    term: 'Reinforcement',
+    correctDefinition: 'A process in which a consequence follows a behavior and increases the future frequency of that behavior.',
+    distractors: [
+      'Any pleasant event that follows a behavior',
+      'A process that decreases the future frequency of a behavior',
+      'Providing praise or rewards to motivate someone',
+    ],
+    misconceptions: [
+      'Reinforcement is defined by its effect on behavior, not by whether the consequence seems rewarding or pleasant.'
+    ],
+    domain: 'B',
+    taskItem: 'B.01',
+    category: 'Reinforcement'
+  },
+  {
+    id: 'rr-positive-reinforcement',
+    domain: 'B',
+    term: 'Positive Reinforcement',
+    correctDefinition: 'A process in which a stimulus is added following a behavior and the future frequency of that behavior increases.',
+    distractors: [
+      'Giving praise or rewards to make someone feel good',
+      'A process in which a stimulus is removed following a behavior and behavior increases',
+      'Any consequence that strengthens behavior by adding something negative',
+    ],
+    misconceptions: [
+      'Positive does not mean good or pleasant — it means something is added. The behavior must increase for it to be positive reinforcement.'
+    ],
+    domain: 'B',
+    taskItem: 'B.01',
+    category: 'Reinforcement'
+  },
+  {
+    id: 'rr-negative-reinforcement',
+    domain: 'B',
+    term: 'Negative Reinforcement',
+    correctDefinition: 'A process in which a stimulus is removed or reduced following a behavior and the future frequency of that behavior increases.',
+    distractors: [
+      'Punishment that decreases behavior by removing something pleasant',
+      'A process in which an aversive stimulus is added to decrease behavior',
+      'Withholding reinforcement to reduce behavior',
+    ],
+    misconceptions: [
+      'Negative does not mean bad — it means something is removed. The behavior must increase for it to be negative reinforcement.'
+    ],
+    domain: 'B',
+    taskItem: 'B.01',
+    category: 'Reinforcement'
+  },
+  {
+    id: 'rr-unconditioned-reinforcer',
+    domain: 'B',
+    term: 'Unconditioned Reinforcer',
+    correctDefinition: 'A stimulus that functions as a reinforcer without prior conditioning because of the organism\'s evolutionary history (e.g., food, water, warmth).',
+    distractors: [
+      'A reinforcer that has been paired with another reinforcer through conditioning',
+      'A reinforcer that only works when the organism is deprived',
+      'Any stimulus that increases behavior regardless of learning history',
+    ],
+    misconceptions: [
+      'Unconditioned reinforcers are not always effective — deprivation and satiation still modulate their value.'
+    ],
+    domain: 'B',
+    taskItem: 'B.01',
+    category: 'Reinforcement'
+  },
+  {
+    id: 'rr-conditioned-reinforcer',
+    domain: 'B',
+    term: 'Conditioned Reinforcer',
+    correctDefinition: 'A previously neutral stimulus that acquires reinforcing function through repeated pairing with other reinforcers.',
+    distractors: [
+      'A reinforcer that is biologically determined and requires no learning history',
+      'A stimulus that decreases behavior through conditioning',
+      'A reinforcer that works only for certain species',
+    ],
+    misconceptions: [
+      'Conditioned reinforcers can lose their function if they are no longer paired with unconditioned reinforcers (extinction of conditioned reinforcement).'
+    ],
+    domain: 'B',
+    taskItem: 'B.01',
+    category: 'Reinforcement'
+  },
+  {
+    id: 'rr-generalized-conditioned-reinforcer',
+    domain: 'B',
+    term: 'Generalized Conditioned Reinforcer',
+    correctDefinition: 'A conditioned reinforcer that has been paired with many other reinforcers and therefore maintains reinforcing function across a wide range of motivating operations.',
+    distractors: [
+      'A reinforcer that works for all organisms regardless of learning history',
+      'A reinforcer that is effective only when the organism is deprived of primary reinforcers',
+      'An unconditioned reinforcer that generalizes across settings',
+    ],
+    misconceptions: [
+      'Tokens and money are classic examples — they work because they can be exchanged for many different backup reinforcers.'
+    ],
+    domain: 'B',
+    taskItem: 'B.01',
+    category: 'Reinforcement'
+  },
+  {
+    id: 'rr-punishment',
+    domain: 'B',
+    term: 'Punishment',
+    correctDefinition: 'A process in which a consequence follows a behavior and decreases the future frequency of that behavior.',
+    distractors: [
+      'Any aversive event delivered after a behavior',
+      'A process that increases the future frequency of a behavior',
+      'Withholding reinforcement to decrease behavior',
+    ],
+    misconceptions: [
+      'Punishment is defined by its effect on behavior — if behavior does not decrease, the consequence is not punishment by definition.'
+    ],
+    domain: 'B',
+    taskItem: 'B.02',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-positive-punishment',
+    domain: 'B',
+    term: 'Positive Punishment',
+    correctDefinition: 'A process in which a stimulus is added following a behavior and the future frequency of that behavior decreases.',
+    distractors: [
+      'A pleasant consequence added to increase behavior',
+      'Removing a stimulus following behavior to decrease its frequency',
+      'Any aversive event that makes the person feel bad',
+    ],
+    misconceptions: [
+      'Positive means something is added, not that it is pleasant. The behavior must decrease for it to be positive punishment.'
+    ],
+    domain: 'B',
+    taskItem: 'B.02',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-negative-punishment',
+    domain: 'B',
+    term: 'Negative Punishment',
+    correctDefinition: 'A process in which a stimulus is removed following a behavior and the future frequency of that behavior decreases.',
+    distractors: [
+      'Adding an aversive stimulus to decrease behavior',
+      'Removing a stimulus to increase behavior',
+      'Withholding praise to motivate better performance',
+    ],
+    misconceptions: [
+      'Response cost and time-out are the two main forms of negative punishment. The behavior must decrease for it to qualify as punishment.'
+    ],
+    domain: 'B',
+    taskItem: 'B.02',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-unconditioned-punisher',
+    domain: 'B',
+    term: 'Unconditioned Punisher',
+    correctDefinition: 'A stimulus that functions as a punisher without prior conditioning because of the organism\'s evolutionary history (e.g., intense heat, electric shock, loud noise).',
+    distractors: [
+      'A punisher that has been paired with other punishers through conditioning',
+      'Any stimulus that decreases behavior regardless of learning history',
+      'A punisher that only works when the organism is deprived',
+    ],
+    misconceptions: [
+      'Like unconditioned reinforcers, unconditioned punishers are not always effective — individual history and context modulate their suppressive effects.'
+    ],
+    domain: 'B',
+    taskItem: 'B.02',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-conditioned-punisher',
+    domain: 'B',
+    term: 'Conditioned Punisher',
+    correctDefinition: 'A previously neutral stimulus that acquires punishing function through repeated pairing with other punishers.',
+    distractors: [
+      'A punisher that is biologically determined and requires no learning history',
+      'A stimulus that increases behavior through conditioning',
+      'A punisher that only works in the presence of a specific discriminative stimulus',
+    ],
+    misconceptions: [
+      'The word "No" becomes a conditioned punisher when it is consistently followed by other punishing consequences.'
+    ],
+    domain: 'B',
+    taskItem: 'B.02',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-extinction-b',
+    domain: 'B',
+    term: 'Extinction',
+    correctDefinition: 'A procedure in which reinforcement that previously followed a behavior is discontinued, resulting in a decrease in the future frequency of that behavior.',
+    distractors: [
+      'Removing all consequences following a behavior to eliminate it',
+      'A punishment procedure that suppresses behavior by adding an aversive stimulus',
+      'Withholding all stimuli from the environment to reduce responding',
+    ],
+    misconceptions: [
+      'Extinction only works if the specific reinforcer maintaining the behavior is withheld. Withholding the wrong reinforcer is not extinction.'
+    ],
+    domain: 'B',
+    taskItem: 'B.03',
+    category: 'Extinction'
+  },
+  {
+    id: 'rr-extinction-burst',
+    domain: 'B',
+    term: 'Extinction Burst',
+    correctDefinition: 'A temporary increase in the frequency, duration, or intensity of a behavior immediately after extinction is initiated.',
+    distractors: [
+      'A permanent increase in behavior caused by extinction',
+      'A decrease in behavior that occurs at the start of an extinction procedure',
+      'Spontaneous recovery of a behavior after extinction is complete',
+    ],
+    misconceptions: [
+      'An extinction burst is expected and does not mean extinction is failing. Discontinuing extinction during the burst negatively reinforces the behavior.'
+    ],
+    domain: 'B',
+    taskItem: 'B.03',
+    category: 'Extinction'
+  },
+  {
+    id: 'rr-spontaneous-recovery',
+    domain: 'B',
+    term: 'Spontaneous Recovery',
+    correctDefinition: 'The reappearance of a previously extinguished behavior after a period of time has elapsed since extinction.',
+    distractors: [
+      'A permanent return of extinguished behavior caused by a new reinforcer',
+      'The initial increase in behavior at the start of extinction',
+      'Recovery of behavior due to re-exposure to the original reinforcer',
+    ],
+    misconceptions: [
+      'Spontaneous recovery is temporary — if extinction is maintained, the behavior will extinguish again more quickly than the first time.'
+    ],
+    domain: 'B',
+    taskItem: 'B.03',
+    category: 'Extinction'
+  },
+  {
+    id: 'rr-motivating-operation',
+    domain: 'B',
+    term: 'Motivating Operation (MO)',
+    correctDefinition: 'An environmental variable that alters the reinforcing or punishing effectiveness of a stimulus and alters the current frequency of behavior that has been reinforced or punished by that stimulus.',
+    distractors: [
+      'A discriminative stimulus that signals the availability of reinforcement',
+      'Any antecedent condition that triggers a behavior',
+      'A consequence that increases the value of a reinforcer',
+    ],
+    misconceptions: [
+      'MOs have two effects: a value-altering effect (changes reinforcer effectiveness) and a behavior-altering effect (changes current frequency of related behavior). Both must be present.'
+    ],
+    domain: 'B',
+    taskItem: 'B.04',
+    category: 'Motivating Operations'
+  },
+  {
+    id: 'rr-establishing-operation',
+    domain: 'B',
+    term: 'Establishing Operation (EO)',
+    correctDefinition: 'A motivating operation that increases the reinforcing effectiveness of a stimulus and increases the current frequency of behavior that has been reinforced by that stimulus.',
+    distractors: [
+      'A motivating operation that decreases the reinforcing effectiveness of a stimulus',
+      'A discriminative stimulus that signals the availability of reinforcement',
+      'A consequence that establishes a new reinforcer through conditioning',
+    ],
+    misconceptions: [
+      'Food deprivation is a classic EO — it increases the reinforcing value of food and increases food-seeking behavior.'
+    ],
+    domain: 'B',
+    taskItem: 'B.04',
+    category: 'Motivating Operations'
+  },
+  {
+    id: 'rr-abolishing-operation',
+    domain: 'B',
+    term: 'Abolishing Operation (AO)',
+    correctDefinition: 'A motivating operation that decreases the reinforcing effectiveness of a stimulus and decreases the current frequency of behavior that has been reinforced by that stimulus.',
+    distractors: [
+      'A motivating operation that increases the reinforcing effectiveness of a stimulus',
+      'A procedure that eliminates a reinforcer from the environment',
+      'A punishment procedure that abolishes a behavior',
+    ],
+    misconceptions: [
+      'Satiation is a classic AO — eating a large meal decreases the reinforcing value of food and decreases food-seeking behavior.'
+    ],
+    domain: 'B',
+    taskItem: 'B.04',
+    category: 'Motivating Operations'
+  },
+  {
+    id: 'rr-unconditioned-mo',
+    domain: 'B',
+    term: 'Unconditioned Motivating Operation (UMO)',
+    correctDefinition: 'A motivating operation whose value-altering effect is unlearned and does not depend on a conditioning history (e.g., food deprivation, water deprivation, sleep deprivation, pain).',
+    distractors: [
+      'A motivating operation that has been conditioned through pairing with other MOs',
+      'A discriminative stimulus that signals reinforcement without prior learning',
+      'A reinforcer that works without prior conditioning history',
+    ],
+    misconceptions: [
+      'UMOs are biologically determined — their effects on reinforcer value are part of the organism\'s evolutionary heritage, not learned.'
+    ],
+    domain: 'B',
+    taskItem: 'B.04',
+    category: 'Motivating Operations'
+  },
+  {
+    id: 'rr-conditioned-mo',
+    domain: 'B',
+    term: 'Conditioned Motivating Operation (CMO)',
+    correctDefinition: 'A motivating operation whose value-altering effect depends on a conditioning history — it acquires its ability to alter reinforcer effectiveness through learning.',
+    distractors: [
+      'A motivating operation whose effects are biologically determined',
+      'A discriminative stimulus that has been conditioned to signal punishment',
+      'A conditioned reinforcer that also functions as a motivating operation',
+    ],
+    misconceptions: [
+      'There are three types of CMOs: reflexive (CMO-R), transitive (CMO-T), and surrogate (CMO-S), each with distinct conditioning histories.'
+    ],
+    domain: 'B',
+    taskItem: 'B.04',
+    category: 'Motivating Operations'
+  },
+  {
+    id: 'rr-discriminative-stimulus',
+    domain: 'B',
+    term: 'Discriminative Stimulus (SD)',
+    correctDefinition: 'A stimulus in the presence of which a behavior has been reinforced and in whose presence the behavior is therefore more likely to occur.',
+    distractors: [
+      'Any antecedent stimulus that precedes a behavior',
+      'A stimulus that signals the unavailability of reinforcement',
+      'A motivating operation that increases the value of a reinforcer',
+    ],
+    misconceptions: [
+      'An SD does not cause behavior — it sets the occasion for behavior by signaling that reinforcement is available.'
+    ],
+    domain: 'B',
+    taskItem: 'B.05',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-stimulus-delta',
+    domain: 'B',
+    term: 'Stimulus Delta (SΔ)',
+    correctDefinition: 'A stimulus in the presence of which a behavior has not been reinforced and in whose presence the behavior is therefore less likely to occur.',
+    distractors: [
+      'A stimulus that signals the availability of reinforcement',
+      'A discriminative stimulus for punishment',
+      'Any neutral stimulus that precedes a behavior',
+    ],
+    misconceptions: [
+      'SΔ signals the absence of reinforcement, not the presence of punishment. It is distinct from an S-punisher (SP).'
+    ],
+    domain: 'B',
+    taskItem: 'B.05',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-stimulus-control',
+    domain: 'B',
+    term: 'Stimulus Control',
+    correctDefinition: 'A condition in which the frequency, latency, duration, or amplitude of a behavior is altered by the presence or absence of an antecedent stimulus.',
+    distractors: [
+      'The ability of a consequence to control future behavior',
+      'A procedure in which stimuli are used to punish behavior',
+      'The process of pairing a neutral stimulus with a reinforcer',
+    ],
+    misconceptions: [
+      'Stimulus control is established through differential reinforcement — reinforcing behavior in the presence of one stimulus and not others.'
+    ],
+    domain: 'B',
+    taskItem: 'B.05',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-stimulus-generalization',
+    domain: 'B',
+    term: 'Stimulus Generalization',
+    correctDefinition: 'The occurrence of a behavior in the presence of stimuli that are similar to, but not identical to, the training stimulus.',
+    distractors: [
+      'The spread of behavior change to new response topographies',
+      'Responding only to the exact training stimulus and no others',
+      'The transfer of a behavior from one reinforcer to another',
+    ],
+    misconceptions: [
+      'Stimulus generalization is the opposite of stimulus discrimination — the more similar the new stimulus is to the SD, the more generalization occurs.'
+    ],
+    domain: 'B',
+    taskItem: 'B.05',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-stimulus-discrimination',
+    domain: 'B',
+    term: 'Stimulus Discrimination',
+    correctDefinition: 'Differential responding in the presence of two or more stimuli — responding occurs in the presence of one stimulus but not others.',
+    distractors: [
+      'Responding similarly to all stimuli in the environment',
+      'The process of teaching a new behavior through shaping',
+      'Responding to a new stimulus that resembles the training stimulus',
+    ],
+    misconceptions: [
+      'Stimulus discrimination is established through differential reinforcement — reinforcing behavior in the presence of the SD and not reinforcing it in the presence of the SΔ.'
+    ],
+    domain: 'B',
+    taskItem: 'B.05',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-stimulus-class',
+    domain: 'B',
+    term: 'Stimulus Class',
+    correctDefinition: 'A group of stimuli that share common elements — either formal (physical) properties, temporal relations, or functional properties — and that evoke the same behavior.',
+    distractors: [
+      'A group of behaviors that are maintained by the same reinforcer',
+      'A set of stimuli that are identical in all physical properties',
+      'Any collection of antecedent stimuli present in the environment',
+    ],
+    misconceptions: [
+      'Stimuli in a class need not look alike — they may be functionally equivalent (all evoking the same behavior) without sharing physical features.'
+    ],
+    domain: 'B',
+    taskItem: 'B.05',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-concept-formation',
+    domain: 'B',
+    term: 'Concept Formation',
+    correctDefinition: 'The development of stimulus control by a common property shared by a class of stimuli, such that the behavior occurs in the presence of all members of the class and not in the presence of non-members.',
+    distractors: [
+      'Learning to respond to a single specific stimulus',
+      'The process of pairing a neutral stimulus with a reinforcer',
+      'Responding to stimuli based on their physical proximity to the SD',
+    ],
+    misconceptions: [
+      'Concept formation requires both generalization within the class and discrimination from non-members — both components must be present.'
+    ],
+    domain: 'B',
+    taskItem: 'B.05',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-contingency',
+    domain: 'B',
+    term: 'Contingency',
+    correctDefinition: 'A dependent relation between two events — specifically, the relation between a behavior and its consequences such that the consequence occurs if and only if the behavior occurs.',
+    distractors: [
+      'Any temporal sequence in which one event follows another',
+      'A schedule that determines when reinforcement is delivered',
+      'The physical proximity of a stimulus to a behavior',
+    ],
+    misconceptions: [
+      'Contiguity (temporal closeness) is not the same as contingency (dependency). A consequence can be contiguous but non-contingent if it occurs regardless of behavior.'
+    ],
+    domain: 'B',
+    taskItem: 'B.06',
+    category: 'Contingency'
+  },
+  {
+    id: 'rr-three-term-contingency',
+    domain: 'B',
+    term: 'Three-Term Contingency',
+    correctDefinition: 'The basic unit of analysis in operant behavior, consisting of an antecedent stimulus, a behavior, and a consequence (A-B-C).',
+    distractors: [
+      'A two-component relation between behavior and its consequence',
+      'A contingency involving three different reinforcers',
+      'A schedule of reinforcement with three components',
+    ],
+    misconceptions: [
+      'The three-term contingency is also called the "operant contingency" or "ABC contingency." All three components must be specified for a complete functional analysis.'
+    ],
+    domain: 'B',
+    taskItem: 'B.06',
+    category: 'Contingency'
+  },
+  {
+    id: 'rr-continuous-reinforcement',
+    domain: 'B',
+    term: 'Continuous Reinforcement (CRF)',
+    correctDefinition: 'A schedule of reinforcement in which every occurrence of the target behavior produces a reinforcer.',
+    distractors: [
+      'A schedule in which reinforcement is delivered at fixed time intervals',
+      'A schedule in which only some responses are reinforced',
+      'Delivering reinforcement continuously regardless of behavior',
+    ],
+    misconceptions: [
+      'CRF produces the fastest acquisition but also the fastest extinction. It is best used when establishing a new behavior.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-intermittent-reinforcement',
+    domain: 'B',
+    term: 'Intermittent Reinforcement',
+    correctDefinition: 'A schedule of reinforcement in which only some occurrences of the target behavior produce a reinforcer.',
+    distractors: [
+      'A schedule in which every response is reinforced',
+      'Delivering reinforcement at unpredictable times regardless of behavior',
+      'A schedule used only during the maintenance phase of treatment',
+    ],
+    misconceptions: [
+      'Intermittent reinforcement produces greater resistance to extinction than CRF — this is why problem behaviors maintained on thin schedules are so persistent.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-fixed-ratio',
+    domain: 'B',
+    term: 'Fixed-Ratio Schedule (FR)',
+    correctDefinition: 'A schedule of reinforcement in which a reinforcer is delivered after a fixed number of responses.',
+    distractors: [
+      'A schedule in which reinforcement is delivered after a variable number of responses',
+      'A schedule in which reinforcement is delivered after a fixed time interval',
+      'A schedule in which every response is reinforced',
+    ],
+    misconceptions: [
+      'FR schedules produce a post-reinforcement pause followed by a high, steady rate of responding (ratio run). The pause length increases with larger ratios.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-variable-ratio',
+    domain: 'B',
+    term: 'Variable-Ratio Schedule (VR)',
+    correctDefinition: 'A schedule of reinforcement in which a reinforcer is delivered after a variable number of responses, with the number varying around a mean.',
+    distractors: [
+      'A schedule in which reinforcement is delivered after a fixed number of responses',
+      'A schedule in which reinforcement is delivered after a variable time interval',
+      'A schedule in which reinforcement is delivered at unpredictable times regardless of behavior',
+    ],
+    misconceptions: [
+      'VR schedules produce the highest and most steady rates of responding with little or no post-reinforcement pause, and are the most resistant to extinction.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-fixed-interval',
+    domain: 'B',
+    term: 'Fixed-Interval Schedule (FI)',
+    correctDefinition: 'A schedule of reinforcement in which a reinforcer is delivered for the first response that occurs after a fixed period of time has elapsed.',
+    distractors: [
+      'A schedule in which reinforcement is delivered after a fixed number of responses',
+      'A schedule in which reinforcement is delivered after a variable time interval',
+      'A schedule in which every response occurring during a time interval is reinforced',
+    ],
+    misconceptions: [
+      'FI schedules produce a scallop pattern — a post-reinforcement pause followed by gradually accelerating responding as the interval end approaches.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-variable-interval',
+    domain: 'B',
+    term: 'Variable-Interval Schedule (VI)',
+    correctDefinition: 'A schedule of reinforcement in which a reinforcer is delivered for the first response that occurs after a variable period of time has elapsed, with the interval varying around a mean.',
+    distractors: [
+      'A schedule in which reinforcement is delivered after a variable number of responses',
+      'A schedule in which reinforcement is delivered at fixed time intervals',
+      'A schedule in which all responses during a time interval are reinforced',
+    ],
+    misconceptions: [
+      'VI schedules produce low to moderate, steady rates of responding with little post-reinforcement pause, and are more resistant to extinction than FI schedules.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-respondent-behavior',
+    domain: 'B',
+    term: 'Respondent Behavior',
+    correctDefinition: 'Behavior that is elicited by antecedent stimuli — reflexive responses that are controlled by prior stimuli rather than by their consequences.',
+    distractors: [
+      'Behavior that is controlled by its consequences',
+      'Behavior that is emitted voluntarily in response to environmental demands',
+      'Behavior that occurs only in the presence of a discriminative stimulus',
+    ],
+    misconceptions: [
+      'Respondent behavior is elicited (drawn out) by stimuli; operant behavior is emitted (produced) by the organism. Both can occur simultaneously.'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-respondent-conditioning',
+    domain: 'B',
+    term: 'Respondent Conditioning',
+    correctDefinition: 'A form of learning in which a neutral stimulus acquires the ability to elicit a response by being paired with an unconditioned stimulus that already elicits that response.',
+    distractors: [
+      'A form of learning in which behavior is strengthened by its consequences',
+      'A procedure in which a neutral stimulus is used to punish behavior',
+      'The process of teaching new behaviors through shaping and chaining',
+    ],
+    misconceptions: [
+      'Also called Pavlovian or classical conditioning. The neutral stimulus becomes a conditioned stimulus (CS) that elicits a conditioned response (CR) similar to the unconditioned response (UR).'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-unconditioned-stimulus',
+    domain: 'B',
+    term: 'Unconditioned Stimulus (US)',
+    correctDefinition: 'A stimulus that elicits a response without prior conditioning — it reliably produces a reflexive response based on the organism\'s evolutionary history.',
+    distractors: [
+      'A stimulus that acquires eliciting function through pairing with another stimulus',
+      'A discriminative stimulus that signals the availability of reinforcement',
+      'A neutral stimulus that precedes a conditioned stimulus',
+    ],
+    misconceptions: [
+      'The US elicits the unconditioned response (UR). Food in Pavlov\'s experiments was the US; salivation was the UR.'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-conditioned-stimulus',
+    domain: 'B',
+    term: 'Conditioned Stimulus (CS)',
+    correctDefinition: 'A previously neutral stimulus that acquires the ability to elicit a conditioned response through repeated pairing with an unconditioned stimulus.',
+    distractors: [
+      'A stimulus that elicits a response without prior conditioning',
+      'A discriminative stimulus that signals the availability of reinforcement',
+      'A stimulus that is added following a behavior to decrease its frequency',
+    ],
+    misconceptions: [
+      'The CS elicits a conditioned response (CR) that is similar to, but not identical to, the unconditioned response (UR). The bell in Pavlov\'s experiments was the CS.'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-unconditioned-response',
+    domain: 'B',
+    term: 'Unconditioned Response (UR)',
+    correctDefinition: 'A reflexive response that is reliably elicited by an unconditioned stimulus without prior conditioning.',
+    distractors: [
+      'A response that is learned through operant conditioning',
+      'A response that occurs in the presence of a conditioned stimulus',
+      'A response that is emitted voluntarily by the organism',
+    ],
+    misconceptions: [
+      'The UR is the natural, unlearned response to the US. Salivation in response to food in Pavlov\'s experiments was the UR.'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-conditioned-response',
+    domain: 'B',
+    term: 'Conditioned Response (CR)',
+    correctDefinition: 'A learned response that is elicited by a conditioned stimulus after the CS has been paired with an unconditioned stimulus.',
+    distractors: [
+      'A response that is elicited by an unconditioned stimulus without prior learning',
+      'A response that is reinforced by its consequences',
+      'A response that occurs only in the presence of a discriminative stimulus',
+    ],
+    misconceptions: [
+      'The CR is similar to but typically weaker than the UR. Salivation in response to the bell (after conditioning) in Pavlov\'s experiments was the CR.'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-operant-behavior',
+    domain: 'B',
+    term: 'Operant Behavior',
+    correctDefinition: 'Behavior that is selected, maintained, and brought under stimulus control by its consequences — behavior that operates on the environment to produce consequences.',
+    distractors: [
+      'Behavior that is elicited by antecedent stimuli',
+      'Behavior that occurs reflexively without prior learning',
+      'Behavior that is controlled by unconditioned stimuli',
+    ],
+    misconceptions: [
+      'Operant behavior is emitted, not elicited. It is defined by its functional relation with consequences, not by its topography.'
+    ],
+    domain: 'B',
+    taskItem: 'B.09',
+    category: 'Operant Conditioning'
+  },
+  {
+    id: 'rr-operant-conditioning',
+    domain: 'B',
+    term: 'Operant Conditioning',
+    correctDefinition: 'A form of learning in which the future frequency of a behavior is changed by consequences that follow the behavior.',
+    distractors: [
+      'A form of learning in which a neutral stimulus acquires eliciting function through pairing',
+      'A procedure in which behavior is shaped by reinforcing successive approximations',
+      'The process of establishing stimulus control over behavior',
+    ],
+    misconceptions: [
+      'Operant conditioning is not limited to laboratory settings — all voluntary behavior is subject to operant conditioning principles in everyday life.'
+    ],
+    domain: 'B',
+    taskItem: 'B.09',
+    category: 'Operant Conditioning'
+  },
+  {
+    id: 'rr-response-class',
+    domain: 'B',
+    term: 'Response Class',
+    correctDefinition: 'A group of responses that share the same function — they produce the same consequence and are therefore controlled by the same contingency.',
+    distractors: [
+      'A group of responses that share the same topography',
+      'A group of stimuli that evoke the same behavior',
+      'A set of behaviors that occur in the same temporal sequence',
+    ],
+    misconceptions: [
+      'Members of a response class may look very different (different topographies) but are functionally equivalent because they all produce the same reinforcer.'
+    ],
+    domain: 'B',
+    taskItem: 'B.09',
+    category: 'Operant Conditioning'
+  },
+  {
+    id: 'rr-topography',
+    domain: 'B',
+    term: 'Topography',
+    correctDefinition: 'The physical form or shape of a behavior — the specific movements that constitute the behavior.',
+    distractors: [
+      'The function or purpose of a behavior',
+      'The frequency with which a behavior occurs',
+      'The environmental context in which a behavior occurs',
+    ],
+    misconceptions: [
+      'Two behaviors can have the same topography but different functions (e.g., crying for attention vs. crying due to pain). Function, not topography, determines the response class.'
+    ],
+    domain: 'B',
+    taskItem: 'B.09',
+    category: 'Operant Conditioning'
+  },
+  {
+    id: 'rr-verbal-behavior',
+    domain: 'B',
+    term: 'Verbal Behavior',
+    correctDefinition: 'Behavior that is reinforced through the mediation of another person\'s behavior — the listener provides the reinforcement for the speaker\'s verbal responses.',
+    distractors: [
+      'Any behavior involving speech or language',
+      'Behavior that is controlled by its topography rather than its function',
+      'Communication that involves words, signs, or symbols',
+    ],
+    misconceptions: [
+      'Verbal behavior is defined functionally, not topographically. Writing, signing, and gesturing can all be verbal behavior if reinforced through a listener\'s mediation.'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-mand',
+    domain: 'B',
+    term: 'Mand',
+    correctDefinition: 'A verbal operant in which the response is controlled by a motivating operation and is reinforced by a specific consequence specified by the response itself.',
+    distractors: [
+      'A verbal operant controlled by a verbal antecedent stimulus',
+      'A verbal operant in which the response reproduces the formal properties of the controlling stimulus',
+      'A verbal operant controlled by a nonverbal discriminative stimulus',
+    ],
+    misconceptions: [
+      'Mands benefit the speaker, not the listener. Requests, demands, and commands are all mands. The MO is the critical controlling variable.'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-tact',
+    domain: 'B',
+    term: 'Tact',
+    correctDefinition: 'A verbal operant controlled by a nonverbal discriminative stimulus and reinforced by generalized conditioned reinforcement from a listener.',
+    distractors: [
+      'A verbal operant controlled by a motivating operation',
+      'A verbal operant in which the response reproduces the formal properties of the controlling stimulus',
+      'A verbal operant controlled by a prior verbal stimulus',
+    ],
+    misconceptions: [
+      'Tacts benefit the listener, not the speaker. Labeling, naming, and describing objects or events are tacts. The nonverbal stimulus is the critical controlling variable.'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-echoic',
+    domain: 'B',
+    term: 'Echoic',
+    correctDefinition: 'A verbal operant in which the response reproduces the formal properties of the controlling verbal stimulus — point-to-point correspondence and formal similarity between the stimulus and response.',
+    distractors: [
+      'A verbal operant controlled by a nonverbal discriminative stimulus',
+      'A verbal operant in which the response paraphrases the meaning of the controlling stimulus',
+      'A verbal operant controlled by a motivating operation',
+    ],
+    misconceptions: [
+      'Echoics require both point-to-point correspondence (each part of the stimulus is reproduced) and formal similarity (same sense modality — auditory to vocal).'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-intraverbal',
+    domain: 'B',
+    term: 'Intraverbal',
+    correctDefinition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and there is no point-to-point correspondence between the controlling stimulus and the response.',
+    distractors: [
+      'A verbal operant in which the response reproduces the formal properties of the controlling stimulus',
+      'A verbal operant controlled by a nonverbal discriminative stimulus',
+      'A verbal operant controlled by a motivating operation',
+    ],
+    misconceptions: [
+      'Answering questions, completing fill-in-the-blank sentences, and conversational exchanges are intraverbals. The response is related to but does not reproduce the controlling stimulus.'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-textual',
+    domain: 'B',
+    term: 'Textual',
+    correctDefinition: 'A verbal operant in which the response is controlled by a written verbal stimulus, with point-to-point correspondence but no formal similarity (visual stimulus, vocal response).',
+    distractors: [
+      'A verbal operant in which the response reproduces the formal properties of the controlling stimulus',
+      'A verbal operant controlled by a nonverbal discriminative stimulus',
+      'A verbal operant in which written responses are controlled by spoken stimuli',
+    ],
+    misconceptions: [
+      'Reading aloud is a textual response. There is point-to-point correspondence (each word is read) but no formal similarity (written input, spoken output — different sense modalities).'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-transcription',
+    domain: 'B',
+    term: 'Transcription',
+    correctDefinition: 'A verbal operant in which the response is controlled by a spoken verbal stimulus, with point-to-point correspondence but no formal similarity (auditory stimulus, written response).',
+    distractors: [
+      'A verbal operant in which the response reproduces the formal properties of the controlling stimulus',
+      'A verbal operant controlled by a nonverbal discriminative stimulus',
+      'A verbal operant in which spoken responses are controlled by written stimuli',
+    ],
+    misconceptions: [
+      'Writing from dictation is a transcription response. The spoken word controls the written response — auditory input, written output.'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-duplic',
+    domain: 'B',
+    term: 'Duplic',
+    correctDefinition: 'A class of verbal operants in which the response reproduces the formal properties of the controlling verbal stimulus — includes echoics, copying-a-text, and mimetics.',
+    distractors: [
+      'A verbal operant in which the response paraphrases the meaning of the controlling stimulus',
+      'A verbal operant controlled by a motivating operation',
+      'A verbal operant in which the response is controlled by a nonverbal stimulus',
+    ],
+    misconceptions: [
+      'Duplics are defined by formal reproduction of the stimulus. Echoics and codics are both duplics. Textual and transcription responses are not duplics because they cross sense modalities.'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-autoclitic',
+    domain: 'B',
+    term: 'Autoclitic',
+    correctDefinition: 'A verbal operant that is based on or dependent on other verbal behavior of the speaker — it modifies the effect of the primary verbal operant on the listener.',
+    distractors: [
+      'A verbal operant controlled by a nonverbal discriminative stimulus',
+      'A verbal operant in which the response reproduces the formal properties of the controlling stimulus',
+      'A verbal operant controlled by a motivating operation',
+    ],
+    misconceptions: [
+      'Autoclitics include qualifiers ("I think..."), quantifiers ("all," "some"), and relational terms. They modify the listener\'s response to the primary verbal operant.'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-behavioral-momentum',
+    domain: 'B',
+    term: 'Behavioral Momentum',
+    correctDefinition: 'The tendency for behavior to persist following a change in reinforcement conditions — analogous to physical momentum, it is a function of the mass (rate of reinforcement) and velocity (response rate) of behavior.',
+    distractors: [
+      'The tendency for behavior to increase during an extinction burst',
+      'The rate at which behavior accelerates during a variable-ratio schedule',
+      'The persistence of behavior across different settings and stimuli',
+    ],
+    misconceptions: [
+      'Behavioral momentum is increased by high rates of reinforcement in a context (rich reinforcement history). High-p sequences work by building momentum before a low-p request.'
+    ],
+    domain: 'B',
+    taskItem: 'B.11',
+    category: 'Behavioral Momentum'
+  },
+  {
+    id: 'rr-resurgence',
+    domain: 'B',
+    term: 'Resurgence',
+    correctDefinition: 'The reappearance of a previously reinforced behavior when a more recently reinforced behavior is placed on extinction.',
+    distractors: [
+      'The reappearance of an extinguished behavior after a period of time has elapsed',
+      'A temporary increase in behavior at the start of extinction',
+      'The spread of behavior change to new response topographies',
+    ],
+    misconceptions: [
+      'Resurgence is different from spontaneous recovery — resurgence occurs when a competing behavior is extinguished, not simply after a time delay.'
+    ],
+    domain: 'B',
+    taskItem: 'B.11',
+    category: 'Behavioral Momentum'
+  },
+  {
+    id: 'rr-differential-reinforcement',
+    domain: 'B',
+    term: 'Differential Reinforcement',
+    correctDefinition: 'A procedure in which reinforcement is provided for responses that meet a specified criterion and withheld for responses that do not meet that criterion.',
+    distractors: [
+      'A procedure in which all responses are reinforced equally',
+      'A procedure in which reinforcement is delivered on a variable schedule',
+      'A procedure in which punishment is used to decrease some behaviors while reinforcing others',
+    ],
+    misconceptions: [
+      'Differential reinforcement is the mechanism underlying shaping, stimulus discrimination training, and all DR reduction procedures (DRA, DRI, DRO, DRL, DRH).'
+    ],
+    domain: 'B',
+    taskItem: 'B.12',
+    category: 'Differential Reinforcement'
+  },
+  {
+    id: 'rr-dra',
+    domain: 'B',
+    term: 'Differential Reinforcement of Alternative Behavior (DRA)',
+    correctDefinition: 'A procedure in which reinforcement is delivered for a specified alternative behavior while reinforcement is withheld for the target behavior.',
+    distractors: [
+      'Reinforcing a behavior that is physically incompatible with the target behavior',
+      'Reinforcing any behavior other than the target behavior',
+      'Reinforcing behavior that occurs at a lower rate than a specified criterion',
+    ],
+    misconceptions: [
+      'In DRA, the alternative behavior does not need to be incompatible with the target behavior — it just needs to be a different, more appropriate behavior. FCT is a specific form of DRA.'
+    ],
+    domain: 'B',
+    taskItem: 'B.12',
+    category: 'Differential Reinforcement'
+  },
+  {
+    id: 'rr-dri',
+    domain: 'B',
+    term: 'Differential Reinforcement of Incompatible Behavior (DRI)',
+    correctDefinition: 'A procedure in which reinforcement is delivered for a behavior that is physically incompatible with the target behavior — both behaviors cannot occur simultaneously.',
+    distractors: [
+      'Reinforcing any behavior other than the target behavior',
+      'Reinforcing a behavior that serves the same function as the target behavior',
+      'Reinforcing behavior that occurs at a lower rate than a specified criterion',
+    ],
+    misconceptions: [
+      'DRI is a specific form of DRA. The key distinction: in DRI, the alternative behavior is topographically incompatible with the target behavior (e.g., hands folded vs. hand-flapping).'
+    ],
+    domain: 'B',
+    taskItem: 'B.12',
+    category: 'Differential Reinforcement'
+  },
+  {
+    id: 'rr-dro',
+    domain: 'B',
+    term: 'Differential Reinforcement of Other Behavior (DRO)',
+    correctDefinition: 'A procedure in which reinforcement is delivered after a specified interval during which the target behavior has not occurred.',
+    distractors: [
+      'Reinforcing a specified alternative behavior while withholding reinforcement for the target behavior',
+      'Reinforcing behavior that is physically incompatible with the target behavior',
+      'Reinforcing behavior that occurs at a lower rate than a specified criterion',
+    ],
+    misconceptions: [
+      'DRO reinforces the absence of the target behavior, not a specific alternative behavior. It is sometimes called "omission training."'
+    ],
+    domain: 'B',
+    taskItem: 'B.12',
+    category: 'Differential Reinforcement'
+  },
+  {
+    id: 'rr-drl',
+    domain: 'B',
+    term: 'Differential Reinforcement of Low Rates (DRL)',
+    correctDefinition: 'A procedure in which reinforcement is delivered when the target behavior occurs at or below a specified rate criterion.',
+    distractors: [
+      'A procedure in which reinforcement is withheld whenever the target behavior occurs',
+      'A procedure in which reinforcement is delivered for the absence of the target behavior',
+      'A procedure in which reinforcement is delivered for behavior that is incompatible with the target behavior',
+    ],
+    misconceptions: [
+      'DRL reduces but does not eliminate behavior — it is appropriate when the behavior is acceptable at low rates but problematic at high rates (e.g., talking in class).'
+    ],
+    domain: 'B',
+    taskItem: 'B.12',
+    category: 'Differential Reinforcement'
+  },
+  {
+    id: 'rr-drh',
+    domain: 'B',
+    term: 'Differential Reinforcement of High Rates (DRH)',
+    correctDefinition: 'A procedure in which reinforcement is delivered when the target behavior occurs at or above a specified rate criterion.',
+    distractors: [
+      'A procedure in which reinforcement is delivered for the absence of the target behavior',
+      'A procedure in which reinforcement is delivered for behavior that is incompatible with the target behavior',
+      'A procedure in which reinforcement is delivered after a variable number of responses',
+    ],
+    misconceptions: [
+      'DRH is used to increase the rate of a behavior that is already occurring but at an insufficient frequency (e.g., increasing the rate of correct academic responses).'
+    ],
+    domain: 'B',
+    taskItem: 'B.12',
+    category: 'Differential Reinforcement'
+  },
+  {
+    id: 'rr-shaping',
+    domain: 'B',
+    term: 'Shaping',
+    correctDefinition: 'A procedure for developing a new behavior by differentially reinforcing successive approximations to the target behavior while extinguishing previous approximations.',
+    distractors: [
+      'A procedure for teaching a behavior by breaking it into discrete steps and reinforcing each step in sequence',
+      'A procedure for establishing stimulus control by reinforcing behavior in the presence of a specific stimulus',
+      'A procedure for reducing behavior by reinforcing an incompatible behavior',
+    ],
+    misconceptions: [
+      'Shaping changes the topography of behavior through differential reinforcement. Chaining teaches a sequence of behaviors. Both use reinforcement but target different behavioral dimensions.'
+    ],
+    domain: 'B',
+    taskItem: 'B.13',
+    category: 'Shaping'
+  },
+  {
+    id: 'rr-chaining',
+    domain: 'B',
+    term: 'Chaining',
+    correctDefinition: 'A procedure for teaching a sequence of behaviors in which each behavior in the chain serves as a conditioned reinforcer for the preceding behavior and a discriminative stimulus for the next behavior.',
+    distractors: [
+      'A procedure for developing a new behavior by reinforcing successive approximations',
+      'A procedure for establishing stimulus control by presenting stimuli in a sequence',
+      'A procedure for reducing behavior by breaking it into smaller components',
+    ],
+    misconceptions: [
+      'In a behavior chain, each step is both an SD for the next step and a conditioned reinforcer for the previous step. The terminal reinforcer at the end of the chain maintains the entire sequence.'
+    ],
+    domain: 'B',
+    taskItem: 'B.13',
+    category: 'Chaining'
+  },
+  {
+    id: 'rr-forward-chaining',
+    domain: 'B',
+    term: 'Forward Chaining',
+    correctDefinition: 'A chaining procedure in which the first step of the task analysis is taught first, with the trainer completing all remaining steps, until the learner masters each step sequentially from first to last.',
+    distractors: [
+      'A chaining procedure in which the last step of the task analysis is taught first',
+      'A chaining procedure in which all steps are taught simultaneously',
+      'A chaining procedure in which the learner completes the entire chain from the start',
+    ],
+    misconceptions: [
+      'In forward chaining, the learner always experiences the terminal reinforcer at the end of the chain, even when only performing the first step independently.'
+    ],
+    domain: 'B',
+    taskItem: 'B.13',
+    category: 'Chaining'
+  },
+  {
+    id: 'rr-backward-chaining',
+    domain: 'B',
+    term: 'Backward Chaining',
+    correctDefinition: 'A chaining procedure in which the last step of the task analysis is taught first, with the trainer completing all preceding steps, until the learner masters each step sequentially from last to first.',
+    distractors: [
+      'A chaining procedure in which the first step of the task analysis is taught first',
+      'A chaining procedure in which all steps are taught simultaneously',
+      'A chaining procedure in which the learner completes the entire chain from the start',
+    ],
+    misconceptions: [
+      'Backward chaining ensures the learner always contacts the terminal reinforcer immediately after their response, which may accelerate acquisition for some learners.'
+    ],
+    domain: 'B',
+    taskItem: 'B.13',
+    category: 'Chaining'
+  },
+  {
+    id: 'rr-total-task-chaining',
+    domain: 'B',
+    term: 'Total Task Chaining',
+    correctDefinition: 'A chaining procedure in which the learner attempts all steps of the task analysis during every training trial, with prompting provided for steps not yet mastered.',
+    distractors: [
+      'A chaining procedure in which only one step is taught per session',
+      'A chaining procedure in which the trainer completes all steps except the last one',
+      'A chaining procedure in which the learner must master each step before moving to the next',
+    ],
+    misconceptions: [
+      'Total task chaining is often preferred for learners who have some prerequisite skills and can benefit from practicing the full chain on every trial.'
+    ],
+    domain: 'B',
+    taskItem: 'B.13',
+    category: 'Chaining'
+  },
+  {
+    id: 'rr-task-analysis',
+    domain: 'B',
+    term: 'Task Analysis',
+    correctDefinition: 'The process of breaking a complex behavior or activity into a sequence of smaller, teachable component steps.',
+    distractors: [
+      'A functional assessment procedure for identifying the function of problem behavior',
+      'A procedure for analyzing the antecedents and consequences of a behavior',
+      'A method for measuring the frequency of each step in a behavior chain',
+    ],
+    misconceptions: [
+      'Task analyses are used to teach chained behaviors. The number and specificity of steps should be tailored to the learner\'s current skill level.'
+    ],
+    domain: 'B',
+    taskItem: 'B.13',
+    category: 'Chaining'
+  },
+  {
+    id: 'rr-prompting',
+    domain: 'B',
+    term: 'Prompting',
+    correctDefinition: 'Supplemental antecedent stimuli used to increase the likelihood that a correct response will occur in the presence of the natural discriminative stimulus.',
+    distractors: [
+      'Consequences delivered after a correct response to increase its future frequency',
+      'Antecedent stimuli that signal the availability of punishment',
+      'Procedures used to reduce the frequency of problem behavior',
+    ],
+    misconceptions: [
+      'Prompts are supplemental — they are added to help the learner respond correctly and must be systematically faded so the natural SD gains stimulus control.'
+    ],
+    domain: 'B',
+    taskItem: 'B.14',
+    category: 'Prompting'
+  },
+  {
+    id: 'rr-prompt-fading',
+    domain: 'B',
+    term: 'Prompt Fading',
+    correctDefinition: 'The systematic reduction or elimination of prompts over time so that the natural discriminative stimulus gains stimulus control over the behavior.',
+    distractors: [
+      'The process of adding more prompts to help the learner respond correctly',
+      'The process of replacing one reinforcer with another',
+      'The process of reducing the rate of reinforcement over time',
+    ],
+    misconceptions: [
+      'Prompt fading must be planned and systematic — abrupt removal of prompts can cause errors and frustration. Most-to-least and least-to-most are the two main fading directions.'
+    ],
+    domain: 'B',
+    taskItem: 'B.14',
+    category: 'Prompting'
+  },
+  {
+    id: 'rr-most-to-least-prompting',
+    domain: 'B',
+    term: 'Most-to-Least Prompting',
+    correctDefinition: 'A prompt fading procedure in which the most intrusive prompt is used initially and prompts are systematically faded to less intrusive levels as the learner acquires the skill.',
+    distractors: [
+      'A prompt fading procedure in which the least intrusive prompt is used first',
+      'A procedure in which prompts are added as the learner makes errors',
+      'A procedure in which the same prompt level is maintained throughout training',
+    ],
+    misconceptions: [
+      'Most-to-least prompting is errorless — it begins with a high level of support to prevent errors. It is contrasted with least-to-most prompting, which allows some errors to occur.'
+    ],
+    domain: 'B',
+    taskItem: 'B.14',
+    category: 'Prompting'
+  },
+  {
+    id: 'rr-least-to-most-prompting',
+    domain: 'B',
+    term: 'Least-to-Most Prompting',
+    correctDefinition: 'A prompt fading procedure in which the least intrusive prompt is used first, with progressively more intrusive prompts added only if the learner does not respond correctly.',
+    distractors: [
+      'A prompt fading procedure in which the most intrusive prompt is used first',
+      'A procedure in which prompts are faded immediately after the first correct response',
+      'A procedure in which the same prompt level is maintained throughout training',
+    ],
+    misconceptions: [
+      'Least-to-most prompting allows some errors to occur, which may be acceptable for some learners. It requires the trainer to wait for the learner to respond before adding a more intrusive prompt.'
+    ],
+    domain: 'B',
+    taskItem: 'B.14',
+    category: 'Prompting'
+  },
+  {
+    id: 'rr-time-delay',
+    domain: 'B',
+    term: 'Time Delay',
+    correctDefinition: 'A prompt fading procedure in which a brief pause is inserted between the natural SD and the prompt, allowing the learner an opportunity to respond independently before the prompt is delivered.',
+    distractors: [
+      'A procedure in which reinforcement is delayed after a correct response',
+      'A procedure in which the learner is required to wait before responding',
+      'A schedule of reinforcement in which reinforcement is delivered after a variable time interval',
+    ],
+    misconceptions: [
+      'There are two types: constant time delay (fixed pause) and progressive time delay (pause increases over trials). Both are used to transfer stimulus control from the prompt to the natural SD.'
+    ],
+    domain: 'B',
+    taskItem: 'B.14',
+    category: 'Prompting'
+  },
+  {
+    id: 'rr-stimulus-fading',
+    domain: 'B',
+    term: 'Stimulus Fading',
+    correctDefinition: 'A procedure for transferring stimulus control in which a dimension of the controlling stimulus is gradually changed so that the learner responds to the natural stimulus without prompts.',
+    distractors: [
+      'The systematic reduction of response prompts over time',
+      'The process of reducing the intensity of a reinforcer over time',
+      'The process of gradually reducing the rate of reinforcement',
+    ],
+    misconceptions: [
+      'Stimulus fading changes the stimulus itself (e.g., gradually reducing the size of a visual cue), whereas prompt fading changes the supplemental prompts added to the stimulus.'
+    ],
+    domain: 'B',
+    taskItem: 'B.14',
+    category: 'Prompting'
+  },
+  {
+    id: 'rr-imitation',
+    domain: 'B',
+    term: 'Imitation',
+    correctDefinition: 'A form of observational learning in which the behavior of an observer comes to match the behavior of a model as a result of observing the model\'s behavior.',
+    distractors: [
+      'A verbal operant in which the response reproduces the formal properties of a verbal stimulus',
+      'A procedure in which the trainer physically guides the learner through a behavior',
+      'A behavior that is controlled by its consequences rather than by a model',
+    ],
+    misconceptions: [
+      'Imitation requires that the observer\'s behavior match the model\'s behavior and that this match is a result of observing the model — not just a coincidental topographic similarity.'
+    ],
+    domain: 'B',
+    taskItem: 'B.15',
+    category: 'Imitation'
+  },
+  {
+    id: 'rr-generalized-imitation',
+    domain: 'B',
+    term: 'Generalized Imitation',
+    correctDefinition: 'The tendency to imitate the behavior of a model even for novel behaviors that have never been directly reinforced, due to a history of reinforcement for imitation.',
+    distractors: [
+      'Imitating a behavior that has been directly reinforced in the past',
+      'Imitating the behavior of multiple models across different settings',
+      'Imitating verbal behavior across different sense modalities',
+    ],
+    misconceptions: [
+      'Generalized imitation is a critical prerequisite for observational learning and is often targeted early in ABA programs for learners with autism.'
+    ],
+    domain: 'B',
+    taskItem: 'B.15',
+    category: 'Imitation'
+  },
+  {
+    id: 'rr-observational-learning',
+    domain: 'B',
+    term: 'Observational Learning',
+    correctDefinition: 'A form of learning in which the behavior of an observer changes as a result of observing the behavior of a model and the consequences that follow the model\'s behavior.',
+    distractors: [
+      'A form of learning in which behavior is shaped by its own consequences',
+      'A form of learning in which a neutral stimulus acquires eliciting function through pairing',
+      'A form of learning that requires direct reinforcement of the observer\'s behavior',
+    ],
+    misconceptions: [
+      'Observational learning does not require direct reinforcement of the observer\'s behavior — the observer learns by watching the model receive consequences.'
+    ],
+    domain: 'B',
+    taskItem: 'B.15',
+    category: 'Imitation'
+  },
+  {
+    id: 'rr-rule-governed-behavior',
+    domain: 'B',
+    term: 'Rule-Governed Behavior',
+    correctDefinition: 'Behavior that is controlled by verbal stimuli that specify contingencies — the behavior is governed by a description of the contingency rather than direct contact with the contingency.',
+    distractors: [
+      'Behavior that is directly shaped by its consequences',
+      'Behavior that is controlled by nonverbal discriminative stimuli',
+      'Behavior that occurs in the presence of a specific verbal SD',
+    ],
+    misconceptions: [
+      'Rule-governed behavior allows humans to respond to contingencies they have never directly experienced. It can be both advantageous (following safety rules) and disadvantageous (insensitivity to changing contingencies).'
+    ],
+    domain: 'B',
+    taskItem: 'B.16',
+    category: 'Rule-Governed Behavior'
+  },
+  {
+    id: 'rr-contingency-shaped-behavior',
+    domain: 'B',
+    term: 'Contingency-Shaped Behavior',
+    correctDefinition: 'Behavior that has been directly shaped and maintained by contact with the contingencies of reinforcement and punishment in the environment.',
+    distractors: [
+      'Behavior that is controlled by verbal descriptions of contingencies',
+      'Behavior that is controlled by rules or instructions',
+      'Behavior that is controlled by observing the consequences of a model\'s behavior',
+    ],
+    misconceptions: [
+      'Contingency-shaped behavior tends to be more sensitive to changes in the contingency than rule-governed behavior, because it is directly controlled by the current environment.'
+    ],
+    domain: 'B',
+    taskItem: 'B.16',
+    category: 'Rule-Governed Behavior'
+  },
+  {
+    id: 'rr-pliance',
+    domain: 'B',
+    term: 'Pliance',
+    correctDefinition: 'Rule-governed behavior that is controlled by a history of socially mediated reinforcement for following the rule — the behavior is maintained by the social consequences of compliance.',
+    distractors: [
+      'Rule-governed behavior controlled by the natural consequences specified by the rule',
+      'Rule-governed behavior controlled by the verbal community\'s description of contingencies',
+      'Behavior that is directly shaped by contact with natural contingencies',
+    ],
+    misconceptions: [
+      'Pliance is maintained by the listener\'s reinforcement of compliance, not by the natural consequences described in the rule. "Do this because I said so" produces pliance.'
+    ],
+    domain: 'B',
+    taskItem: 'B.16',
+    category: 'Rule-Governed Behavior'
+  },
+  {
+    id: 'rr-tracking',
+    domain: 'B',
+    term: 'Tracking',
+    correctDefinition: 'Rule-governed behavior that is controlled by the correspondence between the rule and the natural contingencies it describes — the behavior is maintained by contact with the natural consequences specified by the rule.',
+    distractors: [
+      'Rule-governed behavior maintained by social reinforcement for compliance',
+      'Behavior that is directly shaped by contact with natural contingencies without verbal mediation',
+      'Rule-governed behavior that is maintained by augmenting motivating operations',
+    ],
+    misconceptions: [
+      'Tracking is maintained by the natural consequences described in the rule, not by social reinforcement for compliance. Following a recipe because it produces good food is tracking.'
+    ],
+    domain: 'B',
+    taskItem: 'B.16',
+    category: 'Rule-Governed Behavior'
+  },
+  {
+    id: 'rr-augmenting',
+    domain: 'B',
+    term: 'Augmenting',
+    correctDefinition: 'Rule-governed behavior that is controlled by a verbal stimulus that alters the reinforcing or punishing effectiveness of other stimuli — the rule functions as a motivating operation.',
+    distractors: [
+      'Rule-governed behavior maintained by social reinforcement for compliance',
+      'Rule-governed behavior maintained by the natural consequences specified by the rule',
+      'Behavior that is directly shaped by contact with natural contingencies',
+    ],
+    misconceptions: [
+      'Augmentals function like verbal MOs — they change the value of consequences. "This is the most important thing you will ever learn" is an augmental that increases the reinforcing value of the information that follows.'
+    ],
+    domain: 'B',
+    taskItem: 'B.16',
+    category: 'Rule-Governed Behavior'
+  },
+  {
+    id: 'rr-behavioral-contrast',
+    domain: 'B',
+    term: 'Behavioral Contrast',
+    correctDefinition: 'An increase in the rate of a behavior in one component of a multiple schedule when the rate of reinforcement in the other component is decreased.',
+    distractors: [
+      'A decrease in behavior in one setting when behavior is reinforced in another setting',
+      'An increase in behavior that occurs when reinforcement is withheld in all settings',
+      'The spread of behavior change from one setting to another',
+    ],
+    misconceptions: [
+      'Behavioral contrast is a side effect of differential reinforcement across components of a multiple schedule — when reinforcement decreases in one context, behavior increases in the other.'
+    ],
+    domain: 'B',
+    taskItem: 'B.17',
+    category: 'Behavioral Contrast'
+  },
+  {
+    id: 'rr-concurrent-schedules',
+    domain: 'B',
+    term: 'Concurrent Schedules',
+    correctDefinition: 'Two or more schedules of reinforcement that are simultaneously available for two or more different behaviors.',
+    distractors: [
+      'A schedule in which two behaviors are reinforced in alternating sessions',
+      'A schedule in which reinforcement is delivered for two behaviors in sequence',
+      'A schedule in which two behaviors compete for the same reinforcer',
+    ],
+    misconceptions: [
+      'Concurrent schedules are the basis for the matching law — organisms distribute their behavior across alternatives in proportion to the relative rates of reinforcement available.'
+    ],
+    domain: 'B',
+    taskItem: 'B.17',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-matching-law',
+    domain: 'B',
+    term: 'Matching Law',
+    correctDefinition: 'The principle that the relative rate of responding on concurrent schedules matches the relative rate of reinforcement — organisms allocate behavior in proportion to the reinforcement available from each alternative.',
+    distractors: [
+      'The principle that behavior is always controlled by the most recently reinforced response',
+      'The principle that organisms always choose the alternative with the highest absolute rate of reinforcement',
+      'The principle that behavior matches the topography of the reinforcer that maintains it',
+    ],
+    misconceptions: [
+      'The matching law describes behavior allocation across concurrent schedules. Undermatching (less extreme allocation than predicted) and overmatching (more extreme) are common deviations.'
+    ],
+    domain: 'B',
+    taskItem: 'B.17',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-multiple-schedule',
+    domain: 'B',
+    term: 'Multiple Schedule',
+    correctDefinition: 'A compound schedule in which two or more component schedules of reinforcement alternate, each signaled by a distinctive discriminative stimulus.',
+    distractors: [
+      'A schedule in which two or more schedules are simultaneously available for different behaviors',
+      'A schedule in which reinforcement is delivered on two different schedules in the same component',
+      'A schedule in which the same behavior is reinforced by two different reinforcers',
+    ],
+    misconceptions: [
+      'In a multiple schedule, the components alternate sequentially (not simultaneously). Each component is signaled by a different SD, establishing differential stimulus control.'
+    ],
+    domain: 'B',
+    taskItem: 'B.17',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-mixed-schedule',
+    domain: 'B',
+    term: 'Mixed Schedule',
+    correctDefinition: 'A compound schedule in which two or more component schedules of reinforcement alternate without distinctive discriminative stimuli to signal each component.',
+    distractors: [
+      'A schedule in which two or more schedules are simultaneously available for different behaviors',
+      'A compound schedule in which each component is signaled by a distinctive discriminative stimulus',
+      'A schedule in which reinforcement is delivered for two different behaviors in alternating sessions',
+    ],
+    misconceptions: [
+      'Mixed schedules are like multiple schedules without the discriminative stimuli. Because no signal indicates which component is in effect, responding tends to be more variable.'
+    ],
+    domain: 'B',
+    taskItem: 'B.17',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-chained-schedule',
+    domain: 'B',
+    term: 'Chained Schedule',
+    correctDefinition: 'A compound schedule in which the completion of each component produces a conditioned reinforcer (the SD for the next component) rather than a primary reinforcer, until the final component produces the terminal reinforcer.',
+    distractors: [
+      'A schedule in which two or more schedules alternate with distinctive discriminative stimuli',
+      'A schedule in which reinforcement is delivered for completing a sequence of behaviors',
+      'A schedule in which the same behavior is reinforced by two different reinforcers in sequence',
+    ],
+    misconceptions: [
+      'In a chained schedule, each component\'s SD functions as a conditioned reinforcer for completing the previous component. The terminal reinforcer at the end maintains the entire chain.'
+    ],
+    domain: 'B',
+    taskItem: 'B.17',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-tandem-schedule',
+    domain: 'B',
+    term: 'Tandem Schedule',
+    correctDefinition: 'A compound schedule in which the requirements of two or more component schedules must be completed in sequence before a reinforcer is delivered, without distinctive stimuli signaling each component.',
+    distractors: [
+      'A compound schedule in which each component is signaled by a distinctive discriminative stimulus',
+      'A schedule in which two behaviors are reinforced simultaneously',
+      'A schedule in which reinforcement is delivered for completing a single behavior',
+    ],
+    misconceptions: [
+      'A tandem schedule is to a chained schedule as a mixed schedule is to a multiple schedule — the components are the same but the discriminative stimuli are absent.'
+    ],
+    domain: 'B',
+    taskItem: 'B.17',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-response-cost',
+    domain: 'B',
+    term: 'Response Cost',
+    correctDefinition: 'A form of negative punishment in which a specified amount of a reinforcer is removed contingent on the occurrence of a target behavior.',
+    distractors: [
+      'A form of positive punishment in which an aversive stimulus is added following behavior',
+      'A procedure in which all reinforcement is withheld for a specified period of time',
+      'A procedure in which the learner loses access to a preferred activity',
+    ],
+    misconceptions: [
+      'Response cost is a form of negative punishment — something is removed (tokens, points, money) contingent on behavior. The behavior must decrease for it to qualify as punishment.'
+    ],
+    domain: 'B',
+    taskItem: 'B.18',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-time-out',
+    domain: 'B',
+    term: 'Time-Out from Positive Reinforcement',
+    correctDefinition: 'A form of negative punishment in which access to sources of positive reinforcement is contingently removed for a specified period of time following a target behavior.',
+    distractors: [
+      'A form of positive punishment in which an aversive stimulus is added following behavior',
+      'A procedure in which the learner is physically removed from the environment',
+      'A procedure in which all consequences are withheld following a target behavior',
+    ],
+    misconceptions: [
+      'Time-out only works if the time-in environment is reinforcing. If the environment is aversive, time-out may function as negative reinforcement (escape) and increase behavior.'
+    ],
+    domain: 'B',
+    taskItem: 'B.18',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-overcorrection',
+    domain: 'B',
+    term: 'Overcorrection',
+    correctDefinition: 'A form of positive punishment in which the learner is required to correct the environmental effects of the behavior (restitution) and/or practice appropriate behavior repeatedly (positive practice).',
+    distractors: [
+      'A form of negative punishment in which reinforcers are removed following behavior',
+      'A procedure in which the learner is required to repeat the target behavior multiple times',
+      'A procedure in which the learner is physically guided through a corrective response',
+    ],
+    misconceptions: [
+      'Overcorrection has two components: restitutional overcorrection (restoring the environment to a better-than-baseline state) and positive practice overcorrection (practicing the correct behavior repeatedly).'
+    ],
+    domain: 'B',
+    taskItem: 'B.18',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-contingent-exercise',
+    domain: 'B',
+    term: 'Contingent Exercise',
+    correctDefinition: 'A form of positive punishment in which the learner is required to engage in physical exercise contingent on the occurrence of a target behavior.',
+    distractors: [
+      'A form of negative punishment in which access to exercise is removed following behavior',
+      'A procedure in which exercise is used as a reinforcer for appropriate behavior',
+      'A procedure in which exercise is scheduled at fixed times regardless of behavior',
+    ],
+    misconceptions: [
+      'Contingent exercise is a form of positive punishment — exercise is added contingent on behavior. It is distinct from antecedent exercise, which is used to reduce behavior before it occurs.'
+    ],
+    domain: 'B',
+    taskItem: 'B.18',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-verbal-reprimand',
+    domain: 'B',
+    term: 'Verbal Reprimand',
+    correctDefinition: 'A form of positive punishment in which a verbal statement expressing disapproval is delivered contingent on the occurrence of a target behavior.',
+    distractors: [
+      'A form of negative punishment in which verbal praise is removed following behavior',
+      'A verbal prompt used to redirect behavior before it occurs',
+      'A verbal statement that functions as a discriminative stimulus for appropriate behavior',
+    ],
+    misconceptions: [
+      'Verbal reprimands only function as punishment if they decrease the target behavior. Reprimands that are delivered inconsistently or with high emotional intensity may inadvertently reinforce attention-maintained behavior.'
+    ],
+    domain: 'B',
+    taskItem: 'B.18',
+    category: 'Punishment'
+  },
+  {
+    id: 'rr-satiation',
+    domain: 'B',
+    term: 'Satiation',
+    correctDefinition: 'A decrease in the reinforcing effectiveness of a stimulus as a result of repeated exposure to or consumption of that stimulus.',
+    distractors: [
+      'A decrease in behavior caused by the removal of a reinforcer',
+      'A decrease in behavior caused by the delivery of an aversive stimulus',
+      'A decrease in the punishing effectiveness of a stimulus as a result of repeated exposure',
+    ],
+    misconceptions: [
+      'Satiation is an abolishing operation (AO) — it decreases the reinforcing value of a stimulus and decreases behavior maintained by that stimulus. It is the opposite of deprivation.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Motivating Operations'
+  },
+  {
+    id: 'rr-deprivation',
+    domain: 'B',
+    term: 'Deprivation',
+    correctDefinition: 'An increase in the reinforcing effectiveness of a stimulus as a result of reduced access to or consumption of that stimulus.',
+    distractors: [
+      'A decrease in the reinforcing effectiveness of a stimulus as a result of repeated exposure',
+      'The removal of a reinforcer contingent on a target behavior',
+      'A decrease in behavior caused by the withholding of reinforcement',
+    ],
+    misconceptions: [
+      'Deprivation is an establishing operation (EO) — it increases the reinforcing value of a stimulus and increases behavior maintained by that stimulus. It is the opposite of satiation.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Motivating Operations'
+  },
+  {
+    id: 'rr-covert-conditioning',
+    domain: 'B',
+    term: 'Covert Conditioning',
+    correctDefinition: 'A behavior change procedure in which imagined events serve as the antecedents, behaviors, and/or consequences in a conditioning paradigm.',
+    distractors: [
+      'A procedure in which conditioning occurs without the learner\'s awareness',
+      'A procedure in which private events are used as discriminative stimuli',
+      'A procedure in which behavior is conditioned through observation of a model',
+    ],
+    misconceptions: [
+      'Covert conditioning procedures (e.g., covert sensitization, covert reinforcement) use imagined scenarios. Their effectiveness is debated because the imagined events cannot be directly observed or measured.'
+    ],
+    domain: 'B',
+    taskItem: 'B.19',
+    category: 'Private Events'
+  },
+  {
+    id: 'rr-stimulus-equivalence',
+    domain: 'B',
+    term: 'Stimulus Equivalence',
+    correctDefinition: 'The emergence of untrained and unreinforced stimulus relations among a set of stimuli following training on some relations among those stimuli — demonstrated by reflexivity, symmetry, and transitivity.',
+    distractors: [
+      'The tendency for stimuli that share physical properties to evoke the same behavior',
+      'The process of establishing stimulus control through differential reinforcement',
+      'The generalization of behavior from trained stimuli to untrained stimuli',
+    ],
+    misconceptions: [
+      'Stimulus equivalence requires all three properties: reflexivity (A=A), symmetry (if A=B then B=A), and transitivity (if A=B and B=C then A=C). Untrained relations must emerge for equivalence to be demonstrated.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-reflexivity',
+    domain: 'B',
+    term: 'Reflexivity',
+    correctDefinition: 'A property of stimulus equivalence in which a stimulus is shown to be equivalent to itself without prior training (A=A) — also called identity matching.',
+    distractors: [
+      'A property in which if A is equivalent to B, then B is equivalent to A',
+      'A property in which if A=B and B=C, then A=C',
+      'A property in which stimuli that share physical properties are treated as equivalent',
+    ],
+    misconceptions: [
+      'Reflexivity is demonstrated by identity matching — selecting a stimulus that is identical to the sample. It is considered a baseline prerequisite for equivalence testing.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-symmetry',
+    domain: 'B',
+    term: 'Symmetry',
+    correctDefinition: 'A property of stimulus equivalence in which a trained relation is bidirectional — if a stimulus A is trained to go with B, then B goes with A without additional training.',
+    distractors: [
+      'A property in which a stimulus is equivalent to itself without prior training',
+      'A property in which if A=B and B=C, then A=C without additional training',
+      'A property in which stimuli that share physical properties are treated as equivalent',
+    ],
+    misconceptions: [
+      'Symmetry is also called "mutual entailment." If a learner is trained to select picture B given word A, symmetry means they will also select word A given picture B without additional training.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-transitivity',
+    domain: 'B',
+    term: 'Transitivity',
+    correctDefinition: 'A property of stimulus equivalence in which an untrained relation emerges between two stimuli that have each been trained in relation to a third stimulus (if A=B and B=C, then A=C).',
+    distractors: [
+      'A property in which a stimulus is equivalent to itself without prior training',
+      'A property in which a trained relation is bidirectional',
+      'A property in which stimuli that share physical properties are treated as equivalent',
+    ],
+    misconceptions: [
+      'Transitivity is also called "combinatorial entailment." It is the most diagnostic property of equivalence because it demonstrates the emergence of a genuinely novel, untrained relation.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-derived-relational-responding',
+    domain: 'B',
+    term: 'Derived Relational Responding',
+    correctDefinition: 'Responding to relations among stimuli based on a history of reinforcement for relational responding, rather than based on the physical properties of the stimuli.',
+    distractors: [
+      'Responding to stimuli based on their physical similarity to trained stimuli',
+      'Responding to stimuli based on the consequences that have been paired with them',
+      'Responding to stimuli based on their temporal proximity to reinforcement',
+    ],
+    misconceptions: [
+      'Derived relational responding is the basis for stimulus equivalence and relational frame theory (RFT). It allows humans to respond to arbitrary relations that have no basis in the physical properties of stimuli.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-relational-frame-theory',
+    domain: 'B',
+    term: 'Relational Frame Theory (RFT)',
+    correctDefinition: 'A behavior-analytic account of human language and cognition that explains complex verbal behavior as derived relational responding under contextual control.',
+    distractors: [
+      'A theory that explains verbal behavior in terms of the six verbal operants identified by Skinner',
+      'A theory that explains language acquisition through imitation and reinforcement',
+      'A theory that explains cognition in terms of neural networks and information processing',
+    ],
+    misconceptions: [
+      'RFT extends beyond stimulus equivalence to include other relational frames (e.g., comparison, opposition, hierarchy). It provides a behavioral account of analogical reasoning, metaphor, and problem-solving.'
+    ],
+    domain: 'B',
+    taskItem: 'B.20',
+    category: 'Verbal Behavior'
+  },
+  {
+    id: 'rr-ratio-strain',
+    domain: 'B',
+    term: 'Ratio Strain',
+    correctDefinition: 'A disruption in responding that occurs when the ratio requirement in a ratio schedule is increased too rapidly, resulting in pausing, irregular responding, or extinction-like behavior.',
+    distractors: [
+      'A decrease in behavior caused by the removal of a reinforcer',
+      'A disruption in responding caused by switching from a ratio to an interval schedule',
+      'An increase in behavior caused by a very thin schedule of reinforcement',
+    ],
+    misconceptions: [
+      'Ratio strain is prevented by thinning schedules gradually. Abrupt increases in ratio requirements can break down responding that was previously stable under a leaner schedule.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-post-reinforcement-pause',
+    domain: 'B',
+    term: 'Post-Reinforcement Pause',
+    correctDefinition: 'A pause in responding that occurs immediately after the delivery of a reinforcer, most commonly observed in fixed-ratio and fixed-interval schedules.',
+    distractors: [
+      'A pause in responding that occurs at the start of an extinction procedure',
+      'A pause in responding that occurs when the ratio requirement is increased too rapidly',
+      'A pause in responding that occurs between components of a multiple schedule',
+    ],
+    misconceptions: [
+      'Post-reinforcement pauses are characteristic of fixed schedules (FR and FI) but not variable schedules (VR and VI). The pause length in FR schedules increases with larger ratio requirements.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-scallop',
+    domain: 'B',
+    term: 'Scallop',
+    correctDefinition: 'The characteristic cumulative record pattern produced by a fixed-interval schedule — a post-reinforcement pause followed by gradually accelerating responding as the interval end approaches.',
+    distractors: [
+      'A high, steady rate of responding with no post-reinforcement pause',
+      'A pattern of irregular, unpredictable responding across a session',
+      'A rapid burst of responding at the start of a session followed by a gradual decrease',
+    ],
+    misconceptions: [
+      'The scallop pattern is diagnostic of FI schedules. The acceleration in responding near the end of the interval reflects temporal discrimination — the organism learns when reinforcement is likely to be available.'
+    ],
+    domain: 'B',
+    taskItem: 'B.07',
+    category: 'Schedules of Reinforcement'
+  },
+  {
+    id: 'rr-higher-order-conditioning',
+    domain: 'B',
+    term: 'Higher-Order Conditioning',
+    correctDefinition: 'A form of respondent conditioning in which a conditioned stimulus is used to condition a new neutral stimulus, without the presence of the original unconditioned stimulus.',
+    distractors: [
+      'A form of operant conditioning in which conditioned reinforcers are used to establish new conditioned reinforcers',
+      'A form of conditioning in which the unconditioned stimulus is presented multiple times before the neutral stimulus',
+      'A form of conditioning in which the conditioned response is stronger than the unconditioned response',
+    ],
+    misconceptions: [
+      'In higher-order conditioning, the CS from first-order conditioning functions as the US for second-order conditioning. The resulting conditioned response is typically weaker and less resistant to extinction.'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-respondent-extinction',
+    domain: 'B',
+    term: 'Respondent Extinction',
+    correctDefinition: 'The reduction in the magnitude of a conditioned response that occurs when the conditioned stimulus is repeatedly presented without the unconditioned stimulus.',
+    distractors: [
+      'The elimination of an operant behavior by withholding its reinforcer',
+      'The reduction in behavior that occurs when punishment is applied',
+      'The reduction in responding that occurs when a discriminative stimulus is removed',
+    ],
+    misconceptions: [
+      'Respondent extinction reduces the CR but does not eliminate the CS-US association permanently. Spontaneous recovery can occur after a rest period, and the CR can be rapidly reconditioned.'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-conditioned-emotional-response',
+    domain: 'B',
+    term: 'Conditioned Emotional Response (CER)',
+    correctDefinition: 'An emotional response (e.g., fear, anxiety) that is elicited by a conditioned stimulus that has been paired with an aversive unconditioned stimulus.',
+    distractors: [
+      'An emotional response that is directly reinforced by its consequences',
+      'An emotional response that is controlled by a discriminative stimulus',
+      'An emotional response that occurs in the absence of any identifiable stimulus',
+    ],
+    misconceptions: [
+      'CERs are established through respondent conditioning. They can suppress ongoing operant behavior (conditioned suppression) and are the basis for many anxiety disorders.'
+    ],
+    domain: 'B',
+    taskItem: 'B.08',
+    category: 'Respondent Conditioning'
+  },
+  {
+    id: 'rr-stimulus-overselectivity',
+    domain: 'B',
+    term: 'Stimulus Overselectivity',
+    correctDefinition: 'A phenomenon in which behavior comes under the control of only a subset of the relevant stimulus components in a complex stimulus, while other relevant components are ignored.',
+    distractors: [
+      'A phenomenon in which behavior generalizes to all stimuli in the environment',
+      'A phenomenon in which behavior is controlled by too many stimulus dimensions simultaneously',
+      'A phenomenon in which the organism responds to all stimuli equally',
+    ],
+    misconceptions: [
+      'Stimulus overselectivity is common in individuals with autism and developmental disabilities. It can interfere with learning and generalization because the learner responds to only one cue in a multi-cue environment.'
+    ],
+    domain: 'B',
+    taskItem: 'B.05',
+    category: 'Stimulus Control'
+  },
+  {
+    id: 'rr-errorless-learning',
+    domain: 'B',
+    term: 'Errorless Learning',
+    correctDefinition: 'A teaching procedure designed to minimize errors by using prompts that ensure correct responding from the outset, then systematically fading those prompts.',
+    distractors: [
+      'A teaching procedure in which errors are corrected immediately after they occur',
+      'A teaching procedure in which the learner is allowed to make errors to learn from them',
+      'A teaching procedure in which reinforcement is withheld following incorrect responses',
+    ],
+    misconceptions: [
+      'Errorless learning uses stimulus control transfer procedures (e.g., most-to-least prompting, stimulus fading) to prevent errors. It is contrasted with trial-and-error learning.'
+    ],
+    domain: 'B',
+    taskItem: 'B.14',
+    category: 'Prompting'
+  },
+  {
+    id: 'rr-discrete-trial-teaching',
+    domain: 'B',
+    term: 'Discrete Trial Teaching (DTT)',
+    correctDefinition: 'A structured teaching format consisting of a discriminative stimulus, a learner response, and a consequence, with a clear beginning and end to each trial and an intertrial interval.',
+    distractors: [
+      'A teaching format in which behaviors are taught in the natural environment during routine activities',
+      'A teaching format in which the learner initiates each learning opportunity',
+      'A teaching format in which multiple behaviors are taught simultaneously in a single trial',
+    ],
+    misconceptions: [
+      'DTT is a format for delivering instruction, not a specific procedure. It can be used to teach any behavior and can incorporate any evidence-based teaching procedure (e.g., shaping, chaining, prompting).'
+    ],
+    domain: 'B',
+    taskItem: 'B.21',
+    category: 'Teaching Procedures'
+  },
+  {
+    id: 'rr-natural-environment-teaching',
+    domain: 'B',
+    term: 'Natural Environment Teaching (NET)',
+    correctDefinition: 'A teaching approach in which learning opportunities are embedded in the learner\'s natural environment during routine activities, using naturally occurring antecedents and consequences.',
+    distractors: [
+      'A teaching format consisting of discrete trials with a clear beginning and end',
+      'A teaching format in which the trainer controls all antecedents and consequences',
+      'A teaching format in which behaviors are taught in a clinical setting before being generalized',
+    ],
+    misconceptions: [
+      'NET uses the learner\'s motivation and natural reinforcers to teach skills in context. It is contrasted with DTT but both approaches are often used together in comprehensive ABA programs.'
+    ],
+    domain: 'B',
+    taskItem: 'B.21',
+    category: 'Teaching Procedures'
+  },
+  {
+    id: 'rr-incidental-teaching',
+    domain: 'B',
+    term: 'Incidental Teaching',
+    correctDefinition: 'A naturalistic teaching procedure in which the trainer waits for the learner to initiate an interaction with a preferred item or activity, then uses that initiation as an opportunity to prompt and reinforce a target behavior.',
+    distractors: [
+      'A teaching procedure in which the trainer initiates all learning opportunities',
+      'A teaching procedure in which behaviors are taught in a structured, one-on-one format',
+      'A teaching procedure in which the learner is prompted to initiate interactions with peers',
+    ],
+    misconceptions: [
+      'Incidental teaching is learner-initiated — the trainer arranges the environment to create opportunities for the learner to initiate, then uses those initiations to teach target skills.'
+    ],
+    domain: 'B',
+    taskItem: 'B.21',
+    category: 'Teaching Procedures'
+  },
+  {
+    id: 'rr-pivotal-response-training',
+    domain: 'B',
+    term: 'Pivotal Response Training (PRT)',
+    correctDefinition: 'A naturalistic behavioral intervention that targets pivotal areas of development (motivation, responsivity to multiple cues, self-management, self-initiation) to produce broad improvements across many skill areas.',
+    distractors: [
+      'A structured teaching procedure that uses discrete trials to teach specific skills',
+      'A procedure that targets the most frequently occurring problem behaviors first',
+      'A procedure that uses physical prompts to teach pivotal motor skills',
+    ],
+    misconceptions: [
+      'PRT targets pivotal behaviors because improving them produces collateral improvements across many other behaviors. It is a comprehensive naturalistic intervention, not a single procedure.'
+    ],
+    domain: 'B',
+    taskItem: 'B.21',
+    category: 'Teaching Procedures'
+  },
+  {
+    id: 'rr-mand-training',
+    domain: 'B',
+    term: 'Mand Training',
+    correctDefinition: 'A procedure for teaching mands by establishing motivating operations for specific reinforcers, then prompting and reinforcing requests for those reinforcers.',
+    distractors: [
+      'A procedure for teaching tacts by pairing objects with their verbal labels',
+      'A procedure for teaching intraverbals by reinforcing responses to verbal questions',
+      'A procedure for teaching echoics by reinforcing vocal imitation',
+    ],
+    misconceptions: [
+      'Mand training requires an active MO — the learner must be motivated for the item before training. Teaching mands without an active MO produces rote verbal behavior, not true mands.'
+    ],
+    domain: 'B',
+    taskItem: 'B.10',
+    category: 'Verbal Behavior'
   }
+
 ];
