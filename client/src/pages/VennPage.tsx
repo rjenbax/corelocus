@@ -1,4 +1,4 @@
-// VennPage.tsx — Tier 4: Interactive Venn Diagram Sorting Exercise
+// Tier 4 — Venn Diagram Exercise
 // Design: Academic Warmth — forest green primary, warm cream bg, slate text
 // Mechanic: Student sorts a shuffled pool of features into 4 zones:
 //   [A Only] [Shared] [B Only] [Does Not Belong]
@@ -101,252 +101,201 @@ function buildFeatureCards(item: VennItem): FeatureCard[] {
   return shuffle(cards);
 }
 
-// ─── Venn Grid View (Domain Accordion) ──────────────────────────────────────
-
+// ── GRID VIEW ─────────────────────────────────────────────────────────────────
 function VennGridView({
-  filteredItems,
-  selectedDomain,
-  setSelectedDomain,
-  completedIds,
-  openExercise,
-  navigate,
-  vennDiagrams: allDiagrams,
+  filteredItems, selectedDomain, setSelectedDomain, completedIds, openExercise, navigate, vennDiagrams,
 }: {
   filteredItems: VennItem[];
   selectedDomain: string;
   setSelectedDomain: (d: string) => void;
   completedIds: Set<string>;
   openExercise: (item: VennItem, mode?: 'study' | 'sort') => void;
-  navigate: (path: string) => void;
+  navigate: (to: string) => void;
   vennDiagrams: VennItem[];
 }) {
-  const [openDomains, setOpenDomains] = useState<Set<string>>(new Set());
+  const [openDomains, setOpenDomains] = useState<Set<string>>(new Set(['B']));
 
   const toggleDomain = (domain: string) => {
     setOpenDomains(prev => {
       const next = new Set(prev);
-      if (next.has(domain)) next.delete(domain); else next.add(domain);
+      if (next.has(domain)) next.delete(domain);
+      else next.add(domain);
       return next;
     });
   };
 
-  // Group items by domain, preserving canonical order
   const grouped = useMemo(() => {
-    const map = new Map<string, VennItem[]>();
-    DOMAIN_ORDER.forEach(d => map.set(d, []));
-    filteredItems.forEach(item => {
-      const d = (item as any).domain as string;
-      if (!map.has(d)) map.set(d, []);
-      map.get(d)!.push(item);
-    });
-    map.forEach((v, k) => { if (v.length === 0) map.delete(k); });
+    const map: Record<string, VennItem[]> = {};
+    for (const item of vennDiagrams) {
+      const d = (item as any).domain ?? 'B';
+      if (!map[d]) map[d] = [];
+      map[d].push(item);
+    }
     return map;
-  }, [filteredItems]);
+  }, [vennDiagrams]);
 
-  const totalCompleted = completedIds.size;
-  const totalDiagrams = allDiagrams.length;
-
-  // Domain counts for filter pills
   const domainCounts = useMemo(() => {
-    const counts: Record<string, number> = {};
-    DOMAIN_ORDER.forEach(d => {
-      counts[d] = allDiagrams.filter(v => (v as any).domain === d).length;
-    });
+    const counts: Record<string, { total: number; completed: number }> = {};
+    for (const [d, items] of Object.entries(grouped)) {
+      counts[d] = {
+        total: items.length,
+        completed: items.filter(i => completedIds.has(i.id)).length,
+      };
+    }
     return counts;
-  }, [allDiagrams]);
+  }, [grouped, completedIds]);
+
+  const visibleDomains = DOMAIN_ORDER.filter(d => grouped[d]?.length > 0);
+
+  // Filter pills
+  const allCount = vennDiagrams.length;
+  const allCompleted = vennDiagrams.filter(i => completedIds.has(i.id)).length;
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container flex items-center justify-between h-14">
-          <div className="flex items-center gap-3">
-            <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
-              <ArrowLeft className="w-4 h-4" />
-              <span className="hidden sm:inline">Dashboard</span>
-            </button>
-            <span className="text-border">|</span>
-            <div className="flex items-center gap-2">
-              <GitMerge className="w-4 h-4 text-violet-700" />
-              <span className="font-semibold text-sm">Venn Diagram</span>
-              <span className="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">Tier 4</span>
-            </div>
+    <div className="min-h-screen bg-[#F8FAFC]">
+      <header className="bg-white border-b border-slate-200 sticky top-0 z-20">
+        <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+          <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-500 hover:text-slate-800 transition-colors text-sm">
+            <ArrowLeft className="w-4 h-4" />
+            Home
+          </button>
+          <div className="flex items-center gap-2">
+            <GitMerge className="w-5 h-5 text-violet-700" />
+            <h1 className="font-bold text-slate-800 text-base">Tier 4 — Venn Diagram</h1>
           </div>
-          <div className="text-xs text-muted-foreground">
-            {totalCompleted} / {totalDiagrams} completed
+          <div className="text-xs text-slate-500">
+            <span className="font-semibold text-violet-700">{allCompleted}</span>/{allCount} completed
           </div>
         </div>
       </header>
 
-      <div className="container py-6 max-w-3xl mx-auto">
-        {/* Domain filter pills */}
-        <div className="mb-6">
-          <div className="flex items-center gap-2 mb-3">
-            <Filter className="w-3.5 h-3.5 text-muted-foreground" />
-            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Filter by Domain</span>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => setSelectedDomain('ALL')}
-              className={cn(
-                'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
-                selectedDomain === 'ALL'
-                  ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
-                  : 'bg-card text-muted-foreground border-border hover:border-violet-300 hover:text-violet-800'
-              )}
-            >
-              All
-              <span className={cn('ml-1.5 text-[10px]', selectedDomain === 'ALL' ? 'text-violet-200' : 'text-muted-foreground/60')}>
-                ({allDiagrams.length})
-              </span>
-            </button>
-            {DOMAIN_ORDER.filter(d => domainCounts[d] > 0).map(d => {
-              const isActive = selectedDomain === d;
-              const dc = DOMAIN_COLORS[d];
-              return (
-                <button
-                  key={d}
-                  onClick={() => setSelectedDomain(d)}
-                  className={cn(
-                    'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
-                    isActive
-                      ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
-                      : cn('bg-card border-border hover:border-violet-300', dc.pill)
-                  )}
-                >
-                  Domain {d}
-                  <span className={cn('ml-1.5 text-[10px]', isActive ? 'text-violet-200' : 'text-muted-foreground/60')}>
-                    ({domainCounts[d]})
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Start CTA */}
-        <div className="bg-gradient-to-r from-violet-50 to-purple-50 border-2 border-violet-200 rounded-2xl p-6 mb-8">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <h2 className="text-xl font-bold text-foreground mb-1">
-                {selectedDomain === 'ALL' ? 'Venn Diagram Sort' : `Domain ${selectedDomain} — ${DOMAIN_FULL[selectedDomain]}`}
-              </h2>
-              <p className="text-sm text-muted-foreground mb-4">
-                Sort features into the correct zones: Term A Only, Shared, Term B Only, or Does Not Belong.
-                {selectedDomain !== 'ALL' && ` Drilling Domain ${selectedDomain}.`}
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <button
-                  onClick={() => openExercise(filteredItems[0], 'study')}
-                  disabled={filteredItems.length === 0}
-                  className="flex items-center gap-2 bg-violet-700 hover:bg-violet-800 disabled:opacity-50 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
-                >
-                  <BookOpen className="w-4 h-4" />
-                  {selectedDomain === 'ALL'
-                    ? `Browse All (${filteredItems.length} pairs)`
-                    : `Browse Domain ${selectedDomain} (${filteredItems.length})`}
-                </button>
-                <button
-                  onClick={() => openExercise(filteredItems[0], 'sort')}
-                  disabled={filteredItems.length === 0}
-                  className="flex items-center gap-2 border border-violet-300 text-violet-800 bg-white px-4 py-2.5 rounded-lg hover:bg-violet-50 transition-colors text-sm"
-                >
-                  <Swords className="w-4 h-4" />
-                  Jump to Sort Mode
-                </button>
-              </div>
-            </div>
-            {totalCompleted > 0 && (
-              <div className="text-right flex-shrink-0">
-                <div className="text-3xl font-black text-violet-700">{totalCompleted}</div>
-                <div className="text-xs text-muted-foreground">completed</div>
-              </div>
+      {/* Domain filter pills */}
+      <div className="bg-white border-b border-slate-100 sticky top-[53px] z-10">
+        <div className="max-w-5xl mx-auto px-4 py-2 flex items-center gap-2 overflow-x-auto">
+          <Filter className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+          <button
+            onClick={() => setSelectedDomain('ALL')}
+            className={cn(
+              'px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border',
+              selectedDomain === 'ALL'
+                ? 'bg-violet-700 text-white border-violet-700'
+                : 'bg-white text-slate-600 border-slate-200 hover:border-violet-300'
             )}
-          </div>
+          >
+            All ({allCount})
+          </button>
+          {visibleDomains.map(d => {
+            const c = domainCounts[d];
+            return (
+              <button
+                key={d}
+                onClick={() => setSelectedDomain(d)}
+                className={cn(
+                  'px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border',
+                  selectedDomain === d
+                    ? 'bg-violet-700 text-white border-violet-700'
+                    : 'bg-white text-slate-600 border-slate-200 hover:border-violet-300'
+                )}
+              >
+                Domain {d} ({c?.total ?? 0})
+              </button>
+            );
+          })}
         </div>
+      </div>
 
-        {/* Domain accordion */}
-        <div className="flex items-center justify-between mb-3">
-          <h3 className="font-semibold text-sm text-foreground">
-            {selectedDomain === 'ALL'
-              ? `All Pairs (${allDiagrams.length})`
-              : `Domain ${selectedDomain} — ${DOMAIN_FULL[selectedDomain]} (${filteredItems.length})`}
-          </h3>
-          <span className="text-xs text-muted-foreground">Click a domain to expand · Practice to drill</span>
-        </div>
-
-        <div className="space-y-2">
-          {Array.from(grouped.entries()).map(([domain, domainItems]) => {
+      <div className="max-w-5xl mx-auto px-4 py-4 space-y-2">
+        {visibleDomains
+          .filter(d => selectedDomain === 'ALL' || selectedDomain === d)
+          .map(domain => {
+            const items = grouped[domain] ?? [];
+            const counts = domainCounts[domain] ?? { total: 0, completed: 0 };
             const isOpen = openDomains.has(domain);
-            const dc = DOMAIN_COLORS[domain] ?? { pill: 'bg-muted text-foreground', badge: domain };
-            const completedInDomain = domainItems.filter(item => completedIds.has(item.id)).length;
+            const pct = counts.total > 0 ? Math.round((counts.completed / counts.total) * 100) : 0;
+            const colors = DOMAIN_COLORS[domain] ?? DOMAIN_COLORS['B'];
 
             return (
-              <div key={domain} className="border border-border rounded-xl overflow-hidden bg-card">
-                {/* Section header */}
-                <div className="flex items-center gap-3 px-4 py-3">
-                  <button
-                    onClick={() => toggleDomain(domain)}
-                    className="flex items-center gap-3 flex-1 min-w-0 text-left"
-                  >
-                    {isOpen
-                      ? <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0" />
-                      : <ChevronRight className="w-4 h-4 text-muted-foreground flex-shrink-0" />}
-                    <span className={cn('text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0', dc.pill)}>Domain {domain}</span>
-                    <span className="font-semibold text-sm text-foreground truncate">{DOMAIN_FULL[domain]}</span>
-                    <span className="text-xs text-muted-foreground flex-shrink-0">{domainItems.length} pairs</span>
-                    {completedInDomain > 0 && (
-                      <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 flex-shrink-0">
-                        {completedInDomain}/{domainItems.length} done
-                      </span>
-                    )}
-                    {completedInDomain === 0 && (
-                      <span className="text-[10px] text-muted-foreground/50 flex-shrink-0">Not started</span>
-                    )}
-                  </button>
-                  {/* Practice this domain button */}
-                  <button
-                    onClick={() => openExercise(domainItems[0], 'sort')}
-                    className="flex items-center gap-1.5 text-xs font-medium text-violet-700 border border-violet-200 bg-violet-50 hover:bg-violet-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
-                  >
-                    <Zap className="w-3 h-3" />
-                    Practice
-                  </button>
-                </div>
-
-                {/* Expanded pair list */}
-                {isOpen && (
-                  <div className="border-t border-border">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-border">
-                      {domainItems.map(pair => {
-                        const isCompleted = completedIds.has(pair.id);
-                        return (
-                          <button
-                            key={pair.id}
-                            onClick={() => openExercise(pair)}
-                            className="p-3 bg-card hover:bg-muted/40 transition-colors text-left"
-                          >
-                            <div className="flex items-center justify-between mb-1">
-                              <span className="text-sm font-medium text-foreground leading-tight">{pair.conceptA}</span>
-                              {isCompleted && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0 ml-2" />}
-                            </div>
-                            <div className="text-xs text-muted-foreground">vs {pair.conceptB}</div>
-                          </button>
-                        );
-                      })}
+              <div key={domain} className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                {/* Domain accordion header */}
+                <button
+                  onClick={() => toggleDomain(domain)}
+                  className="w-full px-4 py-3 flex items-center justify-between hover:bg-slate-50 transition-colors"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className={cn('w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0', colors.pill)}>
+                      {domain}
+                    </span>
+                    <div className="text-left">
+                      <p className="text-sm font-semibold text-slate-800">{DOMAIN_FULL[domain] ?? `Domain ${domain}`}</p>
+                      <p className="text-xs text-slate-500">{counts.total} pairs · {counts.completed} completed</p>
                     </div>
+                  </div>
+                  <div className="flex items-center gap-3 shrink-0">
+                    <div className="flex items-center gap-2">
+                      <div className="w-24 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                        <div className="h-full bg-violet-600 rounded-full transition-all" style={{ width: `${pct}%` }} />
+                      </div>
+                      <span className="text-xs text-slate-500 w-8 text-right">{pct}%</span>
+                    </div>
+                    <Button
+                      size="sm"
+                      onClick={e => { e.stopPropagation(); const first = items[0]; if (first) openExercise(first, 'sort'); }}
+                      className="bg-violet-700 hover:bg-violet-800 text-white h-7 text-xs px-3"
+                    >
+                      Practice
+                    </Button>
+                    <ChevronDown className={cn('w-4 h-4 text-slate-400 transition-transform', isOpen && 'rotate-180')} />
+                  </div>
+                </button>
+
+                {/* Pair list */}
+                {isOpen && (
+                  <div className="border-t border-slate-100 divide-y divide-slate-50">
+                    {items.map(item => {
+                      const done = completedIds.has(item.id);
+                      return (
+                        <div key={item.id} className="px-4 py-2.5 flex items-center justify-between hover:bg-slate-50/60 transition-colors">
+                          <div className="flex items-center gap-3 min-w-0">
+                            {done
+                              ? <CheckCircle2 className="w-4 h-4 text-violet-600 shrink-0" />
+                              : <div className="w-4 h-4 rounded-full border-2 border-slate-200 shrink-0" />
+                            }
+                            <div className="min-w-0">
+                              <p className="text-sm text-slate-700 truncate">
+                                <span className="font-medium text-blue-700">{item.conceptA}</span>
+                                <span className="text-slate-400 mx-1.5">vs</span>
+                                <span className="font-medium text-violet-700">{item.conceptB}</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-1.5 shrink-0 ml-3">
+                            <button
+                              onClick={() => openExercise(item, 'study')}
+                              className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 transition-colors border border-blue-100"
+                            >
+                              <BookOpen className="w-3 h-3" /> Study
+                            </button>
+                            <button
+                              onClick={() => openExercise(item, 'sort')}
+                              className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-violet-700 bg-violet-50 hover:bg-violet-100 transition-colors border border-violet-100"
+                            >
+                              <Swords className="w-3 h-3" /> Sort
+                            </button>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
               </div>
             );
           })}
-        </div>
       </div>
     </div>
   );
 }
 
-// ─── Main Page ────────────────────────────────────────────────────────────────
-
+// ── MAIN PAGE ──────────────────────────────────────────────────────────────────
 export default function VennPage() {
   const [, navigate] = useLocation();
   const { recordVennCompletion, progress } = useProgress();
@@ -421,7 +370,6 @@ export default function VennPage() {
     setSubmitted(true);
     setShowKeyDistinction(true);
     const pct = Math.round((correct / total) * 100);
-    // Only mark as completed when the student meets the ≥ 70% threshold
     if (pct >= PASS_THRESHOLD) {
       recordVennCompletion(currentItem?.id ?? '', pct);
     }
@@ -477,237 +425,208 @@ export default function VennPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC]">
-      {/* Header */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-20">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <button onClick={() => setView('grid')} className="flex items-center gap-2 text-slate-500 hover:text-slate-800 transition-colors text-sm">
+    <div className="h-screen flex flex-col bg-[#F8FAFC] overflow-hidden">
+
+      {/* ── Compact Header ── */}
+      <header className="bg-white border-b border-slate-200 shrink-0 z-20">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-3">
+          {/* Back */}
+          <button onClick={() => setView('grid')} className="flex items-center gap-1.5 text-slate-500 hover:text-slate-800 transition-colors text-sm shrink-0">
             <ArrowLeft className="w-4 h-4" />
-            All Pairs
+            <span className="hidden sm:inline">All Pairs</span>
           </button>
-          <div className="text-center">
-            <h1 className="font-bold text-slate-800 text-base">Venn Diagram</h1>
-            <p className="text-xs text-slate-500">Tier 4 · {mode === 'study' ? 'Study the layout, then switch to Sort Mode' : 'Sort each feature into the correct zone'}</p>
+
+          {/* Concept pills + nav */}
+          <div className="flex items-center gap-2 flex-1 justify-center min-w-0">
+            <button onClick={handlePrev} className="p-1 rounded hover:bg-slate-100 transition-colors shrink-0">
+              <ChevronLeft className="w-4 h-4 text-slate-400" />
+            </button>
+            <div className="flex items-center gap-2 min-w-0 overflow-hidden">
+              <span className="px-2.5 py-1 bg-blue-50 border border-blue-200 rounded-full text-xs font-bold text-blue-800 truncate max-w-[180px]">{currentItem.conceptA}</span>
+              <span className="text-slate-300 text-xs shrink-0">vs</span>
+              <span className="px-2.5 py-1 bg-violet-50 border border-violet-200 rounded-full text-xs font-bold text-violet-800 truncate max-w-[180px]">{currentItem.conceptB}</span>
+            </div>
+            <button onClick={handleNext} className="p-1 rounded hover:bg-slate-100 transition-colors shrink-0">
+              <ChevronRight className="w-4 h-4 text-slate-400" />
+            </button>
+            <span className="text-xs text-slate-400 shrink-0">{currentIndex + 1}/{filteredItems.length}</span>
           </div>
-          <div className="text-sm text-slate-500 font-medium">
-            {currentIndex + 1} / {filteredItems.length}
+
+          {/* Mode toggle */}
+          <div className="flex items-center gap-0.5 bg-slate-100 rounded-lg p-0.5 shrink-0">
+            <button
+              onClick={() => { setMode('study'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
+              className={cn(
+                'flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all',
+                mode === 'study' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700'
+              )}
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              Study
+            </button>
+            <button
+              onClick={() => { setMode('sort'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
+              className={cn(
+                'flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all',
+                mode === 'sort' ? 'bg-violet-700 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700'
+              )}
+            >
+              <Swords className="w-3.5 h-3.5" />
+              Sort
+            </button>
           </div>
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto px-4 py-6 space-y-5">
-        {/* Concept Header */}
-        <div className="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
-          <div className="flex items-center justify-between mb-3">
-            <Badge variant="outline" className="text-xs text-slate-500">{currentItem.category}</Badge>
-            <div className="flex items-center gap-2">
-              <button onClick={handlePrev} className="p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
-                <ChevronLeft className="w-4 h-4 text-slate-500" />
-              </button>
-              <button onClick={handleNext} className="p-1.5 rounded-lg hover:bg-slate-100 transition-colors">
-                <ChevronRight className="w-4 h-4 text-slate-500" />
-              </button>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-4 items-center">
-            <div className="text-center p-3 bg-blue-50 rounded-lg border border-blue-100">
-              <p className="text-xs text-blue-500 font-medium mb-1">Term A</p>
-              <p className="font-bold text-blue-800 text-sm leading-tight">{currentItem.conceptA}</p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl text-slate-300 font-light">⟷</div>
-              <p className="text-xs text-slate-400 mt-1">vs</p>
-            </div>
-            <div className="text-center p-3 bg-violet-50 rounded-lg border border-violet-100">
-              <p className="text-xs text-violet-500 font-medium mb-1">Term B</p>
-              <p className="font-bold text-violet-800 text-sm leading-tight">{currentItem.conceptB}</p>
-            </div>
-          </div>
-
-          {/* Key Distinction — always visible in study mode, revealed after submit in sort mode */}
-          {(mode === 'study' || showKeyDistinction) && (
-            <div className="mt-4 p-3 bg-teal-50 border border-teal-200 rounded-lg">
-              <p className="text-xs font-semibold text-teal-800 mb-1">Key Distinction</p>
-              <p className="text-sm text-teal-800">{currentItem.keyDistinction}</p>
-            </div>
-          )}
+      {/* ── Key Distinction bar ── */}
+      {(mode === 'study' || showKeyDistinction) && (
+        <div className="bg-teal-50 border-b border-teal-200 px-4 py-1.5 shrink-0">
+          <p className="text-xs text-teal-800 max-w-7xl mx-auto">
+            <span className="font-semibold">Key Distinction: </span>{currentItem.keyDistinction}
+          </p>
         </div>
+      )}
 
-        {/* Mode Toggle */}
-        <div className="flex items-center gap-1 bg-white rounded-xl border border-slate-200 p-1 shadow-sm w-fit">
-          <button
-            onClick={() => { setMode('study'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
-            className={cn(
-              'flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all',
-              mode === 'study'
-                ? 'bg-blue-600 text-white shadow-sm'
-                : 'text-slate-500 hover:text-slate-800'
-            )}
-          >
-            <BookOpen className="w-4 h-4" />
-            Study Mode
-          </button>
-          <button
-            onClick={() => { setMode('sort'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
-            className={cn(
-              'flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all',
-              mode === 'sort'
-                ? 'bg-violet-700 text-white shadow-sm'
-                : 'text-slate-500 hover:text-slate-800'
-            )}
-          >
-            <Swords className="w-4 h-4" />
-            Sort Mode
-          </button>
-        </div>
+      {/* ── Main content area ── */}
+      <div className="flex-1 overflow-hidden max-w-7xl mx-auto w-full px-4 py-3 flex flex-col gap-2">
 
-        {/* ── STUDY MODE: completed layout ── */}
+        {/* ── STUDY MODE ── */}
         {mode === 'study' && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-4 gap-3 flex-1 overflow-hidden">
             {/* Only A */}
-            <div className="rounded-xl border-2 border-blue-200 bg-blue-50">
-              <div className="px-4 py-2.5 bg-blue-100 rounded-t-xl border-b border-blue-200">
-                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide">Only: {currentItem.conceptA}</p>
+            <div className="rounded-xl border-2 border-blue-200 bg-blue-50 flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-blue-100 border-b border-blue-200 shrink-0">
+                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide truncate">Only: {currentItem.conceptA}</p>
               </div>
-              <div className="p-3 space-y-2">
+              <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.onlyA.map((f, i) => (
-                  <div key={i} className="flex items-start gap-2 text-sm text-blue-800">
+                  <div key={i} className="flex items-start gap-1.5 text-xs text-blue-800">
                     <span className="text-blue-400 mt-0.5 shrink-0">•</span>
-                    <span>{f}</span>
+                    <span className="leading-snug">{f}</span>
                   </div>
                 ))}
               </div>
             </div>
             {/* Shared */}
-            <div className="rounded-xl border-2 border-emerald-200 bg-emerald-50">
-              <div className="px-4 py-2.5 bg-emerald-100 rounded-t-xl border-b border-emerald-200">
-                <p className="text-xs font-bold text-violet-800 uppercase tracking-wide">Shared / Both</p>
+            <div className="rounded-xl border-2 border-emerald-200 bg-emerald-50 flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-emerald-100 border-b border-emerald-200 shrink-0">
+                <p className="text-xs font-bold text-emerald-800 uppercase tracking-wide">Shared / Both</p>
               </div>
-              <div className="p-3 space-y-2">
+              <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.shared.map((f, i) => (
-                  <div key={i} className="flex items-start gap-2 text-sm text-emerald-800">
+                  <div key={i} className="flex items-start gap-1.5 text-xs text-emerald-800">
                     <span className="text-emerald-500 mt-0.5 shrink-0">◆</span>
-                    <span>{f}</span>
+                    <span className="leading-snug">{f}</span>
                   </div>
                 ))}
               </div>
             </div>
             {/* Only B */}
-            <div className="rounded-xl border-2 border-violet-200 bg-violet-50">
-              <div className="px-4 py-2.5 bg-violet-100 rounded-t-xl border-b border-violet-200">
-                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide">Only: {currentItem.conceptB}</p>
+            <div className="rounded-xl border-2 border-violet-200 bg-violet-50 flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-violet-100 border-b border-violet-200 shrink-0">
+                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide truncate">Only: {currentItem.conceptB}</p>
               </div>
-              <div className="p-3 space-y-2">
+              <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.onlyB.map((f, i) => (
-                  <div key={i} className="flex items-start gap-2 text-sm text-violet-800">
+                  <div key={i} className="flex items-start gap-1.5 text-xs text-violet-800">
                     <span className="text-violet-400 mt-0.5 shrink-0">•</span>
-                    <span>{f}</span>
+                    <span className="leading-snug">{f}</span>
                   </div>
                 ))}
               </div>
             </div>
-            {/* Does Not Belong note */}
-            <div className="md:col-span-3 rounded-xl border border-rose-200 bg-rose-50 p-3">
-              <p className="text-xs font-bold text-rose-600 uppercase tracking-wide mb-2">Does Not Belong to Either</p>
-              <div className="flex flex-wrap gap-2">
+            {/* Does Not Belong */}
+            <div className="rounded-xl border-2 border-rose-200 bg-rose-50 flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-rose-100 border-b border-rose-200 shrink-0">
+                <p className="text-xs font-bold text-rose-700 uppercase tracking-wide">Does Not Belong</p>
+              </div>
+              <div className="p-2.5 flex flex-wrap gap-1.5 content-start overflow-y-auto flex-1">
                 {currentItem.distractors.map((d, i) => (
-                  <span key={i} className="px-2.5 py-1 bg-rose-100 border border-rose-200 rounded-lg text-xs text-rose-700 line-through">{d}</span>
+                  <span key={i} className="px-2 py-1 bg-rose-100 border border-rose-200 rounded text-xs text-rose-700 line-through leading-snug">{d}</span>
                 ))}
               </div>
             </div>
           </div>
         )}
 
-        {/* ── SORT MODE ── */}
-        {mode === 'sort' && !started ? (
-          /* Sort Start Screen */
-          <div className="bg-white rounded-xl border border-slate-200 p-8 text-center shadow-sm">
-            <div className="w-16 h-16 bg-violet-700/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Swords className="w-7 h-7 text-violet-700" />
+        {/* ── SORT MODE: start screen ── */}
+        {mode === 'sort' && !started && (
+          <div className="bg-white rounded-xl border border-slate-200 p-6 text-center shadow-sm max-w-lg mx-auto mt-4">
+            <div className="w-12 h-12 bg-violet-700/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <Swords className="w-5 h-5 text-violet-700" />
             </div>
-            <h2 className="text-lg font-bold text-slate-800 mb-2">Ready to Sort?</h2>
-            <p className="text-slate-500 text-sm mb-4 max-w-md mx-auto">
-              You'll receive a shuffled pool of features. <strong>Click a feature to select it</strong>, then <strong>click a zone to place it</strong>. Features may belong to Term A, Term B, both, or neither.
+            <h2 className="text-base font-bold text-slate-800 mb-1">Ready to Sort?</h2>
+            <p className="text-slate-500 text-xs mb-3 max-w-sm mx-auto">
+              Click a feature to select it, then click a zone to place it. Features belong to Term A only, Term B only, both, or neither.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 max-w-lg mx-auto mb-6 text-xs">
+            <div className="grid grid-cols-4 gap-1.5 max-w-sm mx-auto mb-4">
               {(Object.keys(ZONE_CONFIG) as Exclude<Zone, 'unplaced'>[]).map(z => (
-                <div key={z} className={cn('p-2 rounded-lg border', ZONE_CONFIG[z].bg, ZONE_CONFIG[z].border)}>
-                  <p className={cn('font-semibold', ZONE_CONFIG[z].color)}>
-                    {z === 'onlyA' ? 'Term A Only' : z === 'onlyB' ? 'Term B Only' : ZONE_CONFIG[z].label}
+                <div key={z} className={cn('p-1.5 rounded-lg border text-center', ZONE_CONFIG[z].bg, ZONE_CONFIG[z].border)}>
+                  <p className={cn('font-semibold text-xs', ZONE_CONFIG[z].color)}>
+                    {z === 'onlyA'
+                      ? currentItem.conceptA.split(' ').slice(0, 2).join(' ') + ' Only'
+                      : z === 'onlyB'
+                      ? currentItem.conceptB.split(' ').slice(0, 2).join(' ') + ' Only'
+                      : ZONE_CONFIG[z].label}
                   </p>
                 </div>
               ))}
             </div>
-            <Button onClick={startItem} className="bg-violet-700 hover:bg-violet-800 text-white px-8">
+            <Button onClick={startItem} className="bg-violet-700 hover:bg-violet-800 text-white px-6 h-8 text-sm">
               Start Sorting
             </Button>
           </div>
-        ) : mode === 'sort' ? (
-          <>
-            {/* Score Banner */}
+        )}
+
+        {/* ── SORT MODE: active ── */}
+        {mode === 'sort' && started && (
+          <div className="flex flex-col flex-1 overflow-hidden gap-2">
+
+            {/* Score banner */}
             {submitted && score && (() => {
               const pct = Math.round((score.correct / score.total) * 100);
               const isPerfect = score.correct === score.total;
               const isPassing = pct >= PASS_THRESHOLD;
               return (
-              <div className={cn(
-                'rounded-xl border p-4 flex items-center justify-between',
-                isPerfect ? 'bg-emerald-50 border-emerald-200'
-                  : isPassing ? 'bg-teal-50 border-teal-200'
-                  : 'bg-rose-50 border-rose-200'
-              )}>
-                <div className="flex items-center gap-3">
-                  {isPerfect
-                    ? <Trophy className="w-6 h-6 text-violet-700" />
-                    : isPassing
-                      ? <CheckCircle2 className="w-6 h-6 text-teal-700" />
-                      : <XCircle className="w-6 h-6 text-rose-600" />
-                  }
-                  <div>
-                    <p className={cn('font-bold text-base',
-                      isPerfect ? 'text-emerald-800'
-                        : isPassing ? 'text-teal-800'
-                        : 'text-rose-700'
-                    )}>
-                      {isPerfect ? 'Perfect Sort!' : `${score.correct} / ${score.total} correct (${pct}%)`}
+                <div className={cn(
+                  'rounded-lg border px-4 py-2 flex items-center justify-between shrink-0',
+                  isPerfect ? 'bg-emerald-50 border-emerald-200' : isPassing ? 'bg-teal-50 border-teal-200' : 'bg-rose-50 border-rose-200'
+                )}>
+                  <div className="flex items-center gap-2">
+                    {isPerfect ? <Trophy className="w-4 h-4 text-violet-700" /> : isPassing ? <CheckCircle2 className="w-4 h-4 text-teal-700" /> : <XCircle className="w-4 h-4 text-rose-600" />}
+                    <p className={cn('font-bold text-sm', isPerfect ? 'text-emerald-800' : isPassing ? 'text-teal-800' : 'text-rose-700')}>
+                      {isPerfect ? 'Perfect Sort!' : `${score.correct}/${score.total} correct (${pct}%)`}
                     </p>
-                    <p className="text-xs text-slate-500">
-                      {isPerfect
-                        ? 'You correctly classified all features.'
-                        : isPassing
-                          ? 'Passed ✓ — review the highlighted items to reinforce your understanding.'
-                          : `Score below 70% — this diagram is not yet marked complete. Review and retry.`}
+                    <p className="text-xs text-slate-500 hidden sm:block">
+                      {isPerfect ? 'All features correctly classified.' : isPassing ? 'Passed ✓ — review highlighted items.' : 'Below 70% — not yet marked complete.'}
                     </p>
                   </div>
+                  <div className="flex gap-1.5">
+                    <Button variant="outline" size="sm" onClick={startItem} className="gap-1 h-7 text-xs">
+                      <RotateCcw className="w-3 h-3" /> Retry
+                    </Button>
+                    <Button size="sm" onClick={handleNext} className="bg-violet-700 hover:bg-violet-800 text-white h-7 text-xs">
+                      Next →
+                    </Button>
+                  </div>
                 </div>
-                <div className="flex gap-2">
-                  <Button variant="outline" size="sm" onClick={startItem} className="gap-1.5">
-                    <RotateCcw className="w-3.5 h-3.5" /> Retry
-                  </Button>
-                  <Button size="sm" onClick={handleNext} className="bg-violet-700 hover:bg-violet-800 text-white">
-                    Next →
-                  </Button>
-                </div>
-              </div>
               );
             })()}
 
-            {/* Feature Pool */}
+            {/* Feature pool */}
             {!submitted && unplacedCards.length > 0 && (
-              <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
-                  Feature Pool — click to select, then click a zone below to place
-                </p>
-                <div className="flex flex-wrap gap-2">
+              <div className="bg-white rounded-lg border border-slate-200 p-2.5 shrink-0">
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Feature Pool — select a feature, then click a zone below</p>
+                <div className="flex flex-wrap gap-1.5">
                   {unplacedCards.map(card => (
                     <button
                       key={card.id}
                       onClick={() => handleSelectCard(card.id)}
                       className={cn(
-                        'px-3 py-2 rounded-lg border text-sm text-left transition-all',
+                        'px-2.5 py-1.5 rounded-lg border text-xs text-left transition-all leading-snug',
                         selectedCard === card.id
-                          ? 'bg-violet-700 text-white border-violet-700 shadow-md scale-[1.02]'
-                          : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-violet-700 hover:bg-violet-700/5'
+                          ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
+                          : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-violet-400 hover:bg-violet-50'
                       )}
                     >
                       {card.text}
@@ -717,26 +636,24 @@ export default function VennPage() {
               </div>
             )}
 
-            {/* Four Drop Zones */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Four drop zones — always 4 columns, fill remaining height */}
+            <div className="grid grid-cols-4 gap-2 flex-1 overflow-hidden">
               {(Object.keys(ZONE_CONFIG) as Exclude<Zone, 'unplaced'>[]).map(zone => {
                 const cfg = ZONE_CONFIG[zone];
                 const zoneCards = cards.filter(c => c.placedZone === zone);
                 const isActive = selectedCard !== null && !submitted;
-
                 return (
                   <div
                     key={zone}
                     onClick={() => isActive && handlePlaceInZone(zone)}
                     className={cn(
-                      'rounded-xl border-2 min-h-[200px] transition-all',
+                      'rounded-xl border-2 flex flex-col overflow-hidden transition-all',
                       cfg.bg, cfg.border,
-                      isActive && 'cursor-pointer hover:shadow-md hover:scale-[1.01] border-dashed',
+                      isActive && 'cursor-pointer hover:shadow-md border-dashed',
                       !isActive && 'cursor-default'
                     )}
                   >
-                    {/* Zone Header */}
-                    <div className={cn('px-3 py-2 rounded-t-xl border-b', cfg.headerBg, cfg.border)}>
+                    <div className={cn('px-3 py-2 border-b shrink-0', cfg.headerBg, cfg.border)}>
                       <p className={cn('text-xs font-bold uppercase tracking-wide', cfg.color)}>
                         {zone === 'onlyA'
                           ? `${currentItem.conceptA.split('(')[0].trim()} Only`
@@ -745,12 +662,10 @@ export default function VennPage() {
                           : cfg.label}
                       </p>
                     </div>
-
-                    {/* Placed Cards */}
-                    <div className="p-2 space-y-1.5">
+                    <div className="p-2 space-y-1 overflow-y-auto flex-1">
                       {zoneCards.length === 0 && (
-                        <p className={cn('text-xs text-center py-6 opacity-40', cfg.color)}>
-                          {isActive ? '↑ Click to place here' : 'Empty'}
+                        <p className={cn('text-xs text-center py-4 opacity-40', cfg.color)}>
+                          {isActive ? '↑ Click to place' : 'Empty'}
                         </p>
                       )}
                       {zoneCards.map(card => {
@@ -759,19 +674,16 @@ export default function VennPage() {
                           <div
                             key={card.id}
                             className={cn(
-                              'px-2.5 py-2 rounded-lg border text-xs leading-snug flex items-start gap-1.5 transition-all',
+                              'px-2 py-1.5 rounded-lg border text-xs leading-snug flex items-start gap-1 transition-all',
                               submitted
-                                ? isCorrect
-                                  ? 'bg-emerald-100 border-emerald-300 text-emerald-800'
-                                  : 'bg-rose-100 border-rose-300 text-rose-800'
+                                ? isCorrect ? 'bg-emerald-100 border-emerald-300 text-emerald-800' : 'bg-rose-100 border-rose-300 text-rose-800'
                                 : 'bg-white border-slate-200 text-slate-700 cursor-pointer hover:border-rose-300',
                             )}
                             onClick={e => { e.stopPropagation(); if (!submitted) handleReturnToPool(card.id); }}
                           >
-                            {submitted && (
-                              isCorrect
-                                ? <CheckCircle2 className="w-3.5 h-3.5 text-violet-700 shrink-0 mt-0.5" />
-                                : <XCircle className="w-3.5 h-3.5 text-rose-500 shrink-0 mt-0.5" />
+                            {submitted && (isCorrect
+                              ? <CheckCircle2 className="w-3 h-3 text-violet-700 shrink-0 mt-0.5" />
+                              : <XCircle className="w-3 h-3 text-rose-500 shrink-0 mt-0.5" />
                             )}
                             <span className="flex-1">{card.text}</span>
                           </div>
@@ -783,31 +695,25 @@ export default function VennPage() {
               })}
             </div>
 
-            {/* Submit / Reset bar */}
+            {/* Submit / reset bar */}
             {!submitted && (
-              <div className="flex items-center justify-between bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
-                <p className="text-sm text-slate-500">
-                  {unplacedCards.length > 0
-                    ? `${unplacedCards.length} feature${unplacedCards.length !== 1 ? 's' : ''} remaining`
-                    : 'All features placed — ready to check!'}
+              <div className="flex items-center justify-between bg-white rounded-lg border border-slate-200 px-3 py-2 shrink-0">
+                <p className="text-xs text-slate-500">
+                  {unplacedCards.length > 0 ? `${unplacedCards.length} remaining` : 'All placed — ready to check!'}
                 </p>
-                <div className="flex gap-2">
-                  <Button variant="outline" size="sm" onClick={startItem} className="gap-1.5">
-                    <RotateCcw className="w-3.5 h-3.5" /> Reset
+                <div className="flex gap-1.5">
+                  <Button variant="outline" size="sm" onClick={startItem} className="gap-1 h-7 text-xs">
+                    <RotateCcw className="w-3 h-3" /> Reset
                   </Button>
-                  <Button
-                    size="sm"
-                    onClick={handleSubmit}
-                    disabled={!allPlaced}
-                    className="bg-violet-700 hover:bg-violet-800 text-white disabled:opacity-40"
-                  >
+                  <Button size="sm" onClick={handleSubmit} disabled={!allPlaced} className="bg-violet-700 hover:bg-violet-800 text-white disabled:opacity-40 h-7 text-xs">
                     Check Answers
                   </Button>
                 </div>
               </div>
             )}
-          </>
-        ) : null}
+          </div>
+        )}
+
       </div>
     </div>
   );
