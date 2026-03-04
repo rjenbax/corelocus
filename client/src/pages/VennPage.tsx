@@ -1,87 +1,38 @@
 // Tier 4 — Venn Diagram Exercise
 // Design: Academic Warmth — forest green primary, warm cream bg, slate text
-// Mechanic: Student sorts a shuffled pool of features into 4 zones:
-//   [A Only] [Shared] [B Only] [Does Not Belong]
-// Features include onlyA, onlyB, shared, and distractors — all shuffled together.
+// Exercise mechanic (3-column):
+//   LEFT  = Term A column — click a feature from the center to assign here
+//   CENTER = Feature pool — each feature has a checkbox to strike it out (neither)
+//           and two arrow buttons (← assign to A, → assign to B)
+//           Features that belong to BOTH can be assigned to both sides
+//   RIGHT = Term B column — click a feature from the center to assign here
 
 import { useState, useCallback, useMemo } from 'react';
 import { useLocation } from 'wouter';
-import { ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, XCircle, RotateCcw, Trophy, Filter, GitMerge, BookOpen, Swords, ChevronDown, Zap } from 'lucide-react';
+import {
+  ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, XCircle,
+  RotateCcw, Trophy, Filter, GitMerge, BookOpen, Swords,
+  ChevronDown, ArrowLeftCircle, ArrowRightCircle,
+} from 'lucide-react';
 import { vennDiagrams, VennItem } from '@/data/vennDiagrams';
 import { useProgress } from '@/contexts/ProgressContext';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
-type Zone = 'onlyA' | 'shared' | 'onlyB' | 'distractor' | 'unplaced';
+// ── Types ──────────────────────────────────────────────────────────────────────
+type CorrectZone = 'onlyA' | 'shared' | 'onlyB' | 'distractor';
 
 interface FeatureCard {
   id: string;
   text: string;
-  correctZone: Zone;
-  placedZone: Zone;
+  correctZone: CorrectZone;
+  // User's answer — a feature can be assigned to A, B, both (shared), or struck out
+  assignedA: boolean;   // user placed in Term A column
+  assignedB: boolean;   // user placed in Term B column
+  struckOut: boolean;   // user checked "does not apply"
 }
 
-const ZONE_CONFIG: Record<Exclude<Zone, 'unplaced'>, { label: string; color: string; bg: string; border: string; headerBg: string }> = {
-  onlyA: {
-    label: 'Term A Only',
-    color: 'text-blue-700',
-    bg: 'bg-blue-50',
-    border: 'border-blue-200',
-    headerBg: 'bg-blue-100',
-  },
-  shared: {
-    label: 'Both / Shared',
-    color: 'text-violet-800',
-    bg: 'bg-emerald-50',
-    border: 'border-emerald-200',
-    headerBg: 'bg-emerald-100',
-  },
-  onlyB: {
-    label: 'Term B Only',
-    color: 'text-violet-700',
-    bg: 'bg-violet-50',
-    border: 'border-violet-200',
-    headerBg: 'bg-violet-100',
-  },
-  distractor: {
-    label: 'Does Not Belong',
-    color: 'text-rose-700',
-    bg: 'bg-rose-50',
-    border: 'border-rose-200',
-    headerBg: 'bg-rose-100',
-  },
-};
-
-// Canonical BCBA domain order (A–I)
-const DOMAIN_ORDER = [
-  'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
-];
-
-const DOMAIN_FULL: Record<string, string> = {
-  A: 'Behaviorism & Philosophical Foundations',
-  B: 'Concepts & Principles',
-  C: 'Measurement & Data Collection',
-  D: 'Experimental Design',
-  E: 'Ethical & Professional Issues',
-  F: 'Behavior-Change Procedures',
-  G: 'Behavior-Change Procedures (Skill Acquisition)',
-  H: 'Selecting & Implementing Interventions',
-  I: 'Personnel Supervision & Management',
-};
-
-const DOMAIN_COLORS: Record<string, { pill: string; badge: string }> = {
-  A: { pill: 'bg-slate-100 text-slate-700', badge: 'A' },
-  B: { pill: 'bg-teal-100 text-teal-800', badge: 'B' },
-  C: { pill: 'bg-cyan-100 text-cyan-800', badge: 'C' },
-  D: { pill: 'bg-blue-100 text-blue-800', badge: 'D' },
-  E: { pill: 'bg-violet-100 text-violet-800', badge: 'E' },
-  F: { pill: 'bg-orange-100 text-orange-800', badge: 'F' },
-  G: { pill: 'bg-emerald-100 text-emerald-800', badge: 'G' },
-  H: { pill: 'bg-amber-100 text-amber-800', badge: 'H' },
-  I: { pill: 'bg-rose-100 text-rose-800', badge: 'I' },
-};
-
+// ── Helpers ────────────────────────────────────────────────────────────────────
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -92,37 +43,70 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 function buildFeatureCards(item: VennItem): FeatureCard[] {
-  const cards: FeatureCard[] = [
-    ...item.onlyA.map((t, i) => ({ id: `a-${i}`, text: t, correctZone: 'onlyA' as Zone, placedZone: 'unplaced' as Zone })),
-    ...item.shared.map((t, i) => ({ id: `s-${i}`, text: t, correctZone: 'shared' as Zone, placedZone: 'unplaced' as Zone })),
-    ...item.onlyB.map((t, i) => ({ id: `b-${i}`, text: t, correctZone: 'onlyB' as Zone, placedZone: 'unplaced' as Zone })),
-    ...item.distractors.map((t, i) => ({ id: `d-${i}`, text: t, correctZone: 'distractor' as Zone, placedZone: 'unplaced' as Zone })),
-  ];
-  return shuffle(cards);
+  return shuffle([
+    ...item.onlyA.map((t, i) => ({ id: `a-${i}`, text: t, correctZone: 'onlyA' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
+    ...item.shared.map((t, i) => ({ id: `s-${i}`, text: t, correctZone: 'shared' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
+    ...item.onlyB.map((t, i) => ({ id: `b-${i}`, text: t, correctZone: 'onlyB' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
+    ...item.distractors.map((t, i) => ({ id: `d-${i}`, text: t, correctZone: 'distractor' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
+  ]);
 }
 
-// ── GRID VIEW ─────────────────────────────────────────────────────────────────
+function isCorrect(card: FeatureCard): boolean {
+  switch (card.correctZone) {
+    case 'onlyA':      return card.assignedA && !card.assignedB && !card.struckOut;
+    case 'onlyB':      return !card.assignedA && card.assignedB && !card.struckOut;
+    case 'shared':     return card.assignedA && card.assignedB && !card.struckOut;
+    case 'distractor': return card.struckOut && !card.assignedA && !card.assignedB;
+  }
+}
+
+function isAnswered(card: FeatureCard): boolean {
+  return card.assignedA || card.assignedB || card.struckOut;
+}
+
+const PASS_THRESHOLD = 70;
+
+// ── Domain metadata ────────────────────────────────────────────────────────────
+const DOMAIN_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+
+const DOMAIN_FULL: Record<string, string> = {
+  A: 'Behaviorism & Philosophical Foundations',
+  B: 'Concepts & Principles',
+  C: 'Measurement & Data Collection',
+  D: 'Experimental Design',
+  E: 'Ethical & Professional Issues',
+  F: 'Behavior Assessment',
+  G: 'Behavior-Change Procedures',
+  H: 'Selecting & Implementing Interventions',
+  I: 'Personnel Supervision & Management',
+};
+
+const DOMAIN_PILL: Record<string, string> = {
+  A: 'bg-slate-100 text-slate-700',
+  B: 'bg-teal-100 text-teal-800',
+  C: 'bg-cyan-100 text-cyan-800',
+  D: 'bg-blue-100 text-blue-800',
+  E: 'bg-violet-100 text-violet-800',
+  F: 'bg-orange-100 text-orange-800',
+  G: 'bg-emerald-100 text-emerald-800',
+  H: 'bg-amber-100 text-amber-800',
+  I: 'bg-rose-100 text-rose-800',
+};
+
+// ── Grid View ──────────────────────────────────────────────────────────────────
 function VennGridView({
-  filteredItems, selectedDomain, setSelectedDomain, completedIds, openExercise, navigate, vennDiagrams,
+  selectedDomain, setSelectedDomain, completedIds, openExercise, navigate,
 }: {
-  filteredItems: VennItem[];
   selectedDomain: string;
   setSelectedDomain: (d: string) => void;
   completedIds: Set<string>;
-  openExercise: (item: VennItem, mode?: 'study' | 'sort') => void;
+  openExercise: (item: VennItem, mode: 'study' | 'sort') => void;
   navigate: (to: string) => void;
-  vennDiagrams: VennItem[];
 }) {
   const [openDomains, setOpenDomains] = useState<Set<string>>(new Set(['B']));
 
-  const toggleDomain = (domain: string) => {
-    setOpenDomains(prev => {
-      const next = new Set(prev);
-      if (next.has(domain)) next.delete(domain);
-      else next.add(domain);
-      return next;
-    });
-  };
+  const toggleDomain = (d: string) =>
+    setOpenDomains(prev => { const n = new Set(prev); n.has(d) ? n.delete(d) : n.add(d); return n; });
 
   const grouped = useMemo(() => {
     const map: Record<string, VennItem[]> = {};
@@ -132,39 +116,24 @@ function VennGridView({
       map[d].push(item);
     }
     return map;
-  }, [vennDiagrams]);
-
-  const domainCounts = useMemo(() => {
-    const counts: Record<string, { total: number; completed: number }> = {};
-    for (const [d, items] of Object.entries(grouped)) {
-      counts[d] = {
-        total: items.length,
-        completed: items.filter(i => completedIds.has(i.id)).length,
-      };
-    }
-    return counts;
-  }, [grouped, completedIds]);
+  }, []);
 
   const visibleDomains = DOMAIN_ORDER.filter(d => grouped[d]?.length > 0);
 
-  // Filter pills
-  const allCount = vennDiagrams.length;
-  const allCompleted = vennDiagrams.filter(i => completedIds.has(i.id)).length;
-
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
+      {/* Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-20">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-500 hover:text-slate-800 transition-colors text-sm">
-            <ArrowLeft className="w-4 h-4" />
-            Home
+            <ArrowLeft className="w-4 h-4" />Home
           </button>
           <div className="flex items-center gap-2">
             <GitMerge className="w-5 h-5 text-violet-700" />
             <h1 className="font-bold text-slate-800 text-base">Tier 4 — Venn Diagram</h1>
           </div>
           <div className="text-xs text-slate-500">
-            <span className="font-semibold text-violet-700">{allCompleted}</span>/{allCount} completed
+            <span className="font-semibold text-violet-700">{vennDiagrams.filter(i => completedIds.has(i.id)).length}</span>/{vennDiagrams.length} completed
           </div>
         </div>
       </header>
@@ -173,82 +142,52 @@ function VennGridView({
       <div className="bg-white border-b border-slate-100 sticky top-[53px] z-10">
         <div className="max-w-5xl mx-auto px-4 py-2 flex items-center gap-2 overflow-x-auto">
           <Filter className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-          <button
-            onClick={() => setSelectedDomain('ALL')}
-            className={cn(
-              'px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border',
-              selectedDomain === 'ALL'
-                ? 'bg-violet-700 text-white border-violet-700'
-                : 'bg-white text-slate-600 border-slate-200 hover:border-violet-300'
-            )}
-          >
-            All ({allCount})
+          <button onClick={() => setSelectedDomain('ALL')} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === 'ALL' ? 'bg-violet-700 text-white border-violet-700' : 'bg-white text-slate-600 border-slate-200 hover:border-violet-300')}>
+            All ({vennDiagrams.length})
           </button>
-          {visibleDomains.map(d => {
-            const c = domainCounts[d];
-            return (
-              <button
-                key={d}
-                onClick={() => setSelectedDomain(d)}
-                className={cn(
-                  'px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border',
-                  selectedDomain === d
-                    ? 'bg-violet-700 text-white border-violet-700'
-                    : 'bg-white text-slate-600 border-slate-200 hover:border-violet-300'
-                )}
-              >
-                Domain {d} ({c?.total ?? 0})
-              </button>
-            );
-          })}
+          {visibleDomains.map(d => (
+            <button key={d} onClick={() => setSelectedDomain(d)} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === d ? 'bg-violet-700 text-white border-violet-700' : 'bg-white text-slate-600 border-slate-200 hover:border-violet-300')}>
+              Domain {d} ({grouped[d]?.length ?? 0})
+            </button>
+          ))}
         </div>
       </div>
 
+      {/* Domain accordions */}
       <div className="max-w-5xl mx-auto px-4 py-4 space-y-2">
         {visibleDomains
           .filter(d => selectedDomain === 'ALL' || selectedDomain === d)
           .map(domain => {
             const items = grouped[domain] ?? [];
-            const counts = domainCounts[domain] ?? { total: 0, completed: 0 };
+            const completed = items.filter(i => completedIds.has(i.id)).length;
+            const pct = items.length > 0 ? Math.round((completed / items.length) * 100) : 0;
             const isOpen = openDomains.has(domain);
-            const pct = counts.total > 0 ? Math.round((counts.completed / counts.total) * 100) : 0;
-            const colors = DOMAIN_COLORS[domain] ?? DOMAIN_COLORS['B'];
+            const pillCls = DOMAIN_PILL[domain] ?? DOMAIN_PILL['B'];
 
             return (
               <div key={domain} className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-                {/* Domain accordion header */}
-                <button
-                  onClick={() => toggleDomain(domain)}
-                  className="w-full px-4 py-3 flex items-center justify-between hover:bg-slate-50 transition-colors"
-                >
+                <button onClick={() => toggleDomain(domain)} className="w-full px-4 py-3 flex items-center justify-between hover:bg-slate-50 transition-colors">
                   <div className="flex items-center gap-3">
-                    <span className={cn('w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0', colors.pill)}>
-                      {domain}
-                    </span>
+                    <span className={cn('w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0', pillCls)}>{domain}</span>
                     <div className="text-left">
                       <p className="text-sm font-semibold text-slate-800">{DOMAIN_FULL[domain] ?? `Domain ${domain}`}</p>
-                      <p className="text-xs text-slate-500">{counts.total} pairs · {counts.completed} completed</p>
+                      <p className="text-xs text-slate-500">{items.length} pairs · {completed} completed</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 shrink-0">
                     <div className="flex items-center gap-2">
                       <div className="w-24 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                        <div className="h-full bg-violet-600 rounded-full transition-all" style={{ width: `${pct}%` }} />
+                        <div className="h-full bg-violet-600 rounded-full" style={{ width: `${pct}%` }} />
                       </div>
                       <span className="text-xs text-slate-500 w-8 text-right">{pct}%</span>
                     </div>
-                    <Button
-                      size="sm"
-                      onClick={e => { e.stopPropagation(); const first = items[0]; if (first) openExercise(first, 'sort'); }}
-                      className="bg-violet-700 hover:bg-violet-800 text-white h-7 text-xs px-3"
-                    >
+                    <Button size="sm" onClick={e => { e.stopPropagation(); const first = items[0]; if (first) openExercise(first, 'sort'); }} className="bg-violet-700 hover:bg-violet-800 text-white h-7 text-xs px-3">
                       Practice
                     </Button>
                     <ChevronDown className={cn('w-4 h-4 text-slate-400 transition-transform', isOpen && 'rotate-180')} />
                   </div>
                 </button>
 
-                {/* Pair list */}
                 {isOpen && (
                   <div className="border-t border-slate-100 divide-y divide-slate-50">
                     {items.map(item => {
@@ -260,25 +199,17 @@ function VennGridView({
                               ? <CheckCircle2 className="w-4 h-4 text-violet-600 shrink-0" />
                               : <div className="w-4 h-4 rounded-full border-2 border-slate-200 shrink-0" />
                             }
-                            <div className="min-w-0">
-                              <p className="text-sm text-slate-700 truncate">
-                                <span className="font-medium text-blue-700">{item.conceptA}</span>
-                                <span className="text-slate-400 mx-1.5">vs</span>
-                                <span className="font-medium text-violet-700">{item.conceptB}</span>
-                              </p>
-                            </div>
+                            <p className="text-sm text-slate-700 truncate">
+                              <span className="font-medium text-blue-700">{item.conceptA}</span>
+                              <span className="text-slate-400 mx-1.5">vs</span>
+                              <span className="font-medium text-violet-700">{item.conceptB}</span>
+                            </p>
                           </div>
                           <div className="flex items-center gap-1.5 shrink-0 ml-3">
-                            <button
-                              onClick={() => openExercise(item, 'study')}
-                              className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 transition-colors border border-blue-100"
-                            >
+                            <button onClick={() => openExercise(item, 'study')} className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 transition-colors border border-blue-100">
                               <BookOpen className="w-3 h-3" /> Study
                             </button>
-                            <button
-                              onClick={() => openExercise(item, 'sort')}
-                              className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-violet-700 bg-violet-50 hover:bg-violet-100 transition-colors border border-violet-100"
-                            >
+                            <button onClick={() => openExercise(item, 'sort')} className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-violet-700 bg-violet-50 hover:bg-violet-100 transition-colors border border-violet-100">
                               <Swords className="w-3 h-3" /> Sort
                             </button>
                           </div>
@@ -295,18 +226,97 @@ function VennGridView({
   );
 }
 
-// ── MAIN PAGE ──────────────────────────────────────────────────────────────────
+// ── Feature row in the center column ──────────────────────────────────────────
+function FeatureRow({
+  card, submitted, onToggleA, onToggleB, onToggleStrike,
+}: {
+  card: FeatureCard;
+  submitted: boolean;
+  onToggleA: () => void;
+  onToggleB: () => void;
+  onToggleStrike: () => void;
+}) {
+  const correct = submitted ? isCorrect(card) : null;
+
+  return (
+    <div className={cn(
+      'flex items-center gap-2 px-2.5 py-2 rounded-lg border text-xs transition-all',
+      card.struckOut ? 'bg-slate-50 border-slate-200 opacity-60' : 'bg-white border-slate-200',
+      submitted && correct === true && 'border-emerald-300 bg-emerald-50',
+      submitted && correct === false && 'border-rose-300 bg-rose-50',
+    )}>
+      {/* ← assign to A */}
+      <button
+        disabled={submitted || card.struckOut}
+        onClick={onToggleA}
+        title="Assign to Term A"
+        className={cn(
+          'shrink-0 w-5 h-5 rounded-full flex items-center justify-center transition-all border',
+          card.assignedA
+            ? 'bg-blue-600 border-blue-600 text-white'
+            : 'border-blue-200 text-blue-300 hover:border-blue-500 hover:text-blue-600',
+          (submitted || card.struckOut) && 'opacity-40 cursor-default'
+        )}
+      >
+        <ArrowLeftCircle className="w-3.5 h-3.5" />
+      </button>
+
+      {/* Feature text */}
+      <span className={cn(
+        'flex-1 leading-snug text-slate-700',
+        card.struckOut && 'line-through text-slate-400',
+      )}>
+        {card.text}
+      </span>
+
+      {/* Strike-out checkbox (does not apply to either) */}
+      <label className="flex items-center gap-1 shrink-0 cursor-pointer select-none" title="Does not apply to either term">
+        <input
+          type="checkbox"
+          disabled={submitted || card.assignedA || card.assignedB}
+          checked={card.struckOut}
+          onChange={onToggleStrike}
+          className="w-3.5 h-3.5 accent-rose-500 cursor-pointer"
+        />
+        <span className={cn('text-[10px] text-slate-400', card.struckOut && 'text-rose-500')}>N/A</span>
+      </label>
+
+      {/* → assign to B */}
+      <button
+        disabled={submitted || card.struckOut}
+        onClick={onToggleB}
+        title="Assign to Term B"
+        className={cn(
+          'shrink-0 w-5 h-5 rounded-full flex items-center justify-center transition-all border',
+          card.assignedB
+            ? 'bg-violet-700 border-violet-700 text-white'
+            : 'border-violet-200 text-violet-300 hover:border-violet-500 hover:text-violet-600',
+          (submitted || card.struckOut) && 'opacity-40 cursor-default'
+        )}
+      >
+        <ArrowRightCircle className="w-3.5 h-3.5" />
+      </button>
+
+      {/* Result icon */}
+      {submitted && correct !== null && (
+        correct
+          ? <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+          : <XCircle className="w-3.5 h-3.5 text-rose-500 shrink-0" />
+      )}
+    </div>
+  );
+}
+
+// ── Main Page ──────────────────────────────────────────────────────────────────
 export default function VennPage() {
   const [, navigate] = useLocation();
   const { recordVennCompletion, progress } = useProgress();
   const [selectedDomain, setSelectedDomain] = useState<string>('ALL');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cards, setCards] = useState<FeatureCard[]>([]);
-  const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState<{ correct: number; total: number } | null>(null);
   const [started, setStarted] = useState(false);
-  const [showKeyDistinction, setShowKeyDistinction] = useState(false);
   const [view, setView] = useState<'grid' | 'exercise'>('grid');
   const [mode, setMode] = useState<'study' | 'sort'>('study');
 
@@ -326,10 +336,8 @@ export default function VennPage() {
     const idx = filteredItems.findIndex(v => v.id === item.id);
     setCurrentIndex(idx >= 0 ? idx : 0);
     setCards([]);
-    setSelectedCard(null);
     setSubmitted(false);
     setScore(null);
-    setShowKeyDistinction(false);
     setStarted(false);
     setMode(startMode);
     setView('exercise');
@@ -338,84 +346,66 @@ export default function VennPage() {
   const startItem = useCallback(() => {
     if (!currentItem) return;
     setCards(buildFeatureCards(currentItem));
-    setSelectedCard(null);
     setSubmitted(false);
     setScore(null);
-    setShowKeyDistinction(false);
     setStarted(true);
   }, [currentItem]);
 
-  const handleSelectCard = (id: string) => {
-    if (submitted) return;
-    setSelectedCard(prev => prev === id ? null : id);
+  const updateCard = (id: string, patch: Partial<FeatureCard>) =>
+    setCards(prev => prev.map(c => c.id === id ? { ...c, ...patch } : c));
+
+  const handleToggleA = (id: string) => {
+    const card = cards.find(c => c.id === id);
+    if (!card || card.struckOut) return;
+    updateCard(id, { assignedA: !card.assignedA });
   };
 
-  const handlePlaceInZone = (zone: Exclude<Zone, 'unplaced'>) => {
-    if (!selectedCard || submitted) return;
-    setCards(prev => prev.map(c => c.id === selectedCard ? { ...c, placedZone: zone } : c));
-    setSelectedCard(null);
+  const handleToggleB = (id: string) => {
+    const card = cards.find(c => c.id === id);
+    if (!card || card.struckOut) return;
+    updateCard(id, { assignedB: !card.assignedB });
   };
 
-  const handleReturnToPool = (id: string) => {
-    if (submitted) return;
-    setCards(prev => prev.map(c => c.id === id ? { ...c, placedZone: 'unplaced' } : c));
+  const handleToggleStrike = (id: string) => {
+    const card = cards.find(c => c.id === id);
+    if (!card || card.assignedA || card.assignedB) return;
+    updateCard(id, { struckOut: !card.struckOut });
   };
-
-  const PASS_THRESHOLD = 70;
 
   const handleSubmit = () => {
-    const correct = cards.filter(c => c.placedZone === c.correctZone).length;
+    const correct = cards.filter(isCorrect).length;
     const total = cards.length;
     setScore({ correct, total });
     setSubmitted(true);
-    setShowKeyDistinction(true);
     const pct = Math.round((correct / total) * 100);
-    if (pct >= PASS_THRESHOLD) {
-      recordVennCompletion(currentItem?.id ?? '', pct);
-    }
+    if (pct >= PASS_THRESHOLD) recordVennCompletion(currentItem?.id ?? '', pct);
   };
 
   const handleNext = () => {
-    const nextIndex = (currentIndex + 1) % filteredItems.length;
-    setCurrentIndex(nextIndex);
-    setStarted(false);
-    setSubmitted(false);
-    setScore(null);
-    setShowKeyDistinction(false);
-    setCards([]);
-    setMode('study');
+    setCurrentIndex(i => (i + 1) % filteredItems.length);
+    setCards([]); setStarted(false); setSubmitted(false); setScore(null); setMode('study');
   };
 
   const handlePrev = () => {
-    const prevIndex = (currentIndex - 1 + filteredItems.length) % filteredItems.length;
-    setCurrentIndex(prevIndex);
-    setStarted(false);
-    setSubmitted(false);
-    setScore(null);
-    setShowKeyDistinction(false);
-    setCards([]);
-    setMode('study');
+    setCurrentIndex(i => (i - 1 + filteredItems.length) % filteredItems.length);
+    setCards([]); setStarted(false); setSubmitted(false); setScore(null); setMode('study');
   };
 
-  const unplacedCards = cards.filter(c => c.placedZone === 'unplaced');
-  const allPlaced = cards.length > 0 && unplacedCards.length === 0;
+  const allAnswered = cards.length > 0 && cards.every(isAnswered);
 
-  // ── GRID VIEW ──────────────────────────────────────────────────────────────
+  // ── Grid view ──────────────────────────────────────────────────────────────
   if (view === 'grid') {
     return (
       <VennGridView
-        filteredItems={filteredItems}
         selectedDomain={selectedDomain}
         setSelectedDomain={setSelectedDomain}
         completedIds={completedIds}
         openExercise={openExercise}
         navigate={navigate}
-        vennDiagrams={vennDiagrams}
       />
     );
   }
 
-  // ── EXERCISE VIEW ──────────────────────────────────────────────────────────
   if (!currentItem) {
     return (
       <div className="min-h-screen bg-[#F8FAFC] flex items-center justify-center">
@@ -424,79 +414,55 @@ export default function VennPage() {
     );
   }
 
+  // ── Exercise view ──────────────────────────────────────────────────────────
   return (
     <div className="h-screen flex flex-col bg-[#F8FAFC] overflow-hidden">
 
-      {/* ── Compact Header ── */}
-      <header className="bg-white border-b border-slate-200 shrink-0 z-20">
+      {/* Compact header */}
+      <header className="bg-white border-b border-slate-200 shrink-0">
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-3">
-          {/* Back */}
-          <button onClick={() => setView('grid')} className="flex items-center gap-1.5 text-slate-500 hover:text-slate-800 transition-colors text-sm shrink-0">
-            <ArrowLeft className="w-4 h-4" />
-            <span className="hidden sm:inline">All Pairs</span>
+          <button onClick={() => setView('grid')} className="flex items-center gap-1.5 text-slate-500 hover:text-slate-800 text-sm shrink-0">
+            <ArrowLeft className="w-4 h-4" /><span className="hidden sm:inline">All Pairs</span>
           </button>
-
-          {/* Concept pills + nav */}
           <div className="flex items-center gap-2 flex-1 justify-center min-w-0">
-            <button onClick={handlePrev} className="p-1 rounded hover:bg-slate-100 transition-colors shrink-0">
-              <ChevronLeft className="w-4 h-4 text-slate-400" />
-            </button>
+            <button onClick={handlePrev} className="p-1 rounded hover:bg-slate-100 shrink-0"><ChevronLeft className="w-4 h-4 text-slate-400" /></button>
             <div className="flex items-center gap-2 min-w-0 overflow-hidden">
-              <span className="px-2.5 py-1 bg-blue-50 border border-blue-200 rounded-full text-xs font-bold text-blue-800 truncate max-w-[180px]">{currentItem.conceptA}</span>
+              <span className="px-2.5 py-1 bg-blue-50 border border-blue-200 rounded-full text-xs font-bold text-blue-800 truncate max-w-[160px]">{currentItem.conceptA}</span>
               <span className="text-slate-300 text-xs shrink-0">vs</span>
-              <span className="px-2.5 py-1 bg-violet-50 border border-violet-200 rounded-full text-xs font-bold text-violet-800 truncate max-w-[180px]">{currentItem.conceptB}</span>
+              <span className="px-2.5 py-1 bg-violet-50 border border-violet-200 rounded-full text-xs font-bold text-violet-800 truncate max-w-[160px]">{currentItem.conceptB}</span>
             </div>
-            <button onClick={handleNext} className="p-1 rounded hover:bg-slate-100 transition-colors shrink-0">
-              <ChevronRight className="w-4 h-4 text-slate-400" />
-            </button>
+            <button onClick={handleNext} className="p-1 rounded hover:bg-slate-100 shrink-0"><ChevronRight className="w-4 h-4 text-slate-400" /></button>
             <span className="text-xs text-slate-400 shrink-0">{currentIndex + 1}/{filteredItems.length}</span>
           </div>
-
           {/* Mode toggle */}
           <div className="flex items-center gap-0.5 bg-slate-100 rounded-lg p-0.5 shrink-0">
-            <button
-              onClick={() => { setMode('study'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
-              className={cn(
-                'flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all',
-                mode === 'study' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700'
-              )}
-            >
-              <BookOpen className="w-3.5 h-3.5" />
-              Study
+            <button onClick={() => { setMode('study'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
+              className={cn('flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all', mode === 'study' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700')}>
+              <BookOpen className="w-3.5 h-3.5" />Study
             </button>
-            <button
-              onClick={() => { setMode('sort'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
-              className={cn(
-                'flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all',
-                mode === 'sort' ? 'bg-violet-700 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700'
-              )}
-            >
-              <Swords className="w-3.5 h-3.5" />
-              Sort
+            <button onClick={() => { setMode('sort'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
+              className={cn('flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all', mode === 'sort' ? 'bg-violet-700 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700')}>
+              <Swords className="w-3.5 h-3.5" />Sort
             </button>
           </div>
         </div>
       </header>
 
-      {/* ── Key Distinction bar ── */}
-      {(mode === 'study' || showKeyDistinction) && (
-        <div className="bg-teal-50 border-b border-teal-200 px-4 py-1.5 shrink-0">
-          <p className="text-xs text-teal-800 max-w-7xl mx-auto">
-            <span className="font-semibold">Key Distinction: </span>{currentItem.keyDistinction}
-          </p>
-        </div>
-      )}
+      {/* Key Distinction bar */}
+      <div className="bg-teal-50 border-b border-teal-200 px-4 py-1.5 shrink-0">
+        <p className="text-xs text-teal-800 max-w-7xl mx-auto">
+          <span className="font-semibold">Key Distinction: </span>{currentItem.keyDistinction}
+        </p>
+      </div>
 
-      {/* ── Main content area ── */}
-      <div className="flex-1 overflow-hidden max-w-7xl mx-auto w-full px-4 py-3 flex flex-col gap-2">
-
-        {/* ── STUDY MODE ── */}
-        {mode === 'study' && (
-          <div className="grid grid-cols-4 gap-3 flex-1 overflow-hidden">
-            {/* Only A */}
+      {/* ── STUDY MODE ── */}
+      {mode === 'study' && (
+        <div className="flex-1 overflow-hidden max-w-7xl mx-auto w-full px-4 py-3">
+          <div className="grid grid-cols-3 gap-3 h-full">
+            {/* Term A */}
             <div className="rounded-xl border-2 border-blue-200 bg-blue-50 flex flex-col overflow-hidden">
               <div className="px-3 py-2 bg-blue-100 border-b border-blue-200 shrink-0">
-                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide truncate">Only: {currentItem.conceptA}</p>
+                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide">Only: {currentItem.conceptA}</p>
               </div>
               <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.onlyA.map((f, i) => (
@@ -505,26 +471,45 @@ export default function VennPage() {
                     <span className="leading-snug">{f}</span>
                   </div>
                 ))}
+                {currentItem.shared.length > 0 && (
+                  <>
+                    <div className="border-t border-blue-200 my-2" />
+                    <p className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">Shared with {currentItem.conceptB}</p>
+                    {currentItem.shared.map((f, i) => (
+                      <div key={i} className="flex items-start gap-1.5 text-xs text-emerald-700">
+                        <span className="text-emerald-500 mt-0.5 shrink-0">◆</span>
+                        <span className="leading-snug">{f}</span>
+                      </div>
+                    ))}
+                  </>
+                )}
               </div>
             </div>
-            {/* Shared */}
-            <div className="rounded-xl border-2 border-emerald-200 bg-emerald-50 flex flex-col overflow-hidden">
-              <div className="px-3 py-2 bg-emerald-100 border-b border-emerald-200 shrink-0">
-                <p className="text-xs font-bold text-emerald-800 uppercase tracking-wide">Shared / Both</p>
+
+            {/* Center — feature list with labels */}
+            <div className="rounded-xl border-2 border-slate-200 bg-white flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-slate-100 border-b border-slate-200 shrink-0">
+                <p className="text-xs font-bold text-slate-600 uppercase tracking-wide text-center">All Features</p>
               </div>
               <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
-                {currentItem.shared.map((f, i) => (
-                  <div key={i} className="flex items-start gap-1.5 text-xs text-emerald-800">
-                    <span className="text-emerald-500 mt-0.5 shrink-0">◆</span>
-                    <span className="leading-snug">{f}</span>
+                {[
+                  ...currentItem.onlyA.map(f => ({ f, zone: 'A only', cls: 'text-blue-700 bg-blue-50 border-blue-200' })),
+                  ...currentItem.shared.map(f => ({ f, zone: 'Both', cls: 'text-emerald-700 bg-emerald-50 border-emerald-200' })),
+                  ...currentItem.onlyB.map(f => ({ f, zone: 'B only', cls: 'text-violet-700 bg-violet-50 border-violet-200' })),
+                  ...currentItem.distractors.map(f => ({ f, zone: 'Neither', cls: 'text-rose-600 bg-rose-50 border-rose-200 line-through' })),
+                ].map(({ f, zone, cls }, i) => (
+                  <div key={i} className={cn('flex items-center justify-between gap-2 px-2 py-1.5 rounded-lg border text-xs', cls)}>
+                    <span className="leading-snug flex-1">{f}</span>
+                    <span className="text-[10px] font-bold opacity-60 shrink-0">{zone}</span>
                   </div>
                 ))}
               </div>
             </div>
-            {/* Only B */}
+
+            {/* Term B */}
             <div className="rounded-xl border-2 border-violet-200 bg-violet-50 flex flex-col overflow-hidden">
               <div className="px-3 py-2 bg-violet-100 border-b border-violet-200 shrink-0">
-                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide truncate">Only: {currentItem.conceptB}</p>
+                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide">Only: {currentItem.conceptB}</p>
               </div>
               <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.onlyB.map((f, i) => (
@@ -533,188 +518,171 @@ export default function VennPage() {
                     <span className="leading-snug">{f}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-            {/* Does Not Belong */}
-            <div className="rounded-xl border-2 border-rose-200 bg-rose-50 flex flex-col overflow-hidden">
-              <div className="px-3 py-2 bg-rose-100 border-b border-rose-200 shrink-0">
-                <p className="text-xs font-bold text-rose-700 uppercase tracking-wide">Does Not Belong</p>
-              </div>
-              <div className="p-2.5 flex flex-wrap gap-1.5 content-start overflow-y-auto flex-1">
-                {currentItem.distractors.map((d, i) => (
-                  <span key={i} className="px-2 py-1 bg-rose-100 border border-rose-200 rounded text-xs text-rose-700 line-through leading-snug">{d}</span>
-                ))}
+                {currentItem.shared.length > 0 && (
+                  <>
+                    <div className="border-t border-violet-200 my-2" />
+                    <p className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">Shared with {currentItem.conceptA}</p>
+                    {currentItem.shared.map((f, i) => (
+                      <div key={i} className="flex items-start gap-1.5 text-xs text-emerald-700">
+                        <span className="text-emerald-500 mt-0.5 shrink-0">◆</span>
+                        <span className="leading-snug">{f}</span>
+                      </div>
+                    ))}
+                  </>
+                )}
               </div>
             </div>
           </div>
-        )}
+        </div>
+      )}
 
-        {/* ── SORT MODE: start screen ── */}
-        {mode === 'sort' && !started && (
-          <div className="bg-white rounded-xl border border-slate-200 p-6 text-center shadow-sm max-w-lg mx-auto mt-4">
+      {/* ── SORT MODE: start screen ── */}
+      {mode === 'sort' && !started && (
+        <div className="flex-1 flex items-center justify-center px-4">
+          <div className="bg-white rounded-xl border border-slate-200 p-6 text-center shadow-sm max-w-md w-full">
             <div className="w-12 h-12 bg-violet-700/10 rounded-full flex items-center justify-center mx-auto mb-3">
               <Swords className="w-5 h-5 text-violet-700" />
             </div>
             <h2 className="text-base font-bold text-slate-800 mb-1">Ready to Sort?</h2>
-            <p className="text-slate-500 text-xs mb-3 max-w-sm mx-auto">
-              Click a feature to select it, then click a zone to place it. Features belong to Term A only, Term B only, both, or neither.
+            <p className="text-slate-500 text-xs mb-4 max-w-sm mx-auto">
+              Features appear in the <strong>center column</strong>. Use the <span className="text-blue-600 font-semibold">← arrow</span> to assign a feature to <strong>{currentItem.conceptA}</strong>, the <span className="text-violet-700 font-semibold">→ arrow</span> to assign it to <strong>{currentItem.conceptB}</strong>, or check <strong>N/A</strong> to strike it out if it doesn't apply to either. Shared features can be assigned to both.
             </p>
-            <div className="grid grid-cols-4 gap-1.5 max-w-sm mx-auto mb-4">
-              {(Object.keys(ZONE_CONFIG) as Exclude<Zone, 'unplaced'>[]).map(z => (
-                <div key={z} className={cn('p-1.5 rounded-lg border text-center', ZONE_CONFIG[z].bg, ZONE_CONFIG[z].border)}>
-                  <p className={cn('font-semibold text-xs', ZONE_CONFIG[z].color)}>
-                    {z === 'onlyA'
-                      ? currentItem.conceptA.split(' ').slice(0, 2).join(' ') + ' Only'
-                      : z === 'onlyB'
-                      ? currentItem.conceptB.split(' ').slice(0, 2).join(' ') + ' Only'
-                      : ZONE_CONFIG[z].label}
-                  </p>
-                </div>
-              ))}
-            </div>
             <Button onClick={startItem} className="bg-violet-700 hover:bg-violet-800 text-white px-6 h-8 text-sm">
               Start Sorting
             </Button>
           </div>
-        )}
+        </div>
+      )}
 
-        {/* ── SORT MODE: active ── */}
-        {mode === 'sort' && started && (
-          <div className="flex flex-col flex-1 overflow-hidden gap-2">
+      {/* ── SORT MODE: active ── */}
+      {mode === 'sort' && started && (
+        <div className="flex-1 overflow-hidden flex flex-col max-w-7xl mx-auto w-full px-4 py-3 gap-2">
 
-            {/* Score banner */}
-            {submitted && score && (() => {
-              const pct = Math.round((score.correct / score.total) * 100);
-              const isPerfect = score.correct === score.total;
-              const isPassing = pct >= PASS_THRESHOLD;
-              return (
-                <div className={cn(
-                  'rounded-lg border px-4 py-2 flex items-center justify-between shrink-0',
-                  isPerfect ? 'bg-emerald-50 border-emerald-200' : isPassing ? 'bg-teal-50 border-teal-200' : 'bg-rose-50 border-rose-200'
-                )}>
-                  <div className="flex items-center gap-2">
-                    {isPerfect ? <Trophy className="w-4 h-4 text-violet-700" /> : isPassing ? <CheckCircle2 className="w-4 h-4 text-teal-700" /> : <XCircle className="w-4 h-4 text-rose-600" />}
-                    <p className={cn('font-bold text-sm', isPerfect ? 'text-emerald-800' : isPassing ? 'text-teal-800' : 'text-rose-700')}>
-                      {isPerfect ? 'Perfect Sort!' : `${score.correct}/${score.total} correct (${pct}%)`}
-                    </p>
-                    <p className="text-xs text-slate-500 hidden sm:block">
-                      {isPerfect ? 'All features correctly classified.' : isPassing ? 'Passed ✓ — review highlighted items.' : 'Below 70% — not yet marked complete.'}
-                    </p>
-                  </div>
-                  <div className="flex gap-1.5">
-                    <Button variant="outline" size="sm" onClick={startItem} className="gap-1 h-7 text-xs">
-                      <RotateCcw className="w-3 h-3" /> Retry
-                    </Button>
-                    <Button size="sm" onClick={handleNext} className="bg-violet-700 hover:bg-violet-800 text-white h-7 text-xs">
-                      Next →
-                    </Button>
-                  </div>
+          {/* Score banner */}
+          {submitted && score && (() => {
+            const pct = Math.round((score.correct / score.total) * 100);
+            const isPerfect = score.correct === score.total;
+            const isPassing = pct >= PASS_THRESHOLD;
+            return (
+              <div className={cn('rounded-lg border px-4 py-2 flex items-center justify-between shrink-0',
+                isPerfect ? 'bg-emerald-50 border-emerald-200' : isPassing ? 'bg-teal-50 border-teal-200' : 'bg-rose-50 border-rose-200')}>
+                <div className="flex items-center gap-2">
+                  {isPerfect ? <Trophy className="w-4 h-4 text-violet-700" /> : isPassing ? <CheckCircle2 className="w-4 h-4 text-teal-700" /> : <XCircle className="w-4 h-4 text-rose-600" />}
+                  <p className={cn('font-bold text-sm', isPerfect ? 'text-emerald-800' : isPassing ? 'text-teal-800' : 'text-rose-700')}>
+                    {isPerfect ? 'Perfect Sort!' : `${score.correct}/${score.total} correct (${pct}%)`}
+                  </p>
+                  <p className="text-xs text-slate-500 hidden sm:block">
+                    {isPerfect ? 'All features correctly classified.' : isPassing ? 'Passed ✓ — review highlighted items.' : 'Below 70% — not yet marked complete.'}
+                  </p>
                 </div>
-              );
-            })()}
-
-            {/* Feature pool */}
-            {!submitted && unplacedCards.length > 0 && (
-              <div className="bg-white rounded-lg border border-slate-200 p-2.5 shrink-0">
-                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">Feature Pool — select a feature, then click a zone below</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {unplacedCards.map(card => (
-                    <button
-                      key={card.id}
-                      onClick={() => handleSelectCard(card.id)}
-                      className={cn(
-                        'px-2.5 py-1.5 rounded-lg border text-xs text-left transition-all leading-snug',
-                        selectedCard === card.id
-                          ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
-                          : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-violet-400 hover:bg-violet-50'
-                      )}
-                    >
-                      {card.text}
-                    </button>
-                  ))}
+                <div className="flex gap-1.5">
+                  <Button variant="outline" size="sm" onClick={startItem} className="gap-1 h-7 text-xs"><RotateCcw className="w-3 h-3" /> Retry</Button>
+                  <Button size="sm" onClick={handleNext} className="bg-violet-700 hover:bg-violet-800 text-white h-7 text-xs">Next →</Button>
                 </div>
               </div>
-            )}
+            );
+          })()}
 
-            {/* Four drop zones — always 4 columns, fill remaining height */}
-            <div className="grid grid-cols-4 gap-2 flex-1 overflow-hidden">
-              {(Object.keys(ZONE_CONFIG) as Exclude<Zone, 'unplaced'>[]).map(zone => {
-                const cfg = ZONE_CONFIG[zone];
-                const zoneCards = cards.filter(c => c.placedZone === zone);
-                const isActive = selectedCard !== null && !submitted;
-                return (
-                  <div
-                    key={zone}
-                    onClick={() => isActive && handlePlaceInZone(zone)}
-                    className={cn(
-                      'rounded-xl border-2 flex flex-col overflow-hidden transition-all',
-                      cfg.bg, cfg.border,
-                      isActive && 'cursor-pointer hover:shadow-md border-dashed',
-                      !isActive && 'cursor-default'
-                    )}
-                  >
-                    <div className={cn('px-3 py-2 border-b shrink-0', cfg.headerBg, cfg.border)}>
-                      <p className={cn('text-xs font-bold uppercase tracking-wide', cfg.color)}>
-                        {zone === 'onlyA'
-                          ? `${currentItem.conceptA.split('(')[0].trim()} Only`
-                          : zone === 'onlyB'
-                          ? `${currentItem.conceptB.split('(')[0].trim()} Only`
-                          : cfg.label}
-                      </p>
+          {/* 3-column sort area */}
+          <div className="grid grid-cols-3 gap-3 flex-1 overflow-hidden">
+
+            {/* LEFT — Term A */}
+            <div className="rounded-xl border-2 border-blue-200 bg-blue-50 flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-blue-100 border-b border-blue-200 shrink-0">
+                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide truncate">{currentItem.conceptA}</p>
+                <p className="text-[10px] text-blue-500">Features assigned with ←</p>
+              </div>
+              <div className="p-2 space-y-1.5 overflow-y-auto flex-1">
+                {cards.filter(c => c.assignedA).map(card => {
+                  const correct = submitted ? isCorrect(card) : null;
+                  return (
+                    <div key={card.id} className={cn(
+                      'px-2 py-1.5 rounded-lg border text-xs text-blue-800 leading-snug',
+                      submitted && correct === true && 'border-emerald-300 bg-emerald-100',
+                      submitted && correct === false && 'border-rose-300 bg-rose-100',
+                      !submitted && 'bg-white border-blue-200',
+                    )}>
+                      {card.text}
+                      {submitted && (correct ? ' ✓' : ' ✗')}
                     </div>
-                    <div className="p-2 space-y-1 overflow-y-auto flex-1">
-                      {zoneCards.length === 0 && (
-                        <p className={cn('text-xs text-center py-4 opacity-40', cfg.color)}>
-                          {isActive ? '↑ Click to place' : 'Empty'}
-                        </p>
-                      )}
-                      {zoneCards.map(card => {
-                        const isCorrect = card.correctZone === zone;
-                        return (
-                          <div
-                            key={card.id}
-                            className={cn(
-                              'px-2 py-1.5 rounded-lg border text-xs leading-snug flex items-start gap-1 transition-all',
-                              submitted
-                                ? isCorrect ? 'bg-emerald-100 border-emerald-300 text-emerald-800' : 'bg-rose-100 border-rose-300 text-rose-800'
-                                : 'bg-white border-slate-200 text-slate-700 cursor-pointer hover:border-rose-300',
-                            )}
-                            onClick={e => { e.stopPropagation(); if (!submitted) handleReturnToPool(card.id); }}
-                          >
-                            {submitted && (isCorrect
-                              ? <CheckCircle2 className="w-3 h-3 text-violet-700 shrink-0 mt-0.5" />
-                              : <XCircle className="w-3 h-3 text-rose-500 shrink-0 mt-0.5" />
-                            )}
-                            <span className="flex-1">{card.text}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+                {cards.filter(c => c.assignedA).length === 0 && (
+                  <p className="text-xs text-blue-300 text-center py-4">Use ← to assign features here</p>
+                )}
+              </div>
             </div>
 
-            {/* Submit / reset bar */}
-            {!submitted && (
-              <div className="flex items-center justify-between bg-white rounded-lg border border-slate-200 px-3 py-2 shrink-0">
-                <p className="text-xs text-slate-500">
-                  {unplacedCards.length > 0 ? `${unplacedCards.length} remaining` : 'All placed — ready to check!'}
+            {/* CENTER — Feature pool */}
+            <div className="rounded-xl border-2 border-slate-200 bg-white flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-slate-100 border-b border-slate-200 shrink-0 flex items-center justify-between">
+                <p className="text-xs font-bold text-slate-600 uppercase tracking-wide">Features</p>
+                <p className="text-[10px] text-slate-400">
+                  {cards.filter(isAnswered).length}/{cards.length} answered
                 </p>
-                <div className="flex gap-1.5">
-                  <Button variant="outline" size="sm" onClick={startItem} className="gap-1 h-7 text-xs">
-                    <RotateCcw className="w-3 h-3" /> Reset
-                  </Button>
-                  <Button size="sm" onClick={handleSubmit} disabled={!allPlaced} className="bg-violet-700 hover:bg-violet-800 text-white disabled:opacity-40 h-7 text-xs">
-                    Check Answers
-                  </Button>
-                </div>
               </div>
-            )}
-          </div>
-        )}
+              <div className="p-2 space-y-1 overflow-y-auto flex-1">
+                {cards.map(card => (
+                  <FeatureRow
+                    key={card.id}
+                    card={card}
+                    submitted={submitted}
+                    onToggleA={() => handleToggleA(card.id)}
+                    onToggleB={() => handleToggleB(card.id)}
+                    onToggleStrike={() => handleToggleStrike(card.id)}
+                  />
+                ))}
+              </div>
+            </div>
 
-      </div>
+            {/* RIGHT — Term B */}
+            <div className="rounded-xl border-2 border-violet-200 bg-violet-50 flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-violet-100 border-b border-violet-200 shrink-0">
+                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide truncate">{currentItem.conceptB}</p>
+                <p className="text-[10px] text-violet-500">Features assigned with →</p>
+              </div>
+              <div className="p-2 space-y-1.5 overflow-y-auto flex-1">
+                {cards.filter(c => c.assignedB).map(card => {
+                  const correct = submitted ? isCorrect(card) : null;
+                  return (
+                    <div key={card.id} className={cn(
+                      'px-2 py-1.5 rounded-lg border text-xs text-violet-800 leading-snug',
+                      submitted && correct === true && 'border-emerald-300 bg-emerald-100',
+                      submitted && correct === false && 'border-rose-300 bg-rose-100',
+                      !submitted && 'bg-white border-violet-200',
+                    )}>
+                      {card.text}
+                      {submitted && (correct ? ' ✓' : ' ✗')}
+                    </div>
+                  );
+                })}
+                {cards.filter(c => c.assignedB).length === 0 && (
+                  <p className="text-xs text-violet-300 text-center py-4">Use → to assign features here</p>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Submit bar */}
+          {!submitted && (
+            <div className="flex items-center justify-between bg-white rounded-lg border border-slate-200 px-3 py-2 shrink-0">
+              <p className="text-xs text-slate-500">
+                {cards.filter(isAnswered).length < cards.length
+                  ? `${cards.length - cards.filter(isAnswered).length} features still need an answer`
+                  : 'All features answered — ready to check!'}
+              </p>
+              <div className="flex gap-1.5">
+                <Button variant="outline" size="sm" onClick={startItem} className="gap-1 h-7 text-xs">
+                  <RotateCcw className="w-3 h-3" /> Reset
+                </Button>
+                <Button size="sm" onClick={handleSubmit} disabled={!allAnswered} className="bg-violet-700 hover:bg-violet-800 text-white disabled:opacity-40 h-7 text-xs">
+                  Check Answers
+                </Button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
