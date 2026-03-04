@@ -5,7 +5,8 @@ export interface VennItem {
   conceptA: string;
   conceptB: string;
   category: string;
-  tier: 'tier1' | 'tier2' | 'tier3' | 'behavior-reduction' | 'research' | 'verbal' | 'measurement' | 'skill-acquisition' | 'ethics';
+  domain: string;
+  domainFull: string;
   onlyA: string[];      // features unique to Term A
   onlyB: string[];      // features unique to Term B
   shared: string[];     // features true of BOTH
@@ -18,7 +19,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Tier 1 – High Confusion ────────────────────────────────────────────────
   {
     id: 'v-mo-sd', conceptA: 'Motivating Operation (MO)', conceptB: 'Discriminative Stimulus (SD)',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Has a value-altering effect (changes reinforcer effectiveness)',
       'Has a behavior-altering effect on the entire response class',
@@ -46,7 +49,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-cmo-sd', conceptA: 'CMO-T (Transitive)', conceptB: 'Discriminative Stimulus (SD)',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Establishes a conditioned reinforcer (makes something reinforcing that wasn\'t before)',
       'Evokes behavior that has produced that conditioned reinforcer in the past',
@@ -73,7 +78,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-eo-reinf', conceptA: 'Establishing Operation (EO)', conceptB: 'Reinforcer',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'An antecedent variable (occurs before behavior)',
       'Temporarily increases the value of a reinforcer',
@@ -101,7 +108,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-cs-sd', conceptA: 'Conditioned Stimulus (CS)', conceptB: 'Discriminative Stimulus (SD)',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Elicits a respondent (reflexive) response',
       'Acquires its function through pairing with an unconditioned stimulus (US)',
@@ -129,7 +138,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-rule-contingency', conceptA: 'Rule-Governed Behavior', conceptB: 'Contingency-Shaped Behavior',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Controlled by verbal descriptions of contingencies (rules, instructions)',
       'Can occur without direct contact with the contingency',
@@ -157,7 +168,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-ext-neg-reinf', conceptA: 'Extinction', conceptB: 'Negative Reinforcement',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Withholding the reinforcer that previously maintained the behavior',
       'Results in a DECREASE in behavior over time',
@@ -185,7 +198,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-dra-dro', conceptA: 'DRA', conceptB: 'DRO',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reinforces a specific ALTERNATIVE behavior',
       'Directly teaches a replacement behavior',
@@ -214,7 +229,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-dri-drl', conceptA: 'DRI', conceptB: 'DRL',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reinforces a behavior that is physically INCOMPATIBLE with the problem behavior',
       'The two behaviors cannot occur simultaneously',
@@ -242,7 +259,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-drh-drl', conceptA: 'DRH', conceptB: 'DRL',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reinforces behavior occurring at a HIGH rate or above a criterion',
       'Used to INCREASE the frequency of a desirable behavior',
@@ -268,7 +287,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-spontaneous-resurgence', conceptA: 'Spontaneous Recovery', conceptB: 'Resurgence',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reappearance of an extinguished behavior after a REST period (no extinction)',
       'Occurs after extinction, following a rest period, without additional training',
@@ -296,7 +317,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-renewal-spontaneous', conceptA: 'Renewal', conceptB: 'Spontaneous Recovery',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'F',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Return of extinguished behavior when the CONTEXT changes',
       'Triggered by a change in the environment (e.g., returning to original setting)',
@@ -324,7 +347,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-ioa-treatment-integrity', conceptA: 'IOA (Interobserver Agreement)', conceptB: 'Treatment Integrity',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'Measures agreement between two OBSERVERS recording the same behavior',
       'Evaluates the reliability of the DEPENDENT variable (behavior measurement)',
@@ -353,7 +378,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-pos-reinf-neg-reinf', conceptA: 'Positive Reinforcement', conceptB: 'Negative Reinforcement',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A stimulus is ADDED following behavior',
       'The added stimulus is appetitive (desirable)',
@@ -381,7 +408,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-pos-pun-neg-pun', conceptA: 'Positive Punishment', conceptB: 'Negative Punishment',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A stimulus is ADDED following behavior',
       'The added stimulus is aversive',
@@ -408,7 +437,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-auto-social-reinf', conceptA: 'Automatic Reinforcement', conceptB: 'Social Reinforcement',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reinforcement is produced by the behavior itself, independent of others',
       'No mediating agent is required',
@@ -439,7 +470,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Behavior Reduction ─────────────────────────────────────────────────────
   {
     id: 'v-extinction-burst-spontaneous', conceptA: 'Extinction Burst', conceptB: 'Spontaneous Recovery',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'F',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Initial INCREASE in frequency, intensity, or variability at the START of extinction',
       'Occurs immediately when the reinforcer is withheld',
@@ -467,7 +500,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-escape-ext-neg-reinf', conceptA: 'Escape Extinction', conceptB: 'Negative Reinforcement',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Withholding escape/avoidance following problem behavior',
       'A BEHAVIOR REDUCTION procedure',
@@ -495,7 +530,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-extinction-planned-ignoring', conceptA: 'Extinction', conceptB: 'Planned Ignoring',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Withholding the specific reinforcer maintaining the behavior (any function)',
       'Applies to ALL functions: attention, escape, tangible, automatic',
@@ -524,7 +561,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-shaping-chaining', conceptA: 'Shaping', conceptB: 'Chaining',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reinforces successive APPROXIMATIONS toward a terminal behavior',
       'Used when the target behavior does not yet exist in the repertoire',
@@ -552,7 +591,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-stimulus-control-mo', conceptA: 'Stimulus Control', conceptB: 'Motivating Operation',
-    category: 'Tier 1 – High Confusion', tier: 'tier1',
+    category: 'Tier 1 – High Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Behavior occurs more frequently in the presence of a specific stimulus (SD)',
       'Established through a history of differential reinforcement',
@@ -580,7 +621,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-response-effort-magnitude', conceptA: 'Response Effort', conceptB: 'Reinforcer Magnitude',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'The physical effort required to EMIT the behavior',
       'Higher effort = lower response rate (all else equal)',
@@ -608,7 +651,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-latency-duration', conceptA: 'Latency', conceptB: 'Duration',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'Time from the ONSET of a stimulus to the ONSET of the behavior',
       'Measures how quickly a response is initiated after a cue',
@@ -636,7 +681,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Tier 2 – Moderate Confusion ───────────────────────────────────────────
   {
     id: 'v-fr-vr', conceptA: 'Fixed Ratio (FR)', conceptB: 'Variable Ratio (VR)',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reinforcement delivered after a FIXED, predictable number of responses',
       'Produces a post-reinforcement pause',
@@ -663,7 +710,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-fi-vi', conceptA: 'Fixed Interval (FI)', conceptB: 'Variable Interval (VI)',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reinforcement available after a FIXED, predictable time interval',
       'Produces a scallop pattern (low rate after reinforcement, increasing near interval end)',
@@ -689,7 +738,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-concurrent-multiple', conceptA: 'Concurrent Schedules', conceptB: 'Multiple Schedules',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Two or more schedules available SIMULTANEOUSLY for different responses',
       'Organism can choose between alternatives at the same time',
@@ -717,7 +768,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-mixed-chained', conceptA: 'Mixed Schedule', conceptB: 'Chained Schedule',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Two or more schedules alternate with NO discriminative stimulus to signal which is in effect',
       'The organism cannot tell which schedule is currently operating',
@@ -744,7 +797,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-behavioral-contrast-matching', conceptA: 'Behavioral Contrast', conceptB: 'Matching Law',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Change in response rate in one component when the schedule in ANOTHER component changes',
       'Positive contrast: rate increases when the other schedule worsens',
@@ -772,7 +827,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-maintenance-generalization', conceptA: 'Maintenance', conceptB: 'Generalization',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Continuation of behavior over TIME after the training contingency is removed',
       'Temporal dimension — behavior persists',
@@ -800,7 +857,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-stim-gen-resp-gen', conceptA: 'Stimulus Generalization', conceptB: 'Response Generalization',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'The SAME response occurs in the presence of NEW stimuli similar to the training stimulus',
       'Stimulus changes; response stays the same',
@@ -826,7 +885,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-stim-disc-stim-gen', conceptA: 'Stimulus Discrimination', conceptB: 'Stimulus Generalization',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Behavior occurs in the presence of the SD but NOT the S-delta',
       'Behavior is SPECIFIC to trained stimuli',
@@ -854,7 +915,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-resp-class-resp-gen', conceptA: 'Response Class', conceptB: 'Response Generalization',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A GROUP of responses that produce the same reinforcing consequence',
       'A structural concept — describes the category of functionally equivalent responses',
@@ -882,7 +945,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-uncond-cond-reinf', conceptA: 'Unconditioned Reinforcer', conceptB: 'Conditioned Reinforcer',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reinforcing effectiveness is UNLEARNED (biological)',
       'Does not require a prior learning history',
@@ -910,7 +975,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-ao-satiation', conceptA: 'Abolishing Operation (AO)', conceptB: 'Satiation',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'The BROADER category of motivating operations that DECREASE reinforcer effectiveness',
       'Includes satiation, but also other value-decreasing events',
@@ -938,7 +1005,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-deprivation-eo', conceptA: 'Deprivation', conceptB: 'Establishing Operation (EO)',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A SPECIFIC type of EO caused by lack of access to a reinforcer',
       'Increases the value of a specific reinforcer through lack of access',
@@ -966,7 +1035,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-elicited-evoked', conceptA: 'Elicited Behavior', conceptB: 'Evoked Behavior',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'RESPONDENT behavior — reflexive, involuntary',
       'Caused directly by an antecedent stimulus (US or CS)',
@@ -994,7 +1065,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-respondent-operant', conceptA: 'Respondent Conditioning', conceptB: 'Operant Conditioning',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'CS-US pairing elicits a conditioned response (CR)',
       'The stimulus PRECEDES and CAUSES the behavior',
@@ -1023,7 +1096,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-continuous-discontinuous', conceptA: 'Continuous Measurement', conceptB: 'Discontinuous Measurement',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'EVERY instance of the behavior is recorded',
       'More accurate representation of the actual behavior',
@@ -1051,7 +1126,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-habituation-respondent-ext', conceptA: 'Habituation', conceptB: 'Respondent Extinction',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Decrease in response to ANY stimulus with repeated presentation',
       'Does NOT require prior conditioning — works on unconditioned responses too',
@@ -1079,7 +1156,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-stim-gen-stim-class', conceptA: 'Stimulus Generalization', conceptB: 'Stimulus Class',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A PROCESS — behavior spreads to new stimuli similar to the training stimulus',
       'Dynamic — describes how responding extends to untrained stimuli',
@@ -1107,7 +1186,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-imitation-observational', conceptA: 'Imitation', conceptB: 'Observational Learning',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Copying the FORM (topography) of a model\'s behavior',
       'Does not require observing the model\'s consequences',
@@ -1135,7 +1216,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-methodological-radical', conceptA: 'Behaviorism (Methodological)', conceptB: 'Radical Behaviorism',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'A',
+    domainFull: 'Behaviorism & Philosophical Foundations',
     onlyA: [
       'EXCLUDES private events (thoughts, feelings) from scientific study',
       'Only publicly observable behavior is a legitimate subject of science',
@@ -1163,7 +1246,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-mentalism-radical', conceptA: 'Mentalism', conceptB: 'Radical Behaviorism',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'A',
+    domainFull: 'Behaviorism & Philosophical Foundations',
     onlyA: [
       'Treats internal mental states as CAUSES of behavior',
       'Explains behavior by referring to unobservable internal entities (mind, will, ego)',
@@ -1190,7 +1275,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-antecedent-consequence', conceptA: 'Antecedent Intervention', conceptB: 'Consequence Intervention',
-    category: 'Tier 2 – Moderate Confusion', tier: 'tier2',
+    category: 'Tier 2 – Moderate Confusion',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Modifies events BEFORE behavior occurs to prevent problem behavior',
       'Examples: NCR, high-probability request sequences, environmental modifications',
@@ -1220,7 +1307,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Research & Design ──────────────────────────────────────────────────────
   {
     id: 'v-internal-external', conceptA: 'Internal Validity', conceptB: 'External Validity',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'The degree to which the IV (treatment) caused the change in the DV (behavior)',
       'Threatened by extraneous variables (history, maturation, instrumentation)',
@@ -1248,7 +1337,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-prediction-verification', conceptA: 'Prediction', conceptB: 'Verification',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Using baseline data to FORECAST future behavior if conditions remain unchanged',
       'The first element of baseline logic',
@@ -1276,7 +1367,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-verification-replication', conceptA: 'Verification', conceptB: 'Replication',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Demonstrating that the baseline prediction was accurate by returning to baseline',
       'Rules out extraneous variables as explanations for the behavior change',
@@ -1304,7 +1397,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-component-treatment', conceptA: 'Component Analysis', conceptB: 'Treatment Package',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Systematically removes or adds components to identify which are NECESSARY and SUFFICIENT',
       'Used to analyze an existing treatment package',
@@ -1332,7 +1427,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-parametric-comparative', conceptA: 'Parametric Analysis', conceptB: 'Comparative Analysis',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Examines the effects of DIFFERENT VALUES of the same independent variable',
       'Determines the optimal parameter (e.g., schedule density, reinforcer magnitude)',
@@ -1358,7 +1455,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-reversal-multiple-baseline', conceptA: 'Reversal Design', conceptB: 'Multiple Baseline Design',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Establishes experimental control by WITHDRAWING the treatment (returning to baseline)',
       'Requires the behavior to be reversible',
@@ -1386,7 +1485,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-atd-multiple-baseline', conceptA: 'Alternating Treatments Design', conceptB: 'Multiple Baseline Design',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Rapidly alternates between two or more conditions within the same phase',
       'Used to compare the effects of two or more treatments quickly',
@@ -1414,7 +1515,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-baseline-logic-experimental', conceptA: 'Baseline Logic', conceptB: 'Experimental Control',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'The logical framework of prediction, verification, and replication',
       'Uses stable baseline data to predict future behavior',
@@ -1442,7 +1545,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-maturation-history', conceptA: 'Maturation', conceptB: 'History',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Threat to internal validity from BIOLOGICAL changes over time (growth, development)',
       'Occurs naturally as a function of time, not specific events',
@@ -1468,7 +1573,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-multiple-baseline-probe', conceptA: 'Multiple Baseline Design', conceptB: 'Multiple Probe Design',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Continuous measurement across ALL tiers throughout the study',
       'More data points — better picture of baseline stability',
@@ -1496,7 +1603,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-functional-relationship-experimental', conceptA: 'Functional Relationship', conceptB: 'Experimental Control',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'A CAUSAL relationship between the IV and DV — the IV caused the change in the DV',
       'Demonstrated through systematic manipulation of the IV',
@@ -1524,7 +1633,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-iv-dv', conceptA: 'Independent Variable', conceptB: 'Dependent Variable',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'The variable the researcher MANIPULATES (the treatment or intervention)',
       'The presumed CAUSE in the functional relationship',
@@ -1552,7 +1663,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-single-group-design', conceptA: 'Single-Case Design', conceptB: 'Group Design',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Each participant serves as their own control',
       'Demonstrates experimental control through repeated measurement and design',
@@ -1580,7 +1693,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-observer-drift-bias', conceptA: 'Observer Drift', conceptB: 'Observer Bias',
-    category: 'Research & Design', tier: 'research',
+    category: 'Research & Design',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'Gradual, UNINTENTIONAL change in how an observer records behavior over time',
       'The observer\'s definition of the behavior changes without awareness',
@@ -1610,7 +1725,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Verbal Behavior + Stimulus Control ────────────────────────────────────
   {
     id: 'v-mand-tact', conceptA: 'Mand', conceptB: 'Tact',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Controlled by a MOTIVATING OPERATION (deprivation or aversive stimulation)',
       'Specifies its own reinforcer (the speaker gets what they ask for)',
@@ -1638,7 +1755,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-tact-intraverbal', conceptA: 'Tact', conceptB: 'Intraverbal',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Controlled by a NONVERBAL discriminative stimulus (an object, event, or property)',
       'The speaker labels or describes something in the nonverbal environment',
@@ -1664,7 +1783,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-echoic-imitation', conceptA: 'Echoic', conceptB: 'Imitation',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A VERBAL operant — the response is vocal/verbal',
       'Controlled by a verbal SD (another person\'s speech)',
@@ -1692,7 +1813,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-textual-transcription', conceptA: 'Textual', conceptB: 'Transcription',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Reading — converting WRITTEN text into SPOKEN words',
       'The stimulus is written; the response is vocal',
@@ -1718,7 +1841,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-convergent-divergent', conceptA: 'Convergent Control', conceptB: 'Divergent Control',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'MULTIPLE antecedent stimuli all control the SAME verbal response',
       'The response is evoked by several different sources of control',
@@ -1744,7 +1869,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-multiple-automaticity', conceptA: 'Multiple Control', conceptB: 'Automaticity',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A verbal response is under the control of MORE THAN ONE source of stimulation simultaneously',
       'Both convergent and divergent control are forms of multiple control',
@@ -1770,7 +1897,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-drr-generalization', conceptA: 'Derived Relational Responding', conceptB: 'Generalization',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Responding to NOVEL stimulus relations that were never directly trained',
       'Based on relational frames (symmetry, transitivity, combinatorial entailment)',
@@ -1798,7 +1927,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-symmetry-transitivity', conceptA: 'Symmetry', conceptB: 'Transitivity',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'If A→B is trained, then B→A emerges WITHOUT training',
       'A bidirectional relation between two stimuli',
@@ -1824,7 +1955,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-reflexivity-symmetry', conceptA: 'Reflexivity', conceptB: 'Symmetry',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Generalized identity matching — A→A without specific training',
       'The organism matches any stimulus to itself',
@@ -1851,7 +1984,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-tact-ext-metaphorical', conceptA: 'Tact Extension', conceptB: 'Metaphorical Extension',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Tacting a novel stimulus based on SHARED PHYSICAL PROPERTIES with the trained stimulus',
       'The novel stimulus has some of the same features as the original SD',
@@ -1877,7 +2012,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-mutual-symmetry', conceptA: 'Mutual Entailment', conceptB: 'Symmetry',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A relational framing concept: if A relates to B in a frame, then B relates to A in the same frame',
       'Applies to ALL relational frames (not just equivalence)',
@@ -1904,7 +2041,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-combinatorial-transitivity', conceptA: 'Combinatorial Entailment', conceptB: 'Transitivity',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Combining mutual entailment and transitivity across relational frames',
       'Applies to ALL relational frames (not just equivalence)',
@@ -1934,7 +2073,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-stimulus-control-discrimination-training',
     conceptA: 'Stimulus Control',
     conceptB: 'Discrimination Training',
-    category: 'Verbal Behavior + Stimulus Control', tier: 'verbal',
+    category: 'Verbal Behavior + Stimulus Control',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A PROPERTY OF BEHAVIOR — a stimulus is said to exert stimulus control when the behavior is more likely in its presence',
       'Stimulus control is the OUTCOME or END STATE achieved after discrimination training is complete',
@@ -1966,7 +2107,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Tier 3 – Subtle Distinction ───────────────────────────────────────────
   {
     id: 'v-atd-multiple-treatment', conceptA: 'Alternating Treatments Design', conceptB: 'Multiple Treatment Design',
-    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    category: 'Tier 3 – Subtle Distinction',
+    domain: 'D',
+    domainFull: 'Experimental Design',
     onlyA: [
       'Rapidly alternates between conditions within the SAME PHASE',
       'Each condition is signaled by a different SD',
@@ -1994,7 +2137,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-cmo-t-reinforcement', conceptA: 'CMO-T (Transitive)', conceptB: 'Reinforcement',
-    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    category: 'Tier 3 – Subtle Distinction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'An ANTECEDENT variable that establishes a conditioned reinforcer',
       'Evokes behavior that has produced the conditioned reinforcer in the past',
@@ -2022,7 +2167,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-mo-antecedent', conceptA: 'Motivating Operation', conceptB: 'Antecedent Intervention',
-    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    category: 'Tier 3 – Subtle Distinction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A naturally occurring or experimentally manipulated antecedent variable',
       'Has both a value-altering and behavior-altering effect',
@@ -2052,7 +2199,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Measurement ────────────────────────────────────────────────────────────
   {
     id: 'v-frequency-rate', conceptA: 'Frequency', conceptB: 'Rate',
-    category: 'Measurement', tier: 'measurement',
+    category: 'Measurement',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'A count — the total number of times a behavior occurs',
       'Does not account for the length of the observation period',
@@ -2080,7 +2229,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-partial-whole-interval', conceptA: 'Partial Interval Recording', conceptB: 'Whole Interval Recording',
-    category: 'Measurement', tier: 'measurement',
+    category: 'Measurement',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'Scored if the behavior occurs at ANY point during the interval',
       'Tends to OVERESTIMATE the true proportion of time behavior occurs',
@@ -2109,7 +2260,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-mts-partial', conceptA: 'Momentary Time Sampling (MTS)', conceptB: 'Partial Interval Recording',
-    category: 'Measurement', tier: 'measurement',
+    category: 'Measurement',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'Behavior is observed only at the MOMENT the interval ends (a single instant)',
       'Yields an estimate close to the true proportion when intervals are short',
@@ -2138,7 +2291,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-latency-irt', conceptA: 'Latency', conceptB: 'Inter-Response Time (IRT)',
-    category: 'Measurement', tier: 'measurement',
+    category: 'Measurement',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'Time from the onset of a stimulus (SD or instruction) to the start of the response',
       'Measures how quickly a person responds to a cue',
@@ -2167,7 +2322,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-permanent-product-direct', conceptA: 'Permanent Product Recording', conceptB: 'Direct (Event) Recording',
-    category: 'Measurement', tier: 'measurement',
+    category: 'Measurement',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'Measures the tangible outcome or artifact of behavior after it occurs',
       'Observer does not need to be present when behavior occurs',
@@ -2200,7 +2357,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-level-trend',
     conceptA: 'Level',
     conceptB: 'Trend',
-    category: 'Measurement', tier: 'measurement',
+    category: 'Measurement',
+    domain: 'C',
+    domainFull: 'Measurement & Data Collection',
     onlyA: [
       'Refers to the mean or median value of data points within a phase or condition',
       'Described as high, low, or moderate relative to the target criterion',
@@ -2232,7 +2391,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Skill Acquisition / Behavior Change Procedures ─────────────────────────
   {
     id: 'v-dtt-net', conceptA: 'Discrete Trial Training (DTT)', conceptB: 'Natural Environment Teaching (NET)',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Highly structured, therapist-directed format',
       'Uses massed or distributed practice of a single target skill',
@@ -2261,7 +2422,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-errorless-error-correction', conceptA: 'Errorless Learning', conceptB: 'Error Correction',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Provides a prompt immediately (before an error can occur)',
       'Prevents the learner from practicing incorrect responses',
@@ -2290,7 +2453,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-forward-backward-chaining', conceptA: 'Forward Chaining', conceptB: 'Backward Chaining',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Teaching begins with the FIRST step in the chain',
       'Learner masters step 1 before step 2 is introduced',
@@ -2319,7 +2484,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-shaping-fading', conceptA: 'Shaping', conceptB: 'Fading',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Differentially reinforces successive approximations toward a terminal behavior',
       'Changes the FORM (topography) or dimension of the response over time',
@@ -2348,7 +2515,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-prompting-cueing', conceptA: 'Prompt', conceptB: 'Cue (Natural SD)',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'A supplemental antecedent stimulus added to increase the probability of a correct response',
       'Not part of the natural environment — it is an artificial teaching aid',
@@ -2381,7 +2550,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-most-to-least-least-to-most',
     conceptA: 'Most-to-Least Prompting',
     conceptB: 'Least-to-Most Prompting',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Begins with the most intrusive prompt level and systematically fades toward independence',
       'Minimizes errors by providing maximum support at the start of training',
@@ -2412,7 +2583,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-prompt-fading-prompt-delay',
     conceptA: 'Prompt Fading',
     conceptB: 'Time Delay',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Involves systematically reducing the intrusiveness or intensity of a prompt across trials',
       'Includes procedures such as most-to-least, graduated guidance, and stimulus fading',
@@ -2443,7 +2616,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-total-task-chaining',
     conceptA: 'Total Task Chaining',
     conceptB: 'Backward Chaining',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'The learner attempts every step of the task analysis on every training trial',
       'Prompts are provided for steps the learner cannot complete independently',
@@ -2474,7 +2649,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-mand-training-tact-training',
     conceptA: 'Mand Training',
     conceptB: 'Tact Training',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Teaches the learner to request preferred items, activities, or information',
       'Requires an establishing operation (EO) to be in effect — the learner must be motivated for the item',
@@ -2505,7 +2682,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-generalization-programming-maintenance-programming',
     conceptA: 'Generalization Programming',
     conceptB: 'Maintenance Programming',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Targets the transfer of a trained skill to untrained stimuli, settings, people, or response forms',
       'Strategies include training loosely, using multiple exemplars, and programming common stimuli',
@@ -2536,7 +2715,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-incidental-teaching-pivotal-response-training',
     conceptA: 'Incidental Teaching',
     conceptB: 'Pivotal Response Training (PRT)',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'A naturalistic teaching procedure developed by Hart and Risley (1975)',
       'Initiated when the learner approaches a preferred item or activity and shows interest',
@@ -2567,7 +2748,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-stimulus-control-transfer-response-prompting',
     conceptA: 'Stimulus Control Transfer',
     conceptB: 'Response Prompting',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'The process by which a response comes under the control of a new or different antecedent stimulus',
       'The goal of all prompting and fading procedures — to shift control from the prompt to the natural SD',
@@ -2598,7 +2781,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-dri-alt-response',
     conceptA: 'Differential Reinforcement of Incompatible Behavior (DRI)',
     conceptB: 'Differential Reinforcement of Alternative Behavior (DRA)',
-    category: 'Skill Acquisition', tier: 'skill-acquisition',
+    category: 'Skill Acquisition',
+    domain: 'G',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Reinforces a behavior that is PHYSICALLY INCOMPATIBLE with the problem behavior — both cannot occur simultaneously',
       'The alternative behavior and the problem behavior share the same body part or movement',
@@ -2630,7 +2815,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Behavior Reduction (additional) ────────────────────────────────────────
   {
     id: 'v-extinction-punishment', conceptA: 'Extinction', conceptB: 'Punishment',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Withholding the reinforcer that previously maintained the behavior',
       'Does not involve delivering a new stimulus or removing a stimulus contingently',
@@ -2659,7 +2846,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-ncr-dro', conceptA: 'Non-Contingent Reinforcement (NCR)', conceptB: 'Differential Reinforcement of Other Behavior (DRO)',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'F',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Reinforcement is delivered on a fixed- or variable-time schedule, independent of behavior',
       'Does not require the absence of problem behavior to deliver reinforcement',
@@ -2688,7 +2877,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-fba-fa', conceptA: 'Functional Behavior Assessment (FBA)', conceptB: 'Functional Analysis (FA)',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'F',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'An umbrella term for all methods used to identify the function of behavior',
       'Includes indirect methods (interviews, rating scales) and descriptive methods (ABC recording)',
@@ -2717,7 +2908,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-response-blocking-physical-guidance', conceptA: 'Response Blocking', conceptB: 'Physical Guidance',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'F',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'A consequence-based procedure — the response is physically interrupted AFTER it begins',
       'Used to prevent completion of a harmful or undesirable response',
@@ -2750,7 +2943,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-response-cost-timeout',
     conceptA: 'Response Cost',
     conceptB: 'Time-Out from Positive Reinforcement',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'F',
+    domainFull: 'Behavior-Change Procedures',
     onlyA: [
       'Involves the removal of a SPECIFIC QUANTITY of a previously earned reinforcer contingent on the target behavior',
       'Requires the individual to have a reserve of reinforcers (tokens, points, privileges) that can be removed',
@@ -2781,7 +2976,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-behavioral-contrast-behavioral-momentum',
     conceptA: 'Behavioral Contrast',
     conceptB: 'Behavioral Momentum',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Occurs when a change in reinforcement in one component of a multiple schedule produces an OPPOSITE change in another component',
       'Example: reducing reinforcement in Component A causes response rate to INCREASE in Component B, even without any change to Component B',
@@ -2812,7 +3009,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-satiation-deprivation',
     conceptA: 'Satiation',
     conceptB: 'Deprivation',
-    category: 'Behavior Reduction', tier: 'behavior-reduction',
+    category: 'Behavior Reduction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'A motivating operation (MO) that DECREASES the reinforcing effectiveness of a stimulus',
       'Occurs when an organism has had recent or continuous access to a reinforcer',
@@ -2844,7 +3043,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Ethics & Supervision ────────────────────────────────────────────────────
   {
     id: 'v-assent-informed-consent', conceptA: 'Assent', conceptB: 'Informed Consent',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'A voluntary agreement to participate expressed by the CLIENT (learner) themselves',
       'Not legally required but ethically important, especially for clients who cannot legally consent',
@@ -2873,7 +3074,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-competence-scope', conceptA: 'Competence', conceptB: 'Scope of Practice',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'Refers to the practitioner\'s actual knowledge, skills, and experience in a given area',
       'Is individual and specific — varies from one BCBA to another',
@@ -2902,7 +3105,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-supervision-therapeutic', conceptA: 'Supervisory Relationship', conceptB: 'Therapeutic Relationship',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'A professional relationship between a BCBA supervisor and a supervisee',
       'Focused on developing the supervisee\'s professional skills and ethical conduct',
@@ -2935,7 +3140,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-multiple-relationship-conflict-of-interest',
     conceptA: 'Multiple Relationship',
     conceptB: 'Conflict of Interest',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'Defined as a comingling of two or more of a behavior analyst\'s roles with the same person (Code 1.11)',
       'Includes professional, personal, and familial role combinations with clients, supervisees, or trainees',
@@ -2966,7 +3173,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-discontinuing-transitioning-services',
     conceptA: 'Discontinuing Services',
     conceptB: 'Transitioning Services',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'Applies when the client has met all goals, is not benefiting, or funding ends (Code 3.15)',
       'Requires a written plan for discontinuation provided to the client and/or stakeholders',
@@ -2997,7 +3206,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-supervisory-volume-supervisory-competence',
     conceptA: 'Supervisory Volume',
     conceptB: 'Supervisory Competence',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'Refers to the number of supervisees or trainees a behavior analyst takes on (Code 4.03)',
       'Requires ongoing self-assessment of caseload, time, and logistical resources',
@@ -3028,7 +3239,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-performance-monitoring-bst',
     conceptA: 'Performance Monitoring and Feedback',
     conceptB: 'Behavior Skills Training (BST)',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'An ongoing ethical obligation of supervisors under Code 4.08',
       'Requires documented, evidence-based data collection and structured evaluations of supervisees',
@@ -3059,7 +3272,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-confidentiality-limits-of-confidentiality',
     conceptA: 'Confidentiality',
     conceptB: 'Limits of Confidentiality',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'The obligation to protect client, stakeholder, supervisee, and trainee information from unauthorized disclosure (Code 2.03)',
       'Applies across all service delivery modes: in person, teleservices, recorded sessions, and written communication',
@@ -3090,7 +3305,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-least-restrictive-most-effective',
     conceptA: 'Least Restrictive Alternative',
     conceptB: 'Most Effective Treatment',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'Refers to selecting the intervention that produces desired outcomes with the fewest restrictions on the client\'s freedom',
       'Requires demonstrating that less intrusive procedures have been tried or considered before using restrictive ones (Code 2.15)',
@@ -3121,7 +3338,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-scope-of-competence-defined-role',
     conceptA: 'Scope of Competence',
     conceptB: 'Defined Role',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'Defined as the professional activities a behavior analyst can consistently perform with proficiency (Code Glossary)',
       'Requires accessing training, supervised experience, or consultation before practicing in new areas (Code 1.05)',
@@ -3152,7 +3371,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-solicited-unsolicited-testimonials',
     conceptA: 'Solicited Testimonials',
     conceptB: 'Unsolicited Testimonials',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'A testimonial becomes solicited from the moment the behavior analyst asks for it (Code Glossary)',
       'Cannot be solicited from CURRENT clients or stakeholders for advertising purposes due to undue influence (Code 5.07)',
@@ -3183,7 +3404,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-accountability-supervision-accountability-professional',
     conceptA: 'Accountability in Supervision',
     conceptB: 'Accountability as a Professional',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'Behavior analysts are accountable for the professional activities of their supervisees and trainees that occur within the supervisory relationship (Code 4.04)',
       'Requires the supervisor to ensure supervisees\' client services, research activity, and public statements comply with the Code',
@@ -3214,7 +3437,9 @@ export const vennDiagrams: VennItem[] = [
     id: 'v-client-stakeholder',
     conceptA: 'Client',
     conceptB: 'Stakeholder',
-    category: 'Ethics & Supervision', tier: 'ethics',
+    category: 'Ethics & Supervision',
+    domain: 'E',
+    domainFull: 'Ethical & Professional Issues',
     onlyA: [
       'The DIRECT recipient of the behavior analyst\'s services (Code Glossary)',
       'Their rights and welfare take priority over all other parties in service delivery (Code 3.01)',
@@ -3246,7 +3471,9 @@ export const vennDiagrams: VennItem[] = [
   // ── Tier 3 – Subtle Distinctions (additional) ──────────────────────────────
   {
     id: 'v-resurgence-renewal', conceptA: 'Resurgence', conceptB: 'Renewal',
-    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    category: 'Tier 3 – Subtle Distinction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Return of a previously extinguished behavior when a CURRENTLY reinforced behavior is placed on extinction',
       'Occurs within the same context — no context change is required',
@@ -3275,7 +3502,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-behavioral-momentum-matching', conceptA: 'Behavioral Momentum', conceptB: 'Matching Law',
-    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    category: 'Tier 3 – Subtle Distinction',
+    domain: 'B',
+    domainFull: 'Concepts & Principles',
     onlyA: [
       'Describes the persistence of behavior in the face of disruption (like an object in motion)',
       'Resistance to change is proportional to the history of reinforcement in that context',
@@ -3304,7 +3533,9 @@ export const vennDiagrams: VennItem[] = [
   },
   {
     id: 'v-covert-private', conceptA: 'Covert Behavior', conceptB: 'Private Events',
-    category: 'Tier 3 – Subtle Distinction', tier: 'tier3',
+    category: 'Tier 3 – Subtle Distinction',
+    domain: 'A',
+    domainFull: 'Behaviorism & Philosophical Foundations',
     onlyA: [
       'Behavior that occurs at a low intensity, making it difficult for others to observe',
       'Could theoretically be observed with the right instruments (e.g., subvocal speech)',

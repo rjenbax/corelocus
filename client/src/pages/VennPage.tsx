@@ -53,19 +53,34 @@ const ZONE_CONFIG: Record<Exclude<Zone, 'unplaced'>, { label: string; color: str
   },
 };
 
-const CATEGORY_COLORS: Record<string, { bg: string; text: string; border: string; pill: string }> = {
-  'Tier 1 – High Confusion': { bg: 'bg-red-50', text: 'text-red-700', border: 'border-red-200', pill: 'bg-red-100 text-red-700' },
-  'Behavior Reduction': { bg: 'bg-orange-50', text: 'text-orange-700', border: 'border-orange-200', pill: 'bg-orange-100 text-orange-700' },
-  'Tier 2 – Moderate Confusion': { bg: 'bg-teal-50', text: 'text-teal-800', border: 'border-teal-200', pill: 'bg-teal-100 text-teal-800' },
-  'Research & Design': { bg: 'bg-blue-50', text: 'text-blue-700', border: 'border-blue-200', pill: 'bg-blue-100 text-blue-700' },
-  'Verbal Behavior + Stimulus Control': { bg: 'bg-purple-50', text: 'text-purple-700', border: 'border-purple-200', pill: 'bg-purple-100 text-purple-700' },
-  'Tier 3 – Subtle Distinction': { bg: 'bg-teal-50', text: 'text-teal-700', border: 'border-teal-200', pill: 'bg-teal-100 text-teal-700' },
-  'Measurement': { bg: 'bg-cyan-50', text: 'text-cyan-700', border: 'border-cyan-200', pill: 'bg-cyan-100 text-cyan-700' },
-  'Skill Acquisition': { bg: 'bg-emerald-50', text: 'text-violet-800', border: 'border-emerald-200', pill: 'bg-emerald-100 text-violet-800' },
-  'Ethics & Supervision': { bg: 'bg-violet-50', text: 'text-violet-700', border: 'border-violet-200', pill: 'bg-violet-100 text-violet-700' },
+// Canonical BCBA domain order (A–I)
+const DOMAIN_ORDER = [
+  'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
+];
+
+const DOMAIN_FULL: Record<string, string> = {
+  A: 'Behaviorism & Philosophical Foundations',
+  B: 'Concepts & Principles',
+  C: 'Measurement & Data Collection',
+  D: 'Experimental Design',
+  E: 'Ethical & Professional Issues',
+  F: 'Behavior-Change Procedures',
+  G: 'Behavior-Change Procedures (Skill Acquisition)',
+  H: 'Selecting & Implementing Interventions',
+  I: 'Personnel Supervision & Management',
 };
-const DEFAULT_COLORS = { bg: 'bg-muted/30', text: 'text-foreground', border: 'border-border', pill: 'bg-muted text-foreground' };
-function getCatColors(category: string) { return CATEGORY_COLORS[category] ?? DEFAULT_COLORS; }
+
+const DOMAIN_COLORS: Record<string, { pill: string; badge: string }> = {
+  A: { pill: 'bg-slate-100 text-slate-700', badge: 'A' },
+  B: { pill: 'bg-teal-100 text-teal-800', badge: 'B' },
+  C: { pill: 'bg-cyan-100 text-cyan-800', badge: 'C' },
+  D: { pill: 'bg-blue-100 text-blue-800', badge: 'D' },
+  E: { pill: 'bg-violet-100 text-violet-800', badge: 'E' },
+  F: { pill: 'bg-orange-100 text-orange-800', badge: 'F' },
+  G: { pill: 'bg-emerald-100 text-emerald-800', badge: 'G' },
+  H: { pill: 'bg-amber-100 text-amber-800', badge: 'H' },
+  I: { pill: 'bg-rose-100 text-rose-800', badge: 'I' },
+};
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -86,55 +101,59 @@ function buildFeatureCards(item: VennItem): FeatureCard[] {
   return shuffle(cards);
 }
 
-// ─── Venn Grid View (Accordion) ─────────────────────────────────────────────
+// ─── Venn Grid View (Domain Accordion) ──────────────────────────────────────
 
 function VennGridView({
-  categories,
-  categoryOrderList,
   filteredItems,
-  selectedCategory,
-  setSelectedCategory,
+  selectedDomain,
+  setSelectedDomain,
   completedIds,
   openExercise,
   navigate,
   vennDiagrams: allDiagrams,
-  getCatColors,
 }: {
-  categories: string[];
-  categoryOrderList: string[];
   filteredItems: VennItem[];
-  selectedCategory: string;
-  setSelectedCategory: (c: string) => void;
+  selectedDomain: string;
+  setSelectedDomain: (d: string) => void;
   completedIds: Set<string>;
   openExercise: (item: VennItem, mode?: 'study' | 'sort') => void;
   navigate: (path: string) => void;
   vennDiagrams: VennItem[];
-  getCatColors: (cat: string) => { bg: string; text: string; border: string; pill: string };
 }) {
-  const [openCats, setOpenCats] = useState<Set<string>>(new Set());
+  const [openDomains, setOpenDomains] = useState<Set<string>>(new Set());
 
-  const toggleCat = (cat: string) => {
-    setOpenCats(prev => {
+  const toggleDomain = (domain: string) => {
+    setOpenDomains(prev => {
       const next = new Set(prev);
-      if (next.has(cat)) next.delete(cat); else next.add(cat);
+      if (next.has(domain)) next.delete(domain); else next.add(domain);
       return next;
     });
   };
 
-  // Group items by category, preserving canonical order
+  // Group items by domain, preserving canonical order
   const grouped = useMemo(() => {
     const map = new Map<string, VennItem[]>();
-    categoryOrderList.forEach(c => map.set(c, []));
+    DOMAIN_ORDER.forEach(d => map.set(d, []));
     filteredItems.forEach(item => {
-      if (!map.has(item.category)) map.set(item.category, []);
-      map.get(item.category)!.push(item);
+      const d = (item as any).domain as string;
+      if (!map.has(d)) map.set(d, []);
+      map.get(d)!.push(item);
     });
     map.forEach((v, k) => { if (v.length === 0) map.delete(k); });
     return map;
-  }, [filteredItems, categoryOrderList]);
+  }, [filteredItems]);
 
   const totalCompleted = completedIds.size;
   const totalDiagrams = allDiagrams.length;
+
+  // Domain counts for filter pills
+  const domainCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    DOMAIN_ORDER.forEach(d => {
+      counts[d] = allDiagrams.filter(v => (v as any).domain === d).length;
+    });
+    return counts;
+  }, [allDiagrams]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -159,45 +178,44 @@ function VennGridView({
       </header>
 
       <div className="container py-6 max-w-3xl mx-auto">
-        {/* Category filter pills */}
+        {/* Domain filter pills */}
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-3">
             <Filter className="w-3.5 h-3.5 text-muted-foreground" />
-            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Filter by Category</span>
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Filter by Domain</span>
           </div>
           <div className="flex flex-wrap gap-2">
             <button
-              onClick={() => setSelectedCategory('ALL')}
+              onClick={() => setSelectedDomain('ALL')}
               className={cn(
                 'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
-                selectedCategory === 'ALL'
+                selectedDomain === 'ALL'
                   ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
                   : 'bg-card text-muted-foreground border-border hover:border-violet-300 hover:text-violet-800'
               )}
             >
               All
-              <span className={cn('ml-1.5 text-[10px]', selectedCategory === 'ALL' ? 'text-violet-200' : 'text-muted-foreground/60')}>
+              <span className={cn('ml-1.5 text-[10px]', selectedDomain === 'ALL' ? 'text-violet-200' : 'text-muted-foreground/60')}>
                 ({allDiagrams.length})
               </span>
             </button>
-            {categories.map(cat => {
-              const count = allDiagrams.filter(v => v.category === cat).length;
-              const isActive = selectedCategory === cat;
-              const cc = getCatColors(cat);
+            {DOMAIN_ORDER.filter(d => domainCounts[d] > 0).map(d => {
+              const isActive = selectedDomain === d;
+              const dc = DOMAIN_COLORS[d];
               return (
                 <button
-                  key={cat}
-                  onClick={() => setSelectedCategory(cat)}
+                  key={d}
+                  onClick={() => setSelectedDomain(d)}
                   className={cn(
                     'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
                     isActive
                       ? 'bg-violet-700 text-white border-violet-700 shadow-sm'
-                      : cn('bg-card border-border hover:border-violet-300', cc.text)
+                      : cn('bg-card border-border hover:border-violet-300', dc.pill)
                   )}
                 >
-                  {cat}
+                  Domain {d}
                   <span className={cn('ml-1.5 text-[10px]', isActive ? 'text-violet-200' : 'text-muted-foreground/60')}>
-                    ({count})
+                    ({domainCounts[d]})
                   </span>
                 </button>
               );
@@ -210,11 +228,11 @@ function VennGridView({
           <div className="flex items-start justify-between gap-4">
             <div>
               <h2 className="text-xl font-bold text-foreground mb-1">
-                {selectedCategory === 'ALL' ? 'Venn Diagram Sort' : `${selectedCategory}`}
+                {selectedDomain === 'ALL' ? 'Venn Diagram Sort' : `Domain ${selectedDomain} — ${DOMAIN_FULL[selectedDomain]}`}
               </h2>
               <p className="text-sm text-muted-foreground mb-4">
                 Sort features into the correct zones: Term A Only, Shared, Term B Only, or Does Not Belong.
-                {selectedCategory !== 'ALL' && ` Drilling ${selectedCategory}.`}
+                {selectedDomain !== 'ALL' && ` Drilling Domain ${selectedDomain}.`}
               </p>
               <div className="flex gap-2 flex-wrap">
                 <button
@@ -223,9 +241,9 @@ function VennGridView({
                   className="flex items-center gap-2 bg-violet-700 hover:bg-violet-800 disabled:opacity-50 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
                 >
                   <BookOpen className="w-4 h-4" />
-                  {selectedCategory === 'ALL'
+                  {selectedDomain === 'ALL'
                     ? `Browse All (${filteredItems.length} pairs)`
-                    : `Browse ${selectedCategory} (${filteredItems.length})`}
+                    : `Browse Domain ${selectedDomain} (${filteredItems.length})`}
                 </button>
                 <button
                   onClick={() => openExercise(filteredItems[0], 'sort')}
@@ -246,47 +264,48 @@ function VennGridView({
           </div>
         </div>
 
-        {/* Category accordion */}
+        {/* Domain accordion */}
         <div className="flex items-center justify-between mb-3">
           <h3 className="font-semibold text-sm text-foreground">
-            {selectedCategory === 'ALL'
+            {selectedDomain === 'ALL'
               ? `All Pairs (${allDiagrams.length})`
-              : `${selectedCategory} (${filteredItems.length})`}
+              : `Domain ${selectedDomain} — ${DOMAIN_FULL[selectedDomain]} (${filteredItems.length})`}
           </h3>
-          <span className="text-xs text-muted-foreground">Click a category to expand · Practice to drill</span>
+          <span className="text-xs text-muted-foreground">Click a domain to expand · Practice to drill</span>
         </div>
 
         <div className="space-y-2">
-          {Array.from(grouped.entries()).map(([cat, catItems]) => {
-            const isOpen = openCats.has(cat);
-            const cc = getCatColors(cat);
-            const completedInCat = catItems.filter(item => completedIds.has(item.id)).length;
+          {Array.from(grouped.entries()).map(([domain, domainItems]) => {
+            const isOpen = openDomains.has(domain);
+            const dc = DOMAIN_COLORS[domain] ?? { pill: 'bg-muted text-foreground', badge: domain };
+            const completedInDomain = domainItems.filter(item => completedIds.has(item.id)).length;
 
             return (
-              <div key={cat} className="border border-border rounded-xl overflow-hidden bg-card">
+              <div key={domain} className="border border-border rounded-xl overflow-hidden bg-card">
                 {/* Section header */}
                 <div className="flex items-center gap-3 px-4 py-3">
                   <button
-                    onClick={() => toggleCat(cat)}
+                    onClick={() => toggleDomain(domain)}
                     className="flex items-center gap-3 flex-1 min-w-0 text-left"
                   >
                     {isOpen
                       ? <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0" />
                       : <ChevronRight className="w-4 h-4 text-muted-foreground flex-shrink-0" />}
-                    <span className={cn('text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0', cc.pill)}>{cat}</span>
-                    <span className="text-xs text-muted-foreground flex-shrink-0">{catItems.length} pairs</span>
-                    {completedInCat > 0 && (
+                    <span className={cn('text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0', dc.pill)}>Domain {domain}</span>
+                    <span className="font-semibold text-sm text-foreground truncate">{DOMAIN_FULL[domain]}</span>
+                    <span className="text-xs text-muted-foreground flex-shrink-0">{domainItems.length} pairs</span>
+                    {completedInDomain > 0 && (
                       <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 flex-shrink-0">
-                        {completedInCat}/{catItems.length} done
+                        {completedInDomain}/{domainItems.length} done
                       </span>
                     )}
-                    {completedInCat === 0 && (
+                    {completedInDomain === 0 && (
                       <span className="text-[10px] text-muted-foreground/50 flex-shrink-0">Not started</span>
                     )}
                   </button>
-                  {/* Practice this category button */}
+                  {/* Practice this domain button */}
                   <button
-                    onClick={() => openExercise(catItems[0], 'sort')}
+                    onClick={() => openExercise(domainItems[0], 'sort')}
                     className="flex items-center gap-1.5 text-xs font-medium text-violet-700 border border-violet-200 bg-violet-50 hover:bg-violet-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
                   >
                     <Zap className="w-3 h-3" />
@@ -298,7 +317,7 @@ function VennGridView({
                 {isOpen && (
                   <div className="border-t border-border">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-border">
-                      {catItems.map(pair => {
+                      {domainItems.map(pair => {
                         const isCompleted = completedIds.has(pair.id);
                         return (
                           <button
@@ -331,7 +350,7 @@ function VennGridView({
 export default function VennPage() {
   const [, navigate] = useLocation();
   const { recordVennCompletion, progress } = useProgress();
-  const [selectedCategory, setSelectedCategory] = useState<string>('ALL');
+  const [selectedDomain, setSelectedDomain] = useState<string>('ALL');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cards, setCards] = useState<FeatureCard[]>([]);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
@@ -342,12 +361,10 @@ export default function VennPage() {
   const [view, setView] = useState<'grid' | 'exercise'>('grid');
   const [mode, setMode] = useState<'study' | 'sort'>('study');
 
-  const categories = useMemo(() => Array.from(new Set(vennDiagrams.map(v => v.category))), []);
-
   const filteredItems = useMemo(() => {
-    if (selectedCategory === 'ALL') return vennDiagrams;
-    return vennDiagrams.filter(v => v.category === selectedCategory);
-  }, [selectedCategory]);
+    if (selectedDomain === 'ALL') return vennDiagrams;
+    return vennDiagrams.filter(v => (v as any).domain === selectedDomain);
+  }, [selectedDomain]);
 
   const completedIds = useMemo(
     () => new Set(progress.venn.filter(v => v.completed).map(v => v.pairId)),
@@ -437,31 +454,15 @@ export default function VennPage() {
 
   // ── GRID VIEW ──────────────────────────────────────────────────────────────
   if (view === 'grid') {
-    // Build accordion grouped by category
-    const CATEGORY_ORDER_LIST = [
-      'Tier 1 – High Confusion',
-      'Tier 2 – Moderate Confusion',
-      'Tier 3 – Subtle Distinction',
-      'Behavior Reduction',
-      'Research & Design',
-      'Verbal Behavior + Stimulus Control',
-      'Measurement',
-      'Skill Acquisition',
-      'Ethics & Supervision',
-    ];
-
     return (
       <VennGridView
-        categories={categories}
-        categoryOrderList={CATEGORY_ORDER_LIST}
         filteredItems={filteredItems}
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
+        selectedDomain={selectedDomain}
+        setSelectedDomain={setSelectedDomain}
         completedIds={completedIds}
         openExercise={openExercise}
         navigate={navigate}
         vennDiagrams={vennDiagrams}
-        getCatColors={getCatColors}
       />
     );
   }
