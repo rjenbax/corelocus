@@ -1,18 +1,18 @@
 // Tier 4 — Venn Diagram Exercise
 // Design: Academic Warmth — forest green primary, warm cream bg, slate text
-// Exercise mechanic (3-column):
-//   LEFT  = Term A column — click a feature from the center to assign here
-//   CENTER = Feature pool — each feature has a checkbox to strike it out (neither)
-//           and two arrow buttons (← assign to A, → assign to B)
-//           Features that belong to BOTH can be assigned to both sides
-//   RIGHT = Term B column — click a feature from the center to assign here
+// Sort mechanic: one feature card at a time in the center.
+//   ← button  = assign to Term A (card flies left, appears in A pile)
+//   → button  = assign to Term B (card flies right, appears in B pile)
+//   ◆ button  = assign to BOTH (shared)
+//   N/A       = strike out (distractor)
+// Works on mobile and desktop — no horizontal scrolling.
 
 import { useState, useCallback, useMemo } from 'react';
 import { useLocation } from 'wouter';
 import {
   ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, XCircle,
   RotateCcw, Trophy, Filter, GitMerge, BookOpen, Swords,
-  ChevronDown, ArrowLeftCircle, ArrowRightCircle,
+  ChevronDown, X,
 } from 'lucide-react';
 import { vennDiagrams, VennItem } from '@/data/vennDiagrams';
 import { useProgress } from '@/contexts/ProgressContext';
@@ -26,10 +26,9 @@ interface FeatureCard {
   id: string;
   text: string;
   correctZone: CorrectZone;
-  // User's answer — a feature can be assigned to A, B, both (shared), or struck out
-  assignedA: boolean;   // user placed in Term A column
-  assignedB: boolean;   // user placed in Term B column
-  struckOut: boolean;   // user checked "does not apply"
+  assignedA: boolean;
+  assignedB: boolean;
+  struckOut: boolean;
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
@@ -58,10 +57,6 @@ function isCorrect(card: FeatureCard): boolean {
     case 'shared':     return card.assignedA && card.assignedB && !card.struckOut;
     case 'distractor': return card.struckOut && !card.assignedA && !card.assignedB;
   }
-}
-
-function isAnswered(card: FeatureCard): boolean {
-  return card.assignedA || card.assignedB || card.struckOut;
 }
 
 const PASS_THRESHOLD = 70;
@@ -122,7 +117,6 @@ function VennGridView({
 
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
-      {/* Header */}
       <header className="bg-white border-b border-slate-200 sticky top-0 z-20">
         <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
           <button onClick={() => navigate('/')} className="flex items-center gap-2 text-slate-500 hover:text-slate-800 transition-colors text-sm">
@@ -138,7 +132,6 @@ function VennGridView({
         </div>
       </header>
 
-      {/* Domain filter pills */}
       <div className="bg-white border-b border-slate-100 sticky top-[53px] z-10">
         <div className="max-w-5xl mx-auto px-4 py-2 flex items-center gap-2 overflow-x-auto">
           <Filter className="w-3.5 h-3.5 text-slate-400 shrink-0" />
@@ -153,7 +146,6 @@ function VennGridView({
         </div>
       </div>
 
-      {/* Domain accordions */}
       <div className="max-w-5xl mx-auto px-4 py-4 space-y-2">
         {visibleDomains
           .filter(d => selectedDomain === 'ALL' || selectedDomain === d)
@@ -226,83 +218,23 @@ function VennGridView({
   );
 }
 
-// ── Feature row in the center column ──────────────────────────────────────────
-function FeatureRow({
-  card, submitted, onToggleA, onToggleB, onToggleStrike,
-}: {
-  card: FeatureCard;
-  submitted: boolean;
-  onToggleA: () => void;
-  onToggleB: () => void;
-  onToggleStrike: () => void;
-}) {
+// ── Assigned pile chip ─────────────────────────────────────────────────────────
+function PileChip({ card, submitted }: { card: FeatureCard; submitted: boolean }) {
   const correct = submitted ? isCorrect(card) : null;
-
+  const isShared = card.assignedA && card.assignedB;
   return (
     <div className={cn(
-      'flex items-center gap-2 px-2.5 py-2 rounded-lg border text-xs transition-all',
-      card.struckOut ? 'bg-slate-50 border-slate-200 opacity-60' : 'bg-white border-slate-200',
-      submitted && correct === true && 'border-emerald-300 bg-emerald-50',
-      submitted && correct === false && 'border-rose-300 bg-rose-50',
+      'px-2 py-1 rounded-md text-xs leading-snug border',
+      isShared && 'border-emerald-300 bg-emerald-50 text-emerald-800',
+      !isShared && card.assignedA && !submitted && 'border-blue-200 bg-blue-50 text-blue-800',
+      !isShared && card.assignedB && !submitted && 'border-violet-200 bg-violet-50 text-violet-800',
+      card.struckOut && !submitted && 'border-slate-200 bg-slate-50 text-slate-400 line-through',
+      submitted && correct === true && 'border-emerald-300 bg-emerald-50 text-emerald-800',
+      submitted && correct === false && 'border-rose-300 bg-rose-50 text-rose-700',
     )}>
-      {/* ← assign to A */}
-      <button
-        disabled={submitted || card.struckOut}
-        onClick={onToggleA}
-        title="Assign to Term A"
-        className={cn(
-          'shrink-0 w-5 h-5 rounded-full flex items-center justify-center transition-all border',
-          card.assignedA
-            ? 'bg-blue-600 border-blue-600 text-white'
-            : 'border-blue-200 text-blue-300 hover:border-blue-500 hover:text-blue-600',
-          (submitted || card.struckOut) && 'opacity-40 cursor-default'
-        )}
-      >
-        <ArrowLeftCircle className="w-3.5 h-3.5" />
-      </button>
-
-      {/* Feature text */}
-      <span className={cn(
-        'flex-1 leading-snug text-slate-700',
-        card.struckOut && 'line-through text-slate-400',
-      )}>
-        {card.text}
-      </span>
-
-      {/* Strike-out checkbox (does not apply to either) */}
-      <label className="flex items-center gap-1 shrink-0 cursor-pointer select-none" title="Does not apply to either term">
-        <input
-          type="checkbox"
-          disabled={submitted || card.assignedA || card.assignedB}
-          checked={card.struckOut}
-          onChange={onToggleStrike}
-          className="w-3.5 h-3.5 accent-rose-500 cursor-pointer"
-        />
-        <span className={cn('text-[10px] text-slate-400', card.struckOut && 'text-rose-500')}>N/A</span>
-      </label>
-
-      {/* → assign to B */}
-      <button
-        disabled={submitted || card.struckOut}
-        onClick={onToggleB}
-        title="Assign to Term B"
-        className={cn(
-          'shrink-0 w-5 h-5 rounded-full flex items-center justify-center transition-all border',
-          card.assignedB
-            ? 'bg-violet-700 border-violet-700 text-white'
-            : 'border-violet-200 text-violet-300 hover:border-violet-500 hover:text-violet-600',
-          (submitted || card.struckOut) && 'opacity-40 cursor-default'
-        )}
-      >
-        <ArrowRightCircle className="w-3.5 h-3.5" />
-      </button>
-
-      {/* Result icon */}
-      {submitted && correct !== null && (
-        correct
-          ? <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-          : <XCircle className="w-3.5 h-3.5 text-rose-500 shrink-0" />
-      )}
+      {card.text}
+      {isShared && <span className="ml-1 text-[9px] font-bold text-emerald-600">BOTH</span>}
+      {submitted && correct !== null && (correct ? ' ✓' : ' ✗')}
     </div>
   );
 }
@@ -314,6 +246,7 @@ export default function VennPage() {
   const [selectedDomain, setSelectedDomain] = useState<string>('ALL');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cards, setCards] = useState<FeatureCard[]>([]);
+  const [queueIndex, setQueueIndex] = useState(0); // index into cards[] for current card in queue
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState<{ correct: number; total: number } | null>(null);
   const [started, setStarted] = useState(false);
@@ -336,6 +269,7 @@ export default function VennPage() {
     const idx = filteredItems.findIndex(v => v.id === item.id);
     setCurrentIndex(idx >= 0 ? idx : 0);
     setCards([]);
+    setQueueIndex(0);
     setSubmitted(false);
     setScore(null);
     setStarted(false);
@@ -345,7 +279,9 @@ export default function VennPage() {
 
   const startItem = useCallback(() => {
     if (!currentItem) return;
-    setCards(buildFeatureCards(currentItem));
+    const newCards = buildFeatureCards(currentItem);
+    setCards(newCards);
+    setQueueIndex(0);
     setSubmitted(false);
     setScore(null);
     setStarted(true);
@@ -354,22 +290,62 @@ export default function VennPage() {
   const updateCard = (id: string, patch: Partial<FeatureCard>) =>
     setCards(prev => prev.map(c => c.id === id ? { ...c, ...patch } : c));
 
-  const handleToggleA = (id: string) => {
-    const card = cards.find(c => c.id === id);
-    if (!card || card.struckOut) return;
-    updateCard(id, { assignedA: !card.assignedA });
+  // Advance queue to next unanswered card
+  const advanceQueue = (updatedCards: FeatureCard[], fromIndex: number) => {
+    // Find next unanswered card after fromIndex
+    for (let i = fromIndex + 1; i < updatedCards.length; i++) {
+      if (!updatedCards[i].assignedA && !updatedCards[i].assignedB && !updatedCards[i].struckOut) {
+        setQueueIndex(i);
+        return;
+      }
+    }
+    // Wrap around from beginning
+    for (let i = 0; i < fromIndex; i++) {
+      if (!updatedCards[i].assignedA && !updatedCards[i].assignedB && !updatedCards[i].struckOut) {
+        setQueueIndex(i);
+        return;
+      }
+    }
+    // All answered — stay at current
+    setQueueIndex(fromIndex);
   };
 
-  const handleToggleB = (id: string) => {
-    const card = cards.find(c => c.id === id);
-    if (!card || card.struckOut) return;
-    updateCard(id, { assignedB: !card.assignedB });
+  const handleAssignA = () => {
+    if (!cards[queueIndex]) return;
+    const card = cards[queueIndex];
+    const updated = cards.map(c => c.id === card.id ? { ...c, assignedA: true, struckOut: false } : c);
+    setCards(updated);
+    advanceQueue(updated, queueIndex);
   };
 
-  const handleToggleStrike = (id: string) => {
-    const card = cards.find(c => c.id === id);
-    if (!card || card.assignedA || card.assignedB) return;
-    updateCard(id, { struckOut: !card.struckOut });
+  const handleAssignB = () => {
+    if (!cards[queueIndex]) return;
+    const card = cards[queueIndex];
+    const updated = cards.map(c => c.id === card.id ? { ...c, assignedB: true, struckOut: false } : c);
+    setCards(updated);
+    advanceQueue(updated, queueIndex);
+  };
+
+  const handleAssignBoth = () => {
+    if (!cards[queueIndex]) return;
+    const card = cards[queueIndex];
+    const updated = cards.map(c => c.id === card.id ? { ...c, assignedA: true, assignedB: true, struckOut: false } : c);
+    setCards(updated);
+    advanceQueue(updated, queueIndex);
+  };
+
+  const handleStrikeOut = () => {
+    if (!cards[queueIndex]) return;
+    const card = cards[queueIndex];
+    const updated = cards.map(c => c.id === card.id ? { ...c, struckOut: true, assignedA: false, assignedB: false } : c);
+    setCards(updated);
+    advanceQueue(updated, queueIndex);
+  };
+
+  const handleUndo = (id: string) => {
+    updateCard(id, { assignedA: false, assignedB: false, struckOut: false });
+    const idx = cards.findIndex(c => c.id === id);
+    if (idx >= 0) setQueueIndex(idx);
   };
 
   const handleSubmit = () => {
@@ -383,15 +359,17 @@ export default function VennPage() {
 
   const handleNext = () => {
     setCurrentIndex(i => (i + 1) % filteredItems.length);
-    setCards([]); setStarted(false); setSubmitted(false); setScore(null); setMode('study');
+    setCards([]); setQueueIndex(0); setStarted(false); setSubmitted(false); setScore(null); setMode('study');
   };
 
   const handlePrev = () => {
     setCurrentIndex(i => (i - 1 + filteredItems.length) % filteredItems.length);
-    setCards([]); setStarted(false); setSubmitted(false); setScore(null); setMode('study');
+    setCards([]); setQueueIndex(0); setStarted(false); setSubmitted(false); setScore(null); setMode('study');
   };
 
-  const allAnswered = cards.length > 0 && cards.every(isAnswered);
+  const answeredCards = cards.filter(c => c.assignedA || c.assignedB || c.struckOut);
+  const allAnswered = cards.length > 0 && answeredCards.length === cards.length;
+  const currentCard = cards[queueIndex] ?? null;
 
   // ── Grid view ──────────────────────────────────────────────────────────────
   if (view === 'grid') {
@@ -420,27 +398,27 @@ export default function VennPage() {
 
       {/* Compact header */}
       <header className="bg-white border-b border-slate-200 shrink-0">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-3">
+        <div className="max-w-5xl mx-auto px-4 py-2 flex items-center gap-3">
           <button onClick={() => setView('grid')} className="flex items-center gap-1.5 text-slate-500 hover:text-slate-800 text-sm shrink-0">
             <ArrowLeft className="w-4 h-4" /><span className="hidden sm:inline">All Pairs</span>
           </button>
           <div className="flex items-center gap-2 flex-1 justify-center min-w-0">
             <button onClick={handlePrev} className="p-1 rounded hover:bg-slate-100 shrink-0"><ChevronLeft className="w-4 h-4 text-slate-400" /></button>
             <div className="flex items-center gap-2 min-w-0 overflow-hidden">
-              <span className="px-2.5 py-1 bg-blue-50 border border-blue-200 rounded-full text-xs font-bold text-blue-800 truncate max-w-[160px]">{currentItem.conceptA}</span>
+              <span className="px-2.5 py-1 bg-blue-50 border border-blue-200 rounded-full text-xs font-bold text-blue-800 truncate max-w-[140px]">{currentItem.conceptA}</span>
               <span className="text-slate-300 text-xs shrink-0">vs</span>
-              <span className="px-2.5 py-1 bg-violet-50 border border-violet-200 rounded-full text-xs font-bold text-violet-800 truncate max-w-[160px]">{currentItem.conceptB}</span>
+              <span className="px-2.5 py-1 bg-violet-50 border border-violet-200 rounded-full text-xs font-bold text-violet-800 truncate max-w-[140px]">{currentItem.conceptB}</span>
             </div>
             <button onClick={handleNext} className="p-1 rounded hover:bg-slate-100 shrink-0"><ChevronRight className="w-4 h-4 text-slate-400" /></button>
             <span className="text-xs text-slate-400 shrink-0">{currentIndex + 1}/{filteredItems.length}</span>
           </div>
           {/* Mode toggle */}
           <div className="flex items-center gap-0.5 bg-slate-100 rounded-lg p-0.5 shrink-0">
-            <button onClick={() => { setMode('study'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
+            <button onClick={() => { setMode('study'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); setQueueIndex(0); }}
               className={cn('flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all', mode === 'study' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700')}>
               <BookOpen className="w-3.5 h-3.5" />Study
             </button>
-            <button onClick={() => { setMode('sort'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); }}
+            <button onClick={() => { setMode('sort'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); setQueueIndex(0); }}
               className={cn('flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all', mode === 'sort' ? 'bg-violet-700 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700')}>
               <Swords className="w-3.5 h-3.5" />Sort
             </button>
@@ -450,19 +428,19 @@ export default function VennPage() {
 
       {/* Key Distinction bar */}
       <div className="bg-teal-50 border-b border-teal-200 px-4 py-1.5 shrink-0">
-        <p className="text-xs text-teal-800 max-w-7xl mx-auto">
+        <p className="text-xs text-teal-800 max-w-5xl mx-auto">
           <span className="font-semibold">Key Distinction: </span>{currentItem.keyDistinction}
         </p>
       </div>
 
       {/* ── STUDY MODE ── */}
       {mode === 'study' && (
-        <div className="flex-1 overflow-hidden max-w-7xl mx-auto w-full px-4 py-3">
+        <div className="flex-1 overflow-hidden max-w-5xl mx-auto w-full px-4 py-3">
           <div className="grid grid-cols-3 gap-3 h-full">
             {/* Term A */}
             <div className="rounded-xl border-2 border-blue-200 bg-blue-50 flex flex-col overflow-hidden">
               <div className="px-3 py-2 bg-blue-100 border-b border-blue-200 shrink-0">
-                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide">Only: {currentItem.conceptA}</p>
+                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide truncate">Only: {currentItem.conceptA}</p>
               </div>
               <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.onlyA.map((f, i) => (
@@ -474,7 +452,7 @@ export default function VennPage() {
                 {currentItem.shared.length > 0 && (
                   <>
                     <div className="border-t border-blue-200 my-2" />
-                    <p className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">Shared with {currentItem.conceptB}</p>
+                    <p className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">Shared</p>
                     {currentItem.shared.map((f, i) => (
                       <div key={i} className="flex items-start gap-1.5 text-xs text-emerald-700">
                         <span className="text-emerald-500 mt-0.5 shrink-0">◆</span>
@@ -486,7 +464,7 @@ export default function VennPage() {
               </div>
             </div>
 
-            {/* Center — feature list with labels */}
+            {/* Center — labeled feature list */}
             <div className="rounded-xl border-2 border-slate-200 bg-white flex flex-col overflow-hidden">
               <div className="px-3 py-2 bg-slate-100 border-b border-slate-200 shrink-0">
                 <p className="text-xs font-bold text-slate-600 uppercase tracking-wide text-center">All Features</p>
@@ -509,7 +487,7 @@ export default function VennPage() {
             {/* Term B */}
             <div className="rounded-xl border-2 border-violet-200 bg-violet-50 flex flex-col overflow-hidden">
               <div className="px-3 py-2 bg-violet-100 border-b border-violet-200 shrink-0">
-                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide">Only: {currentItem.conceptB}</p>
+                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide truncate">Only: {currentItem.conceptB}</p>
               </div>
               <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.onlyB.map((f, i) => (
@@ -521,7 +499,7 @@ export default function VennPage() {
                 {currentItem.shared.length > 0 && (
                   <>
                     <div className="border-t border-violet-200 my-2" />
-                    <p className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">Shared with {currentItem.conceptA}</p>
+                    <p className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">Shared</p>
                     {currentItem.shared.map((f, i) => (
                       <div key={i} className="flex items-start gap-1.5 text-xs text-emerald-700">
                         <span className="text-emerald-500 mt-0.5 shrink-0">◆</span>
@@ -539,15 +517,15 @@ export default function VennPage() {
       {/* ── SORT MODE: start screen ── */}
       {mode === 'sort' && !started && (
         <div className="flex-1 flex items-center justify-center px-4">
-          <div className="bg-white rounded-xl border border-slate-200 p-6 text-center shadow-sm max-w-md w-full">
+          <div className="bg-white rounded-xl border border-slate-200 p-6 text-center shadow-sm max-w-sm w-full">
             <div className="w-12 h-12 bg-violet-700/10 rounded-full flex items-center justify-center mx-auto mb-3">
               <Swords className="w-5 h-5 text-violet-700" />
             </div>
             <h2 className="text-base font-bold text-slate-800 mb-1">Ready to Sort?</h2>
-            <p className="text-slate-500 text-xs mb-4 max-w-sm mx-auto">
-              Features appear in the <strong>center column</strong>. Use the <span className="text-blue-600 font-semibold">← arrow</span> to assign a feature to <strong>{currentItem.conceptA}</strong>, the <span className="text-violet-700 font-semibold">→ arrow</span> to assign it to <strong>{currentItem.conceptB}</strong>, or check <strong>N/A</strong> to strike it out if it doesn't apply to either. Shared features can be assigned to both.
+            <p className="text-slate-500 text-xs mb-4 leading-relaxed">
+              One feature at a time will appear. Tap <span className="font-bold text-blue-600">← A</span> or <span className="font-bold text-violet-700">B →</span> to assign it, <span className="font-bold text-emerald-600">◆ Both</span> if it applies to both, or <span className="font-bold text-rose-500">N/A</span> if it belongs to neither.
             </p>
-            <Button onClick={startItem} className="bg-violet-700 hover:bg-violet-800 text-white px-6 h-8 text-sm">
+            <Button onClick={startItem} className="bg-violet-700 hover:bg-violet-800 text-white px-6 h-9 text-sm w-full">
               Start Sorting
             </Button>
           </div>
@@ -556,7 +534,7 @@ export default function VennPage() {
 
       {/* ── SORT MODE: active ── */}
       {mode === 'sort' && started && (
-        <div className="flex-1 overflow-hidden flex flex-col max-w-7xl mx-auto w-full px-4 py-3 gap-2">
+        <div className="flex-1 overflow-hidden flex flex-col max-w-5xl mx-auto w-full px-3 py-3 gap-2">
 
           {/* Score banner */}
           {submitted && score && (() => {
@@ -569,10 +547,10 @@ export default function VennPage() {
                 <div className="flex items-center gap-2">
                   {isPerfect ? <Trophy className="w-4 h-4 text-violet-700" /> : isPassing ? <CheckCircle2 className="w-4 h-4 text-teal-700" /> : <XCircle className="w-4 h-4 text-rose-600" />}
                   <p className={cn('font-bold text-sm', isPerfect ? 'text-emerald-800' : isPassing ? 'text-teal-800' : 'text-rose-700')}>
-                    {isPerfect ? 'Perfect Sort!' : `${score.correct}/${score.total} correct (${pct}%)`}
+                    {isPerfect ? 'Perfect!' : `${score.correct}/${score.total} (${pct}%)`}
                   </p>
                   <p className="text-xs text-slate-500 hidden sm:block">
-                    {isPerfect ? 'All features correctly classified.' : isPassing ? 'Passed ✓ — review highlighted items.' : 'Below 70% — not yet marked complete.'}
+                    {isPassing ? 'Passed ✓' : 'Below 70% — not yet marked complete.'}
                   </p>
                 </div>
                 <div className="flex gap-1.5">
@@ -583,104 +561,141 @@ export default function VennPage() {
             );
           })()}
 
-          {/* 3-column sort area */}
-          <div className="grid grid-cols-3 gap-3 flex-1 overflow-hidden">
+          {/* Progress bar */}
+          <div className="flex items-center gap-2 shrink-0">
+            <div className="flex-1 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+              <div className="h-full bg-violet-600 rounded-full transition-all" style={{ width: `${cards.length > 0 ? (answeredCards.length / cards.length) * 100 : 0}%` }} />
+            </div>
+            <span className="text-xs text-slate-400 shrink-0">{answeredCards.length}/{cards.length}</span>
+          </div>
 
-            {/* LEFT — Term A */}
+          {/* Main 3-column layout */}
+          <div className="grid grid-cols-3 gap-2 flex-1 overflow-hidden min-h-0">
+
+            {/* LEFT — Term A pile */}
             <div className="rounded-xl border-2 border-blue-200 bg-blue-50 flex flex-col overflow-hidden">
-              <div className="px-3 py-2 bg-blue-100 border-b border-blue-200 shrink-0">
-                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide truncate">{currentItem.conceptA}</p>
-                <p className="text-[10px] text-blue-500">Features assigned with ←</p>
+              <div className="px-2 py-2 bg-blue-100 border-b border-blue-200 shrink-0">
+                <p className="text-xs font-bold text-blue-700 truncate">{currentItem.conceptA}</p>
+                <p className="text-[10px] text-blue-400">{cards.filter(c => c.assignedA).length} assigned</p>
               </div>
-              <div className="p-2 space-y-1.5 overflow-y-auto flex-1">
-                {cards.filter(c => c.assignedA).map(card => {
-                  const correct = submitted ? isCorrect(card) : null;
-                  return (
-                    <div key={card.id} className={cn(
-                      'px-2 py-1.5 rounded-lg border text-xs text-blue-800 leading-snug',
-                      submitted && correct === true && 'border-emerald-300 bg-emerald-100',
-                      submitted && correct === false && 'border-rose-300 bg-rose-100',
-                      !submitted && 'bg-white border-blue-200',
-                    )}>
-                      {card.text}
-                      {submitted && (correct ? ' ✓' : ' ✗')}
-                    </div>
-                  );
-                })}
+              <div className="p-1.5 space-y-1 overflow-y-auto flex-1">
+                {cards.filter(c => c.assignedA).map(card => (
+                  <div key={card.id} className="group relative">
+                    <PileChip card={card} submitted={submitted} />
+                    {!submitted && (
+                      <button onClick={() => handleUndo(card.id)} className="absolute -top-1 -right-1 w-4 h-4 bg-slate-400 hover:bg-rose-500 text-white rounded-full items-center justify-center hidden group-hover:flex transition-colors" title="Undo">
+                        <X className="w-2.5 h-2.5" />
+                      </button>
+                    )}
+                  </div>
+                ))}
                 {cards.filter(c => c.assignedA).length === 0 && (
-                  <p className="text-xs text-blue-300 text-center py-4">Use ← to assign features here</p>
+                  <p className="text-[10px] text-blue-300 text-center py-3">← assign here</p>
                 )}
               </div>
             </div>
 
-            {/* CENTER — Feature pool */}
-            <div className="rounded-xl border-2 border-slate-200 bg-white flex flex-col overflow-hidden">
-              <div className="px-3 py-2 bg-slate-100 border-b border-slate-200 shrink-0 flex items-center justify-between">
-                <p className="text-xs font-bold text-slate-600 uppercase tracking-wide">Features</p>
-                <p className="text-[10px] text-slate-400">
-                  {cards.filter(isAnswered).length}/{cards.length} answered
-                </p>
-              </div>
-              <div className="p-2 space-y-1 overflow-y-auto flex-1">
-                {cards.map(card => (
-                  <FeatureRow
-                    key={card.id}
-                    card={card}
-                    submitted={submitted}
-                    onToggleA={() => handleToggleA(card.id)}
-                    onToggleB={() => handleToggleB(card.id)}
-                    onToggleStrike={() => handleToggleStrike(card.id)}
-                  />
-                ))}
-              </div>
+            {/* CENTER — current feature card + action buttons */}
+            <div className="flex flex-col gap-2 overflow-hidden">
+              {!submitted && currentCard && !allAnswered ? (
+                <>
+                  {/* Feature card */}
+                  <div className="flex-1 flex items-center justify-center">
+                    <div className="bg-white border-2 border-slate-300 rounded-xl shadow-md p-4 w-full text-center">
+                      <p className="text-sm font-medium text-slate-800 leading-snug">{currentCard.text}</p>
+                      <p className="text-[10px] text-slate-400 mt-2">{answeredCards.length + 1} of {cards.length}</p>
+                    </div>
+                  </div>
+
+                  {/* Action buttons */}
+                  <div className="grid grid-cols-2 gap-1.5 shrink-0">
+                    <button onClick={handleAssignA} className="flex items-center justify-center gap-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all active:scale-95 shadow-sm">
+                      ← {currentItem.conceptA.split(' ')[0]}
+                    </button>
+                    <button onClick={handleAssignB} className="flex items-center justify-center gap-1 py-2.5 rounded-xl bg-violet-700 hover:bg-violet-800 text-white text-xs font-bold transition-all active:scale-95 shadow-sm">
+                      {currentItem.conceptB.split(' ')[0]} →
+                    </button>
+                    <button onClick={handleAssignBoth} className="flex items-center justify-center gap-1 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all active:scale-95 shadow-sm">
+                      ◆ Both
+                    </button>
+                    <button onClick={handleStrikeOut} className="flex items-center justify-center gap-1 py-2 rounded-xl bg-slate-200 hover:bg-rose-100 text-slate-600 hover:text-rose-700 text-xs font-bold transition-all active:scale-95">
+                      N/A
+                    </button>
+                  </div>
+                </>
+              ) : (
+                /* All answered — show submit / results */
+                <div className="flex-1 flex flex-col items-center justify-center gap-3">
+                  {!submitted ? (
+                    <>
+                      <div className="w-10 h-10 bg-violet-100 rounded-full flex items-center justify-center">
+                        <CheckCircle2 className="w-5 h-5 text-violet-700" />
+                      </div>
+                      <p className="text-xs text-slate-600 text-center font-medium">All {cards.length} features sorted!</p>
+                      <Button onClick={handleSubmit} className="bg-violet-700 hover:bg-violet-800 text-white h-9 text-sm px-5">
+                        Check Answers
+                      </Button>
+                      <button onClick={startItem} className="text-xs text-slate-400 hover:text-slate-600 flex items-center gap-1">
+                        <RotateCcw className="w-3 h-3" /> Reset
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-xs text-slate-500 text-center">Review results in the columns</p>
+                      <Button variant="outline" size="sm" onClick={startItem} className="gap-1 text-xs h-8"><RotateCcw className="w-3 h-3" /> Try Again</Button>
+                    </>
+                  )}
+                </div>
+              )}
+
+              {/* N/A pile (struck out) */}
+              {cards.filter(c => c.struckOut).length > 0 && (
+                <div className="shrink-0 border border-slate-200 rounded-lg bg-slate-50 p-1.5">
+                  <p className="text-[10px] font-bold text-slate-400 uppercase mb-1">N/A — Neither</p>
+                  <div className="flex flex-wrap gap-1">
+                    {cards.filter(c => c.struckOut).map(card => (
+                      <div key={card.id} className="group relative">
+                        <span className={cn(
+                          'inline-block px-1.5 py-0.5 rounded text-[10px] line-through',
+                          submitted && isCorrect(card) ? 'bg-emerald-100 text-emerald-700' : submitted ? 'bg-rose-100 text-rose-600' : 'bg-slate-100 text-slate-400'
+                        )}>
+                          {card.text}{submitted && (isCorrect(card) ? ' ✓' : ' ✗')}
+                        </span>
+                        {!submitted && (
+                          <button onClick={() => handleUndo(card.id)} className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-slate-400 hover:bg-rose-500 text-white rounded-full items-center justify-center hidden group-hover:flex" title="Undo">
+                            <X className="w-2 h-2" />
+                          </button>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
-            {/* RIGHT — Term B */}
+            {/* RIGHT — Term B pile */}
             <div className="rounded-xl border-2 border-violet-200 bg-violet-50 flex flex-col overflow-hidden">
-              <div className="px-3 py-2 bg-violet-100 border-b border-violet-200 shrink-0">
-                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide truncate">{currentItem.conceptB}</p>
-                <p className="text-[10px] text-violet-500">Features assigned with →</p>
+              <div className="px-2 py-2 bg-violet-100 border-b border-violet-200 shrink-0">
+                <p className="text-xs font-bold text-violet-700 truncate">{currentItem.conceptB}</p>
+                <p className="text-[10px] text-violet-400">{cards.filter(c => c.assignedB).length} assigned</p>
               </div>
-              <div className="p-2 space-y-1.5 overflow-y-auto flex-1">
-                {cards.filter(c => c.assignedB).map(card => {
-                  const correct = submitted ? isCorrect(card) : null;
-                  return (
-                    <div key={card.id} className={cn(
-                      'px-2 py-1.5 rounded-lg border text-xs text-violet-800 leading-snug',
-                      submitted && correct === true && 'border-emerald-300 bg-emerald-100',
-                      submitted && correct === false && 'border-rose-300 bg-rose-100',
-                      !submitted && 'bg-white border-violet-200',
-                    )}>
-                      {card.text}
-                      {submitted && (correct ? ' ✓' : ' ✗')}
-                    </div>
-                  );
-                })}
+              <div className="p-1.5 space-y-1 overflow-y-auto flex-1">
+                {cards.filter(c => c.assignedB).map(card => (
+                  <div key={card.id} className="group relative">
+                    <PileChip card={card} submitted={submitted} />
+                    {!submitted && (
+                      <button onClick={() => handleUndo(card.id)} className="absolute -top-1 -right-1 w-4 h-4 bg-slate-400 hover:bg-rose-500 text-white rounded-full items-center justify-center hidden group-hover:flex transition-colors" title="Undo">
+                        <X className="w-2.5 h-2.5" />
+                      </button>
+                    )}
+                  </div>
+                ))}
                 {cards.filter(c => c.assignedB).length === 0 && (
-                  <p className="text-xs text-violet-300 text-center py-4">Use → to assign features here</p>
+                  <p className="text-[10px] text-violet-300 text-center py-3">assign here →</p>
                 )}
               </div>
             </div>
           </div>
-
-          {/* Submit bar */}
-          {!submitted && (
-            <div className="flex items-center justify-between bg-white rounded-lg border border-slate-200 px-3 py-2 shrink-0">
-              <p className="text-xs text-slate-500">
-                {cards.filter(isAnswered).length < cards.length
-                  ? `${cards.length - cards.filter(isAnswered).length} features still need an answer`
-                  : 'All features answered — ready to check!'}
-              </p>
-              <div className="flex gap-1.5">
-                <Button variant="outline" size="sm" onClick={startItem} className="gap-1 h-7 text-xs">
-                  <RotateCcw className="w-3 h-3" /> Reset
-                </Button>
-                <Button size="sm" onClick={handleSubmit} disabled={!allAnswered} className="bg-violet-700 hover:bg-violet-800 text-white disabled:opacity-40 h-7 text-xs">
-                  Check Answers
-                </Button>
-              </div>
-            </div>
-          )}
         </div>
       )}
     </div>
