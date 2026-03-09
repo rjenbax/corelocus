@@ -19,7 +19,7 @@ export interface MatchingItem {
 export const matchingItems: MatchingItem[] = [
   {
     id: 'm-01',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Negative Reinforcement',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A procedure in which the removal, reduction, or postponement of a stimulus following a behavior results in an increase in the future frequency of that behavior.',
@@ -52,7 +52,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-02',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Positive Punishment',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A procedure in which a stimulus is added following a behavior, resulting in a decrease in the future frequency of that behavior.',
@@ -85,7 +85,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-04',
-    domain: 'Measurement',
+    domain: 'C',
     concept: 'Partial Interval Recording',
     tcoDomain: 'C  -  Measurement',
     definition: 'A discontinuous measurement procedure in which the observation period is divided into equal intervals; the behavior is recorded if it occurs at any point during the interval, regardless of how long it lasts.',
@@ -118,7 +118,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-05',
-    domain: 'Behavior Reduction',
+    domain: 'G',
     concept: 'Extinction Burst',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A temporary increase in the frequency, duration, or intensity of a behavior (and sometimes novel behaviors) that occurs immediately after extinction is first implemented.',
@@ -151,7 +151,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-06',
-    domain: 'Behavior Reduction',
+    domain: 'G',
     concept: 'Differential Reinforcement of Alternative Behavior (DRA)',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which reinforcement is delivered for a specific alternative behavior while reinforcement is withheld for the problem behavior (extinction component).',
@@ -184,7 +184,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-07',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Mand',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant controlled by a motivating operation (MO) and reinforced by a specific, characteristic consequence that matches the content of the verbal behavior.',
@@ -217,7 +217,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-08',
-    domain: 'Research & Design',
+    domain: 'D',
     concept: 'Multiple Baseline Design',
     tcoDomain: 'D  -  Experimental Design',
     definition: 'A single-case experimental design in which the independent variable is introduced sequentially across two or more tiers (behaviors, settings, or subjects) after stable baselines are established, demonstrating experimental control without requiring a reversal.',
@@ -250,7 +250,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-09',
-    domain: 'Assessment',
+    domain: 'F',
     concept: 'Functional Analysis (FA)',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'An experimental assessment procedure in which antecedent and consequence conditions are systematically manipulated to identify the function(s) of problem behavior by demonstrating a functional relationship between environmental variables and the behavior.',
@@ -283,7 +283,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-10',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Stimulus Fading',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A procedure in which a controlling prompt is gradually changed along a physical dimension (e.g., size, color, intensity) so that the target stimulus gradually gains control over the response, while the prompt is systematically reduced.',
@@ -316,7 +316,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-11',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Behavioral Contrast',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A phenomenon in which a change in the rate of reinforcement in one component of a multiple schedule produces an opposite change in the rate of responding in another component, even though the schedule in that component has not changed.',
@@ -349,7 +349,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-12',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E',
     concept: 'Treatment Integrity',
     tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'The degree to which the independent variable (intervention) is implemented as designed and described in the behavior intervention plan.',
@@ -382,7 +382,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-14',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Stimulus Generalization',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The occurrence of a trained behavior in the presence of stimuli that are similar to but not identical to the training stimulus, without additional training.',
@@ -415,7 +415,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-15',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conditioned Reinforcer',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A stimulus that has acquired reinforcing properties through pairing with other reinforcers.',
@@ -448,7 +448,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-16',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Negative Punishment',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A procedure in which a stimulus is removed following a behavior, resulting in a decrease in the future frequency of that behavior.',
@@ -481,7 +481,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-17',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Generalized Conditioned Reinforcer',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A conditioned reinforcer that has been paired with many different reinforcers and therefore maintains its effectiveness across a wide range of motivating operations; examples include money, tokens, praise, and attention.',
@@ -514,7 +514,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-18',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Discriminative Stimulus (SD)',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A stimulus in the presence of which a specific behavior has been reinforced; the SD signals that reinforcement is available for a particular response.',
@@ -547,7 +547,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-19',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Resurgence',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The reappearance of a previously extinguished behavior when a more recently reinforced behavior is placed on extinction.',
@@ -580,7 +580,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-20',
-    domain: 'Measurement',
+    domain: 'C',
     concept: 'Whole Interval Recording',
     tcoDomain: 'C  -  Measurement',
     definition: 'A discontinuous measurement procedure in which the behavior is recorded only if it occurs throughout the ENTIRE interval; tends to underestimate the occurrence of behavior.',
@@ -613,7 +613,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-21',
-    domain: 'Measurement',
+    domain: 'C',
     concept: 'Interobserver Agreement (IOA)',
     tcoDomain: 'C  -  Measurement',
     definition: 'The degree to which two independent observers simultaneously record the same behavior using the same measurement system; used to evaluate the reliability of behavioral measurement.',
@@ -646,7 +646,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-22',
-    domain: 'Measurement',
+    domain: 'C',
     concept: 'Latency',
     tcoDomain: 'C  -  Measurement',
     definition: 'The elapsed time from the onset of a stimulus or event (e.g., an instruction) to the initiation of a response.',
@@ -679,7 +679,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-25',
-    domain: 'Research & Design',
+    domain: 'D',
     concept: 'Alternating Treatments Design (ATD)',
     tcoDomain: 'D  -  Experimental Design',
     definition: 'A single-case experimental design in which two or more conditions are rapidly alternated within or across sessions to compare their effects on the same behavior; allows comparison of multiple independent variables without a withdrawal phase.',
@@ -712,7 +712,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-26',
-    domain: 'Research & Design',
+    domain: 'D',
     concept: 'Visual Analysis',
     tcoDomain: 'D  -  Experimental Design',
     definition: 'The primary method of data analysis in applied behavior analysis, in which graphed data are examined for level, trend, and variability within and across phases to determine whether a functional relationship exists between the independent and dependent variables.',
@@ -745,7 +745,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-29',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Discrete Trial Training (DTT)',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A structured teaching method in which each trial consists of a discriminative stimulus (SD), a response opportunity, a consequence, and an inter-trial interval; used to teach skills in a controlled, massed-trial format.',
@@ -778,7 +778,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-30',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Natural Environment Teaching (NET)',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A teaching approach in which instruction is embedded in naturally occurring activities and routines, capitalizing on the learner\'s motivating operations to teach functional skills in the context where they will be used.',
@@ -811,7 +811,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-32',
-    domain: 'Behavior Reduction',
+    domain: 'G',
     concept: 'Noncontingent Reinforcement (NCR)',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which a reinforcer is delivered on a fixed- or variable-time schedule, independent of the occurrence of any specific behavior; functions as an abolishing operation to reduce problem behavior.',
@@ -844,7 +844,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-33',
-    domain: 'Behavior Reduction',
+    domain: 'G',
     concept: 'Differential Reinforcement of Other Behavior (DRO)',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which reinforcement is delivered at the end of an interval if the target problem behavior did NOT occur during that interval; reinforces the absence of the problem behavior.',
@@ -877,7 +877,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-34',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Tact',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant controlled by a nonverbal discriminative stimulus (an object, event, or property of the environment) and reinforced by generalized conditioned reinforcement.',
@@ -910,7 +910,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-35',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Intraverbal',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and there is no point-to-point correspondence between the SD and the response; reinforced by generalized conditioned reinforcement.',
@@ -943,7 +943,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-36',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Functional Communication Training (FCT)',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A DRA procedure in which a functionally equivalent communicative response is taught as an alternative to problem behavior; the communicative response produces the same reinforcer that previously maintained the problem behavior.',
@@ -976,7 +976,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-38',
-    domain: 'Personnel Supervision',
+    domain: 'I',
     concept: 'Behavioral Skills Training (BST)',
     tcoDomain: 'I  -  Personnel Supervision and Management',
     definition: 'A training package consisting of four components  --  instruction, modeling, rehearsal, and feedback  --  used to teach new skills to supervisees and caregivers.',
@@ -1009,7 +1009,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-39',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E',
     concept: 'Scope of Competence',
     tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'The principle that behavior analysts only practice within the boundaries of their competence, based on their education, training, supervised experience, and professional credentials.',
@@ -1042,7 +1042,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-40',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E',
     concept: 'Informed Consent',
     tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'The process of providing clients and/or their legal guardians with sufficient information about proposed services (including risks, benefits, and alternatives) in a manner they can understand, and obtaining their voluntary agreement before services begin.',
@@ -1075,7 +1075,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-41',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E',
     concept: 'Least Restrictive Alternative',
     tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'The ethical principle that behavior analysts select interventions that are the least intrusive and most positive possible while still being effective; more restrictive procedures are used only when less restrictive alternatives have been tried or are clearly insufficient.',
@@ -1108,7 +1108,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-42',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Spontaneous Recovery',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The reappearance of an extinguished behavior after a period of time has passed since extinction was in effect, without any additional reinforcement.',
@@ -1141,7 +1141,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-43',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Abolishing Operation (AO)',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A motivating operation that decreases the reinforcing effectiveness of a stimulus and decreases the current frequency of behavior that has been reinforced by that stimulus.',
@@ -1174,7 +1174,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-44',
-    domain: 'Measurement',
+    domain: 'C',
     concept: 'Momentary Time Sampling (MTS)',
     tcoDomain: 'C  -  Measurement',
     definition: 'A discontinuous measurement procedure in which the observer records whether the behavior is occurring at the exact moment a time interval ends; tends to provide an estimate of the proportion of time a behavior occurs.',
@@ -1207,7 +1207,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-45',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Shaping',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A procedure for establishing a new behavior by differentially reinforcing successive approximations to the target behavior while placing previous approximations on extinction.',
@@ -1240,7 +1240,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-46',
-    domain: 'Research & Design',
+    domain: 'D',
     concept: 'Changing Criterion Design',
     tcoDomain: 'D  -  Experimental Design',
     definition: 'A single-case experimental design in which the criterion for reinforcement is systematically changed in a stepwise fashion; experimental control is demonstrated when behavior changes to match each new criterion.',
@@ -1273,7 +1273,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-47',
-    domain: 'Assessment',
+    domain: 'F',
     concept: 'Indirect Assessment',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'An assessment method that gathers information about behavior through interviews, rating scales, or questionnaires rather than through direct observation; used to generate hypotheses about the function of behavior.',
@@ -1306,7 +1306,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-48',
-    domain: 'Personnel Supervision',
+    domain: 'I',
     concept: 'Competency-Based Training',
     tcoDomain: 'I  -  Personnel Supervision and Management',
     definition: 'A training approach in which supervisees must demonstrate a specified level of performance (not just knowledge) before being considered trained; mastery criteria are set and verified through direct observation.',
@@ -1339,7 +1339,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-49',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E',
     concept: 'Multiple Relationships',
     tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'A situation in which a behavior analyst is in both a professional role and another role with a client, supervisee, or research participant; behavior analysts must avoid multiple relationships that could impair objectivity or harm the client.',
@@ -1372,7 +1372,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-50',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Response Generalization',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The occurrence of untrained but functionally similar responses in the presence of the training stimulus, without additional training.',
@@ -1405,7 +1405,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-55',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conditioned Punisher',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A previously neutral stimulus that acquires punishing properties through repeated pairing with an unconditioned or established conditioned punisher.',
@@ -1438,7 +1438,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-57',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Three-Term Contingency',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'The basic unit of operant analysis: an antecedent stimulus, a behavior, and a consequence  --  the relationship among which determines whether the behavior will recur in similar antecedent conditions.',
@@ -1471,7 +1471,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-59',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Least-to-Most Prompting',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A prompting strategy in which the least intrusive prompt is provided first; if the learner does not respond correctly, progressively more intrusive prompts are provided until a correct response occurs.',
@@ -1504,7 +1504,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-60',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Constant Time Delay',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A prompting procedure in which a fixed interval is inserted between the task demand and the prompt on every trial after an initial period of zero-second delay trials.',
@@ -1537,7 +1537,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-61',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Forward Chaining',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A chaining procedure in which the first behavior in the chain is taught first; subsequent behaviors are added sequentially until the entire chain is performed independently.',
@@ -1570,7 +1570,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-62',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Generalization Programming',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'The systematic arrangement of antecedent and consequence variables during training to promote the occurrence of trained behaviors in untrained settings, with untrained people, or under untrained conditions.',
@@ -1603,7 +1603,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-63',
-    domain: 'Behavior Reduction',
+    domain: 'G',
     concept: 'Response Blocking',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which the therapist physically prevents the completion of a problem behavior, thereby preventing access to the reinforcer maintaining it.',
@@ -1636,7 +1636,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-65',
-    domain: 'Behavior Reduction',
+    domain: 'G',
     concept: 'Time-Out from Positive Reinforcement',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A negative punishment procedure in which access to positive reinforcement is contingently removed for a specified period following a target behavior.',
@@ -1669,7 +1669,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-74',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E',
     concept: 'Assent',
     tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'The affirmative agreement of a person who lacks legal capacity to provide informed consent (e.g., a minor or individual with significant cognitive limitations) to participate in services or research.',
@@ -1702,7 +1702,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-80',
-    domain: 'Research & Design',
+    domain: 'D',
     concept: 'Social Validity',
     tcoDomain: 'H  -  Selecting and Implementing Interventions',
     definition: 'The extent to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, caregivers, and the broader community.',
@@ -1735,7 +1735,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-83',
-    domain: 'Assessment',
+    domain: 'F',
     concept: 'Preference Assessment',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A systematic procedure used to identify stimuli that may function as reinforcers for an individual by presenting items and observing approach behavior, selection, or engagement.',
@@ -1768,7 +1768,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-87',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Autoclitic',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A secondary verbal operant that modifies or qualifies other verbal behavior, providing information about the speaker\'s relation to their own primary verbal behavior (e.g., "I think," "I\'m not sure," "Please").',
@@ -1801,7 +1801,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-88',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Echoic',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant in which the response is controlled by a verbal discriminative stimulus and has point-to-point correspondence and formal similarity with that stimulus.',
@@ -1834,7 +1834,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-91',
-    domain: 'Skill Acquisition',
+    domain: 'G',
     concept: 'Errorless Learning',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A teaching strategy in which prompts are provided at a level that prevents or minimizes incorrect responses, ensuring the learner contacts reinforcement for correct responding from the beginning of instruction.',
@@ -1867,7 +1867,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-95',
-    domain: 'Behavior Reduction',
+    domain: 'G',
     concept: 'Differential Reinforcement of Incompatible Behavior (DRI)',
     tcoDomain: 'G  -  Behavior-Change Procedures',
     definition: 'A procedure in which reinforcement is delivered for a behavior that is physically incompatible with the problem behavior, making it impossible for both behaviors to occur simultaneously.',
@@ -1900,7 +1900,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-98',
-    domain: 'Ethics & Professional Practice',
+    domain: 'E',
     concept: 'Conflict of Interest',
     tcoDomain: 'E  -  Ethical and Professional Issues',
     definition: 'A situation in which a behavior analyst\'s personal, financial, or professional interests could impair their objectivity, competence, or effectiveness in fulfilling their professional obligations.',
@@ -1933,7 +1933,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-100',
-    domain: 'Assessment',
+    domain: 'F',
     concept: 'Functional Behavior Assessment (FBA)',
     tcoDomain: 'F  -  Behavior Assessment',
     definition: 'A comprehensive assessment process that uses multiple methods (indirect, descriptive, and experimental) to identify the variables that predict and maintain problem behavior, resulting in a hypothesis about its function.',
@@ -1966,7 +1966,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'sm-h3',
-    domain: 'Selecting & Implementing Interventions',
+    domain: 'H',
     concept: 'High-Probability Request Sequence',
     definition: 'An antecedent intervention presenting several high-p requests immediately before a low-p request to increase compliance through behavioral momentum.',
     scenarios: [
@@ -1998,7 +1998,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'sm-h4',
-    domain: 'Selecting & Implementing Interventions',
+    domain: 'H',
     concept: 'Behavior Trap',
     definition: 'A naturally occurring contingency that, once entered, captures and maintains behavior through natural reinforcement without continued programmed reinforcement.',
     scenarios: [
@@ -2030,7 +2030,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'sm-h5',
-    domain: 'Selecting & Implementing Interventions',
+    domain: 'H',
     concept: 'Competing Stimulus Assessment',
     definition: 'A systematic evaluation identifying stimuli that compete with the reinforcer maintaining automatically-reinforced problem behavior; used to select items for enriched environments.',
     scenarios: [
@@ -2062,7 +2062,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'sm-i2',
-    domain: 'Personnel Supervision & Management',
+    domain: 'I',
     concept: 'Performance Feedback',
     definition: 'Information provided to a supervisee about the accuracy and quality of their work, delivered in close temporal proximity to the observed behavior to promote skill acquisition and maintenance.',
     scenarios: [
@@ -2094,7 +2094,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'sm-i3',
-    domain: 'Personnel Supervision & Management',
+    domain: 'I',
     concept: 'Pyramidal Training',
     definition: 'A staff training model in which a behavior analyst trains a small group of lead staff who then train other staff, creating a hierarchical dissemination structure.',
     scenarios: [
@@ -2126,7 +2126,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-101',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Point-to-Point Correspondence',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A defining feature of certain verbal operants in which each unit of the verbal stimulus controls a corresponding unit of the verbal response, such that the stimulus and response share the same sequential structure.',
@@ -2159,7 +2159,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-102',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Formal Similarity',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A property of a verbal operant in which the controlling stimulus and the verbal response share the same sense modality and physical form, such that the response resembles or reproduces the stimulus.',
@@ -2192,7 +2192,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-103',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Extended Tact',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A tact emitted in the presence of a novel stimulus that was not part of original tact training, occurring because the novel stimulus shares some property with the original training stimulus.',
@@ -2225,7 +2225,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-104',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Generic Tact Extension',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A form of tact extension in which a response is controlled by a novel stimulus that is a true member of the same general stimulus class as the original training stimulus, because the novel stimulus shares the defining features of that class.',
@@ -2258,7 +2258,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-105',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Metaphorical Tact Extension',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A form of tact extension in which a response is controlled by a novel stimulus that shares a property with the original training stimulus, even though the novel stimulus belongs to a different stimulus class.',
@@ -2291,7 +2291,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-106',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Metonymical Tact Extension',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A form of tact extension in which a response is controlled by a stimulus that was merely present at the same time as the original training stimulus, with no physical similarity between the two stimuli.',
@@ -2324,7 +2324,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-107',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Solistic Tact Extension',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A form of tact extension in which a response is controlled by a stimulus property that is only indirectly related to the proper tact relation, resulting in substandard or idiosyncratic verbal behavior such as malaprops, slang, or non-standard usage.',
@@ -2357,7 +2357,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-108',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Extended Mand',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A mand emitted under a novel motivating operation or in novel stimulus conditions that were not part of original mand training, resulting in a request that was not directly trained under those specific conditions.',
@@ -2390,7 +2390,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-109',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Superstitious Mand',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A mand maintained by an accidental reinforcement history in which the verbal response was coincidentally followed by the relevant reinforcer, even though the response did not actually produce the reinforcer.',
@@ -2423,7 +2423,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-110',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Magical Mand',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A mand emitted under a strong motivating operation but in the absence of a listener who has the ability or willingness to provide the relevant reinforcer, such that the verbal response cannot actually produce the specified reinforcer.',
@@ -2456,7 +2456,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-111',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Codic',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A verbal operant in which a written or printed verbal stimulus controls a written or printed verbal response, with point-to-point correspondence and formal similarity between stimulus and response; the written equivalent of the echoic.',
@@ -2489,7 +2489,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-112',
-    domain: 'Verbal Behavior',
+    domain: 'B',
     concept: 'Duplic',
     tcoDomain: 'B  -  Concepts and Principles',
     definition: 'A class of verbal operants in which the verbal response reproduces the formal properties of the controlling verbal stimulus with point-to-point correspondence; includes both echoics (auditory to auditory) and codics (written to written).',
@@ -6860,7 +6860,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-001',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Positive Reinforcement',
     definition: 'A stimulus is added following a behavior, increasing the future probability of that behavior.',
     scenarios: [
@@ -6872,7 +6872,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-002',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Punishment',
     definition: 'A consequence that follows a behavior and decreases the future probability of that behavior.',
     scenarios: [
@@ -6884,7 +6884,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-003',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Extinction',
     definition: 'Withholding reinforcement that previously maintained a behavior, resulting in a decrease in that behavior.',
     scenarios: [
@@ -6896,7 +6896,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-005',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Motivating Operation (MO)',
     definition: 'An environmental variable that (1) alters the reinforcing or punishing effectiveness of a stimulus and (2) alters the current frequency of behavior that has been reinforced or punished by that stimulus.',
     scenarios: [
@@ -6908,7 +6908,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-006',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Unconditioned Motivating Operation (UMO)',
     definition: 'A motivating operation whose value-altering effect is unlearned (e.g., food deprivation, water deprivation, pain).',
     scenarios: [
@@ -6920,7 +6920,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-007',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conditioned Motivating Operation (CMO)',
     definition: 'A motivating operation whose value-altering effect is learned through prior conditioning (e.g., a warning stimulus that signals an aversive event).',
     scenarios: [
@@ -6932,7 +6932,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-008',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Establishing Operation (EO)',
     definition: 'A motivating operation that increases the reinforcing effectiveness of a stimulus and increases the frequency of behavior that has been reinforced by that stimulus.',
     scenarios: [
@@ -6944,7 +6944,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-010',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Stimulus Control',
     definition: 'A condition in which the presence or absence of a stimulus reliably alters the probability of a behavior.',
     scenarios: [
@@ -6956,7 +6956,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-019',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Differential Reinforcement',
     definition: 'Reinforcing one class of behavior while placing another class on extinction.',
     scenarios: [
@@ -6968,7 +6968,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-028',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Satiation',
     definition: 'A decrease in the reinforcing effectiveness of a stimulus due to repeated exposure or consumption.',
     scenarios: [
@@ -6980,7 +6980,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-029',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Deprivation',
     definition: 'A period of time during which a reinforcer has not been available, increasing its reinforcing effectiveness.',
     scenarios: [
@@ -6992,7 +6992,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-032',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conditioned Negative Reinforcer',
     definition: 'A stimulus that has acquired its aversive properties through conditioning and whose removal increases behavior.',
     scenarios: [
@@ -7004,7 +7004,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-033',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conditioned Reflex',
     definition: 'A reflex that is acquired through respondent conditioning — a neutral stimulus that is repeatedly paired with an unconditioned stimulus comes to elicit a response similar to the unconditioned response.',
     scenarios: [
@@ -7016,7 +7016,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-034',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conjunctive Schedule (Conj)',
     definition: 'A compound schedule in which reinforcement is delivered only when the requirements of two or more schedules have both been met.',
     scenarios: [
@@ -7028,7 +7028,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-035',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Concurrent Schedules',
     definition: 'Two or more schedules of reinforcement that operate simultaneously for two or more different behaviors.',
     scenarios: [
@@ -7040,7 +7040,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-036',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Multiple Schedule',
     definition: 'A compound schedule in which two or more component schedules alternate, each associated with a different discriminative stimulus.',
     scenarios: [
@@ -7052,7 +7052,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-037',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Mixed Schedule',
     definition: 'A compound schedule in which two or more component schedules alternate without a discriminative stimulus signaling which component is in effect.',
     scenarios: [
@@ -7064,7 +7064,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-038',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Tandem Schedule (Tand)',
     definition: 'A compound schedule in which two or more schedules must be completed in sequence before reinforcement is delivered, without discriminative stimuli signaling the transitions.',
     scenarios: [
@@ -7076,7 +7076,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-039',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Chained Schedule',
     definition: 'A compound schedule in which two or more schedules must be completed in sequence before reinforcement is delivered, with discriminative stimuli signaling each transition.',
     scenarios: [
@@ -7088,7 +7088,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-040',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Progressive-Ratio (PR) Schedule',
     definition: 'A schedule in which the response requirement increases after each reinforcer delivery, used to assess the reinforcing value of a stimulus.',
     scenarios: [
@@ -7100,7 +7100,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-041',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Lag Schedule',
     definition: 'A schedule of reinforcement in which the response must differ from a specified number of preceding responses to be reinforced.',
     scenarios: [
@@ -7112,7 +7112,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-042',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Ratio Strain',
     definition: 'A disruption in responding that occurs when a ratio schedule requirement is increased too rapidly.',
     scenarios: [
@@ -7124,7 +7124,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-043',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Schedule Thinning',
     definition: 'The gradual reduction in the density of reinforcement (increasing the ratio or interval requirement) to promote maintenance and resistance to extinction.',
     scenarios: [
@@ -7136,7 +7136,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-044',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Post-Reinforcement Pause',
     definition: 'A pause in responding that occurs immediately after reinforcement delivery on fixed schedules (FR and FI).',
     scenarios: [
@@ -7148,7 +7148,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-045',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Matching Law',
     definition: 'The principle that the relative rate of responding on concurrent schedules matches the relative rate of reinforcement obtained from those schedules.',
     scenarios: [
@@ -7160,7 +7160,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-046',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Premack Principle',
     definition: 'A higher-probability behavior can serve as a reinforcer for a lower-probability behavior.',
     scenarios: [
@@ -7172,7 +7172,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-047',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Response-Deprivation Hypothesis',
     definition: 'Any behavior can serve as a reinforcer for another behavior if access to the first behavior is restricted below its baseline level.',
     scenarios: [
@@ -7184,7 +7184,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-048',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Neutral Stimulus',
     definition: 'A stimulus that does not initially elicit a response or function as a reinforcer or punisher.',
     scenarios: [
@@ -7196,7 +7196,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-049',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Higher-Order Conditioning',
     definition: 'A procedure in which a conditioned stimulus is used to condition a new neutral stimulus, without the original unconditioned stimulus being present.',
     scenarios: [
@@ -7208,7 +7208,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-050',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Stimulus-Stimulus Pairing',
     definition: 'A procedure in which a neutral stimulus is repeatedly presented immediately before or simultaneously with an established reinforcer to condition the neutral stimulus as a reinforcer.',
     scenarios: [
@@ -7220,7 +7220,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-051',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conditioned Emotional Response (CER)',
     definition: 'An emotional response (e.g., fear, anxiety) that is elicited by a conditioned stimulus through respondent conditioning.',
     scenarios: [
@@ -7232,7 +7232,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-052',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Reflex',
     definition: 'An unlearned, automatic response elicited by a specific antecedent stimulus.',
     scenarios: [
@@ -7244,7 +7244,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-053',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Non-Contingent Reinforcement (NCR)',
     definition: 'Delivery of a reinforcer on a fixed- or variable-time schedule independent of the occurrence of the target behavior.',
     scenarios: [
@@ -7256,7 +7256,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-054',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Matching-to-Sample',
     definition: 'A procedure in which the learner selects a comparison stimulus that matches a sample stimulus from among several comparison stimuli.',
     scenarios: [
@@ -7268,7 +7268,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-055',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conditional Discrimination',
     definition: 'A discrimination in which the correct response depends on a conditional (contextual) stimulus — the same SD may signal different responses depending on the conditional stimulus present.',
     scenarios: [
@@ -7280,7 +7280,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-056',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Equivalence-Class Formation',
     definition: 'The emergence of untrained stimulus relations (reflexivity, symmetry, transitivity) among stimuli that have been trained in conditional discrimination tasks.',
     scenarios: [
@@ -7292,7 +7292,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-057',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Derived Relational Responding',
     definition: 'Responding to relations between stimuli that have not been directly trained, based on a history of relational training.',
     scenarios: [
@@ -7304,7 +7304,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-058',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Relational Frame Theory (RFT)',
     definition: 'A behavior-analytic account of human language and cognition that proposes that verbal behavior is governed by derived relational responding, learned through a history of multiple-exemplar training.',
     scenarios: [
@@ -7316,7 +7316,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-059',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Relational Frame',
     definition: 'A pattern of derived relational responding that is (1) mutually entailed, (2) combinatorially entailed, and (3) involves transformation of stimulus functions.',
     scenarios: [
@@ -7328,7 +7328,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-060',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Mutual Entailment',
     definition: 'If A is related to B in a particular way, then B is related to A in a derived (not necessarily identical) way.',
     scenarios: [
@@ -7340,7 +7340,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-061',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Combinatorial Entailment',
     definition: 'If A is related to B and B is related to C, then A is related to C and C is related to A in derived ways.',
     scenarios: [
@@ -7352,7 +7352,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-062',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Transformation of Function',
     definition: 'The psychological functions of one stimulus in a relational network transfer to other stimuli in the network in accordance with the relational frame.',
     scenarios: [
@@ -7364,7 +7364,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-063',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Pliance',
     definition: 'Rule-governed behavior under the control of socially mediated consequences for following the rule.',
     scenarios: [
@@ -7376,7 +7376,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-064',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Tracking',
     definition: 'Rule-governed behavior under the control of the natural (non-social) consequences described in the rule.',
     scenarios: [
@@ -7388,7 +7388,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-065',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Verbal Behavior',
     definition: 'Behavior that is reinforced through the mediation of another person\'s behavior (the listener), as defined by Skinner (1957).',
     scenarios: [
@@ -7400,7 +7400,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-071',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Copying Text',
     definition: 'A verbal operant in which the speaker copies written text, with point-to-point correspondence and formal similarity between the written stimulus and the written response.',
     scenarios: [
@@ -7412,7 +7412,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-072',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Taking Dictation',
     definition: 'A verbal operant in which the speaker writes or types in response to spoken verbal stimuli, with point-to-point correspondence and formal similarity.',
     scenarios: [
@@ -7424,7 +7424,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-073',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Listener Responding',
     definition: 'Responding to verbal stimuli in non-verbal ways (e.g., following instructions, pointing to named items).',
     scenarios: [
@@ -7436,7 +7436,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-074',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Joint Control',
     definition: 'A process in which a verbal response is controlled by both a verbal stimulus and a non-verbal stimulus simultaneously.',
     scenarios: [
@@ -7448,7 +7448,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-075',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Verbal Episode',
     definition: 'A complete unit of verbal behavior consisting of a verbal stimulus, a verbal response, and the reinforcing consequences provided by the listener.',
     scenarios: [
@@ -7460,7 +7460,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-076',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Multiple Control',
     definition: 'A single verbal response that is under the control of more than one variable simultaneously.',
     scenarios: [
@@ -7472,7 +7472,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-077',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Tact Extension',
     definition: 'A tact that is emitted in the presence of a novel stimulus that shares some but not all properties with the original tact stimulus.',
     scenarios: [
@@ -7484,7 +7484,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-078',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Verbal Conditional Discrimination',
     definition: 'A conditional discrimination in which the conditional stimulus is a verbal stimulus.',
     scenarios: [
@@ -7496,7 +7496,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-079',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Compound Verbal Discrimination',
     definition: 'A discrimination in which the correct response requires attending to multiple verbal stimuli simultaneously.',
     scenarios: [
@@ -7508,7 +7508,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-080',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Deictic Relations',
     definition: 'Relational frames that involve perspective-taking (e.g., I/you, here/there, now/then) and require the speaker to track the relational context from different perspectives.',
     scenarios: [
@@ -7520,7 +7520,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-081',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Hierarchical Relations',
     definition: 'Relational frames that involve categorical membership (e.g., "is a type of," "is a member of," "is a part of").',
     scenarios: [
@@ -7532,7 +7532,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-082',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Temporal Relations',
     definition: 'Relational frames that involve time-based relations (e.g., before/after, first/last, earlier/later).',
     scenarios: [
@@ -7544,7 +7544,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-083',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Spatial Relations',
     definition: 'Relational frames that involve location-based relations (e.g., above/below, inside/outside, near/far).',
     scenarios: [
@@ -7556,7 +7556,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-084',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Distinction Relations',
     definition: 'Relational frames that involve "different from" relations — responding to stimuli as different from each other.',
     scenarios: [
@@ -7568,7 +7568,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-085',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Concept Formation',
     definition: 'The development of a stimulus class in which the learner responds similarly to all members of the class and differently to non-members.',
     scenarios: [
@@ -7580,7 +7580,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-086',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Generative Learning',
     definition: 'The emergence of new, untrained behavior as a result of training on related skills.',
     scenarios: [
@@ -7592,7 +7592,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-087',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Emergent Stimulus Relations',
     definition: 'Stimulus relations that arise without direct training, typically as a result of training other relations within a stimulus class.',
     scenarios: [
@@ -7604,7 +7604,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-088',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Derived Stimulus Relations',
     definition: 'Stimulus relations that are not directly trained but emerge from a history of training other relations.',
     scenarios: [
@@ -7616,7 +7616,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-n-089',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Equivalence Test',
     definition: 'A test used to determine whether trained conditional discriminations have resulted in the formation of an equivalence class, by testing for reflexivity, symmetry, and transitivity.',
     scenarios: [
@@ -7628,7 +7628,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-c-r-003',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Rate',
     definition: 'A measure of the number of times a behavior occurs (frequency) or the number of occurrences per unit of time (rate).',
     scenarios: [
@@ -7640,7 +7640,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-c-r-004',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Duration',
     definition: 'A measure of how long a behavior lasts from onset to offset.',
     scenarios: [
@@ -7652,7 +7652,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-c-r-006',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Interresponse Time (IRT)',
     definition: 'The elapsed time between the end of one response and the beginning of the next response.',
     scenarios: [
@@ -7664,7 +7664,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-d-r-001',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Functional Relation',
     definition: 'A demonstrated relationship in which changes in an independent variable reliably produce changes in a dependent variable.',
     scenarios: [
@@ -7676,7 +7676,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-d-r-006',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Reversal Design (ABAB)',
     definition: 'A single-case experimental design in which baseline and treatment conditions are alternated to demonstrate experimental control.',
     scenarios: [
@@ -7688,7 +7688,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-e-r-001',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Beneficence',
     definition: 'The ethical obligation to act in the best interest of the client and to promote their well-being.',
     scenarios: [
@@ -7700,7 +7700,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-e-r-002',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Non-Maleficence',
     definition: 'The ethical obligation to avoid causing harm to clients.',
     scenarios: [
@@ -7712,7 +7712,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-e-r-003',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Autonomy',
     definition: 'The ethical principle of respecting clients\' rights to make informed decisions about their own treatment.',
     scenarios: [
@@ -7724,7 +7724,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-e-r-004',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Justice',
     definition: 'The ethical principle of treating clients fairly and equitably, and ensuring access to services without discrimination.',
     scenarios: [
@@ -7736,7 +7736,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-g-r-020',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Behavioral Momentum',
     definition: 'The tendency for behavior to persist following a change in reinforcement conditions, analogous to physical momentum; often used to describe the effect of high-probability request sequences.',
     scenarios: [
@@ -7748,7 +7748,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-001',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'ABC Analysis',
     definition: 'A method of analyzing behavior by identifying the Antecedent (what occurs before the behavior), the Behavior (the observable response), and the Consequence (what follows the behavior).',
     scenarios: [
@@ -7760,7 +7760,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-002',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Abative Effect',
     definition: 'The effect of a motivating operation that decreases the current reinforcing effectiveness of a stimulus and decreases the current frequency of behavior that has been reinforced by that stimulus.',
     scenarios: [
@@ -7772,7 +7772,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-003',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Acceptance and Commitment Therapy (ACT)',
     definition: 'A behavioral intervention based on Relational Frame Theory that uses acceptance, mindfulness, and values-based action to increase psychological flexibility and reduce the influence of rigid verbal rules on behavior.',
     scenarios: [
@@ -7784,7 +7784,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-004',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Accuracy',
     definition: 'The extent to which a measured value corresponds to the true or actual value of the dimension of behavior being measured; a measure of how close a recorded value is to the actual occurrence.',
     scenarios: [
@@ -7796,7 +7796,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-005',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Adjunctive Behaviors',
     definition: 'Behaviors that emerge as a by-product of an intermittent reinforcement schedule, not directly reinforced by the scheduled consequence; also called schedule-induced behaviors (e.g., polydipsia induced by intermittent food reinforcement).',
     scenarios: [
@@ -7808,7 +7808,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-006',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Arbitrarily Applicable Relational Responding',
     definition: 'The human ability to relate stimuli to one another based on arbitrary (socially established) contextual cues rather than physical properties; the foundation of Relational Frame Theory and complex human language and cognition.',
     scenarios: [
@@ -7820,7 +7820,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-007',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Arbitrary Relations',
     definition: 'Stimulus relations established by social convention rather than by the physical properties of the stimuli; the word "cat" relates to the animal cat not because of any physical similarity but because of culturally established verbal conventions.',
     scenarios: [
@@ -7832,7 +7832,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-008',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Arbitrary Stimulus Class',
     definition: 'A group of stimuli that evoke the same response or are treated as equivalent not because of shared physical properties but because of a common learning history or verbal relation established by the verbal community.',
     scenarios: [
@@ -7844,7 +7844,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-009',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Artifact',
     definition: 'A false or misleading result in data that is produced by the measurement process itself rather than by the actual behavior being measured; a measurement error that distorts the true picture of behavior.',
     scenarios: [
@@ -7856,7 +7856,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-010',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Behavioral Cusp',
     definition: 'A behavior change that has consequences beyond the change itself, exposing the individual to new contingencies, environments, and reinforcers that would not otherwise be encountered; a pivotal behavior with broad developmental impact.',
     scenarios: [
@@ -7868,7 +7868,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-011',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Behavioral Momentum',
     definition: 'The tendency for a behavior to persist despite disruption; a metaphor from physics in which the rate of responding in the presence of a discriminative stimulus is analogous to the mass of an object, and resistance to change is analogous to momentum.',
     scenarios: [
@@ -7880,7 +7880,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-014',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Conditioned Motivating Operation (CMO)',
     definition: 'A motivating operation whose value-altering and behavior-altering effects depend on a learning history; includes CMO-R (reflexive), CMO-T (transitive), and CMO-S (surrogate) subtypes.',
     scenarios: [
@@ -7892,7 +7892,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-015',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Contingency',
     definition: 'A conditional relation between a behavior and an environmental event; specifically, the dependency between a response and a consequence such that the consequence occurs if and only if the response occurs.',
     scenarios: [
@@ -7904,7 +7904,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-017',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Covert Behavior',
     definition: 'Behavior that occurs within the skin of the organism and is not directly observable by others; includes thinking, feeling, and imagining; treated as behavior subject to the same principles as overt behavior in radical behaviorism.',
     scenarios: [
@@ -7916,7 +7916,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-018',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Cumulative Record',
     definition: 'A graphic display of behavioral data in which each response adds to the cumulative total on the y-axis over time on the x-axis; the slope of the cumulative record directly represents the rate of responding.',
     scenarios: [
@@ -7928,7 +7928,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-a-new-019',
-    domain: 'Philosophical Foundations',
+    domain: 'A',
     concept: 'Deprivation',
     definition: 'A motivating operation in which the withholding of a stimulus for a period of time increases its reinforcing effectiveness and increases the frequency of behavior that has previously produced that stimulus.',
     scenarios: [
@@ -7940,7 +7940,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-001',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Alternative Schedule (Alt)',
     definition: 'A compound schedule in which reinforcement is delivered based on whichever of two or more component schedules is satisfied first; the organism can earn reinforcement by meeting either the ratio or interval requirement.',
     scenarios: [
@@ -7952,7 +7952,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-002',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Anecdotal Observation',
     definition: 'An informal, unsystematic observation of behavior in which an observer records what they notice without a predetermined data collection system; useful for generating hypotheses but not for drawing causal conclusions.',
     scenarios: [
@@ -7964,7 +7964,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-003',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Antecedent',
     definition: 'Any stimulus or event that precedes and sets the occasion for a behavior; in the three-term contingency, the antecedent is the first element (A) that signals the availability of a consequence for a particular response.',
     scenarios: [
@@ -7976,7 +7976,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-004',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Antecedent Stimulus Class',
     definition: 'A group of stimuli that all occasion the same response; stimuli in the same antecedent stimulus class are functionally equivalent in that they all evoke the same operant behavior.',
     scenarios: [
@@ -7988,7 +7988,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-005',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Applied (Dimension of ABA)',
     definition: 'One of the seven dimensions of ABA (Baer, Wolf, & Risley, 1968); refers to the requirement that the behavior, stimuli, or organism under study must be of social significance — the behavior must matter to the individual or society.',
     scenarios: [
@@ -8000,7 +8000,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-006',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Behavioral Contrast',
     definition: 'A phenomenon in which a change in the reinforcement conditions in one component of a multiple schedule produces an opposite change in responding in the other component, even though conditions in that component have not changed.',
     scenarios: [
@@ -8012,7 +8012,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-011',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Tandem Schedule',
     definition: 'A reinforcement schedule that combines two or more simple schedules; includes concurrent, multiple, mixed, chained, tandem, conjunctive, and alternative schedules.',
     scenarios: [
@@ -8024,7 +8024,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-013',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Conditional Discrimination',
     definition: 'A discrimination in which the correct response to a stimulus depends on the presence of another stimulus (the sample or contextual stimulus); the organism must respond differently to the same stimulus depending on the context.',
     scenarios: [
@@ -8036,7 +8036,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-016',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Covert Behavior',
     definition: 'Behavior that occurs within the skin of the organism and is not directly observable by others; includes thinking, feeling, and imagining; treated as behavior subject to the same principles as overt behavior in radical behaviorism.',
     scenarios: [
@@ -8048,7 +8048,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-017',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Cumulative Record',
     definition: 'A graphic display of behavioral data in which each response adds to the cumulative total on the y-axis over time on the x-axis; the slope of the cumulative record directly represents the rate of responding.',
     scenarios: [
@@ -8060,7 +8060,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-018',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Deprivation',
     definition: 'A motivating operation in which the withholding of a stimulus for a period of time increases its reinforcing effectiveness and increases the frequency of behavior that has previously produced that stimulus.',
     scenarios: [
@@ -8072,7 +8072,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-019',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Differential Reinforcement',
     definition: 'A procedure in which reinforcement is delivered for one class of behavior (or behavior meeting a specific criterion) and withheld (extinction) for another class of behavior; used to increase desired behaviors and decrease undesired ones.',
     scenarios: [
@@ -8084,7 +8084,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-024',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Extinction Burst',
     definition: 'A temporary increase in the frequency, duration, or intensity of a behavior when reinforcement is first withheld during an extinction procedure; a predictable side effect of extinction that typically precedes the eventual reduction of the behavior.',
     scenarios: [
@@ -8096,7 +8096,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-025',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Feature Stimulus Class',
     definition: 'A group of stimuli that share one or more common physical features (topographical, functional, or temporal) and that evoke the same response based on those shared properties.',
     scenarios: [
@@ -8108,7 +8108,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-027',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Functional Behavior Assessment (FBA)',
     definition: 'A systematic process for identifying the variables that maintain a problem behavior, including antecedents, consequences, and setting events; the foundation for developing function-based behavior intervention plans.',
     scenarios: [
@@ -8120,7 +8120,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-029',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Generalized Conditioned Reinforcer',
     definition: 'A conditioned reinforcer that has been paired with many other reinforcers and therefore maintains its reinforcing effectiveness across a wide range of motivating operations; examples include money, tokens, praise, and points.',
     scenarios: [
@@ -8132,7 +8132,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-030',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Matching Law',
     definition: 'A quantitative principle stating that the relative rate of responding on concurrent schedules matches the relative rate of reinforcement; organisms distribute their behavior in proportion to the reinforcement available from each alternative.',
     scenarios: [
@@ -8144,7 +8144,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-031',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Mixed Schedule',
     definition: 'A compound schedule in which two or more schedules alternate without any discriminative stimulus signaling which schedule is in effect; the organism cannot predict which schedule is currently operating.',
     scenarios: [
@@ -8156,7 +8156,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-032',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Multiple Schedule',
     definition: 'A compound schedule in which two or more component schedules alternate, each signaled by a different discriminative stimulus; the organism learns to respond differently under each component based on the associated SD.',
     scenarios: [
@@ -8168,7 +8168,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-033',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Negative Punishment',
     definition: 'A procedure in which a stimulus is removed following a behavior, resulting in a decrease in the future frequency of that behavior; the removal of a stimulus contingent on behavior that weakens the behavior.',
     scenarios: [
@@ -8180,7 +8180,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-034',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Operant Behavior',
     definition: 'Behavior that is selected and maintained by its consequences; behavior that operates on the environment to produce consequences that in turn affect the future probability of that behavior.',
     scenarios: [
@@ -8192,7 +8192,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-035',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Positive Punishment',
     definition: 'A procedure in which a stimulus is added following a behavior, resulting in a decrease in the future frequency of that behavior; the addition of a stimulus contingent on behavior that weakens the behavior.',
     scenarios: [
@@ -8204,7 +8204,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-036',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Ratio Strain',
     definition: 'A disruption in responding that occurs when a reinforcement schedule is thinned too quickly, resulting in pausing, emotional behavior, or extinction of the response; caused by an abrupt increase in the response requirement.',
     scenarios: [
@@ -8216,7 +8216,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-037',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Reflex',
     definition: 'An unlearned, automatic response to a specific stimulus; a stimulus-response relation that is part of the organism\'s biological endowment and does not require a learning history to occur.',
     scenarios: [
@@ -8228,7 +8228,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-b-new-039',
-    domain: 'Behavior Principles',
+    domain: 'B',
     concept: 'Resurgence',
     definition: 'The reappearance of a previously reinforced behavior when a more recently reinforced behavior is placed on extinction; the old behavior resurges when the new behavior stops producing reinforcement.',
     scenarios: [
@@ -8240,7 +8240,7 @@ export const matchingItems: MatchingItem[] = [
   },
   {
     id: 'm-c-new-001',
-    domain: 'Measurement',
+    domain: 'C',
     concept: 'ABC Recording',
     definition: 'A direct observation method in which the observer records the Antecedent, Behavior, and Consequence for each occurrence of a target behavior in a narrative or structured format; used to identify patterns in the three-term contingency.',
     scenarios: [

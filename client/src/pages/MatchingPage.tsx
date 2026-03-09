@@ -29,36 +29,20 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-// Canonical domain order — mirrors BCBA exam weighting
-const DOMAIN_ORDER = [
-  'Behavior Principles',
-  'Verbal Behavior',
-  'Measurement',
-  'Research & Design',
-  'Assessment',
-  'Skill Acquisition',
-  'Behavior Reduction',
-  'Selecting & Implementing Interventions',
-  'Ethics & Professional Practice',
-  'Supervision',
-  'Personnel Supervision',
-  'Personnel Supervision & Management',
-];
+// Canonical domain order — BACB 6th Edition TCO (A–I)
+const DOMAIN_ORDER = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 
 const DOMAIN_LABELS: Record<string, string> = {
   All: 'All Domains',
-  'Behavior Principles': 'Behavior Principles',
-  'Verbal Behavior': 'Verbal Behavior',
-  'Measurement': 'Measurement',
-  'Research & Design': 'Research & Design',
-  'Assessment': 'Assessment',
-  'Skill Acquisition': 'Skill Acquisition',
-  'Behavior Reduction': 'Behavior Reduction',
-  'Selecting & Implementing Interventions': 'Selecting & Implementing Interventions',
-  'Ethics & Professional Practice': 'Ethics & Professional Practice',
-  'Supervision': 'Supervision',
-  'Personnel Supervision': 'Personnel Supervision',
-  'Personnel Supervision & Management': 'Personnel Supervision & Management',
+  A: 'A: Behaviorism & Philosophical Foundations',
+  B: 'B: Concepts & Principles',
+  C: 'C: Measurement, Data Display & Interpretation',
+  D: 'D: Experimental Design',
+  E: 'E: Ethical & Professional Issues',
+  F: 'F: Behavior Assessment',
+  G: 'G: Behavior-Change Procedures',
+  H: 'H: Selecting & Implementing Interventions',
+  I: 'I: Personnel Supervision & Management',
 };
 
 type Mode = 'browse' | 'quiz' | 'results';
@@ -116,7 +100,7 @@ function DomainAccordion({
                 {isOpen
                   ? <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0" />
                   : <ChevronRight className="w-4 h-4 text-muted-foreground flex-shrink-0" />}
-                <span className="font-semibold text-sm text-foreground truncate">{domain}</span>
+                <span className="font-semibold text-sm text-foreground truncate">{DOMAIN_LABELS[domain] ?? domain}</span>
                 <span className="text-xs text-muted-foreground flex-shrink-0">{domainItems.length} concepts</span>
                 {bestScore !== null && (
                   <span className={cn(
@@ -259,7 +243,7 @@ export default function MatchingPage() {
           {/* Concept card */}
           <div className="bg-teal-50 border-2 border-teal-200 rounded-2xl p-5 mb-6">
             <div className="text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
-              {currentItem.domain} · Match this concept
+              {DOMAIN_LABELS[currentItem.domain] ?? currentItem.domain} · Match this concept
             </div>
             <h2 className="text-xl font-bold text-foreground mb-2">{currentItem.concept}</h2>
             <p className="text-sm text-muted-foreground leading-relaxed italic">
@@ -429,7 +413,7 @@ export default function MatchingPage() {
                     : 'bg-card text-muted-foreground border-border hover:border-teal-300 hover:text-teal-800'
                 )}
               >
-                {key === 'All' ? 'All Domains' : key}
+                {key === 'All' ? 'All Domains' : `Domain ${key}`}
                 <span className={cn('ml-1.5 text-[10px]', selectedDomain === key ? 'text-teal-100' : 'text-muted-foreground/60')}>
                   ({domainCounts[key] ?? 0})
                 </span>
@@ -443,11 +427,11 @@ export default function MatchingPage() {
           <div className="flex items-start justify-between gap-4">
             <div>
               <h2 className="text-xl font-bold text-foreground mb-1">
-                {selectedDomain === 'All' ? 'Scenario Matching Quiz' : `${selectedDomain} Quiz`}
+                {selectedDomain === 'All' ? 'Scenario Matching Quiz' : `${DOMAIN_LABELS[selectedDomain] ?? selectedDomain} Quiz`}
               </h2>
               <p className="text-sm text-muted-foreground mb-4">
                 See a concept definition. Pick the clinical scenario that best illustrates it.
-                {selectedDomain !== 'All' && ` Drilling ${selectedDomain}.`}
+                {selectedDomain !== 'All' && ` Drilling ${DOMAIN_LABELS[selectedDomain] ?? selectedDomain}.`}
               </p>
               <div className="flex gap-2 flex-wrap">
                 <button
@@ -458,7 +442,7 @@ export default function MatchingPage() {
                   <Shuffle className="w-4 h-4" />
                   {selectedDomain === 'All'
                     ? `Start Full Quiz (${filteredItems.length} concepts)`
-                    : `Start ${selectedDomain} (${filteredItems.length} concepts)`}
+                    : `Start ${DOMAIN_LABELS[selectedDomain] ?? selectedDomain} (${filteredItems.length} concepts)`}
                 </button>
                 {filteredItems.length > 10 && (
                   <button
@@ -484,7 +468,7 @@ export default function MatchingPage() {
           <h3 className="font-semibold text-sm text-foreground">
             {selectedDomain === 'All'
               ? `All Concepts (${matchingItems.length})`
-              : `${selectedDomain} (${filteredItems.length})`}
+              : `${DOMAIN_LABELS[selectedDomain] ?? selectedDomain} (${filteredItems.length})`}
           </h3>
           <span className="text-xs text-muted-foreground">Click a domain to expand · Practice to drill</span>
         </div>
