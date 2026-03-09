@@ -337,7 +337,7 @@ function CategoryAccordion({
     const map = new Map<string, typeof rapidRecallItems>();
     DOMAIN_ORDER.forEach(d => map.set(d, []));
     items.forEach(item => {
-      const d = item.domain ?? 'B';
+      const d = item.domain ?? 'unknown';
       if (!map.has(d)) map.set(d, []);
       map.get(d)!.push(item);
     });
