@@ -9979,38 +9979,6 @@ export const matchingItems: MatchingItem[] = [
     ]
   },
   {
-    id: 'm-new-0327',
-    concept: 'Covert Conditioning',
-    domain: 'B',
-    definition: 'A behavior change procedure in which imagined events serve as the antecedents, behaviors, and/or consequences in a conditioning paradigm.\', domain: \'B\', domainFull: \'Concepts & Principles\', example: \'A therapist instructs a client to vividly imagine eating a desired food and then imagine becoming il',
-    scenarios: [
-      {
-        id: 'm-new-0327-a',
-        text: 'A therapist asks a client to imagine engaging in a problem behavior and then imagine a highly aversive consequence. Over time, the imagined aversive consequence reduces the client\'s urge to engage in the problem behavior.',
-        isCorrect: true,
-        explanation: 'Covert conditioning: using imagined antecedents and consequences to modify behavior, based on the assumption that imagined events follow the same principles as overt events.'
-      },
-      {
-        id: 'm-new-0327-b',
-        text: 'A therapist uses systematic desensitization with actual relaxation and actual exposure to feared stimuli.',
-        isCorrect: false,
-        explanation: 'Systematic desensitization uses actual stimuli, not imagined ones.'
-      },
-      {
-        id: 'm-new-0327-c',
-        text: 'A therapist uses a token economy with actual tokens and actual backup reinforcers.',
-        isCorrect: false,
-        explanation: 'A token economy uses actual stimuli, not imagined ones.'
-      },
-      {
-        id: 'm-new-0327-d',
-        text: 'A therapist uses extinction by withholding actual reinforcers following problem behavior.',
-        isCorrect: false,
-        explanation: 'Extinction uses actual consequences, not imagined ones.'
-      }
-    ]
-  },
-  {
     id: 'm-new-0328',
     concept: 'Crisis Plan',
     domain: 'H',
@@ -22295,38 +22263,6 @@ export const matchingItems: MatchingItem[] = [
         text: 'Whenever 4-year-old Chloe bites her hand, her therapist immediately places a soft, chewy toy in her mouth. This intervention is used to provide an incompatible response and reduce self-injurious biting. The therapist ensures Chloe can access preferred items when not biting.',
         isCorrect: false,
         explanation: 'This actually demonstrates Differential Reinforcement of Incompatible Behavior (DRI) because the therapist is reinforcing a behavior (chewing on a toy) that cannot occur simultaneously with the target behavior (hand biting).',
-      },
-    ],
-  },
-  {
-    id: 'm-new-0083',
-    domain: 'B',
-    concept: 'Covert Conditioning',
-    definition: 'A behavior change procedure in which imagined events serve as the antecedents, behaviors, and/or consequences in a conditioning paradigm.',
-    scenarios: [
-      {
-        id: 'm-new-0083-b',
-        text: 'A teacher implements a token economy where students earn points for completing assignments and can exchange these points for preferred items or activities. The students are visibly motivated to complete their work to earn points.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates a Token Economy because it involves a system of generalized conditioned reinforcers (tokens) that are exchanged for backup reinforcers, contingent upon target behaviors.',
-      },
-      {
-        id: 'm-new-0083-c',
-        text: 'During a therapy session, a client who frequently picks at their skin is instructed to wear gloves and engage in a competing response, such as squeezing a stress ball, whenever they feel the urge to pick. This intervention aims to reduce the frequency of skin picking.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Differential Reinforcement of Incompatible Behavior (DRI) because an incompatible behavior (squeezing a stress ball) is reinforced while the target behavior (skin picking) is not.',
-      },
-      {
-        id: 'm-new-0083-a',
-        text: 'A client struggles with public speaking anxiety. The therapist instructs them to close their eyes and vividly imagine themselves confidently delivering a presentation, receiving applause, and feeling a sense of accomplishment. They practice this imagined sequence daily to reduce their real-world anxiety.',
-        isCorrect: true,
-        explanation: 'This demonstrates Covert Conditioning because the client is using imagined events (delivering a presentation, applause, feeling accomplished) as antecedents, behaviors, and consequences to modify their emotional response to a real-world situation.',
-      },
-      {
-        id: 'm-new-0083-d',
-        text: 'A therapist uses systematic desensitization to help a client overcome their fear of flying. The client is gradually exposed to increasingly anxiety-provoking stimuli related to flying (e.g., pictures of planes, videos of takeoffs) while practicing relaxation techniques.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Systematic Desensitization because it involves gradual exposure to anxiety-provoking stimuli while engaging in a competing response (relaxation), which is a form of counterconditioning, not solely imagined events for behavior change.',
       },
     ],
   },

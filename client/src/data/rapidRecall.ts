@@ -3389,20 +3389,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: 'B.19',
     category: 'Motivating Operations'
-  },
-  {
-    id: 'rr-covert-conditioning',
-    domain: 'B',
-    term: 'Covert Conditioning',
-    correctDefinition: 'A behavior change procedure in which imagined events serve as the antecedents, behaviors, and/or consequences in a conditioning paradigm.',
-    distractors: ['A behavior change procedure in which a learner undergoes conditioning without their conscious awareness of the process.', 'A behavior change procedure in which private events, such as thoughts, serve as discriminative stimuli for overt behavior.', 'A behavior change procedure in which a learner acquires new behaviors by observing and imitating the actions of a model.'],
-    misconceptions: [
-      'Covert conditioning procedures (e.g., covert sensitization, covert reinforcement) use imagined scenarios. Their effectiveness is debated because the imagined events cannot be directly observed or measured.'
-    ],
-    taskItem: 'B.19',
-    category: 'Private Events'
-  },
-  {
+  },  {
     id: 'rr-stimulus-equivalence',
     domain: 'B',
     term: 'Stimulus Equivalence',
