@@ -2394,14 +2394,14 @@ export const rapidRecallItems: RapidRecallItem[] = [
   {
     id: 'vb-solistic-tact',
     term: 'Solistic Tact Extension',
-    correctDefinition: 'An extended tact in which a response is controlled by only a part of the original training stimulus, such that the response occurs when only a portion of the original stimulus complex is present.',
+    correctDefinition: 'An extended tact in which a response is controlled by a stimulus property that is only indirectly related to the proper tact relation, resulting in substandard or idiosyncratic verbal behavior such as malaprops, slang, or non-standard usage.',
     distractors: [
-      'An extended tact in which a response is controlled by a novel stimulus that shares a functional property with the original training stimulus, even though the two stimuli belong to different classes.',
-      'An extended tact in which a response is controlled by a stimulus that was present at the same time as the original training stimulus, with no physical similarity between them.',
-      'An extended tact in which a response is emitted in the absence of the original stimulus due to a history of intermittent reinforcement.',
+      'An extended tact in which a response is controlled by a novel stimulus that shares a property with the original training stimulus, even though the novel stimulus belongs to a different stimulus class.',
+      'An extended tact in which a response is controlled by a stimulus that was merely present at the same time as the original training stimulus, with no physical similarity between the two stimuli.',
+      'An extended tact in which a response is controlled by a novel stimulus that is a true member of the same general stimulus class as the original training stimulus, sharing all its defining features.',
     ],
     misconceptions: [
-      'Solistic extensions are part-whole: the part controls the same response as the whole. This is distinct from metaphorical (shared property) and metonymical (temporal contiguity) extensions.'
+      'Solistic tact extensions are NOT about part-whole relationships. They occur when an indirectly related stimulus property controls a non-standard verbal response — producing malaprops, slang, or idiosyncratic usage. This distinguishes them from metaphorical (shared property, different class), metonymical (temporal contiguity), and generic (same class, all defining features) extensions.'
     ],
     taskItem: 'B.20',
     category: 'Verbal Behavior'
