@@ -1756,7 +1756,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: 'H.3',
   },
   {
-    id: 'rr-treatment-integrity',
+    id: 'rr-treatment-integrity-def',
     domain: 'H', term: 'Treatment Integrity  -  Definition',
     correctDefinition: 'The degree to which an intervention is implemented as designed and specified in the behavior intervention plan; also called procedural fidelity (H.6). Measured by comparing actual implementation steps to the written protocol step by step.',
     distractors: ['A set of emergent, trained stimulus relations that arise when an organism is taught to respond to one stimulus in the presence of another, including reflexivity, symmetry, and transitivity as the three defining properties of the relation.', 'The scientific attitude of treating all currently accepted knowledge as tentative and subject to revision based on new empirical evidence, recognizing that scientific understanding evolves through ongoing observation and experimentation.', 'The ability to identify the functional relationships between environmental variables and behavior through systematic observation, representing the second goal of a natural science that builds on accurate description of behavioral events.'],
@@ -3283,7 +3283,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: 'Prompting'
   },
   {
-    id: 'rr-imitation',
+    id: 'rr-imitation-standalone',
     domain: 'B',
     term: 'Imitation',
     correctDefinition: 'A form of observational learning in which the behavior of an observer comes to match the behavior of a model as a result of observing the model\'s behavior.',
@@ -3639,7 +3639,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: ['Escape extinction is used for attention-maintained behavior', 'In escape extinction, demands are removed when problem behavior occurs', 'Escape extinction and extinction are different procedures', 'Escape extinction does not require identifying the function of behavior']
   },
   {
-    id: 'rr-high-p-sequence',
+    id: 'rr-high-p-sequence-application',
     term: 'High-Probability Request Sequence (High-p)',
     domain: 'G',
     domainFull: 'Behavior-Change Procedures',
@@ -3793,7 +3793,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Measurement"
   },
   {
-    id: "rr-treatment-integrity",
+    id: "rr-treatment-integrity-procedural-c",
     term: "Treatment Integrity (Procedural Fidelity)",
     domain: "C",
     correctDefinition: "The degree to which an independent variable is implemented as planned and described; a measure of how accurately and consistently the intervention procedures are carried out.",
@@ -3983,7 +3983,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Experimental Design"
   },
   {
-    id: "rr-withdrawal-design",
+    id: "rr-withdrawal-design-d01",
     term: "Withdrawal Design",
     domain: "D",
     correctDefinition: "A single-case experimental design in which the independent variable is introduced and then withdrawn to demonstrate that behavior changes are a function of the intervention; also called a reversal design.",
@@ -4023,7 +4023,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Experimental Design"
   },
   {
-    id: "rr-treatment-package",
+    id: "rr-treatment-package-d01",
     term: "Treatment Package",
     domain: "D",
     correctDefinition: "An intervention that consists of multiple components applied together; used when the combined effect of components is needed to produce behavior change, even if the contribution of individual components is unknown.",
@@ -4611,7 +4611,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Ethics"
   },
   {
-    id: "rr-scope-of-practice",
+    id: "rr-scope-of-practice-e03",
     term: "Scope of Practice",
     domain: "E",
     correctDefinition: "The range of services, procedures, and professional responsibilities that a behavior analyst is qualified to provide based on their education, training, supervised experience, and credentials.",
@@ -5451,7 +5451,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Philosophical Foundations"
   },
   {
-    id: "rr-response-maintenance",
+    id: "rr-response-maintenance-conceptual",
     term: "Response Maintenance (Conceptual)",
     domain: "B",
     correctDefinition: "The continuation of a behavior change after the intervention that produced it has been discontinued; maintenance is facilitated by natural reinforcement contingencies, intermittent schedules, and generalization programming.",
@@ -7887,7 +7887,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Verbal Behavior"
   },
   {
-    id: "rr-tandem-schedule",
+    id: "rr-tandem-schedule-b04",
     term: "Tandem Schedule (Tand)",
     domain: "B",
     correctDefinition: "A compound schedule in which two or more component schedules are linked in a sequence without discriminative stimuli to signal which component is in effect; the unlabeled version of a chained schedule.",
@@ -8069,7 +8069,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Behavior-Change Procedures"
   },
   {
-    id: "rr-matching-to-sample",
+    id: "rr-matching-to-sample-b14",
     term: "Matching-to-Sample",
     domain: "B",
     correctDefinition: "A procedure in which the learner selects a comparison stimulus that matches a sample stimulus; used to teach conditional discriminations and to assess stimulus equivalence.",
@@ -8082,4 +8082,41 @@ export const rapidRecallItems: RapidRecallItem[] = [
     taskItem: "B.14",
     category: "Stimulus Control"
   }
+,
+  {
+    id: 'rr-imitation-b24',
+    domain: 'B',
+    term: 'Imitation',
+    correctDefinition: 'A behavior that is controlled by a model — a prior stimulus that has the same physical form as the imitative response; the observer\'s behavior topographically resembles the model\'s behavior and is reinforced by the social community for matching the model.',
+    distractors: [
+      'A behavior that is controlled by a verbal antecedent (a mand or tact) and produces a consequence that is not directly related to the physical form of the response.',
+      'A process in which an observer\'s behavior changes as a result of watching a model receive consequences, without the observer directly experiencing those consequences or reproducing the exact topography.',
+      'A procedure in which a new behavior is developed by reinforcing successive approximations to the target behavior until the terminal behavior is achieved.',
+    ],
+    misconceptions: [
+      '"Imitation and observational learning are the same thing — both involve watching someone else."',
+      '"Imitation only occurs in children with developmental disabilities who are taught to imitate."',
+      '"Any behavior that follows watching another person is imitation."',
+    ],
+    taskItem: 'B.24',
+    category: 'Verbal Behavior',
+  },
+  {
+    id: 'rr-observational-learning-b24',
+    domain: 'B',
+    term: 'Observational Learning',
+    correctDefinition: 'A process in which an observer\'s behavior changes as a result of observing a model\'s behavior and its consequences, without the observer directly experiencing those consequences; a form of vicarious learning in which the observer need not reproduce the model\'s exact topography.',
+    distractors: [
+      'A behavior that is controlled by a model and has formal similarity to that model; the observer\'s behavior topographically resembles the model\'s behavior and is reinforced by the social community for matching.',
+      'A procedure in which a new behavior is developed by reinforcing successive approximations to the target behavior until the terminal behavior is achieved.',
+      'A process in which behavior is maintained by intermittent schedules of reinforcement after continuous reinforcement is thinned.',
+    ],
+    misconceptions: [
+      '"Observational learning requires the observer to reproduce the exact behavior they watched."',
+      '"Observational learning is the same as imitation — both involve watching a model."',
+      '"Observational learning only occurs when the observer is directly reinforced for watching."',
+    ],
+    taskItem: 'B.24',
+    category: 'Verbal Behavior',
+  },
 ];

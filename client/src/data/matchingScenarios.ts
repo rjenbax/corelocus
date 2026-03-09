@@ -31738,4 +31738,69 @@ export const matchingItems: MatchingItem[] = [
       },
     ],
   }
+,
+  {
+    id: 'm-imitation-b24',
+    concept: 'Imitation',
+    domain: 'B',
+    definition: 'A behavior that is controlled by a model — a prior stimulus that has the same physical form as the imitative response; the observer\'s behavior topographically resembles the model\'s behavior and is reinforced by the social community for matching the model.',
+    scenarios: [
+      {
+        id: 'm-imitation-b24-a',
+        text: 'A therapist holds up a toy car and says "Do this" while rolling the car across the table. The child immediately picks up an identical car and rolls it across the table in the same way. The child\'s behavior has the same physical form as the therapist\'s behavior and is reinforced by the therapist saying "Great job!"',
+        isCorrect: true,
+        explanation: 'This demonstrates Imitation because the child\'s response (rolling the car) has formal similarity to the model\'s behavior (the therapist rolling the car), is controlled by the model as the antecedent stimulus, and is reinforced by the social community for matching the model.',
+      },
+      {
+        id: 'm-imitation-b24-b',
+        text: 'A student watches a classmate receive praise for raising their hand before speaking. The next day, the student begins raising their hand before speaking, even though the teacher has never directly reinforced the student for this behavior.',
+        isCorrect: false,
+        explanation: 'This demonstrates Observational Learning (vicarious reinforcement), not Imitation. The student\'s behavior changed as a result of observing the model\'s consequences, without directly experiencing reinforcement — and the student does not need to reproduce the exact topography of the classmate\'s hand-raising.',
+      },
+      {
+        id: 'm-imitation-b24-c',
+        text: 'A BCBA models clapping hands and says "Do this." The child watches but does not respond. The BCBA physically prompts the child to clap, then fades the prompt over trials. Eventually, the child claps whenever the BCBA models clapping, without a physical prompt.',
+        isCorrect: true,
+        explanation: 'This demonstrates Imitation Training leading to imitative responding — the child\'s clapping is controlled by the model (formal similarity between model and response) and is reinforced by the social community for matching the model\'s behavior.',
+      },
+      {
+        id: 'm-imitation-b24-d',
+        text: 'A child watches a peer complete a puzzle and then, without being prompted, attempts to complete the same puzzle using a different strategy than the peer used. The child\'s behavior was influenced by watching the peer, but the topography of the child\'s response is different.',
+        isCorrect: false,
+        explanation: 'This demonstrates Observational Learning, not Imitation. Imitation requires formal similarity between the model\'s behavior and the observer\'s response. Here, the child\'s strategy differs from the model\'s — the behavior was influenced by observation but does not topographically match the model.',
+      },
+    ],
+  },
+  {
+    id: 'm-observational-learning-b24',
+    concept: 'Observational Learning',
+    domain: 'B',
+    definition: 'A process in which an observer\'s behavior changes as a result of observing a model\'s behavior and its consequences, without the observer directly experiencing those consequences; a form of vicarious learning in which the observer need not reproduce the model\'s exact topography.',
+    scenarios: [
+      {
+        id: 'm-observational-learning-b24-a',
+        text: 'A child watches a peer receive a token for completing their worksheet independently. The child has never been directly reinforced for completing worksheets independently, but begins completing worksheets without prompting. The child\'s behavior changed as a result of observing the model\'s consequences.',
+        isCorrect: true,
+        explanation: 'This demonstrates Observational Learning through vicarious reinforcement — the observer\'s behavior changed as a result of watching a model receive reinforcement, without the observer directly experiencing the reinforcement. The observer did not need to reproduce the exact topography of the model\'s behavior.',
+      },
+      {
+        id: 'm-observational-learning-b24-b',
+        text: 'A therapist says "Do this" and waves their hand. The child immediately waves their hand in the same way. The child\'s response has the same physical form as the therapist\'s behavior and is reinforced by the therapist saying "Yes!"',
+        isCorrect: false,
+        explanation: 'This demonstrates Imitation, not Observational Learning. The child\'s response has formal similarity to the model\'s behavior (same topography), is controlled by the model as the antecedent, and is directly reinforced for matching — the defining features of imitation, not observational learning.',
+      },
+      {
+        id: 'm-observational-learning-b24-c',
+        text: 'A student watches a peer touch a hot stove and immediately pull their hand away in pain. The student never touches the stove. Later, when near the stove, the student avoids touching it. The student\'s avoidance behavior was shaped by observing the model\'s aversive consequence.',
+        isCorrect: true,
+        explanation: 'This demonstrates Observational Learning through vicarious punishment — the observer\'s behavior (avoidance) changed as a result of watching a model experience an aversive consequence, without the observer directly experiencing the punishment.',
+      },
+      {
+        id: 'm-observational-learning-b24-d',
+        text: 'A BCBA systematically reinforces a child for reproducing each new action modeled by the therapist. After many training trials, the child begins imitating novel actions that were never directly reinforced, including actions the child has never seen before.',
+        isCorrect: false,
+        explanation: 'This demonstrates Generalized Imitation, not Observational Learning. Generalized imitation occurs when a history of reinforcement for imitating many behaviors produces a generalized imitative repertoire — the child imitates novel behaviors without direct reinforcement for those specific responses.',
+      },
+    ],
+  },
 ];
