@@ -28,7 +28,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
       '"Is the same as a discriminative stimulus."',
       '"Is always an environmental event that precedes behavior."',
       '"Requires a three-term contingency to function."',
-      '"Only applies to food deprivation."',
+      '"Only applies to food deprivation."'
     ],
     taskItem: 'B.16',
   },
@@ -40,7 +40,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Has a value-altering effect on reinforcers."',
       '"Is the same as a motivating operation."',
-      '"Elicits behavior rather than evoking it."',
+      '"Elicits behavior rather than evoking it."'
     ],
     taskItem: 'B.12',
   },
@@ -52,7 +52,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is defined by whether the individual likes the stimulus."',
       '"Always involves adding something to the environment."',
-      '"Is the same as reward."',
+      '"Is the same as reward."'
     ],
     taskItem: 'B.4',
   },
@@ -64,7 +64,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as ignoring a behavior."',
       '"Always involves removing attention."',
-      '"Immediately decreases behavior when implemented."',
+      '"Immediately decreases behavior when implemented."'
     ],
     taskItem: 'B.11',
   },
@@ -76,7 +76,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is defined by whether the stimulus is pleasant or preferred."',
       '"Is the same as reward."',
-      '"Always involves tangible items."',
+      '"Always involves tangible items."'
     ],
     taskItem: 'B.4',
   },
@@ -88,7 +88,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is a form of punishment."',
       '"Is always bad or harmful."',
-      '"Involves delivering something negative to the individual."',
+      '"Involves delivering something negative to the individual."'
     ],
     taskItem: 'B.4',
   },
@@ -100,7 +100,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is always ethical to use."',
       '"Is defined by whether the stimulus is aversive."',
-      '"Is the same as negative reinforcement."',
+      '"Is the same as negative reinforcement."'
     ],
     taskItem: 'B.5',
   },
@@ -112,7 +112,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as extinction."',
       '"Always involves removing attention."',
-      '"Is a form of positive reinforcement."',
+      '"Is a form of positive reinforcement."'
     ],
     taskItem: 'B.5',
   },
@@ -124,7 +124,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Automatic reinforcement is always sensory stimulation."',
       '"Automatic reinforcement cannot be identified through functional analysis."',
-      '"Automatic reinforcement is the same as intrinsic motivation."',
+      '"Automatic reinforcement is the same as intrinsic motivation."'
     ],
     taskItem: 'B.6',
   },
@@ -136,7 +136,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is controlled by an SD rather than an MO."',
       '"Is reinforced by generalized conditioned reinforcement."',
-      '"Requires the speaker to have language skills."',
+      '"Requires the speaker to have language skills."'
     ],
     taskItem: 'B.19',
   },
@@ -148,7 +148,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is controlled by an MO rather than an SD."',
       '"Is reinforced by a specific, characteristic consequence."',
-      '"Requires the listener to respond for reinforcement to occur."',
+      '"Requires the listener to respond for reinforcement to occur."'
     ],
     taskItem: 'B.19',
   },
@@ -160,7 +160,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Has point-to-point correspondence with the verbal SD."',
       '"Is the same as echoic."',
-      '"Is controlled by a nonverbal stimulus."',
+      '"Is controlled by a nonverbal stimulus."'
     ],
     taskItem: 'B.19',
   },
@@ -172,7 +172,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as divergent control."',
       '"Means one variable controls multiple responses."',
-      '"Weakens the strength of the verbal response."',
+      '"Weakens the strength of the verbal response."'
     ],
     taskItem: 'B.20',
   },
@@ -184,7 +184,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as convergent control."',
       '"Means multiple variables control one response."',
-      '"Always results in impure verbal operants."',
+      '"Always results in impure verbal operants."'
     ],
     taskItem: 'B.20',
   },
@@ -196,7 +196,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Does not require a learning history."',
       '"Is the same as unconditioned reinforcement."',
-      '"Is always a tangible item."',
+      '"Is always a tangible item."'
     ],
     taskItem: 'B.7',
   },
@@ -208,7 +208,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Requires a learning history to function as a reinforcer."',
       '"Is always more powerful than conditioned reinforcement."',
-      '"Is the same as conditioned reinforcement."',
+      '"Is the same as conditioned reinforcement."'
     ],
     taskItem: 'B.7',
   },
@@ -220,7 +220,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as a discriminative stimulus."',
       '"Decreases the value of a reinforcer."',
-      '"Only applies to unconditioned reinforcers."',
+      '"Only applies to unconditioned reinforcers."'
     ],
     taskItem: 'B.16',
   },
@@ -232,7 +232,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as extinction."',
       '"Increases the value of a reinforcer."',
-      '"Is the same as an establishing operation."',
+      '"Is the same as an establishing operation."'
     ],
     taskItem: 'B.16',
   },
@@ -244,7 +244,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as an SD."',
       '"Signals that punishment is available."',
-      '"Is a stimulus that has never been present during training."',
+      '"Is a stimulus that has never been present during training."'
     ],
     taskItem: 'B.12',
   },
@@ -256,21 +256,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Only refers to the SD."',
       '"Means the stimulus causes the behavior."',
-      '"Is the same as stimulus generalization."',
+      '"Is the same as stimulus generalization."'
     ],
     taskItem: 'B.12',
-  },
-  {
-    id: 'rr-stim-gen',
-    domain: 'B', term: 'Stimulus Generalization Programming',
-    correctDefinition: 'The occurrence of a behavior in the presence of stimuli that are similar to but not identical to the training stimulus.',
-    distractors: ['The occurrence of untrained responses that are functionally similar to the originally trained response.', 'The transfer of a learned behavior from one specific setting to another through explicit training.', 'The spread of behavior change across multiple different behaviors within the same response class.'],
-    misconceptions: [
-      '"Is the same as response generalization."',
-      '"Only occurs when explicitly programmed."',
-      '"Requires the new stimulus to be identical to the training stimulus."',
-    ],
-    taskItem: 'B.14',
   },
   {
     id: 'rr-resp-gen',
@@ -280,7 +268,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as stimulus generalization."',
       '"Requires explicit training of each response."',
-      '"Only occurs across different settings."',
+      '"Only occurs across different settings."'
     ],
     taskItem: 'B.14',
   },
@@ -292,7 +280,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as stimulus generalization."',
       '"Requires the stimuli to be physically different."',
-      '"Is a cognitive process rather than a behavioral one."',
+      '"Is a cognitive process rather than a behavioral one."'
     ],
     taskItem: 'B.13',
   },
@@ -304,7 +292,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as latency."',
       '"Is the same as interresponse time."',
-      '"Is the best measure for all behaviors."',
+      '"Is the best measure for all behaviors."'
     ],
     taskItem: 'C.4',
   },
@@ -316,7 +304,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as duration."',
       '"Is the same as interresponse time."',
-      '"Is measured from the end of the SD to the end of the response."',
+      '"Is measured from the end of the SD to the end of the response."'
     ],
     taskItem: 'C.4',
   },
@@ -328,7 +316,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as latency."',
       '"Is measured from the beginning of one response to the beginning of the next."',
-      '"Is the same as duration."',
+      '"Is the same as duration."'
     ],
     taskItem: 'C.4',
   },
@@ -340,7 +328,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Tends to underestimate behavior."',
       '"Is the same as whole interval recording."',
-      '"Is the most accurate form of interval recording."',
+      '"Is the most accurate form of interval recording."'
     ],
     taskItem: 'C.6',
   },
@@ -352,7 +340,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Tends to overestimate behavior."',
       '"Is the same as partial interval recording."',
-      '"Is best for behaviors with short durations."',
+      '"Is best for behaviors with short durations."'
     ],
     taskItem: 'C.6',
   },
@@ -364,7 +352,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Always overestimates behavior."',
       '"Is the most accurate form of interval recording."',
-      '"Is the same as partial interval recording."',
+      '"Is the same as partial interval recording."'
     ],
     taskItem: 'C.6',
   },
@@ -376,7 +364,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as treatment integrity."',
       '"Measures the validity of the measurement system."',
-      '"Is only required for research studies."',
+      '"Is only required for research studies."'
     ],
     taskItem: 'C.8',
   },
@@ -388,7 +376,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Does not require the behavior to be reversible."',
       '"Is the same as multiple baseline design."',
-      '"Can only be used with two conditions."',
+      '"Can only be used with two conditions."'
     ],
     taskItem: 'D.7',
   },
@@ -400,7 +388,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Requires a reversal phase to demonstrate control."',
       '"Is the same as multiple baseline design."',
-      '"Is used to compare two different treatments."',
+      '"Is used to compare two different treatments."'
     ],
     taskItem: 'D.7',
   },
@@ -412,7 +400,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is demonstrated by the treatment phase, not the baseline."',
       '"Is the same as verification."',
-      '"Requires a stable trend in the treatment phase."',
+      '"Requires a stable trend in the treatment phase."'
     ],
     taskItem: 'D.4',
   },
@@ -424,7 +412,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as replication."',
       '"Is demonstrated by the treatment phase."',
-      '"Is the same as prediction."',
+      '"Is the same as prediction."'
     ],
     taskItem: 'D.4',
   },
@@ -436,7 +424,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as verification."',
       '"Is demonstrated by the baseline phase."',
-      '"Only refers to direct replication across studies."',
+      '"Only refers to direct replication across studies."'
     ],
     taskItem: 'D.4',
   },
@@ -448,7 +436,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as parametric analysis."',
       '"Compares two complete treatment packages."',
-      '"Is used to identify the function of a behavior."',
+      '"Is used to identify the function of a behavior."'
     ],
     taskItem: 'D.8',
   },
@@ -460,7 +448,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as component analysis."',
       '"Compares two different treatments."',
-      '"Uses statistical tests to analyze data."',
+      '"Uses statistical tests to analyze data."'
     ],
     taskItem: 'D.8',
   },
@@ -472,7 +460,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as component analysis."',
       '"Is the same as parametric analysis."',
-      '"Identifies which components of a treatment are necessary."',
+      '"Identifies which components of a treatment are necessary."'
     ],
     taskItem: 'D.8',
   },  {
@@ -483,7 +471,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the most rigorous form of FBA."',
       '"Involves direct observation of the behavior."',
-      '"Is sufficient as the sole basis for a function-based intervention."',
+      '"Is sufficient as the sole basis for a function-based intervention."'
     ],
     taskItem: 'F.1',
   },
@@ -495,7 +483,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the most rigorous form of FBA."',
       '"Involves manipulation of environmental variables."',
-      '"Is sufficient to confirm a functional relationship."',
+      '"Is sufficient to confirm a functional relationship."'
     ],
     taskItem: 'F.5',
   },
@@ -507,7 +495,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as descriptive assessment."',
       '"Does not require manipulation of variables."',
-      '"Is less rigorous than descriptive assessment."',
+      '"Is less rigorous than descriptive assessment."'
     ],
     taskItem: 'F.6',
   },
@@ -519,7 +507,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Confirms that a stimulus will function as a reinforcer."',
       '"Is the same as a reinforcer assessment."',
-      '"Only uses caregiver report."',
+      '"Only uses caregiver report."'
     ],
     taskItem: 'F.4',
   },
@@ -531,7 +519,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as a function-based definition."',
       '"Describes the purpose or function of the behavior."',
-      '"Is always preferred over function-based definitions."',
+      '"Is always preferred over function-based definitions."'
     ],
     taskItem: 'C.1',
   },
@@ -543,7 +531,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as a topography-based definition."',
       '"Describes the physical form of the behavior."',
-      '"Can only be written after a functional analysis is complete."',
+      '"Can only be written after a functional analysis is complete."'
     ],
     taskItem: 'C.1',
   },
@@ -555,21 +543,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Involves manipulation of antecedents and consequences."',
       '"Is the same as a functional analysis."',
-      '"Only records the behavior, not antecedents and consequences."',
+      '"Only records the behavior, not antecedents and consequences."'
     ],
     taskItem: 'C.2',
-  },
-  {
-    id: 'rr-scatter',
-    domain: 'F', term: 'Scatter Plot Assessment',
-    correctDefinition: 'A descriptive assessment tool that displays the time of day and day of week when a behavior occurs, helping identify temporal patterns and potential antecedent conditions.',
-    distractors: ['A descriptive assessment tool that provides a narrative account of antecedents, behaviors, and consequences as they occur in chronological order.', 'A descriptive assessment tool that quantifies the frequency of specific antecedents and consequences associated with a target behavior.', 'A descriptive assessment tool that graphically displays the relationship between two different variables, not just time and day, which provides objective information about the current level and trend of the target behavior.'],
-    misconceptions: [
-      '"Is a form of continuous measurement."',
-      '"Identifies the function of a behavior."',
-      '"Is the same as ABC recording."',
-    ],
-    taskItem: 'F.5',
   },
   {
     id: 'rr-habituation',
@@ -579,7 +555,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as respondent extinction."',
       '"Is a form of operant extinction."',
-      '"Requires prior conditioning to occur."',
+      '"Requires prior conditioning to occur."'
     ],
     taskItem: 'B.3',
   },
@@ -591,7 +567,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as habituation."',
       '"Is a form of operant extinction."',
-      '"Involves the discontinuation of reinforcement."',
+      '"Involves the discontinuation of reinforcement."'
     ],
     taskItem: 'B.11',
   },
@@ -603,7 +579,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as response class."',
       '"Only includes stimuli that are physically similar."',
-      '"Is defined by the topography of the stimuli."',
+      '"Is defined by the topography of the stimuli."'
     ],
     taskItem: 'B.2',
   },
@@ -615,7 +591,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as stimulus class."',
       '"Requires all responses to have the same topography."',
-      '"Is defined by the setting in which responses occur."',
+      '"Is defined by the setting in which responses occur."'
     ],
     taskItem: 'B.1',
   },
@@ -627,7 +603,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as chaining."',
       '"Involves teaching a sequence of behaviors."',
-      '"Requires the terminal behavior to already be in the repertoire."',
+      '"Requires the terminal behavior to already be in the repertoire."'
     ],
     taskItem: 'G.11',
   },
@@ -639,7 +615,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as fading."',
       '"Is a consequence-based procedure."',
-      '"Should be maintained indefinitely to ensure correct responding."',
+      '"Should be maintained indefinitely to ensure correct responding."'
     ],
     taskItem: 'G.7',
   },
@@ -651,7 +627,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as prompting."',
       '"Involves adding prompts over time."',
-      '"Is used to reduce the frequency of a behavior."',
+      '"Is used to reduce the frequency of a behavior."'
     ],
     taskItem: 'G.8',
   },
@@ -663,7 +639,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as functional behavior assessment."',
       '"Identifies the function of a behavior."',
-      '"Is only used for academic tasks."',
+      '"Is only used for academic tasks."'
     ],
     taskItem: 'G.12',
   },
@@ -675,7 +651,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Refers to the use of applied statistical methods."',
       '"Means the procedures are practical and easy to implement."',
-      '"Is the same as the \'effective\' dimension."',
+      '"Is the same as the \'effective\' dimension."'
     ],
     taskItem: 'A.5',
   },
@@ -687,7 +663,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Means the study focuses on behavioral disorders."',
       '"Refers to the use of behavioral theory."',
-      '"Is the same as the \'analytic\' dimension."',
+      '"Is the same as the \'analytic\' dimension."'
     ],
     taskItem: 'A.5',
   },
@@ -699,7 +675,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Refers to the use of statistical analysis."',
       '"Means the practitioner analyzes the behavior\'s function."',
-      '"Is the same as the \'technological\' dimension."',
+      '"Is the same as the \'technological\' dimension."'
     ],
     taskItem: 'A.5',
   },
@@ -711,7 +687,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Requires the use of technology or devices."',
       '"Is the same as the \'analytic\' dimension."',
-      '"Means the procedures are evidence-based."',
+      '"Means the procedures are evidence-based."'
     ],
     taskItem: 'A.5',
   },
@@ -723,7 +699,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as the \'technological\' dimension."',
       '"Means the procedures are systematic and organized."',
-      '"Requires the use of a specific theoretical framework."',
+      '"Requires the use of a specific theoretical framework."'
     ],
     taskItem: 'A.5',
   },
@@ -735,7 +711,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as the \'analytic\' dimension."',
       '"Means the intervention produces a statistically significant change."',
-      '"Requires a control group to demonstrate effectiveness."',
+      '"Requires a control group to demonstrate effectiveness."'
     ],
     taskItem: 'A.5',
   },
@@ -747,7 +723,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as stimulus generalization."',
       '"Only refers to generalization across settings."',
-      '"Is the same as the \'effective\' dimension."',
+      '"Is the same as the \'effective\' dimension."'
     ],
     taskItem: 'A.5',
   },
@@ -759,7 +735,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Selectionism means behavior is chosen consciously by the individual."',
       '"Selectionism only applies to species-level evolution, not individual behavior."',
-      '"Selectionism is the same as determinism."',
+      '"Selectionism is the same as determinism."'
     ],
     taskItem: 'A.2',
   },
@@ -771,7 +747,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Determinism means the future is fixed and intervention is pointless."',
       '"Determinism denies the role of learning history."',
-      '"Determinism is the same as fatalism."',
+      '"Determinism is the same as fatalism."'
     ],
     taskItem: 'A.2',
   },
@@ -783,7 +759,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Empiricism means only quantitative data is acceptable."',
       '"Empiricism rejects all theoretical frameworks."',
-      '"Empiricism is the same as positivism."',
+      '"Empiricism is the same as positivism."'
     ],
     taskItem: 'A.2',
   },
@@ -795,7 +771,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Parsimony means ignoring biological factors entirely."',
       '"Parsimony requires using the fewest words, not the fewest assumptions."',
-      '"Parsimony is the same as reductionism."',
+      '"Parsimony is the same as reductionism."'
     ],
     taskItem: 'A.2',
   },
@@ -807,7 +783,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Pragmatism means anything goes as long as it works."',
       '"Pragmatism ignores ethical considerations."',
-      '"Pragmatism is the same as eclecticism."',
+      '"Pragmatism is the same as eclecticism."'
     ],
     taskItem: 'A.2',
   },
@@ -819,7 +795,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Radical behaviorism ignores thoughts and feelings entirely."',
       '"Radical behaviorism is the same as methodological behaviorism."',
-      '"Radical behaviorism denies that private events influence behavior."',
+      '"Radical behaviorism denies that private events influence behavior."'
     ],
     taskItem: 'A.3',
   },
@@ -831,7 +807,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Methodological behaviorism is the same as radical behaviorism."',
       '"Methodological behaviorism accepts private events as data if self-reported."',
-      '"Methodological behaviorism is the dominant philosophy in ABA."',
+      '"Methodological behaviorism is the dominant philosophy in ABA."'
     ],
     taskItem: 'A.3',
   },
@@ -843,7 +819,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Experimentation is the same as observation."',
       '"Experimentation requires large groups of participants to be valid."',
-      '"Any procedure that produces behavior change counts as an experiment."',
+      '"Any procedure that produces behavior change counts as an experiment."'
     ],
     taskItem: 'A.1',
   },
@@ -855,7 +831,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Philosophical doubt means a BCBA should never trust established research."',
       '"Philosophical doubt is the same as skepticism about the client\'s progress."',
-      '"Philosophical doubt requires abandoning an intervention whenever data are variable."',
+      '"Philosophical doubt requires abandoning an intervention whenever data are variable."'
     ],
     taskItem: 'A.2',
   },
@@ -867,7 +843,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Overt behavior is more important than covert behavior in ABA."',
       '"Overt behavior is the only legitimate subject matter of radical behaviorism."',
-      '"Overt behavior must be high-frequency to be measurable."',
+      '"Overt behavior must be high-frequency to be measurable."'
     ],
     taskItem: 'A.3',
   },
@@ -879,7 +855,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Covert behavior is the same as a mentalistic construct."',
       '"Covert behavior is excluded from the subject matter of radical behaviorism."',
-      '"Covert behavior causes overt behavior in the same way that thoughts cause actions."',
+      '"Covert behavior causes overt behavior in the same way that thoughts cause actions."'
     ],
     taskItem: 'A.3',
   },
@@ -891,7 +867,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Behaviorism denies that thoughts and feelings exist."',
       '"Behaviorism is the same as applied behavior analysis."',
-      '"Behaviorism holds that behavior is random and unpredictable."',
+      '"Behaviorism holds that behavior is random and unpredictable."'
     ],
     taskItem: 'A.4',
   },
@@ -902,30 +878,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A philosophical framework for understanding behavior that relies on logical reasoning and theoretical inference rather than direct observation or experimental manipulation of environmental variables.',
       'A set of professional standards and ethical guidelines that govern the conduct of practitioners in a given field, ensuring that interventions are evidence-based and socially valid.',
-      'A method of knowledge acquisition that relies primarily on expert consensus, historical precedent, and peer review rather than direct empirical observation and experimental control.',
+      'A method of knowledge acquisition that relies primarily on expert consensus, historical precedent, and peer review rather than direct empirical observation and experimental control.'
     ],
     misconceptions: [
       '"Science is only about collecting data." Science also requires systematic analysis, prediction, and control.',
       '"Science requires statistics." Behavior analysis uses visual analysis, not inferential statistics.',
-      '"Science is the same as technology." Science generates knowledge; technology applies it.',
-    ],
-    domain: 'A',
-    taskItem: 'A.1',
-    category: 'Philosophical Foundations',
-  },
-  {
-    id: 'rr-experiment-aba',
-    term: 'Experiment',
-    correctDefinition: 'A procedure in which a researcher or practitioner manipulates one or more independent variables under controlled conditions to determine their effect on a dependent variable, thereby establishing a functional relationship.',
-    distractors: [
-      'A procedure in which a researcher systematically observes and records naturally occurring behavior without manipulating any variables, to identify correlations between environmental events and behavior.',
-      'A procedure in which a practitioner selects and implements an evidence-based intervention based on a review of the published literature and client-specific assessment data.',
-      'A procedure in which a researcher compares the behavior of two or more groups under different conditions using statistical analysis to determine whether group differences are significant.',
-    ],
-    misconceptions: [
-      '"An experiment is any study that collects data." An experiment requires active manipulation of an IV.',
-      '"Descriptive studies are experiments." Descriptive studies observe without manipulating variables.',
-      '"An experiment proves causation with one replication." Single-case designs require multiple replications.',
+      '"Science is the same as technology." Science generates knowledge; technology applies it.'
     ],
     domain: 'A',
     taskItem: 'A.1',
@@ -938,12 +896,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A statistical association between two variables in which changes in one variable are correlated with changes in the other, without requiring experimental manipulation or replication of the effect.',
       'A theoretical relationship between an organism\'s biological state and its behavioral output, inferred from patterns of responding across multiple sessions and settings.',
-      'A relationship between a behavior and its function (e.g., escape, attention, access to tangibles) as identified through functional behavior assessment procedures.',
+      'A relationship between a behavior and its function (e.g., escape, attention, access to tangibles) as identified through functional behavior assessment procedures.'
     ],
     misconceptions: [
       '"Correlation equals a functional relation." A functional relation requires experimental manipulation, not just correlation.',
       '"One demonstration is sufficient." A functional relation requires replication to rule out coincidence.',
-      '"Functional relation means the function of behavior." In experimental design, it means IV-DV causation.',
+      '"Functional relation means the function of behavior." In experimental design, it means IV-DV causation.'
     ],
     domain: 'A',
     taskItem: 'A.1',
@@ -956,12 +914,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A circular, pseudo-explanation that names a behavior and then uses that name as the cause of the behavior, creating the illusion of explanation without identifying any actual environmental variable.',
       'A theoretical model that proposes a mechanism for behavior change based on observable physiological processes that can be measured through neuroimaging or biomarker assessment.',
-      'A conceptual framework derived from the principles of behavior analysis that describes the relationship between antecedents, behaviors, and consequences in a given context.',
+      'A conceptual framework derived from the principles of behavior analysis that describes the relationship between antecedents, behaviors, and consequences in a given context.'
     ],
     misconceptions: [
       '"Hypothetical constructs are the same as explanatory fictions." Hypothetical constructs are unobservable entities; explanatory fictions are circular naming fallacies.',
       '"Hypothetical constructs are useful in ABA." Behavior analysts reject them as they do not identify manipulable environmental variables.',
-      '"Mental states are hypothetical constructs." Private events (thoughts, feelings) are accepted as real behaviors in radical behaviorism.',
+      '"Mental states are hypothetical constructs." Private events (thoughts, feelings) are accepted as real behaviors in radical behaviorism.'
     ],
     domain: 'A',
     taskItem: 'A.2',
@@ -974,12 +932,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An invented, unobservable entity or process used to explain behavior, which cannot be directly measured or verified; rejected by behavior analysts because it does not identify actual environmental causes.',
       'A theoretical explanation that invokes biological or neurological processes to account for behavioral patterns, which may be valid but is not accessible to direct behavioral intervention.',
-      'A verbal statement that describes the function of a behavior in terms of its reinforcement history without specifying the current environmental variables that are maintaining it.',
+      'A verbal statement that describes the function of a behavior in terms of its reinforcement history without specifying the current environmental variables that are maintaining it.'
     ],
     misconceptions: [
       '"Explanatory fictions are the same as hypothetical constructs." Explanatory fictions are circular naming fallacies; hypothetical constructs are unobservable entities.',
       '"All mentalistic language is an explanatory fiction." Only circular, naming-as-cause explanations qualify.',
-      '"Explanatory fictions are harmless." They stop the search for real environmental causes.',
+      '"Explanatory fictions are harmless." They stop the search for real environmental causes.'
     ],
     domain: 'A',
     taskItem: 'A.2',
@@ -992,7 +950,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"EAB is the same as ABA."',
       '"EAB findings from animal research do not apply to human behavior."',
-      '"EAB is only relevant to basic researchers, not to practicing BCBAs."',
+      '"EAB is only relevant to basic researchers, not to practicing BCBAs."'
     ],
     domain: 'A', category: 'Levels of Behavioral Science',
     taskItem: 'A.4',
@@ -1005,7 +963,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Respondent conditioning requires voluntary behavior."',
       '"Respondent conditioning is the same as operant conditioning."',
-      '"Respondent conditioning is controlled by consequences."',
+      '"Respondent conditioning is controlled by consequences."'
     ],
     taskItem: 'B.3',
   },
@@ -1017,7 +975,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Automatic reinforcement cannot be identified through functional analysis."',
       '"Behavior maintained by automatic reinforcement always decreases during extinction."',
-      '"Automatic reinforcement is confirmed only when the alone condition shows zero behavior."',
+      '"Automatic reinforcement is confirmed only when the alone condition shows zero behavior."'
     ],
     taskItem: 'B.6',
   },
@@ -1029,7 +987,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"FR schedules produce the highest and most consistent response rates."',
       '"FR schedules do not produce post-reinforcement pauses."',
-      '"FR-1 is the same as continuous reinforcement."',
+      '"FR-1 is the same as continuous reinforcement."'
     ],
     taskItem: 'B.9',
   },
@@ -1041,7 +999,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"VR schedules produce post-reinforcement pauses like FR schedules."',
       '"VR schedules produce lower response rates than FR schedules."',
-      '"VR schedules are the same as intermittent reinforcement."',
+      '"VR schedules are the same as intermittent reinforcement."'
     ],
     taskItem: 'B.9',
   },
@@ -1053,7 +1011,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"FI schedules produce steady, consistent response rates throughout the interval."',
       '"FI schedules do not produce scallop patterns."',
-      '"FI schedules are the same as DRL schedules."',
+      '"FI schedules are the same as DRL schedules."'
     ],
     taskItem: 'B.9',
   },
@@ -1065,7 +1023,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"VI schedules produce high response rates similar to VR schedules."',
       '"VI schedules produce post-reinforcement pauses."',
-      '"VI schedules are the same as FI schedules."',
+      '"VI schedules are the same as FI schedules."'
     ],
     taskItem: 'B.9',
   },
@@ -1077,7 +1035,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Concurrent schedules are the same as multiple schedules."',
       '"Concurrent schedules always produce equal response allocation."',
-      '"Concurrent schedules require a changeover delay to function."',
+      '"Concurrent schedules require a changeover delay to function."'
     ],
     taskItem: 'B.10',
   },
@@ -1089,7 +1047,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Multiple schedules are the same as concurrent schedules."',
       '"Multiple schedules do not involve discriminative stimuli."',
-      '"Multiple schedules always produce behavioral contrast."',
+      '"Multiple schedules always produce behavioral contrast."'
     ],
     taskItem: 'B.10',
   },
@@ -1101,7 +1059,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Mixed schedules are the same as multiple schedules."',
       '"Mixed schedules always produce higher response rates than multiple schedules."',
-      '"Mixed schedules require a changeover response."',
+      '"Mixed schedules require a changeover response."'
     ],
     taskItem: 'B.10',
   },
@@ -1113,7 +1071,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Chained schedules are the same as mixed schedules."',
       '"Chained schedules deliver reinforcement after each component."',
-      '"Chained schedules do not involve conditioned reinforcement."',
+      '"Chained schedules do not involve conditioned reinforcement."'
     ],
     taskItem: 'B.10',
   },
@@ -1125,7 +1083,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Behavioral contrast only occurs in extinction conditions."',
       '"Behavioral contrast is the same as resurgence."',
-      '"Behavioral contrast requires concurrent schedules."',
+      '"Behavioral contrast requires concurrent schedules."'
     ],
     taskItem: 'B.9',
   },
@@ -1137,7 +1095,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"The matching law only applies to ratio schedules."',
       '"The matching law predicts that organisms always maximize total reinforcement."',
-      '"The matching law is the same as the law of effect."',
+      '"The matching law is the same as the law of effect."'
     ],
     taskItem: 'B.23',
   },
@@ -1149,7 +1107,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Rule-governed behavior is always more effective than contingency-shaped behavior."',
       '"Rule-governed behavior does not involve reinforcement."',
-      '"Rule-governed behavior is the same as instructional control."',
+      '"Rule-governed behavior is the same as instructional control."'
     ],
     taskItem: 'B.18',
   },
@@ -1161,7 +1119,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Contingency-shaped behavior is always more flexible than rule-governed behavior."',
       '"Contingency-shaped behavior cannot be influenced by rules."',
-      '"Contingency-shaped behavior is the same as automatic reinforcement."',
+      '"Contingency-shaped behavior is the same as automatic reinforcement."'
     ],
     taskItem: 'B.18',
   },
@@ -1173,7 +1131,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Echoic behavior is the same as imitation."',
       '"Echoic behavior is maintained by the specific reinforcer named in the response."',
-      '"Echoic behavior requires formal similarity between stimulus and response modality."',
+      '"Echoic behavior requires formal similarity between stimulus and response modality."'
     ],
     taskItem: 'B.19',
   },
@@ -1185,7 +1143,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Textual behavior is the same as reading comprehension."',
       '"Textual behavior requires formal similarity between stimulus and response."',
-      '"Textual behavior is a type of echoic."',
+      '"Textual behavior is a type of echoic."'
     ],
     taskItem: 'B.19',
   },
@@ -1197,7 +1155,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Transcription is the same as textual behavior."',
       '"Transcription requires formal similarity between stimulus and response."',
-      '"Transcription is a type of intraverbal."',
+      '"Transcription is a type of intraverbal."'
     ],
     taskItem: 'B.19',
   },
@@ -1209,7 +1167,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Autoclitic behavior is the same as intraverbal behavior."',
       '"Autoclitic behavior is always grammatical in nature."',
-      '"Autoclitic behavior is independent of other verbal operants."',
+      '"Autoclitic behavior is independent of other verbal operants."'
     ],
     taskItem: 'B.19',
   },
@@ -1221,32 +1179,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Listener responding is the same as intraverbal behavior."',
       '"Listener responding requires the listener to produce verbal behavior."',
-      '"Listener responding is a type of tact."',
+      '"Listener responding is a type of tact."'
     ],
     taskItem: 'B.19',
-  },
-  {
-    id: 'rr-behavioral-momentum',
-    domain: 'B', term: 'Behavioral Momentum',
-    correctDefinition: 'The tendency for behavior to persist following a change in reinforcement conditions; higher rates of reinforcement in a stimulus context produce greater resistance to disruption (B.22). Analogous to physical momentum: a richer reinforcement history = greater resistance to change.',
-    distractors: ['The basic science of behavior that uses applied field methods with human participants in natural settings to identify the environmental variables that control socially significant behaviors and develop effective interventions based on those findings.', 'The applied science of behavior that uses controlled laboratory methods with nonhuman animals to identify the environmental variables that control behavior and develop principles that can be applied to improve human behavior in natural settings.', 'A set of emergent, untrained stimulus relations that arise when an organism is trained on conditional discriminations, including reflexivity, symmetry, and transitivity, and that demonstrate the formation of equivalence classes among stimuli.'],
-    misconceptions: [
-      '"Behavioral momentum is the same as behavioral contrast."',
-      '"Behavioral momentum only applies to high-rate behaviors."',
-      '"Behavioral momentum is increased by intermittent reinforcement schedules."',
-    ],
-    taskItem: 'B.22',
-  },  {
-    id: 'rr-observational-learning',
-    domain: 'B', term: 'Observational Learning',
-    correctDefinition: 'A process in which an observer\'s behavior changes as a result of observing the behavior and consequences of a model, without direct reinforcement of the observer\'s behavior.',
-    distractors: ['A form of learning in which behavior is shaped by its own consequences, as defined by its observable and measurable physical dimensions within the natural environment of the individual', 'A form of learning that requires direct reinforcement of the observer\'s behavior, as defined by its observable and measurable physical dimensions within the natural environment of the individual', 'A form of learning in which a neutral stimulus acquires eliciting function through pairing, which exerts control over behavior through its temporal and contingent relationship with the organism\'s reinforcement history'],
-    misconceptions: [
-      '"Observational learning is the same as imitation."',
-      '"Observational learning requires the observer to be reinforced directly."',
-      '"Observational learning cannot be explained by behavioral principles."',
-    ],
-    taskItem: 'B.24',
   },
   {
     id: 'rr-operational-definition',
@@ -1256,7 +1191,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"An operational definition must include the function of the behavior."',
       '"An operational definition is the same as a function-based definition."',
-      '"An operational definition can include mentalistic language if the behavior is well-known."',
+      '"An operational definition can include mentalistic language if the behavior is well-known."'
     ],
     taskItem: 'C.1',
   },
@@ -1268,7 +1203,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Direct measures are always more accurate than indirect measures."',
       '"Direct measures include permanent product recording."',
-      '"Direct measures require continuous observation."',
+      '"Direct measures require continuous observation."'
     ],
     taskItem: 'C.2',
   },
@@ -1280,7 +1215,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Indirect measures are always less valid than direct measures."',
       '"Indirect measures are the same as discontinuous measurement."',
-      '"Indirect measures cannot be used in functional behavior assessments."',
+      '"Indirect measures cannot be used in functional behavior assessments."'
     ],
     taskItem: 'C.2',
   },
@@ -1292,7 +1227,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Permanent product recording is a direct measure of behavior."',
       '"Permanent product recording requires continuous observation."',
-      '"Permanent product recording cannot be used for academic behaviors."',
+      '"Permanent product recording cannot be used for academic behaviors."'
     ],
     taskItem: 'C.2',
   },
@@ -1304,7 +1239,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Continuous measurement is always more accurate than discontinuous measurement."',
       '"Continuous measurement is the same as whole-interval recording."',
-      '"Continuous measurement is only feasible for low-rate behaviors."',
+      '"Continuous measurement is only feasible for low-rate behaviors."'
     ],
     taskItem: 'C.5',
   },
@@ -1316,7 +1251,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Count is the same as rate."',
       '"Count is useful only when observation time is held constant."',
-      '"Count cannot be used for behaviors with variable duration."',
+      '"Count cannot be used for behaviors with variable duration."'
     ],
     taskItem: 'C.3',
   },
@@ -1328,7 +1263,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Celeration is the same as the slope on an equal-interval graph."',
       '"Celeration measures the absolute change in frequency, not the proportional change."',
-      '"Celeration can only be calculated on Standard Celeration Charts."',
+      '"Celeration can only be calculated on Standard Celeration Charts."'
     ],
     taskItem: 'C.10',
   },
@@ -1340,7 +1275,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Internal validity is the same as external validity."',
       '"Internal validity is established by using large sample sizes."',
-      '"Internal validity is the same as treatment integrity."',
+      '"Internal validity is the same as treatment integrity."'
     ],
     taskItem: 'D.2',
   },
@@ -1352,7 +1287,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"External validity is the same as internal validity."',
       '"External validity is established through replication within a single study."',
-      '"External validity is more important than internal validity in single-case research."',
+      '"External validity is more important than internal validity in single-case research."'
     ],
     taskItem: 'D.2',
   },
@@ -1364,7 +1299,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"History threats are the same as maturation threats."',
       '"History threats only occur in long-duration studies."',
-      '"History threats are controlled by using multiple baselines."',
+      '"History threats are controlled by using multiple baselines."'
     ],
     taskItem: 'D.3',
   },
@@ -1376,7 +1311,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Maturation threats only apply to studies with child participants."',
       '"Maturation threats are the same as history threats."',
-      '"Maturation threats are eliminated by using reversal designs."',
+      '"Maturation threats are eliminated by using reversal designs."'
     ],
     taskItem: 'D.3',
   },
@@ -1387,12 +1322,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A pattern of behavior that shows a consistent upward or downward trend over time, indicating that the behavior is changing systematically in response to an identified or unidentified variable.',
       'A pattern of behavior that shows high variability across sessions, making it difficult to predict future performance or to identify the effect of an independent variable.',
-      'A pattern of behavior that is maintained by a continuous reinforcement schedule, in which every instance of the behavior is followed by the reinforcing consequence.',
+      'A pattern of behavior that is maintained by a continuous reinforcement schedule, in which every instance of the behavior is followed by the reinforcing consequence.'
     ],
     misconceptions: [
       '"Steady state means the behavior never changes." It means variability is low enough to allow comparison.',
       '"Steady state is required only in baseline." It is also preferred before each phase change.',
-      '"Steady state means zero variability." Some variability is acceptable; the key is predictability.',
+      '"Steady state means zero variability." Some variability is acceptable; the key is predictability.'
     ],
     domain: 'D',
     taskItem: 'D.3',
@@ -1405,12 +1340,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An experimental design in which a single baseline phase is followed by a single treatment phase, providing a preliminary demonstration of treatment effects without replication of experimental control.',
       'An experimental design in which the same treatment is applied sequentially across multiple behaviors, participants, or settings, with each tier serving as a control for the others.',
-      'An experimental design in which the criterion for reinforcement is systematically changed across phases, demonstrating that behavior tracks the changing criterion and establishing experimental control.',
+      'An experimental design in which the criterion for reinforcement is systematically changed across phases, demonstrating that behavior tracks the changing criterion and establishing experimental control.'
     ],
     misconceptions: [
       '"A-B-A-B ends in baseline." It ends in treatment (B) for ethical reasons.',
       '"One replication is sufficient." Two replications (A-B-A-B) are needed for experimental control.',
-      '"A-B-A-B is the same as a multiple baseline." Multiple baseline does not require withdrawal.',
+      '"A-B-A-B is the same as a multiple baseline." Multiple baseline does not require withdrawal.'
     ],
     domain: 'D',
     taskItem: 'D.5',
@@ -1423,12 +1358,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A condition in which a behavior returns to baseline levels when the intervention is withdrawn, demonstrating that the independent variable was responsible for the behavior change.',
       'A condition in which a behavior generalizes to new settings, stimuli, or response forms beyond those directly trained, making it difficult to isolate the effect of the independent variable.',
-      'A condition in which a behavior is maintained at treatment levels after the intervention is faded, indicating that natural contingencies have taken over maintenance of the behavior.',
+      'A condition in which a behavior is maintained at treatment levels after the intervention is faded, indicating that natural contingencies have taken over maintenance of the behavior.'
     ],
     misconceptions: [
       '"Irreversibility means the intervention failed." It means the behavior change persisted  --  often a good outcome.',
       '"Irreversibility is always a problem." It is only a problem for reversal designs; it is desirable for skill acquisition.',
-      '"Irreversibility means the behavior cannot change." It means it does not return to baseline when IV is withdrawn.',
+      '"Irreversibility means the behavior cannot change." It means it does not return to baseline when IV is withdrawn.'
     ],
     domain: 'D',
     taskItem: 'D.5',
@@ -1441,12 +1376,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The degree to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, family, and other stakeholders; assessed through consumer satisfaction surveys.',
       'The degree to which a measurement procedure consistently produces the same results when applied to the same behavior under the same conditions by the same or different observers.',
-      'The degree to which the effects of an intervention generalize to settings, stimuli, and response forms beyond those directly trained, indicating that the behavior change is broadly applicable.',
+      'The degree to which the effects of an intervention generalize to settings, stimuli, and response forms beyond those directly trained, indicating that the behavior change is broadly applicable.'
     ],
     misconceptions: [
       '"Treatment integrity is the same as social validity." Social validity concerns acceptability; treatment integrity concerns implementation accuracy.',
       '"Treatment integrity is only relevant for research." It is equally important in clinical practice.',
-      '"High treatment integrity guarantees effectiveness." It ensures the IV was delivered as intended, but does not guarantee the IV works.',
+      '"High treatment integrity guarantees effectiveness." It ensures the IV was delivered as intended, but does not guarantee the IV works.'
     ],
     domain: 'D',
     taskItem: 'D.2',
@@ -1459,12 +1394,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A false negative conclusion in which a researcher incorrectly concludes that the independent variable had no effect when it actually did; related to insufficient statistical power or small sample size.',
       'A systematic error in measurement that causes observed values to consistently overestimate or underestimate the true value, threatening the internal validity of the study.',
-      'A logical error in which a researcher incorrectly attributes a behavior change to the independent variable when the change was actually caused by a confounding variable.',
+      'A logical error in which a researcher incorrectly attributes a behavior change to the independent variable when the change was actually caused by a confounding variable.'
     ],
     misconceptions: [
       '"Type I and Type II errors are the same." Type I = false positive; Type II = false negative.',
       '"Type I error means the study was poorly designed." It can occur even with good design due to chance.',
-      '"Behavior analysts use alpha levels." Behavior analysts use visual analysis, not inferential statistics with alpha levels.',
+      '"Behavior analysts use alpha levels." Behavior analysts use visual analysis, not inferential statistics with alpha levels.'
     ],
     domain: 'D',
     taskItem: 'D.7',
@@ -1477,12 +1412,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The degree to which the independent variable is implemented as planned and described; essential for valid conclusions about treatment effectiveness and for replication of the intervention.',
       'The degree to which the effects of an intervention generalize to settings, stimuli, and response forms beyond those directly trained, indicating that the behavior change is broadly applicable.',
-      'The degree to which a measurement procedure consistently produces the same results when applied to the same behavior under the same conditions, ensuring the reliability of the data.',
+      'The degree to which a measurement procedure consistently produces the same results when applied to the same behavior under the same conditions, ensuring the reliability of the data.'
     ],
     misconceptions: [
       '"Social validity is the same as treatment integrity." Treatment integrity concerns implementation accuracy; social validity concerns stakeholder acceptability.',
       '"Social validity is only assessed after treatment." It should be assessed for goals, procedures, AND outcomes.',
-      '"Social validity is subjective and not scientific." It is a systematic evaluation using defined methods.',
+      '"Social validity is subjective and not scientific." It is a systematic evaluation using defined methods.'
     ],
     domain: 'D',
     taskItem: 'D.1',
@@ -1496,7 +1431,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Informed consent is only required for punishment procedures."',
       '"Informed consent is a one-time event at the start of services."',
-      '"Informed consent is the same as assent."',
+      '"Informed consent is the same as assent."'
     ],
     taskItem: 'E.4',
   },
@@ -1508,7 +1443,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Multiple relationships are always prohibited under the Ethics Code."',
       '"Multiple relationships only occur when the BCBA has a romantic relationship with a client."',
-      '"Multiple relationships are acceptable if both parties agree in writing."',
+      '"Multiple relationships are acceptable if both parties agree in writing."'
     ],
     taskItem: 'E.7',
   },
@@ -1520,7 +1455,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Cultural humility is a fixed skill that is achieved through training."',
       '"Cultural humility is the same as cultural competence."',
-      '"Cultural humility only applies to clients from non-Western backgrounds."',
+      '"Cultural humility only applies to clients from non-Western backgrounds."'
     ],
     taskItem: 'E.9',
   },
@@ -1532,7 +1467,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Cultural variables only affect the selection of reinforcers, not assessment procedures."',
       '"Cultural variables are only relevant for clients from non-English-speaking families."',
-      '"Cultural variables are addressed by translating assessment tools into the client\'s language."',
+      '"Cultural variables are addressed by translating assessment tools into the client\'s language."'
     ],
     taskItem: 'F.2',
   },
@@ -1543,33 +1478,15 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A procedure in which a model demonstrates a target behavior and the learner is reinforced for producing a topographically similar response, used to establish new behaviors in the learner\'s repertoire.',
       'A behavioral repertoire in which an organism produces the same behavior across multiple settings, stimuli, and response forms without direct training in each new context.',
-      'A procedure in which video recordings of a model performing target behaviors are used to teach new skills, providing a consistent and replicable model for the learner.',
+      'A procedure in which video recordings of a model performing target behaviors are used to teach new skills, providing a consistent and replicable model for the learner.'
     ],
     misconceptions: [
       '"Generalized imitation requires reinforcement for each new imitated behavior." It is maintained by intermittent reinforcement of some imitative responses.',
       '"Generalized imitation is the same as modeling." Modeling is the procedure; generalized imitation is the resulting repertoire.',
-      '"Generalized imitation only applies to motor behaviors." It applies to any modeled behavior including verbal behavior.',
+      '"Generalized imitation only applies to motor behaviors." It applies to any modeled behavior including verbal behavior.'
     ],
     domain: 'F',
     taskItem: 'F.7',
-    category: 'Behavior Assessment',
-  },
-  {
-    id: 'rr-behavior-chain-types',
-    term: 'Total-Task Chaining',
-    correctDefinition: 'A chaining procedure in which the learner is prompted through all steps of the chain in every training trial from the first session; the learner attempts every step on every trial, with prompts provided as needed.',
-    distractors: [
-      'A chaining procedure in which training begins with the first step of the chain; subsequent steps are added one at a time as each preceding step is mastered to criterion.',
-      'A chaining procedure in which training begins with the last step of the chain; preceding steps are added one at a time as each subsequent step is mastered to criterion.',
-      'A chaining procedure in which the chain is interrupted at a specific step and the learner is prompted to perform the next step, used to teach chains that are already partially in the learner\'s repertoire.',
-    ],
-    misconceptions: [
-      '"Total-task chaining is only for short chains." It is appropriate for chains of any length when the learner has prerequisite skills.',
-      '"Total-task chaining is the same as forward chaining." Forward chaining teaches one step at a time starting from step 1.',
-      '"Total-task chaining requires mastery of each step before proceeding." All steps are practiced every session regardless of mastery.',
-    ],
-    domain: 'F',
-    taskItem: 'F.4',
     category: 'Behavior Assessment',
   },
   {
@@ -1579,33 +1496,15 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An intervention in which a competing behavior that is incompatible with the problem behavior is reinforced on a dense schedule, while the problem behavior is placed on extinction.',
       'An intervention in which the antecedent conditions that occasion the problem behavior are modified to reduce the establishing operation for the maintaining reinforcer.',
-      'An intervention in which the problem behavior is reinforced on a noncontingent schedule to reduce the motivating operation for the problem behavior and decrease its rate.',
+      'An intervention in which the problem behavior is reinforced on a noncontingent schedule to reduce the motivating operation for the problem behavior and decrease its rate.'
     ],
     misconceptions: [
       '"FCT uses any communicative response as the replacement behavior." The replacement must be functionally equivalent  --  accessing the same reinforcer.',
       '"FCT does not require extinction." FCT requires extinction of the problem behavior to be effective.',
-      '"FCT is only for escape-maintained behavior." FCT is applicable to any function including attention, tangibles, and automatic reinforcement.',
+      '"FCT is only for escape-maintained behavior." FCT is applicable to any function including attention, tangibles, and automatic reinforcement.'
     ],
     domain: 'F',
     taskItem: 'F.8',
-    category: 'Behavior Assessment',
-  },
-  {
-    id: 'rr-high-p-sequence',
-    term: 'High-Probability Request Sequence',
-    correctDefinition: 'An antecedent intervention in which a series of high-probability (high-p) requests are presented before a low-probability (low-p) request to increase compliance with the low-p request; the behavioral momentum generated by the high-p sequence carries over to the low-p request.',
-    distractors: [
-      'An antecedent intervention in which the difficulty of task demands is gradually increased over time, starting with tasks the learner can perform independently and progressing toward the target task.',
-      'A consequence-based intervention in which reinforcement is delivered on a dense schedule following any compliance with requests, regardless of whether the request was high- or low-probability.',
-      'An antecedent intervention in which the learner is given a choice among several low-probability tasks to increase motivation and reduce escape-maintained problem behavior.',
-    ],
-    misconceptions: [
-      '"High-p requests must be unrelated to the low-p request." High-p requests can be related or unrelated to the low-p request.',
-      '"High-p sequence eliminates the need for reinforcement." Reinforcement of the low-p response is still required.',
-      '"High-p sequence is the same as errorless learning." Errorless learning uses prompts; high-p uses behavioral momentum.',
-    ],
-    domain: 'F',
-    taskItem: 'F.6',
     category: 'Behavior Assessment',
   },
   {
@@ -1616,7 +1515,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Token economies are the same as response cost systems."',
       '"Token economies require tokens to be tangible objects."',
-      '"Token economies are only effective for children with autism."',
+      '"Token economies are only effective for children with autism."'
     ],
     taskItem: 'G.4',
   },
@@ -1628,7 +1527,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Errorless learning is the same as most-to-least prompting."',
       '"Errorless learning prevents all errors from occurring."',
-      '"Errorless learning is less effective than trial-and-error learning for all learners."',
+      '"Errorless learning is less effective than trial-and-error learning for all learners."'
     ],
     taskItem: 'G.7',
   },
@@ -1640,7 +1539,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Prompt delay is the same as stimulus fading."',
       '"Prompt delay always uses a fixed time interval."',
-      '"Prompt delay is only used with verbal prompts."',
+      '"Prompt delay is only used with verbal prompts."'
     ],
     taskItem: 'G.8',
   },
@@ -1652,7 +1551,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Schedule thinning is the same as extinction."',
       '"Schedule thinning should always move from CRF to a fixed ratio schedule."',
-      '"Schedule thinning is only used during the maintenance phase."',
+      '"Schedule thinning is only used during the maintenance phase."'
     ],
     taskItem: 'G.16',
   },
@@ -1664,7 +1563,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Group contingencies are the same as token economies."',
       '"Group contingencies always involve interdependent arrangements."',
-      '"Group contingencies are only appropriate for classroom settings."',
+      '"Group contingencies are only appropriate for classroom settings."'
     ],
     taskItem: 'G.14',
   },
@@ -1676,25 +1575,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Response cost is the same as time-out."',
       '"Response cost is a form of positive punishment."',
-      '"Response cost can only be used within a token economy."',
+      '"Response cost can only be used within a token economy."'
     ],
     taskItem: 'G.17',
-  },
-  {
-    id: 'rr-restitution-overcorrection',
-    term: 'Restitution Overcorrection',
-    taskItem: 'G.14',
-    correctDefinition: 'A form of overcorrection in which the individual is required to restore the environment to a state that is better than it was before the problem behavior occurred; the individual must correct the damage caused by the behavior and then improve the environment beyond its original state.',
-    distractors: [
-      'A form of overcorrection in which the individual repeatedly practices the correct form of the behavior in an exaggerated manner contingent on the problem behavior.',
-      'A procedure in which access to preferred activities is removed contingent on problem behavior, requiring the individual to earn back the lost privilege.',
-      'A punishment procedure in which an aversive stimulus is presented immediately following the problem behavior to decrease its future occurrence.',
-    ],
-    misconceptions: [
-      '"Restitution and positive practice overcorrection are interchangeable terms for the same procedure."  --  They are distinct: restitution requires environmental restoration; positive practice requires repeated correct responding.',
-      '"Restitution overcorrection is only appropriate for destructive behaviors."  --  It applies to any behavior that disrupts or damages the environment.',
-      '"Restitution overcorrection is a positive reinforcement procedure."  --  It is a punishment procedure contingent on problem behavior.',
-    ],
   },
   {
     id: 'rr-positive-practice-overcorrection',
@@ -1704,12 +1587,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A form of overcorrection in which the individual must restore the environment to a state better than before the problem behavior occurred.',
       'A procedure in which a preferred item is removed contingent on problem behavior and must be earned back through appropriate behavior.',
-      'A differential reinforcement procedure in which only the correct topography of a behavior is reinforced while all other topographies are placed on extinction.',
+      'A differential reinforcement procedure in which only the correct topography of a behavior is reinforced while all other topographies are placed on extinction.'
     ],
     misconceptions: [
       '"Positive practice overcorrection involves reinforcing correct behavior."  --  It is a punishment procedure applied contingent on problem behavior, not a reinforcement procedure.',
       '"Positive practice and restitution overcorrection are the same procedure."  --  Restitution requires environmental restoration; positive practice requires repeated correct responding.',
-      '"Positive practice overcorrection is only used for academic errors."  --  It can be applied to any behavior where a correct alternative topography can be practiced.',
+      '"Positive practice overcorrection is only used for academic errors."  --  It can be applied to any behavior where a correct alternative topography can be practiced.'
     ],
   },
   {
@@ -1720,21 +1603,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Time-out is always exclusionary (removing the person from the room)."',
       '"Time-out is a form of negative reinforcement."',
-      '"Time-out is effective regardless of whether the environment contains reinforcement."',
+      '"Time-out is effective regardless of whether the environment contains reinforcement."'
     ],
     taskItem: 'G.17',
-  },
-  {
-    id: 'rr-observable-measurable-goal',
-    domain: 'H', term: 'Observable and Measurable Goal',
-    correctDefinition: 'An intervention goal written in terms of specific, directly observable behaviors with defined criteria for mastery, enabling objective measurement of progress.',
-    distractors: ['An intervention goal written in terms of the underlying cognitive or emotional state the client should achieve, allowing for subjective interpretation.', 'An intervention goal written in terms of the specific intervention procedure to be used rather than the behavior outcome, making objective measurement difficult.', 'An intervention goal written in terms of the reinforcer to be used to motivate the client toward the outcome, not the behavior itself.'],
-    misconceptions: [
-      '"Observable goals are the same as SMART goals."',
-      '"Observable goals must include a specific time frame to be valid."',
-      '"Observable goals do not need to specify the conditions under which behavior will occur."',
-    ],
-    taskItem: 'H.1',
   },
   {
     id: 'rr-socially-valid-goal',
@@ -1744,21 +1615,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Social validity is only assessed after intervention is complete."',
       '"Socially valid goals are always the same as the goals identified in the IEP."',
-      '"Social validity is the same as treatment acceptability."',
+      '"Social validity is the same as treatment acceptability."'
     ],
     taskItem: 'H.3',
-  },
-  {
-    id: 'rr-treatment-integrity-def',
-    domain: 'H', term: 'Treatment Integrity  -  Definition',
-    correctDefinition: 'The degree to which an intervention is implemented as designed and specified in the behavior intervention plan; also called procedural fidelity (H.6). Measured by comparing actual implementation steps to the written protocol step by step.',
-    distractors: ['A set of emergent, trained stimulus relations that arise when an organism is taught to respond to one stimulus in the presence of another, including reflexivity, symmetry, and transitivity as the three defining properties of the relation.', 'The scientific attitude of treating all currently accepted knowledge as tentative and subject to revision based on new empirical evidence, recognizing that scientific understanding evolves through ongoing observation and experimentation.', 'The ability to identify the functional relationships between environmental variables and behavior through systematic observation, representing the second goal of a natural science that builds on accurate description of behavioral events.'],
-    misconceptions: [
-      '"Treatment integrity is the same as IOA."',
-      '"Treatment integrity only needs to be monitored during the initial phase of intervention."',
-      '"Treatment integrity is the same as social validity."',
-    ],
-    taskItem: 'H.6',
   },
   {
     id: 'rr-data-based-decision',
@@ -1768,21 +1627,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Data-based decisions require a minimum of 10 data points before any change is made."',
       '"Data-based decision making replaces clinical judgment entirely."',
-      '"Data-based decisions are only made at scheduled review meetings."',
+      '"Data-based decisions are only made at scheduled review meetings."'
     ],
     taskItem: 'H.7',
-  },
-  {
-    id: 'rr-unwanted-effects',
-    domain: 'H', term: 'Unwanted Effects of Behavior-Change Procedures',
-    correctDefinition: 'Unintended negative outcomes that may result from reinforcement, extinction, or punishment procedures, such as extinction bursts, aggression, emotional responses, or behavioral contrast.',
-    distractors: ['Intended positive outcomes that are deliberately planned as secondary benefits within a behavior intervention plan to promote broader skill development or generalization.', 'Negative outcomes that specifically arise due to the incorrect or inconsistent application of behavior-change procedures by implementers, rather than inherent procedural properties.', 'Adverse events that exclusively occur when only aversive control procedures are implemented, not including any potential side effects from reinforcement or extinction-based interventions.'],
-    misconceptions: [
-      '"Unwanted effects only occur with punishment procedures."',
-      '"Extinction never produces unwanted effects."',
-      '"Unwanted effects are always temporary and self-correcting."',
-    ],
-    taskItem: 'H.4',
   },
   {
     id: 'rr-performance-management',
@@ -1792,7 +1639,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Performance management is the same as performance evaluation."',
       '"Performance management only involves delivering consequences for poor performance."',
-      '"Performance management is only applicable in organizational settings."',
+      '"Performance management is only applicable in organizational settings."'
     ],
     taskItem: 'I.5',
   },
@@ -1804,7 +1651,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"BST is effective with instructions alone if they are detailed enough."',
       '"BST requires all four components to be delivered in a single session."',
-      '"BST is the same as competency-based training."',
+      '"BST is the same as competency-based training."'
     ],
     taskItem: 'I.5',
   },
@@ -1816,7 +1663,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as reactivity."',
       '"Only occurs when observers are untrained."',
-      '"Is detected by calculating total count IOA."',
+      '"Is detected by calculating total count IOA."'
     ],
     taskItem: 'C.8',
   },
@@ -1828,7 +1675,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as observer drift."',
       '"Always results in an increase in the target behavior."',
-      '"Is eliminated by using permanent product recording."',
+      '"Is eliminated by using permanent product recording."'
     ],
     taskItem: 'C.6',
   },
@@ -1840,7 +1687,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Requires statistical analysis to confirm conclusions."',
       '"Only examines the mean level of behavior across conditions."',
-      '"Is less reliable than inferential statistics for single-case data."',
+      '"Is less reliable than inferential statistics for single-case data."'
     ],
     taskItem: 'C.7',
   },
@@ -1852,7 +1699,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"High overlap always means the intervention was ineffective."',
       '"Is the same as variability."',
-      '"Is only calculated between baseline and the first intervention phase."',
+      '"Is only calculated between baseline and the first intervention phase."'
     ],
     taskItem: 'C.7',
   },
@@ -1864,7 +1711,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as a standard equal-interval line graph."',
       '"Can show a decrease in total responses over time."',
-      '"Is primarily used for interval-recorded data."',
+      '"Is primarily used for interval-recorded data."'
     ],
     taskItem: 'C.7',
   },
@@ -1876,7 +1723,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as a cumulative record."',
       '"Uses an arithmetic (linear) y-axis."',
-      '"Is only used in Precision Teaching settings."',
+      '"Is only used in Precision Teaching settings."'
     ],
     taskItem: 'C.7',
   },
@@ -1888,7 +1735,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Requires that baseline data be perfectly stable before intervention begins."',
       '"Is only applicable to reversal designs."',
-      '"Is the same as experimental control."',
+      '"Is the same as experimental control."'
     ],
     taskItem: 'D.1',
   },
@@ -1899,12 +1746,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The dimensional quantity of behavior reflecting the fact that every instance of behavior occupies some amount of time; the basis for duration measures.',
       'The dimensional quantity of behavior reflecting the fact that every instance of behavior occurs at a specific point in time relative to other events; the basis for latency and inter-response time measures.',
-      'The dimensional quantity of behavior reflecting the force or intensity with which a behavior is emitted; the basis for magnitude measures.',
+      'The dimensional quantity of behavior reflecting the force or intensity with which a behavior is emitted; the basis for magnitude measures.'
     ],
     misconceptions: [
       '"Repeatability is the same as reliability." Reliability concerns measurement consistency; repeatability is a property of behavior itself.',
       '"All behaviors have repeatability." Behaviors that can only occur once (e.g., death) lack repeatability.',
-      '"Repeatability means the behavior always occurs." It means the behavior can occur more than once, not that it will.',
+      '"Repeatability means the behavior always occurs." It means the behavior can occur more than once, not that it will.'
     ],
     domain: 'C',
     taskItem: 'C.1',
@@ -1917,12 +1764,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The dimensional quantity of behavior reflecting the fact that a behavior can occur more than once; the basis for counting and rate measures; also called countability.',
       'The dimensional quantity of behavior reflecting the fact that every instance of behavior occurs at a specific point in time relative to other events; the basis for latency and inter-response time measures.',
-      'The dimensional quantity of behavior reflecting the force or intensity with which a behavior is emitted; the basis for magnitude measures.',
+      'The dimensional quantity of behavior reflecting the force or intensity with which a behavior is emitted; the basis for magnitude measures.'
     ],
     misconceptions: [
       '"Temporal extent is the same as temporal locus." Temporal extent = duration; temporal locus = when it occurs.',
       '"Temporal extent only applies to long behaviors." All behaviors have some duration, even brief ones.',
-      '"Temporal extent is measured by latency." Latency measures temporal locus (when), not temporal extent (how long).',
+      '"Temporal extent is measured by latency." Latency measures temporal locus (when), not temporal extent (how long).'
     ],
     domain: 'C',
     taskItem: 'C.1',
@@ -1935,12 +1782,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The dimensional quantity of behavior reflecting the fact that a behavior can occur more than once; the basis for counting and rate measures; also called countability.',
       'The dimensional quantity of behavior reflecting the fact that every instance of behavior occupies some amount of time; the basis for duration measures.',
-      'The dimensional quantity of behavior reflecting the force or intensity with which a behavior is emitted; the basis for magnitude measures.',
+      'The dimensional quantity of behavior reflecting the force or intensity with which a behavior is emitted; the basis for magnitude measures.'
     ],
     misconceptions: [
       '"Temporal locus is the same as temporal extent." Temporal locus = when it occurs; temporal extent = how long it lasts.',
       '"Temporal locus is measured by duration." Duration measures temporal extent, not temporal locus.',
-      '"Latency measures temporal extent." Latency measures temporal locus  --  the time between a stimulus and the response.',
+      '"Latency measures temporal extent." Latency measures temporal locus  --  the time between a stimulus and the response.'
     ],
     domain: 'C',
     taskItem: 'C.1',
@@ -1953,12 +1800,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A random, unsystematic error in measurement that causes observed values to vary unpredictably around the true value; does not consistently inflate or deflate scores in one direction.',
       'The degree to which a measurement procedure consistently produces the same results when applied to the same behavior under the same conditions by the same or different observers.',
-      'The degree to which a measurement procedure actually measures what it is intended to measure, rather than some other behavior or construct.',
+      'The degree to which a measurement procedure actually measures what it is intended to measure, rather than some other behavior or construct.'
     ],
     misconceptions: [
       '"Measurement bias is the same as measurement error." Bias is systematic; random error is unsystematic.',
       '"Measurement bias only occurs with subjective measures." It can occur with any measurement system, including automated recording.',
-      '"High IOA eliminates measurement bias." Two observers can agree and both be biased in the same direction.',
+      '"High IOA eliminates measurement bias." Two observers can agree and both be biased in the same direction.'
     ],
     domain: 'C',
     taskItem: 'C.3',
@@ -1966,17 +1813,17 @@ export const rapidRecallItems: RapidRecallItem[] = [
   },
   {
     id: 'rr-equal-vs-ratio-scale',
-    term: 'Equal-Interval Scale',
+    term: 'Equal-Interval Graph',
     correctDefinition: 'A graph scale in which equal distances on the y-axis represent equal amounts of behavior; the standard scale used in most behavior analytic graphs; appropriate for absolute comparisons of behavior change.',
     distractors: [
       'A graph scale in which equal distances on the y-axis represent equal ratios of behavior; used in the Standard Celeration Chart; appropriate for comparing rates of change (celeration) across different baseline rates.',
       'A graph scale in which the y-axis is divided into equal percentile ranks, allowing comparison of an individual\'s performance relative to a normative sample.',
-      'A graph scale in which the y-axis represents cumulative responses over time, so the slope of the data path indicates the rate of responding during each session.',
+      'A graph scale in which the y-axis represents cumulative responses over time, so the slope of the data path indicates the rate of responding during each session.'
     ],
     misconceptions: [
       '"Equal-interval and ratio scales show the same data the same way." On a ratio scale, equal distances represent equal ratios, not equal amounts.',
       '"Equal-interval scale is always preferred." Ratio scales are preferred when comparing celeration across different baseline rates.',
-      '"The Standard Celeration Chart uses an equal-interval scale." The SCC uses a ratio (semi-logarithmic) scale.',
+      '"The Standard Celeration Chart uses an equal-interval scale." The SCC uses a ratio (semi-logarithmic) scale.'
     ],
     domain: 'C',
     taskItem: 'C.4',
@@ -1989,12 +1836,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A measurement and instructional system in which the criterion for reinforcement is systematically changed across phases, with the learner\'s behavior tracking the changing criterion to demonstrate experimental control.',
       'A measurement and instructional system in which behavior is measured using momentary time sampling at regular intervals, with the proportion of intervals containing the behavior used as the primary dependent measure.',
-      'A measurement and instructional system in which direct observation data are collected during structured probes to assess the learner\'s current performance level before selecting instructional targets.',
+      'A measurement and instructional system in which direct observation data are collected during structured probes to assess the learner\'s current performance level before selecting instructional targets.'
     ],
     misconceptions: [
       '"Precision Teaching is the same as Direct Instruction." Direct Instruction is a curriculum; Precision Teaching is a measurement system.',
       '"Precision Teaching uses standard line graphs." It uses the Standard Celeration Chart, a ratio (semi-logarithmic) scale.',
-      '"Precision Teaching measures accuracy." It primarily measures frequency (rate), not accuracy.',
+      '"Precision Teaching measures accuracy." It primarily measures frequency (rate), not accuracy.'
     ],
     domain: 'C',
     taskItem: 'C.4',
@@ -2008,7 +1855,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as informed consent."',
       '"Is only required for adult clients with intellectual disabilities."',
-      '"Replaces the need for guardian consent."',
+      '"Replaces the need for guardian consent."'
     ],
     taskItem: 'E.1',
   },
@@ -2020,7 +1867,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is determined solely by the BACB credential held."',
       '"Expands automatically with years of experience."',
-      '"Is the same as licensure."',
+      '"Is the same as licensure."'
     ],
     taskItem: 'E.1',
   },
@@ -2032,7 +1879,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is always prohibited under the Ethics Code."',
       '"Only applies to romantic relationships."',
-      '"Is the same as a conflict of interest."',
+      '"Is the same as a conflict of interest."'
     ],
     taskItem: 'E.6',
   },
@@ -2044,21 +1891,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as a dual relationship."',
       '"Only arises from financial incentives."',
-      '"Must always be disclosed to the BACB."',
+      '"Must always be disclosed to the BACB."'
     ],
     taskItem: 'E.6',
-  },
-  {
-    id: 'rr-least-restrictive',
-    domain: 'E', term: 'Least Restrictive Alternative',
-    correctDefinition: 'The principle that behavior-change procedures should be selected from the least intrusive, aversive, or restrictive options that are likely to be effective before more restrictive procedures are considered.',
-    distractors: ['The principle that behavior-change procedures should be selected from the requirement that all behavior reduction procedures be approved by a human rights committee.', 'The principle that behavior-change procedures should be selected from the principle that reinforcement-based procedures must always be tried before punishment procedures.', 'The principle that behavior-change procedures should be selected from a legal standard requiring that clients be served in the most integrated setting appropriate to their needs.'],
-    misconceptions: [
-      '"Requires that only positive reinforcement be used."',
-      '"Means punishment procedures can never be used."',
-      '"Is the same as the principle of parsimony."',
-    ],
-    taskItem: 'E.2',
   },
   {
     id: 'rr-mandatory-reporting',
@@ -2068,21 +1903,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is optional when the behavior analyst is uncertain about the evidence of abuse."',
       '"Only applies to physical abuse, not neglect."',
-      '"Can be waived if the client requests confidentiality."',
+      '"Can be waived if the client requests confidentiality."'
     ],
     taskItem: 'E.5',
-  },
-  {
-    id: 'rr-veracity',
-    domain: 'E', term: 'Veracity',
-    correctDefinition: 'The ethical obligation to be truthful and accurate in all professional communications, including reports, data, and representations of one\'s qualifications.',
-    distractors: ['The ethical obligation to be truthful and accurate in all professional communications, including the obligation to keep client information confidential.', 'The ethical obligation to be truthful and accurate in all professional communications, including the requirement to obtain informed consent before beginning an assessment.', 'The ethical obligation to be truthful and accurate in all professional communications, including the principle of treating all clients fairly and without discrimination.'],
-    misconceptions: [
-      '"Is the same as fidelity."',
-      '"Only applies to written communications."',
-      '"Permits withholding information if disclosure would harm the client."',
-    ],
-    taskItem: 'E.1',
   },
   {
     id: 'rr-cultural-responsiveness',
@@ -2092,7 +1915,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as cultural humility."',
       '"Means the behavior analyst must share the client\'s cultural background."',
-      '"Only applies when working with clients from non-Western cultures."',
+      '"Only applies when working with clients from non-Western cultures."'
     ],
     taskItem: 'E.1',
   },
@@ -2104,7 +1927,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as state licensure requirements."',
       '"Only applies to BCBAs, not BCaBAs or RBTs."',
-      '"Is updated annually by the BACB."',
+      '"Is updated annually by the BACB."'
     ],
     taskItem: 'E.1',
   },
@@ -2115,12 +1938,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A set of enforceable rules and standards that a professional organization requires its members to follow, with specific consequences for violations; distinct from aspirational principles in that compliance is mandatory.',
       'A systematic evaluation of the potential harms and potential benefits of a proposed intervention or course of action, used to determine whether the expected benefits justify the risks involved.',
-      'The branch of philosophy concerned with the nature of knowledge and how it is acquired; in behavior analysis, the epistemological foundation for empirical observation and experimental analysis.',
+      'The branch of philosophy concerned with the nature of knowledge and how it is acquired; in behavior analysis, the epistemological foundation for empirical observation and experimental analysis.'
     ],
     misconceptions: [
       '"Ethics and the BACB Ethics Code are the same thing." Ethics is the broader philosophical discipline; the BACB Ethics Code is a specific compliance document.',
       '"Ethics is purely subjective." Professional ethics in ABA is codified in enforceable standards.',
-      '"Ethics only applies to research." The BACB Ethics Code governs all professional activities of certificants.',
+      '"Ethics only applies to research." The BACB Ethics Code governs all professional activities of certificants.'
     ],
     domain: 'E',
     taskItem: 'E.1',
@@ -2133,12 +1956,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A set of aspirational principles and ideals that describe the highest standards of professional conduct, intended to inspire practitioners to exceed minimum requirements rather than to enforce specific behaviors.',
       'A set of guidelines developed by a professional organization that recommends best practices for service delivery, without specifying consequences for practitioners who do not follow them.',
-      'A set of legal statutes and regulations enacted by a government body that govern the practice of a licensed profession, enforced through state licensing boards rather than professional associations.',
+      'A set of legal statutes and regulations enacted by a government body that govern the practice of a licensed profession, enforced through state licensing boards rather than professional associations.'
     ],
     misconceptions: [
       '"A compliance code is the same as an aspirational code." Aspirational codes inspire; compliance codes enforce with consequences.',
       '"The BACB Ethics Code is aspirational." It is a compliance code  --  violations result in formal sanctions.',
-      '"Compliance codes only apply to egregious violations." All standards in a compliance code are enforceable.',
+      '"Compliance codes only apply to egregious violations." All standards in a compliance code are enforceable.'
     ],
     domain: 'E',
     taskItem: 'E.1',
@@ -2151,12 +1974,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'Intentional deception or misrepresentation for personal gain, including falsifying data, billing for services not rendered, misrepresenting credentials, or fabricating research results.',
       'Behavior emitted by an individual in response to aversive control by another person or institution, aimed at reducing, escaping, or retaliating against that control.',
-      'A situation in which a professional has a personal, financial, or professional interest that could impair their objectivity or judgment in fulfilling their professional responsibilities.',
+      'A situation in which a professional has a personal, financial, or professional interest that could impair their objectivity or judgment in fulfilling their professional responsibilities.'
     ],
     misconceptions: [
       '"Negligence requires intent to harm." Negligence is defined by failure to meet the standard of care, not by intent.',
       '"Negligence is the same as fraudulent conduct." Fraud requires intent; negligence does not.',
-      '"Negligence only applies to medical professionals." It applies to any licensed or certified professional, including BCBAs.',
+      '"Negligence only applies to medical professionals." It applies to any licensed or certified professional, including BCBAs.'
     ],
     domain: 'E',
     taskItem: 'E.3',
@@ -2169,12 +1992,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A systematic evaluation of the degree to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, family, and other stakeholders.',
       'A systematic evaluation of the potential environmental variables maintaining a problem behavior, used to select a function-based intervention that addresses the maintaining contingency.',
-      'A systematic evaluation of the learner\'s current skill repertoire and learning history, used to identify appropriate instructional targets and select evidence-based teaching procedures.',
+      'A systematic evaluation of the learner\'s current skill repertoire and learning history, used to identify appropriate instructional targets and select evidence-based teaching procedures.'
     ],
     misconceptions: [
       '"Risk-benefit analysis is only required for punishment procedures." It is required for any restrictive or potentially harmful procedure.',
       '"Risk-benefit analysis is informal." It should be systematic and documented.',
-      '"If benefits outweigh risks, any procedure is justified." Least restrictive effective treatment must still be considered.',
+      '"If benefits outweigh risks, any procedure is justified." Least restrictive effective treatment must still be considered.'
     ],
     domain: 'E',
     taskItem: 'E.4',
@@ -2187,12 +2010,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A procedure in which a competing behavior that is incompatible with the problem behavior is reinforced on a dense schedule, while the problem behavior is placed on extinction.',
       'A procedure in which the learner is taught to monitor and evaluate their own behavior and apply self-determined consequences, reducing dependence on external control.',
-      'A procedure in which the reinforcing effectiveness of a stimulus is reduced by providing noncontingent access to that stimulus prior to the session, thereby abolishing its value as a reinforcer.',
+      'A procedure in which the reinforcing effectiveness of a stimulus is reduced by providing noncontingent access to that stimulus prior to the session, thereby abolishing its value as a reinforcer.'
     ],
     misconceptions: [
       '"Countercontrol is always a problem behavior." It is a natural and predictable response to aversive control.',
       '"Countercontrol only occurs in humans." It is observed across species in response to aversive control.',
-      '"Countercontrol is the same as extinction burst." Extinction burst occurs when reinforcement is withheld; countercontrol occurs in response to aversive control.',
+      '"Countercontrol is the same as extinction burst." Extinction burst occurs when reinforcement is withheld; countercontrol occurs in response to aversive control.'
     ],
     domain: 'E',
     taskItem: 'E.5',
@@ -2205,28 +2028,16 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A failure to exercise the standard of care that a reasonably competent professional would provide under similar circumstances, resulting in harm or risk of harm to a client.',
       'Behavior emitted by an individual in response to aversive control by another person or institution, aimed at reducing, escaping, or retaliating against that control.',
-      'A situation in which a professional has a personal, financial, or professional interest that could impair their objectivity or judgment in fulfilling their professional responsibilities.',
+      'A situation in which a professional has a personal, financial, or professional interest that could impair their objectivity or judgment in fulfilling their professional responsibilities.'
     ],
     misconceptions: [
       '"Fraudulent conduct requires financial gain." Any intentional misrepresentation for personal benefit qualifies, including credential misrepresentation.',
       '"Fraudulent conduct is the same as negligence." Negligence is unintentional; fraud requires intent to deceive.',
-      '"Only billing fraud counts." Falsifying data, fabricating research, and misrepresenting credentials are all fraudulent conduct.',
+      '"Only billing fraud counts." Falsifying data, fabricating research, and misrepresenting credentials are all fraudulent conduct.'
     ],
     domain: 'E',
     taskItem: 'E.3',
     category: 'Ethical & Professional Issues',
-  },
-  {
-    id: 'rr-pyramidal-training',
-    domain: 'I', term: 'Pyramidal Training',
-    correctDefinition: 'A training model in which a supervisor trains a small number of individuals who then train others, creating a hierarchical structure that extends the reach of the original trainer.',
-    distractors: ['A training model in which all employees receive identical training content delivered by a single designated instructor within an organization.', 'A training model in which supervisees are ranked based on their performance and receive varying levels of supervision intensity according to their needs.', 'A training model in which instruction is delivered through a series of progressively more intricate and challenging tasks to build complex repertoires.'],
-    misconceptions: [
-      '"Is the same as cascading training."',
-      '"Guarantees consistent training quality across all levels."',
-      '"Is only appropriate for large organizations."',
-    ],
-    taskItem: 'I.2',
   },
   {
     id: 'rr-feedback-supervision',
@@ -2236,31 +2047,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Should always be delivered privately to avoid embarrassing the supervisee."',
       '"Is only effective when delivered immediately after the behavior."',
-      '"Is the same as praise."',
-    ],
-    taskItem: 'I.3',
-  },
-  {
-    id: 'rr-group-supervision',
-    domain: 'I', term: 'Group Supervision',
-    correctDefinition: 'A supervision format in which a supervisor meets simultaneously with multiple supervisees to discuss cases, review skills, and provide instruction, counting toward a portion of required supervision hours.',
-    distractors: ['A supervision format in which multiple qualified supervisors collaborate to oversee the professional development of a single supervisee, offering diverse perspectives.', 'A peer consultation model where Board Certified Behavior Analysts meet without a designated supervisor to discuss clinical cases and ethical dilemmas, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'A training format in which all staff members within an organization receive the same instructional content simultaneously from one instructor, using systematic instructional procedures derived from the principles of applied behavior analysis.'],
-    misconceptions: [
-      '"Can replace all individual supervision hours."',
-      '"Is less effective than individual supervision for all skill areas."',
-      '"Is only permitted for RBT supervision, not BCBA supervision."',
-    ],
-    taskItem: 'I.3',
-  },
-  {
-    id: 'rr-treatment-integrity-supervision',
-    domain: 'I', term: 'Treatment Integrity  -  Supervision Monitoring',
-    correctDefinition: 'The supervisor\'s responsibility to systematically measure and monitor whether supervisees are implementing behavior-change procedures with fidelity, using direct observation, permanent product review, or IOA data (I.3). Low treatment integrity is a common reason interventions fail to produce expected outcomes.',
-    distractors: ['The consistent application of ethical guidelines by the supervisor throughout all stages of supervision, ensuring that all interactions, evaluations of supervisee\'s professional conduct, and feedback provided align with professional standards and promote the welfare of clients and supervisees, fostering a principled and effective learning environment (I.1). Adherence to these guidelines is paramount for maintaining professional standards and ethical practice.', 'The systematic evaluation of how well the supervisee consistently adheres to the BACB\'s ethical compliance code and professional guidelines in their daily practice, including client interactions, data collection, and intervention implementation, with the goal of identifying areas for improvement and ensuring responsible and competent service delivery (I.1). This ongoing assessment is crucial for professional development and client protection.', 'The supervisor\'s responsibility to ensure that all data collected by the supervisee, including observational data and permanent product records, is consistently accurate and reliable, truly reflecting client behavior and intervention effects, through regular checks, interobserver agreement assessments, and direct observation of data collection procedures (I.4). Inaccurate data can lead to erroneous clinical decisions and ineffective interventions.'],
-    misconceptions: [
-      '"Is the same as social validity."',
-      '"Is only relevant for punishment procedures."',
-      '"Is guaranteed when staff receive initial training."',
+      '"Is the same as praise."'
     ],
     taskItem: 'I.3',
   },
@@ -2272,33 +2059,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as DRO because both reduce problem behavior."',
       '"Requires identifying an alternative behavior to reinforce."',
-      '"Is contingent on the individual not engaging in problem behavior."',
+      '"Is contingent on the individual not engaging in problem behavior."'
     ],
     taskItem: 'G.3',
-  },
-  {
-    id: 'rr-response-cost-application',
-    domain: 'G', term: 'Response Cost  -  Application',
-    correctDefinition: 'Response cost is most effectively implemented within a token economy, where earned tokens can be removed contingent on problem behavior. The number of tokens removed must be calibrated carefully  -  removing too many can cause the system to lose its reinforcing value.',
-    distractors: ['Differential reinforcement of other behavior (DRO) is most effectively implemented by providing reinforcement for the absence of a target problem behavior for a specified interval, with the interval length adjusted based on the individual\'s performance to gradually reduce the behavior\'s occurrence.', 'Time-out from positive reinforcement is most effectively implemented by removing an individual from a reinforcing environment contingent on problem behavior, ensuring the time-out setting is devoid of reinforcers and the duration is brief yet sufficient to be effective, without being unduly prolonged.', 'Extinction is most effectively implemented by consistently withholding all reinforcement for a previously reinforced problem behavior, ensuring that all sources of reinforcement are identified and eliminated, which may lead to an extinction burst before the behavior ultimately decreases.'],
-    misconceptions: [
-      '"Response cost and time-out are interchangeable because both involve removing something."',
-      '"Response cost is only appropriate for severe problem behavior."',
-      '"Response cost is a form of positive punishment because it involves taking something away."',
-    ],
-    taskItem: 'G.17',
-  },
-  {
-    id: 'rr-overcorrection-subtypes',
-    domain: 'G', term: 'Overcorrection  -  Restitution vs. Positive Practice',
-    correctDefinition: 'Overcorrection has two subtypes: (1) Restitution overcorrection  -  the individual restores the environment to a better-than-original state (e.g., cleaning up a mess they made plus additional areas); (2) Positive practice overcorrection  -  the individual repeatedly practices the correct form of behavior (e.g., practicing walking to the door correctly 10 times after running).',
-    distractors: ['Differential Reinforcement of Other Behavior (DRO) involves reinforcing a child for not engaging in a target problem behavior for a specified period of time, while Differential Reinforcement of Alternative Behavior (DRA) involves reinforcing a desirable behavior that serves the same function as the problem behavior; both aim to reduce maladaptive responses by strengthening appropriate ones.', 'Response cost is a form of negative punishment where a specific amount of a reinforcer is removed contingent on the occurrence of a problem behavior, leading to a decrease in the future probability of that behavior (e.g., losing tokens for hitting); time-out is another negative punishment procedure where a person is removed from a reinforcing environment for a specified period.', 'Extinction involves discontinuing the reinforcement of a previously reinforced behavior, which leads to a gradual decrease in the frequency of that behavior over time, often accompanied by an extinction burst (e.g., ignoring a child\'s tantrum); punishment, conversely, is the contingent presentation of a stimulus or removal of a stimulus that decreases future behavior.'],
-    misconceptions: [
-      '"Overcorrection always involves both restitution and positive practice simultaneously."',
-      '"Positive practice overcorrection is the same as behavioral rehearsal used in skill acquisition."',
-      '"Restitution overcorrection can only be used for property destruction."',
-    ],
-    taskItem: 'G.17',
   },
   {
     id: 'rr-behavioral-momentum-clinical',
@@ -2308,25 +2071,9 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       '"Is the same as the matching law."',
       '"Refers to the speed at which a behavior is acquired."',
-      '"Is only applicable to problem behavior, not skill acquisition."',
+      '"Is only applicable to problem behavior, not skill acquisition."'
     ],
     taskItem: 'G.1',
-  },
-  {
-    id: 'h8',
-    domain: 'G',
-    term: 'Noncontingent Reinforcement (NCR)',
-    correctDefinition: 'Delivery of a reinforcer on a time-based schedule independent of behavior; reduces problem behavior by abolishing the motivating operation that maintains it.',
-    distractors: [
-      'Delivery of reinforcement contingent on the absence of problem behavior for a specified interval; a form of differential reinforcement.',
-      'A procedure in which reinforcement is withheld until the problem behavior has been replaced by a communicative alternative.',
-      'Delivery of reinforcement at unpredictable intervals to maintain high response rates without producing ratio strain.'
-    ],
-    misconceptions: [
-      'NCR is frequently confused with DRO. The critical distinction: NCR is time-based and independent of behavior; DRO is contingent on the absence of behavior during an interval.'
-    ],
-    taskItem: 'H.2',
-    category: 'Intervention'
   },
   {
     id: 'h10',
@@ -2393,36 +2140,18 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: 'Intervention'
   },
   {
-    id: 'rr-indirect-fba',
-    term: 'Indirect Functional Assessment',
-    correctDefinition: 'A method of gathering information about the variables that may be maintaining a problem behavior through interviews, rating scales, and questionnaires with the client, caregivers, or teachers, without direct observation of the behavior.',
-    distractors: [
-      'A method of gathering information about the variables that may be maintaining a problem behavior through systematic direct observation of the behavior in its natural context, recording antecedents and consequences.',
-      'A method of gathering information about the variables that may be maintaining a problem behavior by experimentally manipulating antecedent and consequence conditions to identify the maintaining reinforcer.',
-      'A method of gathering information about the variables that may be maintaining a problem behavior by conducting brief, structured trials in which hypothesized maintaining variables are tested systematically.',
-    ],
-    misconceptions: [
-      '"Indirect assessment provides the most accurate information." Indirect methods are subject to informant bias and recall errors.',
-      '"Indirect assessment is sufficient for treatment planning." It should be supplemented with descriptive or functional analysis.',
-      '"Indirect assessment involves no observation." It involves no direct observation of the behavior; informants report on it.',
-    ],
-    domain: 'H',
-    taskItem: 'H.1',
-    category: 'Selecting & Implementing Interventions',
-  },
-  {
     id: 'rr-group-contingencies',
     term: 'Interdependent Group Contingency',
     correctDefinition: 'A group contingency in which the same consequence is delivered to all members of the group contingent on the group as a whole meeting a specified criterion; all members must meet the criterion (or the group\'s aggregate performance must meet the criterion) for any member to receive reinforcement.',
     distractors: [
       'A group contingency in which the same criterion and consequence are applied to all members of the group, but each member\'s consequence depends only on their own individual behavior, independent of other members\' performance.',
       'A group contingency in which the consequence for the entire group is contingent on the behavior of one member or a small subset of members, whose performance determines whether all members receive reinforcement.',
-      'A group contingency in which different criteria and consequences are applied to different members of the group based on their individual baseline performance levels and instructional goals.',
+      'A group contingency in which different criteria and consequences are applied to different members of the group based on their individual baseline performance levels and instructional goals.'
     ],
     misconceptions: [
       '"Interdependent contingency means each person earns their own reinforcement." That describes an independent group contingency.',
       '"Interdependent contingency requires unanimous perfect performance." The criterion can be an aggregate (e.g., class average) rather than individual perfection.',
-      '"Interdependent contingency is the same as dependent contingency." Dependent contingency makes the group\'s reinforcement contingent on one member\'s behavior.',
+      '"Interdependent contingency is the same as dependent contingency." Dependent contingency makes the group\'s reinforcement contingent on one member\'s behavior.'
     ],
     domain: 'G',
     taskItem: 'H.5',
@@ -2435,12 +2164,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The personal monitoring and recording of one\'s own behavior, used as a component of self-management or as a stand-alone intervention to increase awareness and promote behavior change.',
       'The personal evaluation of one\'s own behavior against a predetermined criterion, used to determine whether self-reinforcement or self-correction is warranted.',
-      'The personal selection and delivery of reinforcing consequences contingent on meeting a self-determined behavioral criterion, used to maintain behavior in the absence of external reinforcement.',
+      'The personal selection and delivery of reinforcing consequences contingent on meeting a self-determined behavioral criterion, used to maintain behavior in the absence of external reinforcement.'
     ],
     misconceptions: [
       '"Self-management is the same as self-monitoring." Self-monitoring is one component of self-management.',
       '"Self-management eliminates the need for external contingencies." It uses the same behavioral principles as externally managed interventions.',
-      '"Self-management only involves consequences." It involves both antecedent and consequence manipulations.',
+      '"Self-management only involves consequences." It involves both antecedent and consequence manipulations.'
     ],
     domain: 'H',
     taskItem: 'H.6',
@@ -2453,12 +2182,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A generalization programming strategy in which training is conducted across multiple exemplars of the relevant stimulus class, so that the trained behavior generalizes to untrained exemplars.',
       'A generalization programming strategy in which reinforcement is delivered on an intermittent and unpredictable schedule during training, making the trained behavior more resistant to extinction in the natural environment.',
-      'A generalization programming strategy in which the trained behavior is reinforced in the natural environment by naturally existing contingencies, without requiring contrived reinforcement from the trainer.',
+      'A generalization programming strategy in which the trained behavior is reinforced in the natural environment by naturally existing contingencies, without requiring contrived reinforcement from the trainer.'
     ],
     misconceptions: [
       '"Program common stimuli means training in the natural environment." It means bringing natural environment stimuli into the training setting.',
       '"Program common stimuli is the same as multiple exemplar training." Multiple exemplar training varies the training stimuli; program common stimuli duplicates natural environment stimuli.',
-      '"Program common stimuli guarantees generalization." It promotes generalization but does not guarantee it.',
+      '"Program common stimuli guarantees generalization." It promotes generalization but does not guarantee it.'
     ],
     domain: 'H',
     taskItem: 'H.7',
@@ -2472,7 +2201,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A property of verbal behavior in which the overall meaning of a response matches the overall meaning of the stimulus, even if individual units do not correspond sequentially.',
       'A reinforcement contingency in which each instance of a verbal response produces a specific consequence that matches the topography of the response.',
-      'A training procedure in which the therapist points to each component of a stimulus array and the learner names each component in order.',
+      'A training procedure in which the therapist points to each component of a stimulus array and the learner names each component in order.'
     ],
     misconceptions: [
       'Point-to-point correspondence is about the formal relationship between stimulus units and response units, not about meaning or reinforcement. Echoics and textual responses both have point-to-point correspondence; mands and tacts do not.'
@@ -2488,7 +2217,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A property of verbal behavior in which the verbal response is functionally equivalent to the controlling stimulus, producing the same reinforcing outcome regardless of topography.',
       'A property of verbal behavior in which the speaker and listener share a common history of reinforcement for the same verbal forms.',
-      'A training criterion requiring that a learner produce verbal responses that are topographically identical to the model across at least three consecutive sessions.',
+      'A training criterion requiring that a learner produce verbal responses that are topographically identical to the model across at least three consecutive sessions.'
     ],
     misconceptions: [
       'Formal similarity requires both same sense mode AND physical similarity of form. Echoics have both point-to-point correspondence and formal similarity. Textual responses have point-to-point correspondence but not formal similarity (visual stimulus to auditory response).'
@@ -2504,7 +2233,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A tact emitted in the absence of the relevant stimulus due to a strong motivating operation that has temporarily increased the value of the associated reinforcer.',
       'A tact trained to a high level of fluency so that it occurs rapidly and automatically across all members of the stimulus class.',
-      'A tact reinforced with a generalized conditioned reinforcer rather than a specific item, allowing it to occur across a wide range of contexts.',
+      'A tact reinforced with a generalized conditioned reinforcer rather than a specific item, allowing it to occur across a wide range of contexts.'
     ],
     misconceptions: [
       'An extended tact occurs because of stimulus generalization. It is not an error; it is a predictable product of the training history. The three subtypes (metaphorical, metonymical, solistic) differ in which property of the original stimulus controls the response.'
@@ -2520,7 +2249,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An extended tact in which a response is controlled by a stimulus that was present at the same time as the original training stimulus, even though the two stimuli are not physically similar.',
       'An extended tact in which a response is controlled by a part of the original training stimulus rather than the whole stimulus.',
-      'An extended tact in which a response occurs in the absence of any relevant stimulus due to a strong history of reinforcement for that verbal form.',
+      'An extended tact in which a response occurs in the absence of any relevant stimulus due to a strong history of reinforcement for that verbal form.'
     ],
     misconceptions: [
       'Metaphorical tact extensions involve shared physical or functional properties between the novel and original stimulus. They differ from metonymical extensions (contiguity-based) and solistic extensions (part-whole based).'
@@ -2536,7 +2265,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An extended tact in which a response is controlled by a novel stimulus that shares a physical property with the original training stimulus, such as shape, color, or texture.',
       'An extended tact in which a response is controlled by a part of the original training stimulus rather than the whole, such as saying the name of an animal upon seeing only its tail.',
-      'An extended tact in which a response is emitted in the absence of any stimulus due to a covert motivating operation.',
+      'An extended tact in which a response is emitted in the absence of any stimulus due to a covert motivating operation.'
     ],
     misconceptions: [
       'Metonymical extensions are controlled by contiguity: the novel stimulus was present alongside the original, not because it shares properties with it. This distinguishes it from metaphorical (property-based) and solistic (part-whole) extensions.'
@@ -2552,7 +2281,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An extended tact in which a response is controlled by a novel stimulus that shares a property with the original training stimulus, even though the novel stimulus belongs to a different stimulus class.',
       'An extended tact in which a response is controlled by a stimulus that was merely present at the same time as the original training stimulus, with no physical similarity between the two stimuli.',
-      'An extended tact in which a response is controlled by a novel stimulus that is a true member of the same general stimulus class as the original training stimulus, sharing all its defining features.',
+      'An extended tact in which a response is controlled by a novel stimulus that is a true member of the same general stimulus class as the original training stimulus, sharing all its defining features.'
     ],
     misconceptions: [
       'Solistic tact extensions are NOT about part-whole relationships. They occur when an indirectly related stimulus property controls a non-standard verbal response  --  producing malaprops, slang, or idiosyncratic usage. This distinguishes them from metaphorical (shared property, different class), metonymical (temporal contiguity), and generic (same class, all defining features) extensions.'
@@ -2568,7 +2297,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An extended tact in which a response is controlled by a stimulus that shares only a superficial physical property with the original training stimulus, such as color or size, rather than defining class features.',
       'An extended tact in which a response is controlled by a stimulus that was present at the same time as the original training stimulus across multiple training trials.',
-      'An extended tact that is trained directly by presenting multiple exemplars of the stimulus class until the response generalizes to all members.',
+      'An extended tact that is trained directly by presenting multiple exemplars of the stimulus class until the response generalizes to all members.'
     ],
     misconceptions: [
       'Generic tact extensions are the most common and educationally desirable form of tact extension. Unlike metaphorical or metonymical extensions, the novel stimulus is a true member of the original class.'
@@ -2584,7 +2313,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A mand reinforced with a non-specific generalized conditioned reinforcer rather than the specific item or activity named in the response.',
       'A mand emitted at a high rate due to a strong establishing operation that has greatly increased the value of the relevant reinforcer.',
-      'A mand trained using a transfer of stimulus control procedure in which an echoic prompt is systematically faded until the mand occurs independently.',
+      'A mand trained using a transfer of stimulus control procedure in which an echoic prompt is systematically faded until the mand occurs independently.'
     ],
     misconceptions: [
       'An extended mand occurs because the motivating operation or antecedent conditions have generalized beyond the original training context. The form of the response may be the same as the trained mand, but it is now controlled by novel conditions.'
@@ -2600,7 +2329,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A mand emitted in the absence of a relevant motivating operation because the speaker has a long history of reinforcement for that verbal form across many different contexts.',
       'A mand emitted in the presence of a novel stimulus condition that shares properties with the original training context, resulting in generalized requesting behavior.',
-      'A mand reinforced on a variable-ratio schedule, producing a high and steady rate of requesting behavior that is highly resistant to extinction.',
+      'A mand reinforced on a variable-ratio schedule, producing a high and steady rate of requesting behavior that is highly resistant to extinction.'
     ],
     misconceptions: [
       'Superstitious mands are maintained by accidental contingencies: the reinforcer was available by coincidence, not because the mand produced it. This is distinct from extended mands, which involve stimulus generalization.'
@@ -2616,7 +2345,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A mand emitted in the presence of a listener who is known to never provide reinforcement, maintained solely by the history of occasional accidental reinforcement.',
       'A mand emitted at a very high rate during extinction because the motivating operation has greatly increased the value of the reinforcer that is no longer available.',
-      'A mand emitted in the absence of any motivating operation because the speaker has been reinforced for requesting in that context regardless of deprivation state.',
+      'A mand emitted in the absence of any motivating operation because the speaker has been reinforced for requesting in that context regardless of deprivation state.'
     ],
     misconceptions: [
       'Magical mands occur under strong motivating operations but without a capable listener. Wishing, praying, and talking to oneself about a desired item are common examples.'
@@ -2632,7 +2361,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A verbal operant in which an auditory verbal stimulus controls a written verbal response, with point-to-point correspondence between the spoken stimulus and the written response.',
       'A verbal operant in which a written verbal stimulus controls an auditory verbal response, such as reading aloud from a written text.',
-      'A verbal operant in which a non-verbal visual stimulus controls a written verbal response, such as writing the name of an object after seeing a picture of it.',
+      'A verbal operant in which a non-verbal visual stimulus controls a written verbal response, such as writing the name of an object after seeing a picture of it.'
     ],
     misconceptions: [
       'The codic involves written stimulus to written response, with both point-to-point correspondence and formal similarity. Copying text is a codic; reading aloud is a textual response, not a codic.'
@@ -2648,7 +2377,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A class of verbal operants in which the verbal response is controlled by a non-verbal stimulus and produces a specific reinforcer, encompassing both mands and tacts across all sense modalities.',
       'A class of verbal operants in which the verbal response is controlled by the verbal behavior of another speaker and produces a generalized conditioned reinforcer rather than a specific item.',
-      'A class of verbal operants in which the verbal response reproduces the meaning of the controlling stimulus without necessarily reproducing its formal properties, such as paraphrasing.',
+      'A class of verbal operants in which the verbal response reproduces the meaning of the controlling stimulus without necessarily reproducing its formal properties, such as paraphrasing.'
     ],
     misconceptions: [
       'Duplics are defined by formal reproduction of the stimulus. Echoics and codics are both duplics. Textual responses and transcription are not duplics because they cross sense modalities.'
@@ -2665,7 +2394,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Antecedents always cause behavior (incorrect  --  they set the occasion for behavior, not cause it)',
       'Antecedents are only external stimuli (incorrect  --  internal states can also function as antecedents)',
-      'The SD and the antecedent are different things (incorrect  --  the SD is a type of antecedent)',
+      'The SD and the antecedent are different things (incorrect  --  the SD is a type of antecedent)'
     ],
   },
   {
@@ -2677,7 +2406,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'The three-term contingency is the same as the two-term contingency (incorrect  --  the antecedent is a distinct third term)',
       'Setting events are part of the three-term contingency (incorrect  --  they are a fourth term added to the extended analysis)',
-      'The three-term contingency only applies to positive reinforcement (incorrect  --  it applies to all operant contingencies)',
+      'The three-term contingency only applies to positive reinforcement (incorrect  --  it applies to all operant contingencies)'
     ],
   },
   {
@@ -2689,7 +2418,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Respondent behavior can be strengthened by reinforcement (incorrect  --  it is elicited, not reinforced)',
       'Respondent behavior only occurs in animals (incorrect  --  humans show respondent behavior too)',
-      'Respondent behavior is the same as voluntary behavior (incorrect  --  it is involuntary and reflexive)',
+      'Respondent behavior is the same as voluntary behavior (incorrect  --  it is involuntary and reflexive)'
     ],
   },
   {
@@ -2701,7 +2430,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Operant behavior is caused by antecedents (incorrect  --  it is selected by consequences)',
       'Operant behavior cannot be influenced by antecedents (incorrect  --  SDs set the occasion for operant behavior)',
-      'All operant behavior is voluntary (incorrect  --  the distinction between voluntary and involuntary is not the defining feature)',
+      'All operant behavior is voluntary (incorrect  --  the distinction between voluntary and involuntary is not the defining feature)'
     ],
   },
   {
@@ -2713,7 +2442,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Behavioral cusp and pivotal behavior are the same thing (incorrect  --  a cusp opens new environments; a pivotal behavior produces collateral changes)',
       'A behavioral cusp only applies to language (incorrect  --  any behavior that opens new contingencies qualifies)',
-      'Behavioral cusps are always socially significant (incorrect  --  significance is assessed separately)',
+      'Behavioral cusps are always socially significant (incorrect  --  significance is assessed separately)'
     ],
   },
   {
@@ -2725,7 +2454,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'A positive reinforcer is anything the person likes (incorrect  --  it is defined by its effect on behavior, not preference)',
       'Positive reinforcement always involves adding something pleasant (incorrect  --  it is defined by the increase in future behavior)',
-      'A positive reinforcer is the same as a reward (incorrect  --  a reward is defined by social convention, not by its behavioral effect)',
+      'A positive reinforcer is the same as a reward (incorrect  --  a reward is defined by social convention, not by its behavioral effect)'
     ],
   },
   {
@@ -2737,7 +2466,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'The Premack Principle only applies to preferred activities (incorrect  --  it applies to any high-probability behavior)',
       'The Premack Principle is the same as the response-deprivation hypothesis (incorrect  --  the RDH is a more precise formulation that supersedes the Premack Principle)',
-      'The Premack Principle requires the person to enjoy the high-probability activity (incorrect  --  it is defined by relative response rates, not enjoyment)',
+      'The Premack Principle requires the person to enjoy the high-probability activity (incorrect  --  it is defined by relative response rates, not enjoyment)'
     ],
   },
   {
@@ -2749,7 +2478,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Avoidance and escape are the same contingency (incorrect  --  avoidance prevents onset; escape terminates an ongoing aversive stimulus)',
       'Avoidance behavior is always maladaptive (incorrect  --  many adaptive behaviors are maintained by avoidance contingencies)',
-      'Avoidance contingencies involve positive reinforcement (incorrect  --  they involve negative reinforcement)',
+      'Avoidance contingencies involve positive reinforcement (incorrect  --  they involve negative reinforcement)'
     ],
   },  {
     id: 'rr-abative-effect',
@@ -2760,7 +2489,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'The abative effect only applies to food and water (incorrect  --  it applies to any reinforcer affected by an abolishing operation)',
       'The abative effect is the same as extinction (incorrect  --  extinction removes reinforcement; the abative effect reduces the value of the reinforcer)',
-      'The abative effect and the reinforcer-abolishing effect are different things (incorrect  --  they are the same effect described from different perspectives)',
+      'The abative effect and the reinforcer-abolishing effect are different things (incorrect  --  they are the same effect described from different perspectives)'
     ],
   },  {
     id: 'rr-stimulus-fading',
@@ -2771,7 +2500,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Stimulus fading and prompt fading are the same procedure (incorrect  --  stimulus fading changes the SD itself; prompt fading removes supplementary stimuli)',
       'Stimulus fading always involves reducing the intensity of the SD (incorrect  --  it can involve changes in any dimension of the SD)',
-      'Stimulus fading is only used in errorless learning (incorrect  --  it can be used in any procedure that requires transfer of stimulus control)',
+      'Stimulus fading is only used in errorless learning (incorrect  --  it can be used in any procedure that requires transfer of stimulus control)'
     ],
   },
   {
@@ -2783,7 +2512,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Conditional discrimination is the same as simple discrimination (incorrect  --  in conditional discrimination, the correct response depends on context)',
       'Matching-to-sample is a conditional discrimination (incorrect  --  matching-to-sample is a procedure used to train conditional discriminations, not a discrimination itself)',
-      'Conditional discriminations cannot be trained (incorrect  --  they are routinely trained using matching-to-sample procedures)',
+      'Conditional discriminations cannot be trained (incorrect  --  they are routinely trained using matching-to-sample procedures)'
     ],
   },  {
     id: 'rr-tact-extension',
@@ -2794,7 +2523,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Tact extension is the same as stimulus generalization (incorrect  --  tact extension is a specific form of verbal generalization involving tacts)',
       'Tact extensions are always incorrect responses (incorrect  --  they are appropriate generalizations of existing tacts to novel stimuli)',
-      'Tact extension requires direct reinforcement of the new response (incorrect  --  it emerges without direct reinforcement of the extended tact)',
+      'Tact extension requires direct reinforcement of the new response (incorrect  --  it emerges without direct reinforcement of the extended tact)'
     ],
   },  {
     id: 'rr-mutual-entailment',
@@ -2805,7 +2534,7 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: [
       'Mutual entailment is the same as symmetry (incorrect  --  symmetry is a specific form of mutual entailment in equivalence relations; mutual entailment is the broader property)',
       'Mutual entailment only applies to equivalence relations (incorrect  --  it applies to all relational frames)',
-      'Mutual entailment requires direct training of both directions (incorrect  --  the reverse relation is derived without direct training)',
+      'Mutual entailment requires direct training of both directions (incorrect  --  the reverse relation is derived without direct training)'
     ],
   },
   {
@@ -3239,18 +2968,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: 'B.14',
     category: 'Prompting'
-  },
-  {
-    id: 'rr-imitation-standalone',
-    domain: 'B',
-    term: 'Imitation',
-    correctDefinition: 'A form of observational learning in which the behavior of an observer comes to match the behavior of a model as a result of observing the model\'s behavior.',
-    distractors: ['A systematic approach in which behavioral principles are applied to produce socially significant changes in behavior that are meaningful to the individual.', 'A procedure in which environmental variables are systematically arranged to produce a decrease in the future probability of the target behavior over time.', 'A procedure in which antecedent stimuli are modified to prevent the occurrence of problem behavior before it can be reinforced in the natural environment.'],
-    misconceptions: [
-      'Imitation requires that the observer\'s behavior match the model\'s behavior and that this match is a result of observing the model  --  not just a coincidental topographic similarity.'
-    ],
-    taskItem: 'B.15',
-    category: 'Imitation'
   },  {
     id: 'rr-contingent-exercise',
     domain: 'B',
@@ -3259,18 +2976,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: ['A form of negative punishment in which access to preferred physical activities is removed for a specified period following the occurrence of a target behavior.', 'A procedure in which engaging in physical activity is used as a highly preferred reinforcer to strengthen appropriate behaviors in a structured setting.', 'A procedure in which physical exercise is scheduled at predetermined times throughout the day, regardless of the learner\'s behavior or performance.'],
     misconceptions: [
       'Contingent exercise is a form of positive punishment  --  exercise is added contingent on behavior. It is distinct from antecedent exercise, which is used to reduce behavior before it occurs.'
-    ],
-    taskItem: 'B.18',
-    category: 'Punishment'
-  },
-  {
-    id: 'rr-verbal-reprimand',
-    domain: 'B',
-    term: 'Verbal Reprimand',
-    correctDefinition: 'A form of positive punishment in which a verbal statement expressing disapproval is delivered contingent on the occurrence of a target behavior.',
-    distractors: ['A form of negative punishment in which verbal praise and attention are withdrawn following a target behavior, decreasing its future likelihood.', 'A verbal prompt delivered to a learner to guide them toward an appropriate response before an error occurs, thus preventing undesirable actions.', 'A verbal statement that functions as a discriminative stimulus, signaling the availability of reinforcement for a specific desired behavior.'],
-    misconceptions: [
-      'Verbal reprimands only function as punishment if they decrease the target behavior. Reprimands that are delivered inconsistently or with high emotional intensity may inadvertently reinforce attention-maintained behavior.'
     ],
     taskItem: 'B.18',
     category: 'Punishment'
@@ -3431,15 +3136,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: 'Verbal Behavior'
   },
   {
-    id: 'rr-prompt',
-    term: 'Prompt',
-    domain: 'G',
-    domainFull: 'Behavior-Change Procedures',
-    correctDefinition: 'A supplemental antecedent stimulus added to an SD to increase the likelihood of a correct response; intended to be temporary and systematically faded.',
-    distractors: ['A consequence delivered after a correct response to increase its future probability of occurring, serving as a form of positive or negative reinforcement.', 'A discriminative stimulus that controls behavior without supplemental cues, indicating reinforcement availability for specific responses in a given context.', 'A reinforcer used to increase future behavior by being presented immediately after a desired response, strengthening the likelihood of that behavior recurring.'],
-    misconceptions: ['Prompts are permanent features of the instructional environment', 'A prompt is the same as a discriminative stimulus', 'Prompts are only used with verbal behavior', 'Prompts should never be faded once established']
-  },
-  {
     id: 'rr-response-prompt',
     term: 'Response Prompt',
     domain: 'G',
@@ -3566,42 +3262,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: ['General case analysis is the same as task analysis', 'General case analysis is only used for self-care skills', 'General case analysis does not require analyzing the generalization setting', 'General case analysis produces a list of reinforcers, not training examples']
   },
   {
-    id: "rr-phylogenetic-contingencies",
-    term: "Phylogenetic Contingencies",
-    domain: "A",
-    correctDefinition: "Contingencies that operated during the evolutionary history of a species, selecting biological structures and behavioral repertoires that enhanced survival and reproduction.",
-    distractors: ['Contingencies that are established within an individual\'s lifetime, shaping unique behavioral patterns through direct experience and learning processes.', 'Contingencies that result from the immediate interaction between an organism\'s behavior and the environmental consequences that follow it.', 'Contingencies that are primarily influenced by cultural norms and verbal communities, guiding shared practices and social interactions within a group.'],
-    misconceptions: ["Phylogenetic contingencies are the same as learned behavior", "Phylogenetic contingencies can be directly observed in a single session", "Phylogenetic contingencies are irrelevant to ABA practice", "Phylogenetic contingencies only apply to non-human animals"],
-    taskItem: "A.01",
-    category: "Philosophical Foundations"
-  },
-  {
-    id: "rr-ontogenetic-contingencies",
-    term: "Ontogenetic Contingencies",
-    domain: "A",
-    correctDefinition: "Contingencies that operate during an individual organism's lifetime, selecting and shaping behavior through direct experience with environmental consequences.",
-    distractors: ['Contingencies that shaped behavior across evolutionary history of a species, leading to innate responses.', 'Contingencies established by cultural practices and verbal communities that influence shared behaviors.', 'Contingencies that only operate during early childhood development and then cease to have an impact.'],
-    misconceptions: ["Ontogenetic contingencies are the same as phylogenetic contingencies", "Ontogenetic contingencies cannot change behavior after early development", "Ontogenetic contingencies only involve positive reinforcement", "Ontogenetic contingencies are not relevant to understanding problem behavior"],
-    taskItem: "A.01",
-    category: "Philosophical Foundations"
-  },
-  {
     id: "rr-cultural-contingencies",
     term: "Cultural Contingencies",
     domain: "A",
     correctDefinition: "Contingencies established and maintained by social groups and verbal communities that select behavioral practices shared across members of a culture.",
     distractors: ['Contingencies that operated during the evolutionary history of a species, selecting for biological structures and innate behavioral tendencies.', 'Contingencies that are established within an individual\'s lifetime, shaping unique behavioral repertoires through direct learning experiences.', 'Contingencies that primarily govern the development of unconditioned reflexes and respondent behaviors elicited by specific environmental stimuli.'],
     misconceptions: ["Cultural contingencies are the same as ontogenetic contingencies", "Cultural contingencies are not a legitimate subject of behavior analysis", "Cultural contingencies only apply to non-Western populations", "Cultural contingencies cannot be analyzed using behavioral principles"],
-    taskItem: "A.01",
-    category: "Philosophical Foundations"
-  },
-  {
-    id: "rr-goals-of-science",
-    term: "Goals of Science (Description, Prediction, Control)",
-    domain: "A",
-    correctDefinition: "The three interrelated goals of science: description (identifying and recording phenomena), prediction (identifying reliable relationships between variables), and control (demonstrating a functional relationship by manipulating variables).",
-    distractors: ['The three interrelated goals of science: observation (systematically gathering empirical data), hypothesis (formulating testable propositions), and replication (independently verifying experimental outcomes).', 'The three interrelated goals of science: measurement (quantifying observable phenomena), generalization (extending findings to new populations or settings), and application (utilizing scientific knowledge for practical solutions).', 'The three interrelated goals of science: assessment (identifying the current state of a phenomenon), intervention (implementing strategies to modify a phenomenon), and evaluation (determining the efficacy of modification strategies).'],
-    misconceptions: ["Control means restraining or restricting behavior", "Prediction is sufficient to demonstrate a functional relationship", "Description is the highest level of scientific knowledge", "The three goals are independent and unrelated to each other"],
     taskItem: "A.01",
     category: "Philosophical Foundations"
   },  {
@@ -3629,16 +3295,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     correctDefinition: "A measure of behavior expressed as the number of responses per unit of time (e.g., responses per minute); the most common way to express the frequency of behavior relative to observation time.",
     distractors: ['A measure of behavior expressed as the total number of responses emitted during an observation period, without regard to the time spent observing the behavior directly.', 'A measure of behavior expressed as the proportion of intervals in which a behavior occurred, indicating its presence within specific, predefined temporal blocks.', 'A measure of behavior expressed as the elapsed time from the onset of an opportunity to the occurrence of a response, reflecting the latency of the behavior.'],
     misconceptions: ["Rate and frequency are the same measurement dimension", "Rate can only be calculated for behaviors with discrete beginnings and ends", "Rate is only appropriate for behaviors that occur at high frequencies", "Rate does not require a consistent observation period to be meaningful"],
-    taskItem: "C.01",
-    category: "Measurement"
-  },
-  {
-    id: "rr-treatment-integrity-procedural-c",
-    term: "Treatment Integrity (Procedural Fidelity)",
-    domain: "C",
-    correctDefinition: "The degree to which an independent variable is implemented as planned and described; a measure of how accurately and consistently the intervention procedures are carried out.",
-    distractors: ['A dimensional quantity of behavior referring to the total number of times a behavior occurs divided by the total time of the observation period to yield a standardized measure.', 'A dimensional quantity of behavior referring to the total count of responses occurring within a defined and consistent observation period in the natural environment.', 'A dimensional quantity of behavior referring to the proportion of time during an observation period in which the behavior is occurring at any given moment in time.'],
-    misconceptions: ["Treatment integrity is the same as interobserver agreement", "High treatment integrity guarantees behavior change", "Treatment integrity only applies to punishment procedures", "Treatment integrity is only relevant in research settings"],
     taskItem: "C.01",
     category: "Measurement"
   },
@@ -3699,16 +3355,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     correctDefinition: "A change in the behavior of the person being observed that results from awareness of being observed; a threat to the external validity of behavioral measurement.",
     distractors: ['A change in the behavior of the data collector that results from their awareness of being evaluated; a threat to the internal consistency and fidelity of data recording.', 'A change in the target behavior that occurs when a novel stimulus or event is introduced into the environment; a phenomenon often observed during initial intervention phases.', 'A change in the behavior of the data collector due to their preconceived expectations about the intervention\'s effectiveness; a potential source of bias in data collection.'],
     misconceptions: ["Observer reactivity is the same as observer drift", "Observer reactivity always inflates behavior rates", "Observer reactivity can be eliminated by using permanent product recording", "Observer reactivity only affects the behavior of individuals with developmental disabilities"],
-    taskItem: "C.01",
-    category: "Measurement"
-  },
-  {
-    id: "rr-ratio-scale",
-    term: "Ratio Scale",
-    domain: "C",
-    correctDefinition: "A measurement scale that has equal intervals between values and an absolute zero point, allowing meaningful ratio comparisons (e.g., 10 responses is twice as many as 5 responses); frequency and duration are ratio-scale measures.",
-    distractors: ['A measurement scale that has equal intervals between values but lacks an absolute zero point, precluding meaningful ratio comparisons; temperature in Celsius is an example, which provides objective information about the current level and trend of the target behavior.', 'A measurement scale that classifies data into categories with an inherent order but unequal intervals between them, such as a ranking of preferences; pain scales are often of this type.', 'A measurement scale that categorizes data without any order or numerical value, where numbers are merely labels; gender or diagnostic labels are examples of this type of data, which provides objective information about the current level and trend of the target behavior.'],
-    misconceptions: ["Ratio and interval scales are the same type of measurement", "Ratio scales cannot have a value of zero", "Behavior frequency is measured on an interval scale, not a ratio scale", "Ratio scales are only used in basic research settings"],
     taskItem: "C.01",
     category: "Measurement"
   },
@@ -3861,16 +3507,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Ethics"
   },
   {
-    id: "rr-justice",
-    term: "Justice",
-    domain: "E",
-    correctDefinition: "The ethical principle requiring fair, equitable, and appropriate treatment of all individuals; in behavior analysis, this includes ensuring that services are accessible to those who need them and that the benefits and burdens of research are distributed fairly.",
-    distractors: ['The ethical principle requiring professionals to uphold their commitments and be truthful in all interactions; in behavior analysis, this includes following through on promises made to clients and providing accurate information about services.', 'The ethical principle requiring professionals to act in the best interest of their clients and society, promoting welfare above all else; in behavior analysis, this includes prioritizing client well-being and contributing positively to the community.', 'The ethical principle requiring professionals to respect the autonomy and choices of individuals; in behavior analysis, this includes obtaining informed consent, honoring client preferences, and protecting their privacy and confidentiality.'],
-    misconceptions: ["Justice only applies to research settings, not clinical practice", "Justice means treating all clients identically regardless of their needs", "Justice is less important than beneficence in behavior analysis", "Justice only applies to the distribution of resources, not service delivery"],
-    taskItem: "E.01",
-    category: "Ethics"
-  },
-  {
     id: "rr-disciplinary-standards",
     term: "Disciplinary Standards",
     domain: "E",
@@ -3897,16 +3533,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     correctDefinition: "A preference assessment procedure in which the individual is given free access to an array of stimuli and the observer records the amount of time spent with each item; items approached and engaged with for longer durations are identified as preferred.",
     distractors: ['A preference assessment procedure in which pairs of stimuli are presented and the individual selects one from each pair; this is repeated for all possible pairs to determine a clear preference hierarchy for intervention components.', 'A preference assessment procedure in which an array of stimuli is presented, and once an item is selected, it is removed from the array before the next selection is made to identify highly preferred items.', 'A preference assessment procedure in which a single stimulus is presented at a time and the individual\'s approach or avoidance of the item is recorded for each item in the array to gauge individual preferences.'],
     misconceptions: ["Free operant observation is the same as a structured preference assessment", "Free operant observation requires the observer to present stimuli in a specific order", "Free operant observation cannot identify high-preference items", "Free operant observation is only appropriate for individuals with limited verbal behavior"],
-    taskItem: "F.01",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-modeling",
-    term: "Modeling",
-    domain: "F",
-    correctDefinition: "A prompting procedure in which the instructor demonstrates the target behavior for the learner to imitate; the model serves as an antecedent stimulus that increases the likelihood of the learner emitting the target response.",
-    distractors: ['A prompting procedure in which the instructor physically guides the learner through the movements of the target behavior to ensure correct responding; this provides full physical assistance.', 'A prompting procedure in which the instructor provides a verbal description or instruction of how to perform the target behavior; this serves as a vocal antecedent for the learner.', 'A prompting procedure in which the instructor provides a gestural cue, such as pointing, to indicate the correct response or relevant stimulus; this offers a non-vocal hint.'],
-    misconceptions: ["Modeling is the same as video modeling", "Modeling requires the learner to have a generalized imitation repertoire", "Modeling is only effective for motor behaviors", "Modeling is a form of physical prompting"],
     taskItem: "F.01",
     category: "Behavior-Change Procedures"
   },
@@ -3981,16 +3607,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Behavior-Change Procedures"
   },
   {
-    id: "rr-stimulus-shaping",
-    term: "Stimulus Shaping",
-    domain: "G",
-    correctDefinition: "A stimulus fading procedure in which the physical form of the stimulus is gradually changed across trials to transfer stimulus control from a prompt to the target stimulus; the topography of the stimulus changes while the relevant dimension remains constant.",
-    distractors: ['A stimulus fading procedure in which the intensity or salience of a prompt is gradually reduced across trials; the prompt becomes less noticeable over time to transfer control to the natural discriminative stimulus.', 'A stimulus fading procedure in which the physical location of a prompt is gradually changed across trials; the prompt moves closer to the natural stimulus to facilitate the transfer of stimulus control.', 'A stimulus fading procedure in which the delay between the discriminative stimulus and the prompt is gradually increased; the prompt is introduced later and later, allowing the learner more time to respond independently.'],
-    misconceptions: ["Stimulus shaping is the same as stimulus fading", "Stimulus shaping changes the relevant dimension of the stimulus", "Stimulus shaping is only appropriate for visual discrimination training", "Stimulus shaping is the same as response shaping"],
-    taskItem: "G.01",
-    category: "Behavior-Change Procedures"
-  },
-  {
     id: "rr-video-self-modeling",
     term: "Video Self-Modeling",
     domain: "G",
@@ -4021,46 +3637,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Behavior-Change Procedures"
   },
   {
-    id: "rr-self-evaluation",
-    term: "Self-Evaluation",
-    domain: "G",
-    correctDefinition: "A self-management procedure in which an individual compares their own behavior or performance to a predetermined criterion or standard; used to develop accurate self-assessment skills and support behavior change.",
-    distractors: ['A self-management procedure where an individual systematically records the frequency or duration of their own behavior, often using a data collection system like a tally or log.', 'A self-management procedure where an individual delivers contingent reinforcement to themselves following the successful completion of a target behavior, based on predetermined criteria.', 'A self-management procedure where an individual establishes specific behavioral objectives and sets timelines for achieving those goals, thereby providing direction for their own behavior.'],
-    misconceptions: ["Self-evaluation is the same as self-monitoring", "Self-evaluation always produces accurate self-assessment without training", "Self-evaluation is only appropriate for academic behaviors", "Self-evaluation requires external verification to be effective"],
-    taskItem: "G.01",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-self-instruction",
-    term: "Self-Instruction",
-    domain: "G",
-    correctDefinition: "A self-management procedure in which an individual uses verbal statements (overt or covert) to guide their own behavior through a task or situation; the verbal statements function as antecedent stimuli that prompt appropriate responding.",
-    distractors: ['A self-management procedure in which an individual systematically records the occurrence of their own target behavior, often using a tally count or a specific data sheet, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'A self-management procedure in which an individual delivers positive reinforcement to themselves following the successful completion of a predetermined behavioral goal or task, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'A self-management procedure in which an individual objectively compares their observed performance against a pre-established set of criteria or an external standard, which provides objective information about the current level and trend of the target behavior.'],
-    misconceptions: ["Self-instruction is the same as self-monitoring", "Self-instruction requires the individual to speak aloud to be effective", "Self-instruction is only appropriate for individuals with verbal behavior", "Self-instruction is a consequence-based procedure"],
-    taskItem: "G.01",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-generalization-setting",
-    term: "Generalization Setting",
-    domain: "G",
-    correctDefinition: "A setting in which the target behavior is expected to occur but in which training has not been conducted; used to assess whether behavior change has generalized beyond the training context.",
-    distractors: ['A setting in which the initial behavioral intervention is implemented to teach a new skill or modify an existing behavior, serving as the primary training environment.', 'A setting in which a comprehensive functional assessment was conducted to identify the specific environmental variables maintaining the occurrence of a target behavior.', 'A setting where the target behavior is observed to occur at its highest baseline frequency before any intervention is introduced, indicating its natural prevalence.'],
-    misconceptions: ["Generalization settings are the same as training settings", "Behavior always generalizes to new settings without specific programming", "Generalization settings must be similar to training settings to assess generalization", "Generalization settings are only used in research, not clinical practice"],
-    taskItem: "G.01",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-teach-enough-examples",
-    term: "Teach Enough Examples",
-    domain: "G",
-    correctDefinition: "A generalization programming strategy in which a sufficient number and variety of training exemplars are used to ensure that the learner responds correctly to untrained stimuli; the number of examples needed depends on the complexity of the stimulus class.",
-    distractors: ['A generalization programming strategy in which the instructional environment is systematically designed to closely resemble the natural environment where the behavior is ultimately desired, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'A generalization programming strategy in which the learner is explicitly reinforced for exhibiting variations in their responses, leading to greater behavioral flexibility and creativity, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'A generalization programming strategy in which multiple instructors deliver training across various settings, thus increasing the probability of stimulus control by relevant features, calculated by dividing the number of responses by the observation time to yield responses per unit time.'],
-    misconceptions: ["Teaching more examples always produces better generalization", "Teach enough examples is the same as general case analysis", "Teaching enough examples guarantees generalization to all untrained stimuli", "Teach enough examples is only appropriate for discrimination training"],
-    taskItem: "G.01",
-    category: "Behavior-Change Procedures"
-  },
-  {
     id: "rr-contrived-contingency",
     term: "Contrived Contingency",
     domain: "G",
@@ -4077,16 +3653,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     correctDefinition: "A naturally occurring reinforcement contingency in the environment that will maintain a target behavior after the behavior analyst withdraws; identifying and connecting behavior to natural maintaining contingencies is a key goal of generalization programming.",
     distractors: ['A contrived reinforcement contingency that is specifically designed by a behavior analyst to support the acquisition of a new skill; it is often faded as the learner demonstrates increasing independence with the target behavior.', 'A reinforcement contingency that is specifically arranged by a behavior analyst to temporarily strengthen an emerging behavior; it will be systematically withdrawn once the behavior reaches a predetermined level of proficiency.', 'A reinforcement contingency that is deliberately established within a controlled training environment to promote initial skill acquisition; it may not inherently exist in the learner\'s everyday environment.'],
     misconceptions: ["Natural maintaining contingencies are the same as contrived contingencies", "Natural maintaining contingencies do not need to be identified before treatment ends", "Natural maintaining contingencies always exist for every target behavior", "Natural maintaining contingencies are the same as naturally existing contingencies"],
-    taskItem: "G.01",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-generalization-across-stimuli",
-    term: "Generalization Across Stimuli",
-    domain: "G",
-    correctDefinition: "The occurrence of a target behavior in the presence of stimuli that were not present during training; also called stimulus generalization; indicates that the behavior is under the control of a stimulus class rather than a single specific stimulus.",
-    distractors: ['The occurrence of a target behavior when performed by different individuals who were not involved in the original training; it indicates that the skill is not dependent on a specific instructor or interventionist.', 'The occurrence of a target behavior in various settings or environments that were not explicitly included during the instructional phase; this demonstrates the robust transfer of a learned skill.', 'The occurrence of a target behavior across different response topographies, where multiple forms of the behavior produce the same outcome; this shows flexibility in the expression of the learned skill.'],
-    misconceptions: ["Generalization across stimuli is the same as response generalization", "Generalization across stimuli always occurs without specific programming", "Generalization across stimuli is the same as setting generalization", "Generalization across stimuli is only relevant for discrimination training"],
     taskItem: "G.01",
     category: "Behavior-Change Procedures"
   },
@@ -4117,16 +3683,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     correctDefinition: "A written protocol that specifies the procedures to be followed when a client engages in behavior that poses an immediate risk of harm to themselves or others; must be developed proactively and include specific decision points and escalation procedures.",
     distractors: ['A written protocol that outlines the specific steps for implementing a behavior intervention plan, including roles, responsibilities, and data collection procedures for staff members, which specifies antecedent modifications, replacement behaviors, and consequence strategies.', 'A written protocol that details the systematic procedures for conducting a comprehensive functional behavior assessment, encompassing indirect, descriptive, and experimental analyses, which identifies the antecedents and consequences that maintain the problem behavior.', 'A written protocol that specifies the procedures for transitioning a client between different service providers or environments, ensuring continuity of care and appropriate support, which is evaluated through systematic data collection and analysis to determine its effectiveness.'],
     misconceptions: ["A crisis plan is only needed for clients who have a history of severe problem behavior", "A crisis plan is the same as a behavior intervention plan", "A crisis plan does not need to be reviewed or updated regularly", "A crisis plan is only required in residential settings"],
-    taskItem: "H.01",
-    category: "Selecting Interventions"
-  },
-  {
-    id: "rr-response-maintenance-programming",
-    term: "Response Maintenance Programming",
-    domain: "H",
-    correctDefinition: "Deliberate programming strategies used to ensure that behavior changes persist after the intervention is withdrawn; includes thinning reinforcement schedules, using intermittent reinforcement, and connecting behavior to natural maintaining contingencies.",
-    distractors: ['Deliberate programming strategies used to ensure that behavior changes occur across different individuals or instructors who were not present during the initial training phase, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'Deliberate programming strategies used to ensure that behavior changes occur in various settings or environments that were not explicitly included in the initial training context, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'Deliberate programming strategies used to ensure that behavior changes occur with different materials or forms of stimuli not directly used during the acquisition of the skill, defined as anything an organism does that can be measured in terms of its physical dimensions.'],
-    misconceptions: ["Response maintenance programming is the same as generalization programming", "Response maintenance always occurs without specific programming", "Response maintenance programming is only necessary for behaviors that are difficult to acquire", "Response maintenance programming is only used in research settings"],
     taskItem: "H.01",
     category: "Selecting Interventions"
   },
@@ -4201,16 +3757,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Selecting Interventions"
   },
   {
-    id: "rr-systematic-desensitization",
-    term: "Systematic Desensitization",
-    domain: "H",
-    correctDefinition: "A procedure used to reduce fear or anxiety by pairing relaxation with a hierarchy of increasingly anxiety-provoking stimuli; the individual is exposed to stimuli from least to most feared while maintaining a relaxed state.",
-    distractors: ['A procedure used to reduce problem behavior by identifying and then removing the reinforcing consequences that maintain its occurrence, leading to a decrease in its frequency.', 'A procedure used to reduce avoidance behavior by requiring the individual to remain in the presence of the feared stimulus for an extended period, preventing escape responses.', 'A procedure used to reduce anxiety by immediately exposing the individual to the most intense form of a feared stimulus for a prolonged duration, inducing habituation, measured from the onset of the response to its offset, yielding a total time measure.'],
-    misconceptions: ["Systematic desensitization is the same as flooding", "Systematic desensitization does not require a relaxation component", "Systematic desensitization is only effective for phobias, not other anxiety disorders", "Systematic desensitization is a consequence-based procedure"],
-    taskItem: "H.01",
-    category: "Selecting Interventions"
-  },
-  {
     id: "rr-indiscriminable-contingency",
     term: "Indiscriminable Contingency",
     domain: "H",
@@ -4219,34 +3765,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     misconceptions: ["Indiscriminable contingencies are always undesirable in clinical practice", "Indiscriminable contingencies are the same as variable schedules of reinforcement", "Indiscriminable contingencies reduce resistance to extinction", "Indiscriminable contingencies are only used in research settings"],
     taskItem: "H.01",
     category: "Selecting Interventions"
-  },
-  {
-    id: "rr-setting-generalization",
-    term: "Setting/Situation Generalization",
-    domain: "H",
-    correctDefinition: "The occurrence of a target behavior in settings or situations that were not used during training; one of the primary dimensions of generalization that behavior analysts must program for explicitly.",
-    distractors: ['The occurrence of a target behavior with individuals who were not present during the original training, such as family members or peers in the natural environment, without explicit instruction.', 'The occurrence of a target behavior in the presence of stimuli that were not used during training, requiring the learner to respond appropriately to novel cues and variations in their environment.', 'The continued performance of a target behavior after the formal intervention is completely withdrawn, indicating that the behavior has come under the control of naturally occurring contingencies.'],
-    misconceptions: ["Setting generalization is the same as stimulus generalization", "Setting generalization always occurs without specific programming", "Setting generalization is the same as response generalization", "Setting generalization is only relevant for behaviors taught in clinic settings"],
-    taskItem: "H.01",
-    category: "Selecting Interventions"
-  },
-  {
-    id: "rr-generalization-across-subjects",
-    term: "Generalization Across Subjects",
-    domain: "H",
-    correctDefinition: "The occurrence of behavior change in individuals who were not directly trained; also called person generalization; relevant when an intervention is implemented with one member of a group and behavior change is observed in other group members.",
-    distractors: ['The occurrence of a target behavior in various settings that were not part of the training environment, demonstrating the transfer of learned skills to novel and diverse contexts, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'The occurrence of a target behavior in the presence of stimuli that were not explicitly used during training, requiring the learner to respond to novel cues and stimulus variations, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'The maintenance of a target behavior over extended periods after the intervention has been completely withdrawn, indicating that the behavior is under the control of natural environmental contingencies.'],
-    misconceptions: ["Generalization across subjects is the same as stimulus generalization", "Generalization across subjects always occurs without specific programming", "Generalization across subjects is the same as response generalization", "Generalization across subjects is only relevant in group intervention settings"],
-    taskItem: "H.01",
-    category: "Selecting Interventions"
-  },
-  {
-    id: "rr-ethical-obligation-supervisee-safety",
-    term: "Ethical Obligation to Supervisee Safety",
-    domain: "I",
-    correctDefinition: "The BACB ethical requirement that supervisors take reasonable steps to ensure the safety and well-being of supervisees; includes providing adequate training, monitoring performance, and addressing unsafe practices promptly.",
-    distractors: ['The ethical requirement that supervisees promptly report any unsafe practices or ethical violations observed to the BACB or other relevant authorities to protect clients and the integrity of the profession.', 'The ethical requirement that supervisors meticulously document all supervision activities, including dates, times, and content, for accountability, record-keeping, and compliance with professional standards.', 'The ethical requirement that supervisors provide timely, specific, and constructive feedback on supervisee performance, ensuring skill development and adherence to ethical guidelines in practice.'],
-    misconceptions: ["Ethical obligations to supervisee safety only apply in crisis situations", "Supervisors are not responsible for the safety of supervisees who have completed their training", "Ethical obligations to supervisee safety are the same as liability protections for supervisors", "Ethical obligations to supervisee safety only apply in residential or school settings"]
   },
   {
     id: "rr-applied-behavior-analysis",
@@ -4304,20 +3822,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Measurement"
   },
   {
-    id: "rr-functional-relationship",
-    term: "Functional Relationship",
-    domain: "D",
-    correctDefinition: "A cause-and-effect relationship between an independent variable and a dependent variable, demonstrated when systematic manipulation of the independent variable produces reliable, replicable changes in the dependent variable.",
-    distractors: ['A correlation between two variables that consistently co-vary in a predictable direction, suggesting a possible association but not necessarily demonstrating direct causation.', 'A relationship between a behavior and its immediate antecedents or consequences, identified through descriptive assessment methods, indicating potential triggers or maintaining variables.', 'A statistical association between a specific treatment and an observed outcome, established through group comparison in experimental designs, often used to evaluate intervention efficacy.'],
-    misconceptions: [
-      "Correlation is sufficient to establish a functional relationship",
-      "A functional relationship can be demonstrated with a single data point",
-      "Functional relationships can only be demonstrated in laboratory settings"
-    ],
-    taskItem: "D.01",
-    category: "Experimental Design"
-  },
-  {
     id: "rr-multiple-baseline-design",
     term: "Multiple Baseline Design",
     domain: "D",
@@ -4360,20 +3864,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Ethics"
   },
   {
-    id: "rr-least-restrictive-effective-treatment",
-    term: "Least Restrictive Effective Treatment",
-    domain: "E",
-    correctDefinition: "The ethical principle requiring behavior analysts to select interventions that produce the desired behavior change with the minimum level of intrusiveness, risk, or restriction to the client's rights and freedoms.",
-    distractors: ['The ethical principle requiring all interventions to be approved by a human rights committee or institutional review board before implementation, regardless of their intrusiveness.', 'The ethical principle requiring that punishment procedures should never be used, regardless of their potential effectiveness in producing rapid and meaningful behavior change.', 'The ethical principle requiring that the least expensive intervention should always be selected first, even if it is not the most effective or efficient option for the client.'],
-    misconceptions: [
-      "Least restrictive means the intervention with the fewest components",
-      "Punishment procedures can never be the least restrictive effective treatment",
-      "Least restrictive treatment always means reinforcement-only procedures"
-    ],
-    taskItem: "E.02",
-    category: "Ethics"
-  },
-  {
     id: "rr-scope-of-practice-e03",
     term: "Scope of Practice",
     domain: "E",
@@ -4411,20 +3901,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       "Generalization occurs automatically after a behavior is trained",
       "Stimulus generalization and response generalization are the same phenomenon",
       "Generalization is the same as maintenance"
-    ],
-    taskItem: "H.02",
-    category: "Generalization"
-  },
-  {
-    id: "rr-train-and-hope",
-    term: "Train and Hope",
-    domain: "H",
-    correctDefinition: "A passive, inadequate approach to generalization programming in which the clinician implements the intervention in one setting and hopes the behavior will generalize without any systematic programming for generalization.",
-    distractors: [' in which the same target behavior is trained across multiple, varied settings and with different materials simultaneously to promote immediate and widespread transfer of skills to novel situations.', ' in which training stimuli are carefully selected to represent the full range of relevant stimulus and response variations present in the generalization environment, ensuring robust skill transfer.', ' in which reinforcement is gradually thinned after mastery is achieved, moving from continuous to variable schedules to promote the durability and persistence of behavior change over time.'],
-    misconceptions: [
-      "Train and hope is an acceptable generalization strategy for some behaviors",
-      "Train and hope is the same as sequential modification",
-      "Train and hope is a legitimate strategy when natural contingencies are expected to maintain behavior"
     ],
     taskItem: "H.02",
     category: "Generalization"
@@ -4483,20 +3959,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       "OBM does not use the same principles as clinical ABA"
     ],
     taskItem: "I.03",
-    category: "Supervision"
-  },
-  {
-    id: "rr-ethical-supervision",
-    term: "Ethical Supervision",
-    domain: "I",
-    correctDefinition: "Supervision that adheres to the BACB Ethics Code by maintaining appropriate professional boundaries, providing adequate and competent oversight, ensuring supervisee skill development, and prioritizing client welfare throughout the supervisory relationship.",
-    distractors: ['Supervision that primarily emphasizes administrative duties, including scheduling and record-keeping, rather than actively fostering the supervisee\'s skill acquisition, professional growth, or ensuring their consistent adherence to established professional and ethical standards.', 'Supervision that exclusively delivers positive reinforcement by highlighting the supervisee\'s strengths, intentionally sidestepping any constructive criticism or areas for improvement, thereby aiming to preserve a consistently positive and comfortable working relationship.', 'Supervision that primarily focuses on advancing the financial objectives of the supervisory organization by maximizing the number of billable service hours, potentially at the detriment of providing comprehensive, high-quality training and adequate developmental support for the supervisee.'],
-    misconceptions: [
-      "Ethical supervision only requires following the BACB supervision standards",
-      "A supervisor is not responsible for the ethical conduct of their supervisees",
-      "Ethical supervision is only relevant during the supervisee's initial credentialing period"
-    ],
-    taskItem: "I.04",
     category: "Supervision"
   },
   {
@@ -4653,20 +4115,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Experimental Design"
   },
   {
-    id: "rr-practice-effects",
-    term: "Practice Effects",
-    domain: "D",
-    correctDefinition: "Changes in behavior that occur as a result of repeated exposure to the measurement procedure or task, independent of any intervention; a threat to internal validity in designs involving repeated measurement of the same behavior.",
-    distractors: ['Changes in behavior that occur due to the participant becoming aware of the study\'s purpose or expectations, potentially leading to performance that is not representative of their typical behavior.', 'Changes in behavior that are attributed to the natural developmental processes occurring in participants over time, which can confound the true effects of an intervention, especially in long-term studies.', 'Changes in behavior that are directly caused by the accurate and consistent implementation of the intervention, demonstrating the functional relationship between the treatment and the target response.'],
-    misconceptions: [
-      "Practice effects are the same as maturation effects",
-      "Practice effects only occur in academic or cognitive tasks",
-      "Practice effects strengthen rather than threaten internal validity"
-    ],
-    taskItem: "D.03",
-    category: "Experimental Design"
-  },
-  {
     id: "rr-affirmation-of-the-consequent",
     term: "Affirmation of the Consequent",
     domain: "D",
@@ -4692,20 +4140,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       "Research questions are only relevant to basic research, not applied practice"
     ],
     taskItem: "D.01",
-    category: "Experimental Design"
-  },
-  {
-    id: "rr-reversal-technique",
-    term: "Reversal Technique",
-    domain: "D",
-    correctDefinition: "A procedure used within a reversal design in which the contingencies are changed to make a different behavior the target of reinforcement rather than simply withdrawing the intervention; used when the target behavior is unlikely to reverse to baseline levels with simple withdrawal.",
-    distractors: ['A procedure used within a reversal design wherein the independent variable is entirely removed to meticulously observe a return to baseline levels of the dependent variable, thereby unequivocally establishing experimental control over the observed behavior. This method relies on the assumption that the behavior will readily revert to its pre-intervention state.', 'A procedure for systematically evaluating the effects of an intervention by meticulously alternating between intervention and baseline conditions for the target behavior across different settings, participants, or time periods. This approach is often employed to demonstrate the functional relationship between the intervention and the observed behavioral changes, enhancing internal validity.', 'A procedure for rigorously demonstrating experimental control over a target behavior by initially introducing an intervention, subsequently withdrawing it to observe its impact, and then carefully reinstating it, observing corresponding and consistent changes in the target behavior across these distinct phases of the experimental design.'],
-    misconceptions: [
-      "The reversal technique is the same as withdrawing the intervention",
-      "The reversal technique is only used in the A-B-A-B design",
-      "The reversal technique always produces a complete reversal to baseline levels"
-    ],
-    taskItem: "D.04",
     category: "Experimental Design"
   },
   {
@@ -4735,20 +4169,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "D.01",
     category: "Experimental Design"
-  },
-  {
-    id: "rr-non-maleficence",
-    term: "Non-Maleficence",
-    domain: "E",
-    correctDefinition: "The ethical principle of doing no harm; requires practitioners to avoid interventions that carry unnecessary risk of physical, psychological, or social harm to the client, and to weigh the potential benefits of any procedure against its risks.",
-    distractors: ['The ethical principle of treating all clients with equal respect and fairness, ensuring equitable access to services and avoiding any form of discrimination in practice, as identified through systematic observation and functional assessment of the environmental context.', 'The ethical obligation to act in the best interests of the client, even when the client cannot make independent decisions, requiring careful consideration of surrogate decision-making, which is evaluated through systematic data collection and analysis to determine its effectiveness.', 'The ethical principle of obtaining informed consent before implementing any behavior-change procedure, ensuring client understanding and voluntary agreement to the intervention plan, defined as anything an organism does that can be measured in terms of its physical dimensions.'],
-    misconceptions: [
-      "Non-maleficence means that punishment procedures can never be used",
-      "Non-maleficence is the same as beneficence",
-      "Non-maleficence only applies to physical harm, not psychological or social harm"
-    ],
-    taskItem: "E.01",
-    category: "Ethics"
   },
   {
     id: "rr-autonomy",
@@ -4802,20 +4222,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       "The client is not a stakeholder because they cannot make independent decisions",
       "Stakeholders are only relevant when there are conflicts of interest",
       "The behavior analyst is not a stakeholder in the program they design"
-    ],
-    taskItem: "E.01",
-    category: "Ethics"
-  },
-  {
-    id: "rr-ethical-codes-of-behavior",
-    term: "Ethical Codes of Behavior",
-    domain: "E",
-    correctDefinition: "Formal, written standards of professional conduct established by a credentialing or licensing body that define the obligations of practitioners, specify prohibited behaviors, and provide a framework for resolving ethical dilemmas.",
-    distractors: ['Informal guidelines for professional conduct that are disseminated through peer consultation and mentorship, influencing daily practice decisions in various contexts, which is evaluated through systematic data collection and analysis to determine its effectiveness.', 'Legal statutes that mandate specific practices within the field of behavior analysis, establishing minimum requirements for professional conduct and service provision, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'Organizational policies developed by specific agencies to regulate the professional behavior of their employees, establishing internal standards for operations, defined as anything an organism does that can be measured in terms of its physical dimensions.'],
-    misconceptions: [
-      "Ethical codes are the same as laws governing professional practice",
-      "Ethical codes are aspirational guidelines rather than enforceable standards",
-      "Following ethical codes is sufficient to ensure ethical practice"
     ],
     taskItem: "E.01",
     category: "Ethics"
@@ -4916,20 +4322,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       "Behavior chain interruption strategy requires the learner to have a fully mastered chain"
     ],
     taskItem: "F.04",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-enriched-environment",
-    term: "Enriched Environment",
-    domain: "F",
-    correctDefinition: "An antecedent intervention in which the density of reinforcement in the environment is increased by providing free access to preferred stimuli, activities, or social interaction; reduces problem behavior by abolishing the establishing operation for the behavior.",
-    distractors: ['An antecedent intervention in which the environment is modified to remove or reduce the discriminative stimuli that reliably occasion problem behavior, making those behaviors less probable and promoting more adaptive responses.', 'An antecedent intervention in which the environment is arranged to provide an abundance of instructional materials and learning opportunities, thereby increasing the rate of skill acquisition across various developmental domains.', 'An antecedent intervention in which the environment is systematically stripped of all extraneous stimuli that could divert attention, thereby facilitating sustained focus on instructional tasks and reducing off-task behavior.'],
-    misconceptions: [
-      "Enriched environments are only effective for behaviors maintained by automatic reinforcement",
-      "Enriched environments are the same as noncontingent reinforcement",
-      "Enriched environments increase problem behavior by providing more stimulation"
-    ],
-    taskItem: "F.05",
     category: "Behavior-Change Procedures"
   },
   {
@@ -5157,20 +4549,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Philosophical Foundations"
   },
   {
-    id: "rr-response-maintenance-conceptual",
-    term: "Response Maintenance (Conceptual)",
-    domain: "B",
-    correctDefinition: "The continuation of a behavior change after the intervention that produced it has been discontinued; maintenance is facilitated by natural reinforcement contingencies, intermittent schedules, and generalization programming.",
-    distractors: ['A systematic maintenance strategy in which reinforcement is gradually thinned after mastery is achieved, moving from continuous reinforcement to intermittent schedules that approximate the natural reinforcement environment.', 'The experimental analysis of behavior that uses group comparison designs with human participants to identify the environmental variables that control socially significant behaviors and develop evidence-based interventions.', 'The scientific attitude of accepting all currently established knowledge as permanent and unchangeable, treating published research findings as definitive truths that do not require replication or further empirical scrutiny.'],
-    misconceptions: [
-      "Response maintenance is the same as generalization",
-      "Maintenance occurs automatically after a behavior is mastered",
-      "Maintenance requires continuous reinforcement after the intervention is discontinued"
-    ],
-    taskItem: "B.15",
-    category: "Core Concepts"
-  },
-  {
     id: "rr-efficiency-measures",
     term: "Efficiency Measures (Trials to Criterion, Cost-Benefit)",
     domain: "C",
@@ -5296,48 +4674,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Measurement"
   },
   {
-    id: "rr-scatterplot",
-    term: "Scatterplot",
-    domain: "C",
-    correctDefinition: "A data display format in which each data point represents the co-occurrence of two variables; in behavior analysis, scatterplots are used to identify the temporal distribution of behavior across times of day or days of the week.",
-    distractors: ['A data display format in which data points representing the value of a dependent variable at each measurement occasion are connected by lines, used to identify trends and level changes over time.', 'A data display format in which the height of each bar represents the value of the dependent variable for different conditions, primarily used for comparing the effects of discrete experimental manipulations.', 'A data display format in which the cumulative total of responses is plotted over time, where the slope indicates the rate of responding and the line never decreases as observations progress.'],
-    misconceptions: [
-      "Scatterplots in ABA are used to show the relationship between two continuous variables",
-      "Scatterplots are the same as line graphs",
-      "Scatterplots are only used for functional assessment purposes"
-    ],
-    taskItem: "C.04",
-    category: "Measurement"
-  },
-  {
-    id: "rr-local-response-rate",
-    term: "Local Response Rate",
-    domain: "C",
-    correctDefinition: "The rate of responding during a specific portion of a session or interval, as opposed to the overall rate across the entire session; used to identify within-session patterns such as post-reinforcement pauses.",
-    distractors: ['The average rate of responding calculated across all sessions within a specific experimental phase, indicating the general level of performance under a particular set of conditions.', 'The rate of responding during the initial trials or segments of each session, often used to assess warm-up effects or the initial impact of a given stimulus condition.', 'The rate of responding observed in the natural environment compared to the rate observed in a controlled training setting, used for assessing generalization of behavioral skills.'],
-    misconceptions: [
-      "Local response rate is the same as overall response rate",
-      "Local response rate is only relevant for fixed-ratio schedules",
-      "Local response rate cannot be measured using a standard line graph"
-    ],
-    taskItem: "C.04",
-    category: "Measurement"
-  },
-  {
-    id: "rr-overall-response-rate",
-    term: "Overall Response Rate",
-    domain: "C",
-    correctDefinition: "The average rate of responding calculated across an entire session or observation period, obtained by dividing the total number of responses by the total observation time; contrasted with local response rate.",
-    distractors: ['The rate of responding during a specific portion of a session or interval, used to identify within-session patterns such as post-reinforcement pauses or accelerations in behavior.', 'The rate of responding that is typical for a given individual across all conditions, reflecting their general behavioral output and serving as a baseline for comparison.', 'The rate of responding observed in the natural environment compared to the rate observed in a controlled training setting, used for assessing the ecological validity of interventions.'],
-    misconceptions: [
-      "Overall response rate and local response rate provide the same information",
-      "Overall response rate is the same as frequency",
-      "Overall response rate is always the most informative measure of behavior"
-    ],
-    taskItem: "C.04",
-    category: "Measurement"
-  },
-  {
     id: "rr-split-middle-line-of-progress",
     term: "Split-Middle Line of Progress",
     domain: "C",
@@ -5450,20 +4786,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Supervision"
   },
   {
-    id: "rr-feedback-delivery-in-supervision",
-    term: "Feedback Delivery in Supervision",
-    domain: "I",
-    correctDefinition: "The process of providing specific, timely, and constructive information to a supervisee about their performance; effective feedback in supervision is behavior-specific, delivered close in time to the observed behavior, and includes both positive and corrective components.",
-    distractors: ['The process of evaluating a supervisee\'s overall competence and assigning a performance rating based on subjective criteria and general impressions of their work, which lacks the specificity and behavioral focus of effective feedback.', 'The process of providing a supervisee with positive praise and encouragement, regardless of their actual performance, to boost morale and foster a positive working relationship, which is insufficient for skill development.', 'The process of documenting a supervisee\'s progress and challenges over time, typically through written reports, without direct interaction or immediate behavioral guidance, which describes record-keeping rather than active feedback.'],
-    misconceptions: [
-      "Feedback in supervision should focus primarily on corrective information",
-      "Feedback is only necessary when a supervisee makes a significant error",
-      "Written feedback is always more effective than verbal feedback in supervision"
-    ],
-    taskItem: "I.10",
-    category: "Supervision"
-  },
-  {
     id: "rr-behavior-skills-training",
     term: "Behavior Skills Training (BST)",
     domain: "G",
@@ -5520,20 +4842,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Behavior-Change Procedures"
   },
   {
-    id: "rr-generalization-programming",
-    term: "Generalization Programming",
-    domain: "H",
-    correctDefinition: "The systematic application of strategies to promote the occurrence of trained behaviors in untrained settings, with untrained people, and under untrained conditions; includes training sufficient exemplars, training loosely, and using natural contingencies.",
-    distractors: ['The systematic application of strategies to measure whether a trained behavior occurs in untrained settings or with untrained people; this primarily involves data collection and analysis, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'The systematic application of strategies to train a behavior until it occurs in all relevant settings and under all conditions, often requiring extensive and time-consuming direct instruction, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'The systematic application of strategies to identify the specific settings in which a behavior should occur and the relevant stimuli that should evoke the behavior in those contexts, defined as anything an organism does that can be measured in terms of its physical dimensions.'],
-    misconceptions: [
-      "Generalization programming is the same as generalization",
-      "Generalization programming is only necessary for learners with autism",
-      "Generalization programming is only required after a behavior has been mastered"
-    ],
-    taskItem: "H.06",
-    category: "Behavior-Change Procedures"
-  },
-  {
     id: "rr-social-skills-training",
     term: "Social Skills Training",
     domain: "H",
@@ -5543,20 +4851,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       "Social skills training is the same as social stories",
       "Social skills training is only appropriate for individuals with autism",
       "Social skills training is the same as BST"
-    ],
-    taskItem: "H.06",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-verbal-behavior-intervention",
-    term: "Verbal Behavior Intervention",
-    domain: "H",
-    correctDefinition: "A behavior-analytic approach to language intervention based on Skinner's analysis of verbal behavior; targets the development of functional verbal operants (mands, tacts, intraverbals, echoics) rather than focusing on the form of language.",
-    distractors: ['A behavior-analytic approach to language intervention based on developmental language milestones and sequences.', 'A behavior-analytic approach to language intervention based on the structure and grammar of language and its rules.', 'A behavior-analytic approach to language intervention based on cognitive theories of language development.'],
-    misconceptions: [
-      "Verbal behavior intervention is the same as PECS",
-      "Verbal behavior intervention is only appropriate for non-verbal learners",
-      "Verbal behavior intervention is the same as speech-language therapy"
     ],
     taskItem: "H.06",
     category: "Behavior-Change Procedures"
@@ -6260,20 +5554,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Stimulus Control"
   },
   {
-    id: "rr-drd",
-    term: "Differential Reinforcement of Diminishing Rates (DRD)",
-    domain: "H",
-    correctDefinition: "A procedure in which reinforcement is delivered when the rate of a behavior is below a criterion that is progressively lowered over time; used to gradually reduce the rate of a behavior to zero.",
-    distractors: ['A procedure in which a stimulus is presented contingent on a behavior, resulting in a decrease in the future frequency of that behavior under similar antecedent conditions.', 'A procedure in which the delivery of a consequence is withheld following a behavior, resulting in a gradual decrease in the future probability of that response over time.', 'A procedure in which a stimulus is removed contingent on a behavior, resulting in a decrease in the future frequency of that behavior in similar environmental contexts.'],
-    misconceptions: [
-      "DRD is the same as DRL",
-      "DRD is the same as DRO",
-      "DRD eliminates behavior immediately"
-    ],
-    taskItem: "H.03",
-    category: "Behavior-Change Procedures"
-  },
-  {
     id: "rr-discriminated-avoidance",
     term: "Discriminated Avoidance",
     domain: "B",
@@ -6344,20 +5624,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Verbal Behavior"
   },
   {
-    id: "rr-emergent-stimulus-relations",
-    term: "Emergent Stimulus Relations",
-    domain: "B",
-    correctDefinition: "Stimulus relations that arise without direct training as a result of other trained relations; include derived relations in stimulus equivalence and relational frame theory; demonstrate that learning can produce more than what was directly taught.",
-    distractors: ['Stimulus relations that are established through direct conditioning, requiring explicit teaching for their formation and do not involve any spontaneous derivation from other trained associations; each connection is individually learned and reinforced.', 'Stimulus relations that emerge through generalization to novel stimuli, sharing physical characteristics with trained ones without any relational responding; the new stimuli simply evoke a similar response due to their perceptual overlap.', 'Stimulus relations that emerge through observational learning, by watching others respond to various stimuli and imitating their behavior; this process involves direct modeling rather than derived or untrained connections.'],
-    misconceptions: [
-      "Emergent stimulus relations are the same as derived stimulus relations",
-      "Emergent stimulus relations are the same as generalization",
-      "Emergent stimulus relations only occur with visual stimuli"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
-  },
-  {
     id: "rr-environment",
     term: "Environment",
     domain: "A",
@@ -6370,34 +5636,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "A.01",
     category: "Philosophical Foundations"
-  },
-  {
-    id: "rr-equivalence-test",
-    term: "Equivalence Test",
-    domain: "B",
-    correctDefinition: "A probe procedure used to assess whether stimuli have become members of the same equivalence class; tests for reflexivity, symmetry, and transitivity relations that were not directly trained.",
-    distractors: ['A test used to assess whether two stimuli are physically identical, based on their observable characteristics; this procedure focuses on perceptual matching rather than learned, abstract relations.', 'A test used to assess whether a learner can match stimuli based on physical similarity, such as matching-to-sample with identical items; this primarily evaluates visual discrimination, not derived relations.', 'A test used to assess whether a learner has mastered a discrimination, distinguishing between different stimuli based on direct training; this evaluates explicitly taught differences, not untaught equivalences.'],
-    misconceptions: [
-      "Equivalence tests are the same as matching-to-sample tests",
-      "Equivalence tests require reinforcement to be valid",
-      "Equivalence tests are only used in basic research"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
-  },
-  {
-    id: "rr-equivalence-class-formation",
-    term: "Equivalence-Class Formation",
-    domain: "B",
-    correctDefinition: "The process by which stimuli become members of the same equivalence class through training; requires demonstrating reflexivity, symmetry, and transitivity; results in stimuli becoming interchangeable in terms of their behavioral functions.",
-    distractors: ['The process by which stimuli come to control the same response through generalization, due to shared features; this process relies on physical resemblance rather than symbolic or arbitrary learned relations among stimuli.', 'The process by which stimuli are grouped based on their physical properties, without any learned relations or direct training on their functionality; classification occurs solely due to inherent perceptual similarities.', 'The process by which stimuli acquire the same reinforcing value through pairing with primary reinforcers, leading to conditioned reinforcement; this involves a transfer of value, not the formation of derived stimulus relations.'],
-    misconceptions: [
-      "Equivalence-class formation requires direct training of all relations",
-      "Equivalence-class formation is the same as stimulus generalization",
-      "Equivalence-class formation only occurs with visual stimuli"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
   },
   {
     id: "rr-escape-contingency",
@@ -6428,20 +5666,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Motivating Operations"
   },
   {
-    id: "rr-exclusion",
-    term: "Exclusion",
-    domain: "F",
-    correctDefinition: "A stimulus control procedure in which a learner selects a novel stimulus from an array by excluding all familiar stimuli; allows the learner to select the correct stimulus without prior training on that stimulus.",
-    distractors: ['A procedure in which a learner is removed from an activity or setting contingent on problem behavior, as a form of time-out; this involves a punitive consequence rather than a stimulus control teaching method.', 'A procedure in which incorrect responses are excluded from reinforcement, leading to response differentiation; this focuses on shaping specific topographies, not identifying novel stimuli through elimination.', 'A procedure in which a learner selects a stimulus that matches a sample, demonstrating stimulus control; this involves direct matching rather than inferring the correct item by eliminating others.'],
-    misconceptions: [
-      "Exclusion is the same as exclusionary time-out",
-      "Exclusion requires prior training on the target stimulus",
-      "Exclusion is the same as fast mapping"
-    ],
-    taskItem: "F.03",
-    category: "Behavior-Change Procedures"
-  },
-  {
     id: "rr-exclusion-time-out",
     term: "Exclusion Time-Out",
     domain: "H",
@@ -6453,20 +5677,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       "Exclusion time-out is the same as contingent observation"
     ],
     taskItem: "H.05",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-extra-stimulus-prompt",
-    term: "Extra-Stimulus Prompt",
-    domain: "F",
-    correctDefinition: "A prompt that is added to the environment to supplement the natural discriminative stimulus; the extra stimulus is not part of the natural SD but is added to increase the probability of a correct response.",
-    distractors: ['A prompt that is a modification of the natural discriminative stimulus, making it more salient or distinct; this is an intra-stimulus prompt, altering the SD itself rather than adding a separate cue.', 'A prompt that is provided by another person rather than the environment, such as a gestural or verbal cue; this describes a type of response prompt, not necessarily an environmental addition to the SD.', 'A prompt that is added after an incorrect response has occurred, to guide the learner to the correct response; this describes a correction procedure, not an antecedent prompt to increase correct responding.'],
-    misconceptions: [
-      "Extra-stimulus prompts are the same as within-stimulus prompts",
-      "Extra-stimulus prompts are always more effective than within-stimulus prompts",
-      "Extra-stimulus prompts are the same as response prompts"
-    ],
-    taskItem: "F.03",
     category: "Behavior-Change Procedures"
   },
   {
@@ -6512,34 +5722,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Reinforcement"
   },
   {
-    id: "rr-function-altering-effect",
-    term: "Function-Altering Effect",
-    domain: "B",
-    correctDefinition: "The effect of a motivating operation on the reinforcing or punishing effectiveness of a stimulus; includes the reinforcer-establishing effect and the reinforcer-abolishing effect.",
-    distractors: ['The effect of a stimulus on the probability of a behavior occurring in its presence, due to past reinforcement, establishing it as a discriminative stimulus.', 'The effect of a consequence on the future rate of a behavior, making it more or less likely to recur, thus establishing a learned contingency.', 'The effect of withholding reinforcement for a previously reinforced behavior, leading to its decrease and eventual cessation through an extinction process.'],
-    misconceptions: [
-      "The function-altering effect is the same as the behavior-altering effect",
-      "The function-altering effect is the same as the value-altering effect",
-      "The function-altering effect is only relevant for unconditioned reinforcers"
-    ],
-    taskItem: "B.06",
-    category: "Motivating Operations"
-  },
-  {
-    id: "rr-generative-learning",
-    term: "Generative Learning",
-    domain: "B",
-    correctDefinition: "The emergence of new, untrained behaviors or stimulus relations as a result of existing learning; includes derived stimulus relations, generalization, and the development of complex behavioral repertoires from simpler components.",
-    distractors: ['The acquisition of specific responses through direct contingencies of reinforcement and punishment, which requires explicit training for each individual behavior in a repertoire, and does not involve the spontaneous emergence of novel topographies without prior direct instruction or shaping.', 'Learning that occurs through observing the behavior of others and its consequences in a social context, leading to the imitation of modeled actions or the avoidance of punished behaviors, thereby facilitating the rapid acquisition of new skills without direct, trial-and-error experience.', 'Learning that occurs when behavior is controlled by verbal rules, rather than direct contingencies, allowing for the rapid acquisition of complex responses that are not directly shaped by environmental feedback, and enabling individuals to respond effectively to novel situations based on instructions.'],
-    misconceptions: [
-      "Generative learning is the same as generalization",
-      "Generative learning is the same as incidental learning",
-      "Generative learning only occurs in verbal behavior"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
-  },
-  {
     id: "rr-gestural-prompt",
     term: "Gestural Prompt",
     domain: "F",
@@ -6582,20 +5764,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Stimulus Control"
   },
   {
-    id: "rr-history-of-reinforcement",
-    term: "History of Reinforcement",
-    domain: "B",
-    correctDefinition: "The cumulative record of an organism's past experiences with reinforcement contingencies; shapes current behavior by establishing stimulus control, response tendencies, and the effectiveness of various reinforcers.",
-    distractors: ['The specific arrangement of reinforcement contingencies currently in place for a behavior.', 'The total amount of reinforcing stimuli an organism has encountered throughout its lifetime.', 'The various types of positive and negative reinforcers that have been used with an individual.'],
-    misconceptions: [
-      "History of reinforcement is the same as learning history",
-      "History of reinforcement only affects the current effectiveness of reinforcers",
-      "History of reinforcement is the same as conditioning history"
-    ],
-    taskItem: "B.01",
-    category: "Reinforcement"
-  },
-  {
     id: "rr-joint-control",
     term: "Joint Control",
     domain: "B",
@@ -6624,20 +5792,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Schedules of Reinforcement"
   },
   {
-    id: "rr-least-to-most-response-prompts",
-    term: "Least-to-Most Response Prompts",
-    domain: "F",
-    correctDefinition: "A prompt fading procedure in which the least intrusive response prompt is provided first, and more intrusive prompts are added only if the learner does not respond correctly; allows the learner to demonstrate independence before receiving assistance.",
-    distractors: ['A prompt fading procedure in which the most intrusive prompt is initially provided to ensure correct responding from the outset, and then systematically faded through a hierarchy of less intrusive prompts as the learner demonstrates increasing independence and mastery of the target skill across trials.', 'A prompt fading procedure where the time interval between the natural discriminative stimulus and the delivery of a prompt is systematically and progressively increased, allowing the learner an extended opportunity to emit an independent and unprompted correct response before any assistance is provided.', 'A prompt fading procedure in which the physical intensity, salience, or prominence of a particular prompt is gradually and progressively decreased across successive learning opportunities, making the prompt less noticeable and ultimately allowing the learner to respond solely to the natural stimulus.'],
-    misconceptions: [
-      "Least-to-most response prompts are the same as most-to-least response prompts",
-      "Least-to-most response prompts are an errorless learning approach",
-      "Least-to-most response prompts are the same as prompt delay"
-    ],
-    taskItem: "F.03",
-    category: "Behavior-Change Procedures"
-  },
-  {
     id: "rr-limited-hold",
     term: "Limited Hold",
     domain: "B",
@@ -6664,34 +5818,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "F.03",
     category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-most-to-least-response-prompts",
-    term: "Most-to-Least Response Prompts",
-    domain: "F",
-    correctDefinition: "A prompt fading procedure in which the most intrusive response prompt is provided initially, and the level of prompting is systematically reduced over time; an errorless learning approach that ensures correct responding from the beginning.",
-    distractors: ['A prompt fading procedure in which the least intrusive prompt is provided initially to allow for independent responding, and the intrusiveness of the prompt is systematically increased only as needed based on the learner\'s performance and errors, aiming to promote independent responding from the outset.', 'A prompt fading procedure in which prompts are faded by systematically increasing the time interval between the presentation of the discriminative stimulus and the delivery of the prompt, thereby encouraging the learner to respond independently before the prompt is given, fostering independent responding.', 'A prompt fading procedure in which the intensity or salience of the prompts is gradually reduced over successive trials, systematically moving from strong, highly obvious assistance to weaker, much less noticeable cues, ensuring a smooth transition to unprompted, independent performance.'],
-    misconceptions: [
-      "Most-to-least response prompts are the same as least-to-most response prompts",
-      "Most-to-least response prompts are only appropriate for motor skills",
-      "Most-to-least response prompts are the same as graduated guidance"
-    ],
-    taskItem: "F.03",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-multiple-control",
-    term: "Multiple Control",
-    domain: "B",
-    correctDefinition: "A situation in which a single verbal response is controlled by more than one variable, or a single variable controls more than one verbal response; includes convergent and divergent multiple control.",
-    distractors: ['A situation in which a single behavior is controlled by multiple different reinforcers concurrently; this is often observed in complex behavioral chains or sequences.', 'A situation in which a single stimulus controls multiple different behaviors; this is an example of stimulus generalization where one antecedent evokes various responses.', 'A situation in which multiple individuals or contingencies control the behavior of a single individual; this is often observed in group contingencies or social settings.'],
-    misconceptions: [
-      "Multiple control is always problematic",
-      "Multiple control is the same as convergent multiple control",
-      "Multiple control is only relevant for verbal behavior"
-    ],
-    taskItem: "B.13",
-    category: "Verbal Behavior"
   },
   {
     id: "rr-neutral-stimulus",
@@ -6733,20 +5859,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "H.05",
     category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-normalization",
-    term: "Normalization",
-    domain: "E",
-    correctDefinition: "The principle that individuals with disabilities should have access to living conditions and opportunities that are as close as possible to those of the general population; influences the selection of treatment goals and settings.",
-    distractors: ['The process of making behavior conform to statistical norms within a specific population, often involving interventions designed to reduce variability in an individual\'s responses across various contexts.', 'The process of adapting interventions to be culturally appropriate and relevant to a client\'s background, ensuring that the strategies align with their values and environmental practices effectively.', 'The process of reducing the frequency of problem behavior to levels that are considered socially acceptable, achieving rates that minimize disruption without necessarily aiming for complete elimination.'],
-    misconceptions: [
-      "Normalization means making individuals with disabilities appear normal",
-      "Normalization is the same as inclusion",
-      "Normalization is the same as least restrictive environment"
-    ],
-    taskItem: "E.02",
-    category: "Ethics"
   },
   {
     id: "rr-ontogeny",
@@ -6847,20 +5959,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Behavior-Change Procedures"
   },
   {
-    id: "rr-principle-of-behavior",
-    term: "Principle of Behavior",
-    domain: "A",
-    correctDefinition: "A statement of a functional relationship between behavior and its controlling variables that has been demonstrated to be reliable across organisms, behaviors, and conditions; examples include reinforcement, extinction, and stimulus control.",
-    distractors: ['A rule that specifies precisely how a behavior-change procedure should be implemented in a specific context for a particular individual, guiding the application of interventions effectively.', 'A theoretical explanation for why behavior occurs, often involving hypothetical constructs or internal states of the organism, which are not directly observable or measurable within a natural science.', 'A guideline for ethical practice in behavior analysis, ensuring client welfare, maintaining professional conduct, and upholding the integrity of the profession in all intervention strategies.'],
-    misconceptions: [
-      "Principles of behavior are the same as behavior-change tactics",
-      "Principles of behavior are the same as laws of behavior",
-      "Principles of behavior are only relevant for operant behavior"
-    ],
-    taskItem: "A.01",
-    category: "Philosophical Foundations"
-  },
-  {
     id: "rr-progressive-schedule",
     term: "Progressive Schedule of Reinforcement",
     domain: "B",
@@ -6944,62 +6042,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Reinforcement"
   },
   {
-    id: "rr-reinforcer-abolishing-effect",
-    term: "Reinforcer-Abolishing Effect",
-    domain: "B",
-    correctDefinition: "The value-altering effect of an abolishing operation; decreases the reinforcing effectiveness of a stimulus; for example, food satiation decreases the reinforcing value of food.",
-    distractors: ['The value-altering effect of an establishing operation; increases the reinforcing effectiveness of a stimulus; for example, water deprivation increases the reinforcing value of water.', 'The behavior-altering effect of an abolishing operation; decreases the current frequency of behavior maintained by a specific reinforcer; for example, satiety reduces eating behavior.', 'The value-altering effect of an extinction procedure; gradually decreases the reinforcing effectiveness of a stimulus over time as it is no longer contingent on behavior.'],
-    misconceptions: [
-      "The reinforcer-abolishing effect is the same as the reinforcer-establishing effect",
-      "The reinforcer-abolishing effect is the same as the behavior-altering effect",
-      "The reinforcer-abolishing effect permanently eliminates the reinforcing value of a stimulus"
-    ],
-    taskItem: "B.06",
-    category: "Motivating Operations"
-  },
-  {
-    id: "rr-reinforcer-establishing-effect",
-    term: "Reinforcer-Establishing Effect",
-    domain: "B",
-    correctDefinition: "The value-altering effect of an establishing operation; increases the reinforcing effectiveness of a stimulus; for example, food deprivation increases the reinforcing value of food.",
-    distractors: ['The value-altering effect of an abolishing operation; decreases the reinforcing effectiveness of a stimulus; for example, food satiety decreases the reinforcing value of food.', 'The behavior-altering effect of an establishing operation; increases the current frequency of behavior maintained by a specific reinforcer; for example, deprivation increases seeking behavior.', 'The value-altering effect of a conditioning procedure; a neutral stimulus acquires reinforcing properties through pairing with an established reinforcer.'],
-    misconceptions: [
-      "The reinforcer-establishing effect is the same as the reinforcer-abolishing effect",
-      "The reinforcer-establishing effect is the same as the evocative effect",
-      "The reinforcer-establishing effect permanently increases the reinforcing value of a stimulus"
-    ],
-    taskItem: "B.06",
-    category: "Motivating Operations"
-  },
-  {
-    id: "rr-relational-frame",
-    term: "Relational Frame",
-    domain: "B",
-    correctDefinition: "In relational frame theory, a learned pattern of relating stimuli in a specific way that is defined by mutual entailment, combinatorial entailment, and transformation of stimulus functions; the basic unit of human language and cognition.",
-    distractors: ['In stimulus equivalence, a learned pattern of responding where stimuli acquire similar functions based on trained relations of reflexivity, symmetry, and transitivity in a specific context.', 'A verbal operant in which an individual describes the perceived relationships between stimuli, such as \'bigger than\' or \'opposite of,\' without directly experiencing those specific trained relations.', 'A cognitive schema that organizes an individual\'s understanding of how different stimuli are interconnected, influencing their interpretation and prediction of events in the environment.'],
-    misconceptions: [
-      "Relational frames are the same as stimulus equivalence classes",
-      "Relational frames are the same as verbal operants",
-      "Relational frames are only relevant for complex verbal behavior"
-    ],
-    taskItem: 'B.20',
-    category: "Stimulus Control"
-  },
-  {
-    id: "rr-relevance-of-behavior-rule",
-    term: "Relevance of Behavior Rule",
-    domain: "E",
-    correctDefinition: "An ethical guideline stating that behavior analysts should only target behaviors that are relevant and meaningful to the client's life; goals should be socially significant and improve the client's quality of life.",
-    distractors: ['An ethical guideline stating that behavior analysts should only use interventions supported by empirical research.', 'An ethical guideline stating that behavior analysts should only target behaviors that are directly observable.', 'An ethical guideline stating that behavior analysts should only target behaviors that are socially significant.'],
-    misconceptions: [
-      "The relevance of behavior rule is the same as social validity",
-      "The relevance of behavior rule only applies to problem behaviors",
-      "The relevance of behavior rule is the same as the least restrictive alternative"
-    ],
-    taskItem: "E.02",
-    category: "Ethics"
-  },
-  {
     id: "rr-repertoire",
     term: "Repertoire",
     domain: "A",
@@ -7053,20 +6095,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
       "RIRD is the same as BCIS"
     ],
     taskItem: "H.05",
-    category: "Behavior-Change Procedures"
-  },
-  {
-    id: "rr-response-prompts",
-    term: "Response Prompts",
-    domain: "F",
-    correctDefinition: "Supplemental stimuli that are added to the natural discriminative stimulus to increase the probability of a correct response; include verbal, gestural, model, and physical prompts; must be faded to prevent prompt dependency.",
-    distractors: ['Supplemental stimuli that are added to the instructional materials to make the discriminative stimulus more noticeable or distinct for the learner, thereby increasing the salience of the S^D itself; examples include highlighting, magnifying, or repositioning the target stimulus.', 'Supplemental stimuli that are provided after a learner makes an incorrect response to guide them toward the correct answer in subsequent trials, often used as error correction procedures to prevent further errors and promote accurate responding.', 'Supplemental stimuli that are provided to the learner to increase the likelihood of attending to the relevant features of the discriminative stimulus, such as pointing to the correct picture or verbally emphasizing a particular instruction; must also be systematically faded.'],
-    misconceptions: [
-      "Response prompts are the same as stimulus prompts",
-      "Response prompts are always delivered by another person",
-      "Response prompts are the same as cues"
-    ],
-    taskItem: "F.03",
     category: "Behavior-Change Procedures"
   },
   {
@@ -7138,20 +6166,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Reinforcement"
   },
   {
-    id: "rr-spatial-relations",
-    term: "Spatial Relations",
-    domain: "B",
-    correctDefinition: "In relational frame theory, relations defined by the spatial position of stimuli relative to each other (e.g., above/below, in front of/behind, near/far); the basis of spatial reasoning and navigation.",
-    distractors: ['In relational frame theory, relations defined by the temporal sequence of events (e.g., before/after, first/last); the basis of historical accounts and sequencing tasks.', 'In relational frame theory, relations defined by the hierarchical arrangement of items (e.g., superior/subordinate, part/whole); the basis of categorization and classification.', 'In relational frame theory, relations defined by the physical attributes of objects (e.g., color, size, shape); the basis of perceptual discrimination and feature analysis.'],
-    misconceptions: [
-      "Spatial relations are the same as deictic relations",
-      "Spatial relations are the same as temporal relations",
-      "Spatial relations are only relevant for nonverbal behavior"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
-  },
-  {
     id: "rr-speaker",
     term: "Speaker",
     domain: "B",
@@ -7220,34 +6234,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "B.08",
     category: "Stimulus Control"
-  },
-  {
-    id: "rr-stimulus-preference-assessment",
-    term: "Stimulus Preference Assessment",
-    domain: "F",
-    correctDefinition: "A systematic procedure for identifying stimuli that an individual prefers; methods include free operant, single stimulus, paired stimulus (MSWO), and multiple stimulus without replacement (MSWO) assessments; identifies potential reinforcers.",
-    distractors: ['A systematic procedure for identifying stimuli that an individual actively seeks to avoid or escape; methods include indirect assessment, aversion testing, and negative reinforcement probes; ultimately identifies potential punishers and informs intervention strategies.', 'A systematic procedure for identifying the environmental variables that reliably maintain challenging behaviors; methods include functional analysis, descriptive assessment, and indirect assessment; aims to determine the function of problem behaviors for intervention planning.', 'A systematic procedure for identifying the antecedent events or conditions that reliably precede the occurrence of a specific behavior; methods include conditional probability analysis, scatterplots, and ABC data collection; helps in understanding triggers and developing proactive interventions.'],
-    misconceptions: [
-      "Stimulus preference assessments identify reinforcers rather than preferred stimuli",
-      "The most preferred stimulus in a preference assessment will always function as a reinforcer",
-      "Stimulus preference assessments are the same as reinforcer assessments"
-    ],
-    taskItem: "F.02",
-    category: "Assessment"
-  },
-  {
-    id: "rr-stimulus-prompts",
-    term: "Stimulus Prompts",
-    domain: "F",
-    correctDefinition: "Supplemental stimuli that are modifications of the natural discriminative stimulus to increase the probability of a correct response; include within-stimulus prompts and extra-stimulus prompts; faded by changing the stimulus back to its natural form.",
-    distractors: ['Supplemental stimuli that are modifications of the natural discriminative stimulus to decrease the probability of an incorrect response; include within-stimulus prompts and extra-stimulus prompts; faded by removing them.', 'Supplemental stimuli that are provided by another individual to guide the learner\'s correct behavioral response; include verbal prompts and gestural prompts; faded by reducing their intrusiveness.', 'Supplemental stimuli that are modifications of the learner\'s response to increase the probability of a correct response; include physical prompts and modeling prompts; faded by reducing assistance.'],
-    misconceptions: [
-      "Stimulus prompts are the same as response prompts",
-      "Stimulus prompts are always modifications of the physical properties of the SD",
-      "Stimulus prompts are the same as extra-stimulus prompts"
-    ],
-    taskItem: "F.03",
-    category: "Behavior-Change Procedures"
   },  {
     id: "rr-stimulus-stimulus-pairing",
     term: "Stimulus-Stimulus Pairing",
@@ -7289,19 +6275,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "B.06",
     category: "Motivating Operations"
-  },  {
-    id: "rr-tandem-schedule-b04",
-    term: "Tandem Schedule (Tand)",
-    domain: "B",
-    correctDefinition: "A compound schedule in which two or more component schedules are linked in a sequence without discriminative stimuli to signal which component is in effect; the unlabeled version of a chained schedule.",
-    distractors: ['A stimulus that has acquired reinforcing properties through its systematic pairing with other stimuli that already function as established reinforcers for the individual.', 'A stimulus in the presence of which a behavior has been placed on extinction and therefore occurs at a lower rate than in other stimulus conditions in the environment.', 'A stimulus that has acquired the ability to elicit a conditioned response through repeated pairing with an unconditioned stimulus in classical conditioning procedures.'],
-    misconceptions: [
-      "Tandem schedules are the same as chained schedules",
-      "Tandem schedules are the same as multiple schedules",
-      "Tandem schedules are only used in basic research"
-    ],
-    taskItem: "B.04",
-    category: "Schedules of Reinforcement"
   },
   {
     id: "rr-target-behavior",
@@ -7316,48 +6289,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "F.01",
     category: "Assessment"
-  },
-  {
-    id: "rr-temporal-relations",
-    term: "Temporal Relations",
-    domain: "B",
-    correctDefinition: "In relational frame theory, relations defined by the temporal order of stimuli (e.g., before/after, first/last); the basis of temporal reasoning and planning.",
-    distractors: ['In relational frame theory, relations defined by the physical location or spatial arrangement of stimuli, such as \'inside\' or \'next to,\' influencing spatial reasoning.', 'In relational frame theory, relations defined by the organizational structure of items, such as \'part of\' or \'category of,\' supporting hierarchical understanding.', 'In relational frame theory, relations defined by the observable qualities of objects, such as \'bigger than\' or \'same color as,\' facilitating comparative analysis.'],
-    misconceptions: [
-      "Temporal relations are the same as deictic relations",
-      "Temporal relations are the same as spatial relations",
-      "Temporal relations are only relevant for verbal behavior"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
-  },
-  {
-    id: "rr-training-structure",
-    term: "Training Structure",
-    domain: "I",
-    correctDefinition: "The arrangement of instructional conditions, including the setting, materials, prompting procedures, reinforcement schedule, and trial format, used to teach a target skill; affects the efficiency and generalization of learning.",
-    distractors: ['The sequential arrangement of skills to be taught within a curriculum, outlining the logical progression of learning objectives and necessary prerequisite skills, often depicted in a scope and sequence document to guide instruction across different levels of proficiency.', 'The overall organizational framework of a training program, including aspects like staffing, funding allocation, and administrative oversight for all activities, ensuring resources are effectively managed to support the delivery of educational services and achieve program goals.', 'The physical arrangement of the training environment, such as the classroom setup, lighting conditions, and seating arrangements, optimized for learning by minimizing distractions and promoting engagement, thereby enhancing the overall effectiveness of instructional delivery.'],
-    misconceptions: [
-      "Training structure is the same as instructional format",
-      "Training structure is the same as task analysis",
-      "Training structure is only relevant for discrete trial training"
-    ],
-    taskItem: "I.02",
-    category: "Skill Acquisition"
-  },
-  {
-    id: "rr-transformation-of-function",
-    term: "Transformation of Function",
-    domain: "B",
-    correctDefinition: "In relational frame theory, the process by which the psychological functions of one stimulus are transferred to other stimuli in the same relational network; allows the behavioral functions of stimuli to be derived rather than directly conditioned.",
-    distractors: ['The process by which a conditioned reinforcer, initially established through direct pairing with a primary reinforcer, transfers its reinforcing properties to other previously neutral stimuli through repeated pairings, thus creating an expanded network of effective secondary reinforcers.', 'The process by which the evocative or reinforcing function of a behavior changes as a direct result of the systematic application of extinction procedures, leading to a significant and sustained decrease in its future occurrence under similar environmental conditions and motivating operations.', 'The process by which a previously neutral stimulus acquires new evocative or discriminative functions through direct and consistent pairing with an unconditioned stimulus or an established discriminative stimulus, thereby establishing a conditioned respondent reaction or a discriminative stimulus.'],
-    misconceptions: [
-      "Transformation of function is the same as transfer of stimulus control",
-      "Transformation of function is the same as stimulus equivalence",
-      "Transformation of function only applies to reinforcing functions"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
   },
   {
     id: "rr-transitive-cmo",
@@ -7430,21 +6361,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Behavior-Change Procedures"
   },
   {
-    id: "rr-matching-to-sample-b14",
-    term: "Matching-to-Sample",
-    domain: "B",
-    correctDefinition: "A procedure in which the learner selects a comparison stimulus that matches a sample stimulus; used to teach conditional discriminations and to assess stimulus equivalence.",
-    distractors: ['A systematic method of identifying the antecedent variables that occasion problem behavior without manipulating consequences experimentally in the environment.', 'A systematic method of identifying stimuli that are likely to function as punishers based on the individual\'s avoidance or escape behavior patterns over time.', 'A systematic approach in which behavioral principles are applied to produce socially significant changes in behavior that are meaningful to the individual.'],
-    misconceptions: [
-      "Matching-to-sample is the same as identity matching",
-      "Matching-to-sample always involves physical similarity between sample and comparison",
-      "Matching-to-sample is the same as an equivalence test"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
-  }
-,
-  {
     id: 'rr-imitation-b24',
     domain: 'B',
     term: 'Imitation',
@@ -7452,12 +6368,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A behavior that is controlled by a verbal antecedent (a mand or tact) and produces a consequence that is not directly related to the physical form of the response.',
       'A process in which an observer\'s behavior changes as a result of watching a model receive consequences, without the observer directly experiencing those consequences or reproducing the exact topography.',
-      'A procedure in which a new behavior is developed by reinforcing successive approximations to the target behavior until the terminal behavior is achieved.',
+      'A procedure in which a new behavior is developed by reinforcing successive approximations to the target behavior until the terminal behavior is achieved.'
     ],
     misconceptions: [
       '"Imitation and observational learning are the same thing  --  both involve watching someone else."',
       '"Imitation only occurs in children with developmental disabilities who are taught to imitate."',
-      '"Any behavior that follows watching another person is imitation."',
+      '"Any behavior that follows watching another person is imitation."'
     ],
     taskItem: 'B.24',
     category: 'Verbal Behavior',
@@ -7470,12 +6386,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A behavior that is controlled by a model and has formal similarity to that model; the observer\'s behavior topographically resembles the model\'s behavior and is reinforced by the social community for matching.',
       'A procedure in which a new behavior is developed by reinforcing successive approximations to the target behavior until the terminal behavior is achieved.',
-      'A process in which behavior is maintained by intermittent schedules of reinforcement after continuous reinforcement is thinned.',
+      'A process in which behavior is maintained by intermittent schedules of reinforcement after continuous reinforcement is thinned.'
     ],
     misconceptions: [
       '"Observational learning requires the observer to reproduce the exact behavior they watched."',
       '"Observational learning is the same as imitation  --  both involve watching a model."',
-      '"Observational learning only occurs when the observer is directly reinforced for watching."',
+      '"Observational learning only occurs when the observer is directly reinforced for watching."'
     ],
     taskItem: 'B.24',
     category: 'Verbal Behavior',
@@ -7488,12 +6404,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A procedure in which reinforcement is delivered for the complete absence of the target behavior during a specified interval; used to eliminate behavior entirely.',
       'A procedure in which reinforcement is delivered for any behavior other than the target behavior during a specified interval; does not require a specific alternative behavior.',
-      'A procedure in which reinforcement is delivered for a behavior that is topographically incompatible with the target behavior, so that both cannot occur simultaneously.',
+      'A procedure in which reinforcement is delivered for a behavior that is topographically incompatible with the target behavior, so that both cannot occur simultaneously.'
     ],
     misconceptions: [
       '"DRD and DRO are the same because both reduce behavior."  --  DRD reinforces low rates of the behavior; DRO reinforces the complete absence of the behavior.',
       '"DRD requires the behavior to stop completely before reinforcement is delivered."  --  DRD reinforces rates below a criterion, not zero responding; the criterion is progressively lowered over time.',
-      '"DRD is only used for automatically reinforced behaviors."  --  DRD is a rate-based procedure applicable to any behavior maintained by any function.',
+      '"DRD is only used for automatically reinforced behaviors."  --  DRD is a rate-based procedure applicable to any behavior maintained by any function.'
     ],
   },
   {
@@ -7504,12 +6420,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A measurement procedure in which the observer records whether the target behavior occurred during each of a series of brief, equal time intervals throughout an observation session.',
       'A data collection method in which the observer records only the consequence events that follow each occurrence of the target behavior, without recording antecedents.',
-      'A structured interview procedure in which caregivers and teachers are asked to describe the antecedents and consequences they believe are associated with the target behavior.',
+      'A structured interview procedure in which caregivers and teachers are asked to describe the antecedents and consequences they believe are associated with the target behavior.'
     ],
     misconceptions: [
       '"ABC recording is the same as a functional analysis."  --  ABC recording is a descriptive assessment that identifies correlations between events and behavior; it does not establish experimental control or demonstrate causation.',
       '"ABC recording only captures antecedents."  --  ABC recording captures all three components: antecedent, behavior, and consequence, for every occurrence of the target behavior.',
-      '"ABC continuous recording and scatter plot recording are the same."  --  Scatter plot recording identifies temporal patterns of behavior across time blocks; ABC recording captures the specific events surrounding each behavioral occurrence.',
+      '"ABC continuous recording and scatter plot recording are the same."  --  Scatter plot recording identifies temporal patterns of behavior across time blocks; ABC recording captures the specific events surrounding each behavioral occurrence.'
     ],
   },  {
     id: 'rr-trend',
@@ -7519,12 +6435,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The average value of data points within a phase, calculated by summing all data points and dividing by the number of observations; used to compare performance across conditions.',
       'The degree of scatter or spread of data points around the central tendency within a phase; indicates how consistently the behavior is occurring.',
-      'The abrupt change in the mean level of data between two adjacent phases of a graph, used to evaluate the immediate effect of an intervention.',
+      'The abrupt change in the mean level of data between two adjacent phases of a graph, used to evaluate the immediate effect of an intervention.'
     ],
     misconceptions: [
       '"Trend and level are the same thing."  --  Level refers to the absolute value (height) of data on the y-axis; trend refers to the direction of change over time (slope).',
       '"A flat trend means the behavior is not changing."  --  A zero-celerating (flat) trend means the behavior is stable at its current level, which may be desirable (maintenance) or undesirable depending on the treatment goal.',
-      '"Trend can only be evaluated visually."  --  While visual analysis is the primary method, trend lines (e.g., split-middle method, celeration lines) can be drawn to quantify the direction and degree of trend.',
+      '"Trend can only be evaluated visually."  --  While visual analysis is the primary method, trend lines (e.g., split-middle method, celeration lines) can be drawn to quantify the direction and degree of trend.'
     ],
   },
   {
@@ -7535,12 +6451,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The overall direction of data points in a graphed data series over time, described as accelerating, decelerating, or zero-celerating.',
       'The degree of scatter or spread of data points around the central tendency within a phase, indicating how consistently the behavior is occurring.',
-      'The proportion of data points in one phase that exceed the range of data points in an adjacent phase, used as a measure of non-overlap between conditions.',
+      'The proportion of data points in one phase that exceed the range of data points in an adjacent phase, used as a measure of non-overlap between conditions.'
     ],
     misconceptions: [
       '"Level and trend are the same thing."  --  Level refers to the absolute value (height) of data on the y-axis; trend refers to the direction of change over time (slope).',
       '"Level is only evaluated within a phase."  --  Level is evaluated both within a phase (to assess stability) and between phases (to assess the magnitude of change produced by an intervention).',
-      '"A high level of behavior always indicates a problem."  --  Level must be interpreted in the context of the treatment goal; a high level of a target skill acquisition behavior is desirable, while a high level of problem behavior is not.',
+      '"A high level of behavior always indicates a problem."  --  Level must be interpreted in the context of the treatment goal; a high level of a target skill acquisition behavior is desirable, while a high level of problem behavior is not.'
     ],
   },
   {
@@ -7551,12 +6467,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The overall direction of data points in a graphed data series over time, described as accelerating, decelerating, or zero-celerating.',
       'The absolute value of data on the y-axis of a graph, described in terms of the mean or median of data points within a phase.',
-      'The abrupt change in the mean level of data between two adjacent phases of a graph, used to evaluate the immediate effect of an intervention.',
+      'The abrupt change in the mean level of data between two adjacent phases of a graph, used to evaluate the immediate effect of an intervention.'
     ],
     misconceptions: [
       '"High variability always means the intervention is not working."  --  High variability may reflect genuine inconsistency in the behavior, but it may also reflect measurement error, inconsistent implementation, or naturally variable environmental conditions.',
       '"Variability and trend are the same thing."  --  Variability refers to the spread of data points around the central tendency; trend refers to the overall direction of change over time.',
-      '"Variability is only a problem in baseline phases."  --  High variability in intervention phases is equally problematic, as it prevents clear conclusions about the effect of the treatment.',
+      '"Variability is only a problem in baseline phases."  --  High variability in intervention phases is equally problematic, as it prevents clear conclusions about the effect of the treatment.'
     ],
   },  {
     id: 'rr-carry-over-effect',
@@ -7566,12 +6482,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A confounding variable in which an uncontrolled environmental event occurs simultaneously with a phase change, making it impossible to determine whether behavior change was caused by the independent variable or the extraneous event.',
       'The gradual change in behavior over time due to maturation, learning history, or repeated exposure to measurement procedures, independent of any experimental manipulation.',
-      'A measurement artifact in which the observer\'s recording of behavior in one session is influenced by their memory of behavior in the previous session.',
+      'A measurement artifact in which the observer\'s recording of behavior in one session is influenced by their memory of behavior in the previous session.'
     ],
     misconceptions: [
       '"Carry-over effects only occur in reversal designs."  --  Carry-over effects can occur in any within-subject design, including alternating treatments designs, multiple baseline designs, and changing criterion designs.',
       '"Carry-over effects are the same as history effects."  --  History effects involve uncontrolled external events; carry-over effects involve the residual influence of a previous experimental condition on the current condition.',
-      '"Counterbalancing eliminates carry-over effects."  --  Counterbalancing distributes carry-over effects equally across conditions but does not eliminate them; it only prevents them from systematically confounding one condition.',
+      '"Counterbalancing eliminates carry-over effects."  --  Counterbalancing distributes carry-over effects equally across conditions but does not eliminate them; it only prevents them from systematically confounding one condition.'
     ],
   },
   {
@@ -7582,12 +6498,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A within-subject experimental design that begins with a baseline phase (A), followed by an intervention phase (B), then a return to baseline (A), and then a reinstatement of the intervention (B); the most common reversal design in applied behavior analysis.',
       'A within-subject experimental design in which two or more interventions are rapidly alternated across sessions to compare their relative effects on the target behavior.',
-      'A within-subject experimental design in which the criterion for reinforcement is systematically changed in a stepwise fashion to shape behavior toward a terminal goal.',
+      'A within-subject experimental design in which the criterion for reinforcement is systematically changed in a stepwise fashion to shape behavior toward a terminal goal.'
     ],
     misconceptions: [
       '"B-A-B and A-B-A-B designs provide equivalent experimental control."  --  The A-B-A-B design provides stronger experimental control because it demonstrates the effect of the intervention twice; the B-A-B design lacks an initial baseline.',
       '"B-A-B designs are never used in applied settings."  --  B-A-B designs are specifically used when beginning with a baseline phase would be unethical (e.g., dangerous self-injurious behavior requiring immediate intervention).',
-      '"The B-A-B design demonstrates a functional relation."  --  The B-A-B design provides weaker evidence of a functional relation than the A-B-A-B design because the absence of an initial baseline limits the ability to rule out alternative explanations.',
+      '"The B-A-B design demonstrates a functional relation."  --  The B-A-B design provides weaker evidence of a functional relation than the A-B-A-B design because the absence of an initial baseline limits the ability to rule out alternative explanations.'
     ],
   },  {
     id: 'rr-control',
@@ -7597,12 +6513,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The phase in a single-subject experiment in which no intervention is applied and the natural rate of the target behavior is measured to establish a pre-intervention baseline.',
       'The degree to which the results of a study can be generalized to other individuals, settings, behaviors, or time periods beyond those directly studied.',
-      'The consistency of measurement across observers, sessions, or conditions, indicating that the data accurately reflect the true state of the target behavior.',
+      'The consistency of measurement across observers, sessions, or conditions, indicating that the data accurately reflect the true state of the target behavior.'
     ],
     misconceptions: [
       '"Control means the researcher controls the participant\'s behavior."  --  Experimental control means the researcher controls the independent variable and other conditions; it does not mean controlling the participant.',
       '"A control condition and a baseline condition are the same."  --  A baseline condition is one type of control condition; other control conditions (e.g., attention control, yoked control) may also be used to rule out alternative explanations.',
-      '"Experimental control is only relevant in group designs."  --  Experimental control is central to single-subject research; it is demonstrated through the repeated manipulation of the independent variable within the same participant.',
+      '"Experimental control is only relevant in group designs."  --  Experimental control is central to single-subject research; it is demonstrated through the repeated manipulation of the independent variable within the same participant.'
     ],
   },
   {
@@ -7613,12 +6529,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A statistical relationship between two variables in which changes in one variable are associated with changes in the other, but no experimental manipulation has been conducted to rule out alternative explanations.',
       'The degree to which the results of a study can be attributed to the independent variable rather than to extraneous variables, based on the strength of the experimental design.',
-      'A theoretical explanation for why a behavioral intervention produces its effects, based on the principles of operant and respondent conditioning.',
+      'A theoretical explanation for why a behavioral intervention produces its effects, based on the principles of operant and respondent conditioning.'
     ],
     misconceptions: [
       '"Correlation implies causation."  --  Correlation indicates that two variables co-vary; causation requires experimental control to rule out alternative explanations for the relationship.',
       '"A functional relation can be established from descriptive data alone."  --  Descriptive data (e.g., ABC recording, scatter plots) can identify correlations but cannot establish causation; experimental manipulation is required.',
-      '"A single demonstration of behavior change is sufficient to establish a functional relation."  --  A functional relation requires at least three demonstrations of the same effect (replications) within the same experiment to rule out coincidence.',
+      '"A single demonstration of behavior change is sufficient to establish a functional relation."  --  A functional relation requires at least three demonstrations of the same effect (replications) within the same experiment to rule out coincidence.'
     ],
   },
   {
@@ -7629,12 +6545,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An error in which no real effect exists but a functional relation is incorrectly concluded; in hypothesis testing, this occurs when the null hypothesis is incorrectly rejected.',
       'An error in data collection in which the observer fails to record an occurrence of the target behavior that actually occurred, resulting in an undercount of the true frequency.',
-      'An error in intervention selection in which an ineffective treatment is chosen because the functional assessment incorrectly identified the maintaining variable.',
+      'An error in intervention selection in which an ineffective treatment is chosen because the functional assessment incorrectly identified the maintaining variable.'
     ],
     misconceptions: [
       '"False negative and false positive are the same type of error."  --  A false negative fails to detect a real effect (misses a true positive); a false positive detects an effect that does not exist (incorrectly identifies a false positive).',
       '"A false negative in functional analysis means the behavior has no function."  --  A false negative means the assessment failed to identify the true function; all behavior is maintained by some consequence.',
-      '"False negatives are less harmful than false positives in behavioral assessment."  --  Both error types have clinical consequences; a false negative may result in an ineffective intervention because the true function was not identified.',
+      '"False negatives are less harmful than false positives in behavioral assessment."  --  Both error types have clinical consequences; a false negative may result in an ineffective intervention because the true function was not identified.'
     ],
   },
   {
@@ -7645,12 +6561,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'An error in which a real effect or functional relation exists but is not detected; in hypothesis testing, this occurs when the null hypothesis is incorrectly retained.',
       'An error in data collection in which the observer records an occurrence of the target behavior that did not actually occur, resulting in an overcount of the true frequency.',
-      'An error in intervention selection in which an effective treatment is abandoned because the data incorrectly suggest it is not producing behavior change.',
+      'An error in intervention selection in which an effective treatment is abandoned because the data incorrectly suggest it is not producing behavior change.'
     ],
     misconceptions: [
       '"False positive and false negative are the same type of error."  --  A false positive incorrectly detects an effect that does not exist; a false negative fails to detect a real effect.',
       '"A false positive in functional analysis is harmless because the intervention will still reduce behavior."  --  A false positive may lead to an intervention targeting the wrong function, which can be ineffective or even counterproductive.',
-      '"False positives only occur in group statistical analyses."  --  False positives can occur in single-subject research and behavioral assessment whenever conclusions are drawn from insufficient or confounded data.',
+      '"False positives only occur in group statistical analyses."  --  False positives can occur in single-subject research and behavioral assessment whenever conclusions are drawn from insufficient or confounded data.'
     ],
   },
 
@@ -7663,12 +6579,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A test condition in a functional analysis in which the therapist delivers a brief break from demands contingent on the problem behavior; elevated rates suggest escape-maintained behavior.',
       'A control condition in a functional analysis in which the individual has free access to preferred items and no demands are placed; low rates of behavior in this condition serve as a baseline.',
-      'A test condition in a functional analysis in which the individual is left alone with no social interaction or access to materials; elevated rates suggest automatically maintained behavior.',
+      'A test condition in a functional analysis in which the individual is left alone with no social interaction or access to materials; elevated rates suggest automatically maintained behavior.'
     ],
     misconceptions: [
       '"The attention condition tests whether the individual likes attention."  --  It tests whether attention functions as a reinforcer maintaining the problem behavior.',
       '"Any social interaction during the attention condition counts as the contingency."  --  Only attention delivered contingent on the problem behavior constitutes the test condition.',
-      '"The attention condition and play condition are interchangeable."  --  The play condition is a control; the attention condition is a test condition with a specific contingency.',
+      '"The attention condition and play condition are interchangeable."  --  The play condition is a control; the attention condition is a test condition with a specific contingency.'
     ],
   },
   {
@@ -7679,12 +6595,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A test condition in a functional analysis in which social attention is delivered contingent on the problem behavior; elevated rates suggest attention-maintained behavior.',
       'A condition in which the individual is given free access to preferred items and no demands are placed, serving as a control for the test conditions.',
-      'A test condition in a functional analysis in which the individual is left alone; elevated rates suggest automatically maintained behavior.',
+      'A test condition in a functional analysis in which the individual is left alone; elevated rates suggest automatically maintained behavior.'
     ],
     misconceptions: [
       '"The escape condition tests whether the individual dislikes the task."  --  It tests whether escape from the task functions as a negative reinforcer maintaining the problem behavior.',
       '"Removing the demand permanently during the escape condition is the correct procedure."  --  The demand is removed briefly (e.g., 30 seconds) as the contingency, then re-presented.',
-      '"The escape condition and alone condition both test automatic reinforcement."  --  The alone condition tests automatic reinforcement; the escape condition tests negative reinforcement.',
+      '"The escape condition and alone condition both test automatic reinforcement."  --  The alone condition tests automatic reinforcement; the escape condition tests negative reinforcement.'
     ],
   },
   {
@@ -7695,12 +6611,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A test condition in a functional analysis in which social attention is delivered contingent on the problem behavior to test for attention-maintained behavior.',
       'A test condition in a functional analysis in which demands are presented and escape is provided contingent on problem behavior.',
-      'A condition in which the individual is left alone with no social interaction or materials to test for automatically maintained behavior.',
+      'A condition in which the individual is left alone with no social interaction or materials to test for automatically maintained behavior.'
     ],
     misconceptions: [
       '"The play condition is a test condition that reveals automatic reinforcement."  --  The play condition is a control condition, not a test condition; it is designed to produce low rates of behavior.',
       '"The play condition provides contingent access to preferred items."  --  Access to preferred items in the play condition is noncontingent (freely available), not contingent on behavior.',
-      '"The play condition and alone condition serve the same purpose."  --  The alone condition tests for automatic reinforcement; the play condition serves as a control baseline.',
+      '"The play condition and alone condition serve the same purpose."  --  The alone condition tests for automatic reinforcement; the play condition serves as a control baseline.'
     ],
   },
   {
@@ -7711,12 +6627,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A control condition in a functional analysis in which the individual has free access to preferred items and the therapist provides noncontingent attention.',
       'A test condition in a functional analysis in which demands are presented and the therapist removes the demand contingent on problem behavior.',
-      'A test condition in a functional analysis in which the therapist delivers social attention contingent on the problem behavior.',
+      'A test condition in a functional analysis in which the therapist delivers social attention contingent on the problem behavior.'
     ],
     misconceptions: [
       '"The alone condition tests for escape-maintained behavior."  --  The alone condition tests for automatic reinforcement; the escape condition tests for negative reinforcement.',
       '"High rates in the alone condition mean the behavior is attention-maintained."  --  High rates in the alone condition indicate automatic reinforcement because no social consequences are available.',
-      '"The alone condition is the same as the play condition."  --  The play condition includes noncontingent attention and preferred items; the alone condition removes all social and material stimuli.',
+      '"The alone condition is the same as the play condition."  --  The play condition includes noncontingent attention and preferred items; the alone condition removes all social and material stimuli.'
     ],
   },
   {
@@ -7727,12 +6643,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A functional analysis outcome in which rates of problem behavior are elevated only in the alone condition, indicating automatic reinforcement.',
       'A functional analysis outcome in which rates of problem behavior are low across all conditions, indicating the behavior is not sensitive to the programmed contingencies.',
-      'A functional analysis outcome in which rates of problem behavior are elevated only in one test condition, clearly identifying a single maintaining function.',
+      'A functional analysis outcome in which rates of problem behavior are elevated only in one test condition, clearly identifying a single maintaining function.'
     ],
     misconceptions: [
       '"An undifferentiated FA means the behavior has no function."  --  It means the FA did not differentiate among functions; the behavior still has one or more maintaining variables.',
       '"An undifferentiated FA result means the FA should be abandoned."  --  Undifferentiated results prompt modifications to the FA methodology (e.g., shorter sessions, different stimuli, latency-based FA).',
-      '"Undifferentiated results always indicate automatic reinforcement."  --  They may indicate multiple functions, methodological issues, or that the programmed contingencies do not match the natural maintaining contingencies.',
+      '"Undifferentiated results always indicate automatic reinforcement."  --  They may indicate multiple functions, methodological issues, or that the programmed contingencies do not match the natural maintaining contingencies.'
     ],
   },
   {
@@ -7743,12 +6659,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A functional analysis outcome in which elevated rates of problem behavior occur only in the alone condition, indicating a single automatic function.',
       'A functional analysis design in which multiple behaviors are assessed simultaneously across different conditions.',
-      'A functional analysis outcome in which no single condition produces elevated rates, making it impossible to identify any maintaining function.',
+      'A functional analysis outcome in which no single condition produces elevated rates, making it impossible to identify any maintaining function.'
     ],
     misconceptions: [
       '"Multiple control means the FA was conducted incorrectly."  --  Multiple control is a valid finding that reflects the natural complexity of behavioral contingencies.',
       '"Behavior under multiple control can be addressed with a single intervention component."  --  Each maintaining function typically requires its own intervention component (e.g., NCR for attention plus escape extinction for escape).',
-      '"Multiple control and undifferentiated results are the same thing."  --  Undifferentiated results show elevated rates across all conditions without differentiation; multiple control shows elevated rates in two or more specific test conditions.',
+      '"Multiple control and undifferentiated results are the same thing."  --  Undifferentiated results show elevated rates across all conditions without differentiation; multiple control shows elevated rates in two or more specific test conditions.'
     ],
   },
   {
@@ -7759,12 +6675,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A systematic evaluation of the environmental variables that maintain problem behavior, used to identify the function of the behavior and guide function-based intervention.',
       'A procedure in which an individual is exposed to multiple stimuli simultaneously to identify which stimuli function as reinforcers for that individual.',
-      'A direct observation procedure in which the antecedents, behaviors, and consequences of problem behavior are recorded to identify patterns in the natural environment.',
+      'A direct observation procedure in which the antecedents, behaviors, and consequences of problem behavior are recorded to identify patterns in the natural environment.'
     ],
     misconceptions: [
       '"A skills assessment and a functional behavior assessment are the same procedure."  --  A skills assessment evaluates skill repertoires; an FBA evaluates the function of problem behavior.',
       '"Skills assessments only measure academic skills."  --  Skills assessments evaluate a broad range of domains including communication, social, self-care, motor, and community skills.',
-      '"A skills assessment identifies the function of problem behavior."  --  Skills assessments identify skill deficits and strengths; functional assessments identify the maintaining variables of problem behavior.',
+      '"A skills assessment identifies the function of problem behavior."  --  Skills assessments identify skill deficits and strengths; functional assessments identify the maintaining variables of problem behavior.'
     ],
   },
   {
@@ -7775,12 +6691,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A systematic evaluation of the environmental variables that maintain problem behavior, used to identify the function of the behavior and guide function-based intervention.',
       'A skills assessment that evaluates an individual\'s verbal behavior repertoire across the basic verbal operants (mands, tacts, intraverbals, echoics).',
-      'A preference assessment procedure in which stimuli are presented in pairs and the individual\'s approach responses are recorded to identify preferred items.',
+      'A preference assessment procedure in which stimuli are presented in pairs and the individual\'s approach responses are recorded to identify preferred items.'
     ],
     misconceptions: [
       '"Adaptive behavior assessments only measure intellectual ability."  --  Adaptive behavior assessments measure practical, functional skills, not cognitive ability or IQ.',
       '"Adaptive behavior assessments and skills assessments are the same tool."  --  Adaptive behavior assessments use standardized norms to compare an individual to same-age peers; skills assessments (like VB-MAPP) assess operationally defined skill sequences.',
-      '"Adaptive behavior assessments identify the function of problem behavior."  --  They assess functional living skills; functional behavior assessments identify the function of problem behavior.',
+      '"Adaptive behavior assessments identify the function of problem behavior."  --  They assess functional living skills; functional behavior assessments identify the function of problem behavior.'
     ],
   },
   {
@@ -7791,12 +6707,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A preference assessment procedure in which stimuli are presented in pairs and the individual selects one item from each pair; the item selected most frequently is identified as the highest-preference stimulus.',
       'A preference assessment procedure in which multiple stimuli are arranged in a structured array by the assessor and the individual is observed for approach responses over a set time period.',
-      'A preference assessment procedure in which the individual is asked to rank or identify preferred items from a list provided by caregivers or teachers.',
+      'A preference assessment procedure in which the individual is asked to rank or identify preferred items from a list provided by caregivers or teachers.'
     ],
     misconceptions: [
       '"Naturalistic and contrived free operant assessments produce identical results."  --  Naturalistic assessments reflect preferences in the natural environment; contrived assessments arrange stimuli in a structured setting, which may alter preference hierarchies.',
       '"Free operant preference assessments require the individual to make a choice between two items."  --  Free operant assessments allow free access to multiple stimuli simultaneously; paired-stimulus assessments require choosing between two items.',
-      '"Naturalistic free operant assessments are only appropriate for individuals who cannot communicate preferences verbally."  --  They are appropriate for any individual and provide ecologically valid preference data.',
+      '"Naturalistic free operant assessments are only appropriate for individuals who cannot communicate preferences verbally."  --  They are appropriate for any individual and provide ecologically valid preference data.'
     ],
   },
   {
@@ -7807,12 +6723,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A preference assessment procedure in which stimuli are presented one at a time and the individual\'s approach or avoidance response to each stimulus is recorded.',
       'A preference assessment procedure in which the individual is observed in their natural environment with free access to a variety of stimuli without assessor arrangement.',
-      'A preference assessment procedure in which stimuli are presented in pairs and the individual selects one item from each pair to identify the highest-preference stimulus.',
+      'A preference assessment procedure in which stimuli are presented in pairs and the individual selects one item from each pair to identify the highest-preference stimulus.'
     ],
     misconceptions: [
       '"Contrived free operant assessments are conducted in the individual\'s natural environment."  --  Contrived assessments use a structured, assessor-arranged setting; naturalistic assessments occur in the natural environment.',
       '"Contrived and naturalistic free operant assessments are the same procedure."  --  They differ in whether the assessor arranges the stimuli and environment (contrived) or observes naturally occurring interactions (naturalistic).',
-      '"Free operant assessments require the individual to choose between items."  --  Free operant assessments provide simultaneous access to multiple items; choice-based assessments (paired stimulus, multiple stimulus) require selecting between items.',
+      '"Free operant assessments require the individual to choose between items."  --  Free operant assessments provide simultaneous access to multiple items; choice-based assessments (paired stimulus, multiple stimulus) require selecting between items.'
     ],
   },
 
@@ -7825,12 +6741,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A consequence-based procedure in which reinforcement is delivered contingent on successive approximations toward a target behavior.',
       'An antecedent intervention in which a verbal description of the expected behavior is provided to the learner prior to the opportunity to respond.',
-      'A procedure in which the learner is physically guided through the target behavior to establish the correct response topography.',
+      'A procedure in which the learner is physically guided through the target behavior to establish the correct response topography.'
     ],
     misconceptions: [
       '"Modeling is only effective for individuals with strong verbal skills."  --  Modeling is effective for any learner who has imitation skills, regardless of verbal ability.',
       '"Modeling and prompting are the same procedure."  --  Modeling is a specific type of prompt (a model prompt); prompting is a broader category that includes physical, gestural, verbal, and model prompts.',
-      '"Video modeling and live modeling produce identical outcomes for all learners."  --  Research suggests video modeling may be more effective for some learners (e.g., those with ASD) due to the predictability and consistency of the video format.',
+      '"Video modeling and live modeling produce identical outcomes for all learners."  --  Research suggests video modeling may be more effective for some learners (e.g., those with ASD) due to the predictability and consistency of the video format.'
     ],
   },
   {
@@ -7841,12 +6757,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A procedure in which a demonstration of the target behavior is provided for the learner to observe and imitate.',
       'A consequence-based procedure in which reinforcement is delivered contingent on the occurrence of the target behavior.',
-      'A procedure in which the learner is physically guided through the target behavior to establish the correct response topography.',
+      'A procedure in which the learner is physically guided through the target behavior to establish the correct response topography.'
     ],
     misconceptions: [
       '"Instructions alone are sufficient to produce durable behavior change."  --  Instructions establish rule-governed behavior but must be paired with appropriate contingencies to produce and maintain behavior change.',
       '"Instructions and prompts are the same intervention."  --  Instructions describe expected behavior verbally or in writing; prompts are supplemental stimuli added to increase the likelihood of a correct response.',
-      '"Instructions are only effective for individuals with strong language comprehension."  --  Instructions can be adapted (simplified, visual, combined with other prompts) to be effective across a range of learner abilities.',
+      '"Instructions are only effective for individuals with strong language comprehension."  --  Instructions can be adapted (simplified, visual, combined with other prompts) to be effective across a range of learner abilities.'
     ],
   },
   {
@@ -7857,12 +6773,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'Verbal or written antecedents that describe only the expected behavior without specifying the consequences that will follow.',
       'A consequence-based procedure in which reinforcement is delivered on a fixed schedule contingent on the target behavior.',
-      'A procedure in which the learner is physically guided through the target behavior to establish the correct response topography.',
+      'A procedure in which the learner is physically guided through the target behavior to establish the correct response topography.'
     ],
     misconceptions: [
       '"Rules and instructions are the same thing."  --  Rules specify a full contingency (if X, then Y); instructions may describe expected behavior without specifying consequences.',
       '"Rules alone produce lasting behavior change."  --  Rules establish rule-governed behavior but must be paired with consistent consequences to maintain behavior change over time.',
-      '"Rules only apply to reducing problem behavior."  --  Rules can be used to promote appropriate behavior, establish expectations, and guide skill acquisition as well as reduce problem behavior.',
+      '"Rules only apply to reducing problem behavior."  --  Rules can be used to promote appropriate behavior, establish expectations, and guide skill acquisition as well as reduce problem behavior.'
     ],
   },
   {
@@ -7873,12 +6789,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'Stimulus relations that are directly trained through repeated reinforcement of a specific stimulus-response pairing.',
       'The process by which a conditioned reinforcer acquires reinforcing properties through repeated pairing with an unconditioned reinforcer.',
-      'The generalization of a trained behavior to novel stimuli that share physical properties with the original training stimulus.',
+      'The generalization of a trained behavior to novel stimuli that share physical properties with the original training stimulus.'
     ],
     misconceptions: [
       '"Emergent relations require additional training to establish."  --  By definition, emergent relations arise without direct training; they emerge from the training of other relations.',
       '"Emergent relations are the same as generalization."  --  Generalization involves responding to novel stimuli based on physical similarity; emergent relations involve derived stimulus-stimulus relations based on trained equivalence classes.',
-      '"Emergent relations only occur in humans."  --  While most research has focused on humans, emergent relations have been demonstrated in some non-human animals under specific training conditions.',
+      '"Emergent relations only occur in humans."  --  While most research has focused on humans, emergent relations have been demonstrated in some non-human animals under specific training conditions.'
     ],
   },
   {
@@ -7889,28 +6805,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'The process by which a trained behavior generalizes to novel stimuli that share physical properties with the original training stimulus.',
       'The emergence of untrained stimulus-stimulus relations as a result of training other relations within an equivalence class.',
-      'The ability to perform a previously learned behavior after a period of time without practice or reinforcement.',
+      'The ability to perform a previously learned behavior after a period of time without practice or reinforcement.'
     ],
     misconceptions: [
       '"Generative performance requires direct training of every possible response."  --  Generative performance is defined by the production of novel responses that were not directly trained.',
       '"Generative performance and generalization are the same concept."  --  Generalization involves responding to novel stimuli based on similarity; generative performance involves producing novel response combinations from trained components.',
-      '"Generative performance is only relevant to verbal behavior."  --  While prominent in verbal behavior research, generative performance applies to any behavioral domain where novel combinations of trained components emerge.',
-    ],
-  },
-  {
-    id: 'rr-free-operant-fa',
-    term: 'Free Operant Functional Analysis',
-    taskItem: 'F.03',
-    correctDefinition: 'A functional analysis format in which the individual has simultaneous access to multiple stimuli associated with different functions (e.g., attention, tangibles, escape from demands) and the assessor observes which stimuli the individual approaches and engages with; approach responses and duration of engagement are used to infer the maintaining function of problem behavior; less intrusive than analogue FA.',
-    distractors: [
-      'A functional analysis format in which brief test and control trials are embedded within ongoing activities in the natural environment.',
-      'A functional analysis format in which extended test conditions are conducted in a controlled analogue setting with programmed contingencies.',
-      'A preference assessment procedure in which the individual has free access to multiple stimuli and approach responses are recorded to identify preferred items.',
-    ],
-    misconceptions: [
-      '"Free operant FA and free operant preference assessment are the same procedure."  --  Free operant preference assessment identifies preferred stimuli; free operant FA uses stimulus approach patterns to infer the function of problem behavior.',
-      '"Free operant FA requires programmed contingencies for each condition."  --  Free operant FA observes naturally occurring approach behavior without programmed contingencies, making it less intrusive than analogue FA.',
-      '"Free operant FA is the most rigorous form of functional analysis."  --  Analogue FA with programmed contingencies provides more experimental control; free operant FA is less intrusive but also less controlled.',
+      '"Generative performance is only relevant to verbal behavior."  --  While prominent in verbal behavior research, generative performance applies to any behavioral domain where novel combinations of trained components emerge.'
     ],
   },
 
@@ -7923,12 +6823,217 @@ export const rapidRecallItems: RapidRecallItem[] = [
     distractors: [
       'A functional analysis format in which brief test and control trials are embedded within ongoing activities in the natural environment to identify the function of problem behavior.',
       'A functional analysis format in which the duration of problem behavior is used as the dependent variable rather than the frequency or rate of occurrence.',
-      'A functional analysis format in which the individual is observed in their natural environment without programmed contingencies to identify naturally occurring antecedents and consequences.',
+      'A functional analysis format in which the individual is observed in their natural environment without programmed contingencies to identify naturally occurring antecedents and consequences.'
     ],
     misconceptions: [
       '"Latency-based FA is only appropriate for high-frequency behaviors."  --  Latency-based FA is specifically designed for low-frequency or dangerous behaviors where waiting for multiple occurrences is impractical or unsafe.',
       '"Latency-based FA measures the duration of problem behavior."  --  Latency-based FA measures the time from the onset of the condition to the first occurrence of problem behavior, not the duration of the behavior itself.',
-      '"Latency-based FA and trial-based FA are the same procedure."  --  Trial-based FA embeds brief test/control trials in natural routines; latency-based FA uses latency to first response as the dependent variable, typically in more controlled conditions.',
+      '"Latency-based FA and trial-based FA are the same procedure."  --  Trial-based FA embeds brief test/control trials in natural routines; latency-based FA uses latency to first response as the dependent variable, typically in more controlled conditions.'
+    ],
+  },
+
+  {
+    id: 'rr-cer',
+    term: 'Conditioned Emotional Response (CER)',
+    domain: 'B',
+    taskItem: 'B.01',
+    correctDefinition: 'An emotional response (e.g., fear, anxiety) that is elicited by a conditioned stimulus that has been paired with an unconditioned stimulus; a form of respondent conditioning in which neutral stimuli acquire eliciting functions.',
+    distractors: [
+      'A behavior that is controlled by its consequences and is strengthened by positive or negative reinforcement; an operant behavior that is emitted rather than elicited.',
+      'A motivating operation that alters the reinforcing effectiveness of a stimulus and evokes behavior that has been reinforced by that stimulus in the past.',
+      'A discriminative stimulus that signals the availability of reinforcement and increases the probability of a previously reinforced operant response.'
+    ],
+    misconceptions: [
+      '"A CER is an operant behavior because it is influenced by consequences."  --  A CER is a respondent behavior elicited by a conditioned stimulus through classical conditioning, not an operant maintained by its consequences.',
+      '"A CER requires the organism to be aware of the pairing."  --  Respondent conditioning occurs automatically through temporal contiguity; awareness is not required.',
+      '"CERs only involve fear responses."  --  CERs can involve any emotional response, including positive emotions (excitement, anticipation) conditioned through pairing with appetitive stimuli.'
+    ],
+  },
+  {
+    id: 'rr-delay-discounting',
+    term: 'Delay Discounting',
+    domain: 'B',
+    taskItem: 'B.16',
+    correctDefinition: 'The decrease in the subjective value of a reinforcer as the delay to its delivery increases; a reinforcer available immediately is valued more highly than the same reinforcer available after a delay; steep delay discounting is associated with impulsivity.',
+    distractors: [
+      'The decrease in the reinforcing effectiveness of a stimulus as a result of repeated or prolonged exposure to that stimulus, independent of any delay to delivery.',
+      'The decrease in the frequency of a behavior when the magnitude of the reinforcer is reduced below the level that previously maintained responding.',
+      'The decrease in the probability of a behavior when the response requirement is increased beyond the organism\'s current level of responding.'
+    ],
+    misconceptions: [
+      '"Delay discounting is the same as satiation."  --  Satiation reduces reinforcer effectiveness through exposure; delay discounting reduces subjective value through temporal distance.',
+      '"Delay discounting only applies to substance use or addiction."  --  Delay discounting is a fundamental behavioral process relevant to all choice behavior, including academic performance, health behaviors, and clinical decision-making.',
+      '"A longer delay always eliminates the reinforcing value of a stimulus."  --  The degree of discounting varies; some individuals and some reinforcers show shallower discounting curves.'
+    ],
+  },
+  {
+    id: 'rr-extinction-induced-variability',
+    term: 'Extinction-Induced Variability',
+    domain: 'B',
+    taskItem: 'B.09',
+    correctDefinition: 'An increase in the variability of behavior that occurs when a previously reinforced response is placed on extinction; the organism emits novel response topographies that were not previously reinforced, which can be captured and shaped toward a desired behavior.',
+    distractors: [
+      'An increase in the rate or intensity of a previously reinforced behavior that occurs immediately after extinction is implemented, before the behavior decreases.',
+      'The return of a previously extinguished behavior after a period of rest, without any additional reinforcement of the behavior.',
+      'The return of an extinguished behavior when the organism is placed in a context different from the one in which extinction was conducted.'
+    ],
+    misconceptions: [
+      '"Extinction-induced variability is the same as an extinction burst."  --  An extinction burst is an increase in rate or intensity of the original response; extinction-induced variability refers to the emergence of novel response topographies.',
+      '"Extinction-induced variability is always a problem to be suppressed."  --  Extinction-induced variability can be therapeutically useful; novel behaviors that emerge can be differentially reinforced to establish new, adaptive responses.',
+      '"Extinction-induced variability only occurs with punishment-maintained behaviors."  --  Extinction-induced variability occurs with any behavior placed on extinction, regardless of the maintaining reinforcer.'
+    ],
+  },
+  {
+    id: 'rr-generalization-programming',
+    term: 'Generalization Programming',
+    domain: 'G',
+    taskItem: 'G.21',
+    correctDefinition: 'The systematic application of strategies to promote the occurrence of trained behaviors in untrained settings, with untrained people, and under untrained conditions; includes training sufficient exemplars, training loosely, using indiscriminable contingencies, and programming common stimuli.',
+    distractors: [
+      'The process by which a behavior trained in one context automatically occurs in all other contexts without any additional intervention or programming.',
+      'The process by which a behavior is maintained over time after the training procedures have been withdrawn, without any specific programming for long-term retention.',
+      'The process by which a behavior trained with one set of materials is automatically performed with all other materials without any additional training.'
+    ],
+    misconceptions: [
+      '"Generalization programming is only needed when generalization fails to occur naturally."  --  Generalization should be actively programmed from the beginning of intervention, not as a remediation after failure.',
+      '"Training in multiple settings is the only generalization programming strategy."  --  Multiple strategies exist including training sufficient exemplars, training loosely, using indiscriminable contingencies, and programming common stimuli.',
+      '"Generalization programming and maintenance programming are the same."  --  Generalization refers to responding across untrained stimuli and settings; maintenance refers to responding over time after training ends.'
+    ],
+  },
+  {
+    id: 'rr-ncr',
+    term: 'Noncontingent Reinforcement (NCR)',
+    domain: 'G',
+    taskItem: 'G.17',
+    correctDefinition: 'A procedure in which a reinforcer is delivered on a fixed- or variable-time schedule, independent of the occurrence of any specific behavior; used as an antecedent intervention to reduce the motivating operation for problem behavior by providing free access to the maintaining reinforcer.',
+    distractors: [
+      'A procedure in which a reinforcer is delivered contingent on the occurrence of a behavior that is physically incompatible with the target problem behavior.',
+      'A procedure in which a reinforcer is delivered contingent on the absence of the target behavior during a specified interval of time.',
+      'A procedure in which a reinforcer is delivered contingent on any behavior other than the target problem behavior during a specified interval.'
+    ],
+    misconceptions: [
+      '"NCR is the same as DRO because both involve delivering reinforcement independent of the problem behavior."  --  NCR delivers reinforcement on a time schedule regardless of any behavior; DRO delivers reinforcement contingent on the absence of the target behavior.',
+      '"NCR strengthens whatever behavior happens to occur when reinforcement is delivered."  --  NCR reduces the motivating operation for problem behavior; any adventitious strengthening of other behaviors is a side effect, not the mechanism.',
+      '"NCR is only appropriate for automatically reinforced behaviors."  --  NCR is used for behaviors maintained by any function, including social attention, escape, and tangible reinforcement.'
+    ],
+  },
+  {
+    id: 'rr-pyramidal-training',
+    term: 'Pyramidal Training',
+    domain: 'I',
+    taskItem: 'I.06',
+    correctDefinition: 'A staff training model in which a behavior analyst trains a small group of lead staff who then train other staff under their supervision, creating a hierarchical dissemination structure that allows behavior-analytic skills to be distributed across large organizations efficiently.',
+    distractors: [
+      'A staff training model in which all staff are trained simultaneously by the behavior analyst in a group format, using didactic instruction and role-play practice.',
+      'A staff training model in which each staff member is trained individually by the behavior analyst using a competency-based approach with performance feedback.',
+      'A staff training model in which staff train themselves using self-directed learning materials, with the behavior analyst providing feedback only when performance falls below criterion.'
+    ],
+    misconceptions: [
+      '"Pyramidal training reduces the quality of training because the BCBA is not directly training all staff."  --  When implemented with fidelity checks, pyramidal training can maintain training quality while dramatically increasing efficiency and reach.',
+      '"Pyramidal training is only appropriate for large organizations."  --  Pyramidal training can be used in any setting where a BCBA needs to disseminate skills to multiple staff members efficiently.',
+      '"Pyramidal training is the same as peer training."  --  Pyramidal training involves a hierarchical structure with designated trainers; peer training involves colleagues training each other without a hierarchical structure.'
+    ],
+  },
+  {
+    id: 'rr-renewal',
+    term: 'Renewal (Context Renewal)',
+    domain: 'B',
+    taskItem: 'B.09',
+    correctDefinition: 'The return of an extinguished behavior when the organism is placed in a context different from the one in which extinction occurred; a form of relapse that occurs because extinction learning is context-specific and does not fully generalize to other environments.',
+    distractors: [
+      'The return of an extinguished behavior after a period of rest, without any additional reinforcement, due to the passage of time alone.',
+      'The return of an extinguished behavior when the original reinforcer is re-introduced into the environment, even without direct reinforcement of the behavior.',
+      'The increase in rate or intensity of an extinguished behavior when a novel aversive stimulus is presented, independent of the extinction context.'
+    ],
+    misconceptions: [
+      '"Renewal is the same as spontaneous recovery."  --  Spontaneous recovery occurs after a rest period in the same context; renewal occurs when the organism is placed in a different context.',
+      '"Renewal only occurs when the organism is returned to the original training context."  --  Renewal can occur in any context that differs from the extinction context, including entirely novel environments.',
+      '"Renewal can be prevented by conducting extinction in multiple contexts."  --  Conducting extinction across multiple contexts reduces but may not eliminate renewal; generalization programming is needed.'
+    ],
+  },
+  {
+    id: 'rr-scatterplot',
+    term: 'Scatterplot',
+    domain: 'C',
+    taskItem: 'C.02',
+    correctDefinition: 'A data display method in which the occurrence of a target behavior is recorded within time intervals across the day on a grid, producing a visual pattern that reveals temporal distributions of behavior; used to identify times of day or conditions associated with high or low rates of behavior.',
+    distractors: [
+      'A data display in which cumulative response totals are plotted over time, with the slope of the line representing the rate of responding; used to evaluate response rate and the effects of reinforcement schedules.',
+      'A data display in which the frequency or rate of behavior is plotted on the y-axis against time on the x-axis, with each data point representing a single observation session.',
+      'A data display in which two variables are plotted against each other to reveal correlational relationships, without reference to time of day or behavioral context.'
+    ],
+    misconceptions: [
+      '"A scatterplot can establish a functional relation between antecedents and behavior."  --  A scatterplot reveals correlational patterns; it cannot establish causation; experimental manipulation is required.',
+      '"Scatterplot recording is the same as ABC continuous recording."  --  Scatterplot recording identifies temporal patterns across time blocks; ABC recording captures specific antecedents and consequences surrounding each behavioral occurrence.',
+      '"A scatterplot is only useful for behaviors that occur at high rates."  --  Scatterplots are useful for any behavior; they reveal temporal patterns regardless of overall rate.'
+    ],
+  },
+  {
+    id: 'rr-scatterplot-recording',
+    term: 'Scatterplot Recording',
+    domain: 'C',
+    taskItem: 'C.05',
+    correctDefinition: 'A data collection method in which the occurrence of a target behavior is recorded within time intervals across the day on a grid format, producing a visual display that reveals temporal patterns; used as an indirect or descriptive assessment tool to identify potential antecedent variables.',
+    distractors: [
+      'A data collection method in which the frequency of a target behavior is recorded within each observation session, producing a count of behavioral occurrences per session.',
+      'A data collection method in which the duration of each behavioral episode is recorded using a stopwatch, producing a measure of the total time the behavior occurred.',
+      'A data collection method in which an observer records whether a behavior occurred during brief observation intervals, producing a proportion of intervals with behavioral occurrence.'
+    ],
+    misconceptions: [
+      '"Scatterplot recording requires continuous observation throughout the day."  --  Scatterplot recording uses time-interval sampling; the observer does not need to watch continuously but records whether behavior occurred in each interval.',
+      '"Scatterplot recording is a form of experimental functional analysis."  --  Scatterplot recording is a descriptive assessment method; it identifies correlational patterns but cannot establish functional relations.',
+      '"Scatterplot recording is only used for problem behaviors."  --  Scatterplot recording can be used for any behavior to identify temporal patterns, including skill acquisition targets.'
+    ],
+  },
+  {
+    id: 'rr-stimulus-preference-assessment',
+    term: 'Stimulus Preference Assessment',
+    domain: 'F',
+    taskItem: 'F.01',
+    correctDefinition: 'A systematic procedure for identifying stimuli that an individual prefers and that may function as reinforcers; formats include single-stimulus, paired-stimulus (forced-choice), and multiple-stimulus with or without replacement (MSWO); preference does not guarantee reinforcer effectiveness.',
+    distractors: [
+      'A systematic procedure for identifying the function of problem behavior by exposing the individual to different antecedent and consequence conditions and measuring behavioral rates.',
+      'A systematic procedure for identifying the skills an individual has mastered and the skills they have not yet acquired, using standardized assessment instruments.',
+      'A systematic procedure for identifying the stimuli that function as establishing operations by measuring changes in behavioral rate following exposure to different deprivation conditions.'
+    ],
+    misconceptions: [
+      '"A stimulus preference assessment is the same as a reinforcer assessment."  --  A preference assessment identifies preferred stimuli; a reinforcer assessment empirically tests whether those stimuli increase behavior when delivered contingently.',
+      '"The most preferred stimulus from a preference assessment will always function as a reinforcer."  --  Preference and reinforcer effectiveness are correlated but not identical; a reinforcer assessment is needed to confirm reinforcing function.',
+      '"Stimulus preference assessments are only appropriate for individuals with limited verbal behavior."  --  Preference assessments are useful for any individual; verbal report alone may not accurately reflect behavioral preferences.'
+    ],
+  },
+  {
+    id: 'rr-tandem-schedule',
+    term: 'Tandem Schedule',
+    domain: 'B',
+    taskItem: 'B.14',
+    correctDefinition: 'A compound schedule of reinforcement in which the requirements of two or more component schedules must be completed in sequence before a reinforcer is delivered, without any distinctive stimuli signaling the transition between components; the absence of discriminative stimuli distinguishes it from a chained schedule.',
+    distractors: [
+      'A compound schedule in which two or more simple schedules are in effect simultaneously and a reinforcer is delivered when the requirements of any one of the component schedules is met.',
+      'A compound schedule in which two or more simple schedules are in effect simultaneously and a reinforcer is delivered only when the requirements of all component schedules have been met.',
+      'A compound schedule in which distinctive stimuli signal each component, and reinforcement is delivered at the completion of the final component; the stimuli serve as conditioned reinforcers.'
+    ],
+    misconceptions: [
+      '"A tandem schedule is the same as a chained schedule."  --  Both require sequential completion of component schedules, but chained schedules use distinctive stimuli for each component; tandem schedules do not.',
+      '"In a tandem schedule, reinforcement is delivered at the end of each component."  --  Reinforcement is delivered only at the end of the final component; no reinforcement is delivered between components.',
+      '"Tandem schedules are rarely used in applied settings."  --  Tandem schedules are used in token economy systems and other applied procedures where the absence of component-specific signals is intentional.'
+    ],
+  },
+  {
+    id: 'rr-treatment-package',
+    term: 'Treatment Package',
+    domain: 'H',
+    taskItem: 'H.01',
+    correctDefinition: 'An intervention consisting of two or more components applied together as a unit; may be effective as a whole but requires component analysis to determine which elements are necessary and sufficient for the observed effects; common in applied settings where multiple procedures are combined for practical reasons.',
+    distractors: [
+      'A single, well-defined behavioral procedure derived from a specific principle of behavior and applied to change a target behavior in a socially significant way.',
+      'A comprehensive assessment protocol that evaluates multiple dimensions of a client\'s behavioral repertoire to identify intervention targets and inform treatment planning.',
+      'A systematic process for evaluating the effectiveness of an intervention by comparing pre- and post-intervention data on a target behavior.'
+    ],
+    misconceptions: [
+      '"A treatment package is always more effective than a single-component intervention."  --  Treatment packages may be effective, but component analysis is needed to determine which elements are necessary; some components may be unnecessary or even counterproductive.',
+      '"Treatment packages cannot be evaluated using single-case experimental designs."  --  Treatment packages can be evaluated using reversal designs, multiple baseline designs, or component analyses within single-case frameworks.',
+      '"A treatment package is the same as a behavior intervention plan."  --  A behavior intervention plan is a document; a treatment package refers to the combination of multiple intervention components applied together.'
     ],
   },
 
