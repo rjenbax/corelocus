@@ -839,8 +839,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-science-aba',
     term: 'Science',
     question: 'Which of the following best describes science as a systematic approach to understanding natural phenomena?',
-    correctAnswer: 'An empirical, objective approach characterized by description, prediction, and control of subject matter through observation and experimentation',
-    incorrectAnswers: [
+    correctDefinition: 'An empirical, objective approach characterized by description, prediction, and control of subject matter through observation and experimentation',
+    distractors: [
       'A collection of established facts and theories accepted by consensus among experts in a field',
       'A method of generating hypotheses about unobservable internal processes that drive behavior',
       'A philosophical framework for interpreting behavior in terms of cognitive and emotional states',
@@ -859,8 +859,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-experiment-aba',
     term: 'Experiment',
     question: 'A behavior analyst manipulates an independent variable under controlled conditions to measure its effect on a dependent variable. This procedure is best described as:',
-    correctAnswer: 'An experiment designed to establish a functional relation between the independent and dependent variables',
-    incorrectAnswers: [
+    correctDefinition: 'An experiment designed to establish a functional relation between the independent and dependent variables',
+    distractors: [
       'A descriptive assessment designed to identify correlations between environmental events and behavior',
       'A preference assessment designed to identify effective reinforcers for a specific client',
       'A normative comparison designed to evaluate a client\'s behavior relative to same-age peers',
@@ -879,8 +879,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-functional-relation',
     term: 'Functional Relation',
     question: 'A BCBA demonstrates that a client\'s on-task behavior increases when a token economy is in place and returns to baseline when it is removed, across three replications. This finding establishes:',
-    correctAnswer: 'A functional relation between the token economy (independent variable) and on-task behavior (dependent variable)',
-    incorrectAnswers: [
+    correctDefinition: 'A functional relation between the token economy (independent variable) and on-task behavior (dependent variable)',
+    distractors: [
       'A correlational relationship between the token economy and on-task behavior',
       'A hypothetical construct explaining why the client responds to token reinforcement',
       'A normative standard for on-task behavior in similar clients',
@@ -899,8 +899,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-hypothetical-construct',
     term: 'Hypothetical Construct',
     question: 'A clinician explains a child\'s aggression by stating the child has "poor impulse control." From a behavior analytic perspective, this explanation is problematic because:',
-    correctAnswer: 'It invokes a hypothetical construct — an unobservable, unmeasurable internal entity — rather than identifying the environmental variables controlling the behavior',
-    incorrectAnswers: [
+    correctDefinition: 'It invokes a hypothetical construct — an unobservable, unmeasurable internal entity — rather than identifying the environmental variables controlling the behavior',
+    distractors: [
       'It uses mentalistic language that is incompatible with the technological dimension of ABA',
       'It fails to specify the reinforcement schedule maintaining the aggressive behavior',
       'It violates the principle of parsimony by offering an overly complex explanation',
@@ -919,8 +919,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-explanatory-fiction',
     term: 'Explanatory Fiction',
     question: 'A teacher says "Jada is disruptive because she has ADHD." A behavior analyst identifies this as an explanatory fiction because:',
-    correctAnswer: 'The label "ADHD" is derived from the disruptive behavior itself and is then used as its cause, creating a circular explanation that identifies no actual environmental variable',
-    incorrectAnswers: [
+    correctDefinition: 'The label "ADHD" is derived from the disruptive behavior itself and is then used as its cause, creating a circular explanation that identifies no actual environmental variable',
+    distractors: [
       'Medical diagnoses are not valid explanations for behavior in any context',
       'The explanation violates the conceptually systematic dimension by not referencing reinforcement principles',
       'The explanation is too simple and violates the principle of parsimony',
@@ -1314,8 +1314,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-steady-state-responding',
     term: 'Steady State Responding',
     question: 'Before introducing an intervention, a BCBA waits until the client\'s baseline data shows minimal variability and no systematic trend. This criterion is called:',
-    correctAnswer: 'Steady state responding — a stable, low-variability pattern of behavior that provides a valid basis for comparison with treatment data',
-    incorrectAnswers: [
+    correctDefinition: 'Steady state responding — a stable, low-variability pattern of behavior that provides a valid basis for comparison with treatment data',
+    distractors: [
       'Experimental control — the demonstration that changes in behavior are caused by the independent variable',
       'Procedural fidelity — the degree to which the intervention is implemented as planned',
       'Social validity — the degree to which the goals and outcomes of an intervention are acceptable to stakeholders',
@@ -1334,8 +1334,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-withdrawal-design',
     term: 'A-B-A-B Design',
     question: 'Which experimental design demonstrates experimental control through two replications of the treatment effect AND ends in the treatment condition?',
-    correctAnswer: 'A-B-A-B design — two baseline (A) phases alternate with two treatment (B) phases, providing two replications of the effect and ending with treatment in place',
-    incorrectAnswers: [
+    correctDefinition: 'A-B-A-B design — two baseline (A) phases alternate with two treatment (B) phases, providing two replications of the effect and ending with treatment in place',
+    distractors: [
       'A-B-A design — two baseline phases and one treatment phase; demonstrates control but ends in a no-treatment condition',
       'Multiple baseline design — applies the independent variable sequentially across behaviors, settings, or participants without withdrawing treatment',
       'B-A-B design — begins with treatment, withdraws it, then reinstates it; used when baseline cannot be collected first',
@@ -1354,8 +1354,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-irreversibility',
     term: 'Irreversibility',
     question: 'A BCBA teaches a client to read 30 sight words and then withdraws the teaching procedure. The client continues to read the words correctly. This is an example of:',
-    correctAnswer: 'Irreversibility — the learned skill does not return to baseline levels when the intervention is withdrawn, making reversal designs inappropriate for this behavior',
-    incorrectAnswers: [
+    correctDefinition: 'Irreversibility — the learned skill does not return to baseline levels when the intervention is withdrawn, making reversal designs inappropriate for this behavior',
+    distractors: [
       'Generalization — the skill transfers to new stimuli or settings beyond those used in training',
       'Maintenance — the skill continues to be performed over time after the intervention is withdrawn',
       'Treatment drift — the intervention gradually changes from the original protocol over time',
@@ -1374,8 +1374,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-treatment-integrity',
     term: 'Treatment Integrity',
     question: 'A therapist gradually begins skipping steps of a prompting hierarchy after several weeks of implementation. This unplanned change is called:',
-    correctAnswer: 'Treatment drift — a gradual, unplanned deviation from the original intervention protocol that threatens internal validity and replication',
-    incorrectAnswers: [
+    correctDefinition: 'Treatment drift — a gradual, unplanned deviation from the original intervention protocol that threatens internal validity and replication',
+    distractors: [
       'Treatment integrity — the degree to which the intervention is implemented as planned (the opposite of the problem described)',
       'Procedural fidelity — the accurate implementation of each step of the intervention protocol (the opposite of the problem described)',
       'Sequence effects — changes in behavior due to the order in which conditions are presented',
@@ -1393,8 +1393,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-type-errors',
     term: 'Type I Error',
     question: 'A researcher concludes that a new teaching procedure improved performance when the improvement was actually due to natural maturation. This is an example of:',
-    correctAnswer: 'Type I error — a false positive conclusion that the independent variable had an effect when it actually did not',
-    incorrectAnswers: [
+    correctDefinition: 'Type I error — a false positive conclusion that the independent variable had an effect when it actually did not',
+    distractors: [
       'Type II error — a false negative conclusion that the independent variable had no effect when it actually did',
       'Measurement bias — a systematic error in data collection that causes observed values to differ from true values',
       'Affirmation of the consequent — concluding a specific cause produced an effect without ruling out other possible causes',
@@ -1413,8 +1413,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-social-validity',
     term: 'Social Validity',
     question: 'After a successful intervention, a BCBA surveys parents and teachers about whether the goals were important, the procedures were acceptable, and the outcomes were meaningful. This assessment is called:',
-    correctAnswer: 'Social validity — the degree to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, family, and other stakeholders',
-    incorrectAnswers: [
+    correctDefinition: 'Social validity — the degree to which the goals, procedures, and outcomes of an intervention are acceptable and meaningful to the client, family, and other stakeholders',
+    distractors: [
       'Treatment integrity — the degree to which the intervention was implemented as planned',
       'Generality — the degree to which behavior change extends to untrained settings, stimuli, or behaviors',
       'Consumer satisfaction — a component of social validity but not the full construct, which also includes goal and procedure acceptability',
@@ -1477,8 +1477,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-generalized-imitation',
     term: 'Generalized Imitation',
     question: 'After being reinforced for imitating many different actions, a child imitates a novel action the first time it is modeled, without having been directly reinforced for that specific imitation. This is an example of:',
-    correctAnswer: 'Generalized imitation — a behavioral repertoire in which the organism imitates novel behaviors as a result of a history of reinforcement for imitating a variety of modeled behaviors',
-    incorrectAnswers: [
+    correctDefinition: 'Generalized imitation — a behavioral repertoire in which the organism imitates novel behaviors as a result of a history of reinforcement for imitating a variety of modeled behaviors',
+    distractors: [
       'Observational learning — behavior change that occurs as a result of observing a model\'s behavior and its consequences',
       'Stimulus generalization — responding to a new stimulus that was not present during training because it shares properties with the training stimulus',
       'Imitation training — a systematic procedure for teaching a learner to imitate modeled behaviors through reinforcement',
@@ -1497,8 +1497,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-behavior-chain-types',
     term: 'Total-Task Chaining',
     question: 'A BCBA teaches a student to make a sandwich by prompting through all 12 steps in every session from the very first session. This chaining procedure is called:',
-    correctAnswer: 'Total-task chaining — the learner is prompted through all steps of the chain in every training trial from the first session, practicing the entire chain on every trial',
-    incorrectAnswers: [
+    correctDefinition: 'Total-task chaining — the learner is prompted through all steps of the chain in every training trial from the first session, practicing the entire chain on every trial',
+    distractors: [
       'Forward chaining — training begins with the first step of the chain; subsequent steps are added as each step is mastered',
       'Backward chaining — training begins with the last step of the chain; preceding steps are added as each step is mastered',
       'Backward chaining with leap aheads — a variation of backward chaining in which some middle steps are skipped to accelerate acquisition',
@@ -1517,8 +1517,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-fct',
     term: 'Functional Communication Training (FCT)',
     question: 'A BCBA places a student\'s aggression (maintained by escape) on extinction and teaches the student to hand a "break" card to request escape from demands. This procedure is called:',
-    correctAnswer: 'Functional Communication Training (FCT) — the problem behavior is placed on extinction and a functionally equivalent communicative response is taught that accesses the same reinforcer',
-    incorrectAnswers: [
+    correctDefinition: 'Functional Communication Training (FCT) — the problem behavior is placed on extinction and a functionally equivalent communicative response is taught that accesses the same reinforcer',
+    distractors: [
       'Differential Reinforcement of Alternative Behavior (DRA) — reinforcing an alternative behavior while withholding reinforcement for the problem behavior, without requiring functional equivalence',
       'Behavior Chain Interruption Strategy — interrupting an established behavior chain to create an opportunity for the learner to request assistance or a missing item',
       'Noncontingent Reinforcement (NCR) — delivering the maintaining reinforcer on a fixed- or variable-time schedule independent of behavior',
@@ -1537,8 +1537,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-high-p-sequence',
     term: 'High-Probability Request Sequence',
     question: 'Before asking a student to complete a math worksheet, a BCBA presents three easy requests the student reliably complies with. This antecedent intervention is called:',
-    correctAnswer: 'High-probability request sequence — a series of high-p requests are presented before a low-p request to generate behavioral momentum that increases compliance with the low-p request',
-    incorrectAnswers: [
+    correctDefinition: 'High-probability request sequence — a series of high-p requests are presented before a low-p request to generate behavioral momentum that increases compliance with the low-p request',
+    distractors: [
       'Antecedent exercise — vigorous physical exercise provided before a session to reduce subsequent problem behavior',
       'Noncontingent reinforcement — delivering a reinforcer on a time-based schedule independent of behavior to abolish the motivating operation',
       'Errorless learning — a teaching procedure that prevents errors by providing prompts before the learner can make an incorrect response',
@@ -1799,8 +1799,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-repeatability',
     term: 'Repeatability',
     question: 'Which dimensional quantity of behavior is the basis for frequency and rate measures?',
-    correctAnswer: 'Repeatability — the fact that a behavior can occur more than once within an observation period',
-    incorrectAnswers: [
+    correctDefinition: 'Repeatability — the fact that a behavior can occur more than once within an observation period',
+    distractors: [
       'Temporal extent — the fact that every instance of behavior occupies some amount of time',
       'Temporal locus — the fact that behavior occurs at a specific point in time relative to other events',
       'Magnitude — the force or intensity with which a response is emitted',
@@ -1819,8 +1819,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-temporal-extent',
     term: 'Temporal Extent',
     question: 'A BCBA wants to measure how long a client engages in stereotypy during a session. Which dimensional quantity of behavior justifies using duration as the measure?',
-    correctAnswer: 'Temporal extent — every instance of stereotypy occupies some amount of time, making duration an appropriate measure',
-    incorrectAnswers: [
+    correctDefinition: 'Temporal extent — every instance of stereotypy occupies some amount of time, making duration an appropriate measure',
+    distractors: [
       'Repeatability — stereotypy can occur more than once, making frequency the appropriate measure',
       'Temporal locus — stereotypy occurs at a specific point in time, making latency the appropriate measure',
       'Magnitude — stereotypy varies in intensity, making force the appropriate measure',
@@ -1839,8 +1839,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-temporal-locus',
     term: 'Temporal Locus',
     question: 'A BCBA measures the time between a teacher\'s instruction and a student\'s first response. Which dimensional quantity of behavior is the basis for this measure?',
-    correctAnswer: 'Temporal locus — every response occurs at a specific point in time relative to other events, making latency an appropriate measure',
-    incorrectAnswers: [
+    correctDefinition: 'Temporal locus — every response occurs at a specific point in time relative to other events, making latency an appropriate measure',
+    distractors: [
       'Temporal extent — the behavior occupies time, making duration the appropriate measure',
       'Repeatability — the behavior can occur more than once, making frequency the appropriate measure',
       'Magnitude — the behavior varies in intensity, making force the appropriate measure',
@@ -1859,8 +1859,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-measurement-bias',
     term: 'Measurement Bias',
     question: 'An observer who knows a client is in the treatment phase consistently records slightly higher rates of appropriate behavior than a naive observer. This is an example of:',
-    correctAnswer: 'Measurement bias — a systematic error caused by observer expectations that consistently skews observed values in one direction',
-    incorrectAnswers: [
+    correctDefinition: 'Measurement bias — a systematic error caused by observer expectations that consistently skews observed values in one direction',
+    distractors: [
       'Observer reactivity — a change in the client\'s behavior because they know they are being observed',
       'Artifact — a spurious data point caused by an error in the measurement process',
       'Calibration error — a failure to train the observer to criterion against a known standard',
@@ -1879,8 +1879,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-equal-vs-ratio-scale',
     term: 'Equal-Interval Scale',
     question: 'A BCBA uses a standard line graph with an equal-interval y-axis. A change from 2 to 4 responses per minute appears visually larger than a change from 20 to 22 responses per minute, even though both are 2-unit changes. This is a characteristic of:',
-    correctAnswer: 'Equal-interval scaling — equal distances represent equal absolute amounts, so a 2-unit change always looks the same regardless of the baseline rate',
-    incorrectAnswers: [
+    correctDefinition: 'Equal-interval scaling — equal distances represent equal absolute amounts, so a 2-unit change always looks the same regardless of the baseline rate',
+    distractors: [
       'Ratio scaling — equal distances represent equal proportional changes, so a doubling always looks the same',
       'Celeration — the rate of change in rate over time, used in precision teaching',
       'Measurement bias — a systematic error that causes observed values to differ from true values',
@@ -1899,8 +1899,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-precision-teaching',
     term: 'Precision Teaching',
     question: 'Which measurement and instructional system uses the Standard Celeration Chart, emphasizes fluency building, and uses celeration (rate of change in rate) as the primary measure of learning?',
-    correctAnswer: 'Precision Teaching — developed by Ogden Lindsley, uses daily frequency measures plotted on a ratio-scale chart to track learning and guide instructional decisions',
-    incorrectAnswers: [
+    correctDefinition: 'Precision Teaching — developed by Ogden Lindsley, uses daily frequency measures plotted on a ratio-scale chart to track learning and guide instructional decisions',
+    distractors: [
       'Discrete Trial Training (DTT) — a structured teaching method that uses antecedent-response-consequence trials to teach skills',
       'Direct Instruction — a scripted, teacher-led instructional method emphasizing explicit teaching and error correction',
       'Naturalistic Teaching — an instructional approach that embeds learning opportunities in natural environments and routines',
@@ -2018,8 +2018,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-ethics-aba',
     term: 'Ethics',
     question: 'In behavior analysis, ethics is best understood as:',
-    correctAnswer: 'A set of professional obligations derived from the BACB Ethics Code that governs conduct toward clients, supervisees, colleagues, and the public',
-    incorrectAnswers: [
+    correctDefinition: 'A set of professional obligations derived from the BACB Ethics Code that governs conduct toward clients, supervisees, colleagues, and the public',
+    distractors: [
       'A personal belief system about right and wrong that each practitioner develops independently',
       'A set of aspirational ideals that guide practice but carry no formal enforcement mechanisms',
       'A branch of philosophy concerned only with theoretical moral questions unrelated to clinical practice',
@@ -2038,8 +2038,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-compliance-code',
     term: 'Compliance Code',
     question: 'The BACB Ethics Code functions as a compliance code rather than merely an aspirational document because:',
-    correctAnswer: 'Violations are subject to formal investigation and may result in sanctions including suspension or revocation of certification',
-    incorrectAnswers: [
+    correctDefinition: 'Violations are subject to formal investigation and may result in sanctions including suspension or revocation of certification',
+    distractors: [
       'It is written by practicing behavior analysts rather than by a regulatory body',
       'It applies only to BCBAs and not to other BACB certificants such as BCaBAs or RBTs',
       'It is updated annually to reflect current best practices in the field',
@@ -2058,8 +2058,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-negligence-aba',
     term: 'Negligence',
     question: 'A BCBA implements a punishment procedure without conducting a prior functional assessment, and the client\'s problem behavior escalates. This situation most closely reflects:',
-    correctAnswer: 'Negligence — a failure to exercise the standard of care expected of a competent behavior analyst, resulting in potential harm to the client',
-    incorrectAnswers: [
+    correctDefinition: 'Negligence — a failure to exercise the standard of care expected of a competent behavior analyst, resulting in potential harm to the client',
+    distractors: [
       'Fraudulent conduct, because the BCBA misrepresented the likely outcome of the procedure',
       'A conflict of interest, because the BCBA had a financial incentive to implement the procedure',
       'Countercontrol, because the client is responding to the aversive nature of the procedure',
@@ -2078,8 +2078,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-risk-benefit-analysis',
     term: 'Risk-Benefit Analysis',
     question: 'Before recommending a restrictive procedure, a BCBA is ethically required to conduct a risk-benefit analysis. The primary purpose of this analysis is to:',
-    correctAnswer: 'Determine whether the expected benefits of the procedure justify its potential harms, ensuring the intervention is warranted and proportionate',
-    incorrectAnswers: [
+    correctDefinition: 'Determine whether the expected benefits of the procedure justify its potential harms, ensuring the intervention is warranted and proportionate',
+    distractors: [
       'Identify the least expensive intervention option that is likely to be effective for the client',
       'Document that the BCBA has obtained informed consent from the client\'s legal guardian',
       'Establish that the procedure has been validated through peer-reviewed research with similar populations',
@@ -2098,8 +2098,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-countercontrol-aba',
     term: 'Countercontrol',
     question: 'A client who is subjected to highly restrictive procedures begins refusing to attend sessions and engaging in aggression toward staff. A behavior analyst recognizes this as:',
-    correctAnswer: 'Countercontrol — behavior emitted in response to aversive control, aimed at reducing or escaping that control',
-    incorrectAnswers: [
+    correctDefinition: 'Countercontrol — behavior emitted in response to aversive control, aimed at reducing or escaping that control',
+    distractors: [
       'Extinction-induced aggression resulting from the removal of a previously reinforced behavior',
       'A new behavioral function that has emerged due to changes in the client\'s motivating operations',
       'An ethical violation by the client that must be addressed through a formal behavior intervention plan',
@@ -2118,8 +2118,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-fraudulent-conduct',
     term: 'Fraudulent Conduct',
     question: 'A BCBA submits billing records to an insurance company for 10 hours of services that were never provided. This is best classified as:',
-    correctAnswer: 'Fraudulent conduct — intentional misrepresentation for personal financial gain, which is both an ethical violation and potentially a criminal offense',
-    incorrectAnswers: [
+    correctDefinition: 'Fraudulent conduct — intentional misrepresentation for personal financial gain, which is both an ethical violation and potentially a criminal offense',
+    distractors: [
       'Negligence, because the BCBA failed to maintain accurate records of services provided',
       'A conflict of interest, because the BCBA\'s financial interests conflicted with the client\'s interests',
       'A disciplinary standards violation only, with no potential criminal liability',
@@ -2301,8 +2301,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-indirect-fba',
     term: 'Indirect Functional Assessment',
     question: 'A BCBA administers the Functional Assessment Interview and the Motivation Assessment Scale to a student\'s parents and teacher before conducting any direct observations. This is an example of:',
-    correctAnswer: 'Indirect functional assessment — gathering information about potential maintaining variables through interviews and rating scales without directly observing the behavior',
-    incorrectAnswers: [
+    correctDefinition: 'Indirect functional assessment — gathering information about potential maintaining variables through interviews and rating scales without directly observing the behavior',
+    distractors: [
       'Descriptive functional behavior assessment — direct observation of behavior in the natural environment without manipulating variables',
       'Brief functional analysis — a condensed experimental analysis with short test conditions to identify behavioral function',
       'Contingency space analysis — a method of analyzing descriptive data by plotting conditional probabilities of reinforcement',
@@ -2321,8 +2321,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-group-contingencies',
     term: 'Interdependent Group Contingency',
     question: 'A teacher announces that the class will earn a pizza party if the class average on homework completion exceeds 90% for the week. This is an example of:',
-    correctAnswer: 'Interdependent group contingency — all members must meet a collective criterion before any member receives the consequence',
-    incorrectAnswers: [
+    correctDefinition: 'Interdependent group contingency — all members must meet a collective criterion before any member receives the consequence',
+    distractors: [
       'Independent group contingency — the same criterion is applied to all members but each member\'s consequence depends only on their own behavior',
       'Dependent group contingency — the group\'s consequence depends on the behavior of one selected member or subset of members',
       'Hero procedure — one student\'s behavior determines the consequence for the entire group',
@@ -2341,8 +2341,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-self-management',
     term: 'Self-Management',
     question: 'A graduate student tracks their daily study hours, compares them to a 2-hour goal, and rewards themselves with a movie if they meet the weekly goal. This is an example of:',
-    correctAnswer: 'Self-management — the individual applies behavior-change strategies (self-monitoring, self-evaluation, self-reinforcement) to their own behavior to achieve a self-selected goal',
-    incorrectAnswers: [
+    correctDefinition: 'Self-management — the individual applies behavior-change strategies (self-monitoring, self-evaluation, self-reinforcement) to their own behavior to achieve a self-selected goal',
+    distractors: [
       'Contingency contract — a written agreement between two parties specifying a behavior-consequence relationship',
       'Self-control (Skinner\'s analysis) — arranging environmental variables to alter the probability of one\'s own subsequent behavior',
       'Token economy — a system in which tokens are earned for target behaviors and exchanged for backup reinforcers',
@@ -2361,8 +2361,8 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-generalization-strategies',
     term: 'Program Common Stimuli',
     question: 'A BCBA uses the same type of desk, chair, and materials found in the student\'s classroom during therapy sessions to promote transfer of skills. This generalization strategy is called:',
-    correctAnswer: 'Program common stimuli — incorporating stimuli from the generalization setting into the training setting to increase the likelihood that behavior will transfer to the natural environment',
-    incorrectAnswers: [
+    correctDefinition: 'Program common stimuli — incorporating stimuli from the generalization setting into the training setting to increase the likelihood that behavior will transfer to the natural environment',
+    distractors: [
       'Multiple-exemplar training — training with multiple varied examples of the training stimuli to promote generalization to untrained stimuli',
       'Teach loosely — conducting training with varied, non-essential stimuli to prevent overly narrow stimulus control',
       'General case analysis — systematically identifying the full range of stimulus variations in the generalization setting and sampling them during training',
