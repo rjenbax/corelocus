@@ -3295,42 +3295,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: 'Imitation'
   },
   {
-    id: 'rr-pliance',
-    domain: 'B',
-    term: 'Pliance',
-    correctDefinition: 'Rule-governed behavior that is controlled by a history of socially mediated reinforcement for following the rule — the behavior is maintained by the social consequences of compliance.',
-    distractors: ['Rule-governed behavior that is controlled by the natural consequences specified by the rule, independent of any direct social reinforcement, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'Rule-governed behavior that is controlled by the verbal community\'s description of contingencies, but not by the social consequences of compliance.', 'Behavior that is directly shaped by contact with natural contingencies, without the mediation of any verbal stimuli or instructions, defined as anything an organism does that can be measured in terms of its physical dimensions.'],
-    misconceptions: [
-      'Pliance is maintained by the listener\'s reinforcement of compliance, not by the natural consequences described in the rule. "Do this because I said so" produces pliance.'
-    ],
-    taskItem: 'B.16',
-    category: 'Rule-Governed Behavior'
-  },
-  {
-    id: 'rr-tracking',
-    domain: 'B',
-    term: 'Tracking',
-    correctDefinition: 'Rule-governed behavior that is controlled by the correspondence between the rule and the natural contingencies it describes — the behavior is maintained by contact with the natural consequences specified by the rule.',
-    distractors: ['Rule-governed behavior that is maintained primarily by social reinforcement for compliance with the rule, rather than by direct contact with the natural consequences specified by the rule itself, often seen in situations where following instructions leads to praise.', 'Behavior that is directly shaped by an individual\'s contact with natural contingencies in the environment, without the presence of verbal mediation or explicit instructions, where the behavior\'s future probability is altered by its immediate consequences.', 'Rule-governed behavior that is maintained primarily by the augmentation of motivating operations, which effectively alter the current value of specific consequences as reinforcers or punishers, thereby influencing the likelihood of the rule being followed.'],
-    misconceptions: [
-      'Tracking is maintained by the natural consequences described in the rule, not by social reinforcement for compliance. Following a recipe because it produces good food is tracking.'
-    ],
-    taskItem: 'B.16',
-    category: 'Rule-Governed Behavior'
-  },
-  {
-    id: 'rr-augmenting',
-    domain: 'B',
-    term: 'Augmenting',
-    correctDefinition: 'Rule-governed behavior that is controlled by a verbal stimulus that alters the reinforcing or punishing effectiveness of other stimuli — the rule functions as a motivating operation.',
-    distractors: ['Rule-governed behavior maintained by social reinforcement for compliance, independent of the rule\'s specified outcomes or consequences, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'Rule-governed behavior maintained by the natural consequences specified by the rule, without altering the effectiveness of those consequences.', 'Behavior that is directly shaped by contact with natural contingencies, without the involvement of any verbal stimuli or instructions, defined as anything an organism does that can be measured in terms of its physical dimensions.'],
-    misconceptions: [
-      'Augmentals function like verbal MOs — they change the value of consequences. "This is the most important thing you will ever learn" is an augmental that increases the reinforcing value of the information that follows.'
-    ],
-    taskItem: 'B.16',
-    category: 'Rule-Governed Behavior'
-  },
-  {
     id: 'rr-tandem-schedule',
     domain: 'B',
     term: 'Tandem Schedule',
@@ -3453,10 +3417,12 @@ export const rapidRecallItems: RapidRecallItem[] = [
     id: 'rr-scallop',
     domain: 'B',
     term: 'Scallop',
-    correctDefinition: 'The characteristic cumulative record pattern produced by a fixed-interval schedule — a post-reinforcement pause followed by gradually accelerating responding as the interval end approaches.',
-    distractors: ['A characteristic cumulative record pattern showing a consistent, high rate of responding with very few pauses, typical of a variable-ratio schedule of reinforcement.', 'A pattern of responding characterized by irregular and unpredictable bursts of behavior that occur inconsistently throughout the entire experimental session.', 'A rapid and intense burst of responding that occurs at the beginning of a session, followed by a gradual and consistent decrease in the overall response rate.'],
+    correctDefinition: 'The pattern of responding produced by a fixed-interval (FI) schedule of reinforcement — a post-reinforcement pause followed by a gradual acceleration in response rate as the time for the next reinforcement opportunity approaches, resulting in a characteristic curved shape when graphed.',
+    distractors: ['A pattern of responding produced by a variable-ratio (VR) schedule — a consistently high, steady rate of responding with very brief or no post-reinforcement pauses, because reinforcement is unpredictable.', 'A pattern of responding produced by a fixed-ratio (FR) schedule — a post-reinforcement pause followed by a rapid, sustained burst of responding until the ratio requirement is met, then another pause.', 'A pattern of responding produced by a variable-interval (VI) schedule — a moderate, steady rate of responding with few pauses, because the time to the next reinforcement opportunity varies unpredictably.'],
     misconceptions: [
-      'The scallop pattern is diagnostic of FI schedules. The acceleration in responding near the end of the interval reflects temporal discrimination — the organism learns when reinforcement is likely to be available.'
+      '"Scallop only refers to the shape of the line on a cumulative record graph, not to the actual behavior pattern." — The scallop describes the behavioral phenomenon (pause then acceleration) that is visible when graphed, not merely a graphical artifact.',
+      '"All interval schedules produce scallops." — Only fixed-interval schedules reliably produce scallops; variable-interval schedules produce a steady, moderate rate without the characteristic pause-and-accelerate pattern.',
+      '"The scallop pattern means the organism is not responding for most of the interval." — The post-reinforcement pause is followed by gradual acceleration; responding does occur throughout the interval, just at an increasing rate.'
     ],
     taskItem: 'B.07',
     category: 'Schedules of Reinforcement'
@@ -6347,20 +6313,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Assessment"
   },
   {
-    id: "rr-behavioral-inflexibility",
-    term: "Behavioral Inflexibility",
-    domain: "B",
-    correctDefinition: "A pattern of behavior characterized by rigid, repetitive responding that does not vary appropriately with changes in environmental conditions; associated with restricted stimulus control and may be a target for intervention.",
-    distractors: ['A pattern of behavior characterized by highly variable responding that rapidly adapts to changes in environmental conditions; associated with broad stimulus control and effective problem-solving skills.', 'A pattern of behavior characterized by consistently low rates of responding across all environmental conditions; often associated with a lack of motivation or limited reinforcement history for complex tasks.', 'A pattern of behavior characterized by an individual\'s strong preference for specific routines and resistance to any changes, often impacting their ability to generalize skills.'],
-    misconceptions: [
-      "Behavioral inflexibility is the same as stereotypy",
-      "Behavioral inflexibility is always a problem behavior",
-      "Behavioral inflexibility is the same as rigidity in cognitive psychology"
-    ],
-    taskItem: "B.08",
-    category: "Stimulus Control"
-  },
-  {
     id: "rr-bidirectional-naming",
     term: "Bidirectional Naming",
     domain: "B",
@@ -6991,20 +6943,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Stimulus Control"
   },
   {
-    id: "rr-higher-order-operant-class",
-    term: "Higher-Order Operant Class",
-    domain: "B",
-    correctDefinition: "A response class that is defined by a common relation between behavior and its controlling variables rather than by a common topography; examples include imitation, rule-following, and problem-solving.",
-    distractors: ['A response class that is defined solely by the physical form or appearance of the behavior, regardless of its function or the consequences it produces, defined as anything an organism does that can be measured in terms of its physical dimensions.', 'A response class that is defined by the common effect it produces on the environment and the reinforcer it obtains, demonstrating functional equivalence, as measured by changes in the frequency, duration, or intensity of the target response over time.', 'A response class that is defined by the specific antecedent stimulus that consistently precedes and evokes the behavior, establishing stimulus control, defined as anything an organism does that can be measured in terms of its physical dimensions.'],
-    misconceptions: [
-      "Higher-order operant classes are the same as response classes",
-      "Higher-order operant classes are the same as behavioral cusps",
-      "Higher-order operant classes are only relevant for complex behaviors"
-    ],
-    taskItem: "B.09",
-    category: "Behavior-Change Procedures"
-  },
-  {
     id: "rr-history-of-reinforcement",
     term: "History of Reinforcement",
     domain: "B",
@@ -7073,48 +7011,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "B.04",
     category: "Schedules of Reinforcement"
-  },
-  {
-    id: "rr-listener",
-    term: "Listener",
-    domain: "B",
-    correctDefinition: "In Skinner's analysis of verbal behavior, the person whose behavior is affected by the verbal behavior of the speaker; the listener's behavior is controlled by the verbal stimulus produced by the speaker.",
-    distractors: ['The person who emits a verbal operant or engages in verbal behavior.', 'The individual who delivers consequences that strengthen or weaken verbal behavior.', 'The person who demonstrates verbal behavior for another individual to observe and imitate.'],
-    misconceptions: [
-      "The listener is always a different person from the speaker",
-      "The listener only engages in receptive language",
-      "The listener is the same as the audience"
-    ],
-    taskItem: "B.11",
-    category: "Verbal Behavior"
-  },
-  {
-    id: "rr-listener-discrimination",
-    term: "Listener Discrimination",
-    domain: "B",
-    correctDefinition: "The ability to respond differentially to different verbal stimuli; a listener discriminates when they respond appropriately to one verbal stimulus but not to others.",
-    distractors: ['The ability to produce different verbal responses to different stimuli; a speaker differentiates when they emit varied verbal behavior under different stimulus controls.', 'The ability to discriminate between different speakers based on vocal characteristics; a listener can identify who is speaking from auditory cues alone.', 'The ability to discriminate between verbal and nonverbal stimuli; a listener distinguishes between spoken words and other environmental sounds in their surroundings.'],
-    misconceptions: [
-      "Listener discrimination is the same as receptive language",
-      "Listener discrimination is the same as auditory discrimination",
-      "Listener discrimination is the same as verbal discrimination"
-    ],
-    taskItem: "B.11",
-    category: "Verbal Behavior"
-  },
-  {
-    id: "rr-mo-unpairing",
-    term: "MO Unpairing",
-    domain: "B",
-    correctDefinition: "A procedure in which a conditioned motivating operation is repeatedly presented without the unconditioned event it was paired with, resulting in a decrease in its motivating effects; analogous to respondent extinction for CMOs.",
-    distractors: ['A procedure in which a motivating operation is removed from the environment to reduce problem behavior; this is conceptually similar to extinction for operant behaviors, which is selected and maintained by its consequences within the organism\'s learning history.', 'A procedure in which a discriminative stimulus is repeatedly presented without reinforcement for the target response; this leads to a decrease in responding in the presence of the stimulus.', 'A procedure in which a conditioned reinforcer is repeatedly presented without pairing with a primary reinforcer, which subsequently reduces its value as a reinforcer, which has acquired its reinforcing properties through pairing with other established reinforcers.'],
-    misconceptions: [
-      "MO unpairing is the same as extinction",
-      "MO unpairing is the same as abolishing operation",
-      "MO unpairing is only used for conditioned motivating operations"
-    ],
-    taskItem: "B.06",
-    category: "Motivating Operations"
   },
   {
     id: "rr-model-prompt",
@@ -7297,20 +7193,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "G.02",
     category: "Personnel Training"
-  },
-  {
-    id: "rr-perspective-shifting",
-    term: "Perspective Shifting",
-    domain: "B",
-    correctDefinition: "The ability to take the perspective of another person; in relational frame theory, involves deictic relational responding (I/you, here/there, now/then); foundational to theory of mind and empathy.",
-    distractors: ['The ability to shift one\'s attention from one stimulus to another in the environment, often occurring in response to a specific prompt or cue, demonstrating flexible attentional control and responding.', 'The ability to change one\'s own behavior based on the observed actions of others within a social context, which involves social learning and imitation of models in various situations.', 'The ability to discriminate between different stimuli based on their unique physical properties and their functional relationships with behavior, allowing for precise responding to specific environmental cues.'],
-    misconceptions: [
-      "Perspective shifting is the same as theory of mind",
-      "Perspective shifting is the same as empathy",
-      "Perspective shifting is only relevant for social behavior"
-    ],
-    taskItem: "B.14",
-    category: "Stimulus Control"
   },
   {
     id: "rr-phylogeny",
@@ -7929,20 +7811,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     category: "Stimulus Control"
   },
   {
-    id: "rr-topography-based-verbal-behavior",
-    term: "Topography-Based Verbal Behavior",
-    domain: "B",
-    correctDefinition: "Verbal behavior in which the speaker produces a novel verbal response (e.g., speaking, signing, writing); contrasted with selection-based verbal behavior in which the speaker selects from an array of alternatives.",
-    distractors: ['Verbal behavior in which the speaker selects a response from an array of alternatives, demonstrating control by the physical form of the response selected from the options.', 'Verbal behavior in which the speaker selects a response from an array of alternatives, where the specific response is determined by the listener\'s subsequent behavior.', 'Verbal behavior in which the speaker selects a response from an array of alternatives, with the selection being solely under the control of a specific discriminative stimulus.'],
-    misconceptions: [
-      "Topography-based verbal behavior is the same as selection-based verbal behavior",
-      "Topography-based verbal behavior is always more complex than selection-based verbal behavior",
-      "Topography-based verbal behavior is only vocal verbal behavior"
-    ],
-    taskItem: "B.11",
-    category: "Verbal Behavior"
-  },
-  {
     id: "rr-training-structure",
     term: "Training Structure",
     domain: "I",
@@ -8025,34 +7893,6 @@ export const rapidRecallItems: RapidRecallItem[] = [
     ],
     taskItem: "B.04",
     category: "Schedules of Reinforcement"
-  },
-  {
-    id: "rr-verbal-conditional-discrimination",
-    term: "Verbal Conditional Discrimination",
-    domain: "B",
-    correctDefinition: "A conditional discrimination in which the conditional stimulus is a verbal stimulus; the correct response depends on the verbal stimulus that is present, not just on the comparison stimuli.",
-    distractors: ['A conditional discrimination in which the comparison stimuli are verbal stimuli; the correct response depends on the specific verbal stimuli presented, not the sample stimulus.', 'A conditional discrimination in which the sample stimulus is a non-verbal stimulus; the correct response depends on the visual stimulus that is present, not just on the comparison stimuli.', 'A conditional discrimination in which the response is a verbal behavior; the correct response involves speaking or writing, rather than a motor action with an object.'],
-    misconceptions: [
-      "Verbal conditional discriminations are the same as simple verbal discriminations",
-      "Verbal conditional discriminations are the same as compound verbal discriminations",
-      "Verbal conditional discriminations are only relevant for listener behavior"
-    ],
-    taskItem: "B.11",
-    category: "Verbal Behavior"
-  },
-  {
-    id: "rr-verbal-function-altering-effect",
-    term: "Verbal Function-Altering Effect",
-    domain: "B",
-    correctDefinition: "The effect of verbal stimuli (rules, instructions, self-talk) on the reinforcing or punishing effectiveness of other stimuli; verbal behavior can alter the motivating properties of stimuli without direct conditioning.",
-    distractors: ['The effect of non-verbal stimuli (gestures, pictures, models) on the reinforcing or punishing effectiveness of other stimuli; non-verbal cues can alter the motivating properties of stimuli.', 'The effect of verbal stimuli (rules, instructions, self-talk) on the evocative or abative effects of a discriminative stimulus; verbal behavior can alter the control exerted by SDs.', 'The effect of verbal stimuli (rules, instructions, self-talk) on the future frequency of behavior; verbal behavior can directly function as a positive or negative reinforcer or punisher.'],
-    misconceptions: [
-      "Verbal function-altering effects are the same as motivating operations",
-      "Verbal function-altering effects are the same as rule-governed behavior",
-      "Verbal function-altering effects only apply to conditioned reinforcers"
-    ],
-    taskItem: "B.13",
-    category: "Verbal Behavior"
   },
   {
     id: "rr-visual-prompt",

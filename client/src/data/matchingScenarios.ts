@@ -7363,30 +7363,6 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
   {
-    id: 'm-b-n-063',
-    domain: 'B',
-    concept: 'Pliance',
-    definition: 'Rule-governed behavior under the control of socially mediated consequences for following the rule.',
-    scenarios: [
-      { id: 'm-b-n-063-a', text: 'A child follows the rule "sit quietly during circle time" because the teacher praises children who follow the rule and reprimands those who do not; the child\'s behavior is controlled by the social consequences, not by the natural outcomes of sitting quietly.', isCorrect: true, explanation: 'Rule-following controlled by socially mediated consequences (praise/reprimand) is pliance.' },
-      { id: 'm-b-n-063-b', text: 'A child follows the rule "look both ways before crossing the street" because doing so has reliably prevented accidents.', isCorrect: false, explanation: 'Rule-following controlled by the natural consequences of the rule (avoiding accidents) is tracking, not pliance.' },
-      { id: 'm-b-n-063-c', text: 'A child follows a rule because she has been told it is the right thing to do, without any specific consequences.', isCorrect: false, explanation: 'Rule-following based on augmental (value-altering) verbal stimuli is augmenting, not pliance.' },
-      { id: 'm-b-n-063-d', text: 'A child follows a rule that no longer produces the stated consequences because she has a long history of following rules.', isCorrect: false, explanation: 'This may reflect a history of pliance but the current behavior is not under active social control.' },
-    ],
-  },
-  {
-    id: 'm-b-n-064',
-    domain: 'B',
-    concept: 'Tracking',
-    definition: 'Rule-governed behavior under the control of the natural (non-social) consequences described in the rule.',
-    scenarios: [
-      { id: 'm-b-n-064-a', text: 'A person follows the rule "take an umbrella when it looks cloudy" because doing so has reliably resulted in staying dry; the behavior is controlled by the natural outcome (staying dry), not by social approval.', isCorrect: true, explanation: 'Rule-following controlled by the natural consequences described in the rule is tracking.' },
-      { id: 'm-b-n-064-b', text: 'A person follows the rule "take an umbrella" because their boss praises them for doing so.', isCorrect: false, explanation: 'Rule-following controlled by socially mediated consequences (boss\'s praise) is pliance, not tracking.' },
-      { id: 'm-b-n-064-c', text: 'A person follows a rule because it aligns with their personal values.', isCorrect: false, explanation: 'Rule-following based on value-altering verbal stimuli is augmenting, not tracking.' },
-      { id: 'm-b-n-064-d', text: 'A person follows a rule that no longer produces the stated natural consequences.', isCorrect: false, explanation: 'This may reflect a history of tracking but the current behavior is not under control of natural consequences.' },
-    ],
-  },
-  {
     id: 'm-b-n-065',
     domain: 'B',
     concept: 'Verbal Behavior',
@@ -7480,18 +7456,6 @@ export const matchingItems: MatchingItem[] = [
       { id: 'm-b-n-077-b', text: 'A child says "red" only when shown the exact red apple used in training.', isCorrect: false, explanation: 'Responding only to the trained stimulus is stimulus discrimination, not tact extension.' },
       { id: 'm-b-n-077-c', text: 'A child is directly taught to say "red" for fire trucks through reinforced trials.', isCorrect: false, explanation: 'Directly training a tact is not tact extension — extension refers to untrained generalization.' },
       { id: 'm-b-n-077-d', text: 'A child says "red" when asked "What color is this?" about a fire truck.', isCorrect: false, explanation: 'Responding to a verbal question is an intraverbal — the example needs to specify that the response is controlled by the visual stimulus.' },
-    ],
-  },
-  {
-    id: 'm-b-n-078',
-    domain: 'B',
-    concept: 'Verbal Conditional Discrimination',
-    definition: 'A conditional discrimination in which the conditional stimulus is a verbal stimulus.',
-    scenarios: [
-      { id: 'm-b-n-078-a', text: 'When a therapist says "big," a child selects the large circle from an array; when the therapist says "small," the child selects the small circle; the verbal stimulus (big/small) determines which comparison stimulus is correct.', isCorrect: true, explanation: 'The verbal stimulus (big/small) serves as the conditional stimulus that determines the correct response — verbal conditional discrimination.' },
-      { id: 'm-b-n-078-b', text: 'When a red card is present, a child selects the circle; when a blue card is present, the child selects the square.', isCorrect: false, explanation: 'The conditional stimulus is a non-verbal visual stimulus (color card), not a verbal stimulus.' },
-      { id: 'm-b-n-078-c', text: 'A child always selects the large circle regardless of any verbal stimulus.', isCorrect: false, explanation: 'Responding consistently without regard to a conditional stimulus is simple discrimination, not conditional discrimination.' },
-      { id: 'm-b-n-078-d', text: 'A child selects the large circle after being shown a large circle as a sample.', isCorrect: false, explanation: 'Matching a non-verbal sample to a comparison is matching-to-sample, not verbal conditional discrimination.' },
     ],
   },
   {
@@ -9015,38 +8979,6 @@ export const matchingItems: MatchingItem[] = [
         text: 'A BCBA measures Jaylen\'s math accuracy at 45% during baseline and graphs the data to establish a stable baseline before intervention.',
         isCorrect: false,
         explanation: 'This describes baseline data collection, not a behavioral goal.'
-      }
-    ]
-  },
-  {
-    id: 'm-new-0297',
-    concept: 'Behavioral Inflexibility',
-    domain: 'B',
-    definition: 'A pattern in which behavior is controlled by verbal rules or private events in ways that are insensitive to direct contingencies; a target of ACT interventions.',
-    scenarios: [
-      {
-        id: 'm-new-0297-a',
-        text: 'Mia always sits in the same chair at the lunch table. When a new student sits there, Mia has a severe meltdown and refuses to sit elsewhere, even when offered her favorite seat. The BCBA identifies behavioral inflexibility and designs a gradual exposure and reinforcement program.',
-        isCorrect: true,
-        explanation: 'Behavioral inflexibility is the failure to adapt behavior when conditions change, often requiring systematic flexibility training.'
-      },
-      {
-        id: 'm-new-0297-b',
-        text: 'Mia refuses to eat new foods. The BCBA implements a food expansion protocol using systematic desensitization and differential reinforcement.',
-        isCorrect: false,
-        explanation: 'While related, food refusal is specifically a feeding problem; behavioral inflexibility is broader.'
-      },
-      {
-        id: 'm-new-0297-c',
-        text: 'Mia engages in repetitive hand-flapping that produces sensory stimulation. The BCBA identifies automatic reinforcement as the maintaining variable.',
-        isCorrect: false,
-        explanation: 'This describes stereotypy maintained by automatic reinforcement, not behavioral inflexibility per se.'
-      },
-      {
-        id: 'm-new-0297-d',
-        text: 'Mia has difficulty transitioning between activities. The BCBA provides a visual schedule and 5-minute warnings to reduce transition-related problem behavior.',
-        isCorrect: false,
-        explanation: 'Transition difficulty is related but the intervention described is an antecedent-based strategy, not specifically behavioral inflexibility training.'
       }
     ]
   },
@@ -12603,38 +12535,6 @@ export const matchingItems: MatchingItem[] = [
     ]
   },
   {
-    id: 'm-new-0410',
-    concept: 'Higher-Order Operant Class',
-    domain: 'B',
-    definition: 'A class of behaviors that share a common functional property and are all reinforced by the same contingency, even though the individual behaviors may differ in topography.',
-    scenarios: [
-      {
-        id: 'm-new-0410-a',
-        text: 'A child has learned to imitate many different actions. Imitation itself becomes a higher-order operant class — the child imitates novel actions without specific training because \'imitating\' has been reinforced as a general class of behavior.',
-        isCorrect: true,
-        explanation: 'A higher-order operant class is a class of behaviors that share a common functional property and are reinforced as a class.'
-      },
-      {
-        id: 'm-new-0410-b',
-        text: 'A child learns to press a specific lever to receive food. Lever-pressing is a single operant, not a higher-order class.',
-        isCorrect: false,
-        explanation: 'A single operant is not a higher-order operant class.'
-      },
-      {
-        id: 'm-new-0410-c',
-        text: 'A child learns to say \'please\' because requests with \'please\' are more likely to be honored.',
-        isCorrect: false,
-        explanation: 'This describes a single verbal operant, not a higher-order operant class.'
-      },
-      {
-        id: 'm-new-0410-d',
-        text: 'A child learns to complete a specific task analysis chain in sequence.',
-        isCorrect: false,
-        explanation: 'A behavior chain is not a higher-order operant class.'
-      }
-    ]
-  },
-  {
     id: 'm-new-0411',
     concept: 'History (Threat to Internal Validity)',
     domain: 'D',
@@ -13399,38 +13299,6 @@ export const matchingItems: MatchingItem[] = [
         text: 'A researcher measures the inter-response time between consecutive responses.',
         isCorrect: false,
         explanation: 'Inter-response time is related to local rate but is a different measure.'
-      }
-    ]
-  },
-  {
-    id: 'm-new-0435',
-    concept: 'MO Unpairing',
-    domain: 'B',
-    definition: 'A procedure in which a conditioned motivating operation is repeatedly presented without the unconditioned aversive event it previously signaled, reducing its MO properties.',
-    scenarios: [
-      {
-        id: 'm-new-0435-a',
-        text: 'A child\'s aggression is maintained by escape from demands. The BCBA implements a procedure where demands are never removed following aggression, eliminating the pairing between aggression and escape. Over time, the escape function of aggression is eliminated.',
-        isCorrect: true,
-        explanation: 'MO unpairing: eliminating the contingency between a behavior and its reinforcer, thereby abolishing the MO that maintains the behavior.'
-      },
-      {
-        id: 'm-new-0435-b',
-        text: 'A BCBA uses extinction by withholding attention following a child\'s attention-maintained behavior.',
-        isCorrect: false,
-        explanation: 'This describes extinction of an attention-maintained behavior, not specifically MO unpairing.'
-      },
-      {
-        id: 'm-new-0435-c',
-        text: 'A BCBA uses NCR to provide free access to escape from demands on a time-based schedule.',
-        isCorrect: false,
-        explanation: 'NCR reduces the EO for escape by providing free access, which is related but not the same as MO unpairing.'
-      },
-      {
-        id: 'm-new-0435-d',
-        text: 'A BCBA uses DRA to reinforce an alternative escape behavior while extinguishing aggression.',
-        isCorrect: false,
-        explanation: 'DRA involves reinforcing an alternative behavior, not specifically unpairing the MO.'
       }
     ]
   },
@@ -14711,38 +14579,6 @@ export const matchingItems: MatchingItem[] = [
         text: 'A supervisor evaluates an RBT\'s performance against the BACB task list.',
         isCorrect: false,
         explanation: 'Performance evaluation is a supervision activity, not a PIP.'
-      }
-    ]
-  },
-  {
-    id: 'm-new-0476',
-    concept: 'Perspective Shifting',
-    domain: 'B',
-    definition: 'The ability to take the perspective of another person, derived from deictic relational framing; involves understanding I/you, here/there, and now/then from another\\\'s viewpoint.',
-    scenarios: [
-      {
-        id: 'm-new-0476-a',
-        text: 'A BCBA teaches a child to consider another person\'s point of view by asking questions like \'What does your friend think?\' and \'How does your friend feel about that?\' The child learns to shift perspective and consider others\' mental states.',
-        isCorrect: true,
-        explanation: 'Perspective shifting: taking another person\'s point of view or considering their mental states.'
-      },
-      {
-        id: 'm-new-0476-b',
-        text: 'A child learns to label their own emotions using a feelings chart.',
-        isCorrect: false,
-        explanation: 'Labeling one\'s own emotions is self-awareness, not perspective shifting.'
-      },
-      {
-        id: 'm-new-0476-c',
-        text: 'A child learns to follow social rules for turn-taking.',
-        isCorrect: false,
-        explanation: 'Following social rules is rule-governed behavior, not specifically perspective shifting.'
-      },
-      {
-        id: 'm-new-0476-d',
-        text: 'A child learns to imitate peers\' play behavior.',
-        isCorrect: false,
-        explanation: 'Imitating peers is imitation, not perspective shifting.'
       }
     ]
   },
@@ -17819,38 +17655,6 @@ export const matchingItems: MatchingItem[] = [
     ]
   },
   {
-    id: 'm-new-0573',
-    concept: 'Topography-Based Verbal Behavior',
-    domain: 'B',
-    definition: 'Verbal behavior in which the response form (topography) determines the verbal operant; includes vocal verbal behavior and written verbal behavior.',
-    scenarios: [
-      {
-        id: 'm-new-0573-a',
-        text: 'A child uses vocal speech, sign language, and writing to communicate. Each form of communication has a different physical topography but can serve the same verbal function (e.g., manding for preferred items).',
-        isCorrect: true,
-        explanation: 'Topography-based verbal behavior: verbal behavior defined by its physical form (vocal, sign, written) rather than its function.'
-      },
-      {
-        id: 'm-new-0573-b',
-        text: 'A child uses a picture exchange system to select from an array of pictures to communicate.',
-        isCorrect: false,
-        explanation: 'Picture exchange is selection-based verbal behavior, not topography-based.'
-      },
-      {
-        id: 'm-new-0573-c',
-        text: 'A child uses an AAC device with symbol buttons to communicate.',
-        isCorrect: false,
-        explanation: 'Symbol selection is selection-based verbal behavior, not topography-based.'
-      },
-      {
-        id: 'm-new-0573-d',
-        text: 'A child\'s verbal behavior is classified by its function (mand, tact, intraverbal) rather than its form.',
-        isCorrect: false,
-        explanation: 'Classifying by function is function-based analysis, not topography-based classification.'
-      }
-    ]
-  },
-  {
     id: 'm-new-0574',
     concept: 'Total-Task Chaining',
     domain: 'F',
@@ -18683,38 +18487,6 @@ export const matchingItems: MatchingItem[] = [
     ]
   },
   {
-    id: 'm-new-0600',
-    concept: 'Verbal Function-Altering Effect',
-    domain: 'B',
-    definition: 'The effect of a verbal stimulus (rule, instruction) that changes the function of other stimuli, making them function as SDs, reinforcers, or punishers without direct conditioning.',
-    scenarios: [
-      {
-        id: 'm-new-0600-a',
-        text: 'A therapist tells a child: \'If you finish your work, you can play with the iPad.\' This verbal statement alters the function of the iPad — it becomes a more potent reinforcer because the child knows it is contingent on work completion.',
-        isCorrect: true,
-        explanation: 'Verbal function-altering effect: verbal stimuli (rules, instructions) alter the reinforcing or punishing function of other stimuli.'
-      },
-      {
-        id: 'm-new-0600-b',
-        text: 'A therapist delivers an iPad after work completion, increasing work completion.',
-        isCorrect: false,
-        explanation: 'This describes direct positive reinforcement, not the verbal function-altering effect.'
-      },
-      {
-        id: 'm-new-0600-c',
-        text: 'A therapist uses a token economy to reinforce work completion.',
-        isCorrect: false,
-        explanation: 'A token economy is a direct contingency, not a verbal function-altering effect.'
-      },
-      {
-        id: 'm-new-0600-d',
-        text: 'A therapist uses a visual schedule to guide the child through work activities.',
-        isCorrect: false,
-        explanation: 'A visual schedule is an antecedent support, not a verbal function-altering effect.'
-      }
-    ]
-  },
-  {
     id: 'm-new-0601',
     concept: 'Verbal Prompt',
     domain: 'G',
@@ -18967,38 +18739,6 @@ export const matchingItems: MatchingItem[] = [
         text: 'A therapist says \'Remember, the tall one is correct\' to help the child select the correct stimulus.',
         isCorrect: false,
         explanation: 'A verbal hint is a verbal response prompt, not a within-stimulus prompt.'
-      }
-    ]
-  },
-  {
-    id: 'm-fix-0609',
-    concept: 'Augmenting',
-    domain: 'B',
-    definition: 'Rule-governed behavior that is controlled by a verbal stimulus that alters the reinforcing or punishing effectiveness of other stimuli — the rule functions as a motivating operation.\', domain: \'B\', domainFull: \'Concepts & Principles\', example: \'A therapist tells a child that completing homework earn',
-    scenarios: [
-      {
-        id: 'm-fix-0609-a',
-        text: 'A BCBA identifies that a client\'s history of food deprivation has increased the reinforcing value of food items. She uses this information to schedule training sessions before meals, when food is most reinforcing.',
-        isCorrect: true,
-        explanation: 'Augmenting: a motivating operation that increases the reinforcing effectiveness of a stimulus through a history of pairing with another reinforcer.'
-      },
-      {
-        id: 'm-fix-0609-b',
-        text: 'A BCBA schedules sessions after meals to reduce the reinforcing value of food, making the session less motivating.',
-        isCorrect: false,
-        explanation: 'This describes an abolishing operation, not an augmenting operation.'
-      },
-      {
-        id: 'm-fix-0609-c',
-        text: 'A BCBA uses a conditioned reinforcer (token) that has been paired with backup reinforcers to increase its effectiveness.',
-        isCorrect: false,
-        explanation: 'This describes establishing a conditioned reinforcer, not an augmenting operation specifically.'
-      },
-      {
-        id: 'm-fix-0609-d',
-        text: 'A BCBA uses verbal praise as a reinforcer without pairing it with other reinforcers.',
-        isCorrect: false,
-        explanation: 'Unpaired praise is not an augmenting operation.'
       }
     ]
   },
@@ -21979,38 +21719,6 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
   {
-    id: 'm-new-0074',
-    domain: 'B',
-    concept: 'Augmenting',
-    definition: 'Rule-governed behavior that is controlled by a verbal stimulus that alters the reinforcing or punishing effectiveness of other stimuli — the rule functions as a motivating operation.',
-    scenarios: [
-      {
-        id: 'm-new-0074-b',
-        text: 'During a language acquisition session, the therapist holds up a picture of a cat and says, "Cat." The client then echoes, "Cat." The therapist immediately delivers a small piece of candy, which the client readily consumes.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Echoic behavior followed by Positive Reinforcement because the client\'s vocal response matches the therapist\'s vocal stimulus, and the candy increases the future probability of that echoic response.',
-      },
-      {
-        id: 'm-new-0074-c',
-        text: 'A child is frequently observed hitting their sibling to get a preferred toy. The BCBA designs an intervention where the child is taught to ask, "May I have a turn?" instead. When the child uses the phrase, they are immediately given the toy.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Differential Reinforcement of an Alternative Behavior (DRA) because an appropriate alternative behavior (asking for a turn) is reinforced, while the problem behavior (hitting) is put on extinction or ignored.',
-      },
-      {
-        id: 'm-new-0074-a',
-        text: 'Before starting a new math worksheet, the teacher tells 8-year-old Leo, "If you complete all 10 problems with 80% accuracy, you will earn extra computer time, which is available in 15 minutes." Leo, who usually rushes through math, meticulously checks his work and asks for clarification on difficult problems. This rule increases the value of completing the worksheet accurately.',
-        isCorrect: true,
-        explanation: 'This demonstrates Augmenting because the verbal stimulus (the teacher\'s rule) functions as a motivating operation, increasing the reinforcing effectiveness of accurately completing the math worksheet, which Leo then engages in rule-governed behavior to achieve.',
-      },
-      {
-        id: 'm-new-0074-d',
-        text: 'A teenager frequently scrolls through social media on their phone during dinner. Their parents implement a new house rule: the Wi-Fi is turned off for 30 minutes every time someone uses their phone at the dinner table. The teenager\'s phone use during dinner significantly decreases.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Negative Punishment because a preferred stimulus (Wi-Fi access) is removed contingent on the behavior (phone use at dinner), resulting in a decrease in the future probability of that behavior.',
-      },
-    ],
-  },
-  {
     id: 'm-new-0075',
     domain: 'B',
     concept: 'Automatic Reinforcement  -  Functional Analysis',
@@ -22555,38 +22263,6 @@ export const matchingItems: MatchingItem[] = [
     ],
   },
   {
-    id: 'm-new-0093',
-    domain: 'B',
-    concept: 'Listener Responding',
-    definition: 'Nonverbal behavior under the control of verbal stimuli produced by another person; the listener\'s behavior is reinforced by the verbal community.',
-    scenarios: [
-      {
-        id: 'm-new-0093-b',
-        text: 'A therapist holds up a picture of a dog and asks, "What is this?" The client looks at the picture and says, "Dog." The therapist then delivers a reinforcer.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Tact because the client\'s verbal behavior (\'Dog\') is under the antecedent control of a non-verbal stimulus (picture of a dog), and is reinforced by generalized conditioned reinforcement.',
-      },
-      {
-        id: 'm-new-0093-c',
-        text: 'During a play session, the therapist says, "Say \'ball\'." The client immediately repeats, "Ball." The therapist responds with enthusiastic praise and a high-five.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Echoic behavior because the client\'s vocal verbal behavior (\'Ball\') is under the antecedent control of another person\'s vocal verbal stimulus (\'Say \'ball\'\') and shows point-to-point correspondence and formal similarity.',
-      },
-      {
-        id: 'm-new-0093-d',
-        text: 'A child is playing with a toy car. Their parent walks into the room and says, "I want the car." The child hands the car to the parent. The parent then says, "Thank you!"',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Mand because the child\'s verbal behavior (handing the car) is under the control of a motivating operation (the parent wanting the car, implied by the verbal stimulus), and is reinforced by receiving the specific item requested (the car, although the parent\'s \'Thank you\' is also a reinforcer).',
-      },
-      {
-        id: 'm-new-0093-a',
-        text: 'During a morning meeting, the teacher tells Leo, "Point to the red block." Leo immediately looks at the table, scans the objects, and extends his index finger to touch the red block among several other colored blocks. The teacher then says, "Nice pointing!"',
-        isCorrect: true,
-        explanation: 'This demonstrates Listener Responding because Leo\'s nonverbal behavior (pointing to the red block) is directly controlled by the teacher\'s verbal stimulus ("Point to the red block"), and his accurate response is reinforced by the teacher\'s praise, indicating community reinforcement.',
-      },
-    ],
-  },
-  {
     id: 'm-new-0094',
     domain: 'B',
     concept: 'Mand Training',
@@ -22711,38 +22387,6 @@ export const matchingItems: MatchingItem[] = [
         text: 'During a group activity, Emily repeatedly makes inappropriate noises. The teacher then removes Emily from the activity and has her sit in a designated \'thinking chair\' for five minutes, away from the group and all reinforcing stimuli.',
         isCorrect: false,
         explanation: 'This actually demonstrates Time-Out from Positive Reinforcement because Emily is removed from a reinforcing environment contingent on her inappropriate behavior, resulting in a temporary loss of access to reinforcers.',
-      },
-    ],
-  },
-  {
-    id: 'm-new-0098',
-    domain: 'B',
-    concept: 'Pliance',
-    definition: 'Rule-governed behavior that is controlled by a history of socially mediated reinforcement for following the rule — the behavior is maintained by the social consequences of compliance.',
-    scenarios: [
-      {
-        id: 'm-new-0098-b',
-        text: 'A child is told, \'If you touch the hot stove, you will burn your hand.\' The child approaches the stove, reaches out, but then quickly pulls their hand back before making contact, remembering a previous painful experience with a hot object. The child then avoids the stove for the rest of the day.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Tracking because the child\'s behavior (avoiding the stove) is controlled by the direct contact with the natural aversive consequences of touching a hot object, even though the rule was stated.',
-      },
-      {
-        id: 'm-new-0098-c',
-        text: 'During a therapy session, the BCBA says, \'First, touch your nose, then touch your head.\' The client, who has a history of immediately imitating novel motor actions, quickly touches their nose and then their head. The BCBA then says, \'Nice job, you did what I did!\'',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Generalized Imitation because the client\'s behavior (touching nose and head) is under the control of the topographical similarity to the model, and the reinforcement history is for imitating novel behaviors, not necessarily for following a verbal rule for its social consequences.',
-      },
-      {
-        id: 'm-new-0098-a',
-        text: 'During a group activity, the teacher announces, \'Everyone who finishes their worksheet quietly will get an extra five minutes of free play.\' Sarah, who often struggles with staying on task, immediately stops talking to her peer and diligently works on her worksheet, frequently looking up at the teacher for approval. She completes the worksheet, and the teacher praises her, saying, \'Great job, Sarah, you followed the rule perfectly!\'',
-        isCorrect: true,
-        explanation: 'This demonstrates Pliance because Sarah\'s behavior (working quietly) is controlled by the teacher\'s rule and maintained by the socially mediated reinforcement of praise and the promise of free play from the teacher for following that rule, rather than direct contact with the natural consequences of completing the worksheet.',
-      },
-      {
-        id: 'm-new-0098-d',
-        text: 'A teenager is told by his parents, \'If you clean your room, you can go to the party tonight.\' The teenager, who strongly desires to attend the party, immediately begins cleaning his room without protest. He cleans thoroughly and efficiently, knowing that if his room isn\'t clean, he won\'t be allowed to go.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Augmenting (specifically a Motivating Operation altering the value of the consequence) because the rule functions as an EO that increases the value of cleaning the room and the aversiveness of not cleaning it, making the consequence of going to the party more reinforcing and thus increasing the likelihood of the rule-governed behavior.',
       },
     ],
   },
@@ -23191,38 +22835,6 @@ export const matchingItems: MatchingItem[] = [
         text: 'To earn a break, a client must complete 5 discrete trials of \'touch nose\' and 5 discrete trials of \'clap hands.\' The therapist presents these trials in an alternating fashion (e.g., touch nose, clap hands, touch nose, clap hands) until all 10 trials are completed, then provides reinforcement.',
         isCorrect: false,
         explanation: 'This actually demonstrates Multiple Schedule because two or more component schedules (DRL for \'touch nose\' and DRL for \'clap hands\' for example) operate in an alternating, usually random, sequence, and each component schedule is signaled by a distinctive discriminative stimulus (e.g., therapist\'s instruction for each specific action).',
-      },
-    ],
-  },
-  {
-    id: 'm-new-0113',
-    domain: 'B',
-    concept: 'Tracking',
-    definition: 'Rule-governed behavior that is controlled by the correspondence between the rule and the natural contingencies it describes — the behavior is maintained by contact with the natural consequences specified by the rule.',
-    scenarios: [
-      {
-        id: 'm-new-0113-a',
-        text: 'A therapist tells a client, \'If you press the red button, the light will turn on.\' The client then presses the red button, and the light immediately illuminates. The client continues to press the red button to turn on the light.',
-        isCorrect: true,
-        explanation: 'This demonstrates Tracking because the client\'s behavior (pressing the red button) is controlled by the rule (\'If you press the red button, the light will turn on\') and is maintained by the natural consequence (the light turning on) that was specified by the rule.',
-      },
-      {
-        id: 'm-new-0113-b',
-        text: 'A teacher instructs a student, \'Raise your hand before speaking to get a turn.\' The student raises their hand and is immediately called upon. The student consistently raises their hand in class.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Pliant Rule-Governed Behavior because the student\'s behavior (raising their hand) is controlled by the rule (\'Raise your hand before speaking to get a turn\') and is maintained by a socially mediated consequence (being called upon by the teacher).',
-      },
-      {
-        id: 'm-new-0113-c',
-        text: 'A parent tells their child, \'If you finish all your vegetables, you can have dessert.\' The child quickly eats all the vegetables. The child then receives a scoop of ice cream.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Rule-Governed Behavior (specifically Pliance or Augmenting) because the child\'s behavior (eating vegetables) is influenced by the verbal rule and the promised consequence, which serves as an establishing operation for eating the vegetables to get dessert.',
-      },
-      {
-        id: 'm-new-0113-d',
-        text: 'A client is taught to say \'more\' when they want an item. When the client says \'more,\' the therapist immediately provides the item. The client reliably says \'more\' to request preferred items.',
-        isCorrect: false,
-        explanation: 'This actually demonstrates Manding because the client\'s verbal behavior (\'more\') is a request for a specific reinforcer (the item) and is under the functional control of an establishing operation (wanting the item) and specific reinforcement (receiving the item).',
       },
     ],
   },
