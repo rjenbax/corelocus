@@ -22,13 +22,9 @@ export const flashcards: Flashcard[] = [
   { id: 'a9', term: 'Pragmatism', definition: 'A philosophical position that evaluates the truth or value of a concept by its practical consequences; in ABA, interventions are judged by whether they produce meaningful, observable behavior change.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'A BCBA selects an intervention based on its demonstrated effectiveness, not theoretical elegance.' },
   { id: 'a10', term: 'Private Events', definition: 'Behaviors (thoughts, feelings, physiological states) that occur within the skin of an organism and are accessible only to that individual; treated as behavior subject to the same laws as overt behavior in radical behaviorism.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'A client reports feeling anxious; the BCBA treats this self-report as verbal behavior, not as a cause of avoidance.' },
   { id: 'a11', term: 'Behavior-Analytic Interpretation', definition: 'An explanation of complex human behavior using established principles of behavior analysis, without invoking mentalistic constructs; relies on environmental variables and learning history.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations' },
-  { id: 'a12', term: 'Phylogenetic Contingencies', definition: 'Behavior patterns shaped by natural selection across the evolutionary history of a species; also called species-specific or unlearned behavior.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'Reflexive withdrawal from pain is a phylogenetic behavior present at birth without learning.' },
-  { id: 'a13', term: 'Ontogenetic Contingencies', definition: 'Behavior patterns acquired during the lifetime of an individual organism through direct contact with environmental contingencies; the focus of operant and respondent conditioning.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations' },
   { id: 'a14', term: 'Cultural Contingencies', definition: 'Practices and behaviors transmitted across generations within a social group through verbal and nonverbal means; a third level of selection that shapes the behavior of individuals within a culture.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations' },
   { id: 'a15', term: 'Skepticism', definition: 'The scientific disposition to withhold judgment until sufficient evidence has been gathered; in ABA, practitioners require empirical support before adopting new interventions.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations' },
-  { id: 'a16', term: 'Goals of Science (Description, Prediction, Control)', definition: 'The three goals of a natural science of behavior: (1) Description  -  accurately characterizing the relationship between behavior and environment; (2) Prediction  -  identifying variables that reliably precede behavior; (3) Control  -  demonstrating that manipulating a variable produces a systematic change in behavior.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'A BCBA first describes a client\'s aggression (frequency, antecedents), then predicts it will occur when demands are placed, then controls it by modifying the demand presentation  -  demonstrating all three goals.' },
   { id: 'a17', term: 'Behaviorism, EAB, ABA, and Professional Practice  -  Distinctions', definition: 'Four related but distinct levels: (1) Behaviorism  -  the philosophy of science that defines the subject matter and assumptions; (2) Experimental Analysis of Behavior (EAB)  -  the basic science that identifies behavioral principles through controlled laboratory research; (3) Applied Behavior Analysis (ABA)  -  the applied science that uses behavioral principles to produce socially significant behavior change; (4) Professional Practice  -  the service delivery context in which BCBAs apply ABA to individual clients under ethical and regulatory constraints.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'EAB research on schedules of reinforcement (Skinner\'s pigeon studies) informs ABA intervention design (FCT), which a BCBA implements in professional practice under BACB ethics guidelines.' },
-  { id: 'a18', term: 'Dimensions of ABA (REACCS)', definition: 'The seven defining characteristics of Applied Behavior Analysis identified by Baer, Wolf, and Risley (1968): (1) Applied  -  socially significant behavior; (2) Behavioral  -  directly measurable behavior; (3) Analytic  -  demonstrated experimental control; (4) Technological  -  completely described procedures; (5) Conceptually Systematic  -  linked to established principles; (6) Effective  -  produces meaningful change; (7) Generality  -  durable and generalizable outcomes.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'A BCBA\'s intervention targets manding (Applied), measures frequency daily (Behavioral), uses a reversal design (Analytic), writes a complete procedure manual (Technological), links to reinforcement principles (Conceptually Systematic), achieves a 90% reduction in problem behavior (Effective), and maintains at 6-month follow-up (Generality).' },
   { id: 'a19', term: 'Experimentation', definition: 'A scientific method in which the researcher systematically manipulates one or more independent variables while measuring the effect on a dependent variable under controlled conditions, in order to establish a cause-and-effect relationship.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'A researcher manipulates the density of a reinforcement schedule (IV) and measures the rate of a target response (DV) across conditions, demonstrating that schedule density causes changes in response rate.' },
   { id: 'a20', term: 'Replication', definition: 'The repetition of an experiment or its results, either within the same study (direct replication) or across different subjects, settings, or experimenters (systematic replication), to establish the reliability and generality of a finding.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'A BCBA demonstrates that an FCT intervention reduces aggression with three different clients in two different settings  -  systematic replication that increases confidence in the procedure\'s generality.' },
   { id: 'a21', term: 'Philosophical Doubt', definition: 'The scientific attitude of treating all currently accepted knowledge as tentative and subject to revision in light of new evidence; a commitment to questioning assumptions and remaining open to disconfirming data rather than defending established positions.', domain: 'A', domainFull: 'Behaviorism & Philosophical Foundations', example: 'A BCBA who has used a particular intervention successfully for years continues to monitor data critically and is willing to abandon the procedure if new evidence demonstrates a more effective alternative.' },
@@ -188,13 +184,6 @@ export const flashcards: Flashcard[] = [
     example: 'Talking, walking, thinking, and heart rate are all behaviors because they are measurable activities of a living organism.',
   },
   {
-    id: 'b73',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Behavior Change Tactic',
-    definition: 'A technologically consistent method for changing behavior that is derived from one or more principles of behavior.',
-    example: 'Differential reinforcement of alternative behavior (DRA) is a behavior change tactic derived from the principle of reinforcement.',
-  },
-  {
     id: 'b74',
     domain: 'B', domainFull: 'Concepts & Principles',
     term: 'Response',
@@ -349,20 +338,6 @@ export const flashcards: Flashcard[] = [
     example: 'A teacher writes "Marcus became upset during math and threw his pencil" as an anecdotal observation.',
   },
   {
-    id: 'b97',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Relevance of Behavior Rule',
-    definition: 'The guideline that target behaviors selected for intervention must be relevant to the client\'s current and future functioning in natural environments.',
-    example: 'Teaching a child to request preferred items is more relevant than teaching them to name colors if requesting is the skill most needed for daily functioning.',
-  },
-  {
-    id: 'b98',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Behavior Checklist',
-    definition: 'A structured assessment tool listing specific behaviors that an observer checks off as present or absent during an observation period.',
-    example: 'A BCBA uses a behavior checklist to assess which adaptive living skills a client can and cannot perform independently.',
-  },
-  {
     id: 'b99',
     domain: 'B', domainFull: 'Concepts & Principles',
     term: 'Habilitation',
@@ -375,13 +350,6 @@ export const flashcards: Flashcard[] = [
     term: 'Behavioral Assessment',
     definition: 'A systematic process of gathering information about a person\'s behavior and the environmental variables that influence it, used to guide intervention planning.',
     example: 'A BCBA conducts a behavioral assessment including interviews, direct observation, and preference assessments before designing a behavior intervention plan.',
-  },
-  {
-    id: 'b101',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Normalization',
-    definition: 'The principle that people with disabilities should have access to living conditions and opportunities as close as possible to those of typical members of society.',
-    example: 'Placing a student with a disability in a general education classroom with appropriate supports reflects the principle of normalization.',
   },
   {
     id: 'b102',
@@ -431,20 +399,6 @@ export const flashcards: Flashcard[] = [
     term: 'Reinforcer Assessment',
     definition: 'A systematic procedure for identifying stimuli that function as reinforcers for a specific individual under current motivating conditions.',
     example: 'A BCBA conducts a paired-stimulus preference assessment and then tests whether high-preference items function as reinforcers by measuring their effect on behavior.',
-  },
-  {
-    id: 'b109',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Stimulus Preference Assessment',
-    definition: 'A systematic procedure for identifying stimuli that an individual prefers, used to identify potential reinforcers; includes single-stimulus, paired-stimulus, and multiple-stimulus formats.',
-    example: 'A BCBA presents pairs of items and records which item the client consistently approaches to identify high-preference stimuli.',
-  },
-  {
-    id: 'b110',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Response-Deprivation Hypothesis',
-    definition: 'The hypothesis that any behavior can function as a reinforcer if access to it is restricted below its free-operant baseline rate.',
-    example: 'If a child typically runs for 30 minutes per day, restricting running below that baseline makes running a reinforcer for other behaviors.',
   },
   {
     id: 'b111',
@@ -782,13 +736,6 @@ export const flashcards: Flashcard[] = [
     example: 'Food deprivation, water deprivation, and extreme temperature are unconditioned motivating operations.',
   },
   {
-    id: 'b162',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Function-Altering Effect',
-    definition: 'The effect of a verbal stimulus (rule or instruction) that changes the function of other stimuli, making them function as SDs, reinforcers, or punishers.',
-    example: 'Telling a child "if you finish your work, you can have a cookie" gives the cookie a function-altering effect, making it function as a reinforcer for work completion.',
-  },
-  {
     id: 'b163',
     domain: 'B', domainFull: 'Concepts & Principles',
     term: 'Antecedent Stimulus Class',
@@ -957,13 +904,6 @@ export const flashcards: Flashcard[] = [
     example: 'A child who touches the correct picture when asked "show me the dog" is demonstrating listener discrimination.',
   },
   {
-    id: 'b188',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Tact Extension',
-    definition: 'A tact that occurs in the presence of a novel stimulus that shares some properties with the original tact stimulus; the speaker extends an existing tact to a new but related stimulus.',
-    example: 'A child who has learned to tact "dog" for a German Shepherd uses tact extension when they also tact "dog" for a Chihuahua they have never seen before.',
-  },
-  {
     id: 'b189',
     domain: 'B', domainFull: 'Concepts & Principles',
     term: 'Taking Dictation',
@@ -978,12 +918,6 @@ export const flashcards: Flashcard[] = [
     example: 'Answering the question "What color is the big ball?" requires compound verbal discrimination because the response is controlled by both "color" and "big ball."',
   },
   {
-    id: 'b191',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Copying Text',
-    definition: 'A verbal operant in which the speaker writes a copy of written verbal behavior; point-to-point correspondence between the written stimulus and the written response.',
-    example: 'A student who copies a sentence from the board is demonstrating the copying text verbal operant.',
-  },  {
     id: 'b193',
     domain: 'B', domainFull: 'Concepts & Principles',
     term: 'Multiple Control',
@@ -1017,13 +951,6 @@ export const flashcards: Flashcard[] = [
     definition: 'Verbal behavior in which the response involves selecting from an array of stimuli rather than producing a topographically novel response; includes pointing, touching, and eye-gaze.',
     example: 'A child who touches a picture of a dog when asked "show me the dog" is demonstrating selection-based verbal behavior.',
   },  {
-    id: 'b200',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Generative Learning',
-    definition: 'The ability to produce novel responses or respond to novel stimuli that were not directly trained, as a result of the organism\'s learning history.',
-    example: 'A child who has learned to tact individual animals can generatively tact novel animal combinations (e.g., "a big brown dog") without direct training.',
-  },
-  {
     id: 'b201',
     domain: 'B', domainFull: 'Concepts & Principles',
     term: 'Simple Verbal Discrimination',
@@ -1079,13 +1006,6 @@ export const flashcards: Flashcard[] = [
     example: 'A one-to-many training structure (training A→B and A→C) produces larger equivalence classes with fewer training trials than a linear series structure.',
   },
   {
-    id: 'b210',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Contextual Control',
-    definition: 'A form of conditional discrimination in which a contextual stimulus determines which of two or more discriminations is in effect.',
-    example: 'A child who touches the circle when a green light is on and touches the square when a red light is on demonstrates contextual control by the lights.',
-  },
-  {
     id: 'b211',
     domain: 'B', domainFull: 'Concepts & Principles',
     term: 'Nodal Stimulus (Node)',
@@ -1098,20 +1018,6 @@ export const flashcards: Flashcard[] = [
     term: 'Transfer of Function',
     definition: 'The process by which the behavioral function of one stimulus in an equivalence class is acquired by other members of the class without direct conditioning.',
     example: 'If a picture of a dog acquires a reinforcing function, the spoken word "dog" and the written word "dog" may also acquire reinforcing functions through transfer of function.',
-  },
-  {
-    id: 'b213',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Derived Stimulus Relations',
-    definition: 'Stimulus relations that emerge without direct training as a result of equivalence class formation; includes symmetry, transitivity, and combined symmetry-transitivity.',
-    example: 'After training A→B and B→C, the derived relations B→A, C→B, A→C, and C→A emerge without direct training.',
-  },
-  {
-    id: 'b214',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Emergent Stimulus Relations',
-    definition: 'Untrained stimulus relations that arise from the formation of equivalence classes; synonymous with derived stimulus relations.',
-    example: 'Symmetry (B→A emerging from trained A→B) is an emergent stimulus relation.',
   },
   {
     id: 'b215',
@@ -1170,13 +1076,6 @@ export const flashcards: Flashcard[] = [
     example: 'RFT explains why humans can derive that if A > B and B > C, then A > C, without direct training on the A-C comparison.',
   },
   {
-    id: 'b223',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Distinction Relations',
-    definition: 'Relational frames in which stimuli are responded to as different from each other; the contextual cue signals that the stimuli are not equivalent.',
-    example: 'Responding to a cat as "not a dog" involves distinction relations.',
-  },
-  {
     id: 'b224',
     domain: 'B', domainFull: 'Concepts & Principles',
     term: 'Relational Frame',
@@ -1210,13 +1109,6 @@ export const flashcards: Flashcard[] = [
     term: 'Transformation of Function',
     definition: 'The process by which the psychological functions of one stimulus in a relational network are altered and transferred to other stimuli in the network.',
     example: 'If a word acquires a fear function through conditioning, other words in the same relational frame may also acquire fear functions through transformation of function.',
-  },
-  {
-    id: 'b233',
-    domain: 'B', domainFull: 'Concepts & Principles',
-    term: 'Contextual Stimulus',
-    definition: 'In RFT, a stimulus that specifies the type of relational framing that is in effect; Crel specifies the relation and Cfunc specifies which function is transformed.',
-    example: 'The word "same" functions as a Crel contextual stimulus that specifies a frame of coordination between stimuli.',
   },
   {
     id: 'b234',
@@ -1279,8 +1171,6 @@ export const flashcards: Flashcard[] = [
   { id: 'rr-fc-treatment-integrity-definition', term: 'Treatment Integrity  -  Definition', definition: 'The degree to which an intervention is implemented as designed and specified in the behavior intervention plan; also called procedural fidelity (H.6). Measured by comparing actual implementation steps to the written protocol step by step.', domain: 'B', domainFull: 'Concepts & Principles', example: 'A BCBA calculates that a behavior technician implemented 85% of the steps of a DTT procedure correctly during a session — measuring treatment integrity (also called procedural fidelity) to determine whether the intervention was implemented as designed.' },
   { id: 'rr-fc-treatment-integrity-supervision-monitoring', term: 'Treatment Integrity  -  Supervision Monitoring', definition: 'The supervisor\'s responsibility to systematically measure and monitor whether supervisees are implementing behavior-change procedures with fidelity, using direct observation, permanent product review, or IOA data (I.3). Low treatment integrity is a common reason interventions fail to produce expected outcomes.', domain: 'B', domainFull: 'Concepts & Principles', example: 'A supervisor conducts monthly fidelity checks using a structured observation checklist and provides corrective feedback when implementation falls below 90% — using supervision to monitor and maintain treatment integrity.' },
   { id: 'rr-fc-treatment-package-analysis', term: 'Treatment Package Analysis', definition: 'A research strategy that evaluates the combined effects of multiple treatment components implemented together, before analyzing individual components.', domain: 'B', domainFull: 'Concepts & Principles', example: 'A BCBA implements a treatment package (NCR + DRA + extinction) and then conducts a component analysis to determine which components are necessary for behavior reduction — analyzing the treatment package to identify the active ingredients.' },
-  { id: 'rr-fc-unwanted-effects-of-behavior-change-procedures', term: 'Unwanted Effects of Behavior-Change Procedures', definition: 'Unintended negative outcomes that may result from reinforcement, extinction, or punishment procedures, such as extinction bursts, aggression, emotional responses, or behavioral contrast.', domain: 'B', domainFull: 'Concepts & Principles', example: 'A BCBA monitors a student for aggression, emotional responding, and behavioral contrast after implementing an extinction procedure — anticipating and tracking unwanted side effects that may accompany behavior-change procedures.' },
-  { id: 'rr-fc-veracity', term: 'Veracity', definition: 'The ethical obligation to be truthful and accurate in all professional communications, including reports, data, and representations of one\'s qualifications.', domain: 'B', domainFull: 'Concepts & Principles', example: 'A BCBA accurately reports a client\'s progress data to the funding agency, even when the data show limited progress, rather than misrepresenting outcomes — demonstrating veracity (truthfulness) as an ethical obligation.' },
   { id: 'rr-fc-verbal-reprimand', term: 'Verbal Reprimand', definition: 'A form of positive punishment in which a verbal statement expressing disapproval is delivered contingent on the occurrence of a target behavior.', domain: 'B', domainFull: 'Concepts & Principles', example: 'A teacher says \'No, stop that\' contingent on a student\'s disruptive behavior; if the student\'s disruptive behavior decreases, the verbal reprimand functions as a punisher — a verbal reprimand is only a punisher if it decreases the behavior.' },
   { id: 'b-imitation', term: 'Imitation', definition: 'A behavior that is controlled by a model — a prior stimulus that has the same physical form as the imitative response; the observer\'s behavior topographically resembles the model\'s behavior and is reinforced by the social community for matching the model.', domain: 'B', domainFull: 'Concepts & Principles', example: 'A child watches a therapist clap their hands and then claps their own hands in the same way — the child\'s clapping is an imitative response controlled by the therapist\'s clapping as a model (formal similarity between model and response).' },
   { id: 'b-observational-learning', term: 'Observational Learning', definition: 'A process in which an observer\'s behavior changes as a result of observing a model\'s behavior and its consequences, without the observer directly experiencing those consequences; a form of vicarious learning in which the observer need not reproduce the model\'s exact topography.', domain: 'B', domainFull: 'Concepts & Principles', example: 'A student who has never been reinforced for raising their hand begins raising their hand more frequently after observing a classmate receive praise for doing so — the observer\'s behavior changed through vicarious reinforcement without direct reinforcement of the observer.' },
@@ -1589,17 +1479,17 @@ export const flashcards: Flashcard[] = [
   { id: 'rr-fc-bab-design', term: 'B-A-B Design', definition: 'A single-case experimental design that begins with a treatment phase (B), followed by a withdrawal phase (A), and then a return to treatment (B); used when withholding treatment at the outset would be unethical or impractical; provides a demonstration of experimental control but is considered weaker than the A-B-A-B design because it does not establish a true pre-intervention baseline.', domain: 'D', domainFull: 'Experimental Design', example: 'A BCBA working with a child who engages in severe self-injury cannot ethically withhold treatment, so a B-A-B design is used: treatment is implemented first, then briefly withdrawn to demonstrate that behavior worsens without it, then reinstated  -  showing the treatment is responsible for behavior change.' },
   { id: 'rr-fc-causation', term: 'Causation (Functional Relation)', definition: 'The demonstration that a specific independent variable is responsible for changes in a dependent variable; established in single-case research through the systematic replication of an effect  -  showing that the behavior reliably changes when the independent variable is introduced and returns toward baseline when it is withdrawn; distinguished from correlation, which only shows that two variables co-vary.', domain: 'D', domainFull: 'Experimental Design', example: 'A BCBA demonstrates causation in an A-B-A-B design when problem behavior reliably decreases each time the FCT intervention is introduced (B phases) and reliably increases each time it is withdrawn (A phases)  -  the repeated pattern rules out coincidence and establishes a functional relation.' },
   { id: 'rr-fc-false-negative', term: 'False Negative (Type II Error)', definition: 'An error in which a researcher or clinician concludes that no functional relation exists between the independent and dependent variables when in fact a real effect is present; in behavioral assessment, a false negative occurs when a functional analysis fails to identify the true reinforcer maintaining a problem behavior, leading to an ineffective intervention.', domain: 'D', domainFull: 'Experimental Design', example: 'A functional analysis of a student\'s aggression yields undifferentiated results across all conditions, leading the BCBA to conclude the behavior is automatically reinforced  -  but the behavior is actually maintained by social attention that was inadvertently provided during all conditions, a false negative result.' },
-  { id: 'rr-fc-false-positive', term: 'False Positive (Type I Error)', definition: 'An error in which a researcher or clinician concludes that a functional relation exists between the independent and dependent variables when in fact no real effect is present; in behavioral assessment, a false positive occurs when a functional analysis incorrectly identifies a reinforcer that does not actually maintain the problem behavior, leading to an intervention targeting the wrong function.', domain: 'D', domainFull: 'Experimental Design', example: 'A brief functional analysis shows elevated responding in the attention condition, leading the BCBA to implement an extinction-based intervention for attention-maintained behavior  -  but the behavior was actually maintained by escape, and the intervention fails because the analysis produced a false positive result.' },
+  { id: 'rr-fc-false-positive', term: 'False Positive (Type I Error)', definition: 'An error in which a researcher or clinician concludes that a functional relation exists between the independent and dependent variables when in fact no real effect is present; in behavioral assessment, a false positive occurs when a functional analysis incorrectly identifies a reinforcer that does not actually maintain the problem behavior, leading to an intervention targeting the wrong function.', domain: 'D', domainFull: 'Experimental Design', example: 'A brief functional analysis shows elevated responding in the attention condition, leading the BCBA to implement an extinction-based intervention for attention-maintained behavior  -  but the behavior was actually maintained by escape, and the intervention fails because the analysis produced a false positive result.' }
 ];
 
 export const allDomains = [
-  { code: 'A', name: 'Behaviorism & Philosophical Foundations', color: '#1A73E8' },
-  { code: 'B', name: 'Concepts & Principles', color: '#10B981' },
-  { code: 'C', name: 'Measurement, Data Display & Interpretation', color: '#F59E0B' },
-  { code: 'D', name: 'Experimental Design', color: '#EF4444' },
-  { code: 'E', name: 'Ethical & Professional Issues', color: '#8B5CF6' },
-  { code: 'F', name: 'Behavior Assessment', color: '#EC4899' },
-  { code: 'G', name: 'Behavior-Change Procedures', color: '#06B6D4' },
-  { code: 'H', name: 'Selecting & Implementing Interventions', color: '#84CC16' },
-  { code: 'I', name: 'Personnel Supervision & Management', color: '#F97316' },
+  { code: 'A', name: 'Behaviorism & Philosophical Foundations' },
+  { code: 'B', name: 'Concepts & Principles' },
+  { code: 'C', name: 'Measurement, Data Display & Interpretation' },
+  { code: 'D', name: 'Experimental Design' },
+  { code: 'E', name: 'Ethical & Professional Issues' },
+  { code: 'F', name: 'Behavior Assessment' },
+  { code: 'G', name: 'Behavior-Change Procedures' },
+  { code: 'H', name: 'Selecting & Implementing Interventions' },
+  { code: 'I', name: 'Personnel Supervision & Management' },
 ];
