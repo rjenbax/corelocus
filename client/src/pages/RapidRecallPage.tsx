@@ -924,8 +924,18 @@ export default function RapidRecallPage() {
         {/* ── All Terms tab ── */}
         {browseTab === 'all' && (
           <>
+            {/* How-to-use instruction banner */}
+            <div className="flex items-start gap-3 rounded-xl border border-[#00c2d6]/40 px-4 py-3 mb-5" style={{ background: '#e2fcff' }}>
+              <div className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold mt-0.5" style={{ background: '#00c2d6' }}>i</div>
+              <div className="text-sm text-black leading-relaxed">
+                <span className="font-semibold" style={{ color: '#6066bb' }}>How to use Rapid Recall: </span>
+                Expand a domain below, then <span className="font-semibold" style={{ color: '#6066bb' }}>tap any term</span> to view its full definition, common distractors, and misconceptions.
+                When you're ready to practice, click the <span className="font-semibold" style={{ color: '#00c2d6' }}>Practice</span> button next to a domain — or use the <span className="font-semibold" style={{ color: '#00c2d6' }}>Start Quiz</span> button below to begin a timed session.
+              </div>
+            </div>
+
             {/* Start quiz CTA */}
-            <div className="bg-gradient-to-r from-amber-50 to-yellow-50 border-2 border-[#00c2d6]/40 rounded-2xl p-6 mb-8">
+            <div className="border-2 border-[#00c2d6]/40 rounded-2xl p-6 mb-8" style={{ background: '#e2fcff' }}>
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h2 className="text-xl font-bold text-foreground mb-1">
