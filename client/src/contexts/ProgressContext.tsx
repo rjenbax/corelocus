@@ -60,6 +60,7 @@ interface ProgressContextValue {
   progress: PlatformProgress;
   // Flashcards
   markFlashcardMastered: (cardId: string) => void;
+  unmarkFlashcardMastered: (cardId: string) => void;
   markFlashcardSeen: (cardId: string) => void;
   // Rapid Recall
   recordRapidRecallAnswer: (termId: string, correct: boolean, misconceptionId?: string) => void;
@@ -122,6 +123,13 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       }
       return { ...prev, flashcards: [...prev.flashcards, { cardId, mastered: true, seenCount: 1 }] };
     });
+  }, []);
+
+  const unmarkFlashcardMastered = useCallback((cardId: string) => {
+    setProgress(prev => ({
+      ...prev,
+      flashcards: prev.flashcards.map(f => f.cardId === cardId ? { ...f, mastered: false } : f),
+    }));
   }, []);
 
   const markFlashcardSeen = useCallback((cardId: string) => {
@@ -264,6 +272,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     <ProgressContext.Provider value={{
       progress,
       markFlashcardMastered,
+      unmarkFlashcardMastered,
       markFlashcardSeen,
       recordRapidRecallAnswer,
       recordMatchingSession,

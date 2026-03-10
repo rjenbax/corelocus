@@ -17,7 +17,7 @@ type StatusFilter = 'all' | 'mastered' | 'unsure' | 'unrated';
 
 export default function FlashcardsPage() {
   const [, navigate] = useLocation();
-  const { progress, markFlashcardMastered, markFlashcardSeen } = useProgress();
+  const { progress, markFlashcardMastered, unmarkFlashcardMastered, markFlashcardSeen } = useProgress();
   const [selectedDomain, setSelectedDomain] = useState<string>(ALL_DOMAINS);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -78,30 +78,33 @@ export default function FlashcardsPage() {
   const handleToggleMastered = useCallback(() => {
     if (!currentCard) return;
     if (masteredIds.has(currentCard.id)) {
-      // Already mastered — no toggle back in this design (could extend later)
-      return;
+      // Toggle OFF mastered
+      unmarkFlashcardMastered(currentCard.id);
+      toast.info('Mastered removed', { duration: 1500 });
+    } else {
+      // Cannot select Mastered if Unsure is active
+      if (unsureIds.has(currentCard.id)) return;
+      markFlashcardMastered(currentCard.id);
+      toast.success('Marked as mastered!', { duration: 1500 });
     }
-    // Remove from unsure if it was there
-    setUnsureIds(prev => { const s = new Set(prev); s.delete(currentCard.id); return s; });
-    markFlashcardMastered(currentCard.id);
-    toast.success('Marked as mastered!', { duration: 1500 });
-  }, [currentCard, masteredIds, markFlashcardMastered]);
+  }, [currentCard, masteredIds, unsureIds, markFlashcardMastered, unmarkFlashcardMastered]);
 
   const handleToggleUnsure = useCallback(() => {
     if (!currentCard) return;
+    // Cannot select Unsure if Mastered is active
+    if (masteredIds.has(currentCard.id)) return;
     setUnsureIds(prev => {
       const next = new Set(prev);
       if (next.has(currentCard.id)) {
         next.delete(currentCard.id);
-        toast.info('Removed unsure flag', { duration: 1500 });
+        toast.info('Unsure flag removed', { duration: 1500 });
       } else {
-        // Remove mastered status not possible via context right now, just flag unsure
         next.add(currentCard.id);
         toast.warning('Flagged as unsure', { duration: 1500 });
       }
       return next;
     });
-  }, [currentCard]);
+  }, [currentCard, masteredIds]);
 
   const handleNext = useCallback(() => {
     setIsFlipped(false);
@@ -366,28 +369,34 @@ export default function FlashcardsPage() {
               </button>
 
               <div className="flex items-center gap-2">
-                {/* Flag Unsure button — outline → filled pink when active */}
+                {/* Flag Unsure button — outline → filled pink when active; disabled when Mastered is set */}
                 <button
                   onClick={(e) => { e.stopPropagation(); handleToggleUnsure(); }}
+                  disabled={isMastered}
                   className={cn(
                     "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-all border",
                     isUnsure
                       ? "bg-pink-500 text-white border-pink-500 shadow-sm"
-                      : "bg-transparent text-muted-foreground border-border hover:border-pink-400 hover:text-pink-600"
+                      : isMastered
+                        ? "bg-transparent text-muted-foreground/30 border-border/30 cursor-not-allowed"
+                        : "bg-transparent text-muted-foreground border-border hover:border-pink-400 hover:text-pink-600"
                   )}
                 >
                   <Flag className={cn("w-4 h-4", isUnsure && "fill-white")} />
                   {isUnsure ? 'Unsure' : 'Flag Unsure'}
                 </button>
 
-                {/* Check Mastered button — outline → filled violet when active */}
+                {/* Check Mastered button — outline → filled violet when active; disabled when Unsure is set */}
                 <button
                   onClick={(e) => { e.stopPropagation(); handleToggleMastered(); }}
+                  disabled={isUnsure}
                   className={cn(
                     "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-all border",
                     isMastered
-                      ? "bg-violet-600 text-white border-violet-600 shadow-sm cursor-default"
-                      : "bg-transparent text-muted-foreground border-border hover:border-violet-400 hover:text-violet-600"
+                      ? "bg-violet-600 text-white border-violet-600 shadow-sm"
+                      : isUnsure
+                        ? "bg-transparent text-muted-foreground/30 border-border/30 cursor-not-allowed"
+                        : "bg-transparent text-muted-foreground border-border hover:border-violet-400 hover:text-violet-600"
                   )}
                 >
                   <CheckCircle2 className="w-4 h-4" />
