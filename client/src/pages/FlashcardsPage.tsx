@@ -1,8 +1,7 @@
 /**
  * Flashcards — Tier 1: Remember (L1)
- * Flip cards, domain filter, mastery tracking, shuffle mode
- * Buttons: "Flag Unsure" / "Check Mastered" (outline) → "Unsure" / "Mastered" (filled)
- * Card shows status flags when set. Top bar shows Show Mastered / Show Unsure / Show Unrated counts.
+ * Color template: buttons #00c2d6, correct/mastered #e3e5fb, unsure #feeffd,
+ * breadcrumb #e2fcff, bold text #6066bb, body text #000000
  */
 import { useState, useMemo, useCallback } from 'react';
 import { useLocation } from 'wouter';
@@ -24,17 +23,13 @@ export default function FlashcardsPage() {
   const [isShuffled, setIsShuffled] = useState(false);
   const [shuffleSeed, setShuffleSeed] = useState(0);
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
-
-  // "Unsure" is local state (not persisted to ProgressContext — can be extended later)
   const [unsureIds, setUnsureIds] = useState<Set<string>>(new Set());
 
-  // Mastered IDs from progress context
   const masteredIds = useMemo(
     () => new Set(progress.flashcards.filter(f => f.mastered).map(f => f.cardId)),
     [progress.flashcards]
   );
 
-  // Counts across ALL cards in the current domain (before status filter)
   const domainCards = useMemo(() => {
     if (selectedDomain === ALL_DOMAINS) return flashcards;
     return flashcards.filter(f => f.domain === selectedDomain);
@@ -78,11 +73,9 @@ export default function FlashcardsPage() {
   const handleToggleMastered = useCallback(() => {
     if (!currentCard) return;
     if (masteredIds.has(currentCard.id)) {
-      // Toggle OFF mastered
       unmarkFlashcardMastered(currentCard.id);
       toast.info('Mastered removed', { duration: 1500 });
     } else {
-      // Cannot select Mastered if Unsure is active
       if (unsureIds.has(currentCard.id)) return;
       markFlashcardMastered(currentCard.id);
       toast.success('Marked as mastered!', { duration: 1500 });
@@ -91,7 +84,6 @@ export default function FlashcardsPage() {
 
   const handleToggleUnsure = useCallback(() => {
     if (!currentCard) return;
-    // Cannot select Unsure if Mastered is active
     if (masteredIds.has(currentCard.id)) return;
     setUnsureIds(prev => {
       const next = new Set(prev);
@@ -118,7 +110,7 @@ export default function FlashcardsPage() {
 
   const handleDomainChange = (domain: string) => {
     setSelectedDomain(domain);
-    setStatusFilter('all');  // reset status filter when switching domains
+    setStatusFilter('all');
     setCurrentIndex(0);
     setIsFlipped(false);
   };
@@ -142,24 +134,28 @@ export default function FlashcardsPage() {
   const isUnsure   = currentCard ? unsureIds.has(currentCard.id)   : false;
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
+    <div className="min-h-screen bg-white">
+      {/* Header / breadcrumb */}
+      <header className="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div className="container flex items-center justify-between h-14">
           <div className="flex items-center gap-3">
-            <button onClick={() => navigate('/dashboard')} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <button
+              onClick={() => navigate('/dashboard')}
+              className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-black transition-colors"
+            >
               <ArrowLeft className="w-4 h-4" />
               <span className="hidden sm:inline">Dashboard</span>
             </button>
-            <span className="text-border">|</span>
-            <div className="flex items-center gap-2">
-              <Layers className="w-4 h-4 text-blue-600" />
-              <span className="font-semibold text-sm">Flashcards</span>
-              <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">Tier 1</span>
+            <span className="text-gray-300">|</span>
+            {/* Breadcrumb */}
+            <div className="breadcrumb-trail flex items-center gap-2">
+              <Layers className="w-4 h-4" style={{ color: '#00c2d6' }} />
+              <span className="font-semibold text-sm text-black">Flashcards</span>
+              <span className="text-xs px-2 py-0.5 rounded-full font-medium" style={{ background: '#e3e5fb', color: '#6066bb' }}>Tier 1</span>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs text-muted-foreground">
+            <span className="text-xs text-gray-500">
               {masteredCount} / {domainCards.length} mastered
             </span>
           </div>
@@ -167,17 +163,18 @@ export default function FlashcardsPage() {
       </header>
 
       <div className="container py-6 max-w-3xl mx-auto">
-        {/* Domain filter */}
+        {/* Domain filter pills */}
         <div className="flex items-center gap-2 mb-4 overflow-x-auto pb-2">
-          <Filter className="w-3.5 h-3.5 text-muted-foreground flex-shrink-0" />
+          <Filter className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
           <button
             onClick={() => handleDomainChange(ALL_DOMAINS)}
             className={cn(
-              "text-xs px-3 py-1.5 rounded-full border whitespace-nowrap transition-colors",
+              "text-xs px-3 py-1.5 rounded-full border whitespace-nowrap transition-colors font-medium",
               selectedDomain === ALL_DOMAINS
-                ? "bg-blue-600 text-white border-blue-600"
-                : "border-border text-muted-foreground hover:border-blue-300"
+                ? "text-white border-transparent"
+                : "bg-white text-black border-gray-200 hover:border-[#6066bb] hover:text-[#6066bb]"
             )}
+            style={selectedDomain === ALL_DOMAINS ? { background: '#00c2d6', borderColor: '#00c2d6' } : {}}
           >
             All ({flashcards.length})
           </button>
@@ -189,11 +186,12 @@ export default function FlashcardsPage() {
                 key={d}
                 onClick={() => handleDomainChange(d)}
                 className={cn(
-                  "text-xs px-3 py-1.5 rounded-full border whitespace-nowrap transition-colors",
+                  "text-xs px-3 py-1.5 rounded-full border whitespace-nowrap transition-colors font-medium",
                   selectedDomain === d
-                    ? "bg-blue-600 text-white border-blue-600"
-                    : "border-border text-muted-foreground hover:border-blue-300"
+                    ? "text-white border-transparent"
+                    : "bg-white text-black border-gray-200 hover:border-[#6066bb] hover:text-[#6066bb]"
                 )}
+                style={selectedDomain === d ? { background: '#00c2d6', borderColor: '#00c2d6' } : {}}
               >
                 {d}: {domainInfo?.name.split(' ')[0] ?? d} ({count})
               </button>
@@ -201,29 +199,32 @@ export default function FlashcardsPage() {
           })}
         </div>
 
-        {/* Mode toggles row */}
+        {/* Mode toggles */}
         <div className="flex items-center gap-2 mb-3 flex-wrap">
           <button
             onClick={handleShuffle}
             className={cn(
-              "flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-colors",
-              isShuffled ? "bg-blue-100 text-blue-800 border-blue-300" : "border-border text-muted-foreground hover:border-blue-300"
+              "flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-colors font-medium",
+              isShuffled
+                ? "text-white border-transparent"
+                : "bg-white text-black border-gray-200 hover:border-[#00c2d6] hover:text-[#00c2d6]"
             )}
+            style={isShuffled ? { background: '#00c2d6', borderColor: '#00c2d6' } : {}}
           >
             <Shuffle className="w-3 h-3" />
             {isShuffled ? 'Shuffled' : 'Shuffle'}
           </button>
         </div>
 
-        {/* Status filter counts row */}
+        {/* Status filter row */}
         <div className="flex items-center gap-4 mb-4 text-sm font-medium">
           <button
             onClick={() => { setStatusFilter('all'); setCurrentIndex(0); setIsFlipped(false); }}
             className={cn(
               "transition-colors",
               statusFilter === 'all'
-                ? "text-foreground font-semibold underline underline-offset-2"
-                : "text-muted-foreground hover:text-foreground"
+                ? "font-semibold underline underline-offset-2 text-black"
+                : "text-gray-500 hover:text-black"
             )}
           >
             Show All ({domainCards.length})
@@ -233,9 +234,12 @@ export default function FlashcardsPage() {
             className={cn(
               "transition-colors",
               statusFilter === 'mastered'
-                ? "text-[#6066bb] underline underline-offset-2"
-                : "text-foreground hover:text-[#6066bb]"
+                ? "underline underline-offset-2"
+                : "text-gray-500"
             )}
+            style={{ color: statusFilter === 'mastered' ? '#6066bb' : undefined }}
+            onMouseEnter={e => { if (statusFilter !== 'mastered') (e.target as HTMLElement).style.color = '#6066bb'; }}
+            onMouseLeave={e => { if (statusFilter !== 'mastered') (e.target as HTMLElement).style.color = ''; }}
           >
             Show Mastered ({masteredCount})
           </button>
@@ -244,9 +248,12 @@ export default function FlashcardsPage() {
             className={cn(
               "transition-colors",
               statusFilter === 'unsure'
-                ? "text-pink-600 underline underline-offset-2"
-                : "text-foreground hover:text-pink-600"
+                ? "underline underline-offset-2"
+                : "text-gray-500"
             )}
+            style={{ color: statusFilter === 'unsure' ? '#d4a0d4' : undefined }}
+            onMouseEnter={e => { if (statusFilter !== 'unsure') (e.target as HTMLElement).style.color = '#d4a0d4'; }}
+            onMouseLeave={e => { if (statusFilter !== 'unsure') (e.target as HTMLElement).style.color = ''; }}
           >
             Show Unsure ({unsureCount})
           </button>
@@ -255,23 +262,29 @@ export default function FlashcardsPage() {
             className={cn(
               "transition-colors",
               statusFilter === 'unrated'
-                ? "text-blue-600 underline underline-offset-2"
-                : "text-foreground hover:text-blue-600"
+                ? "underline underline-offset-2"
+                : "text-gray-500"
             )}
+            style={{ color: statusFilter === 'unrated' ? '#00c2d6' : undefined }}
+            onMouseEnter={e => { if (statusFilter !== 'unrated') (e.target as HTMLElement).style.color = '#00c2d6'; }}
+            onMouseLeave={e => { if (statusFilter !== 'unrated') (e.target as HTMLElement).style.color = ''; }}
           >
             Show Unrated ({unratedCount})
           </button>
         </div>
 
         {/* Progress bar */}
-        <div className="flex items-center gap-3 mb-6">
-          <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
+        <div className="flex items-center gap-3 mb-5">
+          <div className="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
             <div
-              className="h-full bg-blue-500 rounded-full transition-all duration-500"
-              style={{ width: domainCards.length > 0 ? `${(masteredCount / domainCards.length) * 100}%` : '0%' }}
+              className="h-full rounded-full transition-all duration-500"
+              style={{
+                width: domainCards.length > 0 ? `${(masteredCount / domainCards.length) * 100}%` : '0%',
+                background: '#00c2d6',
+              }}
             />
           </div>
-          <span className="text-xs text-muted-foreground whitespace-nowrap">
+          <span className="text-xs text-gray-500 whitespace-nowrap">
             {domainCards.length > 0 ? Math.round((masteredCount / domainCards.length) * 100) : 0}% mastered
           </span>
         </div>
@@ -279,9 +292,9 @@ export default function FlashcardsPage() {
         {/* Card */}
         {currentCard ? (
           <>
-            <div className="text-center mb-2 text-xs text-muted-foreground">
+            <div className="text-center mb-2 text-xs text-gray-400">
               {currentIndex + 1} of {filtered.length} · Click card to flip
-              {isShuffled && <span className="ml-1 text-blue-500">· Shuffled</span>}
+              {isShuffled && <span className="ml-1" style={{ color: '#00c2d6' }}>· Shuffled</span>}
             </div>
 
             {/* Flip card */}
@@ -292,62 +305,57 @@ export default function FlashcardsPage() {
             >
               <div
                 className="relative w-full h-full transition-transform duration-500"
-                style={{
-                  transformStyle: 'preserve-3d',
-                  transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-                }}
+                style={{ transformStyle: 'preserve-3d', transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
               >
                 {/* Front */}
                 <div
-                  className="absolute inset-0 rounded-2xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white p-8 flex flex-col items-center justify-center"
-                  style={{ backfaceVisibility: 'hidden' }}
+                  className="absolute inset-0 rounded-2xl p-8 flex flex-col items-center justify-center"
+                  style={{ backfaceVisibility: 'hidden', background: '#e2fcff', border: '2px solid #00c2d6' }}
                 >
-                  {/* Status flags on card — only shown when a status is set */}
                   {(isMastered || isUnsure) && (
                     <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-3">
                       {isUnsure && (
-                        <div className="flex items-center gap-1 text-pink-600 text-xs font-medium">
-                          <Flag className="w-3.5 h-3.5 fill-pink-500" />
+                        <div className="flex items-center gap-1 text-xs font-medium" style={{ color: '#d4a0d4' }}>
+                          <Flag className="w-3.5 h-3.5" style={{ fill: '#d4a0d4' }} />
                           <span>Unsure</span>
                         </div>
                       )}
                       {isMastered && (
-                        <div className="flex items-center gap-1 text-[#6066bb] text-xs font-medium">
+                        <div className="flex items-center gap-1 text-xs font-medium" style={{ color: '#6066bb' }}>
                           <CheckCircle2 className="w-3.5 h-3.5" />
                           <span>Mastered</span>
                         </div>
                       )}
                     </div>
                   )}
-
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">{currentCard.domainFull}</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#00c2d6' }}>
+                      {currentCard.domainFull}
+                    </span>
                   </div>
-                  <h2 className="text-2xl font-bold text-foreground text-center leading-tight">
+                  <h2 className="text-2xl font-bold text-black text-center leading-tight">
                     {currentCard.term}
                   </h2>
-
-                  <div className="absolute bottom-4 right-4 text-blue-300">
+                  <div className="absolute bottom-4 right-4" style={{ color: '#00c2d6', opacity: 0.5 }}>
                     <RotateCcw className="w-4 h-4" />
                   </div>
                 </div>
 
                 {/* Back */}
                 <div
-                  className="absolute inset-0 rounded-2xl border-2 border-blue-300 bg-gradient-to-br from-white to-blue-50 p-8 flex flex-col items-center justify-center"
-                  style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+                  className="absolute inset-0 rounded-2xl p-8 flex flex-col items-center justify-center"
+                  style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)', background: '#e3e5fb', border: '2px solid #6066bb' }}
                 >
-                  {/* Status flags on back too */}
                   {(isMastered || isUnsure) && (
                     <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-3">
                       {isUnsure && (
-                        <div className="flex items-center gap-1 text-pink-600 text-xs font-medium">
-                          <Flag className="w-3.5 h-3.5 fill-pink-500" />
+                        <div className="flex items-center gap-1 text-xs font-medium" style={{ color: '#d4a0d4' }}>
+                          <Flag className="w-3.5 h-3.5" style={{ fill: '#d4a0d4' }} />
                           <span>Unsure</span>
                         </div>
                       )}
                       {isMastered && (
-                        <div className="flex items-center gap-1 text-[#6066bb] text-xs font-medium">
+                        <div className="flex items-center gap-1 text-xs font-medium" style={{ color: '#6066bb' }}>
                           <CheckCircle2 className="w-3.5 h-3.5" />
                           <span>Mastered</span>
                         </div>
@@ -355,14 +363,14 @@ export default function FlashcardsPage() {
                     </div>
                   )}
                   <div className="flex items-center gap-2 mb-4">
-                    <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">Definition</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#6066bb' }}>Definition</span>
                   </div>
-                  <p className="text-base text-foreground text-center leading-relaxed mb-4">
+                  <p className="text-base text-black text-center leading-relaxed mb-4">
                     {currentCard.definition}
                   </p>
                   {currentCard.example && (
-                    <p className="text-sm text-muted-foreground text-center italic border-t border-blue-100 pt-3 mt-1">
-                      <span className="font-medium not-italic text-blue-600">Example: </span>
+                    <p className="text-sm text-gray-600 text-center italic pt-3 mt-1" style={{ borderTop: '1px solid #6066bb40' }}>
+                      <span className="font-semibold not-italic" style={{ color: '#6066bb' }}>Example: </span>
                       {currentCard.example}
                     </p>
                   )}
@@ -374,42 +382,48 @@ export default function FlashcardsPage() {
             <div className="flex items-center justify-between gap-2">
               <button
                 onClick={handlePrev}
-                className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground border border-border rounded-lg px-4 py-2 transition-colors hover:bg-muted/50"
+                className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-black border border-gray-200 rounded-lg px-4 py-2 transition-colors hover:bg-gray-50"
               >
                 <ChevronLeft className="w-4 h-4" />
                 Prev
               </button>
 
               <div className="flex items-center gap-2">
-                {/* Flag Unsure button — outline → filled pink when active; disabled when Mastered is set */}
+                {/* Flag Unsure — filled #feeffd when active */}
                 <button
                   onClick={(e) => { e.stopPropagation(); handleToggleUnsure(); }}
                   disabled={isMastered}
                   className={cn(
                     "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-all border",
-                    isUnsure
-                      ? "bg-pink-500 text-white border-pink-500 shadow-sm"
-                      : isMastered
-                        ? "bg-transparent text-muted-foreground/30 border-border/30 cursor-not-allowed"
-                        : "bg-transparent text-muted-foreground border-border hover:border-pink-400 hover:text-pink-600"
+                    isMastered ? "opacity-30 cursor-not-allowed bg-transparent border-gray-200 text-gray-400" : ""
                   )}
+                  style={
+                    isUnsure
+                      ? { background: '#feeffd', borderColor: '#d4a0d4', color: '#d4a0d4' }
+                      : isMastered
+                        ? {}
+                        : { background: 'transparent', borderColor: '#e5e7eb', color: '#6b7280' }
+                  }
                 >
-                  <Flag className={cn("w-4 h-4", isUnsure && "fill-white")} />
+                  <Flag className={cn("w-4 h-4", isUnsure && "fill-current")} />
                   {isUnsure ? 'Unsure' : 'Flag Unsure'}
                 </button>
 
-                {/* Check Mastered button — outline → filled violet when active; disabled when Unsure is set */}
+                {/* Check Mastered — filled #e3e5fb / #6066bb when active */}
                 <button
                   onClick={(e) => { e.stopPropagation(); handleToggleMastered(); }}
                   disabled={isUnsure}
                   className={cn(
                     "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-all border",
-                    isMastered
-                      ? "bg-violet-600 text-white border-violet-600 shadow-sm"
-                      : isUnsure
-                        ? "bg-transparent text-muted-foreground/30 border-border/30 cursor-not-allowed"
-                        : "bg-transparent text-muted-foreground border-border hover:border-[#6066bb] hover:text-[#6066bb]"
+                    isUnsure ? "opacity-30 cursor-not-allowed bg-transparent border-gray-200 text-gray-400" : ""
                   )}
+                  style={
+                    isMastered
+                      ? { background: '#e3e5fb', borderColor: '#6066bb', color: '#6066bb' }
+                      : isUnsure
+                        ? {}
+                        : { background: 'transparent', borderColor: '#e5e7eb', color: '#6b7280' }
+                  }
                 >
                   <CheckCircle2 className="w-4 h-4" />
                   {isMastered ? 'Mastered' : 'Check Mastered'}
@@ -418,7 +432,7 @@ export default function FlashcardsPage() {
 
               <button
                 onClick={handleNext}
-                className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground border border-border rounded-lg px-4 py-2 transition-colors hover:bg-muted/50"
+                className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-black border border-gray-200 rounded-lg px-4 py-2 transition-colors hover:bg-gray-50"
               >
                 Next
                 <ChevronRight className="w-4 h-4" />
@@ -426,9 +440,9 @@ export default function FlashcardsPage() {
             </div>
           </>
         ) : (
-          <div className="text-center py-16 text-muted-foreground">
+          <div className="text-center py-16 text-gray-400">
             <Layers className="w-12 h-12 mx-auto mb-4 opacity-30" />
-            <p className="text-lg font-medium mb-2">No cards to show</p>
+            <p className="text-lg font-medium mb-2 text-black">No cards to show</p>
             <p className="text-sm">Try changing your filter settings.</p>
           </div>
         )}

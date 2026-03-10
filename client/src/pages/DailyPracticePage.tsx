@@ -429,7 +429,7 @@ export default function DailyPracticePage() {
           <div className="max-w-md w-full text-center">
             <div className={cn(
               "w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black",
-              pct >= 80 ? "bg-[#e3e5fb] text-[#6066bb]" : pct >= 50 ? "bg-teal-100 text-[#00c2d6]" : "bg-[#feeffd] text-[#d4a0d4]"
+              pct >= 80 ? "bg-[#e3e5fb] text-[#6066bb]" : pct >= 50 ? "bg-[#e2fcff] text-[#00c2d6]" : "bg-[#feeffd] text-[#d4a0d4]"
             )}>
               {pct}%
             </div>
@@ -518,7 +518,7 @@ export default function DailyPracticePage() {
           <Target className="w-3.5 h-3.5 text-[#00c2d6] flex-shrink-0" />
           <span className="text-xs text-[#00c2d6] font-medium">Targeting your weakest TCO areas:</span>
           {weakCodes.map(code => (
-            <span key={code} className="text-xs font-bold px-2 py-0.5 rounded bg-teal-100 text-[#00c2d6] border border-[#00c2d6]/40">
+            <span key={code} className="text-xs font-bold px-2 py-0.5 rounded bg-[#e2fcff] text-[#00c2d6] border border-[#00c2d6]/40">
               {code}
             </span>
           ))}

@@ -2,13 +2,27 @@
 @import "tw-animate-css";
 
 /* 
- * BCBA Case Study Exam — Violet + Teal Accent Design System
- * Design Movement: Modern SaaS — High Contrast, Slightly Edgy
- * Primary:  Bold Violet  #6D28D9  oklch(0.40 0.22 290)
- * Accent:   Deep Teal    #0F766E  oklch(0.50 0.12 185)
- * Text:     Slate Gray   #334155  oklch(0.32 0.025 255)
- * Surface:  Off White    #F8FAFC  oklch(0.985 0.004 240)
- * Typography: Inter for UI, DM Sans for body text.
+ * ═══════════════════════════════════════════════════════════════════
+ *  BehaviorPrep / CoreLocus — Unified Brand Color Template
+ * ═══════════════════════════════════════════════════════════════════
+ *  Correct answer bg  : #e3e5fb  (also rationale bg)
+ *  Wrong answer bg    : #feeffd
+ *  Breadcrumb bg      : #e2fcff
+ *  Button fill        : #00c2d6  (text: #ffffff)
+ *  Bold / accent text : #6066bb
+ *  Body text          : #000000
+ *  Page background    : #ffffff
+ * ═══════════════════════════════════════════════════════════════════
+ *  CSS custom properties (use these everywhere instead of raw hex):
+ *    --bp-correct     #e3e5fb
+ *    --bp-wrong       #feeffd
+ *    --bp-breadcrumb  #e2fcff
+ *    --bp-button      #00c2d6
+ *    --bp-accent      #6066bb
+ *    --bp-border-correct  #6066bb
+ *    --bp-border-wrong    #d4a0d4
+ *    --bp-border-button   #00c2d6
+ * ═══════════════════════════════════════════════════════════════════
  */
 
 @custom-variant dark (&:is(.dark *));
@@ -53,60 +67,71 @@
 }
 
 :root {
-  /* Violet + Teal Accent Palette */
+  /* ── BehaviorPrep Brand Tokens ─────────────────────────────────── */
+  --bp-correct:          #e3e5fb;
+  --bp-wrong:            #feeffd;
+  --bp-breadcrumb:       #e2fcff;
+  --bp-button:           #00c2d6;
+  --bp-button-hover:     #00afc1;
+  --bp-accent:           #6066bb;
+  --bp-border-correct:   #6066bb;
+  --bp-border-wrong:     #d4a0d4;
+  --bp-border-button:    #00c2d6;
+
+  /* ── Shadcn / Tailwind theme tokens ───────────────────────────── */
   --radius: 0.5rem;
 
-  /* Off White surface — #F8FAFC */
-  --background: oklch(0.985 0.004 240);
-  /* Slate Gray text — #334155 */
-  --foreground: oklch(0.32 0.025 255);
+  /* White page background, black text */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.09 0 0);
 
-  /* Card: pure white for contrast against off-white bg */
+  /* Card: white */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.32 0.025 255);
+  --card-foreground: oklch(0.09 0 0);
 
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.32 0.025 255);
+  --popover-foreground: oklch(0.09 0 0);
 
-  /* Primary: Bold Violet — #6D28D9 */
-  --primary: oklch(0.40 0.22 290);
-  --primary-foreground: oklch(0.98 0.004 290);
+  /* Primary: brand button teal #00c2d6 */
+  --primary: oklch(0.73 0.12 200);
+  --primary-foreground: oklch(1 0 0);
 
-  /* Secondary: Light violet tint */
-  --secondary: oklch(0.94 0.03 290);
-  --secondary-foreground: oklch(0.32 0.025 255);
+  /* Secondary: light teal tint #e2fcff */
+  --secondary: oklch(0.97 0.025 200);
+  --secondary-foreground: oklch(0.09 0 0);
 
-  /* Muted: Cool light gray */
-  --muted: oklch(0.96 0.006 240);
-  --muted-foreground: oklch(0.52 0.02 255);
+  /* Muted: light gray */
+  --muted: oklch(0.96 0.004 240);
+  --muted-foreground: oklch(0.45 0.015 255);
 
-  /* Accent: Deep Teal — #0F766E */
-  --accent: oklch(0.50 0.12 185);
-  --accent-foreground: oklch(0.98 0.004 185);
+  /* Accent: brand purple #6066bb */
+  --accent: oklch(0.48 0.13 270);
+  --accent-foreground: oklch(1 0 0);
 
   --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
 
-  /* Borders: cool slate */
-  --border: oklch(0.90 0.008 240);
-  --input: oklch(0.90 0.008 240);
-  --ring: oklch(0.40 0.22 290);
+  /* Borders: light gray */
+  --border: oklch(0.90 0.006 240);
+  --input: oklch(0.90 0.006 240);
+  --ring: oklch(0.73 0.12 200);
 
-  /* Charts: violet, teal, slate, amber, rose */
-  --chart-1: oklch(0.40 0.22 290);
-  --chart-2: oklch(0.50 0.12 185);
+  /* Charts */
+  --chart-1: oklch(0.73 0.12 200);
+  --chart-2: oklch(0.48 0.13 270);
   --chart-3: oklch(0.52 0.025 255);
   --chart-4: oklch(0.65 0.15 70);
   --chart-5: oklch(0.55 0.20 25);
 
-  --sidebar: oklch(0.22 0.03 270);
+  /* Sidebar: dark purple */
+  --sidebar: oklch(0.22 0.06 270);
   --sidebar-foreground: oklch(0.94 0.006 240);
-  --sidebar-primary: oklch(0.60 0.20 290);
-  --sidebar-primary-foreground: oklch(0.98 0.004 290);
-  --sidebar-accent: oklch(0.30 0.03 270);
+  --sidebar-primary: oklch(0.73 0.12 200);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.30 0.05 270);
   --sidebar-accent-foreground: oklch(0.94 0.006 240);
-  --sidebar-border: oklch(0.30 0.03 270);
-  --sidebar-ring: oklch(0.60 0.20 290);
+  --sidebar-border: oklch(0.30 0.05 270);
+  --sidebar-ring: oklch(0.73 0.12 200);
 }
 
 @layer base {
@@ -116,6 +141,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'DM Sans', sans-serif;
+    color: #000000;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -126,6 +152,11 @@
   input[type="checkbox"]:not(:disabled),
   input[type="radio"]:not(:disabled) {
     @apply cursor-pointer;
+  }
+  /* Bold text uses brand accent color */
+  strong, b {
+    color: #6066bb;
+    font-weight: 700;
   }
 }
 
@@ -158,32 +189,7 @@
     }
   }
 
-  /* Case narrative typography */
-  .case-text {
-    font-family: 'DM Sans', sans-serif;
-    line-height: 1.75;
-    font-size: 0.9375rem;
-    color: oklch(0.32 0.025 255);
-  }
-
-  /* Question text */
-  .question-text {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    font-weight: 500;
-  }
-
-  /* ── BehaviorPrep Brand Color Tokens ───────────────────────────────────────
-   * correct / rationale bg : #e3e5fb
-   * wrong answer bg        : #feeffd
-   * breadcrumb bg          : #e2fcff
-   * button fill            : #00c2d6  (text: white)
-   * bold / accent text     : #6066bb
-   * body text              : #000000
-   * ─────────────────────────────────────────────────────────────────────── */
-
-  /* Answer choice button */
+  /* ── Answer choice button ──────────────────────────────────────── */
   .choice-btn {
     display: flex;
     align-items: flex-start;
@@ -205,17 +211,20 @@
   .choice-btn.selected {
     border-color: #6066bb;
     background: #e3e5fb;
+    color: #000000;
   }
   .choice-btn.correct {
     border-color: #6066bb;
     background: #e3e5fb;
+    color: #000000;
   }
   .choice-btn.incorrect {
     border-color: #d4a0d4;
     background: #feeffd;
+    color: #000000;
   }
 
-  /* Rationale / explanation box */
+  /* ── Rationale / explanation box ──────────────────────────────── */
   .rationale-box {
     background: #e3e5fb;
     border: 1px solid #6066bb;
@@ -224,16 +233,17 @@
     color: #000000;
   }
 
-  /* Breadcrumb trail */
+  /* ── Breadcrumb trail ──────────────────────────────────────────── */
   .breadcrumb-trail {
     background: #e2fcff;
+    border: 1px solid #00c2d6;
     border-radius: 0.375rem;
     padding: 0.25rem 0.75rem;
     color: #000000;
     font-size: 0.8125rem;
   }
 
-  /* Primary action button — filled #00c2d6 */
+  /* ── Primary action button — filled #00c2d6 ───────────────────── */
   .btn-primary {
     background: #00c2d6;
     color: #ffffff;
@@ -252,7 +262,23 @@
     cursor: not-allowed;
   }
 
-  /* Domain badge */
+  /* ── Domain filter pill (active = brand teal) ─────────────────── */
+  .domain-pill-active {
+    background: #00c2d6;
+    color: #ffffff;
+    border-color: #00c2d6;
+  }
+  .domain-pill-inactive {
+    background: #ffffff;
+    color: #000000;
+    border-color: #d1d5db;
+  }
+  .domain-pill-inactive:hover {
+    border-color: #6066bb;
+    color: #6066bb;
+  }
+
+  /* ── Domain badge ─────────────────────────────────────────────── */
   .domain-badge {
     display: inline-flex;
     align-items: center;
@@ -265,7 +291,7 @@
     text-transform: uppercase;
   }
 
-  /* Phase indicator */
+  /* ── Phase indicator ──────────────────────────────────────────── */
   .phase-pill {
     display: inline-flex;
     align-items: center;
@@ -274,24 +300,46 @@
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 600;
-    background: oklch(0.40 0.22 290 / 0.10);
-    color: oklch(0.40 0.22 290);
-    border: 1px solid oklch(0.40 0.22 290 / 0.22);
+    background: #e3e5fb;
+    color: #6066bb;
+    border: 1px solid #6066bb40;
+  }
+
+  /* ── Progress bar fill ────────────────────────────────────────── */
+  .progress-fill {
+    background: #00c2d6;
+  }
+
+  /* ── Case narrative typography ────────────────────────────────── */
+  .case-text {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.75;
+    font-size: 0.9375rem;
+    color: #000000;
+  }
+
+  /* ── Question text ────────────────────────────────────────────── */
+  .question-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #000000;
   }
 }
 
-/* Smooth scrollbar */
+/* ── Smooth scrollbar ─────────────────────────────────────────────── */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: oklch(0.96 0.006 240);
+  background: #f5f5f5;
 }
 ::-webkit-scrollbar-thumb {
-  background: oklch(0.80 0.015 255);
+  background: #d1d5db;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.60 0.025 255);
+  background: #9ca3af;
 }

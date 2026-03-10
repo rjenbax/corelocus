@@ -35,11 +35,11 @@ const TIERS: TierConfig[] = [
     icon: Layers,
     route: '/flashcards',
     bloomsLevel: 'Recall terms',
-    color: 'text-violet-700',
-    bgColor: 'bg-violet-50',
+    color: 'text-[#6066bb]',
+    bgColor: 'bg-[#e3e5fb]',
     borderColor: 'border-violet-200',
-    pillColor: 'bg-violet-100 text-violet-700',
-    barColor: 'bg-violet-600',
+    pillColor: 'bg-[#e3e5fb] text-[#6066bb]',
+    barColor: 'bg-[#6066bb]',
   },
   {
     tier: 2,
@@ -49,11 +49,11 @@ const TIERS: TierConfig[] = [
     icon: Zap,
     route: '/rapid-recall',
     bloomsLevel: 'Recall under pressure',
-    color: 'text-teal-700',
-    bgColor: 'bg-teal-50',
-    borderColor: 'border-teal-200',
-    pillColor: 'bg-teal-100 text-teal-700',
-    barColor: 'bg-teal-600',
+    color: 'text-[#00c2d6]',
+    bgColor: 'bg-[#e2fcff]',
+    borderColor: 'border-[#00c2d6]/40',
+    pillColor: 'bg-teal-100 text-[#00c2d6]',
+    barColor: '',
   },
   {
     tier: 3,
@@ -63,11 +63,11 @@ const TIERS: TierConfig[] = [
     icon: Shuffle,
     route: '/matching',
     bloomsLevel: 'Recognize in context',
-    color: 'text-teal-700',
-    bgColor: 'bg-teal-50',
-    borderColor: 'border-teal-200',
-    pillColor: 'bg-teal-100 text-teal-700',
-    barColor: 'bg-teal-500',
+    color: 'text-[#00c2d6]',
+    bgColor: 'bg-[#e2fcff]',
+    borderColor: 'border-[#00c2d6]/40',
+    pillColor: 'bg-teal-100 text-[#00c2d6]',
+    barColor: 'bg-[#e2fcff]0',
   },
   {
     tier: 4,
@@ -77,10 +77,10 @@ const TIERS: TierConfig[] = [
     icon: GitMerge,
     route: '/venn',
     bloomsLevel: 'Compare & contrast',
-    color: 'text-violet-800',
-    bgColor: 'bg-violet-50',
+    color: 'text-[#6066bb]',
+    bgColor: 'bg-[#e3e5fb]',
     borderColor: 'border-violet-200',
-    pillColor: 'bg-violet-100 text-violet-800',
+    pillColor: 'bg-[#e3e5fb] text-[#6066bb]',
     barColor: 'bg-violet-700',
   },
   {
@@ -91,10 +91,10 @@ const TIERS: TierConfig[] = [
     icon: Brain,
     route: '/scenario-justification',
     bloomsLevel: 'Justify your answer',
-    color: 'text-teal-800',
-    bgColor: 'bg-teal-50',
-    borderColor: 'border-teal-200',
-    pillColor: 'bg-teal-100 text-teal-800',
+    color: 'text-[#00c2d6]',
+    bgColor: 'bg-[#e2fcff]',
+    borderColor: 'border-[#00c2d6]/40',
+    pillColor: 'bg-teal-100 text-[#00c2d6]',
     barColor: 'bg-teal-700',
   },
   {
@@ -213,7 +213,7 @@ export default function Dashboard() {
               className="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-muted transition-colors text-left"
             >
               <div className="w-8 h-8 rounded-lg bg-teal-100 flex items-center justify-center flex-shrink-0">
-                <DollarSign className="w-4 h-4 text-teal-700" />
+                <DollarSign className="w-4 h-4 text-[#00c2d6]" />
               </div>
               <div>
                 <p className="text-sm font-semibold text-foreground">Pricing</p>
@@ -302,7 +302,7 @@ export default function Dashboard() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-1.5 mb-0.5">
                       <span className="text-sm font-semibold text-foreground truncate">{tier.title}</span>
-                      {isComplete && <CheckCircle2 className="w-3.5 h-3.5 text-violet-600 flex-shrink-0" />}
+                      {isComplete && <CheckCircle2 className="w-3.5 h-3.5 text-[#6066bb] flex-shrink-0" />}
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="flex-1 h-1 bg-muted rounded-full overflow-hidden">
@@ -313,7 +313,7 @@ export default function Dashboard() {
                       </div>
                       {/* State label */}
                       {isComplete ? (
-                        <span className="text-[11px] font-semibold text-violet-600 flex-shrink-0">Done</span>
+                        <span className="text-[11px] font-semibold text-[#6066bb] flex-shrink-0">Done</span>
                       ) : pct > 0 ? (
                         <span className="flex items-center gap-1 flex-shrink-0">
                           <span className="relative flex h-1.5 w-1.5">
@@ -377,7 +377,7 @@ export default function Dashboard() {
           {/* Footer note */}
           <div className="mt-8 p-4 bg-muted/40 rounded-lg border border-border">
             <div className="flex items-start gap-2.5">
-              <Trophy className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" />
+              <Trophy className="w-4 h-4 text-[#00c2d6] mt-0.5 flex-shrink-0" />
               <div>
                 <p className="text-sm font-medium text-foreground mb-0.5">Complete all 7 tiers for full BCBA preparation</p>
                 <p className="text-xs text-muted-foreground">

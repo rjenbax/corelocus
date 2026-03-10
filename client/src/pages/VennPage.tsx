@@ -78,7 +78,7 @@ const DOMAIN_FULL: Record<string, string> = {
 
 const DOMAIN_PILL: Record<string, string> = {
   A: 'bg-slate-100 text-slate-700',
-  B: 'bg-teal-100 text-[#00c2d6]',
+  B: 'bg-[#e2fcff] text-[#00c2d6]',
   C: 'bg-cyan-100 text-cyan-800',
   D: 'bg-blue-100 text-blue-800',
   E: 'bg-[#e3e5fb] text-[#6066bb]',
@@ -135,11 +135,11 @@ function VennGridView({
       <div className="bg-white border-b border-slate-100 sticky top-[53px] z-10">
         <div className="max-w-5xl mx-auto px-4 py-2 flex items-center gap-2 overflow-x-auto">
           <Filter className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-          <button onClick={() => setSelectedDomain('ALL')} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === 'ALL' ? 'bg-violet-700 text-white border-violet-700' : 'bg-white text-slate-600 border-slate-200 hover:border-[#6066bb]/60')}>
+          <button onClick={() => setSelectedDomain('ALL')} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === 'ALL' ? 'text-white border-transparent' : 'bg-white text-slate-600 border-slate-200 hover:border-[#6066bb]/60')} style={selectedDomain === 'ALL' ? { background: '#00c2d6' } : {}}>
             All ({vennDiagrams.length})
           </button>
           {visibleDomains.map(d => (
-            <button key={d} onClick={() => setSelectedDomain(d)} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === d ? 'bg-violet-700 text-white border-violet-700' : 'bg-white text-slate-600 border-slate-200 hover:border-[#6066bb]/60')}>
+            <button key={d} onClick={() => setSelectedDomain(d)} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === d ? 'text-white border-transparent' : 'bg-white text-slate-600 border-slate-200 hover:border-[#6066bb]/60')} style={selectedDomain === d ? { background: '#00c2d6' } : {}}>
               Domain {d} ({grouped[d]?.length ?? 0})
             </button>
           ))}
@@ -169,11 +169,11 @@ function VennGridView({
                   <div className="flex items-center gap-3 shrink-0">
                     <div className="flex items-center gap-2">
                       <div className="w-24 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                        <div className="h-full bg-violet-600 rounded-full" style={{ width: `${pct}%` }} />
+                        <div className="h-full bg-[#6066bb] rounded-full" style={{ width: `${pct}%` }} />
                       </div>
                       <span className="text-xs text-slate-500 w-8 text-right">{pct}%</span>
                     </div>
-                    <Button size="sm" onClick={e => { e.stopPropagation(); const first = items[0]; if (first) openExercise(first, 'sort'); }} className="bg-violet-700 hover:bg-violet-800 text-white h-7 text-xs px-3">
+                    <Button size="sm" onClick={e => { e.stopPropagation(); const first = items[0]; if (first) openExercise(first, 'sort'); }} className="text-white h-7 text-xs px-3">
                       Practice
                     </Button>
                     <ChevronDown className={cn('w-4 h-4 text-slate-400 transition-transform', isOpen && 'rotate-180')} />
@@ -201,7 +201,7 @@ function VennGridView({
                             <button onClick={() => openExercise(item, 'study')} className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 transition-colors border border-blue-100">
                               <BookOpen className="w-3 h-3" /> Study
                             </button>
-                            <button onClick={() => openExercise(item, 'sort')} className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-[#6066bb] bg-[#e3e5fb] hover:bg-[#e3e5fb] transition-colors border border-violet-100">
+                            <button onClick={() => openExercise(item, 'sort')} className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-[#6066bb] bg-[#e3e5fb] hover:bg-[#e3e5fb] transition-colors border border-[#6066bb]/20">
                               <Swords className="w-3 h-3" /> Sort
                             </button>
                           </div>
@@ -419,7 +419,8 @@ export default function VennPage() {
               <BookOpen className="w-3.5 h-3.5" />Study
             </button>
             <button onClick={() => { setMode('sort'); setStarted(false); setSubmitted(false); setScore(null); setCards([]); setQueueIndex(0); }}
-              className={cn('flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all', mode === 'sort' ? 'bg-violet-700 text-white shadow-sm' : 'text-slate-500 hover:text-slate-700')}>
+              className={cn('flex items-center gap-1 px-3 py-1.5 rounded-md text-xs font-medium transition-all', mode === 'sort' ? 'text-white shadow-sm' : 'text-slate-500 hover:text-slate-700')}
+              style={mode === 'sort' ? { background: '#00c2d6' } : {}}>
               <Swords className="w-3.5 h-3.5" />Sort
             </button>
           </div>
@@ -492,7 +493,7 @@ export default function VennPage() {
               <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.onlyB.map((f, i) => (
                   <div key={i} className="flex items-start gap-1.5 text-xs text-[#6066bb]">
-                    <span className="text-violet-400 mt-0.5 shrink-0">•</span>
+                    <span className="text-[#6066bb] mt-0.5 shrink-0">•</span>
                     <span className="leading-snug">{f}</span>
                   </div>
                 ))}
@@ -518,14 +519,14 @@ export default function VennPage() {
       {mode === 'sort' && !started && (
         <div className="flex-1 flex items-center justify-center px-4">
           <div className="bg-white rounded-xl border border-slate-200 p-6 text-center shadow-sm max-w-sm w-full">
-            <div className="w-12 h-12 bg-violet-700/10 rounded-full flex items-center justify-center mx-auto mb-3">
+            <div className="w-12 h-12 bg-[#e3e5fb] rounded-full flex items-center justify-center mx-auto mb-3">
               <Swords className="w-5 h-5 text-[#6066bb]" />
             </div>
             <h2 className="text-base font-bold text-slate-800 mb-1">Ready to Sort?</h2>
             <p className="text-slate-500 text-xs mb-4 leading-relaxed">
               One feature at a time will appear. Tap <span className="font-bold text-blue-600">← A</span> or <span className="font-bold text-[#6066bb]">B →</span> to assign it, <span className="font-bold text-emerald-600">◆ Both</span> if it applies to both, or <span className="font-bold text-rose-500">N/A</span> if it belongs to neither.
             </p>
-            <Button onClick={startItem} className="bg-violet-700 hover:bg-violet-800 text-white px-6 h-9 text-sm w-full">
+            <Button onClick={startItem} className="text-white px-6 h-9 text-sm w-full">
               Start Sorting
             </Button>
           </div>
@@ -555,7 +556,7 @@ export default function VennPage() {
                 </div>
                 <div className="flex gap-1.5">
                   <Button variant="outline" size="sm" onClick={startItem} className="gap-1 h-7 text-xs"><RotateCcw className="w-3 h-3" /> Retry</Button>
-                  <Button size="sm" onClick={handleNext} className="bg-violet-700 hover:bg-violet-800 text-white h-7 text-xs">Next →</Button>
+                  <Button size="sm" onClick={handleNext} className="text-white h-7 text-xs">Next →</Button>
                 </div>
               </div>
             );
@@ -564,7 +565,7 @@ export default function VennPage() {
           {/* Progress bar */}
           <div className="flex items-center gap-2 shrink-0">
             <div className="flex-1 h-1.5 bg-slate-100 rounded-full overflow-hidden">
-              <div className="h-full bg-violet-600 rounded-full transition-all" style={{ width: `${cards.length > 0 ? (answeredCards.length / cards.length) * 100 : 0}%` }} />
+              <div className="h-full bg-[#6066bb] rounded-full transition-all" style={{ width: `${cards.length > 0 ? (answeredCards.length / cards.length) * 100 : 0}%` }} />
             </div>
             <span className="text-xs text-slate-400 shrink-0">{answeredCards.length}/{cards.length}</span>
           </div>
@@ -612,7 +613,7 @@ export default function VennPage() {
                     <button onClick={handleAssignA} className="flex items-center justify-center gap-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all active:scale-95 shadow-sm">
                       ← {currentItem.conceptA.split(' ')[0]}
                     </button>
-                    <button onClick={handleAssignB} className="flex items-center justify-center gap-1 py-2.5 rounded-xl bg-violet-700 hover:bg-violet-800 text-white text-xs font-bold transition-all active:scale-95 shadow-sm">
+                    <button onClick={handleAssignB} className="flex items-center justify-center gap-1 py-2.5 rounded-xl text-white text-xs font-bold transition-all active:scale-95 shadow-sm" style={{ background: '#6066bb' }}>
                       {currentItem.conceptB.split(' ')[0]} →
                     </button>
                     <button onClick={handleAssignBoth} className="flex items-center justify-center gap-1 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all active:scale-95 shadow-sm">
@@ -632,7 +633,7 @@ export default function VennPage() {
                         <CheckCircle2 className="w-5 h-5 text-[#6066bb]" />
                       </div>
                       <p className="text-xs text-slate-600 text-center font-medium">All {cards.length} features sorted!</p>
-                      <Button onClick={handleSubmit} className="bg-violet-700 hover:bg-violet-800 text-white h-9 text-sm px-5">
+                      <Button onClick={handleSubmit} className="text-white h-9 text-sm px-5">
                         Check Answers
                       </Button>
                       <button onClick={startItem} className="text-xs text-slate-400 hover:text-slate-600 flex items-center gap-1">
@@ -677,7 +678,7 @@ export default function VennPage() {
             <div className="rounded-xl border-2 border-[#6066bb]/40 bg-[#e3e5fb] flex flex-col overflow-hidden">
               <div className="px-2 py-2 bg-[#e3e5fb] border-b border-[#6066bb]/40 shrink-0">
                 <p className="text-xs font-bold text-[#6066bb] truncate">{currentItem.conceptB}</p>
-                <p className="text-[10px] text-violet-400">{cards.filter(c => c.assignedB).length} assigned</p>
+                <p className="text-[10px] text-[#6066bb]">{cards.filter(c => c.assignedB).length} assigned</p>
               </div>
               <div className="p-1.5 space-y-1 overflow-y-auto flex-1">
                 {cards.filter(c => c.assignedB).map(card => (
@@ -691,7 +692,7 @@ export default function VennPage() {
                   </div>
                 ))}
                 {cards.filter(c => c.assignedB).length === 0 && (
-                  <p className="text-[10px] text-violet-300 text-center py-3">assign here →</p>
+                  <p className="text-[10px] text-[#6066bb]/50 text-center py-3">assign here →</p>
                 )}
               </div>
             </div>

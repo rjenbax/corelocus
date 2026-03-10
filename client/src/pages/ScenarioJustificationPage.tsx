@@ -25,7 +25,7 @@ function domainBadgeClass(domain: string): string {
   const map: Record<string, string> = {
     A: 'bg-slate-100 text-slate-700',
     B: 'bg-[#e3e5fb] text-[#6066bb]',
-    C: 'bg-teal-100 text-[#00c2d6]',
+    C: 'bg-[#e2fcff] text-[#00c2d6]',
     D: 'bg-blue-100 text-blue-700',
     E: 'bg-amber-100 text-amber-700',
     F: 'bg-emerald-100 text-emerald-700',
@@ -88,7 +88,7 @@ function MissedItemsPanel({
   if (missed.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20 text-center">
-        <CheckCircle2 className="w-12 h-12 text-violet-400 mb-4" />
+        <CheckCircle2 className="w-12 h-12 text-[#6066bb] mb-4" />
         <h3 className="font-bold text-foreground text-lg mb-2">No missed items yet</h3>
         <p className="text-sm text-muted-foreground max-w-xs">
           Complete some scenarios and any questions you miss will appear here for review.
@@ -165,7 +165,7 @@ function MissedItemsPanel({
                 onClick={() => toggleExpand(question.id)}
                 className={cn(
                   "w-full text-left px-4 py-3.5 flex items-start gap-3 transition-colors",
-                  !entry.answerCorrect ? "bg-[#feeffd] hover:bg-[#feeffd]/60" : "bg-[#e2fcff] hover:bg-teal-100/60"
+                  !entry.answerCorrect ? "bg-[#feeffd] hover:bg-[#feeffd]/60" : "bg-[#e2fcff] hover:bg-[#e2fcff]/60"
                 )}
               >
                 {/* Status icon */}
@@ -239,7 +239,7 @@ function MissedItemsPanel({
                           >
                             <span className={cn(
                               "flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold",
-                              isCorrect ? "border-violet-600 text-[#6066bb] bg-[#e3e5fb]" : "border-muted-foreground/40 text-muted-foreground"
+                              isCorrect ? "border-[#6066bb] text-[#6066bb] bg-[#e3e5fb]" : "border-muted-foreground/40 text-muted-foreground"
                             )}>
                               {choice.id}
                             </span>
@@ -299,7 +299,7 @@ function MissedItemsPanel({
                           key={just.id}
                           className="flex items-start gap-2.5 px-3 py-2.5 rounded-lg border border-[#6066bb]/40 bg-[#e3e5fb]"
                         >
-                          <span className="flex-shrink-0 w-5 h-5 rounded-full bg-violet-600 text-white flex items-center justify-center text-[10px] font-bold mt-0.5">
+                          <span className="flex-shrink-0 w-5 h-5 rounded-full text-white flex items-center justify-center text-[10px] font-bold mt-0.5">
                             {i + 1}
                           </span>
                           <p className="text-xs text-[#6066bb] leading-relaxed">{just.text}</p>
@@ -596,7 +596,7 @@ export default function ScenarioJustificationPage() {
                       <span className={cn(
                         "flex-shrink-0 w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold",
                         phase === 'select' && isSelected ? "border-rose-500 text-rose-600" : "border-current text-muted-foreground",
-                        phase !== 'select' && isCorrect && "border-violet-600 text-[#6066bb] bg-[#e3e5fb]",
+                        phase !== 'select' && isCorrect && "border-[#6066bb] text-[#6066bb] bg-[#e3e5fb]",
                         phase !== 'select' && isSelected && !isCorrect && "border-red-500 text-[#d4a0d4] bg-[#feeffd]",
                       )}>
                         {choice.id}
@@ -860,7 +860,7 @@ export default function ScenarioJustificationPage() {
                       ? mode === 'advanced'
                         ? "bg-rose-600 text-white border-rose-600 shadow-sm"
                         : mode === 'standard'
-                        ? "bg-violet-600 text-white border-violet-600 shadow-sm"
+                        ? "text-white border-transparent shadow-sm"
                         : "bg-foreground text-background border-foreground shadow-sm"
                       : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
                   )}

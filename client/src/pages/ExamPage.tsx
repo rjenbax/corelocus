@@ -343,11 +343,11 @@ export default function ExamPage() {
                   {isRevealed && currentQuestion.distractorRationale && currentQuestion.distractorRationale[choice.letter] && (
                     <div className={`mx-1 mb-1 px-4 py-2.5 rounded-b-lg text-xs leading-relaxed border-t-0 ${
                       choice.letter === currentQuestion.correctAnswer
-                        ? 'bg-violet-50/80 border border-violet-200 text-violet-900'
+                        ? 'bg-[#e3e5fb]/80 border border-violet-200 text-violet-900'
                         : 'bg-slate-50 border border-slate-200 text-slate-700'
                     }`}>
                       <span className={`font-semibold mr-1 ${
-                        choice.letter === currentQuestion.correctAnswer ? 'text-violet-700' : 'text-slate-500'
+                        choice.letter === currentQuestion.correctAnswer ? 'text-[#6066bb]' : 'text-slate-500'
                       }`}>
                         {choice.letter === currentQuestion.correctAnswer ? '✓ Why this is correct:' : '✗ Why this is incorrect:'}
                       </span>

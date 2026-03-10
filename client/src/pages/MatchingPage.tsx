@@ -105,7 +105,7 @@ function DomainAccordion({
                 {bestScore !== null && (
                   <span className={cn(
                     'text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0',
-                    bestScore >= 80 ? 'bg-teal-100 text-[#00c2d6]' :
+                    bestScore >= 80 ? 'bg-[#e2fcff] text-[#00c2d6]' :
                     bestScore >= 70 ? 'bg-amber-100 text-amber-800' :
                     'bg-[#feeffd] text-[#d4a0d4]'
                   )}>
@@ -116,7 +116,7 @@ function DomainAccordion({
               {/* Practice this domain button */}
               <button
                 onClick={() => onPracticeDomain(domainItems)}
-                className="flex items-center gap-1.5 text-xs font-medium text-[#00c2d6] border border-[#00c2d6]/40 bg-[#e2fcff] hover:bg-teal-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
+                className="flex items-center gap-1.5 text-xs font-medium text-[#00c2d6] border border-[#00c2d6]/40 bg-[#e2fcff] hover:bg-[#e2fcff] px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
               >
                 <Zap className="w-3 h-3" />
                 Practice
@@ -227,7 +227,7 @@ export default function MatchingPage() {
             </button>
             <div className="flex items-center gap-2">
               {selectedDomain !== 'All' && (
-                <span className="text-xs bg-teal-100 text-[#00c2d6] px-2 py-0.5 rounded-full hidden sm:inline">
+                <span className="text-xs bg-[#e2fcff] text-[#00c2d6] px-2 py-0.5 rounded-full hidden sm:inline">
                   {selectedDomain}
                 </span>
               )}
@@ -266,7 +266,7 @@ export default function MatchingPage() {
                   disabled={showFeedback}
                   className={cn(
                     "w-full text-left p-4 rounded-xl border-2 text-sm leading-relaxed transition-all",
-                    !showFeedback && "hover:border-teal-300 hover:bg-[#e2fcff]/50 cursor-pointer border-border bg-card",
+                    !showFeedback && "hover:border-[#00c2d6] hover:bg-[#e2fcff]/50 cursor-pointer border-border bg-card",
                     showFeedback && isThisCorrect && "border-[#6066bb] bg-[#e3e5fb]",
                     showFeedback && isSelected && !isThisCorrect && "border-[#d4a0d4] bg-[#feeffd]",
                     showFeedback && !isSelected && !isThisCorrect && "border-border bg-card opacity-50",
@@ -308,7 +308,7 @@ export default function MatchingPage() {
               </div>
               <button
                 onClick={handleNext}
-                className="w-full flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 rounded-xl transition-colors"
+                className="w-full flex items-center justify-center gap-2   text-white font-medium py-3 rounded-xl transition-colors"
               >
                 {currentIdx + 1 >= quizItems.length ? 'See Results' : 'Next'}
                 <ChevronRight className="w-4 h-4" />
@@ -349,14 +349,14 @@ export default function MatchingPage() {
               : 'Score 70% or higher to mark this session complete. Review the concepts you missed and try again.'}
           </p>
           <div className="flex gap-3 justify-center flex-wrap">
-            <button onClick={() => startQuiz()} className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
+            <button onClick={() => startQuiz()} className="flex items-center gap-2   text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
               <RotateCcw className="w-4 h-4" />
               Try Again
             </button>
             {selectedDomain !== 'All' && (
               <button
                 onClick={() => { setSelectedDomain('All'); setMode('browse'); }}
-                className="flex items-center gap-2 border border-teal-300 text-[#00c2d6] bg-[#e2fcff] px-5 py-2.5 rounded-lg hover:bg-teal-100 transition-colors"
+                className="flex items-center gap-2 border border-[#00c2d6]/40 text-[#00c2d6] bg-[#e2fcff] px-5 py-2.5 rounded-lg hover:bg-[#e2fcff] transition-colors"
               >
                 Practice All Domains
               </button>
@@ -384,7 +384,7 @@ export default function MatchingPage() {
             <div className="flex items-center gap-2">
               <Shuffle className="w-4 h-4 text-[#00c2d6]" />
               <span className="font-semibold text-sm">Scenario Matching</span>
-              <span className="text-xs bg-teal-100 text-[#00c2d6] px-2 py-0.5 rounded-full">Tier 3</span>
+              <span className="text-xs bg-[#e2fcff] text-[#00c2d6] px-2 py-0.5 rounded-full">Tier 3</span>
             </div>
           </div>
           <div className="text-xs text-muted-foreground">
@@ -409,8 +409,8 @@ export default function MatchingPage() {
                 className={cn(
                   'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
                   selectedDomain === key
-                    ? 'bg-teal-600 text-white border-teal-600 shadow-sm'
-                    : 'bg-card text-muted-foreground border-border hover:border-teal-300 hover:text-[#00c2d6]'
+                    ? 'text-white border-transparent shadow-sm'
+                    : 'bg-card text-muted-foreground border-border hover:border-[#00c2d6] hover:text-[#00c2d6]'
                 )}
               >
                 {key === 'All' ? 'All Domains' : `Domain ${key}`}
@@ -437,7 +437,7 @@ export default function MatchingPage() {
                 <button
                   onClick={() => startQuiz(filteredItems)}
                   disabled={filteredItems.length === 0}
-                  className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 disabled:opacity-50 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
+                  className="flex items-center gap-2   disabled:opacity-50 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
                 >
                   <Shuffle className="w-4 h-4" />
                   {selectedDomain === 'All'
@@ -447,7 +447,7 @@ export default function MatchingPage() {
                 {filteredItems.length > 10 && (
                   <button
                     onClick={() => startQuiz(shuffle(filteredItems).slice(0, Math.min(20, filteredItems.length)))}
-                    className="flex items-center gap-2 border border-teal-300 text-[#00c2d6] bg-white px-4 py-2.5 rounded-lg hover:bg-[#e2fcff] transition-colors text-sm"
+                    className="flex items-center gap-2 border border-[#00c2d6]/40 text-[#00c2d6] bg-white px-4 py-2.5 rounded-lg hover:bg-[#e2fcff] transition-colors text-sm"
                   >
                     Quick {Math.min(20, filteredItems.length)}
                   </button>

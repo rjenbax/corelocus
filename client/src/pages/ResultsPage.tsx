@@ -165,7 +165,7 @@ export default function ResultsPage() {
               <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-semibold mb-4 ${
                 passingScore
                   ? 'bg-[#e3e5fb] text-[#6066bb] border border-[#6066bb]/40'
-                  : 'bg-teal-100 text-[#00c2d6] border border-[#00c2d6]/40'
+                  : 'bg-[#e2fcff] text-[#00c2d6] border border-[#00c2d6]/40'
               }`}>
                 {passingScore ? <Award className="w-4 h-4" /> : <TrendingUp className="w-4 h-4" />}
                 {passingScore ? 'Strong Performance' : 'Keep Studying'}

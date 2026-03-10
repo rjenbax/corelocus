@@ -92,7 +92,7 @@ function MissedItemsPanel({
   if (missed.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20 text-center">
-        <CheckCircle2 className="w-12 h-12 text-violet-400 mb-4" />
+        <CheckCircle2 className="w-12 h-12 mb-4" style={{ color: '#6066bb' }} />
         <h3 className="font-bold text-foreground text-lg mb-2">No missed items yet</h3>
         <p className="text-sm text-muted-foreground max-w-xs">
           Complete some quiz sessions and any terms you miss more than you get right will appear here for review.
@@ -144,9 +144,10 @@ function MissedItemsPanel({
               className={cn(
                 "text-xs font-medium px-3 py-1 rounded-full border transition-colors",
                 sortBy === s
-                  ? "bg-teal-600 text-white border-teal-600"
-                  : "border-border bg-card text-muted-foreground hover:border-teal-300"
+                  ? "text-white border-transparent"
+                  : "border-border bg-card text-muted-foreground hover:border-[#00c2d6]"
               )}
+              style={sortBy === s ? { background: '#00c2d6' } : {}}
             >
               {s === 'accuracy' ? 'Lowest Accuracy' : 'Most Attempted'}
             </button>
@@ -154,7 +155,7 @@ function MissedItemsPanel({
         </div>
         <button
           onClick={() => onPractice(missedRRItems)}
-          className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg bg-teal-600 text-white hover:bg-teal-700 transition-colors"
+          className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg text-white transition-colors"
         >
           <Zap className="w-3 h-3" />
           Practice All Missed ({missed.length})
@@ -209,7 +210,7 @@ function MissedItemsPanel({
                       const rrItem = rapidRecallItems.find(r => r.id === entry.id);
                       if (rrItem) onPractice([rrItem]);
                     }}
-                    className="text-xs font-medium px-2.5 py-1 rounded-lg bg-teal-600 text-white hover:bg-teal-700 transition-colors"
+                    className="text-xs font-medium px-2.5 py-1 rounded-lg text-white transition-colors"
                   >
                     Practice
                   </button>
@@ -271,7 +272,7 @@ function MissedItemsPanel({
                       const rrItem = rapidRecallItems.find(r => r.id === entry.id);
                       if (rrItem) onPractice([rrItem]);
                     }}
-                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border-2 border-[#00c2d6]/40 bg-[#e2fcff] text-[#00c2d6] text-sm font-medium hover:bg-teal-100 transition-colors"
+                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl border-2 border-[#00c2d6]/40 bg-[#e2fcff] text-[#00c2d6] text-sm font-medium hover:bg-[#e2fcff] transition-colors"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
                     Practice this term
@@ -303,7 +304,7 @@ const DOMAIN_FULL: Record<string, string> = {
 };
 const DOMAIN_COLORS: Record<string, { badge: string; pill: string }> = {
   A: { badge: 'bg-[#e3e5fb] text-[#6066bb]', pill: 'bg-[#e3e5fb] border-[#6066bb]/40 text-[#6066bb]' },
-  B: { badge: 'bg-teal-100 text-[#00c2d6]',    pill: 'bg-[#e2fcff] border-[#00c2d6]/40 text-[#00c2d6]' },
+  B: { badge: 'bg-[#e2fcff] text-[#00c2d6]',    pill: 'bg-[#e2fcff] border-[#00c2d6]/40 text-[#00c2d6]' },
   C: { badge: 'bg-sky-100 text-sky-800',      pill: 'bg-sky-50 border-sky-200 text-sky-700' },
   D: { badge: 'bg-indigo-100 text-indigo-800', pill: 'bg-indigo-50 border-indigo-200 text-indigo-700' },
   E: { badge: 'bg-rose-100 text-rose-800',    pill: 'bg-rose-50 border-rose-200 text-rose-700' },
@@ -335,7 +336,7 @@ function TermDetailModal({
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center gap-2 flex-wrap">
             {item.taskItem && (
-              <span className="text-xs font-black bg-teal-100 text-[#00c2d6] border border-[#00c2d6]/40 px-2 py-0.5 rounded">
+              <span className="text-xs font-black bg-[#e2fcff] text-[#00c2d6] border border-[#00c2d6]/40 px-2 py-0.5 rounded">
                 {item.taskItem}
               </span>
             )}
@@ -479,7 +480,7 @@ function CategoryAccordion({
                 {domAcc !== null && (
                   <span className={cn(
                     'text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0',
-                    domAcc >= 80 ? 'bg-teal-100 text-[#00c2d6]' :
+                    domAcc >= 80 ? 'bg-[#e2fcff] text-[#00c2d6]' :
                     domAcc >= 50 ? 'bg-amber-100 text-amber-800' :
                     'bg-[#feeffd] text-[#d4a0d4]'
                   )}>
@@ -496,7 +497,7 @@ function CategoryAccordion({
               {/* Practice this domain button */}
               <button
                 onClick={() => onPracticeCategory(domItems)}
-                className="flex items-center gap-1.5 text-xs font-medium text-[#00c2d6] border border-[#00c2d6]/40 bg-[#e2fcff] hover:bg-teal-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
+                className="flex items-center gap-1.5 text-xs font-medium text-[#00c2d6] border border-[#00c2d6]/40 bg-[#e2fcff] hover:bg-[#e2fcff] px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
               >
                 <Zap className="w-3 h-3" />
                 Practice
@@ -693,7 +694,7 @@ export default function RapidRecallPage() {
             </button>
             <div className="flex items-center gap-3">
               {selectedDomain !== 'All' && (
-                <span className="text-xs bg-teal-100 text-[#00c2d6] px-2 py-0.5 rounded-full font-medium">
+                <span className="text-xs bg-[#e2fcff] text-[#00c2d6] px-2 py-0.5 rounded-full font-medium">
                   Domain {selectedDomain}
                 </span>
               )}
@@ -707,14 +708,14 @@ export default function RapidRecallPage() {
             </div>
           </div>
           <div className="h-1 bg-muted">
-            <div className="h-full bg-teal-600 transition-all duration-300" style={{ width: `${pct}%` }} />
+            <div className="h-full transition-all duration-300" style={{ width: `${pct}%` }} />
           </div>
         </header>
 
         <div className="container py-8 max-w-2xl mx-auto">
           <div className="mb-2 flex items-center gap-2">
             <span className="text-xs font-medium text-[#00c2d6] uppercase tracking-wider">{currentItem.category} · Domain {currentItem.domain}</span>
-            <span className="text-[11px] font-bold text-white bg-teal-600 px-2 py-0.5 rounded-full">{currentItem.taskItem}</span>
+            <span className="text-[11px] font-bold text-white px-2 py-0.5 rounded-full">{currentItem.taskItem}</span>
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-8">
             What is the correct definition of <span className="text-[#00c2d6]">{currentItem.term}</span>?
@@ -731,7 +732,7 @@ export default function RapidRecallPage() {
                   disabled={showFeedback}
                   className={cn(
                     "w-full text-left p-4 rounded-xl border-2 text-sm leading-relaxed transition-all",
-                    !showFeedback && "hover:border-teal-300 hover:bg-[#e2fcff]/50 cursor-pointer",
+                    !showFeedback && "hover:border-[#00c2d6] hover:bg-[#e2fcff]/50 cursor-pointer",
                     showFeedback && isCorrect && "border-[#6066bb] bg-[#e3e5fb] text-[#6066bb]",
                     showFeedback && isSelected && !isCorrect && "border-[#d4a0d4] bg-[#feeffd] text-[#d4a0d4]",
                     !showFeedback && "border-border bg-card",
@@ -772,7 +773,7 @@ export default function RapidRecallPage() {
               )}
               <button
                 onClick={handleNext}
-                className="w-full flex items-center justify-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 rounded-xl transition-colors"
+                className="w-full flex items-center justify-center gap-2 text-white font-medium py-3 rounded-xl transition-colors"
               >
                 {currentIdx + 1 >= quizItems.length ? 'See Results' : 'Next Question'}
                 <ChevronRight className="w-4 h-4" />
@@ -810,7 +811,7 @@ export default function RapidRecallPage() {
             {pct >= 80 ? 'Great work! Move on to Scenario Matching.' : 'Keep practicing — review the terms you missed.'}
           </p>
           <div className="flex gap-3 justify-center flex-wrap">
-            <button onClick={() => startQuiz(filteredItems)} className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
+            <button onClick={() => startQuiz(filteredItems)} className="flex items-center gap-2 text-white font-medium px-5 py-2.5 rounded-lg transition-colors">
               <RotateCcw className="w-4 h-4" />
               Try Again
             </button>
@@ -844,7 +845,7 @@ export default function RapidRecallPage() {
             <div className="flex items-center gap-2">
               <Zap className="w-4 h-4 text-[#00c2d6]" />
               <span className="font-semibold text-sm">Rapid Recall</span>
-              <span className="text-xs bg-teal-100 text-[#00c2d6] px-2 py-0.5 rounded-full">Tier 2</span>
+              <span className="text-xs bg-[#e2fcff] text-[#00c2d6] px-2 py-0.5 rounded-full">Tier 2</span>
             </div>
           </div>
           <div className="text-xs text-muted-foreground">
@@ -860,9 +861,9 @@ export default function RapidRecallPage() {
               className={cn(
                 "flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium border-b-2 transition-colors",
                 browseTab === 'all'
-                  ? "border-teal-600 text-[#00c2d6]"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
+                  ? "text-[#00c2d6]" : "border-transparent text-muted-foreground hover:text-foreground"
               )}
+              style={browseTab === 'all' ? { borderColor: '#00c2d6' } : {}}
             >
               <BookOpen className="w-3.5 h-3.5" />
               All Terms
@@ -872,16 +873,16 @@ export default function RapidRecallPage() {
               className={cn(
                 "flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium border-b-2 transition-colors",
                 browseTab === 'missed'
-                  ? "border-teal-600 text-[#00c2d6]"
-                  : "border-transparent text-muted-foreground hover:text-foreground"
+                  ? "text-[#00c2d6]" : "border-transparent text-muted-foreground hover:text-foreground"
               )}
+              style={browseTab === 'missed' ? { borderColor: '#00c2d6' } : {}}
             >
               <ClipboardX className="w-3.5 h-3.5" />
               Missed Items
               {missedItems.length > 0 && (
                 <span className={cn(
                   "ml-1 text-xs font-bold px-1.5 py-0.5 rounded-full",
-                  browseTab === 'missed' ? "bg-teal-100 text-[#00c2d6]" : "bg-[#feeffd] text-[#d4a0d4]"
+                  browseTab === 'missed' ? "bg-[#e2fcff] text-[#00c2d6]" : "bg-[#feeffd] text-[#d4a0d4]"
                 )}>
                   {missedItems.length}
                 </span>
@@ -906,9 +907,10 @@ export default function RapidRecallPage() {
                 className={cn(
                   'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
                   selectedDomain === key
-                    ? 'bg-teal-600 text-white border-teal-600 shadow-sm'
-                    : 'bg-card text-muted-foreground border-border hover:border-teal-300 hover:text-[#00c2d6]'
+                    ? 'text-white border-transparent shadow-sm'
+                    : 'bg-card text-muted-foreground border-border hover:border-[#00c2d6] hover:text-[#00c2d6]'
                 )}
+                style={selectedDomain === key ? { background: '#00c2d6' } : {}}
               >
                 {label}
                 <span className={cn('ml-1.5 text-[10px]', selectedDomain === key ? 'text-amber-100' : 'text-muted-foreground/60')}>
@@ -936,7 +938,7 @@ export default function RapidRecallPage() {
                   <div className="flex gap-2 flex-wrap">
                     <button
                       onClick={() => startQuiz(filteredItems)}
-                      className="flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
+                      className="flex items-center gap-2 text-white font-medium px-5 py-2.5 rounded-lg transition-colors text-sm"
                     >
                       <Zap className="w-4 h-4" />
                       {selectedDomain === 'All'
@@ -946,7 +948,7 @@ export default function RapidRecallPage() {
                     {filteredItems.length > 10 && (
                       <button
                         onClick={() => startQuiz(shuffle(filteredItems).slice(0, Math.min(20, filteredItems.length)))}
-                        className="flex items-center gap-2 border border-teal-300 text-[#00c2d6] bg-white px-4 py-2.5 rounded-lg hover:bg-[#e2fcff] transition-colors text-sm"
+                        className="flex items-center gap-2 border border-[#00c2d6]/40 text-[#00c2d6] bg-white px-4 py-2.5 rounded-lg hover:bg-[#e2fcff] transition-colors text-sm"
                       >
                         Quick {Math.min(20, filteredItems.length)}
                       </button>
