@@ -1,6 +1,8 @@
 /**
  * Flashcards — Tier 1: Remember (L1)
- * Flip cards, domain filter, mastery tracking, shuffle mode, mark-as-weak
+ * Flip cards, domain filter, mastery tracking, shuffle mode
+ * Buttons: "Flag Unsure" / "Check Mastered" (outline) → "Unsure" / "Mastered" (filled)
+ * Card shows status flags when set. Top bar shows Show Mastered / Show Unsure / Show Unrated counts.
  */
 import { useState, useMemo, useCallback } from 'react';
 import { useLocation } from 'wouter';
@@ -11,6 +13,7 @@ import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
 
 const ALL_DOMAINS = 'ALL';
+type StatusFilter = 'all' | 'mastered' | 'unsure' | 'unrated';
 
 export default function FlashcardsPage() {
   const [, navigate] = useLocation();
@@ -18,27 +21,39 @@ export default function FlashcardsPage() {
   const [selectedDomain, setSelectedDomain] = useState<string>(ALL_DOMAINS);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [showMasteredOnly, setShowMasteredOnly] = useState(false);
   const [isShuffled, setIsShuffled] = useState(false);
-  const [showWeakOnly, setShowWeakOnly] = useState(false);
-  const [weakIds, setWeakIds] = useState<Set<string>>(new Set());
   const [shuffleSeed, setShuffleSeed] = useState(0);
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
 
-  const domains = useMemo(() => {
-    const unique = Array.from(new Set(flashcards.map(f => f.domain)));
-    return unique.sort();
-  }, []);
+  // "Unsure" is local state (not persisted to ProgressContext — can be extended later)
+  const [unsureIds, setUnsureIds] = useState<Set<string>>(new Set());
+
+  // Mastered IDs from progress context
+  const masteredIds = useMemo(
+    () => new Set(progress.flashcards.filter(f => f.mastered).map(f => f.cardId)),
+    [progress.flashcards]
+  );
+
+  // Counts across ALL cards in the current domain (before status filter)
+  const domainCards = useMemo(() => {
+    if (selectedDomain === ALL_DOMAINS) return flashcards;
+    return flashcards.filter(f => f.domain === selectedDomain);
+  }, [selectedDomain]);
+
+  const masteredCount  = useMemo(() => domainCards.filter(f => masteredIds.has(f.id)).length, [domainCards, masteredIds]);
+  const unsureCount    = useMemo(() => domainCards.filter(f => unsureIds.has(f.id)).length,   [domainCards, unsureIds]);
+  const unratedCount   = useMemo(
+    () => domainCards.filter(f => !masteredIds.has(f.id) && !unsureIds.has(f.id)).length,
+    [domainCards, masteredIds, unsureIds]
+  );
+
+  const domains = useMemo(() => Array.from(new Set(flashcards.map(f => f.domain))).sort(), []);
 
   const filtered = useMemo(() => {
-    let cards = flashcards;
-    if (selectedDomain !== ALL_DOMAINS) cards = cards.filter(f => f.domain === selectedDomain);
-    if (showMasteredOnly) {
-      const masteredIds = new Set(progress.flashcards.filter(f => f.mastered).map(f => f.cardId));
-      cards = cards.filter(f => masteredIds.has(f.id));
-    }
-    if (showWeakOnly) {
-      cards = cards.filter(f => weakIds.has(f.id));
-    }
+    let cards = domainCards;
+    if (statusFilter === 'mastered') cards = cards.filter(f => masteredIds.has(f.id));
+    else if (statusFilter === 'unsure') cards = cards.filter(f => unsureIds.has(f.id));
+    else if (statusFilter === 'unrated') cards = cards.filter(f => !masteredIds.has(f.id) && !unsureIds.has(f.id));
     if (isShuffled) {
       const arr = [...cards];
       let seed = shuffleSeed;
@@ -50,11 +65,9 @@ export default function FlashcardsPage() {
       return arr;
     }
     return cards;
-  }, [selectedDomain, showMasteredOnly, showWeakOnly, weakIds, isShuffled, shuffleSeed, progress.flashcards]);
+  }, [domainCards, statusFilter, masteredIds, unsureIds, isShuffled, shuffleSeed]);
 
   const currentCard = filtered[currentIndex] ?? null;
-  const masteredIds = useMemo(() => new Set(progress.flashcards.filter(f => f.mastered).map(f => f.cardId)), [progress.flashcards]);
-  const masteredCount = filtered.filter(f => masteredIds.has(f.id)).length;
 
   const handleFlip = useCallback(() => {
     if (!currentCard) return;
@@ -62,15 +75,33 @@ export default function FlashcardsPage() {
     setIsFlipped(f => !f);
   }, [currentCard, markFlashcardSeen]);
 
-  const handleMastered = useCallback(() => {
+  const handleToggleMastered = useCallback(() => {
     if (!currentCard) return;
+    if (masteredIds.has(currentCard.id)) {
+      // Already mastered — no toggle back in this design (could extend later)
+      return;
+    }
+    // Remove from unsure if it was there
+    setUnsureIds(prev => { const s = new Set(prev); s.delete(currentCard.id); return s; });
     markFlashcardMastered(currentCard.id);
     toast.success('Marked as mastered!', { duration: 1500 });
-    setIsFlipped(false);
-    setTimeout(() => {
-      setCurrentIndex(i => Math.min(i + 1, filtered.length - 1));
-    }, 200);
-  }, [currentCard, markFlashcardMastered, filtered.length]);
+  }, [currentCard, masteredIds, markFlashcardMastered]);
+
+  const handleToggleUnsure = useCallback(() => {
+    if (!currentCard) return;
+    setUnsureIds(prev => {
+      const next = new Set(prev);
+      if (next.has(currentCard.id)) {
+        next.delete(currentCard.id);
+        toast.info('Removed unsure flag', { duration: 1500 });
+      } else {
+        // Remove mastered status not possible via context right now, just flag unsure
+        next.add(currentCard.id);
+        toast.warning('Flagged as unsure', { duration: 1500 });
+      }
+      return next;
+    });
+  }, [currentCard]);
 
   const handleNext = useCallback(() => {
     setIsFlipped(false);
@@ -94,23 +125,17 @@ export default function FlashcardsPage() {
     if (next) setShuffleSeed(Math.floor(Math.random() * 1e9));
     setCurrentIndex(0);
     setIsFlipped(false);
-    toast.info(next ? 'Deck shuffled' : 'Shuffle off — back to original order', { duration: 1500 });
+    toast.info(next ? 'Deck shuffled' : 'Shuffle off', { duration: 1500 });
   };
 
-  const handleMarkWeak = useCallback(() => {
-    if (!currentCard) return;
-    setWeakIds(prev => {
-      const next = new Set(prev);
-      if (next.has(currentCard.id)) {
-        next.delete(currentCard.id);
-        toast.info('Removed from weak cards', { duration: 1500 });
-      } else {
-        next.add(currentCard.id);
-        toast.warning('Flagged as weak — review again soon', { duration: 1800 });
-      }
-      return next;
-    });
-  }, [currentCard]);
+  const handleStatusFilter = (f: StatusFilter) => {
+    setStatusFilter(prev => prev === f ? 'all' : f);
+    setCurrentIndex(0);
+    setIsFlipped(false);
+  };
+
+  const isMastered = currentCard ? masteredIds.has(currentCard.id) : false;
+  const isUnsure   = currentCard ? unsureIds.has(currentCard.id)   : false;
 
   return (
     <div className="min-h-screen bg-background">
@@ -130,13 +155,8 @@ export default function FlashcardsPage() {
             </div>
           </div>
           <div className="flex items-center gap-2">
-            {weakIds.size > 0 && (
-              <span className="text-xs text-orange-600 bg-orange-50 border border-orange-200 px-2 py-0.5 rounded-full">
-                {weakIds.size} weak
-              </span>
-            )}
             <span className="text-xs text-muted-foreground">
-              {masteredCount} / {filtered.length} mastered
+              {masteredCount} / {domainCards.length} mastered
             </span>
           </div>
         </div>
@@ -178,7 +198,7 @@ export default function FlashcardsPage() {
         </div>
 
         {/* Mode toggles row */}
-        <div className="flex items-center gap-2 mb-5 flex-wrap">
+        <div className="flex items-center gap-2 mb-3 flex-wrap">
           <button
             onClick={handleShuffle}
             className={cn(
@@ -189,28 +209,43 @@ export default function FlashcardsPage() {
             <Shuffle className="w-3 h-3" />
             {isShuffled ? 'Shuffled' : 'Shuffle'}
           </button>
+        </div>
+
+        {/* Status filter counts row — matches reference image */}
+        <div className="flex items-center gap-4 mb-4 text-sm font-medium">
           <button
-            onClick={() => { setShowMasteredOnly(s => !s); setCurrentIndex(0); setIsFlipped(false); }}
+            onClick={() => handleStatusFilter('mastered')}
             className={cn(
-              "flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-colors",
-              showMasteredOnly ? "bg-violet-100 text-violet-800 border-violet-300" : "border-border text-muted-foreground hover:border-violet-300"
+              "transition-colors",
+              statusFilter === 'mastered'
+                ? "text-violet-700 underline underline-offset-2"
+                : "text-foreground hover:text-violet-700"
             )}
           >
-            <CheckCircle2 className="w-3 h-3" />
-            {showMasteredOnly ? 'Mastered only' : 'Show mastered'}
+            Show Mastered ({masteredCount})
           </button>
-          {weakIds.size > 0 && (
-            <button
-              onClick={() => { setShowWeakOnly(s => !s); setCurrentIndex(0); setIsFlipped(false); }}
-              className={cn(
-                "flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-colors",
-                showWeakOnly ? "bg-orange-100 text-orange-800 border-orange-300" : "border-border text-muted-foreground hover:border-orange-300"
-              )}
-            >
-              <Flag className="w-3 h-3" />
-              {showWeakOnly ? `Weak only (${weakIds.size})` : `Weak cards (${weakIds.size})`}
-            </button>
-          )}
+          <button
+            onClick={() => handleStatusFilter('unsure')}
+            className={cn(
+              "transition-colors",
+              statusFilter === 'unsure'
+                ? "text-pink-600 underline underline-offset-2"
+                : "text-foreground hover:text-pink-600"
+            )}
+          >
+            Show Unsure ({unsureCount})
+          </button>
+          <button
+            onClick={() => handleStatusFilter('unrated')}
+            className={cn(
+              "transition-colors",
+              statusFilter === 'unrated'
+                ? "text-blue-600 underline underline-offset-2"
+                : "text-foreground hover:text-blue-600"
+            )}
+          >
+            Show Unrated ({unratedCount})
+          </button>
         </div>
 
         {/* Progress bar */}
@@ -218,11 +253,11 @@ export default function FlashcardsPage() {
           <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
             <div
               className="h-full bg-blue-500 rounded-full transition-all duration-500"
-              style={{ width: filtered.length > 0 ? `${(masteredCount / filtered.length) * 100}%` : '0%' }}
+              style={{ width: domainCards.length > 0 ? `${(masteredCount / domainCards.length) * 100}%` : '0%' }}
             />
           </div>
           <span className="text-xs text-muted-foreground whitespace-nowrap">
-            {filtered.length > 0 ? Math.round((masteredCount / filtered.length) * 100) : 0}% mastered
+            {domainCards.length > 0 ? Math.round((masteredCount / domainCards.length) * 100) : 0}% mastered
           </span>
         </div>
 
@@ -232,7 +267,6 @@ export default function FlashcardsPage() {
             <div className="text-center mb-2 text-xs text-muted-foreground">
               {currentIndex + 1} of {filtered.length} · Click card to flip
               {isShuffled && <span className="ml-1 text-blue-500">· Shuffled</span>}
-              {showWeakOnly && <span className="ml-1 text-orange-500">· Weak cards</span>}
             </div>
 
             {/* Flip card */}
@@ -253,23 +287,31 @@ export default function FlashcardsPage() {
                   className="absolute inset-0 rounded-2xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white p-8 flex flex-col items-center justify-center"
                   style={{ backfaceVisibility: 'hidden' }}
                 >
-                  {weakIds.has(currentCard.id) && (
-                    <div className="absolute top-4 right-4 text-orange-400">
-                      <Flag className="w-4 h-4 fill-orange-300" />
+                  {/* Status flags on card — only shown when a status is set */}
+                  {(isMastered || isUnsure) && (
+                    <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-3">
+                      {isUnsure && (
+                        <div className="flex items-center gap-1 text-pink-600 text-xs font-medium">
+                          <Flag className="w-3.5 h-3.5 fill-pink-500" />
+                          <span>Unsure</span>
+                        </div>
+                      )}
+                      {isMastered && (
+                        <div className="flex items-center gap-1 text-violet-700 text-xs font-medium">
+                          <CheckCircle2 className="w-3.5 h-3.5" />
+                          <span>Mastered</span>
+                        </div>
+                      )}
                     </div>
                   )}
+
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">{currentCard.domainFull}</span>
                   </div>
-                  <h2 className="text-2xl font-bold text-foreground text-center leading-tight mb-3">
+                  <h2 className="text-2xl font-bold text-foreground text-center leading-tight">
                     {currentCard.term}
                   </h2>
-                  {masteredIds.has(currentCard.id) && (
-                    <div className="flex items-center gap-1 text-violet-700 text-xs mt-2">
-                      <CheckCircle2 className="w-3.5 h-3.5" />
-                      <span>Mastered</span>
-                    </div>
-                  )}
+
                   <div className="absolute bottom-4 right-4 text-blue-300">
                     <RotateCcw className="w-4 h-4" />
                   </div>
@@ -280,6 +322,23 @@ export default function FlashcardsPage() {
                   className="absolute inset-0 rounded-2xl border-2 border-blue-300 bg-gradient-to-br from-white to-blue-50 p-8 flex flex-col items-center justify-center"
                   style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
                 >
+                  {/* Status flags on back too */}
+                  {(isMastered || isUnsure) && (
+                    <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-3">
+                      {isUnsure && (
+                        <div className="flex items-center gap-1 text-pink-600 text-xs font-medium">
+                          <Flag className="w-3.5 h-3.5 fill-pink-500" />
+                          <span>Unsure</span>
+                        </div>
+                      )}
+                      {isMastered && (
+                        <div className="flex items-center gap-1 text-violet-700 text-xs font-medium">
+                          <CheckCircle2 className="w-3.5 h-3.5" />
+                          <span>Mastered</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-xs font-medium text-blue-600 uppercase tracking-wider">Definition</span>
                   </div>
@@ -297,7 +356,7 @@ export default function FlashcardsPage() {
             </div>
 
             {/* Controls */}
-            <div className="flex items-center justify-between gap-2 flex-wrap">
+            <div className="flex items-center justify-between gap-2">
               <button
                 onClick={handlePrev}
                 className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground border border-border rounded-lg px-4 py-2 transition-colors hover:bg-muted/50"
@@ -307,31 +366,32 @@ export default function FlashcardsPage() {
               </button>
 
               <div className="flex items-center gap-2">
+                {/* Flag Unsure button — outline → filled pink when active */}
                 <button
-                  onClick={handleMarkWeak}
+                  onClick={(e) => { e.stopPropagation(); handleToggleUnsure(); }}
                   className={cn(
-                    "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-colors border",
-                    weakIds.has(currentCard.id)
-                      ? "bg-orange-100 text-orange-800 border-orange-300"
-                      : "bg-card text-muted-foreground border-border hover:border-orange-300 hover:text-orange-700"
+                    "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-all border",
+                    isUnsure
+                      ? "bg-pink-500 text-white border-pink-500 shadow-sm"
+                      : "bg-transparent text-muted-foreground border-border hover:border-pink-400 hover:text-pink-600"
                   )}
                 >
-                  <Flag className="w-4 h-4" />
-                  {weakIds.has(currentCard.id) ? 'Weak' : 'Flag Weak'}
+                  <Flag className={cn("w-4 h-4", isUnsure && "fill-white")} />
+                  {isUnsure ? 'Unsure' : 'Flag Unsure'}
                 </button>
 
+                {/* Check Mastered button — outline → filled violet when active */}
                 <button
-                  onClick={handleMastered}
-                  disabled={masteredIds.has(currentCard.id)}
+                  onClick={(e) => { e.stopPropagation(); handleToggleMastered(); }}
                   className={cn(
-                    "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-colors",
-                    masteredIds.has(currentCard.id)
-                      ? "bg-violet-100 text-violet-800 border border-violet-200 cursor-default"
-                      : "bg-violet-700 text-white hover:bg-violet-800"
+                    "flex items-center gap-1.5 text-sm font-medium rounded-lg px-4 py-2 transition-all border",
+                    isMastered
+                      ? "bg-violet-600 text-white border-violet-600 shadow-sm cursor-default"
+                      : "bg-transparent text-muted-foreground border-border hover:border-violet-400 hover:text-violet-600"
                   )}
                 >
                   <CheckCircle2 className="w-4 h-4" />
-                  {masteredIds.has(currentCard.id) ? 'Mastered' : 'Mastered'}
+                  {isMastered ? 'Mastered' : 'Check Mastered'}
                 </button>
               </div>
 
