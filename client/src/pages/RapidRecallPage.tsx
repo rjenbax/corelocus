@@ -313,6 +313,96 @@ const DOMAIN_COLORS: Record<string, { badge: string; pill: string }> = {
   I: { badge: 'bg-purple-100 text-purple-800', pill: 'bg-purple-50 border-purple-200 text-purple-700' },
 };
 
+// ─── Term Detail Modal ───────────────────────────────────────────────────────
+function TermDetailModal({
+  item,
+  onClose,
+}: {
+  item: (typeof rapidRecallItems)[0] | null;
+  onClose: () => void;
+}) {
+  if (!item) return null;
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        className="bg-card border border-border rounded-2xl shadow-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto p-6"
+        onClick={e => e.stopPropagation()}
+      >
+        {/* Header */}
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex items-center gap-2 flex-wrap">
+            {item.taskItem && (
+              <span className="text-xs font-black bg-teal-100 text-teal-800 border border-teal-200 px-2 py-0.5 rounded">
+                {item.taskItem}
+              </span>
+            )}
+            {item.domain && (
+              <span className="text-xs text-muted-foreground">Domain {item.domain}</span>
+            )}
+          </div>
+          <button
+            onClick={onClose}
+            className="text-muted-foreground hover:text-foreground transition-colors text-lg leading-none ml-2 flex-shrink-0"
+          >
+            ✕
+          </button>
+        </div>
+        {/* Term */}
+        <h2 className="text-xl font-bold text-foreground mb-4 leading-tight">{item.term}</h2>
+        {/* Definition */}
+        {item.correctDefinition && (
+          <div className="mb-4">
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-1">Definition</div>
+            <p className="text-sm text-foreground leading-relaxed">{item.correctDefinition}</p>
+          </div>
+        )}
+        {/* Misconceptions */}
+        {item.misconceptions && item.misconceptions.length > 0 && (
+          <div className="mb-4">
+            <div className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-2">Common Misconceptions</div>
+            <ul className="space-y-1.5">
+              {item.misconceptions.map((m, i) => (
+                <li key={i} className="text-sm text-foreground bg-amber-50 border border-amber-100 rounded-lg px-3 py-2 leading-relaxed">
+                  {m}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {/* Distractors */}
+        {item.distractors && item.distractors.length > 0 && (
+          <div>
+            <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-2">Common Confusions</div>
+            <ul className="space-y-1.5">
+              {item.distractors.map((d, i) => (
+                <li key={i} className="text-sm text-muted-foreground bg-muted/40 rounded-lg px-3 py-2 leading-relaxed">
+                  {d}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ─── Sorting helper: parse taskItem like "A-01" or "B-12" for numeric sort ────
+function sortByTaskItem(a: (typeof rapidRecallItems)[0], b: (typeof rapidRecallItems)[0]): number {
+  const parse = (ti?: string) => {
+    if (!ti) return { letter: 'Z', num: 999 };
+    const m = ti.match(/^([A-Z])[^0-9]*(\d+)/);
+    if (!m) return { letter: ti[0] ?? 'Z', num: 999 };
+    return { letter: m[1], num: parseInt(m[2], 10) };
+  };
+  const pa = parse(a.taskItem), pb = parse(b.taskItem);
+  if (pa.letter !== pb.letter) return pa.letter < pb.letter ? -1 : 1;
+  return pa.num - pb.num;
+}
+
 function CategoryAccordion({
   items,
   progress: prog,
@@ -323,6 +413,7 @@ function CategoryAccordion({
   onPracticeCategory: (items: typeof rapidRecallItems) => void;
 }) {
   const [openDomains, setOpenDomains] = useState<Set<string>>(new Set());
+  const [selectedTerm, setSelectedTerm] = useState<(typeof rapidRecallItems)[0] | null>(null);
 
   const toggleDomain = (d: string) => {
     setOpenDomains(prev => {
@@ -332,7 +423,7 @@ function CategoryAccordion({
     });
   };
 
-  // Group items by BACB domain, preserving canonical order
+  // Group items by BACB domain, preserving canonical order; sort each group by taskItem
   const grouped = useMemo(() => {
     const map = new Map<string, typeof rapidRecallItems>();
     DOMAIN_ORDER.forEach(d => map.set(d, []));
@@ -341,12 +432,17 @@ function CategoryAccordion({
       if (!map.has(d)) map.set(d, []);
       map.get(d)!.push(item);
     });
-    // Remove empty domains
-    map.forEach((v, k) => { if (v.length === 0) map.delete(k); });
+    // Sort each domain group by taskItem (A1, A2, A3...)
+    map.forEach((v, k) => {
+      if (v.length === 0) { map.delete(k); return; }
+      v.sort(sortByTaskItem);
+    });
     return map;
   }, [items]);
 
   return (
+    <>
+    <TermDetailModal item={selectedTerm} onClose={() => setSelectedTerm(null)} />
     <div className="space-y-2">
       {Array.from(grouped.entries()).map(([domain, domItems]) => {
         const isOpen = openDomains.has(domain);
@@ -416,7 +512,11 @@ function CategoryAccordion({
                     const attempted = rec ? rec.correct + rec.incorrect : 0;
                     const acc = attempted > 0 ? Math.round((rec!.correct / attempted) * 100) : null;
                     return (
-                      <div key={item.id} className="p-3 bg-card hover:bg-muted/40 transition-colors">
+                      <button
+                        key={item.id}
+                        onClick={() => setSelectedTerm(item)}
+                        className="p-3 bg-card hover:bg-teal-50 hover:border-teal-200 transition-colors text-left w-full cursor-pointer"
+                      >
                         <div className="flex items-center justify-between mb-1">
                           <span className={cn('text-[10px] font-bold border px-1.5 py-0.5 rounded', colors.pill)}>{item.taskItem}</span>
                           {acc !== null && (
@@ -425,9 +525,9 @@ function CategoryAccordion({
                         </div>
                         <div className="text-sm font-medium text-foreground leading-tight">{item.term}</div>
                         {acc === null && (
-                          <div className="text-[10px] mt-0.5 text-muted-foreground/50">Not started</div>
+                          <div className="text-[10px] mt-0.5 text-muted-foreground/50">Tap to view</div>
                         )}
-                      </div>
+                      </button>
                     );
                   })}
                 </div>
@@ -437,6 +537,7 @@ function CategoryAccordion({
         );
       })}
     </div>
+    </>
   );
 }
 
