@@ -66,8 +66,8 @@ export default function ReviewHubPage() {
       {/* Stats row */}
       <div className="grid grid-cols-4 gap-3 mb-6">
         {[
-          { label: 'Incorrect', value: incorrect, icon: <XCircle className="w-5 h-5 text-red-400" />, color: 'text-red-500' },
-          { label: 'Correct', value: correct, icon: <CheckCircle2 className="w-5 h-5 text-green-400" />, color: 'text-green-600' },
+          { label: 'Incorrect', value: incorrect, icon: <XCircle className="w-5 h-5 text-red-400" />, color: 'text-[#d4a0d4]' },
+          { label: 'Correct', value: correct, icon: <CheckCircle2 className="w-5 h-5 text-green-400" />, color: 'text-[#6066bb]' },
           { label: 'Due for Review', value: due, icon: <RotateCcw className="w-5 h-5 text-amber-400" />, color: 'text-amber-600' },
           { label: 'Total Attempted', value: total, icon: <BookOpen className="w-5 h-5 text-indigo-400" />, color: 'text-indigo-600' },
         ].map(stat => (
@@ -190,23 +190,23 @@ export default function ReviewHubPage() {
                             key={choice.letter}
                             className={cn(
                               'flex items-start gap-3 px-3 py-2.5 rounded-lg text-xs',
-                              isCorrectChoice && 'bg-green-50 border border-green-200',
-                              isSelected && !isCorrectChoice && 'bg-red-50 border border-red-200',
+                              isCorrectChoice && 'bg-[#e3e5fb] border border-[#6066bb]/40',
+                              isSelected && !isCorrectChoice && 'bg-[#feeffd] border border-[#d4a0d4]/40',
                               !isSelected && !isCorrectChoice && 'bg-gray-50 border border-gray-100',
                             )}
                           >
                             <span className={cn(
                               'flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold',
-                              isCorrectChoice && 'bg-green-500 text-white',
-                              isSelected && !isCorrectChoice && 'bg-red-500 text-white',
+                              isCorrectChoice && 'bg-[#e3e5fb]0 text-white',
+                              isSelected && !isCorrectChoice && 'bg-[#feeffd]0 text-white',
                               !isSelected && !isCorrectChoice && 'bg-gray-200 text-gray-500',
                             )}>
                               {choice.letter.toUpperCase()}
                             </span>
                             <span className={cn(
                               'leading-relaxed',
-                              isCorrectChoice && 'text-green-800',
-                              isSelected && !isCorrectChoice && 'text-red-800',
+                              isCorrectChoice && 'text-[#6066bb]',
+                              isSelected && !isCorrectChoice && 'text-[#d4a0d4]',
                               !isSelected && !isCorrectChoice && 'text-gray-500',
                             )}>
                               {choice.text}
@@ -220,7 +220,7 @@ export default function ReviewHubPage() {
                     {q.rationale && (
                       <div className={cn(
                         'rounded-lg p-3 border text-xs leading-relaxed',
-                        entry.correct ? 'bg-green-50 border-green-200 text-green-800' : 'bg-red-50 border-red-200 text-red-800'
+                        entry.correct ? 'bg-[#e3e5fb] border-[#6066bb]/40 text-[#6066bb]' : 'bg-[#feeffd] border-[#d4a0d4]/40 text-[#d4a0d4]'
                       )}>
                         <span className="font-semibold uppercase tracking-wider text-[10px] block mb-1">
                           {entry.correct ? '✓ Rationale' : '✗ Rationale'}

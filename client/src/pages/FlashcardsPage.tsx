@@ -233,8 +233,8 @@ export default function FlashcardsPage() {
             className={cn(
               "transition-colors",
               statusFilter === 'mastered'
-                ? "text-violet-700 underline underline-offset-2"
-                : "text-foreground hover:text-violet-700"
+                ? "text-[#6066bb] underline underline-offset-2"
+                : "text-foreground hover:text-[#6066bb]"
             )}
           >
             Show Mastered ({masteredCount})
@@ -312,7 +312,7 @@ export default function FlashcardsPage() {
                         </div>
                       )}
                       {isMastered && (
-                        <div className="flex items-center gap-1 text-violet-700 text-xs font-medium">
+                        <div className="flex items-center gap-1 text-[#6066bb] text-xs font-medium">
                           <CheckCircle2 className="w-3.5 h-3.5" />
                           <span>Mastered</span>
                         </div>
@@ -347,7 +347,7 @@ export default function FlashcardsPage() {
                         </div>
                       )}
                       {isMastered && (
-                        <div className="flex items-center gap-1 text-violet-700 text-xs font-medium">
+                        <div className="flex items-center gap-1 text-[#6066bb] text-xs font-medium">
                           <CheckCircle2 className="w-3.5 h-3.5" />
                           <span>Mastered</span>
                         </div>
@@ -408,7 +408,7 @@ export default function FlashcardsPage() {
                       ? "bg-violet-600 text-white border-violet-600 shadow-sm"
                       : isUnsure
                         ? "bg-transparent text-muted-foreground/30 border-border/30 cursor-not-allowed"
-                        : "bg-transparent text-muted-foreground border-border hover:border-violet-400 hover:text-violet-600"
+                        : "bg-transparent text-muted-foreground border-border hover:border-[#6066bb] hover:text-[#6066bb]"
                   )}
                 >
                   <CheckCircle2 className="w-4 h-4" />

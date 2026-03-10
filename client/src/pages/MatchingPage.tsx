@@ -105,9 +105,9 @@ function DomainAccordion({
                 {bestScore !== null && (
                   <span className={cn(
                     'text-xs font-bold px-2 py-0.5 rounded-full flex-shrink-0',
-                    bestScore >= 80 ? 'bg-teal-100 text-teal-800' :
+                    bestScore >= 80 ? 'bg-teal-100 text-[#00c2d6]' :
                     bestScore >= 70 ? 'bg-amber-100 text-amber-800' :
-                    'bg-red-100 text-red-700'
+                    'bg-[#feeffd] text-[#d4a0d4]'
                   )}>
                     Best: {bestScore}%
                   </span>
@@ -116,7 +116,7 @@ function DomainAccordion({
               {/* Practice this domain button */}
               <button
                 onClick={() => onPracticeDomain(domainItems)}
-                className="flex items-center gap-1.5 text-xs font-medium text-teal-700 border border-teal-200 bg-teal-50 hover:bg-teal-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
+                className="flex items-center gap-1.5 text-xs font-medium text-[#00c2d6] border border-[#00c2d6]/40 bg-[#e2fcff] hover:bg-teal-100 px-3 py-1.5 rounded-lg transition-colors flex-shrink-0"
               >
                 <Zap className="w-3 h-3" />
                 Practice
@@ -227,7 +227,7 @@ export default function MatchingPage() {
             </button>
             <div className="flex items-center gap-2">
               {selectedDomain !== 'All' && (
-                <span className="text-xs bg-teal-100 text-teal-700 px-2 py-0.5 rounded-full hidden sm:inline">
+                <span className="text-xs bg-teal-100 text-[#00c2d6] px-2 py-0.5 rounded-full hidden sm:inline">
                   {selectedDomain}
                 </span>
               )}
@@ -235,14 +235,14 @@ export default function MatchingPage() {
             </div>
           </div>
           <div className="h-1 bg-muted">
-            <div className="h-full bg-teal-500 transition-all duration-300" style={{ width: `${pct}%` }} />
+            <div className="h-full bg-[#e2fcff]0 transition-all duration-300" style={{ width: `${pct}%` }} />
           </div>
         </header>
 
         <div className="container py-8 max-w-2xl mx-auto">
           {/* Concept card */}
-          <div className="bg-teal-50 border-2 border-teal-200 rounded-2xl p-5 mb-6">
-            <div className="text-xs font-semibold text-teal-600 uppercase tracking-wider mb-2">
+          <div className="bg-[#e2fcff] border-2 border-[#00c2d6]/40 rounded-2xl p-5 mb-6">
+            <div className="text-xs font-semibold text-[#00c2d6] uppercase tracking-wider mb-2">
               {DOMAIN_LABELS[currentItem.domain] ?? currentItem.domain} · Match this concept
             </div>
             <h2 className="text-xl font-bold text-foreground mb-2">{currentItem.concept}</h2>
@@ -266,9 +266,9 @@ export default function MatchingPage() {
                   disabled={showFeedback}
                   className={cn(
                     "w-full text-left p-4 rounded-xl border-2 text-sm leading-relaxed transition-all",
-                    !showFeedback && "hover:border-teal-300 hover:bg-teal-50/50 cursor-pointer border-border bg-card",
-                    showFeedback && isThisCorrect && "border-violet-400 bg-violet-50",
-                    showFeedback && isSelected && !isThisCorrect && "border-red-400 bg-red-50",
+                    !showFeedback && "hover:border-teal-300 hover:bg-[#e2fcff]/50 cursor-pointer border-border bg-card",
+                    showFeedback && isThisCorrect && "border-[#6066bb] bg-[#e3e5fb]",
+                    showFeedback && isSelected && !isThisCorrect && "border-[#d4a0d4] bg-[#feeffd]",
                     showFeedback && !isSelected && !isThisCorrect && "border-border bg-card opacity-50",
                   )}
                 >
@@ -277,11 +277,11 @@ export default function MatchingPage() {
                       {String.fromCharCode(65 + i)}
                     </span>
                     <span className={cn(
-                      showFeedback && isThisCorrect && "text-violet-800",
-                      showFeedback && isSelected && !isThisCorrect && "text-red-800",
+                      showFeedback && isThisCorrect && "text-[#6066bb]",
+                      showFeedback && isSelected && !isThisCorrect && "text-[#d4a0d4]",
                     )}>{scenario.text}</span>
-                    {showFeedback && isThisCorrect && <CheckCircle2 className="w-4 h-4 text-violet-700 flex-shrink-0 ml-auto mt-0.5" />}
-                    {showFeedback && isSelected && !isThisCorrect && <XCircle className="w-4 h-4 text-red-600 flex-shrink-0 ml-auto mt-0.5" />}
+                    {showFeedback && isThisCorrect && <CheckCircle2 className="w-4 h-4 text-[#6066bb] flex-shrink-0 ml-auto mt-0.5" />}
+                    {showFeedback && isSelected && !isThisCorrect && <XCircle className="w-4 h-4 text-[#d4a0d4] flex-shrink-0 ml-auto mt-0.5" />}
                   </div>
                 </button>
               );
@@ -292,16 +292,16 @@ export default function MatchingPage() {
             <div className="space-y-3">
               <div className={cn(
                 "p-4 rounded-xl border",
-                isCorrect ? "bg-violet-50 border-violet-200" : "bg-red-50 border-red-200"
+                isCorrect ? "bg-[#e3e5fb] border-[#6066bb]/40" : "bg-[#feeffd] border-[#d4a0d4]/40"
               )}>
-                <div className={cn("font-semibold text-sm mb-1", isCorrect ? "text-violet-800" : "text-red-700")}>
+                <div className={cn("font-semibold text-sm mb-1", isCorrect ? "text-[#6066bb]" : "text-[#d4a0d4]")}>
                   {isCorrect ? '✓ Correct!' : '✗ Not quite.'}
                 </div>
                 <p className="text-xs leading-relaxed text-muted-foreground">
                   {selectedScenario?.explanation ?? correctScenario.explanation}
                 </p>
                 {!isCorrect && (
-                  <p className="text-xs text-violet-800 mt-2 font-medium">
+                  <p className="text-xs text-[#6066bb] mt-2 font-medium">
                     Correct: {correctScenario.text.substring(0, 80)}...
                   </p>
                 )}
@@ -336,12 +336,12 @@ export default function MatchingPage() {
         </header>
         <div className="container py-10 max-w-lg mx-auto text-center">
           {selectedDomain !== 'All' && (
-            <div className="inline-flex items-center gap-1.5 text-xs font-medium text-teal-700 bg-teal-100 rounded-full px-3 py-1 mb-4">
+            <div className="inline-flex items-center gap-1.5 text-xs font-medium text-[#00c2d6] bg-teal-100 rounded-full px-3 py-1 mb-4">
               <Filter className="w-3 h-3" />
               {selectedDomain}
             </div>
           )}
-          <div className="text-6xl font-black text-teal-600 mb-2">{pct}%</div>
+          <div className="text-6xl font-black text-[#00c2d6] mb-2">{pct}%</div>
           <div className="text-lg font-semibold text-foreground mb-1">{correct} of {results.length} correct</div>
           <p className="text-sm text-muted-foreground mb-8">
             {pct >= 70
@@ -356,7 +356,7 @@ export default function MatchingPage() {
             {selectedDomain !== 'All' && (
               <button
                 onClick={() => { setSelectedDomain('All'); setMode('browse'); }}
-                className="flex items-center gap-2 border border-teal-300 text-teal-700 bg-teal-50 px-5 py-2.5 rounded-lg hover:bg-teal-100 transition-colors"
+                className="flex items-center gap-2 border border-teal-300 text-[#00c2d6] bg-[#e2fcff] px-5 py-2.5 rounded-lg hover:bg-teal-100 transition-colors"
               >
                 Practice All Domains
               </button>
@@ -382,9 +382,9 @@ export default function MatchingPage() {
             </button>
             <span className="text-border">|</span>
             <div className="flex items-center gap-2">
-              <Shuffle className="w-4 h-4 text-teal-600" />
+              <Shuffle className="w-4 h-4 text-[#00c2d6]" />
               <span className="font-semibold text-sm">Scenario Matching</span>
-              <span className="text-xs bg-teal-100 text-teal-800 px-2 py-0.5 rounded-full">Tier 3</span>
+              <span className="text-xs bg-teal-100 text-[#00c2d6] px-2 py-0.5 rounded-full">Tier 3</span>
             </div>
           </div>
           <div className="text-xs text-muted-foreground">
@@ -410,7 +410,7 @@ export default function MatchingPage() {
                   'px-3 py-1.5 rounded-full text-xs font-medium border transition-all',
                   selectedDomain === key
                     ? 'bg-teal-600 text-white border-teal-600 shadow-sm'
-                    : 'bg-card text-muted-foreground border-border hover:border-teal-300 hover:text-teal-800'
+                    : 'bg-card text-muted-foreground border-border hover:border-teal-300 hover:text-[#00c2d6]'
                 )}
               >
                 {key === 'All' ? 'All Domains' : `Domain ${key}`}
@@ -423,7 +423,7 @@ export default function MatchingPage() {
         </div>
 
         {/* Start quiz CTA */}
-        <div className="bg-gradient-to-r from-teal-50 to-cyan-50 border-2 border-teal-200 rounded-2xl p-6 mb-8">
+        <div className="bg-gradient-to-r from-teal-50 to-cyan-50 border-2 border-[#00c2d6]/40 rounded-2xl p-6 mb-8">
           <div className="flex items-start justify-between gap-4">
             <div>
               <h2 className="text-xl font-bold text-foreground mb-1">
@@ -447,7 +447,7 @@ export default function MatchingPage() {
                 {filteredItems.length > 10 && (
                   <button
                     onClick={() => startQuiz(shuffle(filteredItems).slice(0, Math.min(20, filteredItems.length)))}
-                    className="flex items-center gap-2 border border-teal-300 text-teal-800 bg-white px-4 py-2.5 rounded-lg hover:bg-teal-50 transition-colors text-sm"
+                    className="flex items-center gap-2 border border-teal-300 text-[#00c2d6] bg-white px-4 py-2.5 rounded-lg hover:bg-[#e2fcff] transition-colors text-sm"
                   >
                     Quick {Math.min(20, filteredItems.length)}
                   </button>
@@ -456,7 +456,7 @@ export default function MatchingPage() {
             </div>
             {bestScore !== null && (
               <div className="text-right flex-shrink-0">
-                <div className="text-3xl font-black text-teal-700">{bestScore}%</div>
+                <div className="text-3xl font-black text-[#00c2d6]">{bestScore}%</div>
                 <div className="text-xs text-muted-foreground">best score</div>
               </div>
             )}

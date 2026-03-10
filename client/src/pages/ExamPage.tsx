@@ -146,7 +146,7 @@ export default function ExamPage() {
             {/* Finish button */}
             <button
               onClick={handleFinish}
-              className="hidden sm:inline-flex items-center gap-1.5 text-xs bg-primary text-primary-foreground px-3 py-1.5 rounded-md font-medium hover:opacity-90 transition-opacity"
+              className="hidden sm:inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-md font-medium hover:opacity-90 transition-opacity text-white" style={{ background: '#00c2d6' }}
             >
               <Flag className="w-3 h-3" />
               Finish
@@ -179,13 +179,14 @@ export default function ExamPage() {
                           <button
                             key={q.id}
                             onClick={() => { goToQuestion(i); setNavOpen(false); }}
+                            style={answered && !isCurrent ? { background: correct ? '#e3e5fb' : '#feeffd', color: '#6066bb', borderColor: correct ? '#6066bb' : '#d4a0d4' } : undefined}
                             className={`w-8 h-8 rounded text-xs font-semibold transition-all ${
                               isCurrent
                                 ? 'ring-2 ring-primary bg-primary text-primary-foreground'
                                 : answered
                                 ? correct
-                                  ? 'bg-violet-100 text-violet-800 border border-violet-300'
-                                  : 'bg-red-100 text-red-800 border border-red-300'
+                                  ? 'border'
+                                  : 'border'
                                 : 'bg-muted text-muted-foreground hover:bg-accent'
                             }`}
                           >
@@ -277,8 +278,8 @@ export default function ExamPage() {
             </div>
 
             {/* Scenario box */}
-            <div className="bg-teal-50/60 border border-teal-200/70 rounded-xl p-5 mb-5">
-              <p className="text-xs font-semibold text-teal-800 uppercase tracking-wide mb-2">Clinical Scenario</p>
+            <div className="rounded-xl p-5 mb-5" style={{ background: '#e2fcff', border: '1px solid #00c2d6' }}>
+              <p className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: '#00c2d6' }}>Clinical Scenario</p>
               <p className="case-text text-sm">{currentQuestion.scenario}</p>
             </div>
 
@@ -308,23 +309,34 @@ export default function ExamPage() {
                     onClick={() => !isRevealed && submitAnswer(choice.letter)}
                     disabled={isRevealed}
                   >
-                    <span className={`w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold mt-0.5 ${
-                      isRevealed && choice.letter === currentQuestion.correctAnswer
-                        ? 'bg-violet-700 text-white'
-                        : isRevealed && choice.letter === selectedAnswer && choice.letter !== currentQuestion.correctAnswer
-                        ? 'bg-red-500 text-white'
-                        : choice.letter === selectedAnswer
-                        ? 'bg-primary text-primary-foreground'
-                        : 'bg-muted text-muted-foreground'
-                    }`}>
+                    <span
+                      className={`w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold mt-0.5 ${
+                        isRevealed && choice.letter === currentQuestion.correctAnswer
+                          ? 'text-white'
+                          : isRevealed && choice.letter === selectedAnswer && choice.letter !== currentQuestion.correctAnswer
+                          ? 'text-white'
+                          : choice.letter === selectedAnswer
+                          ? 'text-white'
+                          : 'bg-muted text-muted-foreground'
+                      }`}
+                      style={{
+                        backgroundColor: isRevealed && choice.letter === currentQuestion.correctAnswer
+                          ? '#6066bb'
+                          : isRevealed && choice.letter === selectedAnswer && choice.letter !== currentQuestion.correctAnswer
+                          ? '#d4a0d4'
+                          : choice.letter === selectedAnswer
+                          ? '#00c2d6'
+                          : undefined
+                      }}
+                    >
                       {choice.letter.toUpperCase()}
                     </span>
                     <span className="text-sm leading-relaxed text-foreground">{choice.text}</span>
                     {isRevealed && choice.letter === currentQuestion.correctAnswer && (
-                      <CheckCircle2 className="w-4 h-4 text-violet-700 flex-shrink-0 ml-auto mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 flex-shrink-0 ml-auto mt-0.5" style={{ color: '#6066bb' }} />
                     )}
                     {isRevealed && choice.letter === selectedAnswer && choice.letter !== currentQuestion.correctAnswer && (
-                      <XCircle className="w-4 h-4 text-red-500 flex-shrink-0 ml-auto mt-0.5" />
+                      <XCircle className="w-4 h-4 flex-shrink-0 ml-auto mt-0.5" style={{ color: '#d4a0d4' }} />
                     )}
                   </button>
                   {/* Per-choice distractor rationale for evaluation-level items */}
@@ -359,17 +371,17 @@ export default function ExamPage() {
             )}
 
             {isRevealed && (
-              <div className={`rounded-xl p-5 mb-5 border ${isCorrect ? 'bg-violet-50/70 border-violet-200' : 'bg-red-50/60 border-red-200'}`}>
+              <div className="rounded-xl p-5 mb-5" style={{ background: '#e3e5fb', border: '1px solid #6066bb' }}>
                 <div className="flex items-center gap-2 mb-2">
                   {isCorrect
-                    ? <CheckCircle2 className="w-4 h-4 text-violet-700" />
-                    : <XCircle className="w-4 h-4 text-red-500" />
+                    ? <CheckCircle2 className="w-4 h-4" style={{ color: '#6066bb' }} />
+                    : <XCircle className="w-4 h-4" style={{ color: '#d4a0d4' }} />
                   }
-                  <span className={`text-sm font-semibold ${isCorrect ? 'text-violet-800' : 'text-red-600'}`}>
+                  <span className={`text-sm font-semibold ${isCorrect ? 'text-[#6066bb]' : 'text-[#6066bb]'}`}>
                     {isCorrect ? 'Correct!' : `Incorrect — Correct answer: ${currentQuestion.correctAnswer.toUpperCase()}`}
                   </span>
                 </div>
-                <p className="case-text text-sm text-foreground/80">{currentQuestion.rationale}</p>
+                <p className="case-text text-sm text-black">{currentQuestion.rationale}</p>
               </div>
             )}
 
@@ -387,7 +399,7 @@ export default function ExamPage() {
               <div className="flex items-center gap-2">
                 {isAnswered && (
                   <span className={`text-xs font-medium px-2 py-1 rounded-full ${
-                    isCorrect ? 'bg-violet-100 text-violet-800' : 'bg-red-100 text-red-600'
+                    isCorrect ? 'text-[#6066bb]' : 'text-[#6066bb]'
                   }`}>
                     {isCorrect ? '✓ Correct' : '✗ Incorrect'}
                   </span>
@@ -397,7 +409,7 @@ export default function ExamPage() {
               {state.currentQuestionIndex < totalQuestions - 1 ? (
                 <button
                   onClick={nextQuestion}
-                  className="flex items-center gap-1.5 text-sm font-medium text-primary hover:opacity-80 transition-opacity px-3 py-2 rounded-lg hover:bg-primary/10"
+                  className="flex items-center gap-1.5 text-sm font-medium hover:opacity-80 transition-opacity px-3 py-2 rounded-lg" style={{ color: '#00c2d6' }}
                 >
                   Next
                   <ChevronRight className="w-4 h-4" />
@@ -405,7 +417,7 @@ export default function ExamPage() {
               ) : (
                 <button
                   onClick={handleFinish}
-                  className="flex items-center gap-1.5 text-sm font-semibold bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:opacity-90 transition-opacity"
+                  className="flex items-center gap-1.5 text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition-opacity text-white" style={{ background: '#00c2d6' }}
                 >
                   <Flag className="w-3.5 h-3.5" />
                   Finish Exam

@@ -44,7 +44,7 @@ function DomainScoreCard({ domain, name, color, correct, total, pct }: {
   const ringColor = pct >= 80 ? '#10b981' : pct >= 70 ? '#f59e0b' : '#ef4444';
   const statusLabel = pct >= 80 ? 'Strong' : pct >= 70 ? 'Passing' : 'Needs Work';
   const statusColor = pct >= 80 ? 'text-emerald-400' : pct >= 70 ? 'text-amber-400' : 'text-red-400';
-  const statusBg = pct >= 80 ? 'bg-emerald-500/10 border-emerald-500/20' : pct >= 70 ? 'bg-amber-500/10 border-amber-500/20' : 'bg-red-500/10 border-red-500/20';
+  const statusBg = pct >= 80 ? 'bg-emerald-500/10 border-emerald-500/20' : pct >= 70 ? 'bg-amber-500/10 border-amber-500/20' : 'bg-[#feeffd]0/10 border-red-500/20';
 
   return (
     <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-4 flex flex-col items-center gap-2 hover:border-slate-500 transition-all">
@@ -199,7 +199,7 @@ export default function MockExamResultsPage() {
           </div>
         </div>
 
-        <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-2 ${isPassing ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-red-500/20 text-red-400 border border-red-500/30'}`}>
+        <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-2 ${isPassing ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-[#feeffd]0/20 text-red-400 border border-red-500/30'}`}>
           {isPassing ? <Trophy className="w-4 h-4" /> : <AlertTriangle className="w-4 h-4" />}
           {isPassing ? 'Passing Score' : 'Below Passing Threshold'}
         </div>

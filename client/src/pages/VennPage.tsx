@@ -78,10 +78,10 @@ const DOMAIN_FULL: Record<string, string> = {
 
 const DOMAIN_PILL: Record<string, string> = {
   A: 'bg-slate-100 text-slate-700',
-  B: 'bg-teal-100 text-teal-800',
+  B: 'bg-teal-100 text-[#00c2d6]',
   C: 'bg-cyan-100 text-cyan-800',
   D: 'bg-blue-100 text-blue-800',
-  E: 'bg-violet-100 text-violet-800',
+  E: 'bg-[#e3e5fb] text-[#6066bb]',
   F: 'bg-orange-100 text-orange-800',
   G: 'bg-emerald-100 text-emerald-800',
   H: 'bg-amber-100 text-amber-800',
@@ -123,11 +123,11 @@ function VennGridView({
             <ArrowLeft className="w-4 h-4" />Home
           </button>
           <div className="flex items-center gap-2">
-            <GitMerge className="w-5 h-5 text-violet-700" />
+            <GitMerge className="w-5 h-5 text-[#6066bb]" />
             <h1 className="font-bold text-slate-800 text-base">Tier 4 — Venn Diagram</h1>
           </div>
           <div className="text-xs text-slate-500">
-            <span className="font-semibold text-violet-700">{vennDiagrams.filter(i => completedIds.has(i.id)).length}</span>/{vennDiagrams.length} completed
+            <span className="font-semibold text-[#6066bb]">{vennDiagrams.filter(i => completedIds.has(i.id)).length}</span>/{vennDiagrams.length} completed
           </div>
         </div>
       </header>
@@ -135,11 +135,11 @@ function VennGridView({
       <div className="bg-white border-b border-slate-100 sticky top-[53px] z-10">
         <div className="max-w-5xl mx-auto px-4 py-2 flex items-center gap-2 overflow-x-auto">
           <Filter className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-          <button onClick={() => setSelectedDomain('ALL')} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === 'ALL' ? 'bg-violet-700 text-white border-violet-700' : 'bg-white text-slate-600 border-slate-200 hover:border-violet-300')}>
+          <button onClick={() => setSelectedDomain('ALL')} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === 'ALL' ? 'bg-violet-700 text-white border-violet-700' : 'bg-white text-slate-600 border-slate-200 hover:border-[#6066bb]/60')}>
             All ({vennDiagrams.length})
           </button>
           {visibleDomains.map(d => (
-            <button key={d} onClick={() => setSelectedDomain(d)} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === d ? 'bg-violet-700 text-white border-violet-700' : 'bg-white text-slate-600 border-slate-200 hover:border-violet-300')}>
+            <button key={d} onClick={() => setSelectedDomain(d)} className={cn('px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-all border', selectedDomain === d ? 'bg-violet-700 text-white border-violet-700' : 'bg-white text-slate-600 border-slate-200 hover:border-[#6066bb]/60')}>
               Domain {d} ({grouped[d]?.length ?? 0})
             </button>
           ))}
@@ -188,20 +188,20 @@ function VennGridView({
                         <div key={item.id} className="px-4 py-2.5 flex items-center justify-between hover:bg-slate-50/60 transition-colors">
                           <div className="flex items-center gap-3 min-w-0">
                             {done
-                              ? <CheckCircle2 className="w-4 h-4 text-violet-600 shrink-0" />
+                              ? <CheckCircle2 className="w-4 h-4 text-[#6066bb] shrink-0" />
                               : <div className="w-4 h-4 rounded-full border-2 border-slate-200 shrink-0" />
                             }
                             <p className="text-sm text-slate-700 truncate">
                               <span className="font-medium text-blue-700">{item.conceptA}</span>
                               <span className="text-slate-400 mx-1.5">vs</span>
-                              <span className="font-medium text-violet-700">{item.conceptB}</span>
+                              <span className="font-medium text-[#6066bb]">{item.conceptB}</span>
                             </p>
                           </div>
                           <div className="flex items-center gap-1.5 shrink-0 ml-3">
                             <button onClick={() => openExercise(item, 'study')} className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-blue-600 bg-blue-50 hover:bg-blue-100 transition-colors border border-blue-100">
                               <BookOpen className="w-3 h-3" /> Study
                             </button>
-                            <button onClick={() => openExercise(item, 'sort')} className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-violet-700 bg-violet-50 hover:bg-violet-100 transition-colors border border-violet-100">
+                            <button onClick={() => openExercise(item, 'sort')} className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium text-[#6066bb] bg-[#e3e5fb] hover:bg-[#e3e5fb] transition-colors border border-violet-100">
                               <Swords className="w-3 h-3" /> Sort
                             </button>
                           </div>
@@ -227,7 +227,7 @@ function PileChip({ card, submitted }: { card: FeatureCard; submitted: boolean }
       'px-2 py-1 rounded-md text-xs leading-snug border',
       isShared && 'border-emerald-300 bg-emerald-50 text-emerald-800',
       !isShared && card.assignedA && !submitted && 'border-blue-200 bg-blue-50 text-blue-800',
-      !isShared && card.assignedB && !submitted && 'border-violet-200 bg-violet-50 text-violet-800',
+      !isShared && card.assignedB && !submitted && 'border-[#6066bb]/40 bg-[#e3e5fb] text-[#6066bb]',
       card.struckOut && !submitted && 'border-slate-200 bg-slate-50 text-slate-400 line-through',
       submitted && correct === true && 'border-emerald-300 bg-emerald-50 text-emerald-800',
       submitted && correct === false && 'border-rose-300 bg-rose-50 text-rose-700',
@@ -407,7 +407,7 @@ export default function VennPage() {
             <div className="flex items-center gap-2 min-w-0 overflow-hidden">
               <span className="px-2.5 py-1 bg-blue-50 border border-blue-200 rounded-full text-xs font-bold text-blue-800 truncate max-w-[140px]">{currentItem.conceptA}</span>
               <span className="text-slate-300 text-xs shrink-0">vs</span>
-              <span className="px-2.5 py-1 bg-violet-50 border border-violet-200 rounded-full text-xs font-bold text-violet-800 truncate max-w-[140px]">{currentItem.conceptB}</span>
+              <span className="px-2.5 py-1 bg-[#e3e5fb] border border-[#6066bb]/40 rounded-full text-xs font-bold text-[#6066bb] truncate max-w-[140px]">{currentItem.conceptB}</span>
             </div>
             <button onClick={handleNext} className="p-1 rounded hover:bg-slate-100 shrink-0"><ChevronRight className="w-4 h-4 text-slate-400" /></button>
             <span className="text-xs text-slate-400 shrink-0">{currentIndex + 1}/{filteredItems.length}</span>
@@ -427,8 +427,8 @@ export default function VennPage() {
       </header>
 
       {/* Key Distinction bar */}
-      <div className="bg-teal-50 border-b border-teal-200 px-4 py-1.5 shrink-0">
-        <p className="text-xs text-teal-800 max-w-5xl mx-auto">
+      <div className="bg-[#e2fcff] border-b border-[#00c2d6]/40 px-4 py-1.5 shrink-0">
+        <p className="text-xs text-[#00c2d6] max-w-5xl mx-auto">
           <span className="font-semibold">Key Distinction: </span>{currentItem.keyDistinction}
         </p>
       </div>
@@ -473,7 +473,7 @@ export default function VennPage() {
                 {[
                   ...currentItem.onlyA.map(f => ({ f, zone: 'A only', cls: 'text-blue-700 bg-blue-50 border-blue-200' })),
                   ...currentItem.shared.map(f => ({ f, zone: 'Both', cls: 'text-emerald-700 bg-emerald-50 border-emerald-200' })),
-                  ...currentItem.onlyB.map(f => ({ f, zone: 'B only', cls: 'text-violet-700 bg-violet-50 border-violet-200' })),
+                  ...currentItem.onlyB.map(f => ({ f, zone: 'B only', cls: 'text-[#6066bb] bg-[#e3e5fb] border-[#6066bb]/40' })),
                   ...currentItem.distractors.map(f => ({ f, zone: 'Neither', cls: 'text-rose-600 bg-rose-50 border-rose-200 line-through' })),
                 ].map(({ f, zone, cls }, i) => (
                   <div key={i} className={cn('flex items-center justify-between gap-2 px-2 py-1.5 rounded-lg border text-xs', cls)}>
@@ -485,20 +485,20 @@ export default function VennPage() {
             </div>
 
             {/* Term B */}
-            <div className="rounded-xl border-2 border-violet-200 bg-violet-50 flex flex-col overflow-hidden">
-              <div className="px-3 py-2 bg-violet-100 border-b border-violet-200 shrink-0">
-                <p className="text-xs font-bold text-violet-700 uppercase tracking-wide truncate">Only: {currentItem.conceptB}</p>
+            <div className="rounded-xl border-2 border-[#6066bb]/40 bg-[#e3e5fb] flex flex-col overflow-hidden">
+              <div className="px-3 py-2 bg-[#e3e5fb] border-b border-[#6066bb]/40 shrink-0">
+                <p className="text-xs font-bold text-[#6066bb] uppercase tracking-wide truncate">Only: {currentItem.conceptB}</p>
               </div>
               <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
                 {currentItem.onlyB.map((f, i) => (
-                  <div key={i} className="flex items-start gap-1.5 text-xs text-violet-800">
+                  <div key={i} className="flex items-start gap-1.5 text-xs text-[#6066bb]">
                     <span className="text-violet-400 mt-0.5 shrink-0">•</span>
                     <span className="leading-snug">{f}</span>
                   </div>
                 ))}
                 {currentItem.shared.length > 0 && (
                   <>
-                    <div className="border-t border-violet-200 my-2" />
+                    <div className="border-t border-[#6066bb]/40 my-2" />
                     <p className="text-[10px] font-bold text-emerald-700 uppercase tracking-wide">Shared</p>
                     {currentItem.shared.map((f, i) => (
                       <div key={i} className="flex items-start gap-1.5 text-xs text-emerald-700">
@@ -519,11 +519,11 @@ export default function VennPage() {
         <div className="flex-1 flex items-center justify-center px-4">
           <div className="bg-white rounded-xl border border-slate-200 p-6 text-center shadow-sm max-w-sm w-full">
             <div className="w-12 h-12 bg-violet-700/10 rounded-full flex items-center justify-center mx-auto mb-3">
-              <Swords className="w-5 h-5 text-violet-700" />
+              <Swords className="w-5 h-5 text-[#6066bb]" />
             </div>
             <h2 className="text-base font-bold text-slate-800 mb-1">Ready to Sort?</h2>
             <p className="text-slate-500 text-xs mb-4 leading-relaxed">
-              One feature at a time will appear. Tap <span className="font-bold text-blue-600">← A</span> or <span className="font-bold text-violet-700">B →</span> to assign it, <span className="font-bold text-emerald-600">◆ Both</span> if it applies to both, or <span className="font-bold text-rose-500">N/A</span> if it belongs to neither.
+              One feature at a time will appear. Tap <span className="font-bold text-blue-600">← A</span> or <span className="font-bold text-[#6066bb]">B →</span> to assign it, <span className="font-bold text-emerald-600">◆ Both</span> if it applies to both, or <span className="font-bold text-rose-500">N/A</span> if it belongs to neither.
             </p>
             <Button onClick={startItem} className="bg-violet-700 hover:bg-violet-800 text-white px-6 h-9 text-sm w-full">
               Start Sorting
@@ -543,10 +543,10 @@ export default function VennPage() {
             const isPassing = pct >= PASS_THRESHOLD;
             return (
               <div className={cn('rounded-lg border px-4 py-2 flex items-center justify-between shrink-0',
-                isPerfect ? 'bg-emerald-50 border-emerald-200' : isPassing ? 'bg-teal-50 border-teal-200' : 'bg-rose-50 border-rose-200')}>
+                isPerfect ? 'bg-emerald-50 border-emerald-200' : isPassing ? 'bg-[#e2fcff] border-[#00c2d6]/40' : 'bg-rose-50 border-rose-200')}>
                 <div className="flex items-center gap-2">
-                  {isPerfect ? <Trophy className="w-4 h-4 text-violet-700" /> : isPassing ? <CheckCircle2 className="w-4 h-4 text-teal-700" /> : <XCircle className="w-4 h-4 text-rose-600" />}
-                  <p className={cn('font-bold text-sm', isPerfect ? 'text-emerald-800' : isPassing ? 'text-teal-800' : 'text-rose-700')}>
+                  {isPerfect ? <Trophy className="w-4 h-4 text-[#6066bb]" /> : isPassing ? <CheckCircle2 className="w-4 h-4 text-[#00c2d6]" /> : <XCircle className="w-4 h-4 text-rose-600" />}
+                  <p className={cn('font-bold text-sm', isPerfect ? 'text-emerald-800' : isPassing ? 'text-[#00c2d6]' : 'text-rose-700')}>
                     {isPerfect ? 'Perfect!' : `${score.correct}/${score.total} (${pct}%)`}
                   </p>
                   <p className="text-xs text-slate-500 hidden sm:block">
@@ -628,8 +628,8 @@ export default function VennPage() {
                 <div className="flex-1 flex flex-col items-center justify-center gap-3">
                   {!submitted ? (
                     <>
-                      <div className="w-10 h-10 bg-violet-100 rounded-full flex items-center justify-center">
-                        <CheckCircle2 className="w-5 h-5 text-violet-700" />
+                      <div className="w-10 h-10 bg-[#e3e5fb] rounded-full flex items-center justify-center">
+                        <CheckCircle2 className="w-5 h-5 text-[#6066bb]" />
                       </div>
                       <p className="text-xs text-slate-600 text-center font-medium">All {cards.length} features sorted!</p>
                       <Button onClick={handleSubmit} className="bg-violet-700 hover:bg-violet-800 text-white h-9 text-sm px-5">
@@ -674,9 +674,9 @@ export default function VennPage() {
             </div>
 
             {/* RIGHT — Term B pile */}
-            <div className="rounded-xl border-2 border-violet-200 bg-violet-50 flex flex-col overflow-hidden">
-              <div className="px-2 py-2 bg-violet-100 border-b border-violet-200 shrink-0">
-                <p className="text-xs font-bold text-violet-700 truncate">{currentItem.conceptB}</p>
+            <div className="rounded-xl border-2 border-[#6066bb]/40 bg-[#e3e5fb] flex flex-col overflow-hidden">
+              <div className="px-2 py-2 bg-[#e3e5fb] border-b border-[#6066bb]/40 shrink-0">
+                <p className="text-xs font-bold text-[#6066bb] truncate">{currentItem.conceptB}</p>
                 <p className="text-[10px] text-violet-400">{cards.filter(c => c.assignedB).length} assigned</p>
               </div>
               <div className="p-1.5 space-y-1 overflow-y-auto flex-1">

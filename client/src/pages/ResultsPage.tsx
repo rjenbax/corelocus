@@ -148,7 +148,7 @@ export default function ResultsPage() {
             </button>
             <button
               onClick={handleRestart}
-              className="flex items-center gap-1.5 text-sm bg-primary text-primary-foreground px-3 py-1.5 rounded-lg font-medium hover:opacity-90 transition-opacity"
+              className="flex items-center gap-1.5 text-sm bg-[#00c2d6] text-white px-3 py-1.5 rounded-lg font-medium hover:opacity-90 transition-opacity"
             >
               <RotateCcw className="w-3.5 h-3.5" />
               Retake
@@ -164,8 +164,8 @@ export default function ResultsPage() {
             <div className="md:col-span-2">
               <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-semibold mb-4 ${
                 passingScore
-                  ? 'bg-violet-100 text-violet-800 border border-violet-200'
-                  : 'bg-teal-100 text-teal-800 border border-teal-200'
+                  ? 'bg-[#e3e5fb] text-[#6066bb] border border-[#6066bb]/40'
+                  : 'bg-teal-100 text-[#00c2d6] border border-[#00c2d6]/40'
               }`}>
                 {passingScore ? <Award className="w-4 h-4" /> : <TrendingUp className="w-4 h-4" />}
                 {passingScore ? 'Strong Performance' : 'Keep Studying'}
@@ -179,12 +179,12 @@ export default function ResultsPage() {
               </p>
               <div className="flex flex-wrap gap-4 text-sm">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-violet-700" />
+                  <CheckCircle2 className="w-4 h-4 text-[#6066bb]" />
                   <span className="font-semibold text-foreground">{state.score}</span>
                   <span className="text-muted-foreground">correct</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <XCircle className="w-4 h-4 text-red-500" />
+                  <XCircle className="w-4 h-4 text-[#d4a0d4]" />
                   <span className="font-semibold text-foreground">{totalAnswered - state.score}</span>
                   <span className="text-muted-foreground">incorrect</span>
                 </div>
@@ -213,7 +213,7 @@ export default function ResultsPage() {
               const info = phaseInfo[phase];
               const pct = data.answered > 0 ? Math.round((data.correct / data.answered) * 100) : 0;
               const phaseColor = pct >= 70 ? '#4A7C59' : pct >= 50 ? '#8A6B2E' : '#8A2E2E';
-              const phaseBg = pct >= 70 ? 'bg-green-50 border-green-200' : pct >= 50 ? 'bg-amber-50 border-amber-200' : 'bg-red-50 border-red-200';
+              const phaseBg = pct >= 70 ? 'bg-[#e3e5fb] border-[#6066bb]/40' : pct >= 50 ? 'bg-amber-50 border-amber-200' : 'bg-[#feeffd] border-[#d4a0d4]/40';
               const shortLabel = info?.label?.replace(/Phase \d+: /, '') || phase;
               return (
                 <div key={phase} className={`border rounded-lg p-3.5 ${phaseBg}`}>
@@ -268,9 +268,9 @@ export default function ResultsPage() {
 
         {/* Study recommendations */}
         {weakDomains.length > 0 && (
-          <div className="bg-teal-50/60 border border-teal-200 rounded-xl p-5 mb-6">
+          <div className="bg-[#e2fcff]/60 border border-[#00c2d6]/40 rounded-xl p-5 mb-6">
             <h2 className="font-bold text-foreground mb-3 flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-teal-700" />
+              <TrendingUp className="w-4 h-4 text-[#00c2d6]" />
               Priority Study Areas
             </h2>
             <p className="text-sm text-muted-foreground case-text mb-3">
@@ -295,20 +295,20 @@ export default function ResultsPage() {
 
         {/* Strong domains */}
         {strongDomains.length > 0 && (
-          <div className="bg-violet-50/60 border border-violet-200 rounded-xl p-5 mb-6">
+          <div className="bg-[#e3e5fb]/60 border border-[#6066bb]/40 rounded-xl p-5 mb-6">
             <h2 className="font-bold text-foreground mb-3 flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-violet-700" />
+              <CheckCircle2 className="w-4 h-4 text-[#6066bb]" />
               Strengths
             </h2>
             <div className="flex flex-wrap gap-2">
               {strongDomains.map(d => (
                 <div
                   key={d.domain}
-                  className="flex items-center gap-1.5 bg-white border border-violet-200 rounded-full px-3 py-1 text-xs font-medium text-violet-800"
+                  className="flex items-center gap-1.5 bg-white border border-[#6066bb]/40 rounded-full px-3 py-1 text-xs font-medium text-[#6066bb]"
                 >
                   <span className="font-bold">{d.domain}</span>
                   <span>{d.domainName.split(' ').slice(0, 2).join(' ')}</span>
-                  <span className="text-violet-700">· {d.percentage}%</span>
+                  <span className="text-[#6066bb]">· {d.percentage}%</span>
                 </div>
               ))}
             </div>
@@ -343,7 +343,7 @@ export default function ResultsPage() {
         <div className="flex flex-wrap gap-3 justify-center pt-2">
           <button
             onClick={handleRestart}
-            className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            className="flex items-center gap-2 bg-[#00c2d6] text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
             <RotateCcw className="w-4 h-4" />
             Retake Full Exam

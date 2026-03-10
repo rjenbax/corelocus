@@ -174,6 +174,15 @@
     font-weight: 500;
   }
 
+  /* ── BehaviorPrep Brand Color Tokens ───────────────────────────────────────
+   * correct / rationale bg : #e3e5fb
+   * wrong answer bg        : #feeffd
+   * breadcrumb bg          : #e2fcff
+   * button fill            : #00c2d6  (text: white)
+   * bold / accent text     : #6066bb
+   * body text              : #000000
+   * ─────────────────────────────────────────────────────────────────────── */
+
   /* Answer choice button */
   .choice-btn {
     display: flex;
@@ -181,32 +190,66 @@
     gap: 0.75rem;
     padding: 0.875rem 1rem;
     border-radius: 0.5rem;
-    border: 1.5px solid oklch(0.90 0.008 240);
-    background: oklch(1 0 0);
+    border: 1.5px solid #d1d5db;
+    background: #ffffff;
     text-align: left;
     transition: all 0.15s ease;
     cursor: pointer;
     width: 100%;
+    color: #000000;
   }
-
   .choice-btn:hover:not(:disabled) {
-    border-color: oklch(0.40 0.22 290);
-    background: oklch(0.97 0.015 290 / 0.12);
+    border-color: #00c2d6;
+    background: #e2fcff;
   }
-
   .choice-btn.selected {
-    border-color: oklch(0.40 0.22 290);
-    background: oklch(0.97 0.015 290 / 0.10);
+    border-color: #6066bb;
+    background: #e3e5fb;
   }
-
   .choice-btn.correct {
-    border-color: oklch(0.50 0.12 185);
-    background: oklch(0.94 0.05 185 / 0.20);
+    border-color: #6066bb;
+    background: #e3e5fb;
+  }
+  .choice-btn.incorrect {
+    border-color: #d4a0d4;
+    background: #feeffd;
   }
 
-  .choice-btn.incorrect {
-    border-color: oklch(0.55 0.22 25);
-    background: oklch(0.97 0.05 25 / 0.12);
+  /* Rationale / explanation box */
+  .rationale-box {
+    background: #e3e5fb;
+    border: 1px solid #6066bb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #000000;
+  }
+
+  /* Breadcrumb trail */
+  .breadcrumb-trail {
+    background: #e2fcff;
+    border-radius: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    color: #000000;
+    font-size: 0.8125rem;
+  }
+
+  /* Primary action button — filled #00c2d6 */
+  .btn-primary {
+    background: #00c2d6;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: #00afc1;
+  }
+  .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 
   /* Domain badge */

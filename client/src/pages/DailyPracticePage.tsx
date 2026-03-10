@@ -211,13 +211,13 @@ function FlashcardQuestion({ item, onNext }: { item: FlashcardItem; onNext: (kne
         <div className="flex gap-3 w-full max-w-lg">
           <button
             onClick={() => onNext(false)}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-red-200 bg-red-50 text-red-700 font-medium text-sm hover:bg-red-100 transition-colors"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-[#d4a0d4]/40 bg-[#feeffd] text-[#d4a0d4] font-medium text-sm hover:bg-[#feeffd] transition-colors"
           >
             <XCircle className="w-4 h-4" /> Still Learning
           </button>
           <button
             onClick={() => onNext(true)}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-violet-200 bg-violet-50 text-violet-800 font-medium text-sm hover:bg-violet-100 transition-colors"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-[#6066bb]/40 bg-[#e3e5fb] text-[#6066bb] font-medium text-sm hover:bg-[#e3e5fb] transition-colors"
           >
             <CheckCircle2 className="w-4 h-4" /> Got It
           </button>
@@ -238,8 +238,8 @@ function RapidRecallQuestion({ item, onNext }: { item: RapidRecallItem; onNext: 
   return (
     <div className="flex flex-col gap-5 w-full max-w-lg">
       <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide text-center">Rapid Recall · {item.taskCode}</div>
-      <div className="rounded-2xl border-2 border-teal-200 bg-teal-50 p-6 text-center">
-        <p className="text-xs text-teal-700 font-medium mb-2 uppercase tracking-wide">What is the definition of…</p>
+      <div className="rounded-2xl border-2 border-[#00c2d6]/40 bg-[#e2fcff] p-6 text-center">
+        <p className="text-xs text-[#00c2d6] font-medium mb-2 uppercase tracking-wide">What is the definition of…</p>
         <h2 className="text-xl font-bold text-foreground">{item.term}</h2>
       </div>
       <div className="space-y-2.5">
@@ -257,8 +257,8 @@ function RapidRecallQuestion({ item, onNext }: { item: RapidRecallItem; onNext: 
               className={cn(
                 "w-full text-left px-4 py-3.5 rounded-xl border-2 text-sm leading-relaxed transition-all duration-200",
                 !submitted && "border-border bg-card hover:border-primary/40 hover:bg-primary/5",
-                submitted && isCorrect && "border-violet-400 bg-violet-50 text-violet-800",
-                submitted && isSelected && !isCorrect && "border-red-400 bg-red-50 text-red-800",
+                submitted && isCorrect && "border-[#6066bb] bg-[#e3e5fb] text-[#6066bb]",
+                submitted && isSelected && !isCorrect && "border-[#d4a0d4] bg-[#feeffd] text-[#d4a0d4]",
                 submitted && !isSelected && !isCorrect && "border-border bg-card opacity-50",
               )}
             >
@@ -284,8 +284,8 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
   return (
     <div className="flex flex-col gap-5 w-full max-w-lg">
       <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide text-center">Scenario Matching · {item.taskCode}</div>
-      <div className="rounded-2xl border-2 border-teal-200 bg-teal-50 p-6">
-        <p className="text-xs text-teal-600 font-medium mb-1 uppercase tracking-wide">Which scenario best illustrates…</p>
+      <div className="rounded-2xl border-2 border-[#00c2d6]/40 bg-[#e2fcff] p-6">
+        <p className="text-xs text-[#00c2d6] font-medium mb-1 uppercase tracking-wide">Which scenario best illustrates…</p>
         <h2 className="text-lg font-bold text-foreground">{item.concept}</h2>
         <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{item.definition}</p>
       </div>
@@ -303,9 +303,9 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
               }}
               className={cn(
                 "w-full text-left px-4 py-3.5 rounded-xl border-2 text-sm leading-relaxed transition-all duration-200",
-                !submitted && "border-border bg-card hover:border-teal-400/60 hover:bg-teal-50/60",
-                submitted && isCorrect && "border-violet-400 bg-violet-50 text-violet-800",
-                submitted && isSelected && !isCorrect && "border-red-400 bg-red-50 text-red-800",
+                !submitted && "border-border bg-card hover:border-teal-400/60 hover:bg-[#e2fcff]/60",
+                submitted && isCorrect && "border-[#6066bb] bg-[#e3e5fb] text-[#6066bb]",
+                submitted && isSelected && !isCorrect && "border-[#d4a0d4] bg-[#feeffd] text-[#d4a0d4]",
                 submitted && !isSelected && !isCorrect && "border-border bg-card opacity-50",
               )}
             >
@@ -316,10 +316,10 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
                 <span>{s.text}</span>
               </div>
               {submitted && isSelected && !isCorrect && (
-                <p className="mt-2 text-xs text-red-600 italic pl-7">{s.explanation}</p>
+                <p className="mt-2 text-xs text-[#d4a0d4] italic pl-7">{s.explanation}</p>
               )}
               {submitted && isCorrect && (isSelected || true) && isSelected && (
-                <p className="mt-2 text-xs text-violet-700 italic pl-7">{s.explanation}</p>
+                <p className="mt-2 text-xs text-[#6066bb] italic pl-7">{s.explanation}</p>
               )}
             </button>
           );
@@ -393,8 +393,8 @@ export default function DailyPracticePage() {
         </header>
         <div className="flex-1 flex items-center justify-center p-8">
           <div className="max-w-sm text-center">
-            <div className="w-16 h-16 rounded-2xl bg-violet-100 flex items-center justify-center mx-auto mb-5">
-              <Target className="w-8 h-8 text-violet-600" />
+            <div className="w-16 h-16 rounded-2xl bg-[#e3e5fb] flex items-center justify-center mx-auto mb-5">
+              <Target className="w-8 h-8 text-[#6066bb]" />
             </div>
             <h2 className="text-xl font-bold text-foreground mb-3">No practice items yet</h2>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
@@ -402,7 +402,7 @@ export default function DailyPracticePage() {
             </p>
             <button
               onClick={() => navigate('/dashboard')}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#00c2d6] text-white font-medium text-sm hover:bg-primary/90 transition-colors"
             >
               <Home className="w-4 h-4" /> Start with Tier 1 Flashcards
             </button>
@@ -429,7 +429,7 @@ export default function DailyPracticePage() {
           <div className="max-w-md w-full text-center">
             <div className={cn(
               "w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black",
-              pct >= 80 ? "bg-violet-100 text-violet-800" : pct >= 50 ? "bg-teal-100 text-teal-800" : "bg-red-100 text-red-700"
+              pct >= 80 ? "bg-[#e3e5fb] text-[#6066bb]" : pct >= 50 ? "bg-teal-100 text-[#00c2d6]" : "bg-[#feeffd] text-[#d4a0d4]"
             )}>
               {pct}%
             </div>
@@ -449,9 +449,9 @@ export default function DailyPracticePage() {
                 return (
                   <div key={i} className={cn(
                     "flex items-center gap-3 px-4 py-3 rounded-xl border-2 text-sm",
-                    r.correct ? "border-violet-200 bg-violet-50" : "border-red-200 bg-red-50"
+                    r.correct ? "border-[#6066bb]/40 bg-[#e3e5fb]" : "border-[#d4a0d4]/40 bg-[#feeffd]"
                   )}>
-                    <Icon className={cn("w-4 h-4 flex-shrink-0", r.correct ? "text-violet-700" : "text-red-500")} />
+                    <Icon className={cn("w-4 h-4 flex-shrink-0", r.correct ? "text-[#6066bb]" : "text-[#d4a0d4]")} />
                     <span className="flex-1 font-medium text-foreground">
                       {item.type === 'flashcard' ? (item as FlashcardItem).term
                         : item.type === 'rapid-recall' ? (item as RapidRecallItem).term
@@ -459,7 +459,7 @@ export default function DailyPracticePage() {
                     </span>
                     <span className="text-xs text-muted-foreground">{TOOL_LABELS[r.type]}</span>
                     {r.correct
-                      ? <CheckCircle2 className="w-4 h-4 text-violet-600 flex-shrink-0" />
+                      ? <CheckCircle2 className="w-4 h-4 text-[#6066bb] flex-shrink-0" />
                       : <XCircle className="w-4 h-4 text-red-400 flex-shrink-0" />
                     }
                   </div>
@@ -476,7 +476,7 @@ export default function DailyPracticePage() {
               </button>
               <button
                 onClick={() => navigate('/dashboard')}
-                className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors"
+                className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-[#00c2d6] text-white font-medium text-sm hover:bg-primary/90 transition-colors"
               >
                 <Home className="w-4 h-4" /> Dashboard
               </button>
@@ -504,7 +504,7 @@ export default function DailyPracticePage() {
             <span className="text-xs text-muted-foreground">{currentIndex + 1} / {session.length}</span>
             <div className="w-24 h-1.5 bg-muted rounded-full overflow-hidden">
               <div
-                className="h-full bg-primary rounded-full transition-all duration-300"
+                className="h-full bg-[#00c2d6] rounded-full transition-all duration-300"
                 style={{ width: `${((currentIndex) / session.length) * 100}%` }}
               />
             </div>
@@ -513,12 +513,12 @@ export default function DailyPracticePage() {
       </header>
 
       {/* Weak task items banner */}
-      <div className="border-b border-border bg-teal-50/60">
+      <div className="border-b border-border bg-[#e2fcff]/60">
         <div className="container py-2.5 flex items-center gap-2 flex-wrap">
-          <Target className="w-3.5 h-3.5 text-teal-700 flex-shrink-0" />
-          <span className="text-xs text-teal-800 font-medium">Targeting your weakest TCO areas:</span>
+          <Target className="w-3.5 h-3.5 text-[#00c2d6] flex-shrink-0" />
+          <span className="text-xs text-[#00c2d6] font-medium">Targeting your weakest TCO areas:</span>
           {weakCodes.map(code => (
-            <span key={code} className="text-xs font-bold px-2 py-0.5 rounded bg-teal-100 text-teal-800 border border-teal-200">
+            <span key={code} className="text-xs font-bold px-2 py-0.5 rounded bg-teal-100 text-[#00c2d6] border border-[#00c2d6]/40">
               {code}
             </span>
           ))}
@@ -567,7 +567,7 @@ export default function DailyPracticePage() {
                 key={i}
                 className={cn(
                   "w-2 h-2 rounded-full transition-all duration-300",
-                  i === currentIndex && "w-4 bg-primary",
+                  i === currentIndex && "w-4 bg-[#00c2d6]",
                   i < currentIndex && result?.correct && "bg-green-400",
                   i < currentIndex && !result?.correct && "bg-red-400",
                   i > currentIndex && "bg-muted",
