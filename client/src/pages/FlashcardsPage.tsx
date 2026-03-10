@@ -118,6 +118,7 @@ export default function FlashcardsPage() {
 
   const handleDomainChange = (domain: string) => {
     setSelectedDomain(domain);
+    setStatusFilter('all');  // reset status filter when switching domains
     setCurrentIndex(0);
     setIsFlipped(false);
   };
@@ -214,8 +215,19 @@ export default function FlashcardsPage() {
           </button>
         </div>
 
-        {/* Status filter counts row — matches reference image */}
+        {/* Status filter counts row */}
         <div className="flex items-center gap-4 mb-4 text-sm font-medium">
+          <button
+            onClick={() => { setStatusFilter('all'); setCurrentIndex(0); setIsFlipped(false); }}
+            className={cn(
+              "transition-colors",
+              statusFilter === 'all'
+                ? "text-foreground font-semibold underline underline-offset-2"
+                : "text-muted-foreground hover:text-foreground"
+            )}
+          >
+            Show All ({domainCards.length})
+          </button>
           <button
             onClick={() => handleStatusFilter('mastered')}
             className={cn(
