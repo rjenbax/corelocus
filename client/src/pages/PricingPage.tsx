@@ -16,7 +16,7 @@ const ALL_FEATURES = [
   'Matching Scenarios — 542 items',
   'Scenario Justification™ — 1,515 items (Tier 5)',
   'Venn Diagram concept comparisons — 93 diagrams',
-  'Case Simulation — full client lifecycle (Tier 7)',
+  'Scenario Justification™ — justify your answers (Level 5)',
   'Daily Practice™ — rotating cross-tier sessions',
   'New content as released',
 ];
@@ -125,7 +125,7 @@ export default function PricingPage() {
             Invest in clinical competence
           </h1>
           <p className="text-muted-foreground text-sm max-w-lg mx-auto leading-relaxed">
-            The only platform that prepares you for both the exam and your career in the field. All plans include every feature — 3,000+ items across 8 study modalities.
+            The only platform that prepares you for both the exam and your career in the field. All plans include every feature — 3,000+ items across 5 study levels.
           </p>
         </div>
 
@@ -282,7 +282,7 @@ export default function PricingPage() {
         <div className="mb-10">
           <h2 className="text-base font-bold text-foreground mb-1 text-center">Everything included in every plan</h2>
           <p className="text-xs text-muted-foreground text-center mb-5">
-            The only platform with content at the Evaluate and Synthesize levels of Bloom's Taxonomy.
+            The only platform with content at the Evaluate and Synthesize levels of Bloom's Taxonomy — built into all 5 levels.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {TOOLS.map((tool, i) => {

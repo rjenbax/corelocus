@@ -1,7 +1,7 @@
 /**
  * LandingPage — BehaviorPREP marketing home page
  * Design: Violet + Teal SaaS — asymmetric layout, editorial typography
- * Sections: Hero, 7-tier breakdown, differentiators, pricing, FAQ, CTA footer
+ * Sections: Hero, 5-level breakdown, differentiators, pricing, FAQ, CTA footer
  */
 import { useState } from 'react';
 import { useLocation } from 'wouter';
@@ -31,7 +31,7 @@ const PLAN_FEATURES = [
   '175-question timed mock exam (unlimited retakes)',
   'Flashcards, Rapid Recall, Matching Scenarios',
   'Scenario Justification™ — 1,515 items (Tier 5)',
-  'Venn Diagrams, Case Simulation (Tier 7)',
+  'Venn Diagrams, Scenario Justification (Level 5)',
   'Daily Practice — adaptive cross-tier sessions',
   'Full domain analytics across all 9 domains',
   'New content as released',
@@ -56,14 +56,14 @@ const DIFFERENTIATORS = [
   {
     icon: Users,
     title: 'The only platform with a Case Study capstone',
-    body: 'After you pass the exam, Tier 7 puts you in the room with a real client. Follow Leo Rodriguez from referral to discharge and make the decisions a BCBA makes in practice.',
+    body: 'Level 5 — Scenario Justification™ — challenges you to not only pick the right answer but justify it with the correct clinical reasoning, preparing you for the hardest exam questions.',
   },
 ];
 
 const FAQS = [
   {
     q: 'Which plan should I choose?',
-    a: 'If you are early in your study process, Complete Access gives you the structured 7-tier path that builds clinical reasoning from the ground up. If you have already studied and just need to simulate the exam, Mock Exam Only is sufficient.',
+    a: 'If you are early in your study process, Complete Access gives you the structured 5-level path that builds clinical reasoning from the ground up. If you have already studied and just need to simulate the exam, Mock Exam Only is sufficient.',
   },
   {
     q: 'Is the content aligned to the BACB 6th Edition?',
@@ -152,7 +152,7 @@ export default function LandingPage() {
               </div>
               <div>
                 <p className="text-sm font-semibold text-foreground">Explore the Platform</p>
-                <p className="text-xs text-muted-foreground">All 7 tiers — free during beta</p>
+                <p className="text-xs text-muted-foreground">All 5 levels — free during beta</p>
               </div>
             </button>
           </nav>
@@ -177,7 +177,7 @@ export default function LandingPage() {
               <span className="text-primary">Start reasoning.</span>
             </p>
             <p className="text-base text-muted-foreground max-w-lg leading-relaxed mb-8">
-              CoreLocus™ by BehaviorPREP builds the critical reasoning skills that carry you through the BCBA exam <em>and</em> your career — seven progressive tiers that take you from foundational concepts to full clinical case simulations.
+              CoreLocus™ by BehaviorPREP builds the critical reasoning skills that carry you through the BCBA exam <em>and</em> your career — five progressive levels that take you from foundational concepts to full clinical reasoning.
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -209,7 +209,7 @@ export default function LandingPage() {
           <div className="max-w-4xl mx-auto">
             <div className="mb-10">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3" style={{ fontFamily: "'DM Sans', sans-serif" }}>
-                Seven levels of practice
+                Five levels of practice
               </h2>
               <p className="text-muted-foreground text-base max-w-2xl">
                 Each tier builds on the previous one — from recalling definitions to applying clinical reasoning in a real client case.

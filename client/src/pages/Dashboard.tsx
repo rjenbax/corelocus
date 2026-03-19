@@ -1,17 +1,17 @@
 /**
  * Dashboard — BehaviorPREP Learning Platform Home
- * Design: Violet + Teal SaaS — 7-tier compact list with inline progress
+ * Design: Violet + Teal SaaS — 5-tier compact list with inline progress
  * Violet #6D28D9 primary, Teal #0F766E accent, Slate #334155 text, Off-White #F8FAFC surface
  */
 import { useLocation } from 'wouter';
 import { useProgress } from '@/contexts/ProgressContext';
-import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame, Award, Menu, X, Home, DollarSign } from 'lucide-react';
+import { Brain, Layers, GitMerge, Shuffle, BookOpen, ClipboardList, ChevronRight, CheckCircle2, Trophy, Zap, Target, Flame, Award, Menu, X, Home, DollarSign, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import TaskItemProgress from '@/components/TaskItemProgress';
 
 interface TierConfig {
-  tier: 1 | 2 | 3 | 4 | 5 | 6 | 7;
+  tier: 1 | 2 | 3 | 4 | 5;
   isExternal?: boolean;
   title: string;
   subtitle: string;
@@ -97,34 +97,6 @@ const TIERS: TierConfig[] = [
     pillColor: 'bg-teal-100 text-[#00c2d6]',
     barColor: 'bg-teal-700',
   },
-  {
-    tier: 6,
-    title: 'Full Mock Exam',
-    subtitle: 'Sit a timed 175-question exam',
-    description: '175 questions across all 9 TCO domains with adaptive question selection, 5 CSA archetypes, full score breakdown, and detailed analytics.',
-    icon: Award,
-    route: '/mock-hub',
-    bloomsLevel: 'Exam ready',
-    color: 'text-amber-700',
-    bgColor: 'bg-amber-50',
-    borderColor: 'border-amber-200',
-    pillColor: 'bg-amber-100 text-amber-700',
-    barColor: 'bg-amber-600',
-  },
-  {
-    tier: 7,
-    title: 'Case Study Exam™',
-    subtitle: 'Apply knowledge to a real client case',
-    description: 'Follow Leo Rodriguez from referral to discharge. 175 questions simulating a real client lifecycle, the way BCBAs actually work in the field.',
-    icon: ClipboardList,
-    route: '/exam-hub',
-    bloomsLevel: 'Apply in the field',
-    color: 'text-primary',
-    bgColor: 'bg-primary/5',
-    borderColor: 'border-primary/20',
-    pillColor: 'bg-primary/10 text-primary',
-    barColor: 'bg-primary',
-  },
 ];
 
 export default function Dashboard() {
@@ -132,9 +104,9 @@ export default function Dashboard() {
   const { getTierCompletion } = useProgress();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const internalTiers = TIERS.filter(t => !t.isExternal);
+  const internalTiers = TIERS.filter(t => !t.isExternal && t.tier <= 5);
   const totalCompletion = Math.round(
-    internalTiers.reduce((sum, t) => sum + getTierCompletion(t.tier as 1|2|3|4|5|6), 0) / internalTiers.length
+    internalTiers.reduce((sum, t) => sum + getTierCompletion(t.tier as 1|2|3|4|5), 0) / internalTiers.length
   );
 
   return (
@@ -265,7 +237,7 @@ export default function Dashboard() {
               Your BCBA Learning Path
             </h1>
             <p className="text-muted-foreground text-sm max-w-2xl leading-relaxed">
-              Seven progressive tiers — from recalling definitions to applying clinical reasoning in a real client case. Each tier builds on the last.
+              Five progressive levels — from recalling definitions to applying clinical reasoning in a real client case. Each level builds on the last.
             </p>
           </div>
         </div>
@@ -277,8 +249,8 @@ export default function Dashboard() {
 
           {/* ── Compact Tier List ─────────────────────────────────────────── */}
           <div className="rounded-xl border border-border bg-card overflow-hidden divide-y divide-border mb-6">
-            {TIERS.map((tier) => {
-              const pct = tier.isExternal ? 0 : getTierCompletion(tier.tier as 1|2|3|4|5|6);
+            {TIERS.filter(t => t.tier <= 5).map((tier) => {
+              const pct = tier.isExternal ? 0 : getTierCompletion(tier.tier as 1|2|3|4|5);
               const Icon = tier.icon;
               const isComplete = pct >= 80;
 
@@ -346,6 +318,34 @@ export default function Dashboard() {
             })}
           </div>
 
+          {/* ── Mock Exam CTA — appears after Level 5 is ≥ 80% complete ── */}
+          {getTierCompletion(5) >= 80 && (
+            <div className="mb-6">
+              <div className="rounded-xl border-2 border-[#00c2d6] px-5 py-4" style={{ background: 'linear-gradient(135deg, #e2fcff 0%, #f0feff 100%)' }}>
+                <div className="flex items-start justify-between gap-4 flex-wrap">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <CheckCircle2 className="w-4 h-4 text-[#00c2d6] flex-shrink-0" />
+                      <span className="text-xs font-bold text-[#00c2d6] uppercase tracking-wide">Level 5 Complete</span>
+                    </div>
+                    <h3 className="text-base font-bold text-slate-800 mb-1">You're ready for the Mock Exam</h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      You've built clinical reasoning skills across all 5 levels. The next step is to test yourself under real exam conditions.
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => navigate('/mock-hub')}
+                    className="flex-shrink-0 flex items-center gap-2 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors"
+                    style={{ background: '#00c2d6' }}
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Take Mock Exam
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* ── Daily Practice CTA ─────────────────────────────────────────── */}
           <div className="mb-8">
             <button
@@ -379,9 +379,9 @@ export default function Dashboard() {
             <div className="flex items-start gap-2.5">
               <Trophy className="w-4 h-4 text-[#00c2d6] mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-sm font-medium text-foreground mb-0.5">Complete all 7 tiers for full BCBA preparation</p>
+                <p className="text-sm font-medium text-foreground mb-0.5">Complete all 5 levels for full BCBA preparation</p>
                 <p className="text-xs text-muted-foreground">
-                  Each tier builds on the previous — from recalling definitions (Tier 1) to applying clinical reasoning in a real client case (Tier 7).
+                  Each level builds on the previous — from recalling definitions (Level 1) to applying clinical reasoning in a real case (Level 5).
                   Progress is saved automatically to your browser.
                 </p>
               </div>
