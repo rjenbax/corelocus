@@ -471,12 +471,12 @@ export default function VennPage() {
                 <p className="text-xs font-bold text-slate-600 uppercase tracking-wide text-center">All Features</p>
               </div>
               <div className="p-2.5 space-y-1.5 overflow-y-auto flex-1">
-                {[
+                {shuffle([
                   ...currentItem.onlyA.map(f => ({ f, zone: 'A only', cls: 'text-blue-700 bg-blue-50 border-blue-200' })),
                   ...currentItem.shared.map(f => ({ f, zone: 'Both', cls: 'text-emerald-700 bg-emerald-50 border-emerald-200' })),
                   ...currentItem.onlyB.map(f => ({ f, zone: 'B only', cls: 'text-[#6066bb] bg-[#e3e5fb] border-[#6066bb]/40' })),
                   ...currentItem.distractors.map(f => ({ f, zone: 'Neither', cls: 'text-rose-600 bg-rose-50 border-rose-200 line-through' })),
-                ].map(({ f, zone, cls }, i) => (
+                ]).map(({ f, zone, cls }, i) => (
                   <div key={i} className={cn('flex items-center justify-between gap-2 px-2 py-1.5 rounded-lg border text-xs', cls)}>
                     <span className="leading-snug flex-1">{f}</span>
                     <span className="text-[10px] font-bold opacity-60 shrink-0">{zone}</span>
