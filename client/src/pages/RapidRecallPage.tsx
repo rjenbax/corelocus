@@ -15,7 +15,7 @@ import { rapidRecallItems } from '@/data/rapidRecall';
 import { useProgress } from '@/contexts/ProgressContext';
 import {
   ArrowLeft, Zap, AlertTriangle, CheckCircle2, XCircle, RotateCcw,
-  ChevronRight, Filter, ClipboardX, BookOpen, ChevronDown, ChevronUp
+  ChevronRight, ChevronLeft, Filter, ClipboardX, BookOpen, ChevronDown, ChevronUp
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -652,6 +652,14 @@ export default function RapidRecallPage() {
     }
   }, [currentIdx, quizItems.length]);
 
+  const handlePrev = useCallback(() => {
+    if (currentIdx <= 0) return;
+    clearInterval(timerRef.current!);
+    setShowFeedback(false);
+    setSelectedAnswer(null);
+    setCurrentIdx(i => i - 1);
+  }, [currentIdx]);
+
   const startQuiz = (items = filteredItems) => {
     setQuizItems(shuffle(items));
     setCurrentIdx(0);
@@ -771,13 +779,24 @@ export default function RapidRecallPage() {
                   </ul>
                 </div>
               )}
-              <button
-                onClick={handleNext}
-                className="w-full flex items-center justify-center gap-2 text-white font-medium py-3 rounded-xl transition-colors"
-              >
-                {currentIdx + 1 >= quizItems.length ? 'See Results' : 'Next Question'}
-                <ChevronRight className="w-4 h-4" />
-              </button>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={handlePrev}
+                  disabled={currentIdx <= 0}
+                  className="flex items-center justify-center gap-1.5 text-sm font-medium px-4 py-3 rounded-xl border-2 border-border bg-card text-muted-foreground hover:text-foreground hover:border-[#00c2d6] disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  Prev
+                </button>
+                <button
+                  onClick={handleNext}
+                  className="flex-1 flex items-center justify-center gap-2 text-white font-medium py-3 rounded-xl transition-colors"
+                  style={{ background: '#00c2d6' }}
+                >
+                  {currentIdx + 1 >= quizItems.length ? 'See Results' : 'Next Question'}
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           )}
         </div>
