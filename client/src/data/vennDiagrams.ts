@@ -24,12 +24,12 @@ export const vennDiagrams: VennItem[] = [
     domainFull: 'Concepts & Principles',
     onlyA: [
       'Has a value-altering effect (changes reinforcer effectiveness)',
-      'Has a behavior-altering effect on the entire response class',
+      'Alters the current frequency of behaviors that have historically produced that reinforcer',
       'Examples: deprivation, satiation, pain',
       'Operates on the reinforcer — makes it more or less valuable',
     ],
     onlyB: [
-      'Signals that reinforcement is currently available for a specific behavior',
+      'Signals that reinforcement is available for a behavior in its presence and not in its absence (history of differential reinforcement)',
       'Does NOT change the value of the reinforcer',
       'Only affects the specific behavior previously reinforced in its presence',
       'Examples: a green light, a teacher\'s instruction, an open door',
@@ -54,12 +54,12 @@ export const vennDiagrams: VennItem[] = [
     onlyA: [
       'An antecedent variable (occurs before behavior)',
       'Temporarily increases the value of a reinforcer',
-      'Increases the current frequency of behavior reinforced by that stimulus',
+      'Increases the likelihood of behaviors that have historically produced that reinforcer',
       'Example: food deprivation makes food more reinforcing',
     ],
     onlyB: [
       'A consequence variable (occurs after behavior)',
-      'Increases the future frequency of the behavior it follows',
+      'Increases the future frequency of behavior when delivered contingently on that behavior',
       'Defined by its effect on behavior, not by its physical properties',
       'Example: food delivered after requesting',
     ],
@@ -82,13 +82,13 @@ export const vennDiagrams: VennItem[] = [
     domain: 'B',
     domainFull: 'Concepts & Principles',
     onlyA: [
-      'Elicits a respondent (reflexive) response',
+      'Elicits involuntary respondent behavior (not under operant control)',
       'Acquires its function through pairing with an unconditioned stimulus (US)',
       'Operates in respondent (classical) conditioning',
       'Example: a tone paired with food now elicits salivation',
     ],
     onlyB: [
-      'Evokes operant (voluntary) behavior',
+      'Evokes behavior that is sensitive to consequences (operant control)',
       'Acquires its function through a history of reinforcement in its presence',
       'Operates in operant conditioning',
       'Example: a green light signals reinforcement is available',
@@ -112,7 +112,7 @@ export const vennDiagrams: VennItem[] = [
     domain: 'B',
     domainFull: 'Concepts & Principles',
     onlyA: [
-      'Controlled by verbal descriptions of contingencies (rules, instructions)',
+      'Controlled by verbal descriptions of contingencies (rules, instructions); includes pliance, tracking, and augmenting depending on controlling variables',
       'Can occur without direct contact with the contingency',
       'May be less sensitive to changes in the actual contingency',
       'Example: following a recipe you\'ve never tried before',
@@ -145,13 +145,13 @@ export const vennDiagrams: VennItem[] = [
       'Withholding the reinforcer that previously maintained the behavior',
       'Results in a DECREASE in behavior over time',
       'May produce an extinction burst initially',
-      'Removes the contingency between behavior and reinforcer',
+      'Discontinues reinforcement for a previously reinforced behavior',
     ],
     onlyB: [
       'Removal of an aversive stimulus FOLLOWING behavior',
       'Results in an INCREASE in behavior over time',
       'Strengthens escape or avoidance behaviors',
-      'Example: taking aspirin to remove a headache',
+      'Example: taking aspirin results in removal of headache, increasing future pill-taking behavior',
     ],
     shared: [
       'Both involve changes in consequence conditions following behavior',
@@ -201,7 +201,7 @@ export const vennDiagrams: VennItem[] = [
     domainFull: 'Concepts & Principles',
     onlyA: [
       'A stimulus is ADDED following behavior',
-      'The added stimulus is appetitive (desirable)',
+      'A stimulus is added following behavior that increases its future frequency',
       'Example: giving a sticker after completing work',
     ],
     onlyB: [
@@ -243,7 +243,7 @@ export const vennDiagrams: VennItem[] = [
       'Both DECREASE the future frequency of behavior',
       'Both are punishment procedures',
       'Both are defined by their effect on behavior, not their form',
-      'Both require ethical justification and informed consent',
+      'Both are defined by their effect on decreasing the future frequency of behavior',
     ],
     distractors: [
       'Increases the future frequency of behavior',
@@ -261,7 +261,7 @@ export const vennDiagrams: VennItem[] = [
     onlyA: [
       'Reinforcement is produced by the behavior itself, independent of others',
       'No mediating agent is required',
-      'Often sensory in nature (visual, tactile, auditory)',
+      'Produced directly by the behavior itself without social mediation',
       'Example: rocking, hand-flapping, humming',
     ],
     onlyB: [
@@ -322,7 +322,7 @@ export const vennDiagrams: VennItem[] = [
     domain: 'B',
     domainFull: 'Concepts & Principles',
     onlyA: [
-      'Withholding escape/avoidance following problem behavior',
+      'Preventing escape or avoidance following problem behavior',
       'A BEHAVIOR REDUCTION procedure',
       'Prevents the problem behavior from removing the aversive stimulus',
       'Example: continuing to present a demand despite the student\'s refusal',
@@ -359,7 +359,7 @@ export const vennDiagrams: VennItem[] = [
     ],
     onlyB: [
       'Specifically withholding ATTENTION following behavior',
-      'Only appropriate for attention-maintained behavior',
+      'Primarily used for attention-maintained behavior',
       'A specific form of extinction for attention function',
       'May be ineffective if the behavior is maintained by other functions',
     ],
@@ -390,7 +390,7 @@ export const vennDiagrams: VennItem[] = [
     ],
     onlyB: [
       'Links a sequence of individual behaviors into a CHAIN',
-      'The terminal behavior already exists; the task is to sequence them',
+      'Individual component behaviors typically exist in the repertoire; the task is to sequence them',
       'Changes the ORDER and SEQUENCE of behaviors',
       'Example: teaching hand-washing as a sequence of discrete steps',
     ],
@@ -479,7 +479,7 @@ export const vennDiagrams: VennItem[] = [
     onlyB: [
       'Relative rate of responding MATCHES the relative rate of reinforcement across alternatives',
       'Describes how organisms allocate behavior in concurrent schedules',
-      'Quantitative relationship: B1/B2 = R1/R2',
+      'Quantitative relationship: B1/B2 = R1/R2; applies under concurrent schedules of reinforcement',
       'Used to predict choice behavior',
     ],
     shared: [
@@ -543,7 +543,7 @@ export const vennDiagrams: VennItem[] = [
     shared: [
       'Both are forms of generalization',
       'Both involve behavior occurring in untrained conditions',
-      'Both must be programmed to ensure functional outcomes',
+      'Both often require programming to ensure reliability and functional outcomes',
     ],
     distractors: [
       'Involves withholding a reinforcer to decrease behavior',
@@ -730,7 +730,7 @@ export const vennDiagrams: VennItem[] = [
       'Is used to measure the proportion of intervals containing the target behavior',
       'Is defined by the physical form of the behavior being measured',
     ],
-    keyDistinction: 'Continuous = every instance recorded. Discontinuous = a sample is recorded. Continuous is more accurate; discontinuous is more practical.',
+    keyDistinction: 'Continuous = every instance recorded. Discontinuous = a sample is recorded. Continuous provides a more complete record; discontinuous is more practical.',
   },
   {
     id: 'v-habituation-respondent-ext', conceptA: 'Habituation', conceptB: 'Respondent Extinction',
@@ -751,7 +751,7 @@ export const vennDiagrams: VennItem[] = [
     ],
     shared: [
       'Both result in a decrease in a behavioral response',
-      'Both involve repeated presentation of a stimulus without a consequence',
+      'Both involve repeated presentation of a stimulus due to repeated stimulus presentation without contingent consequences',
       'Both are temporary — the response can return',
     ],
     distractors: [
@@ -812,7 +812,7 @@ export const vennDiagrams: VennItem[] = [
     shared: [
       'Both involve learning from observing another person',
       'Both require a model',
-      'Both can produce new behaviors in the observer',
+      'Both can result in acquisition of new behaviors without direct reinforcement of the observer',
     ],
     distractors: [
       'Involves delivering a punisher contingent on non-imitative responses',
@@ -858,7 +858,7 @@ export const vennDiagrams: VennItem[] = [
     onlyA: [
       'Modifies events BEFORE behavior occurs to prevent problem behavior',
       'Examples: NCR, high-probability request sequences, environmental modifications',
-      'Does not require the behavior to occur to be effective',
+      'Operates prior to behavior occurrence',
       'Proactive — changes the context to make problem behavior less likely',
     ],
     onlyB: [
@@ -1038,7 +1038,7 @@ export const vennDiagrams: VennItem[] = [
       'Controlled by recalibration and retraining',
     ],
     onlyB: [
-      'INTENTIONAL or expectation-driven distortion in recording',
+      'Systematic distortion in recording influenced by expectations or knowledge of the experimental condition',
       'Observer records what they EXPECT to see, not what actually occurred',
       'Influenced by knowledge of the experimental hypothesis or treatment phase',
       'Controlled by keeping observers blind to the experimental condition',
@@ -1065,7 +1065,7 @@ export const vennDiagrams: VennItem[] = [
     domainFull: 'Concepts & Principles',
     onlyA: [
       'Controlled by a MOTIVATING OPERATION (deprivation or aversive stimulation)',
-      'Specifies its own reinforcer (the speaker gets what they ask for)',
+      'Specifies the reinforcer and is reinforced by that specific consequence (the speaker gets what they ask for)',
       'Function: to obtain something or remove something aversive',
       'Example: "Water!" when thirsty (MO = water deprivation)',
     ],
@@ -1100,7 +1100,7 @@ export const vennDiagrams: VennItem[] = [
     ],
     onlyB: [
       'Controlled by VERBAL discriminative stimuli (another person\'s verbal behavior)',
-      'There is no point-to-point correspondence between the verbal SD and the response',
+      'There is no point-to-point correspondence and no formal similarity between the verbal SD and the response',
       'Example: answering "Paris" when asked "What is the capital of France?"',
     ],
     shared: [
@@ -1181,7 +1181,7 @@ export const vennDiagrams: VennItem[] = [
     onlyA: [
       'Responding to NOVEL stimulus relations that were never directly trained',
       'Based on relational frames (symmetry, transitivity, combinatorial entailment)',
-      'A uniquely human form of stimulus control',
+      'Predominantly observed in humans; not universally demonstrated in non-human animals',
       'Example: if A=B and B=C, then A=C without direct training',
     ],
     onlyB: [
@@ -1276,7 +1276,7 @@ export const vennDiagrams: VennItem[] = [
     domain: 'C',
     domainFull: 'Measurement & Data Collection',
     onlyA: [
-      'Refers to the mean or median value of data points within a phase or condition',
+      'Refers to the overall magnitude of data within a phase or condition',
       'Described as high, low, or moderate relative to the target criterion',
       'Calculated by finding the mean of all data points in a phase',
       'A change in level between phases is called a level change and indicates an immediate effect',
@@ -1317,7 +1317,7 @@ export const vennDiagrams: VennItem[] = [
     ],
     onlyB: [
       'Embedded in naturally occurring activities and routines',
-      'Follows the learner\'s motivation and interest (child-led)',
+      'Learner motivation guides instructional opportunities',
       'Uses natural reinforcers that are directly related to the response',
       'Promotes generalization because teaching occurs in natural contexts',
     ],
@@ -1439,7 +1439,7 @@ export const vennDiagrams: VennItem[] = [
     onlyA: [
       'Begins with the most intrusive prompt level and systematically fades toward independence',
       'Minimizes errors by providing maximum support at the start of training',
-      'Also called errorless teaching or graduated guidance when combined with physical prompts',
+      'Often used to minimize errors; systematic procedure to correct errors following incorrect responses',
       'Best suited for learners who are likely to make errors without initial support',
     ],
     onlyB: [
@@ -1868,7 +1868,7 @@ export const vennDiagrams: VennItem[] = [
     domainFull: 'Concepts & Principles',
     onlyA: [
       'Increases the current reinforcing effectiveness of a stimulus',
-      'Increases the current frequency of behavior reinforced by that stimulus',
+      'Increases the likelihood of behaviors that have historically produced that reinforcer',
       'Example: food deprivation — makes food more valuable, increases food-seeking',
       'Evocative effect: increases behavior',
       'Also called a "reinforcer-establishing" MO',
@@ -1902,7 +1902,7 @@ export const vennDiagrams: VennItem[] = [
     domain: 'B',
     domainFull: 'Concepts & Principles',
     onlyA: [
-      'Increases the future frequency of the behavior it follows',
+      'Increases the future frequency of behavior when delivered contingently on that behavior',
       'Examples: food, water, warmth, sex, relief from pain',
       'Functions as a reinforcer without a learning history',
       'Positive reinforcement: delivery increases behavior',
@@ -4730,7 +4730,7 @@ export const vennDiagrams: VennItem[] = [
     onlyA: [
           'Modifies antecedent conditions to prevent problem behavior before it occurs',
           'Examples: NCR, MO manipulation, environmental modifications, high-p sequences',
-          'Does not require the behavior to occur to be effective',
+          'Operates prior to behavior occurrence',
           'Proactive rather than reactive',
           'Reduces the motivating operation for problem behavior',
         ],
