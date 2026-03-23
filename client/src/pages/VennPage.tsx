@@ -42,11 +42,13 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 function buildFeatureCards(item: VennItem): FeatureCard[] {
+  // Take the first 2 from each category — these are the strongest/most defining features
+  const top2 = <T,>(arr: T[]): T[] => arr.slice(0, 2);
   return shuffle([
-    ...item.onlyA.map((t, i) => ({ id: `a-${i}`, text: t, correctZone: 'onlyA' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
-    ...item.shared.map((t, i) => ({ id: `s-${i}`, text: t, correctZone: 'shared' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
-    ...item.onlyB.map((t, i) => ({ id: `b-${i}`, text: t, correctZone: 'onlyB' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
-    ...item.distractors.map((t, i) => ({ id: `d-${i}`, text: t, correctZone: 'distractor' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
+    ...top2(item.onlyA).map((t, i) => ({ id: `a-${i}`, text: t, correctZone: 'onlyA' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
+    ...top2(item.shared).map((t, i) => ({ id: `s-${i}`, text: t, correctZone: 'shared' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
+    ...top2(item.onlyB).map((t, i) => ({ id: `b-${i}`, text: t, correctZone: 'onlyB' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
+    ...top2(item.distractors).map((t, i) => ({ id: `d-${i}`, text: t, correctZone: 'distractor' as CorrectZone, assignedA: false, assignedB: false, struckOut: false })),
   ]);
 }
 
