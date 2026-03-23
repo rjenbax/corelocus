@@ -234,10 +234,14 @@ function RapidRecallQuestion({ item, onNext }: { item: RapidRecallItem; onNext: 
   }, [item]);
 
   const submitted = selected !== null;
+  const selectedIsCorrect = selected === item.correctDefinition;
 
   return (
     <div className="flex flex-col gap-5 w-full max-w-lg">
       <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide text-center">Rapid Recall · {item.taskCode}</div>
+      {!submitted && (
+        <p className="text-xs text-center text-muted-foreground">Select the best definition, then click <strong>Next</strong> to continue.</p>
+      )}
       <div className="rounded-2xl border-2 border-[#00c2d6]/40 bg-[#e2fcff] p-6 text-center">
         <p className="text-xs text-[#00c2d6] font-medium mb-2 uppercase tracking-wide">What is the definition of…</p>
         <h2 className="text-xl font-bold text-foreground">{item.term}</h2>
@@ -250,10 +254,7 @@ function RapidRecallQuestion({ item, onNext }: { item: RapidRecallItem; onNext: 
             <button
               key={i}
               disabled={submitted}
-              onClick={() => {
-                setSelected(opt);
-                setTimeout(() => onNext(isCorrect), 1200);
-              }}
+              onClick={() => setSelected(opt)}
               className={cn(
                 "w-full text-left px-4 py-3.5 rounded-xl border-2 text-sm leading-relaxed transition-all duration-200",
                 !submitted && "border-border bg-card hover:border-primary/40 hover:bg-primary/5",
@@ -272,6 +273,15 @@ function RapidRecallQuestion({ item, onNext }: { item: RapidRecallItem; onNext: 
           );
         })}
       </div>
+      {submitted && (
+        <button
+          onClick={() => onNext(selectedIsCorrect)}
+          className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm text-white transition-colors"
+          style={{ background: '#00c2d6' }}
+        >
+          Next <ChevronRight className="w-4 h-4" />
+        </button>
+      )}
     </div>
   );
 }
@@ -280,10 +290,14 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
   const [selected, setSelected] = useState<string | null>(null);
   const submitted = selected !== null;
   const correctId = item.scenarios.find(s => s.isCorrect)?.id ?? '';
+  const selectedIsCorrect = selected !== null && selected === correctId;
 
   return (
     <div className="flex flex-col gap-5 w-full max-w-lg">
       <div className="text-xs font-medium text-muted-foreground uppercase tracking-wide text-center">Scenario Matching · {item.taskCode}</div>
+      {!submitted && (
+        <p className="text-xs text-center text-muted-foreground">Select the scenario that best matches the concept, then click <strong>Next</strong> to continue.</p>
+      )}
       <div className="rounded-2xl border-2 border-[#00c2d6]/40 bg-[#e2fcff] p-6">
         <p className="text-xs text-[#00c2d6] font-medium mb-1 uppercase tracking-wide">Which scenario best illustrates…</p>
         <h2 className="text-lg font-bold text-foreground">{item.concept}</h2>
@@ -297,10 +311,7 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
             <button
               key={s.id}
               disabled={submitted}
-              onClick={() => {
-                setSelected(s.id);
-                setTimeout(() => onNext(isCorrect), 1400);
-              }}
+              onClick={() => setSelected(s.id)}
               className={cn(
                 "w-full text-left px-4 py-3.5 rounded-xl border-2 text-sm leading-relaxed transition-all duration-200",
                 !submitted && "border-border bg-card hover:border-teal-400/60 hover:bg-[#e2fcff]/60",
@@ -325,6 +336,15 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
           );
         })}
       </div>
+      {submitted && (
+        <button
+          onClick={() => onNext(selectedIsCorrect)}
+          className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold text-sm text-white transition-colors"
+          style={{ background: '#00c2d6' }}
+        >
+          Next <ChevronRight className="w-4 h-4" />
+        </button>
+      )}
     </div>
   );
 }
