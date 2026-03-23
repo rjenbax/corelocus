@@ -273,6 +273,12 @@ function RapidRecallQuestion({ item, onNext }: { item: RapidRecallItem; onNext: 
           );
         })}
       </div>
+      {submitted && !selectedIsCorrect && (
+        <div className="rounded-xl border-2 border-[#6066bb]/30 bg-[#e3e5fb] px-4 py-3">
+          <p className="text-xs font-semibold text-[#6066bb] mb-1 uppercase tracking-wide">✓ Correct Answer</p>
+          <p className="text-sm text-[#6066bb] leading-relaxed">{item.correctDefinition}</p>
+        </div>
+      )}
       {submitted && (
         <button
           onClick={() => onNext(selectedIsCorrect)}
@@ -329,13 +335,25 @@ function MatchingQuestion({ item, onNext }: { item: MatchingItem; onNext: (corre
               {submitted && isSelected && !isCorrect && (
                 <p className="mt-2 text-xs text-[#d4a0d4] italic pl-7">{s.explanation}</p>
               )}
-              {submitted && isCorrect && (isSelected || true) && isSelected && (
+              {submitted && isCorrect && isSelected && (
                 <p className="mt-2 text-xs text-[#6066bb] italic pl-7">{s.explanation}</p>
               )}
             </button>
           );
         })}
       </div>
+      {submitted && !selectedIsCorrect && (() => {
+        const correctScenario = item.scenarios.find(s => s.id === correctId);
+        return correctScenario ? (
+          <div className="rounded-xl border-2 border-[#6066bb]/30 bg-[#e3e5fb] px-4 py-3">
+            <p className="text-xs font-semibold text-[#6066bb] mb-1 uppercase tracking-wide">✓ Correct Answer</p>
+            <p className="text-sm text-[#6066bb] leading-relaxed">{correctScenario.text}</p>
+            {correctScenario.explanation && (
+              <p className="text-xs text-[#6066bb] italic mt-1.5">{correctScenario.explanation}</p>
+            )}
+          </div>
+        ) : null;
+      })()}
       {submitted && (
         <button
           onClick={() => onNext(selectedIsCorrect)}
