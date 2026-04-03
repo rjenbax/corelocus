@@ -12,7 +12,7 @@ import { useLocation } from 'wouter';
 import {
   ArrowLeft, ChevronLeft, ChevronRight, CheckCircle2, XCircle,
   RotateCcw, Trophy, Filter, GitMerge, BookOpen, Swords,
-  ChevronDown, X,
+  ChevronDown, X, Download,
 } from 'lucide-react';
 import { vennDiagrams, VennItem } from '@/data/vennDiagrams';
 import { useProgress } from '@/contexts/ProgressContext';
@@ -128,8 +128,46 @@ function VennGridView({
             <GitMerge className="w-5 h-5 text-[#6066bb]" />
             <h1 className="font-bold text-slate-800 text-base">Tier 4 — Venn Diagram</h1>
           </div>
-          <div className="text-xs text-slate-500">
-            <span className="font-semibold text-[#6066bb]">{vennDiagrams.filter(i => completedIds.has(i.id)).length}</span>/{vennDiagrams.length} completed
+          <div className="flex items-center gap-3">
+            <div className="text-xs text-slate-500">
+              <span className="font-semibold text-[#6066bb]">{vennDiagrams.filter(i => completedIds.has(i.id)).length}</span>/{vennDiagrams.length} completed
+            </div>
+            <button
+              onClick={() => {
+                const DNAMES: Record<string, string> = {
+                  A: 'Philosophical Foundations', B: 'Concepts & Principles',
+                  C: 'Measurement', D: 'Experimental Design', E: 'Ethics',
+                  F: 'Behavior Assessment', G: 'Behavior Change Procedures',
+                  H: 'Selecting & Implementing Interventions', I: 'Personnel Supervision & Management',
+                };
+                const esc = (s: unknown) => '"' + String(s ?? '').replace(/"/g, '""') + '"';
+                const header = ['#','Domain','Domain Full','Concept A','Concept B','Only A','Shared','Only B','Distractors','Key Distinction'];
+                const rows = vennDiagrams.map((item, idx) => [
+                  idx + 1,
+                  (item as any).domain?.toUpperCase() ?? '',
+                  DNAMES[(item as any).domain?.toUpperCase() ?? ''] ?? '',
+                  item.conceptA,
+                  item.conceptB,
+                  (item.onlyA ?? []).join(' | '),
+                  (item.shared ?? []).join(' | '),
+                  (item.onlyB ?? []).join(' | '),
+                  (item.distractors ?? []).join(' | '),
+                  item.keyDistinction ?? '',
+                ].map(esc).join(','));
+                const csv = [header.map(esc).join(','), ...rows].join('\n');
+                const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url; a.download = 'CoreLocus_Venn_Diagrams.csv';
+                document.body.appendChild(a); a.click();
+                document.body.removeChild(a); URL.revokeObjectURL(url);
+              }}
+              className="flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors"
+              style={{ background: '#00c2d6', color: 'white', borderColor: '#00c2d6' }}
+              title="Download all 344 pairs as CSV"
+            >
+              <Download className="w-3.5 h-3.5" /> CSV
+            </button>
           </div>
         </div>
       </header>
